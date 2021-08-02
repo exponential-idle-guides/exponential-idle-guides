@@ -1,0 +1,22 @@
+body {
+	background-color: #222;
+	color: #ccc;
+	padding-bottom: 25vh;
+}
+
+.header, .content-wrapper, footer {
+	max-width: 40rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+}
+
+.content-wrapper {
+	margin-top: 1em;
+}
+
+footer {
+	margin-top: 1em;
+	font-size: 0.8em;
+	text-align: right;
+}

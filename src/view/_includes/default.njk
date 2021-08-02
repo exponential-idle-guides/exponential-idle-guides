@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/main.css" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script>
+      MathJax = {
+        options: {
+          enableMenu: false
+        }
+      };
+    </script>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1><a href="/">Exponential Idle Guides</a></h1>
+      <h2>{{title}}</h2>
+    </header>
+    <main class="content-wrapper">
+      {% block main %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+    <footer class="license">
+      Guide copyright LE★Baldy & Snaeky
+    </footer>
+  </body>
+</html>
