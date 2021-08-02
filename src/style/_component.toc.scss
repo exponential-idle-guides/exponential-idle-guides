@@ -1,12 +1,13 @@
-.toc {
+.toc-wrapper {
   padding: 1em;
   background-color: #444;
+
 }
 
-.toc h3 {
+.toc-wrapper h3 {
   margin-top: 0;
 }
 
-.toc ul {
-  margin-top: 0;
+.toc-wrapper ol {
+  margin-left: 0.5em;
 }
