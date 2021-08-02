@@ -1,9 +1,27 @@
 ul {
   padding-left: 1em;
   margin-top: 0.5em;
+
+  li {
+    list-style-type: disc;
+    margin-top: 0.5em;
+  }
 }
 
-li {
-  list-style-type: disc;
+ol {
+
+  padding-left: 1em;
   margin-top: 0.5em;
+
+  li {
+    list-style-type: decimal;
+    margin-top: 0.5em;
+  }
+}
+
+ol ol {
+  li {
+    list-style-type: lower-alpha;
+    margin-top: 0.5em;
+  }
 }

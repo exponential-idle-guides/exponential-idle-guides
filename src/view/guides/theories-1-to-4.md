@@ -123,7 +123,7 @@ Milestone Route
  - 3 → 4 → 2 → 1 → 1 → 1
 
 
-### Theory 2 (25σ / 6k)
+#### Theory 2 (25σ / 6k)
 Overview:
 This second theory is focusing on derivatives. Derivatives in mathematics are the rate of change of the function they are the derivative of. For the case of q1  and q2, q2 is the derivative of q1. This follows the power rule for derivatives q=atn ↔ q’=natn-1. In simpler terms, it works similar to how xi upgrades work for f(t) equation with continuous addition of the previous term*dt to the next xi+1 term, but with continuous addition of qi*dt to the term above qi-1. These two values of r1 and q1 are multiplied to produce the derivative of rho(ρ), shown by the newton derivative form ρ. This would give the equation of ρ to be ρ(t+dt)=ρ+ρ*dt. The other milestones besides more q and r derivatives increase the exponent of q and r respectively. The reason why q and r derivatives are more powerful long-term than the exponents is that they take time to build up and eventually overtake and keep increasing q1 and r1 while the exponents have a never-changing boost.
 0 milestones:                             1 milestones:                  2 milestones:

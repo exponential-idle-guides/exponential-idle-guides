@@ -12,6 +12,8 @@ const { JSDOM } = require('jsdom');
 
 const util = require('util');
 
+const pluginTOC = require('eleventy-plugin-toc')
+
 module.exports = config => {
 
   const markdownItOptions = {
@@ -32,6 +34,9 @@ module.exports = config => {
     }),
     level: [1,2,3,4]
   };
+
+
+  config.addPlugin(pluginTOC)
 
   config.setLibrary(
     "md",
@@ -73,4 +78,5 @@ module.exports = config => {
     }
   };
 }
+
 
