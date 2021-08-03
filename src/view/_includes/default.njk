@@ -6,7 +6,7 @@
     <link href="/style/main.css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML">
     </script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
@@ -16,20 +16,22 @@
         SVG: { linebreaks: { automatic: true } }
       });
     </script>
-    <title>{{title}}</title>
+    <title>{{title}} - Exponential Idle Guides</title>
   </head>
   <body>
     <header class="header">
       <h1><a href="/">Exponential Idle Guides</a></h1>
-      <h2>{{title}}</h2>
+      {{ nav | safe }}
     </header>
     <main class="content-wrapper">
-      {% block main %}
-        {{ content | safe }}
-      {% endblock %}
+      <h2>{{title}}</h2>
+      {% block main %}{% endblock %}
     </main>
-    <footer class="license">
-      Guide copyright LE★Baldy & Snaeky
+    <footer>
+      {{ nav | safe }}
+      <div class="license">
+        Guide copyright LE★Baldy & Snaeky
+      </div>
     </footer>
   </body>
 </html>

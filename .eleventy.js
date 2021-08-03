@@ -42,6 +42,7 @@ module.exports = config => {
     "md",
     markdownIt(markdownItOptions)
       .use(markdownItAnchor, markdownItAnchorOptions)
+      .use(require('markdown-it-mathjax')())
   );
 
   config.setDataDeepMerge(true);
@@ -69,6 +70,12 @@ module.exports = config => {
   config.addFilter("inspect", (s, d) =>
     util.inspect(s, {depth: d === undefined ? 2 : d})
   );
+
+  config.addCollection("guides", function(collection) {
+    return collection.getFilteredByTag("guide").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
 
   return {
     dir: {

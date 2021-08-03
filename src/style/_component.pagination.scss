@@ -1,0 +1,18 @@
+
+.pagination {
+	margin-top: 1em;
+	font-size: 0.8rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	row-gap: 0.5em;
+	column-gap: 1em;
+
+	h2 {
+		font-size: 0.8em;
+	}
+}
+
+.pagination__next {
+	margin-left: auto;
+}

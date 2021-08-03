@@ -11,12 +11,13 @@ body {
 	margin: auto;
 }
 
-.content-wrapper {
-	margin-top: 1em;
+.content-wrapper, footer {
+	margin-top: 1rem;
 }
 
-footer {
+.header::after {
+	content: "";
+	display: block;
 	margin-top: 1em;
-	font-size: 0.8em;
-	text-align: right;
+	border-bottom: #ccc solid 2px;
 }

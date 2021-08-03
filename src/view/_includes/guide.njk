@@ -1,13 +1,29 @@
----
-layout: default.njk
----
+{% extends "default.njk" %}
+
+{% set nav %}
+  {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
+  {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
+
+  <nav class="pagination">
+    {% if previousGuide %}
+      <a href="{{previousGuide.url}}">Previous: {{previousGuide.data.title}}</a>
+    {% endif %}
+    {% if nextGuide %}
+      <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
+    {% endif %}
+  </nav>
+{% endset %}
 
 {% block main %}
 
+  {% set toc = content | toc %}
+
+  {% if toc %}
   <div class="toc-wrapper">
     <h3>Table of contents</h3>
-    {{ content | toc | safe }}
+    {{ toc | safe }}
   </div>
+  {% endif %}
 
   {{ content | safe }}
 {% endblock %}
