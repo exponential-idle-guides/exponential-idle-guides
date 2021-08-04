@@ -5,8 +5,21 @@ contributors: "The Amazing Community"
 order: 1
 ---
 
+### Graduation routing
+
+Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
+
+The graduation route for these theories.
+
+ - 5k → 5.2k → 5.6k → 5.8k → 6k  (5.8k → 6k is a long stretch)
+ - 6k → 7k
+ - 7k → 8k
+ - 8k → 8.4k →8.6k → 8.8k → 9k
+
 ### Theory 1 (20σ / 5k)
 
+In mathematics, a recurrence relation is an equation that relies on an
+initial term and a previous term to change.
 We start with the current tick’s term, \\(ρ_{n}\\), and a constant add-on to
 obtain the value of the next tick, \\(ρ_{n+1}\\). This gives us an equation
 equivalent to \\(ρ=at+constant\\), with a changing value \\(a\\) and a constant
@@ -44,7 +57,8 @@ up the theory.
 ##### Sixth and Final Milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-#### Strategy
+#### Theory 1 Strategy
+
 The publication multiplier has no optimal fit, as it fluctuates a lot,
 but here is known: 4-6 to start; 3-4 between 1e100 and 1e150; the
 publication Multiplier Oscillates between 2.5 and 5 past e150. Once you
@@ -154,7 +168,7 @@ boost.
 
 \\[\dot{ρ}=q_1^{1.15}r_1^{1.1}\\]
 
-#### Strategy
+#### Theory 2 Strategy
 
 The optimal multiplier is pretty high and is not known before \\(e30\\).
 The multipliers for active play we know at the moment are:\\(e25\\)-\\(e100\\)
@@ -206,7 +220,7 @@ are all directly affecting \\(ρ_1\\) production which is used for \\(\tau\\). A
 dimension roughly gives \\(50%\\) more \\(\tau\\) production as it adds an extra term
 to the \\(ρ_1\\) production.
 
-#### Strategy
+#### Theory 3 Strategy
 
 The optimal publication multiplier is about 2-3 without cruising and 3-4
 with cruising. If you decide to play actively, there is a form of
@@ -294,7 +308,7 @@ next 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2
 
 \\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
 
-#### Strategy
+#### Theory 4 Strategy
 
 The optimal publication multiplier is 4-6. During publications, start
 with x/1/3. After you will switch to 3/0/x. This will be repeated back

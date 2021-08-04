@@ -11,11 +11,6 @@ to cruise than recover and push. Best bet is use the Graduation
 calculator on the [Phi*Tau Sheet]. Please [contribute to the Phi*Tau]
 sheet before graduating.
 
- - 5k → 5.2k → 5.6k → 5.8k → 6k  (5.8k → 6k is a long stretch)
- - 6k → 7k
- - 7k → 8k
- - 8k → 8.4k →8.6k → 8.8k → 9k
-
 ### Student use routing
 All routing below assumes you buy **all** available theories unless
 explicitly stated because theories are important to start as soon as
