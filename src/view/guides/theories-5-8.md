@@ -110,11 +110,11 @@ When this happens turn off the autobuyer and cruise to 3.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lFSAFIpWkb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### Theory 2 (25σ / 6k)
+### Theory 2 (25σ / 6k)
 
 See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
-#### Theory 3 (30σ / 7k)
+### Theory 3 (30σ / 7k)
 
 The basis of this theory and understanding how it works is based on matrix multiplication. Below I have put a color-coded image to display how matrix multiplication works: This gives the basis for why certain upgrades are more powerful than others. The exponents on b1, b2, and b3 are all directly affecting ρ1 production which is used for tau. An extra dimension roughly gives 50% more tau production as it adds an extra term to ![](RackMultipart20210804-4-1jsoyt4_html_2c8372048e03888e.png)the ρ1 production.
 
@@ -130,7 +130,7 @@ Active: Idle:
 
 or equivalently [3 → 3 → 1 → 2 → 2 → 4] → 4 or equivalently 3 → 3 → 2 → 2 → 1 →4→ 4
 
-#### Theory 4 (35σ / 8k)
+### Theory 4 (35σ / 8k)
 
 We start out with just one term of constants c1c2 and a changing term c3q with q being equal to q(t+dt)=q+\*dt with dt=0.1 for each tick. is equal to an inverse equation of with q being the current value. The first milestone increases the power of c1 from 1.00 to 1.15. The next 3 milestones we grab add more terms to the equation with c4q2, c5q3, and c6q4. We end by increasing by a factor of 2^x up to 23 or 8.
 
@@ -157,7 +157,7 @@ The optimal publication multiplier is 4-6. During publications, start with x/1/3
 or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
 
 
-#### Theory 5 (40σ / 9k)
+### Theory 5 (40σ / 9k)
 
 **q1&q2** - Simple multipliers that directly affect rho(ρ) production. q2 is a doubling while q1 is not.
 
@@ -218,7 +218,7 @@ Note: T5 will always give its best results from active play. However, after step
 Created by: Snaeky, Marks, Baldy, and Nerdy
 
 
-#### Theory 6 (45σ / 10k)
+### Theory 6 (45σ / 10k)
 
 ###### Strategy
 
@@ -239,7 +239,7 @@ or equivalently 2-1-3-4 {2 and 3 for 4 twice} -3-2
 
 
 
-#### Theory 7 (50σ / 11k)
+### Theory 7 (50σ / 11k)
 
 ##### Strategy
 
@@ -259,7 +259,7 @@ T8 skip is significantly faster than buying T8 right away. T8 is very slow until
 
  If your numbers are different, that is fine. You just need to reach 1350 _ **TOTAL TAU** _ to get to R9 at 14k.
 
-#### Theory 8 (55σ / 12k)
+### Theory 8 (55σ / 12k)
 
 ##### Strategy
 
