@@ -1,9 +1,9 @@
-Site for guides for [Exponential Idle](https://conicgames.github.io/exponentialidle/).
+Guides for [Exponential Idle](https://conicgames.github.io/exponentialidle/)
+hosted at [https://exponential-idle-guides.netlify.app/](https://exponential-idle-guides.netlify.app/).
 
-The guide's content has been written by Snaeky and LE⭐Baldy. The website
+The guide's content has been written by Snaeky and LE⭐Baldy with
+contributions from the Exponential Idle community. The website
 was created by [TickleThePanda](https://ticklethepanda.dev).
-
-The website is at [https://exponential-idle-guides.netlify.app/](https://exponential-idle-guides.netlify.app/).
 
 The site is built using [11ty](https://www.11ty.dev) and hosted on
 [Netlify](https://www.netlify.com/).
