@@ -109,6 +109,8 @@ still helps if you get used to it.
 
 See our earlier guide for an overview for [theory 1](/guides/theories-1-4/#theory-1-20s-5k).
 
+#### Changes to T1 strategy
+
 The long-term optimal multiplier converges to 2.56688 (courtesy of bigfreeze).
 When this happens turn off the autobuyer and cruise to 3.
 

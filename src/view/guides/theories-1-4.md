@@ -37,7 +37,7 @@ This theory also has its own tickspeed calculated by \\(q_{1}*q_{2}\\). This
 lengthens the normal tick length of \\(0.1/sec\\) to that value which speeds
 up the theory.
 
-#### Formula milestones
+#### T1 formula
 
 ##### Initial
 \\[ρ_{n+1} = ρ_n + c_1c_2\\]
@@ -57,7 +57,7 @@ up the theory.
 ##### Sixth and Final Milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-#### Theory 1 Strategy
+#### T1 strategy
 
 The publication multiplier has no optimal fit, as it fluctuates a lot,
 but here is known: 4-6 to start; 3-4 between 1e100 and 1e150; the
@@ -90,7 +90,7 @@ Variable | Multiplier
 \\(q_1\\) | 5.0
 \\(q_2\\) | 1.15
 
-#### Milestone Route
+#### T1 milestone route
 
  - 0/0/1 → 0/0/1/1 → 0/1/1/1 → 3/1/1/1 or equivalently
  - 3 → 4 → 2 → 1 → 1 → 1
@@ -118,7 +118,7 @@ exponents is that they take time to build up and eventually overtake and
 keep increasing \\(q_1\\) and \\(r_1\\) while the exponents have a never-changing
 boost.
 
-#### Formula milestones
+#### T1 formula
 
 ##### Initial
 
@@ -168,7 +168,7 @@ boost.
 
 \\[\dot{ρ}=q_1^{1.15}r_1^{1.1}\\]
 
-#### Theory 2 Strategy
+#### T2 strategy
 
 The optimal multiplier is pretty high and is not known before \\(e30\\).
 The multipliers for active play we know at the moment are:\\(e25\\)-\\(e100\\)
@@ -201,7 +201,7 @@ effective. At \\(e250\\), you would start to idle T2 overnight only.
 Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
 to run idle overnight.
 
-#### Milestone route
+#### T2 milestone route
  - 0/0/0/0 → 1/0/0/0 → [2/0/0/0 →  2/2/0/0 → 2/2/3/0 → 2/2/3/2] → 2/2/3/3, or equivalently
  - 1 → [1 → 2 → 2 → 3 → 3 → 3 → 4 → 4] → 4
 
@@ -220,7 +220,7 @@ are all directly affecting \\(ρ_1\\) production which is used for \\(\tau\\). A
 dimension roughly gives \\(50%\\) more \\(\tau\\) production as it adds an extra term
 to the \\(ρ_1\\) production.
 
-#### Theory 3 Strategy
+#### T3 strategy
 
 The optimal publication multiplier is about 2-3 without cruising and 3-4
 with cruising. If you decide to play actively, there is a form of
@@ -251,7 +251,7 @@ off b1 and c31 as they cost rho1. You will cruise until you get to a
 3-4 multiplier. Publish and turn back on rho1 costing variables and
 repeat.
 
-#### Milestone Route
+#### T3 milestone route
  - Active:
    - 0/0/0 → [0/0/2 → 1/0/2/0 → 1/2/2/0 → 1/2/2/1] → 1/2/2/2 or equivalently
    - [3 → 3 → 1 → 2 → 2 → 4] → 4
@@ -270,7 +270,7 @@ next 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2
 \\(c_5q_3\\), and \\(c_6q_4\\). We end by increasing \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\).
 
 
-#### Formula milestones
+#### T4 formula
 
 ##### Initial
 
@@ -308,7 +308,7 @@ next 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2
 
 \\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
 
-#### Theory 4 Strategy
+#### T4 strategy
 
 The optimal publication multiplier is 4-6. During publications, start
 with x/1/3. After you will switch to 3/0/x. This will be repeated back
@@ -320,7 +320,7 @@ manually buy at max milestones, at the beginning of publications, buy
 \\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_4\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
 mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
-#### Milestone route
+#### T4 milestone route
 
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
  - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
