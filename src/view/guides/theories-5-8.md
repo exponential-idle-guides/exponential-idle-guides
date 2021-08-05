@@ -187,7 +187,7 @@ Before e30, you should:
 
 After autobuy at e30, you should:
 
-1. \\(x_1\\) (or \\(x_{10}\\) when above \\(e200\\)) buy \\(c_2\\) manually
+1. x1 (or x10 when above \\(e200\\)) buy \\(c_2\\) manually
    and autobuy the rest until within ~\\(e10\\) of your previous
    publication. Your graph should resemble a linear function on the
    graph.
@@ -211,80 +211,99 @@ slightly less active.
 
 [0/1/0 → 3/1/0 → 3/1/2]
 
-Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3)\\). \\(m_3\\) is
+Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3.
 
-\\(q\\) begins to slow down when you reach \\(2q > c_2*c_3^{m_3)\\).
+\\(q\\) begins to slow down when you reach \\(2q > c_2*c_3^{m_3}\\).
 
 Created by: Snaeky, Marks, Baldy, and Nerdy
 
 ### Theory 6 (45σ / 10k)
 
-###### Strategy
+#### T6 strategy
 
-This theory has the lowest decay of all the theories. It will be second place to T5 until about e750 and is currently the only theory that can get to e1000+. You should overnight this after you get your T2 to e350. This is the best idle theory. T6 at endgame: [Video](https://tinyurl.com/282z4pz8)
+This theory has the lowest decay of all the theories. It will be second
+place to T5 until about e750 and is currently the only theory that can
+get to \\(>e1000\\). You should overnight this after you get your T2 to
+\\(e350\\). This is the best idle theory. [Video of T6 at endgame](https://tinyurl.com/282z4pz8)
 
-The optimal publication multiplier is still unknown but empirically seems to be about 7-12. Once all milestones, disable c3 c4 and autobuy rest. For manual autobuy q2, r2, c2, and c5 then manual buy rest with c3 and c4 still disabled. For Idle/auto, you are going to just turn off c3and c4.
+The optimal publication multiplier is still unknown but empirically
+seems to be about \\(7\\)-\\(12\\). Once all milestones, disable \\(c_3\\)
+\\(c_4\\) and autobuy rest. For manual autobuy \\(q_2\\), \\(r_2\\),
+\\(c_2\\), and \\(c_5\\) then manual buy rest with \\(c_3\\) and \\(c_4\\)
+still disabled. For idle/auto, you are going to just turn off \\(c_3\\)
+and \\(c_4\\).
 
- Milestone Route
+#### T6 milestone
 
-0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
-
-or equivalently 2-1-3-4 {2 and 3 for 4 twice} -3-2
-
-#### ![](RackMultipart20210804-4-1jsoyt4_html_baa4e67f06ebd181.png)
-
-
-#### ![](RackMultipart20210804-4-1jsoyt4_html_e17d093e68cf31bb.gif)
-
-
+ - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
+ - or equivalently 2-1-3-4 {2 and 3 for 4 twice} -3-2
 
 ### Theory 7 (50σ / 11k)
 
-##### Strategy
+#### T7 strategy
 
-The optimal publication multiplier is 4-6. The strategy for manual buy before 1/1/1/1/0 is to only manual buy q1 and c1 with the rest auto. Buy c1 and q1 when you can buy them for cheap (~x10 less rho). Between 0/0/2 and 1/0/0/1/3 can be switched to full auto.
+The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
+manual buy before 1/1/1/1/0 is to only manual buy \\(q_1\\) and \\(c_1\\)
+with the rest auto. Buy \\(c_1\\) and \\(q_1\\) when you can buy them
+for cheap (~x10 less \\(\rho\\)). Between 0/0/2 and 1/0/0/1/3 can be
+switched to full auto.
 
-##### Milestone Route
+#### T7 milestone
 
-0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
+ - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
+ - Or equivalently 3-3-3-2-1 {5 twice for 3 and 4} -3-2
 
-Or equivalently 3-3-3-2-1 {5 twice for 3 and 4} -3-2
+### Theory 8 skipping
 
-**T8 Skipping:**
+T8 skip is significantly faster than buying T8 right away. T8 is very
+slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
+far the theory). We highly recommend buying t8 for the achievement, then
+selling it right away and using those students for \\(\phi\\). You will need
+about 1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)), which will help you get
+through T8 faster than before. The current _ **recommendation** _ for
+your \\(\tau\\) distribution is as follows:
 
-T8 skip is significantly faster than buying T8 right away. T8 is very slow until you get to about e60 (it took the sim 16 hours to get that far the theory). We highly recommend buying t8 for the achievement, then selling it right away and using those students for phi. You will need about 1350 tau in order to get R9 (ee14k), which will help you get through T8 faster than before. The current _ **recommendation** _ for your tau distribution is as follows:
+ - **T1:** 200
+ - **T2:** 275
+ - **T3:** 150
+ - **T4:** 175
+ - **T5:** 250
+ - **T6:** 150
+ - **T7:** 150
 
-**T1:** 200 **T2:** 275 **T3:** 150 **T4:** 175 **T5:** 250 **T6:** 150 **T7:** 150
-
- If your numbers are different, that is fine. You just need to reach 1350 _ **TOTAL TAU** _ to get to R9 at 14k.
+If your numbers are different, that is fine. You just need to reach 1350
+\\(\Pi\tau\\) to get to R9 at 14k.
 
 ### Theory 8 (55σ / 12k)
 
-##### Strategy
+#### T8 strategy
 
-The optimal publication multiplier is 2.5-5 depending on how close you are to the next milestone. This theory is extremely slow at the start which is why we skip until we obtain R9. It is also the only one with a 1e20 milestone multiplier. It will speed up once you hit 1e60 and even faster at 1e80 and 1e100 until ~e250-e300. The worst part is the 1e50-1e60 grind. The grind to 1e60 will take a good bit of time but is faster with R9 now.
+The optimal publication multiplier is 2.5-5 depending on how close you
+are to the next milestone. This theory is extremely slow at the start
+which is why we skip until we obtain R9. It is also the only one with a
+\\(1e20\\) milestone multiplier. It will speed up once you hit 1e60 and
+even faster at \\(1e80\\) and \\(1e100\\) until ~\\(e250\\)-\\(e300\\).
+The worst part is the \\(1e50\\)-\\(1e60\\) grind. The grind to \\(1e60\\)
+will take a good bit of time but is faster with R9 now.
 
-At the start, manual buy prioritizes c2 then c1 then rest. Once you get to 0/0/0/2, prioritize c2 and c5 then the rest. Once at 1/0/3/0, you will prioritize c2 and c4 and then the rest after. This continues to max at 2/3/3/3.
+At the start, manual buy prioritizes \\(c_2\\) then \\(c_1\\) then rest.
+Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then the
+rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) and
+then the rest after. This continues to max at 2/3/3/3.
 
 The starting positions for each of the three attractors are:
 
-Lorenz: -6, -8, 26
-
-Chen: -10.6, -4.4, 28.6
-
-Rossler: -6, 15, 0
+ - Lorenz: -6, -8, 26
+ - Chen: -10.6, -4.4, 28.6
+ - Rossler: -6, 15, 0
 
 The time step for each of the three attractors are:
+ - Lorenz: 0.02
+ - Chen: 0.002
+ - Rossler: 0.00014
 
-Lorenz: 0.02
+#### T8 milestone route
 
-Chen: 0.002
-
-Rossler: 0.00014
-
- Milestone Route:
-
-0/0/0/0 → 1/0/0/0 → 2/0/0/0 (e40-e52) → 0/0/0/2 (e52-e60) → 0/0/0/3 → 1/0/0/3 → 2/0/3/0 → 2/3/3/3
-
-or equivalently 1-1-{swap 1&#39;s to 4} → 4 → 1 → 1 {4&#39;s swap to 3&#39;s}→ 1 → 2 → 2 → 2 → 4 → 4 → 4
+ - 0/0/0/0 → 1/0/0/0 → 2/0/0/0 (\\(e40\\)-\\(e52\\)) → 0/0/0/2 (\\(e52\\)-\\(e60\\)) → 0/0/0/3 → 1/0/0/3 → 2/0/3/0 → 2/3/3/3
+ - or equivalently 1-1-{swap 1's to 4} → 4 → 1 → 1 {4's swap to 3's}→ 1 → 2 → 2 → 2 → 4 → 4 → 4
