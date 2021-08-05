@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 author: "LE★Baldy & Snaeky"
-contributors: "The Amazing Community"
+contributors: "the Amazing Community"
 order: 0
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Theories 1-4"
 author: "LE★Baldy & Snaeky"
-contributors: "The Amazing Community"
+contributors: "the Amazing Community"
 draft: true
 order: 1
 ---

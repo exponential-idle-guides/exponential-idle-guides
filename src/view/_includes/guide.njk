@@ -16,6 +16,18 @@
 
 {% block main %}
 
+  {% if author or contributors %}
+    <p class="byline">
+      {% if author %}Guide written by <strong>{{ author }}</strong>.{% endif %}
+      {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
+  {% endif %}
+
+  {% if draft %}
+    <p class="draft-warning">
+      This guide is currently undergoing change.
+      Keep in mind, <strong>strategies may change</strong>.
+  {% endif %}
+
   {% set toc = content | toc %}
 
   {% if toc %}

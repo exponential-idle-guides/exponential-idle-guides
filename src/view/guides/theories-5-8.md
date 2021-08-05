@@ -1,12 +1,10 @@
 ---
 title: "Theories 5-8"
 author: "LE★Baldy & Snaeky"
-contributors: "The Amazing Community"
+contributors: "the Amazing Community"
 draft: true
 order: 1
 ---
-
-**This guide is undergoing changes. Keep in mind, strategies may change.**
 
 ### Graduation routing
 
