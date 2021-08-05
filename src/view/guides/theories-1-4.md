@@ -131,7 +131,7 @@ boost.
 
 ##### First milestone
 
-\\[q_1(t+dt)=q_1+q_2*dt+12q_3dt^2\\]
+\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2\\]
 
 \\[r_1(t+dt)=r_1+r_2*dt\\]
 
@@ -139,7 +139,7 @@ boost.
 
 ##### Second milestone
 
-\\[q_1(t+dt)=q_1+q_2*dt+12q_3dt^2+16q_4dt^3\\]
+\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
 \\[r_1(t+dt)=r_1+r_2*dt\\]
 
@@ -147,25 +147,25 @@ boost.
 
 ##### Third and forth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+12q_3dt^2+16q_4dt^3\\]
+\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
-\\[r_1(t+dt)=r_1+r_2*dt+12r_3dt^2+16r_4dt^3\\]
+\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
 
 \\[\dot{ρ}=q_1r_1\\]
 
 ##### Fifth to seventh milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+12q_3dt^2+16q_4dt^3\\]
+\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
-\\[r_1(t+dt)=r_1+r_2*dt+12r_3dt^2+16r_4dt^3\\]
+\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
 
 \\[\dot{ρ}=q_1r_1^{1.15}\\]
 
 ##### Eight to tenth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+12q_3dt^2+16q_4dt^3\\]
+\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
-\\[r_1(t+dt)=r_1+r_2*dt+12r_3dt^2+16r_4dt^3\\]
+\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
 
 \\[\dot{ρ}=q_1^{1.15}r_1^{1.1}\\]
 
