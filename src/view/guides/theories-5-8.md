@@ -262,7 +262,7 @@ slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
 far the theory). We highly recommend buying t8 for the achievement, then
 selling it right away and using those students for \\(\phi\\). You will need
 about 1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)), which will help you get
-through T8 faster than before. The current _ **recommendation** _ for
+through T8 faster than before. The current _recommendation_ for
 your \\(\tau\\) distribution is as follows:
 
  - **T1:** 200
