@@ -122,107 +122,101 @@ See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theor
 
 ### Theory 3 (30σ / 7k)
 
-The basis of this theory and understanding how it works is based on matrix multiplication. Below I have put a color-coded image to display how matrix multiplication works: This gives the basis for why certain upgrades are more powerful than others. The exponents on b1, b2, and b3 are all directly affecting ρ1 production which is used for tau. An extra dimension roughly gives 50% more tau production as it adds an extra term to ![](RackMultipart20210804-4-1jsoyt4_html_2c8372048e03888e.png)the ρ1 production.
-
-##### Strategy
-
-The optimal publication multiplier is about 2-3 without cruising and 3-4 with cruising. If you decide to buy manually disable c11, c13, c21, c33. You will also focus on b2 then b3 then b1. For idle buying, just disable c11, c13, c21, c33, and autobuy the rest. At the end of any publication, around a 2-3 multiplier, you should turn off b1 and c31 as they cost rho1. You will cruise until you get to a 3-4 multiplier. Publish and turn b1 and c31 back on, and repeat.
-
-##### Milestone Route
-
-Active: Idle:
-
-0/0/0 → [0/0/2 → 1/0/2/0 → 1/0/2/2 → 1/2/2/1] → 1/2/2/2 0/0/0 → 0/0/2 → 0/2/2 → 1/0/2/2 → 1/2/2/2
-
-or equivalently [3 → 3 → 1 → 2 → 2 → 4] → 4 or equivalently 3 → 3 → 2 → 2 → 1 →4→ 4
+See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
 ### Theory 4 (35σ / 8k)
 
-We start out with just one term of constants c1c2 and a changing term c3q with q being equal to q(t+dt)=q+\*dt with dt=0.1 for each tick. is equal to an inverse equation of with q being the current value. The first milestone increases the power of c1 from 1.00 to 1.15. The next 3 milestones we grab add more terms to the equation with c4q2, c5q3, and c6q4. We end by increasing by a factor of 2^x up to 23 or 8.
-
-**Initial: First Milestone: Second Milestone:**
-
-=c1c2+c3q =c1c2+c3q+c4q2 =c1c2+c3q+c4 q2+c5q3
-
-q(t+dt)=q+\*dt q(t+dt)=q+\*dt q(t+dt)=q+\*dt
-
-**3rd Milestone: 4th-6th Milestone: 7th Milestone:**
-
-=c1c2+c3q+c4 q2+c5q3+c6q4 =c1c2+c3q+c4q2+c5q3+c6q4 =c11.15c2+c3q+c4q2+c5q3+c6q4
-
-q(t+dt)=q+\*dt q(t+dt)=q+23\*\*dt q(t+dt)=q+23\*\*dt
-
-##### Strategy
-
-The optimal publication multiplier is 4-6. During publications, start with x/1/3. After you will switch to 3/1/x. This will be repeated back and forth throughout the publication. If you decide to manually buy and don&#39;t have max milestones, focus on q1 and q2. The next priority is going from the highest cx upgrade down to c1. Each lower priority should be bought e1 cheaper than the priority tier above. If you decide to manually buy at max milestones, at the beginning of publications, buy c1, c2, c3, q1, and q4. Once you are within e1-e2 of your publication mark, swap to only buying c3, q1, and q2.
-
-##### Milestone Route
-
-0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
-
-or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
-
+See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
 
 ### Theory 5 (40σ / 9k)
 
-**q1&q2** - Simple multipliers that directly affect rho(ρ) production. q2 is a doubling while q1 is not.
+\\(q_1\\) & \\(q_2\\). Simple multipliers that directly affect \\(\rho\\)
+production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
 
-**q -** The crux of T5 is to grow this value as fast as possible, while increasing its maximum value.
+\\(q\\). The crux of T5 is to grow this value as fast as possible, while
+increasing its maximum value.
 
-**c1**** -** Increases the speed that q will approach its limit.
+\\(c_1\\). Increases the speed that \\(q\\) will approach its limit. You
+need enough levels of \\(c_1\\) to allow \\(q\\) to reach its limit,
+once \\(q\\) has reached its cap \\(c_1\\) has no additional benefit
+until more \\(c_2\\) is purchased.
 
-You need enough levels of c1 to allow q to reach its limit, once q has reached its cap c1 has no additional benefit until more c2 is purchased.
+\\(c_2\\). Doubles the limit of \\(q\\) and halves the effect of \\(c_1\\).
+Needed to balance 2 parts of the equation. It appears twice: \\(c_1/c_2\\)
+and \\(c_3^{1.1}-q/c_2\\). If you buy too much \\(c_2\\), it will make
+\\(q\\) growth effectively nothing as \\(c_1/c_2\\) approaches \\(0\\).
+However, you still need to buy \\(c_2\\) because when \\(q\\) approaches
+\\(c_2*c_3^{1.1}\\), \\(c_3^{1.1}-q/c_2\\) approaches \\(0\\) as well
+making \\(q=c_2*c_3^{1.1}\\) the maximum value of \\(q\\).
 
-**c2 -** Doubles the limit of q and halves the effect of c1.
+\\(c_3\\). Increases the limit of \\(q\\) by \\(2^{1+m/20}\\) where \\(m\\)
+is the number of milestones. Increases \\(q\\) limit by increasing what
+\\(q/c_2\\) fraction can reach, doesn't have the problems of \\(c_2\\)
+as lowering your \\(\dot{q}\\), making it an always auto-bought variable.
 
-Needed to balance 2 parts of the equation. It appears twice: [c1/c2] and [c31.1-q/c2]. If you buy too much c2, it will make q growth effectively nothing as [c1/c2] approaches 0. However, you still need to buy c2 because when q approaches c2\*c31.1, [c31.1-q/c2] approaches 0 as well making q=c2\*c31.1 the maximum value of q.
+#### T5 strategy
 
-**c3**** -** Increases the limit of q by 2(1+milestones/20).
+Theory 5 benefits the most from active play and a lot of attention for
+best results making it the strongest theory until the very late game due
+to a very low multiplier decay rate. The optimal publication multiplier
+is still unknown, but here is what is known: \\(3\\) until \\(e25\\);
+\\(6\\) to \\(10\\) during mid to late game. Publishing at higher
+multiples is not drastically less efficient and allows for slightly less
+active play.
 
-Increases q limit by increasing what [q/c2] fraction can reach, doesn&#39;t have the problems of c2 as lowering your q dot, making it an always auto-bought variable.
+##### Active
 
-###### ![](RackMultipart20210804-4-1jsoyt4_html_1a5c5674698ec0ac.jpg)Strategy
-
-Theory 5 benefits the most from active play and a lot of attention for best results making it the strongest theory until the very late game due to a very low multiplier decay rate. The optimal publication multiplier is still unknown, but here is what is known: 3 until e25; 6 to 10 during mid to late game. Publishing at higher multiples is not drastically less efficient and allows for slightly less active play.
-
-####### Active Strategy
-
-Running the active strats, with some modifications, will help you get this theory to e30 easily, but it will take some time. A step-by-step on how to progress the theory is below.
+Running the active strats, with some modifications, will help you get
+this theory to \\(e30\\) easily, but it will take some time. A step-by-step on
+how to progress the theory is below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pM-pjSnMByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-######### Before e30
+Before e30, you should:
 
-1. Buy everything **except** c2
-2. Once q growth reduces, c2 levels can then be purchased individually. Only buy when c2 is e1 lower than your current rho, shown visually on the graph when it plateaus.
-3. When you are within e10 of your last publication, you should buy everything but q1 and c1. You should then manually buy q1 and c1 when it costs e1 lower than q2 doubling. (c1 only when q is not capped)
-4. Repeat until e25. At e25, push for e30 with 0/1/0 milestone and start x6-10 multipliers.
+1. Buy everything **except** \\(c_2\\)
+2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased
+   individually. Only buy when \\(c_2\\) is \\(e_1\\) lower than your
+   current \\(\rho\\), shown visually on the graph when it plateaus.
+3. When you are within \\(e10\\) of your last publication, you should buy
+   everything but \\(q_1\\) and \\(c_1\\). You should then manually buy
+   \\(q_1\\) and \\(c_1\\) when it costs \\(e_1\\) lower than \\(q_2\\)
+   doubling. (\\(c_1\\) only when \\(q\\) is not capped)
+4. Repeat until \\(e25\\). At \\(e25\\), push for \\(e30\\) with 0/1/0
+   milestone and start x6-10 multipliers.
 
-######### After autobuy at e30
+After autobuy at e30, you should:
 
-1. x1 (or x10 when above e200) buy c2 manually and autobuy the rest until within ~e10 of your previous publication. Your graph should resemble a linear function on the graph. (see image above)
-2. As purchasing c2 becomes less frequent and q growth will slow down at this point you should stop autobuying c1 & q1
-3. Around your last pub mark, you can start auto-buying c2. At this point, you should
-  1. Buy q1 up to 15% of the cost of the next doubling purchase (2^x purchase)
-  2. Buy c1 after you purchase c2 until q reaches its new cap
+1. \\(x_1\\) (or \\(x_{10}\\) when above \\(e200\\)) buy \\(c_2\\) manually
+   and autobuy the rest until within ~\\(e10\\) of your previous
+   publication. Your graph should resemble a linear function on the
+   graph.
+2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
+   slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
+3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
+   1. Buy \(q_1\\) up to \\(15%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
+   2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
 4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
 
-[T5 Active Guide with Commentary](https://youtu.be/AYI4U7Aob6o)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AYI4U7Aob6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Note: T5 will always give its best results from active play. However, after step 3, you can still get good results while auto buying q1 and manually purchasing c1 every 10-15min. Making the theory slightly less active.
+T5 will always give its best results from active play. However, after
+step 3, you can still get good results while auto buying \\(q_1\\) and
+manually purchasing \\(c_1\\) every 10-15min. Making the theory
+slightly less active.
 
-**DO NOT OVERNIGHT THIS THEORY**
+**Warning**: do not overnight this theory.
 
-###### Milestone Route
+#### T5 milestone route
 
 [0/1/0 → 3/1/0 → 3/1/2]
 
-**Purchase c2 when**  **1.5q \> c2\*c3**** (number of milestone 3)**.
+Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3)\\). \\(m_3\\) is
+the number of milestone 3.
 
-**q begins to slow down when you reach 2q \> c2\*c3**** (number of milestone 3)**.
+\\(q\\) begins to slow down when you reach \\(2q > c_2*c_3^{m_3)\\).
 
 Created by: Snaeky, Marks, Baldy, and Nerdy
-
 
 ### Theory 6 (45σ / 10k)
 
