@@ -2,10 +2,15 @@ body {
 	background-color: #222;
 	color: #ccc;
 	padding-bottom: 25vh;
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 .header, .content-wrapper, footer {
-	max-width: 31rem;
+	box-sizing: border-box;
+	max-width: 100%;
+	width: 31rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	margin: auto;

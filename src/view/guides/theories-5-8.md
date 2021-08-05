@@ -68,15 +68,19 @@ R9 lvl 3 then 2/2/2/2/4/4/5 → T9
 
 For a closer calculation based on your star count use the calculator above.
 
-| f(t) | ee9k | ee10k | ee11k | ee12k | ee13k | ee14k |
-| --- | --- | --- | --- | --- | --- | --- |
-| Star Count (★) | 4.47M | 5.52M | 6.68M | 7.95M | 9.33M | 10.8M |
-| Star Count (★)w/Accel(x2.85) | 12.7M | 15.7M | 19M | 22.7M | 26.6M | 30.8M |
+★: Star count
 
-| f(t) | ee15k | ee16k | ee17k | ee18k | ee19k | ee20k |
-| --- | --- | --- | --- | --- | --- | --- |
-| Star Count (★) | 12.7M | 14.1M | 15.9M | 17.9M | 19.9M | 22.1M |
-| Star Count (★)w/Accel(x2.85) | 36.2M | 40.2M | 45.3M | 51M | 56.8M | 63.0M
+★🗲: Star count with ac­cel­er­a­tion (x2.85)
+
+| f(t) | ee9k | ee10k | ee11k | ee12k | ee13k | ee14k | ee15k | ee16k | ee17k | ee18k | ee19k | ee20k |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| ★ | 4.47M | 5.52M | 6.68M | 7.95M | 9.33M | 10.8M | 12.7M | 14.1M | 15.9M | 17.9M | 19.9M | 22.1M |
+| ★🗲 | 12.7M | 15.7M | 19M | 22.7M | 26.6M | 30.8M | 36.2M | 40.2M | 45.3M | 51M | 56.8M | 63.0M
+
+| f(t) |
+|
+|
+|
 
 ##### How to push \\(f(t)\\) with R9 seapping
 

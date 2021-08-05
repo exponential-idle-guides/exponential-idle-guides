@@ -23,7 +23,11 @@ Marks to use phi1 over phi3 (Above this \\(f(t)\\), \\(phi1>phi3\\)):
 
 For a closer calculation base on your star count use the calculator above.
 
-\\(f(t)\\) | Star Count (★) | Star Count (★) w/Accel(x2.85)
+★: Star count
+
+★🗲: Star count with acceleration (x2.85)
+
+\\(f(t)\\) | ★ | ★🗲
 ---        | ---            | ---
 ee5k       | 1.38M          | 3.94M
 ee5.5k     | 1.67M          | 4.76M

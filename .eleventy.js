@@ -61,6 +61,23 @@ module.exports = config => {
     return dom.serialize();
   });
 
+  config.addTransform("", (content, outputPath) => {
+
+    const dom = new JSDOM(content);
+    const document = dom.window.document;
+    const tables = Array.from(document.querySelectorAll('table'));
+
+    for (let table of tables) {
+      const parent = table.parentNode;
+
+      const wrappingDiv = document.createElement("div");
+      wrappingDiv.classList.add('table-wrapper');
+      parent.insertBefore(wrappingDiv, table)
+      wrappingDiv.appendChild(table);
+    }
+    return dom.serialize();
+  });
+
   config.addFilter("slug", s =>
     s !== undefined ?
       slugify(s, { lower: true, strict: true }) :
