@@ -2,6 +2,7 @@
 title: "Theories 5-8"
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
+draft: true
 order: 1
 ---
 
@@ -28,27 +29,27 @@ pushing \\(f(t)\\) you should always have the 9th research option maxed
 
 Theory Simulator by Antharion:[Theory Simulator](http://bit.ly/anthsim)
 
-The following are the best Phi1 routes.
+The following are the best \\(\phi_1\\) routes.
 
-##### Phi1 Route (When Phi1 >= Phi3)
+##### \\(\phi_1\\) route (when \\(\phi_1\\) >= \\(\phi_3\\))
 
-**Remember acceleration increases phi1**
+Remember acceleration increases \\(\phi_1\\)
 
 Theory 5: 0/0/1/0/0 → 0/0/0/2/0 → 2/0/0/1/0 then 0/0/2/1/0 → Theory 6
 
 Theory 6 → 2/0/0/0/0 then 0/0/0/2/0 → 2/0/1/0/0 then 1/0/0/2/0 then 0/0/0/2/1 → Theory 7
 
-Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 4/2/2/2/0/0 then 2/2/2/2/2/2/0]→R9lvl1 **Skipping T8**
+Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 4/2/2/2/0/0 then 2/2/2/2/2/2/0] → R9 lvl1 **Skipping T8**
 
-R9 lvl 1 then 2/0/2/2/2/2→ R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1 → R9 lvl2
+R9 lvl 1 then 2/0/2/2/2/2 → R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1 → R9 lvl2
 
-R9 lvl 2 then 2/2/2/2/4/2/2 →R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3 → R9 lvl 3
+R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3 → R9 lvl 3
 
 R9 lvl 3 then 2/2/2/2/4/4/5 → T9
 
-##### Phi3 Route (When Phi3 >= Phi1)
+##### \\(\phi_3\\) route (when \\(\phi_3\\) >= \\(\phi_1\\))
 
-**Remember acceleration increases phi1**
+Remember acceleration increases \\(phi_1\\).
 
 No Theory 5: 1/0/2/2/0 then 0/0/1/2/2 → 2/1/2/2/0 then 1/0/2/2/2 → 2/2/2/2/1 then 2/1/2/2/2 → Theory 6
 
@@ -62,9 +63,9 @@ R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3 → R9 l
 
 R9 lvl 3 then 2/2/2/2/4/4/5 → T9
 
-##### Marks to use phi1 over phi3
+##### Marks to use \\(\phi_1\\) over \\(\phi_3\\)
 
-<small>Above this f(t), phi1>phi3</small>
+Above this f(t), \\(\phi_1>\phi_3\\).
 
 For a closer calculation based on your star count use the calculator above.
 
@@ -194,7 +195,7 @@ After autobuy at e30, you should:
 2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
    slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
 3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
-   1. Buy \(q_1\\) up to \\(15%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
+   1. Buy \\(q_1\\) up to \\(15%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
    2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
 4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
 

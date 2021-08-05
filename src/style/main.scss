@@ -1,3 +1,5 @@
+@import './_settings.theme.scss';
+
 @import './_generic.reset.scss';
 @import './_generic.layout.scss';
 @import './_generic.typography.scss';
@@ -11,7 +13,10 @@
 @import './_elements.code.scss';
 @import './_elements.iframe.scss';
 @import './_elements.emphasis.scss';
+@import './_elements.keyboard.scss';
 
+@import './_component.page-section.scss';
+@import './_component.header.scss';
 @import './_component.mathjax.scss';
 @import './_component.toc.scss';
 @import './_component.license.scss';

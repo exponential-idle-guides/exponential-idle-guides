@@ -1,28 +1,12 @@
 body {
-	background-color: #222;
-	color: #ccc;
+	background-color: var(--palette-fill);
+	color: var(--palette-stroke);
 	padding-bottom: 25vh;
 	max-width: 100%;
 	overflow-x: hidden;
 	overflow-y: visible;
 }
 
-.header, .content-wrapper, footer {
-	box-sizing: border-box;
-	max-width: 100%;
-	width: 31rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin: auto;
-}
-
 .content-wrapper, footer {
 	margin-top: 1rem;
-}
-
-.header::after {
-	content: "";
-	display: block;
-	margin-top: 1em;
-	border-bottom: #ccc solid 2px;
 }

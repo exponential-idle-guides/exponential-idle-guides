@@ -5,6 +5,15 @@ contributors: "The Amazing Community"
 order: 0
 ---
 
+These guides are designed to help you play through the Theories sections
+of Exponential Idle.
+
+If you don't want to have spoilers for the later game, don't read
+further ahead than you are already.
+
+This introduction will give you some fundamentals to help you progress
+while playing this section of the game.
+
 ### Graduation Routing
 When within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is use the Graduation
@@ -19,9 +28,7 @@ possible as they function outside of the main game.
 Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous#1021).
 
-Marks to use phi1 over phi3 (Above this \\(f(t)\\), \\(phi1>phi3\\)):
-
-For a closer calculation base on your star count use the calculator above.
+For a closer calculation based on your star count use the calculator above.
 
 ★: Star count
 
@@ -43,7 +50,7 @@ ee9k       | 4.47M          | 12.8M
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multiplier is not known at the
 time, but it does decrease over time. If you are close to a multiplier
-you want, turn off autobuyer and let rho increase without buying
+you want, turn off autobuyer and let \\(\rho\\) increase without buying
 upgrades for a faster short-term increase before the publication (turn
 on after you publish). Total \\(τ\\), found in the equation or at the top
 of the screen, is a multiplicative combination of all \\(τ\\) from each
@@ -53,17 +60,17 @@ Don’t be afraid to skip getting all milestones to work on the next or a
 better theory.
 
 ### Respecing students
-The button at the bottom labeled “Respec” removes all used phi(φ) in
+The button at the bottom labeled “Respec” removes all used \\(φ\\) in
 Research and gives you back without consequence. This allows for testing
 or reallocating easily. On the bottom right is located a list-shaped
-button. Pressing this will reveal the [-] buttons. These [-] buttons
-remove x levels from the selected research option. The amount of levels
-removed is based on the x1, x10, x25, x100, xMax cost option selected in
-the top right. On the right side of each research option, you can also
-see the total levels.
+button. Pressing this will reveal the <kbd>-</kbd> buttons. These
+<kbd>-</kbd> buttons remove x levels from the selected research option.
+The amount of levels removed is based on the x1, x10, x25, x100, xMax
+cost option selected in the top right. On the right side of each
+research option, you can also see the total levels.
 
-### Respecing Milestones
-Unlike students, all Milestone sections already have the [-] button.
+### Respecing milestones
+Unlike students, all Milestone sections already have the <kbd>-</kbd> button.
 This works in the same way as above. Here you can also find how many
 unused Milestones available at the top. On the right side of each
 Milestone, you can also find the current and max levels of each.

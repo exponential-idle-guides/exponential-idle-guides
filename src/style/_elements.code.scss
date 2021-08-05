@@ -2,7 +2,7 @@ pre {
   margin-top: 1em;
   max-width: 100%;
   overflow-x: auto;
-  background-color: #444;
+  background-color: var(--palette-fill-lc);
 
   code {
     display: inline-block;

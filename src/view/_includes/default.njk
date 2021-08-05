@@ -19,15 +19,15 @@
     <title>{{title}} - Exponential Idle Guides</title>
   </head>
   <body>
-    <header class="header">
+    <header class="page-section header">
       <h1><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>
-    <main class="content-wrapper">
-      <h2>{{title}}</h2>
+    <main class="page-section content-wrapper">
+      {% block title %}<h2>{{title}}</h2>{% endblock %}
       {% block main %}{% endblock %}
     </main>
-    <footer>
+    <footer class="page-section">
       {{ nav | safe }}
       <div class="license">
         <p>Guides copyright LE★Baldy & Snaeky.
