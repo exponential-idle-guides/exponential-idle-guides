@@ -8,6 +8,7 @@
     <script type="text/javascript" async
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML">
     </script>
+    <script type="module" async src="/scripts/color-scheme.js"></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         showMathMenu: false,
@@ -20,6 +21,10 @@
   </head>
   <body>
     <header class="page-section header">
+      <button class="btn-color-scheme-toggle">
+        <span class="light"><img src="/images/sun.svg"></span>
+        <span class="dark"><img src="/images/moon.svg"></span>
+      </button>
       <h1><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>

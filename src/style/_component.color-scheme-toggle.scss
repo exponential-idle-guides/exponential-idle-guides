@@ -1,0 +1,40 @@
+.btn-color-scheme-toggle {
+
+  appearance: none;
+  border: unset;
+  background-color: unset;
+
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+
+  .light, .dark {
+    display: none;
+    img {
+      margin: 0;
+      width: 1rem;
+    }
+  }
+
+  .light {
+    fill: var(--palette-stroke);
+  }
+
+  .dark {
+    fill: var(--palette-stroke);
+  }
+
+  padding: 0.25rem;
+  border: 1px solid var(--palette-stroke-hc);
+  background-color: var(--palette-fill);
+  border-radius: 0.25rem;
+  box-shadow: 0.05rem 0.05rem 0.25rem 0 var(--palette-fill-shadow);
+}
+
+:root.dark-mode .light {
+  display: block;
+}
+
+:root.light-mode .dark {
+  display: block;
+}
