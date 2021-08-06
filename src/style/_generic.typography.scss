@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
 	font-size: max(100%, 80% + 2vmin);
 	--body-line-height: 1.4;
+
+	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
 
 p {
