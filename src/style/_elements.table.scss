@@ -5,12 +5,17 @@
 }
 
 table {
+	margin: auto;
 	margin-top: 1em;
 	padding-bottom: 1em;
 }
 
 thead {
 	font-weight: 700;
+}
+
+th {
+	text-align: left;
 }
 
 th, td {
