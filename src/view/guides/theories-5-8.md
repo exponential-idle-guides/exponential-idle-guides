@@ -10,12 +10,13 @@ order: 2
 
 Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
 
- - 9k → 9.4k (push for z1.04 at \\(ee9160\\)) → 9.8k → 10k
- - 10k → 10.4k → 10.6k → 11k (push for z1.08 at \\(ee10821\\))
- - 11k → 12.4k → 13.4k → 14k+ \[tau(τ)~1350+\] **Skip T8**
- - 14k → 14.8k → 15.6k → 16k \[tau(τ)~1600+\]
- - 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
- - 18k → Can be done in one but unsure about speed ) → 20k \[tau(τ)~2050-2100+\]
+1. 9k → 9.4k (push for z1.04 at \\(ee9160\\)) → 9.8k → 10k
+2. 10k → 10.4k → 10.6k → 11k (push for z1.08 at \\(ee10821\\))
+3. 11k → 12.4k → 13.4k → 14k+ \[tau(τ)~1350+\]
+4. **Skip T8**
+5. 14k → 14.8k → 15.6k → 16k \[tau(τ)~1600+\]
+6. 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
+7. 18k → Can be done in one but unsure about speed ) → 20k \[tau(τ)~2050-2100+\]
 
 #### Student Use Routing
 
@@ -31,35 +32,28 @@ The following are the best \\(\phi_1\\) routes.
 
 ##### \\(\phi_1\\) route (when \\(\phi_1\\) >= \\(\phi_3\\))
 
-Remember acceleration increases \\(\phi_1\\)
+Remember acceleration increases \\(\phi_1\\).
 
-Theory 5: 0/0/1/0/0 → 0/0/0/2/0 → 2/0/0/1/0 then 0/0/2/1/0 → Theory 6
-
-Theory 6 → 2/0/0/0/0 then 0/0/0/2/0 → 2/0/1/0/0 then 1/0/0/2/0 then 0/0/0/2/1 → Theory 7
-
-Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 4/2/2/2/0/0 then 2/2/2/2/2/2/0] → R9 lvl1 **Skipping T8**
-
-R9 lvl 1 then 2/0/2/2/2/2 → R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1 → R9 lvl2
-
-R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3 → R9 lvl 3
-
-R9 lvl 3 then 2/2/2/2/4/4/5 → T9
+1. Theory 5 0/0/1/0/0 → 0/0/0/2/0 → 2/0/0/1/0 then 0/0/2/1/0
+2. Theory 6 → 2/0/0/0/0 then 0/0/0/2/0 → 2/0/1/0/0 then 1/0/0/2/0 then 0/0/0/2/1
+3. Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 4/2/2/2/0/0 then 2/2/2/2/2/2/0]
+4. **Skip theory 8**
+4. R9 lvl 1 then 2/0/2/2/2/2 → R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1
+5. R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3
+6. R9 lvl 3 then 2/2/2/2/4/4/5
 
 ##### \\(\phi_3\\) route (when \\(\phi_3\\) >= \\(\phi_1\\))
 
 Remember acceleration increases \\(phi_1\\).
 
-No Theory 5: 1/0/2/2/0 then 0/0/1/2/2 → 2/1/2/2/0 then 1/0/2/2/2 → 2/2/2/2/1 then 2/1/2/2/2 → Theory 6
-
-Theory 6 → 0/0/2/0/0 then 0/0/0/2/0 → 1/0/2/0/0 then 0/0/1/2/0 then 0/0/0/2/1 → Theory 7
-
-Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 2/2/4/2/0/0 then 2/2/2/2/2/2/0]→R9lvl1 **Skipping T8**
-
-R9 then 2/0/2/2/2/2→ R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1 → R9 lvl2
-
-R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3 → R9 lvl 3
-
-R9 lvl 3 then 2/2/2/2/4/4/5 → T9
+1. No Theory 5: 1/0/2/2/0 then 0/0/1/2/2 → 2/1/2/2/0 then 1/0/2/2/2 → 2/2/2/2/1 then 2/1/2/2/2
+2. Theory 6 → 0/0/2/0/0 then 0/0/0/2/0 → 1/0/2/0/0 then 0/0/1/2/0 then 0/0/0/2/1
+3. Theory 7 → 2/2/2/1/0/0 then 0/1/0/2/2/2 → 2/2/4/2/0/0 then 2/2/2/2/2/2/0]
+4. **Skip theory 8**
+4. R9 then 2/0/2/2/2/2→ R9+0/0/0/2/2/0 then 2/2/2/2/3/2/ → R9+2/0/2/2/2/0 then 2/2/2/2/4/2/1
+5. R9 lvl 2 then 2/2/2/2/4/2/2 → R9 lvl 2+0/0/0/2/2/0 then 2/2/2/2/4/3/3
+6. R9 lvl 3 then 2/2/2/2/4/4/5
+7. Theory 9
 
 ##### Marks to use \\(\phi_1\\) over \\(\phi_3\\)
 
@@ -79,14 +73,14 @@ For a closer calculation based on your star count use the calculator above.
 
 ##### How to push \\(f(t)\\) with R9 seapping
 
-- Memorize your student distributions with and without 30 R9 students.
-- Auto prestige off
-- Wait till \\(f(t)\\) stops growing without student respec
-- Start accel (preferably keep it between prestiges)
-- Respec the 10/20/30 students from R9 then respec back
-- Potentially sit here to stack t and repeat the previous 2 steps. Only
-  do it when you are near a graduation mark.
-- Prestige (and turn back on after you graduate)
+1. Memorize your student distributions with and without 30 R9 students.
+2. Auto prestige off
+3. Wait till \\(f(t)\\) stops growing without student respec
+4. Start accel (preferably keep it between prestiges)
+5. Respec the 10/20/30 students from R9 then respec back
+6. Potentially sit here to stack t and repeat the previous 2 steps. Only
+   do it when you are near a graduation mark.
+7. Prestige (and turn back on after you graduate)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
