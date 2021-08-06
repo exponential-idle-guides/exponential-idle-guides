@@ -76,10 +76,6 @@ For a closer calculation based on your star count use the calculator above.
 | ★ | 4.47M | 5.52M | 6.68M | 7.95M | 9.33M | 10.8M | 12.7M | 14.1M | 15.9M | 17.9M | 19.9M | 22.1M |
 | ★🗲 | 12.7M | 15.7M | 19M | 22.7M | 26.6M | 30.8M | 36.2M | 40.2M | 45.3M | 51M | 56.8M | 63.0M
 
-| f(t) |
-|
-|
-|
 
 ##### How to push \\(f(t)\\) with R9 seapping
 
