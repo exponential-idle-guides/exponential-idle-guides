@@ -61,4 +61,9 @@ If you want to create a new guide, add a new `.md` file in the
 
 ### License
 
+These are the licenses for this website:
+ - Guide content copyright LE★Baldy & Snaeky
+ - Website code licensed under MIT
  - `src/image/sun.svg` is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Google Inc.
+
+
