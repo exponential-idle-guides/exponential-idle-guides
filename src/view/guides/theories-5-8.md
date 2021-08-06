@@ -84,7 +84,7 @@ For a closer calculation based on your star count use the calculator above.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-##### The new prestige equation
+### The new prestige equation
 
 ```
 timer(d(ln(db/b+1)/pt)<0)>3*tr && db>b && ((d(smooth(10^10^10^phi,1))>1) && timer(abs(d(log10(phi)))<50)>15)
