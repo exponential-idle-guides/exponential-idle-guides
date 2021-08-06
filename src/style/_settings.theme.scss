@@ -1,7 +1,19 @@
 :root {
   --palette-fill: #222;
+  --palette-fill-transparent: rgba(34, 34, 34, 0.85);
   --palette-fill-lc: #444;
   --palette-stroke: #ccc;
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    --palette-fill: #fff;
+    --palette-fill-transparent: rgba(255, 255, 255, 0.85);
+    --palette-fill-lc: #d0d0d0;
+    --palette-stroke: #444;
+    --palette-stroke-hc: #333;
+    --palette-stroke-warning: #b22;
+  }
 }

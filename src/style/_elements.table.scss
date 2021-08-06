@@ -26,6 +26,6 @@ th, td {
 	&:first-child {
 		position: sticky;
 		left: 0;
-		background-color: rgba(34, 34, 34, 0.85);
+		background-color: var(--palette-fill-transparent);
 	}
 }
