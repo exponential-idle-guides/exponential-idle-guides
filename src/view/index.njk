@@ -18,25 +18,26 @@ title: Home
   If you have any questions, please feel free to ask.
 
   <h3>Our guides</h2>
+  <p>Here are our guides.
   <ul>
     {%- for guide in collections.guides -%}
       <li ><a href="{{guide.url}}">{{ guide.data.title }}</a></li>
     {%- endfor -%}
   </ul>
 
-  <p>Snaeky has a <a href="https://www.youtube.com/channel/UCABRn80riRHN8r_ovCYLjrQ">YouTube channel</a>
-  with some guides there for a couple of the theories and some other things that you might like.
+  <h3>Other resources</h2>
 
-  <h3>Other tools</h2>
-
-  <p>These are the student and star optimizers, just input your
-  information, and it will tell you where to put everything.
+  <p>Other useful resources.
   <ul>
-    <li><a href="https://conicgames.github.io/exponentialidle/stars.html">Star Calculator</a>
-    <li><a href="https://conicgames.github.io/exponentialidle/students.html">Student Calculator</a>
+    <li><a href="https://conicgames.github.io/exponentialidle/stars.html">Star Calculator</a>.
+      This will tell you how to optimise your stars.
+    <li><a href="https://conicgames.github.io/exponentialidle/students.html">Student Calculator</a>.
+      This will tell you how to optimise your students.
     <li><a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and
-      <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">sim manual</a>
+      <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">sim manual</a>.
     <li><a href="https://docs.google.com/spreadsheets/d/1lz_V0rCr3usm1Wyqn2DEJdw6_7lhWIxXCYFmUbArV1c/edit#gid=1147118496">Phi*Tau Calculator</a>
+    <li><a href="https://www.youtube.com/channel/UCABRn80riRHN8r_ovCYLjrQ">Snaeky's video guides</a>.
+    Some guides for a few of the theories and other things you might like.
   </ul>
 
 {% endblock %}
