@@ -6,7 +6,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
 // Get the user's theme preference from local storage, if it's available
 const currentTheme = localStorage.getItem("theme");
-if (currentTheme !== undefined) {
+if (currentTheme !== null) {
   setColorScheme(currentTheme);
 } else {
   setColorScheme(prefersDarkScheme ? 'dark' : 'light');
