@@ -53,7 +53,11 @@ module.exports = config => {
     const document = dom.window.document;
     const NodeFilter = dom.window.NodeFilter;
 
-    const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const filter = {
+      acceptNode: n => n.parentElement.closest("pre") === null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+    };
+
+    const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
 
     while (walk.nextNode()) {
       walk.currentNode.nodeValue = hypher.hyphenateText(walk.currentNode.nodeValue);
