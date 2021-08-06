@@ -24,7 +24,13 @@
       {{ nav | safe }}
     </header>
     <main class="page-section content-wrapper">
-      {% block title %}<h2>{{title}}</h2>{% endblock %}
+      {% block title %}
+        <h2>{{title}}</h2>
+        {% if subtitle %}
+          <p class="subtitle">{{ subtitle }}</p>
+        {% endif %}
+      {% endblock %}
+
       {% block main %}{% endblock %}
     </main>
     <footer class="page-section footer">

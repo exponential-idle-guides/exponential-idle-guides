@@ -21,7 +21,12 @@ title: Home
   <p>Here are our guides.
   <ul>
     {%- for guide in collections.guides -%}
-      <li ><a href="{{guide.url}}">{{ guide.data.title }}</a></li>
+      <li>
+        <a href="{{guide.url}}">{{ guide.data.title }}</a>
+        {% if guide.data.subtitle %}
+          ({{ guide.data.subtitle }})
+        {% endif %}
+      </li>
     {%- endfor -%}
   </ul>
 
