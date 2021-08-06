@@ -32,10 +32,22 @@
       {% endblock %}
 
       {% block main %}{% endblock %}
+
+      {% if nav %}
+        <div class="post-content-nav">
+        </div>
+      {% endif %}
     </main>
     <footer class="page-section footer">
-      {{ nav | safe }}
-      <div class="license">
+      <div class="footer__section footer__section--main">
+        {{ nav | safe }}
+      </div>
+      <div class="footer__section">
+        <p>Any feedback?   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
+          Submit it to us.
+        </a>
+      </div>
+      <div class="footer__section">
         <p>Guides copyright <strong>LE★Baldy</strong> & <strong>Snaeky</strong>.
         <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
       </div>
