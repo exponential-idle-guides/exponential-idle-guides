@@ -6,6 +6,7 @@ prose:
     - /src/style
     - /src/scripts
     - /src/view/_includes
+    - /src/view/guides/guides.json
   metadata:
     views/guides:
       - name: "title"
