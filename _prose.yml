@@ -1,7 +1,7 @@
 prose:
-  rooturl: 'src/view/guides/'
+  rooturl: 'src/'
   siteurl: 'https://exponential-idle-guides.netlify.app/'
-  media: 'src/images/'
+  media: 'images/'
   ignore:
     - _config.yml
     - /_layouts
