@@ -7,7 +7,7 @@ prose:
     - /_layouts
     - /_includes
   metadata:
-    src/guides:
+    views/guides:
       - name: "title"
         field:
           element: "text"
