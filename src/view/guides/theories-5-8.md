@@ -165,11 +165,11 @@ Before e30, you should:
 
 1. Buy everything **except** \\(c_2\\)
 2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased
-   individually. Only buy when \\(c_2\\) is \\(e_1\\) lower than your
+   individually. Only buy when \\(c_2\\) is \\(e1\\) lower than your
    current \\(\rho\\), shown visually on the graph when it plateaus.
 3. When you are within \\(e10\\) of your last publication, you should buy
    everything but \\(q_1\\) and \\(c_1\\). You should then manually buy
-   \\(q_1\\) and \\(c_1\\) when it costs \\(e_1\\) lower than \\(q_2\\)
+   \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than \\(q_2\\)
    doubling. (\\(c_1\\) only when \\(q\\) is not capped)
 4. Repeat until \\(e25\\). At \\(e25\\), push for \\(e30\\) with 0/1/0
    milestone and start x6-10 multipliers.
