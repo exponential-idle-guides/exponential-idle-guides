@@ -1,11 +1,11 @@
 prose:
   rooturl: 'src'
   siteurl: 'https://exponential-idle-guides.netlify.app/'
-  media: 'images'
+  media: 'src/images'
   ignore:
     - /src/style
     - /src/scripts
-    - /view/_includes
+    - /src/view/_includes
   metadata:
     views/guides:
       - name: "title"
