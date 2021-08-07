@@ -8,7 +8,7 @@ prose:
     - /src/view/_includes
     - /src/view/guides/guides.json
   metadata:
-    views/guides:
+    src/views/guides:
       - name: "title"
         field:
           element: "text"
