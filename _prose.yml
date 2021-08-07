@@ -7,7 +7,7 @@ prose:
     - /scripts
     - /view/_includes
   metadata:
-    src/guides:
+    views/guides:
       - name: "title"
         field:
           element: "text"
