@@ -3,9 +3,9 @@ prose:
   siteurl: 'https://exponential-idle-guides.netlify.app/'
   media: 'images'
   ignore:
-    - _config.yml
-    - /_layouts
-    - /_includes
+    - /style
+    - /scripts
+    - /view/_includes
   metadata:
     src/guides:
       - name: "title"
