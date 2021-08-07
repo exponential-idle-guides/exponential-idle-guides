@@ -1,0 +1,26 @@
+prose:
+  rooturl: 'src/view/guides/'
+  siteurl: 'https://exponential-idle-guides.netlify.app/'
+  media: 'src/images/'
+  ignore:
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    src/guides:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Draft?"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
