@@ -25,3 +25,11 @@ prose:
         field:
           element: "number"
           label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
