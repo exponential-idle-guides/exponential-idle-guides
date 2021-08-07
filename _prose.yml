@@ -3,11 +3,11 @@ prose:
   siteurl: 'https://exponential-idle-guides.netlify.app/'
   media: 'images'
   ignore:
-    - /src/style
-    - /src/scripts
+    - /style
+    - /scripts
     - /view/_includes
   metadata:
-    views/guides:
+    src/views/guides:
       - name: "title"
         field:
           element: "text"

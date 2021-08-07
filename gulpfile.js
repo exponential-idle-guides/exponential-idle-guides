@@ -27,7 +27,7 @@ gulp.task('generate', shell.task('eleventy'));
 
 gulp.task('generate-dev', shell.task('eleventy', { ignoreErrors: true }));
 
-gulp.task('assets', gulp.parallel('css', 'images'));
+gulp.task('assets', gulp.parallel('css', 'scripts', 'images'));
 
 gulp.task('build', gulp.series('generate', 'assets', 'redirects'));
 
@@ -35,6 +35,7 @@ gulp.task('watch', () => {
   gulp.watch('.eleventy.js', gulp.series('generate-dev'));
   gulp.watch('src/view/**/*', gulp.series('generate-dev'));
   gulp.watch('src/style/**/*.scss', gulp.series('css'));
+  gulp.watch('src/scripts/**/*.js', gulp.series('scripts'));
   gulp.watch('src/images/**/*.{png,jpg,jpeg,svg}', gulp.series('images'));
 });
 

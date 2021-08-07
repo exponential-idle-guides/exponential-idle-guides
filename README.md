@@ -58,3 +58,12 @@ Each guide file has a few different elements:
 If you want to create a new guide, add a new `.md` file in the
 `src/view/guides` directory with the header content as above, replacing
 `<>` as appropriate. The content is written below the second `---`.
+
+### License
+
+These are the licenses for this website:
+ - Guide content copyright LE★Baldy & Snaeky
+ - Website code licensed under MIT
+ - `src/image/sun.svg` is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0) by Google Inc.
+
+
