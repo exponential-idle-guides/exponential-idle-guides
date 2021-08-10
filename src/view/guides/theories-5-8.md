@@ -10,8 +10,8 @@ order: 2
 
 Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
 
-- 9k → 9.4k (push for \\(z^1.04\\) at \\(ee9160\\)) → 9.8k → 10k
-- 10k → 10.4k → 10.6k → 11k (push for \\(z^1.08\\) at \\(ee10821\\))
+- 9k → 9.4k (push for \\(z^{1.04}\\) at \\(ee9160\\)) → 9.8k → 10k
+- 10k → 10.4k → 10.6k → 11k (push for \\(z^{1.08}\\) at \\(ee10821\\))
 - 11k → 12.4k → 13.4k → 14k+ \[tau(τ)~1350+\]
 
    **Skip T8**
@@ -25,7 +25,7 @@ All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Mill
 [student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
 (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-Theory Simulator by Antharion (for use of theories with max milestones): [Theory Simulator](http://bit.ly/anthsim)
+Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulator](http://bit.ly/anthsim)
 
 ##### How to push \\(f(t)\\) with R9 seapping:
 
