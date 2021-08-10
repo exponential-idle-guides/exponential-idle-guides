@@ -82,18 +82,15 @@ variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
 For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
 \\(2*5.0=10 ρ_1\\).
 
-Variable | Multiplier
---- | ---
-\\(c_1\\) | 10000
-\\(c_2\\) | 1000
-\\(c_3\\) | 2
-\\(c_4\\) | 1.01
-\\(q_1\\) | 5.0
-\\(q_2\\) | 1.15
+Variable | Multiplier | Variable | Multiplier
+--- | --- | --- | ---
+\\(c_1\\) | 10000 | \\(c_4\\) | 1.01
+\\(c_2\\) | 1000 | \\(q_1\\) | 5.0
+\\(c_3\\) | 2 | \\(q_2\\) | 1.15
 
 #### T1 milestone route
 
- - 0/0/1 → 0/0/1/1 → 0/1/1/1 → 3/1/1/1 or equivalently
+ - 0/0/1 → 0/0/1/1 → 0/1/1/1 → 3/1/1/1
  - 3 → 4 → 2 → 1 → 1 → 1
 
 
@@ -119,7 +116,7 @@ exponents is that they take time to build up and eventually overtake and
 keep increasing \\(q_1\\) and \\(r_1\\) while the exponents have a never-changing
 boost.
 
-#### T1 formula
+#### T2 formula
 
 ##### Initial
 
@@ -192,10 +189,10 @@ too large for you to get right away. When you can afford them, you will
 start the cycle. This is what you will do for the following number of
 milestones:
 
- - 1 and 2 milestones; 0/0/1(2)/0 (40s) → 1(2)/0/0/0  (10s) → 0/1(2)/0/0 (10s)  → Repeat (1 min total)
- - 3 milestones; 0/0/3/0  (40s) → 2/1/0/0 (20s) → 0/0/3/0  (40s) → 1/2/0/0 (20s) → Repeat (2min total / 2 1min’s)
- - 4 milestones; 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
- - 5+ milestones; you do the same thing as 4, but with more milestones in 0/0/x/x when you go to 2/2/0/0
+ - 1-2 milestones: 0/0/1(2)/0 (40s) → 1(2)/0/0/0  (10s) → 0/1(2)/0/0 (10s)  → Repeat (1 min total)
+ - 3 milestones: 0/0/3/0  (40s) → 2/1/0/0 (20s) → 0/0/3/0  (40s) → 1/2/0/0 (20s) → Repeat (2min total / 2 1min’s)
+ - 4 milestones: 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
+ - 5+ milestones: Do the same thing as 4, but with more milestones in 0/0/x/x when you go to 2/2/0/0
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
@@ -203,8 +200,12 @@ Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
 to run idle overnight.
 
 #### T2 milestone route
- - 0/0/0/0 → 1/0/0/0 → [2/0/0/0 →  2/2/0/0 → 2/2/3/0 → 2/2/3/2] → 2/2/3/3, or equivalently
- - 1 → [1 → 2 → 2 → 3 → 3 → 3 → 4 → 4] → 4
+ - Active:
+   - 0/0/0/0 → [1/0/0/0 → 2/0/0/0 →  2/2/0/0 → 2/2/3/0 → 2/2/3/2] → 2/2/3/3
+   - [1 → 1 → 2 → 2 → 3 → 3 → 3 → 4 → 4] → 4
+ - Idle:
+   - 0/0/0/ → 2/0/0/0 → 2/2/0/0 → 2/2/3/0 → 2/2/3/3
+   - 1 → 1 → 2 → 2 → 3 → 3 → 3 → 4 → 4 → 4
 
 
 ### Theory 3 (30σ / 7k)
@@ -225,8 +226,8 @@ to the \\(ρ_1\\) production.
 
 The optimal publication multiplier is about 2-3 without cruising and 3-4
 with cruising. If you decide to play actively, there is a form of
-exponent swapping start to be aware of. This is not a difficult
-strategy, but it requires you to notice when a certain threshold
+exponent swapping strat to be aware of. This is a difficult
+strategy because it requires you to notice when a certain threshold
 happens. It happens when the following occurs:
 
 \\[c_{11}*b_{1}^{1.05\text{ or }1.1}<c_{12}*b_{2}^{1.05\text{ or }1.1}\\]
@@ -254,10 +255,10 @@ repeat.
 
 #### T3 milestone route
  - Active:
-   - 0/0/0 → [0/0/2 → 1/0/2/0 → 1/2/2/0 → 1/2/2/1] → 1/2/2/2 or equivalently
+   - 0/0/0 → [0/0/2 → 1/0/2/0 → 1/2/2/0 → 1/2/2/1] → 1/2/2/2
    - [3 → 3 → 1 → 2 → 2 → 4] → 4
  - Idle:
-   - 0/0/0 → 0/0/2 → 0/2/2 → 1/2/2/0 → 1/2/2/2 or equivalently
+   - 0/0/0 → 0/0/2 → 0/2/2 → 1/2/2/0 → 1/2/2/2
    - 3 → 3 → 2 → 2 → 1 → 4 → 4
 
 
@@ -265,7 +266,7 @@ repeat.
 
 We start out with just one term of constants \\(c_1c_2\\) and a changing term
 \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
-equal to an inverse equation of \\(\dot{q}=q_1q_2/1+q\\) with \\(q\\) being the current value.
+equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value.
 The first milestone increases the power of \\(c_1\\) from \\(1.00\\) to \\(1.15\\). The
 next 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
 \\(c_5q_3\\), and \\(c_6q_4\\). We end by increasing \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\).
@@ -312,7 +313,7 @@ next 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2
 #### T4 strategy
 
 The optimal publication multiplier is 4-6. During publications, start
-with x/1/3. After you will switch to 3/0/x. This will be repeated back
+with x/1/3, then you will switch to 3/0/x. This will be repeated back
 and forth throughout the publication. If you decide to manually buy and
 don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority is
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
@@ -328,7 +329,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 ### Theory Tier List (Pre-9k+)
 
-Before you reach 9k, you should prioritise:
+Before you reach 9k, these are the recognmended values for each theory. You may not hit the values, but work on getting these theories up to these values later.
 1. Theory 2 - up to e300-e350
 2. Theory 1 - up to e200-e215
 3. Theory 3 and Theory 4 - up to e100-150 each
