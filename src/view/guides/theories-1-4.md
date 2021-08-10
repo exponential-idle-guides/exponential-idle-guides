@@ -6,7 +6,7 @@ draft: true
 order: 1
 ---
 
-### Graduation routing
+### Graduation Routing
 
 Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
 
