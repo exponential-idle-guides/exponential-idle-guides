@@ -60,7 +60,7 @@ Don’t be afraid to skip getting all milestones to work on the next or a
 better theory.
 
 ### Respecing students
-The button at the bottom labeled “Respec” removes all used \\(φ\\) in
+The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
 or reallocating easily. On the bottom right is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
