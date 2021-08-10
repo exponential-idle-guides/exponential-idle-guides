@@ -42,8 +42,12 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulato
 
 ### The new prestige equation:
 
-
-//(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && ((d(smooth(10^10^10^(phi*tau),1)) > 1) && timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) || ((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&(phi >=1 && phi <= 1))//)
+```
+(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && 
+((d(smooth(10^10^10^(phi*tau),1)) > 1) && 
+timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) || 
+((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&(phi >=1 && phi <= 1))
+```
 
 
 This method allows you to push \\(f(t)\\) with almost no loss of R9
