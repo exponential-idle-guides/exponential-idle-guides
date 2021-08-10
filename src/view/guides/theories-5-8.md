@@ -19,7 +19,7 @@ Remember to follow our routing advice from the [introduction](/guides/intro/#gra
 - 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
 - 18k → 20k \[tau(τ)~2050-2100+\]
 
-### Student Use Routing
+### Student Routing With R9
 
 All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
@@ -27,7 +27,7 @@ All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Mill
 
 Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](http://bit.ly/anthsim)
 
-### How to push \\(f(t)\\) with R9 seapping:
+#### How to push \\(f(t)\\) with R9 seapping:
 
 1. Memorize your student distributions with and without 10/20/30 R9 students.
 2. Wait till \\(f(t)\\) stops growing without student respec
