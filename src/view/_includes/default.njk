@@ -57,10 +57,12 @@
         <p>Guides copyright <a href="https://github.com/LEBaldy">LE★Baldy</a> & <a href="https://github.com/Snaeks">Snaeky</a>.
         <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
       </div>
-      <div class="footer__section footer__section--left">
-        <h3>Other resources</h3>
-        {% include 'tools.njk' %}
-      </div>
+      {% if not home %}
+        <div class="footer__section footer__section--left">
+          <h3>Other resources</h3>
+          {% include 'tools.njk' %}
+        </div>
+      {% endif %}
       <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
         <svg
           xmlns="http://www.w3.org/2000/svg"
