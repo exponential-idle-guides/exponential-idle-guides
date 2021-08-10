@@ -19,7 +19,7 @@ Remember to follow our routing advice from the [introduction](/guides/intro/#gra
 - 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
 - 18k → 20k \[tau(τ)~2050-2100+\]
 
-#### Student Use Routing
+### Student Use Routing
 
 All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
@@ -27,7 +27,7 @@ All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Mill
 
 Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulator](http://bit.ly/anthsim)
 
-##### How to push \\(f(t)\\) with R9 seapping:
+### How to push \\(f(t)\\) with R9 seapping:
 
 1. Memorize your student distributions with and without 10/20/30 R9 students.
 2. Wait till \\(f(t)\\) stops growing without student respec
@@ -40,7 +40,7 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulato
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### The new prestige equation:
+#### The New Prestige Equation:
 
 ```
 (((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && 
@@ -86,16 +86,16 @@ once \\(q\\) has reached its cap \\(c_1\\) has no additional benefit
 until more \\(c_2\\) is purchased.
 
 \\(c_2\\): Doubles the limit of \\(q\\) and halves the effect of \\(c_1\\).
-Needed to balance 2 parts of the equation. It appears twice: \\(c_1/c_2\\)
+Needed to balance 2 parts of the equation appearing twice: \\(c_1/c_2\\)
 and \\(c_3^{1.1}-q/c_2\\). If you buy too much \\(c_2\\), it will make
 \\(q\\) growth effectively nothing as \\(c_1/c_2\\) approaches \\(0\\).
-However, you still need to buy \\(c_2\\) because when \\(q\\) approaches
-\\(c_2*c_3^{1.1}\\), \\(c_3^{1.1}-q/c_2\\) approaches \\(0\\) as well
+However, you still need to buy \\(c_2\\) when \\(q\\) approaches
+\\(c_2*c_3^{1.1}\\) because \\(c_3^{1.1}-q/c_2\\) approaches \\(0\\)
 making \\(q=c_2*c_3^{1.1}\\) the maximum value of \\(q\\).
 
-\\(c_3\\): Increases the limit of \\(q\\) by \\(2^{1+m/20}\\) where \\(m\\)
-is the number of milestones. Increases \\(q\\) limit by increasing what
-\\(q/c_2\\) fraction can reach, doesn't have the problems of \\(c_2\\)
+\\(c_3\\): Increases the limit of \\(q\\) by \\(2^{1+m/20}\\), where \\(m\\)
+is the number of milestones, by increasing what
+\\(q/c_2\\) fraction can reach. It does not have the problems of \\(c_2\\)
 as lowering your \\(\dot{q}\\), making it an always auto-bought variable.
 
 #### T5 strategy
@@ -199,7 +199,7 @@ switched to full auto.
  - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
  - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
 
-### Theory 8 skipping
+### Theory 8 Skipping
 
 T8 skip is significantly faster than buying T8 right away. T8 is very
 slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
