@@ -25,7 +25,7 @@ All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Mill
 [student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
 (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulator](http://bit.ly/anthsim)
+Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](http://bit.ly/anthsim)
 
 ### How to push \\(f(t)\\) with R9 seapping:
 
