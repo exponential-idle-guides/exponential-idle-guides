@@ -21,30 +21,14 @@ calculator on the [Phi*Tau Sheet]. Please [contribute to the Phi*Tau]
 sheet before graduating.
 
 ### Student use routing
-All routing below assumes you buy **all** available theories unless
+Buy **all** available theories unless
 explicitly stated because theories are important to start as soon as
 possible as they function outside of the main game.
 
 Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
-[student calculator] (by Eaux Tacous#1021).
+[student calculator] (by Eaux Tacous) for optimal distributions.
 
-For a closer calculation based on your star count use the calculator above.
 
-★: Star count
-
-★🗲: Star count with acceleration (x2.85)
-
-\\(f(t)\\) | ★ | ★🗲
----        | ---            | ---
-ee5k       | 1.38M          | 3.94M
-ee5.5k     | 1.67M          | 4.76M
-ee6k       | 1.99M          | 5.67M
-ee6.5k     | 2.33M          | 6.65M
-ee7k       | 2.70M          | 7.72M
-ee7.5k     | 3.10M          | 8.86M
-ee8k       | 3.53M          | 10.1M
-ee8.5k     | 3.99M          | 11.4M
-ee9k       | 4.47M          | 12.8M
 
 ### Theory Routing
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
@@ -60,7 +44,7 @@ Don’t be afraid to skip getting all milestones to work on the next or a
 better theory.
 
 ### Respecing students
-The button at the bottom labeled “Respec” removes all used \\(φ\\) in
+The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
 or reallocating easily. On the bottom right is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
