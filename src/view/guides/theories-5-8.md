@@ -30,11 +30,11 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 #### How to push \\(f(t)\\) with R9 seapping:
 
 1. Memorize your student distributions with and without 10/20/30 R9 students.
-2. Wait till \\(f(t)\\) stops growing without student respec
-3. Start accel (preferably keep it between prestiges)
+2. Wait till \\(f(t)\\) stops growing without student respec.
+3. Start accel (preferably keep it between prestiges).
 4. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
-   do it when you are near a graduation mark.
-5. Respec the 10/20/30 students from R9
+   do this when you are near a graduation mark.
+5. Respec the all 10/20/30 students from R9.
 6. Wait for the new autoprestige to trigger.
 7. Repeat
 
