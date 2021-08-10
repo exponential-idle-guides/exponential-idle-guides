@@ -32,7 +32,7 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Simulato
 1. Memorize your student distributions with and without 10/20/30 R9 students.
 2. Wait till \\(f(t)\\) stops growing without student respec
 3. Start accel (preferably keep it between prestiges)
-4. Potentially sit here to stack t for bigger //(phi_2//) when you have students in //(phi_2//)). Only
+4. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
    do it when you are near a graduation mark.
 5. Respec the 10/20/30 students from R9
 6. Wait for the new autoprestige to trigger.
@@ -233,8 +233,8 @@ The worst part is the \\(1e50\\)-\\(1e60\\) grind. The grind to \\(1e60\\)
 will take a good bit of time but is faster with R9.
 
 At the start, manual buy prioritizes \\(c_2\\) then \\(c_1\\) then rest.
-Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then //(c_1//) then the
-rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then //(c_1//) then
+Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then the
+rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
 Attractor | Starting Positions (reset every pub) | Time Step
