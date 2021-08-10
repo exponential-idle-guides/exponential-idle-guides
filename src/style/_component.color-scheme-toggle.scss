@@ -5,8 +5,8 @@
   background-color: unset;
 
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: var(--floating-margin);
+  top: var(--floating-margin);
 
   .light, .dark {
     display: none;
@@ -28,7 +28,7 @@
   border: 1px solid var(--palette-stroke-hc);
   background-color: var(--palette-fill);
   border-radius: 0.25rem;
-  box-shadow: 0.05rem 0.05rem 0.25rem 0 var(--palette-fill-shadow);
+  box-shadow: var(--floating-shadow);
 }
 
 :root.dark-mode .light {

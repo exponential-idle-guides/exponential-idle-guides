@@ -1,4 +1,6 @@
 @import './_settings.theme.scss';
+@import './_settings.sizes.scss';
+@import './_settings.shadows.scss';
 
 @import './_generic.reset.scss';
 @import './_generic.layout.scss';
@@ -25,3 +27,4 @@
 @import './_component.draft-warning.scss';
 @import './_component.subtitle.scss';
 @import './_component.color-scheme-toggle.scss';
+@import './_component.back-to-top.scss';
