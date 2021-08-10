@@ -82,11 +82,14 @@ variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
 For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
 \\(2*5.0=10 ρ_1\\).
 
-Variable | Multiplier | Variable | Multiplier
---- | --- | --- | ---
-\\(c_1\\) | 10000 | \\(c_4\\) | 1.01
-\\(c_2\\) | 1000 | \\(q_1\\) | 5.0
-\\(c_3\\) | 2 | \\(q_2\\) | 1.15
+Variable | Multiplier
+--- | ---
+\\(q_1\\) | 5.0
+\\(q_2\\) | 1.15
+\\(c_1\\) | 10000
+\\(c_2\\) | 1000
+\\(c_3\\) | 2
+\\(c_4\\) | 1.01
 
 #### T1 milestone route
 
