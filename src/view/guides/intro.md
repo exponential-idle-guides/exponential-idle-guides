@@ -14,7 +14,7 @@ further ahead than you are already.
 This introduction will give you some fundamentals to help you progress
 while playing this section of the game.
 
-### Graduation Routing
+### Graduation routing
 When within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is use the Graduation
 calculator on the [Phi*Tau Sheet]. Please [contribute to the Phi*Tau]
@@ -28,9 +28,7 @@ possible as they function outside of the main game.
 Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous) for optimal distributions.
 
-
-
-### Theory Routing
+### Theory routing
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multiplier is not known at the
 time, but it does decrease over time. If you are close to a multiplier

@@ -6,7 +6,7 @@ draft: true
 order: 1
 ---
 
-### Graduation Routing
+### Graduation routing
 
 Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
 
@@ -43,19 +43,19 @@ up the theory.
 ##### Initial
 \\[ρ_{n+1} = ρ_n + c_1c_2\\]
 
-##### First Milestone
+##### First milestone
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2}\\]
 
-##### Second Milestone
+##### Second milestone
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Third and Fouth Milestone
+##### Third and fouth milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.05\text{ or }1.10}c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Fifth Milestone
+##### Fifth milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.10}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Sixth and Final Milestone
+##### Sixth and final milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 #### T1 strategy
@@ -330,9 +330,9 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
  - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
 
-### Theory Tier List (Pre-9k+)
+### Theory tier list (Pre-9k+)
 
-Before you reach 9k, these are the recognmended values for each theory. 
+Before you reach 9k, these are the recognmended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.
 This list is in order of priority.
 1. Theory 2 - up to e300-e350

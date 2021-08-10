@@ -19,7 +19,7 @@ Remember to follow our routing advice from the [introduction](/guides/intro/#gra
 - 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
 - 18k → 20k \[tau(τ)~2050-2100+\]
 
-### Student Routing With R9
+### Student routing with R9
 
 All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
@@ -74,7 +74,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 ### Theory 5 (40σ / 9k)
 
-#### Variable Overview
+#### Variable overview
 \\(q_1\\) & \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
 production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
 
@@ -156,7 +156,7 @@ slightly less active.
 - [0/1/0 → 3/1/0 → 3/1/2]
 - 2 → 1 → 1 → 1 → 3 → 3
 
-##### Additional Information
+##### Additional information
 Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3.
 
@@ -200,7 +200,7 @@ switched to full auto.
  - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
  - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
 
-### Theory 8 Skipping
+### Theory 8 skipping
 
 T8 skip is significantly faster than buying T8 right away. T8 is very
 slow until you get to about \\(e60\\) (it took the sim 16 hours to get that

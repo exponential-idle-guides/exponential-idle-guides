@@ -7,13 +7,13 @@ draft: true
 order: 3
 ---
 
-### Graduation Routing
+### Graduation routing
 
 Routing is based on your current Tau and Phi numbers.
 
 Make sure to use the [calculators and simulators](/#other-resources) for optimal graduation, student, star, and theory options.
 
-### Push F(t) with 3R9 seapping
+### Push f(t) with 3R9 seapping
 
 1. Memorize your student distributions with and without 30 R9 students.
 2. Wait till \\(f(t)\\) stops growing without student respec.
@@ -36,7 +36,7 @@ timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
 (phi >=1 && phi <= 1))
 ```
 
-### Idle and Active buy strats
+### Idle and active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
 --- | --- | ---
@@ -76,7 +76,7 @@ Theory | Manual | Auto | Ratio
  T7 | Unknown   | 1.23645  | TBD
  T8 | 1.51303  | 1.29569  | 1.16774
 
-### Theory Routing
+### Theory routing
 
 If a theory is not listed below, then use the idle vs manual chart and
 the ideal multiplier chart.
@@ -160,7 +160,7 @@ Attractor | Starting Positions (reset every pub) | Time Step
 **Chen** | -10.6, -4.4, 28.6 | 0.002
 **Rossler** | -6, 15, 0 | 0.00014
 
-### How To Respec
+### How To respec
 
 See the [introduction guide](/guides/intro/) for respecing students and
 milestones.
