@@ -26,35 +26,35 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### The new autoprestige expression:
+#### The new autoprestige expression
 
 ```
-(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && 
-((d(smooth(10^10^10^(phi*tau),1)) > 1) && 
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) || 
+(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
+((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
+timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
 ((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
 (phi >=1 && phi <= 1))
 ```
 
 ### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
-Theory | Idle | Active 
---- | --- | --- 
-T1 | Disable c1 c2 | See [T1 routing](#t1-routing) later in this guide 
-T2 | All on | q4/r4 → q3/r3 → etc 
-T3 | Disable c11, c13, c21, c33 | Same as idle with b2→b3→b1 e1 lower buying + cruising at end 
-T4 | Disable all but c3, q1, q2 | Auto c3 and q2. Manual q1. Disable rest. 
-T5 | See [T5 routing](#t5-routing) later in this guide | ← Also see T5 routing 
-T6 | Disable c3, c4 | Disable c3 c4. Auto q2, r2, c2, c5. Manual rest when e1 cheaper. 
-T7 | Disable c1, c2, c3 | Same as Idle 
-T8 | All on | Same as Idle but doublings chase with c1, c2. 
+Theory | Idle | Active
+--- | --- | ---
+T1 | Disable c1 c2 | See [T1 routing](#t1-routing) later in this guide
+T2 | All on | q4/r4 → q3/r3 → etc
+T3 | Disable c11, c13, c21, c33 | Same as idle with b2→b3→b1 e1 lower buying + cruising at end
+T4 | Disable all but c3, q1, q2 | Auto c3 and q2. Manual q1. Disable rest.
+T5 | See [T5 routing](#t5-routing) later in this guide | ← Also see T5 routing
+T6 | Disable c3, c4 | Disable c3 c4. Auto q2, r2, c2, c5. Manual rest when e1 cheaper.
+T7 | Disable c1, c2, c3 | Same as Idle
+T8 | All on | Same as Idle but doublings chase with c1, c2.
 
 ### Equation for when to publish
 
 From Big Freeze:
 
 ```
-ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) ) 
+ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 / (timer( timer(d(tau)<=0)<900 ) + 900)
 ```
 

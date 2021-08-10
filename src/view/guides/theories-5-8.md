@@ -27,7 +27,7 @@ All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Mill
 
 Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](http://bit.ly/anthsim)
 
-#### How to push \\(f(t)\\) with R9 seapping:
+#### How to push \\(f(t)\\) with R9 seapping
 
 1. Memorize your student distributions with and without 10/20/30 R9 students.
 2. Wait till \\(f(t)\\) stops growing without student respec.
@@ -40,12 +40,12 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### The new autoprestige expression:
+#### The new autoprestige expression
 
 ```
-(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && 
-((d(smooth(10^10^10^(phi*tau),1)) > 1) && 
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) || 
+(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
+((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
+timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
 ((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
 (phi >=1 && phi <= 1))
 ```
@@ -73,7 +73,8 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 
 ### Theory 5 (40σ / 9k)
-#### Variable Overview:
+
+#### Variable Overview
 \\(q_1\\) & \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
 production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
 
