@@ -329,7 +329,9 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 ### Theory Tier List (Pre-9k+)
 
-Before you reach 9k, these are the recognmended values for each theory. You may not hit the values, but work on getting these theories up to these values later.
+Before you reach 9k, these are the recognmended values for each theory. 
+You may not hit the values, but work on getting these theories up to these values later.
+This list is in order of priority.
 1. Theory 2 - up to e300-e350
-2. Theory 1 - up to e200-e215
+2. Theory 1 - up to e205-e215
 3. Theory 3 and Theory 4 - up to e100-150 each
