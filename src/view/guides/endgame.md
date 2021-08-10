@@ -26,7 +26,7 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-#### The new autoprestige Expression:
+#### The new autoprestige expression:
 
 ```
 (((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b && 
