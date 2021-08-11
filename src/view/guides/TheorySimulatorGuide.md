@@ -49,9 +49,9 @@ Output Section | Examples | Explaination | Notes
 Theory Name | T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row.
 Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | ---
 Listed Variables with no | noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | ---
-d | T8d, T1d, etc | This means to chase doublings. Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs are the variables such as \\(c_1\\) and \\(c_2\\) in T1 before the milestone upgrade. One of them increases by 2^x per upgrade while the other increases 2^x every 10 upgrades. 
+d | T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs are variables such as \\(q_1\\) and \\(q_2\\) in T1. One increases by 2^x per upgrade, and one increases 2^x every 10 upgrades. 
 Just Theory Name | T2, T8, etc | This means no strategy besides autobuying all variables | ---
-T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the chen, lorenz, and rossler attractor. This denotes which to have enabled in the milestones window as they yield different results | Rare to see anything but T8R, but it has happened.
+T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened.
 
 #### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
