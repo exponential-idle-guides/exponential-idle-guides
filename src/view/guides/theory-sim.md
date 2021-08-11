@@ -56,8 +56,8 @@ d
 T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs example: T1's \\(q_1\\) & \\(q_2\\). One is \\(2^x\\) per 1 upgrade and one is \\(2^x\\) every 10 upgrades.
 Just Theory Name
 T2, T8, etc | Autobuy all variables | ---
-T8  Attractor
-T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened.
+```{toggle}T8  Attractor```
+```{toggle}T8C, T8L, or T8R``` | ```{toggle}The C, L, and R represent the three attactors and which to have on.``` | ```{toggle}Rare to see anything but T8R, but it has happened.```
 
 ###### Variables to never not buy:
 Theory | Variables
