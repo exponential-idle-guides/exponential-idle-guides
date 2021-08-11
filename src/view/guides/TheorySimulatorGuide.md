@@ -10,7 +10,7 @@ order: 4
 
 ### Example Outputs:
 The top image is from the [website version](https://bit.ly/anthsim) and the bottom from the discord bot or when you request a png from the website.
-![Theory Sim Example Outputs](/images/TheorySimExampleOutputs.PNG)
+![Theory Sim Example Outputs](/images/TheorySimExampleOutputs.png)
 
 ### Column Explanations:
 #### Manual
@@ -50,7 +50,7 @@ Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remainin
 Listed Variables with no | noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | ---
 d | T8d, T3noC11C13C21C31d, etc | This means to chase doublings. Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs are the variables such as \\(C_1\\) and \\(C2\\) in T1 before the milestone upgrade. One of them increases by 2^x per upgrade while the other increases 2^x every 10 upgrades. 
 Just Theory Name | T2, T8, etc | This means no strategy besides autobuying all variables | ---
-T8  <toggle>Attractor<\toggle> | <toggle>T8C, T8L, or T8R<\toggle> | <toggle>The C, L, and R represent the chen, lorenz, and rossler attractor. This denotes which to have enabled in the milestones window as they yield different results<\toggle> | <toggle>Rare to see anything but T8R, but it has happened.<\toggle>
+T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the chen, lorenz, and rossler attractor. This denotes which to have enabled in the milestones window as they yield different results | Rare to see anything but T8R, but it has happened.
 
 #### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
