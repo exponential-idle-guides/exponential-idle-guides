@@ -11,7 +11,7 @@ order: 4
 ### Example Outputs:
 The top image is from the [website version](https://bit.ly/anthsim) and the bottom from the discord bot or when you request a png from the website.
 
-[Theory Sim Example Outputs](exponential-idle-guides/src/images/TheorySimExampleOutputs.png)
+![Theory Sim Example Outputs](/images/TheorySimExampleOutputs.png)
 
 ### Column Explanations:
 #### Manual
