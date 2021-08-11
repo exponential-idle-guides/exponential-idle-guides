@@ -43,7 +43,7 @@ You may want to do multiple simulations after each publication for some theories
 #### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of that publication. Table below for what each part means.
 
-Output Section | Example(s) | What It Means | Additional Notes
+Output Section | Examples | Explaination | Notes
 --- | --- | --- | ---
 Theory Name | T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row.
 Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | ---
