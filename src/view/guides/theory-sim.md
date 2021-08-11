@@ -44,14 +44,36 @@ You may want to do multiple simulations after each publication for some theories
 ##### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of that publication. Table below for what each part means.
 
-| Output Section | Examples | Explaination | Notes |
-| --- | --- | --- | --- |
-| Theory Name | T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row. |
-| Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | --- |
-| Listed Variables with no | noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | --- |
-| d | T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs example: T1's \\(q_1\\) & \\(q_2\\). One is \\(2^x\\) and one is \\(2^x\\) every 10 upgrades. |
-| Just Theory Name | T2, T8, etc | Autobuy all | --- |
-| T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened. |
+--- | Explaination | Notes
+--- | --- | ---
+Theory Name
+T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row.
+Listed Variables
+C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | ---
+Listed Variables with no
+noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | ---
+d
+T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs example: T1's \\(q_1\\) & \\(q_2\\). One is \\(2^x\\) per 1 upgrade and one is \\(2^x\\) every 10 upgrades.
+Just Theory Name
+T2, T8, etc | Autobuy all variables | ---
+T8  Attractor
+T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened.
+
+###### Variables to never not buy:
+Theory | Variables
+--- | ---
+T1 | q1, q2, c4
+T2 | all variables
+T3 | b1, b2, b3, c11, c13, c21, c33
+T4 | q1, q2, c3
+T5 | q1, q2, c3
+T6 | r1, r2, q1, q2
+T7 | q1, c4, c5, c6
+T8 | c1, c2
+
+\*The exception is during the cruise phase of the end of a publication
+
+\*\*Table excludes variables that are bought sometimes, but not always such as T5 active
 
 ##### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
