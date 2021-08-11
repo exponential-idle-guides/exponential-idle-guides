@@ -44,14 +44,14 @@ You may want to do multiple simulations after each publication for some theories
 #### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of that publication. Table below for what each part means.
 
-Output Section | Examples | Explaination | Notes
+| Output Section | Examples | Explaination | Notes |
 | --- | --- | --- | --- |
-Theory Name | T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row.
-Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | ---
-Listed Variables with no | noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | ---
-d | T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs are variables such as \\(q_1\\) and \\(q_2\\) in T1. One increases by 2^x per upgrade, and one increases 2^x every 10 upgrades. 
-Just Theory Name | T2, T8, etc | This means no strategy besides autobuying all variables | ---
-T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened.
+| Theory Name | T1, T2, etc | The theory the strategy belongs to | It will always match the theory in that row. |
+| Listed Variables | C1C2C3, C4, Q1Q2, etc | These variables you autobuy. Remaining variables turn off. | --- |
+| Listed Variables with no | noC4C5C6, noC3C4, etc | These variables you turn off. Rest you keep on autobuy. | --- |
+| d | T8d, T1d, etc | Chasing doublings means to buy the non-doubling when e1 lower than its doubling pair. | Doubling pairs example: T1's \\(q_1\\) & \\(q_2\\). One is 2^x and one is 2^x every 10 upgrades. |
+| Just Theory Name | T2, T8, etc | This means no strategy besides autobuying all variables | --- |
+| T8  Attractor | T8C, T8L, or T8R | The C, L, and R represent the three attactors and which to have on. | Rare to see anything but T8R, but it has happened. |
 
 #### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
@@ -63,7 +63,7 @@ If you get a negative /hour result from hitting this 720 hour cap, this is becau
 #### Delta Active and Delta Idle
 This will tell you how much tau you are expected to gain for the active or idle strategy. 
 
-- **Note:** Delta Active and Delta Idle are defined as the quantity \\(tau_final\\)/\\(tau_initial\\) instead of \\(tau_final\\) - \\(tau_initial\\). 
+- **Note:** Delta Active and Delta Idle are defined as the quantity \\(tau_{final}\\)/\\(tau_{initial}\\) instead of \\(tau_{final}\\) - \\(tau_{initial}\\). 
 So if delta active was equal to 1e3 and the starting tau was e100, the sim publishes at e103 tau. 
 **You should NOT publish at this tau value** since it's very likely your starting tau will be different from what is actually used in the sim due to your input being 1eXXXX not x.xxxeXXXX. 
 This should not be confused with log(tau).
