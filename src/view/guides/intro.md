@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 author: "LE★Baldy & Snaeky"
-contributors: "the Amazing Community"
+contributors: "The Amazing Community"
 order: 0
 ---
 
@@ -15,15 +15,15 @@ This introduction will give you some fundamentals to help you progress
 while playing this section of the game.
 
 ### Graduation routing
-When within ee5 of the graduation, turn off autoprestige. It is faster
+When you are within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is use the Graduation
 calculator on the [Phi*Tau Sheet]. Please [contribute to the Phi*Tau]
 sheet before graduating.
 
 ### Student use routing
 Buy **all** available theories unless
-explicitly stated because theories are important to start as soon as
-possible as they function outside of the main game.
+explicitly stated otherwise because theories are important to start as soon
+as possible as they function outside of the main game.
 
 Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
 [student calculator] (by Eaux Tacous) for optimal distributions.
@@ -44,7 +44,8 @@ better theory.
 ### Respecing students
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
-or reallocating easily. On the bottom right is located a list-shaped
+or reallocating easily, but it will remove __ALL__ of your students from 
+everything including theories. On the bottom right is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
 <kbd>-</kbd> buttons remove x levels from the selected research option.
 The amount of levels removed is based on the x1, x10, x25, x100, xMax
