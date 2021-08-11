@@ -62,8 +62,8 @@ up the theory.
 
 The publication multiplier has no optimal fit, as it fluctuates a lot,
 but here is known: 4-6 to start; 3-4 between 1e100 and 1e150; the
-publication Multiplier Oscillates between 2.5 and 5 past e150. Once you
-get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\).
+publication multiplier oscillates between 2.5 and 5 past e150. Once you
+get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
 
 The active strat follows but only works when you have all milestones
 past e150). T1 is the only theory where the recent value of \\(ρ\\)
@@ -90,6 +90,8 @@ Variable | Multiplier
 \\(c_2\\) | 1000
 \\(c_3\\) | 2
 \\(c_4\\) | 1.01
+
+- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) and autobuy rest until ee6k.
 
 #### T1 milestone route
 
