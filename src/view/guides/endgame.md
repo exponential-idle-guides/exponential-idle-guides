@@ -122,7 +122,6 @@ Running the active strats will make this the number one theory for a while
 and eventual number two after T6 takes over. A step-by-step on how to
 progress the theory is below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pM-pjSnMByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
@@ -138,7 +137,14 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
    2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
 4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
 
+###### Commentary:
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AYI4U7Aob6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+###### No Commentary:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pM-pjSnMByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 T5 will always give its best results from active play however, after
 step 3 you can still get good results while auto buying \\(q_1\\) and manually
