@@ -59,12 +59,12 @@ T2, T8, etc           |                                   Autobuy all variables 
 **T8  Attractor**
 T8C, T8L, or T8       |          The C, L, and R represent the three attactors and which to have on.          | {toggle}Rare to see anything but T8R, but it has happened.
 
-###### Variables to never not buy:
+###### Variables to always buy:
 Theory | Variables
 --- | ---
 T1 | q1, q2, c4
 T2 | all variables
-T3 | b1, b2, b3, c11, c13, c21, c33
+T3 | b1, b2, b3, c12, c22, c23, c31, c32
 T4 | q1, q2, c3
 T5 | q1, q2, c3
 T6 | r1, r2, q1, q2
