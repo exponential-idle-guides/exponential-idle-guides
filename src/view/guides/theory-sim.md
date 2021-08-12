@@ -69,7 +69,7 @@ T4 | q1, q2, c3
 T5 | q1, q2, c3
 T6 | r1, r2, q1, q2
 T7 | q1, c4, c5, c6
-T8 | c1, c2
+T8 | c1, c2 (If sim says T8R34, you still buy c1 and c2. It only outputs number changes for c3, c4, and c5)
 
 \*The exception is during the cruise phase of the end of a publication
 
