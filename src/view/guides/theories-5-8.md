@@ -43,7 +43,7 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 #### The new autoprestige expression
 
 ```
-(((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
+((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
 ((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
 timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
 ((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
