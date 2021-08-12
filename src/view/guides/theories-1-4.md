@@ -49,11 +49,8 @@ up the theory.
 ##### Second milestone
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Third and fouth milestone
-\\[ρ_{n+1} = ρ_n + c_1^{1.05\text{ or }1.10}c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
-
-##### Fifth milestone
-\\[ρ_{n+1} = ρ_n + c_1^{1.10}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+##### Third milestone
+\\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 ##### Sixth and final milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
