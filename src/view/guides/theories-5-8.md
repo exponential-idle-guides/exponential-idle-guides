@@ -194,10 +194,8 @@ and \\(c_4\\).
 #### T7 strategy
 
 The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
-manual buy before 1/1/1/1/0 is to only manual buy \\(q_1\\) and \\(c_1\\)
-with the rest auto. Buy \\(c_1\\) and \\(q_1\\) when you can buy them
-for cheap (e1 less \\(\rho\\)). Between 0/0/2 and 1/0/0/1/3 autobuyer can be
-switched to full auto.
+manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
+cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy.
 
 #### T7 milestone
 
