@@ -3,7 +3,7 @@ title: "Theories 5-8"
 author: "LE★Baldy & Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 2
+order: 3
 ---
 
 ### Graduation routing
