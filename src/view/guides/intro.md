@@ -58,7 +58,7 @@ This works in the same way as above. Here you can also find how many
 unused Milestones available at the top. On the right side of each
 Milestone, you can also find the current and max levels of each.
 
-### Variable Names:
+### Variable Names
 Variable | Name | Variable | Name | Variable | Name
 --- | --- | --- | --- | --- | ---
 \\(x\\) | x | \\(\beta\\) | beta | \\(\kappa\\) | kappa
