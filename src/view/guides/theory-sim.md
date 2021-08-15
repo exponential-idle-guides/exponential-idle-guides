@@ -3,7 +3,7 @@ title: "Theory Simulator: How to Read Results"
 author: "LE★Baldy, Snaeky, and Gaunter"
 contributors: "Antharion for the simulator itself"
 draft: true
-order: 4
+order: 5
 ---
 
 **NOTE: THE SIM ASSUMES THAT YOU HAVE ALL MILESTONES AND AD BONUS! IF YOU DO NOT HAVE THESE IT WILL GIVE YOU INCORRECT VALUES FOR RESPECTIVE THEORY**
