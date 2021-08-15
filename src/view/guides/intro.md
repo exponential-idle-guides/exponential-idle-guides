@@ -58,7 +58,14 @@ This works in the same way as above. Here you can also find how many
 unused Milestones available at the top. On the right side of each
 Milestone, you can also find the current and max levels of each.
 
-[Phi*Tau sheet]: https://docs.google.com/spreadsheets/d/1lz_V0rCr3usm1Wyqn2DEJdw6_7lhWIxXCYFmUbArV1c/edit#gid=305781148
-[contribute to the Phi*Tau]: https://docs.google.com/forms/d/e/1FAIpQLSdDctG_t6NfaJ0XfaoJgIt_nBjX4alm7ID_koQSLf9u669gcQ/viewform
-[star calculator]: https://conicgames.github.io/exponentialidle/students.html
-[student calculator]: https://conicgames.github.io/exponentialidle/stars.html
+### Variable Names:
+Variable | Name | Variable | Name | Variable | Name
+--- | --- | --- | --- | --- | ---
+\\(x\\) | x | \\(\beta\\) | beta | \\(\kappa\\) | kappa
+\\(y\\) | y | \\(\gamma\\) | gamma | \\(\lambda\\) | lambda
+\\(z\\) | z | \\(\delta\\) | delta | \\(\nu\\) | nu
+\\(s\\) | s | \\(\epsilon\\) | epsilon | \\(\xi\\) | xi
+\\(u\\) | u | \\(\zeta\\) | zeta | \\(\varphi\\) | phi
+\\(v\\) | v | \\(\eta\\) | eta | \\(\tau\\) | tau
+\\(w\\) | w | \\(\theta\\) | theta
+\\(\alpha\\) | alpha\\ | (\iota\\) | iota
