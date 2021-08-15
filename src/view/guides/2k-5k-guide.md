@@ -53,8 +53,9 @@ These are unlocked at 20 students (ee5k). When you have enough to get Theory 1, 
 ### The Final Push to 5k
 First thing is to make sure you are ready for 5k push. You must have 18 or 19 students. If you have 17 students, graduate at 4.8k for 19 students. If you have 16 or less students then graduate at 4.6k for 18 students. Next is to make sure you have the appropriate autoprestige and autosupremacy equation in and working. If your autosupremacy is already in then leave it on and don't enter the expression field to reset it. 
 
-The final two steps are the most important:
+The final three steps are the most important:
  - Update your phi with the [phi calculator](https://conicgames.github.io/exponentialidle/students.html) while you go and not just in the beginning.
+ - Update your star permenant levels with the [star calculator](https://conicgames.github.io/exponentialidle/stars) at least once after ee4600.
  - Mentally prepare for a long push (it can take a while).
 
 ###### Additional Notes:
