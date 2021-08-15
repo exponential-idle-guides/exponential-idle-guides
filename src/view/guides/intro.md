@@ -68,4 +68,4 @@ Variable | Name | Variable | Name | Variable | Name
 \\(u\\) | u | \\(\zeta\\) | zeta | \\(\varphi\\) | phi
 \\(v\\) | v | \\(\eta\\) | eta | \\(\tau\\) | tau
 \\(w\\) | w | \\(\theta\\) | theta
-\\(\alpha\\) | alpha\\ | (\iota\\) | iota
+\\(\alpha\\) | alpha | \\(\iota\\) | iota
