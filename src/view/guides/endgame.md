@@ -4,7 +4,7 @@ subtitle: "The World of Grinding and R9 Boost"
 author: "LE★Baldy"
 contributors: "the Amazing Community"
 draft: true
-order: 3
+order: 4
 ---
 
 ### Graduation routing
