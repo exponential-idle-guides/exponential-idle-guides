@@ -41,7 +41,7 @@ At the top, we see the equation: \\(\varphi = \prod_{i}\varphi_{i}\\). This is t
 Here we see R1-7 also known as the phi upgrades. These are what determine what phi value you have in the top left.
 One strategy is pressing the <kbd>i</kbd> and comparing phi gain/student cost. However, we have a student calculator for phi upgrades found [here](https://conicgames.github.io/exponentialidle/students.html).
 
-###### When \\({\uparrow} \varphi exponent by 0.1\\) is purchased, there will appear an exponent in the equation at the top (ex: \\(\varphi_{i}^{1.1}\\)) putting the phi value to that exponent.
+###### When \\(\uparrow\\) \\(\varphi\\) exponent by 0.1 is purchased, there will appear an exponent in the equation at the top (ex: \\(\varphi_{i}^{1.1}\\)) putting the phi value to that exponent.
 
 ##### Theories
 ![Theory](/images/theory.jpg)
