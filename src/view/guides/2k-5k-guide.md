@@ -5,6 +5,32 @@ contributors: "The Amazing Community"
 draft: true
 order: 1
 ---
+###### [Star Calculator](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often, but should be done if it has been a while since you last did.
+###### Do not buy Autosupremacy until more than 118,840 stars. This keeps all variables when you get autosupremacy.
+
+#### Autoprestige and Autosupremacy
+
+##### Autoprestige:
+```
+timer(d(ln(db/b+1)/pt) < 0) 
+> 3 * tr && db > b
+```
+
+##### Autosupremacy:
+
+###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
+```
+timer(d(ln(db/b+1)/pt) < 0) 
+> 2 * tr && db > b
+&& dpsi + psi > min(min(costUpS(1), 
+costUpS(2)), costUpS(3))
+&& ln(1 + max(1,log10(sf))/
+smooth(max(1,log10(gf)), 
+(st>tr) * ee99))/max(1,st)<
+smooth(ln(1 + max(1,log10(sf))/
+smooth(max(1,log10(gf)), (st>tr) 
+* ee99))/max(1,st), (pt>tr) * ee99)
+```
 
 ### Graduation Routing
 

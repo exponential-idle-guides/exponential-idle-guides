@@ -35,10 +35,10 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 4. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
    do this when you are near a graduation mark.
 5. Respec the all 10/20/30 students from R9.
-6. Wait for the new autoprestige to trigger.
-7. Repeat
+6. Manually prestige when the boost slows (max 10-15 seconds but should be lower at this point)
+8. Repeat
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/c8ekMzXWD_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### The new autoprestige expression
 

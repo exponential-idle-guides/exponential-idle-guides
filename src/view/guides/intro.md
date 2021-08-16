@@ -16,17 +16,16 @@ while playing this section of the game.
 
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
-to cruise than recover and push. Best bet is use the Graduation
-calculator on the [Phi*Tau Sheet]. Please [contribute to the Phi*Tau]
-sheet before graduating.
+to cruise than recover and push. Best bet is use the [Graduation
+calculator](https://replit.com/@LEBaldy2002/gradcalc). Please [contribute to the Phi\*Tau sheet](https://docs.google.com/forms/d/12ldZ22WXQrmsHVt_269-a55KTir-KvT65gmX2JXTYpQ/edit) before graduating.
 
 ### Student use routing
 Buy **all** available theories unless
 explicitly stated otherwise because theories are important to start as soon
 as possible as they function outside of the main game.
 
-Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
-[student calculator] (by Eaux Tacous) for optimal distributions.
+Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
+[star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distributions.
 
 ### Theory routing
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
