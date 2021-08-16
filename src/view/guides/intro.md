@@ -25,8 +25,8 @@ Buy **all** available theories unless
 explicitly stated otherwise because theories are important to start as soon
 as possible as they function outside of the main game.
 
-Use the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
-[student calculator] (by Eaux Tacous) for optimal distributions.
+Use the [star calculator](https://conicgames.github.io/exponentialidle/stars) (by Niedzielan, AfuroZamurai, and Milla) and
+[student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Eaux Tacous) for optimal distributions.
 
 ### Theory routing
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
