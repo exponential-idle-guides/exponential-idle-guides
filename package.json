@@ -12,7 +12,7 @@
   "author": "",
   "license": "None",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.0-canary.41",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.0.0",
     "gulp-shell": "^0.8.0",

@@ -110,9 +110,12 @@ module.exports = config => {
     });
   });
 
+  config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
+
   return {
     dir: {
-      input: "src/view/",
+      input: "src/view",
+      data: "_data",
       output: "_site",
       markdownTemplateEngine: "njk"
     }
