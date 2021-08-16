@@ -12,7 +12,11 @@ const { JSDOM } = require('jsdom');
 
 const util = require('util');
 
-const pluginTOC = require('eleventy-plugin-toc')
+const pluginTOC = require('eleventy-plugin-toc');
+
+const transformExcludes = [
+  "_site/sitemap.xml"
+];
 
 module.exports = config => {
 
@@ -48,38 +52,46 @@ module.exports = config => {
   config.setDataDeepMerge(true);
 
   config.addTransform("hyphenation", (content, outputPath) => {
+    if (!transformExcludes.includes(outputPath)) {
 
-    const dom = new JSDOM(content);
-    const document = dom.window.document;
-    const NodeFilter = dom.window.NodeFilter;
+      const dom = new JSDOM(content);
+      const document = dom.window.document;
+      const NodeFilter = dom.window.NodeFilter;
 
-    const filter = {
-      acceptNode: n => n.parentElement.closest("pre") === null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
-    };
+      const filter = {
+        acceptNode: n => n.parentElement.closest("pre") === null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+      };
 
-    const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
+      const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
 
-    while (walk.nextNode()) {
-      walk.currentNode.nodeValue = hypher.hyphenateText(walk.currentNode.nodeValue);
+      while (walk.nextNode()) {
+        walk.currentNode.nodeValue = hypher.hyphenateText(walk.currentNode.nodeValue);
+      }
+      return dom.serialize();
+    } else {
+      return content;
     }
-    return dom.serialize();
   });
 
-  config.addTransform("", (content, outputPath) => {
+  config.addTransform("table-wrapper", (content, outputPath) => {
+    if (!transformExcludes.includes(outputPath)) {
 
-    const dom = new JSDOM(content);
-    const document = dom.window.document;
-    const tables = Array.from(document.querySelectorAll('table'));
+      const dom = new JSDOM(content);
+      const document = dom.window.document;
+      const tables = Array.from(document.querySelectorAll('table'));
 
-    for (let table of tables) {
-      const parent = table.parentNode;
+      for (let table of tables) {
+        const parent = table.parentNode;
 
-      const wrappingDiv = document.createElement("div");
-      wrappingDiv.classList.add('table-wrapper');
-      parent.insertBefore(wrappingDiv, table)
-      wrappingDiv.appendChild(table);
+        const wrappingDiv = document.createElement("div");
+        wrappingDiv.classList.add('table-wrapper');
+        parent.insertBefore(wrappingDiv, table)
+        wrappingDiv.appendChild(table);
+      }
+      return dom.serialize();
+    } else {
+      return content;
     }
-    return dom.serialize();
   });
 
   config.addFilter("slug", s =>

@@ -1,0 +1,4 @@
+Sitemap: https://exponential-idle-guides.netlify.app/sitemap.xml
+
+User-agent: *
+Disallow:
