@@ -21,7 +21,7 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 4. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
    do this when you are near a graduation mark.
 5. Respec the all 30 students from R9.
-6. Wait for the new autoprestige to trigger.
+6. Manually Prestige when the boost slows (shouldn't take long at all as its an instant growth)
 7. Repeat
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
