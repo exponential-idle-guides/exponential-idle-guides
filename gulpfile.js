@@ -27,12 +27,18 @@ gulp.task('generate', shell.task('eleventy'));
 
 gulp.task('generate-dev', shell.task('eleventy', { ignoreErrors: true }));
 
+gulp.task('robots', () => {
+  return gulp.src("src/robots.txt")
+    .pipe(gulp.dest("_site"))
+});
+
 gulp.task('assets', gulp.parallel('css', 'scripts', 'images'));
 
-gulp.task('build', gulp.series('generate', 'assets', 'redirects'));
+gulp.task('build', gulp.series('generate', 'assets', 'redirects', 'robots'));
 
 gulp.task('watch', () => {
   gulp.watch('.eleventy.js', gulp.series('generate-dev'));
+  gulp.watch('src/robots.txt', gulp.series('robots'));
   gulp.watch('src/view/**/*', gulp.series('generate-dev'));
   gulp.watch('src/style/**/*.scss', gulp.series('css'));
   gulp.watch('src/scripts/**/*.js', gulp.series('scripts'));
