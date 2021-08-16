@@ -38,7 +38,7 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 6. Manually prestige when the boost slows (max 10-15 seconds but should be lower at this point)
 8. Repeat
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Klw9lLPNqdY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://youtu.be/c8ekMzXWD_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 #### The new autoprestige expression
 
