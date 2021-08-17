@@ -8,6 +8,8 @@ draft: true
 order: 4
 ---
 
+{% import "embed-yt.njk" as yt %}
+
 ### Graduation routing
 
 Routing is based on your current Tau and Phi numbers.
@@ -25,7 +27,8 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 6. Manually Prestige when the boost slows (shouldn't take long at all as its an instant growth)
 7. Repeat
 
-<iframe width="560" height="315" src="https://youtu.be/c8ekMzXWD_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
 
 #### The new autoprestige expression
 
@@ -115,7 +118,8 @@ Variable | Multiplier | Variable | Multiplier
 \\(c_2\\) | 1000 | \\(q_1\\) | 5.0
 \\(c_3\\) | 2 | \\(q_2\\) | 1.15
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lFSAFIpWkb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+{{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
 #### T5 routing
 
@@ -136,13 +140,15 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
    2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
 4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
 
-###### Commentary:
+###### Commentary
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AYI4U7Aob6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-###### No Commentary:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pM-pjSnMByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{ yt.embed('https://www.youtube.com/embed/AYI4U7Aob6o') }}
+
+###### No commentary
+
+{{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 
 T5 will always give its best results from active play however, after

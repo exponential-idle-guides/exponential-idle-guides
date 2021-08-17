@@ -116,9 +116,9 @@ module.exports = config => {
     dir: {
       input: "src/view",
       data: "_data",
-      output: "_site",
-      markdownTemplateEngine: "njk"
-    }
+      output: "_site"
+    },
+    markdownTemplateEngine: "njk"
   };
 }
 

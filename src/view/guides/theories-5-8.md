@@ -7,6 +7,8 @@ draft: true
 order: 3
 ---
 
+{% import "embed-yt.njk" as yt %}
+
 ### Graduation routing
 
 Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
@@ -39,7 +41,7 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 6. Manually prestige when the boost slows (max 10-15 seconds but should be lower at this point)
 8. Repeat
 
-<iframe width="560" height="315" src="https://youtu.be/c8ekMzXWD_g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
 #### The new autoprestige expression
 
@@ -67,11 +69,9 @@ This theory will be used as overnight until 1e350 Tau where it will not be touch
 
 See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
-
 ### Theory 4 (35σ / 8k)
 
 See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
-
 
 ### Theory 5 (40σ / 9k)
 
@@ -141,13 +141,13 @@ After autobuy at e30, you should repeat this after every publication:
    2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
 4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
 
-###### Commentary:
+###### Commentary
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AYI4U7Aob6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{ yt.embed('https://www.youtube.com/embed/AYI4U7Aob6o') }}
 
-###### No Commentary:
+###### No commentary
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pM-pjSnMByw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while auto buying \\(q_1\\) and
