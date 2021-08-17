@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if description %}<meta name="description" content="{{ description }}">{% endif %}
     <link href="/style/main.css" rel="stylesheet">
-    <script type="text/javascript" async defer
+    <script async defer
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML">
     </script>
-    <script type="module" async src="/scripts/color-scheme.js"></script>
+    <script type="module" async defer src="/scripts/color-scheme.js"></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         showMathMenu: false,
@@ -17,7 +17,7 @@
         SVG: { linebreaks: { automatic: true } }
       });
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CQWRWZCSZW"></script>
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-CQWRWZCSZW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
