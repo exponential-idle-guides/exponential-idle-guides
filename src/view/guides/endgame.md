@@ -123,8 +123,6 @@ Running the active strats will make this the number one theory for a while
 and eventual number two after T6 takes over. A step-by-step on how to
 progress the theory is below.
 
-
-
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 1. x10 buy \\(c_2\\) manually

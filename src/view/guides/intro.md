@@ -44,7 +44,7 @@ better theory.
 ### Respecing students
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
-or reallocating easily, but it will remove __ALL__ of your students from 
+or reallocating easily, but it will remove __ALL__ of your students from
 everything including theories. On the bottom right is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
 <kbd>-</kbd> buttons remove x levels from the selected research option.
