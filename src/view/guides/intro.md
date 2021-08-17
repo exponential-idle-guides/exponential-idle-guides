@@ -1,5 +1,6 @@
 ---
 title: "Introduction"
+description: "Our introduction guide to introduce you some of the concepts of the game."
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
 order: 0

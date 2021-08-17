@@ -1,5 +1,6 @@
 ---
 title: "ee2k to ee5k"
+description: "A guide for stars, prestiging and supremecies, and the route you should take for ee2k to ee5k."
 author: "LE★Baldy"
 contributors: "The Amazing Community"
 draft: true
