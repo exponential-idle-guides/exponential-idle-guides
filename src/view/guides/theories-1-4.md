@@ -53,7 +53,7 @@ up the theory.
 ##### Third milestone
 \\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Sixth and final milestone
+##### Sixth and Final milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 #### T1 strategy

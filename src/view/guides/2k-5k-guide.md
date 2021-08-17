@@ -19,6 +19,10 @@ Do not buy Autosupremacy until more than 118,840 stars. This keeps all
 variables when you get autosupremacy.
 
 #### Autoprestige
+
+Remember to change mode from ratio to expression by clicking
+<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression]
+
 ```
 timer(d(ln(db/b+1)/pt) < 0)
 > 3 * tr && db > b
@@ -29,6 +33,9 @@ timer(d(ln(db/b+1)/pt) < 0)
 Do a manual supremacy when you input this expression and never enter the
 edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.
+
+Remember to change mode from ratio to expression by clicking
+<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression]
 
 ```
 timer(d(ln(db/b+1)/pt) < 0)
