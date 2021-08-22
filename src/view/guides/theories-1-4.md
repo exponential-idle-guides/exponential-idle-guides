@@ -321,7 +321,7 @@ don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
 be bought \\(e1\\) cheaper than the priority tier above. If you decide to
 manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_4\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
+\\(c_1\\), \\(c_2\\), \\(c_3\\), and \\(q_1\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
 mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
@@ -329,7 +329,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
  - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
 
-### Theory tier list (Pre-9k+)
+### Recognmended Theory Taus (Pre-9k+)
 
 Before you reach 9k, these are the recognmended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.
