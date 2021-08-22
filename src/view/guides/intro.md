@@ -3,7 +3,7 @@ title: "Introduction to Graduation"
 description: "Our introduction guide to the concepts of graduation."
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
-order: 0
+order: 2
 ---
 
 These guides are designed to help you play through the Theories sections
