@@ -10,6 +10,8 @@ order: 6
 
 {% import "embed-yt.njk" as yt %}
 
+**DO T9 BEFORE EE50k**
+
 ### Graduation routing
 
 Routing is based on your current Tau and Phi numbers.
@@ -18,14 +20,14 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 ### Push f(t) with 3R9 seapping
 
-1. Memorize your student distributions with and without 30 R9 students.
-2. Wait till \\(f(t)\\) stops growing without student respec.
-3. Start accel (preferably keep it between prestiges).
-4. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
+###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
+1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+2. Start accel (preferably keep it between prestiges).
+3. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
    do this when you are near a graduation mark.
-5. Respec the all 30 students from R9.
-6. Manually Prestige when the boost slows (shouldn't take long at all as its an instant growth)
-7. Repeat
+4. Respec the all 30 students from R9.
+5. Wait for the autoprestige to prestige and swap back students to R9
+6. Repeat
 
 
 {{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
