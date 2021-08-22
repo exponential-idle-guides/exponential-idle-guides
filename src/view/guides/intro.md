@@ -24,6 +24,7 @@ further ahead than you are already.
 > 3 * tr) &&(phi >= 1 && phi <= 1))
 ```
 
+#### Autoprestige Explaination
 This is the new equation for prestige. It looks intimidating, but it will works normally and you never have to turn it off. Here is an explaination for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autoprestige-explaination) already.
 
 `((d(smooth(10^10^10^(phi * tau), 1)) > 1)`
