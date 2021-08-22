@@ -4,7 +4,7 @@ description: "A guide for stars, prestiging and supremecies, and the route you s
 author: "LE★Baldy"
 contributors: "The Amazing Community"
 draft: true
-order: 1
+order: 3
 ---
 
 ### Updating stars
