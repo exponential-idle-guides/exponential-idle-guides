@@ -4,7 +4,7 @@ description: "Our guide for routing through and understanding theories 5 to 8. W
 author: "LE★Baldy & Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 3
+order: 5
 ---
 
 {% import "embed-yt.njk" as yt %}
