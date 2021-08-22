@@ -5,7 +5,7 @@ description: "Our guide for progressing once you have reached Theory 9 and the e
 author: "LE★Baldy"
 contributors: "the Amazing Community"
 draft: true
-order: 4
+order: 6
 ---
 
 {% import "embed-yt.njk" as yt %}
