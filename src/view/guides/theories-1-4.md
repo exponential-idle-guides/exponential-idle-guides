@@ -4,7 +4,7 @@ description: "Our guide for routing through and understanding theories 1 to 4. W
 author: "LE★Baldy & Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 2
+order: 4
 ---
 
 ### Graduation routing
