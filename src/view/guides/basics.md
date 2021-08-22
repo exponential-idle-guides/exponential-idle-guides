@@ -40,7 +40,7 @@ Medium | 3 | 6 | 6
 Hard | 6 | 14 | 14
 Expert | --- | --- | 25
 
-Equation for reward is `floor(gameBaseReward * max(1, 0.02 * dt^0.5))`.
+Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
  
 ### Stars and Star Upgrades
 * Stars are a currency that opperates outside of the main game that you use to purchase star upgrades. These upgrades range from QoL features to boosts to the gameplay. For the most part, you should prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge boost in power, and you should prioritize that over variables of a similar cost. More details on star upgrades to prioritize can be found in following guides are you go.
