@@ -1,19 +1,44 @@
 ---
-title: "Introduction to Graduation"
-description: "Our introduction guide to the concepts of graduation."
+title: "Introduction to Graudation"
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
-order: 0
+order: 2
 ---
 
-These guides are designed to help you play through the Theories sections
-of Exponential Idle.
+These guides are designed to help you play through the phi and theories sections
+of Exponential Idle. This introduction will give you some fundamentals to help you progress
+while playing this section of the game.
 
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
-This introduction will give you some fundamentals to help you progress
-while playing this section of the game.
+### The New Autoprestige Equation
+
+```
+((timer(d(ln(db / b + 1) / pt) < 0)
+> 3 * tr && db > b && 
+((d(smooth(10^10^10^(phi * tau), 1)) > 1) 
+&& timer(abs(d(log10(phi + 1))) < 50) > 15)) 
+&& phi > 1) || 
+((timer(d(ln(db / b + 1) / pt) < 0)
+> 3 * tr) &&(phi >= 1 && phi <= 1))
+```
+
+This is the new equation for prestige. It looks intimidating, but it will works normally and you never have to turn it off. Here is an explaination for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autoprestige-explaination) already.
+
+`((d(smooth(10^10^10^(phi * tau), 1)) > 1)`
+
+This returns true if phi and/or tau grows a very very small amount. The many "10^" is to make any tiny changes explode into very large numbers so that they will never be less than 1, especially if you are far into a graduation or endgame. This also prevents you from early prestiging from dropping accel as it drops phi drop in value.
+
+`timer(abs(d(log10(phi + 1))) < 50) > 15))`
+
+This part makes it so if phi were to change more than e5 within 1 tick, then wait 15 sec before prestiging. This will allow you to swap R9 freely without needing to worry about accidentally prestiging for a very small amount of b.
+
+`((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr) && (phi >= 1 && phi <= 1))`
+
+If phi is equal to 1, then it uses the normal autoprestige equation. We don't have "=" in the equations, so we had to work around it by using both >= (greater than or equal to) and <= (less than or equal to). This means that, even if you don't have any phi upgrades, it will allow you to prestige like normal and not require you to swap out of R9 or theories until the end of a graduation.
+
+###### Note: If you don't know what R9 is, you will find out later in the game.
 
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
@@ -44,7 +69,7 @@ better theory.
 ### Respecing students
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
-or reallocating easily, but it will remove __ALL__ of your students from
+or reallocating easily, but it will remove __ALL__ of your students from 
 everything including theories. On the bottom right is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
 <kbd>-</kbd> buttons remove x levels from the selected research option.
