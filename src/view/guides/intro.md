@@ -72,6 +72,18 @@ The amount of levels removed is based on the x1, x10, x25, x100, xMax
 cost option selected in the top right. On the right side of each
 research option, you can also see the total levels.
 
+### Theory basics
+Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
+use them. However, the best publication multipliers vary from theory to theory and will
+decrease over time. If you are close to a multiplier you want, turn off autobuyer
+and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
+before the publication (turn on after you publish). Total \\(τ\\), found in the equation 
+or at the top of the screen, is a multiplicative combination of all \\(τ\\) from each
+theory.
+
+__Don’t be afraid to skip getting all milestones to work on the next or a
+better theory.__
+
 ### Respecing milestones
 Unlike students, all Milestone sections already have the <kbd>-</kbd> button.
 This works in the same way as above. Here you can also find how many
