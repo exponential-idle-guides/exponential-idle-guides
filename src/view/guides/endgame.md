@@ -18,17 +18,16 @@ Routing is based on your current Tau and Phi numbers.
 
 Make sure to use the [calculators and simulators](/#other-resources) for optimal graduation, student, star, and theory options.
 
-### Push f(t) with 3R9 seapping
+### Push F(t) with 3R9 seapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+1. Wait till \\(F(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
-3. Potentially sit here to stack t for bigger \\(phi_2\\) when you have students in \\(phi_2\\). Only
+3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark.
 4. Respec the all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9
-6. Repeat
-
+5. Wait for the autoprestige to prestige and swap back students to R9.
+6. Repeat.
 
 {{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
 
