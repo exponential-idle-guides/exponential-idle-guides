@@ -61,19 +61,6 @@ as possible as they function outside of the main game.
 Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
 [star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distributions.
 
-### Theory routing
-Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
-use them. However, the best publication multiplier is not known at the
-time, but it does decrease over time. If you are close to a multiplier
-you want, turn off autobuyer and let \\(\rho\\) increase without buying
-upgrades for a faster short-term increase before the publication (turn
-on after you publish). Total \\(τ\\), found in the equation or at the top
-of the screen, is a multiplicative combination of all \\(τ\\) from each
-theory.
-
-Don’t be afraid to skip getting all milestones to work on the next or a
-better theory.
-
 ### Respecing students
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
 Research and gives you back without consequence. This allows for testing
