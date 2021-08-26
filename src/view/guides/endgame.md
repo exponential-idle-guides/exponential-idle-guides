@@ -125,7 +125,7 @@ Variable | Multiplier | Variable | Multiplier
 #### T5 routing
 
 Running the active strats will make this the number one theory for a while
-and eventual number two after T6 takes over. A step-by-step on how to
+and eventual number two after T6 takes over (e750-770+). A step-by-step on how to
 progress the theory is below.
 
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
