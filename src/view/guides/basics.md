@@ -64,7 +64,7 @@ We could divide the ratio by time, but that doesn't make sense because ratios ar
 Therefore, we get the expression `((b + db)/b)^(1/pt)` which represents "after last prestige, b grew by (this ratio) per second." To maximize this value, we note that this value actually achieves one local maximum (by working through the behaviors of `f` over time) so we may simply take a derivative `d` and see when it turns negative.
 
 #### Visual Representation
-![AP graph](/images/AP-graph.jpg)
+![AP graph](/images/AP-graph.png)
 
 ### Supremacy Equation Explanation
  
