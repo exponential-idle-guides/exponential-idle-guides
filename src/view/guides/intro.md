@@ -20,7 +20,8 @@ further ahead than you are already.
 timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) || 
 ((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr) &&
 ((phi >= 1 && phi <= 1)||
-((0.8*log10(log10(lf))>log10(log10(gf)))||(0.8*log10(log10(gf))>log10(log10(sf)))))
+((0.8*log10(log10(lf))>log10(log10(gf)))||
+(0.8*log10(log10(gf))>log10(log10(sf)))))
 ```
 
 #### Autoprestige Explaination
@@ -59,7 +60,8 @@ If phi is equal to 1, then it uses the normal autoprestige equation. We don't ha
  to swap out of theories (or R9 until the end of a graduation).
 
 ```
-((0.8*log10(log10(lf))>log10(log10(gf)))||(0.8*log10(log10(gf))>log10(log10(sf))))
+((0.8*log10(log10(lf))>log10(log10(gf)))||
+(0.8*log10(log10(gf))>log10(log10(sf))))
 ```
 
 This lets the normal equation work when you supremacy or graduate up to 80% of 
