@@ -87,7 +87,7 @@ we take the growth of \\(b\\) that can result from current prestige only and tak
 ratio of growth.
 
 We could divide the ratio by time, but that doesn't make sense because ratios are applied 
-multiplicatively (e.g. ratio \\(r\\) per second means \\(r^5)\\ in \\(5\\) seconds, not \\(5*r\\)). Hence, 
+multiplicatively (e.g. ratio \\(r\\) per second means \\(r^5\\) in \\(5\\) seconds, not \\(5*r\\)). Hence, 
 instead of dividing, we take the power \\(1/pt\\) (\\(pt\\) being the time since prestige) to get the 
 correct value of ratio.
 
