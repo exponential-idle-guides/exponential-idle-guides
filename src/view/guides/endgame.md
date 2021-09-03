@@ -42,6 +42,8 @@ timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
 (phi >=1 && phi <= 1))
 ```
 
+###### Reference [R9 Seaping AutoPrestige Explaination](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#the-new-autoprestige-expression)
+
 ### Idle and active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
