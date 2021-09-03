@@ -6,6 +6,17 @@ contributors: "the Amazing Community"
 draft: true
 order: 4
 ---
+### Theory basics
+Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
+use them. However, the best publication multipliers vary from theory to theory and will
+decrease over time. If you are close to a multiplier you want, turn off autobuyer
+and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
+before the publication (turn on after you publish). Total \\(τ\\), found in the equation 
+or at the top of the screen, is a multiplicative combination of all \\(τ\\) from each
+theory.
+
+__Don’t be afraid to skip getting all milestones to work on the next or a
+better theory.__
 
 ### Graduation routing
 
@@ -321,7 +332,7 @@ don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
 be bought \\(e1\\) cheaper than the priority tier above. If you decide to
 manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), and \\(q_1\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
+\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_4\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
 mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
@@ -329,7 +340,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
  - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
 
-### Recommended Theory Taus (Pre-9k+)
+### Theory tier list (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.
