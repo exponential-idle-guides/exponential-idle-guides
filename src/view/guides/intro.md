@@ -71,6 +71,7 @@ of the equation above, does not allow the normal equation to prestige for 15 sec
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, 
 we allow the normal equation to work like normal while recovering.
 
+###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-3-cumulative-maximum)
 ###### Note: If you don't know what R9 is, you will find out later in the game.
 
 ### Graduation routing
