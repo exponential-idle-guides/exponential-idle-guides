@@ -177,6 +177,10 @@ Attractor | Starting Positions (reset every pub) | Time Step
 See the [introduction guide](/guides/intro/) for respecing students and
 milestones.
 
+### Supremacy Equation Past 48k
+
+When you get to ee48k, you will have all of the psi upgrades and you can get rid of the old Autosupremacy Equation.
+
 #### Lemma
 
 All Lemma sections already have the <kbd>-</kbd> buttons unlocked. This gives
