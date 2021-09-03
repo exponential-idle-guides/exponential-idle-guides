@@ -142,7 +142,7 @@ However, we can do better: instead of simply locking values, we can control when
  
 If we have two really large values, the average of the two will be in favor of the larger of the two. In fact, if the two numbers are really really big, the average will be indistinguishable from the larger of the two due to finite data storage (term: floating point precision). We can abuse this idea to convert the input of smooth into a very large value, thereby converting averages like \\(average = 0.5 * (new value) + 0.5 * (old value)\\) into the equivalent \\(average = max(new value, old value)\\). The effect is that we obtain the maximum value that the input attained ever since the expression was reset (from modifying the expression or from prestige (resp. supremacy) for prestige expression (resp. supremacy expresssion)). Of course, we have to cancel out the magnification of the inputs in order to retrieve the value we actually want.
 
-For example, \\(smooth(10^10^10^db, 1)\\) has the input large enough that it displays the largest value of \\(10^10^10^db\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log10(log10(log10(smooth(10^10^10^db, 1))))\\) to retrieve back the maximum \\(db\\).
+For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that it displays the largest value of \\(10^{10^{10^{db}}}\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))\\) to retrieve back the maximum \\(db\\).
 
 #### Reference Formula
 ![Smooth Formula](/images/smooth-formula.jpg)
