@@ -329,7 +329,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
  - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
 
-### Recognmended Theory Taus (Pre-9k+)
+### Recommended Theory Taus (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.

@@ -97,7 +97,7 @@ one local maximum (by working through the behaviors of (\\(f\\) over time) so we
 derivative (\\(d\\)) and see when it turns negative.
 
 #### Visual Representation
-![AP graph](/images/AP-graph.jpg)
+![AP graph](/images/AP-graph.png)
 
 ### Supremacy Equation Explanation
  
@@ -114,4 +114,75 @@ max(1, st), (pt > tr) * ee99)
 
 __YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME__
 
+###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock)
+
+#### Autosupremacy Explainantion
+
 The Supremacy Equation is an attempt to do the Autoprestige Equation, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy function than an autoprestige expression because after a new prestige, Supremacy \\(F(t)\\) doesn't increase until you get back to the \\(F(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
+
+### Smooth() for auto expressions
+
+Internally, smooth is implemented using exponential moving average. Here are some ways to use this construction.
+
+#### Method 1: Moving Average
+ 
+If a value fluctuates too much, you can use smooth so that the value does not go rampant, triggering some conditions incorrectly. One main example is to use it when you use multiple d() function on the same expression.
+
+For instance, 
+```
+smooth( d(d(ln(db))), 10)
+ vs
+d(d(ln(db)))
+ ``` 
+the smooth() version will behave much better than the simplier d(d(ln(db))) because using d multiple times creates a lot of fluctuation, due to the discrete nature of d (not a true derivative, but an extrapolation of slope over the last tick). Of course, this introduces some "lag factor" in the sense that when some threshold is past, smooth won't display it until a short after.
+
+#### Method 2: Lock
+ 
+Due to the nature of the expression, if the second input of smooth is very large, then there will be no average at all: instead of taking a normal average, we can skew the weights so that any new value is too small to be noticed. As a very simple example, can calculate averages like 
+ 
+```
+average = 0 * (new value) + 1 * (old value)
+``` 
+ 
+to preserve old values. On the contrary, if we skew this the other way, then only the new value would appear:  
+ 
+```
+average = 1 * (new value) + 0 * (old value)
+```
+
+A simple expression like smooth(expr, ee99) will first compute expr and keep that value indefinitely until the expression field is reset: upon modifying the expression, every prestige for prestige expressions, and every supremacy for supremacy expressions. This is what we refer to as "lock."
+
+However, we can do better: instead of simply locking values, we can control when the locking mechanism comes in. Using conditions, we can switch back and forth between indefinite locks and instantaneous updates: 
+
+```
+smooth(expr, ee99 * cond)
+```
+
+If cond is true, then ee99 * cond will be ee99, thereby activating the lock. If cond is false, then ee99 * cond will be 0, thereby switching to instantaneous updates. The result is that we obtain the value of expr evaluated when the cond was last false.
+
+#### Method 3: Cumulative Maximum
+ 
+If we have two really large values, the average of the two will be in favor of the larger of the two. In fact, if the two numbers are really really big, the average will be indistinguishable from the larger of the two due to finite data storage (term: floating point precision). We can abuse this idea to convert the input of smooth into a very large value, thereby converting averages like
+ 
+```
+average = 0.5 * (new value) + 0.5 * (old value)
+```
+
+into the equivalent average = max(new value, old value). The effect is that we obtain the maximum value that the input attained ever since the expression was reset (from modifying the expression or from prestige (resp. supremacy) for prestige expression (resp. supremacy expresssion)). Of course, we have to cancel out the magnification of the inputs in order to retrieve the value we actually want.
+
+For example, 
+ 
+```
+smooth(10^10^10^db, 1)
+```
+ 
+has the input large enough that it displays the largest value of 10^10^10^db that occurred so far. However, we wouldn't want db blown up this way, so we can use 
+
+```
+log10(log10(log10(smooth(10^10^10^db, 1))))
+```
+ 
+to retrieve back the maximum db.
+
+#### Reference Formula
+![Smooth Formula](/images/smooth-formula.jpg)
