@@ -21,7 +21,7 @@ variables when you get autosupremacy.
 #### Autoprestige
 
 Remember to change mode from ratio to expression by clicking
-<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression]
+<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#normal-prestige-equation)
 
 ```
 timer(d(ln(db/b+1)/pt) < 0)
@@ -35,7 +35,7 @@ edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.
 
 Remember to change mode from ratio to expression by clicking
-<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression]
+<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#supremacy-equation-explanation)
 
 ```
 timer(d(ln(db/b+1)/pt) < 0)

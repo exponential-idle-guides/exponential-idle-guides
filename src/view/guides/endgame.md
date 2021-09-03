@@ -26,7 +26,8 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark.
 4. Respec the all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9.
+5. Wait for the autoprestige to prestige and swap back students to R9. When you are later in a graduation,
+    you will ned to prestige manually
 6. Repeat.
 
 {{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
