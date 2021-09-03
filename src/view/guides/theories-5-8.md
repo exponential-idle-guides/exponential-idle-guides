@@ -57,6 +57,8 @@ This method allows you to push \\(f(t)\\) with almost no loss of R9
 uptime or pushing power. This is harder with fewer levels of R9 but
 still helps if you get used to it.
 
+###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-3-cumulative-maximum)
+
 ### Theory 1 (20σ / 5k)
 
 You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publication.
