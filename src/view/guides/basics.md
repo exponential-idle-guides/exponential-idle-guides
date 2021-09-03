@@ -26,17 +26,19 @@ further ahead than the you are already.
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
 ### Variable Names
-Variable | Name | Variable | Name | Variable | Name
---- | --- | --- | --- | --- | ---
-\\(x\\) | x | \\(\beta\\) | beta | \\(\kappa\\) | kappa
-\\(y\\) | y | \\(\gamma\\) | gamma | \\(\lambda\\) | lambda
-\\(z\\) | z | \\(\delta\\) | delta | \\(\nu\\) | nu
-\\(s\\) | s | \\(ε\\) | epsilon | \\(\xi\\) | xi
-\\(u\\) | u | \\(\zeta\\) | zeta | \\(\mu\\) | mu
-\\(v\\) | v | \\(\eta\\) | eta | \\(\psi\\) | psi
-\\(w\\) | w | \\(\theta\\) | theta | 
-\\(α\\) | alpha | \\(\iota\\) | iota | 
-
+Variable | Name | Variable | Name
+--- | --- | --- | ---
+\\(x\\) | x | \\(\kappa\\) | kappa
+\\(y\\) | y | \\(\lambda\\) | lambda
+\\(z\\) | z | \\(\nu\\) | nu
+\\(s\\) | s | \\(ε\\) | epsilon
+\\(u\\) | u | \\(\zeta\\) | zeta
+\\(v\\) | v | \\(\eta\\) | eta
+\\(w\\) | w | \\(\theta\\) | theta
+\\(α\\) | alpha | \\(\iota\\) | iota
+\\(\beta\\) | beta | \\(\xi\\) | xi
+\\(\gamma\\) | gamma | \\(\mu\\) | mu
+\\(\delta\\) | delta | \\(\psi\\) | psi
 ### Achievements and Minigames
 * Achievements are just that, they are goals to reach that will gice you stars as a reward.
 * Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
