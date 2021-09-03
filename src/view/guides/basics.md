@@ -91,8 +91,8 @@ multiplicatively (e.g. ratio \\(r\\) per second means \\(r^5)\\ in \\(5\\) secon
 instead of dividing, we take the power \\(1/pt\\) (\\(pt\\) being the time since prestige) to get the 
 correct value of ratio.
 
-Therefore, we get the expression \\(((b + db)/b)^(1/pt)\\) which represents "after last prestige, \\(b\\) 
-grew by \\(this ratio\\) per second." To maximize this value, we note that this value actually achieves 
+Therefore, we get the expression \\(((b + db)/b)^{(1/pt)}\\) which represents "after last prestige, \\(b\\) 
+grew by \\(this\\) \\(ratio\\) per second." To maximize this value, we note that this value actually achieves 
 one local maximum (by working through the behaviors of (\\(f\\) over time) so we may simply take a 
 derivative (\\(d\\)) and see when it turns negative.
 
