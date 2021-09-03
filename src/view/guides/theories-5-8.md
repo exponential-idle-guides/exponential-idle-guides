@@ -57,7 +57,7 @@ This method allows you to push \\(f(t)\\) with almost no loss of R9
 uptime or pushing power. This is harder with fewer levels of R9 but
 still helps if you get used to it.
 
-###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-3-cumulative-maximum)
+###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explaination)
 
 ### Theory 1 (20σ / 5k)
 
