@@ -70,7 +70,7 @@ timer(d(ln(db/b+1)/pt) < 0)
 ```
 
 #### Autoprestige Explaination
-The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^(1/pt)) < 0\\). 
+The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^{(1/pt)}) < 0\\). 
 They measure the same thing, but the second one is just raised to the exponent, base e. They are 
 equivalent because \\(e^x\\) (and \\(ln (x)\\)) are both strictly increasing functions on the domain 
 \\(x > 0\\), so applying those functions will not change where the local maximum is located 
