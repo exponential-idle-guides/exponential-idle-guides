@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Graudation"
+title: "Introduction to Graduation"
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
 order: 2
