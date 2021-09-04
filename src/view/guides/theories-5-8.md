@@ -41,23 +41,17 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
-
-#### The new autoprestige expression
-
-```
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
-((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
-(phi >=1 && phi <= 1))
-```
-
 This method allows you to push \\(f(t)\\) with almost no loss of R9
 uptime or pushing power. This is harder with fewer levels of R9 but
 still helps if you get used to it.
 
+#### The new autoprestige expression
+
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro/#the-new-autoprestige-equation)
+
 ###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explaination)
+
+{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
 ### Theory 1 (20σ / 5k)
 
