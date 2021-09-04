@@ -13,22 +13,10 @@ order: 3
 does not need to be updated the most often, but should be done if it has
 been a while since you last did.
 
-### Autoprestige and autosupremacy
+### Autosupremacy
 
 Do not buy Autosupremacy until more than 118,840 stars. This keeps all
-variables when you get autosupremacy.
-
-#### Autoprestige
-
-Remember to change mode from ratio to expression by clicking
-<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#normal-prestige-equation)
-
-```
-timer(d(ln(db/b+1)/pt) < 0)
-> 3 * tr && db > b
-```
-
-#### Autosupremacy
+variables when you get autosupremacy..
 
 Do a manual supremacy when you input this expression and never enter the
 edit expression field again afterwards. Make sure autobuyers are on x1
