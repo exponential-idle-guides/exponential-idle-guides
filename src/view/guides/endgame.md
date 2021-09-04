@@ -30,19 +30,13 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
     you will ned to prestige manually
 6. Repeat.
 
-{{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
-
 #### The new autoprestige expression
 
-```
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
-((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
-(phi >=1 && phi <= 1))
-```
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro/#the-new-autoprestige-equation)
 
 ###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explaination)
+
+{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
 ### Idle and active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
