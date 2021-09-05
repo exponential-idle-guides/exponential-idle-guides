@@ -135,7 +135,8 @@ After autobuy at e30, you should repeat this after every publication:
 3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
    1. Buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
    2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
-4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
+4. Once you reach your desired multiplier, publish. 
+5. Repeat this for stonks.
 
 ###### Commentary
 
