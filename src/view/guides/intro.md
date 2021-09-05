@@ -21,7 +21,7 @@ timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
 ((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr) &&
 ((phi >= 1 && phi <= 1)||
 ((0.8*log10(log10(lf))>log10(log10(gf)))||
-(0.8*log10(log10(gf))>log10(log10(sf)))))
+(0.8*log10(log10(gf))>log10(log10(sf))))))
 ```
 
 #### Autoprestige Explaination
