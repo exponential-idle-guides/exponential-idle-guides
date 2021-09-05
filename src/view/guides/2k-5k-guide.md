@@ -80,7 +80,7 @@ graduation is shown on the bottom.
 Total students after a graduation is equal to  \\(\sigma_t\\) \\(+\\)
 \\(d\sigma\\). When a graduation is available, it will display a message
 _Tap to graduate new students_. You do not have to graduate with only
-one student and is ofte times better to graduate for multiple at a time.
+one student and is often times better to graduate for multiple at a time.
 
 #### Phi upgrades
 ![Phi Upgrades](/images/phiupgrades.jpg)
