@@ -100,7 +100,7 @@ It is better to combine both of these supremacies into one than have to recovery
 2. Put the extra stars into perm levels into the last variable
 3. As you progress with more \\(F(t)\\), use the [variable lookup table](https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw/edit#gid=0) for when to buy the next variable.
 - If you can afford to buy a level in the next variable, it is worth buying that variable and moving perm levels to it.
-- After buy buy a new variable, move the perm levels from the previous variable into the new last variable.
+- After buying a new variable, move the perm levels from the previous variable into the new last variable.
 4. Progress normally and repeat until back to previous supremacy mark.
 
 #### Supremacy Recovery (Idle)
