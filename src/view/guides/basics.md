@@ -12,7 +12,7 @@ section of the game. This introduction will give you some fundamentals to help y
 while playing this section of the game.
 
 If you don't want to have spoilers for the later game, don't read
-further ahead than the you are already.
+further ahead than you are already.
 
 ### Variables and Upgrades
 * Variables are the main purchases in the game. They will be the most important to buy, 
@@ -40,7 +40,7 @@ Variable | Name | Variable | Name
 \\(\gamma\\) | gamma | \\(\mu\\) | mu
 \\(\delta\\) | delta | \\(\psi\\) | psi
 ### Achievements and Minigames
-* Achievements are just that, they are goals to reach that will gice you stars as a reward.
+* Achievements are just that, they are goals to reach that will give you stars as a reward.
 * Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
   solving them. The amount of stars the you get from completing a minigame is determined by 
   your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration 
@@ -71,7 +71,7 @@ timer(d(ln(db/b+1)/pt) < 0)
 > 3 * tr && db > b
 ```
 
-#### Autoprestige Explaination
+#### Autoprestige Explanation
 The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^{(1/pt)}) < 0\\). 
 They measure the same thing, but the second one is just raised to the exponent, base e. They are 
 equivalent because \\(e^x\\) (and \\(ln (x)\\)) are both strictly increasing functions on the domain 
