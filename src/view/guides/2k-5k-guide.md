@@ -118,7 +118,7 @@ in then leave it on and don't enter the expression field to reset it.
 
 The final three steps are the most important:
 1. Update your phi with the [phi calculator](https://conicgames.github.io/exponentialidle/students.html) while you go and not just in the beginning.
-2. Update your star permenant levels with the [star calculator](https://conicgames.github.io/exponentialidle/stars) at least once after ee4600.
+2. Update your star permanent levels with the [star calculator](https://conicgames.github.io/exponentialidle/stars) at least once after ee4600.
 3. Mentally prepare for a long push (it can take a while).
 
 #### Additional notes
@@ -127,4 +127,4 @@ When you get to ee4995, turn off autoprestige and just cruise until ee5000. Do n
 
 Never turn off autobuy of variables and upgrades. The F(t) used for graduations can be found in statistics and is cumulative. In other words, it does not decrease with purchases and is only speed up with them so it is in your best interest to continue purchasing.
 
-You can sell your autosupremacy during the 4.6k to 5k push after the final psi upgrade. This is because you can use an additional 100k stars for permenant levels for variables. The next psi 3 upgrade you will see at the bottom is only attainable at ee9160+ so you will not get it for a while.
+You can sell your autosupremacy during the 4.6k to 5k push after the final psi upgrade. This is because you can use an additional 100k stars for permanent levels for variables. The next psi 3 upgrade you will see at the bottom is only attainable at ee9160+ so you will not get it for a while.
