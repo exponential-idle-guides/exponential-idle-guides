@@ -74,6 +74,31 @@ we allow the normal equation to work like normal while recovering.
 ###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-3-cumulative-maximum)
 ###### Note: If you don't know what R9 is, you will find out later in the game.
 
+### Autosupremacy
+
+```
+timer(d(ln(db/b+1)/pt) < 0)
+> 2 * tr && db > b
+&& dpsi + psi > min(min(costUpS(1),
+costUpS(2)), costUpS(3))
+&& ln(1 + max(1,log10(sf))/
+smooth(max(1,log10(gf)),
+(st>tr) * ee99))/max(1,st)<
+smooth(ln(1 + max(1,log10(sf))/
+smooth(max(1,log10(gf)), (st>tr)
+* ee99))/max(1,st), (pt>tr) * ee99)
+```
+
+Do not buy Autosupremacy until more than 118,840 stars. This keeps all
+variables when you get autosupremacy.
+
+Do a manual supremacy when you input this expression and never enter the
+edit expression field again afterwards. Make sure autobuyers are on x1
+or xMax.
+
+Remember to change mode from ratio to expression by clicking
+<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#supremacy-equation-explanation)
+
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is use the [Graduation
