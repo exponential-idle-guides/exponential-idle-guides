@@ -16,27 +16,7 @@ been a while since you last did.
 ### Autosupremacy
 
 Do not buy Autosupremacy until more than 118,840 stars. This keeps all
-variables when you get autosupremacy..
-
-Do a manual supremacy when you input this expression and never enter the
-edit expression field again afterwards. Make sure autobuyers are on x1
-or xMax.
-
-Remember to change mode from ratio to expression by clicking
-<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#supremacy-equation-explanation)
-
-```
-timer(d(ln(db/b+1)/pt) < 0)
-> 2 * tr && db > b
-&& dpsi + psi > min(min(costUpS(1),
-costUpS(2)), costUpS(3))
-&& ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)),
-(st>tr) * ee99))/max(1,st)<
-smooth(ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)), (st>tr)
-* ee99))/max(1,st), (pt>tr) * ee99)
-```
+variables when you get autosupremacy. Here is the expression to copy: [autoprestige expression](https://exponential-idle-guides.netlify.app/guides/intro/#autosupremacy)
 
 ### Graduation routing
 
