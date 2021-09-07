@@ -89,15 +89,11 @@ smooth(max(1,log10(gf)), (st>tr)
 * ee99))/max(1,st), (pt>tr) * ee99)
 ```
 
-Do not buy Autosupremacy until more than 118,840 stars. This keeps all
-variables when you get autosupremacy.
-
-Do a manual supremacy when you input this expression and never enter the
+**Do a manual supremacy when you input this expression and never enter the
 edit expression field again afterwards. Make sure autobuyers are on x1
-or xMax.
+or xMax.**
 
-Remember to change mode from ratio to expression by clicking
-<kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/basics/#supremacy-equation-explanation)
+Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max F(t) during that supremacy is increased, but due to prestiges, this F(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock) and general smooth() to midigate this phenomonan. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of F(t) out of that prestige to make sure it is time to supremacy.
 
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
