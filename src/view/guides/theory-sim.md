@@ -65,7 +65,7 @@ that publication. See below for what each part means.
  - **T5AI**. For example, T5AI, T5AI4, T5AI5. This just means normal
    active strat as they are sim only strategies. There are 5 simulation
    ai's for T5 based on buying patterns.
- - **T7 NoDecay**. For example: T7NoDecay1, T7NoDecay2. This is just another Simulator only strategy so just use the normal manual/auto strategy and you are fine.
+ - **T7NoDecay**. For example: T7NoDecay1, T7NoDecay2. This is just another Simulator only strategy so just use the normal manual/auto strategy and you are fine.
  - **T8  Attractor**. For example, T8C, T8L, or T8. The C, L, and R
    represent the three attactors and which to have on. {toggle} Rare to
    see anything but T8R, but it has happened.
