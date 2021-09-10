@@ -89,8 +89,6 @@ There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \
 You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you made the \\(y^{1.6}\\) supremacy beforehand. 
 It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
-###### Remember to check out [Supremacy Guide] for explanation of the function and its upgrades
-
 #### Supremacy Recovery (Active)
 
 1. Drop variables that won't be purchasable immediately. This will be most of them initially
