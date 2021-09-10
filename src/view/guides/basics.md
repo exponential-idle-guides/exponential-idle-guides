@@ -50,7 +50,7 @@ Variable | Name | Variable | Name
   reward. The current best puzzle to farm stars is hard arrow as it gives the best stars/time spent 
   of any puzzle.
 
---- | 15-puzzle | Torus | Arrow
+--- | 15-Puzzle | Torus | Arrow
 --- | --- | --- | ---
 Easy | 1 | 1 | 1
 Medium | 3 | 6 | 6
@@ -66,7 +66,7 @@ Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
   boost in power, and you should prioritize that over variables of a similar cost. More details on 
   star upgrades to prioritize can be found in following guides.
  
-### Normal Prestige Equation
+### Normal AutoPrestige Equation
  
 ```
 timer(d(ln(db/b+1)/pt) < 0) 
