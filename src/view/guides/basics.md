@@ -66,7 +66,7 @@ Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
   boost in power, and you should prioritize that over variables of a similar cost. More details on 
   star upgrades to prioritize can be found in following guides.
  
-### Normal AutoPrestige Equation
+### Normal Autoprestige Equation
  
 ```
 timer(d(ln(db/b+1)/pt) < 0) 
