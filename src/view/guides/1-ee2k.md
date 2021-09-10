@@ -43,7 +43,7 @@ Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade
 
 ##### Equation Taps
 
-Each tap of the equation, increases t by \\(1 * (ad\\) \\( boost\\) \\( of\\) \\( 1.5) * accel value\\). This is a significant boost to progress until about ee15-ee20.
+Each tap of the equation, increases t by \\(1 * (ad\\) \\( boost\\) \\( of\\) \\( 1.5) * accel\\) \\( value\\). This is a significant boost to progress until about ee15-ee20.
 After, dt becomes too large for your taps to make a worthy and significant boost to progress.
 
 ##### Minigames
