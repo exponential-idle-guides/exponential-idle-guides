@@ -124,7 +124,7 @@ __YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!__
 
 The Supremacy Equation is an attempt to do the Autoprestige Equation, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy function than an autoprestige expression because after a new prestige, Supremacy \\(F(t)\\) doesn't increase until you get back to the \\(F(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
 
-### Smooth() for auto expressions
+### Smooth() for Auto Expressions
 
 Internally, smooth is implemented using exponential moving average. Here are some ways to use this construction.
 
