@@ -53,8 +53,6 @@ You an buy variables and perm levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 
-###### I would take a look at [Minigame Guide] for how to beat all the minigames
-
 ##### Accel Button
 
 This upgrade only has value if you continuously and consistently use it.
