@@ -7,15 +7,13 @@ order: 1
 ---
 ###### First read the [game basics](https://exponential-idle-guides.netlify.app/guides/basics/).
 
-#### Introduction
+### Introduction
 The start of the game is the most variable section of the game depending on how active you play.
 This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections for particular milestones. 
 Within each of these sections there are idle, active, and general strategy subsections for differing playstyles.
 Playing and molding both sections will often deliver the best results for a particular person's ability and situation.
 
 ### 1 to ee50
-
-#### General Strategies
 
 #### Prestige Strategy Before Autoprestige
 
@@ -112,8 +110,6 @@ Otherwise keep variables unlocked.
 
 ### ee50 to ee200
 
-#### General Strategies
-
 #### Autoprestige
 
 Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it.
@@ -155,8 +151,6 @@ These will not be of much value to you if you won't play them so not purchasing 
 If you don't use the accel button, don't buy it. When you can buy the autobuyers, buy the variable autobuyer then the upgrade autobuyer. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-to-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any left over stars will go into perm levels.
 
 ### ee200 to ee2000
-
-#### General Strategies
 
 ##### Autosupremacy
 There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get later. The equation below is the autosupremacy equation if you do happens to obtain it.
