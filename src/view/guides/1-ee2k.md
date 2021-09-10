@@ -19,25 +19,24 @@ Playing and molding both sections will often deliver the best results for a part
 
 - Before b>=1:
 
-    - You do not want to prestige immediately when you hit 100%, but instead when db growth slows drastically.
-    - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit b>=1. This is variable and can change based on how fast you are moving.
+    - You do not want to prestige immediately when you hit 100%, but instead when \\(db\\) growth slows drastically.
+    - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is variable and can change based on how fast you are moving.
     - Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
 
 - After b>=1: 
 
-1. Recovery is based on spamming the <kbd>\<Buy All\></kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally. 
+1. Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally. 
    * This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there. 
-2. Pay attention to db/b growth.
-   * db/b growth is the largest factor to progress from a prestige, however, because of how early \\F(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
-   * Once db reaches e3 more than b, begin to pay attention how fast db is growing vs how long you have been spending on the prestige.
-When this slows drastically, you are at the end of a prestige.
+2. Pay attention to \\(db/b\\) growth.
+   * \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\F(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
+   * Once \\(db\\) reaches e3 more than \\(b\\), begin to pay attention how fast \\(db\\) is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.
 3. Pay attention to \\(d\mu\\) growth. (Optional)
-   - Make mental note of price of the two \\(\mu\\) upgrades are (↑ dt upgrade and ↑ y factor upgrade). 
-   - When db begins to drastically reduce its growth vs time, look at how fast your \\(d\mu\\) is growing. 
-   - If \\(d\mu\\) is growing fast enough and is below the next mu upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than dt upgrades.
+   - Make mental note of price of the two \\(\mu\\) upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd). 
+   - When \\(db\\) begins to drastically reduce its growth vs time, look at how fast your \\(d\mu\\) is growing. 
+   - If \\(d\mu\\) is growing fast enough and is below the next \\(\mu\\) upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than \\(dt\\) upgrades.
    - In the case that you are past one upgrade of the \\(\mu\\) upgrades and potentially another, you will have to do some mental math to check. 
-Every ↑ dt upgrade is 32,768x or ~3.28e4 more expensive per upgrade and every ↑ y factor upgrade is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown \\(\mu\\) upgrade to get the next one and see if you are close to buying a second. This doesn't happen often but can help to check.
-4.  After checking \\(d\mu\\) growth, ability to purchase mu upgrades, and db growth, you can prestige when all of these have slowed drastically.
+Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown \\(\mu\\) upgrade to get the next one and see if you are close to buying a 2nd. This doesn't happen often but can help to check.
+4.  After checking \\(d\mu\\) growth, ability to purchase \\(\mu\\) upgrades, and \\(db\\) growth, you can prestige when all of these have slowed drastically.
 5.  Repeat this cycle.
 
 #### Active Strategies
