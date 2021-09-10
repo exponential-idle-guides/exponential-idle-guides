@@ -28,17 +28,19 @@ further ahead than you are already.
 ### Variable Names
 Variable | Name | Variable | Name
 --- | --- | --- | ---
-\\(x\\) | x | \\(\kappa\\) | kappa
-\\(y\\) | y | \\(\lambda\\) | lambda
-\\(z\\) | z | \\(\nu\\) | nu
-\\(s\\) | s | \\(ε\\) | epsilon
-\\(u\\) | u | \\(\zeta\\) | zeta
-\\(v\\) | v | \\(\eta\\) | eta
-\\(w\\) | w | \\(\theta\\) | theta
-\\(α\\) | alpha | \\(\iota\\) | iota
-\\(\beta\\) | beta | \\(\xi\\) | xi
-\\(\gamma\\) | gamma | \\(\mu\\) | mu
-\\(\delta\\) | delta | \\(\psi\\) | psi
+\\(x\\) | x | \\(\lambda\\) | lambda
+\\(y\\) | y | \\(\nu\\) | nu
+\\(z\\) | z | \\(ε\\) | epsilon
+\\(s\\) | s | \\(\zeta\\) | zeta
+\\(u\\) | u | \\(\eta\\) | eta
+\\(v\\) | v | \\(\theta\\) | theta
+\\(w\\) | w | \\(\iota\\) | iota
+\\(α\\) | alpha | \\(\xi\\) | xi
+\\(\beta\\) | beta | \\(\mu\\) | mu
+\\(\gamma\\) | gamma | \\(\psi\\) | psi
+\\(\delta\\) | delta | \\(\tau\\) | tau
+\\(\kappa\\) | kappa | \\(\phi\\) | phi
+  
 ### Achievements and Minigames
 * Achievements are just that, they are goals to reach that will give you stars as a reward.
 * Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
