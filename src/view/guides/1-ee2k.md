@@ -59,7 +59,7 @@ I would highly highly suggest focusing and learning hard arrow puzzle if you pla
 
 This upgrade only has value if you continuously and consistently use it.
 If you are not using the accel at the moment, selling it will lead to more stars for variables and perm levels.
-It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the hour cap everytime.
+It gives an x2.85 boost to \\(dt\\) and game progress if you max out the hour cap everytime.
 
 ##### Star Upgrades
 
