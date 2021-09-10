@@ -31,11 +31,11 @@ Playing and molding both sections will often deliver the best results for a part
    - db/b growth is the largest factor to progress from a prestige, however, because of how early \\F(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
    - Once db reaches e3 more than b, begin to pay attention how fast db is growing vs how long you have been spending on the prestige.
 When this slows drastically, you are at the end of a prestige.
-1. Paying attention to \\(d\mu\\) growth. (Optional)
+3. Paying attention to \\(d\mu\\) growth. (Optional)
    - Make mental note of price of the two \\(\mu\\) upgrades are (↑ dt upgrade and ↑ y factor upgrade). 
-- When db begins to drastically reduce its growth vs time, look at how fast your \\(d\mu\\) is growing. 
-  - If \\(d\mu\\) is growing fast enough and is below the next mu upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than dt upgrades.
-  - In the case that you are past one upgrade of the \\(\mu\\) upgrades and potentially another, you will have to do some mental math to check. 
+   - When db begins to drastically reduce its growth vs time, look at how fast your \\(d\mu\\) is growing. 
+   - If \\(d\mu\\) is growing fast enough and is below the next mu upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than dt upgrades.
+   - In the case that you are past one upgrade of the \\(\mu\\) upgrades and potentially another, you will have to do some mental math to check. 
 Every ↑ dt upgrade is 32,768x or ~3.28e4 more expensive per upgrade and every ↑ y factor upgrade is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown \\(\mu\\) upgrade to get the next one and see if you are close to buying a second. This doesn't happen often but can help to check.
 4.  After checking \\(d\mu\\) growth, ability to purchase mu upgrades, and db growth, you can prestige when all of these have slowed drastically.
 5.  Repeat this cycle.
