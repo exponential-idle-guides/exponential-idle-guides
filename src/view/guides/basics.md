@@ -116,7 +116,7 @@ smooth(max(1, log10(gf)), (st > tr) * ee99))
 max(1, st), (pt > tr) * ee99)
 ```
 
-__YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME__
+__YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!__
 
 ###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock)
 
