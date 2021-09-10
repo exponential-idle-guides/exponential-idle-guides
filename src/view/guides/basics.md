@@ -66,7 +66,7 @@ Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
   boost in power, and you should prioritize that over variables of a similar cost. More details on 
   star upgrades to prioritize can be found in following guides.
  
-### Normal Autoprestige Equation
+### Autoprestige Equation
  
 ```
 timer(d(ln(db/b+1)/pt) < 0) 
@@ -103,7 +103,7 @@ derivative (\\(d\\)) and see when it turns negative.
 #### Visual Representation
 ![AP graph](/images/AP-graph.png)
 
-### Supremacy Equation Explanation
+### Supremacy Equation
  
 ```
 timer(d(ln(db / b + 1) / pt) < 0)
@@ -120,7 +120,7 @@ __YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME__
 
 ###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock)
 
-#### Autosupremacy Explainantion
+#### Autosupremacy Explanantion
 
 The Supremacy Equation is an attempt to do the Autoprestige Equation, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy function than an autoprestige expression because after a new prestige, Supremacy \\(F(t)\\) doesn't increase until you get back to the \\(F(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
 
