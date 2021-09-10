@@ -86,7 +86,7 @@ You will not purchase the accel button. When you go idle, focus purchase on the 
 
 The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy. 
 There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(F(t)\\)=ee140. 
-You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you made the \\(y^{1.6}\\) supremacy beforehand. 
+You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgradebeforehand. 
 It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
 #### Supremacy Recovery (Active)
