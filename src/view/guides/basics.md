@@ -103,7 +103,7 @@ derivative (\\(d\\)) and see when it turns negative.
 #### Visual Representation
 ![AP graph](/images/AP-graph.png)
 
-### Supremacy Equation
+### Autosupremacy Equation
  
 ```
 timer(d(ln(db / b + 1) / pt) < 0)
