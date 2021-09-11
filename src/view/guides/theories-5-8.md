@@ -24,11 +24,10 @@ Remember to follow our routing advice from the [introduction](/guides/intro/#gra
 
 ### Student routing with R9
 
-All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
-[student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
-(after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
+All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
+[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](http://bit.ly/anthsim)
+There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for theories w/ max milestones).
 
 #### How to push \\(F(t)\\) with R9 seapping
 
