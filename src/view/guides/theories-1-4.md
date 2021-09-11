@@ -255,7 +255,7 @@ noticeable. This strategy also works with \\(b_3\\) and \\(c_{13}\\) but is ofte
 not as common and good to note anyways.
 
 If you decide to buy manually, the focus areas are \\(b_1\\), \\(b_2\\), and \\(b_3\\) when
-e1 lower than \\(c_{11}\\), \\(c_{12}\), and \\(c_{13}\\). These all directly boost the production
+e1 lower than \\(c_{11}\\), \\(c_{12}\\), and \\(c_{13}\\). These all directly boost the production
 of \\(ρ_1\\) which is used for \\(\tau\\). After this, if doing the active exponent
 swapping strat in the previous paragraph, the next focus will be on \\(c_{21}\\),
 \\(c_{22}\\), and \\(c_{23}\\) as these boost \\(b_2\\) production which is the more likely cause
