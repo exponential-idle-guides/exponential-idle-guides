@@ -340,7 +340,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 #### T4 milestone route
 
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
- - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
+ - 1 → 1 → 1 → 3 → 3 → 3 → 2
 
 ### Theory tier list (Pre-9k+)
 
