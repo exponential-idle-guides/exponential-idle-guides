@@ -7,12 +7,6 @@ draft: true
 order: 3
 ---
 
-### Updating stars
-
-[Star Calculator](https://conicgames.github.io/exponentialidle/stars)
-does not need to be updated the most often, but should be done if it has
-been a while since you last did.
-
 ### Autosupremacy
 
 Do not buy Autosupremacy until more than 118,840 stars. This keeps all
