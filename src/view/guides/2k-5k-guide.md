@@ -14,7 +14,7 @@ variables when you get autosupremacy. Here is the expression to copy: [autoprest
 
 ### Graduation routing
 
-The graduation route for pre-Theory is:
+The graduation route for pre-Theoriesis:
 
  - 2k → 3.8k or 4k
  - 3.8k or 4k → 4.6k
