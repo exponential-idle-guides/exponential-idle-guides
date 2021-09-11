@@ -52,19 +52,19 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
-### Theory 1 (20σ / 5k)
+### Theory 1
 
 You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publication.
 
-### Theory 2 (25σ / 6k)
+### Theory 2
 
 This theory will be used as overnight until 1e350 Tau where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
-### Theory 3 (30σ / 7k)
+### Theory 3
 
 See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
-### Theory 4 (35σ / 8k)
+### Theory 4
 
 See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
 
