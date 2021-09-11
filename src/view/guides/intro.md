@@ -97,6 +97,12 @@ or xMax.**
 
 Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max F(t) during that supremacy is increased, but due to prestiges, this F(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock) and general smooth() to midigate this phenomonan. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of F(t) out of that prestige to make sure it is time to supremacy.
 
+### Star spending
+Upon unlocking all variables, you can use the [star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distribution. This will not be useful if you don't have all star upgrades.
+
+#### When to recalculate star distribution
+The [star calculator](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often, but should be done if it has been a while since you last did. A good rule of measurement is every ee1000 to ee2000 gain to your highest reached F(t) as any shorter won't change often.
+
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is use the [Graduation
@@ -107,8 +113,7 @@ Buy **all** available theories unless
 explicitly stated otherwise because theories are important to start as soon
 as possible as they function outside of the main game.
 
-Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
-[star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distributions.
+Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) for optimal distribution for \\(\phi\\).
 
 ### Respecing students
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
