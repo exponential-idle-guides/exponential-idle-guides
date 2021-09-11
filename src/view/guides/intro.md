@@ -12,7 +12,7 @@ while playing this section of the game.
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
-### The New Autoprestige Expression
+### New autoprestige expression
 
 ```
 ((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr && db > b && 
@@ -24,7 +24,7 @@ timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
 (0.8*log10(log10(gf))>log10(log10(sf))))))
 ```
 
-#### Autoprestige Explanation
+#### Autoprestige explanation
 This is the new equation for prestige. It looks intimidating, but it will works normally and 
 you never have to turn it off (you would have to if you didn't use this one later on). Here is 
 an explaination for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autoprestige-explaination) already.
@@ -93,7 +93,7 @@ smooth(max(1,log10(gf)), (st>tr)
 edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.**
 
-#### Autosupremacy Explanation
+#### Autosupremacy explanation
 
 Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max F(t) during that supremacy is increased, but due to prestiges, this F(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock) and general smooth() to midigate this phenomonan. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of F(t) out of that prestige to make sure it is time to supremacy.
 
