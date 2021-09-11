@@ -64,7 +64,7 @@ up the theory.
 ##### Third milestone
 \\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Sixth and Final milestone
+##### Fourth to Sixth milestone
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 #### T1 strategy
@@ -156,7 +156,7 @@ boost.
 
 \\[\dot{ρ}=q_1r\\]
 
-##### Third and forth milestones
+##### Third and Forth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -164,7 +164,7 @@ boost.
 
 \\[\dot{ρ}=q_1r_1\\]
 
-##### Fifth to seventh milestones
+##### Fifth to Seventh milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -172,7 +172,7 @@ boost.
 
 \\[\dot{ρ}=q_1r_1^{1.15}\\]
 
-##### Eight to tenth milestones
+##### Eight to Tenth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
