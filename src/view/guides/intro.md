@@ -46,7 +46,7 @@ timer(abs(d(log10(phi + 1))) < 50) > 15))
 This part prevents prestiging if phi were to change more than e5 within 1 tick. It 
 will then wait 15 sec before checking if it can prestige again. This will allow you 
 to swap R9 or students freely without needing to worry about accidentally prestiging 
-for a very small amount of b.
+for a very small amount of \\(b\\).
 
 ```
 ((timer(d(ln(db / b + 1) / pt) < 0)
