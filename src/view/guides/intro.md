@@ -143,15 +143,3 @@ Unlike students, all Milestone sections already have the <kbd>-</kbd> button.
 This works in the same way as above. Here you can also find how many
 unused Milestones available at the top. On the right side of each
 Milestone, you can also find the current and max levels of each.
-
-### Variable Names
-Variable | Name | Variable | Name | Variable | Name
---- | --- | --- | --- | --- | ---
-\\(x\\) | x | \\(\beta\\) | beta | \\(\kappa\\) | kappa
-\\(y\\) | y | \\(\gamma\\) | gamma | \\(\lambda\\) | lambda
-\\(z\\) | z | \\(\delta\\) | delta | \\(\nu\\) | nu
-\\(s\\) | s | \\(ε\\) | epsilon | \\(\xi\\) | xi
-\\(u\\) | u | \\(\zeta\\) | zeta | \\(\mu\\) | mu
-\\(v\\) | v | \\(\eta\\) | eta | \\(\psi\\) | psi
-\\(w\\) | w | \\(\theta\\) | theta | \\(\varphi\\) | phi
-\\(α\\) | alpha | \\(\iota\\) | iota | \\(\tau\\) | tau
