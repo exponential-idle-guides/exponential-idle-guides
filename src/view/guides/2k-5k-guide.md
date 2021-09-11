@@ -10,7 +10,7 @@ order: 3
 ### Autosupremacy
 
 Do not buy Autosupremacy until more than 118,840 stars. This keeps all
-variables when you get autosupremacy. Here is the expression to copy: [autoprestige expression](https://exponential-idle-guides.netlify.app/guides/intro/#autosupremacy)
+variables when you get autosupremacy. Here is the expression to copy: [autoprestige expression](https://exponential-idle-guides.netlify.app/guides/intro/#autosupremacy).
 
 ### Graduation routing
 
