@@ -100,7 +100,7 @@ Variable | Multiplier
 \\(c_3\\) | 2
 \\(c_4\\) | 1.01
 
-- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) and autobuy rest until ee6k.
+- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
 
 #### T1 milestone route
 
