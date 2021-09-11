@@ -20,7 +20,7 @@ better theory.__
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
+Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 The graduation route for these theories.
 
