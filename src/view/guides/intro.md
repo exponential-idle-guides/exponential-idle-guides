@@ -12,7 +12,7 @@ while playing this section of the game.
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
-### The New Autoprestige Equation
+### The New Autoprestige Expression
 
 ```
 ((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr && db > b && 
