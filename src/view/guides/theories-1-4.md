@@ -313,7 +313,7 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
 
-##### Forth to sixth milestones
+##### Forth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
