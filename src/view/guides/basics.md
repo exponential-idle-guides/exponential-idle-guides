@@ -1,7 +1,7 @@
 ---
 title: "Exponential Idle Basics"
 description: "A guide for stars, prestiges, supremecies, minigames, and the basics of the game."
-author: "LE★Baldy and Snaeky"
+author: "LE★Baldy"
 contributors: "The Amazing Community"
 draft: true
 order: 0
