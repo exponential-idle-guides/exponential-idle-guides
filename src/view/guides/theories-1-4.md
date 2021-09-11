@@ -75,7 +75,7 @@ publication multiplier oscillates between 2.5 and 5 past e150. Once you
 get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
 
 The active strat follows but only works when you have all milestones
-past e150). T1 is the only theory where the recent value of \\(ρ\\)
+past e150. T1 is the only theory where the recent value of \\(ρ\\)
 influences the rate of change of \\(ρ\\) therefore buying a variable as
 soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
