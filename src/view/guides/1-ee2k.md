@@ -167,13 +167,13 @@ smooth(max(1,log10(gf)), (st>tr)
 #### What are these \\(x_i\\) supremacy upgrades?
 After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x₁</kbd>.
 
-##### \\(x_i\\) equation
+##### \\(x_i\\) Equation
 
 \\(x_i ← x_i+x_{i-1}dt\\)
 
 \\(x_0 = x\\)
 
-##### \\(x_i\\) equation explanation
+##### \\(x_i\\) Equation explanation
 The equation shown is the calculation done on every tick. Lets give the example of \\(x_1\\): \\(x_1 ← x_1+x*dt\\). Each tick, \\(x*dt\\) is added to x_1. This is done for every new value of x and \\(dt\\). A simple way of phrasing it is as repeated addition of the product of \\(x*dt\\).
 
 #### Active strategies
