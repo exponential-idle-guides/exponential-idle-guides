@@ -65,7 +65,7 @@ If phi is equal to 1, then it uses the normal autoprestige equation. We don't ha
 ```
 
 This lets the normal equation work when you supremacy or graduate up to 80% of 
-\\(log10(log10(lifetime\\) \\(ft\\) or \\(graduation\\) \\(ft\\))) allowing you to 
+\\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to 
 recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part 
 of the equation above, does not allow the normal equation to prestige for 15 sec after 
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, 
