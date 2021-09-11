@@ -32,9 +32,9 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 #### The new autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro/#the-new-autoprestige-equation)
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression)
 
-###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explaination)
+###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explanation)
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
