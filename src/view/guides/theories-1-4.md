@@ -265,8 +265,8 @@ swapping strat in the previous paragraph, then all the remaining
 upgrades are at equivalent priority.
 
 At the end of any publication, around a 2-3 multiplier, you should turn
-off b1 and c31 as they cost rho1. You will cruise until you get to a
-3-4 multiplier. Publish and turn back on rho1 costing variables and
+off b1 and c31 as they cost \\(\rho_1\\). You will cruise until you get to a
+3-4 multiplier. Publish and turn back on \\(\rho_1\\) costing variables and
 repeat.
 
 #### T3 milestone route
