@@ -40,7 +40,7 @@ Variable | Name | Variable | Name
 \\(\gamma\\) | gamma | \\(\tau\\) | tau
 \\(\delta\\) | delta | \\(\phi\\) | phi
 \\(\kappa\\) | kappa | \\(\sigma\\) | sigma
-\\(\lambda\\) | lambda | | \\(\rho\\) | rho
+\\(\lambda\\) | lambda | \\(\rho\\) | rho
   
 ### Achievements and Minigames
 * Achievements are just that, they are goals to reach that will give you stars as a reward.
