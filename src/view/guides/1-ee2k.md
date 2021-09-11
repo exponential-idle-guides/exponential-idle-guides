@@ -147,7 +147,7 @@ If you don't use the accel button, don't buy it. When you can buy the autobuyers
 
 ### ee200 to ee2000
 
-##### Autosupremacy
+#### Autosupremacy
 There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autosupremacy-explanantion) if you wanted.
 ###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle.
@@ -163,6 +163,18 @@ smooth(ln(1 + max(1,log10(sf))/
 smooth(max(1,log10(gf)), (st>tr) 
 * ee99))/max(1,st), (pt>tr) * ee99)
 ```
+
+#### What are these \\(x_i\\) supremacy upgrades?
+After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x₁</kbd>.
+
+##### \\(x_i\\) equation
+
+\\(x_i ← x_i+x_{i-1}dt\\)
+
+\\(x_0 = x\\)
+
+##### \\(x_i\\) equation explanation
+The equation shown is the calculation done on every tick. Lets give the example of \\(x_1\\): \\(x_1 ← x_1+x*dt\\)*. Each tick, \\(x*dt\\)* is added to x_1. This is done for every new value of x and \\(dt\\). A simple way of phrasing it is as repeated addition of the product of \\(x*dt\\)*.
 
 #### Active strategies
 
