@@ -62,10 +62,10 @@ ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 
 Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
 
-### Idle vs manual strat efficiency
+### Idle vs Manual strat efficiency
 
 From Antharion, the ratio represents \\(log(\tau)/hour\\) efficiency of
-idle vs manual buying strategies.
+idle vs manual buying strategies. This does not take into account [cruising](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#theory-basics). T7 is unknown because the current manual strat is very complicated (not human viable) and isn't consistent enough to put on the chart.
 
 Theory | Manual | Auto | Ratio
 ---|---|---|---
