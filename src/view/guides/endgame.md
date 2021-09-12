@@ -30,9 +30,9 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
     you will ned to prestige manually
 6. Repeat.
 
-#### The new autoprestige expression
+#### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression)
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
 ###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explanation)
 
