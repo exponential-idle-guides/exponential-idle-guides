@@ -43,7 +43,7 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
 Theory | Idle | Active
 --- | --- | ---
 T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
-T2 | All on | q4/r4 → q3/r3 → etc
+T2 | All on | q4/r4 → q3/r3 → etc manual buy
 T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
 T4 | Disable all but c3/q1/q2 | ← with chasing doublings
 T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
