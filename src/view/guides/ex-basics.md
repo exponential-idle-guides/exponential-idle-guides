@@ -41,6 +41,9 @@ Variable | Name | Variable | Name
 \\(\delta\\) | delta | \\(\varphi\\) | phi
 \\(\kappa\\) | kappa | \\(\sigma\\) | sigma
 \\(\lambda\\) | lambda | \\(\rho\\) | rho
+
+### What does ee mean?
+You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
   
 ### Achievements and Minigames
 * Achievements are just that, they are goals to reach that will give you stars as a reward.
