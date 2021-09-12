@@ -44,9 +44,9 @@ This method allows you to push \\(f(t)\\) with almost no loss of R9
 uptime or pushing power. This is harder with fewer levels of R9 but
 still helps if you get used to it.
 
-#### The new autoprestige expression
+#### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression)
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
 ###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explanation)
 
