@@ -25,7 +25,7 @@ timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
 ```
 
 #### Autoprestige explanation
-This is the new equation for prestige. It looks intimidating, but it will works normally and 
+This is the new equation for prestige. It looks intimidating, but it will work normally and 
 you never have to turn it off (you would have to if you didn't use this one later on). Here is 
 an explaination for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autoprestige-explaination) already.
 
