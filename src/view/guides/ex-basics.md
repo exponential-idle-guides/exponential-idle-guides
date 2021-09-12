@@ -38,7 +38,7 @@ Variable | Name | Variable | Name
 \\(α\\) | alpha | \\(\mu\\) | mu
 \\(\beta\\) | beta | \\(\psi\\) | psi
 \\(\gamma\\) | gamma | \\(\tau\\) | tau
-\\(\delta\\) | delta | \\(\phi\\) | phi
+\\(\delta\\) | delta | \\(\varphi\\) | phi
 \\(\kappa\\) | kappa | \\(\sigma\\) | sigma
 \\(\lambda\\) | lambda | \\(\rho\\) | rho
   
