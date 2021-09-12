@@ -60,7 +60,7 @@ ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 / (timer( timer(d(tau)<=0)<900 ) + 900)
 ```
 
-Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark)
+Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
 
 ### Idle vs manual strat efficiency
 
