@@ -123,7 +123,7 @@ max(1, st), (pt > tr) * ee99)
 
 __YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!__
 
-###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock)
+###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock)
 
 #### Autosupremacy explanantion
 
