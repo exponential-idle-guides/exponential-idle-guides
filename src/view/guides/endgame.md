@@ -168,7 +168,7 @@ Attractor | Starting Positions (reset every pub) | Time Step
 **Chen** | -10.6, -4.4, 28.6 | 0.002
 **Rossler** | -6, 15, 0 | 0.00014
 
-### How To respec
+### How to respec
 
 See the [introduction guide](/guides/intro/) for respecing students and
 milestones.
