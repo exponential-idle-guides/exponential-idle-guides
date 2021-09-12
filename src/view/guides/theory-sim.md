@@ -98,7 +98,7 @@ If you get a negative /hour result from hitting this 720 hour cap, this is becau
 ##### Delta Active and Delta Idle
 This will tell you how much \\(\tau\\) you are expected to gain for the active or idle strategy.
 
-Delta Active and Delta Idle are defined as the quantity \\(\tau_{final}\\)/\\(\tau_{initial}\\) instead of \\(\tau_{final}\\) - \\(\tau_{initial}\\).
+Delta Active and Delta Idle are defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) instead of \\(\tau_{final}\\) - \\(\tau_{initial}\\).
 So if delta active was equal to 1e3 and the starting \\(\tau\\) was e100, the sim publishes at e103 \\(\tau\\).
 
 **You should NOT publish at this \\(\tau\\) value** since it's very likely your starting \\(\tau\\) will be different from what is actually used in the sim due to your input being 1eXXXX not x.xxxeXXXX.
