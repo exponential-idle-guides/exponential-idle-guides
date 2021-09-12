@@ -45,7 +45,7 @@ Theory | Idle | Active
 T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
 T2 | All on | \\(q_4\\)/\\(r_4\\) → \\(q_3\\)/\\(r_3\\) → etc manual buy
 T3 | Disable \\(c_{11}\\)/\\(c_{13}\\)/\\(c_{21}\\)/\\(c_{33}\\) | ← with \\(b_2\\)→\\(b_3\\)→\\(b_1\\) manual buy
-T4 | Disable all but \\(c_3\\)/\\(q_1\\)/\\(q_2\\_ | ← with chasing doublings
+T4 | Disable all but \\(c_3\\)/\\(q_1\\)/\\(q_2\\) | ← with chasing doublings
 T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
 T6 | Disable \\(c_3\\)/\\(c_4\\) | ← with Auto \\(q_2\\)/\\(r_2\\)/\\(c_2\\)/\\(c_5\\) & Manual rest
 T7 | Disable \\(\\c_1\\)/\\(c_2\\)/\\(c_3\\) | ← same
