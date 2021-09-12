@@ -181,7 +181,7 @@ seems to be about \\(7\\)-\\(12\\). Once all milestones, disable \\(c_3\\)
 still disabled. For idle/auto, you are going to just turn off \\(c_3\\)
 and \\(c_4\\).
 
-#### T6 milestone
+#### T6 milestone route
 
  - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
  - 2 → 1 → 3 → 4 {2 and 3 both into 4} → 3 → 2
@@ -194,7 +194,7 @@ The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
 cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy.
 
-#### T7 milestone
+#### T7 milestone route
 
  - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
  - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
