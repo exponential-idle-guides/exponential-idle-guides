@@ -43,12 +43,12 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
 Theory | Idle | Active
 --- | --- | ---
 T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
-T2 | All on | q4/r4 → q3/r3 → etc manual buy
-T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
-T4 | Disable all but c3/q1/q2 | ← with chasing doublings
+T2 | All on | \\(q_4\\)/\\(r_4\\) → \\(q_3\\)/\\(r_3\\) → etc manual buy
+T3 | Disable \\(c_{11}\\)/\\(c_{13}\\)/\\(c_{21}\\)/\\(c_{33}\\) | ← with \\(b_2\\)→\\(b_3\\)→\\(b_1\\) manual buy
+T4 | Disable all but \\(c_3\\)/\\(q_1\\)/\\(q_2\\_ | ← with chasing doublings
 T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
-T6 | Disable c3/c4 | ← with Auto q2/r2/c2/c5 & Manual rest
-T7 | Disable c1/c2/c3 | ← same
+T6 | Disable \\(c_3\\)/\\(c_4\\) | ← with Auto \\(q_2\\)/\\(r_2\\)/\\(c_2\\)/\\(c_5\\) & Manual rest
+T7 | Disable \\(\\c_1\\)/\\(c_2\\)/\\(c_3\\) | ← same
 T8 | All on | ← with chasing doublings
 
 ### Equation for when to publish
