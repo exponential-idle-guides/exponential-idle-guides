@@ -20,7 +20,7 @@ further ahead than you are already.
   of the variables purchasable are below. You will not be able to get all of them right away 
   but will be able to get them all as you keep playing. This screen is found by pressing the 
   <kbd>\<Upgrades\></kbd> button between the upgrades and the main equation graph.
-* Upgrades are where additional boosts to variables lie. They are crutial to progress and 
+* Upgrades are where additional boosts to variables lie. They are crucial to progress and 
   should be bought often. You will be able to see items that can be purchased with __F(t)__, 
   \\(\mu\\), and \\(\psi\\) on that page in that order. You can navigate to that tab by pressing 
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
