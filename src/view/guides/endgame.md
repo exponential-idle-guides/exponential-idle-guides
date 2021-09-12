@@ -34,12 +34,12 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
-###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explanation)
+###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
 ### Idle and Active buy strats
-For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
+For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
 --- | --- | ---
 T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
@@ -170,7 +170,7 @@ Attractor | Starting Positions (reset every pub) | Time Step
 
 ### How to respec
 
-See the [introduction guide](/guides/intro/) for respecing students and
+See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
 milestones.
 
 #### Lemma
