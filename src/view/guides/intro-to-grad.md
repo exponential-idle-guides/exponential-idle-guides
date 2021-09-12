@@ -27,7 +27,7 @@ timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
 #### Autoprestige explanation
 This is the new equation for prestige. It looks intimidating, but it will work normally and 
 you never have to turn it off (you would have to if you didn't use this one later on). Here is 
-an explanation for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/basics/#autoprestige-explaination) already.
+an explanation for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
 
 ```
 ((d(smooth(10^10^10^(phi * tau), 1)) > 1)
@@ -71,7 +71,7 @@ of the equation above, does not allow the normal equation to prestige for 15 sec
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, 
 we allow the normal equation to work like normal while recovering.
 
-###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/basics/#method-3-cumulative-maximum)
+###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-3-cumulative-maximum)
 ###### Note: If you don't know what R9 is, you will find out later in the game.
 
 ### Autosupremacy
@@ -95,7 +95,7 @@ or xMax.**
 
 #### Autosupremacy explanation
 
-Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max F(t) during that supremacy is increased, but due to prestiges, this F(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/basics/#method-2-lock) and general smooth() to midigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of F(t) out of that prestige to make sure it is time to supremacy.
+Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max F(t) during that supremacy is increased, but due to prestiges, this F(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to midigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of F(t) out of that prestige to make sure it is time to supremacy.
 
 ### Star spending
 Upon unlocking all variables, you can use the [star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distribution. This will not be useful if you don't have all star upgrades.
