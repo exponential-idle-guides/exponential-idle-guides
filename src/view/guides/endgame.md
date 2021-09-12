@@ -14,7 +14,7 @@ order: 6
 
 ### Graduation routing
 
-Routing is based on your current Tau and Phi numbers.
+Routing is based on your current Tau \\(\tau\\) and Phi \\(\varphi\\) numbers.
 
 Make sure to use the [calculators and simulators](/#other-resources) for optimal graduation, student, star, and theory options.
 
