@@ -160,8 +160,6 @@ Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3. \\(q\\) begins to slow down when you reach
 \\(2q > c_2*c_3^{m_3}\\).
 
-Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
-
 #### Theory 8
 
 Attractor | Starting Positions (reset every pub) | Time Step
