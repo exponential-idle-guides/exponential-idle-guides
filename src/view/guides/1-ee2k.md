@@ -5,7 +5,7 @@ contributors: "The Amazing Community"
 draft: true
 order: 1
 ---
-###### First read the [game basics](https://exponential-idle-guides.netlify.app/guides/basics/).
+###### First read the [game basics](https://exponential-idle-guides.netlify.app/guides/ex-basics/).
 
 ### Introduction
 The start of the game is the most variable section of the game depending on how active you play.
