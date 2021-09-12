@@ -38,7 +38,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
-### Idle and active buy strats
+### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
 --- | --- | ---
