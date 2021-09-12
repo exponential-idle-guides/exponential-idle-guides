@@ -67,7 +67,7 @@ that publication. See below for what each part means.
    ai's for T5 based on buying patterns.
  - **T7NoDecay**. For example: T7NoDecay1, T7NoDecay2. This is just another Simulator only strategy so just use the normal manual/auto strategy and you are fine.
  - **T8  Attractor**. For example, T8C, T8L, or T8. The C, L, and R
-   represent the three attactors and which to have on. {toggle} Rare to
+   represent the three attactors and which to have on. Rare to
    see anything but T8R, but it has happened.
 
 ##### Variables to always buy
