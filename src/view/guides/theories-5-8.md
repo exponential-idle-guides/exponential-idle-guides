@@ -131,9 +131,9 @@ After autobuy at e30, you should repeat this after every publication:
    graph.
 2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
    slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
-3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
-   1. Buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
-   2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
+3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
+   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase), and
+   2. buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
 4. Once you reach your desired multiplier, publish. 
 5. Repeat this for stonks.
 
