@@ -42,13 +42,13 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
 --- | --- | ---
-T1 | Disable c1 c2 | See [T1 routing](#t1-routing)
+T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
 T2 | All on | q4/r4 → q3/r3 → etc
-T3 | Disable c11, c13, c21, c33 | ← with b2→b3→b1 manual buy
-T4 | Disable all but c3, q1, q2 | Auto c3, q2. Manual q1. Disable rest.
+T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
+T4 | Disable all but c3/q1/q2 | ← same with chasing doublings
 T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
-T6 | Disable c3, c4 | Disable c3 c4. Auto q2, r2, c2, c5. Manual rest.
-T7 | Disable c1, c2, c3 | ← same
+T6 | Disable c3/c4 | Disable c3/c4. Auto q2/r2/c2/c5. Manual rest.
+T7 | Disable c1/c2/c3 | ← same
 T8 | All on | ← same with chasing doublings
 
 ### Equation for when to publish
