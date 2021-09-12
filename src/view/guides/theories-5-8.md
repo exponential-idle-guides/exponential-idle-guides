@@ -11,7 +11,7 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 - 9k → 9.4k (push for \\(z^{1.04}\\) at \\(ee9160\\)) → 9.8k → 10k
 - 10k → 10.4k → 10.6k → 11k (push for \\(z^{1.08}\\) at \\(ee10821\\))
@@ -48,13 +48,13 @@ still helps if you get used to it.
 
 You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
-###### Reference [R9 Seaping Autoprestige Explaination](https://exponential-idle-guides.netlify.app/guides/intro/#autoprestige-explanation)
+###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
 
 ### Theory 1
 
-You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
@@ -102,7 +102,7 @@ making it the strongest theory until the very late game due
 to a very low multiplier decay rate. Here is what is known about optimal multiplier: \\(3\\) until \\(e25\\);
 \\(6\\) to \\(10\\) during mid to late game. Publishing at higher
 multiples is not drastically less efficient and allows for slightly less
-active play. When you have max milestones, use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the multiplier for the next publication.
+active play. When you have max milestones, use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the multiplier for the next publication.
 
 ##### Active
 
