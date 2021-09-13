@@ -91,7 +91,7 @@ get after prestige, and \\(b\\) is the old \\(b\\) value you currently have. If 
 you were to prestige.
 
 The general idea of a good expression would be to "maximize \\(f\\) growth over time," and it would 
-be the same as "maximize \\(b\\) growth over time." To measure (\\b\\) growth over time, in this approach 
+be the same as "maximize \\(b\\) growth over time." To measure \\(b\\) growth over time, in this approach 
 we take the growth of \\(b\\) that can result from current prestige only and take \\((b + db)/b\\) as the 
 ratio of growth.
 
