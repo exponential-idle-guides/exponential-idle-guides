@@ -28,7 +28,7 @@ Playing and molding both sections will often deliver the best results for a part
 1. Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally. 
 - This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there. 
 2. Pay attention to \\(db/b\\) growth.
-- \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\F(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
+- \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\f(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
 - Once \\(db\\) reaches e3 more than \\(b\\), begin to pay attention how fast \\(db\\) is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.
 3. Pay attention to \\(d\mu\\) growth. (Optional)
    - Make mental note of price of the two \\(\mu\\) upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>). 
@@ -83,7 +83,7 @@ You will not purchase the accel button. When you go idle, focus purchase on the 
 **Upon reaching ee50, immediately supremacy.**
 
 The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy. 
-There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(F(t)\\)=ee140. 
+There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(f(t)\\)=ee140. 
 You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgradebeforehand. 
 It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
@@ -91,14 +91,14 @@ It is better to combine both of these supremacies into one than have to recovery
 
 1. Drop variables that won't be purchasable immediately. This will be most of them initially.
 2. Put the extra stars into perm levels into the last variable.
-3. As you progress with more \\(F(t)\\), use the [variable lookup table](https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw/edit#gid=0) for when to buy the next variable.
+3. As you progress with more \\(f(t)\\), use the [variable lookup table](https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw/edit#gid=0) for when to buy the next variable.
 - If you can afford to buy a level in the next variable, it is worth buying that variable and moving perm levels to it.
 - After buying a new variable, move the perm levels from the previous variable into the new last variable.
 4. Progress normally and repeat until back to previous supremacy mark.
 
 #### Supremacy recovery (Idle)
 
-1. Keep all variables that you could purchase up to the most recent \\(F(t)\\) with their normal perm levels.
+1. Keep all variables that you could purchase up to the most recent \\(f(t)\\) with their normal perm levels.
 2. If you do not have all the automation upgrades, you can take out some of the variables and perm levels for autobuyers or autoprestige.
 Otherwise keep variables unlocked.
 3. Progress normally until back to previous supremacy mark.
