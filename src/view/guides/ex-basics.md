@@ -137,7 +137,7 @@ Internally, smooth is implemented using exponential moving average. Here are som
  
 If a value fluctuates too much, you can use smooth so that the value does not go rampant, triggering some conditions incorrectly. One main example is to use it when you use multiple \\(d()\\) function on the same expression.
 
-For instance, \\(smooth( d(d(ln(db))), 10)\\) will behave much better than the simple \\(d(d(ln(db)))\\) because using d multiple times creates a lot of fluctuation, due to the discrete nature of \\(d()\\) (not a true derivative, but an extrapolation of slope over the last tick). Of course, this introduces some "lag factor" in the sense that when some threshold is past, smooth won't display it until a short after.
+For instance, \\(smooth( d(d(ln(db))), 10)\\) will behave much better than the simple \\(d(d(ln(db)))\\) because using d multiple times creates a lot of fluctuation, due to the discrete nature of \\(d()\\) (not a true derivative, but an extrapolation of slope over the last tick). Of course, this introduces some "lag factor" in the sense that when some threshold is passed, smooth won't display it until a short after.
 
 #### Method 2: Lock
  
