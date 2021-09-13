@@ -16,12 +16,12 @@ further ahead than you are already.
 
 ### Variables and Upgrades
 * Variables are the main purchases in the game. They will be the most important to buy, 
-  and you should buy them as priority because they increase __Lifetime F(t)__ faster. All 
+  and you should buy them as priority because they increase __Lifetime f(t)__ faster. All 
   of the variables purchasable are below. You will not be able to get all of them right away 
   but will be able to get them all as you keep playing. This screen is found by pressing the 
   <kbd>\<Upgrades\></kbd> button between the upgrades and the main equation graph.
 * Upgrades are where additional boosts to variables lie. They are crucial to progress and 
-  should be bought often. You will be able to see items that can be purchased with __F(t)__, 
+  should be bought often. You will be able to see items that can be purchased with __f(t)__, 
   \\(\mu\\), and \\(\psi\\) on that page in that order. You can navigate to that tab by pressing 
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
@@ -127,7 +127,7 @@ __YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!__
 
 #### Autosupremacy explanantion
 
-The autosupremacy expression is an attempt to do the autoprestige expression, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy expression than an autoprestige expression because after a new prestige, Supremacy \\(F(t)\\) doesn't increase until you get back to the \\(F(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
+The autosupremacy expression is an attempt to do the autoprestige expression, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy expression than an autoprestige expression because after a new prestige, Supremacy \\(f(t)\\) doesn't increase until you get back to the \\(f(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
 
 ### Smooth() for auto expressions
 
