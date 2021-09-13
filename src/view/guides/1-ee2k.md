@@ -28,7 +28,7 @@ Playing and molding both sections will often deliver the best results for a part
 1. Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally. 
 - This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there. 
 2. Pay attention to \\(db/b\\) growth.
-- \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\f(t)\\ is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
+- \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\(f(t)\\) is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
 - Once \\(db\\) reaches e3 more than \\(b\\), begin to pay attention how fast \\(db\\) is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.
 3. Pay attention to \\(d\mu\\) growth. (Optional)
    - Make mental note of price of the two \\(\mu\\) upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>). 
