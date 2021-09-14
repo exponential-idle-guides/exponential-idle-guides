@@ -124,7 +124,7 @@ In simpler terms, it works similar to how
 of the previous \\(term*dt\\) to the next \\(x_{i+1}\\) term, but with
 continuous addition of \\(q_i*dt\\) to the term above \\(q_{i-1}\\).
 These two values of \\(r_1\\) and \\(q_1\\) are multiplied to produce the derivative
-of rho(\\(ρ\\)), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
+of \\(ρ(t)\\), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
 equation of \\(ρ\\) to be \\(ρ(t+dt)=\dot{ρ}+ρ1*dt\\). The other milestones besides more \\(q\\)
 and \\(r\\) derivatives increase the exponent of \\(q\\) and \\(r\\) respectively. The
 reason why \\(q\\) and \\(r\\) derivatives are more powerful long-term than the
