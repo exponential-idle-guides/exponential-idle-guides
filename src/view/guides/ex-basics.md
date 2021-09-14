@@ -54,7 +54,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
   reward. The current best puzzle to farm stars is hard arrow as it gives the best stars/time spent 
   of any puzzle.
 
-#### Base Game Reward (stars)
+#### Base Game Reward (★)
 --- | 15-Puzzle | Torus | Arrow
 --- | --- | --- | ---
 Easy | 1 | 1 | 1
