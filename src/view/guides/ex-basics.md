@@ -14,7 +14,7 @@ while playing this section of the game.
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
-### Variables and Upgrades ()
+### Variables and Upgrades (hello)
 * Variables are the main purchases in the game. They will be the most important to buy, 
   and you should buy them as priority because they increase __Lifetime f(t)__ faster. All 
   of the variables purchasable are below. You will not be able to get all of them right away 
