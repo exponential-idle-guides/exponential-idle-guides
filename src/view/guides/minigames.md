@@ -74,12 +74,12 @@ The algorithm goes as follows:
 You will want to read [how to propogate](https://exponential-idle-guides.netlify.app/guides/minigames/#propogation-for-hard-and-expert) before continuing. The algorithm goes as follows:
 <ol type="1">
   <li>Propogate.</li>
-  <li>Label the bottom right cells (from left to right): \\(A\\), \\(B\\), \\(C\\), \\(D\\). Label the top right cells (from left to right): \\(a\\), \\(b\\), \\(c\\), \\(d\\). We will be tapping the top row to encode the bottom row onto it.
+  <li>Label the bottom right cells (from left to right): <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>. Label the top right cells (from left to right): <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. We will be tapping the top row to encode the bottom row onto it.
   <ol type="a">
-    <li>Tap \\(a\\) so that a is the same as \\(C\\).</li>
-    <li>Tap \\(b\\) and d the number of times you will need to solve C.</li>
-    <li>Tap a the number of times you would need to solve D.</li>
-    <li>If B + D is odd, tap c three times (once in Hard). Otherwise, skip this step.</li>
+    <li>Tap <em>a</em> so that a is the same as <em>C</em>.</li>
+    <li>Tap <em>b</em> and <em>d</em> the number of times you will need to solve <em>C</em>.</li>
+    <li>Tap <em>a</em> the number of times you would need to solve <em>D</em>.</li>
+    <li>If <em>B</em> + <em>D</em> is odd, tap <em>c</em> three times (once in Hard). Otherwise, skip this step.</li>
   </ol>
   <li>Propogate.</li>
 </ol>
