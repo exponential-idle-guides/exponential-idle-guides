@@ -73,13 +73,13 @@ The algorithm goes as follows:
 #### Hard and Expert
 You will want to read [how to propogate](https://exponential-idle-guides.netlify.app/guides/minigames/#propogation-for-hard-and-expert) before continuing. The algorithm goes as follows:
 <ol type="1">
-  <li>Solve the rop row tapping tiles directly below the row.</li>
+  <li>Propogate.</li>
+  <li>Label the bottom right cells (from left to right): \\(A\\), \\(B\\), \\(C\\), \\(D\\). Label the top right cells (from left to right): \\(a\\), \\(b\\), \\(c\\), \\(d\\). We will be tapping the top row to encode the bottom row onto it.
   <ol type="a">
-    <li>Solve the center tile.</li>
-    <li>Solve the tile to the left of the center tile.</li>
-    <li>Solve the tile two spaces to the left of the center tile.</li>
-    <li>Solve the tile three spaces to the left of the center tile.</li>
-    <li>Repeat steps b-d but to the right of the center tile.</li>
+    <li>Tap \\(a\\) so that a is the same as \\(C\\).</li>
+    <li>Tap \\(b\\) and d the number of times you will need to solve C.</li>
+    <li>Tap a the number of times you would need to solve D.</li>
+    <li>If B + D is odd, tap c three times (once in Hard). Otherwise, skip this step.</li>
   </ol>
-  <li>Repeat step 1 for every row until the bottom row (don't solve bottom row).</li>
+  <li>Propogate.</li>
 </ol>
