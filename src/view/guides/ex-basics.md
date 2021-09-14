@@ -154,4 +154,4 @@ If we have two really large values, the average of the two will be in favor of t
 For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that it displays the largest value of \\(10^{10^{10^{db}}}\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))\\) to retrieve back the maximum \\(db\\).
 
 #### Reference formula
-![Smooth Formula](/images/smooth-formula.jpg)
+![Smooth Formula](/images/smooth-formula.jpg) ![Smooth Formula](/images/smooth-formula.jpg)
