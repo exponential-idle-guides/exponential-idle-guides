@@ -139,7 +139,7 @@ Buy accel button and use it for speed boost to the game and stars. You should be
 
 ##### Minigames
 
-These will not be of much value to you if you won't play them so not purchasing them or any more is the best option.
+These will not be of much value to you if you won't play them so not purchasing them anymore is the best option.
 
 ##### Star upgrades
 
@@ -200,7 +200,7 @@ You will max all star upgrades besides perm levels (no attainable limit) and aut
 
 ##### Minigames
 
-These will not be of much value to you if you won't play them so not purchasing them or any more is the best option.
+These will not be of much value to you if you won't play them so not purchasing them anymore is the best option.
 
 ##### Star upgrades
 
