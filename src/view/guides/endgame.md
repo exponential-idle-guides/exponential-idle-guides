@@ -21,13 +21,12 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 ### Push f(t) with 3R9 seapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
-   do this when you are near a graduation mark.
+   do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
 4. Respec all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9. When you are later in a graduation,
-    you will ned to prestige manually
+5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
 #### R9 autoprestige expression
