@@ -49,7 +49,7 @@ After, dt becomes too large for your taps to make a worthy and significant boost
 ##### Minigames
 
 These can be unlocked once b>=1. Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You an buy variables and perm levels while you wait. 
+You can buy variables and perm levels while you wait. 
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 
@@ -59,7 +59,7 @@ This upgrade only has value if you continuously and consistently use it.
 If you are not using the accel at the moment, selling it will lead to more stars for variables and perm levels.
 It gives an x2.85 boost to \\(dt\\) and game progress if you max out the hour cap everytime.
 
-##### Star epgrades
+##### Star upgrades
 
 Focus is on buying accel button if you will use it then variables. Leftover stars can be used for permenant levels.
 You will most likely not buy any autobuyers in this section as variables far and above give a bigger boost most cases.
@@ -84,7 +84,7 @@ You will not purchase the accel button. When you go idle, focus purchase on the 
 
 The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy. 
 There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(f(t)\\)=ee140. 
-You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgradebeforehand. 
+You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgrade beforehand. 
 It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
 #### Supremacy recovery (Active)
@@ -133,7 +133,7 @@ It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the hour ca
 
 ##### Star upgrades
 
-Buy accel button and use it for speed boost to the game and stars. You should be able to unlock both autobuyers and autoprestige relatively easy with only some star grinding. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any left over stars will go into perm levels.
+Buy accel button and use it for speed boost to the game and stars. You should be able to unlock both autobuyers and autoprestige relatively easily with only some star grinding. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any left over stars will go into perm levels.
 
 #### Idle strategies
 
