@@ -65,7 +65,7 @@ Expert | --- | --- | 25
 Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
  
 ### Stars and Star upgrades
-* Stars are a currency that opperates outside of the main game that you use to purchase star upgrades. 
+* Stars are a currency that operates outside of the main game that you use to purchase star upgrades. 
   These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
   prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge 
   boost in power, and you should prioritize that over variables of a similar cost. More details on 
