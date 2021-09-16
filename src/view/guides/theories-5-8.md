@@ -36,7 +36,7 @@ There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for th
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
-4. Respec the all 10/20/30 students from R9.
+4. Respec all 10/20/30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
