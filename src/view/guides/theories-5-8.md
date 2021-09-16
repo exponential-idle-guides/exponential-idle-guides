@@ -227,7 +227,7 @@ If your numbers are different, that is fine. You just need to reach 1e1350
 The optimal publication multiplier is 2.5-5 depending on how close you
 are to the next milestone. This theory is extremely slow at the start
 which is why we skip until we obtain R9. It is also the only one with a
-\\(1e20\\) milestone multiplier. It will speed up once you hit 1e60 and
+\\(1e20\\) milestone step. It will speed up once you hit 1e60 and
 even faster at \\(1e80\\) and \\(1e100\\) etc. until ~\\(e250\\)-\\(e300\\).
 The worst part is the \\(1e50\\)-\\(1e60\\) grind. The grind to \\(1e60\\)
 will take a good bit of time but is faster with R9.
