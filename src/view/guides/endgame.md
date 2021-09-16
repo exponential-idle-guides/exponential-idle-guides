@@ -97,7 +97,7 @@ upgrade because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\
 have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\) you are reducing your \\(ρ_{n+1}\\)
 by roughly a factor of 10.
 
-There are \\(3\\) terms the influence the rate of change of \\(\rho\\) all are
+There are \\(3\\) terms that influence the rate of change of \\(\rho\\) all are
 affected by the previous state of \\(\rho\\). Let's ignore the 1st since it
 has such a small influence and consider the above case to determine when
 an upgrade would be better. For every magnitude of \\(10\\), term \\(2\\) gains
