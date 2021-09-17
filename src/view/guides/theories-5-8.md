@@ -206,7 +206,7 @@ slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
 far into the theory without R9). We highly recommend buying t8 for the achievement, then
 selling it right away and using those students for \\(\phi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
-through T8 faster than before. __You will need buy T8 again to get R9, and you should start R9 right away after that__ 
+through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__ 
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
 Theory | Tau | Theory | Tau
