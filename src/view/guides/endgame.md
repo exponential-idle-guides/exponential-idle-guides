@@ -149,7 +149,7 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 
-T5 will always give its best results from active play however, after
+T5 will always give its best results from active play, however, after
 step 3 you can still get good results while auto buying \\(q_1\\) and manually
 purchasing \\(c_1\\) every 10-15min. Making the theory slightly less active.
 
