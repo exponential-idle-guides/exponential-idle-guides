@@ -48,7 +48,7 @@ being based on the value of \\(ρ\\) from the previous tick with the value of
 \\(1+ln(ρ)/100\\). The final milestone upgrade raises the exponent of \\(c_1\\) from
 \\(1.00\\) to \\(1.05\\) to \\(1.10\\) to \\(1.15\\).
 
-This theory also has its own tickspeed calculated by \\(q_{1}*q_{2}\\). This
+This theory also has its adjusted tickspeed calculated by \\(q_{1}*q_{2}\\). This
 lengthens the normal tick length of \\(0.1/sec\\) to that value which speeds
 up the theory.
 
