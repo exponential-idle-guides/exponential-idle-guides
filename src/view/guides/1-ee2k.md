@@ -19,7 +19,7 @@ Playing and molding both sections will often deliver the best results for a part
 
 ##### Before b>=1:
 
-   - You do not want to prestige immediately when you hit 100%, but instead when \\(db\\) growth slows drastically.
+   - You do not want to prestige immediately when you hit 100% but instead when \\(db\\) growth slows drastically.
    - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is variable and can change based on how fast you are moving.
    - Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
 
