@@ -141,5 +141,5 @@ better theory.__
 ### Respecing milestones
 Unlike students, all Milestone sections already have the <kbd>-</kbd> button.
 This works in the same way as above. Here you can also find how many
-unused Milestones available at the top. On the right side of each
+unused Milestones are available at the top. On the right side of each
 Milestone, you can also find the current and max levels of each.
