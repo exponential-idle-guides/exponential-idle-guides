@@ -25,9 +25,9 @@ timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
 ```
 
 #### Autoprestige explanation
-This is the new equation for prestige. It looks intimidating, but it will work normally and 
+This is the new expression for prestige. It looks intimidating, but it will work normally and 
 you never have to turn it off (you would have to if you didn't use this one later on). Here is 
-an explanation for all parts except the normal equation which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
+an explanation for all parts except the normal expression which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
 
 ```
 ((d(smooth(10^10^10^(phi * tau), 1)) > 1)
@@ -53,8 +53,8 @@ for a very small amount of \\(b\\).
 > 3 * tr) && (phi >= 1 && phi <= 1)
 ```
 
-If phi is equal to 1, then it uses the normal autoprestige equation. We don't have
- "=" in the equations, so we had to work around it by using both ">=" (greater than 
+If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
+ "=" in the expressions, so we had to work around it by using both ">=" (greater than 
  or equal to) and "<=" (less than or equal to). This means that, even if you don't 
  have any phi upgrades, it will allow you to prestige like normal and not require you 
  to swap out of theories (or R9 until the end of a graduation).
@@ -64,12 +64,12 @@ If phi is equal to 1, then it uses the normal autoprestige equation. We don't ha
 (0.8*log10(log10(gf))>log10(log10(sf))))
 ```
 
-This lets the normal equation work when you supremacy or graduate up to 80% of 
+This lets the normal expression work when you supremacy or graduate up to 80% of 
 \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to 
 recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part 
-of the equation above, does not allow the normal equation to prestige for 15 sec after 
+of the expression above, does not allow the normal expression to prestige for 15 sec after 
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, 
-we allow the normal equation to work like normal while recovering.
+we allow the normal expression to work like normal while recovering.
 
 ###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-3-cumulative-maximum)
 ###### Note: If you don't know what R9 is, you will find out later in the game.
