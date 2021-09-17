@@ -141,7 +141,7 @@ For instance, \\(smooth( d(d(ln(db))), 10)\\) will behave much better than the s
 
 #### Method 2: Lock
  
-Due to the nature of the expression, if the second input of smooth is very large, then there will be no average at all: instead of taking a normal average, we can skew the weights so that any new value is too small to be noticed. As a very simple example, can calculate averages like \\(average = 0 * (new\\) \\( value) + 1 * (old\\) \\( value)\\) to preserve old values. On the contrary, if we skew this the other way, then only the new value would appear:  \\(average = 1 * (new \\) \\(value) + 0 * (old\\) \\( value)\\).
+Due to the nature of the expression, if the second input of smooth is very large, then there will be no average at all: instead of taking a normal average, we can skew the weights so that any new value is too small to be noticed. As a very simple example, we can calculate averages like \\(average = 0 * (new\\) \\( value) + 1 * (old\\) \\( value)\\) to preserve old values. On the contrary, if we skew this the other way, then only the new value would appear:  \\(average = 1 * (new \\) \\(value) + 0 * (old\\) \\( value)\\).
 
 A simple expression like \\(smooth(expr, ee99)\\) will first compute expr and keep that value indefinitely until the expression field is reset: upon modifying the expression, every prestige for prestige expressions, and every supremacy for supremacy expressions. This is what we refer to as "lock."
 
