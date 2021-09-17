@@ -67,7 +67,7 @@ If phi is equal to 1, then it uses the normal autoprestige expression. We don't 
 This lets the normal expression work when you supremacy or graduate up to 80% of 
 \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to 
 recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part 
-of the expression above, does not allow the normal expression to prestige for 15 sec after 
+of the expression above does not allow the normal expression to prestige for 15 sec after 
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, 
 we allow the normal expression to work like normal while recovering.
 
