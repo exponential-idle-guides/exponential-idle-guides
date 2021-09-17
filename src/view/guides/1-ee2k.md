@@ -120,7 +120,7 @@ timer(d(ln(db/b+1)/pt) < 0)
 ##### Minigames
 
 If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You an buy variables and perm levels while you wait. 
+You can buy variables and perm levels while you wait. 
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
@@ -181,7 +181,7 @@ The equation shown is the calculation done on every tick. Lets give the example 
 ##### Minigames
 
 If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You an buy variables and perm levels while you wait. 
+You can buy variables and perm levels while you wait. 
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
