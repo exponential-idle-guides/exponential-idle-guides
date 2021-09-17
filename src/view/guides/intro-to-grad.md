@@ -36,7 +36,7 @@ an explanation for all parts except the normal equation which has an [explanatio
 This returns true if phi and/or tau grows a very very small amount more than the max 
 reached that prestige. The many "10^" is to make any tiny changes explode into very large 
 numbers so that they will never be less than 1, especially if you are far into a graduation 
-or endgame. This also prevents you from early prestiging from dropping accel or from moving 
+or endgame. This also prevents you from early prestiging from dropping accel or moving 
 students around as they make phi drop in value.
 
 ```
