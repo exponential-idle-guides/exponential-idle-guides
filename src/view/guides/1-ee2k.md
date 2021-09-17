@@ -148,7 +148,7 @@ If you don't use the accel button, don't buy it. When you can buy the autobuyers
 ### ee200 to ee2000
 
 #### Autosupremacy
-There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
+There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get it later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
 ###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle.
 ```
