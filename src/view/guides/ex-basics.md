@@ -48,7 +48,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 ### Achievements and Minigames
 * Achievements are just that, they are goals to reach that will give you stars as a reward.
 * Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
-  solving them. The amount of stars the you get from completing a minigame is determined by 
+  solving them. The amount of stars that you get from completing a minigame is determined by 
   your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration 
   Button, also known as Accel. Below is a chart of the starting star values and the equation for 
   reward. The current best puzzle to farm stars is hard arrow as it gives the best stars/time spent 
