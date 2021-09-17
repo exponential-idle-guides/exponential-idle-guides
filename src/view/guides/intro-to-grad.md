@@ -105,7 +105,7 @@ Upon unlocking all variables, you can use the [star calculator](https://conicgam
 
 ### Graduation routing
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
-to cruise than recover and push. Best bet is use the [Graduation
+to cruise than recover and push. Best bet is to use the [Graduation
 calculator](https://replit.com/@LEBaldy2002/gradcalc). Please [contribute to the Phi\*Tau sheet](https://docs.google.com/forms/d/12ldZ22WXQrmsHVt_269-a55KTir-KvT65gmX2JXTYpQ/edit) before graduating.
 
 ### Student use routing
