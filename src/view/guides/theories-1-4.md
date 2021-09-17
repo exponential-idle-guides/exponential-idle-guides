@@ -280,7 +280,7 @@ repeat.
 
 ### Theory 4 (35σ / 8k)
 
-We start out with just one term of constants \\(c_1c_2\\) and a changing term
+We start with just one term of constants \\(c_1c_2\\) and a changing term
 \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
 first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
