@@ -158,7 +158,7 @@ boost.
 
 \\[\dot{ρ}=q_1r\\]
 
-##### Third and Forth milestones
+##### Third and Fourth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -313,7 +313,7 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
 
-##### Forth to Sixth milestones
+##### Fourth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
