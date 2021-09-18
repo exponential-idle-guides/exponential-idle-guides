@@ -40,12 +40,12 @@ This is the reason why T5 is considered an active theory and T2 is considered an
 #### Multi Manual
 This is the optimal multiplier that you should publish at for the given manual strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Multi Auto
 This is the optimal multiplier that you should publish at for the given active strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of
