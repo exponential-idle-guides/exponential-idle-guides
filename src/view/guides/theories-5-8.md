@@ -234,7 +234,7 @@ will take a good bit of time but is faster with R9.
 
 At the start, manual buy prioritizes \\(c_2\\) then \\(c_1\\) then rest.
 Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then the
-rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
+rest. Once at 2/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
 Attractor | Starting Positions (reset every pub) | Time Step
