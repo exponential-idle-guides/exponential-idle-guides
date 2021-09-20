@@ -59,6 +59,30 @@ If you want to create a new guide, add a new `.md` file in the
 `src/view/guides` directory with the header content as above, replacing
 `<>` as appropriate. The content is written below the second `---`.
 
+### Adding a translation
+
+Use [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language
+codes as the key.
+
+1. Update all files in the `src/_data` with your language key and associated values.
+2. Make a new directory `src/<lang>`.
+3. Add a `src/<lang>/<lang>.json` file with the content:
+   ```json
+   {
+     "locale": "<lang>"
+   }
+   ```
+4. Add a guides file in `src/<lang>/guides.json`, making sure to update the `<lang>`
+   value.
+   ```json
+   {
+     "tags": "guide_<lang>",
+     "layout": "guide"
+   }
+   ```
+5. Copy the `src/en/index.njk` to `src/<lang>/index.njk` and translate the content.
+6. Copy the `src/en/guides/*.md` to `src/<lang>/guides/` and translate the content.
+
 ### License
 
 These are the licenses for this website:

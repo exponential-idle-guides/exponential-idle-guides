@@ -1,0 +1,27 @@
+
+{% extends "default.njk" %}
+
+{% block title %}
+  <h2 hidden>{{ home[locale].title }}</h2>
+{% endblock %}
+
+{% block postmain %}
+
+  {% set guides = collections["guide_" + locale] %}
+
+  <h3>{{ home[locale].guidesHeading }}</h2>
+  <ul>
+    {%- for guide in guides -%}
+      <li>
+        <a href="{{guide.url}}">{{ guide.data.title }}</a>
+        {% if guide.data.subtitle %}
+          ({{ guide.data.subtitle }})
+        {% endif %}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <h3>{{ home[locale].toolsHeading }}</h2>
+  {% include "tools.njk" %}
+
+{% endblock %}

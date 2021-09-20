@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ locale }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta rel="canonical" href="{{ permalink }}">
     {% if description %}<meta name="description" content="{{ description }}">{% endif %}
     <link href="/style/main.css" rel="stylesheet">
     <script async defer
@@ -25,7 +26,7 @@
 
       gtag('config', 'G-CQWRWZCSZW');
     </script>
-    <title>{{title}} - Exponential Idle Guides</title>
+    <title>{{title}} - {{ site[locale].title }}</title>
   </head>
   <body>
     <header class="page-section header" id="top">
@@ -33,7 +34,7 @@
         <span class="light"><img alt="Light mode toggle" src="/images/sun.svg"></span>
         <span class="dark"><img alt="Dark mode toggle" src="/images/moon.svg"></span>
       </button>
-      <h1><a href="/">Exponential Idle Guides</a></h1>
+      <h1><a href="/{{locale}}/">{{ site[locale].title }}</a></h1>
       {{ nav | safe }}
     </header>
     <main class="page-section content-wrapper">
@@ -46,6 +47,8 @@
 
       {% block main %}{% endblock %}
 
+      {% block postmain %}{% endblock %}
+
       {% if nav %}
         <div class="post-content-nav">
         </div>
@@ -56,20 +59,20 @@
         {{ nav | safe }}
       </div>
       <div class="footer__section">
-        <p>Any feedback?   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
-          Submit it to us.
-        </a>
-        <p>Want to see the responses? <a href="https://bit.ly/ex-guide-suggestion-responses">
-          Take a look.
+        <p>{{ site[locale].feedbackRequest }}
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
+            {{ site[locale].feedbackRequestLinkText }}
+          </a>
+        <p>{{ site[locale].feedbackResponses }} <a href="https://bit.ly/ex-guide-suggestion-responses">
+          {{ site[locale].feedbackResponsesLinkText }}
         </a>
       </div>
       <div class="footer__section">
-        <p>Guides copyright <a href="https://github.com/LEBaldy">LE★Baldy</a> & <a href="https://github.com/Snaeks">Snaeky</a>.
-        <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
+        <p>{{ site[locale].copyright }} <a href="https://github.com/LEBaldy">LE★Baldy</a> & <a href="https://github.com/Snaeks">Snaeky</a>.
+        <p>{{ site[locale].siteCreator }} <a href="https://ticklethepanda.dev">TickleThePanda</a>.
       </div>
-      {% if not home %}
+      {% if not homeFooter %}
         <div class="footer__section footer__section--left">
-          <h3>Other resources</h3>
           {% include 'tools.njk' %}
         </div>
       {% endif %}

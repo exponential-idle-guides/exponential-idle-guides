@@ -1,15 +1,18 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
-  {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
+
+  {% set guides = collections["guide_" + locale] %}
+
+  {% set previousGuide = guides | getPreviousCollectionItem(page) %}
+  {% set nextGuide = guides | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
-      <a href="{{previousGuide.url}}">Previous: {{previousGuide.data.title}}</a>
+      <a href="{{previousGuide.url}}">{{ guide[locale].previous }}: {{previousGuide.data.title}}</a>
     {% endif %}
     {% if nextGuide %}
-      <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
+      <a href="{{nextGuide.url}}" class="pagination__next">{{ guide[locale].next }}: {{nextGuide.data.title}}</a>
     {% endif %}
   </nav>
 {% endset %}
@@ -18,21 +21,21 @@
 
   {% if author or contributors %}
     <p class="byline">
-      {% if author %}Guide written by <strong>{{ author }}</strong>.{% endif %}
-      {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
+      {% if author %}{{ guide[locale].author }} <strong>{{ author }}</strong>.{% endif %}
+      {% if translators %}{{ guide[locale].translators }} <strong>{{ translators }}</strong>.{% endif %}
+      {% if contributors %}{{ guide[locale].contributors }} <strong>{{ contributors }}</strong>.{% endif %}
   {% endif %}
 
   {% if draft %}
     <p class="draft-warning">
-      This guide is currently undergoing change.
-      Keep in mind, <strong>strategies may change</strong>.
+      {{ guide[locale].draftWarning }}
   {% endif %}
 
   {% set toc = content | toc %}
 
   {% if toc %}
   <div class="toc-wrapper">
-    <h3>Table of contents</h3>
+    <h3>{{ guide[locale].toc }}</h3>
     {{ toc | safe }}
   </div>
   {% endif %}
