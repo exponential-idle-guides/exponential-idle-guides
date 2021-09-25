@@ -108,7 +108,7 @@ Otherwise keep variables unlocked.
 #### Autoprestige
 
 Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it.
-###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression]
+###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
 
 ```
 timer(d(ln(db/b+1)/pt) < 0) 
