@@ -143,7 +143,7 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 ##### Star upgrades
 
-If you don't use the accel button, don't buy it. When you can buy the autobuyers, buy the variable autobuyer then the upgrade autobuyer. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-to-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
+If you don't use the accel button, don't buy it. When you can buy the autobuyers, buy the variable autobuyer then the upgrade autobuyer. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
 
 ### ee200 to ee2000
 
@@ -194,7 +194,7 @@ It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the hour ca
 
 ##### Star upgrades
 
-You will max all star upgrades besides perm levels (no attainable limit) and autosupremacy (only if you grind enough). When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-to-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
+You will max all star upgrades besides perm levels (no attainable limit) and autosupremacy (only if you grind enough). When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
 
 #### Idle strategies
 
@@ -204,6 +204,6 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 ##### Star upgrades
 
-You will max all star upgrades besides perm levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-to-ee2k/#Autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
+You will max all star upgrades besides perm levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
 
 ###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graudation routing anyways.
