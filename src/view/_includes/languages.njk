@@ -1,0 +1,31 @@
+{# loop though languages #}
+<div class="language-picker">
+  {% for lgg in languages.languages %}
+    {% if loop.first %}
+      <h2 class="language-picker__title">{{ languages[locale].listName }}</h2>
+      <ul class="language-picker__list">
+    {% endif %}
+
+    {# set translatedUrl to the homepage of that language by default #}
+    {% set translatedUrl = "/" + lgg.code + "/" %}
+
+    {# set current language class #}
+    {% set activeClass = "is-active" if lgg.code == locale else "" %}
+
+    {# loop through all the content of the site #}
+    {% for item in collections.all %}
+
+      {# for each item in the loop, check if
+      - its translationKey matches the current item translationKey
+      - its locale matches the code of the language we are looping through #}
+      {% if item.data.translationKey == translationKey and item.data.locale == lgg.code %}
+        {% set translatedUrl = item.url %}
+      {% endif %}
+
+    {% endfor %}
+
+    <li class="language-picker__item {% if loop.last %}language-picker__item--last{% endif %}"><a class="language-picker__link {{ activeClass }}" href="{{ translatedUrl }}">{{ lgg.label }}</a></li>
+
+    {% if loop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>

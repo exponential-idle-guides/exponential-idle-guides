@@ -5,6 +5,7 @@ author: "LE★Baldy & Snaeky"
 contributors: "the Amazing Community"
 draft: true
 order: 5
+translationKey: "theories-5-8"
 ---
 
 {% import "embed-yt.njk" as yt %}
@@ -134,7 +135,7 @@ After autobuy at e30, you should repeat this after every publication:
 3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
    2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
-4. Once you reach your desired multiplier, publish. 
+4. Once you reach your desired multiplier, publish.
 5. Repeat this for stonks.
 
 ###### Commentary
@@ -206,7 +207,7 @@ slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
 far into the theory without R9). We highly recommend buying t8 for the achievement, then
 selling it right away and using those students for \\(\phi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
-through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__ 
+through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
 Theory | Tau | Theory | Tau

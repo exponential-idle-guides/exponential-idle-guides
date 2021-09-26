@@ -6,6 +6,7 @@ author: "LE★Baldy"
 contributors: "the Amazing Community"
 draft: true
 order: 6
+translationKey: "endgame"
 ---
 
 {% import "embed-yt.njk" as yt %}
@@ -135,7 +136,7 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
    2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
-4. Once you reach your desired multiplier, publish. 
+4. Once you reach your desired multiplier, publish.
 5. Repeat this for stonks.
 
 ###### Commentary

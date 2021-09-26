@@ -104,11 +104,9 @@ module.exports = config => {
     util.inspect(s, {depth: d === undefined ? 2 : d})
   );
 
-  config.addCollection("guides", function(collection) {
-    return collection.getFilteredByTag("guide").sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
+  config.addFilter("sortByOrder", guides => {
+    return guides.sort((a, b) => a.data.order - b.data.order);
+  })
 
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 

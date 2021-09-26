@@ -47,6 +47,7 @@ Each guide file has a few different elements:
    author: <author>
    contributors: <contributors>
    order: <relative order>
+   translationKey: <key>
    ---
    ```
  - [Markdown](https://daringfireball.net/projects/markdown/) content,
@@ -56,7 +57,7 @@ Each guide file has a few different elements:
    - On its own lines using `\\[` and `\\]`
 
 If you want to create a new guide, add a new `.md` file in the
-`src/view/guides` directory with the header content as above, replacing
+`src/view/<lang>/guides` directory with the header content as above, replacing
 `<>` as appropriate. The content is written below the second `---`.
 
 ### Adding a translation
@@ -82,6 +83,8 @@ codes as the key.
    ```
 5. Copy the `src/en/index.njk` to `src/<lang>/index.njk` and translate the content.
 6. Copy the `src/en/guides/*.md` to `src/<lang>/guides/` and translate the content.
+   Make sure to keep the `translationKey` the same as the original document so that
+   the translation switcher works.2
 
 ### License
 

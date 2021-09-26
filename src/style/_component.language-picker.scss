@@ -1,0 +1,41 @@
+.language-picker {
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.language-picker__title {
+  font-size: 0.8rem;
+  display: inline;
+  font-weight: 400;
+
+  &::after {
+    content: ": ";
+  }
+}
+
+.language-picker__list {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.language-picker__item {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+
+  &::after {
+    content: ", ";
+  }
+
+  &--last::after {
+    content: unset;
+  }
+}
+
+.language-picker__link.is-active {
+  font-weight: 400;
+  font-style: italic;
+}

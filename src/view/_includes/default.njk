@@ -36,6 +36,7 @@
       </button>
       <h1><a href="/{{locale}}/">{{ site[locale].title }}</a></h1>
       {{ nav | safe }}
+      {% include 'languages.njk' %}
     </header>
     <main class="page-section content-wrapper">
       {% block title %}

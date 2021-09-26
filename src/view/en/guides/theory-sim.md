@@ -5,6 +5,7 @@ author: "LE★Baldy, Snaeky, and Gaunter"
 contributors: "Antharion for the simulator itself"
 draft: true
 order: 7
+translationKey: "theory-sim"
 ---
 
 ### Before you start

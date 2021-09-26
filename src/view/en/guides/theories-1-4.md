@@ -5,6 +5,7 @@ author: "LE★Baldy & Snaeky"
 contributors: "the Amazing Community"
 draft: true
 order: 4
+translationKey: "theories-1-4"
 ---
 ### Theory basics
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
@@ -12,7 +13,7 @@ use them. However, the best publication multipliers vary from theory to theory a
 decrease over time. If you are close to a multiplier you want, turn off autobuyer
 and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
 before the publication (turn on after you publish). This is known and referenced as "cruising".
-Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative 
+Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative
 combination of all \\(τ\\) from each theory.
 
 __Don’t be afraid to skip getting all milestones to work on the next or a

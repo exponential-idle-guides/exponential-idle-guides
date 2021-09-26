@@ -2,7 +2,7 @@
 
 {% set nav %}
 
-  {% set guides = collections["guide_" + locale] %}
+  {% set guides = collections["guide_" + locale] | sortByOrder %}
 
   {% set previousGuide = guides | getPreviousCollectionItem(page) %}
   {% set nextGuide = guides | getNextCollectionItem(page) %}

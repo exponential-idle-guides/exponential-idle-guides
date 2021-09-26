@@ -7,7 +7,7 @@
 
 {% block postmain %}
 
-  {% set guides = collections["guide_" + locale] %}
+  {% set guides = collections["guide_" + locale]  | sortByOrder %}
 
   <h3>{{ home[locale].guidesHeading }}</h2>
   <ul>
