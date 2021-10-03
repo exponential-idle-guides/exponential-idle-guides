@@ -198,7 +198,7 @@ of points \\((x,y,g(x,y))\\), see attached image).
 \\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
 maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
 Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the 
-maximization problem is ill-conditionned); so one way to maximize \\(g(ρ1,ρ2)\\) is to 
+maximization problem is ill-conditionned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to 
 move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
 This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
 point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
