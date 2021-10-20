@@ -32,7 +32,8 @@ th, td {
 
 //Baldy Minigame Table Test
 .beta {
-	text-align: center  
+	text-align: center;
+	border-bottom: 1px solid black;
 }
 .beta .invisible {
 	border: none;
@@ -43,6 +44,5 @@ th, td {
 	background-color:#303030;
 }
 .beta th {
-	background-color:#303030;
-	text-align: center  
+	background-color:#303030; 
 }
