@@ -54,7 +54,7 @@ These tips in general are very helpful when starting out and further down the li
     </thead>
     <tbody>
         <tr>
-            <td class="leftHeader">Visual Scheme</td>
+            <td class="leftHeader"><b>Visual Scheme</b></td>
             <td>Fringe</td>
             <td>Last Row (change to ingame)</td>
             <td>Numbers</td>
