@@ -7,13 +7,91 @@ draft: true
 order: 8
 ---
 
+## Overall Tips
+These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
+<ol type="1">
+  <li>Color Scheme</li>
+  <ol type="a">
+    <table>
+      <tr>
+        <th>15-Puzzle</th>
+        <th>Torus Puzzle</th>
+        <th>Arrow Puzzle</th>
+      </tr>
+      <tr>
+        <td>Emil</td>
+        <td>Tobias</td>
+        <td>Linus</td>
+      </tr>
+    </table>
+
+<style>
+  .beta {
+    text-align: center  
+  }
+  .beta .invisible {
+      border: none;
+      background-color:transparent;
+  }
+  .beta .leftHeader {
+      font-weight: bold;
+      background-color:#303030;
+  }
+  .beta th {
+      background-color:#303030;
+      text-align: center  
+  }
+</style>
+
+<table class="beta">
+    <thead>
+        <tr>
+            <th class="beta invisible"></th>
+            <th>15-Puzzle</th>
+            <th>Torus</th>
+            <th>Arrow</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="leftHeader">Visual Scheme</td>
+            <td>Fringe</td>
+            <td>Last Row (change to ingame)</td>
+            <td>Numbers</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">Movement Style</td>
+            <td>Slide</td>
+            <td>Free-scroll</td>
+            <td>N/A</td>
+        </tr>
+    </tbody>
+</table>
+    </table>
+  </ol>
+  <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
+</ol>
+
 ## 15-Puzzle
+### Easy
+The algorithm goes as follows:
+<ol type="1">
+  <li></li>
+  <ol type="a">
+    <li>Make the center tile of a row the same as one edge tile.</li>
+    <li>Make the row all the same number.</li>
+    <li>Solve the row.</li>
+  </ol>
+  <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
+</ol>
+
 
 ## Torus Puzzle
 
+
+
 ## Arrow Puzzle
-### Solving Techniques:
-#### Easy
+### Easy
 The algorithm goes as follows:
 <ol type="1">
   <li>Solve top row then the middle tapping tiles below the row.</li>
@@ -25,11 +103,11 @@ The algorithm goes as follows:
   <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
 </ol>
 
-##### Example
+#### Example
 
 
 
-#### Medium
+### Medium
 The algorithm goes as follows:
 <ol type="1">
   <li>Solve the top three rows after another tapping tiles below the row.</li>
@@ -44,11 +122,11 @@ The algorithm goes as follows:
 
 ##### Tip: When you solve during step 2, tap the first row the same number of times as the bottom row. You can then use row 2 to finish the solve.
 
-##### Example
+#### Example
 
 
 
-#### Propogation (for Hard and Expert)
+### Propogation (for Hard and Expert)
 The algorithm goes as follows:
 <ol type="1">
   <li>Solve the rop row tapping tiles directly below the row.</li>
@@ -66,7 +144,7 @@ The algorithm goes as follows:
 - When you are done, your board will be symmetric.
 - The two tiles adjacent to the bottom center tile wll always be 1 or 4.
 
-##### Example
+#### Example
 
 
 
@@ -84,3 +162,4 @@ You will want to read [how to propogate](https://exponential-idle-guides.netlify
   <li>Propogate.</li>
 </ol>
 
+#### Example
