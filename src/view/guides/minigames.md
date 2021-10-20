@@ -10,27 +10,11 @@ order: 8
 ## Overall Tips
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
-<ol type="1">
-  <li>Color Scheme</li>
-  <ol type="a">
-    <table>
-      <tr>
-        <th>15-Puzzle</th>
-        <th>Torus Puzzle</th>
-        <th>Arrow Puzzle</th>
-      </tr>
-      <tr>
-        <td>Emil</td>
-        <td>Tobias</td>
-        <td>Linus</td>
-      </tr>
-    </table>
-
 
 <table class="beta">
     <thead>
         <tr>
-            <th class="beta invisible"></th>
+            <th class="invisible"></th>
             <th>15-Puzzle</th>
             <th>Torus</th>
             <th>Arrow</th>
@@ -38,7 +22,7 @@ These tips in general are very helpful when starting out and further down the li
     </thead>
     <tbody>
         <tr>
-            <td class="leftHeader"><b>Visual Scheme</b></td>
+            <td class="leftHeader">Visual Scheme</td>
             <td>Fringe</td>
             <td>Last Row<bv>(change to ingame)</td>
             <td>Numbers</td>
@@ -51,9 +35,6 @@ These tips in general are very helpful when starting out and further down the li
         </tr>
     </tbody>
 </table>
-  </ol>
-  <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
-</ol>
 
 ## 15-Puzzle
 
