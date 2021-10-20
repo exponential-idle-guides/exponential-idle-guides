@@ -61,7 +61,7 @@ The algorithm goes as follows:
 ### Easy
 
 The algorithm goes as follows:
-<ol type="1">
+<ol type="one">
   <li>Solve top row then the middle tapping tiles below the row.</li>
   <ol type="a">
     <li>Make the center tile of a row the same as one edge tile.</li>

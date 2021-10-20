@@ -30,24 +30,24 @@ th, td {
 	}
 }
 
-//Baldy Minigame Table Test
-.beta {
+//New Table Look
+.newtable {
 	text-align: center;
 }
-.beta .invisible {
+.newtable .invisible {
 	border: none;
 	background-color:transparent;
 }
-.beta .leftHeader {
+.newtable .leftHeader {
 	font-weight: bold;
 	background-color:#303030;
 	border-right: 5px solid black;
 }
-.beta th {
+.newtable th {
 	background-color:#303030; 
 	border-bottom: 5px solid black;
 }
-.beta th, td {
+.newtable th, td {
 	text-align: center;
 	padding: 0.5em 0.4em 0.5em 0.4em;
 }
