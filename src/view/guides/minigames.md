@@ -7,11 +7,11 @@ draft: true
 order: 8
 ---
 
-## Overall Tips
+## Overall settings
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
 
-<table class="beta">
+<table class="newwords">
     <thead>
         <tr>
             <th class="invisible"></th>
@@ -24,14 +24,61 @@ These tips in general are very helpful when starting out and further down the li
         <tr>
             <td class="leftHeader">Visual Scheme</td>
             <td>Fringe</td>
-            <td>Last Row<bv>(change to ingame)</td>
-            <td>Numbers</td>
+            <td>Insertion</td>
+            <td>Grayscale+Numbers</td>
         </tr>
         <tr>
-            <td class="leftHeader">Movement Style</td>
-            <td>Slide</td>
-            <td>Free-scroll</td>
-            <td>N/A</td>
+            <td class="leftHeader">Hover/Slide Control</td>
+            <td>enabled</td>
+            <td>enabled</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">Animation</td>
+            <td>disabled</td>
+            <td>disabled</td>
+            <td>disabled</td>
+        </tr>
+    </tbody>
+</table>
+
+## Minigame rewards
+
+These are the base rewards for each difficulty level of each minigame.
+
+<table class="newnumbers">
+    <thead>
+        <tr>
+            <th class="invisible"></th>
+            <th>15-Puzzle</th>
+            <th>Torus</th>
+            <th>Arrow</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="leftHeader">Easy</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">Medium</td>
+            <td>3</td>
+            <td>8</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">Hard</td>
+            <td>6</td>
+            <td>14</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">Expert</td>
+            <td>-</td>
+            <td>-</td>
+            <td>25</td>
         </tr>
     </tbody>
 </table>

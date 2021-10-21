@@ -31,23 +31,44 @@ th, td {
 }
 
 //New Table Look
-.newtable {
+.newwords {
 	text-align: center;
 }
-.newtable .invisible {
+.newwords .invisible {
 	border: none;
 	background-color:transparent;
 }
-.newtable .leftHeader {
+.newwords .leftHeader {
 	font-weight: bold;
 	background-color:#303030;
 	border-right: 5px solid black;
 }
-.newtable th {
+.newwords th {
 	background-color:#303030; 
 	border-bottom: 5px solid black;
 }
-.newtable th, td {
+.newwords th, td {
+	text-align: center;
+	padding: 0.5em 0.4em 0.5em 0.4em;
+}
+
+.newnumbers {
+	text-align: center;
+}
+.newnumbers .invisible {
+	border: none;
+	background-color:transparent;
+}
+.newnumbers .leftHeader {
+	font-weight: bold;
+	background-color:#303030;
+	border-right: 5px solid black;
+}
+.newnumbers th {
+	background-color:#303030; 
+	border-bottom: 5px solid black;
+}
+.newnumbers th, td {
 	text-align: center;
 	padding: 0.5em 0.4em 0.5em 0.4em;
 }
