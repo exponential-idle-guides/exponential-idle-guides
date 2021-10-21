@@ -215,7 +215,7 @@ The algorithm goes as follows:
 
 #### Example
 
-### Propogation (for Hard and Expert)
+### Propagation (for Hard and Expert)
 
 The algorithm goes as follows:
 <ol type="1">
@@ -240,9 +240,9 @@ The algorithm goes as follows:
 
 ### Hard and Expert
 
-You will want to read [how to propogate](https://exponential-idle-guides.netlify.app/guides/minigames/#propogation-for-hard-and-expert) before continuing. The algorithm goes as follows:
+You will want to read [how to propagate](https://exponential-idle-guides.netlify.app/guides/minigames/#propagation-for-hard-and-expert) before continuing. The algorithm goes as follows:
 <ol type="1">
-  <li>Propogate.</li>
+  <li>propagate.</li>
   <li>Label the bottom right cells (from left to right): <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>. Label the top right cells (from left to right): <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. We will be tapping the top row to encode the bottom row onto it.
   <ol type="a">
     <li>Tap <em>a</em> so that a is the same as <em>C</em>.</li>
@@ -250,7 +250,7 @@ You will want to read [how to propogate](https://exponential-idle-guides.netlify
     <li>Tap <em>a</em> the number of times you would need to solve <em>D</em>.</li>
     <li>If <em>B</em> + <em>D</em> is odd, tap <em>c</em> three times (once in Hard). Otherwise, skip this step.</li>
   </ol>
-  <li>Propogate from top once more to finish the solve.</li>
+  <li>propagate from top once more to finish the solve.</li>
 </ol>
 
 #### Example
