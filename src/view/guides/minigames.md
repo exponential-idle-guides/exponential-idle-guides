@@ -44,7 +44,7 @@ These tips in general are very helpful when starting out and further down the li
 
 ## Minigame rewards
 
-These are the base rewards for each difficulty level of each minigame.
+These are the base star reward for each difficulty level of each minigame.
 
 <table class="newnumbers">
     <thead>
@@ -85,22 +85,36 @@ These are the base rewards for each difficulty level of each minigame.
 
 ## 15-Puzzle
 
-### Easy
+### All Difficulties
 
 The algorithm goes as follows:
 <ol type="1">
-  <li></li>
+  <li>Solve the top row.</li>
+  <li>Solve the left column.</li>
+  <li>Repeat Steps 1. and 2. for each additional layer until you reach the last 2x2.</li>
+  <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
   <ol type="a">
-    <li>Make the center tile of a row the same as one edge tile.</li>
-    <li>Make the row all the same number.</li>
-    <li>Solve the row.</li>
+    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
+    <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
   </ol>
-  <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
 </ol>
+
+##### This algorithm works for all difficulties and is a greater impact on the larger boards than smaller boards. 
+
+#### Example
 
 
 ## Torus Puzzle
 
+### Easy
+
+
+
+### Medium
+
+
+
+### Hard
 
 
 ## Arrow Puzzle
@@ -139,8 +153,6 @@ The algorithm goes as follows:
 ##### Tip: When you solve during step 2, tap the first row the same number of times as the bottom row. You can then use row 2 to finish the solve.
 
 #### Example
-
-
 
 ### Propogation (for Hard and Expert)
 
