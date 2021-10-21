@@ -154,7 +154,7 @@ The algorithm goes as follows:
   <li>Solve each row until the last column.</li>
   <ol type="a">
     <li>Solve first row for 1 2 3 4 5.</li>
-    <li>Solve secopnd row for 7 8 9 10 11.</li>
+    <li>Solve second row for 7 8 9 10 11.</li>
     <li>Continue solving like a and b for the remaining rows.</li>
   </ol>
   <li>Solve last column parity case.</li>
