@@ -29,15 +29,15 @@ These tips in general are very helpful when starting out and further down the li
         </tr>
         <tr>
             <td class="leftHeader">Hover/Slide Control</td>
-            <td>enabled</td>
-            <td>enabled</td>
+            <td>Enabled</td>
+            <td>Enabled</td>
             <td>-</td>
         </tr>
         <tr>
             <td class="leftHeader">Animation</td>
-            <td>disabled</td>
-            <td>disabled</td>
-            <td>disabled</td>
+            <td>Disabled</td>
+            <td>Disabled</td>
+            <td>Disabled</td>
         </tr>
     </tbody>
 </table>
