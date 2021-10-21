@@ -25,7 +25,7 @@ These tips in general are very helpful when starting out and further down the li
             <td class="leftHeader">Visual Scheme</td>
             <td>Fringe</td>
             <td>Insertion</td>
-            <td>Grayscale+Numbers</td>
+            <td>Grayscale + Numbers</td>
         </tr>
         <tr>
             <td class="leftHeader">Hover/Slide Control</td>
@@ -166,7 +166,7 @@ The algorithm goes as follows:
       <li>Move the top number into the row next to it.</li>
       <li>Move the column up to reach the bottom number.</li>
       <li>Insert the bottom number into the row next to the top number.</li>
-      <li>Repeat ↓ → ↑ → until numbers are successfully swapped.</li>
+      <li>Repeat ↓ ← ↑ ← until numbers are successfully swapped.</li>
     </ol>
     <li>Repeat b until that number is in the correct position.</li>
     <li>Repeat a through c until all numbers are in the correct position.</li>
