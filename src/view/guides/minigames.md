@@ -91,7 +91,7 @@ The algorithm goes as follows:
 <ol type="1">
   <li>Solve the top row.</li>
   <li>Solve the left column.</li>
-  <li>Repeat Steps 1. and 2. for each additional layer until you reach the last 2x2.</li>
+  <li>Repeat Steps 1 and 2 for each additional layer until you reach the last 2x2.</li>
   <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
   <ol type="a">
     <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
@@ -103,19 +103,78 @@ The algorithm goes as follows:
 
 #### Example
 
-
 ## Torus Puzzle
 
 ### Easy
 
+The algorithm goes as follows:
 
+<ol type="1">
+  <li>Solve each row up to the 2nd letter.</li>
+    <ol type="a">
+      <li>Solve top row for 1 and 2.</li>
+      <li>Solve middle row for 4 and 5.</li>
+      <li>Solve bottom row for 7 and 8.</li>
+    </ol>
+  <li>Move the final column up or down to finish.</li>
+</ol>
+
+#### Example
 
 ### Medium
 
+The algorithm goes as follows:
 
+<ol type="1">
+  <li>Solve each row until the last column.</li>
+  <ol type="a">
+    <li>Solve first row for 1 2 3 4.</li>
+    <li>Solve secopnd row for 6 7 8 9.</li>
+    <li>Continue solving like a and b for the remaining rows.</li>
+  </ol>
+  <li>Solve right column with swaps.</li>
+  <ol type="a">
+    <li>Find a number in the column that is in the wrong position.</li>
+    <li>Move the piece into your row left.</li>
+    <li>Move this piece from your row into the correct position.</li>
+    <li>Repeat a through c until all pieces are in the correct position.</li>
+  </ol>
+  <li>Move the right column until up or down until solved.</li>
+</ol>
+
+##### Be careful to not end up with a mixed up row (ex: 18 19 15 16) after swapping.
+
+#### Example
 
 ### Hard
 
+The algorithm goes as follows:
+
+<ol type="1">
+  <li>Solve each row until the last column.</li>
+  <ol type="a">
+    <li>Solve first row for 1 2 3 4 5.</li>
+    <li>Solve secopnd row for 7 8 9 10 11.</li>
+    <li>Continue solving like a and b for the remaining rows.</li>
+  </ol>
+  <li>Solve last column parity case.</li>
+  <ol type="a">
+    <li>Find a number in the column that is in the wrong position.</li>
+    <li>Do repeated swaps of those numbers by following this.</li>
+    <ol type="i">
+      <li>Pick which numbers you are going to swap.</li>
+      <li>Move the top number into the row next to it.</li>
+      <li>Move the column up to reach the bottom number.</li>
+      <li>Insert the bottom number into the row next to the top number.</li>
+      <li>Repeat ↓ → ↑ → until numbers are successfully swapped.</li>
+    </ol>
+    <li>Repeat b until that number is in the correct position.</li>
+    <li>Repeat a through c until all numbers are in the correct position.</li>
+  </ol>
+  <li>Move the last column up or down until solved.</li>
+</ol>
+
+#### Example
 
 ## Arrow Puzzle
 
@@ -129,7 +188,8 @@ The algorithm goes as follows:
     <li>Make the row all the same number.</li>
     <li>Solve the row.</li>
   </ol>
-  <li>Solve bottom row the same way but using the middle row. Then using the top row, finish the solve.</li>
+  <li>Solve bottom row the same way but using the middle row.</li>
+  <li>Using the top row, finish the solve.</li>
 </ol>
 
 #### Example
@@ -147,7 +207,8 @@ The algorithm goes as follows:
     <li>Solve the left two tiles by pressing.</li>
     <li>Solve the right two tiles by pressing.</li>
   </ol>
-  <li>Solve the bottom row the same way but by using the bottom row itself. Then using the first and second row, finish the solve.</li>
+  <li>Solve the bottom row the same way but by using the bottom row itself.</li>
+  <li>Using the first and second row, finish the solve.</li>
 </ol>
 
 ##### Tip: When you solve during step 2, tap the first row the same number of times as the bottom row. You can then use row 2 to finish the solve.
@@ -189,7 +250,7 @@ You will want to read [how to propogate](https://exponential-idle-guides.netlify
     <li>Tap <em>a</em> the number of times you would need to solve <em>D</em>.</li>
     <li>If <em>B</em> + <em>D</em> is odd, tap <em>c</em> three times (once in Hard). Otherwise, skip this step.</li>
   </ol>
-  <li>Propogate.</li>
+  <li>Propogate from top once more to finish the solve.</li>
 </ol>
 
 #### Example
