@@ -25,3 +25,9 @@ ol ol {
     list-style-type: lower-alpha;
   }
 }
+
+ol ol ol {
+  li {
+    list-style-type: lower-roman;
+  }
+}
