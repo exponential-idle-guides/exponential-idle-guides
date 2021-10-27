@@ -15,7 +15,7 @@ thead {
 }
 
 th {
-
+	text-align: left;
 }
 
 th, td {
@@ -24,7 +24,7 @@ th, td {
 	padding-right: 0.4em;
 
 	&:first-child {
-
+		position: sticky;
 		left: 0;
 		background-color: var(--palette-fill-transparent);
 	}
@@ -32,7 +32,7 @@ th, td {
 
 //New Table Look
 .newwords {
-
+	text-align: center;
 }
 .newwords .invisible {
 	border: none;
@@ -50,4 +50,7 @@ th, td {
 .newwords th, td {
 	text-align: center;
 	padding: 0.5em 0.4em 0.5em 0.4em;
+}
+.newwords sub {
+	vertical-align: sub
 }
