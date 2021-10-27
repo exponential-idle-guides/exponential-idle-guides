@@ -114,17 +114,6 @@ Pick a time, for example 900s, such that (maximum time between purchases)<900s<(
 From Antharion, the ratio represents \\(log(\tau)/hour\\) efficiency of
 idle vs manual buying strategies. This does not take into account [cruising](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#theory-basics). T7 is unknown because the current manual strat is very complicated (not human viable) and isn't consistent enough to put on the chart.
 
-Theory | Manual | Auto | Ratio
----|---|---|---
- T1 | 1.21579  | 0.965926 | 1.25868
- T2 | 0.677375 | 0.677375 | 1
- T3 | 1.42296  | 1.15424  | 1.23281
- T4 | 0.674164 | 0.589581 | 1.14346
- T5 | 1.31154  | 0.419708 | 3.12489
- T6 | 1.14383  | 0.993886 | 1.15544
- T7 | Unknown   | 1.23645  | TBD
- T8 | 1.51303  | 1.29569  | 1.16774
-
 <table class="newwords">
    <thead>
       <tr>
@@ -255,7 +244,6 @@ Variable | Multiplier | Variable | Multiplier
          <th class="invisible"></th>
          <th>Multiplier</th>
          <th class="invisible"></th>
-         <th class="invisible"></th>
          <th>Multiplier</th>
       </tr>
    </thead>
@@ -263,15 +251,13 @@ Variable | Multiplier | Variable | Multiplier
       <tr>
          <td class="leftHeader">c<sub>3</sub></td>
          <td>2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<sub>1</sub></td>
+         <td class="middleHeader">q<sub>1</sub></td>
          <td>5.0</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub>4</sub></td>
          <td>1.01</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<sub>2</sub></td>
+         <td class="middleHeader">q<sub>2</sub></td>
          <td>1.15</td>
       </tr>
    </tbody>
