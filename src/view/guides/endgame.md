@@ -224,24 +224,24 @@ Variable | Multiplier | Variable | Multiplier
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">c<sub>1</sub></td>
+         <td class="leftHeader">c<small><sub>1</sub></small></td>
          <td>10,000</td>
          <th class="invisible"></th>
-         <td class="leftHeader_2">c<sub>4</sub></td>
+         <td class="leftHeader">c<small><sub>4</sub></small></td>
          <td>1.01</td>
       </tr>
       <tr>
-         <td class="leftHeader">c<sub>2</sub></td>
+         <td class="leftHeader">c<small><sub>2</sub></small></td>
          <td>1,000</td>
          <th class="invisible"></th>
-         <td class="leftHeader_2">q<small><sub>1</sub></small></td>
+         <td class="leftHeader">q<small><sub>1</sub></small></td>
          <td>5.0</td>
       </tr>
       <tr>
          <td class="leftHeader">c<small><sub>3</sub></small></td>
          <td>2</td>
          <th class="invisible"></th>
-         <td class="leftHeader_2">q<sub>2</sub></td>
+         <td class="leftHeader">q<small><sub>2</sub></small></td>
          <td>1.15</td>
       </tr>
    </tbody>
