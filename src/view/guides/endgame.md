@@ -225,7 +225,7 @@ Variable | Multiplier | Variable | Multiplier
    <tbody>
       <tr>
          <td class="leftHeader">c<sub>1</sub></td>
-         <td>10,000</td>
+         <td>10,000p</td>
          <th class="invisible"></th>
          <td class="leftHeader">c<sub>4</sub></td>
          <td>1.01</td>
