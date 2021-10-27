@@ -39,6 +39,24 @@ Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade
 4.  After checking \\(d\mu\\) growth, ability to purchase \\(\mu\\) upgrades, and \\(db\\) growth, you can prestige when all of these have slowed drastically.
 5.  Repeat this cycle.
 
+<ol type="1">
+  <li>Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally.</li>
+  <ol type="a">
+    <li>This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there.</li>
+  </ol>
+  <li>Pay attention to <i>db/b</i> growth.</li>
+  <ol type="a">
+    <li><strong><i>db/b</i></strong> growth is the largest factor to progress from a prestige, however, because of how early <strong><i>f(t)</i></strong> is, <strong><i>μ</i></strong> upgrades still play a vital role and have to be taken into account.</li>
+    <li>Once <strong><i>db</i></strong> reaches e3 more than <strong><i>b</i></strong>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
+  </ol>
+  <li>Pay attention to <strong><i>dμ</i></strong> growth. (Optional)</li>
+  <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
+  <ol type="a">
+    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
+    <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
+  </ol>
+</ol>
+
 #### Active strategies
 
 ##### Equation taps
