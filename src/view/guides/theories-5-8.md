@@ -262,13 +262,6 @@ about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will h
 through T8 faster than before. __You will need buy T8 again to get R9, and you should start R9 right away after that__ 
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
-Theory | Tau | Theory | Tau
---- | --- | --- | ---
-**T1:** | e200 | **T5:** | e250
-**T2:** | e275 | **T6:** | e150
-**T3:** | e150 | **T7:** | e150
-**T4:** | e175 | **T8:** | Skip
-
 <table class="newwords">
    <thead>
       <tr>
@@ -281,31 +274,31 @@ Theory | Tau | Theory | Tau
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">1</td>
+         <td class="leftHeader">T1</td>
          <td>e200 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">5</td>
+         <td class="leftHeader">T5</td>
          <td>e250 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">2</td>
+         <td class="leftHeader">T2</td>
          <td>e275 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">6</td>
+         <td class="leftHeader">T6</td>
          <td>e150 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">3</td>
+         <td class="leftHeader">T3</td>
          <td>e150 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">7</td>
+         <td class="leftHeader">T7</td>
          <td>e150 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">4</td>
+         <td class="leftHeader">T4</td>
          <td>e175 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">8</td>
+         <td class="leftHeader">T8</td>
          <td>Skip</td>
       </tr>
    </tbody>
