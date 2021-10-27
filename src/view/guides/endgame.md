@@ -125,64 +125,64 @@ Theory | Manual | Auto | Ratio
  T7 | Unknown   | 1.23645  | TBD
  T8 | 1.51303  | 1.29569  | 1.16774
 
- <table class="newwords">
-    <thead>
-        <tr>
-            <th class="invisible"></th>
-            <th>Idle</th>
-            <th>Active</th>
-            <th>Ratio</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="leftHeader">T1</td>
-            <td>1.21579</td>
-            <td>0.965926</td>
-            <td>1.25868</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T2</td>
-            <td>0.677375</td>
-            <td>0.677375</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T3</td>
-            <td>1.42296</td>
-            <td>1.15424</td>
-            <td>1.23281</td>
-        <tr>
-            <td class="leftHeader">T4</td>
-            <td>0.674164</td>
-            <td>0.589581</td></td>
-            <td>1.14346</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T5</td>
-            <td>1.31154</td>
-            <td>0.419708</td>
-            <td>3.12489</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T6</td>
-            <td>1.14383</td>
-            <td>0.993886</td></td>
-            <td>1.15544</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T7</td>
-            <td>Unknown</td>
-            <td>1.23645</td>
-            <td>Unknown</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T8</td>
-            <td>1.51303</td>
-            <td>1.29569</td>
-            <td>1.16774</td>
-        </tr>
-    </tbody>
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Idle</th>
+         <th>Active</th>
+         <th>Ratio</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>1.21579</td>
+         <td>0.965926</td>
+         <td>1.25868</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>0.677375</td>
+         <td>0.677375</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>1.42296</td>
+         <td>1.15424</td>
+         <td>1.23281</td>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>0.674164</td>
+         <td>0.589581</td></td>
+         <td>1.14346</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T5</td>
+         <td>1.31154</td>
+         <td>0.419708</td>
+         <td>3.12489</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T6</td>
+         <td>1.14383</td>
+         <td>0.993886</td></td>
+         <td>1.15544</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T7</td>
+         <td>Unknown</td>
+         <td>1.23645</td>
+         <td>Unknown</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T8</td>
+         <td>1.51303</td>
+         <td>1.29569</td>
+         <td>1.16774</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Theory routing
