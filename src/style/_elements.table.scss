@@ -1,8 +1,38 @@
+.table-wrapper {
+	max-width: 100%;
+	overflow-x: auto;
+	overflow-y: clip;
+}
 
+table {
+	margin: auto;
+	margin-top: 1em;
+	padding-bottom: 1em;
+}
+
+thead {
+	font-weight: 700;
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+
+	&:first-child {
+		position: sticky;
+		left: 0;
+		background-color: var(--palette-fill-transparent);
+	}
+}
 
 //New Table Look
 .newwords {
-	text-align: center;
+
 }
 .newwords .invisible {
 	border: none;
