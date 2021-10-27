@@ -106,7 +106,7 @@ that publication. See below for what each part means.
         </tr>
         <tr>
             <td class="leftHeader">T6</td>
-            <td>q1, q2, r1, r2</td>
+            <td>r1, r2, q1, q2</td>
         </tr>
         <tr>
             <td class="leftHeader">T7</td>
