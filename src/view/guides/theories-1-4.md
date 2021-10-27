@@ -310,7 +310,7 @@ milestones:
          <td class="leftHeader">4</td>
          <td>0/0/3/1 (40s)</td>
          <td class="arrow">→</td>
-         <td>2/2 class="arrow"/0/0 (10s)</td>
+         <td>2/2/0/0 (10s)</td>
          <td class="arrow">→</td>
          <td>Repeat</td>
       </tr>
