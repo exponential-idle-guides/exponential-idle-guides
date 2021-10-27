@@ -82,6 +82,49 @@ T6 | r1, r2, q1, q2
 T7 | q1, c4, c5, c6
 T8 | c1, c2
 
+<table class="newwords">
+    <thead>
+        <tr>
+            <th class="invisible"></th>
+            <th>Variables</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="leftHeader">T1</td>
+            <td>q1, q2, c4</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T2</td>
+            <td>all variables</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T3</td>
+            <td>b1, b2, b3, c12, c22, c23, c31, c32</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T4</td>
+            <td>q1, q2, c3</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T5</td>
+            <td>q1, q2, c3</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T6</td>
+            <td>r1, r2, q1, q2</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T7</td>
+            <td>q1, c2, c5, c6</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T8</td>
+            <td>c1, c2</td>
+        </tr>
+    </tbody>
+</table>
+
 If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number changes for \\(c_3\\), \\(c_4\\), and \\(c_5\\).
 
 \*The exception is during the cruise phase of the end of a publication.
