@@ -65,6 +65,10 @@ th, td {
 	border-right: 5px solid black;
 	padding: 0.4em 0.2em 0.4em 0.2em;
 }
+.newnumbers .variables { 
+	max-width: 100px;
+	word-wrap: break-word;
+}
 .newnumbers th {
 	background-color:#505050; 
 	border-bottom: 5px solid black;
@@ -72,5 +76,5 @@ th, td {
 .newnumbers th, td {
 	text-align: center;
 	padding: 0.5em 0.4em 0.5em 0.4em;
-	word-wrap: break-word;
 }
+
