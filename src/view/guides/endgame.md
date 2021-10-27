@@ -257,6 +257,37 @@ Variable | Multiplier | Variable | Multiplier
    </tbody>
 </table>
 
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c1</td>
+         <td>10,000</td>
+         <td class="middleHeader">c4</td>
+         <td>1.01</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c2</td>
+         <td>1,000</td>
+         <td class="middleHeader">q1</td>
+         <td>5.0</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c3</td>
+         <td>2</td>
+         <td class="middleHeader">q2</td>
+         <td>1.15</td>
+
+   </tbody>
+</table>
+
 {{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
 #### T5 routing
