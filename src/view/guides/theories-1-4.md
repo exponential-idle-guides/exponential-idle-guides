@@ -24,13 +24,6 @@ better theory.__
 
 Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
-The graduation route for these theories.
-
- - 5k → 5.2k → 5.6k → 5.8k → 6k  (5.8k → 6k is a long stretch)
- - 6k → 7k
- - 7k → 8k
- - 8k → 8.4k →8.6k → 8.8k → 9k
-
 <table class="graduation_routing">
    <tbody>
       <tr>
