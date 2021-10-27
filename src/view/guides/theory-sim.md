@@ -93,7 +93,7 @@ that publication. See below for what each part means.
             <td>b1, b2, b3, c12</td>
         </tr>
                 <tr>
-            <td class="invisible"></td>
+            <td class="leftHeader"></td>
             <td>c22, c23, c31, c32</td>
         </tr>
         <tr>
