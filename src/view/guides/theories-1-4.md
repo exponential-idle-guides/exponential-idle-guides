@@ -274,9 +274,9 @@ milestones:
    <thead>
       <tr>
          <th class="invisible"></th>
+         <th>Milestone</th>
          <th></th>
-         <th></th>
-         <th>Milestone Cycle</th>
+         <th>Cycles</th>
          <th></th>
          <th></th>
          <th></th>
@@ -292,19 +292,23 @@ milestones:
          <td class="arrow">→</td>
          <td>1(2)/0/0/0</td>
          <td class="arrow">→</td>
+         <td>0/0/1(2)/0</td>
+         <td class="arrow">→</td>
          <td>0/1(2)/0/0</td>
          <td class="arrow">→</td>
          <td>Repeat</td>
       </tr>
       <tr>
          <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
          <td>40s</td>
          <td class="invisible"></td>
          <td>10s</td>
          <td class="invisible"></td>
-         <td>10s</td>
+         <td>40s</td>
          <td class="invisible"></td>
-         <td>1 min</td>
+         <td>100s</td>
       </tr>
       <tr>
          <td class="leftHeader">3</td>
@@ -320,15 +324,15 @@ milestones:
       </tr>
       <tr>
          <td class="leftHeader"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>20s</td>
+         <td>10s</td>
          <td class="invisible"></td>
          <td>40s</td>
          <td class="invisible"></td>
-         <td>20s</td>
+         <td>10s</td>
          <td class="invisible"></td>
-         <td>2 min</td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>100s</td>
       </tr>
       <tr>
          <td class="leftHeader">4</td>
@@ -340,9 +344,9 @@ milestones:
       </tr>
       <tr>
          <td class="leftHeader"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
          <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
          <td class="invisible"></td>
          <td>50s</td>
       </tr>
@@ -356,9 +360,9 @@ milestones:
       </tr>
       <tr>
          <td class="leftHeader"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
          <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
          <td class="invisible"></td>
          <td>50s</td>
       </tr>
@@ -369,19 +373,19 @@ milestones:
          <td>2/2/3/x</td>
          <td class="arrow">→</td>
          <td>Repeat</td>
+         <td class="invisible"></td>
+         <td>(<strong>x → y</strong>)</td>
       </tr>
       <tr>
          <td class="leftHeader"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
          <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
          <td class="invisible"></td>
          <td>50s</td>
       </tr>
    </tbody>
 </table>
-
-###### Fill up first then y
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
