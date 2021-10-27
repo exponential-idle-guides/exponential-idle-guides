@@ -265,11 +265,6 @@ too large for you to get right away. When you can afford them, you will
 start the cycle. This is what you will do for the following number of
 milestones:
 
- - 1-2 milestones: 0/0/1(2)/0 (40s) → 1(2)/0/0/0  (10s) → 0/1(2)/0/0 (10s)  → Repeat (1 min total)
- - 3 milestones: 0/0/3/0  (40s) → 2/1/0/0 (20s) → 0/0/3/0  (40s) → 1/2/0/0 (20s) → Repeat (2min total / 2 1min’s)
- - 4 milestones: 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
- - 5+ milestones: Do the same thing as 4, but with milestones in 0/0/x/x when you go to 2/2/x/x. Prioritize q exponents and q3/q4 with excess during each swap. ooga booga
-
 <table class="T2">
    <thead>
       <tr>
