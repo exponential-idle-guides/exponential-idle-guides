@@ -13,9 +13,9 @@ order: 5
 
 Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
-- 9k → 9.4k (push for \\(z^{1.04}\\) at \\(ee9160\\)) → 9.8k → 10k
-- 10k → 10.4k → 10.6k → 11k (push for \\(z^{1.08}\\) at \\(ee10821\\))
-- 11k → 12.4k → 13.4k → 14k+ \[tau(τ)~1350+\]
+- 9k → 9.4k) → 9.8k → 10k
+- 10k → 10.4k → 10.6k → 11k 
+- 11k → 12.4k → 13.4k → 14k \[tau(τ)~1350+\]
 
    **Skip T8**
 - 14k → 14.8k → 15.6k → 16k \[tau(τ)~1600+\]
@@ -216,6 +216,47 @@ Theory | Tau | Theory | Tau
 **T3:** | e150 | **T7:** | e150
 **T4:** | e175 | **T8:** | Skip
 
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e200</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e250</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e275</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e150</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e150</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e150</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e175</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>Skip</td>
+      </tr>
+   </tbody>
+</table>
 
 If your numbers are different, that is fine. You just need to reach 1e1350
 \\(\Pi\tau\\) to get to R9 at 14k.
@@ -237,11 +278,32 @@ Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then 
 rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
-Attractor | Starting Positions (reset every pub) | Time Step
---- | --- | ---
-**Lorenz** | -6, -8, 26 | 0.02
-**Chen** | -10.6, -4.4, 28.6 | 0.002
-**Rossler** | -6, 15, 0 | 0.00014
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Starting Positions</th>
+         <th>Time Step</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">Lorenz</td>
+         <td>(-6, -8, 26)</td>
+         <td>0.02</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Chen</td>
+         <td>(-10.6, -4.4, 28.6)</td>
+         <td>0.002</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Rossler</td>
+         <td>(-6, 15, 0)</td>
+         <td>0.00014</td>
+      </tr>
+   </tbody>
+</table>
 
 #### T8 milestone route
 
