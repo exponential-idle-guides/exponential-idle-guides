@@ -281,31 +281,31 @@ Theory | Tau | Theory | Tau
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">Theory 1</td>
-         <td>e200</td>
+         <td class="leftHeader">1</td>
+         <td>e200 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">Theory 5</td>
-         <td>e250</td>
+         <td class="leftHeader">5</td>
+         <td>e250 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">Theory 2</td>
-         <td>e275</td>
+         <td class="leftHeader">2</td>
+         <td>e275 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">Theory 6</td>
-         <td>e150</td>
+         <td class="leftHeader">6</td>
+         <td>e150 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">Theory 3</td>
-         <td>e150</td>
+         <td class="leftHeader">3</td>
+         <td>e150 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">Theory 7</td>
-         <td>e150</td>
+         <td class="leftHeader">7</td>
+         <td>e150 τ</td>
       </tr>
       <tr>
-         <td class="leftHeader">Theory 4</td>
-         <td>e175</td>
+         <td class="leftHeader">4</td>
+         <td>e175 τ</td>
          <th class="invisible"></th>
-         <td class="leftHeader">Theory 8</td>
+         <td class="leftHeader">8</td>
          <td>Skip</td>
       </tr>
    </tbody>
