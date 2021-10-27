@@ -86,41 +86,41 @@ T8 | c1, c2
     <thead>
         <tr>
             <th class="invisible"></th>
-            <th>Variables</th>
+            <th class="variables">Variables</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="leftHeader">T1</td>
-            <td>q1, q2, c4</td>
+            <td class="variables">q1, q2, c4</td>
         </tr>
         <tr>
             <td class="leftHeader">T2</td>
-            <td>all variables</td>
+            <td class="variables">all variables</td>
         </tr>
         <tr>
             <td class="leftHeader">T3</td>
-            <td>b1, b2, b3, c12, c22, c23, c31, c32</td>
+            <td class="variables">b1, b2, b3, c12, c22, c23, c31, c32</td>
         </tr>
         <tr>
             <td class="leftHeader">T4</td>
-            <td>q1, q2, c3</td>
+            <td class="variables">q1, q2, c3</td>
         </tr>
         <tr>
             <td class="leftHeader">T5</td>
-            <td>q1, q2, c3</td>
+            <td class="variables">q1, q2, c3</td>
         </tr>
         <tr>
             <td class="leftHeader">T6</td>
-            <td>r1, r2, q1, q2</td>
+            <td class="variables">r1, r2, q1, q2</td>
         </tr>
         <tr>
             <td class="leftHeader">T7</td>
-            <td>q1, c2, c5, c6</td>
+            <td class="variables">q1, c2, c5, c6</td>
         </tr>
         <tr>
             <td class="leftHeader">T8</td>
-            <td>c1, c2</td>
+            <td class="variables">c1, c2</td>
         </tr>
     </tbody>
 </table>
