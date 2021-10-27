@@ -270,6 +270,71 @@ milestones:
  - 4 milestones: 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
  - 5+ milestones: Do the same thing as 4, but with milestones in 0/0/x/x when you go to 2/2/x/x. Prioritize q exponents and q3/q4 with excess during each swap.
 
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Milestone Cycle</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-2</td>
+         <td>0/0/1(2)/0 (40s)</td>
+         <td>→</td>
+         <td>1(2)/0/0/0 (10s)</td>
+         <td>→</td>
+         <td>0/1(2)/0/0 (10s)</td>
+         <td>→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">3</td>
+         <td>0/0/3/0 (40s)</td>
+         <td>→</td>
+         <td>2/1/0/0 (20s)</td>
+         <td>→</td>
+         <td>0/0/3/0 (40s)</td>
+         <td>→</td>
+         <td>1/2/0/0 (20s)</td>
+         <td>→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">4</td>
+         <td>0/0/3/1 (40s)</td>
+         <td>→</td>
+         <td>2/2/0/0 (10s)</td>
+         <td>→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-6</td>
+         <td>0/0/3/x (40s)</td>
+         <td>→</td>
+         <td>2/2/x/0 (10s)</td>
+         <td>→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">7+</td>
+         <td>x/y/3/3 (40s)</td>
+         <td>→</td>
+         <td>2/2/3/x (10s)</td>
+         <td>→</td>
+         <td>Repeat</td>
+      </tr>
+   </tbody>
+</table>
+
+###### Fill up first then y
+
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
 Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
