@@ -216,7 +216,7 @@ Variable | Multiplier | Variable | Multiplier
    <thead>
       <tr>
          <th></th>
-         <th>Multiplier <sub> 2</sub></th>
+         <th>Multiplier <sub> 21</sub></th>
          <th></th>
          <th></th>
          <th>Multiplier</th>
