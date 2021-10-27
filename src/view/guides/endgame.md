@@ -270,7 +270,7 @@ Variable | Multiplier | Variable | Multiplier
       <tr>
          <td class="leftHeader">c1</td>
          <td>10,000</td>
-         <td class="middleHeader">c4</td>
+         <td class="middle_header">c4</td>
          <td>1.01</td>
       </tr>
       <tr>
@@ -282,7 +282,7 @@ Variable | Multiplier | Variable | Multiplier
       <tr>
          <td class="leftHeader">c3</td>
          <td>2</td>
-         <td class="middleHeader">q2</td>
+         <td class="middle_header">q2</td>
          <td>1.15</td>
 
    </tbody>
