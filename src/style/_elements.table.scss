@@ -15,7 +15,7 @@ thead {
 }
 
 th {
-	text-align: left;
+
 }
 
 th, td {
@@ -24,7 +24,7 @@ th, td {
 	padding-right: 0.4em;
 
 	&:first-child {
-		position: sticky;
+
 		left: 0;
 		background-color: var(--palette-fill-transparent);
 	}
