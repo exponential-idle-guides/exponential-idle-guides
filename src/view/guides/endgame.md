@@ -223,6 +223,39 @@ Variable | Multiplier | Variable | Multiplier
 \\(c_2\\) | 1000 | \\(q_1\\) | 5.0
 \\(c_3\\) | 2 | \\(q_2\\) | 1.15
 
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c1</td>
+         <td>10,000</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c2</td>
+         <td>1,000</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c3</td>
+         <td>2</td>
+      <tr>
+         <td class="leftHeader">44</td>
+         <td>1.01</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q1</td>
+         <td>5.0</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q2</td>
+         <td>1.15</td>
+      </tr>
+   </tbody>
+</table>
 
 {{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
