@@ -11,18 +11,9 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing). 
 
-- 9k → 9.4k → 9.8k → 10k
-- 10k → 10.4k → 10.6k → 11k 
-- 11k → 12.4k → 13.4k → 14k \[tau(τ)~1350+\]
-
-   **Skip T8**
-- 14k → 14.8k → 15.6k → 16k \[tau(τ)~1600+\]
-- 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
-- 18k → 20k \[tau(τ)~2050-2100+\]
-
-<table class="newwords">
+<table class="graduation_routing">
    <tbody>
       <tr>
          <td>9k</td>
@@ -50,6 +41,15 @@ Remember to follow our routing advice from the [introduction to graduation](http
          <td>13.4k</td>
          <td>→</td>
          <td>14k</td>
+      </tr>
+      <tr>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td><strong>Skip T8</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
       </tr>
       <tr>
          <td>14k</td>
