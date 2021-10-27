@@ -53,7 +53,7 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
         <tr>
             <td class="leftHeader">T1</td>
             <td>Disable c1/c2</td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#theory-1">T1 routing</a></td>
+            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
         </tr>
         <tr>
             <td class="leftHeader">T2</td>
@@ -77,8 +77,8 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
         </tr>
         <tr>
             <td class="leftHeader">T5</td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#theory-5">T5 routing</a></td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#theory-5">T5 routing</a></td>
+            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
         </tr>
         <tr>
             <td class="leftHeader">T6</td>
@@ -114,7 +114,7 @@ Pick a time, for example 900s, such that (maximum time between purchases)<900s<(
 If a theory is not listed below, then use the idle vs manual chart and
 the ideal multiplier chart.
 
-#### Theory 5
+#### T1 routing
 
 The optimal multiplier cycles between \\(2.5\\) – \\(5\\). It is lower as you get
 closer to buying the next level of \\(c_4\\) and higher shortly after buying
@@ -180,7 +180,7 @@ given upgrade:
 
 {{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
-#### Theory 5
+#### T5 routing
 
 Running the active strats will make this the number one theory for a while
 and eventual number two after T6 takes over (e750-770+). A step-by-step on how to
@@ -221,7 +221,7 @@ Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3. \\(q\\) begins to slow down when you reach
 \\(2q > c_2*c_3^{m_3}\\).
 
-#### Theory 8
+#### Theory 8 (additional information)
 
 <table class="newwords">
    <thead>
