@@ -76,7 +76,7 @@ that publication. See below for what each part means.
     <thead>
         <tr>
             <th class="invisible"></th>
-            <th class="variables">Variables</th>
+            <th>Variables</th>
         </tr>
     </thead>
     <tbody>
