@@ -47,7 +47,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
          <td class="invisible"></td>
          <td><strong>Skip T8</strong></td>
          <td class="invisible"></td>
-         <td class="invisible"></td>
+         <td><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Link</a></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
       </tr>
