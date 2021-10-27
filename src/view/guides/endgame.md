@@ -109,71 +109,6 @@ ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 
 Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
 
-### Idle vs Manual strat efficiency
-
-From Antharion, the ratio represents \\(log(\tau)/hour\\) efficiency of
-idle vs manual buying strategies. This does not take into account [cruising](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#theory-basics). T7 is unknown because the current manual strat is very complicated (not human viable) and isn't consistent enough to put on the chart.
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Idle</th>
-         <th>Active</th>
-         <th>Ratio</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>1.21579</td>
-         <td>0.965926</td>
-         <td>1.25868</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>0.677375</td>
-         <td>0.677375</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>1.42296</td>
-         <td>1.15424</td>
-         <td>1.23281</td>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>0.674164</td>
-         <td>0.589581</td></td>
-         <td>1.14346</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T5</td>
-         <td>1.31154</td>
-         <td>0.419708</td>
-         <td>3.12489</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T6</td>
-         <td>1.14383</td>
-         <td>0.993886</td></td>
-         <td>1.15544</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T7</td>
-         <td>Unknown</td>
-         <td>1.23645</td>
-         <td>Unknown</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T8</td>
-         <td>1.51303</td>
-         <td>1.29569</td>
-         <td>1.16774</td>
-      </tr>
-   </tbody>
-</table>
-
 ### Theory routing
 
 If a theory is not listed below, then use the idle vs manual chart and
@@ -205,12 +140,6 @@ actively playing you should only buy a variable when it will not
 decrease your ρdot for each upgrade that is approximately at the ratios
 detailed below. Buy each upgrade when \\(ρ_n\\) is N times the costs of a
 given upgrade:
-
-Variable | Multiplier | Variable | Multiplier
---- | --- | --- | ---
-\\(c_1\\) | 10000 | \\(c_4\\) | 1.01
-\\(c_2\\) | 1000 | \\(q_1\\) | 5.0
-\\(c_3\\) | 2 | \\(q_2\\) | 1.15
 
 <table class="newwords">
    <thead>
@@ -299,6 +228,33 @@ Attractor | Starting Positions (reset every pub) | Time Step
 **Lorenz** | -6, -8, 26 | 0.02
 **Chen** | -10.6, -4.4, 28.6 | 0.002
 **Rossler** | -6, 15, 0 | 0.00014
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Starting Positions</th>
+         <th>Time Step</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">Lorenz</td>
+         <td>(-6, -8, 26)</td>
+         <td>0.02</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Chen</td>
+         <td>(-10.6, -4.4, 28.6)</td>
+         <td>0.002</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Rossler</td>
+         <td>(-6, 15, 0)</td>
+         <td>0.00014</td>
+      </tr>
+   </tbody>
+</table>
 
 ### How to respec
 
