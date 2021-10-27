@@ -13,7 +13,7 @@ order: 5
 
 Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
-- 9k → 9.4k) → 9.8k → 10k
+- 9k → 9.4k → 9.8k → 10k
 - 10k → 10.4k → 10.6k → 11k 
 - 11k → 12.4k → 13.4k → 14k \[tau(τ)~1350+\]
 
@@ -228,31 +228,31 @@ Theory | Tau | Theory | Tau
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">T1</td>
+         <td class="leftHeader">Theory 1</td>
          <td>e200</td>
          <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
+         <td class="leftHeader">Theory 5</td>
          <td>e250</td>
       </tr>
       <tr>
-         <td class="leftHeader">T2</td>
+         <td class="leftHeader">Theory 2</td>
          <td>e275</td>
          <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
+         <td class="leftHeader">Theory 6</td>
          <td>e150</td>
       </tr>
       <tr>
-         <td class="leftHeader">T3</td>
+         <td class="leftHeader">Theory 3</td>
          <td>e150</td>
          <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
+         <td class="leftHeader">Theory 7</td>
          <td>e150</td>
       </tr>
       <tr>
-         <td class="leftHeader">T4</td>
+         <td class="leftHeader">Theory 4</td>
          <td>e175</td>
          <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
+         <td class="leftHeader">Theory 8</td>
          <td>Skip</td>
       </tr>
    </tbody>
