@@ -46,7 +46,7 @@ These tips in general are very helpful when starting out and further down the li
 
 These are the base star reward for each difficulty level of each minigame.
 
-<table class="newnumbers">
+<table class="newwords">
     <thead>
         <tr>
             <th class="invisible"></th>
