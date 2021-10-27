@@ -270,7 +270,7 @@ milestones:
  - 4 milestones: 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
  - 5+ milestones: Do the same thing as 4, but with milestones in 0/0/x/x when you go to 2/2/x/x. Prioritize q exponents and q3/q4 with excess during each swap. ooga booga
 
-<table class="newwords">
+<table class="T2">
    <thead>
       <tr>
          <th class="invisible"></th>

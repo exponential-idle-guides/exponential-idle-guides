@@ -54,8 +54,32 @@ th, td {
 .newwords sub {
 	vertical-align: sub
 }
-.newwords .arrow{
-	padding: 0.5em 0em 0.5em 0em;
+
+.T2 {
+	text-align: center;
+}
+.T2 .invisible {
+	border: none;
+	background-color:transparent;
+}
+.T2 .leftHeader {
+	font-weight: bold;
+	background-color:#505050;
+	border-right: 5px solid black;
+}
+.T2 th {
+	background-color:#505050; 
+	border-bottom: 5px solid black;
+}
+.T2 th, td {
+	text-align: center;
+	padding: 0.3em 0.1em 0.3em 0.1em;
+}
+.T2 sub {
+	vertical-align: sub
+}
+.T2 .arrow {
+	padding: 0em 0em 0em 0em;
 }
 
 //Graduation Routing
