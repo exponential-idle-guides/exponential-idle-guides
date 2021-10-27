@@ -274,60 +274,60 @@ milestones:
    <thead>
       <tr>
          <th class="invisible"></th>
+         <th></th>
+         <th></th>
          <th>Milestone Cycle</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td class="leftHeader">1-2</td>
          <td>0/0/1(2)/0 (40s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>1(2)/0/0/0 (10s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>0/1(2)/0/0 (10s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>Repeat</td>
       </tr>
       <tr>
          <td class="leftHeader">3</td>
          <td>0/0/3/0 (40s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>2/1/0/0 (20s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>0/0/3/0 (40s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>1/2/0/0 (20s)</td>
-         <td>→</td>
+         <td class="arrpw">→</td>
          <td>Repeat</td>
       </tr>
       <tr>
          <td class="leftHeader">4</td>
          <td>0/0/3/1 (40s)</td>
-         <td>→</td>
-         <td>2/2/0/0 (10s)</td>
-         <td>→</td>
+         <td class="arrow">→</td>
+         <td>2/2 class="arrow"/0/0 (10s)</td>
+         <td class="arrow">→</td>
          <td>Repeat</td>
       </tr>
       <tr>
          <td class="leftHeader">5-6</td>
          <td>0/0/3/x (40s)</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>2/2/x/0 (10s)</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>Repeat</td>
       </tr>
       <tr>
          <td class="leftHeader">7+</td>
          <td>x/y/3/3 (40s)</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>2/2/3/x (10s)</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>Repeat</td>
       </tr>
    </tbody>
