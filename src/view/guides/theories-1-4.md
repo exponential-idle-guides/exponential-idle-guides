@@ -31,6 +31,40 @@ The graduation route for these theories.
  - 7k → 8k
  - 8k → 8.4k →8.6k → 8.8k → 9k
 
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>5k</td>
+         <td>→</td>
+         <td>5.2k</td>
+         <td>→</td>
+         <td>5.6k</td>
+         <td>→</td>
+         <td>5.8k</td>
+         <td>→</td>
+         <td>6k</td>
+      </tr>
+      <tr>
+         <td>6k</td>
+         <td>→</td>
+         <td>7k</td>
+         <td>→</td>
+         <td>8k</td>
+      </tr>
+      <tr>
+         <td>8k</td>
+         <td>→</td>
+         <td>8.4k</td>
+         <td>→</td>
+         <td>8.6k</td>
+         <td>→</td>
+         <td>8.8k</td>
+         <td>→</td>
+         <td>9k</td>
+      </tr>
+   </tbody>
+</table>
+
 ### Theory 1 (20σ / 5k)
 
 In mathematics, a recurrence relation is an equation that relies on an
@@ -93,16 +127,42 @@ variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
 For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
 \\(2*5.0=10 ρ_1\\).
 
-Variable | Multiplier
---- | ---
-\\(q_1\\) | 5.0
-\\(q_2\\) | 1.15
-\\(c_1\\) | 10000
-\\(c_2\\) | 1000
-\\(c_3\\) | 2
-\\(c_4\\) | 1.01
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<small><sub>1</sub></small></td>
+         <td>10,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">c<small><sub>4</sub></small></td>
+         <td>1.01</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>2</sub></small></td>
+         <td>1,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>1</sub></small></td>
+         <td>5.0</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>3</sub></small></td>
+         <td>2</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>2</sub></small></td>
+         <td>1.15</td>
+      </tr>
+   </tbody>
+</table>
 
-- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
+Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
 
 #### T1 milestone route
 
@@ -347,6 +407,30 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 Before you reach 9k, these are the recommended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.
 This list is in order of priority.
-1. Theory 2 - up to e300-e350
-2. Theory 1 - up to e205-e215
-3. Theory 3 and Theory 4 - up to e100-150 each
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e300-e350 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e205-e215 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e150 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e150 τ</td>
+      </tr>
+   </tbody>
+</table>
