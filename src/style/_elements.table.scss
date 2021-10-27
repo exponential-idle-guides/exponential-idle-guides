@@ -54,6 +54,8 @@ th, td {
 
 .newnumbers {
 	text-align: center;
+	border-collapse: collapse;
+	table-layout: fixed;
 }
 .newnumbers .invisible {
 	border: none;
@@ -68,7 +70,7 @@ th, td {
 .newnumbers .variables { 
 	width: 10px;
 	max-width: 10px;
-	word-wrap: break-word;
+	word-wrap: break-all;
 }
 .newnumbers th {
 	background-color:#505050; 
