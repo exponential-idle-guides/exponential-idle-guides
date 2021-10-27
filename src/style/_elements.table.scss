@@ -43,6 +43,13 @@ th, td {
 	background-color:#505050;
 	border-right: 5px solid black;
 }
+.newwords .middleHeader {
+	font-weight: bold;
+	background-color:#505050;
+	border-right: 5px solid black;
+	border-left: 5px solid black;
+	padding: 0.4em 0.2em 0.4em 0.2em;
+}
 .newwords th {
 	background-color:#505050; 
 	border-bottom: 5px solid black;
@@ -51,33 +58,3 @@ th, td {
 	text-align: center;
 	padding: 0.5em 0.4em 0.5em 0.4em;
 }
-
-.newnumbers {
-	text-align: center;
-}
-.newnumbers .invisible {
-	border: none;
-	background-color:transparent;
-}
-.newnumbers .leftHeader {
-	font-weight: bold;
-	background-color:#505050;
-	border-right: 5px solid black;
-	padding: 0.4em 0.2em 0.4em 0.2em;
-}
-.newnumbers .middleHeader {
-	font-weight: bold;
-	background-color:#505050;
-	border-right: 5px solid black;
-	border-left: 5px solid black;
-	padding: 0.4em 0.2em 0.4em 0.2em;
-}
-.newnumbers th {
-	background-color:#505050; 
-	border-bottom: 5px solid black;
-}
-.newnumbers th, td {
-	text-align: center;
-	padding: 0.5em 0.4em 0.5em 0.4em;
-}
-
