@@ -22,6 +22,59 @@ Remember to follow our routing advice from the [introduction to graduation](http
 - 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
 - 18k → 20k \[tau(τ)~2050-2100+\]
 
+<table class="newwords">
+   <tbody>
+      <tr>
+         <td>9k</td>
+         <td>→</td>
+         <td>9.4k</td>
+         <td>→</td>
+         <td>9.8k</td>
+         <td>→</td>
+         <td>10k</td>
+      </tr>
+      <tr>
+         <td>10k</td>
+         <td>→</td>
+         <td>10.4k</td>
+         <td>→</td>
+         <td>10.6k</td>
+         <td>→</td>
+         <td>11k</td>
+      </tr>
+            <tr>
+         <td>11k</td>
+         <td>→</td>
+         <td>12.4k</td>
+         <td>→</td>
+         <td>13.4k</td>
+         <td>→</td>
+         <td>14k</td>
+      </tr>
+      <tr>
+         <td>14k</td>
+         <td>→</td>
+         <td>14.8k</td>
+         <td>→</td>
+         <td>15.6k</td>
+         <td>→</td>
+         <td>16k</td>
+      </tr>
+      <tr>
+         <td>16k</td>
+         <td>→</td>
+         <td>16.8k</td>
+         <td>→</td>
+         <td>18k</td>
+      </tr>
+      <tr>
+         <td>18k</td>
+         <td>→</td>
+         <td>20k</td>
+      </tr>
+   </tbody>
+</table>
+
 ### Student routing with R9
 
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
