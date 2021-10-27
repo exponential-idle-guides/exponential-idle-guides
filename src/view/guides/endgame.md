@@ -247,7 +247,7 @@ Variable | Multiplier | Variable | Multiplier
    </tbody>
 </table>
 
-###### *c1 and c2 are not used later because they become detrimental and should be disabled.
+###### *c<sub>1</sub> and c<sub>2</sub> are not used later because they become detrimental and should be disabled.
 
 {{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
