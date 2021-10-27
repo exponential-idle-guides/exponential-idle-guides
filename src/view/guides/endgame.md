@@ -40,16 +40,6 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
-Theory | Idle | Active
---- | --- | ---
-T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
-T2 | All on | q4/r4 → q3/r3 → etc manual buy
-T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
-T4 | Disable all but c3/q1/q2 | ← with chasing doublings
-T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
-T6 | Disable c3/c4 | ← with Auto q2/r2/c2/c5 & Manual rest
-T7 | Disable c1/c2/c3 | ← same
-T8 | All on | ← with chasing doublings
 
 <table class="newwords">
     <thead>
@@ -134,6 +124,66 @@ Theory | Manual | Auto | Ratio
  T6 | 1.14383  | 0.993886 | 1.15544
  T7 | Unknown   | 1.23645  | TBD
  T8 | 1.51303  | 1.29569  | 1.16774
+
+ <table class="newwords">
+    <thead>
+        <tr>
+            <th class="invisible"></th>
+            <th>Idle</th>
+            <th>Active</th>
+            <th>Ratio</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="leftHeader">T1</td>
+            <td>1.21579</td>
+            <td>0.965926</td>
+            <td>1.25868</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T2</td>
+            <td>0.677375</td>
+            <td>0.677375</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T3</td>
+            <td>1.42296</td>
+            <td>1.15424</td>
+            <td>1.23281</td>
+        <tr>
+            <td class="leftHeader">T4</td>
+            <td>0.674164</td>
+            <td>0.589581</td></td>
+            <td>1.14346</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T5</td>
+            <td>1.31154</td>
+            <td>0.419708</td>
+            <td>3.12489</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T6</td>
+            <td>1.14383</td>
+            <td>0.993886</td></td>
+            <td>1.15544</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T7</td>
+            <td>Unknown</td>
+            <td>1.23645</td>
+            <td>Unknown</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T8</td>
+            <td>1.51303</td>
+            <td>1.29569</td>
+            <td>1.16774</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Theory routing
 
