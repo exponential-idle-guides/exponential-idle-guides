@@ -216,7 +216,7 @@ Variable | Multiplier | Variable | Multiplier
    <thead>
       <tr>
          <th class="invisible"></th>
-         <th>Multiplier</th>
+         <th>Multiplier <sub> 2</sub></th>
          <th class="invisible"></th>
          <th class="invisible"></th>
          <th>Multiplier</th>
@@ -224,24 +224,24 @@ Variable | Multiplier | Variable | Multiplier
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">c<sub>1</sub></td>
+         <td class="leftHeader">c <sub>1</sub></td>
          <td>10,000p</td>
          <th class="invisible"></th>
-         <td class="leftHeader">c<sub>4</sub></td>
+         <td class="leftHeader">c <sub>4</sub></td>
          <td>1.01</td>
       </tr>
       <tr>
-         <td class="leftHeader">c<sub>2</sub></td>
+         <td class="leftHeader">c <sub>2</sub></td>
          <td>1,000</td>
          <th class="invisible"></th>
-         <td class="leftHeader">q<sub>1</sub></td>
+         <td class="leftHeader">q <sub>1</sub></td>
          <td>5.0</td>
       </tr>
       <tr>
-         <td class="leftHeader">c<sub>3</sub></td>
+         <td class="leftHeader">c <sub>3</sub></td>
          <td>2</td>
          <th class="invisible"></th>
-         <td class="leftHeader">q<sub>2</sub></td>
+         <td class="leftHeader">q <sub>2</sub></td>
          <td>1.15</td>
       </tr>
    </tbody>
