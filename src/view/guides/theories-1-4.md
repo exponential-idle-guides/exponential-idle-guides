@@ -35,31 +35,31 @@ The graduation route for these theories.
    <tbody>
       <tr>
          <td>5k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>5.2k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>5.6k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>5.8k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>6k</td>
       </tr>
       <tr>
          <td>6k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>7k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>8k</td>
       </tr>
       <tr>
          <td>8k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>8.4k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>8.6k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>8.8k</td>
-         <td>→</td>
+         <td class="arrow">→</td>
          <td>9k</td>
       </tr>
    </tbody>
