@@ -186,7 +186,7 @@ Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and 
          <td class="invisible"></td>
          <td class="invisible"></td>
       </tr>
-      <tr> - 3 → 4 → 2 → 1 → 1 → 1
+      <tr>
          <td>3</td>
          <td class="arrow">→</td>
          <td>4</td>
@@ -537,7 +537,7 @@ repeat.
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible">Or</td>
          <td class="invisible"></td>
          <td class="invisible></td>
          <td class="invisible"></td>
@@ -585,7 +585,7 @@ repeat.
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible">Or</td>
          <td class="invisible"></td>
          <td class="invisible></td>
          <td class="invisible"></td>
