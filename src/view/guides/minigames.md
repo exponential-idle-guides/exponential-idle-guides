@@ -105,6 +105,8 @@ The algorithm goes as follows:
 
 #### Example
 
+{{ yt.embed('https://youtu.be/e3devm2D-3s') }}
+
 ## Torus Puzzle
 
 ### Easy
@@ -122,6 +124,8 @@ The algorithm goes as follows:
 </ol>
 
 #### Example
+
+{{ yt.embed('https://youtu.be/e8f1ohtGAW8') }}
 
 ### Medium
 
@@ -147,6 +151,8 @@ The algorithm goes as follows:
 ##### Be careful to not end up with a mixed up row (ex: 18 19 15 16) after swapping.
 
 #### Example
+
+{{ yt.embed('https://youtu.be/6mQNMKwsOi8') }}
 
 ### Hard
 
@@ -178,6 +184,8 @@ The algorithm goes as follows:
 
 #### Example
 
+{{ yt.embed('https://youtu.be/6NfqiX_WFaM') }}
+
 ## Arrow Puzzle
 
 ### Easy
@@ -196,7 +204,7 @@ The algorithm goes as follows:
 
 #### Example
 
-
+{{ yt.embed('https://youtu.be/p0Jr52NlhFw') }}
 
 ### Medium
 
@@ -216,6 +224,8 @@ The algorithm goes as follows:
 ##### Tip: When you solve during step 2, tap the first row the same number of times as the bottom row. You can then use row 2 to finish the solve.
 
 #### Example
+
+{{ yt.embed('https://youtu.be/n1lXPOeouT4') }}
 
 ### Propagation (for Hard and Expert)
 
@@ -238,7 +248,7 @@ The algorithm goes as follows:
 
 #### Example
 
-
+{{ yt.embed('https://youtu.be/wedx6RXGVz8') }}
 
 ### Hard and Expert
 
@@ -256,3 +266,5 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 </ol>
 
 #### Example
+
+{{ yt.embed('https://youtu.be/p073qSqL7EU') }}
