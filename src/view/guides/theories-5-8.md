@@ -241,6 +241,29 @@ and \\(c_4\\).
 
 ### Theory 7 (50σ / 11k)
 
+#### T7 overview
+
+T7 can be summerized as a maximization problem : given a surface in the 3-dimensionnal space,
+you want to find its highest altitude by moving along the surface, always in the direction
+of steepest ascent (that's basically a gradient ascent).
+The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set 
+of points \\((x,y,g(x,y))\\), see attached image).
+\\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
+maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
+Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the 
+maximization problem is ill-conditionned); so one way to maximize \\(g(ρ1,ρ2)\\) is to 
+move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
+This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
+point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
+(i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of 
+steepest ascent of \\(g\\) at the point \\((\rho_1,\rho_2)\\).
+
+![T7 Graph of function](/images/T7-graph.png)
+
+This is the graph of the function \\(g\\), taken after the first four milestones have been unlocked
+(Note: here, coefficients like \\(c_1,c_2\ldots\\) are ignored. The effect of those coefficients is
+simply making the graph steeper in \\(x\\) or \\(y\\) direction, depending on the value of each coef).
+
 #### T7 strategy
 
 The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
