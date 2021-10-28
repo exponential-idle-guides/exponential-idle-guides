@@ -11,16 +11,69 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing). 
 
-- 9k → 9.4k (push for \\(z^{1.04}\\) at \\(ee9160\\)) → 9.8k → 10k
-- 10k → 10.4k → 10.6k → 11k (push for \\(z^{1.08}\\) at \\(ee10821\\))
-- 11k → 12.4k → 13.4k → 14k+ \[tau(τ)~1350+\]
-
-   **Skip T8**
-- 14k → 14.8k → 15.6k → 16k \[tau(τ)~1600+\]
-- 16k → 16.8k → 18k \[tau(τ)~1e1800+\]
-- 18k → 20k \[tau(τ)~2050-2100+\]
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>9k</td>
+         <td class="arrow">→</td>
+         <td>9.4k</td>
+         <td class="arrow">→</td>
+         <td>9.8k</td>
+         <td class="arrow">→</td>
+         <td>10k</td>
+      </tr>
+      <tr>
+         <td>10k</td>
+         <td class="arrow">→</td>
+         <td>10.4k</td>
+         <td class="arrow">→</td>
+         <td>10.6k</td>
+         <td class="arrow">→</td>
+         <td>11k</td>
+      </tr>
+            <tr>
+         <td>11k</td>
+         <td class="arrow">→</td>
+         <td>12.4k</td>
+         <td class="arrow">→</td>
+         <td>13.4k</td>
+         <td class="arrow">→</td>
+         <td>14k</td>
+      </tr>
+      <tr>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>14k</td>
+         <td class="arrow">→</td>
+         <td>14.8k</td>
+         <td class="arrow">→</td>
+         <td>15.6k</td>
+         <td class="arrow">→</td>
+         <td>16k</td>
+      </tr>
+      <tr>
+         <td>16k</td>
+         <td class="arrow">→</td>
+         <td>16.8k</td>
+         <td class="arrow">→</td>
+         <td>18k</td>
+      </tr>
+      <tr>
+         <td>18k</td>
+         <td class="arrow">→</td>
+         <td>20k</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Student routing with R9
 
@@ -154,8 +207,37 @@ slightly less active.
 
 #### T5 milestone route
 
-- [0/1/0 → 3/1/0 → 3/1/2]
-- 2 → 1 → 1 → 1 → 3 → 3
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>3/1/0</td>
+         <td class="arrow">→</td>
+         <td>3/1/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1 x3</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+      </tr>
+   </tbody>
+</table>
 
 ##### Additional information
 Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
@@ -183,8 +265,65 @@ and \\(c_4\\).
 
 #### T6 milestone route
 
- - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
- - 2 → 1 → 3 → 4 {2 and 3 both into 4} → 3 → 2
+ <table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/0</td>
+      </tr>
+      <tr>
+         <td>1/1/0/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/0/0/3</td>
+      </tr>
+      <tr>
+         <td>1/0/0/3</td>
+         <td class="arrow">→</td>
+         <td>1/0/1/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/3</td>
+      </tr>
+      <tr>
+         <td>2/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/3/3/3</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>4 {2&3→4}</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Theory 7 (50σ / 11k)
 
@@ -197,9 +336,7 @@ The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (cons
 of points \\((x,y,g(x,y))\\), see attached image).
 \\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
 maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
-Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the 
-maximization problem is ill-conditionned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to 
-move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
+Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditionned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
 This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
 point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
 (i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of 
@@ -219,8 +356,70 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
 
 #### T7 milestone route
 
- - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
- - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/1</td>
+      </tr>
+      <tr>
+         <td>0/1/1</td>
+         <td class="arrow">→</td>
+         <td>0/0/2</td>
+         <td class="arrow">→</td>
+         <td>0/0/3</td>
+      </tr>
+      <tr>
+         <td>0/0/3</td>
+         <td class="arrow">→</td>
+         <td>0/1/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1/1</td>
+      </tr>
+      <tr>
+         <td>1/1/1/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1/3</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1 {5→3&4}</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Theory 8 skipping
 
@@ -232,13 +431,47 @@ about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will h
 through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__ 
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
-Theory | Tau | Theory | Tau
---- | --- | --- | ---
-**T1:** | e200 | **T5:** | e250
-**T2:** | e275 | **T6:** | e150
-**T3:** | e150 | **T7:** | e150
-**T4:** | e175 | **T8:** | Skip
-
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e200 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e250 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e275 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e150 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e150 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e150 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e175 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>Skip</td>
+      </tr>
+   </tbody>
+</table>
 
 If your numbers are different, that is fine. You just need to reach 1e1350
 \\(\Pi\tau\\) to get to R9 at 14k.
@@ -260,13 +493,100 @@ Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then 
 rest. Once at 2/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
-Attractor | Starting Positions (reset every pub) | Time Step
---- | --- | ---
-**Lorenz** | -6, -8, 26 | 0.02
-**Chen** | -10.6, -4.4, 28.6 | 0.002
-**Rossler** | -6, 15, 0 | 0.00014
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Starting Positions</th>
+         <th>Time Step</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">Lorenz</td>
+         <td>(-6, -8, 26)</td>
+         <td>0.02</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Chen</td>
+         <td>(-10.6, -4.4, 28.6)</td>
+         <td>0.002</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Rossler</td>
+         <td>(-6, 15, 0)</td>
+         <td>0.00014</td>
+      </tr>
+   </tbody>
+</table>
 
 #### T8 milestone route
 
- - 0/0/0/0 → 1/0/0/0 → 2/0/0/0 (\\(e40\\)-\\(e52\\)) → 0/0/0/2 (\\(e52\\)-\\(e60\\)) → 0/0/0/3 → 1/0/0/3 → 2/0/3/0 → 2/3/3/3
- - 1 → 1 → {swap 1's to 4} → 4 → 1 → 1 {4's swap to 3's}→ 1 → 2 → 2 → 2 → 4 → 4 → 4
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>1/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>2/0/0/0</td>
+      </tr>
+      <tr>
+         <td>2/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/0/0/2</td>
+         <td class="arrow">→</td>
+         <td>0/0/0/3</td>
+      </tr>
+      <tr>
+         <td>0/0/0/3</td>
+         <td class="arrow">→</td>
+         <td>1/0/0/3</td>
+         <td class="arrow">→</td>
+         <td>2/0/3/0</td>
+      </tr>
+      <tr>
+         <td>2/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/3/3/3</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1x2</td>
+         <td class="arrow">→</td>
+         <td>{1→4}</td>
+         <td class="arrow">→</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>1 {4→3}</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2 x3</td>
+         <td class="arrow">→</td>
+         <td>4 x3</td>
+      </tr>
+   </tbody>
+</table>
+
+Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.

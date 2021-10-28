@@ -24,14 +24,43 @@ better theory.__
 
 Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
-The graduation route for these theories.
-
- - 5k → 5.2k → 5.6k → 5.8k → 6k  (5.8k → 6k is a long stretch)
- - 6k → 7k
- - 7k → 8k
- - 8k → 8.4k →8.6k → 8.8k → 9k
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>5k</td>
+         <td class="arrow">→</td>
+         <td>5.2k</td>
+         <td class="arrow">→</td>
+         <td>5.6k</td>
+         <td class="arrow">→</td>
+         <td>5.8k</td>
+         <td class="arrow">→</td>
+         <td>6k</td>
+      </tr>
+      <tr>
+         <td>6k</td>
+         <td class="arrow">→</td>
+         <td>7k</td>
+         <td class="arrow">→</td>
+         <td>8k</td>
+      </tr>
+      <tr>
+         <td>8k</td>
+         <td class="arrow">→</td>
+         <td>8.4k</td>
+         <td class="arrow">→</td>
+         <td>8.6k</td>
+         <td class="arrow">→</td>
+         <td>8.8k</td>
+         <td class="arrow">→</td>
+         <td>9k</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Theory 1 (20σ / 5k)
+
+#### T1 Overview
 
 In mathematics, a recurrence relation is an equation that relies on an
 initial term and a previous term to change.
@@ -93,24 +122,87 @@ variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
 For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
 \\(2*5.0=10 ρ_1\\).
 
-Variable | Multiplier
---- | ---
-\\(q_1\\) | 5.0
-\\(q_2\\) | 1.15
-\\(c_1\\) | 10000
-\\(c_2\\) | 1000
-\\(c_3\\) | 2
-\\(c_4\\) | 1.01
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<small><sub>1</sub></small></td>
+         <td>10,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">c<small><sub>4</sub></small></td>
+         <td>1.01</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>2</sub></small></td>
+         <td>1,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>1</sub></small></td>
+         <td>5.0</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>3</sub></small></td>
+         <td>2</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>2</sub></small></td>
+         <td>1.15</td>
+      </tr>
+   </tbody>
+</table>
 
-- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
+Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
 
 #### T1 milestone route
 
- - 0/0/1 → 0/0/1/1 → 0/1/1/1 → 3/1/1/1
- - 3 → 4 → 2 → 1 → 1 → 1
-
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/1</td>
+         <td class="arrow">→</td>
+         <td>0/0/1/1</td>
+         <td class="arrow">→</td>
+         <td>0/1/1/1</td>
+      </tr>
+      <tr>
+         <td>0/1/1/1</td>
+         <td class="arrow">→</td>
+         <td>3/1/1/1</td>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1 x3</td>
+   </tbody>
+</table>
 
 ### Theory 2 (25σ / 6k)
+
+#### T2 Overview
 
 This second theory is focusing on derivatives. Derivatives in
 mathematics are the rate of change of the function they are the
@@ -205,10 +297,122 @@ too large for you to get right away. When you can afford them, you will
 start the cycle. This is what you will do for the following number of
 milestones:
 
- - 1-2 milestones: 0/0/1(2)/0 (40s) → 1(2)/0/0/0  (10s) → 0/1(2)/0/0 (10s)  → Repeat (1 min total)
- - 3 milestones: 0/0/3/0  (40s) → 2/1/0/0 (20s) → 0/0/3/0  (40s) → 1/2/0/0 (20s) → Repeat (2min total / 2 1min’s)
- - 4 milestones: 0/0/3/1  (40s) → 2/2/0/0 (20s) → Repeat (1 min total)
- - 5+ milestones: Do the same thing as 4, but with milestones in 0/0/x/x when you go to 2/2/x/x. Prioritize q exponents and q3/q4 with excess during each swap.
+<table class="T2">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Milestone</th>
+         <th></th>
+         <th>Cycles</th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-2</td>
+         <td>0/0/1(2)/0</td>
+         <td class="arrow">→</td>
+         <td>1(2)/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/0/1(2)/0</td>
+         <td class="arrow">→</td>
+         <td>0/1(2)/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>100s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">3</td>
+         <td>0/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/1/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>1/2/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>100s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">4</td>
+         <td>0/0/3/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-6</td>
+         <td>0/0/3/x</td>
+         <td class="arrow">→</td>
+         <td>2/2/x/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">7+</td>
+         <td>x/y/3/3</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/x</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+         <td class="invisible"></td>
+         <td>(<strong>x → y</strong>)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+   </tbody>
+</table>
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
@@ -216,15 +420,50 @@ Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
 to run idle overnight.
 
 #### T2 milestone route
- - Active:
-   - 0/0/0/0 → [1/0/0/0 → 2/0/0/0 →  2/2/0/0 → 2/2/3/0 → 2/2/3/2] → 2/2/3/3
-   - [1 → 1 → 2 → 2 → 3 → 3 → 3 → 4 → 4] → 4
- - Idle:
-   - 0/0/0/ → 2/0/0/0 → 2/2/0/0 → 2/2/3/0 → 2/2/3/3
-   - 1 → 1 → 2 → 2 → 3 → 3 → 3 → 4 → 4 → 4
 
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>2/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>2/2/0/0</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/0</td>
+      </tr>
+      <tr>
+         <td>2/2/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/3</td>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1 x2</td>
+         <td class="arrow">→</td>
+         <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>3 x3</td>
+      </tr>
+      <tr>
+         <td>3 x3</td>
+         <td class="arrow">→</td>
+         <td>4 x3</td>
+   </tbody>
+</table>
 
 ### Theory 3 (30σ / 7k)
+
+#### T3 Overview
 
 The basis of this theory and understanding how it works is based on
 matrix multiplication. Below I have put a color-coded image to display
@@ -270,18 +509,109 @@ off b1 and c31 as they cost \\(ρ_1\\). You will cruise until you get to a
 repeat.
 
 #### T3 milestone route
- - Active:
-   - 0/0/0 → [0/0/2 → 1/0/2/0 → 1/2/2/0 → 1/2/2/1] → 1/2/2/2
-   - [3 → 3 → 1 → 2 → 2 → 4] → 4
- - Idle:
-   - 0/0/0 → 0/0/2 → 0/2/2 → 1/2/2/0 → 1/2/2/2
-   - 3 → 3 → 2 → 2 → 1 → 4 → 4
 
+<table class="milestone_routing">
+   <thead>
+      <tr>
+         <th>Active</th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>0/0/2</td>
+         <td class="arrow">→</td>
+         <td>1/0/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/2/2/0</td>
+      </tr>
+      <tr>
+         <td>1/2/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/2/2/2</td>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible">Or</td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2 x2</td>
+      </tr>
+      <tr>
+         <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>4 x2</td>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <thead>
+      <tr>
+         <th>Idle</th>
+         <th></th>
+         <th></th>
+         <th></th>
+         <th></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>0/0/2</td>
+         <td class="arrow">→</td>
+         <td>0/2/2</td>
+         <td class="arrow">→</td>
+         <td>1/2/2</td>
+      </tr>
+      <tr>
+         <td>1/2/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/2/2/2</td>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible">Or</td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>4 x2</td>
+   </tbody>
+</table>
 
 ### Theory 4 (35σ / 8k)
 
-We start with just one term of constants \\(c_1c_2\\) and a changing term
-\\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
+#### T4 Overview
+
+We start out with just one term of constants \\(c_1c_2\\) and a changing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
 first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
 \\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the power of \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
@@ -339,14 +669,67 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
 
- - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
- - 1 → 1 → 1 → 3 → 3 → 3 → 2
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>3/0/0</td>
+         <td class="arrow">→</td>
+         <td>3/0/3</td>
+         <td class="arrow">→</td>
+         <td>3/1/3</td></td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1 x3</td>
+         <td class="arrow">→</td>
+         <td>3 x3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Theory tier list (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
 You may not hit the values but work on getting these theories up to these values later.
 This list is in order of priority.
-1. Theory 2 - up to e300-e350
-2. Theory 1 - up to e205-e215
-3. Theory 3 and Theory 4 - up to e100-150 each
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e300-e350 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e205-e215 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e150 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e150 τ</td>
+      </tr>
+   </tbody>
+</table>

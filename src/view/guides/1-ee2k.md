@@ -25,19 +25,30 @@ Playing and molding both sections will often deliver the best results for a part
 
 ##### After b>=1: 
 
-1. Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally. 
-- This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there. 
-2. Pay attention to \\(db/b\\) growth.
-- \\(db/b\\) growth is the largest factor to progress from a prestige, however, because of how early \\(f(t)\\) is, \\(\mu\\) upgrades still play a vital role and have to be taken into account.
-- Once \\(db\\) reaches e3 more than \\(b\\), begin to pay attention how fast \\(db\\) is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.
-3. Pay attention to \\(d\mu\\) growth. (Optional)
-   - Make mental note of the price of the two \\(\mu\\) upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>). 
-   - When \\(db\\) begins to drastically reduce its growth vs time, look at how fast your \\(d\mu\\) is growing. 
-   - If \\(d\mu\\) is growing fast enough and is below the next \\(\mu\\) upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than \\(dt\\) upgrades.
-   - In the case that you are past one upgrade of the \\(\mu\\) upgrades and potentially another, you will have to do some mental math to check. 
-Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown \\(\mu\\) upgrade to get the next one and see if you are close to buying a 2nd. This doesn't happen often but can help to check.
-4.  After checking \\(d\mu\\) growth, ability to purchase \\(\mu\\) upgrades, and \\(db\\) growth, you can prestige when all of these have slowed drastically.
-5.  Repeat this cycle.
+<ol type="1">
+  <li>Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally.</li>
+  <ol type="a">
+    <li>This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there.</li>
+  </ol>
+  <li>Pay attention to <em>db/b</em> growth.</li>
+  <ol type="a">
+    <li><em>db/b</em> growth is the largest factor to progress from a prestige, however, because of how early <em>f(t)</em> is, <em>μ</em> upgrades still play a vital role and have to be taken into account.</li>
+    <li>Once <em>db</em> reaches e3 more than <em>b</em>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
+  </ol>
+  <li>Pay attention to <em>dμ</em> growth. (Optional)</li>
+  <ol type="a">
+    <li>Make mental note of price of the two <em>μ</em> upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
+    <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
+    <li>If <em>dμ</em> is growing fast enough and is below the next <em>μ</em> upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li>
+    <li>In the case that you are past one upgrade of the <em>μ</em> upgrades and potentially another, you will have to do some mental math to check.</li>
+    <ol type="i">
+      <li>Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown <em>μ</em> upgrade to get the next one and see if you are close to buying a 2nd. This doesn't happen often but can help to check.</li>
+    </ol>
+  </ol>
+  <li>After checking <em>dμ</em> growth, ability to purchase <em>μ</em> upgrades, and <em>db</em> growth, you can prestige when all of these have slowed drastically.</li>
+  <li>Repeat this cycle.</li>
+</ol>
+
 
 #### Active strategies
 
@@ -89,19 +100,24 @@ It is better to combine both of these supremacies into one than have to recovery
 
 #### Supremacy recovery (Active)
 
-1. Drop variables that won't be purchasable immediately. This will be most of them initially.
-2. Put the extra stars into perm levels into the last variable.
-3. As you progress with more \\(f(t)\\), use the [variable lookup table](https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw/edit#gid=0) for when to buy the next variable.
-- If you can afford to buy a level in the next variable, it is worth buying that variable and moving perm levels to it.
-- After buying a new variable, move the perm levels from the previous variable into the new last variable.
-4. Progress normally and repeat until back to previous supremacy mark.
+<ol type="1">
+  <li>Drop variables that won't be purchasable immediately. This will be most of them initially.</li>
+  <li>Put the extra stars into perm levels into the last variable.</li>
+  <li>As you progress with more <em>f(t)</em>, use the <a href="https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw/edit#gid=0">variable lookup table</a> for when to buy the next variable.</li>
+  <ol type="a">
+    <li>If you can afford to buy a level in the next variable, it is worth buying that variable and moving perm levels to it.</li>
+    <li>After buying a new variable, move the perm levels from the previous variable into the new last variable.</li>
+  </ol>
+  <li>Progress normally and repeat until back to previous supremacy mark.</li>
+</ol>
 
 #### Supremacy recovery (Idle)
 
-1. Keep all variables that you could purchase up to the most recent \\(f(t)\\) with their normal perm levels.
-2. If you do not have all the automation upgrades, you can take out some of the variables and perm levels for autobuyers or autoprestige.
-Otherwise keep variables unlocked.
-3. Progress normally until back to previous supremacy mark.
+<ol type="1">
+  <li>Keep all variables that you could purchase up to the most recent <em>f(t)</em> with their normal perm levels.</li>
+  <li>If you do not have all the automation upgrades, you can take out some of the variables and perm levels for autobuyers or autoprestige. Otherwise keep variables unlocked.</li>
+  <li>Progress normally until back to previous supremacy mark.</li>
+</ol>
 
 ### ee50 to ee200
 

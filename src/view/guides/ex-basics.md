@@ -26,44 +26,120 @@ further ahead than you are already.
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
 ### Variable Names
-Variable | Name | Variable | Name
---- | --- | --- | ---
-\\(x\\) | x | \\(\nu\\) | nu
-\\(y\\) | y | \\(ε\\) | epsilon
-\\(z\\) | z | \\(\zeta\\) | zeta
-\\(s\\) | s | \\(\eta\\) | eta
-\\(u\\) | u | \\(\theta\\) | theta
-\\(v\\) | v | \\(\iota\\) | iota
-\\(w\\) | w | \\(\xi\\) | xi
-\\(α\\) | alpha | \\(\mu\\) | mu
-\\(\beta\\) | beta | \\(\psi\\) | psi
-\\(\gamma\\) | gamma | \\(\tau\\) | tau
-\\(\delta\\) | delta | \\(\varphi\\) | phi
-\\(\kappa\\) | kappa | \\(\sigma\\) | sigma
-\\(\lambda\\) | lambda | \\(\rho\\) | rho
+
+<table class="newwords">
+  <thead>
+    <tr>
+        <th class="invisible"></th>
+        <th>Name</th>
+        <th class="invisible"></th>
+        <th class="invisible"></th>
+        <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="leftHeader">x</td>
+        <td>x</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ν</td>
+        <td>nu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">y</td>
+        <td>y</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ε</td>
+        <td>epsilon</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">z</td>
+        <td>z</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ζ</td>
+        <td>zeta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">s</td>
+        <td>s</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">η</td>
+        <td>eta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">u</td>
+        <td>u</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">θ</td>
+        <td>theta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">v</td>
+        <td>v</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ι</td>
+        <td>iota</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">w</td>
+        <td>w</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ξ</td>
+        <td>xi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">α</td>
+        <td>alpha</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">μ</td>
+        <td>mu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">β</td>
+        <td>beta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ψ</td>
+        <td>psi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">γ</td>
+        <td>gamma</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">τ</td>
+        <td>tau</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">δ</td>
+        <td>delta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">φ</td>
+        <td>phi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">κ</td>
+        <td>kappa</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">σ</td>
+        <td>sigma</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">λ</td>
+        <td>lambda</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ρ</td>
+        <td>rho</td>
+    </tr>
+  </tbody>
+</table>
 
 ### What does ee mean?
 You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
   
 ### Achievements and Minigames
-* Achievements are just that, they are goals to reach that will give you stars as a reward.
-* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
-  solving them. The amount of stars that you get from completing a minigame is determined by 
-  your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration 
-  Button, also known as Accel. Below is a chart of the starting star values and the equation for 
-  reward. The current best puzzle to farm stars is hard arrow as it gives the best stars/time spent 
-  of any puzzle.
+* Achievements are just that. They are goals to reach that give you stars as reward.
+* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for how to solve each puzzle and more resources.
 
-#### Base Game Reward (★)
---- | 15-Puzzle | Torus | Arrow
---- | --- | --- | ---
-Easy | 1 | 1 | 1
-Medium | 3 | 6 | 6
-Hard | 6 | 14 | 14
-Expert | --- | --- | 25
 
-Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
- 
 ### Stars and Star upgrades
 * Stars are a currency that operates outside of the main game that you use to purchase star upgrades. 
   These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
