@@ -50,6 +50,10 @@ Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade
     <li>Once <strong><i>db</i></strong> reaches e3 more than <strong><i>b</i></strong>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
   </ol>
   <li>Pay attention to <strong><i>dμ</i></strong> growth. (Optional)</li>
+  <ol type="a">
+    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
+    <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
+  </ol>
   <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
   <ol type="a">
     <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
