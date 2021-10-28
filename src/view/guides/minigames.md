@@ -17,7 +17,7 @@ patience is not with me
     <thead>
         <tr>
             <th class="invisible"></th>
-            <th>15-Puzzles</th>
+            <th>15-Puzzle</th>
             <th>Torus</th>
             <th>Arrow</th>
         </tr>
