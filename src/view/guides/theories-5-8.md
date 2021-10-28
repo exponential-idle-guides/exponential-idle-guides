@@ -207,9 +207,6 @@ slightly less active.
 
 #### T5 milestone route
 
-- [0/1/0 → 3/1/0 → 3/1/2]
-- 2 → 1 → 1 → 1 → 3 → 3
-
 <table class="milestone_routing">
    <tbody>
       <tr>
@@ -267,9 +264,6 @@ still disabled. For idle/auto, you are going to just turn off \\(c_3\\)
 and \\(c_4\\).
 
 #### T6 milestone route
-
- - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
- - 2 → 1 → 3 → 4 {2 and 3 both into 4} → 3 → 2
 
  <table class="milestone_routing">
    <tbody>
