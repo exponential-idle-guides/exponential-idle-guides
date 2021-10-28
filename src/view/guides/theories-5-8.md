@@ -210,6 +210,38 @@ slightly less active.
 - [0/1/0 → 3/1/0 → 3/1/2]
 - 2 → 1 → 1 → 1 → 3 → 3
 
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>3/1/0</td>
+         <td class="arrow">→</td>
+         <td>3/1/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1 x3</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+      </tr>
+   </tbody>
+</table>
+
 ##### Additional information
 Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3.
@@ -238,6 +270,66 @@ and \\(c_4\\).
 
  - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
  - 2 → 1 → 3 → 4 {2 and 3 both into 4} → 3 → 2
+
+ <table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/0</td>
+      </tr>
+      <tr>
+         <td>1/1/0/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/0/0/3</td>
+      </tr>
+      <tr>
+         <td>1/0/0/3</td>
+         <td class="arrow">→</td>
+         <td>1/0/1/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/3</td>
+      </tr>
+      <tr>
+         <td>2/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/3/3/3</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>4 {2&3→4}</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Theory 7 (50σ / 11k)
 
@@ -292,14 +384,14 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td>0/0/3</td>
          <td class="arrow">→</td>
          <td>0/1/3</td>
-         <td class="arrow">or</td>
+         <td class="arrow">→</td>
          <td>1/1/1/1/1</td>
       </tr>
       <tr>
          <td>1/1/1/1/1</td>
          <td class="arrow">→</td>
          <td>1/1/1/1/2</td>
-         <td class="arrow">or</td>
+         <td class="arrow">→</td>
          <td>1/1/1/1/3</td>
       </tr>
    </tbody>
