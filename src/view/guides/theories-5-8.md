@@ -305,9 +305,9 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td>1/1/1/1/3</td>
       </tr>
       <tr>
-         <td class="invisible">Alternate</td>
+         <td class="invisible">Or</td>
          <td class="invisible"></td>
-         <td>View</td>
+         <td class="invisible></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
