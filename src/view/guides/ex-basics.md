@@ -42,6 +42,110 @@ Variable | Name | Variable | Name
 \\(\kappa\\) | kappa | \\(\sigma\\) | sigma
 \\(\lambda\\) | lambda | \\(\rho\\) | rho
 
+<table class="newwords">
+  <thead>
+    <tr>
+        <th class="invisible"></th>
+        <th>Name</th>
+        <th class="invisible"></th>
+        <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="leftHeader">x</td>
+        <td>x</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ν</td>
+        <td>nu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">y</td>
+        <td>y</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ε</td>
+        <td>epsilon</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">z</td>
+        <td>z</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ζ</td>
+        <td>zeta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">s</td>
+        <td>s</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">η</td>
+        <td>eta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">u</td>
+        <td>u</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">θ</td>
+        <td>theta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">v</td>
+        <td>v</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ι</td>
+        <td>iota</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">w</td>
+        <td>w</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ξ</td>
+        <td>xi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">α</td>
+        <td>alpha</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">μ</td>
+        <td>mu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">β</td>
+        <td>beta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ψ</td>
+        <td>psi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">γ</td>
+        <td>gamma</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">τ</td>
+        <td>tau</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">δ</td>
+        <td>delta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">φ</td>
+        <td>phi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">κ</td>
+        <td>kappa</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">σ</td>
+        <td>sigma</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">λ</td>
+        <td>lambda</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ρ</td>
+        <td>rho</td>
+    </tr>
+  </tbody>
+</table>
+
 ### What does ee mean?
 You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
   
@@ -63,7 +167,7 @@ Hard | 6 | 14 | 14
 Expert | --- | --- | 25
 
 Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
- 
+
 ### Stars and Star upgrades
 * Stars are a currency that opperates outside of the main game that you use to purchase star upgrades. 
   These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
@@ -154,4 +258,4 @@ If we have two really large values, the average of the two will be in favor of t
 For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that it displays the largest value of \\(10^{10^{10^{db}}}\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))\\) to retrieve back the maximum \\(db\\).
 
 #### Reference formula
-![Smooth Formula](/images/smooth-formula.jpg) ![Smooth Formula](/images/smooth-formula.jpg)
+![Smooth Formula](/images/smooth-formula.jpg)

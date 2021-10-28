@@ -42,60 +42,60 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 
 <table class="newwords">
-    <thead>
-        <tr>
-            <th class="invisible"></th>
-            <th>Idle</th>
-            <th>Active</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="leftHeader">T1</td>
-            <td>Disable c1/c2</td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T2</td>
-            <td>All variables on</td>
-            <td>q4/r4 → q3/r3 → etc manual buy</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T3</td>
-            <td>Disable </td>
-            <td>Same as idle but with  </td>
-        </tr>
-                <tr>
-            <td class="leftHeader"></td>
-            <td>c11, c13, c21, c33</td>
-            <td>b2 → b4 → b1 manual buy</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T4</td>
-            <td>Only q1, q2, c3</td>
-            <td>Idle with chasing doublings</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T5</td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
-            <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T6</td>
-            <td>Disable c3, c4</td>
-            <td>Idle with chasing doublings</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T7</td>
-            <td>Disable c1, c2, c3</td>
-            <td>Disable c1, c2</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">T8</td>
-            <td>All variables on</td>
-            <td>Idle with chasing doublings</td>
-        </tr>
-    </tbody>
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Idle</th>
+         <th>Active</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>Disable c1/c2</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>All variables on</td>
+         <td>q4/r4 → q3/r3 → etc manual buy</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>Disable </td>
+         <td>Same as idle but with  </td>
+      </tr>
+               <tr>
+         <td class="leftHeader"></td>
+         <td>c11, c13, c21, c33</td>
+         <td>b2 → b4 → b1 manual buy</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>Only q1, q2, c3</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T5</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T6</td>
+         <td>Disable c3, c4</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T7</td>
+         <td>Disable c1, c2, c3</td>
+         <td>Disable c1, c2</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T8</td>
+         <td>All variables on</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+   </tbody>
 </table>
 
 ### Equation for when to publish
