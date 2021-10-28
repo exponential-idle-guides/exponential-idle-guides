@@ -112,7 +112,7 @@ The algorithm goes as follows:
 The algorithm goes as follows:
 
 <ol type="1">
-  <li>Solve each row up to the 2nd letter.</li>
+  <li>Solve each row up to the 2nd number.</li>
     <ol type="a">
       <li>Solve top row for 1 and 2.</li>
       <li>Solve middle row for 4 and 5.</li>
