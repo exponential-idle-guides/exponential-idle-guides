@@ -89,7 +89,7 @@ There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for th
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
-4. Respec the all 10/20/30 students from R9.
+4. Respec all 10/20/30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
@@ -336,9 +336,7 @@ The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (cons
 of points \\((x,y,g(x,y))\\), see attached image).
 \\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
 maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
-Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the 
-maximization problem is ill-conditionned); so one way to maximize \\(g(ρ1,ρ2)\\) is to 
-move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
+Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditionned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
 This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
 point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
 (i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of 
@@ -430,7 +428,7 @@ slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
 far into the theory without R9). We highly recommend buying t8 for the achievement, then
 selling it right away and using those students for \\(\phi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
-through T8 faster than before. __You will need buy T8 again to get R9, and you should start R9 right away after that__ 
+through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__ 
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
 <table class="newwords">
@@ -485,14 +483,14 @@ If your numbers are different, that is fine. You just need to reach 1e1350
 The optimal publication multiplier is 2.5-5 depending on how close you
 are to the next milestone. This theory is extremely slow at the start
 which is why we skip until we obtain R9. It is also the only one with a
-\\(1e20\\) milestone multiplier. It will speed up once you hit 1e60 and
+\\(1e20\\) milestone step. It will speed up once you hit 1e60 and
 even faster at \\(1e80\\) and \\(1e100\\) etc. until ~\\(e250\\)-\\(e300\\).
 The worst part is the \\(1e50\\)-\\(1e60\\) grind. The grind to \\(1e60\\)
 will take a good bit of time but is faster with R9.
 
 At the start, manual buy prioritizes \\(c_2\\) then \\(c_1\\) then rest.
 Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then the
-rest. Once at 1/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
+rest. Once at 2/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
 <table class="newwords">

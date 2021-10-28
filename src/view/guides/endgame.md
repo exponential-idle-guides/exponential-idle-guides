@@ -21,13 +21,12 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 ### Push f(t) with 3R9 seapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
-   do this when you are near a graduation mark.
-4. Respec the all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9. When you are later in a graduation,
-    you will ned to prestige manually
+   do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
+4. Respec all 30 students from R9.
+5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
 #### R9 autoprestige expression
@@ -129,7 +128,7 @@ upgrade because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\
 have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\) you are reducing your \\(ρ_{n+1}\\)
 by roughly a factor of 10.
 
-There are \\(3\\) terms the influence the rate of change of \\(\rho\\) all are
+There are \\(3\\) terms that influence the rate of change of \\(\rho\\) all are
 affected by the previous state of \\(\rho\\). Let's ignore the 1st since it
 has such a small influence and consider the above case to determine when
 an upgrade would be better. For every magnitude of \\(10\\), term \\(2\\) gains
@@ -211,7 +210,7 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 
-T5 will always give its best results from active play however, after
+T5 will always give its best results from active play, however, after
 step 3 you can still get good results while auto buying \\(q_1\\) and manually
 purchasing \\(c_1\\) every 10-15min. Making the theory slightly less active.
 

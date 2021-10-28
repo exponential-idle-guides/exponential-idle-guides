@@ -11,9 +11,9 @@ Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multipliers vary from theory to theory and will
 decrease over time. If you are close to a multiplier you want, turn off autobuyer
 and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
-before the publication (turn on after you publish). Total \\(τ\\), found in the equation 
-or at the top of the screen, is a multiplicative combination of all \\(τ\\) from each
-theory.
+before the publication (turn on after you publish). This is known and referenced as "cruising".
+Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative 
+combination of all \\(τ\\) from each theory.
 
 __Don’t be afraid to skip getting all milestones to work on the next or a
 better theory.__
@@ -77,7 +77,7 @@ being based on the value of \\(ρ\\) from the previous tick with the value of
 \\(1+ln(ρ)/100\\). The final milestone upgrade raises the exponent of \\(c_1\\) from
 \\(1.00\\) to \\(1.05\\) to \\(1.10\\) to \\(1.15\\).
 
-This theory also has its own tickspeed calculated by \\(q_{1}*q_{2}\\). This
+This theory also has its adjusted tickspeed calculated by \\(q_{1}*q_{2}\\). This
 lengthens the normal tick length of \\(0.1/sec\\) to that value which speeds
 up the theory.
 
@@ -216,7 +216,7 @@ In simpler terms, it works similar to how
 of the previous \\(term*dt\\) to the next \\(x_{i+1}\\) term, but with
 continuous addition of \\(q_i*dt\\) to the term above \\(q_{i-1}\\).
 These two values of \\(r_1\\) and \\(q_1\\) are multiplied to produce the derivative
-of rho(\\(ρ\\)), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
+of \\(ρ(t)\\), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
 equation of \\(ρ\\) to be \\(ρ(t+dt)=\dot{ρ}+ρ1*dt\\). The other milestones besides more \\(q\\)
 and \\(r\\) derivatives increase the exponent of \\(q\\) and \\(r\\) respectively. The
 reason why \\(q\\) and \\(r\\) derivatives are more powerful long-term than the
@@ -250,7 +250,7 @@ boost.
 
 \\[\dot{ρ}=q_1r\\]
 
-##### Third and Forth milestones
+##### Third and Fourth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -611,8 +611,7 @@ repeat.
 
 #### T4 Overview
 
-We start out with just one term of constants \\(c_1c_2\\) and a changing term
-\\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
+We start out with just one term of constants \\(c_1c_2\\) and a changing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
 first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
 \\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the power of \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
@@ -644,7 +643,7 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
 
-##### Forth to Sixth milestones
+##### Fourth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
@@ -665,7 +664,7 @@ don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
 be bought \\(e1\\) cheaper than the priority tier above. If you decide to
 manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_4\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
+\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_2\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
 mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
@@ -705,7 +704,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 ### Theory tier list (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
-You may not hit the values, but work on getting these theories up to these values later.
+You may not hit the values but work on getting these theories up to these values later.
 This list is in order of priority.
 
 <table class="newwords">

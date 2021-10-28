@@ -137,11 +137,11 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
   
 ### Achievements and Minigames
 * Achievements are just that. They are goals to reach that give you stars as reward.
-* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
-  solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for how to solve each puzzle and more resources.
+* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for how to solve each puzzle and more resources.
+
 
 ### Stars and Star upgrades
-* Stars are a currency that opperates outside of the main game that you use to purchase star upgrades. 
+* Stars are a currency that operates outside of the main game that you use to purchase star upgrades. 
   These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
   prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge 
   boost in power, and you should prioritize that over variables of a similar cost. More details on 
@@ -217,7 +217,7 @@ For instance, \\(smooth( d(d(ln(db))), 10)\\) will behave much better than the s
 
 #### Method 2: Lock
  
-Due to the nature of the expression, if the second input of smooth is very large, then there will be no average at all: instead of taking a normal average, we can skew the weights so that any new value is too small to be noticed. As a very simple example, can calculate averages like \\(average = 0 * (new\\) \\( value) + 1 * (old\\) \\( value)\\) to preserve old values. On the contrary, if we skew this the other way, then only the new value would appear:  \\(average = 1 * (new \\) \\(value) + 0 * (old\\) \\( value)\\).
+Due to the nature of the expression, if the second input of smooth is very large, then there will be no average at all: instead of taking a normal average, we can skew the weights so that any new value is too small to be noticed. As a very simple example, we can calculate averages like \\(average = 0 * (new\\) \\( value) + 1 * (old\\) \\( value)\\) to preserve old values. On the contrary, if we skew this the other way, then only the new value would appear:  \\(average = 1 * (new \\) \\(value) + 0 * (old\\) \\( value)\\).
 
 A simple expression like \\(smooth(expr, ee99)\\) will first compute expr and keep that value indefinitely until the expression field is reset: upon modifying the expression, every prestige for prestige expressions, and every supremacy for supremacy expressions. This is what we refer to as "lock."
 

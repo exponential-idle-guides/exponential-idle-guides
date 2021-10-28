@@ -40,12 +40,12 @@ This is the reason why T5 is considered an active theory and T2 is considered an
 #### Multi Manual
 This is the optimal multiplier that you should publish at for the given manual strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Multi Auto
 This is the optimal multiplier that you should publish at for the given active strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of
@@ -128,9 +128,9 @@ If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number
 ##### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
 
-The simulator only runs up to 720 hours per theory per manual/auto section.
+The simulator only runs up to 720-hours per theory per manual/auto section.
 Any results from a 720 hour simulation should be treated with caution as they never finished their publication.
-If you get a negative /hour result from hitting this 720 hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
+If you get a negative /hour result from hitting this 720-hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
 
 ##### Delta Active and Delta Idle
 This will tell you how much \\(\tau\\) you are expected to gain for the active or idle strategy.
