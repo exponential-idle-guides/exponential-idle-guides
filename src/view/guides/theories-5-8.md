@@ -302,7 +302,7 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td>1/1/1/1/3</td>
       </tr>
       <tr>
-         <td class="invisible">Or</td>
+         <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
          <td class="invisible></td>
          <td class="invisible"></td>
@@ -430,9 +430,6 @@ the rest after. This continues to max at 2/3/3/3.
 
 #### T8 milestone route
 
- - 0/0/0/0 → 1/0/0/0 → 2/0/0/0 (\\(e40\\)-\\(e52\\)) → 0/0/0/2 (\\(e52\\)-\\(e60\\)) → 0/0/0/3 → 1/0/0/3 → 2/0/3/0 → 2/3/3/3
- - 1 → 1 → {swap 1's to 4} → 4 → 1 → 1 {4's swap to 3's}→ 1 → 2 → 2 → 2 → 4 → 4 → 4
-
 <table class="milestone_routing">
    <tbody>
       <tr>
@@ -440,12 +437,12 @@ the rest after. This continues to max at 2/3/3/3.
          <td class="arrow">→</td>
          <td>1/0/0/0</td>
          <td class="arrow">→</td>
-         <td>2/0/0/0 (e40)</td>
+         <td>2/0/0/0</td>
       </tr>
       <tr>
-         <td>2/0/0/0 (e40)</td>
+         <td>2/0/0/0</td>
          <td class="arrow">→</td>
-         <td>0/0/0/2 (e52)</td>
+         <td>0/0/0/2</td>
          <td class="arrow">→</td>
          <td>0/0/0/3</td>
       </tr>
@@ -459,7 +456,7 @@ the rest after. This continues to max at 2/3/3/3.
          <td>2/3/3/3</td>
       </tr>
       <tr>
-         <td class="invisible">Or</td>
+         <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
          <td class="invisible></td>
          <td class="invisible"></td>
@@ -467,7 +464,7 @@ the rest after. This continues to max at 2/3/3/3.
          <td class="invisible"></td>
          <td class="invisible"></td>
       </tr>
-      <tr>- 1 → 1 → {swap 1's to 4} → 4 → 1 → 1 {4's swap to 3's}→ 1 → 2 → 2 → 2 → 4 → 4 → 4
+      <tr>
          <td>1x2</td>
          <td class="arrow">→</td>
          <td>{1→4}</td>
@@ -487,3 +484,5 @@ the rest after. This continues to max at 2/3/3/3.
       </tr>
    </tbody>
 </table>
+
+Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
