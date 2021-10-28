@@ -46,19 +46,21 @@ Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade
   </ol>
   <li>Pay attention to <em>db/b</em> growth.</li>
   <ol type="a">
-    <li><strong><i>db/b</i></strong> growth is the largest factor to progress from a prestige, however, because of how early <strong><i>f(t)</i></strong> is, <strong><i>μ</i></strong> upgrades still play a vital role and have to be taken into account.</li>
-    <li>Once <strong><i>db</i></strong> reaches e3 more than <strong><i>b</i></strong>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
+    <li><em>db/b</em> growth is the largest factor to progress from a prestige, however, because of how early <em>f(t)</em> is, <em>μ</em> upgrades still play a vital role and have to be taken into account.</li>
+    <li>Once <em>db</em> reaches e3 more than <em>b</em>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
   </ol>
-  <li>Pay attention to <strong><i>dμ</i></strong> growth. (Optional)</li>
+  <li>Pay attention to <em>dμ</em> growth. (Optional)</li>
   <ol type="a">
-    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
-    <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
+    <li>Make mental note of price of the two <em>μ</em> upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
+    <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
+    <li>If <em>dμ</em> is growing fast enough and is below the next <em>μ</em> upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li>
+    <li>In the case that you are past one upgrade of the <em>μ</em> upgrades and potentially another, you will have to do some mental math to check.</li>
+    <ol type="i">
+      <li>Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown <em>μ</em> upgrade to get the next one and see if you are close to buying a 2nd. This doesn't happen often but can help to check.</li>
+    </ol>
   </ol>
-  <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
-  <ol type="a">
-    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
-    <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
-  </ol>
+  <li>After checking <em>dμ</em> growth, ability to purchase <em>μ</em> upgrades, and <em>db</em> growth, you can prestige when all of these have slowed drastically.</li>
+  <li>Repeat this cycle.</li>
 </ol>
 
 #### Active strategies
