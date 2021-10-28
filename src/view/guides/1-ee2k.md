@@ -44,7 +44,7 @@ Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade
   <ol type="a">
     <li>This may take a little bit to get back to your previous prestige point and the faster you spam the faster you get there.</li>
   </ol>
-  <li>Pay attention to <i>db/b</i> growth.</li>
+  <li>Pay attention to <em>db/b</em> growth.</li>
   <ol type="a">
     <li><strong><i>db/b</i></strong> growth is the largest factor to progress from a prestige, however, because of how early <strong><i>f(t)</i></strong> is, <strong><i>μ</i></strong> upgrades still play a vital role and have to be taken into account.</li>
     <li>Once <strong><i>db</i></strong> reaches e3 more than <strong><i>b</i></strong>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
