@@ -11,9 +11,6 @@ order: 8
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
 
-MEHEHREHREHREH
-FDFJHFJHF
-
 <table class="newwords">
     <thead>
         <tr>
