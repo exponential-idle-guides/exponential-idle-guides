@@ -302,6 +302,10 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td class="arrow">or</td>
          <td>1/1/1/1/3</td>
       </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
@@ -317,12 +321,15 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td>3</td>
          <td class="arrow">→</td>
          <td>3</td>
-         <td class="arrow">→</td>
-         <td>2</td>
       </tr>
       <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
          <td>1 {5→3&4}</td>
          <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+      <tr>
          <td>3</td>
          <td class="arrow">→</td>
          <td>2</td>
@@ -459,6 +466,10 @@ the rest after. This continues to max at 2/3/3/3.
          <td class="arrow">→</td>
          <td>2/3/3/3</td>
       </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
@@ -474,12 +485,17 @@ the rest after. This continues to max at 2/3/3/3.
          <td>{1→4}</td>
          <td class="arrow">→</td>
          <td>4</td>
+      </tr>
+      <tr>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>1 {4→3}</td>
          <td class="arrow">→</td>
          <td>1</td>
       </tr>
       <tr>
-         <td>1 {4→3}</td>
-         <td class="arrow">→</td>
          <td>1</td>
          <td class="arrow">→</td>
          <td>2 x3</td>
