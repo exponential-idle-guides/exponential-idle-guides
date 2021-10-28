@@ -26,21 +26,6 @@ further ahead than you are already.
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
 ### Variable Names
-Variable | Name | Variable | Name
---- | --- | --- | ---
-\\(x\\) | x | \\(\nu\\) | nu
-\\(y\\) | y | \\(ε\\) | epsilon
-\\(z\\) | z | \\(\zeta\\) | zeta
-\\(s\\) | s | \\(\eta\\) | eta
-\\(u\\) | u | \\(\theta\\) | theta
-\\(v\\) | v | \\(\iota\\) | iota
-\\(w\\) | w | \\(\xi\\) | xi
-\\(α\\) | alpha | \\(\mu\\) | mu
-\\(\beta\\) | beta | \\(\psi\\) | psi
-\\(\gamma\\) | gamma | \\(\tau\\) | tau
-\\(\delta\\) | delta | \\(\varphi\\) | phi
-\\(\kappa\\) | kappa | \\(\sigma\\) | sigma
-\\(\lambda\\) | lambda | \\(\rho\\) | rho
 
 <table class="newwords">
   <thead>
@@ -151,23 +136,9 @@ Variable | Name | Variable | Name
 You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
   
 ### Achievements and Minigames
-* Achievements are just that, they are goals to reach that will give you stars as a reward.
+* Achievements are just that. They are goals to reach that give you stars as reward.
 * Minigames are puzzles that you can solve that will give you stars as a rewatd for getting 
-  solving them. The amount of stars the you get from completing a minigame is determined by 
-  your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration 
-  Button, also known as Accel. Below is a chart of the starting star values and the equation for 
-  reward. The current best puzzle to farm stars is hard arrow as it gives the best stars/time spent 
-  of any puzzle.
-
-#### Base Game Reward (★)
---- | 15-Puzzle | Torus | Arrow
---- | --- | --- | ---
-Easy | 1 | 1 | 1
-Medium | 3 | 6 | 6
-Hard | 6 | 14 | 14
-Expert | --- | --- | 25
-
-Equation for reward is \\(floor(gameBaseReward*max(1,0.02*dt^{0.5}))\\).
+  solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for how to solve each puzzle and more resources.
 
 ### Stars and Star upgrades
 * Stars are a currency that opperates outside of the main game that you use to purchase star upgrades. 
