@@ -275,6 +275,63 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
  - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
  - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
 
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/1</td>
+         <td class="arrow">→</td>
+         <td>0/0/2</td>
+      </tr>
+      <tr>
+         <td>0/0/2</td>
+         <td class="arrow">→</td>
+         <td>0/0/3</td>
+         <td class="arrow">→</td>
+         <td>0/1/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1/1</td>
+      </tr>
+            <tr>
+         <td>1/1/1/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/1/3</td>
+         <td class="arrow">or</td>
+         <td>1/1/1/1/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1/3</td>
+      </tr>
+      <tr>
+         <td class="invisible">Alternate</td>
+         <td class="invisible"></td>
+         <td>View</td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+      <tr>
+         <td>1 {5→3&4}</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
+
 ### Theory 8 skipping
 
 T8 skip is significantly faster than buying T8 right away. T8 is very
