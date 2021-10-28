@@ -280,25 +280,26 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
          <td>0/1/0</td>
          <td class="arrow">→</td>
          <td>0/1/1</td>
-         <td class="arrow">→</td>
-         <td>0/0/2</td>
       </tr>
       <tr>
+         <td>0/1/1</td>
+         <td class="arrow">→</td>
          <td>0/0/2</td>
          <td class="arrow">→</td>
          <td>0/0/3</td>
+      </tr>
+      <tr>
+         <td>0/0/3</td>
          <td class="arrow">→</td>
          <td>0/1/3</td>
-         <td class="arrow">→</td>
+         <td class="arrow">or</td>
          <td>1/1/1/1/1</td>
       </tr>
-            <tr>
+      <tr>
          <td>1/1/1/1/1</td>
          <td class="arrow">→</td>
-         <td>1/1/0/1/3</td>
-         <td class="arrow">or</td>
          <td>1/1/1/1/2</td>
-         <td class="arrow">→</td>
+         <td class="arrow">or</td>
          <td>1/1/1/1/3</td>
       </tr>
       <tr>
@@ -446,11 +447,14 @@ the rest after. This continues to max at 2/3/3/3.
          <td class="arrow">→</td>
          <td>0/0/0/3</td>
       </tr>
-            <tr>
+      <tr>
          <td>0/0/0/3</td>
          <td class="arrow">→</td>
          <td>1/0/0/3</td>
          <td class="arrow">→</td>
+         <td>2/0/3/0</td>
+      </tr>
+      <tr>
          <td>2/0/3/0</td>
          <td class="arrow">→</td>
          <td>2/3/3/3</td>
