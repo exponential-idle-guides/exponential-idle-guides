@@ -48,6 +48,7 @@ Variable | Name | Variable | Name
         <th class="invisible"></th>
         <th>Name</th>
         <th class="invisible"></th>
+        <th class="invisible"></th>
         <th>Name</th>
     </tr>
   </thead>
