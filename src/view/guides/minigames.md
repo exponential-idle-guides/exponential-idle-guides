@@ -15,7 +15,7 @@ These tips in general are very helpful when starting out and further down the li
     <thead>
         <tr>
             <th class="invisible"></th>
-            <th>15-Puzzle</th>
+            <th>15-Puzzles</th>
             <th>Torus</th>
             <th>Arrow</th>
         </tr>
