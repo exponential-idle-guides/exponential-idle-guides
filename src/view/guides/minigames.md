@@ -103,7 +103,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/e3devm2D-3s') }}
+{{ yt.embed('https://www.youtube.com/watch?v=e3devm2D-3s') }}
 
 ## Torus Puzzle
 
@@ -123,7 +123,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/e8f1ohtGAW8') }}
+{{ yt.embed('https://www.youtube.com/watch?v=e8f1ohtGAW8') }}
 
 ### Medium
 
@@ -150,7 +150,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/6mQNMKwsOi8') }}
+{{ yt.embed('https://www.youtube.com/watch?v=6mQNMKwsOi8') }}
 
 ### Hard
 
@@ -182,7 +182,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/6NfqiX_WFaM') }}
+{{ yt.embed('https://www.youtube.com/watch?v=6NfqiX_WFaM') }}
 
 ## Arrow Puzzle
 
@@ -202,7 +202,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/p0Jr52NlhFw') }}
+{{ yt.embed('https://www.youtube.com/watch?v=p0Jr52NlhFw') }}
 
 ### Medium
 
@@ -223,7 +223,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/n1lXPOeouT4') }}
+{{ yt.embed('https://www.youtube.com/watch?v=n1lXPOeouT4') }}
 
 ### Propagation (for Hard and Expert)
 
@@ -246,7 +246,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://youtu.be/wedx6RXGVz8') }}
+{{ yt.embed('https://www.youtube.com/watch?v=wedx6RXGVz8') }}
 
 ### Hard and Expert
 
@@ -265,4 +265,4 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 
 #### Example
 
-{{ yt.embed('https://youtu.be/p073qSqL7EU') }}
+{{ yt.embed('https://www.youtube.com/watch?v=p073qSqL7EU') }}
