@@ -254,6 +254,29 @@ the number of milestone 3. \\(q\\) begins to slow down when you reach
 See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
 milestones.
 
+### t Stacking
+
+A useful strategy in the later stages of a graduation is \\t\\ stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\f(t)\\. At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\f(t)\\ with the swap, thus giving us more \\dt\\, allowing for more \\t\\, then just letting \\t\\ build up over time. This can be repeated multiple times and results in faster progress for \\t\\, especially as each swap inbetween profits from more \\(\phi\\) due to additional dt and \\t\\. Overall this speeds up the time a prestige needs to reach a high enough value for \\t\\ to do a final swap compared to letting the game run fully idle.
+
+### Graduation Routing
+
+Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\phi\\), and "Skipmas", students that will yield 0 extra \\(\phi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\f(t)\\ that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\phi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and Skip Skipmas.
+
+For normal distribition of stars, \\t\\, and accel usage, the students that you should skip (for 1d\\(\sigma\\):
+
+144,146,149,152,155,158,161,164,166,168,172,176,180,184,188,190,193,198,203,208,213,216,218,220,224,230,236,240,242,246,248,251,254,256,261,268,275,279,282,286,289,292,296,298,304,312,316,320,324,326,328,334,336, 344
+
+The \\f(t)\\ values are:
+
+29800,30200,30800,31400,32000,32600,33200,33800,34200,34600,35400,36200,37000,37800,38600,39000,39600,40600,41600,42600,43600,44200,44600,45000,45800,47000,48200,49000,49400,50200,50600,51200,51800,52200,53200,54600,56000,56800,57400,58200,58800,59400,60200,60600,61800,63400,64200,65000,65800,66200,66600,67800,68200,69800
+
+### Supremacy Equation Past 48k
+
+When you get to ee48k, you will have all of the psi upgrades and you can get rid of the old 
+Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that
+we have right now because of how Supremacy upgrades are spaced. It is not worth pushing past an 
+upgrade as there is no bonus to phi from psi, only dpsi. When you hit about ft 50k you can get to about
+
 #### Lemma
 
 All Lemma sections already have the <kbd>-</kbd> buttons unlocked. This gives

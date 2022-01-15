@@ -508,6 +508,10 @@ off b1 and c31 as they cost \\(ρ_1\\). You will cruise until you get to a
 3-4 multiplier. Publish and turn back on \\(ρ_1\\) costing variables and
 repeat.
 
+###### Commentary
+
+{{ yt.embed('https://www.youtube.com/watch?v=kqnBfdOI34c') }}
+
 #### T3 milestone route
 
 <table class="milestone_routing">
@@ -704,7 +708,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 ### Theory tier list (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
-You may not hit the values but work on getting these theories up to these values later.
+You may not hit the values, but work on getting these theories up to these values later.
 This list is in order of priority.
 
 <table class="newwords">
