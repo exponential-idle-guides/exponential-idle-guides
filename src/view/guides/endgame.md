@@ -14,45 +14,42 @@ order: 6
 
 ### Graduation routing
 
-Routing is based on your current Tau and Phi numbers.
+Routing is based on your current Tau (\\(\tau\\)) and Phi (\\(\varphi\\)) numbers.
 
 Make sure to use the [calculators and simulators](/#other-resources) for optimal graduation, student, star, and theory options.
 
-### Push F(t) with 3R9 seapping
+### Push f(t) with 3R9 seapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(F(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark.
 4. Respec the all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9.
+5. Wait for the autoprestige to prestige and swap back students to R9. When you are later in a graduation,
+    you will ned to prestige manually
 6. Repeat.
 
-{{ yt.embed('https://youtu.be/c8ekMzXWD_g') }}
+#### R9 autoprestige expression
 
-#### The new autoprestige expression
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
-```
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
-((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
-(phi >=1 && phi <= 1))
-```
+###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-### Idle and active buy strats
-For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publications.
+{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+
+### Idle and Active buy strats
+For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 Theory | Idle | Active
 --- | --- | ---
-T1 | Disable c1 c2 | See [T1 routing](#t1-routing) later in this guide
-T2 | All on | q4/r4 → q3/r3 → etc
-T3 | Disable c11, c13, c21, c33 | Same as idle with b2→b3→b1 e1 lower buying + cruising at end
-T4 | Disable all but c3, q1, q2 | Auto c3 and q2. Manual q1. Disable rest.
-T5 | See [T5 routing](#t5-routing) later in this guide | ← Also see T5 routing
-T6 | Disable c3, c4 | Disable c3 c4. Auto q2, r2, c2, c5. Manual rest when e1 cheaper.
-T7 | Disable c1, c2, c3 | Same as Idle
-T8 | All on | Same as Idle but doublings chase with c1, c2.
+T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
+T2 | All on | q4/r4 → q3/r3 → etc manual buy
+T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
+T4 | Disable all but c3/q1/q2 | ← with chasing doublings
+T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
+T6 | Disable c3/c4 | ← with Auto q2/r2/c2/c5 & Manual rest
+T7 | Disable c1/c2/c3 | ← same
+T8 | All on | ← with chasing doublings
 
 ### Equation for when to publish
 
@@ -63,12 +60,12 @@ ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 / (timer( timer(d(tau)<=0)<900 ) + 900)
 ```
 
-Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark)
+Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
 
-### Idle vs manual strat efficiency
+### Idle vs Manual strat efficiency
 
 From Antharion, the ratio represents \\(log(\tau)/hour\\) efficiency of
-idle vs manual buying strategies.
+idle vs manual buying strategies. This does not take into account [cruising](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#theory-basics). T7 is unknown because the current manual strat is very complicated (not human viable) and isn't consistent enough to put on the chart.
 
 Theory | Manual | Auto | Ratio
 ---|---|---|---
@@ -136,10 +133,11 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
    graph.
 2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
    slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
-3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
-   1. Buy \\(q_1\\) up to \\(15%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
-   2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
-4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
+3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
+   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
+4. Once you reach your desired multiplier, publish. 
+5. Repeat this for stonks.
 
 ###### Commentary
 
@@ -162,8 +160,6 @@ Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3. \\(q\\) begins to slow down when you reach
 \\(2q > c_2*c_3^{m_3}\\).
 
-Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
-
 #### Theory 8
 
 Attractor | Starting Positions (reset every pub) | Time Step
@@ -172,9 +168,9 @@ Attractor | Starting Positions (reset every pub) | Time Step
 **Chen** | -10.6, -4.4, 28.6 | 0.002
 **Rossler** | -6, 15, 0 | 0.00014
 
-### How To respec
+### How to respec
 
-See the [introduction guide](/guides/intro/) for respecing students and
+See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
 milestones.
 
 ### t Stacking

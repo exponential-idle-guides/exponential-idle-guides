@@ -11,7 +11,7 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 - 9k → 9.4k (push for \\(z^{1.04}\\) at \\(ee9160\\)) → 9.8k → 10k
 - 10k → 10.4k → 10.6k → 11k (push for \\(z^{1.08}\\) at \\(ee10821\\))
@@ -24,16 +24,15 @@ Remember to follow our routing advice from the [introduction](/guides/intro/#gra
 
 ### Student routing with R9
 
-All routing follows the [star calculator] (by Niedzielan, AfuroZamurai, and Milla) and
-[student calculator] (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed
-(after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
+All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
+[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](http://bit.ly/anthsim)
+There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for theories w/ max milestones).
 
-#### How to push \\(F(t)\\) with R9 seapping
+#### How to push \\(f(t)\\) with R9 seapping
 
 ###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(F(t)\\) stops growing with students in R9 pushing \\(\tau\\).
+1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
    do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
@@ -41,35 +40,31 @@ Theory Simulator by Antharion (for theories w/ max milestones): [Theory Sim](htt
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
-
-#### The new autoprestige expression
-
-```
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr && db > b &&
-((d(smooth(10^10^10^(phi*tau),1)) > 1) &&
-timer(abs(d(log10(phi+1))) < 50) > 15))&&phi>1) ||
-((timer(d(ln(db/b+1)/pt) < 0) > 3 * tr) &&
-(phi >=1 && phi <= 1))
-```
-
 This method allows you to push \\(f(t)\\) with almost no loss of R9
 uptime or pushing power. This is harder with fewer levels of R9 but
 still helps if you get used to it.
 
-### Theory 1 (20σ / 5k)
+#### R9 autoprestige expression
 
-You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
-### Theory 2 (25σ / 6k)
+###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
+
+{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+
+### Theory 1
+
+You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+
+### Theory 2
 
 This theory will be used as overnight until 1e350 Tau where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
-### Theory 3 (30σ / 7k)
+### Theory 3
 
 See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
-### Theory 4 (35σ / 8k)
+### Theory 4
 
 See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
 
@@ -107,7 +102,7 @@ making it the strongest theory until the very late game due
 to a very low multiplier decay rate. Here is what is known about optimal multiplier: \\(3\\) until \\(e25\\);
 \\(6\\) to \\(10\\) during mid to late game. Publishing at higher
 multiples is not drastically less efficient and allows for slightly less
-active play. When you have max milestones, use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://docs.google.com/document/d/1KfrfQzw6w3jecw3b2FCVNbpxdNYHsd-8TFufiUlvQFg/edit">Sim Guide</a> to give the multiplier for the next publication.
+active play. When you have max milestones, use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the multiplier for the next publication.
 
 ##### Active
 
@@ -136,10 +131,11 @@ After autobuy at e30, you should repeat this after every publication:
    graph.
 2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
    slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
-3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should
-   1. Buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase)
-   2. Buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap
-4. Once you reach your desired multiplier, publish. Rinse and repeat this for stonks.
+3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
+   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
+4. Once you reach your desired multiplier, publish. 
+5. Repeat this for stonks.
 
 ###### Commentary
 
@@ -185,7 +181,7 @@ seems to be about \\(7\\)-\\(12\\). Once all milestones, disable \\(c_3\\)
 still disabled. For idle/auto, you are going to just turn off \\(c_3\\)
 and \\(c_4\\).
 
-#### T6 milestone
+#### T6 milestone route
 
  - 0/0/0 → 0/1/0 → 1/1/0/0 → 1/1/1/0 → 1/0/0/3 → 1/0/1/3 → 1/1/1/3
  - 2 → 1 → 3 → 4 {2 and 3 both into 4} → 3 → 2
@@ -198,7 +194,7 @@ The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
 cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy.
 
-#### T7 milestone
+#### T7 milestone route
 
  - 0/0/0 → 0/1/0 → 0/1/1 and later 0/0/2 →0/0/3 → 0/1/3 → 1/1/1/1/1 → 1/1/0/1/3 or 1/1/1/1/2 → 1/1/1/1/3
  - 3 → 3 → 3 → 2 → 1 {5 into both 3 and 4} → 3 → 2
@@ -210,8 +206,8 @@ slow until you get to about \\(e60\\) (it took the sim 16 hours to get that
 far into the theory without R9). We highly recommend buying t8 for the achievement, then
 selling it right away and using those students for \\(\phi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
-through T8 faster than before. The current recommendation for
-your \\(\tau\\) distribution for T8 skip is as follows:
+through T8 faster than before. __You will need buy T8 again to get R9, and you should start R9 right away after that__ 
+The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
 Theory | Tau | Theory | Tau
 --- | --- | --- | ---
@@ -221,7 +217,7 @@ Theory | Tau | Theory | Tau
 **T4:** | e175 | **T8:** | Skip
 
 
-If your numbers are different, that is fine. You just need to reach 1350
+If your numbers are different, that is fine. You just need to reach 1e1350
 \\(\Pi\tau\\) to get to R9 at 14k.
 
 ### Theory 8 (55σ / 12k)

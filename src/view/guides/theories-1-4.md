@@ -6,10 +6,23 @@ contributors: "the Amazing Community"
 draft: true
 order: 4
 ---
+### Theory basics
+Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
+use them. However, the best publication multipliers vary from theory to theory and will
+decrease over time. If you are close to a multiplier you want, turn off autobuyer
+and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
+before the publication (turn on after you publish). Total \\(τ\\), found in the equation 
+or at the top of the screen, is a multiplicative combination of all \\(τ\\) from each
+theory.
+
+__Don’t be afraid to skip getting all milestones to work on the next or a
+better theory.__
+
+###### Note: If you see # → [# → # → #] → # in the milestone route of a theory, this is the section that has an active strategy tied to it.
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction](/guides/intro/#graduation-routing).
+Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 The graduation route for these theories.
 
@@ -51,10 +64,10 @@ up the theory.
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 ##### Third milestone
-\\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+\\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
-##### Sixth and Final milestone
-\\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρn)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+##### Fourth to Sixth milestone
+\\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 #### T1 strategy
 
@@ -64,7 +77,7 @@ publication multiplier oscillates between 2.5 and 5 past e150. Once you
 get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
 
 The active strat follows but only works when you have all milestones
-past e150). T1 is the only theory where the recent value of \\(ρ\\)
+past e150. T1 is the only theory where the recent value of \\(ρ\\)
 influences the rate of change of \\(ρ\\) therefore buying a variable as
 soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
@@ -89,7 +102,7 @@ Variable | Multiplier
 \\(c_3\\) | 2
 \\(c_4\\) | 1.01
 
-- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) and autobuy rest until ee6k.
+- Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
 
 ###### Commentary
 
@@ -149,7 +162,7 @@ boost.
 
 \\[\dot{ρ}=q_1r\\]
 
-##### Third and forth milestones
+##### Third and Forth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -157,7 +170,7 @@ boost.
 
 \\[\dot{ρ}=q_1r_1\\]
 
-##### Fifth to seventh milestones
+##### Fifth to Seventh milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -165,7 +178,7 @@ boost.
 
 \\[\dot{ρ}=q_1r_1^{1.15}\\]
 
-##### Eight to tenth milestones
+##### Eight to Tenth milestones
 
 \\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
 
@@ -246,7 +259,7 @@ noticeable. This strategy also works with \\(b_3\\) and \\(c_{13}\\) but is ofte
 not as common and good to note anyways.
 
 If you decide to buy manually, the focus areas are \\(b_1\\), \\(b_2\\), and \\(b_3\\) when
-e1 lower than \\(c_{11}\\), \\(c_{12}\), and \\(c_{13}\\). These all directly boost the production
+e1 lower than \\(c_{11}\\), \\(c_{12}\\), and \\(c_{13}\\). These all directly boost the production
 of \\(ρ_1\\) which is used for \\(\tau\\). After this, if doing the active exponent
 swapping strat in the previous paragraph, the next focus will be on \\(c_{21}\\),
 \\(c_{22}\\), and \\(c_{23}\\) as these boost \\(b_2\\) production which is the more likely cause
@@ -256,8 +269,8 @@ swapping strat in the previous paragraph, then all the remaining
 upgrades are at equivalent priority.
 
 At the end of any publication, around a 2-3 multiplier, you should turn
-off b1 and c31 as they cost rho1. You will cruise until you get to a
-3-4 multiplier. Publish and turn back on rho1 costing variables and
+off b1 and c31 as they cost \\(ρ_1\\). You will cruise until you get to a
+3-4 multiplier. Publish and turn back on \\(ρ_1\\) costing variables and
 repeat.
 
 ###### Commentary
@@ -308,7 +321,7 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
 
-##### Forth to sixth milestones
+##### Forth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
@@ -329,17 +342,17 @@ don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
 be bought \\(e1\\) cheaper than the priority tier above. If you decide to
 manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), and \\(q_1\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
+\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_4\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
 mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
 
  - 0/0/0 → [3/0/0 → 3/0/2] → 3/0/3 → 3/1/3
- - or equivalently 1 → 1 → 1 → 3 → 3 → 3 → 2
+ - 1 → 1 → 1 → 3 → 3 → 3 → 2
 
-### Recognmended Theory Taus (Pre-9k+)
+### Theory tier list (Pre-9k+)
 
-Before you reach 9k, these are the recognmended values for each theory.
+Before you reach 9k, these are the recommended values for each theory.
 You may not hit the values, but work on getting these theories up to these values later.
 This list is in order of priority.
 1. Theory 2 - up to e300-e350
