@@ -91,6 +91,10 @@ Variable | Multiplier
 
 - Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) and autobuy rest until ee6k.
 
+###### Commentary
+
+{{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
+
 #### T1 milestone route
 
  - 0/0/1 → 0/0/1/1 → 0/1/1/1 → 3/1/1/1
@@ -255,6 +259,10 @@ At the end of any publication, around a 2-3 multiplier, you should turn
 off b1 and c31 as they cost rho1. You will cruise until you get to a
 3-4 multiplier. Publish and turn back on rho1 costing variables and
 repeat.
+
+###### Commentary
+
+{{ yt.embed('https://www.youtube.com/watch?v=kqnBfdOI34c') }}
 
 #### T3 milestone route
  - Active:
