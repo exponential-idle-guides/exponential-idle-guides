@@ -21,13 +21,12 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 ### Push f(t) with 3R9 seapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
-1. Wait till \\(f(t)\\) stops growing without student respec with R9 in pushing \\(\tau\\).
+1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only
-   do this when you are near a graduation mark.
-4. Respec the all 30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9. When you are later in a graduation,
-    you will ned to prestige manually
+   do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
+4. Respec all 30 students from R9.
+5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
 #### R9 autoprestige expression
@@ -40,16 +39,63 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
-Theory | Idle | Active
---- | --- | ---
-T1 | Disable c1/c2 | See [T1 routing](#t1-routing)
-T2 | All on | q4/r4 → q3/r3 → etc manual buy
-T3 | Disable c11/c13/c21/c33 | ← with b2→b3→b1 manual buy
-T4 | Disable all but c3/q1/q2 | ← with chasing doublings
-T5 | See [T5 routing](#t5-routing) | See [T5 routing](#t5-routing)
-T6 | Disable c3/c4 | ← with Auto q2/r2/c2/c5 & Manual rest
-T7 | Disable c1/c2/c3 | ← same
-T8 | All on | ← with chasing doublings
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Idle</th>
+         <th>Active</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>Disable c1/c2</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>All variables on</td>
+         <td>q4/r4 → q3/r3 → etc manual buy</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>Disable </td>
+         <td>Same as idle but with  </td>
+      </tr>
+               <tr>
+         <td class="leftHeader"></td>
+         <td>c11, c13, c21, c33</td>
+         <td>b2 → b4 → b1 manual buy</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>Only q1, q2, c3</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T5</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T6</td>
+         <td>Disable c3, c4</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T7</td>
+         <td>Disable c1, c2, c3</td>
+         <td>Disable c1, c2</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T8</td>
+         <td>All variables on</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Equation for when to publish
 
@@ -61,22 +107,6 @@ ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
 ```
 
 Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
-
-### Idle vs Manual strat efficiency
-
-From Antharion, the ratio represents \\(log(\tau)/hour\\) efficiency of
-idle vs manual buying strategies. This does not take into account [cruising](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#theory-basics). T7 is unknown because the current manual strat is very complicated (not human viable) and isn't consistent enough to put on the chart.
-
-Theory | Manual | Auto | Ratio
----|---|---|---
- T1 | 1.21579  | 0.965926 | 1.25868
- T2 | 0.677375 | 0.677375 | 1
- T3 | 1.42296  | 1.15424  | 1.23281
- T4 | 0.674164 | 0.589581 | 1.14346
- T5 | 1.31154  | 0.419708 | 3.12489
- T6 | 1.14383  | 0.993886 | 1.15544
- T7 | Unknown   | 1.23645  | TBD
- T8 | 1.51303  | 1.29569  | 1.16774
 
 ### Theory routing
 
@@ -98,7 +128,7 @@ upgrade because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\
 have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\) you are reducing your \\(ρ_{n+1}\\)
 by roughly a factor of 10.
 
-There are \\(3\\) terms the influence the rate of change of \\(\rho\\) all are
+There are \\(3\\) terms that influence the rate of change of \\(\rho\\) all are
 affected by the previous state of \\(\rho\\). Let's ignore the 1st since it
 has such a small influence and consider the above case to determine when
 an upgrade would be better. For every magnitude of \\(10\\), term \\(2\\) gains
@@ -110,12 +140,42 @@ decrease your ρdot for each upgrade that is approximately at the ratios
 detailed below. Buy each upgrade when \\(ρ_n\\) is N times the costs of a
 given upgrade:
 
-Variable | Multiplier | Variable | Multiplier
---- | --- | --- | ---
-\\(c_1\\) | 10000 | \\(c_4\\) | 1.01
-\\(c_2\\) | 1000 | \\(q_1\\) | 5.0
-\\(c_3\\) | 2 | \\(q_2\\) | 1.15
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Multiplier</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<small><sub>1</sub></small></td>
+         <td>10,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">c<small><sub>4</sub></small></td>
+         <td>1.01</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>2</sub></small></td>
+         <td>1,000</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>1</sub></small></td>
+         <td>5.0</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<small><sub>3</sub></small></td>
+         <td>2</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">q<small><sub>2</sub></small></td>
+         <td>1.15</td>
+      </tr>
+   </tbody>
+</table>
 
+###### *c<sub>1</sub> and c<sub>2</sub> are not used later because they become detrimental and should be disabled.
 
 {{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
@@ -150,7 +210,7 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 
-T5 will always give its best results from active play however, after
+T5 will always give its best results from active play, however, after
 step 3 you can still get good results while auto buying \\(q_1\\) and manually
 purchasing \\(c_1\\) every 10-15min. Making the theory slightly less active.
 
@@ -160,13 +220,34 @@ Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3. \\(q\\) begins to slow down when you reach
 \\(2q > c_2*c_3^{m_3}\\).
 
-#### Theory 8
+#### Theory 8 (additional information)
 
-Attractor | Starting Positions (reset every pub) | Time Step
---- | --- | ---
-**Lorenz** | -6, -8, 26 | 0.02
-**Chen** | -10.6, -4.4, 28.6 | 0.002
-**Rossler** | -6, 15, 0 | 0.00014
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Starting Positions</th>
+         <th>Time Step</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">Lorenz</td>
+         <td>(-6, -8, 26)</td>
+         <td>0.02</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Chen</td>
+         <td>(-10.6, -4.4, 28.6)</td>
+         <td>0.002</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">Rossler</td>
+         <td>(-6, 15, 0)</td>
+         <td>0.00014</td>
+      </tr>
+   </tbody>
+</table>
 
 ### How to respec
 

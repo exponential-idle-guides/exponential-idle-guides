@@ -40,12 +40,12 @@ This is the reason why T5 is considered an active theory and T2 is considered an
 #### Multi Manual
 This is the optimal multiplier that you should publish at for the given manual strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Multi Auto
 This is the optimal multiplier that you should publish at for the given active strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
-You may want to do multiple simulations after each publication for some theories but is not nessesary.
+You may want to do multiple simulations after each publication for some theories but is not necessary.
 
 #### Strategy Manual and Strategy Auto
 This is the optimal strategy for active or idle playing (for auto) of
@@ -71,16 +71,53 @@ that publication. See below for what each part means.
    see anything but T8R, but it has happened.
 
 ##### Variables to always buy
-Theory | Variables
---- | ---
-T1 | q1, q2, c4
-T2 | all variables
-T3 | b1, b2, b3, <br> c12, c22, c23, <br> c31, c32
-T4 | q1, q2, c3
-T5 | q1, q2, c3
-T6 | r1, r2, q1, q2
-T7 | q1, c4, c5, c6
-T8 | c1, c2
+
+<table class="newwords">
+    <thead>
+        <tr>
+            <th class="invisible"></th>
+            <th>Variables</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="leftHeader">T1</td>
+            <td>q1, q2, c4</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T2</td>
+            <td>all variables</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T3</td>
+            <td>b1, b2, b3, c12</td>
+        </tr>
+                <tr>
+            <td class="leftHeader"></td>
+            <td>c22, c23, c31, c32</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T4</td>
+            <td>q1, q2, c3</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T5</td>
+            <td>q1, q2, c3</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T6</td>
+            <td>r1, r2, q1, q2</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T7</td>
+            <td>q1, c2, c5, c6</td>
+        </tr>
+        <tr>
+            <td class="leftHeader">T8</td>
+            <td>c1, c2</td>
+        </tr>
+    </tbody>
+</table>
 
 If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number changes for \\(c_3\\), \\(c_4\\), and \\(c_5\\).
 
@@ -91,9 +128,9 @@ If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number
 ##### Time Manual and Time Auto
 This is the time (in hours) it should take to publish for the active or idle strategy.
 
-The simulator only runs up to 720 hours per theory per manual/auto section.
+The simulator only runs up to 720-hours per theory per manual/auto section.
 Any results from a 720 hour simulation should be treated with caution as they never finished their publication.
-If you get a negative /hour result from hitting this 720 hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
+If you get a negative /hour result from hitting this 720-hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
 
 ##### Delta Active and Delta Idle
 This will tell you how much \\(\tau\\) you are expected to gain for the active or idle strategy.

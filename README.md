@@ -8,6 +8,8 @@ was created by [TickleThePanda](https://ticklethepanda.dev).
 The site is built using [11ty](https://www.11ty.dev) and hosted on
 [Netlify](https://www.netlify.com/).
 
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb7747da-e60f-4e04-b0da-dcd4eb597e08/deploy-status)](https://app.netlify.com/sites/exponential-idle-guides/deploys)
 ### Prerequisites
 
 Pre-requisites to build and develop this site:
