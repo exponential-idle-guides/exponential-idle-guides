@@ -7,6 +7,8 @@ draft: true
 order: 8
 ---
 
+{% import "embed-yt.njk" as yt %}
+
 ## Overall settings
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
