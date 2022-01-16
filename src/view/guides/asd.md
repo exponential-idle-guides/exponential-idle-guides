@@ -185,7 +185,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=6NfqiX_WFaM') }}
+{{ yt.embed('https://www.youtube.com/embed/6NfqiX_WFaM') }}
 
 ## Arrow Puzzle
 
@@ -205,7 +205,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=p0Jr52NlhFw') }}
+{{ yt.embed('https://www.youtube.com/embed/p0Jr52NlhFw') }}
 
 ### Medium
 
@@ -226,7 +226,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=n1lXPOeouT4') }}
+{{ yt.embed('https://www.youtube.com/embed/n1lXPOeouT4') }}
 
 ### Propagation (for Hard and Expert)
 
@@ -249,7 +249,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=wedx6RXGVz8') }}
+{{ yt.embed('https://www.youtube.com/embed/wedx6RXGVz8') }}
 
 ### Hard and Expert
 
@@ -267,4 +267,4 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 </ol>
 
 #### Example
-{{ yt.embed('https://www.youtube.com/watch?v=p073qSqL7EU') }}
+{{ yt.embed('https://www.youtube.com/embed/p073qSqL7EU') }}
