@@ -107,8 +107,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=e3devm2D-3s') }}
-
+{{ yt.embed('https://www.youtube.com/embed/e3devm2D-3s') }}
 ## Torus Puzzle
 
 ### Easy
@@ -127,7 +126,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=e8f1ohtGAW8') }}
+{{ yt.embed('https://www.youtube.com/embed/e8f1ohtGAW8') }}
 
 ### Medium
 
@@ -154,7 +153,7 @@ The algorithm goes as follows:
 
 #### Example
 
-{{ yt.embed('https://www.youtube.com/watch?v=6mQNMKwsOi8') }}
+{{ yt.embed('https://www.youtube.com/embed/6mQNMKwsOi8') }}
 
 ### Hard
 
