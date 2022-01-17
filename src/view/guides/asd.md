@@ -9,7 +9,7 @@ order: 8
 
 {% import "embed-yt.njk" as yt %}
 
-## Overall settings
+## Overall setting
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
 
@@ -108,6 +108,7 @@ The algorithm goes as follows:
 #### Example
 
 {{ yt.embed('https://www.youtube.com/embed/e3devm2D-3s') }}
+
 ## Torus Puzzle
 
 ### Easy
