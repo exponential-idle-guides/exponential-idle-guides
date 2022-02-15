@@ -266,7 +266,7 @@ A useful strategy in the later stages of a graduation is \\(t\\) stacking. It re
 
 Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\phi\\), and "Skipmas", students that will yield 0 extra \\(\phi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(f(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\phi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and Skip Skipmas.
 
-For normal distribition of stars, \\(t\\), and accel usage, the students that you should skip (for 1d\\(\sigma\\):
+For normal distribution of stars, \\(t\\), and accel usage, the students that you should skip (for 1d\\(\sigma\\):
 
 ```
 144, 146, 149, 152, 155, 158, 161, 164, 166, 168, 172, 176, 
