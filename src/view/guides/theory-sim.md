@@ -19,35 +19,35 @@ website.
 
 ![Theory Sim Example Outputs](/images/TheorySimExampleOutputs.png)
 
-### Column explanations
-#### Manual
+### **Column explanations**
+#### **Manual**
 This refers to the \\(\tau/hour\\) that you will gain from the active strategy of that theory.
 This is defined as \\(log(\tau\\) \\(gained)/publication\\) \\(time\\) \\(in\\) \\(hours\\).
 For example, if you gain 1e10 \\(\tau\\) over a 2 hr run then your rate for that theory is 5 \\(\tau/hr\\).
 Use these values to compare to other theories if you plan to do active strategies for that following publication.
 
-#### Auto
+#### **Auto**
 This is the \\(\tau/hour\\) that you will gain from the idle strategy of the theory.
 This is defined the same way as Manual.
 Use these values to compare to other theories if you plan to do active strategies for that following publication.
 
-#### Ratio
+#### **Ratio**
 This is the ratio of the manual:auto for \\(\tau\\) gain (2nd column/3rd column).
 For ratios closer to 1, you should consider only running these theories while offline/idle.
 For ratios much larger than 1, you should consider only running these theories while actively or semi-actively playing the game and not while offline.
 This is the reason why T5 is considered an active theory and T2 is considered an idle theory.
 
-#### Multi Manual
+#### **Multi Manual**
 This is the optimal multiplier that you should publish at for the given manual strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
 You may want to do multiple simulations after each publication for some theories but is not necessary.
 
-#### Multi Auto
+#### **Multi Auto**
 This is the optimal multiplier that you should publish at for the given active strategy for that **single publication**.
 The multiplier can change drastically between publications based on theory, when variables are purchased, and more.
 You may want to do multiple simulations after each publication for some theories but is not necessary.
 
-#### Strategy Manual and Strategy Auto
+#### **Strategy Manual and Strategy Auto**
 This is the optimal strategy for active or idle playing (for auto) of
 that publication. See below for what each part means.
 
@@ -70,7 +70,57 @@ that publication. See below for what each part means.
    represent the three attractors and which to have on. Rare to
    see anything but T8R, but it has happened.
 
-##### Variables to always buy
+#### **Play Strategies**
+Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will umprove theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
+- **T3Play2**: (what is meant by "buy var at X ratio with respect to cyy": buy var as soon as its cost times X is less than cyy's cost)
+
+    - Recovery stage (pub multi < 1) :
+        - c32: autobuy
+        - variables purchased with respect to c32:
+            - b2: 5x ratio
+            - c12: 100x ratio
+            - c22: 2.5x ratio
+        - c23: autobuy
+        - Variables purchased with respect to c23:
+            - b3: 8x ratio
+            - c33: 10x ratio
+        - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
+  - Post recovery (pub multi > 1) :
+    -  c12: autobuy
+    - Variables purchased with respect to c12:
+        - b2: 8x ratio
+        - c22: 8x ratio
+        - c32: 8x ratio
+    - c23: autobuy
+    - Variables with respect to c23:
+      -  b3: 8x ratio
+      - All other variables disabled
+   - Coasting (defined as pub multi > 2) :
+      - Autobuy b2, b3, c12, c23
+      - All other variables disabled
+- **T3NoP1C13rcv** (AKA T3Idle): (means no rho1, no c13 + do something at recovery)
+  - Recovery (pub multi < 1) :
+    - Autobuy b2, b3, c12, c22, c23, c32, c33
+    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
+  - Post recovery (pub multi > 1) :
+    - Autobuy b2, b3, c12, c23
+    - All other variables disabled
+- **T3NoP1C13rcvNoC12**: (means no rho1, no c13 + do something at recovery + c12 off until some condition)
+  - Same as T3NoP1C13rcv, but only start to autobuy c12 when (pub time) > (recovery time of T3NoP1C13rcv)
+  - Note: in order to get recovery time of T3NoP1C13rcv, use det (=detailed) mode in https://bit.ly/AnthSim
+- **T7Play-25**:
+  - Autobuy c6
+  - Buy c4 when 10x less than rho
+  - Buy q1, c5 when 4x less (aka 25%, hence the name) than c6
+  - Disable other variables
+- **T8RPlay**:
+  - Autobuy c2, c4
+  - Buy c1 when 8x less than min(c2,c4)
+  - Buy c3 when 2.5x less than min(c2,c4)
+  - Buy c5 when 4x less than min(c2,c4)
+    ##### Note: "min(c2,c4)" means to buy with respect to c2 or c4, whichever is smaller.
+
+##### **Variables to always buy**
 
 <table class="newwords">
     <thead>
@@ -125,14 +175,14 @@ If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number
 
 \*\*Table excludes variables that are bought sometimes, but not always such as T5 active.
 
-##### Time Manual and Time Auto
+##### **Time Manual and Time Auto**
 This is the time (in hours) it should take to publish for the active or idle strategy.
 
 The simulator only runs up to 720-hours per theory per manual/auto section.
 Any results from a 720 hour simulation should be treated with caution as they never finished their publication.
 If you get a negative /hour result from hitting this 720-hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
 
-##### Delta Active and Delta Idle
+##### **Delta Active and Delta Idle**
 This will tell you how much \\(\tau\\) you are expected to gain for the active or idle strategy.
 
 Delta Active and Delta Idle are defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) instead of \\(\tau_{final}\\) - \\(\tau_{initial}\\).

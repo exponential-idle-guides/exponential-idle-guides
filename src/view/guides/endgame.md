@@ -274,12 +274,23 @@ The \\(f(t)\\) values are:
 
 29800,30200,30800,31400,32000,32600,33200,33800,34200,34600,35400,36200,37000,37800,38600,39000,39600,40600,41600,42600,43600,44200,44600,45000,45800,47000,48200,49000,49400,50200,50600,51200,51800,52200,53200,54600,56000,56800,57400,58200,58800,59400,60200,60600,61800,63400,64200,65000,65800,66200,66600,67800,68200,69800
 
+Explanation by: Snaeky and AfuroZamurai
+
 ### Supremacy Equation Past 48k
 
-When you get to ee48k, you will have all of the psi upgrades and you can get rid of the old 
-Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that
-we have right now because of how Supremacy upgrades are spaced. It is not worth pushing past an 
-upgrade as there is no bonus to phi from psi, only dpsi. When you hit about ft 50k you can get to about
+When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to phi from \\(\psi\\), only d\\(\psi\\). When you hit about ft 50k you can skip buying most spi upgrads and be able to recover fairly quickly. The Supremacy Equations for the f(t) that we know are as follows:
+
+Suprem Equation For 48k:
+
+```
+(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)<e411&&psi+dpsi>e411)||(costUpS(3)<e511&&psi+dpsi>e511)||(costUpS(3)<e531&&psi+dpsi>e531)||(costUpS(3)<e551&&psi+dpsi>e551)||(costUpS(3)<e571&&psi+dpsi>e571)
+```
+
+Suprem Equation 52k:
+
+```
+(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)<e571&&psi+dpsi>e571)||(costUpS(3)<e511&&psi+dpsi>e511)
+```
 
 #### Lemma
 
