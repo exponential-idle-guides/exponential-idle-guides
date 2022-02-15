@@ -93,17 +93,20 @@ th, td {
 	font-weight: bold;
 	background-color:#5a5858;
 	border-right: 5px solid black;
-	border-bottom: 5px solid black;
 	vertical-align: center;
 }
 .PlayStrats .topHeader {
 	background-color:#5a5858;
 	border-bottom: none;
 }
-.PlayStrats .lefttopHeader {
+.PlayStrats .leftlastHeader {
 	background-color:#5a5858;
 	border-right: 5px solid black;
+	border-bottom: 5px solid black;
 	border-bottom: none;
+}
+.PlayStrats .indent {
+	margin-left: 40px;
 }
 .PlayStrats .last_row {
 	border-bottom: 5px solid black;
@@ -121,12 +124,6 @@ th, td {
 }
 .PlayStrats .arrow {
 	padding: 0em 0em 0em 0em;
-}
-.PlayStrats tr td ol {
-	list-style-type: none;
-}
-.PlayStrats tr td ol ol {
-	list-style-type: i;
 }
 
 //Graduation Routing
