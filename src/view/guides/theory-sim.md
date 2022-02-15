@@ -79,29 +79,27 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <th>T3Play2</th>
   </thead>
   <tbody>
-    <tr class="invisible"></tr>
+    <tr >
+      <td class="leftHeader"></td>
+      <td>"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as soon as var_cost * X < cyy_cost</td>
+    </tr>
     <tr>
+      <td class="leftHeader">Recovery stage:<br>(pub multi < 1)</td>>
       <td>
-        <ol type="I">
-          <li>"Variables purchased with respect to c<sub>yy</sub>":</li>
-          <li class=invisible>buy var as soon as var_cost * X < cyy_cost</li>
-          <li>Recovery stage (pub multi < 1):</li>
-          <ol type="a">
-            <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
-            <li>Variables purchased with respect to c<sub>32</sub>:</li>
-            <ol type="i">
-              <li>b<sub>2</sub>: 5x ratio</li>
-              <li>c<sub>12</sub>: 100x ratio</li>
-              <li>c<sub>22</sub>: 2.5x ratio</li>
-            </ol>
-            <li>Variables purchased with respect to c<sub>23</sub>:</li>
-            <ol type="i">
-              <li>b<sub>2</sub>: 5x ratio</li>
-              <li>c<sub>12</sub>: 100x ratio</li>
-              <li>c<sub>22</sub>: 2.5x ratio</li>
-            </ol>
+        <ol type="I" class="inside_table">
+          <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
+          <li>Variables purchased with respect to c<sub>32</sub>:</li>
+          <ol type="i" class="inside_table">
+            <li>b<sub>2</sub>: 5x ratio</li>
+            <li>c<sub>12</sub>: 100x ratio</li>
+            <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
-          <li>Move the last column up or down until solved.</li>
+          <li>Variables purchased with respect to c<sub>23</sub>:</li>
+          <ol type="i" class="inside_table">
+            <li>b<sub>2</sub>: 5x ratio</li>
+            <li>c<sub>12</sub>: 100x ratio</li>
+            <li>c<sub>22</sub>: 2.5x ratio</li>
+          </ol>
         </ol>
       </td>
     </tr>
