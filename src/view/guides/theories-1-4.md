@@ -159,6 +159,8 @@ For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
 
 Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
 
+{{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
+
 #### T1 milestone route
 
 <table class="milestone_routing">
@@ -180,7 +182,7 @@ Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and 
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -441,7 +443,7 @@ to run idle overnight.
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
