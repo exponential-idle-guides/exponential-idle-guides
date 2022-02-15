@@ -93,7 +93,8 @@ th, td {
 	font-weight: bold;
 	background-color:#5a5858;
 	border-right: 5px solid black;
-	vertical-align: center;
+	position: relative;
+	top: 50%;
 }
 .PlayStrats .topHeader {
 	background-color:#5a5858;
