@@ -125,7 +125,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>
-      <td class="last_row"></td>
+      <td class="last_row">
         <ol class="inside_table">
           <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
           <li>Disable Remaining Variables</li>
