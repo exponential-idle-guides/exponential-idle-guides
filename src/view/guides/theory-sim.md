@@ -84,7 +84,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td>
         <ol type="I">
           <li>"Variables purchased with respect to c<sub>yy</sub>":</li>
-          <li type="none">buy var as soon as var_cost * X < cyy_cost</li>
+          <li class=invisible>buy var as soon as var_cost * X < cyy_cost</li>
           <li>Recovery stage (pub multi < 1):</li>
           <ol type="a">
             <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
