@@ -329,14 +329,14 @@ and \\(c_4\\).
 
 #### T7 overview
 
-T7 can be summarized as a maximization problem : given a surface in the 3-dimensionnal space,
+T7 can be summarized as a maximization problem : given a surface in 3-dimensional space,
 you want to find its highest altitude by moving along the surface, always in the direction
 of steepest ascent (that's basically a gradient ascent).
 The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set 
 of points \\((x,y,g(x,y))\\), see attached image).
 \\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
 maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
-Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditionned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
+Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditioned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
 This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
 point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
 (i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of 
