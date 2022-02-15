@@ -253,7 +253,7 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 This theory has the lowest decay of all the theories. It will be second
 place to T5 until about e750 and is the only theory that can
-get to \\(>e1000\\). You should overnight this after you get your T2 to
+get to \\(>e1100τ\\). You should overnight this after you get your T2 to
 \\(e350+\\). This is the best idle theory. [Video of T6 at Endgame](https://bit.ly/t6endgame)
 
 The optimal publication multiplier is still unknown but empirically
