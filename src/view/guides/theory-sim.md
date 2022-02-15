@@ -80,7 +80,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   </thead>
   <tbody>
     <tr >
-      <td class="leftHeader">Notation:</td>
+      <td class="lefttopHeader"></td>
       <td class="topHeader">"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as when var_cost * X ≤ cyy_cost</td>
     </tr>
     <tr>
@@ -100,7 +100,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
-          <li>Disable Remaining Variables<br><sub>will need to buy 1 purchase at start</sub></li>
+          <li class="last_row">Disable Remaining Variables<br><sub>will need to buy 1 purchase at start</sub></li>
         </ol>
       </td>
     </tr>
@@ -119,7 +119,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
           <ol type="i" class="inside_table">
             <li>b<sub>3</sub>: 8x ratio</li>
           </ol>
-          <li>Disable Remaining Variables</li>
+          <li class="last_row">Disable Remaining Variables</li>
         </ol>
       </td>
     </tr>
@@ -128,7 +128,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td>
         <ol type="none" class="inside_table">
           <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
-          <li>Disable Remaining Variables</li>
+          <li class="last_row">Disable Remaining Variables</li>
         </ol>
       </td>
     </tr>

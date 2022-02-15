@@ -93,10 +93,19 @@ th, td {
 	font-weight: bold;
 	background-color:#5a5858;
 	border-right: 5px solid black;
+	border-bottom: 5px solid black;
 }
 .PlayStrats .topHeader {
 	background-color:#5a5858;
 	border-bottom: none;
+}
+.PlayStrats .lefttopHeader {
+	background-color:#5a5858;
+	border-right: 5px solid black;
+	border-bottom: none;
+}
+.PlayStrats .last_row {
+	border-bottom: 5px solid black;
 }
 .PlayStrats th {
 	background-color:#7c7c7c; 
