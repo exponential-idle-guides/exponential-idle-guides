@@ -81,51 +81,51 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as when var_cost * X ≤ cyy_cost</td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var as when var_cost * X ≤ cyy_cost</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>c<sub>32</sub> and c<sub>23</sub>: autobuy</td>
+      <td>c<sub><small>32</small></sub> and c<sub><small>23</small></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub>32:</sub></td>
+      <td>Variables purchased with respect to c<sub><small>32:</small></sub></td>
     </tr>
     <tr>
       <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
-      <td class="indent">b<sub>2</sub>: 5x ratio<br>c<sub>12</sub>: 100x ratio<br>c<sub>22</sub>: 2.5x ratio</td>
+      <td class="indent">b<sub><small>2</small></sub>: 5x ratio<br>c<sub><small>12</small></sub>: 100x ratio<br>c<sub><small>22</small></sub>: 2.5x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub>23</sub>:</td>
+      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub>3</sub>: 8x ratio<br>c<sub>33</sub>: 10x ratio</td>
+      <td class="indent">b<sub><small>3</small></sub>: 8x ratio<br>c<sub><small>33</small></sub>: 10x ratio</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
-      <td class="last_row">Disable remaining Variables<br><sub>*Will have to purchase once at start</sub></td>
+      <td class="last_row">Disable remaining Variables<br><sub><small>*Will have to purchase once at start</small></sub></td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>c<sub>12</sub> and c<sub>23</sub>: autobuy</td>
+      <td>c<sub><small>12</small></sub> and c<sub><small><small>23</small></small></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub>12:</sub></td>
+      <td>Variables purchased with respect to c<sub><small>12:</small></sub></td>
     </tr>
     <tr>
       <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
-      <td class="indent">b<sub>2</sub>: 8x ratio<br>c<sub>22</sub>: 8x ratio<br>c<sub>32</sub>: 8x ratio</td>
+      <td class="indent">b<sub><small>2</small></sub>: 8x ratio<br>c<sub><small>22</small></sub>: 8x ratio<br>c<sub><small>32</small></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub>23</sub>:</td>
+      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub>3</sub>: 8x ratio</td>
+      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
@@ -133,7 +133,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftlastHeader">Coasting:<br>(pub multi >2)</td>
-      <td>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy<br>Disable Remaining Variables</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy<br>Disable Remaining Variables</td>
     </tr>
   </tbody>
 </table>
