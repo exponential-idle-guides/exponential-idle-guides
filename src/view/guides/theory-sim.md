@@ -107,34 +107,37 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="leftlastHeader"></td>
       <td class="last_row">Disable remaining Variables<br><sub>*Will have to purchase once at start</sub></td>
     </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub>12</sub> and c<sub>23</sub>: autobuy</td>
     </tr>
     <tr>
-      <td class="leftHeader">Post-Recovery:<br>(pub multi ≥ 1)</td>
-      <td class="last_row">
-        <ol class="inside_table">
-          <li>c<sub>12</sub> and c<sub>23</sub>: autobuy</li>
-          <li>Variables purchased with respect to c<sub>12</sub>:</li>
-          <ol class="inside_table">
-            <li>b<sub>2</sub>: 8x ratio</li>
-            <li>c<sub>22</sub>: 8x ratio</li>
-            <li>c<sub>32</sub>: 8x ratio</li>
-          </ol>
-          <li>Variables purchased with respect to c<sub>23</sub>:</li>
-          <ol class="inside_table">
-            <li>b<sub>3</sub>: 8x ratio</li>
-          </ol>
-          <li>Disable Remaining Variables</li>
-        </ol>
-      </td>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub>12:</sub></td>
     </tr>
     <tr>
-      <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>
-      <td class="last_row">
-        <ol class="inside_table">
-          <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
-          <li>Disable Remaining Variables</li>
-        </ol>
-      </td>
+      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
+      <td class="indent">b<sub>2</sub>: 8x ratio<br>c<sub>22</sub>: 8x ratio<br>c<sub>32</sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub>23</sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub>3</sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">Disable remaining Variables</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Coasting:</td>
+      <td>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(pub multi >2)</td>
+      <td class="last_row">Disable Remaining Variables</td>
     </tr>
   </tbody>
 </table>
