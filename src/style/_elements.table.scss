@@ -122,6 +122,12 @@ th, td {
 .PlayStrats .arrow {
 	padding: 0em 0em 0em 0em;
 }
+.PlayStrats ol {
+	list-style-type: none;
+}
+.PlayStrats ol ol {
+	list-style-type: i;
+}
 
 //Graduation Routing
 .graduation_routing {
