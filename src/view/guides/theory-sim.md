@@ -72,19 +72,20 @@ that publication. See below for what each part means.
 
 #### **Play Strategies**
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
-- **T3Play2**: (what is meant by "buy var at X ratio with respect to cyy": buy var as soon as its cost times X is less than cyy's cost)
+- **T3Play2**: 
+  - "buy var at X ratio with respect to cyy": buy var as soon as \\(var_cost * X < cyy_cost\\)
 
-    - Recovery stage (pub multi < 1) :
-        - c32: autobuy
-        - variables purchased with respect to c32:
-            - b2: 5x ratio
-            - c12: 100x ratio
-            - c22: 2.5x ratio
-        - c23: autobuy
-        - Variables purchased with respect to c23:
-            - b3: 8x ratio
-            - c33: 10x ratio
-        - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
+  - Recovery stage (pub multi < 1) :
+      - c32: autobuy
+      - variables purchased with respect to c32:
+          - b2: 5x ratio
+          - c12: 100x ratio
+          - c22: 2.5x ratio
+      - c23: autobuy
+      - Variables purchased with respect to c23:
+          - b3: 8x ratio
+          - c33: 10x ratio
+      - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
   - Post recovery (pub multi > 1) :
     -  c12: autobuy
     - Variables purchased with respect to c12:
