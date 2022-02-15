@@ -1,7 +1,7 @@
 ---
 title: "Theories 5-8"
 description: "Our guide for routing through and understanding theories 5 to 8. We provide some strategies to help you make progress."
-author: "LE★Baldy & Snaeky"
+author: "LE★Baldy, Snaeky, & Xelaroc"
 contributors: "the Amazing Community"
 draft: true
 order: 5
