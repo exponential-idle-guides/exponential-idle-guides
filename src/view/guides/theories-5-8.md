@@ -223,7 +223,7 @@ slightly less active.
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -300,7 +300,7 @@ and \\(c_4\\).
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -393,7 +393,7 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -557,7 +557,7 @@ the rest after. This continues to max at 2/3/3/3.
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
