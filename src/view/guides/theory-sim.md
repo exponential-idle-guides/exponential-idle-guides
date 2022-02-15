@@ -86,22 +86,22 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>>
       <td class="last_row">
-        <ol>
+        <ol type="none">
           <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
           <li>Variables purchased with respect to c<sub>32</sub>:</li>
-          <ol>
+          <ol type="i">
             <li>b<sub>2</sub>: 5x ratio</li>
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
           <li>Variables purchased with respect to c<sub>23</sub>:</li>
-          <ol>
+          <ol type="i">
             <li>b<sub>2</sub>: 5x ratio</li>
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
           <li>Disable Remaining Variables<br><sub>will need to buy 1 purchase at start</sub></li>
-        </olclass=>
+        </ol>
       </td>
     </tr>
     <tr>
