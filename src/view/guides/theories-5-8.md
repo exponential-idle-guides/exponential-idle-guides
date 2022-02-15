@@ -329,7 +329,7 @@ and \\(c_4\\).
 
 #### T7 overview
 
-T7 can be summerized as a maximization problem : given a surface in the 3-dimensionnal space,
+T7 can be summarized as a maximization problem : given a surface in the 3-dimensionnal space,
 you want to find its highest altitude by moving along the surface, always in the direction
 of steepest ascent (that's basically a gradient ascent).
 The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set 
