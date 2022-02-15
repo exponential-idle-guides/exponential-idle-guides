@@ -132,7 +132,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="last_row">Disable remaining Variables</td>
     </tr>
     <tr>
-      <td class="leftHeader">Coasting:<br>(pub multi >2)</td>
+      <td class="leftlastHeader">Coasting:<br>(pub multi >2)</td>
       <td>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy<br>Disable Remaining Variables</td>
     </tr>
   </tbody>
