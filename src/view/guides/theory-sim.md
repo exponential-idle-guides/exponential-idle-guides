@@ -71,7 +71,7 @@ that publication. See below for what each part means.
    see anything but T8R, but it has happened.
 
 #### **Play Strategies**
-Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will umprove theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
+Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
 - **T3Play2**: (what is meant by "buy var at X ratio with respect to cyy": buy var as soon as its cost times X is less than cyy's cost)
 
     - Recovery stage (pub multi < 1) :
