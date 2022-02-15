@@ -79,12 +79,12 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <th>T3Play2</th>
   </thead>
   <tbody>
-    <tr >
+    <tr>
       <td class="lefttopHeader"></td>
       <td class="topHeader">"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as when var_cost * X ≤ cyy_cost</td>
     </tr>
     <tr>
-      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>>
+      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
       <td class="last_row">
         <ol class="inside_table">
           <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
@@ -105,7 +105,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       </td>
     </tr>
     <tr>
-      <td class="leftHeader">Post-Recovery:<br>(pub multi ≥ 1)</td>>
+      <td class="leftHeader">Post-Recovery:<br>(pub multi ≥ 1)</td>
       <td class="last_row">
         <ol class="inside_table">
           <li>c<sub>12</sub> and c<sub>23</sub>: autobuy</li>
@@ -124,8 +124,8 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       </td>
     </tr>
     <tr>
-      <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>>
-      <td class="last_row">
+      <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>
+      <td class="last_row"></td>
         <ol class="inside_table">
           <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
           <li>Disable Remaining Variables</li>
