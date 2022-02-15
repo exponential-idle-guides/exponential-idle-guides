@@ -288,11 +288,6 @@ and \\(c_4\\).
          <td class="arrow">→</td>
          <td>1/1/1/3</td>
       </tr>
-      <tr>
-         <td>2/0/3/0</td>
-         <td class="arrow">→</td>
-         <td>2/3/3/3</td>
-      </tr>
    </tbody>
 </table>
 <table class="milestone_routing">
