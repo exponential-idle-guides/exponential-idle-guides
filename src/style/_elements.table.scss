@@ -114,10 +114,12 @@ th, td {
 	background-color:#7c7c7c; 
 	border-bottom: 5px solid black;
 	text-align: center;
-}
-.PlayStrats th, td {
 	padding: 0.3em 0.4em 0.3em 0.4em;
 }
+.PlayStrats td {
+	text-align: left;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+}	
 .PlayStrats sub {
 	vertical-align: sub
 }
