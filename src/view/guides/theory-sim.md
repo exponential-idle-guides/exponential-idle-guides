@@ -74,7 +74,7 @@ that publication. See below for what each part means.
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
 - **T3Play2**: 
   - "buy var at X ratio with respect to cyy": 
-    - buy var as soon as \\(var_cost * X < cyy_cost\\)
+    - buy var as soon as var_cost * X < cyy_cost
   - Recovery stage (pub multi < 1) :
     - c32: autobuy
     - variables purchased with respect to c32:
