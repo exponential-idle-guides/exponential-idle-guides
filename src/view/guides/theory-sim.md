@@ -81,12 +81,12 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr >
       <td class="leftHeader">Notation:</td>
-      <td class="topHeader">"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as soon as var_cost * X < cyy_cost</td>
+      <td class="topHeader">"Variables purchased with respect to c<sub>yy</sub>":<br>buy var as when var_cost * X ≤ cyy_cost</td>
     </tr>
     <tr>
-      <td class="leftHeader">Recovery stage:<br>(pub multi < 1)</td>>
+      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>>
       <td>
-        <ol type="I" class="inside_table">
+        <ol type="none" class="inside_table">
           <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
           <li>Variables purchased with respect to c<sub>32</sub>:</li>
           <ol type="i" class="inside_table">
@@ -100,6 +100,35 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
+          <li>Disable Remaining Variables<br><sub>will need to buy 1 purchase at start</sub></li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Post-Recovery:<br>(pub multi ≥ 1)</td>>
+      <td>
+        <ol type="none" class="inside_table">
+          <li>c<sub>12</sub> and c<sub>23</sub>: autobuy</li>
+          <li>Variables purchased with respect to c<sub>12</sub>:</li>
+          <ol type="i" class="inside_table">
+            <li>b<sub>2</sub>: 8x ratio</li>
+            <li>c<sub>22</sub>: 8x ratio</li>
+            <li>c<sub>32</sub>: 8x ratio</li>
+          </ol>
+          <li>Variables purchased with respect to c<sub>23</sub>:</li>
+          <ol type="i" class="inside_table">
+            <li>b<sub>3</sub>: 8x ratio</li>
+          </ol>
+          <li>Disable Remaining Variables</li>
+        </ol>
+      </td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>>
+      <td>
+        <ol type="none" class="inside_table">
+          <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
+          <li>Disable Remaining Variables</li>
         </ol>
       </td>
     </tr>
@@ -107,29 +136,6 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
 </table>
 
 - **T3Play2**: 
-  - "buy var at X ratio with respect to cyy": 
-    - buy var as soon as var_cost * X < cyy_cost
-  - Recovery stage (pub multi < 1) :
-    - c32: autobuy
-    - variables purchased with respect to c32:
-      - b2: 5x ratio
-      - c12: 100x ratio
-      - c22: 2.5x ratio
-    - c23: autobuy
-    - Variables purchased with respect to c23:
-      - b3: 8x ratio
-      - c33: 10x ratio
-    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
-  - Post recovery (pub multi > 1) :
-    -  c12: autobuy
-    - Variables purchased with respect to c12:
-      - b2: 8x ratio
-      - c22: 8x ratio
-      - c32: 8x ratio
-    - c23: autobuy
-    - Variables with respect to c23:
-      -  b3: 8x ratio
-      - All other variables disabled
   - Coasting (defined as pub multi > 2) :
     - Autobuy b2, b3, c12, c23
     - All other variables disabled
