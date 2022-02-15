@@ -72,6 +72,42 @@ that publication. See below for what each part means.
 
 #### **Play Strategies**
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
+
+<table class="PlayStrats">
+  <thead>
+    <th></th>
+    <th>T3Play2</th>
+  </thead>
+  <tbody>
+    <tr class="invisible"></tr>
+    <tr>
+      <td>
+        <ol type="I">
+          <li>"Variables purchased with respect to c<sub>yy</sub>":</li>
+          <li type="none">buy var as soon as var_cost * X < cyy_cost</li>
+          <li>Recovery stage (pub multi < 1):</li>
+          <ol type="a">
+            <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
+            <li>Variables purchased with respect to c<sub>32</sub>:</li>
+            <ol type="i">
+              <li>b<sub>2</sub>: 5x ratio</li>
+              <li>c<sub>12</sub>: 100x ratio</li>
+              <li>c<sub>22</sub>: 2.5x ratio</li>
+            </ol>
+            <li>Variables purchased with respect to c<sub>23</sub>:</li>
+            <ol type="i">
+              <li>b<sub>2</sub>: 5x ratio</li>
+              <li>c<sub>12</sub>: 100x ratio</li>
+              <li>c<sub>22</sub>: 2.5x ratio</li>
+            </ol>
+          </ol>
+          <li>Move the last column up or down until solved.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 - **T3Play2**: 
   - "buy var at X ratio with respect to cyy": 
     - buy var as soon as var_cost * X < cyy_cost

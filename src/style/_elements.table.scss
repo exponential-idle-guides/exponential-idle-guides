@@ -82,6 +82,33 @@ th, td {
 	padding: 0em 0em 0em 0em;
 }
 
+.PlayStrats {
+	text-align: center;
+}
+.PlayStrats .invisible {
+	border: none;
+	background-color:transparent;
+}
+.PlayStrats .leftHeader {
+	font-weight: bold;
+	background-color:#7c7c7c;
+	border-right: 5px solid black;
+}
+.PlayStrats th {
+	background-color:#7c7c7c; 
+	border-bottom: 5px solid black;
+}
+.PlayStrats th, td {
+	text-align: center;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+}
+.PlayStrats sub {
+	vertical-align: sub
+}
+.PlayStrats .arrow {
+	padding: 0em 0em 0em 0em;
+}
+
 //Graduation Routing
 .graduation_routing {
     margin-left: 0;
