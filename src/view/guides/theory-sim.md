@@ -86,16 +86,16 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>>
       <td class="last_row">
-        <ol class="inside_table">
+        <ol>
           <li>c<sub>32</sub> and c<sub>23</sub>: autobuy</li>
           <li>Variables purchased with respect to c<sub>32</sub>:</li>
-          <ol class="inside_table">
+          <ol>
             <li>b<sub>2</sub>: 5x ratio</li>
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
           </ol>
           <li>Variables purchased with respect to c<sub>23</sub>:</li>
-          <ol class="inside_table">
+          <ol>
             <li>b<sub>2</sub>: 5x ratio</li>
             <li>c<sub>12</sub>: 100x ratio</li>
             <li>c<sub>22</sub>: 2.5x ratio</li>
@@ -107,16 +107,16 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftHeader">Post-Recovery:<br>(pub multi ≥ 1)</td>>
       <td class="last_row">
-        <ol class="inside_table">
+        <ol>
           <li>c<sub>12</sub> and c<sub>23</sub>: autobuy</li>
           <li>Variables purchased with respect to c<sub>12</sub>:</li>
-          <ol class="inside_table">
+          <ol>
             <li>b<sub>2</sub>: 8x ratio</li>
             <li>c<sub>22</sub>: 8x ratio</li>
             <li>c<sub>32</sub>: 8x ratio</li>
           </ol>
           <li>Variables purchased with respect to c<sub>23</sub>:</li>
-          <ol class="inside_table">
+          <ol>
             <li>b<sub>3</sub>: 8x ratio</li>
           </ol>
           <li>Disable Remaining Variables</li>
@@ -126,7 +126,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftHeader">Coasting:<br>(pub multi > 2)</td>>
       <td class="last_row">
-        <ol class="inside_table">
+        <ol>
           <li>b<sub>2</sub>, b<sub>3</sub>, c<sub>12</sub>, c<sub>23</sub>: autobuy</li>
           <li>Disable Remaining Variables</li>
         </ol>
