@@ -6,6 +6,8 @@ contributors: "the Amazing Community"
 draft: true
 order: 4
 ---
+{% import "embed-yt.njk" as yt %}
+
 ### Theory basics
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multipliers vary from theory to theory and will
