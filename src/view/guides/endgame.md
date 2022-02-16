@@ -257,7 +257,7 @@ milestones.
 
 A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(f(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(f(t)\\) with the swap, thus giving us more \\dt\\, allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\phi\\) due to additional dt and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
 
-### Graduation Routing
+### Skipped Students Routing
 
 Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\phi\\), and "Skipmas", students that will yield 0 extra \\(\phi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(f(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\phi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and Skip Skipmas.
 
@@ -266,11 +266,11 @@ For normal distribution of stars, \\(t\\), and accel usage, skip these for 1d\\(
 <table class="newwords">
    <thead>
       <th class="invisible"></th>
-      <th>Sigma Values to Skip</th>
+      <th>Students to Skip</th>
    </thead>
    <tbody>
-      <td class="leftHeader">Below 150</td>
-      <td>144, 146, 149</td>
+      <td class="leftlastHeader">Below 150</td>
+      <td class="last_row">144, 146, 149</td>
    </tbody>
    <tbody>
       <td class="leftHeader">150-199</td>
@@ -300,19 +300,47 @@ For normal distribution of stars, \\(t\\), and accel usage, skip these for 1d\\(
       <td class="leftlastHeader">300-349</td>
       <td class="last_row">304, 312, 316, 320, 324, 326, 328, 334, 336, 344</td>
    </tbody>
+   <thead>
+      <th class="invisible"></th>
+      <th>F(t) to Skip</th>
+   </thead>
+   <tbody>
+      <td class="leftHeader">Below 35k</td>
+      <td>29.8k, 30.2k, 30.8k, 31.4k, 32k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">32.6k, 33.2k, 33.8k, 34.2k, 34.6k</td>
+   </tbody>
+   <tbody>
+      <td class="leftHeader">35k-44.8k</td>
+      <td>35.4k, 36.2k, 37k, 37.8k, 38.6k, 39k, 39.6k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">40.6k, 41.6k, 42.6k, 43.6k, 44.2k, 44.6k</td>
+   </tbody>
+   <tbody>
+      <td class="leftHeader">45k-54.8k</td>
+      <td>45k, 45.8k, 47k, 48.2k, 49k, 49.4k, 50.2k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">50.6k, 51.2k, 51.8k, 52.2k, 53.2k, 54.6k</td>
+   </tbody>
+   <tbody>
+      <td class="leftHeader">55k-64.8k</td>
+      <td>56k, 56.8k, 57.4k, 58.2k, 58.8k, 59.4k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">60.2k, 60.6k, 61.8k, 63.4k, 64.2k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">65k-70k</td>
+      <td class="last_row">65k, 65.8k, 66.2k, 66.6k 67.8k, 68.2k, 69.8k</td>
+   </tbody>
 </table>
-
-The \\(f(t)\\) values are:
-
-```
-29800, 30200, 30800, 31400, 32000, 32600, 33200, 33800, 
-34200, 34600, 35400, 36200, 37000, 37800, 38600, 39000, 
-39600, 40600, 41600, 42600, 43600, 44200, 44600, 45000, 
-45800, 47000, 48200, 49000, 49400, 50200, 50600, 51200, 
-51800, 52200, 53200, 54600, 56000, 56800, 57400, 58200, 
-58800, 59400, 60200, 60600, 61800, 63400, 64200, 65000, 
-65800, 66200, 66600, 67800, 68200, 69800
-```
 
 Explanation by: Snaeky and AfuroZamurai
 
