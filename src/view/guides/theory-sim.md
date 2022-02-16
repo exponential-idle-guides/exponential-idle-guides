@@ -81,71 +81,71 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><sub><small><small>yy</small></small></sub></sub>":<br>buy var when var_cost * ratio ≤ c<sub><sub><small><small>yy</small></small></sub></sub>_cost</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>c<sub><small>32</small></sub> and c<sub><small>23</small></sub>: autobuy</td>
+      <td>c<sub><sub><small><small>32</small></small></sub></sub> and c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><small>32:</small></sub></td>
+      <td>Variables purchased with respect to c<sub><sub><small><small>32:</small></small></sub></sub></td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub><small>2</small></sub>: 5x ratio</td>
+      <td class="indent">b<sub><sub><small><small>2</small></small></sub></sub>: 5x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader">During Recovery:</td>
-      <td class="indent">c<sub><small>12</small></sub>: 100x ratio</td>
+      <td class="indent">c<sub><sub><small><small>12</small></small></sub></sub>: 100x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader">(pub multi < 1)</td>
-      <td class="indent">c<sub><small>22</small></sub>: 2.5x ratio</td>
+      <td class="indent">c<sub><sub><small><small>22</small></small></sub></sub>: 2.5x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
+      <td>Variables purchased with respect to c<sub><sub><small><small>23</small></small></sub></sub>:</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
+      <td class="indent">b<sub><sub><small><small>3</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">c<sub><small>33</small></sub>: 10x ratio</td>
+      <td class="indent">c<sub><sub><small><small>33</small></small></sub></sub>: 10x ratio</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
-      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+      <td class="last_row">Disable remaining variables<br><sub><sub><small><small>* Will have to purchase once at start</small></small></sub></sub></td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>c<sub><small>12</small></sub> and c<sub><small><small>23</small></small></sub>: autobuy</td>
+      <td>c<sub><sub><small><small>12</small></small></sub></sub> and c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><small>12:</small></sub></td>
+      <td>Variables purchased with respect to c<sub><sub><small><small>12:</small></small></sub></sub></td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub><small>2</small></sub>: 8x ratio</td>
+      <td class="indent">b<sub><sub><small><small>2</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader">Post Recovery:</td>
-      <td class="indent">c<sub><small>22</small></sub>: 8x ratio</td>
+      <td class="indent">c<sub><sub><small><small>22</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader">(pub multi ≥ 1)</td>
-      <td class="indent">c<sub><small>32</small></sub>: 8x ratio</td>
+      <td class="indent">c<sub><sub><small><small>32</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
+      <td>Variables purchased with respect to c<sub><sub><small><small>23</small></small></sub></sub>:</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
+      <td class="indent">b<sub><sub><small><small>3</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
@@ -153,7 +153,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftHeader">Coasting:</td>
-      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy</td>
+      <td>b<sub><sub><small><small>2</small></small></sub></sub>, b<sub><sub><small><small>3</small></small></sub></sub>, c<sub><sub><small><small>12</small></small></sub></sub>, c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftlastHeader">(pub multi >2)</td>
@@ -167,19 +167,19 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy</td>
+      <td class="topHeader">no ρ<sub><sub><small><small>1</small></small></sub></sub>, no c<sub><sub><small><small>13</small></small></sub></sub> with recovery strategy</td>
     </tr>
     <tr>
       <td class="leftHeader">During Recovery:</td>
-      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>22</small></sub>, c<sub><small>23</small></sub>, c<sub><small>32</small></sub>, c<sub><small>33</small></sub>: autobuy</td>
+      <td>b<sub><sub><small><small>2</small></small></sub></sub>, b<sub><sub><small><small>3</small></small></sub></sub>, c<sub><sub><small><small>12</small></small></sub></sub>, c<sub><sub><small><small>22</small></small></sub></sub>, c<sub><sub><small><small>23</small></small></sub></sub>, c<sub><sub><small><small>32</small></small></sub></sub>, c<sub><sub><small><small>33</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftlastHeader">(pub multi < 1)</td>
-      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+      <td class="last_row">Disable remaining variables<br><sub><sub><small><small>* Will have to purchase once at start</small></small></sub></sub></td>
     </tr>
     <tr>
       <td class="leftHeader">Post Recovery</td>
-      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy</td>
+      <td>b<sub><sub><small><small>2</small></small></sub></sub>, b<sub><sub><small><small>3</small></small></sub></sub>, c<sub><sub><small><small>12</small></small></sub></sub>, c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftlastHeader">(pub multi ≥ 1)</td>
@@ -193,11 +193,11 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub> under additional condition</td>
+      <td class="topHeader">no ρ<sub><sub><small><small>1</small></small></sub></sub>, no c<sub><sub><small><small>13</small></small></sub></sub> with recovery strategy<br>buy c<sub><sub><small><small>12</small></small></sub></sub> under additional condition</td>
     </tr>
     <tr>
-      <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
-      <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
+      <td class="leftHeader">c<sub><sub><small><small>12</small></small></sub></sub> Conditions:</td>
+      <td>T3NoP1C13rcv except buy c<sub><sub><small><small>12</small></small></sub></sub> when</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
@@ -211,27 +211,27 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">"Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>)":<br>buy var when either of the following are met<br>var_cost*ratio ≤ c<sub><small>2</small></sub>_cost <b>or</b> var_cost*ratio ≤ c<sub><small>4</small></sub>_cost</td>
+      <td class="topHeader">"Variables purchased with respect to min(c<sub><sub><small><small>2</small></small></sub></sub>,c<sub><sub><small><small>4</small></small></sub></sub>)":<br>buy var when either of the following are met<br>var_cost*ratio ≤ c<sub><sub><small><small>2</small></small></sub></sub>_cost <b>or</b> var_cost*ratio ≤ c<sub><sub><small><small>4</small></small></sub></sub>_cost</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td>c<sub><small>2</small></sub>, c<sub><small>4</small></sub>: autobuy</td>
+      <td>c<sub><sub><small><small>2</small></small></sub></sub>, c<sub><sub><small><small>4</small></small></sub></sub>: autobuy</td>
     </tr>
     <tr>
       <td class="leftHeader">The Strategy:</td>
-      <td>Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>):</td>
+      <td>Variables purchased with respect to min(c<sub><sub><small><small>2</small></small></sub></sub>,c<sub><sub><small><small>4</small></small></sub></sub>):</td>
     </tr>
     <tr>
       <td class="leftHeader">(entire pub)</td>
-      <td class="indent">c<sub><small>1</small></sub>: 8x ratio</td>
+      <td class="indent">c<sub><sub><small><small>1</small></small></sub></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">c<sub><small>3</small></sub>: 2.5x ratio</td>
+      <td class="indent">c<sub><sub><small><small>3</small></small></sub></sub>: 2.5x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+      <td class="indent">c<sub><sub><small><small>5</small></small></sub></sub>: 4x ratio</td>
     </tr>
   </tbody>
 </table>
