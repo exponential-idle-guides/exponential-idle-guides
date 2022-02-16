@@ -73,13 +73,19 @@ that publication. See below for what each part means.
 #### **Play Strategies**
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
 
+<<<<<<< Updated upstream
 <table class="PlayStrats">
   <thead>
     <th></th>
+=======
+<table>
+  <thead>
+>>>>>>> Stashed changes
     <th>T3Play2</th>
   </thead>
   <tbody>
     <tr>
+<<<<<<< Updated upstream
       <td class="leftHeader"></td>
       <td class="topHeader">"Variables purchased with respect to c<sub><sub><small><small>yy</small></small></sub></sub>":<br>buy var when var_cost * ratio ≤ c<sub><sub><small><small>yy</small></small></sub></sub>_cost</td>
     </tr>
@@ -235,6 +241,81 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
   </tbody>
 </table>
+=======
+      <td>
+        <ol type="I">
+          <li>"buy var at X ratio with respect to cyy"</li>
+          <li type="none">buy var as soon as var_cost * X < cyy_cost</li>
+          <li>Recovery stage (pub multi < 1):</li>
+          <ol type="a">
+            <li>Find a number in the column that is in the wrong position.</li>
+            <li>Do repeated swaps of those numbers by following this.</li>
+            <ol type="i">
+              <li>Pick which numbers you are going to swap.</li>
+              <li>Move the top number into the row next to it.</li>
+              <li>Move the column up to reach the bottom number.</li>
+              <li>Insert the bottom number into the row next to the top number.</li>
+              <li>Repeat ↓ ← ↑ ← until numbers are successfully swapped.</li>
+            </ol>
+            <li>Repeat b until that number is in the correct position.</li>
+            <li>Repeat a through c until all numbers are in the correct position.</li>
+          </ol>
+          <li>Move the last column up or down until solved.</li>
+        </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+- **T3Play2**: 
+  - "buy var at X ratio with respect to cyy": 
+    - buy var as soon as var_cost * X < cyy_cost
+  - Recovery stage (pub multi < 1) :
+    - c32: autobuy
+    - variables purchased with respect to c32:
+      - b2: 5x ratio
+      - c12: 100x ratio
+      - c22: 2.5x ratio
+    - c23: autobuy
+    - Variables purchased with respect to c23:
+      - b3: 8x ratio
+      - c33: 10x ratio
+    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
+  - Post recovery (pub multi > 1) :
+    -  c12: autobuy
+    - Variables purchased with respect to c12:
+      - b2: 8x ratio
+      - c22: 8x ratio
+      - c32: 8x ratio
+    - c23: autobuy
+    - Variables with respect to c23:
+      -  b3: 8x ratio
+      - All other variables disabled
+  - Coasting (defined as pub multi > 2) :
+    - Autobuy b2, b3, c12, c23
+    - All other variables disabled
+- **T3NoP1C13rcv** (AKA T3Idle): (means no rho1, no c13 + do something at recovery)
+  - Recovery (pub multi < 1) :
+    - Autobuy b2, b3, c12, c22, c23, c32, c33
+    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
+  - Post recovery (pub multi > 1) :
+    - Autobuy b2, b3, c12, c23
+    - All other variables disabled
+- **T3NoP1C13rcvNoC12**: (means no rho1, no c13 + do something at recovery + c12 off until some condition)
+  - Same as T3NoP1C13rcv, but only start to autobuy c12 when (pub time) > (recovery time of T3NoP1C13rcv)
+  - Note: in order to get recovery time of T3NoP1C13rcv, use det (=detailed) mode in https://bit.ly/AnthSim
+- **T7Play-25**:
+  - Autobuy c6
+  - Buy c4 when 10x less than rho
+  - Buy q1, c5 when 4x less (aka 25%, hence the name) than c6
+  - Disable other variables
+- **T8RPlay**:
+  - Autobuy c2, c4
+  - Buy c1 when 8x less than min(c2,c4)
+  - Buy c3 when 2.5x less than min(c2,c4)
+  - Buy c5 when 4x less than min(c2,c4)
+    ##### Note: "min(c2,c4)" means to buy with respect to c2 or c4, whichever is smaller.
+>>>>>>> Stashed changes
 
 ##### **Variables to always buy**
 
