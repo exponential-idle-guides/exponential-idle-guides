@@ -117,7 +117,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
-      <td class="last_row">Disable remaining Variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
@@ -132,11 +132,11 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="indent">b<sub><small>2</small></sub>: 8x ratio</td>
     </tr>
     <tr>
-      <td class="leftHeader">During Recovery:</td>
+      <td class="leftHeader">Post Recovery:</td>
       <td class="indent">c<sub><small>22</small></sub>: 8x ratio</td>
     </tr>
     <tr>
-      <td class="leftHeader">(pub multi < 1)</td>
+      <td class="leftHeader">(pub multi ≥ 1)</td>
       <td class="indent">c<sub><small>32</small></sub>: 8x ratio</td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
-      <td class="last_row">Disable remaining Variables</td>
+      <td class="last_row">Disable remaining variables</td>
     </tr>
     <tr>
       <td class="leftHeader">Coasting:</td>
@@ -157,22 +157,34 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftlastHeader">(pub multi >2)</td>
-      <td class="last_row">Disable Remaining Variables</td>
+      <td class="last_row">Disable Remaining variables</td>
     </tr>
   </tbody>
   <thead>
     <th></th>
     <th>T3NoP1C13rcv (T3Idle)</th>
   </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader">During Recovery:</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>22</small></sub>, c<sub><small>23</small></sub>, c<sub><small>32</small></sub>, c<sub><small>33</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">(pub multi < 1)</td>
+      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Post Recovery</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">(pub multi ≥ 1)</td>
+      <td class="last_row">Disable remaining variables</td>
+    </tr>
+  </tbody>
 </table>
 
-- **T3NoP1C13rcv** (AKA T3Idle): (means no rho1, no c13 + do something at recovery)
-  - Recovery (pub multi < 1) :
-    - Autobuy b2, b3, c12, c22, c23, c32, c33
-    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
-  - Post recovery (pub multi > 1) :
-    - Autobuy b2, b3, c12, c23
-    - All other variables disabled
+
 - **T3NoP1C13rcvNoC12**: (means no rho1, no c13 + do something at recovery + c12 off until some condition)
   - Same as T3NoP1C13rcv, but only start to autobuy c12 when (pub time) > (recovery time of T3NoP1C13rcv)
   - Note: in order to get recovery time of T3NoP1C13rcv, use det (=detailed) mode in https://bit.ly/AnthSim
