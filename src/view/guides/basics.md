@@ -26,16 +26,110 @@ further ahead than the you are already.
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
 ### Variable Names
-Variable | Name | Variable | Name | Variable | Name
---- | --- | --- | --- | --- | ---
-\\(x\\) | x | \\(\beta\\) | beta | \\(\kappa\\) | kappa
-\\(y\\) | y | \\(\gamma\\) | gamma | \\(\lambda\\) | lambda
-\\(z\\) | z | \\(\delta\\) | delta | \\(\nu\\) | nu
-\\(s\\) | s | \\(ε\\) | epsilon | \\(\xi\\) | xi
-\\(u\\) | u | \\(\zeta\\) | zeta | \\(\mu\\) | mu
-\\(v\\) | v | \\(\eta\\) | eta | \\(\psi\\) | psi
-\\(w\\) | w | \\(\theta\\) | theta | 
-\\(α\\) | alpha | \\(\iota\\) | iota | 
+<table class="newwords">
+  <thead>
+    <tr>
+        <th class="invisible"></th>
+        <th>Name</th>
+        <th class="invisible"></th>
+        <th class="invisible"></th>
+        <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="leftHeader">x</td>
+        <td>x</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ν</td>
+        <td>nu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">y</td>
+        <td>y</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ε</td>
+        <td>epsilon</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">z</td>
+        <td>z</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ζ</td>
+        <td>zeta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">s</td>
+        <td>s</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">η</td>
+        <td>eta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">u</td>
+        <td>u</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">θ</td>
+        <td>theta</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">v</td>
+        <td>v</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ι</td>
+        <td>iota</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">w</td>
+        <td>w</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ξ</td>
+        <td>xi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">α</td>
+        <td>alpha</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">μ</td>
+        <td>mu</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">β</td>
+        <td>beta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ψ</td>
+        <td>psi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">γ</td>
+        <td>gamma</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">τ</td>
+        <td>tau</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">δ</td>
+        <td>delta</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">φ</td>
+        <td>phi</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">κ</td>
+        <td>kappa</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">σ</td>
+        <td>sigma</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">λ</td>
+        <td>lambda</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ρ</td>
+        <td>rho</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Achievements and Minigames
 
