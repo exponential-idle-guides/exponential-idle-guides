@@ -81,7 +81,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var as when var_cost * X ≤ c<sub><small>yy</small></sub>_cost</td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
