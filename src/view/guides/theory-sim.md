@@ -160,12 +160,12 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="last_row">Disable Remaining Variables</td>
     </tr>
   </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcv (T3Idle)</th>
+  </thead>
 </table>
 
-- **T3Play2**: 
-  - Coasting (defined as pub multi > 2) :
-    - Autobuy b2, b3, c12, c23
-    - All other variables disabled
 - **T3NoP1C13rcv** (AKA T3Idle): (means no rho1, no c13 + do something at recovery)
   - Recovery (pub multi < 1) :
     - Autobuy b2, b3, c12, c22, c23, c32, c33
