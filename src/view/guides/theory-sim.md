@@ -200,8 +200,12 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td>T3NoP1C13rcv except buy c<sub><sub><small><small>12</small></small></sub></sub> when</td>
     </tr>
     <tr>
+      <td class="leftHeader"></td>
+      <td>(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+    </tr>
+    <tr>
       <td class="leftlastHeader"></td>
-      <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+      <td class="last_row">Disable remaining variables</td>
     </tr>
   </tbody>
   <thead>
@@ -237,6 +241,10 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="leftHeader"></td>
       <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
     </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">Disable remaining variables</td>
+    </tr>
   </tbody>
   <thead>
     <th></th>
@@ -266,6 +274,10 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftHeader"></td>
       <td class="indent">c<sub><sub><small><small>5</small></small></sub></sub>: 4x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">Disable remaining variables</td>
     </tr>
   </tbody>
 </table>
