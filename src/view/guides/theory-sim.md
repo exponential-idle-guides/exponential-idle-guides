@@ -204,19 +204,89 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
     </tr>
   </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcvNoC12 (T3Idle2)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub> under additional condition</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
+      <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T7Play-25</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>6</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">The Strategy:</td>
+      <td>Variables purchased with respect to ρ<sub><small>1</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>4</small></sub>: 10x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>6</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">q<sub><small>1</small></sub>: 4x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T8RPlay</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>)":<br>buy var when either of the following are met<br>var_cost*ratio ≤ c<sub><small>2</small></sub>_cost <b>or</b> var_cost*ratio ≤ c<sub><small>4</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>2</small></sub>, c<sub><small>4</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">The Strategy:</td>
+      <td>Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>):</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>1</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>3</small></sub>: 2.5x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+    </tr>
+  </tbody>
 </table>
-
-- **T7Play-25**:
-  - Autobuy c6
-  - Buy c4 when 10x less than rho
-  - Buy q1, c5 when 4x less (aka 25%, hence the name) than c6
-  - Disable other variables
-- **T8RPlay**:
-  - Autobuy c2, c4
-  - Buy c1 when 8x less than min(c2,c4)
-  - Buy c3 when 2.5x less than min(c2,c4)
-  - Buy c5 when 4x less than min(c2,c4)
-    ##### Note: "min(c2,c4)" means to buy with respect to c2 or c4, whichever is smaller.
 
 ##### **Variables to always buy**
 
