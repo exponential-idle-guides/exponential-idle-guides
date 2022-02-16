@@ -72,54 +72,221 @@ that publication. See below for what each part means.
 
 #### **Play Strategies**
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
-- **T3Play2**: 
-  - "buy var at X ratio with respect to cyy": 
-    - buy var as soon as var_cost * X < cyy_cost
-  - Recovery stage (pub multi < 1) :
-    - c32: autobuy
-    - variables purchased with respect to c32:
-      - b2: 5x ratio
-      - c12: 100x ratio
-      - c22: 2.5x ratio
-    - c23: autobuy
-    - Variables purchased with respect to c23:
-      - b3: 8x ratio
-      - c33: 10x ratio
-    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
-  - Post recovery (pub multi > 1) :
-    -  c12: autobuy
-    - Variables purchased with respect to c12:
-      - b2: 8x ratio
-      - c22: 8x ratio
-      - c32: 8x ratio
-    - c23: autobuy
-    - Variables with respect to c23:
-      -  b3: 8x ratio
-      - All other variables disabled
-  - Coasting (defined as pub multi > 2) :
-    - Autobuy b2, b3, c12, c23
-    - All other variables disabled
-- **T3NoP1C13rcv** (AKA T3Idle): (means no rho1, no c13 + do something at recovery)
-  - Recovery (pub multi < 1) :
-    - Autobuy b2, b3, c12, c22, c23, c32, c33
-    - All other variables disabled [in particular, don't buy rho1 variables, except 1 level of each at the beginning of the pub ofc]
-  - Post recovery (pub multi > 1) :
-    - Autobuy b2, b3, c12, c23
-    - All other variables disabled
-- **T3NoP1C13rcvNoC12**: (means no rho1, no c13 + do something at recovery + c12 off until some condition)
-  - Same as T3NoP1C13rcv, but only start to autobuy c12 when (pub time) > (recovery time of T3NoP1C13rcv)
-  - Note: in order to get recovery time of T3NoP1C13rcv, use det (=detailed) mode in https://bit.ly/AnthSim
-- **T7Play-25**:
-  - Autobuy c6
-  - Buy c4 when 10x less than rho
-  - Buy q1, c5 when 4x less (aka 25%, hence the name) than c6
-  - Disable other variables
-- **T8RPlay**:
-  - Autobuy c2, c4
-  - Buy c1 when 8x less than min(c2,c4)
-  - Buy c3 when 2.5x less than min(c2,c4)
-  - Buy c5 when 4x less than min(c2,c4)
-    ##### Note: "min(c2,c4)" means to buy with respect to c2 or c4, whichever is smaller.
+
+<table class="PlayStrats">
+  <thead>
+    <th></th>
+    <th>T3Play2</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>32</small></sub> and c<sub><small>23</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>32:</small></sub></td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>2</small></sub>: 5x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">During Recovery:</td>
+      <td class="indent">c<sub><small>12</small></sub>: 100x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(pub multi < 1)</td>
+      <td class="indent">c<sub><small>22</small></sub>: 2.5x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">c<sub><small>33</small></sub>: 10x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>12</small></sub> and c<sub><small><small>23</small></small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>12:</small></sub></td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>2</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Post Recovery:</td>
+      <td class="indent">c<sub><small>22</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(pub multi ≥ 1)</td>
+      <td class="indent">c<sub><small>32</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>23</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">Disable remaining variables</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Coasting:</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">(pub multi >2)</td>
+      <td class="last_row">Disable Remaining variables</td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcv (T3Idle)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">During Recovery:</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>22</small></sub>, c<sub><small>23</small></sub>, c<sub><small>32</small></sub>, c<sub><small>33</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">(pub multi < 1)</td>
+      <td class="last_row">Disable remaining variables<br><sub><small>* Will have to purchase once at start</small></sub></td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Post Recovery</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">(pub multi ≥ 1)</td>
+      <td class="last_row">Disable remaining variables</td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcvNoC12 (T3Idle2)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub> under additional condition</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
+      <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcvNoC12 (T3Idle2)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub> under additional condition</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
+      <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader"></td>
+      <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T7Play-25</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>6</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">The Strategy:</td>
+      <td>Variables purchased with respect to ρ<sub><small>1</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>4</small></sub>: 10x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>6</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">q<sub><small>1</small></sub>: 4x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
+    <th>T8RPlay</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>)":<br>buy var when either of the following are met<br>var_cost*ratio ≤ c<sub><small>2</small></sub>_cost <b>or</b> var_cost*ratio ≤ c<sub><small>4</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>2</small></sub>, c<sub><small>4</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">The Strategy:</td>
+      <td>Variables purchased with respect to min(c<sub><small>2</small></sub>,c<sub><small>4</small></sub>):</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>1</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>3</small></sub>: 2.5x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+    </tr>
+  </tbody>
+</table>
 
 ##### **Variables to always buy**
 

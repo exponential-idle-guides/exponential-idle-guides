@@ -55,6 +55,7 @@ th, td {
 	vertical-align: sub
 }
 
+//T2
 .T2 {
 	text-align: center;
 }
@@ -81,6 +82,40 @@ th, td {
 .T2 .arrow {
 	padding: 0em 0em 0em 0em;
 }
+
+//Theory Sim Playspout
+.PlayStrats {
+	text-align: left;
+}
+.PlayStrats .leftHeader {
+	font-weight: bold;
+	background-color:#5a5858;
+	border-right: 5px solid black;
+}
+.PlayStrats .topHeader {
+	background-color:#5a5858;
+	border-bottom: none;
+}
+.PlayStrats .leftlastHeader {
+	font-weight: bold;
+	background-color:#5a5858;
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+}
+.PlayStrats .indent {
+	text-indent: 100px;
+}
+.PlayStrats .last_row {
+	border-bottom: 5px solid black;
+}
+.PlayStrats th {
+	background-color:#7c7c7c; 
+	border-bottom: 5px solid black;
+}
+.PlayStrats th, td {
+	text-align: left;
+	padding: 0.3em 0.4em 0.3em 0.4em;
+}	
 
 //Graduation Routing
 .graduation_routing {
