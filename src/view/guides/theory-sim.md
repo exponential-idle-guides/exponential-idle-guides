@@ -193,7 +193,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   <tbody>
     <tr>
       <td class="leftHeader"></td>
-      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub>under additional condition</td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub> under additional condition</td>
     </tr>
     <tr>
       <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
