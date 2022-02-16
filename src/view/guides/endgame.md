@@ -65,13 +65,8 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
       </tr>
       <tr>
          <td class="leftHeader">T3</td>
-         <td>Disable </td>
-         <td>Same as idle but with  </td>
-      </tr>
-               <tr>
-         <td class="leftHeader"></td>
-         <td>c11, c13, c21, c33</td>
-         <td>b2 → b4 → b1 manual buy</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Idle / T3Idle2</a></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Play2</a></td>
       </tr>
       <tr>
          <td class="leftHeader">T4</td>
@@ -91,12 +86,12 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
       <tr>
          <td class="leftHeader">T7</td>
          <td>Disable c1, c2, c3</td>
-         <td>Disable c1, c2</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T7Play-25</a></td>
       </tr>
       <tr>
          <td class="leftHeader">T8</td>
          <td>All variables on</td>
-         <td>Idle with chasing doublings</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T8RPlay</a></td>
       </tr>
    </tbody>
 </table>

@@ -206,6 +206,40 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   </tbody>
   <thead>
     <th></th>
+    <th>T7Play-25</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">"Variables purchased with respect to c<sub><small>yy</small></sub>":<br>buy var when var_cost * ratio ≤ c<sub><small>yy</small></sub>_cost</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>c<sub><small>6</small></sub>: autobuy</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">The Strategy:</td>
+      <td>Variables purchased with respect to ρ<sub><small>1</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(entire pub)</td>
+      <td class="indent">c<sub><small>4</small></sub>: 10x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>Variables purchased with respect to c<sub><small>6</small></sub>:</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">q<sub><small>1</small></sub>: 4x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
+    </tr>
+  </tbody>
+  <thead>
+    <th></th>
     <th>T8RPlay</th>
   </thead>
   <tbody>
