@@ -92,8 +92,16 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td>Variables purchased with respect to c<sub><small>32:</small></sub></td>
     </tr>
     <tr>
-      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
-      <td class="indent">b<sub><small>2</small></sub>: 5x ratio<br>c<sub><small>12</small></sub>: 100x ratio<br>c<sub><small>22</small></sub>: 2.5x ratio</td>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>2</small></sub>: 5x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">During Recovery:</td>
+      <td class="indent">c<sub><small>12</small></sub>: 100x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(pub multi < 1)</td>
+      <td class="indent">c<sub><small>22</small></sub>: 2.5x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
@@ -101,7 +109,11 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     </tr>
     <tr>
       <td class="leftHeader"></td>
-      <td class="indent">b<sub><small>3</small></sub>: 8x ratio<br>c<sub><small>33</small></sub>: 10x ratio</td>
+      <td class="indent">b<sub><small>3</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="indent">c<sub><small>33</small></sub>: 10x ratio</td>
     </tr>
     <tr>
       <td class="leftlastHeader"></td>
@@ -116,8 +128,16 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td>Variables purchased with respect to c<sub><small>12:</small></sub></td>
     </tr>
     <tr>
-      <td class="leftHeader">During Recovery:<br>(pub multi < 1)</td>
-      <td class="indent">b<sub><small>2</small></sub>: 8x ratio<br>c<sub><small>22</small></sub>: 8x ratio<br>c<sub><small>32</small></sub>: 8x ratio</td>
+      <td class="leftHeader"></td>
+      <td class="indent">b<sub><small>2</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">During Recovery:</td>
+      <td class="indent">c<sub><small>22</small></sub>: 8x ratio</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">(pub multi < 1)</td>
+      <td class="indent">c<sub><small>32</small></sub>: 8x ratio</td>
     </tr>
     <tr>
       <td class="leftHeader"></td>
@@ -130,6 +150,10 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
     <tr>
       <td class="leftlastHeader"></td>
       <td class="last_row">Disable remaining Variables</td>
+    </tr>
+    <tr>
+      <td class="leftHeader">Coasting:</td>
+      <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>23</small></sub>: autobuy<br>Disable Remaining Variables</td>
     </tr>
     <tr>
       <td class="leftlastHeader">Coasting:<br>(pub multi >2)</td>
