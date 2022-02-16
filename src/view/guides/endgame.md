@@ -1,6 +1,6 @@
 ---
 title: "Theory 9 to Endgame"
-subtitle: "The World of Grinding and R9 Boost"
+subtitle: "The World of Grinding, R9 Boost, and Custom Theories"
 description: "Our guide for progressing once you have reached Theory 9 and the endgame."
 author: "LE★Baldy and Snaeky"
 contributors: "the Amazing Community"

@@ -35,7 +35,7 @@ Playing and molding both sections will often deliver the best results for a part
     <li><em>db/b</em> growth is the largest factor to progress from a prestige, however, because of how early <em>f(t)</em> is, <em>μ</em> upgrades still play a vital role and have to be taken into account.</li>
     <li>Once <em>db</em> reaches e3 more than <em>b</em>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
   </ol>
-  <li>Pay attention to <em>dμ</em> growth. (Optional)</li>
+  <li>Pay attention to <em>dμ</em> growth. <b>(OPTIONAL)</b></li>
   <ol type="a">
     <li>Make mental note of price of the two <em>μ</em> upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
     <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
@@ -49,6 +49,7 @@ Playing and molding both sections will often deliver the best results for a part
   <li>Repeat this cycle.</li>
 </ol>
 
+###### This is the best known human prestige strategy, however, due to complexity, you can find your own way of doing it to fit your playstyle/activity level.
 
 #### Active strategies
 

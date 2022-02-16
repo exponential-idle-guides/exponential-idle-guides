@@ -144,7 +144,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 * Stars are a currency that operates outside of the main game that you use to purchase star upgrades. 
   These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
   prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge 
-  boost in power, and you should prioritize that over variables of a similar cost. More details on 
+  boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on 
   star upgrades to prioritize can be found in following guides.
  
 ### Autoprestige expression
