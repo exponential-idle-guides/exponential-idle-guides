@@ -196,11 +196,11 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub>under additional condition</td>
     </tr>
     <tr>
-      <td class="leftHeader"></td>
+      <td class="leftHeader">c<sub><small>12</small></sub> Conditions:</td>
       <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
     </tr>
     <tr>
-      <td class="leftlastHeader">c<sub><small>12</small></sub> Conditions:</td>
+      <td class="leftlastHeader"></td>
       <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
     </tr>
   </tbody>
