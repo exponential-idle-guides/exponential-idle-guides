@@ -96,17 +96,6 @@ For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Si
    </tbody>
 </table>
 
-### Equation for when to publish
-
-From Big Freeze:
-
-```
-ln(tau/smooth(tau, (timer(d(tau)<=0) < 900)*e99) )
-/ (timer( timer(d(tau)<=0)<900 ) + 900)
-```
-
-Pick a time, for example 900s, such that (maximum time between purchases)<900s<(minimum time to get to pub mark).
-
 ### Theory routing
 
 If a theory is not listed below, then use the idle vs manual chart and
