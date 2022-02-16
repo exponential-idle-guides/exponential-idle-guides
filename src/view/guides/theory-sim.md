@@ -166,6 +166,10 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   </thead>
   <tbody>
     <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy</td>
+    </tr>
+    <tr>
       <td class="leftHeader">During Recovery:</td>
       <td>b<sub><small>2</small></sub>, b<sub><small>3</small></sub>, c<sub><small>12</small></sub>, c<sub><small>22</small></sub>, c<sub><small>23</small></sub>, c<sub><small>32</small></sub>, c<sub><small>33</small></sub>: autobuy</td>
     </tr>
@@ -182,12 +186,26 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="last_row">Disable remaining variables</td>
     </tr>
   </tbody>
+  <thead>
+    <th></th>
+    <th>T3NoP1C13rcvNoC12 (T3Idle2)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="leftHeader"></td>
+      <td class="topHeader">no ρ<sub><small>1</small></sub>, no c<sub><small>13</small></sub> with recovery strategy<br>buy c<sub><small>12</small></sub>under additional condition</td>
+    </tr>
+    <tr>
+      <td class="leftHeader"></td>
+      <td>T3NoP1C13rcv except buy c<sub><small>12</small></sub> when</td>
+    </tr>
+    <tr>
+      <td class="leftlastHeader">c<sub><small>12</small></sub> Conditions:</td>
+      <td class="last_row">(pub time) ≥ (recovery time of T3NoP1C13rcv)<br><small>* Get recovery time from det mode (=detailed) of the <a href="https://bit.ly/AnthSim">sim</a>.</small></td>
+    </tr>
+  </tbody>
 </table>
 
-
-- **T3NoP1C13rcvNoC12**: (means no rho1, no c13 + do something at recovery + c12 off until some condition)
-  - Same as T3NoP1C13rcv, but only start to autobuy c12 when (pub time) > (recovery time of T3NoP1C13rcv)
-  - Note: in order to get recovery time of T3NoP1C13rcv, use det (=detailed) mode in https://bit.ly/AnthSim
 - **T7Play-25**:
   - Autobuy c6
   - Buy c4 when 10x less than rho
