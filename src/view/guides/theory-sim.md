@@ -278,11 +278,11 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
       <td class="indent">c<sub><small>1</small></sub>: 8x ratio</td>
     </tr>
     <tr>
-      <td class="leftHeader">(entire pub)</td>
+      <td class="leftHeader"></td>
       <td class="indent">c<sub><small>3</small></sub>: 2.5x ratio</td>
     </tr>
     <tr>
-      <td class="leftHeader">(entire pub)</td>
+      <td class="leftHeader"></td>
       <td class="indent">c<sub><small>5</small></sub>: 4x ratio</td>
     </tr>
   </tbody>
