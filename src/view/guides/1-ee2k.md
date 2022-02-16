@@ -9,7 +9,7 @@ order: 1
 
 ### Introduction
 The start of the game is the most variable section of the game depending on how active you play.
-This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections for particular milestones. 
+This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks. 
 Within each of these sections there are idle, active, and general strategy subsections for differing playstyles.
 Playing and molding both sections will often deliver the best results for a particular person's ability and situation.
 
@@ -20,7 +20,7 @@ Playing and molding both sections will often deliver the best results for a part
 ##### Before b>=1:
 
    - You do not want to prestige immediately when you hit 100% but instead when \\(db\\) growth slows drastically.
-   - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is variable and can change based on how fast you are moving.
+   - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is flexible and can change based on how fast you are moving and preference.
    - Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
 
 ##### After b>=1: 
@@ -32,17 +32,20 @@ Playing and molding both sections will often deliver the best results for a part
   </ol>
   <li>Pay attention to <em>db/b</em> growth.</li>
   <ol type="a">
-    <li><em>db/b</em> growth is the largest factor to progress from a prestige, however, because of how early <em>f(t)</em> is, <em>μ</em> upgrades still play a vital role and have to be taken into account.</li>
-    <li>Once <em>db</em> reaches e3 more than <em>b</em>, begin to pay attention how fast db is growing vs how long you have been spending on the prestige. When this slows drastically, you are at the end of a prestige.</li>
+    <li><em>db/b</em> growth is the largest factor to progress gained from a prestige, however, at early <em>f(t)</em> values (⪅ee50), <em>μ</em> variable and upgrade purchases still play a vital role and can to be taken into account as well.</li>
+    <li>Once <em>db</em> reaches e3 more than <em>b</em>, begin to pay attention how fast db is growing compared length of the current prestige. When the growth slows drastically, you are near the end of a prestige.</li>
   </ol>
   <li>Pay attention to <em>dμ</em> growth. <b>(OPTIONAL)</b></li>
   <ol type="a">
-    <li>Make mental note of price of the two <em>μ</em> upgrades are (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
-    <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
-    <li>If <em>dμ</em> is growing fast enough and is below the next <em>μ</em> upgrade, it could be worth waiting to grab that as well. It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li>
-    <li>In the case that you are past one upgrade of the <em>μ</em> upgrades and potentially another, you will have to do some mental math to check.</li>
+    <li>Make mental note of two <em>μ</em> upgrades' costs (<kbd>↑ dt upgrade</kbd> & <kbd>↑ y factor upgrade</kbd>).</li>
     <ol type="i">
-      <li>Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add multiply the current shown <em>μ</em> upgrade to get the next one and see if you are close to buying a 2nd. This doesn't happen often but can help to check.</li>
+      <li>It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li></li>
+    </ol>
+    <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
+    <li>If <em>dμ</em> is growing fast enough and is relatively close to reaching the next <em>μ</em> upgrade, it could be worth waiting to grab that as well.
+    <li>In the case that you are past the visible cost of a <em>μ</em> upgrade and potentially close to the next, you will have to do some mental math to check.</li>
+    <ol type="i">
+      <li>Every <kbd>↑ dt upgrade</kbd> is 32,768x or ~3.28e4 more expensive per upgrade and every <kbd>↑ y factor upgrade</kbd> is 1,048,576x or ~1.05e6 more expensive per upgrade. You can add/multiply the currently shown <em>μ</em> upgrade to get the next and see if you are close to buying an additional. This doesn't happen often (outside of supremacy recovery) but can help to check.</li>
     </ol>
   </ol>
   <li>After checking <em>dμ</em> growth, ability to purchase <em>μ</em> upgrades, and <em>db</em> growth, you can prestige when all of these have slowed drastically.</li>
@@ -58,6 +61,8 @@ Playing and molding both sections will often deliver the best results for a part
 Each tap of the equation, increases t by \\(1 * (ad\\) \\( boost\\) \\( of\\) \\( 1.5) * accel\\) \\( value\\). This is a significant boost to progress until about ee15-ee20.
 After, dt becomes too large for your taps to make a worthy and significant boost to progress.
 
+There is also a 0.04% chance to gain a star from tapping the equation, however, due to this being so low and not increasing as you progress, it is only useful for getting the achievements that require tap stars. The highest achievement requires 10 tap stars which takes on average 25,000 taps, but this can very drastically depending on luck.
+
 ##### Minigames
 
 These can be unlocked once b>=1. Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
@@ -65,11 +70,13 @@ You can buy variables and perm levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 
+###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for help on solving.
+
 ##### Accel button
 
 This upgrade only has value if you continuously and consistently use it.
 If you are not using the accel at the moment, selling it will lead to more stars for variables and perm levels.
-It gives an x2.85 boost to \\(dt\\) and game progress if you max out the hour cap every time.
+It gives an x2.85 boost to \\(dt\\) and game progress if you max out the 1 hour cap every time (x3.14 cap).
 
 ##### Star upgrades
 
@@ -142,11 +149,14 @@ Doing one game of expert arrow or a few of hard arrow makes up all the stars and
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
 
+###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for help on solving.
+
+
 ##### Accel button
 
 This upgrade only has value if you continuously and consistently use it.
 If you are not using the accel at the moment, selling it will lead to more stars for variables and perm levels.
-It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the hour cap every time.
+It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the 1 hour cap every time (x3.14 cap).
 
 ##### Star upgrades
 
@@ -203,11 +213,13 @@ Doing one game of expert arrow or a few of hard arrow makes up all the stars and
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
 
+###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for help on solving.
+
 ##### Accel button
 
 This upgrade only has value if you continuously and consistently use it.
 If you are not using the accel at the moment, selling it will lead to more stars for variables and perm levels.
-It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the hour cap every time.
+It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the 1 hour cap every time (x3.14 cap).
 
 ##### Star upgrades
 
