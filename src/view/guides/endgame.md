@@ -334,10 +334,12 @@ When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can 
 Suprem Equation For 48k:
 
 ```
-(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)
-<e411&&psi+dpsi>e411)||(costUpS(3)<e511&&psi+dpsi>e511)
-||(costUpS(3)<e531&&psi+dpsi>e531)||(costUpS(3)
-<e551&&psi+dpsi>e551)||(costUpS(3)<e571&&psi+dpsi>e571)
+(costUpS(1)<e52&&psi+dpsi>e52)
+||(costUpS(3)<e411&&psi+dpsi>e411)
+||(costUpS(3)<e511&&psi+dpsi>e511)
+||(costUpS(3)<e531&&psi+dpsi>e531)
+||(costUpS(3)<e551&&psi+dpsi>e551)
+||(costUpS(3)<e571&&psi+dpsi>e571)
 ```
 
 Suprem Equation 52k:
