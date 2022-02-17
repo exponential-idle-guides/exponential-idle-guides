@@ -11,7 +11,7 @@ order: 4
 ### Theory basics
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multipliers vary from theory to theory and will
-decrease over time. If you are close to a multiplier you want, turn off autobuyer
+change over time. If you are close to a multiplier you want, turn off autobuyer
 and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
 before the publication (turn on after you publish). This is known and referenced as "cruising".
 Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative 
@@ -714,8 +714,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 ### Theory tier list (Pre-9k+)
 
 Before you reach 9k, these are the recommended values for each theory.
-You may not hit the values, but work on getting these theories up to these values later.
-This list is in order of priority.
+You may not hit the values and have a different distribution, but work on getting these theories up to these values later. This list is in order of priority.
 
 <table class="newwords">
    <thead>
