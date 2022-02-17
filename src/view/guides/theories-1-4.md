@@ -213,7 +213,7 @@ mathematics are the rate of change of the function they are the
 derivative of. For the case of \\(q_1\\)  and \\(q_2\\), \\(q_2\\) is
 the derivative of \\(q_1\\). This follows the power rule for derivatives:
 
-\\[q=at^n ↔ q’=nat^{n-1}\\]
+\\[q=a*t^n ↔ q’=n*a*t^{n-1}\\]
 
 In simpler terms, it works similar to how
 \\(x_i\\) upgrades work for \\(f(t)\\) equation with continuous addition
