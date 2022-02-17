@@ -98,7 +98,7 @@ still helps if you get used to it.
 
 #### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
+You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each seap.
 
 ###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
@@ -106,7 +106,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### Theory 1
 
-You will not touch this theory until ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
@@ -163,31 +163,26 @@ this theory to \\(e30\\) easily, but it will take some time. A step-by-step on
 how to progress the theory is detailed below.
 
 Before e30, you should repeat this after every publication:
-
-1. Buy everything **except** \\(c_2\\)
-2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased
-   individually. Only buy when \\(c_2\\) is \\(e1\\) lower than your
-   current \\(\rho\\), shown visually on the graph when it plateaus.
-3. When you are within \\(e10\\) of your last publication, you should buy
-   everything but \\(q_1\\) and \\(c_1\\). You should then manually buy
-   \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than \\(q_2\\)
-   doubling. (\\(c_1\\) only when \\(q\\) is not capped)
-4. Repeat until \\(e25\\). At \\(e25\\), push for \\(e30\\) with 0/1/0
-   milestone and start x6-10 multipliers.
+<ol type="1">
+   <li>Buy everything <b>except</b> c<sub>2</sub></li>
+   <li>Once q growth reduces, c<sub>2</sub> levels can then be purchased individually. Only buy when c<sub>2</sub> is e1 lower than your current ρ, shown visually on the graph when it plateaus.</li>
+   <li>When you are within e10 of your last publication, you should buy everything but q<sub>1</sub> and c<sub>1</sub>. You should then manually buy q<sub>1</sub> and c<sub>1</sub> when it costs e1 lower than q<sub>2</sub> doubling. (c<sub>1</sub> only when q is not capped)</li>
+   <li>Repeat until e25. At e25, push for e30 with 0/1/0
+   milestone and start x6-10 multipliers.</li>
+</ol>
 
 After autobuy at e30, you should repeat this after every publication:
-
-1. x1 (or x10 when above \\(e200\\)) buy \\(c_2\\) manually
-   and autobuy the rest until within ~\\(e10\\) of your previous
-   publication. Your graph should resemble a linear function on the
-   graph.
-2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
-   slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
-3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
-   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
-   2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
-4. Once you reach your desired multiplier, publish. 
-5. Repeat this for stonks.
+<ol type="1">
+   <li>x1 (or x10 when above e200) buy c<sub>2</sub> manually and autobuy the rest until within ~e10 of your previous publication. Your graph should resemble a linear function on the graph.</li>
+   <li>As purchasing c<sub>2</sub> becomes less frequent and q growth will slow down at this point you should stop autobuying c<sub>1</sub> & q<sub>1.</sub></li>
+   <li>Around your last pub mark, you can start auto-buying c<sub>2</sub>. At this point, you should:</li>
+   <ol type="a">
+      <li>buy q<sub>1</sub> up to 15% of the cost of the next doubling purchase (2<sup>x</sup> purchase),</li>
+      <li>and buy c<sub>1</sub> after you purchase c<sub>2</sub> until q reaches its new cap.</li>
+   </ol>
+   <li>Once you reach your desired multiplier, publish. </li>
+   <li>Repeat this for stonks.</li>
+</ol>
 
 ###### Commentary
 
