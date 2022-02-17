@@ -236,11 +236,6 @@ the number of milestone 3. \\(q\\) begins to slow down when you reach
    </tbody>
 </table>
 
-### How to respec
-
-See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
-milestones.
-
 ### t Stacking
 
 A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(f(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(f(t)\\) with the swap, thus giving us more \\dt\\, allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\phi\\) due to additional dt and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
@@ -339,17 +334,23 @@ When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can 
 Suprem Equation For 48k:
 
 ```
-(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)<e411&&psi+dpsi>e411)
-||(costUpS(3)<e511&&psi+dpsi>e511)||(costUpS(3)<e531&&psi+dpsi>e531)
-||(costUpS(3)<e551&&psi+dpsi>e551)||(costUpS(3)<e571&&psi+dpsi>e571)
+(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)
+<e411&&psi+dpsi>e411)||(costUpS(3)<e511&&psi+dpsi>e511)
+||(costUpS(3)<e531&&psi+dpsi>e531)||(costUpS(3)
+<e551&&psi+dpsi>e551)||(costUpS(3)<e571&&psi+dpsi>e571)
 ```
 
 Suprem Equation 52k:
 
 ```
-(costUpS(1)<e52&&psi+dpsi>e52)||(costUpS(3)<e571&&psi+dpsi>e571)
+(costUpS(1)<e52&&psi+dpsi>e52)
+||(costUpS(3)<e571&&psi+dpsi>e571)
 ||(costUpS(3)<e511&&psi+dpsi>e511)
 ```
+### How to respec
+
+See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
+milestones.
 
 #### Lemma
 
