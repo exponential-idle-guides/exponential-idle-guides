@@ -188,7 +188,7 @@ derivative (\\(d\\)) and see when it turns negative.
  
 ```
 timer(d(ln(db / b + 1) / pt) < 0)
-> 2 * tr && db > b && dpsi + psi 
+> 3 * tr && db > b && dpsi + psi 
 > min(min(costUpS(1), costUpS(2)), costUpS(3)) 
 && ln(1 + max(1, log10(sf)) / 
 smooth(max(1, log10(gf)), (st > tr) * ee99)) 
