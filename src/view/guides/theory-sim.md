@@ -282,7 +282,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   </tbody>
 </table>
 
-##### **Variables to always buy**
+#### **Variables to always buy**
 
 <table class="newwords">
     <thead>
@@ -337,14 +337,14 @@ If sim says T8R34, you still buy \\(c_1\\) and \\(c_2\\). It only outputs number
 
 \*\*Table excludes variables that are bought sometimes, but not always such as T5 active.
 
-##### **Time Manual and Time Auto**
+#### **Time Manual and Time Auto**
 This is the time (in hours) it should take to publish for the active or idle strategy.
 
 The simulator only runs up to 720-hours per theory per manual/auto section.
 Any results from a 720 hour simulation should be treated with caution as they never finished their publication.
 If you get a negative /hour result from hitting this 720-hour cap, this is because it never got back to the publication mark to push \\(\tau\\) so \\(ρ\\) ended below \\(\tau\\).
 
-##### **Delta Active and Delta Idle**
+#### **Delta Active and Delta Idle**
 This will tell you how much \\(\tau\\) you are expected to gain for the active or idle strategy.
 
 Delta Active and Delta Idle are defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) instead of \\(\tau_{final}\\) - \\(\tau_{initial}\\).
