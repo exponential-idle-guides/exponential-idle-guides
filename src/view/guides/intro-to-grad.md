@@ -95,7 +95,7 @@ or xMax.**
 
 #### Autosupremacy explanation
 
-Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max f(t) during that supremacy is increased, but due to prestiges, this f(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to midigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of f(t) out of that prestige to make sure it is time to supremacy.
+Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max f(t) during that supremacy is increased, but due to prestiges, this f(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to mitigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of f(t) out of that prestige to make sure it is time to supremacy.
 
 ### Star spending
 Upon unlocking all variables, you can use the [star calculator](https://conicgames.github.io/exponentialidle/stars) (by Eaux Tacous) for optimal distribution. This will not be useful if you don't have all star upgrades.
