@@ -137,7 +137,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
   
 ### Achievements and Minigames
 * Achievements are just that. They are goals to reach that give you stars as reward.
-* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/minigames/) for how to solve each puzzle and more resources.
+* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for how to solve each puzzle and more resources.
 
 
 ### Stars and Star upgrades
