@@ -350,5 +350,4 @@ This will tell you how much \\(\tau\\) you are expected to gain for the active o
 Delta Active and Delta Idle are defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) instead of \\(\tau_{final}\\) - \\(\tau_{initial}\\).
 So if delta active was equal to 1e3 and the starting \\(\tau\\) was e100, the sim publishes at e103 \\(\tau\\).
 
-**You should NOT publish at this \\(\tau\\) value** since it's very likely your starting \\(\tau\\) will be different from what is actually used in the sim due to your input being 1eXXXX not x.xxxeXXXX.
-This should not be confused with log(\\(\tau\\)).
+**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from real execution due to a simulator being better than a human at timing, purchasing, etc are prevalent. If you input your tau as 1eXXXX, then you should definitely not publish at this unless your actual tau is 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
