@@ -24,13 +24,15 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 ### Push f(t) with 3R9 swapping
 
-###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed.
+###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy. 
 1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only do this when you are near a graduation mark.
 4. Respec all 30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
+
+###### Also see [t stacking](https://exponential-idle-guides.netlify.app/guides/endgame/#t-stacking)
 
 #### R9 autoprestige expression
 
@@ -39,6 +41,16 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 ###### Reference [R9 Seaping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
 {{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+
+### How to properly use the Graduation Calculator
+The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\phi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\phi\\) you are using to push. This means use the \\(\phi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](https://exponential-idle-guides.netlify.app/guides/endgame/#skipped-students-routing) so no extra work needs to be done. 
+
+#### Three Steps To Getting The Best Result
+1. After your progress has slowed after recoverying from a graudation and nearing the next graduation, get results from the calculator. Only the F(t) output here is useful.
+2. Upon arriving to the most recent output, get a new set of results from the calculator.
+3. Repeat Step 2 until output is the same \\(F(t)\\) you are currently at. This is when you should graduate.
+
+<b>Note:</b> You may run into a Tau is higher than phi result, or similar to this, but this is due to data running that portion of the calculator being old and before Custom Theories were introduced which shifted the relative amounts. This will be fixed in the future with more data ([submitt here after any graduation](https://forms.gle/4cntT4VG8TjCmrNU6)).
 
 ### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
