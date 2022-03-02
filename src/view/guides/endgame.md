@@ -50,7 +50,7 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 2. Upon arriving to the most recent output, get a new set of results from the calculator.
 3. Repeat Step 2 until output is the same \\(F(t)\\) you are currently at. This is when you should graduate.
 
-<b>Note:</b> You may run into a Tau is higher than phi result, or similar to this, but this is due to data running that portion of the calculator being old and before Custom Theories were introduced which shifted the relative amounts. This will be fixed in the future with more data ([submitt here after any graduation](https://forms.gle/4cntT4VG8TjCmrNU6)).
+**Note:** You may run into a Tau is higher than phi result, or similar to this, but this is due to data running that portion of the calculator being old and before Custom Theories were introduced which shifted the relative amounts. This will be fixed in the future with more data ([submitt here after any graduation](https://forms.gle/4cntT4VG8TjCmrNU6)).
 
 ### Idle and Active buy strats
 For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
