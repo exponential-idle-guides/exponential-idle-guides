@@ -70,7 +70,7 @@ that publication. See below for what each part means.
    represent the three attractors and which to have on. Rare to
    see anything but T8R, but it has happened.
 
-##### **Play Strategies**
+#### **Play Strategies**
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
 
 <table class="PlayStrats">
@@ -282,7 +282,7 @@ Play strategies, such as T3Play2, are strategies invented by Playspout, one of t
   </tbody>
 </table>
 
-##### **Variables to always buy**
+#### **Variables to always buy**
 
 <table class="newwords">
     <thead>
