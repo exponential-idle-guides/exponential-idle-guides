@@ -37,14 +37,14 @@ numbers so that they will never be less than 1, especially if you are far into a
 or endgame. This also prevents you from early prestiging from dropping accel or moving 
 students around as they make phi drop in value.
 
-<blockquote>timer(abs(d(log10(phi + 1))) < 50) > 15))</blockquotes>
+<blockquote>timer(abs(d(log10(phi + 1))) < 50) > 15))</blockquote>
 
 This part prevents prestiging if phi were to change more than e5 within 1 tick. It 
 will then wait 15 sec before checking if it can prestige again. This will allow you 
 to swap R9 or students freely without needing to worry about accidentally prestiging 
 for a very small amount of \\(b\\).
 
-<blockquote>((timer(d(ln(db / b + 1) / pt) < 0)<br>> 3 * tr) && (phi >= 1 && phi <= 1)</blockquotes>
+<blockquote>((timer(d(ln(db / b + 1) / pt) < 0)<br>> 3 * tr) && (phi >= 1 && phi <= 1)</blockquote>
 
 
 If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
