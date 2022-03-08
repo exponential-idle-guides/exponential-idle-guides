@@ -8,5 +8,6 @@ blockquote {
 }
 
 blockquote .monospace {
+  display: inline-block;
 	font-family:monospace;
 }
