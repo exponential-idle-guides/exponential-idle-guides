@@ -356,8 +356,11 @@ Suprem Equation For 48k:
 
 Suprem Equation 52k:
 
-<blockquote>(costUpS(1)<\e52&&psi+dpsi>e52)<br>||(costUpS(3)<\e571&&psi+dpsi>e571)<br>||(costUpS(3)<\e511&&psi+dpsi>e511)</blockquote>
-
+```
+(costUpS(1)<e52&&psi+dpsi>e52)
+||(costUpS(3)<e571&&psi+dpsi>e571)
+||(costUpS(3)<e511&&psi+dpsi>e511)
+```
 ### How to respec
 
 See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
