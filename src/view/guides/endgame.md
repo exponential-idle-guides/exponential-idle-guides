@@ -356,7 +356,7 @@ Suprem Equation For 48k:
 
 Suprem Equation 52k:
 
-<blockquote class="monospace">(costUpS(1)<\e52&&psi+dpsi>e52)<br>||(costUpS(3)<\e571&&psi+dpsi>e571)<br>||(costUpS(3)<\e511&&psi+dpsi>e511)</blockquote>
+<blockquote class="monospace">(costUpS(1)<e52&&psi+dpsi>e52)<br>||(costUpS(3)<e571&&psi+dpsi>e571)<br>||(costUpS(3)<e511&&psi+dpsi>e511)</blockquote>
 
 ### How to respec
 
