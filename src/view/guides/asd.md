@@ -273,4 +273,4 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 
 Because Hard only has 8 possible end cases, it is practical to learn and memorize the 8 optimal tapping solutions for each case. Obviously one of the 8 cases is already solved so this really leaves on 7 cases. These are not hard to learn and are learned best through just simply playing Hard Arrow more. Below are the 8 cases.
 
-![Hard Arrow Solution Lookup](/images/hard-arrow-lookup.PNG)
+![Hard Arrow Solution Lookup](/images/hard-arrow-lookup.png)
