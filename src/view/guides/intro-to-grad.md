@@ -29,9 +29,7 @@ This is the new expression for prestige. It looks intimidating, but it will work
 you never have to turn it off (you would have to if you didn't use this one later on). Here is 
 an explanation for all parts except the normal expression which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
 
-```
-((d(smooth(10^10^10^(phi * tau), 1)) > 1)
-```
+<blockquote>((d(smooth(10^10^10^(phi * tau), 1)) > 1)</blockquote>
 
 This returns true if phi and/or tau grows a very very small amount more than the max 
 reached that prestige. The many "10^" is to make any tiny changes explode into very large 
@@ -39,19 +37,15 @@ numbers so that they will never be less than 1, especially if you are far into a
 or endgame. This also prevents you from early prestiging from dropping accel or moving 
 students around as they make phi drop in value.
 
-```
-timer(abs(d(log10(phi + 1))) < 50) > 15))
-```
+<blockquote>timer(abs(d(log10(phi + 1))) < 50) > 15))</blockquotes>
 
 This part prevents prestiging if phi were to change more than e5 within 1 tick. It 
 will then wait 15 sec before checking if it can prestige again. This will allow you 
 to swap R9 or students freely without needing to worry about accidentally prestiging 
 for a very small amount of \\(b\\).
 
-```
-((timer(d(ln(db / b + 1) / pt) < 0)
-> 3 * tr) && (phi >= 1 && phi <= 1)
-```
+<blockquote>((timer(d(ln(db / b + 1) / pt) < 0)<br>> 3 * tr) && (phi >= 1 && phi <= 1)</blockquotes>
+
 
 If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
  "=" in the expressions, so we had to work around it by using both ">=" (greater than 
@@ -59,10 +53,7 @@ If phi is equal to 1, then it uses the normal autoprestige expression. We don't 
  have any phi upgrades, it will allow you to prestige like normal and not require you 
  to swap out of theories (or R9 until the end of a graduation).
 
-```
-((0.8*log10(log10(lf))>log10(log10(gf)))||
-(0.8*log10(log10(gf))>log10(log10(sf))))
-```
+<blockquote>((0.8*log10(log10(lf))>log10(log10(gf)))||<br>(0.8*log10(log10(gf))>log10(log10(sf))))</blockquote>
 
 This lets the normal expression work when you supremacy or graduate up to 80% of 
 \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to 
