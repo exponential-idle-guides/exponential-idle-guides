@@ -9,12 +9,13 @@ order: 4
 {% import "embed-yt.njk" as yt %}
 
 ### Theory basics
+
 Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
 use them. However, the best publication multipliers vary from theory to theory and will
 change over time. If you are close to a multiplier you want, turn off autobuyer
 and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
 before the publication (turn on after you publish). This is known and referenced as "cruising".
-Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative 
+Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative
 combination of all \\(τ\\) from each theory.
 
 __Don’t be afraid to skip getting all milestones to work on the next or a
@@ -86,18 +87,23 @@ up the theory.
 #### T1 formula
 
 ##### Initial
+
 \\[ρ_{n+1} = ρ_n + c_1c_2\\]
 
 ##### First milestone
+
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2}\\]
 
 ##### Second milestone
+
 \\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 ##### Third milestone
+
 \\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 ##### Fourth to Sixth milestone
+
 \\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
 
 #### T1 strategy
@@ -285,6 +291,7 @@ The multipliers for active play we know at the moment are:\\(e25\\)-\\(e100\\)
 is \\(1k\\) to \\(10k\\); \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
 
 ##### Idle
+
 For the idle strategy, you want to prioritize your milestones on x/x/0/0
 with \\(q_{3}\\) and \\(q_{4}\\) being more important than \\(r_{3}\\)
 and \\(r_{4}\\). If you have more than 5 milestones, you will prioritize
@@ -292,6 +299,7 @@ and \\(r_{4}\\). If you have more than 5 milestones, you will prioritize
 about a \\(1000\\) multiplier, but larger multipliers are fine.
 
 ##### Active
+
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
 milestones. The active for T2 is on a 1-minute cycle: 40 seconds on
@@ -625,7 +633,6 @@ We start out with just one term of constants \\(c_1c_2\\) and a changing term \\
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
 first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
 \\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the power of \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
-
 
 #### T4 formula
 

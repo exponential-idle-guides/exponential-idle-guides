@@ -8,6 +8,7 @@ order: 1
 ###### First read the [game basics](https://exponential-idle-guides.netlify.app/guides/ex-basics/).
 
 ### Introduction
+
 The start of the game is the most variable section of the game depending on how active you play.
 This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks. 
 Within each of these sections there are idle, active, and general strategy subsections for differing playstyles.
@@ -19,11 +20,11 @@ Playing and molding both sections will often deliver the best results for a part
 
 ##### Before b>=1:
 
-   - You do not want to prestige immediately when you hit 100% but instead when \\(db\\) growth slows drastically.
-   - I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is flexible and can change based on how fast you are moving and preference.
-   - Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
+- You do not want to prestige immediately when you hit 100% but instead when \\(db\\) growth slows drastically.
+- I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is flexible and can change based on how fast you are moving and preference.
+- Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
 
-##### After b>=1: 
+##### After b>=1:
 
 <ol type="1">
   <li>Recovery is based on spamming the <kbd>Buy All</kbd> button (you can get this in star upgrades), focusing variables and swapping to upgrades occasionally.</li>
@@ -132,6 +133,7 @@ It is better to combine both of these supremacies into one than have to recovery
 #### Autoprestige
 
 Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it.
+
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
 
 ```
@@ -150,7 +152,6 @@ I would highly highly suggest focusing and learning hard arrow puzzle if you pla
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
 
 ###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
-
 
 ##### Accel button
 
@@ -175,9 +176,12 @@ If you don't use the accel button, don't buy it. When you can buy the autobuyers
 ### ee200 to ee2000
 
 #### Autosupremacy
+
 There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get it later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
+
 ###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle.
+
 ```
 timer(d(ln(db/b+1)/pt) < 0) 
 > 2 * tr && db > b
@@ -192,6 +196,7 @@ smooth(max(1,log10(gf)), (st>tr)
 ```
 
 #### What are these \\(x_i\\) supremacy upgrades?
+
 After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x₁</kbd>.
 
 ##### \\(x_i\\) Equation
@@ -201,6 +206,7 @@ After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will un
 \\(x_0 = x\\)
 
 ##### \\(x_i\\) Equation explanation
+
 The equation shown is the calculation done on every tick. Let's give the example of \\(x_1\\): \\(x_1 ← x_1+x*dt\\). Each tick, \\(x*dt\\) is added to \\(x_1\\). This is done for every new value of x and \\(dt\\). A simple way of phrasing it is as repeated addition of the product of \\(x*dt\\).
 
 #### Active strategies
@@ -235,4 +241,4 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 You will max all star upgrades besides perm levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and perm levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable. They don't provide much boost but are nice to have anyways. Any leftover stars will go into perm levels.
 
-###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graudation routing anyways.
+###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graudation routing anyways

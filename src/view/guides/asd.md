@@ -244,6 +244,7 @@ The algorithm goes as follows:
 </ol>
 
 ##### To verify there is no mistake:
+
 - When you are done, your board will be symmetric.
 - The two tiles adjacent to the bottom center tile wll always be 1 or 4.
 
@@ -267,6 +268,7 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 </ol>
 
 #### Example
+
 {{ yt.embed('https://www.youtube.com/embed/p073qSqL7EU') }}
 
 #### Hard Lookup Table

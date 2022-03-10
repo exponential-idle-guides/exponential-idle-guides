@@ -84,7 +84,8 @@ There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for th
 
 #### How to push \\(f(t)\\) with R9 swapping
 
-###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy. 
+###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
+
 1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
@@ -123,6 +124,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 ### Theory 5 (40σ / 9k)
 
 #### Variable overview
+
 \\(q_1\\) & \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
 production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
 
@@ -234,6 +236,7 @@ slightly less active.
 </table>
 
 ##### Additional information
+
 Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
 the number of milestone 3.
 
@@ -321,14 +324,14 @@ and \\(c_4\\).
 T7 can be summarized as a maximization problem : given a surface in 3-dimensional space,
 you want to find its highest altitude by moving along the surface, always in the direction
 of steepest ascent (that's basically a gradient ascent).
-The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set 
+The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set
 of points \\((x,y,g(x,y))\\), see attached image).
-\\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to 
+\\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to
 maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
 Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditioned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
-This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the 
-point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\) 
-(i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of 
+This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the
+point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\)
+(i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of
 steepest ascent of \\(g\\) at the point \\((\rho_1,\rho_2)\\).
 
 ![T7 Graph of function](/images/T7-graph.png)
@@ -416,7 +419,7 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
 
 T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\phi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
-through T8 faster than before. __You will need to buy T8 again to get R9, and you should start R9 right away after that__ 
+through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that**
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
 
 <table class="newwords">
