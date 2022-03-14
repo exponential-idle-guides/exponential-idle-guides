@@ -14,7 +14,7 @@ order: 6
 
 ### Theory 9
 
-There is no theory 9 guide and this is a guide for what to do after theory 9. Have fun figuring out T9 for yourself and remove students when finished and put back into T9 and phi.
+There is no theory 9 guide and this is a guide for what to do after theory 9. Have fun figuring out T9 for yourself and remove students when finished and put back into R9 and phi.
 
 ### Graduation routing
 
