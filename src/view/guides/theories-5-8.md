@@ -342,9 +342,9 @@ simply making the graph steeper in \\(x\\) or \\(y\\) direction, depending on th
 
 #### T7 strategy
 
-The optimal publication multiplier is \\(4\\)-\\(6\\). The strategy for
+The optimal publication multiplier is \\(4\\)-\\(6\\). You will swap from 0/1/1 → 0/0/2 at about ~e42\\(\rho\\) The strategy for
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
-cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For acive, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
+cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
 
 {{ yt.embed('https://www.youtube.com/watch?v=wnKLkd0zXwI') }}
 
