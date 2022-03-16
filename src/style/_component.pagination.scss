@@ -6,6 +6,7 @@
 	flex-wrap: wrap;
 	row-gap: 0.5em;
 	column-gap: 1em;
+	width:auto;
 
 	h2 {
 		font-size: 0.8em;
@@ -14,4 +15,5 @@
 
 .pagination__next {
 	margin-left: auto;
+	width:auto;
 }
