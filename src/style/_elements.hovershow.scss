@@ -1,3 +1,13 @@
 .hide {
   display: none;
 }
+.resources {
+  background:none;
+  border:none;
+  padding:0;
+  margin:0;
+  font-weight:bolder;
+}
+.resources:hover {
+  cursor:help;
+}
