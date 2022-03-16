@@ -1,0 +1,117 @@
+:root{
+  --sidebar-transition-time: 0.5s;
+  --sidebar-text-transition-time: 0.3s;
+  --sidebar-padding:0%;
+  --sidebar-width:0%;
+  --btn-marginLeft-width:0%;
+  --sidebar-content-padding:8px;
+  --sidebar-header-font-size:32px;
+}
+.sidebar {
+  height: 100%;
+  width:var(--sidebar-width);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: all var(--sidebar-transition-time);
+  overflow-y:scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  padding-left: var(--sidebar-padding);
+  padding-right: var(--sidebar-padding);
+}
+.sidebar::-webkit-scrollbar {
+  display:none;
+}
+
+.sidebar .content_wrapper {
+  padding: var(--sidebar-content-padding) var(--sidebar-content-padding) var(--sidebar-content-padding) 0;
+  text-decoration: none;
+  font-size: 1em;
+  color: var(--palette-stroke-sidebar-base);
+  display: block;
+  transition: var(--sidebar-text-transition-time);
+}
+
+.sidebar a {
+  color: var(--palette-stroke-sidebar-base);
+}
+.sidebar a:hover {
+  text-decoration: underline;
+  color: var(--palette-stroke);
+}
+
+.sidebar h1 {
+  position: block;
+  top:0;
+  font-size: var(--sidebar-header-font-size);
+  color: var(--palette-stroke-hc);
+  padding-top:0px;
+  padding: 0;
+  margin-top:16px;
+  transition: var(--sidebar-text-transition-time);
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: var(--sidebar-header-font-size);
+  margin-left: 50px;
+  color: var(--palette-stroke);
+}
+.sidebar .closebtn:hover {
+  text-decoration:none;
+  color: var(--palette-stroke-hc);
+}
+
+.openbtn {
+  max-width:20vw;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #111;
+  color: var(--palette-stroke);
+  padding: 10px 15px;
+  border: none;
+  word-wrap:normal;
+  text-align:left;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#sidebarmain {
+  width:auto;
+  position:fixed;
+  transition: margin-left var(--sidebar-transition-time);
+  margin-left:var(--btn-marginLeft-width);
+  z-index: 100;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.square_list li {
+    list-style-type: none;
+    position: relative;    /* It's needed for setting position to absolute in the next rule. */
+}
+
+.square_list li::before {
+    content: '■';
+    position: absolute;
+    left: -0.8em;
+    top: -0.3em;
+    font-size: 1.2em;
+}
+.square_list li li::before {
+    content: '❖';
+    position: absolute;
+    left: -0.8em;
+    top: -0.1em;
+    font-size: 1.2em;
+}

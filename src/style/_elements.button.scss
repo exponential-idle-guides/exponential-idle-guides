@@ -1,0 +1,17 @@
+.hide {
+  display: none;
+}
+.resources {
+  background:none;
+  border:none;
+  padding:0;
+  margin:0;
+  font-weight:bolder;
+	font-size: max(75%, 60% + 1.5vmin);
+	--body-line-height: 1.4;
+	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+  color:var(--palette-stroke-hc);
+}
+.resources:hover {
+  cursor:help;
+}

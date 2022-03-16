@@ -22,7 +22,7 @@ Routing is based on your current Tau (\\(\tau\\)) and Phi (\\(\varphi\\)) number
 
 Make sure to use the [calculators and simulators](/#other-resources) for optimal graduation, student, star, and theory options.
 
-### Push f(t) with 3R9 swapping
+### Push F(t) with 3R9 swapping
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy. 
 
