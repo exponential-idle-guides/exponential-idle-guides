@@ -47,7 +47,7 @@
   position: block;
   top:0;
   font-size: var(--sidebar-header-font-size);
-  color: var(--palette-stroke);
+  color: var(--palette-stroke-hc);
   padding-top:0px;
   padding: 0;
   margin-top:16px;
@@ -59,10 +59,11 @@
   right: 25px;
   font-size: var(--sidebar-header-font-size);
   margin-left: 50px;
+  color: var(--palette-stroke);
 }
 .sidebar .closebtn:hover {
   text-decoration:none;
-  color: var(--palette-stroke);
+  color: var(--palette-stroke-hc);
 }
 
 .openbtn {
