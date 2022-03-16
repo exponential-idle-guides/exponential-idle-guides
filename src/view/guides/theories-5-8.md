@@ -82,7 +82,7 @@ All routing follows the [student calculator](https://conicgames.github.io/expone
 
 There is also the [theory simulator](http://bit.ly/anthsim) by Antharion (for theories w/ max milestones).
 
-#### How to push \\(f(t)\\) with R9 swapping
+#### How to push F(t) with R9 swapping
 
 ###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
 

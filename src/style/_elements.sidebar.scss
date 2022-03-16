@@ -5,7 +5,7 @@
   --sidebar-width:0%;
   --btn-marginLeft-width:0%;
   --sidebar-content-padding:8px;
-  --sidebar-header-font-size:25px;
+  --sidebar-header-font-size:32px;
 }
 .sidebar {
   height: 100%;
@@ -67,13 +67,14 @@
 
 .openbtn {
   max-width:20vw;
-  font-size: 1.3em;
+  font-size: 1.2em;
   cursor: pointer;
   background-color: #111;
   color: var(--palette-stroke);
   padding: 10px 15px;
   border: none;
   word-wrap:normal;
+  text-align:left;
 }
 
 .openbtn:hover {
