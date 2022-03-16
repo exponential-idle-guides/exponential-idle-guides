@@ -7,6 +7,9 @@
   padding:0;
   margin:0;
   font-weight:bolder;
+	font-size: max(75%, 60% + 1.5vmin);
+	--body-line-height: 1.4;
+	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
 .resources:hover {
   cursor:help;
