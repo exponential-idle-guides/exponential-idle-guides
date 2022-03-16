@@ -26,8 +26,55 @@
       gtag('config', 'G-CQWRWZCSZW');
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
+    <script>
+      function openSidebar(sidebars,sidebarheaders) {
+        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
+        
+        if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
+  	      maxwidth=0;maxheaderwidth=0;
+          for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
+          for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
+          for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
+          document.getElementById(sidebarheaders).style.width="auto";
+          maxheaderwidth=document.getElementById(sidebarheaders).offsetWidth;
+          document.getElementById(sidebarheaders).style.width=0;
+          
+          if (maxwidth<=0 && maxheaderwidth<=0) {
+            document.querySelector(':root').style.setProperty('--sidebar-width', 'auto');
+            document.querySelector(':root').style.setProperty('--btn-marginLeft-width', 'auto');
+          } else {
+            if(maxheaderwidth >= window.innerWidth*0.26){output=maxheaderwidth+window.innerWidth*0.02;}
+            else if(maxwidth >= window.innerWidth*0.26){output=window.innerWidth*0.26;}
+            else {output=maxwidth;}
+            document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
+            document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.innerWidth*0.04)+"px");
+            document.querySelector(':root').style.setProperty('--sidebar-padding', window.innerWidth*0.02+"px");
+          }
+        }
+      }
+      function closeSidebar() {
+        document.querySelector(':root').style.setProperty('--sidebar-width', "0%");
+        document.querySelector(':root').style.setProperty('--btn-marginLeft-width', "0%");
+        document.querySelector(':root').style.setProperty('--sidebar-padding', "0");
+      }
+      window.addEventListener('click', function(e){
+        if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.innerWidth*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
+          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
+          while(bool==false){
+            for(const sidebars of sidebarlist){
+              if(bool==true){break;}
+              else if(document.getElementById(sidebars).contains(e.target)==true){bool=true;}
+            }
+            if(bool==false){break;}
+          }
+          if(bool){}else{closeSidebar();}
+        }
+      })
+    </script>
   </head>
   <body>
+    {% block sidebar %}{% endblock %}
+
     <header class="page-section header" id="top">
       <button class="btn-color-scheme-toggle">
         <span class="light"><img alt="Light mode toggle" src="/images/sun.svg"></span>
@@ -36,6 +83,7 @@
       <h1><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>
+
     <main class="page-section content-wrapper">
       {% block title %}
         <h2>{{title}}</h2>
@@ -51,6 +99,7 @@
         </div>
       {% endif %}
     </main>
+    
     <footer class="page-section footer">
       <div class="footer__section footer__section--main">
         {{ nav | safe }}
@@ -67,12 +116,7 @@
         <p>Guides copyright <a href="https://github.com/LEBaldy">LE★Baldy</a> & <a href="https://github.com/Snaeks">Snaeky</a>.
         <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
       </div>
-      {% if not home %}
-        <div class="footer__section footer__section--left">
-          <h3>Other resources</h3>
-          {% include 'tools.njk' %}
-        </div>
-      {% endif %}
+      
       <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
         <svg
           xmlns="http://www.w3.org/2000/svg"

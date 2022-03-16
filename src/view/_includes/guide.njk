@@ -28,14 +28,99 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
-  {% set toc = content | toc %}
-
-  {% if toc %}
-  <div class="toc-wrapper">
-    <h3>Table of contents</h3>
-    {{ toc | safe }}
-  </div>
-  {% endif %}
-
   {{ content | safe }}
+{% endblock %}
+
+{% block sidebar %}
+  {% if not home %}
+    <div id="HeaderSidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Table of Contents</h1>
+      <div class="content_wrapper square_list">
+        {% if toc %}
+          {{content|toc|safe}}
+        {% else %}
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        {% endif %}
+      </div>
+    </div>
+    <div id="HeaderSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Table of Contents</h1>
+      <div class="content_wrapper square_list">
+        {% if toc %}
+          {{content|toc|safe}}
+        {% else %}
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        {% endif %}
+      </div>
+    </div>
+    
+    <div id="GuideSidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guides</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for guide in collections.guides -%}
+            <li>
+              <a href="{{guide.url}}">{{ guide.data.title }}</a>
+              {% if guide.data.subtitle %}
+                ({{ guide.data.subtitle }})
+              {% endif %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div id="GuideSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guides</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for guide in collections.guides -%}
+            <li>
+              <a href="{{guide.url}}">{{ guide.data.title }}</a>
+              {% if guide.data.subtitle %}
+                ({{ guide.data.subtitle }})
+              {% endif %}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    <div id="ResourceSidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Resources</h1>
+      <div class="content_wrapper square_list">
+        {% include 'tools.njk' %}
+      </div>
+    </div>
+    <div id="ResourceSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Resources</h1>
+      <div class="content_wrapper square_list">
+        {% include 'tools.njk' %}
+      </div>
+    </div>
+
+    
+    <div id="SidebarHeaders" class="sidebar">
+      <h1 class="sidebartitle">More Guides ⓧ</h1>
+      <h1 class="sidebartitle">Table of Contents ⓧ</h1>
+      <h1 class="sidebartitle">Other Resources ⓧ</h1>
+    </div>
+
+    <div id="sidebarmain">
+      <div>
+        <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">More Guides</span></button>
+      </div>
+      <div>
+        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">Table of Contents</span></button>
+      </div>
+      <div>
+        <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">Other Resources</span></button>
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}
