@@ -32,31 +32,40 @@
 {% endblock %}
 
 {% block sidebar %}
-  {% set tocs = content | toc %}
-  {% if not home %}
-    <div id="HeaderSidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Table of Contents</h1>
-      <div class="content_wrapper square_list">
-        {% if toc %}
+  {% if not home %}\
+    {% set tocs = content | toc %}
+    {% if tocs %}
+      <div id="HeaderSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
           {{content|toc|safe}}
-        {% else %}
-          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
-        {% endif %}
+        </div>
       </div>
-    </div>
-    <div id="HeaderSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Table of Contents</h1>
-      <div class="content_wrapper square_list">
-        {% if toc %}
+      <div id="HeaderSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
           {{content|toc|safe}}
-        {% else %}
-          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
-        {% endif %}
+        </div>
       </div>
-    </div>
-    
+    {% else %}
+      <div id="HeaderSidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        </div>
+      </div>
+      <div id="HeaderSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        </div>
+      </div>
+    {% endif %}
+
     <div id="GuideSidebar" class="sidebar">
       <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guides</h1>
@@ -117,7 +126,7 @@
         <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">More Guides</span></button>
       </div>
       <div>
-        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">Table of Contents</span></button>
+        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">Table of <wbr>Contents</span></button>
       </div>
       <div>
         <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰<span style="font-size:1em;">Other Resources</span></button>
