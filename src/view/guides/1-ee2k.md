@@ -195,7 +195,7 @@ smooth(max(1,log10(gf)), (st>tr)
 * ee99))/max(1,st), (pt>tr) * ee99)
 ```
 
-#### What are these x<sub><sub>i</sub></sub> supremacy upgrades?
+#### What are these xi supremacy upgrades?
 
 After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x₁</kbd>.
 
