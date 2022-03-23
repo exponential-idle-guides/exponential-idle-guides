@@ -32,7 +32,6 @@
         
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
   	      maxwidth=0;maxheaderwidth=0;mainwidth=document.getElementById("sidebarmain").offsetWidth;
-          alert(window.visualViewport.width+" , "+window.innerWidth)
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
           for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
@@ -48,7 +47,6 @@
             else if(maxwidth >= window.visualViewport.width*0.26){output=window.visualViewport.width*0.26;}
             else {output=maxwidth;}
             if((output + mainwidth) >= window.visualViewport.width){output = window.visualViewport.width*0.96 - mainwidth;}
-            alert(output)
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.visualViewport.width*0.04)+"px");
             document.querySelector(':root').style.setProperty('--sidebar-padding', window.visualViewport.width*0.02+"px");
