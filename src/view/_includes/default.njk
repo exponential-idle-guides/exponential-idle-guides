@@ -47,9 +47,21 @@
             document.querySelector(':root').style.setProperty('--sidebar-width', 'auto');
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', 'auto');
           } else {
-            if(maxheaderwidth >= window.visualViewport.width*0.26){output=maxheaderwidth+window.visualViewport.width*0.02;}
-            else if(maxwidth >= window.visualViewport.width*0.26){output=window.visualViewport.width*0.26;}
-            else {output=maxwidth;}
+            alert("in")
+            if(maxheaderwidth >= window.visualViewport.width*0.26){
+              alert(1)
+              alert(maxheaderwidth+window.visualViewport.width*0.02)
+              output=maxheaderwidth+window.visualViewport.width*0.02;
+              }
+            else if(maxwidth >= window.visualViewport.width*0.26){
+              alert(2)
+              alert(window.visualViewport.width*0.26)
+              output=window.visualViewport.width*0.26;
+              }
+            else {
+              alert(3)
+              output=maxwidth;
+            }
             alert(output)
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.visualViewport.width*0.04)+"px");
