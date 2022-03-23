@@ -31,24 +31,25 @@
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
-  	      maxwidth=0;maxheaderwidth=0;
+  	      maxwidth=0;maxheaderwidth=0;mainwidth=document.getElementById("sidebarmain").offsetWidth;
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
           for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
           document.getElementById(sidebarheaders).style.width="auto";
           maxheaderwidth=document.getElementById(sidebarheaders).offsetWidth;
-          document.getElementById(sidebarheaders).style.width=0;
-          
+          document.getElementById(sidebarheaders).style.width="0%";
+
           if (maxwidth<=0 && maxheaderwidth<=0) {
             document.querySelector(':root').style.setProperty('--sidebar-width', 'auto');
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', 'auto');
           } else {
-            if(maxheaderwidth >= window.innerWidth*0.26){output=maxheaderwidth+window.innerWidth*0.02;}
-            else if(maxwidth >= window.innerWidth*0.26){output=window.innerWidth*0.26;}
+            if(maxheaderwidth >= window.visualViewport.width*0.26){output=maxheaderwidth+window.visualViewport.width*0.02;}
+            else if(maxwidth >= window.visualViewport.width*0.26){output=window.visualViewport.width*0.26;}
             else {output=maxwidth;}
+            if((output + mainwidth) >= window.visualViewport.width){output = window.visualViewport.width*0.96 - mainwidth;}
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
-            document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.innerWidth*0.04)+"px");
-            document.querySelector(':root').style.setProperty('--sidebar-padding', window.innerWidth*0.02+"px");
+            document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.visualViewport.width*0.04)+"px");
+            document.querySelector(':root').style.setProperty('--sidebar-padding', window.visualViewport.width*0.02+"px");
           }
         }
       }
@@ -58,7 +59,7 @@
         document.querySelector(':root').style.setProperty('--sidebar-padding', "0");
       }
       window.addEventListener('click', function(e){
-        if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.innerWidth*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
+        if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.visualViewport.width*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
           bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
           while(bool==false){
             for(const sidebars of sidebarlist){

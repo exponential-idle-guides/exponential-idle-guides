@@ -5,7 +5,7 @@
   --sidebar-width:0%;
   --btn-marginLeft-width:0%;
   --sidebar-content-padding:8px;
-  --sidebar-header-font-size:32px;
+  --sidebar-header-font-size:1.5em;
 }
 .sidebar {
   height: 100%;
@@ -45,20 +45,20 @@
 
 .sidebar h1 {
   position: block;
-  top:0;
+  top: min(3.5vh, 3.5vw, 20px);
   font-size: var(--sidebar-header-font-size);
   color: var(--palette-stroke-hc);
   padding-top:0px;
   padding: 0;
-  margin-top:16px;
+  margin-top: min(3.5vh, 3.5vw, 20px);
   transition: var(--sidebar-text-transition-time);
 }
 .sidebar .closebtn {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: min(3.5vh, 3.5vw, 20px);
+  right: min(30px, 3.5vw);
   font-size: var(--sidebar-header-font-size);
-  margin-left: 50px;
+  margin-left: min(50px, 15vw);
   color: var(--palette-stroke);
 }
 .sidebar .closebtn:hover {
@@ -72,7 +72,7 @@
   cursor: pointer;
   background-color: #111;
   color: var(--palette-stroke);
-  padding: 10px 15px;
+  padding: min(2vh, 15px) min(3vw, 20px);
   border: none;
   word-wrap:normal;
   text-align:left;
