@@ -32,6 +32,8 @@
         
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
   	      maxwidth=0;maxheaderwidth=0;
+          alert(window.visualViewport.width)
+          alert(window.innerWidth)
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
           for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
