@@ -31,36 +31,23 @@
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
-          alert(document.getElementById("sidebarmain").offsetWidth)
-          mainwidth=document.getElementById("sidebarmain").offsetWidth
-  	      maxwidth=0;maxheaderwidth=0;
+  	      maxwidth=0;maxheaderwidth=0;mainwidth=document.getElementById("sidebarmain").offsetWidth;
           alert(window.visualViewport.width+" , "+window.innerWidth)
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
           for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
           document.getElementById(sidebarheaders).style.width="auto";
           maxheaderwidth=document.getElementById(sidebarheaders).offsetWidth;
-          alert(maxheaderwidth+" , "+maxwidth)
+          document.getElementById(sidebarheaders).style.width="0%";
+
           if (maxwidth<=0 && maxheaderwidth<=0) {
             document.querySelector(':root').style.setProperty('--sidebar-width', 'auto');
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', 'auto');
           } else {
-            alert("in")
-            if(maxheaderwidth >= window.visualViewport.width*0.26){
-              alert(1+": "+maxheaderwidth+window.visualViewport.width*0.02)
-              output=maxheaderwidth+window.visualViewport.width*0.02;
-              }
-            else if(maxwidth >= window.visualViewport.width*0.26){
-              alert(2+": "+window.visualViewport.width*0.26)
-              output=window.visualViewport.width*0.26;
-              }
-            else {
-              alert(3)
-              output=maxwidth;
-            }
-            if((output + mainwidth) >= window.visualViewport.width){
-              output = window.visualViewport.width*0.96 - mainwidth;
-            }
+            if(maxheaderwidth >= window.visualViewport.width*0.26){output=maxheaderwidth+window.visualViewport.width*0.02;}
+            else if(maxwidth >= window.visualViewport.width*0.26){output=window.visualViewport.width*0.26;}
+            else {output=maxwidth;}
+            if((output + mainwidth) >= window.visualViewport.width){output = window.visualViewport.width*0.96 - mainwidth;}
             alert(output)
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.visualViewport.width*0.04)+"px");
