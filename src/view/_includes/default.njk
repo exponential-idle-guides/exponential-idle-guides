@@ -29,7 +29,10 @@
     <script>
       function openSidebar(sidebars,sidebarheaders) {
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
+        
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
+          alert(document.getElementById(sidebarmain).offsetWidth)
+          mainwidth=document.getElementById(sidebarmain).offsetWidth
   	      maxwidth=0;maxheaderwidth=0;
           alert(window.visualViewport.width+" , "+window.innerWidth)
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
@@ -54,6 +57,9 @@
             else {
               alert(3)
               output=maxwidth;
+            }
+            if((output + mainwidth) >= window.visualViewport.width){
+              output = window.visualViewport.width*0.96 - mainwidth;
             }
             alert(output)
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
