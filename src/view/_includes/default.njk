@@ -49,6 +49,7 @@
             if(maxheaderwidth >= window.visualViewport.width*0.26){output=maxheaderwidth+window.visualViewport.width*0.02;}
             else if(maxwidth >= window.visualViewport.width*0.26){output=window.visualViewport.width*0.26;}
             else {output=maxwidth;}
+            alert(output)
             document.querySelector(':root').style.setProperty('--sidebar-width', output+"px");
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', (output+window.visualViewport.width*0.04)+"px");
             document.querySelector(':root').style.setProperty('--sidebar-padding', window.visualViewport.width*0.02+"px");
