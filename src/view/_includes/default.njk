@@ -41,7 +41,8 @@
           document.getElementById(sidebarheaders).style.width="auto";
           maxheaderwidth=document.getElementById(sidebarheaders).offsetWidth;
           document.getElementById(sidebarheaders).style.width=0;
-          
+          alert(maxheaderwidth)
+          alert(maxwidth)
           if (maxwidth<=0 && maxheaderwidth<=0) {
             document.querySelector(':root').style.setProperty('--sidebar-width', 'auto');
             document.querySelector(':root').style.setProperty('--btn-marginLeft-width', 'auto');
