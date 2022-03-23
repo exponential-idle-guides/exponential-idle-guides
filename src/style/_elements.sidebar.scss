@@ -50,15 +50,15 @@
   color: var(--palette-stroke-hc);
   padding-top:0px;
   padding: 0;
-  margin-top:16px;
+  margin-top:3.5vw;
   transition: var(--sidebar-text-transition-time);
 }
 .sidebar .closebtn {
   position: absolute;
-  top: 15px;
-  right: 25px;
+  top: 3.5vw;
+  right: 5vw;
   font-size: var(--sidebar-header-font-size);
-  margin-left: 50px;
+  margin-left: 13vw;
   color: var(--palette-stroke);
 }
 .sidebar .closebtn:hover {
@@ -72,7 +72,7 @@
   cursor: pointer;
   background-color: #111;
   color: var(--palette-stroke);
-  padding: 10px 15px;
+  padding: 2vh 3.5vw;
   border: none;
   word-wrap:normal;
   text-align:left;
