@@ -28,9 +28,7 @@
     <title>{{title}} - Exponential Idle Guides</title>
     <script>
       function openSidebar(sidebars,sidebarheaders) {
-        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="5";
-        alert(sidebarheaders)
-        document.getElementById(sidebarheaders).style.zIndex="10"
+        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
   	      maxwidth=0;maxheaderwidth=0;
           alert(window.visualViewport.width+" , "+window.innerWidth)
