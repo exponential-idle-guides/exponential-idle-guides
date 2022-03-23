@@ -45,20 +45,20 @@
 
 .sidebar h1 {
   position: block;
-  top:0;
+  top: min(3.5vh, 3.5vw, 20px);
   font-size: var(--sidebar-header-font-size);
   color: var(--palette-stroke-hc);
   padding-top:0px;
   padding: 0;
-  margin-top:3.5vw;
+  margin-top: min(3.5vh, 3.5vw, 20px);
   transition: var(--sidebar-text-transition-time);
 }
 .sidebar .closebtn {
   position: absolute;
-  top: 3.5vw;
-  right: 5vw;
+  top: min(3.5vh, 3.5vw, 20px);
+  right: min(30px, 3.5vw);
   font-size: var(--sidebar-header-font-size);
-  margin-left: 13vw;
+  margin-left: min(50px, 15vw);
   color: var(--palette-stroke);
 }
 .sidebar .closebtn:hover {
@@ -72,7 +72,7 @@
   cursor: pointer;
   background-color: #111;
   color: var(--palette-stroke);
-  padding: 2vh 3.5vw;
+  padding: min(2vh, 15px) min(3vw, 20px);
   border: none;
   word-wrap:normal;
   text-align:left;
