@@ -1,3 +1,8 @@
+:root {
+	--palette-fill-table-headers: #7c7c7c;
+	--palette-stroke-table-headers: #ccc;
+}
+
 .table-wrapper {
 	max-width: 100%;
 	overflow-x: auto;
@@ -38,22 +43,21 @@ th, td {
 	border: none;
 	background-color:transparent;
 }
-.newwords .leftHeader {
+.newwords .leftHeader, .newwords .leftlastHeader {
+	color: var(--palette-stroke-table-headers);
 	font-weight: bold;
-	background-color:#7c7c7c;
+	background-color:var(--palette-fill-table-headers);
 	border-right: 5px solid black;
 }
 .newwords .leftlastHeader {
-	font-weight: bold;
-	background-color:#7c7c7c;
-	border-right: 5px solid black;
 	border-bottom: 5px solid black;
 }
 .newwords .last_row {
 	border-bottom: 5px solid black;
 }
 .newwords th {
-	background-color:#7c7c7c; 
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers); 
 	border-bottom: 5px solid black;
 }
 .newwords th, td {
@@ -74,11 +78,11 @@ th, td {
 }
 .T2 .leftHeader {
 	font-weight: bold;
-	background-color:#7c7c7c;
+	background-color:var(--palette-fill-table-headers);
 	border-right: 5px solid black;
 }
 .T2 th {
-	background-color:#7c7c7c; 
+	background-color:var(--palette-fill-table-headers);
 	border-bottom: 5px solid black;
 }
 .T2 th, td {
@@ -118,7 +122,7 @@ th, td {
 	border-bottom: 5px solid black;
 }
 .PlayStrats th {
-	background-color:#7c7c7c; 
+	background-color:var(--palette-fill-table-headers); 
 	border-bottom: 5px solid black;
 }
 .PlayStrats th, td {
@@ -128,7 +132,7 @@ th, td {
 
 //Graduation Routing
 .graduation_routing {
-    margin-left: 0;
+  margin-left: 0;
 	margin-top: 0;
 }
 .graduation_routing .arrow {
@@ -137,7 +141,7 @@ th, td {
 
 //Milestone Routing
 .milestone_routing {
-    margin-left: 0;
+  margin-left: 0;
 	margin-top: 0;
 }
 .milestone_routing .arrow {
