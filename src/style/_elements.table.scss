@@ -1,6 +1,8 @@
 :root {
 	--palette-fill-table-headers: #7c7c7c;
+	--palette-fill-table-headers-dark: #5a5858;
 	--palette-stroke-table-headers: #ccc;
+	--palette-stroke-table-headers-dark: #ccc;
 }
 
 .table-wrapper {
@@ -78,10 +80,12 @@ th, td {
 }
 .T2 .leftHeader {
 	font-weight: bold;
+	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers);
 	border-right: 5px solid black;
 }
 .T2 th {
+	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers);
 	border-bottom: 5px solid black;
 }
@@ -102,16 +106,19 @@ th, td {
 }
 .PlayStrats .leftHeader {
 	font-weight: bold;
-	background-color:#5a5858;
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers-dark);
 	border-right: 5px solid black;
 }
 .PlayStrats .topHeader {
-	background-color:#5a5858;
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers-dark);
 	border-bottom: none;
 }
 .PlayStrats .leftlastHeader {
 	font-weight: bold;
-	background-color:#5a5858;
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers-dark);
 	border-right: 5px solid black;
 	border-bottom: 5px solid black;
 }
@@ -122,6 +129,7 @@ th, td {
 	border-bottom: 5px solid black;
 }
 .PlayStrats th {
+	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers); 
 	border-bottom: 5px solid black;
 }
