@@ -6,6 +6,11 @@
   --btn-marginLeft-width:0%;
   --sidebar-content-padding:8px;
   --sidebar-header-font-size:1.5em;
+
+  --palette-fill-sidebar-hover: #444;
+  --palette-fill-sidebar: #111;
+  --palette-stroke-sidebar-base: #ccc;
+  --palette-stroke-sidebar-header-hover: #fff;
 }
 .sidebar {
   height: 100%;
@@ -13,7 +18,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: var(--palette-fill-sidebar);
   overflow-x: hidden;
   transition: all var(--sidebar-transition-time);
   overflow-y:scroll;
@@ -40,14 +45,14 @@
 }
 .sidebar a:hover {
   text-decoration: underline;
-  color: var(--palette-stroke);
+  color: var(--palette-stroke-sidebar-header-hover);
 }
 
 .sidebar h1 {
   position: block;
   top: min(3.5vh, 3.5vw, 20px);
   font-size: var(--sidebar-header-font-size);
-  color: var(--palette-stroke-hc);
+  color: var(--palette-stroke-sidebar-header-hover);
   padding-top:0px;
   padding: 0;
   margin-top: min(3.5vh, 3.5vw, 20px);
@@ -59,19 +64,19 @@
   right: min(30px, 3.5vw);
   font-size: var(--sidebar-header-font-size);
   margin-left: min(50px, 15vw);
-  color: var(--palette-stroke);
+  color: var(--palette-stroke-sidebar-base);
 }
 .sidebar .closebtn:hover {
   text-decoration:none;
-  color: var(--palette-stroke-hc);
+  color: var(--palette-stroke-sidebar-header-hover);
 }
 
 .openbtn {
   max-width:20vw;
   font-size: 1.2em;
   cursor: pointer;
-  background-color: #111;
-  color: var(--palette-stroke);
+  background-color: var(--palette-fill-sidebar);
+  color: var(--palette-stroke-sidebar-base);
   padding: min(2vh, 15px) min(3vw, 20px);
   border: none;
   word-wrap:normal;
@@ -79,7 +84,7 @@
 }
 
 .openbtn:hover {
-  background-color: #444;
+  background-color: var(--palette-fill-sidebar-hover);
 }
 
 #sidebarmain {
