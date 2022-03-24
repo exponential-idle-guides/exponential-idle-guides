@@ -6,6 +6,15 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
+
+  
+	--palette-fill-table-headers: #7c7c7c;
+	--palette-fill-table-headers-dark: #5a5858;
+	--palette-stroke-table-headers: #ccc;
+  --palette-fill-sidebar-hover: #444;
+  --palette-fill-sidebar: #111;
+  --palette-stroke-sidebar-base: #ccc;
+  --palette-stroke-sidebar-header-hover: #fff;
 }
 
 @media(prefers-color-scheme: light) {
