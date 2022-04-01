@@ -27,7 +27,7 @@
     "slugify": "^1.6.0"
   },
   "dependencies": {
-    "concurrently": "^6.2.0",
+    "concurrently": "^6.5.1",
     "eleventy-plugin-toc": "^1.1.0"
   }
 }
