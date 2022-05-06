@@ -56,6 +56,8 @@ You may want to do multiple simulations after each publication for some theories
 
 #### **Strategy Manual and Strategy Auto**
 
+Full documentation of strategies that are not listed here as well as the most up-to-date information of the newest strategies not in the sim yet, check out the [Collection of Theory Strategies](https://docs.google.com/document/d/1kr0as58fWb4TIUV8ST_OKtCmyryA3lFsPI4c7j0Tfvo) by Spqcey.
+
 This is the optimal strategy for active or idle playing (for auto) of
 that publication. See below for what each part means.
 
@@ -79,6 +81,8 @@ that publication. See below for what each part means.
    see anything but T8R, but it has happened.
 
 #### **Play Strategies**
+
+##### Not all unique strategies are listed here. Full documentation can be found in the [Collection of Theory Strategies](https://docs.google.com/document/d/1kr0as58fWb4TIUV8ST_OKtCmyryA3lFsPI4c7j0Tfvo) by Spqcey.
 
 Play strategies, such as T3Play2, are strategies invented by Playspout, one of the top players. These strategies are usually very active, but will improve theories tau/hour significantly and need to be followed precisely in order to be efficient. The strategies are as follows:
 
