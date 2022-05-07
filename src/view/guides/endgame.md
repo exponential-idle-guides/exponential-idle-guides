@@ -259,7 +259,7 @@ Once you have enough students to always have R4 to R7 maxed out (about 30k), you
 
 Due to fluxuations with stars, accel, t, and more, skipma and bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
 
-##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the (graduation calculator)[https://replit.com/@LEBaldy2002/gradcalc#main.py] which will automatically ask for information for this calculation if you are on 1dσ.
+##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ.
 
 <table class="newwords">
    <thead>
