@@ -20,7 +20,7 @@ There is no theory 9 guide and this is a guide for what to do after theory 9. Ha
 
 Routing is based on your current Tau (\\(\tau\\)) and Phi (\\(\varphi\\)) numbers.
 
-Make sure to use the <span id="rsc-sidebar">calculators and simulators</span> for optimal graduation, student, star, and theory options.
+Make sure to use the <a href="javascript:void(0)" id="rsc-sidebar">calculators and simulators</a> for optimal graduation, student, star, and theory options.
 
 ### Push F(t) with 3R9 swapping
 
