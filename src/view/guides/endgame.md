@@ -267,8 +267,8 @@ Due to fluxuations with stars, accel, t, and more, skipma and bigma can be situa
       <th>Students to Skip</th>
    </thead>
    <tbody>
-      <td class="leftlastHeader">Always Skipped</td>
-      <td class="last_row">144, 146, 149, 152, 155, 158, 161, 164</td>
+      <td class="leftHeader">Always Skipped</td>
+      <td>144, 146, 149, 152, 155, 158, 161, 164</td>
    </tbody>
    <tbody>
       <td class="leftHeader"></td>
@@ -313,7 +313,7 @@ Due to fluxuations with stars, accel, t, and more, skipma and bigma can be situa
    </thead>
    <tbody>
       <td class="leftHeader">Always Skipped</td>
-      <td class="last_row">29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k</td>
+      <td>29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k</td>
    </tbody>
    <tbody>
       <td class="leftHeader"></td>
@@ -340,7 +340,7 @@ Due to fluxuations with stars, accel, t, and more, skipma and bigma can be situa
       <td>56.8k, 57.4k, 58.8k, 60.2k, 60.6k, 61.8k, 63.4k</td>
    </tbody>
    <tbody>
-      <td class="leftHeader"></td>
+      <td class="leftlastHeader"></td>
       <td>65.0k, 65.8k, 66.2k, 66.6k, 67.8k, 68.2k, 69.8k</td>
    </tbody>
    <tbody>
