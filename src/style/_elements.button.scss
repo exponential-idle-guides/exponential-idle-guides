@@ -1,5 +1,5 @@
 .hide {
-  display: none;
+  display:none;
 }
 .resources {
   background:none;
@@ -14,4 +14,21 @@
 }
 .resources:hover {
   cursor:help;
+}
+
+.rsc-link {
+  border: none;
+  background-color: inherit;
+  padding:0;
+	font-size: max(66%, 53% + 1.33vmin);
+  cursor: pointer;
+  display:inline-block;
+  color: var(--palette-stroke-hc);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.rsc-link:hover {
+  text-decoration: underline;
+  color: var(--palette-stroke);
 }
