@@ -26,7 +26,7 @@ Make sure to use the [calculators and simulators](/#other-resources) for optimal
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy. 
 
-1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
+1. Wait till \\(F(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
 3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only do this when you are near a graduation mark.
 4. Respec all 30 students from R9.
@@ -251,13 +251,15 @@ the number of milestone 3. \\(q\\) begins to slow down when you reach
 
 ### t Stacking
 
-A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(f(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(f(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\phi\\) due to additional dt and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
+A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\phi\\) due to additional dt and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
 
 ### Skipped Students Routing
 
-Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\phi\\), and "Skipmas", students that will yield 0 extra \\(\phi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(f(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\phi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
+Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\phi\\), and "Skipmas", students that will yield 0 extra \\(\phi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\phi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
-For normal distribution of stars, \\(t\\), and accel usage, skip these for 1d\\(\sigma\\):
+Due to fluxuations with stars, accel, t, and more, skipma and bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
+
+##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the (graduation calculator)[https://replit.com/@LEBaldy2002/gradcalc#main.py] which will automatically ask for information for this calculation if you are on 1dσ.
 
 <table class="newwords">
    <thead>
@@ -265,76 +267,97 @@ For normal distribution of stars, \\(t\\), and accel usage, skip these for 1d\\(
       <th>Students to Skip</th>
    </thead>
    <tbody>
-      <td class="leftlastHeader">Below 150</td>
-      <td class="last_row">144, 146, 149</td>
+      <td class="leftlastHeader">Always Skipped</td>
+      <td class="last_row">144, 146, 149, 152, 155, 158, 161, 164</td>
    </tbody>
    <tbody>
-      <td class="leftHeader">150-199</td>
-      <td>152, 155, 158, 161, 164, 166, 168, 172</td>
+      <td class="leftHeader"></td>
+      <td>166, 168, 172, 176, 180, 184, 188, 190</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">176, 180, 184, 188, 190, 193, 198</td>
+      <td class="leftHeader"></td>
+      <td>193, 198, 203, 208, 213, 216, 218, 220</td>
    </tbody>
    <tbody>
-      <td class="leftHeader">200-249</td>
-      <td>203, 208, 213, 216, 218, 220, 224</td>
+      <td class="leftHeader"></td>
+      <td>224, 230, 236, 240, 242, 246, 248, 251</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">230, 236, 240, 242, 246, 248</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader">250-299</td>
-      <td>251, 254, 256, 261, 268, 275, 279</td>
+      <td class="leftHeader"></td>
+      <td>256, 261, 268, 275, 279, 282, 289, 296, 298</td>
    </tbody>
    <tbody>
       <td class="leftlastHeader"></td>
-      <td class="last_row">282, 286, 289, 292, 296, 298</td>
+      <td class="last_row">304, 312, 320, 324, 326, 328, 334, 336, 344</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader">300-349</td>
-      <td class="last_row">304, 312, 316, 320, 324, 326, 328, 334, 336, 344</td>
+      <td class="leftlastHeader">High t (5x)</td>
+      <td class="last_row">307, 310</td>
    </tbody>
+   <tbody>
+      <td class="leftlastHeader">Mid-High t (1x+)</td>
+      <td class="last_row">316</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">Low-High t (1x-)</td>
+      <td class="last_row">286, 292</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">Low t (0.5x)</td>
+      <td class="last_row">318</td>
+   </tbody>
+
    <thead>
       <th class="invisible"></th>
       <th>F(t) to Skip</th>
    </thead>
    <tbody>
-      <td class="leftHeader">Below 35k</td>
-      <td>29.8k, 30.2k, 30.8k, 31.4k, 32k</td>
+      <td class="leftHeader">Always Skipped</td>
+      <td class="last_row">29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">32.6k, 33.2k, 33.8k, 34.2k, 34.6k</td>
+      <td class="leftHeader"></td>
+      <td>33.2k, 33.8k, 34.2k, 34.6k, 35.4k, 36.2k</td>
    </tbody>
    <tbody>
-      <td class="leftHeader">35k-44.8k</td>
-      <td>35.4k, 36.2k, 37k, 37.8k, 38.6k, 39k, 39.6k</td>
+      <td class="leftHeader"></td>
+      <td>37.0k, 37.8k, 38.6k, 39.0k, 39.6k, 40.6k</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">40.6k, 41.6k, 42.6k, 43.6k, 44.2k, 44.6k</td>
+      <td class="leftHeader"></td>
+      <td>41.6k, 42.6k, 43.6k, 44.2k, 44.6k, 45.0k</td>
    </tbody>
    <tbody>
-      <td class="leftHeader">45k-54.8k</td>
-      <td>45k, 45.8k, 47k, 48.2k, 49k, 49.4k, 50.2k</td>
+      <td class="leftHeader"></td>
+      <td>45.8k, 47.0k, 48.2k, 49.0k, 49.4k, 50.2k</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">50.6k, 51.2k, 51.8k, 52.2k, 53.2k, 54.6k</td>
+      <td class="leftHeader"></td>
+      <td>50.6k, 51.2k, 52.2k, 53.2k, 54.6k, 56.0k</td>
    </tbody>
    <tbody>
-      <td class="leftHeader">55k-64.8k</td>
-      <td>56k, 56.8k, 57.4k, 58.2k, 58.8k, 59.4k</td>
+      <td class="leftHeader"></td>
+      <td>56.8k, 57.4k, 58.8k, 60.2k, 60.6k, 61.8k, 63.4k</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">60.2k, 60.6k, 61.8k, 63.4k, 64.2k</td>
+      <td class="leftHeader"></td>
+      <td>65.0k, 65.8k, 66.2k, 66.6k, 67.8k, 68.2k, 69.8k</td>
    </tbody>
    <tbody>
-      <td class="leftlastHeader">65k-70k</td>
-      <td class="last_row">65k, 65.8k, 66.2k, 66.6k 67.8k, 68.2k, 69.8k</td>
+      <td class="leftlastHeader">High t (5x)</td>
+      <td>62.4k, 63.0k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">Mid-High t (1x+)</td>
+      <td>64.2k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">Low-High t (1x-)</td>
+      <td>58.2k, 59.4k</td>
+   </tbody>
+   <tbody>
+      <td class="leftlastHeader">Low t (0.5x)</td>
+      <td>64.6k</td>
    </tbody>
 </table>
 
@@ -342,7 +365,7 @@ Explanation by: Snaeky and AfuroZamurai
 
 ### Supremacy Equation Past 48k
 
-When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to phi from \\(\psi\\), only d\\(\psi\\). When you hit about ft 50k you can skip buying most \\(\psi\\) upgrads and be able to recover fairly quickly. The Supremacy Equations for the f(t) that we know are as follows:
+When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to phi from \\(\psi\\), only d\\(\psi\\). When you hit about ft 50k you can skip buying most \\(\psi\\) upgrads and be able to recover fairly quickly. The Supremacy Equations for the F(t) that we know are as follows:
 
 Suprem Equation For 48k:
 
