@@ -362,6 +362,7 @@ Due to fluxuations with stars, accel, t, and more, Skipma and Bigma can be situa
 </table>
 
 Explanation by: Snaeky and AfuroZamurai
+
 Calculations by: LE★Baldy
 
 ### Supremacy Equation Past 48k
