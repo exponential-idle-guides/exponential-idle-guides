@@ -57,7 +57,7 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 
 ### Idle and Active buy strats
 
-For best results use the <a href="https://replit.com/@xelaroc/https://theory-simulator.tredec.repl.co/">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
+For best results use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
 
 <table class="newwords">
    <thead>
