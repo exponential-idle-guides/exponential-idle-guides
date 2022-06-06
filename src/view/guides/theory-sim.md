@@ -2,10 +2,12 @@
 title: "Theory Simulator: How to Read Results"
 description: "Our guide for running the theory simulator and understanding the results."
 author: "LE★Baldy, Snaeky, and Gaunter"
-contributors: "Antharion for the simulator itself"
+contributors: "Antharion for the original simulator, Xelorac for the dedicated continuation, XLII for the current simulator, and the many others whom have developed strategies."
 draft: true
 order: 7
 ---
+
+**This section will be updated to accomidate the new simulator and its features.**
 
 ### Before you start
 
@@ -14,11 +16,9 @@ not have these it will give you incorrect values for respective theories.
 
 ### Example output
 
-The top image is from the [website version](https://bit.ly/anthsim) and
-the bottom from the discord bot or when you request a png from the
-website.
+The top image is from the [website version](https://theory-simulator.tredec.repl.co/).
 
-![Theory Sim Example Outputs](/images/TheorySimExampleOutputs.png)
+![Theory Sim Example Outputs](/images/SimOutputs.png)
 
 ### **Column explanations**
 
