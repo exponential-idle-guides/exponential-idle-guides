@@ -7,7 +7,7 @@ draft: true
 order: 7
 ---
 
-**This section will be updated to accomidate the new simulator and its features.**
+**This section will be updated to accomidate the new simulator and its features. Please read the link's instructions.**
 
 ### Before you start
 
