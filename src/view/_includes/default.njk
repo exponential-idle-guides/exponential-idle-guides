@@ -18,6 +18,7 @@
       });
     </script>
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-CQWRWZCSZW"></script>
+    <script type="module" async defer src="/scripts/mobile.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -27,19 +28,6 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script>
-      const root = document.querySelector(':root');
-      const isMobile = navigator.userAgentData.mobile;
-      window.alert("hello")
-      window.alert(isMobile)
-      if (isMobile && !root.classList.contains('mobile')) {
-          root.classList.add("mobile");
-          root.classList.remove("desktop");
-      } else if(!isMobile && root.classList.contains('mobile')) {
-          root.classList.add("desktop");
-          root.classList.remove("mobile");
-      }
-
-
       function openSidebar(sidebars,sidebarheaders) {
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         

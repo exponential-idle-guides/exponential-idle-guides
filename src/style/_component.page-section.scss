@@ -1,11 +1,14 @@
 .root{
 	--main-width: 60vw;
+	--page-section-margin: 0.75rem auto auto auto;
 }
 :root.mobile{
 	--main-width: 80vw;
+	--page-section-margin: 0.75rem auto auto 20vw;
 }
 :root.desktop{
 	--main-width: 60vw;
+	--page-section-margin: 0.75rem auto auto auto;
 }
 
 .page-section {
@@ -14,6 +17,5 @@
 	width: var(--main-width);
 	padding-left: 1rem;
 	padding-right: 1rem;
-	margin: auto;
-	margin-top: 0.75rem;
+	margin: var(--page-section-margin);
 }
