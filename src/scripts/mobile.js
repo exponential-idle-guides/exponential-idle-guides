@@ -1,4 +1,4 @@
-const root = document.querySelector(':root');
+const root = document.documentElement;
 const isMobile = navigator.userAgentData.mobile;
 window.alert("hello")
 window.alert(isMobile)
