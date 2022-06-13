@@ -28,7 +28,7 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script>
-      const root = document.documentElement;
+      const root = document.querySelector(':root');
       const isMobile = navigator.userAgentData.mobile;
 
       if (isMobile && !root.classList.contains('mobile')) {
@@ -38,6 +38,8 @@
           root.classList.add("desktop");
           root.classList.remove("mobile");
       }
+
+
       function openSidebar(sidebars,sidebarheaders) {
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         

@@ -1,4 +1,4 @@
-const root = document.documentElement;
+const root = document.querySelector(':root');
 const isMobile = navigator.userAgentData.mobile;
 
 if (isMobile && !root.classList.contains('mobile')) {
