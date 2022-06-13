@@ -9,7 +9,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML">
     </script>
     <script type="module" async defer src="/scripts/color-scheme.js"></script>
-    <script type="module" async defer src="/scripts/mobile.js"></script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         showMathMenu: false,
@@ -30,7 +29,8 @@
     <script>
       const root = document.querySelector(':root');
       const isMobile = navigator.userAgentData.mobile;
-
+      window.alert("hello")
+      window.alert(isMobile)
       if (isMobile && !root.classList.contains('mobile')) {
           root.classList.add("mobile");
           root.classList.remove("desktop");
