@@ -49,3 +49,10 @@ function openpopup(display_id){
   if(document.getElementById(display_id).style.display==="block"){document.getElementById(display_id).style.display="none";}
   else{document.getElementById(display_id).style.display="block";}
 }
+
+function openSidebarList(){
+  if (getComputedStyle(root).getPropertyValue('--btn-width')==="0%" && getComputedStyle(root).getPropertyValue('--sidebar-list-width')==="0%") {
+    root.style.setProperty('--sidebar-list-width', "auto");
+    root.style.setProperty('--btn-padding', "min(2vh, 15px) min(3vw, 20px)");
+  }
+}

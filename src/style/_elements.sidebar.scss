@@ -3,7 +3,11 @@
   --sidebar-text-transition-time: 0.3s;
   --sidebar-padding:0%;
   --sidebar-width:0%;
+  --sidebar-list-padding:0%;
+  --sidebar-list-width:0%;
   --btn-marginLeft-width:0%;
+  --btn-width:0%;
+  --btn-padding:0%;
   --sidebar-content-padding:8px;
   --sidebar-header-font-size:1.5em;
 }
@@ -21,6 +25,11 @@
   scrollbar-width: none;
   padding-left: var(--sidebar-padding);
   padding-right: var(--sidebar-padding);
+}
+#SidebarList {
+  padding-left: var(--sidebar-list-padding);
+  padding-right: var(--sidebar-list-padding);
+  width:var(--sidebar-list-width);
 }
 .sidebar::-webkit-scrollbar {
   display:none;
@@ -83,7 +92,8 @@
 }
 
 #sidebarmain {
-  width:auto;
+  width:var(--btn-width);
+  padding: var(--btn-padding);
   position:fixed;
   transition: margin-left var(--sidebar-transition-time);
   margin-left:var(--btn-marginLeft-width);
