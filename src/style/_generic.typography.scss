@@ -6,6 +6,14 @@
 
 	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
+:root.mobile {
+	font-size: max(75%, 60% + 1.5vmin);
+	--body-line-height: 1.4;
+}
+:root.desktop {
+	font-size: max(75%, 60% + 1.5vmin);
+	--body-line-height: 1.4;
+}
 
 p {
 	line-height: var(--body-line-height);

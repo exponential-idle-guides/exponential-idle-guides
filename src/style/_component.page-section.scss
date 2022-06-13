@@ -1,3 +1,13 @@
+.root{
+	--main-width: 60vw;
+}
+:root.mobile{
+	--main-width: 80vw;
+}
+:root.desktop{
+	--main-width: 60vw;
+}
+
 .page-section {
 	box-sizing: border-box;
 	max-width: 100%;
