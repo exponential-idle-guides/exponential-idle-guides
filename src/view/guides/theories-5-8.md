@@ -539,6 +539,8 @@ the rest after. This continues to max at 2/3/3/3.
       <tr>
          <td>2/0/3/0</td>
          <td class="arrow">→</td>
+         <td>2/0/3/3</td>
+         <td class="arrow">→</td>
          <td>2/3/3/3</td>
       </tr>
    </tbody>
