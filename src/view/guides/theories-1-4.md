@@ -227,7 +227,7 @@ of the previous \\(term*dt\\) to the next \\(x_{i+1}\\) term, but with
 continuous addition of \\(q_i*dt\\) to the term above \\(q_{i-1}\\).
 These two values of \\(r_1\\) and \\(q_1\\) are multiplied to produce the derivative
 of \\(ρ(t)\\), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
-equation of \\(ρ\\) to be \\(ρ(t+dt)=\dot{ρ}+ρ1*dt\\). The other milestones besides more \\(q\\)
+equation of \\(ρ\\) to be \\(ρ(t+dt)=ρ+\dot{ρ}*dt\\). The other milestones besides more \\(q\\)
 and \\(r\\) derivatives increase the exponent of \\(q\\) and \\(r\\) respectively. The
 reason why \\(q\\) and \\(r\\) derivatives are more powerful long-term than the
 exponents is that they take time to build up and eventually overtake and
@@ -540,7 +540,7 @@ repeat.
    </thead>
    <tbody>
       <tr>
-         <td>0/0/2</td>
+         <td>0/2/0</td>
          <td class="arrow">→</td>
          <td>1/0/2/0</td>
          <td class="arrow">→</td>
@@ -557,7 +557,7 @@ repeat.
       <tr>
          <td class="invisible">Or</td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -588,7 +588,7 @@ repeat.
    </thead>
    <tbody>
       <tr>
-         <td>0/0/2</td>
+         <td>0/2/0</td>
          <td class="arrow">→</td>
          <td>0/2/2</td>
          <td class="arrow">→</td>
@@ -605,7 +605,7 @@ repeat.
       <tr>
          <td class="invisible">Or</td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -702,7 +702,7 @@ mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
       <tr>
          <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
-         <td class="invisible></td>
+         <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
