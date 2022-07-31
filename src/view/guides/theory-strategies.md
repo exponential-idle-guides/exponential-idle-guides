@@ -1,8 +1,8 @@
 ---
-title: "A Collection of Theory Strategies"
-description: "Our guide for running the theory simulator and understanding the results."
+title: "Theory Strategies Explained"
+description: "Our guide for comprehension of what each theory strategy means."
 author: "spqcey"
-contributors: "All of the people who have innovated new strategies, and The Amazing Community"
+contributors: "all of the people who have innovated new strategies, and The Amazing Community"
 draft: true
 order: 9
 ---
