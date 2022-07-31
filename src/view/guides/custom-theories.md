@@ -45,6 +45,8 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 \\(\dot{\\q\\) = \\(c_2s_n({\chi}) / sin({\chi})\\)
 
+\\(s_n({x})\\) := x\prod_{k=1}^{n}(1-\frac{x}{k\pi}^2)
+
 
 
 ### Theory 1 (20σ / 5k)
