@@ -15,9 +15,9 @@ Custom theories are theories made by players in the community. As of July 30th 2
 custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
 
-$$ x = {a^2 \over 2}
+
 Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
-\\(\tau\\) = \\(rho\\)^0.1 while EF has a tau contribution of \\(\tau\\) = \\(rho\\)^0.25
+\\(\tau\\) = \\(\rho\\)^0.1 while EF has a tau contribution of \\(\tau\\) = \\(\rho\\)^0.25
 
 
 ### Which Custom Theories (CTs) should I do?
