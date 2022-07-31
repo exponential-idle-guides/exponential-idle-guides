@@ -1,7 +1,7 @@
 ---
-title: "Theories 1-4"
-description: "Our guide for routing through and understanding theories 1 to 4. We provide some strategies to help you make progress."
-author: "LE★Baldy & Snaeky"
+title: "Custom Theories"
+description: "Our guide for understanding and doing official custom theories."
+author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
 order: 4
@@ -10,10 +10,13 @@ order: 4
 
 ### Custom Theory Basics
 
+
 <p>Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
 custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on. </p>
 
-<p>Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
+<p>
+$$ x = {a^2 \over 2}
+Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
 \\(\tau\\) = \\(rho\\)^0.1 while EF has a tau contribution of \\(\tau\\) = \\(rho\\)^0.25
 </p>
 
