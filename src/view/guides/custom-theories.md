@@ -17,8 +17,8 @@ custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Seque
 
 
 Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
-\\(\tau\\) = \\(\rho\\)^0.1 while EF has a tau contribution of \\(\tau\\) = \\(\rho\\)^0.25
-\\(\tau\\)
+\\(\tau\\) = \\(\rho^0.1\\) while EF has a tau contribution of \\(\tau\\) = \\(\rho^0.25\\)
+
 
 
 ### Which Custom Theories (CTs) should I do?
