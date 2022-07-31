@@ -59,135 +59,41 @@ Finally, the actual chi equation: increasing c1 and n increases chi. Note that f
 
 Approximate variable strengths on rhodot with all milestones are as follows:
 
-q1: About 7% increase on average.
-q2: Doubles rhodot - instantaneous.
-n: Quadruples rhodot - NOT instant. Takes time for this to happen. Also, at below e300 it is weaker than 4x.
-c1: Tends to 0% increase (not noticeable). Early game we still buy them throughout. Late game we only buy for the first 10 seconds or so. 
-c2: Doubles rhodot - NOT instant.
+q1: About 7% increase on average.<br>
+q2: Doubles rhodot - instantaneous.<br>
+n: Quadruples rhodot - NOT instant. Takes time for this to happen. Also, at below e300 it is weaker than 4x.<br>
+c1: Tends to 0% increase (not noticeable). Early game we still buy them throughout. Late game we only buy for the first 10 seconds or so. <br>
+c2: Doubles rhodot - NOT instant.<br>
 
-### Theory 1 (20σ / 5k)
 
-#### T1 Overview
+#### WSP strategy
 
-In mathematics, a recurrence relation is an equation that relies on an
-initial term and a previous term to change.
-We start with the current tick’s term, \\(ρ_{n}\\), and a constant add-on to
-obtain the value of the next tick, \\(ρ_{n+1}\\). This gives us an equation
-equivalent to \\(ρ=at+constant\\), with a changing value \\(a\\) and a constant
-that is the initial value of 1. Later when we add the \\(c_{3}ρ_{n-1}^{0.2}\\) term,
-this is now saying that we are now adding each tick the value of \\(ρ\\) from
-the previous tick ago with a constant \\(c_{3}\\) put to the power of \\(0.2\\). This
-is the same with the next term \\(c_{4}ρ_{n-2}^{0.3}\\), with the value of \\(ρ\\) two ticks
-ago and a multiplier \\(c_4\\) put to the power \\(0.3\\). When we multiply the
-\\(c_1c_2\\) term by the term \\(1+ln(ρ)/100\\) changing the constant addition to
-being based on the value of \\(ρ\\) from the previous tick with the value of
-\\(1+ln(ρ)/100\\). The final milestone upgrade raises the exponent of \\(c_1\\) from
-\\(1.00\\) to \\(1.05\\) to \\(1.10\\) to \\(1.15\\).
 
-This theory also has its adjusted tickspeed calculated by \\(q_{1}*q_{2}\\). This
-lengthens the normal tick length of \\(0.1/sec\\) to that value which speeds
-up the theory.
+#### WSP milestone route
 
-#### T1 formula
-
-##### Initial
-
-\\[ρ_{n+1} = ρ_n + c_1c_2\\]
-
-##### First milestone
-
-\\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2}\\]
-
-##### Second milestone
-
-\\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
-
-##### Third milestone
-
-\\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
-
-##### Fourth to Sixth milestone
-
-\\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
-
-#### T1 strategy
-
-The publication multiplier has no optimal fit, as it fluctuates a lot,
-but here is known: 4-6 to start; 3-4 between 1e100 and 1e150; the
-publication multiplier oscillates between 2.5 and 5 past e150. Once you
-get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
-
-The active strat follows but only works when you have all milestones
-past e150. T1 is the only theory where the recent value of \\(ρ\\)
-influences the rate of change of \\(ρ\\) therefore buying a variable as
-soon as you can afford it will slow your progress. Lategame, buying
-upgrades immediately will slow you more than the benefit of the upgrade
-because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
-and you have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\)
-you are reducing your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
-There are \\(3\\) terms that influence the rate of change of \\(ρ\\).
-All are affected by the previous state of \\(ρ\\). Let’s ignore the
-first since it has such a small influence and consider the above case to
-determine when an upgrade would be better. The values below are to be
-only used when you are past \\(e150 τ\\) and max milestones. Buy each
-variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
-For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
-\\(2*5.0=10 ρ_1\\).
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<small><sub>1</sub></small></td>
-         <td>10,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">c<small><sub>4</sub></small></td>
-         <td>1.01</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>2</sub></small></td>
-         <td>1,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>1</sub></small></td>
-         <td>5.0</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>3</sub></small></td>
-         <td>2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>2</sub></small></td>
-         <td>1.15</td>
-      </tr>
-   </tbody>
-</table>
-
-Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
-
-{{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
-
-#### T1 milestone route
+All milestones into the 3rd/last milestone. Then into 2nd milestone, then into 1st milestone. <br>
+For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. <br>
 
 <table class="milestone_routing">
    <tbody>
       <tr>
          <td>0/0/1</td>
          <td class="arrow">→</td>
-         <td>0/0/1/1</td>
+         <td>0/0/2</td>
          <td class="arrow">→</td>
-         <td>0/1/1/1</td>
+         <td>0/0/3</td>
       </tr>
       <tr>
-         <td>0/1/1/1</td>
+         <td>0/1/3</td>
          <td class="arrow">→</td>
-         <td>3/1/1/1</td>
+         <td>1/1/3</td>
+         <td class="arrow">→</td>
+         <td>2/1/3</td>
+         <td class="arrow">→</td>
+         <td>3/1/3</td>
+         <td class="arrow">→</td>
+         <td>4/1/3</td>
+         
 </table>
 <table class="milestone_routing">
    <tbody>
