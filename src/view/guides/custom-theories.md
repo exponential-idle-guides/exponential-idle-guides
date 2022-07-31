@@ -74,11 +74,15 @@ q2 ~= c2 > n > c1 > q1 <br><br>
 Late game these become: <br>
 n > q2 ~= c2 > q1 >>> c1 <br><br>
 
-<b>Before you get all milestones, for idle, simply autobuy all.<b> <br><br>
+<b>Before you get e300 rho, for idle, simply autobuy all.<b> <br><br>
 
-For a simple active strategy before all milestones, simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
+For a simple active strategy before e300 rho, simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
 <br>
-For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c2. For example, if q1 costs 1.2e100 and q2 costs 1e101, we would not buy q1 as it's 'too expensive' compared to q2.  
+For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c2. For example, if q1 costs 1.2e100 and q2 costs 1e101, we would not buy q1 as it's 'too expensive' compared to q2.  <br><br>
+
+Once you have e300 rho, c1 starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 10 seconds or so. Then turn c1 OFF. Continue to autobuy the rest of the variables. <br>
+<br>
+For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and q2 costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 10 seconds or so. <br><br>
 
 
 
