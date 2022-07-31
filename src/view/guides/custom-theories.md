@@ -49,7 +49,21 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 \\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 
+The first line states that the rate of change in rho is q1^1.04q2q. Initially it's simply q1q2q without any exponent. With milestones we add more exponents. 
 
+For the second line, the higher the chi, the higher the sn(chi). We want to increase chi by increasing n and c1. Additionally, the c2 variable is a milestone which is not initially available. 
+
+The third line is the most complicated. However, we can see 'x' appearing both outside and inside the products in the numerator. Since chi is 'x' here, the higher the chi, the higher the sn(chi) as stated earlier. 
+
+Finally, the actual chi equation: increasing c1 and n increases chi. Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The 'n/3^3' part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. 
+
+Approximate variable strengths on rhodot with all milestones are as follows:
+
+q1: About 7% increase on average.
+q2: Doubles rhodot - instantaneous.
+n: Quadruples rhodot - NOT instant. Takes time for this to happen. Also, at below e300 it is weaker than 4x.
+c1: Tends to 0% increase (not noticeable). Early game we still buy them throughout. Late game we only buy for the first 10 seconds or so. 
+c2: Doubles rhodot - NOT instant.
 
 ### Theory 1 (20σ / 5k)
 
