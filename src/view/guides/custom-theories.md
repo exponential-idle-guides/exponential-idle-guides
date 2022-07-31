@@ -41,9 +41,9 @@ If you have active time, try to do the CT with the highest active tau/hour.<br><
 
 The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
 
-<p>\\(\dot(\rho)\\) = \\q_1^1.04\\q_2\\q
+\\(\dot(\rho)\\) = \\q_1^1.04\\q_2\\q
 
-</p>
+
 
 ### Theory 1 (20σ / 5k)
 
