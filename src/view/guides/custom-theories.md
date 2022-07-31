@@ -4,7 +4,7 @@ description: "Our guide for understanding and doing official custom theories."
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
-order: 4
+order: 8
 ---
 {% import "embed-yt.njk" as yt %}
 
@@ -67,6 +67,19 @@ c2: Doubles rhodot - NOT instant.<br>
 
 
 #### WSP strategy
+
+Early game the variable strengths are ordered as follows: <br>
+q2 ~= c2 > n > c1 > q1 <br><br>
+
+Late game these become: <br>
+n > q2 ~= c2 > q1 >>> c1 <br><br>
+
+<b>Before you get all milestones, for idle, simply autobuy all.<b> <br><br>
+
+For a simple active strategy before all milestones, simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
+<br>
+For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c2. For example, if q1 costs 1.2e100 and q2 costs 1e101, we would not buy q1 as it's 'too expensive' compared to q2.  
+
 
 
 #### WSP milestone route
