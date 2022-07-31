@@ -49,17 +49,17 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 \\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 
-The first line states that the rate of change in rho is q1^1.04q2q. Initially it's simply q1q2q without any exponent. With milestones we add more exponents. 
+The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. 
 
-For the second line, the higher the chi, the higher the sn(chi). We want to increase chi by increasing n and c1. Additionally, the c2 variable is a milestone which is not initially available. 
+For the second line, the higher the chi, the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. Additionally, the c2 variable is a milestone which is not initially available. 
 
-The third line is the most complicated. However, we can see 'x' appearing both outside and inside the products in the numerator. Since chi is 'x' here, the higher the chi, the higher the sn(chi) as stated earlier. 
+The third line is the most complicated. However, we can see 'x' appearing both outside and inside the products in the numerator. Since \\(\chi\\) is 'x' here, the higher the \\(\chi\\), the higher the \\(s_n({\chi})\\) as stated earlier. 
 
-Finally, the actual chi equation: increasing c1 and n increases chi. Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The 'n/3^3' part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. 
+Finally, the actual chi equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. 
 
 Approximate variable strengths on rhodot with all milestones are as follows:
 
-q1: About 7% increase on average.<br>
+q1: About 7% increase on rhodot on average.<br>
 q2: Doubles rhodot - instantaneous.<br>
 n: Quadruples rhodot - NOT instant. Takes time for this to happen. Also, at below e300 it is weaker than 4x.<br>
 c1: Tends to 0% increase (not noticeable). Early game we still buy them throughout. Late game we only buy for the first 10 seconds or so. <br>
@@ -74,13 +74,13 @@ q2 ~= c2 > n > c1 > q1 <br><br>
 Late game these become: <br>
 n > q2 ~= c2 > q1 >>> c1 <br><br>
 
-<b>Before you get e300 rho, for idle, simply autobuy all.<b> <br><br>
+<b>Before you get e100 rho, for idle, simply autobuy all.<b> <br><br>
 
-For a simple active strategy before e300 rho, simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
+For a simple active strategy before e100 rho, simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
 <br>
 For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c2. For example, if q1 costs 1.2e100 and q2 costs 1e101, we would not buy q1 as it's 'too expensive' compared to q2.  <br><br>
 
-Once you have e300 rho, c1 starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 10 seconds or so. Then turn c1 OFF. Continue to autobuy the rest of the variables. <br>
+Once you have e100 rho, c1 starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 10 seconds or so. Then turn c1 OFF. Continue to autobuy the rest of the variables. <br>
 <br>
 For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and q2 costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 10 seconds or so. <br><br>
 
