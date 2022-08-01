@@ -10,6 +10,9 @@ order: 9
 **CURRENTLY WIP**
 <!-- T6SNAX x.xxexxx -->
 
+<span style="color:red">some text</span>.
+
+
 ### Theory 1: Recurrence Relations
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
