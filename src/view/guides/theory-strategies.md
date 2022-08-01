@@ -9,6 +9,23 @@ order: 9
 
 **CURRENTLY WIP**
 <!-- T6SNAX x.xxexxx -->
+
+### Theory 1: Recurrence Relations
+
+T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
+
+- T1SolarXLII
+- T1AI
+- T1C34
+
+### Theory 2: Differential Calculus
+
+T2 is the only theory without an active strategy, despite attempts.
+
+- T2MC
+- T2Coast-X%
+- T2
+
 <table class="spqcey">
 <thead>
   <tr>
