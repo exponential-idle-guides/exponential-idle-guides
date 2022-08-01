@@ -153,7 +153,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - CSR2d
 - CSR2
 
-### Theory 1: Recurrence Relations
+## Theory 1: Recurrence Relations
 
 ### T1SolarXLII xexxx
 ### T1AI xexxx
@@ -193,13 +193,13 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
    </tbody>
 </table>
 
-### Theory 2: Differential Calculus
+## Theory 2: Differential Calculus
 
 ### T2MC
 ### T2Coast-X%
 ### T2
 
-### Theory 3: Linear Algebra
+## Theory 3: Linear Algebra
 
 ### T3Play2
 ### T3Play
@@ -214,7 +214,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d
 ### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33
 
-### Theory 4: Polynomials
+## Theory 4: Polynomials
 
 ### T4C3d66
 ### T4C3d
@@ -228,13 +228,13 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T4C6
 ### T4
 
-### Theory 5: Logistic Function
+## Theory 5: Logistic Function
 
 ### T5AI
 ### T5Idle xexxx
 ### T5
 
-### Theory 6: Integral Calculus
+## Theory 6: Integral Calculus
 
 ### T6AI
 ### T6SNAX x.xxexxx
@@ -307,7 +307,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C345d
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C345
 
-### Theory 7: Numerical Methods
+## Theory 7: Numerical Methods
 
 ### T7PlaySpqcey
 ### T7Play-25
@@ -320,7 +320,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T7<span style="color:var(--palette-stroke-warning)">No</span>C1234
 ### T7
 
-### Theory 8: Chaos Theory
+## Theory 8: Chaos Theory
 
 ### T8PlaySolarSwap
 ### T8RPlay
@@ -330,16 +330,16 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T8Rd
 ### T8R
 
-### Official Custom Theories
+## Official Custom Theories
 
-### Weierstraß Sine Product
+## Weierstraß Sine Product
 
 ### WSPAI
 ### WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 ### WSPd
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 
-### Sequential Limits
+## Sequential Limits
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
@@ -351,7 +351,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### EFd
 ### EF
 
-### Convergents to √2
+## Convergents to √2
 
 ### CSR2XL
 ### CSR2d
