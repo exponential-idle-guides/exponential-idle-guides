@@ -788,6 +788,88 @@ Strategy Credits:
 - XLII for simulating the strategy and finding optimal ratios.
 
 ### T3SNAX2
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T3SNAX2</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="topHeader">Tau Gain (pub mult > 1)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of ρ<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>When ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
+         <td>When ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>When ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
+         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅛ of ρ<sub><sub><small>2</small></sub></sub></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
+         <td>When 1/10 of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+- Snaeky for the idea.
+- XLII for simulating the strategy and finding optimal ratios.
+<br /> <br />
+Designed to be easily compatible with current versions of QoL.
+
 ### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12
 ### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv
 ### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33d
