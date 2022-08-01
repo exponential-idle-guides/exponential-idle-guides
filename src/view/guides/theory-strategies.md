@@ -15,7 +15,7 @@ order: 9
 
 The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
-A "%" can be seen on some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. So,
+A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. So, <br />
 13 % 10 = 3,
 21 % 10 = 1,
 20 % 10 = 0
