@@ -157,19 +157,10 @@ th, td {
 	border: none;
 	background-color:transparent;
 }
-.spqcey .leftHeader, .newwords .leftlastHeader {
+.spqcey .leftHeader, .spqcey .leftlastHeader {
 	color: var(--palette-stroke-table-headers);
 	font-weight: bold;
 	background-color:var(--palette-fill-table-headers-light);
-	border-right: 5px solid black;
-}
-.spqcey .leftlastHeader {
-	border-bottom: 5px solid black;
-}
-.spqcey .leftHeader {
-	font-weight: bold;
-	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-dark);
 	border-right: 5px solid black;
 }
 .spqcey .topHeader {
