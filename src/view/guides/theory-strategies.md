@@ -311,6 +311,95 @@ Strategy Credits:
 ## Theory 2: Differential Calculus
 
 ### T2MC
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="5" style="text-align:center">T2MC</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier below 1150</td>
+         <td class="topHeader">Publication Multiplier 1150-2250</td>
+         <td class="topHeader">Publication Multiplier 2250-2900</td>
+         <td class="topHeader">Publication Multiplier 2900-4650</td>
+         <td class="rightHeader">Publication Multiplier above 4650</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+- rus9384#1864
+- XLII, whose theory simulator was used to develop and test this strategy.
+
+The “MC” in T2MC stands for **M**ultivariable**C**oast.
 ### T2Coast-X%
 ### T2
 <table class="spqcey">
