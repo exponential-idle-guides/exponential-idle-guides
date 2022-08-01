@@ -153,6 +153,91 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - CSR2d
 - CSR2
 
+### Theory 1: Recurrence Relations
+
+### T1SolarXLII xexxx
+### T1AI xexxx
+
+<!-- T1C34 -->
+### T1C34
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T1C34</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q1</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q2</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c1</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c2</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c3</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c4</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+### Theory 2: Differential Calculus
+
+### T2MC
+### T2Coast-X%
+### T2
+
+### Theory 3: Linear Algebra
+
+### T3Play2
+### T3Play
+### T3SNAX
+### T3SNAX2
+### T3Noρ1C13rcvNoC12
+### T3Noρ1C13rcv
+### T3NoC11C13C21C33d
+### T3NoC11C13C21C33
+### T3NoC13C33d
+### T3NoC13C33
+### T3NoC11C13C33d
+### T3NoC11C13C33
+
+### Theory 4: Polynomials
+
+### T4C3d66
+### T4C3d
+### T4C3dC12rcv
+### T4C3
+### T4C123d
+### T4C123
+### T4C12d
+### T4C12
+### T4C5
+### T4C6
+### T4
+
+### Theory 5: Logistic Function
+
+### T5AI
+### T5Idle xexxx
+### T5
+
+### Theory 6: Integral Calculus
+
+### T6AI
+### T6SNAX x.xxexxx
 
 <table class="spqcey">
 <thead>
@@ -214,38 +299,60 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
    </tbody>
 </table>
-<!-- T1C34 -->
 
-### T1C34
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T1C34</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q1</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q2</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c1</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c2</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c3</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c4</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T6NoC34d
+### T6NoC34
+### T6NoC1234d
+### T6NoC1234
+### T6NoC345d
+### T6NoC345
+
+### Theory 7: Numerical Methods
+
+### T7PlaySpqcey
+### T7Play-25
+### T7C3d
+### T7C12d
+### T7C123d
+### T7NoC12
+### T7NoC123
+### T7NoC124
+### T7NoC1234
+### T7
+
+### Theory 8: Chaos Theory
+
+### T8PlaySolarSwap
+### T8RPlay
+### T8RNoC35d
+### T8RNoC35
+### T8R34
+### T8Rd
+### T8R
+
+### Official Custom Theories
+
+### Weierstraß Sine Product
+
+### WSPAI
+### WSPdStopC1
+### WSPd
+### WSPStopC1
+
+### Sequential Limits
+
+### SLStopAd
+### SLStopA
+
+### Euler's Formula
+
+### EFAI (post-e50ρ)
+### EFSNAX
+### EFd
+### EF
+
+### Convergents to √2
+
+### CSR2XL
+### CSR2d
+### CSR2
