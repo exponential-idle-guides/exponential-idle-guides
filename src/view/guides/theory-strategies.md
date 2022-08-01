@@ -342,7 +342,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost and 1/10 of c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost c<sub><sub><small>3</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -350,6 +350,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
    </tbody>
 </table>
+
 ### T4C3dC12rcv
 ### T4C3
 ### T4C123d
