@@ -163,11 +163,11 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T1C34</th>
+  <th style="text-align:center">T1C34</th>
+  <!-- <th>T1C34</th> -->
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader"></td>
          <td class="leftHeader">q1</td>
          <td>✔️</td>
       </tr>
