@@ -19,7 +19,7 @@ order: 9
 </thead>
    <tbody>
      <tr>
-       <td class="leftHeader">Before x.xxexxx"</td>
+       <td class="leftHeader">Before x.xxexxx</td>
        <td class="topHeader">After x.xxexxx</td>
      </tr>
       <tr>
