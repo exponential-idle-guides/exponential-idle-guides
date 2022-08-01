@@ -396,10 +396,68 @@ Strategy Credits:
 
 Strategy Credits:
 - rus9384#1864
-- XLII, whose theory simulator was used to develop and test this strategy.
+- XLII, whose theory simulator was used to develop and test this strategy. <br />
 
 The “MC” in T2MC stands for **M**ultivariable**C**oast.
 ### T2Coast-X%
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T2Coast-X%</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Before X% of T2’s Optimal Multiplier</td>
+         <td class="rightHeader">After X% of T2’s Optimal Multiplier</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
+
 ### T2
 <table class="spqcey">
 <thead>
