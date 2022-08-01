@@ -13,8 +13,8 @@ order: 9
 <thead>
   <tr>
      <th class="invisible"></th>
-     <th></th>
      <th>T6SNAX x.xxexxx</th>
+     <th></th>
   </tr>
 </thead>
    <tbody>
