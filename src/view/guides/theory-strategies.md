@@ -607,9 +607,10 @@ If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
 
 Strategy Credits:
 - Playspout for creating this strategy.
-- Solarion for \\(c_12\\) overpush idea.
+- Solarion for \\(c_\\{12\\}\\) overpush idea.
 <br />
-* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_31\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
+
+\\* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_\\{31\\}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
 ### T3Play
