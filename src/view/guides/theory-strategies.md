@@ -12,9 +12,9 @@ order: 9
 <table class="spqcey">
 <thead>
   <tr>
-     <th class="invisible"></th>
-     <th>T6SNAX x.xxexxx</th>
      <th></th>
+     <th>T6SNAX x.xxexxx</th>
+     <th class="invisible"></th>
   </tr>
 </thead>
    <tbody>
