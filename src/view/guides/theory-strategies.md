@@ -157,14 +157,59 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 ### T1SolarXLII xexxx
 ### T1AI xexxx
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T1AI xexxx</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Before x.xxexxx</td>
+         <td class="rightHeader">After x.xxexxx</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q1</td>
+         <td>When ρ > 5 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q2</td>
+         <td>When ρ > 1.15 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c1</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c2</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c3</td>
+         <td>When ρ > 2 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c4</td>
+         <td>When ρ > 1.01 × cost</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
 
 <!-- T1C34 -->
 ### T1C34
 <table class="spqcey">
 <thead>
   <th></th>
-  <th style="text-align:center">T1C34</th>
-  <!-- <th>T1C34</th> -->
+  <th>T1C34</th>
 </thead>
    <tbody>
       <tr>
