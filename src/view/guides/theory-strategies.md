@@ -742,7 +742,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub> (auto c<sub><sub><small>12</small></sub></sub> also works, is a bit slower)</td>
+         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub> (auto c<sub><sub><small>12</small></sub></sub> <br />also works, is a bit slower)</td>
          <td>✔️</td>
       </tr>
       <tr>
