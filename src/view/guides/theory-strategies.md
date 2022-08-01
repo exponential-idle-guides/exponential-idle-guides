@@ -219,27 +219,27 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">q1</td>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">q2</td>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">c1</td>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c2</td>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c3</td>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">c4</td>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>✔️</td>
       </tr>
    </tbody>
@@ -305,47 +305,47 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td class="rightHeader">After x.xxexxx</td>
      </tr>
       <tr>
-         <td class="leftHeader">q1</td>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">q2</td>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">r1</td>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">r2</td>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
-         <td class="leftHeader">c1</td>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c2</td>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c3</td>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
          <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c4</td>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c5</td>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
       </tr>
