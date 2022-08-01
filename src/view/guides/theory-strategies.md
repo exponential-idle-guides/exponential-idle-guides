@@ -12,50 +12,39 @@ order: 9
 <table class="newwords">
    <thead>
       <tr>
-         <th class="invisible"></th>
          <th>T1C34</th>
       </tr>
    </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">T1</td>
+         <td class="leftHeader">q1</td>
          <td>Disable c1/c2</td>
          <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
       </tr>
       <tr>
-         <td class="leftHeader">T2</td>
+         <td class="leftHeader">q2</td>
          <td>All variables on</td>
          <td>q4/r4 → q3/r3 → etc manual buy</td>
       </tr>
       <tr>
-         <td class="leftHeader">T3</td>
+         <td class="leftHeader">c1</td>
          <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Idle / T3Idle2</a></td>
          <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Play2</a></td>
       </tr>
       <tr>
-         <td class="leftHeader">T4</td>
+         <td class="leftHeader">c2</td>
          <td>Only q1, q2, c3</td>
          <td>Idle with chasing doublings</td>
       </tr>
       <tr>
-         <td class="leftHeader">T5</td>
+         <td class="leftHeader">c3</td>
          <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
          <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
       </tr>
       <tr>
-         <td class="leftHeader">T6</td>
+         <td class="leftHeader">c4</td>
          <td>Disable c3, c4</td>
          <td>Idle with chasing doublings</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T7</td>
-         <td>Disable c1, c2, c3</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T7Play-25</a></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T8</td>
-         <td>All variables on</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T8RPlay</a></td>
       </tr>
    </tbody>
 </table>
