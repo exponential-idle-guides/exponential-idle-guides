@@ -205,7 +205,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T3Play
 ### T3SNAX
 ### T3SNAX2
-### T3Noρ1C13rcvNoC12
+### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcvNoC12
 ### T3Noρ1C13rcv
 ### T3NoC11C13C21C33d
 ### T3NoC11C13C21C33
