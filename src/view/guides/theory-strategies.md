@@ -19,7 +19,7 @@ A "%" can be seen in the table of some strategies. The “%” indicates modulus
 13 % 10 = 3,<br />
 21 % 10 = 1,<br />
 20 % 10 = 0<br />
-Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to find the result of the modulus.
+Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to find the result of the modulus.<br />
 So, 214**5** % 10 = **5**
 
 ### Theory 1: Recurrence Relations
@@ -178,7 +178,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td class="rightHeader">After x.xxexxx</td>
      </tr>
       <tr>
-         <td class="leftHeader">q1</td>
+         <td class="leftHeader">\\(q_1\\)</td>
          <td>When ρ > 5 × cost</td>
          <td>❌</td>
       </tr>
