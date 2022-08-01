@@ -156,15 +156,16 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 <table class="spqcey">
 <thead>
-  <tr>
-     <th class="invisible"></th>
-     <th colspan="2" style="text-align:center">T6SNAX x.xxexxx</th>
-  </tr>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T6SNAX x.xxexxx</th>
+   </tr>
 </thead>
    <tbody>
-     <tr>
-       <td class="topHeader">Before x.xxexxx</td>
-       <td class="rightHeader">After x.xxexxx</td>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Before x.xxexxx</td>
+         <td class="rightHeader">After x.xxexxx</td>
      </tr>
       <tr>
          <td class="leftHeader">q1</td>
