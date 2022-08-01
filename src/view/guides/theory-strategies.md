@@ -503,6 +503,115 @@ If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
 ## Theory 3: Linear Algebra
 
 ### T3Play2
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="4" style="text-align:center">T3Play2</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery up until e1 away from recovered *</td>
+         <td class="topHeader">From e1 away from recovered until fully recovered</td>
+         <td class="topHeader">Publication Mult 1-2</td>
+         <td class="topHeader">Coasting (pub mult > 2)</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>When ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>When ⅕ of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>When ⅕ of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
+         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
+         <td>When 1/100 of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>When 1/100 of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
+         <td>When ⅖ of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>When ⅖ of c<sub><sub><small>32</small></sub></sub> cost</td>
+         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+- Playspout for creating this strategy.
+- Solarion for \\(c_12\\) overpush idea.
+<br />
+* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_31\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
+
+
 ### T3Play
 ### T3SNAX
 ### T3SNAX2
