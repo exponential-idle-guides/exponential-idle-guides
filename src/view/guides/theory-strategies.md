@@ -112,10 +112,10 @@ T8 also has the largest number of strategies (20+ total), but only those I have 
 - T8R
 
 ### Official Custom Theories
-In chronological order of release
-Read more about custom theories on <link to custom theory guide page>
+In chronological order of release.
+Read more about custom theories on (link to custom theory guide page)
 
-### Custom Theory 1:\ Weierstraß Sine Product
+### Custom Theory 1: Weierstraß Sine Product
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
@@ -124,14 +124,14 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 - WSPd
 - WSPStopC1
 
-### Custom Theory 2:\ Sequential Limits
+### Custom Theory 2: Sequential Limits
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
 - SLStopAd
 - SLStopA
 
-### Custom Theory 3:\ Euler's Formula
+### Custom Theory 3: Euler's Formula
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
@@ -140,7 +140,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 - EFd
 - EF
 
-### Custom Theory 4:\ Convergents to √2
+### Custom Theory 4: Convergents to √2
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
