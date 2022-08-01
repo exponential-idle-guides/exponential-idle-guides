@@ -13,11 +13,15 @@ order: 9
 <thead>
   <tr>
      <th class="invisible"></th>
-     <th>Before x.xxexxx</th>
-     <th>After x.xxexxx</th>
+     <th></th>
+     <th>T6SNAX x.xxexxx</th>
   </tr>
 </thead>
    <tbody>
+     <tr>
+       <td class="leftHeader">Before x.xxexxx</td>
+       <td class="topHeader">After x.xxexxx</td>
+     </tr>
       <tr>
          <td class="leftHeader">q1</td>
          <td>✔️</td>
