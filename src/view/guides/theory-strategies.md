@@ -167,6 +167,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 </thead>
    <tbody>
       <tr>
+         <td class="leftHeader"></td>
          <td class="leftHeader">q1</td>
          <td>✔️</td>
       </tr>
