@@ -10,8 +10,8 @@ order: 9
 **CURRENTLY WIP**
 <!-- T6SNAX x.xxexxx -->
 
-<span style="color:red">some text</span>.
-
+<span style="color:red">some text</span>
+<span style="color:var(--palette-stroke-warning)">some text</span>.
 
 ### Theory 1: Recurrence Relations
 
