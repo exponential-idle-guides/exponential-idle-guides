@@ -178,7 +178,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost and q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost and ρ > 5 × cost</td>
+         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost <br /> And q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost <br /> And ρ > 5 × cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -220,7 +220,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 </table>
 
 The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1AI.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
@@ -431,7 +431,7 @@ Strategy Credits:
 When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “T4C3d66 q1: 377 q2: 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-The “66” in the name T4C3d66 refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\).
+The “66” in the name T4C3d66 refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br />
 
 Strategy Credits:
 - XLII
