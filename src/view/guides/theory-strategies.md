@@ -205,14 +205,14 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T3Play
 ### T3SNAX
 ### T3SNAX2
-### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcvNoC12
-### T3Noρ1C13rcv
-### T3NoC11C13C21C33d
-### T3NoC11C13C21C33
-### T3NoC13C33d
-### T3NoC13C33
-### T3NoC11C13C33d
-### T3NoC11C13C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12
+### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33
 
 ### Theory 4: Polynomials
 
@@ -300,12 +300,12 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
    </tbody>
 </table>
 
-### T6NoC34d
-### T6NoC34
-### T6NoC1234d
-### T6NoC1234
-### T6NoC345d
-### T6NoC345
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C34d
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C34
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C1234d
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C1234
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C345d
+### T6<span style="color:var(--palette-stroke-warning)">No</span>C345
 
 ### Theory 7: Numerical Methods
 
@@ -314,18 +314,18 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### T7C3d
 ### T7C12d
 ### T7C123d
-### T7NoC12
-### T7NoC123
-### T7NoC124
-### T7NoC1234
+### T7<span style="color:var(--palette-stroke-warning)">No</span>C12
+### T7<span style="color:var(--palette-stroke-warning)">No</span>C123
+### T7<span style="color:var(--palette-stroke-warning)">No</span>C124
+### T7<span style="color:var(--palette-stroke-warning)">No</span>C1234
 ### T7
 
 ### Theory 8: Chaos Theory
 
 ### T8PlaySolarSwap
 ### T8RPlay
-### T8RNoC35d
-### T8RNoC35
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
 ### T8R34
 ### T8Rd
 ### T8R
@@ -335,14 +335,14 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### Weierstraß Sine Product
 
 ### WSPAI
-### WSPdStopC1
+### WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 ### WSPd
-### WSPStopC1
+### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 
 ### Sequential Limits
 
-### SLStopAd
-### SLStopA
+### SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
+### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
 
 ### Euler's Formula
 
