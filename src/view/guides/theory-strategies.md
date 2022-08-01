@@ -10,8 +10,8 @@ order: 9
 **CURRENTLY WIP**
 <!-- T6SNAX x.xxexxx -->
 
-<span style="color:red">some text</span>
-<span style="color:var(--palette-stroke-warning)">some text</span>.
+<!-- <span style="color:red">some text</span> -->
+<!-- <span style="color:var(--palette-stroke-warning)">some text</span>. -->
 
 ### Theory 1: Recurrence Relations
 
@@ -39,14 +39,14 @@ T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 - T3Play
 - T3SNAX
 - T3SNAX2
-- T3Noρ1C13rcvNoC12
-- T3Noρ1C13rcv
-- T3NoC11C13C21C33d
-- T3NoC11C13C21C33
-- T3NoC13C33d
-- T3NoC13C33
-- T3NoC11C13C33d
-- T3NoC11C13C33
+- T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12
+- T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33d
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33d
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d
+- T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33
 
 ### Theory 4: Polynomials
 
@@ -78,12 +78,12 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 
 - T6AI
 - T6SNAX x.xxexxx
-- T6NoC34d
-- T6NoC34
-- T6NoC1234d
-- T6NoC1234
-- T6NoC345d
-- T6NoC345
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C34d
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C34
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C1234d
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C1234
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C345d
+- T6<span style="color:var(--palette-stroke-warning)">No</span>C345
 
 ### Theory 7: Numerical Methods
 
@@ -95,10 +95,10 @@ T7PlaySpqcey is a slightly faster version of T7Play-25.
 - T7C3d
 - T7C12d
 - T7C123d
-- T7NoC12
-- T7NoC123
-- T7NoC124
-- T7NoC1234
+- T7<span style="color:var(--palette-stroke-warning)">No</span>C12
+- T7<span style="color:var(--palette-stroke-warning)">No</span>C123
+- T7<span style="color:var(--palette-stroke-warning)">No</span>C124
+- T7<span style="color:var(--palette-stroke-warning)">No</span>C1234
 - T7
 
 ### Theory 8: Chaos Theory
@@ -108,8 +108,8 @@ T8 also has the largest number of strategies (20+ total), but only those I have 
 
 - T8PlaySolarSwap
 - T8RPlay
-- T8RNoC35d
-- T8RNoC35
+- T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
+- T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
 - T8R34
 - T8Rd
 - T8R
@@ -123,16 +123,16 @@ Read more about custom theories on (link to custom theory guide page)
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
 - WSPAI
-- WSPdStopC1
+- WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 - WSPd
-- WSPStopC1
+- WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 
 ### Custom Theory 2: Sequential Limits
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- SLStopAd
-- SLStopA
+- SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
+- SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
 
 ### Custom Theory 3: Euler's Formula
 
