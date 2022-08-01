@@ -19,8 +19,8 @@ order: 9
 </thead>
    <tbody>
      <tr>
-       <td class="leftHeader">Before x.xxexxx</td>
-       <td class="topHeader">After x.xxexxx</td>
+       <td class="topHeader">Before x.xxexxx"</td>
+       <td class="rightHeader">After x.xxexxx</td>
      </tr>
       <tr>
          <td class="leftHeader">q1</td>
