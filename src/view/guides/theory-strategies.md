@@ -364,7 +364,8 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
    </tbody>
 </table>
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “T4C3d66 q1: 377 q2: 252”. The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication.
+
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “T4C3d66 q1: 377 q2: 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
 The “66” in the name T4C3d66 refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\).
