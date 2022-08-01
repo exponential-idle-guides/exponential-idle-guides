@@ -21,7 +21,7 @@ T1 is one of the theories that benefit the most from active strategies. T1SolarX
 
 - T1SolarXLII
 - T1AI
-- T1C34
+- [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)
 
 ### Theory 2: Differential Calculus
 
