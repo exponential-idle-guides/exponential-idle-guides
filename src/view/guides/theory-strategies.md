@@ -178,7 +178,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td class="rightHeader">After x.xxexxx</td>
      </tr>
       <tr>
-         <td class="leftHeader">q<sub><sub><small><small>1</small></small></sub></sub></td>
+         <td class="leftHeader">q<sub><small><small>1</small></small></sub></td>
          <td>When ρ > 5 × cost</td>
          <td>❌</td>
       </tr>
