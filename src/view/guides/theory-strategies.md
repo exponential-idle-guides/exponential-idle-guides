@@ -12,7 +12,6 @@ order: 9
 <table class="spqcey">
 <thead>
   <tr>
-     <th class="invisible"></th>
      <th></th>
      <th>T6SNAX x.xxexxx</th>
   </tr>
