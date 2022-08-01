@@ -344,7 +344,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
 
-### **Euler's Formula**
+## Euler's Formula
 
 ### EFAI (post-e50ρ)
 ### EFSNAX
