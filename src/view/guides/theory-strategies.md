@@ -10,11 +10,10 @@ order: 9
 **CURRENTLY WIP**
 
 <table class="newwords">
-   <thead>
-      <tr>
-         <th>T1C34</th>
-      </tr>
-   </thead>
+<thead>
+  <th></th>
+  <th>T1C34</th>
+</thead>
    <tbody>
       <tr>
          <td class="leftHeader">q1</td>
