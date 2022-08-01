@@ -52,7 +52,7 @@ th, td {
 }
 .newwords th {
 	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-light); 
+	background-color:var(--palette-fill-table-headers-light);
 	border-bottom: 5px solid black;
 }
 .newwords th, td {
@@ -123,13 +123,13 @@ th, td {
 }
 .PlayStrats th {
 	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-light); 
+	background-color:var(--palette-fill-table-headers-light);
 	border-bottom: 5px solid black;
 }
 .PlayStrats th, td {
 	text-align: left;
 	padding: 0.3em 0.4em 0.3em 0.4em;
-}	
+}
 
 //Graduation Routing
 .graduation_routing {
@@ -147,4 +147,42 @@ th, td {
 }
 .milestone_routing .arrow {
 	padding: 0em 0em 0em 0em;
+}
+
+// spqcey's Tables
+.spqcey {
+	text-align: center;
+}
+.spqcey .invisible {
+	border: none;
+	background-color:transparent;
+}
+.spqcey .leftHeader, .newwords .leftlastHeader {
+	color: var(--palette-stroke-table-headers);
+	font-weight: bold;
+	background-color:var(--palette-fill-table-headers-light);
+	border-right: 5px solid black;
+}
+.spqcey .leftlastHeader {
+	border-bottom: 5px solid black;
+}
+.spqcey .topHeader {
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers-dark);
+	border-bottom: none;
+}
+.spqcey .last_row {
+	border-bottom: 5px solid black;
+}
+.spqcey th {
+	color: var(--palette-stroke-table-headers);
+	background-color:var(--palette-fill-table-headers-light);
+	border-bottom: 5px solid black;
+}
+.spqcey th, td {
+	text-align: center;
+	padding: 0.5em 0.4em 0.5em 0.4em;
+}
+.spqcey sub {
+	vertical-align: sub
 }

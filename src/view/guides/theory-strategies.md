@@ -9,7 +9,7 @@ order: 9
 
 **CURRENTLY WIP**
 
-<table class="newwords">
+<table class="spqcey">
 <thead>
   <th></th>
   <th>T1C34</th>
