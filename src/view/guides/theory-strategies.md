@@ -13,7 +13,7 @@ order: 9
 <!-- <span style="color:red">some text</span> -->
 <!-- <span style="color:var(--palette-stroke-warning)">some text</span>. -->
 
-The theory sim we currently recommend was made by XLII, and can be [accessed here](https://theory-simulator.tredec.repl.co/).
+The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
 ### Theory 1: Recurrence Relations
 
@@ -215,6 +215,8 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
    </tbody>
 </table>
 <!-- T1C34 -->
+
+### T1C34
 <table class="spqcey">
 <thead>
   <th></th>
