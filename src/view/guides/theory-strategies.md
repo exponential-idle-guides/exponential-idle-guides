@@ -15,10 +15,10 @@ order: 9
 
 The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
-A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. So, <br />
-13 % 10 = 3,
-21 % 10 = 1,
-20 % 10 = 0
+A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
+13 % 10 = 3,<br />
+21 % 10 = 1,<br />
+20 % 10 = 0<br />
 Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to find the result of the modulus.
 So, 214**5** % 10 = **5**
 
