@@ -15,6 +15,13 @@ order: 9
 
 The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
+A "%" can be seen on some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. So,
+13 % 10 = 3,
+21 % 10 = 1,
+20 % 10 = 0
+Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to find the result of the modulus.
+So, 214**5** % 10 = **5**
+
 ### Theory 1: Recurrence Relations
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
@@ -202,7 +209,6 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
    </tbody>
 </table>
-
 
 <!-- T1C34 -->
 ### T1C34
