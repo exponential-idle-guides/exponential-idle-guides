@@ -163,6 +163,69 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ## Theory 1: Recurrence Relations
 
 ### T1SolarXLII xexxx
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T1SolarXLII xexxx</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Below xexxx</td>
+         <td class="rightHeader">Above xexxx</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost and q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost and ρ > 5 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>When ρ > 1.11 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When ρ > 5 × cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
+      </tr>
+   </tbody>
+</table>
+
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br />
+Strategy Credits:
+- Solarion and XLII for creating and refining this strategy off of the existing T1AI.
+- rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
+
+
 ### T1AI xexxx
 <table class="spqcey">
 <thead>
