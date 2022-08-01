@@ -313,15 +313,7 @@ milestones:
    <thead>
       <tr>
          <th class="invisible"></th>
-         <th>Milestone</th>
-         <th></th>
-         <th>Cycles</th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
+         <th colspan="9" style="text-align:center">Milestone      Cycles</th>
       </tr>
    </thead>
    <tbody>

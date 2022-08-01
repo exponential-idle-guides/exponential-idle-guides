@@ -158,8 +158,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 <thead>
   <tr>
      <th class="invisible"></th>
-     <th></th>
-     <th>T6SNAX x.xxexxx</th>
+     <th colspan="2" style="text-align:center">T6SNAX x.xxexxx</th>
   </tr>
 </thead>
    <tbody>
