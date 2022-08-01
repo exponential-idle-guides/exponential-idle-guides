@@ -9,63 +9,53 @@ order: 9
 
 **CURRENTLY WIP**
 
-<table class="T1C34">
-  <thead>
-    <th></th>
-    <th>T1C34</th>
-  </thead>
-  <tbody>
-    <!-- <tr>
-      <td class="leftHeader"></td>
-      <td class="topHeader">"Variables purchased with respect to c<sub><sub><small><small>yy</small></small></sub></sub>":<br>buy var when var_cost * ratio ≤ c<sub><sub><small><small>yy</small></small></sub></sub>_cost</td>
-    </tr> -->
-    <tr>
-      <td class="leftHeader"></td>
-      <td>c<sub><sub><small><small>32</small></small></sub></sub> and c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><sub><small><small>32:</small></small></sub></sub></td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td class="indent">b<sub><sub><small><small>2</small></small></sub></sub>: 5x ratio</td>
-    </tr>
-    <tr>
-      <td class="leftHeader">During Recovery:</td>
-      <td class="indent">c<sub><sub><small><small>12</small></small></sub></sub>: 100x ratio</td>
-    </tr>
-    <tr>
-      <td class="leftHeader">(pub multi < 1)</td>
-      <td class="indent">c<sub><sub><small><small>22</small></small></sub></sub>: 2.5x ratio</td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><sub><small><small>23</small></small></sub></sub>:</td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td class="indent">b<sub><sub><small><small>3</small></small></sub></sub>: 8x ratio</td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td class="indent">c<sub><sub><small><small>33</small></small></sub></sub>: 10x ratio</td>
-    </tr>
-    <tr>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">Disable remaining variables<br><sub><sub><small><small>* Will have to purchase once at start</small></small></sub></sub></td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td>c<sub><sub><small><small>12</small></small></sub></sub> and c<sub><sub><small><small>23</small></small></sub></sub>: autobuy</td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td>Variables purchased with respect to c<sub><sub><small><small>12:</small></small></sub></sub></td>
-    </tr>
-    <tr>
-      <td class="leftHeader"></td>
-      <td class="indent">b<sub><sub><small><small>2</small></small></sub></sub>: 8x ratio</td>
-    </tr>
-  </tbody>
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>T1C34</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>Disable c1/c2</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>All variables on</td>
+         <td>q4/r4 → q3/r3 → etc manual buy</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Idle / T3Idle2</a></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Play2</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>Only q1, q2, c3</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T5</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T6</td>
+         <td>Disable c3, c4</td>
+         <td>Idle with chasing doublings</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T7</td>
+         <td>Disable c1, c2, c3</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T7Play-25</a></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T8</td>
+         <td>All variables on</td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T8RPlay</a></td>
+      </tr>
+   </tbody>
 </table>
