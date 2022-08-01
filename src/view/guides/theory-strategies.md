@@ -13,6 +13,8 @@ order: 9
 <!-- <span style="color:red">some text</span> -->
 <!-- <span style="color:var(--palette-stroke-warning)">some text</span>. -->
 
+The theory sim we currently recommend was made by XLII, and can be [accessed here](https://theory-simulator.tredec.repl.co/).
+
 ### Theory 1: Recurrence Relations
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
