@@ -183,27 +183,27 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">q2</td>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>When ρ > 1.15 × cost</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c1</td>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
          <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c2</td>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
          <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c3</td>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
          <td>When ρ > 2 × cost</td>
          <td>❌</td>
       </tr>
       <tr>
-         <td class="leftHeader">c4</td>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>When ρ > 1.01 × cost</td>
          <td>❌</td>
       </tr>
