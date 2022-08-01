@@ -26,6 +26,129 @@ T2 is the only theory without an active strategy, despite attempts.
 - T2Coast-X%
 - T2
 
+### Theory 3: Linear Algebra
+
+T3 has the most variables of any theory and has benefitted the most from player-created strategies.
+T3SNAX is currently the best idle strategy above e200ρ.
+T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
+
+- T3Play2
+- T3Play
+- T3SNAX
+- T3SNAX2
+- T3Noρ1C13rcvNoC12
+- T3Noρ1C13rcv
+- T3NoC11C13C21C33d
+- T3NoC11C13C21C33
+- T3NoC13C33d
+- T3NoC13C33
+- T3NoC11C13C33d
+- T3NoC11C13C33
+
+### Theory 4: Polynomials
+
+T4 is the third-strongest theory in endgame, only behind T5 and T6.
+
+- T4C3d66
+- T4C3d
+- T4C3dC12rcv
+- T4C3
+- T4C123d
+- T4C123
+- T4C12d
+- T4C12
+- T4C5
+- T4C6
+- T4
+
+### Theory 5: Logistic Function
+
+T5 is the second-strongest theory in endgame, only behind T6.
+
+- T5AI
+- T5Idle xexxx
+- T5
+
+### Theory 6: Integral Calculus
+
+T6 is the most powerful theory in endgame, with several players reaching well over e1100𝜏 on their main save, some even over e1200𝜏.
+
+- T6AI
+- T6SNAX x.xxexxx
+- T6NoC34d
+- T6NoC34
+- T6NoC1234d
+- T6NoC1234
+- T6NoC345d
+- T6NoC345
+
+### Theory 7: Numerical Methods
+
+T7 is the third-weakest theory, ahead of T2 and T8.
+T7PlaySpqcey is a slightly faster version of T7Play-25.
+
+- T7PlaySpqcey
+- T7Play-25
+- T7C3d
+- T7C12d
+- T7C123d
+- T7NoC12
+- T7NoC123
+- T7NoC124
+- T7NoC1234
+- T7
+
+### Theory 8: Chaos Theory
+
+T8 is the weakest theory in endgame and has the most active strategy of any theory (T8PlaySolarSwap)
+T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
+
+- T8PlaySolarSwap
+- T8RPlay
+- T8RNoC35d
+- T8RNoC35
+- T8R34
+- T8Rd
+- T8R
+
+### Official Custom Theories
+In chronological order of release
+Read more about custom theories on <link to custom theory guide page>
+
+### Custom Theory 1:\ Weierstraß Sine Product
+
+The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
+
+- WSPAI
+- WSPdStopC1
+- WSPd
+- WSPStopC1
+
+### Custom Theory 2:\ Sequential Limits
+
+The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
+
+- SLStopAd
+- SLStopA
+
+### Custom Theory 3:\ Euler's Formula
+
+The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
+
+- EFAI (post-e50ρ)
+- EFSNAX
+- EFd
+- EF
+
+### Custom Theory 4:\ Convergents to √2
+
+The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
+
+- CSR2XL
+- CSR2d
+- CSR2
+
+
 <table class="spqcey">
 <thead>
   <tr>
