@@ -1893,6 +1893,9 @@ This strategy is typically seen at lower ρ and is eventually outpaced by T4C3.
 ## Theory 5: Logistic Function
 
 ### T5AI
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing)
+To learn how to perform T5AI.
+
 ### T5Idle xexxx
 ### T5
 
