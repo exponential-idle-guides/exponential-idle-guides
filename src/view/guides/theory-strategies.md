@@ -3553,10 +3553,43 @@ Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
 Swap to \\(q_1\\) exponent when one of these is true:
 - \\(\rho\\) × Ratio > \\(c_2\\) cost
 - \\(\rho\\) × \\(\frac{Ratio}{2}\\) > \\(n\\) cost
-- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1							
+- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1<br />							
 Follow the sim’s advice for when to start coasting.
 
 The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>Ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ < e45</td>
+         <td>Couldn't find any good ratio here, just swap<br />when you are very close to the upgrade. - XLII</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e45</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e80</td>
+         <td>8</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e115</td>
+         <td>20</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e220</td>
+         <td>40</td>
+      </tr>
+   </tbody>
+</table>
 
 <br /> <br />
 Strategy Credits:
