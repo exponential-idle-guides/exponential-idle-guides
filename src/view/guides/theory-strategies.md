@@ -2381,6 +2381,48 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 ## Theory 7: Numerical Methods
 
 ### T7PlaySpqcey
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T7PlaySpqcey</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+<br />
+
+Strategy Credits:
+- Playspout for q<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>, c<sub><sub><small>6</small></sub></sub> buying strategy
+- spqcey for the addition of c<sub><sub><small>3</small></sub></sub>
 ### T7Play-25
 ### T7C3d
 ### T7C12d
