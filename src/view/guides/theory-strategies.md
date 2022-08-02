@@ -2025,6 +2025,7 @@ Strategy Credit:
 </table>
 
 <br />
+
 \* If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
 ### T6SNAX x.xxexxx
