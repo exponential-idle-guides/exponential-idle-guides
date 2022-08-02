@@ -3329,6 +3329,80 @@ Strategy Credits:
 - Playspout
 
 ### EFSNAX
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">EFSNAX</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+Strategy Credits:
+- Snaeky
+- XLII
+- Gaunter for buying a<sub><sub><small>1</small></sub></sub> after recovery when past e150\\(\rho\\) strategy
+<br /> <br />
+\* If below e150\\(\rho\\), don’t autobuy a<sub><sub><small>1</small></sub></sub> after recovery.
+
 ### EFd
 ### EF
 
