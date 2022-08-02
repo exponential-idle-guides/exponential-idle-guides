@@ -131,34 +131,34 @@ Read more about custom theories on (link to custom theory guide page)
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSPAI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)
-- [WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)
-- [WSPd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)
-- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)
+- [WSPAI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
+- [WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
+- [WSPd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
+- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 2: Sequential Limits
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>A](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>A](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 3: Euler's Formula
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
-- [EFAI (post-e50ρ)](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)
-- [EFSNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)
-- [EFd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)
-- [EF](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)
+- [EFAI (post-e50ρ)](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
+- [EFSNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Idle
+- [EFd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
+- [EF](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 4: Convergents to √2
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2XL](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)
-- [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)
-- [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)
+- [CSR2XL](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;Active
+- [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
+- [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 
 ## Theory 1: Recurrence Relations
 
