@@ -2784,7 +2784,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br / min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2860,7 +2860,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br /> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
