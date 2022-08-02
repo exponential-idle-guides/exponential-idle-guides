@@ -1987,7 +1987,7 @@ Strategy Credit:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than q<sub><sub><small>2</small></sub></sub> *</td>
+         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than q<sub><sub><small>2</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -1995,7 +1995,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than r<sub><sub><small>2</small></sub></sub> *</td>
+         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than r<sub><sub><small>2</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -2003,7 +2003,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 8 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub> *</td>
+         <td>When 8 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2026,7 +2026,7 @@ Strategy Credit:
 
 <br />
 
-\* If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
 ### T6SNAX x.xxexxx
 
