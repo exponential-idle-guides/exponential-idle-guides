@@ -66,7 +66,7 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 - [T4C3dC12rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
 - [T4C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
 - [T4C123d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123d)&nbsp; — &nbsp;Active
-- [T4C123](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Active
+- [T4C123](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Idle
 - [T4C12d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12d)&nbsp; — &nbsp;Active
 - [T4C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12)&nbsp; — &nbsp;Idle
 - [T4C5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
