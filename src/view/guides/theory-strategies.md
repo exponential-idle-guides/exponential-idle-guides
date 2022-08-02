@@ -2776,6 +2776,44 @@ Strategy Credits:
 ## Theory 8: Chaos Theory
 
 ### T8PlaySolarSwap
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8PlaySolarSwap</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+   </tbody>
+</table>
+
+**Milestone Swap:**<br />
+Every 34 seconds, remove one level from the first milestone then immediately add the level back.
+<br /> <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+Strategy Credits:
+- Playspout for the variable buying strategy
+- Solarion for the milestone swap idea
+
+
 ### T8RPlay
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
