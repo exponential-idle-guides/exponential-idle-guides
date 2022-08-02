@@ -3201,7 +3201,7 @@ Strategy Credits:
 </table>
 <br />
 
-The boost from doublings (\\(a_1\\) to (\\(a_2\\), (\\(b_1\\) to (\\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span>A.
+The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span>A.
 <br /> <br />
 Strategy Credits:
 - xelaroc
@@ -3213,7 +3213,7 @@ Strategy Credits:
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">SLStopAd</th>
+      <th colspan="2" style="text-align:center">SLStopA</th>
    </tr>
 </thead>
    <tbody>
