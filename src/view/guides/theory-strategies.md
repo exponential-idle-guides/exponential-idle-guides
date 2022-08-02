@@ -3404,7 +3404,104 @@ Strategy Credits:
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
 ### EFd
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>EFd</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>Buy when 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>Buy when ¼ of q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 ### EF
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>EF</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
 
 ## Convergents to √2
 
