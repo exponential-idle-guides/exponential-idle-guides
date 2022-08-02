@@ -156,7 +156,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2XLx.xx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx)&nbsp; — &nbsp;Active
+- [CSR2XLx.xx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;Active
 - [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 - [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 <br /> <br />
@@ -3564,10 +3564,6 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
   <th>Ratio</th>
 </thead>
    <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
       <tr>
          <td class="leftHeader">ρ < e45</td>
          <td>Couldn't find any good ratio here, just swap<br />when you are very close to the upgrade. - XLII</td>
