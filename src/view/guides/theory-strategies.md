@@ -2091,7 +2091,12 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
+The “x.xxexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br /> <br />
+
+Strategy Credits:
+- Snaeky
+- XLII
+
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C34d
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C34
