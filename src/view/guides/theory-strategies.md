@@ -325,7 +325,7 @@ Strategy Credits:
          <td class="topHeader">Publication Multiplier 1150-2250</td>
          <td class="topHeader">Publication Multiplier 2250-2900</td>
          <td class="topHeader">Publication Multiplier 2900-4650</td>
-         <td class="rightHeader">Publication Multiplier above 4650</td>
+         <td class="topHeader">Publication Multiplier above 4650</td>
      </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
@@ -516,7 +516,7 @@ If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
          <td class="topHeader">Recovery up until e1 away from recovered *</td>
          <td class="topHeader">From e1 away from recovered until fully recovered</td>
          <td class="topHeader">Publication Mult 1-2</td>
-         <td class="rightHeader">Coasting (pub mult > 2)</td>
+         <td class="topHeader">Coasting (pub mult > 2)</td>
      </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
@@ -626,7 +626,7 @@ Strategy Credits:
          <td class="leftHeader"></td>
          <td class="topHeader">Recovery (pub mult < 1)</td>
          <td class="topHeader">Publication Mult 1-2</td>
-         <td class="rightHeader">Coasting (pub mult > 2)</td>
+         <td class="topHeader">Coasting (pub mult > 2)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
