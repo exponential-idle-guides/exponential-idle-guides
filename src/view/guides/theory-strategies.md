@@ -3549,7 +3549,7 @@ Strategy Credits:
 <br />
 The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CS2XL2.85", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br />
 
-**Milestone Swap (pre e500\\(\rho\\))**
+**Milestone Swap (pre e500\\(\rho\\))**<br />
 Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
 Swap to \\(q_1\\) exponent when one of these is true:
 - \\(\rho\\) × Ratio > \\(c_2\\) cost
