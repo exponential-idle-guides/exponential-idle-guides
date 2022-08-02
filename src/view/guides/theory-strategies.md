@@ -1551,8 +1551,135 @@ Strategy Credits:
 </table>
 
 ### T4C3
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C3</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4C123d
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C123d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost and c<sub><sub><small>3</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+This strategy is typically seen at lower ρ and is eventually outpaced by T4C3d.
+
 ### T4C123
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C123</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+This strategy is typically seen at lower ρ and is eventually outpaced by T4C3.
+
 ### T4C12d
 ### T4C12
 ### T4C5
