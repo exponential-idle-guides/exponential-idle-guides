@@ -3127,6 +3127,39 @@ Strategy Credits:
 - xelaroc
 
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>WSPStopC1</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>Stop buying c<sub><sub><small>1</small></sub></sub> ~ 15 seconds into publication</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+Strategy Credits:
+- xelaroc for simulating it/adding it to the sim
+- Snaeky for the stop c1 idea
 
 ## Sequential Limits
 
