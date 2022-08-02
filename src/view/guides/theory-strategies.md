@@ -273,6 +273,8 @@ Strategy Credits:
    </tbody>
 </table>
 
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
+
 <!-- T1C34 -->
 ### T1C34
 <table class="spqcey">
@@ -1937,7 +1939,9 @@ This active strategy does not work well with this method of showing theory strat
 </table>
 
 **IMPORTANT:**
-Do active \\(c_2\\) buying (buying \\(c_2\\) when q isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
+Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and \\(x10\\) for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
+
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br /> <br />
 
 Strategy Credit:
 - XLII
@@ -2009,6 +2013,8 @@ Strategy Credit:
       </tr>
    </tbody>
 </table>
+
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C34d
 ### T6<span style="color:var(--palette-stroke-warning)">No</span>C34
