@@ -3254,6 +3254,79 @@ Strategy Credits:
 ## Euler's Formula
 
 ### EFAI (post-e50ρ)
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">EFAI</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (10 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost × (10 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅕ of a<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅕ of a<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅕ of a<sub><sub><small>3</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>When ⅕ of a<sub><sub><small>3</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (4 + (lvl % 10)/2) < q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost × (4 + (lvl % 10)/2) < q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EFAI q1: 1223 q2: 144 a1: 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+
+Strategy Credits:
+- XLII
+- Playspout
+
 ### EFSNAX
 ### EFd
 ### EF
