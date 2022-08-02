@@ -3399,9 +3399,9 @@ Strategy Credits:
 Strategy Credits:
 - Snaeky
 - XLII
-- Gaunter for buying a<sub><sub><small>1</small></sub></sub> after recovery when past e150\\(\rho\\) strategy
+- Gaunter for buying \\(a_1\\) after recovery when past e150\\(\rho\\) strategy
 <br /> <br />
-\* If below e150\\(\rho\\), don’t autobuy a<sub><sub><small>1</small></sub></sub> after recovery.
+\* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
 ### EFd
 ### EF
