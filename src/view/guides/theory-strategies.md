@@ -1979,6 +1979,53 @@ Strategy Credit:
 ## Theory 6: Integral Calculus
 
 ### T6AI
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T6AI</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than q<sub><sub><small>2</small></sub></sub> *</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than r<sub><sub><small>2</small></sub></sub> *</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 8 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub> *</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>As the publication progresses, buy less and less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
+
 ### T6SNAX x.xxexxx
 
 <table class="spqcey">
