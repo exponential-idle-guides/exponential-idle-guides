@@ -156,7 +156,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2XL](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;Active
+- [CSR2XLx.xx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx)&nbsp; — &nbsp;Active
 - [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 - [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 <br /> <br />
@@ -3506,5 +3506,61 @@ Strategy Credits:
 ## Convergents to √2
 
 ### CSR2XL
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">CSR2XLx.xx</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Before x.xx Publication Multiplier</td>
+         <td class="rightHeader">After x.xx Publication Multiplier</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c), where c = cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either<br />n or c<sub><sub><small>2</small></sub></sub>, <br />prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × 10 < min (q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c)</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️(if n and c<sub><sub><small>2</small></sub></sub> have similar costs, prioritize c<sub><sub><small>2</small></sub></sub>)</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+**Milestone Swap (pre e500\\(\rho\\))**
+Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
+Swap to \\(q_1\\) exponent when one of these is true:
+- \\(\rho\\) × Ratio > \\(c_2\\) cost
+- \\(\rho\\) × Ratio/2 > n cost
+- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1							
+Follow the sim’s advice for when to start coasting.
+
+The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
+
+<br /> <br />
+Strategy Credits:
+- XLII
+
 ### CSR2d
 ### CSR2
