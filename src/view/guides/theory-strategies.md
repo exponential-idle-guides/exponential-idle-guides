@@ -1681,10 +1681,214 @@ This strategy is typically seen at lower ρ and is eventually outpaced by T4C3d.
 This strategy is typically seen at lower ρ and is eventually outpaced by T4C3.
 
 ### T4C12d
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C12d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4C12
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C12</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4C5
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C5</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4C6
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C6</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
 
 ## Theory 5: Logistic Function
 
