@@ -1893,10 +1893,55 @@ This strategy is typically seen at lower ρ and is eventually outpaced by T4C3.
 ## Theory 5: Logistic Function
 
 ### T5AI
-This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing)
-To learn how to perform T5AI.
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5AI.
 
 ### T5Idle xexxx
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T5Idle xexxx</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Before xexxx ρ</td>
+         <td class="rightHeader">After xexxx ρ</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+**IMPORTANT:**
+Do active \\(c_2\\) buying (buying \\(c_2\\) when q isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
+
+Strategy Credit:
+- XLII
+
 ### T5
 
 ## Theory 6: Integral Calculus
