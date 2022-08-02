@@ -3526,7 +3526,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either<br />n or c<sub><sub><small>2</small></sub></sub>, <br />prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
+         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either n or c<sub><sub><small>2</small></sub></sub>, <br />prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -3552,7 +3552,7 @@ Strategy Credits:
 Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
 Swap to \\(q_1\\) exponent when one of these is true:
 - \\(\rho\\) × Ratio > \\(c_2\\) cost
-- \\(\rho\\) × Ratio/2 > n cost
+- \\(\rho\\) × \\(\frac{Ratio}{2}\\) > \\(n\\) cost
 - \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1							
 Follow the sim’s advice for when to start coasting.
 
