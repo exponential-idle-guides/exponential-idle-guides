@@ -159,7 +159,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - [CSR2XL](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;Active
 - [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 - [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
-
+<br /> <br />
 ## Theory 1: Recurrence Relations
 
 ### T1SolarXLII xexxx
@@ -3023,6 +3023,39 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 ## Weierstraß Sine Product
 
 ### WSPAI
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>WSPAI</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️(Autobuy when not saving up for n)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️ Save up for n when ρ > cost/4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>Stop buying a few seconds into <br />a publication (or do e5 difference at lower ρ)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️ (Autobuy when not saving up for n)</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+Strategy Credits:
+- xelaroc
+
 ### WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 ### WSPd
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
