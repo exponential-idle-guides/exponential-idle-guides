@@ -2423,7 +2423,53 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
+
 ### T7Play-25
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T7Play-25</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+T7-Play-25 has a “25” due to the two 25% (¼) ratios
+<br /> <br />
+
+Strategy Credits:
+- Playspout
+
+
 ### T7C3d
 ### T7C12d
 ### T7C123d
