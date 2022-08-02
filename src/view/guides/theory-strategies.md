@@ -322,10 +322,10 @@ Strategy Credits:
       <tr>
          <td class="leftHeader"></td>
          <td class="topHeader">Publication Multiplier below 1150</td>
-         <td class="topHeader">Publication Multiplier 1150-2250</td>
-         <td class="topHeader">Publication Multiplier 2250-2900</td>
-         <td class="topHeader">Publication Multiplier 2900-4650</td>
-         <td class="topHeader">Publication Multiplier above 4650</td>
+         <td class="rightHeader">Publication Multiplier 1150-2250</td>
+         <td class="rightHeader">Publication Multiplier 2250-2900</td>
+         <td class="rightHeader">Publication Multiplier 2900-4650</td>
+         <td class="rightHeader">Publication Multiplier above 4650</td>
      </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
