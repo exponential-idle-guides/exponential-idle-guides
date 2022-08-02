@@ -3320,6 +3320,7 @@ Strategy Credits:
    </tbody>
 </table>
 <br />
+
 When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EFAI q1: 1223 q2: 144 a1: 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
