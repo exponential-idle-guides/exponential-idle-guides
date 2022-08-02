@@ -41,7 +41,7 @@ T2 is the only theory without an active strategy, despite attempts.
 ### Theory 3: Linear Algebra
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3SNAX is currently the best idle strategy above e200ρ.
+T3SNAX is currently the best idle strategy above e200\\(\rho\\).
 T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
 - [T3Play2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)
@@ -1636,7 +1636,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-This strategy is typically seen at lower ρ \\(ρ\\) \\(\rho\\) and is eventually outpaced by T4C3d.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3d.
 
 ### T4C123
 <table class="spqcey">
@@ -1680,7 +1680,7 @@ This strategy is typically seen at lower ρ \\(ρ\\) \\(\rho\\) and is eventuall
    </tbody>
 </table>
 
-This strategy is typically seen at lower ρ and is eventually outpaced by T4C3.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3.
 
 ### T4C12d
 <table class="spqcey">
