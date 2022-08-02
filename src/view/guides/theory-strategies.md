@@ -2421,8 +2421,8 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 <br />
 
 Strategy Credits:
-- Playspout for //(q_1//), //(c_4//), //(c_5//), //(c_6//) buying strategy
-- spqcey for the addition of //(c_3//)
+- Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
+- spqcey for the addition of \\(c_3\\)
 ### T7Play-25
 ### T7C3d
 ### T7C12d
