@@ -858,7 +858,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When 1/10 of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>When \\(\frac{1}{10}\\) of ρ<sub><sub><small>3</small></sub></sub></td>
          <td>❌</td>
       </tr>
    </tbody>
