@@ -3622,6 +3622,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
 ### CSR2
 <table class="spqcey">
 <thead>
