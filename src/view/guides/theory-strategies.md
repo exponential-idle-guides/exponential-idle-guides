@@ -3043,7 +3043,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>Stop buying a few seconds into <br />a publication (or do e5 difference at lower ρ)</td>
+         <td>Stop buying a few seconds into a<br />publication (or do e5 difference at lower ρ)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
