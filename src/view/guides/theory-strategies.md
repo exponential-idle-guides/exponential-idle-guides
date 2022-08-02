@@ -3547,6 +3547,7 @@ Strategy Credits:
    </tbody>
 </table>
 <br />
+
 The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CS2XL2.85", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br />
 
 **Milestone Swap (pre e500\\(\rho\\))**<br />
