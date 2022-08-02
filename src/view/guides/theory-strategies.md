@@ -1636,7 +1636,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-This strategy is typically seen at lower ρ and is eventually outpaced by T4C3d.
+This strategy is typically seen at lower ρ \\(ρ\\) \\(\rho\\) and is eventually outpaced by T4C3d.
 
 ### T4C123
 <table class="spqcey">
@@ -1939,7 +1939,7 @@ This active strategy does not work well with this method of showing theory strat
 </table>
 
 **IMPORTANT:**
-Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and \\(x10\\) for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
+Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
 
 The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br /> <br />
 
