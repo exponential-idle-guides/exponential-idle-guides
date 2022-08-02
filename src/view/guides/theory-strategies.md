@@ -26,7 +26,7 @@ So, 214**5** % 10 = **5**
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
 
-- [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)
+- [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)            Active
 - [T1AI xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai-xexxx)
 - [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)
 
