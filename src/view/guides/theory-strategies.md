@@ -2815,6 +2815,42 @@ Strategy Credits:
 
 
 ### T8RPlay
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8RPlay</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>When cost ¼ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+<br /> <br />
+Strategy Credits:
+- Playspout
+
+
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
 ### T8R34
