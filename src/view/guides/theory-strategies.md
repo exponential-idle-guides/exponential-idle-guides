@@ -1625,7 +1625,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost and c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
