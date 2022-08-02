@@ -2956,7 +2956,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8R34</th>
+  <th>T8Rd</th>
 </thead>
    <tbody>
       <tr>
@@ -2989,7 +2989,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8R34</th>
+  <th>T8R</th>
 </thead>
    <tbody>
       <tr>
