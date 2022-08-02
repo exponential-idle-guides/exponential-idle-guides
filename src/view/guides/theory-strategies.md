@@ -2007,7 +2007,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>As the publication progresses, buy less and less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
+         <td>As the publication progresses, buy less and <br />less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
@@ -2023,6 +2023,7 @@ Strategy Credit:
       </tr>
    </tbody>
 </table>
+
 <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
