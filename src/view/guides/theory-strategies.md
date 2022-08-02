@@ -3164,7 +3164,92 @@ Strategy Credits:
 ## Sequential Limits
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">SLStopAd</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier < 6</td>
+         <td class="rightHeader">Publication Multiplier > 6</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+The boost from doublings (\\(a_1\\) to (\\(a_2\\), (\\(b_1\\) to (\\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span>A.
+<br /> <br />
+Strategy Credits:
+- xelaroc
+- Playspout
+- XLII for change from 4.5 publication multiplier to 6
+
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">SLStopAd</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier < 6</td>
+         <td class="rightHeader">Publication Multiplier > 6</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+Strategy Credits:
+- xelaroc
+- Playspout
+- XLII for change from 4.5 publication multiplier to 6
 
 ## Euler's Formula
 
