@@ -2852,7 +2852,73 @@ Strategy Credits:
 
 
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8RNoC35d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+<br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8RNoC35</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+
 ### T8R34
 ### T8Rd
 ### T8R
