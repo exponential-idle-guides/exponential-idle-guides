@@ -276,6 +276,7 @@ Strategy Credits:
    </tbody>
 </table>
 <br /> <br />
+
 **For the \\(c_2\\) Ratio:**
 
 ![\\(c_2\\) Ratio](/images/t1ratioc2ratio.png)
