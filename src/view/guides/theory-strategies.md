@@ -56,11 +56,10 @@ T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33)&nbsp; — &nbsp;Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33d)&nbsp; — &nbsp;Active
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33)&nbsp; — &nbsp;Idle
-- [T3C11C12C21d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
-- [T3C11C12C21](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C32C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33d)&nbsp; — &nbsp;Active
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C32C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33)&nbsp; — &nbsp;Idle
-
+- [T3C11C12C21d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
+- [T3C11C12C21](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
 
 ### Theory 4: Polynomials
 
@@ -133,7 +132,8 @@ T8 also has the largest number of strategies (20+ total), but only those I have 
 - [T8RPlay](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rplay)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35d)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35)&nbsp; — &nbsp;Idle
-- [T8R34/T8<span style="color:var(--palette-stroke-warning)">No</span>C5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8r34)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8c5d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8r34)&nbsp; — &nbsp;Idle
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
 - [T8Rd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rd)&nbsp; — &nbsp;Active
@@ -1400,6 +1400,9 @@ Strategy Credits:
    </tbody>
 </table>
 
+### T3C11C12C21d
+### T3C11C12C21
+
 ## Theory 4: Polynomials
 
 ### T4C3d66
@@ -1782,6 +1785,11 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
+### T4C56d
+### T4C56
+### T4C4d
+### T4C4
+
 ### T4C5
 <table class="spqcey">
 <thead>
@@ -1812,48 +1820,6 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
          <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
-### T4C6
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C6</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
@@ -2394,6 +2360,11 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 
 This strategy is sometimes seen at lower taus but is not seen at higher taus.
 
+### T6C4d
+### T6C4
+### T6C3d
+### T6C3
+
 ## Theory 7: Numerical Methods
 
 ### T7PlaySpqcey
@@ -2560,6 +2531,8 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
+### T7C12
 
 ### T7C123d
 <table class="spqcey">
@@ -2935,7 +2908,9 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 
 If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
-### T8R34
+### T8NoC5d
+
+### T8NoC5/T8R34
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2967,6 +2942,9 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 <br />
 
 If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+
+### T8NoC3d
+### T8NoC3
 
 ### T8Rd
 <table class="spqcey">
