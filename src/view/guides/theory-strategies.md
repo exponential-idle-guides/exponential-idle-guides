@@ -276,6 +276,40 @@ Strategy Credits:
    </tbody>
 </table>
 
+**For the \\(c_3\\)Ratio**
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>c<sub><sub><small>3</small></sub></sub> Ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ρ < e300</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e300</td>
+         <td>1.1</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e450</td>
+         <td>2</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e550</td>
+         <td>5</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e625</td>
+         <td>10</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+Strategy Credits:
+- XLII
+
 ### T1AI xexxx
 <table class="spqcey">
 <thead>
