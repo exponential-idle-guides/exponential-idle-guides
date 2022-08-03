@@ -50,7 +50,7 @@ This will tell you how much \\(\tau\\) is gained between publications for the ac
 \\(\Delta\tau\\) is defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) or \\(log_{10}(\tau_{final})\\) - \\(log_{10}(\tau_{initial})\\).
 Ex: If \\(\Delta\tau\\) was equal to 1e3 and the starting \\(\tau\\) was e100, the sim published at e103 \\(\tau\\).
 
-**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from human execution due to the sim being better than a human at timing and purchasing. If you input your tau as 1eXXXX, then you should definitely not publish at this unless your tau is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
+**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. If you input your tau as 1eXXXX, then you should definitely not publish at this unless your tau is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
 
 ### Modes Overview and how to use them
 
@@ -65,26 +65,31 @@ The below image is an example output of the all mode.
 The below image is an example output of the Single sim mode.
 
 ![Theory Sim Example Outputs](/images/SimOutputs-placeholder.png)
+
 #### Chain
 
 The below image is an example output of the Chain mode.
 
 ![Theory Sim Example Outputs](/images/SimOutputs-placeholder.png)
+
 #### Steps
 
 The below image is an example output of the Steps mode.
 
 ![Theory Sim Example Outputs](/images/SimOutputs-placeholder.png)
+
 #### Amount
 
 The below image is an example output of the Amount mode.
 
 ![Theory Sim Example Outputs](/images/SimOutputs-placeholder.png)
+
 #### Time
 
 The below image is an example output of the Time mode.
 
 ![Theory Sim Example Outputs](/images/SimOutputs-placeholder.png)
+
 #### Time diff.
 
 The below image is an example output of the Time diff. mode.
