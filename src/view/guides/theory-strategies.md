@@ -1411,7 +1411,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of min(c<sub><sub><small>11</small></sub></sub> cost,c<sub><sub><small>21</small></sub></sub> cost,c<sub><sub><small>31</small></sub></sub>) cost</td>
+         <td>When cost is ⅛ of min(c<sub><sub><small>11</small></sub></sub> cost, c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
