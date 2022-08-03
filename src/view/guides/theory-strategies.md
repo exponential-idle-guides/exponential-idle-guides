@@ -2802,7 +2802,6 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 </table>
 
 ### T6C4
-### T6C4d
 <table class="spqcey">
 <thead>
   <th></th>
