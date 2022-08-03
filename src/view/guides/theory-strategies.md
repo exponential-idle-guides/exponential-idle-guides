@@ -27,6 +27,7 @@ So, 214**5** % 10 = **5**
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
 
 - [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+- [T1Ratio](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
 - [T1AI xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai-xexxx)&nbsp; — &nbsp;Active
 - [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
@@ -241,6 +242,39 @@ Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1AI.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
+### T1Ratio
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T1Ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When ρ > 10 × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>When ρ > 1.11 × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When ρ > 10 × c<sub><sub><small>2</small></sub></sub>ratio × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>When ρ > c<sub><sub><small>2</small></sub></sub>ratio × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When ρ > c<sub><sub><small>3</small></sub></sub>ratio × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
 
 ### T1AI xexxx
 <table class="spqcey">
