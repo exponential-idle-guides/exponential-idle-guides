@@ -87,7 +87,7 @@ or xMax.**
 
 #### Autosupremacy explanation
 
-Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max f(t) during that supremacy is increased, but due to prestiges, this f(t) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to mitigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of f(t) out of that prestige to make sure it is time to supremacy.
+Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max \\(f(t)\\) during that supremacy is increased, but due to prestiges, this \\(f(t)\\) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to mitigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of \\(f(t)\\) out of that prestige to make sure it is time to supremacy.
 
 ### Star spending
 
@@ -95,7 +95,7 @@ Upon unlocking all variables, you can use the [star calculator](https://conicgam
 
 #### When to recalculate star distribution
 
-[Your star distribution](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often but should be done if it has been a while since you last did. A good rule of measurement is every ee1000 to ee2000 gain to your highest reached f(t) as any closer between breaks normally won't be significant enough. The exception to this is during the ee6000 push which, similar to the ee5000 push, redistribution can be handy as it is a long push.
+[Your star distribution](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often but should be done if it has been a while since you last did. A good rule of measurement is every ee1000 to ee2000 gain to your highest reached \\(f(t)\\) as any closer between breaks normally won't be significant enough. The exception to this is during the ee6000 push which, similar to the ee5000 push, redistribution can be handy as it is a long push.
 
 ### Graduation routing
 

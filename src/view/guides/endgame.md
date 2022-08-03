@@ -49,7 +49,7 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 
 #### Three Steps To Getting The Best Result
 
-1. After your progress has slowed after recoverying from a graudation and nearing the next graduation, get results from the calculator. Only the F(t) output here is useful.
+1. After your progress has slowed after recoverying from a graudation and nearing the next graduation, get results from the calculator. Only the \\(F(t)\\) output here is useful.
 2. Upon arriving to the most recent output, get a new set of results from the calculator.
 3. Repeat Step 2 until output is the same \\(F(t)\\) you are currently at. This is when you should graduate.
 
@@ -96,13 +96,13 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### t Stacking
 
-A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\varphi\\) due to additional dt and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
+A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\varphi\\) due to additional \\(dt\\) and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
 
 ### Skipped Students Routing
 
 Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
-Due to fluctuations with stars, accel, t, and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
+Due to fluctuations with stars, accel, \\(t\\), and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
 
 ##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ.
 
@@ -212,7 +212,7 @@ Calculations by: LE★Baldy
 
 ### Supremacy Equation Past 48k
 
-When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to \\(\varphi\\) from \\(\psi\\), only d\\(\psi\\). When you hit about ft 50k you can skip buying most \\(\psi\\) upgrades and be able to recover fairly quickly. The Supremacy Equations for the F(t) that we know are as follows:
+When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to \\(\varphi\\) from \\(\psi\\), only \\(d\psi\\). When you hit about ft 50k you can skip buying most \\(\psi\\) upgrades and be able to recover fairly quickly. The Supremacy Equations for the F(t) that we know are as follows:
 
 Suprem Equation past ee48k:
 

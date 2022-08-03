@@ -10,7 +10,7 @@ order: 1
 ### Introduction
 
 The start of the game is the most variable section of the game depending on how active you play.
-This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks. 
+This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks.
 Within each of these sections there are idle, active, and general strategy subsections for differing playstyles.
 Playing and molding both sections will often deliver the best results for a particular person's ability and situation.
 
@@ -21,7 +21,7 @@ Playing and molding both sections will often deliver the best results for a part
 ##### Before b>=1:
 
 - You do not want to prestige immediately when you hit 100% but instead when \\(db\\) growth slows drastically.
-- I tend to do a prestige around db=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is flexible and can change based on how fast you are moving and preference.
+- I tend to do a prestige around \\(db\\)=.003, .025, .135, and the remainder to hit \\(b\\)>=1. This is flexible and can change based on how fast you are moving and preference.
 - Recovery after a prestige is standard at spamming all variables and buying upgrades occasionally (\\(\mu\\) upgrades instantly). This continues until the end of the prestige.
 
 ##### After b>=1:
@@ -66,8 +66,8 @@ There is also a 0.04% chance to gain a star from tapping the equation, however, 
 
 ##### Minigames
 
-These can be unlocked once b>=1. Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and perm levels while you wait. 
+These can be unlocked once \\(b>=1\\). Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
+You can buy variables and perm levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 
@@ -83,7 +83,7 @@ It gives an x2.85 boost to \\(dt\\) and game progress if you max out the 1 hour 
 
 Focus is on buying accel button if you will use it then variables. Leftover stars can be used for permenant levels.
 You will most likely not buy any autobuyers in this section as variables far and above give a bigger boost most cases.
-If you do end up buying some then buy variable then upgrade autobuyer. 
+If you do end up buying some then buy variable then upgrade autobuyer.
 You will not make it to autoprestige in this section unless extreme grinding but is worth the cost if you keep some variables.
 
 #### Idle strategies
@@ -102,9 +102,9 @@ You will not purchase the accel button. When you go idle, focus purchase on the 
 
 **Upon reaching ee50, immediately supremacy.**
 
-The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy. 
-There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(f(t)\\)=ee140. 
-You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgrade beforehand. 
+The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy.
+There is an exception, however. The third supremacy for \\(y^{1.6}\\) costs 24 \\(\psi\\) and occurs at \\(f(t)\\)=ee140.
+You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtainedthe \\(y^{1.6}\\) supremacy upgrade beforehand.
 It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
 #### Supremacy recovery (Active)
@@ -137,7 +137,7 @@ Automation routing changes per playstyle but here is the autoprestige equation t
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
 
 ```
-timer(d(ln(db/b+1)/pt) < 0) 
+timer(d(ln(db/b+1)/pt) < 0)
 > 3 * tr && db > b
 ```
 
@@ -146,7 +146,7 @@ timer(d(ln(db/b+1)/pt) < 0)
 ##### Minigames
 
 If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and perm levels while you wait. 
+You can buy variables and perm levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
@@ -183,15 +183,15 @@ There is a chance you get Autosupremacy before ee2000 if you star grind a lot. I
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> once to cycle.
 
 ```
-timer(d(ln(db/b+1)/pt) < 0) 
+timer(d(ln(db/b+1)/pt) < 0)
 > 2 * tr && db > b
-&& dpsi + psi > min(min(costUpS(1), 
+&& dpsi + psi > min(min(costUpS(1),
 costUpS(2)), costUpS(3))
 && ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)), 
+smooth(max(1,log10(gf)),
 (st>tr) * ee99))/max(1,st)<
 smooth(ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)), (st>tr) 
+smooth(max(1,log10(gf)), (st>tr)
 * ee99))/max(1,st), (pt>tr) * ee99)
 ```
 
@@ -214,7 +214,7 @@ The equation shown is the calculation done on every tick. Let's give the example
 ##### Minigames
 
 If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and perm levels while you wait. 
+You can buy variables and perm levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.

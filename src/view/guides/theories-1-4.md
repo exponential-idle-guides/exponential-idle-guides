@@ -502,7 +502,7 @@ swapping strat in the previous paragraph, then all the remaining
 upgrades are at equivalent priority.
 
 At the end of any publication, around a 2-3 multiplier, you should turn
-off b1 and c31 as they cost \\(ρ_1\\). You will cruise until you get to a
+off \\(b_1\\) and \\(c_31\\) as they cost \\(ρ_1\\). You will cruise until you get to a
 3-4 multiplier. Publish and turn back on \\(ρ_1\\) costing variables and
 repeat.
 
