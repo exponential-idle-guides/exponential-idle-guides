@@ -11,7 +11,7 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing). 
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 <table class="graduation_routing">
    <tbody>
@@ -88,7 +88,7 @@ There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) b
 
 1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
-3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
+3. Potentially sit here to stack t for bigger \\(\varphi_2\\) when you have students in \\(\varphi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\varphi_2\\).
 4. Respec all 10/20/30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
@@ -417,7 +417,7 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
 
 ### Theory 8 skipping
 
-T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\phi\\). You will need
+T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\varphi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
 through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that**
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
