@@ -165,26 +165,27 @@ this theory to \\(e30\\) easily, but it will take some time. A step-by-step on
 how to progress the theory is detailed below.
 
 Before e30, you should repeat this after every publication:
-<ol type="1">
-   <li>Buy everything <b>except</b> c<sub>2</sub></li>
-   <li>Once q growth reduces, c<sub>2</sub> levels can then be purchased individually. Only buy when c<sub>2</sub> is e1 lower than your current ρ, shown visually on the graph when it plateaus.</li>
-   <li>When you are within e10 of your last publication, you should buy everything but q<sub>1</sub> and c<sub>1</sub>. You should then manually buy q<sub>1</sub> and c<sub>1</sub> when it costs e1 lower than q<sub>2</sub> doubling. (c<sub>1</sub> only when q is not capped)</li>
-   <li>Repeat until e25. At e25, push for e30 with 0/1/0
-   milestone and start x6-10 multipliers.</li>
-</ol>
+
+1. Buy everything **except** \\(c_2\\).
+2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased individually.
+   Only buy when \\(c_2\\) is \\(e1\\) lower than your current \\(\rho\\).
+3. When you are within \\(e10\\) of your last publication, autobuy all but \\(q_1\\) & \\(c_1\\).
+   You should then manually buy \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than the \\(q_2\\) doubling.
+   Buy \\(c_1\\) only when \\(q\\) is not capped.
+4. Repeat until \\(e25\\).
+   At \\(e25\\), push for \\(e30\\) with 0/1/0 milestone and start \\(x6-10\\) multipliers.
+
+</br>
 
 After autobuy at e30, you should repeat this after every publication:
-<ol type="1">
-   <li>x1 (or x10 when above e200) buy c<sub>2</sub> manually and autobuy the rest until within ~e10 of your previous publication. Your graph should resemble a linear function on the graph.</li>
-   <li>As purchasing c<sub>2</sub> becomes less frequent and q growth will slow down at this point you should stop autobuying c<sub>1</sub> & q<sub>1.</sub></li>
-   <li>Around your last pub mark, you can start auto-buying c<sub>2</sub>. At this point, you should:</li>
-   <ol type="a">
-      <li>buy q<sub>1</sub> up to 15% of the cost of the next doubling purchase (2<sup>x</sup> purchase),</li>
-      <li>and buy c<sub>1</sub> after you purchase c<sub>2</sub> until q reaches its new cap.</li>
-   </ol>
-   <li>Once you reach your desired multiplier, publish. </li>
-   <li>Repeat this for stonks.</li>
-</ol>
+
+1. x1 (or x10 when above e200) buy \\(c_2\\) manually and autobuy the rest until within ~e10 of your previous publication.
+   Your graph should resemble a linear function on the graph.
+2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
+   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\).
+3. Once you reach the desired publication point, publish.
+4. Repeat this for stonks.
 
 ###### Commentary
 
@@ -195,9 +196,8 @@ After autobuy at e30, you should repeat this after every publication:
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
-step 3, you can still get good results while auto buying \\(q_1\\) and
-manually purchasing \\(c_1\\) every 10-15min. Making the theory
-slightly less active.
+step 3, you can still get good results while autobuying \\(q_1\\) and
+manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 **Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
 

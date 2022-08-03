@@ -238,49 +238,41 @@ boost.
 
 ##### Initial
 
-\\[q_1(t+dt)=q_1+q_2*dt\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1
 
-\\[r_1(t+dt)=r_1+r_2*dt\\]
-
-\\[\dot{ρ}=q_1r_1\\]
-
-##### First milestone
-
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2\\]
-
-\\[r_1(t+dt)=r_1+r_2*dt\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1
 
 \\[\dot{ρ}=q_1r_1\\]
 
-##### Second milestone
+##### First and Second milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1
 
-\\[\dot{ρ}=q_1r\\]
+\\[\dot{ρ}=q_1r_1\\]
 
 ##### Third and Fourth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
 \\[\dot{ρ}=q_1r_1\\]
 
 ##### Fifth to Seventh milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
-\\[\dot{ρ}=q_1r_1^{1.15}\\]
+\\[\dot{ρ}=q_1^{1.15}r_1\\]
 
 ##### Eight to Tenth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
 \\[\dot{ρ}=q_1^{1.15}r_1^{1.15}\\]
 
@@ -632,37 +624,37 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[\dot{ρ}=c_1c_2+c_3q\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### First milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Second milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Third milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Fourth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=2^3q_1q_2/(1+q)\\]
 
 ##### Seventh milestone
 
 \\[\dot{ρ}=c_1^{1.15}c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=2^3q_1q_2/(1+q)\\]
 
 #### T4 strategy
 

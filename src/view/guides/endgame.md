@@ -55,132 +55,9 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 
 **Note:** You may run into a Tau is higher than Phi result, or similar to this, but this is due to data running that portion of the calculator being old and before Custom Theories were introduced which shifted the relative amounts. This will be fixed in the future with more data ([submit here after any graduation](https://forms.gle/4cntT4VG8TjCmrNU6)).
 
-### Idle and Active buy strats
+### Theory routing and strategies
 
-For best results use the <a href="https://replit.com/@xelaroc/https://theory-simulator.tredec.repl.co/">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publications.
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Idle</th>
-         <th>Active</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>Disable c1/c2</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t1-routing">T1 routing</a></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>All variables on</td>
-         <td>q4/r4 → q3/r3 → etc manual buy</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Idle / T3Idle2</a></td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T3Play2</a></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>Only q1, q2, c3</td>
-         <td>Idle with chasing doublings</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T5</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing">T5 routing</a></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T6</td>
-         <td>Disable c3, c4</td>
-         <td>Idle with chasing doublings</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T7</td>
-         <td>Disable c1, c2, c3</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T7Play-25</a></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T8</td>
-         <td>All variables on</td>
-         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/#play-strategies">T8RPlay</a></td>
-      </tr>
-   </tbody>
-</table>
-
-### Theory routing
-
-If a theory is not listed below, then use the idle vs manual chart and
-the ideal multiplier chart.
-
-#### T1 routing
-
-The optimal multiplier cycles between \\(2.5\\) – \\(5\\). It is lower as you get
-closer to buying the next level of \\(c_4\\) and higher shortly after buying
-the \\(c_4\\) upgrade. Late game, it is best to publish \\(2\\)-\\(3\\) times per level of
-\\(c_4\\) for a total multiplier of \\(20.51\\).
-
-T1 is the only theory where the recent value of \\(ρ\\) influences the
-rate of change of \\(ρ\\) therefore buying a
-variable as soon as you can afford will slow your progress. Late game
-buying upgrades immediately will slow you more than the benefit of the
-upgrade because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\\) and you
-have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\) you are reducing your \\(ρ_{n+1}\\)
-by roughly a factor of 10.
-
-There are \\(3\\) terms that influence the rate of change of \\(\rho\\) all are
-affected by the previous state of \\(\rho\\). Let's ignore the 1st since it
-has such a small influence and consider the above case to determine when
-an upgrade would be better. For every magnitude of \\(10\\), term \\(2\\) gains
-\\(ρ_{n-1}^{2/10} = 1.585x\\) more income and term 3 gains \\(ρ_{n-2}^{3/10} = 1.995x\\)
-more income. Therefore, it would only be worth buying an upgrade if it
-increases \\(\dot{ρ}\\) by more than 2 times at purchase. Because of this when
-actively playing you should only buy a variable when it will not
-decrease your ρdot for each upgrade that is approximately at the ratios
-detailed below. Buy each upgrade when \\(ρ_n\\) is N times the costs of a
-given upgrade:
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<small><sub>1</sub></small></td>
-         <td>10,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">c<small><sub>4</sub></small></td>
-         <td>1.01</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>2</sub></small></td>
-         <td>1,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>1</sub></small></td>
-         <td>5.0</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>3</sub></small></td>
-         <td>2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>2</sub></small></td>
-         <td>1.15</td>
-      </tr>
-   </tbody>
-</table>
-
-###### *c<sub>1</sub> and c<sub>2</sub> are not used later because they become detrimental and should be disabled.
-
-{{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
+For best theory routing and pushing, use the [Theory Sim](https://theory-simulator.tredec.repl.co/) and the [Theory Sim Guide](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publications. Human T5 is below
 
 #### T5 routing
 
@@ -190,17 +67,12 @@ progress the theory is below.
 
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
-1. x10 buy \\(c_2\\) manually
-   and autobuy the rest until within ~\\(e10\\) of your previous
-   publication. Your graph should resemble a linear function on the
-   graph.
-2. As purchasing \\(c_2\\) becomes less frequent and \\(q\\) growth will
-   slow down at this point you should stop autobuying \\(c_1\\) & \\(q_1\\)
-3. Around your last pub mark, you can start auto-buying \\(c_2\\). At this point, you should:
+1. x10 buy \\(c_2\\) manually and autobuy the rest until within ~\\(e10\\) of your previous publication.
+2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
-   2. and buy \\(c_1\\) after you purchase \\(c_2\\) until \\(q\\) reaches its new cap.
-4. Once you reach your desired multiplier, publish.
-5. Repeat this for stonks.
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\). This limit will increase as you get higher \\(\tau\\) and further into a publication.
+3. Once you reach the desired publication point, publish.
+4. Repeat this for stonks.
 
 ###### Commentary
 
@@ -210,44 +82,17 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
-T5 will always give its best results from active play, however, after
-step 3 you can still get good results while auto buying \\(q_1\\) and manually
-purchasing \\(c_1\\) every 10-15min. Making the theory slightly less active.
+T5 will always give its best results from active play. However, after
+step 3, you can still get good results while autobuying \\(q_1\\) and manually
+purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 ##### Additional Information
 
-Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{m_3}\\). \\(m_3\\) is
-the number of milestone 3. \\(q\\) begins to slow down when you reach
-\\(2q > c_2*c_3^{m_3}\\).
+Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{1.1}\\).
 
-#### Theory 8 (additional information)
+\\(q\\) begins to slow down when you reach \\(2q > c_2*c_3^{1.1}\\).
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Starting Positions</th>
-         <th>Time Step</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">Lorenz</td>
-         <td>(-6, -8, 26)</td>
-         <td>0.02</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Chen</td>
-         <td>(-10.6, -4.4, 28.6)</td>
-         <td>0.002</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Rossler</td>
-         <td>(-6, 15, 0)</td>
-         <td>0.00014</td>
-      </tr>
-   </tbody>
-</table>
+Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### t Stacking
 
@@ -369,7 +214,7 @@ Calculations by: LE★Baldy
 
 When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to \\(\varphi\\) from \\(\psi\\), only d\\(\psi\\). When you hit about ft 50k you can skip buying most \\(\psi\\) upgrades and be able to recover fairly quickly. The Supremacy Equations for the F(t) that we know are as follows:
 
-Suprem Equation For 48k:
+Suprem Equation past ee48k:
 
 ```
 (costUpS(1)<e52&&psi+dpsi>e52)
@@ -380,12 +225,19 @@ Suprem Equation For 48k:
 ||(costUpS(3)<e571&&psi+dpsi>e571)
 ```
 
-Suprem Equation 52k:
+Suprem Equation past ee52k:
+
+```
+(costUpS(1)<e52&&psi+dpsi>e52)
+||(costUpS(3)<e511&&psi+dpsi>e511)
+||(costUpS(3)<e571&&psi+dpsi>e571)
+```
+
+Suprem Equation past ee58-60k:
 
 ```
 (costUpS(1)<e52&&psi+dpsi>e52)
 ||(costUpS(3)<e571&&psi+dpsi>e571)
-||(costUpS(3)<e511&&psi+dpsi>e511)
 ```
 
 ### How to respec
