@@ -275,8 +275,11 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+<br /> <br />
 
-**For the \\(c_3\\)Ratio**
+**For the \\(c_3\\) Ratio**
+<br /> <br />
+
 <table class="spqcey">
 <thead>
   <th></th>
