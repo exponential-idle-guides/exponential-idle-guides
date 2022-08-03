@@ -1060,15 +1060,15 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>31</small></sub></sub> cost</td>
+         <td>When 1/8 of c<sub><sub><small>31</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When 1/10 of other ρ<sub><sub><small>2</small></sub></sub> variables’ cost (c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
+         <td>When 1/5 of other ρ<sub><sub><small>2</small></sub></sub> variables’ cost (c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When 1/8 of c<sub><sub><small>23</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
