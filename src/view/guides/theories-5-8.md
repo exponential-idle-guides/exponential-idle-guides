@@ -107,7 +107,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### Theory 1
 
-You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://theory-simulator.tredec.repl.co/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
