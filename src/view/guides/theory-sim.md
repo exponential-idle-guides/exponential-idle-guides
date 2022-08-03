@@ -50,7 +50,7 @@ This will tell you how much \\(\tau\\) is gained between publications for the ac
 \\(\Delta\tau\\) is defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) or \\(log_{10}(\tau_{final})\\) - \\(log_{10}(\tau_{initial})\\).
 Ex: If \\(\Delta\tau\\) was equal to 1e3 and the starting \\(\tau\\) was e100, the sim published at e103 \\(\tau\\).
 
-**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. If you input your tau as 1eXXXX, then you should definitely not publish at this unless your tau is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
+**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. This is most apparent most when publications are still too fast to do the active strats properly. If you input your tau as 1eXXXX, then you should definitely not publish at this unless your tau is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
 
 ### Modes Overview and how to use them
 
