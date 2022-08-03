@@ -26,7 +26,7 @@ So, 214**5** % 10 = **5**
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
 
-- [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Active
+- [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 - [T1AI xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai-xexxx)&nbsp; — &nbsp;Active
 - [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
@@ -34,8 +34,8 @@ T1 is one of the theories that benefit the most from active strategies. T1SolarX
 
 T2 is the only theory without an active strategy, despite attempts.
 
-- [T2MC](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Idle
-- [T2Coast-X%](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Idle
+- [T2MC](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
+- [T2Coast-X%](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
 - [T2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
 
 ### Theory 3: Linear Algebra
@@ -44,12 +44,12 @@ T3 has the most variables of any theory and has benefitted the most from player-
 T3SNAX is currently the best idle strategy above e200\\(\rho\\).
 T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
-- [T3Play2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Active
+- [T3Play2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
 - [T3Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Active
-- [T3SNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Idle
+- [T3SNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
 - [T3SNAX2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
-- [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Idle
-- [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33d)&nbsp; — &nbsp;Active
@@ -85,7 +85,7 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 T5 is the second-strongest theory in endgame, only behind T6.
 
 - [T5AI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5ai)&nbsp; — &nbsp;Active
-- [T5Idle xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Idle
+- [T5Idle xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
 - [T5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5)&nbsp; — &nbsp;Idle
 
 ### Theory 6: Integral Calculus
@@ -93,7 +93,7 @@ T5 is the second-strongest theory in endgame, only behind T6.
 T6 is the most powerful theory in endgame, with several players reaching well over e1100𝜏 on their main save, some even over e1200𝜏.
 
 - [T6AI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6ai)&nbsp; — &nbsp;Active
-- [T6SNAX x.xxexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6snax-xxxexxx)&nbsp; — &nbsp;Idle
+- [T6SNAX x.xxexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
 - [T6<span style="color:var(--palette-stroke-warning)">No</span>C34d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34d)&nbsp; — &nbsp;Active
 - [T6<span style="color:var(--palette-stroke-warning)">No</span>C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34)&nbsp; — &nbsp;Idle
 - [T6<span style="color:var(--palette-stroke-warning)">No</span>C1234d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc1234d)&nbsp; — &nbsp;Active
@@ -128,7 +128,7 @@ T7PlaySpqcey is a slightly faster version of T7Play-25.
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8PlaySolarSwap)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
 
-- [T8PlaySolarSwap](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;Active
+- [T8PlaySolarSwap](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;Very Active
 - [T8RPlay](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rplay)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35d)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35)&nbsp; — &nbsp;Idle
@@ -150,7 +150,7 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 - [WSPAI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
 - [WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
 - [WSPd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
-- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Idle
+- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 ### Custom Theory 2: Sequential Limits
 
@@ -164,7 +164,7 @@ The second official custom theory, abbreviated SL, was created by ellipsis and r
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
 - [EFAI (post-e50ρ)](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
-- [EFSNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Idle
+- [EFSNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
 - [EFd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
 - [EF](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
 
@@ -626,6 +626,7 @@ If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
 Strategy Credits:
 - Playspout for creating this strategy.
 - Solarion for \\(c_{12}\\) overpush idea.
+- xelaroc, whose sim was used to verify Playspout's results
 <br /> <br />
 
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
@@ -723,6 +724,7 @@ Strategy Credits:
 
 Strategy Credits:
 - Playspout for creating this strategy.
+- xelaroc, whose sim was used to verify Playspout's results
 
 ### T3SNAX
 <table class="spqcey">
