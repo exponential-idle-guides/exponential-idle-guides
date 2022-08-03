@@ -45,7 +45,7 @@ T3SNAX is currently the best idle strategy above e200\\(\rho\\).
 T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
 - [T3Play2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
-- [T3Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Active
+- [T3Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
 - [T3SNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
 - [T3SNAX2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
