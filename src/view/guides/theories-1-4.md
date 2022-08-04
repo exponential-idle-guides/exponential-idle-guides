@@ -279,8 +279,9 @@ boost.
 #### T2 strategy
 
 The optimal multiplier is pretty high and is not known before \\(e30\\).
-The multipliers for active play we know at the moment are:<br />\\(e25\\)-\\(e100\\)
-is \\(1k\\) to \\(10k\\); <br />\\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
+The multipliers for active play we know at the moment are:<br />
+- \\(e25\\)-\\(e100\\) is \\(1k\\) to \\(10k\\); <br />
+- \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
 
 ##### Idle
 
