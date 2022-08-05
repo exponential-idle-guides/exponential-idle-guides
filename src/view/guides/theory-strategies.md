@@ -2926,7 +2926,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T6C4</th>
+  <th>T6C3d</th>
 </thead>
    <tbody>
       <tr>
@@ -2965,7 +2965,7 @@ Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two str
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T6C4</th>
+  <th>T6C3</th>
 </thead>
    <tbody>
       <tr>
