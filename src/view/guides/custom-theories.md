@@ -82,7 +82,7 @@ For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c
 
 Once you have e400 rho, c1 starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 20 seconds or so. Then turn c1 OFF. Continue to autobuy the rest of the variables. <br>
 <br>
-For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and q2 costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 10 seconds or so. <br><br>
+For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and q2 costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 20 seconds or so. <br><br>
 
 
 
@@ -117,6 +117,20 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 ### Sequential Limits (SL)
 
 #### SL Overview
+
+SL is the second official custom theory, developed by Ellipsis. This theory uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing rhodot and rho. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
+
+\\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^(1.06)}}{e - \gamma}\\)
+
+The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
+
+\\(\dot{\rho} = q_1^{1.04}q_2q\\)
+
+\\(\dot{q} = c_2s_n({\chi}) / sin({\chi})\\)
+
+\\(s_n({x}) := x\prod_{k=1}^{n}(1-\frac{x}{k\pi}^2)\\)
+
+\\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 
 
 #### SL strategy
