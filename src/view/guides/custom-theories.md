@@ -122,6 +122,14 @@ SL is the second official custom theory, developed by Ellipsis. This theory uses
 
 \\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^(1.06)}}{e - \gamma}\\)
 
+\\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
+
+\\(\dot{rho_2} = a_1a_2a_3^{-ln{rho_3}}\\)
+
+\\(\dot{rho_3} = b1^{1.04}b2^{1.04}\\)
+
+\\(a_3 = 1.96\\)
+
 The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
 
 \\(\dot{\rho} = q_1^{1.04}q_2q\\)
