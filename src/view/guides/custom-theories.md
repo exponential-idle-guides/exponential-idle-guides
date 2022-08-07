@@ -228,7 +228,26 @@ At this point, the theory becomes very idle. We simply autobuy all. Publish at a
 
 #### EF Overview
 
+This custom theory, along with Convergents to Square Root 2, were released at the same time. This theory was created jointly by Peanut, Snaeky, and XLII. This theory is based on Euler's Formula of 
+\\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
 
+This theory is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:
+
+\\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
+\\(G(t) = g_r+g_i\\)
+\\(g_r = b_1b_2cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
+\\(\dot{q} = q_1q_2\\)
+\\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
+
+The first line is the main equation. We want to maximize rho1dot. All the a1a2a3 terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory. 
+
+The second line is not relevant to the strategies. 
+
+The third line describes g_r and g_i, which are used to generate 'R' and 'I' currencies. This line by itself doesn't do much. 
+
+The fourth line simply describes qdot. This is used in the first equation directly. 
+
+The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF strategy
 
