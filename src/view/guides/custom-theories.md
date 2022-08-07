@@ -120,32 +120,79 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 SL is the second official custom theory, developed by Ellipsis. This theory uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing rhodot and rho. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
 
-\\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^(1.06)}}{e - \gamma}\\)
+\\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^{1.06}}}{e - \gamma}\\)
 
 \\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
 
-\\(\dot{rho_2} = a_1a_2a_3^{-ln{rho_3}}\\)
+\\(\dot{\rho_2} = a_1a_2a_3^{-ln{\rho_3}}\\)
 
-\\(\dot{rho_3} = b1^{1.04}b2^{1.04}\\)
+\\(\dot{\rho_3} = b_1^{1.04}b_2^{1.04}\\)
 
 \\(a_3 = 1.96\\)
 
-The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that rho1dot is proportional to approximately square root of rho2. This means that if we quadruple rho2, we would approximately double rho1 long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
 
-\\(\dot{\rho} = q_1^{1.04}q_2q\\)
+The second equation refers to the Stirling's approximation of Euler's number 'e'. As rho3 increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double rho3, gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
 
-\\(\dot{q} = c_2s_n({\chi}) / sin({\chi})\\)
 
-\\(s_n({x}) := x\prod_{k=1}^{n}(1-\frac{x}{k\pi}^2)\\)
+The third equation relates rho2 with rho3 and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as rho3 increases, rho2dot DECREASES. If rho3 is high, rho2 doesn't grow as fast (it still grows). This has implication on the first equation as well, since rho1dot depends on rho2, which depends on rho3. 
 
-\\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
+The fourth equation relates rho3dot with some upgrades. This one is relatively simple; increase b1 and b2 to increase rho3. The '1.04' exponents are from milestones. 
+
+The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
+
+From the equations above, the approximate long term effects of rho2dot and rho3dot on rho1 are as follows:
+
+rho2dot: square root effect - quadrupling rho2dot -> double rho1. 
+rho3dot: approximately ^0.64 - rho1 ~= rho3dot^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling rho3 -> double rho1. 
+
+Approximate variable strengths on rho1dot with all milestones are as follows:
+
+a1: Value times 3.5 every 3 levels on average. This comes to about 52% increase in rho2dot per level. Since rho1 is approximately square root of rho2, overall this comes down to about 23% increase in rho1 per level.<br>
+a2: Doubles in value every level. Doubles rho2 long term. Increases rho1 by 40% ish long term.<br>
+b1: Value times 6.5 every 4 levels on average. This comes down to about 60% increase in rho3dot. Toward the end of a publication, this translates to approximately 60% increase in rho1.  <br>
+b2: Doubles in value every level. Toward the end of a publication this doubles rho1.  <br>
 
 
 #### SL strategy
 
-The optimal multiplier is pretty high and is not known before \\(e30\\).
-The multipliers for active play we know at the moment are:\\(e25\\)-\\(e100\\)
-is \\(1k\\) to \\(10k\\); \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
+None of the variables are very strong nor very weak. Therefore, we can get away with autobuy all for idle. Selectively buying variables at certain times (active) yields very little results. Therefore we will autobuy all. Before autobuy, simply buy the cheapest variable. 
+
+The milestone order for idle is all into 4th milestone, then 3rd milestone, then 1st milestone, then 2nd milestone. Since all we do for idle is autobuy, idling is very simple. 
+
+#### Milestone swapping - why it works
+For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
+
+1st milestone: Increases rho2 exponent, and increases rho1dot straight away. The actual value of rho2 does not increase. 
+3rd/4th milestone: Increase b1/b2 exponents, and rho3dot, and rho3. This also increases rho1dot. However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
+
+We have different milestones which affect the same thing (rho1dot), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize rho1 per hour. If you've done T2 milestone swapping, this should be familiar. 
+
+We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of rho1dot. Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
+
+#### Milestone Swapping Strategies
+(Courtesy of Gen).
+
+x/x/x/x represent the max buy order of milestones not the amount allocated.
+For example, 4/3/1/2 means "Allocate everything into 4th milestone, then use leftovers into 3rd milestone, then into 1st milestone, then into 2nd milestone". 
+
+SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
+
+SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
+
+SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
+
+When to Use Strategies
+until e100: SLMS
+e100 - e175: SLMS2
+e175 - e200: SLMS3
+e200 - e300: SLMS
+
+(note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4/3/1/2 (60s) <-> 1/2/4/3 (20s)
+
+#### Post e300+ rho
+
+At this point, the theory becomes very idle. We simply autobuy all. Publish at approximately 8 multiplier. If you wish to improve efficiency, you can disable a1a2 at about 4.5 publication multiplier until publish. 
 
 
 
@@ -155,41 +202,26 @@ is \\(1k\\) to \\(10k\\); \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>2/0/0/0</td>
+         <td>0/0/0/2</td>
          <td class="arrow">→</td>
-         <td>2/2/0/0</td>
+         <td>0/0/2/2</td>
          <td class="arrow">→</td>
-         <td>2/2/3/0</td>
+         <td>3/0/2/2</td>
+         <td class="arrow">→</td>
+         <td>3/5/2/2</td>
       </tr>
+      Milestone Swapping
       <tr>
-         <td>2/2/3/0</td>
+         <td>0/1/3</td>
          <td class="arrow">→</td>
-         <td>2/2/3/3</td>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible"><strong>Or</strong></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>1 x2</td>
+         <td>1/1/3</td>
          <td class="arrow">→</td>
-         <td>2 x2</td>
+         <td>2/1/3</td>
          <td class="arrow">→</td>
-         <td>3 x3</td>
-      </tr>
-      <tr>
-         <td>3 x3</td>
+         <td>3/1/3</td>
          <td class="arrow">→</td>
-         <td>4 x3</td>
-   </tbody>
+         <td>4/1/3</td>
+         
 </table>
 
 ### Euler's Formula (EF)
