@@ -340,7 +340,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When ρ > 1.01 × cost</td>
+         <td>✔️</td>
       </tr>
    </tbody>
 </table>
