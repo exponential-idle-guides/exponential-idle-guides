@@ -3858,6 +3858,8 @@ Strategy Credits:
 </table>
 <br /> <br />
 
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+
 The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
 
 <br /> <br />
@@ -3895,8 +3897,6 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
    </tbody>
 </table>
 <br /> <br />
-
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - xelaroc for testing/creating the strategy
@@ -3940,28 +3940,40 @@ Strategy Credits:
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 <table class="spqcey">
 <thead>
-  <th></th>
-  <th>WSPStopC1</th>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">WSPStopC1</th>
+   </tr>
 </thead>
    <tbody>
       <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">First 15 Seconds of Publication</td>
+         <td class="rightHeader">Rest of Publication</td>
+     </tr>
+      <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">n</td>
          <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>Stop buying c<sub><sub><small>1</small></sub></sub> ~ 15 seconds into publication</td>
+         <td>✔️</td>
+         <td>If ρ < e450, autobuy c<sub><sub><small>1</small></sub></sub>, if not, do not buy c<sub><sub><small>1</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
          <td>✔️</td>
       </tr>
    </tbody>
@@ -3971,6 +3983,7 @@ Strategy Credits:
 Strategy Credits:
 - xelaroc for simulating it/adding it to the sim
 - Snaeky for the stop \\(c_1\\) idea
+- XLII for \\(c_1\\) modification
 
 ## Sequential Limits
 
