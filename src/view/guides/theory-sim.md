@@ -11,11 +11,11 @@ order: 7
 
 ### Before you start
 
-The current theory simulator is made by XLII and is ran on the [website version](https://theory-simulator.tredec.repl.co/). The sim assumes that you have all milestones and ad bonus! If you do not have these it will give you incorrect values for respective theories. Below will go through the individual parts of the output, then introduce the specific modes of the simulator.
+The current theory simulator is made by XLII and is run on a [website](https://theory-simulator.tredec.repl.co/). The sim assumes that you have all milestones and ad bonus! If you do not have these it will give you incorrect values for respective theories. Below will go through the individual parts of the output, then introduce the specific modes of the simulator.
 
 ### **Column explanations**
 
-#### **τ/h Active / idle**
+#### **τ/h Active / Idle**
 
 This refers to the \\(\tau/hour\\) that you will gain from the active strategy of that theory.
 This is defined as \\(log(\tau\\) \\(gained)/publication\\) \\(time\\) \\(in\\) \\(hours\\).
