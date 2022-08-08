@@ -124,15 +124,15 @@ T8 is the weakest theory in endgame and has the most active strategy of any theo
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
 
 - [T8PlaySolarSwap](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
-- [T8RPlay](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rplay)&nbsp; — &nbsp;Active
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35d)&nbsp; — &nbsp;Active
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35)&nbsp; — &nbsp;Idle
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc5d)&nbsp; — &nbsp;Active
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc5t8r34)&nbsp; — &nbsp;Idle
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc3d)&nbsp; — &nbsp;Active
-- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc3)&nbsp; — &nbsp;Idle
-- [T8Rd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rd)&nbsp; — &nbsp;Active
-- [T8R](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8r)&nbsp; — &nbsp;Idle
+- [T8Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T834](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t834)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span>C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
+- [T8d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8d)&nbsp; — &nbsp;Active
+- [T8](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
 ### Official Custom Theories
 In chronological order of release.
@@ -3499,11 +3499,11 @@ Strategy Credits:
 - Solarion for the milestone swap idea
 
 
-### T8RPlay
+### T8Play
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8RPlay</th>
+  <th>T8Play</th>
 </thead>
    <tbody>
       <tr>
@@ -3536,11 +3536,11 @@ Strategy Credits:
 - Playspout
 
 
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C35d
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8RNoC35d</th>
+  <th>T8NoC35d</th>
 </thead>
    <tbody>
       <tr>
@@ -3567,15 +3567,13 @@ Strategy Credits:
 </table>
 <br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-<br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C35
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C35
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8RNoC35</th>
+  <th>T8NoC35</th>
 </thead>
    <tbody>
       <tr>
@@ -3600,81 +3598,12 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
       </tr>
    </tbody>
 </table>
-<br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5d
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C5d
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8RNoC5d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br />
-
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8RNoC5/T8R34</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br />
-
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C3d
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8RNoC3d</th>
+  <th>T8NoC5d</th>
 </thead>
    <tbody>
       <tr>
@@ -3687,6 +3616,67 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8NoC5/T834</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C3d
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8NoC3d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
          <td>❌</td>
       </tr>
       <tr>
@@ -3699,15 +3689,12 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
       </tr>
    </tbody>
 </table>
-<br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8R<span style="color:var(--palette-stroke-warning)">No</span>C3
+### T8<span style="color:var(--palette-stroke-warning)">No</span>C3
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8RNoC3</th>
+  <th>T8NoC3</th>
 </thead>
    <tbody>
       <tr>
@@ -3732,15 +3719,12 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
       </tr>
    </tbody>
 </table>
-<br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8Rd
+### T8d
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8Rd</th>
+  <th>T8d</th>
 </thead>
    <tbody>
       <tr>
@@ -3765,15 +3749,12 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
       </tr>
    </tbody>
 </table>
-<br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
-
-### T8R
+### T8
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8R</th>
+  <th>T8</th>
 </thead>
    <tbody>
       <tr>
@@ -3799,8 +3780,6 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
    </tbody>
 </table>
 <br />
-
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
 ## Official Custom Theories
 
