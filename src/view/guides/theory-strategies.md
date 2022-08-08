@@ -133,8 +133,8 @@ T8 also has the largest number of strategies (20+ total), but only those I have 
 - [T8RPlay](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rplay)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35d)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc35)&nbsp; — &nbsp;Idle
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t8r34)&nbsp; — &nbsp;Idle
+- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc5d)&nbsp; — &nbsp;Active
+- [T8R<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc5t8r34)&nbsp; — &nbsp;Idle
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc3d)&nbsp; — &nbsp;Active
 - [T8R<span style="color:var(--palette-stroke-warning)">No</span>C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rnoc3)&nbsp; — &nbsp;Idle
 - [T8Rd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8rd)&nbsp; — &nbsp;Active
