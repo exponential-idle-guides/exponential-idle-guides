@@ -3580,12 +3580,43 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5d
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T8RNoC5d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br />
+
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8R34</th>
+  <th>T8NoC5/T8R34</th>
 </thead>
    <tbody>
       <tr>
@@ -3645,6 +3676,8 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 </table>
 <br />
 
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+
 ### T8R<span style="color:var(--palette-stroke-warning)">No</span>C3
 <table class="spqcey">
 <thead>
@@ -3675,6 +3708,8 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
    </tbody>
 </table>
 <br />
+
+If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
 ### T8Rd
 <table class="spqcey">
