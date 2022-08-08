@@ -3873,19 +3873,19 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
          <td>1</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e25</td>
+         <td class="leftHeader">e25 < ρ < e40</td>
          <td>3</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e40</td>
+         <td class="leftHeader">e40 < ρ < e200</td>
          <td>10</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e200</td>
+         <td class="leftHeader">e200 < ρ < e400</td>
          <td>50</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e400</td>
+         <td class="leftHeader">e400 < ρ < e700</td>
          <td>1000</td>
       </tr>
       <tr>
@@ -4382,15 +4382,15 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
          <td>Couldn't find any good ratio here, just swap<br />when you are very close to the upgrade. - XLII</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e45</td>
+         <td class="leftHeader">e45 < ρ < e80</td>
          <td>4</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e80</td>
+         <td class="leftHeader">e80 < ρ < e115</td>
          <td>8</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e115</td>
+         <td class="leftHeader">e115 < ρ < e220</td>
          <td>20</td>
       </tr>
       <tr>
