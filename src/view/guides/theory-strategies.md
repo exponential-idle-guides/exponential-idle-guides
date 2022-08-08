@@ -3080,13 +3080,12 @@ Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two str
 
 The number after T7PlaySpqcey occurs more at lower \\(\tau\\) values. <br /> <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
-<br /> <br />
 
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
 - Snaeky for number after T7PlaySpqcey for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
-- XLII for simulating Snaeky's proposed addition (which did get added)
+- XLII for simulating Snaeky's idea
 
 ### T7Play-25
 <table class="spqcey">
