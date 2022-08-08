@@ -3900,7 +3900,7 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
 
 Strategy Credits:
 - xelaroc for testing/creating the strategy
-- Snaeky for the stop \\(c_1\\) idea
+- Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
 ### WSPd
@@ -3969,7 +3969,7 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
-         <td>If ρ < e450, autobuy c<sub><sub><small>1</small></sub></sub>, if not, do not buy c<sub><sub><small>1</small></sub></sub></td>
+         <td>If ρ < e450, ✔️<br />If ρ > e450, ❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3982,7 +3982,7 @@ Strategy Credits:
 
 Strategy Credits:
 - xelaroc for simulating it/adding it to the sim
-- Snaeky for the stop \\(c_1\\) idea
+- Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for \\(c_1\\) modification
 
 ## Sequential Limits
