@@ -315,42 +315,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T1C34</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
-<!-- T1C34 -->
-### T1C34
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T1C34</th>
+  <th>T1AI</th>
 </thead>
    <tbody>
       <tr>
@@ -376,6 +341,40 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>When ρ > 1.01 × cost</td>
+      </tr>
+   </tbody>
+</table>
+<!-- T1C34 -->
+### T1C34
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T1C34</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
       </tr>
    </tbody>
 </table>
