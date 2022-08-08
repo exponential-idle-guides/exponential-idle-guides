@@ -4017,7 +4017,7 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
          <td>When cost is 1/10 of b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>✔️</td>
+         <td>When cost is 1/10 of b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -4035,7 +4035,7 @@ The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rar
 Strategy Credits:
 - xelaroc
 - Playspout
-- XLII for change from 4.5 publication multiplier to 6
+- rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
 <table class="spqcey">
