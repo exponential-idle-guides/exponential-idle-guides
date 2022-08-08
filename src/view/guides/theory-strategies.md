@@ -7,12 +7,6 @@ draft: true
 order: 8
 ---
 
-**CURRENTLY WIP**
-<!-- T6SNAX x.xxexxx -->
-
-<!-- <span style="color:red">some text</span> -->
-<!-- <span style="color:var(--palette-stroke-warning)">some text</span>. -->
-
 The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 ### Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
@@ -110,9 +104,9 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 ### Theory 7: Numerical Methods
 
 T7 is the third-weakest theory, ahead of T2 and T8.
-T7PlaySpqcey is a slightly faster version of T7Play-25.
+T7PlaySpqceyX is a slightly faster version of T7Play-25.
 
-- [T7PlaySpqcey](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqcey)&nbsp; — &nbsp;Active
+- [T7PlaySpqceyX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
 - [T7Play-25](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7play-25)&nbsp; — &nbsp;Active
 - [T7C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c3d)&nbsp; — &nbsp;Active
 - [T7C12d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12d)&nbsp; — &nbsp;Active
@@ -549,7 +543,8 @@ The “MC” in T2MC stands for **M**ultivariable**C**oast.
    </tbody>
 </table>
 
-If the sim recommends this, it will return a percentage in the box: T2Coast-☐%
+If the sim recommends this, it will return a percentage in the box: T2Coast-☐% <br /> <br />
+We generally recommend using T2MC instead of this strategy.
 
 ### T2
 <table class="spqcey">
@@ -3002,7 +2997,9 @@ Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two str
 Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 ## Theory 7: Numerical Methods
 
-### T7PlaySpqcey
+### T7PlaySpqceyX
+
+**If there is no number after T7PlaySpqcey, then use this table:**
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3040,11 +3037,56 @@ Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two str
    </tbody>
 </table>
 
-<br />
+**If there is a number after T7PlaySpqcey (Example: T7PlaySpqcey10), then use this table:**
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T7PlaySpqceyX</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>When X times cheaper than c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+<br /> <br />
+
+The number after T7PlaySpqcey occurs more at lower \\(\tau\\) values. <br /> <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+<br /> <br />
 
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
+- Snaeky for number after T7PlaySpqcey for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
+- XLII for simulating Snaeky's proposed addition (which did get added)
 
 ### T7Play-25
 <table class="spqcey">
