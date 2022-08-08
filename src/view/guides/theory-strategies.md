@@ -287,7 +287,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>c<sub><sub><small>3</small></sub></sub> Ratio</th>
+  <th>c<sub><sub><small>3</small></sub></sub>Ratio</th>
 </thead>
    <tbody>
       <tr>
@@ -3616,7 +3616,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8NoC5/T8R34</th>
+  <th>T8RNoC5/T8R34</th>
 </thead>
    <tbody>
       <tr>
@@ -3818,38 +3818,89 @@ Strategy Credits:
 ### WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
 <table class="spqcey">
 <thead>
-  <th></th>
-  <th>WSPdStopC1</th>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">WSPdStopC1</th>
+   </tr>
 </thead>
    <tbody>
       <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">First 15 Seconds of Publication</td>
+         <td class="rightHeader">Rest of Publication</td>
+     </tr>
+      <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
+         <td>When cost is 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">n</td>
          <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>Stop buying c<sub><sub><small>1</small></sub></sub> ~ 15 seconds into publication</td>
+         <td>✔️</td>
+         <td>When cost 1/Ratio of min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
          <td>✔️</td>
       </tr>
    </tbody>
 </table>
 <br /> <br />
 
+The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
+
+<br /> <br />
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>c<sub><sub><small>3</small></sub></sub>Ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ρ < e25</td>
+         <td>1</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e25</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e40</td>
+         <td>10</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e200</td>
+         <td>50</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e400</td>
+         <td>1000</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e700</td>
+         <td>Do not buy c<sub><sub><small>1</small></sub></sub> after 15 seconds into publication</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+
 Strategy Credits:
 - xelaroc for testing/creating the strategy
-- Snaeky for the stop c1 idea
-
+- Snaeky for the stop \\(c_1\\) idea
+- XLII for some modifications including adding modulus and \\(c_1\\) changes
 
 ### WSPd
 <table class="spqcey">
@@ -3918,7 +3969,7 @@ Strategy Credits:
 
 Strategy Credits:
 - xelaroc for simulating it/adding it to the sim
-- Snaeky for the stop c1 idea
+- Snaeky for the stop \\(c_1\\) idea
 
 ## Sequential Limits
 
