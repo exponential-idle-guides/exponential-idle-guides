@@ -587,9 +587,9 @@ We generally recommend using T2MC instead of this strategy.
       <tr>
          <td class="leftHeader"></td>
          <td class="topHeader">Recovery up until e1 away from recovered *</td>
-         <td class="rightHeader">From e1 away from recovered until fully recovered</td>
-         <td class="rightHeader">Publication Mult 1-2</td>
-         <td class="rightHeader">Coasting (pub mult > 2)</td>
+         <td class="rightHeader">From e1 away from recovered until 1.2 Pub Mult</td>
+         <td class="rightHeader">Publication Mult 1.2-2.4</td>
+         <td class="rightHeader">Coasting (pub mult > 2.4)</td>
      </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
