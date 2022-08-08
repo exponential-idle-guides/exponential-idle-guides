@@ -4042,34 +4042,39 @@ Strategy Credits:
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">SLStopA</th>
+      <th colspan="3" style="text-align:center">SLStopA</th>
    </tr>
 </thead>
    <tbody>
       <tr>
          <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier < 6</td>
-         <td class="rightHeader">Publication Multiplier > 6</td>
+         <td class="topHeader">Publication Mult < 4.5</td>
+         <td class="rightHeader">Publication Mult 4.5-6</td>
+         <td class="rightHeader">Publication Mult > 6</td>
      </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
+         <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>❌</td>
+         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
+         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
+         <td>❌</td>
       </tr>
    </tbody>
 </table>
@@ -4078,7 +4083,7 @@ Strategy Credits:
 Strategy Credits:
 - xelaroc
 - Playspout
-- XLII for change from 4.5 publication multiplier to 6
+- rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 
 ## Euler's Formula
 
