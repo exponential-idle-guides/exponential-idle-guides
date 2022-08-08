@@ -2,7 +2,7 @@
 title: "Theory Strategies Explained"
 description: "Our guide for comprehension of what each theory strategy means."
 author: "spqcey"
-contributors: "Everyone who has innovated new strategies and the Amazing Community"
+contributors: "everyone who has innovated new strategies and the Amazing Community"
 draft: true
 order: 8
 ---
@@ -3168,6 +3168,42 @@ Strategy Credits:
 </table>
 
 ### T7C12
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T7C12</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
 
 ### T7C123d
 <table class="spqcey">
