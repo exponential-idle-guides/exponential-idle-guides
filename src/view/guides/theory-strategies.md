@@ -14,7 +14,7 @@ A "%" can be seen in the table of some strategies. The “%” indicates modulus
 21 % 10 = 1<br />
 20 % 10 = 0<br />
 Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br />
-So, 214<u>**5**</u> % 10 = **5**
+So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 ### Theory 1: Recurrence Relations
 
@@ -22,7 +22,7 @@ T1 is one of the theories that benefit the most from active strategies. T1SolarX
 
 - [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 - [T1Ratio](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
-- [T1AI xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai-xexxx)&nbsp; — &nbsp;Active
+- [T1AI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
 - [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
 ### Theory 2: Differential Calculus
@@ -311,57 +311,7 @@ Strategy Credits:
 Strategy Credits:
 - XLII
 
-### T1AI xexxx
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T1AI xexxx</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Before x.xxexxx</td>
-         <td class="rightHeader">After x.xxexxx</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ρ > 5 × cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>When ρ > 1.15 × cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When ρ > 2 × cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When ρ > 1.01 × cost</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
-
-<!-- T1C34 -->
-### T1C34
+### T1AI
 <table class="spqcey">
 <thead>
   <th></th>
@@ -391,6 +341,41 @@ The “xexxx” is returned by the recommended [theory simulator.](https://theor
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+<!-- T1C34 -->
+### T1C34
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T1C34</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When ρ > 5 × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>When ρ > 1.15 × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>When ρ > 2 × cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>When ρ > 1.01 × cost</td>
       </tr>
    </tbody>
 </table>
