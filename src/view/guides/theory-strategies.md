@@ -10,11 +10,11 @@ order: 8
 The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 ### Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
-13 % 10 = 3,<br />
-21 % 10 = 1,<br />
+13 % 10 = 3<br />
+21 % 10 = 1<br />
 20 % 10 = 0<br />
-Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to find the result of the modulus.<br />
-So, 214**5** % 10 = **5**
+Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br />
+So, 214<u>**5**</u> % 10 = **5**
 
 ### Theory 1: Recurrence Relations
 
