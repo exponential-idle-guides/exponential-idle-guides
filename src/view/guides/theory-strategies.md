@@ -3896,7 +3896,7 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
 </table>
 <br /> <br />
 
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br />
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - xelaroc for testing/creating the strategy
