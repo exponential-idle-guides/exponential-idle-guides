@@ -3579,9 +3579,9 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 
 If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
-### T8NoC5d
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5d
 
-### T8NoC5/T8R34
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3614,7 +3614,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 
 If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 
-### T8RNoC3d
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C3d
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3645,7 +3645,7 @@ If you ever see a “C” or a “L” instead of the “R”, use the Chen or L
 </table>
 <br />
 
-### T8RNoC3
+### T8R<span style="color:var(--palette-stroke-warning)">No</span>C3
 <table class="spqcey">
 <thead>
   <th></th>
