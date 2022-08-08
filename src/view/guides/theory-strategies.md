@@ -3992,34 +3992,39 @@ Strategy Credits:
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">SLStopAd</th>
+      <th colspan="3" style="text-align:center">SLStopAd</th>
    </tr>
 </thead>
    <tbody>
       <tr>
          <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier < 6</td>
-         <td class="rightHeader">Publication Multiplier > 6</td>
+         <td class="topHeader">Publication Mult < 4.5</td>
+         <td class="rightHeader">Publication Mult 4.5-6</td>
+         <td class="rightHeader">Publication Mult > 6</td>
      </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
          <td>When cost is 1/10 of a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>❌</td>
+         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
          <td>When cost is 1/10 of b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>✔️</td>
+         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
          <td>✔️</td>
+         <td>❌</td>
       </tr>
    </tbody>
 </table>
