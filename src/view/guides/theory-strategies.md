@@ -287,7 +287,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>c<sub><sub><small>3</small></sub></sub>Ratio</th>
+  <th>c<sub><sub><small>3</small></sub></sub> Ratio</th>
 </thead>
    <tbody>
       <tr>
@@ -3865,7 +3865,7 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>c<sub><sub><small>3</small></sub></sub>Ratio</th>
+  <th>c<sub><sub><small>1</small></sub></sub> Ratio</th>
 </thead>
    <tbody>
       <tr>
