@@ -291,23 +291,23 @@ Strategy Credits:
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">ρ < e300</td>
+         <td class="leftHeader">0 < ρ < e300</td>
          <td>1</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e300</td>
+         <td class="leftHeader">e300 < ρ < e450</td>
          <td>1.1</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e450</td>
+         <td class="leftHeader">e450 < ρ < e550</td>
          <td>2</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e550</td>
+         <td class="leftHeader">e550 < ρ < e625</td>
          <td>5</td>
       </tr>
       <tr>
-         <td class="leftHeader">ρ > e625</td>
+         <td class="leftHeader">e625 < ρ</td>
          <td>10</td>
       </tr>
    </tbody>
