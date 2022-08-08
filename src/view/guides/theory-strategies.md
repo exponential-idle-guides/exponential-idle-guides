@@ -291,7 +291,7 @@ Strategy Credits:
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">0 < ρ < e300</td>
+         <td class="leftHeader">ρ < e300</td>
          <td>1</td>
       </tr>
       <tr>
@@ -307,7 +307,7 @@ Strategy Credits:
          <td>5</td>
       </tr>
       <tr>
-         <td class="leftHeader">e625 < ρ</td>
+         <td class="leftHeader">ρ > e625</td>
          <td>10</td>
       </tr>
    </tbody>
