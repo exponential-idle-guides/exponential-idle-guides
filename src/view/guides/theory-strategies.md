@@ -122,6 +122,7 @@ T7PlaySpqceyX is a slightly faster version of T7Play-25.
 
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8PlaySolarSwap)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
+Older theory simulators may return the attractor as part of the strategy name (Example, T8R instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from the strategy name.
 
 - [T8PlaySolarSwap](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 - [T8Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
