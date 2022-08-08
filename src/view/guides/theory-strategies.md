@@ -344,7 +344,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<!-- T1C34 -->
+
 ### T1C34
 <table class="spqcey">
 <thead>
