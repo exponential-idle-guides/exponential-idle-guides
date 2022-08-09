@@ -1102,7 +1102,7 @@ Strategy Credits:
 - Playspout
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1183,7 +1183,7 @@ Strategy Credits:
 - xelaroc
 - Playspout
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1242,7 +1242,7 @@ Strategy Credits:
 </table>
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1300,7 +1300,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1358,7 +1358,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1416,7 +1416,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1474,7 +1474,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1532,7 +1532,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3NoC13C32C33d
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1590,7 +1590,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3NoC13C32C33
+### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1648,7 +1648,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3C11C12C21d
+### T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1706,7 +1706,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3C11C12C21
+### T3<span style="color:#4665F0">C11C12C21</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1767,7 +1767,7 @@ Strategy Credits:
 
 ## Theory 4: Polynomials
 
-### T4C3d66
+### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1834,7 +1834,7 @@ Strategy Credits:
 - rus9384#1864
 
 
-### T4C3d
+### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1876,7 +1876,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4C3dC12rcv
+### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1933,7 +1933,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4C3
+### T4<span style="color:#4665F0">C3</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1975,7 +1975,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4C123d
+### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2019,7 +2019,7 @@ Strategy Credits:
 
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3d.
 
-### T4C123
+### T4<span style="color:#4665F0">C123</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2063,7 +2063,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3.
 
-### T4C12d
+### T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2105,7 +2105,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C12
+### T4<span style="color:#4665F0">C12</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2147,7 +2147,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C56d
+### T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2189,7 +2189,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C56
+### T4<span style="color:#4665F0">C56</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2231,7 +2231,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C4d
+### T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2273,7 +2273,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C4
+### T4<span style="color:#4665F0">C4</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2315,7 +2315,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4C5
+### T4<span style="color:#4665F0">C5</span>
 <table class="spqcey">
 <thead>
   <th></th>
