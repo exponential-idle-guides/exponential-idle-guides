@@ -41,8 +41,8 @@ T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
 - [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
 - [T3</span><span style="color:#4665F0">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
-- [T3SNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
-- [T3SNAX2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><span style="color:#4665F0">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
 - [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
