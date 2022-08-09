@@ -3536,7 +3536,7 @@ Strategy Credits:
 
 ## Theory 8: Chaos Theory
 
-### T8PlaySolarSwap
+### T8<span style="color:#41AD21">PlaySolarSwap</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3575,7 +3575,7 @@ Strategy Credits:
 - Solarion for the milestone swap idea
 
 
-### T8Play
+### T8<span style="color:#41AD21">Play</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3612,7 +3612,7 @@ Strategy Credits:
 - Playspout
 
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C35d
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3645,7 +3645,7 @@ Strategy Credits:
 
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C35
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3675,7 +3675,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C5d
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3705,7 +3705,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T8R34
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3736,7 +3736,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 </table>
 <br />
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C3d
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3766,7 +3766,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span>C3
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3796,7 +3796,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8d
+### T8<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
