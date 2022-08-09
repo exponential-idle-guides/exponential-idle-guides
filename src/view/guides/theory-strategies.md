@@ -2485,7 +2485,7 @@ Strategy Credit:
 
 ## Theory 6: Integral Calculus
 
-### T6AI
+### T6<span style="color:#41AD21">AI</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2535,7 +2535,7 @@ Strategy Credit:
 
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-### T6SNAX x.xxexxx
+### T6<span style="color:#41AD21">SNAX x.xxexxx</span>
 
 <table class="spqcey">
 <thead>
@@ -2605,7 +2605,7 @@ Strategy Credits:
 - XLII
 
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C34d
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2651,7 +2651,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C34
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2697,7 +2697,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C1234d
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2743,7 +2743,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C1234
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2789,7 +2789,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C345d
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2837,7 +2837,7 @@ Strategy Credits:
 
 This strategy is sometimes seen at lower taus but is not seen at higher taus.
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span>C345
+### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2885,7 +2885,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 
 This strategy is sometimes seen at lower taus but is not seen at higher taus.
 
-### T6C4d
+### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2931,7 +2931,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
    </tbody>
 </table>
 
-### T6C4
+### T6<span style="color:#4665F0">C4</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2977,7 +2977,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
    </tbody>
 </table>
 
-### T6C3d
+### T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3016,7 +3016,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
 </table>
 
 Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
-### T6C3
+### T6<span style="color:#4665F0">C3</span>
 <table class="spqcey">
 <thead>
   <th></th>
