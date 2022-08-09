@@ -3057,7 +3057,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 ## Theory 7: Numerical Methods
 
-### T7PlaySpqceyX
+### T7<span style="color:#41AD21">PlaySpqceyX</span>
 
 **If there is no number after T7PlaySpqcey, then use this table:**
 <table class="spqcey">
@@ -3097,7 +3097,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-**If there is a number after T7PlaySpqcey (Example: T7PlaySpqcey10), then use this table:**
+**If there is a number after T7<span style="color:#41AD21">PlaySpqcey</span> (Example: T7<span style="color:#41AD21">PlaySpqcey10</span>), then use this table:**
 
 <table class="spqcey">
 <thead>
@@ -3138,16 +3138,16 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 
 <br /> <br />
 
-The number after T7PlaySpqcey occurs more at lower \\(\tau\\) values. <br /> <br />
+The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br /> <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
-- Snaeky for number after T7PlaySpqcey for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
+- Snaeky for number after T7<span style="color:#41AD21">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
 - XLII for simulating Snaeky's idea
 
-### T7Play-25
+### T7<span style="color:#41AD21">Play-25</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3186,13 +3186,13 @@ Strategy Credits:
 </table>
 <br />
 
-T7-Play-25 has a “25” due to the two 25% (¼) ratios
+T7<span style="color:#41AD21">Play-25</span> has a “25” due to the two 25% (¼) ratios
 <br /> <br />
 
 Strategy Credits:
 - Playspout
 
-### T7C3d
+### T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3230,7 +3230,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7C12d
+### T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3268,7 +3268,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7C12
+### T7<span style="color:#4665F0">C12</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3306,7 +3306,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7C123d
+### T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3344,7 +3344,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span>C12
+### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3382,7 +3382,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span>C123
+### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3420,7 +3420,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span>C124
+### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3458,7 +3458,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span>C1234
+### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
 <table class="spqcey">
 <thead>
   <th></th>
