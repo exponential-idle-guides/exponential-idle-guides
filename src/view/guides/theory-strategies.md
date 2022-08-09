@@ -20,7 +20,7 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
 
-- [T1<span style="color:#41AD21">SolarXLII</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+- [T1<span style="color:#41AD21">SolarXLII xexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 
 - [T1<span style="color:#41AD21">Ratio</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
 
@@ -248,7 +248,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 ## Theory 1: Recurrence Relations
 
-### T1<span style="color:#41AD21">SolarXLII</span>
+### T1<span style="color:#41AD21">SolarXLII xexxx</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -456,7 +456,7 @@ Strategy Credits:
 
 ## Theory 2: Differential Calculus
 
-### T2MC
+### T2<span style="color:#41AD21">MC</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -545,7 +545,7 @@ Strategy Credits:
 - XLII, whose theory simulator was used to develop and test this strategy. <br />
 
 The “MC” in T2MC stands for **M**ultivariable**C**oast.
-### T2Coast-X%
+### T2<span style="color:#41AD21">Coast-X%</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -649,7 +649,7 @@ We generally recommend using T2MC instead of this strategy.
 
 ## Theory 3: Linear Algebra
 
-### T3Play2
+### T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -762,7 +762,7 @@ Strategy Credits:
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
-### T3Play
+### T3</span><span style="color:#4665F0">Play</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -856,7 +856,7 @@ Strategy Credits:
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3SNAX
+### T3</span><span style="color:#4665F0">SNAX</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -937,7 +937,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3SNAX2
+### T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1020,7 +1020,7 @@ Strategy Credits:
 <br /> <br />
 Designed to be easily compatible with current versions of QoL.
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12
+### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
 <table class="spqcey">
 <thead>
    <tr>
