@@ -18,7 +18,7 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 ### Theory 1: Recurrence Relations
 
-T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
+T1 is one of the theories that benefit the most from active strategies. T1<span style="color:#41AD21">SolarXLII xexxx</span> improves slightly on T1<span style="color:#41AD21">AI</span>.
 
 - [T1<span style="color:#41AD21">SolarXLII xexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 
@@ -41,8 +41,8 @@ T2 is the only theory without an active strategy, despite attempts.
 ### Theory 3: Linear Algebra
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3SNAX is currently the best idle strategy above e200\\(\rho\\).
-T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
+T3</span><span style="color:#4665F0">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
+T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span> is similar to T3</span><span style="color:#4665F0">SNAX</span> but is designed to be QoL compatible.
 
 - [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
 
@@ -149,7 +149,7 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 ### Theory 7: Numerical Methods
 
 T7 is the third-weakest theory, ahead of T2 and T8.
-T7PlaySpqceyX is a slightly faster version of T7Play-25.
+T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of T7<span style="color:#41AD21">Play-25</span>.
 
 - [T7<span style="color:#41AD21">PlaySpqceyX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
 
@@ -175,9 +175,9 @@ T7PlaySpqceyX is a slightly faster version of T7Play-25.
 
 ### Theory 8: Chaos Theory
 
-T8 is the weakest theory in endgame and has the most active strategy of any theory (T8PlaySolarSwap)
+T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br />
-Older theory simulators may return the attractor as part of the strategy name (Example: T8R instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
+Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
@@ -308,7 +308,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 Strategy Credits:
-- Solarion and XLII for creating and refining this strategy off of the existing T1AI.
+- Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
 ### T1<span style="color:#41AD21">Ratio</span>
@@ -602,8 +602,8 @@ The “MC” in T2MC stands for **M**ultivariable**C**oast.
    </tbody>
 </table>
 
-If the sim recommends this, it will return a percentage in the box: T2Coast-☐% <br /> <br />
-We generally recommend using T2MC instead of this strategy.
+If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br /> <br />
+We generally recommend using T2<span style="color:#41AD21">MC</span> instead of this strategy.
 
 ### T2
 <table class="spqcey">
@@ -1824,10 +1824,10 @@ Strategy Credits:
    </tbody>
 </table>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “T4C3d66 q1: 377 q2: 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-The “66” in the name T4C3d66 refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br /> <br />
+The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br /> <br />
 
 Strategy Credits:
 - XLII
@@ -2017,7 +2017,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3d.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>.
 
 ### T4<span style="color:#4665F0">C123</span>
 <table class="spqcey">
@@ -2061,7 +2061,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4C3.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span>.
 
 ### T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
@@ -2402,7 +2402,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 ## Theory 5: Logistic Function
 
 ### T5<span style="color:#41AD21">AI</span>
-This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5AI.
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
 
 ### T5<span style="color:#41AD21">Idle xexxx</span>
 <table class="spqcey">
