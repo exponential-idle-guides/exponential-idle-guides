@@ -3015,7 +3015,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
    </tbody>
 </table>
 
-Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 ### T6<span style="color:#4665F0">C3</span>
 <table class="spqcey">
 <thead>
@@ -3054,7 +3054,7 @@ Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two str
    </tbody>
 </table>
 
-Both T6C3d and T6C3 don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 ## Theory 7: Numerical Methods
 
 ### T7PlaySpqceyX
