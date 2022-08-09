@@ -177,7 +177,7 @@ T7PlaySpqceyX is a slightly faster version of T7Play-25.
 
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8PlaySolarSwap)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br />
-Older theory simulators may return the attractor as part of the strategy name (Example, T8R instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
+Older theory simulators may return the attractor as part of the strategy name (Example: T8R instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
@@ -207,17 +207,20 @@ Read more about custom theories on (link to custom theory guide page)
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSPAI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
-- [WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
-- [WSPd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
-- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
+- [WSP<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
+
+- [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
+
+- [WSP<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
+
+- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 ### Custom Theory 2: Sequential Limits
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span>A](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 3: Euler's Formula
 
