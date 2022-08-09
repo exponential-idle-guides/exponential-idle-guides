@@ -2401,10 +2401,10 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 
 ## Theory 5: Logistic Function
 
-### T5AI
+### T5<span style="color:#41AD21">AI</span>
 This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5AI.
 
-### T5Idle xexxx
+### T5<span style="color:#41AD21">Idle xexxx</span>
 <table class="spqcey">
 <thead>
    <tr>
