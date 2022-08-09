@@ -40,20 +40,35 @@ T3SNAX is currently the best idle strategy above e200\\(\rho\\).
 T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
 - [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
+
 - [T3</span><span style="color:#4665F0">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
+
 - [T3</span><span style="color:#4665F0">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
+
 - [T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
-- [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
+
+- [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>ρ1C13rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C21C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33d)&nbsp; — &nbsp;Active
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33)&nbsp; — &nbsp;Idle
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33d)&nbsp; — &nbsp;Active
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C11C13C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33)&nbsp; — &nbsp;Idle
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C32C33d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33d)&nbsp; — &nbsp;Active
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span>C13C32C33](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33)&nbsp; — &nbsp;Idle
+
 - [T3C11C12C21d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
+
 - [T3C11C12C21](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
 
 ### Theory 4: Polynomials
