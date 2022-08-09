@@ -80,27 +80,42 @@ T3SNAX2 is similar to T3SNAX but is designed to be QoL compatible.
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4C3d66](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d66)&nbsp; — &nbsp;Active
-- [T4C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
-- [T4C3dC12rcv](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
-- [T4C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
-- [T4C123d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123d)&nbsp; — &nbsp;Active
-- [T4C123](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Idle
-- [T4C12d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12d)&nbsp; — &nbsp;Active
-- [T4C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12)&nbsp; — &nbsp;Idle
-- [T4C56d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56d)&nbsp; — &nbsp;Active
-- [T4C56](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56)&nbsp; — &nbsp;Idle
-- [T4C4d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4d)&nbsp; — &nbsp;Active
-- [T4C4](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4)&nbsp; — &nbsp;Idle
-- [T4C5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d66)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
+
+- [T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123d)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C123</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Idle
+
+- [T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12d)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12)&nbsp; — &nbsp;Idle
+
+- [T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56d)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C56</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56)&nbsp; — &nbsp;Idle
+
+- [T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4d)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C4</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4)&nbsp; — &nbsp;Idle
+
+- [T4<span style="color:#4665F0">C5</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
+
 - [T4](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4)&nbsp; — &nbsp;Idle
 
 ### Theory 5: Logistic Function
 
 T5 is the second-strongest theory in endgame, only behind T6.
 
-- [T5AI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5ai)&nbsp; — &nbsp;Active
-- [T5Idle xexxx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
+- [T5<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5ai)&nbsp; — &nbsp;Active
+
+- [T5<span style="color:#41AD21">Idle xexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
+
 - [T5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5)&nbsp; — &nbsp;Idle
 
 ### Theory 6: Integral Calculus
@@ -703,7 +718,6 @@ Strategy Credits:
 - Solarion for \\(c_{12}\\) overpush idea.
 - xelaroc, whose sim was used to verify Playspout's results
 - rus9384#1864 for changing phase 3 start from pub mult 1 to pub mult 1.2, and changing phase 4 start from 2 to 2.4
-
 <br /> <br />
 
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
