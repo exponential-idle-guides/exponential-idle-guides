@@ -201,7 +201,7 @@ Older theory simulators may return the attractor as part of the strategy name (E
 
 ## Official Custom Theories
 In chronological order of release.
-Read more about custom theories on (link to custom theory guide page)
+<!-- Read more about custom theories on (link to custom theory guide page) -->
 
 ### Custom Theory 1: Weierstraß Sine Product
 
@@ -248,7 +248,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 ## Theory 1: Recurrence Relations
 
-### T1SolarXLII xexxx
+### T1<span style="color:#41AD21">SolarXLII</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -311,7 +311,7 @@ Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1AI.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
-### T1Ratio
+### T1<span style="color:#41AD21">Ratio</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -386,7 +386,7 @@ Strategy Credits:
 Strategy Credits:
 - XLII
 
-### T1AI
+### T1<span style="color:#41AD21">AI</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -420,7 +420,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T1C34
+### T1<span style="color:#4665F0">C34</span>
 <table class="spqcey">
 <thead>
   <th></th>
