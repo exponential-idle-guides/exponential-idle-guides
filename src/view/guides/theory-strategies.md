@@ -3861,7 +3861,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 
 ## Weierstraß Sine Product
 
-### WSPAI
+### WSP<span style="color:#41AD21">AI</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3895,7 +3895,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 Strategy Credits:
 - xelaroc
 
-### WSPd<span style="color:var(--palette-stroke-warning)">Stop</span>C1
+### WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -3983,7 +3983,7 @@ Strategy Credits:
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
-### WSPd
+### WSP<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4017,7 +4017,7 @@ Strategy Credits:
 Strategy Credits:
 - xelaroc
 
-### WSP<span style="color:var(--palette-stroke-warning)">Stop</span>C1
+### WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4067,7 +4067,7 @@ Strategy Credits:
 
 ## Sequential Limits
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span>Ad
+### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4110,14 +4110,14 @@ Strategy Credits:
 </table>
 <br />
 
-The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span>A.
+The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>.
 <br /> <br />
 Strategy Credits:
 - xelaroc
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span>A
+### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>
 <table class="spqcey">
 <thead>
    <tr>
