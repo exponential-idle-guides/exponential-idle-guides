@@ -20,17 +20,22 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 T1 is one of the theories that benefit the most from active strategies. T1SolarXLII improves slightly on T1AI.
 
-- [T1SolarXLII](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
-- [T1Ratio](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
-- [T1AI](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
-- [T1C34](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
+- [T1<span style="color:#41AD21">SolarXLII</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+
+- [T1<span style="color:#41AD21">Ratio</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
+
+- [T1<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
+
+- [T1<span style="color:#4665F0">C34</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
 ### Theory 2: Differential Calculus
 
 T2 is the only theory without an active strategy, despite attempts.
 
-- [T2MC](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
-- [T2Coast-X%](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:#41AD21">MC</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
+
+- [T2<span style="color:#41AD21">Coast-X%</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
+
 - [T2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
 
 ### Theory 3: Linear Algebra
