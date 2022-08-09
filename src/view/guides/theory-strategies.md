@@ -151,16 +151,26 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 T7 is the third-weakest theory, ahead of T2 and T8.
 T7PlaySpqceyX is a slightly faster version of T7Play-25.
 
-- [T7PlaySpqceyX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
-- [T7Play-25](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7play-25)&nbsp; — &nbsp;Active
-- [T7C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c3d)&nbsp; — &nbsp;Active
-- [T7C12d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12d)&nbsp; — &nbsp;Active
-- [T7C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12)&nbsp; — &nbsp;Idle
-- [T7C123d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c123d)&nbsp; — &nbsp;Active
-- [T7<span style="color:var(--palette-stroke-warning)">No</span>C12](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc12)&nbsp; — &nbsp;Idle
-- [T7<span style="color:var(--palette-stroke-warning)">No</span>C123](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc123)&nbsp; — &nbsp;Idle
-- [T7<span style="color:var(--palette-stroke-warning)">No</span>C124](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc124)&nbsp; — &nbsp;Idle
-- [T7<span style="color:var(--palette-stroke-warning)">No</span>C1234](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc1234)&nbsp; — &nbsp;Idle
+- [T7<span style="color:#41AD21">PlaySpqceyX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
+
+- [T7<span style="color:#41AD21">Play-25</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7play-25)&nbsp; — &nbsp;Active
+
+- [T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c3d)&nbsp; — &nbsp;Active
+
+- [T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12d)&nbsp; — &nbsp;Active
+
+- [T7<span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12)&nbsp; — &nbsp;Idle
+
+- [T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c123d)&nbsp; — &nbsp;Active
+
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc12)&nbsp; — &nbsp;Idle
+
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc123)&nbsp; — &nbsp;Idle
+
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc124)&nbsp; — &nbsp;Idle
+
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc1234)&nbsp; — &nbsp;Idle
+
 - [T7](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7)&nbsp; — &nbsp;Idle
 
 ### Theory 8: Chaos Theory
@@ -169,15 +179,24 @@ T8 is the weakest theory in endgame and has the most active strategy of any theo
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br />
 Older theory simulators may return the attractor as part of the strategy name (Example, T8R instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
-- [T8PlaySolarSwap](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
-- [T8Play](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C35d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C35](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C5/T834](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t834)&nbsp; — &nbsp;Idle
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C3d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
-- [T8<span style="color:var(--palette-stroke-warning)">No</span>C3](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
-- [T8d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8d)&nbsp; — &nbsp;Active
+- [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
+
+- [T8<span style="color:#41AD21">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t834)&nbsp; — &nbsp;Idle
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
+
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
+
+- [T8<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8d)&nbsp; — &nbsp;Active
+
 - [T8](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
 ### Official Custom Theories
