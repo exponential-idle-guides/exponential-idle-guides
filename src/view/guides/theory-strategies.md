@@ -199,7 +199,7 @@ Older theory simulators may return the attractor as part of the strategy name (E
 
 - [T8](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
-### Official Custom Theories
+## Official Custom Theories
 In chronological order of release.
 Read more about custom theories on (link to custom theory guide page)
 
@@ -220,25 +220,32 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
+
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 3: Euler's Formula
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
-- [EFAI (post-e50ρ)](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
-- [EFSNAX](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
-- [EFd](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
+- [EF<span style="color:#41AD21">AI (post-e50ρ)</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
+
+- [EF<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
+
+- [EF<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
+
 - [EF](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 4: Convergents to √2
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2XLx.xx](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
-- [CSR2d](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
+- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+
+- [CSR2<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
+
 - [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 <br /> <br />
+
 ## Theory 1: Recurrence Relations
 
 ### T1SolarXLII xexxx
