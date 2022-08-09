@@ -4235,7 +4235,7 @@ Strategy Credits:
 </table>
 <br />
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 a1: 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
@@ -4419,7 +4419,7 @@ Strategy Credits:
 
 ## Convergents to √2
 
-### CSR2XL
+### CSR2<span style="color:#41AD21">XLx.xx</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4462,7 +4462,7 @@ Strategy Credits:
 </table>
 <br />
 
-The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CS2XL2.85", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br />
+The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CSR2<span style="color:#41AD21">XL2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br />
 
 **Milestone Swap (pre e500\\(\rho\\))**<br />
 Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
@@ -4507,7 +4507,7 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
 Strategy Credits:
 - XLII
 
-### CSR2d
+### CSR2<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
