@@ -4167,7 +4167,7 @@ Strategy Credits:
 
 ## Euler's Formula
 
-### EFAI (post-e50ρ)
+### EF<span style="color:#41AD21">AI (post-e50ρ)</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4235,14 +4235,14 @@ Strategy Credits:
 </table>
 <br />
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EFAI q1: 1223 q2: 144 a1: 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 a1: 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
 If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - XLII
 - Playspout
 
-### EFSNAX
+### EF<span style="color:#41AD21">SNAX</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4317,7 +4317,7 @@ Strategy Credits:
 <br /> <br />
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
-### EFd
+### EF<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
