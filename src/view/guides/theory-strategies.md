@@ -247,6 +247,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 <br /> <br />
 
 ## Theory 1: Recurrence Relations
+<font size="+10">Theory 1: Recurrence Relations</font>
 
 ### T1<span style="color:#41AD21">SolarXLII xexxx</span>
 <table class="spqcey">
