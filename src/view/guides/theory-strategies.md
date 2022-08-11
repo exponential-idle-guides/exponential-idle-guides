@@ -4084,19 +4084,19 @@ This strategy swaps milestones depending on how far away the next \\(b_1\\) or \
 
 The goal of this strategy is:
 1. Buy \\(b_1\\)/\\(b_2\\)
-2. Swap milestones into state 1 to fully utilize the boost from the new \\(b_1\\)/\\(b_2\\) upgrade.
-3. After some time (the exact amount of time will be described later in the strategy), we want to swap to state 2. This way we boost \\(\dot\rho_2\\) so we get more \\(\rho_2\\) quicker.
-4. When we are closer to the next \\(b_1\\)/\\(b_2\\) upgrade, swap to state 3 so we utilize the boost that we just got for \\(\rho_2\\). This will get us to the next \\(b_1\\)/\\(b_2\\) upgrade a lot quicker.
+2. Swap milestones into State 1 to fully utilize the boost from the new \\(b_1\\)/\\(b_2\\) upgrade.
+3. After some time (the exact amount of time will be described later in the strategy), we want to swap to State 2. This way we boost \\(\dot\rho_2\\) so we get more \\(\rho_2\\) quicker.
+4. When we are closer to the next \\(b_1\\)/\\(b_2\\) upgrade, swap to State 3 so we utilize the boost that we just got for \\(\rho_2\\). This will get us to the next \\(b_1\\)/\\(b_2\\) upgrade a lot quicker.
 5. Repeat.<br /><br />
 
-This may seem difficult to execute, but publications in SL are 1-1.5 hours long after e50-e300\\(\rho\\). This means there can/will be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use state 3 only, to get the last \\(\rho\\) boost before publish. <br /><br />
+This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50\\(\rho\\)-e300\\(\rho\\). This means there can be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
+At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publish. <br /><br />
 
-As long as \\(\rho\\) < e175, we will swap between the three states, after that its just two.<br /><br />
+As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br /><br />
 
-**Note: NEVER swap into state 2 after 4.5 publication multiplier. Do state 3 instead for that time.**<br /><br />
+**Note: <span style="color:var(--palette-stroke-warning)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br /><br />
 
-The ratios for swapping are as follows, where you enter the next state when the ratio min(\\(b_1\\) cost, \\(b_2\\) cost) / \\(\rho\\) is lower than the ratio provided under the header:
+The ratios for swapping are as follows, where you enter the next state when the ratio \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
 
 <table class="spqcey">
 <thead>
@@ -4166,13 +4166,14 @@ The ratios for swapping are as follows, where you enter the next state when the 
 
 
 This may seem confusing, but let's take the first line as an example.<br /><br />
-In the first phase (e20\\(\rho\\)-e50\\(\rho\\)) you should have your milestones in State 1 until 5x away from min(\\(b_1\\) cost, \\(b_2\\) cost). Then, swap to State 2 until 4x away from min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
+In the first phase (e20\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).
+Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 After that, swap to State 3 until you get the upgrade.<br /><br />
 
 **Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br /><br />
-The numbers are just important to give the idea for ~ how far away you want to swap.<br />
+The numbers are just important to give the idea for around where you want to swap.<br />
 e.g. in e200\\(\rho\\)+ range, you only want to swap when close to next \\(b_1\\)/\\(b_2\\). and e75-e150\\(\rho\\) you swap very early.<br />
-It also tells you that you never want to be in State 2 for a long time.<br />
+These numbers also tell you that you never want to be in State 2 for a long time.<br /><br /><br />
 
 **Variable Buying**
 
