@@ -4167,7 +4167,7 @@ The ratios for swapping are as follows, where you enter the next state when the 
 <br /> <br />
 
 
-This may seem confusing, but let's take the first line as an example.<br /><br />
+This may seem confusing, but let's take the first row as an example.<br /><br />
 In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 After that, swap to State 3 until you get the upgrade.<br /><br />
