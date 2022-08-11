@@ -4096,7 +4096,7 @@ As long as \\(\rho\\) < e175, we will swap between the three states, after that 
 
 **Note: <span style="color:var(--palette-stroke-warning)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br /><br />
 
-The ratios for swapping are as follows, where you enter the next state when the ratio \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
+The ratios for swapping are as follows, where you enter the next state when the ratio: \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
 
 <table class="spqcey">
 <thead>
@@ -4166,7 +4166,7 @@ The ratios for swapping are as follows, where you enter the next state when the 
 
 
 This may seem confusing, but let's take the first line as an example.<br /><br />
-In the first phase (e20\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).
+In the first phase (e20\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 After that, swap to State 3 until you get the upgrade.<br /><br />
 
