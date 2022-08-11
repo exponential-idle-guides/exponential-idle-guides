@@ -219,7 +219,7 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slai)&nbsp; — &nbsp;Active
+- [SL<span style="color:#41AD21">MS</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms)&nbsp; — &nbsp;Active
 
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
 
@@ -4070,7 +4070,7 @@ Strategy Credits:
 
 ## Sequential Limits
 
-### SL<span style="color:#41AD21">AI</span>
+### SL<span style="color:#41AD21">MS</span>
 <br />
 **Milestone Swap:**
 
@@ -4095,7 +4095,7 @@ As long as \\(\rho\\) < e175, we will swap between the three states, after that 
 
 **Note: NEVER swap into state 2 after 4.5 publication multiplier. Do state 3 instead for that time.**<br /><br />
 
-The ratios for swapping are as follows, where you enter the next state when the ratio min(\\(b_1\\)/\\(b_2\\))/\\(\rho\\) is lower than the ratio provided under the header:
+The ratios for swapping are as follows, where you enter the next state when the ratio min(\\(b_1\\) cost, \\(b_2\\) cost) / \\(\rho\\) is lower than the ratio provided under the header:
 
 <!-- \\(\rho\\)<br />
 e25-e50: State1 5x -> State2 4x -> State3<br />
@@ -4190,7 +4190,7 @@ It also tells you that you never want to be in State 2 for a long time.<br />
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">SLAI</th>
+      <th colspan="3" style="text-align:center">SLMS</th>
    </tr>
 </thead>
    <tbody>
