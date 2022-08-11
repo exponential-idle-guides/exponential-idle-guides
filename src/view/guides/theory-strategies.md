@@ -221,6 +221,8 @@ The second official custom theory, abbreviated SL, was created by ellipsis and r
 
 - [SL<span style="color:#41AD21">MS</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms)&nbsp; — &nbsp;Active
 
+- [SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slmsd)&nbsp; — &nbsp;Very Active
+
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
 
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
@@ -4218,6 +4220,57 @@ These numbers also tell you that you never want to be in State 2 for a long time
    </tbody>
 </table>
 <br /> <br />
+
+Strategy Credit:
+- XLII
+
+### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
+
+**For the milestone swapping details, read the above strategy, SLMS. This strategy only modifies the variable buying strategies.**
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="3" style="text-align:center">SLMSd</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Mult < 4</td>
+         <td class="rightHeader">Publication Mult 4-7.5</td>
+         <td class="rightHeader">Publication Mult > 7.5</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+         <td>When 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>When b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
+If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credit:
 - XLII
