@@ -80,7 +80,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
 [star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) by XLII.
+There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) by XLII, which works both below max milestones and after max milestones for all theories.
 
 #### How to push F(t) with R9 swapping
 
