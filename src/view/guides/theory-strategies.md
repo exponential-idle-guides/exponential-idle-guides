@@ -7,7 +7,7 @@ draft: true
 order: 8
 ---
 
-The theory sim we currently recommend was made by XLII, and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
+The theory sim we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 ### Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
 13 % 10 = 3<br />
@@ -2840,7 +2840,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-This strategy is sometimes seen at lower taus but is not seen at higher taus.
+This strategy is sometimes seen at lower taus but not at higher taus.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
 <table class="spqcey">
@@ -2888,7 +2888,7 @@ This strategy is sometimes seen at lower taus but is not seen at higher taus.
    </tbody>
 </table>
 
-This strategy is sometimes seen at lower taus but is not seen at higher taus.
+This strategy is sometimes seen at lower taus but not at higher taus.
 
 ### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
@@ -3611,7 +3611,7 @@ Strategy Credits:
 </table>
 <br />
 
-If you ever see a “C” or a “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
 <br /> <br />
 Strategy Credits:
 - Playspout
@@ -4092,7 +4092,7 @@ The goal of this strategy is:
 5. Repeat.<br /><br />
 
 This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50\\(\rho\\)-e300\\(\rho\\). This means there can be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publish. <br /><br />
+At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publishing. <br /><br />
 
 As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br /><br />
 
