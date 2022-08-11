@@ -4168,7 +4168,7 @@ The ratios for swapping are as follows, where you enter the next state when the 
 
 
 This may seem confusing, but let's take the first line as an example.<br /><br />
-In the first phase (e20\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
+In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
 After that, swap to State 3 until you get the upgrade.<br /><br />
 
@@ -4225,7 +4225,7 @@ Strategy Credit:
 - XLII
 
 ### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
-
+<br />
 **For the milestone swapping details, read the above strategy, [SLMS](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
 
 <table class="spqcey">
