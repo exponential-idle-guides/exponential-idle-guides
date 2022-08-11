@@ -4071,15 +4071,15 @@ Strategy Credits:
 ## Sequential Limits
 
 ### SL<span style="color:#41AD21">AI</span>
-
+<br />
 **Milestone Swap:**
 
 There are 3 milestone states:<br />
 **State 1**: 4/3/1/2 (prioritizes boost for the \\(e-\gamma\\) term)<br />
-**State 2**: 2/1/4/3 (prioritizes boost for \\(\dot\rho_2\\)<br />
+**State 2**: 2/1/4/3 (prioritizes boost for \\(\dot\rho_2\\)) <br />
 **State 3**: 1/2/4/3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br /><br />
 
-This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br />
+This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br /><br />
 
 The goal of this strategy is:
 1. Buy \\(b_1\\)/\\(b_2\\)
@@ -4089,11 +4089,11 @@ The goal of this strategy is:
 5. Repeat.<br /><br />
 
 This may seem difficult to execute, but publications in SL are 1-1.5 hours long after e50-e300\\(\rho\\). This means there can/will be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use state 3 only, to get the last \\(\rho\\) boost before publish.
+At the very end of publications, you will also not have to milestone swap, as we will use state 3 only, to get the last \\(\rho\\) boost before publish. <br /><br />
 
-As long as \\(\rho\\) < e175, we will swap between the three states, after that its just two.
+As long as \\(\rho\\) < e175, we will swap between the three states, after that its just two.<br /><br />
 
-**Note: NEVER swap into state 2 after 4.5 publication multiplier. Do state 3 instead for that time.**
+**Note: NEVER swap into state 2 after 4.5 publication multiplier. Do state 3 instead for that time.**<br /><br />
 
 The ratios for swapping are as follows:
 
@@ -4107,12 +4107,12 @@ e175-e200: State1 1.5x -> State2<br />
 e200-e275: State1 3x -> State3<br />
 e275-e300: State1 2x -> State3<br /><br />
 
-This may seem confusing, but let's take the first line as an example.<br />
-First line: "e25-e50: State1 5x -> State2 4x -> State3"<br />
+This may seem confusing, but let's take the first line as an example.<br /><br />
+First line: "e25-e50: State1 5x -> State2 4x -> State3"<br /><br />
 This means you should have your milestones in State 1 until 5x away from min(\\(b_1\\) cost, \\(b_2\\) cost). Then, swap to State 2 until 4x away from min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
-After that, swap to State 3 until you get the upgrade.<br />
+After that, swap to State 3 until you get the upgrade.<br /><br />
 
-**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br />
+**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br /><br />
 The numbers are just important to give the idea for ~ how far away you want to swap.<br />
 e.g. in e200\\(\rho\\)+ range, you only want to swap when close to next \\(b_1\\)/\\(b_2\\). and e75-e150\\(\rho\\) you swap very early.<br />
 It also tells you that you never want to be in State 2 for a long time.<br />
