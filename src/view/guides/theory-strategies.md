@@ -4117,48 +4117,48 @@ The ratios for swapping are as follows, where you enter the next state when the 
       <tr>
          <td class="leftHeader">e25ρ-e50ρ</td>
          <td>Until <span style="color:var(--palette-stroke-warning)">5x</span> cost/ρ Ratio</td>
-         <td>Until 4x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">4x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e50ρ-e75ρ</td>
-         <td>Until 7x cost/ρ Ratio</td></td>
-         <td>Until 6x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">7x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">6x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e75ρ-e100ρ</td>
-         <td>Until 12x cost/ρ Ratio</td></td>
-         <td>Until 10x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">12x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">10x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e150ρ</td>
-         <td>Until 20x cost/ρ Ratio</td></td>
-         <td>Until 15x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">20x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">15x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e150ρ-e175ρ</td>
-         <td>Until 8x cost/ρ Ratio</td></td>
-         <td>Until 6x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">8x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">6x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e175ρ-e200ρ</td>
-         <td>Until 1.5x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">1.5x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
          <td>Skip</td>
       </tr>
       <tr>
          <td class="leftHeader">e200ρ-e275ρ</td>
-         <td>Until 3x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">3x</span> cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e275ρ-e300ρ</td>
-         <td>Until 2x cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">2x</span> cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
