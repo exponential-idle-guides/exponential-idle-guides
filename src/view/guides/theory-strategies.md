@@ -4095,9 +4095,9 @@ As long as \\(\rho\\) < e175, we will swap between the three states, after that 
 
 **Note: NEVER swap into state 2 after 4.5 publication multiplier. Do state 3 instead for that time.**<br /><br />
 
-The ratios for swapping are as follows:
+The ratios for swapping are as follows, where you enter the next state when the ratio min(\\(b_1\\)/\\(b_2\\))/\\(\rho\\) is lower than the ratio provided under the header:
 
-\\(\rho\\)<br />
+<!-- \\(\rho\\)<br />
 e25-e50: State1 5x -> State2 4x -> State3<br />
 e50-e75: State1 7x -> State2 6x -> State3<br />
 e75-e100: State1 12x -> State2 10x -> State3<br />
@@ -4105,7 +4105,74 @@ e100-e150: State1 20x -> State2 15x -> State3<br />
 e150-e175: State1 8x -> State2 6x -> State3<br />
 e175-e200: State1 1.5x -> State2<br />
 e200-e275: State1 3x -> State3<br />
-e275-e300: State1 2x -> State3<br /><br />
+e275-e300: State1 2x -> State3<br /><br /> -->
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="3" style="text-align:center">Ratios for Swapping</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">State 1</td>
+         <td class="rightHeader">State 2</td>
+         <td class="rightHeader">State 3</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">e25ρ-e50ρ</td>
+         <td>5</td>
+         <td>4</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e50ρ-e75ρ</td>
+         <td>7</td>
+         <td>6</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e75ρ-e100ρ</td>
+         <td>12</td>
+         <td>10</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e100ρ-e150ρ</td>
+         <td>20</td>
+         <td>15</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e150ρ-e175ρ</td>
+         <td>8</td>
+         <td>6</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e175ρ-e200ρ</td>
+         <td>1.5</td>
+         <td>Until upgrade is bought</td>
+         <td>Skip</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e200ρ-e275ρ</td>
+         <td>3</td>
+         <td>Skip</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e275ρ-e300ρ</td>
+         <td>2</td>
+         <td>Skip</td>
+         <td>Until upgrade is bought</td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
+
 
 This may seem confusing, but let's take the first line as an example.<br /><br />
 First line: "e25-e50: State1 5x -> State2 4x -> State3"<br /><br />
