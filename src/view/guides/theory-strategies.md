@@ -4098,16 +4098,6 @@ As long as \\(\rho\\) < e175, we will swap between the three states, after that 
 
 The ratios for swapping are as follows, where you enter the next state when the ratio min(\\(b_1\\) cost, \\(b_2\\) cost) / \\(\rho\\) is lower than the ratio provided under the header:
 
-<!-- \\(\rho\\)<br />
-e25-e50: State1 5x -> State2 4x -> State3<br />
-e50-e75: State1 7x -> State2 6x -> State3<br />
-e75-e100: State1 12x -> State2 10x -> State3<br />
-e100-e150: State1 20x -> State2 15x -> State3<br />
-e150-e175: State1 8x -> State2 6x -> State3<br />
-e175-e200: State1 1.5x -> State2<br />
-e200-e275: State1 3x -> State3<br />
-e275-e300: State1 2x -> State3<br /><br /> -->
-
 <table class="spqcey">
 <thead>
    <tr>
@@ -4124,49 +4114,49 @@ e275-e300: State1 2x -> State3<br /><br /> -->
      </tr>
       <tr>
          <td class="leftHeader">e25ρ-e50ρ</td>
-         <td>5</td>
-         <td>4</td>
+         <td>Until 5x cost/ρ Ratio</td>
+         <td>Until 4x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e50ρ-e75ρ</td>
-         <td>7</td>
-         <td>6</td>
+         <td>Until 7x cost/ρ Ratio</td></td>
+         <td>Until 6x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e75ρ-e100ρ</td>
-         <td>12</td>
-         <td>10</td>
+         <td>Until 12x cost/ρ Ratio</td></td>
+         <td>Until 10x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e150ρ</td>
-         <td>20</td>
-         <td>15</td>
+         <td>Until 20x cost/ρ Ratio</td></td>
+         <td>Until 15x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e150ρ-e175ρ</td>
-         <td>8</td>
-         <td>6</td>
+         <td>Until 8x cost/ρ Ratio</td></td>
+         <td>Until 6x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e175ρ-e200ρ</td>
-         <td>1.5</td>
+         <td>Until 1.5x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
          <td>Skip</td>
       </tr>
       <tr>
          <td class="leftHeader">e200ρ-e275ρ</td>
-         <td>3</td>
+         <td>Until 3x cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e275ρ-e300ρ</td>
-         <td>2</td>
+         <td>Until 2x cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
