@@ -4116,7 +4116,7 @@ The ratios for swapping are as follows, where you enter the next state when the 
      </tr>
       <tr>
          <td class="leftHeader">e25ρ-e50ρ</td>
-         <td>Until 5x cost/ρ Ratio</td>
+         <td>Until <span style="color:var(--palette-stroke-warning)">5x</span> cost/ρ Ratio</td>
          <td>Until 4x cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
