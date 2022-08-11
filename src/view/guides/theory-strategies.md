@@ -4226,7 +4226,7 @@ Strategy Credit:
 
 ### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
 
-**For the milestone swapping details, read the above strategy, SLMS. This strategy only modifies the variable buying strategies.**
+**For the milestone swapping details, read the above strategy, [SLMS](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
 
 <table class="spqcey">
 <thead>
