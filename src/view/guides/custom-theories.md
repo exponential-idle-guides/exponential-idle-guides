@@ -59,7 +59,7 @@ Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\
 
 Approximate variable strengths on rhodot with all milestones are as follows:
 
-<tabke>
+<table>
    <thead></thead>
    <tbody>
       <tr>
