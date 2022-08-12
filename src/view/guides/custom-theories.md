@@ -61,6 +61,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 <tabke>
    <thead></thead>
+   <tbody>
       <tr>
          <td>q1</td>
          <td>About 7% increase on rhodot on average.</td>
@@ -71,6 +72,9 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase on rhodot on average.</td>
       
       </tr>
+
+
+   </tbody>
 
 </table>
 
