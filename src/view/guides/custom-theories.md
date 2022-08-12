@@ -59,6 +59,21 @@ Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\
 
 Approximate variable strengths on rhodot with all milestones are as follows:
 
+<tabke>
+   <thead></thead>
+      <tr>
+         <td>q1</td>
+         <td>About 7% increase on rhodot on average.</td>
+      
+      </tr>
+      <tr>
+         <td>q1</td>
+         <td>About 7% increase on rhodot on average.</td>
+      
+      </tr>
+
+</table>
+
 q1: About 7% increase on rhodot on average.<br>
 q2: Doubles rhodot - instantaneous.<br>
 n: Initially about 50% increase similar to c1. Slowly ramps up to 4 times increase in rhodot. At e400 rho and higher it is very close to 4x increase. <br>
@@ -210,19 +225,26 @@ At this point, the theory becomes very idle. We simply autobuy all. Publish at a
          <td class="arrow">→</td>
          <td>3/5/2/2</td>
       </tr>
-      Milestone Swapping
-      <tr>
-         <td>0/1/3</td>
-         <td class="arrow">→</td>
-         <td>1/1/3</td>
-         <td class="arrow">→</td>
-         <td>2/1/3</td>
-         <td class="arrow">→</td>
-         <td>3/1/3</td>
-         <td class="arrow">→</td>
-         <td>4/1/3</td>
+      
+      
          
 </table>
+
+Milestone Swapping (active)
+
+How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones etc.
+
+SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
+
+SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
+
+SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
+
+When to Use Strategies
+until e100: SLMS
+e100 - e175: SLMS2
+e175 - e200: SLMS3
+e200 - e300: SLMS
 
 ### Euler's Formula (EF)
 
@@ -250,6 +272,11 @@ The fourth line simply describes qdot. This is used in the first equation direct
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF strategy
+
+Initially, you only have tdot, q1, q2 unlocked. Buy q1 at about 1/8th cost of q2, and buy tdot when it's available. At e20 rho when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying q1 at 1/8th cost of q2). 
+
+The first 2 milestones are redundant by themselves. The R^2 term and the I^2 term are insignificant compared to the tq^2 term. 
+Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q2 cost.
 
 
 
