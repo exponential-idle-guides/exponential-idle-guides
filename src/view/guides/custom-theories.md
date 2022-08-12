@@ -59,7 +59,7 @@ Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\
 
 Approximate variable strengths on rhodot with all milestones are as follows:
 
-<table>
+<table class="variable_summary">
    <thead></thead>
    <tbody>
       <tr>
@@ -435,5 +435,23 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
       </tr>
    </tbody>
 </table>
+
+
+
+
+<style>
+.variable_summary th{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+.variable_summary {
+   border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+}
+</style>
 
 
