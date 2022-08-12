@@ -65,7 +65,6 @@ Approximate variable strengths on rhodot with all milestones are as follows:
       <tr>
          <td>q1</td>
          <td>About 7% increase on rhodot on average.</td>
-      
       </tr>
       <tr>
          <td>q1</td>
