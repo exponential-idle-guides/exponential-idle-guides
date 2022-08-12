@@ -444,14 +444,13 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 <style>
 .variable_summary th{
-    border: 1px solid rgb(190, 190, 190);
     padding: 10px;
     background-color: #d7d9f2;
 }
 
 .variable_summary {
    border-collapse: collapse;
-    border: 5px solid rgb(200, 200, 200);
+    border: 5px solid blue;
     letter-spacing: 2px;
     font-family: sans-serif;
     font-size: .8rem;
