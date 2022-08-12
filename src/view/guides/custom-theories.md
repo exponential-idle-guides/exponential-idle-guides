@@ -63,14 +63,25 @@ Approximate variable strengths on rhodot with all milestones are as follows:
    <thead></thead>
    <tbody>
       <tr>
-         <td>q1</td>
+         <th>q1</th>
          <td>About 7% increase on rhodot on average.</td>
       </tr>
       <tr>
-         <td>q1</td>
-         <td>About 7% increase on rhodot on average.</td>
+         <th>q2</th>
+         <td>Doubles rhodot - instantaneous.</td>
       </tr>
-
+      <tr>
+         <th>n</th>
+         <td>Initially about 50% increase similar to c1. Slowly ramps up to 4 times increase in rhodot. At e400 rho and higher it is very close to 4x increase.</td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Doubles rhodot - NOT instant.</td>
+      </tr>
 
    </tbody>
 
