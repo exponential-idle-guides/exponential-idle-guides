@@ -449,7 +449,7 @@ table.variable_summary th{
 }
 
 table.variable_summary {
-   border-collapse: collapse;
+   
     border: 5px solid blue;
     letter-spacing: 2px;
     font-family: sans-serif;
