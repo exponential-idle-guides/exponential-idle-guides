@@ -48,16 +48,16 @@ T2 is the only theory without an active strategy, despite attempts.
 <span class="h3-fake">Theory 3: Linear Algebra</span>
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3</span><span style="color:#4665F0">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
-T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span> is similar to T3</span><span style="color:#4665F0">SNAX</span> but is designed to be QoL compatible.
+T3</span><span style="color:#41AD21">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
+T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span style="color:#41AD21">SNAX</span> but is designed to be QoL compatible.
 
-- [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:#41AD21">Play2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#4665F0">Play</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:#41AD21">Play</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#4665F0">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><span style="color:#41AD21">SNAX2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 
 - [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
 
@@ -668,7 +668,7 @@ We generally recommend using T2<span style="color:#41AD21">MC</span> instead of 
 
 ## Theory 3: Linear Algebra
 
-### T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>
+### T3</span><span style="color:#41AD21">Play2</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -783,7 +783,7 @@ Strategy Credits:
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
-### T3</span><span style="color:#4665F0">Play</span>
+### T3</span><span style="color:#41AD21">Play</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -877,7 +877,7 @@ Strategy Credits:
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3</span><span style="color:#4665F0">SNAX</span>
+### T3</span><span style="color:#41AD21">SNAX</span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -958,7 +958,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>
+### T3</span><span style="color:#41AD21">SNAX2</span>
 <table class="spqcey">
 <thead>
    <tr>
