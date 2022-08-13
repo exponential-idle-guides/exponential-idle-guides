@@ -7,7 +7,10 @@ draft: true
 order: 8
 ---
 
+**This guide is highly recommended to be viewed on desktop/pc for the time being until mobile support is added.**
+
 The theory sim we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
+
 ## Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
 13 % 10 = 3<br />
