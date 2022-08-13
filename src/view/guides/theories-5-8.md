@@ -183,7 +183,7 @@ After autobuy at e30, you should repeat this after every publication:
    Your graph should resemble a linear function on the graph.
 2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
-   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\).
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q_2\\).
 3. Once you reach the desired publication point, publish.
 4. Repeat this for stonks.
 
@@ -246,19 +246,72 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### Theory 6 (45σ / 10k)
 
+#### T6 Overview
+
+T6 has the lowest decay of all the theories. It will be second place to T5 until about e750 and is the only theory that can
+get to \\(>e1100τ\\). You should overnight this and T4 after you get your T2 to \\(e350+\\).
+
+At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane. 
+This is used using a definate Integral, an integral that is bound between 2 values giving a single output. This does the 
+opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\), 
+this new equation is finding the Volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and 
+\\(0\\) to \\(r\\) respectively. 
+
+The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(\c_i\\) 
+upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(\c_i\\) upgrades, but is 
+slightly different. It is negative because the purchasing a \\(\c_i\\) upgarade will increase the value of the integral, thus 
+\\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example, 
+lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will 
+be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(C\\) needs to be equal to \\(20\\).
+
+[Video of T6 at Endgame](https://bit.ly/t6endgame)
+
 #### T6 strategy
 
-This theory has the lowest decay of all the theories. It will be second
-place to T5 until about e750 and is the only theory that can
-get to \\(>e1100τ\\). You should overnight this after you get your T2 to
-\\(e350+\\). This is the best idle theory. [Video of T6 at Endgame](https://bit.ly/t6endgame)
+The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone. 
+If you want an accurate multiplier, check with [the sim](https://theory-simulator.tredec.repl.co/).
 
-The optimal publication multiplier is still unknown but empirically
-seems to be about \\(7\\)-\\(12\\). Once all milestones, disable \\(c_3\\)
-\\(c_4\\) and autobuy rest. For manual autobuy \\(q_2\\), \\(r_2\\),
-\\(c_2\\), and \\(c_5\\) then manual buy rest with \\(c_3\\) and \\(c_4\\)
-still disabled. For idle/auto, you are going to just turn off \\(c_3\\)
-and \\(c_4\\).
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T6 Strategy</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Idle</td>
+         <td class="rightHeader">Active</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">1ρ-e7ρ</td>
+         <td>Buy All</td>
+         <td>Buy All with q<sub><sub><small>1</small></sub></sub> at e1 difference</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e7ρ-e25ρ</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e25ρ-e100ρ</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> (and r<sub><sub><small>1</small></sub></sub> past e50) at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e100ρ-e130ρ</td>
+         <td>Turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e130ρ-e175ρ</td>
+         <td>Turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+      </tr>
+   </tbody>
+</table>
+<br /> <br />
 
 #### T6 milestone route
 
@@ -417,10 +470,12 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
 
 ### Theory 8 skipping
 
-T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\varphi\\). You will need
+Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from 0-e60 (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\varphi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
 through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that**
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
+
+#### Idle
 
 <table class="newwords">
    <thead>
@@ -438,25 +493,69 @@ The current recommendation for your \\(\tau\\) distribution for T8 skip is as fo
          <td>e200 τ</td>
          <th class="invisible"></th>
          <td class="leftHeader">T5</td>
-         <td>e250 τ</td>
+         <td>e240 τ</td>
       </tr>
       <tr>
          <td class="leftHeader">T2</td>
-         <td>e275 τ</td>
+         <td>e295 τ</td>
          <th class="invisible"></th>
          <td class="leftHeader">T6</td>
-         <td>e150 τ</td>
+         <td>e172 τ</td>
       </tr>
       <tr>
          <td class="leftHeader">T3</td>
-         <td>e150 τ</td>
+         <td>e133 τ</td>
          <th class="invisible"></th>
          <td class="leftHeader">T7</td>
-         <td>e150 τ</td>
+         <td>e145 τ</td>
       </tr>
       <tr>
          <td class="leftHeader">T4</td>
-         <td>e175 τ</td>
+         <td>e165 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>Skip</td>
+      </tr>
+   </tbody>
+</table>
+
+#### Active
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e200 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e265 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e290 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e165 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e130 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e145 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e155 τ</td>
          <th class="invisible"></th>
          <td class="leftHeader">T8</td>
          <td>Skip</td>
