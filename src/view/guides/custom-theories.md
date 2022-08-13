@@ -62,7 +62,10 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 <table class="variable_summary">
 <caption>Brief summary of variable strengths of WSP.</caption>
-   <thead></thead>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
    <tbody>
       <tr>
          <th>q1</th>
