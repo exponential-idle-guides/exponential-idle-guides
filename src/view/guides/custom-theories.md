@@ -468,7 +468,14 @@ table.variable_summary {
 
 p {
 
+   font-size: 1.0rem;
+}
+
+h4 {
    font-size: 1.2rem;
+}
+h3 {
+   font-size: 1.5rem;
 }
 </style>
 
