@@ -365,6 +365,7 @@ Strategy Credits:
 
 ![\\(c_2\\) Ratio](/images/t1ratioc2ratio.png)
 <br /> <br />
+
 **For the \\(c_3\\) Ratio:**
 <br /> <br />
 
@@ -4207,8 +4208,11 @@ Strategy Credits:
 **Milestone Swap:**
 
 There are 3 milestone states:<br />
+
 **State 1**: 4/3/1/2 (prioritizes boost for the \\(e-\gamma\\) term)<br />
+
 **State 2**: 2/1/4/3 (prioritizes boost for \\(\dot\rho_2\\)) <br />
+
 **State 3**: 1/2/4/3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br /><br />
 
 This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br /><br />
@@ -4355,6 +4359,7 @@ Strategy Credit:
 
 ### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
 <br />
+
 **For the milestone swapping details, read the above strategy, [SLMS](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
 
 <table class="spqcey">
