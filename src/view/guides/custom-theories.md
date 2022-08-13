@@ -10,7 +10,7 @@ order: 8
 
 ### Custom Theory Basics
 
-
+<p>
 Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
 custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
@@ -18,7 +18,7 @@ custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Seque
 
 Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
 \\(\tau\\) = \\(\rho^{0.1}\\) while EF has a tau contribution of \\(\tau\\) = \\(\rho^{0.4}\\)
-
+</p>
 
 
 ### Which Custom Theories (CTs) should I do?
@@ -39,7 +39,7 @@ If you have active time, try to do the CT with the highest active tau/hour.<br><
 
 #### WSP Overview
 
-The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
+<p>The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br></p>
 
 #### WSP Equation Description
 
@@ -52,15 +52,15 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 \\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 <br><br>
 
-The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
+<p>The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
 For the second line, the higher the \\(\chi\\) (pronounced 'chi'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the c2 variable is a milestone which is not initially available. <br>
 
 The third line is the most complicated. Generally we can factorize an equation when its graph touches the x-axis. For a sine curve, it touches the x-axis starting from x = 0, and repeats every x= \\(\pi\\). These multiplied factors form the basis of the Weierstrass Sine Product. A simpler interpretation is that we can see 'x' appearing both outside and inside the products in the numerator. Since \\(\chi\\) is 'x' here, the higher the \\(\chi\\), the higher the \\(s_n({\chi})\\) as stated earlier. <br>
 
-Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. <br><br>
+Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. <br><br></p>
 
-Approximate variable strengths on rhodot with all milestones are as follows:
+<p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
 
 <table class="variable_summary">
 <caption>Brief summary of variable strengths of WSP.</caption>
@@ -468,7 +468,7 @@ table.variable_summary {
 
 p {
 
-   font-size: 1.0rem;
+   font-size: 0.8rem;
 }
 
 h4 {
