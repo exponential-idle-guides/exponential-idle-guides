@@ -12,7 +12,7 @@ order: 8
 
 <p>
 Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
-custom theories. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
+custom theories that contribute to tau up to e150 per theory. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
 
 
@@ -22,16 +22,10 @@ Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contr
 
 
 ### Which Custom Theories (CTs) should I do?
-<p> In general, use XLII's sim from <a href="https://theory-simulator.tredec.repl.co/"> here. </a>
-The author is in the process of updating the sim with early theory strategies. <br>
-From the sim results, the 3 most important columns are: <br>
-active tau/hours, <br>
-idle tau/hours, <br>
-publication time, <br><br>
-If you have active time, try to do the CT with the highest active tau/hour.<br><br>
+<p> 
+If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
- For daytime idles, do the one with the highest idle tau/hour, with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just below.<br><br>
- For overnight, do the one with the highest publication time, with preference toward EF and SL once again. The reason is that not publishing a theory becomes more and more inefficient the longer we run a theory pass its ideal publication point. As an example, if the simulation recommends publishing after 1 hour. We would've wasted almost 7 hours if we overnight for 8 hours. This is terribly inefficient. <br>
+ For idles, do the one with the highest idle tau/hour (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just below.<br><br>
 
 </p>
 
@@ -88,7 +82,7 @@ Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\
       </tr>
       <tr>
          <th>c2</th>
-         <td>Doubles rhodot - NOT instant.</td>
+         <td>Doubles rhodot - over time</td>
       </tr>
 
    </tbody>
@@ -212,6 +206,115 @@ We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doe
 #### Milestone Swapping Strategies
 (Courtesy of Gen).
 
+<table class="T2">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th colspan="9" style="text-align:center">Milestone      Cycles</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-2</td>
+         <td>0/0/1(2)/0</td>
+         <td class="arrow">→</td>
+         <td>1(2)/0/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/0/1(2)/0</td>
+         <td class="arrow">→</td>
+         <td>0/1(2)/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>100s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">3</td>
+         <td>0/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>2/1/0/0</td>
+         <td class="arrow">→</td>
+         <td>0/0/3/0</td>
+         <td class="arrow">→</td>
+         <td>1/2/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>100s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">4</td>
+         <td>0/0/3/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/0/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-6</td>
+         <td>0/0/3/x</td>
+         <td class="arrow">→</td>
+         <td>2/2/x/0</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">7+</td>
+         <td>x/y/3/3</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/x</td>
+         <td class="arrow">→</td>
+         <td>Repeat</td>
+         <td class="invisible"></td>
+         <td>(<strong>x → y</strong>)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader"></td>
+         <td>10s</td>
+         <td class="invisible"></td>
+         <td>40s</td>
+         <td class="invisible"></td>
+         <td>50s</td>
+      </tr>
+   </tbody>
+</table>
+
 x/x/x/x represent the max buy order of milestones not the amount allocated.
 For example, 4/3/1/2 means "Allocate everything into 4th milestone, then use leftovers into 3rd milestone, then into 1st milestone, then into 2nd milestone". 
 
@@ -238,6 +341,8 @@ At this point, the theory becomes very idle. We simply autobuy all. Publish at a
 
 #### SL milestone route
 
+##### Idle
+
 <table class="milestone_routing">
    <tbody>
       <tr>
@@ -254,7 +359,9 @@ At this point, the theory becomes very idle. We simply autobuy all. Publish at a
          
 </table>
 
-Milestone Swapping (active)
+##### Active
+
+<p>Milestone Swapping (active)
 
 How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones etc.
 
@@ -270,6 +377,8 @@ e100 - e175: SLMS2
 e175 - e200: SLMS3
 e200 - e300: SLMS
 
+</p>
+
 ### Euler's Formula (EF)
 
 #### EF Overview
@@ -277,15 +386,19 @@ e200 - e300: SLMS
 This custom theory, along with Convergents to Square Root 2, were released at the same time. This theory was created jointly by Peanut, Snaeky, and XLII. This theory is based on Euler's Formula of 
 \\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
 
-This theory is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:
+This theory is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:</p>
 
 \\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
+
 \\(G(t) = g_r+g_i\\)
+
 \\(g_r = b_1b_2cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
+
 \\(\dot{q} = q_1q_2\\)
+
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize rho1dot. All the a1a2a3 terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory. 
+<p>The first line is the main equation. We want to maximize rho1dot. All the a1a2a3 terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory. 
 
 The second line is not relevant to the strategies. 
 
