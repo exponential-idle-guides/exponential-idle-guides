@@ -4211,7 +4211,7 @@ Strategy Credits:
 **Milestone Swap:**
 
 The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4/3/1/2 means you should prioritize buying third milestone levels first, then after the third milestone is maxed, then you buy fourth milestone levels, and then second milestone, then first milestone.
+For example, 4/3/1/2 means you should prioritize buying third milestone levels first, then after the third milestone is maxed, then you buy fourth milestone levels, and then second milestone, then first milestone. <br />
 
 There are 3 milestone states:<br />
 
@@ -4303,9 +4303,9 @@ The ratios for swapping are as follows, where you enter the next state when the 
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br />
 
-**cost** in the table refers to minimum(\\(b_1\\) cost, \\(b_2\\) cost) <br />
+**cost** in the table refers to minimum(\\(b_1\\) cost, \\(b_2\\) cost) <br /><br />
 
 This may seem confusing, but let's take the first row as an example.<br /><br />
 In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
