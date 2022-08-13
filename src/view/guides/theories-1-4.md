@@ -119,53 +119,13 @@ influences the rate of change of \\(ρ\\) therefore buying a variable as
 soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
 because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
-and you have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\)
-you are reducing your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
-There are \\(3\\) terms that influence the rate of change of \\(ρ\\).
-All are affected by the previous state of \\(ρ\\). Let’s ignore the
-first since it has such a small influence and consider the above case to
-determine when an upgrade would be better. The values below are to be
-only used when you are past \\(e150 τ\\) and max milestones. Buy each
-variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
-For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
-\\(2*5.0=10 ρ_1\\).
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<small><sub>1</sub></small></td>
-         <td>10,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">c<small><sub>4</sub></small></td>
-         <td>1.01</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>2</sub></small></td>
-         <td>1,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>1</sub></small></td>
-         <td>5.0</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>3</sub></small></td>
-         <td>2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>2</sub></small></td>
-         <td>1.15</td>
-      </tr>
-   </tbody>
-</table>
+and you have \\(11ρ\\), buying that level will reduce \\(ρ_{n+1}\\) to \\(1\\). This reduces your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
+There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio) are to be
+only used when you are past \\(e150 τ\\) and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
 
 Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
+
+__The video below is only good for early tau between ee150 and ee250.__
 
 {{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
 
