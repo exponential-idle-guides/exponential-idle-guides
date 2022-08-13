@@ -54,7 +54,7 @@ If you have active time, try to do the CT with the highest active tau/hour.<br><
 
 <p>The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
-For the second line, the higher the \\(\chi\\) (pronounced 'chi'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the c2 variable is a milestone which is not initially available. <br>
+For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the c2 variable is a milestone which is not initially available. <br>
 
 The third line is the most complicated. Generally we can factorize an equation when its graph touches the x-axis. For a sine curve, it touches the x-axis starting from x = 0, and repeats every x= \\(\pi\\). These multiplied factors form the basis of the Weierstrass Sine Product. A simpler interpretation is that we can see 'x' appearing both outside and inside the products in the numerator. Since \\(\chi\\) is 'x' here, the higher the \\(\chi\\), the higher the \\(s_n({\chi})\\) as stated earlier. <br>
 
@@ -270,7 +270,7 @@ e200 - e300: SLMS
 ### Euler's Formula (EF)
 
 #### EF Overview
-
+<p>
 This custom theory, along with Convergents to Square Root 2, were released at the same time. This theory was created jointly by Peanut, Snaeky, and XLII. This theory is based on Euler's Formula of 
 \\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
 
@@ -290,7 +290,7 @@ The third line describes g_r and g_i, which are used to generate 'R' and 'I' cur
 
 The fourth line simply describes qdot. This is used in the first equation directly. 
 
-The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
+The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)</p>
 
 #### EF strategy
 
@@ -404,6 +404,13 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 #### CSR2 Overview
 
+<p> This custom theory was created by Solarion and released at the same time as Euler's Formula. This theory is based on approximations of square root 2 using recurrence formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:
+
+#### CSR2 Equation Description
+
+\\(\dot{rho} = q_1^{1.15}q_2q\\)
+\\(\dot{q} = c_1c_2^2 x |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\) 
+</p>
 
 
 #### CSR2 strategy
