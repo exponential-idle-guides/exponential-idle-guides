@@ -60,6 +60,7 @@ The third line is the most complicated. Generally we can factorize an equation w
 
 Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. <br><br></p>
 
+#### WSP Variable Description
 <p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
 
 <table class="T2">
@@ -182,6 +183,8 @@ From the equations above, the approximate long term effects of rho2dot and rho3d
 rho2dot: square root effect - quadrupling rho2dot -> double rho1. 
 rho3dot: approximately ^0.64 - rho1 ~= rho3dot^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling rho3 -> double rho1. 
 
+#### SL Variable Description
+
 Approximate variable strengths on rho1dot with all milestones are as follows:
 
 a1: Value times 3.5 every 3 levels on average. This comes to about 52% increase in rho2dot per level. Since rho1 is approximately square root of rho2, overall this comes down to about 23% increase in rho1 per level.<br>
@@ -291,6 +294,8 @@ The third line describes g_r and g_i, which are used to generate 'R' and 'I' cur
 The fourth line simply describes qdot. This is used in the first equation directly. 
 
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)</p>
+
+#### EF Variable Description
 
 #### EF strategy
 
@@ -413,23 +418,76 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 \\(\dot{q} = c_1c_2^2 X |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\) 
 \\(N_m = 2N_{m-1} + N_{m-2}, N_0 = 1, N_1 = 3\\)
 \\(D_m = 2D_{m-1} + D_{m-2}, D_0 = 1, D_1 = 2\\)
-\\(\\)
+\\(m = n + log_2{(c_2)}\\)
+<br><br>
 
+<p> The first line is self explanatory. The exponents on q1 are from milestones. 'q' will increase during the publication. 
+<br>
+For the second line, both the variable c2 and its exponents are from milestones. The absolute value section on the right describes the approximation of Nm / Dm to square root 2. As Nm / Dm get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
+<br>
+The third and fourth lines are recurrence relations on Nm and Dm. This means that the current value of Nm and Dm depend on their previous values. We start with N0 = 1, N1 = 3. The equation will then read as:<br>
+N2 = 2N1 + N0 -> N2 = 2 x 3 + 1 = 7. 
+Then N3 = 2N2 + N1 -> 2 x 7 + 3 = 17. 
+Similar logic is applied to Dm equations. 
+
+This occurs until we reach Nm and Dm reach whatever 'm' values we have. This is shown in the next equation:
+
+The fourth equation relates 'm' as described above. We can see that as we buy n and c2, our m will increase, so the 2 recurrence equations above will 'repeat' more often and Nm, Dm will increase. From how n and c2 values are calculated, buying 1 level of n or c2 will increase m by 1.
+
+
+</p>
+
+#### CSR2 Variable Description
+<p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
+<p>
+q1: About 7% increase in rhodot per level (instantaneous).
+q2: Doubles rhodot per level (instantaneous).
+n: Long term will multiply rhodot by 6 times! However, it is not instantaneous.
+c1: About 7% increase in rhodot per level; not instantaneous. This is the weakest variable. 
+c2: Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.
+
+
+</p>
 
 #### CSR2 strategy
 
+##### Idle
 
+<p>
+For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the q exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+
+Once you have all milestones, autobuy all!
+
+</p>
+
+##### Active
+
+<p>
+The active strategies is much more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and q1, where you buy them when they are less than 10% cost of minimum(c2, q2, n). 
+
+There's also a milestone swapping strategy. The general idea is to switch milestones from c2 and its exponents, to q1 exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
+</p>
+
+##### CSR2 Milestone Swapping Explanation
+
+<p>This theory has a milestone swapping strategy before full milestones. We have q1 exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
+
+The reason milestone swapping works is because the benefits of using c2 related milestones (having high q), remain when you switch to q1 exponent milestones. If we only use q1 exponent, then we have really low q. If we only use c2 related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through c2 related milestones, then take advantage of the q1 exponent milestones, while keeping the high value of q we've accumulated earlier!
+
+For a more detailed explanation on how to actually do the strategy, please see the Theory Strategies section of the guide.
+
+</p>
 
 #### CSR2 milestone route
 
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>3/0/0</td>
+         <td>0/1/0</td>
          <td class="arrow">→</td>
-         <td>3/0/3</td>
+         <td>0/1/2</td>
          <td class="arrow">→</td>
-         <td>3/1/3</td></td>
+         <td>3/1/2</td></td>
       </tr>
    </tbody>
 </table>
@@ -454,39 +512,6 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
    </tbody>
 </table>
 
-
-
-<table class="variable_summary">
-<caption>Brief summary of variable strengths of WSP.</caption>
-   <thead><tr>
-   <th class="invisible"></th>
-   <th colspan="2" style="text-align:center">Brief Description</th>
-   </tr></thead>
-   <tbody>
-      <tr>
-         <th>q1</th>
-         <td>About 7% increase on rhodot on average.</td>
-      </tr>
-      <tr>
-         <th>q2</th>
-         <td>Doubles rhodot - instantaneous.</td>
-      </tr>
-      <tr>
-         <th>n</th>
-         <td>Initially about 50% increase similar to c1. Slowly ramps up to 4 times increase in rhodot. At e400 rho and higher it is very close to 4x increase.</td>
-      </tr>
-      <tr>
-         <th>c1</th>
-         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
-      </tr>
-      <tr>
-         <th>c2</th>
-         <td>Doubles rhodot - NOT instant.</td>
-      </tr>
-
-   </tbody>
-
-</table>
 
 
 <style>
