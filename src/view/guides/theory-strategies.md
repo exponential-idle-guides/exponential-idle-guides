@@ -8,7 +8,7 @@ order: 8
 ---
 
 The theory sim we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
-### Modulus Explanation
+## Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
 13 % 10 = 3<br />
 21 % 10 = 1<br />
@@ -16,27 +16,29 @@ A "%" can be seen in the table of some strategies. The “%” indicates modulus
 Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br />
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
+## Official Theories
+
 ### Theory 1: Recurrence Relations
 
 T1 is one of the theories that benefit the most from active strategies. T1<span style="color:#41AD21">SolarXLII xexxx</span> improves slightly on T1<span style="color:#41AD21">AI</span>.
 
-- [T1<span style="color:#41AD21">SolarXLII xexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+- [T1<span style="color:#41AD21">SolarXLII xexxx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 
-- [T1<span style="color:#41AD21">Ratio</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
+- [T1<span style="color:#41AD21">Ratio</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
 
-- [T1<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
+- [T1<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
 
-- [T1<span style="color:#4665F0">C34</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
+- [T1<span style="color:#4665F0">C34</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
 ### Theory 2: Differential Calculus
 
 T2 is the only theory without an active strategy, despite attempts.
 
-- [T2<span style="color:#41AD21">MC</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:#41AD21">Coast-X%</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:#41AD21">Coast-X%</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
 
-- [T2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
+- [T2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
 
 ### Theory 3: Linear Algebra
 
@@ -44,136 +46,136 @@ T3 has the most variables of any theory and has benefitted the most from player-
 T3</span><span style="color:#4665F0">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
 T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span> is similar to T3</span><span style="color:#4665F0">SNAX</span> but is designed to be QoL compatible.
 
-- [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#4665F0">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:#4665F0">Play</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#4665F0">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><span style="color:#4665F0">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc11c13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3noc13c32c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
+- [T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">C11C12C21</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
+- [T3<span style="color:#4665F0">C11C12C21</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
 
 ### Theory 4: Polynomials
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d66)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d66)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4snax)&nbsp; — &nbsp;Semi-Idle
+- [T4<span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123d)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C123</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C123</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c123)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12d)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c12)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56d)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C56</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C56</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c56)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4d)&nbsp; — &nbsp;Active
+- [T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C4</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C4</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C5</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C5</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
 
-- [T4](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4)&nbsp; — &nbsp;Idle
+- [T4](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4)&nbsp; — &nbsp;Idle
 
 ### Theory 5: Logistic Function
 
 T5 is the second-strongest theory in endgame, only behind T6.
 
-- [T5<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5ai)&nbsp; — &nbsp;Active
+- [T5<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t5ai)&nbsp; — &nbsp;Active
 
-- [T5<span style="color:#41AD21">Idle xexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
+- [T5<span style="color:#41AD21">Idle xexxx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
 
-- [T5](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t5)&nbsp; — &nbsp;Idle
+- [T5](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t5)&nbsp; — &nbsp;Idle
 
 ### Theory 6: Integral Calculus
 
 T6 is the most powerful theory in endgame, with several players reaching well over e1100𝜏 on their main save, some even over e1200𝜏.
 
-- [T6<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6ai)&nbsp; — &nbsp;Active
+- [T6<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6ai)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#41AD21">SNAX x.xxexxx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
+- [T6<span style="color:#41AD21">SNAX x.xxexxx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc34)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc1234d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc1234d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc1234)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc1234)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc345d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc345d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc345)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6noc345)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c4d)&nbsp; — &nbsp;Active
+- [T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c4d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#4665F0">C4</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c4)&nbsp; — &nbsp;Idle
+- [T6<span style="color:#4665F0">C4</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c4)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c3d)&nbsp; — &nbsp;Active
+- [T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c3d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c3)&nbsp; — &nbsp;Idle
+- [T6<span style="color:#4665F0">C3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c3)&nbsp; — &nbsp;Idle
 
 ### Theory 7: Numerical Methods
 
 T7 is the third-weakest theory, ahead of T2 and T8.
 T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of T7<span style="color:#41AD21">Play-25</span>.
 
-- [T7<span style="color:#41AD21">PlaySpqceyX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
+- [T7<span style="color:#41AD21">PlaySpqceyX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7playspqceyx)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#41AD21">Play-25</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7play-25)&nbsp; — &nbsp;Active
+- [T7<span style="color:#41AD21">Play-25</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7play-25)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c3d)&nbsp; — &nbsp;Active
+- [T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c3d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12d)&nbsp; — &nbsp;Active
+- [T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12)&nbsp; — &nbsp;Idle
+- [T7<span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c123d)&nbsp; — &nbsp;Active
+- [T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7c123d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc12)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc123)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc123)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc124)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc124)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc1234)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7noc1234)&nbsp; — &nbsp;Idle
 
-- [T7](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t7)&nbsp; — &nbsp;Idle
+- [T7](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7)&nbsp; — &nbsp;Idle
 
 ### Theory 8: Chaos Theory
 
@@ -181,27 +183,27 @@ T8 is the weakest theory in endgame and has the most active strategy of any theo
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br />
 Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
-- [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
+- [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
-- [T8<span style="color:#41AD21">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
+- [T8<span style="color:#41AD21">Play</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8snax)&nbsp; — &nbsp;Semi-Idle
+- [T8<span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t834)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc5t834)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc3)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8d)&nbsp; — &nbsp;Active
+- [T8<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8d)&nbsp; — &nbsp;Active
 
-- [T8](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
+- [T8](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
 ## Official Custom Theories
 In chronological order of release.
@@ -211,53 +213,51 @@ In chronological order of release.
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSP<span style="color:#41AD21">AI</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
+- [WSP<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
+- [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
+- [WSP<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
+- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 ### Custom Theory 2: Sequential Limits
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:#41AD21">MS</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms)&nbsp; — &nbsp;Active
+- [SL<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slmsd)&nbsp; — &nbsp;Very Active
+- [SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slmsd)&nbsp; — &nbsp;Very Active
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopad)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
+- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 3: Euler's Formula
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
-- [EF<span style="color:#41AD21">AI (post-e50ρ)</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
+- [EF<span style="color:#41AD21">AI (post-e50ρ)</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
 
-- [EF<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
+- [EF<span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
 
-- [EF<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
+- [EF<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efd)&nbsp; — &nbsp;Active
 
-- [EF](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
+- [EF](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
 
 ### Custom Theory 4: Convergents to √2
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
-- [CSR2<span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
+- [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
-- [CSR2](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
+- [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 <br /> <br />
 
-## Theory 1: Recurrence Relations
-<!-- **<font size="+4">Theory 1: Recurrence Relations</font>** -->
-
-### T1<span style="color:#41AD21">SolarXLII xexxx</span>
+<span class="h2-fake">Theory 1: Recurrence Relations</span>
+<span class="h3-fake">T1<span style="color:#41AD21">SolarXLII xexxx</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -315,12 +315,12 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 </table>
 
 The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
-### T1<span style="color:#41AD21">Ratio</span>
+<span class="h3-fake">T1<span style="color:#41AD21">Ratio</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -395,7 +395,7 @@ Strategy Credits:
 Strategy Credits:
 - XLII
 
-### T1<span style="color:#41AD21">AI</span>
+<span class="h3-fake">T1<span style="color:#41AD21">AI</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -429,7 +429,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T1<span style="color:#4665F0">C34</span>
+<span class="h3-fake">T1<span style="color:#4665F0">C34</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -463,9 +463,9 @@ Strategy Credits:
    </tbody>
 </table>
 
-## Theory 2: Differential Calculus
+<span class="h2-fake">Theory 2: Differential Calculus</span>
 
-### T2<span style="color:#41AD21">MC</span>
+<span class="h3-fake">T2<span style="color:#41AD21">MC</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -554,7 +554,7 @@ Strategy Credits:
 - XLII, whose theory simulator was used to develop and test this strategy. <br />
 
 The “MC” in T2MC stands for **M**ultivariable**C**oast.
-### T2<span style="color:#41AD21">Coast-X%</span>
+<span class="h3-fake">T2<span style="color:#41AD21">Coast-X%</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -614,7 +614,7 @@ The “MC” in T2MC stands for **M**ultivariable**C**oast.
 If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br /> <br />
 We generally recommend using T2<span style="color:#41AD21">MC</span> instead of this strategy.
 
-### T2
+<span class="h3-fake">T2</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -656,9 +656,9 @@ We generally recommend using T2<span style="color:#41AD21">MC</span> instead of 
    </tbody>
 </table>
 
-## Theory 3: Linear Algebra
+<span class="h2-fake">Theory 3: Linear Algebra</span>
 
-### T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span>
+<span class="h3-fake">T3<span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -773,7 +773,7 @@ Strategy Credits:
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
-### T3</span><span style="color:#4665F0">Play</span>
+<span class="h3-fake">T3<span style="color:#4665F0">Play</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -867,7 +867,7 @@ Strategy Credits:
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3</span><span style="color:#4665F0">SNAX</span>
+<span class="h3-fake">T3<span style="color:#4665F0">SNAX</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -948,7 +948,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3</span><span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span>
+<span class="h3-fake">T3<span style="color:#4665F0">SNAX</span><span style="color:#41AD21">2</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1031,7 +1031,7 @@ Strategy Credits:
 <br /> <br />
 Designed to be easily compatible with current versions of QoL.
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1113,7 +1113,7 @@ Strategy Credits:
 - Playspout
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1194,7 +1194,7 @@ Strategy Credits:
 - xelaroc
 - Playspout
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1253,7 +1253,7 @@ Strategy Credits:
 </table>
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1311,7 +1311,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1369,7 +1369,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1427,7 +1427,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1485,7 +1485,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1543,7 +1543,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1601,7 +1601,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>
+<span class="h3-fake">T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1659,7 +1659,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1717,7 +1717,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">C11C12C21</span>
+<span class="h3-fake">T3<span style="color:#4665F0">C11C12C21</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1776,9 +1776,9 @@ Strategy Credits:
 </table>
 
 
-## Theory 4: Polynomials
+<span class="h2-fake">Theory 4: Polynomials</span>
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1836,7 +1836,7 @@ Strategy Credits:
 </table>
 
 When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
 The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br /> <br />
 
@@ -1845,7 +1845,7 @@ Strategy Credits:
 - rus9384#1864
 
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1887,7 +1887,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4<span style="color:#41AD21">SNAX</span>
+<span class="h3-fake">T4<span style="color:#41AD21">SNAX</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -1951,7 +1951,7 @@ Strategy Credits:
 - XLII
 
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -2008,7 +2008,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C3</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C3</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2050,7 +2050,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2094,7 +2094,7 @@ Strategy Credits:
 
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>.
 
-### T4<span style="color:#4665F0">C123</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C123</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2138,7 +2138,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span>.
 
-### T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2180,7 +2180,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C12</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C12</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2222,7 +2222,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2264,7 +2264,8 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C56</span>
+</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C56</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2306,7 +2307,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2348,7 +2349,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C4</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C4</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2390,7 +2391,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C5</span>
+<span class="h3-fake">T4<span style="color:#4665F0">C5</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2432,7 +2433,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4
+<span class="h3-fake">T4</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2474,12 +2475,13 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-## Theory 5: Logistic Function
+<span class="h2-fake">Theory 5: Logistic Function</span>
 
-### T5<span style="color:#41AD21">AI</span>
+<span class="h3-fake">T5<span style="color:#41AD21">AI</span></span>
+
 This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
 
-### T5<span style="color:#41AD21">Idle xexxx</span>
+<span class="h3-fake">T5<span style="color:#41AD21">Idle xexxx</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -2528,7 +2530,7 @@ The “xexxx” is returned by the recommended [theory simulator.](https://theor
 Strategy Credit:
 - XLII
 
-### T5
+<span class="h3-fake">T5</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2558,9 +2560,9 @@ Strategy Credit:
    </tbody>
 </table>
 
-## Theory 6: Integral Calculus
+<span class="h2-fake">Theory 6: Integral Calculus</span>
 
-### T6<span style="color:#41AD21">AI</span>
+<span class="h3-fake">T6<span style="color:#41AD21">AI</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2608,9 +2610,9 @@ Strategy Credit:
 
 <br />
 
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-### T6<span style="color:#41AD21">SNAX x.xxexxx</span>
+<span class="h3-fake">T6<span style="color:#41AD21">SNAX x.xxexxx</span></span>
 
 <table class="spqcey">
 <thead>
@@ -2680,7 +2682,7 @@ Strategy Credits:
 - XLII
 
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2726,7 +2728,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2772,7 +2774,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2818,7 +2820,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2864,7 +2866,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2912,7 +2914,7 @@ Strategy Credits:
 
 This strategy is sometimes seen at lower taus but not at higher taus.
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
+<span class="h3-fake">T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2960,7 +2962,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 
 This strategy is sometimes seen at lower taus but not at higher taus.
 
-### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3006,7 +3008,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
    </tbody>
 </table>
 
-### T6<span style="color:#4665F0">C4</span>
+<span class="h3-fake">T6<span style="color:#4665F0">C4</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3052,7 +3054,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
    </tbody>
 </table>
 
-### T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3091,7 +3093,8 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 </table>
 
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
-### T6<span style="color:#4665F0">C3</span>
+
+<span class="h3-fake">T6<span style="color:#4665F0">C3</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3130,9 +3133,10 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 </table>
 
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
-## Theory 7: Numerical Methods
 
-### T7<span style="color:#41AD21">PlaySpqceyX</span>
+<span class="h2-fake">Theory 7: Numerical Methods</span>
+
+<span class="h3-fake">T7<span style="color:#41AD21">PlaySpqceyX</span></span>
 
 **If there is no number after T7PlaySpqcey, then use this table:**
 <table class="spqcey">
@@ -3214,7 +3218,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <br /> <br />
 
 The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br /> <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
@@ -3222,7 +3226,7 @@ Strategy Credits:
 - Snaeky for number after T7<span style="color:#41AD21">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
 - XLII for simulating Snaeky's idea
 
-### T7<span style="color:#41AD21">Play-25</span>
+<span class="h3-fake">T7<span style="color:#41AD21">Play-25</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3267,7 +3271,7 @@ T7<span style="color:#41AD21">Play-25</span> has a “25” due to the two 25% (
 Strategy Credits:
 - Playspout
 
-### T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3305,7 +3309,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3343,7 +3347,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C12</span>
+<span class="h3-fake">T7<span style="color:#4665F0">C12</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3381,7 +3385,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3419,7 +3423,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>
+<span class="h3-fake">T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3457,7 +3461,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>
+<span class="h3-fake">T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3495,7 +3499,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>
+<span class="h3-fake">T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3533,7 +3537,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+<span class="h3-fake">T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3571,7 +3575,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7
+<span class="h3-fake">T7</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3609,9 +3613,9 @@ Strategy Credits:
    </tbody>
 </table>
 
-## Theory 8: Chaos Theory
+<span class="h2-fake">Theory 8: Chaos Theory</span>
 
-### T8<span style="color:#41AD21">PlaySolarSwap</span>
+<span class="h3-fake">T8<span style="color:#41AD21">PlaySolarSwap</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3644,13 +3648,13 @@ Strategy Credits:
 **Milestone Swap:**<br />
 Every 34 seconds, remove one level from the first milestone then immediately add the level back.
 <br /> <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 Strategy Credits:
 - Playspout for the variable buying strategy
 - Solarion for the milestone swap idea
 
 
-### T8<span style="color:#41AD21">Play</span>
+<span class="h3-fake">T8<span style="color:#41AD21">Play</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3686,7 +3690,7 @@ If you ever see a “C” or an “L” instead of the “R”, use the Chen or 
 Strategy Credits:
 - Playspout
 
-### T8<span style="color:#41AD21">SNAX</span>
+<span class="h3-fake">T8<span style="color:#41AD21">SNAX</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -3740,7 +3744,7 @@ Strategy Credits:
 - Snaeky
 - XLII
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3771,9 +3775,9 @@ Strategy Credits:
 </table>
 <br />
 
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3803,7 +3807,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3833,7 +3837,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3864,7 +3868,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 </table>
 <br />
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3894,7 +3898,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>
+<span class="h3-fake">T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3924,7 +3928,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8<span style="color:#41AD21">d</span>
+<span class="h3-fake">T8<span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3954,7 +3958,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
    </tbody>
 </table>
 
-### T8
+<span class="h3-fake">T8</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3985,11 +3989,11 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 </table>
 <br />
 
-## Official Custom Theories
+<span class="h2-fake">Official Custom Theories</span>
 
-## Weierstraß Sine Product
+<span class="h2-fake">Weierstraß Sine Product</span>
 
-### WSP<span style="color:#41AD21">AI</span>
+<span class="h3-fake">WSP<span style="color:#41AD21">AI</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4023,7 +4027,7 @@ If you are confused about the "%", read about [it here.](https://spqcey-addition
 Strategy Credits:
 - xelaroc
 
-### WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+<span class="h3-fake">WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4066,7 +4070,7 @@ Strategy Credits:
 </table>
 <br /> <br />
 
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
 
@@ -4111,7 +4115,7 @@ Strategy Credits:
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
-### WSP<span style="color:#41AD21">d</span>
+<span class="h3-fake">WSP<span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4145,7 +4149,7 @@ Strategy Credits:
 Strategy Credits:
 - xelaroc
 
-### WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+<span class="h3-fake">WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4193,9 +4197,9 @@ Strategy Credits:
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for \\(c_1\\) modification
 
-## Sequential Limits
+<span class="h2-fake">Sequential Limits</span>
 
-### SL<span style="color:#41AD21">MS</span>
+<span class="h3-fake">SL<span style="color:#41AD21">MS</span></span>
 <br />
 
 **Milestone Swap:**
@@ -4347,9 +4351,9 @@ These numbers also tell you that you never want to be in State 2 for a long time
 Strategy Credit:
 - XLII
 
-### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span></span>
 <br />
-**For the milestone swapping details, read the above strategy, [SLMS](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
+**For the milestone swapping details, read the above strategy, [SLMS](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
 
 <table class="spqcey">
 <thead>
@@ -4393,12 +4397,12 @@ Strategy Credit:
 </table>
 <br /> <br />
 
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credit:
 - XLII
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>
+<span class="h3-fake">SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4448,7 +4452,7 @@ Strategy Credits:
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>
+<span class="h3-fake">SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4496,9 +4500,9 @@ Strategy Credits:
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 
-## Euler's Formula
+<span class="h2-fake">Euler's Formula</span>
 
-### EF<span style="color:#41AD21">AI (post-e50ρ)</span>
+<span class="h3-fake">EF<span style="color:#41AD21">AI (post-e50ρ)</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4567,13 +4571,13 @@ Strategy Credits:
 <br />
 
 When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
-If you are confused about the "%", read about [it here.](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
 
 Strategy Credits:
 - XLII
 - Playspout
 
-### EF<span style="color:#41AD21">SNAX</span>
+<span class="h3-fake">EF<span style="color:#41AD21">SNAX</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4648,7 +4652,7 @@ Strategy Credits:
 <br /> <br />
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
-### EF<span style="color:#41AD21">d</span>
+<span class="h3-fake">EF<span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4698,7 +4702,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### EF
+<span class="h3-fake">EF</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4748,9 +4752,9 @@ Strategy Credits:
    </tbody>
 </table>
 
-## Convergents to √2
+<span class="h2-fake">Convergents to √2</span>
 
-### CSR2<span style="color:#41AD21">XLx.xx</span>
+<span class="h3-fake">CSR2<span style="color:#41AD21">XLx.xx</span></span>
 <table class="spqcey">
 <thead>
    <tr>
@@ -4838,7 +4842,7 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
 Strategy Credits:
 - XLII
 
-### CSR2<span style="color:#41AD21">d</span>
+<span class="h3-fake">CSR2<span style="color:#41AD21">d</span></span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4868,7 +4872,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### CSR2
+<span class="h3-fake">CSR2</span>
 <table class="spqcey">
 <thead>
   <th></th>
