@@ -208,6 +208,7 @@ Older theory simulators may return the attractor as part of the strategy name (E
 - [T8](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
 <span class="h2-fake">Official Custom Theories</span>
+
 In chronological order of release.
 <!-- Read more about custom theories on (link to custom theory guide page) -->
 
