@@ -453,6 +453,38 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 
 
+<table class="variable_summary">
+<caption>Brief summary of variable strengths of WSP.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q1</th>
+         <td>About 7% increase on rhodot on average.</td>
+      </tr>
+      <tr>
+         <th>q2</th>
+         <td>Doubles rhodot - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Initially about 50% increase similar to c1. Slowly ramps up to 4 times increase in rhodot. At e400 rho and higher it is very close to 4x increase.</td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Doubles rhodot - NOT instant.</td>
+      </tr>
+
+   </tbody>
+
+</table>
+
 
 <style>
 table th td{
