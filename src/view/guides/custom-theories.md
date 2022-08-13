@@ -404,13 +404,16 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 #### CSR2 Overview
 
-<p> This custom theory was created by Solarion and released at the same time as Euler's Formula. This theory is based on approximations of square root 2 using recurrence formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:
+<p> This custom theory was created by Solarion and released at the same time as Euler's Formula. This theory is based on approximations of square root 2 using recurrence formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:</p>
 
 #### CSR2 Equation Description
 
 \\(\dot{rho} = q_1^{1.15}q_2q\\)
-\\(\dot{q} = c_1c_2^2 x |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\) 
-</p>
+
+\\(\dot{q} = c_1c_2^2 X |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\) 
+\\(N_m = 2N_{m-1} + N_{m-2}, N_0 = 1, N_1 = 3\\)
+\\(D_m = 2D_{m-1} + D_{m-2}, D_0 = 1, D_1 = 2\\)
+\\(\\)
 
 
 #### CSR2 strategy
@@ -487,24 +490,7 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 
 <style>
-table th td{
-    padding: 10px;
-    border: 5px;
-    border-color: blue;
-    background-color: #d7d9f2;
-}
 
-table.variable_summary {
-   
-    border: 5px solid blue;
-    letter-spacing: 2px;
-    font-family: sans-serif;
-    font-size: .8rem;
-}
-
-.variable_summary caption {
-
-}
 
 p {
 
