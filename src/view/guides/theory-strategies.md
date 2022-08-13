@@ -183,6 +183,8 @@ Older theory simulators may return the attractor as part of the strategy name (E
 
 - [T8<span style="color:#41AD21">Play</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8play)&nbsp; — &nbsp;Active
 
+- [T8<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8snax)&nbsp; — &nbsp;Semi-Idle
+
 - [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35d)&nbsp; — &nbsp;Active
 
 - [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t8noc35)&nbsp; — &nbsp;Idle
@@ -3618,6 +3620,59 @@ If you ever see a “C” or an “L” instead of the “R”, use the Chen or 
 Strategy Credits:
 - Playspout
 
+### T8<span style="color:#41AD21">SNAX</span>
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="3" style="text-align:center">T8SNAX</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier < 1.6</td>
+         <td class="rightHeader">Publication Multiplier 1.6-2.3</td>
+         <td class="rightHeader">Publication Multiplier > 2.3</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+<br /><br />
+
+Strategy Credits:
+- Snaeky
+- XLII
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
