@@ -252,9 +252,9 @@ T6 has the lowest decay of all the theories. It will be second place to T5 until
 get to \\(>e1100τ\\). You should overnight this and T4 after you get your T2 to \\(e350+\\).
 
 At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane. 
-This is used using a definate Integral, an integral that is bound between 2 values giving a single output. This does the 
+This is used using a definite integral, an integral that is bound between 2 values giving a single output. This does the 
 opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\), 
-this new equation is finding the Volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and 
+this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and 
 \\(0\\) to \\(r\\) respectively. 
 
 The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\) 
