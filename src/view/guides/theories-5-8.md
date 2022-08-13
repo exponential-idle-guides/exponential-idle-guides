@@ -11,7 +11,7 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing). 
+Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 <table class="graduation_routing">
    <tbody>
@@ -80,7 +80,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
 [star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
 
-There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) by XLII (for theories w/ max milestones).
+There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) by XLII, which works both below max milestones and after max milestones for all theories.
 
 #### How to push F(t) with R9 swapping
 
@@ -88,7 +88,7 @@ There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) b
 
 1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
 2. Start accel (preferably keep it between prestiges).
-3. Potentially sit here to stack t for bigger \\(\phi_2\\) when you have students in \\(\phi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\phi_2\\).
+3. Potentially sit here to stack t for bigger \\(\varphi_2\\) when you have students in \\(\varphi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\varphi_2\\).
 4. Respec all 10/20/30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
@@ -107,7 +107,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### Theory 1
 
-You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the best strategy and multiplier for the next publication.
+You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://theory-simulator.tredec.repl.co/) and the [Theory Sim Guide](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
@@ -165,26 +165,27 @@ this theory to \\(e30\\) easily, but it will take some time. A step-by-step on
 how to progress the theory is detailed below.
 
 Before e30, you should repeat this after every publication:
-<ol type="1">
-   <li>Buy everything <b>except</b> c<sub>2</sub></li>
-   <li>Once q growth reduces, c<sub>2</sub> levels can then be purchased individually. Only buy when c<sub>2</sub> is e1 lower than your current ρ, shown visually on the graph when it plateaus.</li>
-   <li>When you are within e10 of your last publication, you should buy everything but q<sub>1</sub> and c<sub>1</sub>. You should then manually buy q<sub>1</sub> and c<sub>1</sub> when it costs e1 lower than q<sub>2</sub> doubling. (c<sub>1</sub> only when q is not capped)</li>
-   <li>Repeat until e25. At e25, push for e30 with 0/1/0
-   milestone and start x6-10 multipliers.</li>
-</ol>
+
+1. Buy everything **except** \\(c_2\\).
+2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased individually.
+   Only buy when \\(c_2\\) is \\(e1\\) lower than your current \\(\rho\\).
+3. When you are within \\(e10\\) of your last publication, autobuy all but \\(q_1\\) & \\(c_1\\).
+   You should then manually buy \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than the \\(q_2\\) doubling.
+   Buy \\(c_1\\) only when \\(q\\) is not capped.
+4. Repeat until \\(e25\\).
+   At \\(e25\\), push for \\(e30\\) with 0/1/0 milestone and start \\(x6-10\\) multipliers.
+
+</br>
 
 After autobuy at e30, you should repeat this after every publication:
-<ol type="1">
-   <li>x1 (or x10 when above e200) buy c<sub>2</sub> manually and autobuy the rest until within ~e10 of your previous publication. Your graph should resemble a linear function on the graph.</li>
-   <li>As purchasing c<sub>2</sub> becomes less frequent and q growth will slow down at this point you should stop autobuying c<sub>1</sub> & q<sub>1.</sub></li>
-   <li>Around your last pub mark, you can start auto-buying c<sub>2</sub>. At this point, you should:</li>
-   <ol type="a">
-      <li>buy q<sub>1</sub> up to 15% of the cost of the next doubling purchase (2<sup>x</sup> purchase),</li>
-      <li>and buy c<sub>1</sub> after you purchase c<sub>2</sub> until q reaches its new cap.</li>
-   </ol>
-   <li>Once you reach your desired multiplier, publish. </li>
-   <li>Repeat this for stonks.</li>
-</ol>
+
+1. x1 (or x10 when above e200) buy \\(c_2\\) manually and autobuy the rest until within ~e10 of your previous publication.
+   Your graph should resemble a linear function on the graph.
+2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
+   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
+   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\).
+3. Once you reach the desired publication point, publish.
+4. Repeat this for stonks.
 
 ###### Commentary
 
@@ -195,9 +196,8 @@ After autobuy at e30, you should repeat this after every publication:
 {{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
-step 3, you can still get good results while auto buying \\(q_1\\) and
-manually purchasing \\(c_1\\) every 10-15min. Making the theory
-slightly less active.
+step 3, you can still get good results while autobuying \\(q_1\\) and
+manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 **Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
 
@@ -417,7 +417,7 @@ cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on
 
 ### Theory 8 skipping
 
-T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\phi\\). You will need
+T8 skip is significantly faster than buying T8 right away (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to about \\(e60\\) (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for \\(\varphi\\). You will need
 about e1350 \\(\tau\\) in order to get R9 (\\(ee14k\\)) without T8, which will help you get
 through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that**
 The current recommendation for your \\(\tau\\) distribution for T8 skip is as follows:
@@ -474,7 +474,7 @@ If your numbers are different, that is fine. You just need to reach 1e1350
 The optimal publication multiplier is 2.5-5 depending on how close you
 are to the next milestone. This theory is extremely slow at the start
 which is why we skip until we obtain R9. It is also the only one with a
-\\(1e20\\) milestone step. It will speed up once you hit 1e60 and
+\\(1e20\\) milestone step. It will speed up once you hit \\(1e60\\) and
 even faster at \\(1e80\\) and \\(1e100\\) etc. until ~\\(e250\\)-\\(e300\\).
 The worst part is the \\(1e50\\)-\\(1e60\\) grind. The grind to \\(1e60\\)
 will take a good bit of time but is faster with R9.

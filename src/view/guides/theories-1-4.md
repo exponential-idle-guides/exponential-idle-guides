@@ -119,53 +119,13 @@ influences the rate of change of \\(ρ\\) therefore buying a variable as
 soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
 because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
-and you have \\(11ρ\\) buying it will reduce to \\(ρ_{n+1}\\) to \\(1\\)
-you are reducing your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
-There are \\(3\\) terms that influence the rate of change of \\(ρ\\).
-All are affected by the previous state of \\(ρ\\). Let’s ignore the
-first since it has such a small influence and consider the above case to
-determine when an upgrade would be better. The values below are to be
-only used when you are past \\(e150 τ\\) and max milestones. Buy each
-variable when \\(ρ_1\\) is \\(x\\) times larger than that variable’s cost.
-For example, if \\(q_1\\) costs \\(2\\), buy it when \\(ρ_1\\) is
-\\(2*5.0=10 ρ_1\\).
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Multiplier</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<small><sub>1</sub></small></td>
-         <td>10,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">c<small><sub>4</sub></small></td>
-         <td>1.01</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>2</sub></small></td>
-         <td>1,000</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>1</sub></small></td>
-         <td>5.0</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<small><sub>3</sub></small></td>
-         <td>2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">q<small><sub>2</sub></small></td>
-         <td>1.15</td>
-      </tr>
-   </tbody>
-</table>
+and you have \\(11ρ\\), buying that level will reduce \\(ρ_{n+1}\\) to \\(1\\). This reduces your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
+There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio) are to be
+only used when you are past \\(e150 τ\\) and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
 
 Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
+
+__The video below is only good for early tau between ee150 and ee250.__
 
 {{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
 
@@ -238,57 +198,50 @@ boost.
 
 ##### Initial
 
-\\[q_1(t+dt)=q_1+q_2*dt\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1
 
-\\[r_1(t+dt)=r_1+r_2*dt\\]
-
-\\[\dot{ρ}=q_1r_1\\]
-
-##### First milestone
-
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2\\]
-
-\\[r_1(t+dt)=r_1+r_2*dt\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1
 
 \\[\dot{ρ}=q_1r_1\\]
 
-##### Second milestone
+##### First and Second milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1
 
-\\[\dot{ρ}=q_1r\\]
+\\[\dot{ρ}=q_1r_1\\]
 
 ##### Third and Fourth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
 \\[\dot{ρ}=q_1r_1\\]
 
 ##### Fifth to Seventh milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
-\\[\dot{ρ}=q_1r_1^{1.15}\\]
+\\[\dot{ρ}=q_1^{1.15}r_1\\]
 
 ##### Eight to Tenth milestones
 
-\\[q_1(t+dt)=q_1+q_2*dt+\frac{1}{2}q_3dt^2+\frac{1}{6}q_4dt^3\\]
+\\[\dot{q_n}=q_{n+1}*dt\\] for n=1, 2, 3
 
-\\[r_1(t+dt)=r_1+r_2*dt+\frac{1}{2}r_3dt^2+\frac{1}{6}r_4dt^3\\]
+\\[\dot{r_k}=r_{k+1}*dt\\] for k=1, 2, 3
 
 \\[\dot{ρ}=q_1^{1.15}r_1^{1.15}\\]
 
 #### T2 strategy
 
 The optimal multiplier is pretty high and is not known before \\(e30\\).
-The multipliers for active play we know at the moment are:\\(e25\\)-\\(e100\\)
-is \\(1k\\) to \\(10k\\); \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
+The multipliers for active play we know at the moment are:<br />
+- \\(e25\\)-\\(e100\\) is \\(1k\\) to \\(10k\\); <br />
+- \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
 
 ##### Idle
 
@@ -302,8 +255,8 @@ about a \\(1000\\) multiplier, but larger multipliers are fine.
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones. The active for T2 is on a 1-minute cycle: 40 seconds on
-0/0/x/x milestones and 10-20 sec on x/x/0/0 milestones. You will start a
+milestones. The active for T2 is on a 50-second cycle: 10 seconds on
+0/0/x/x milestones and 40 sec on x/x/0/0 milestones. You will start a
 publication on 0/0/x/x as the cost of the x/x/0/0 milestone upgrades are
 too large for you to get right away. When you can afford them, you will
 start the cycle. This is what you will do for the following number of
@@ -313,15 +266,7 @@ milestones:
    <thead>
       <tr>
          <th class="invisible"></th>
-         <th>Milestone</th>
-         <th></th>
-         <th>Cycles</th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
+         <th colspan="9" style="text-align:center">Milestone      Cycles</th>
       </tr>
    </thead>
    <tbody>
@@ -518,7 +463,7 @@ swapping strat in the previous paragraph, then all the remaining
 upgrades are at equivalent priority.
 
 At the end of any publication, around a 2-3 multiplier, you should turn
-off b1 and c31 as they cost \\(ρ_1\\). You will cruise until you get to a
+off \\(b_1\\) and \\(c_31\\) as they cost \\(ρ_1\\). You will cruise until you get to a
 3-4 multiplier. Publish and turn back on \\(ρ_1\\) costing variables and
 repeat.
 
@@ -640,37 +585,37 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 \\[\dot{ρ}=c_1c_2+c_3q\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### First milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Second milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Third milestone
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=q_1q_2/(1+q)\\]
 
 ##### Fourth to Sixth milestones
 
 \\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=2^3q_1q_2/(1+q)\\]
 
 ##### Seventh milestone
 
 \\[\dot{ρ}=c_1^{1.15}c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[q(t+dt)=q+2^3\frac{q_1q_2}{1+q}*dt\\]
+\\[\dot{q}=2^3q_1q_2/(1+q)\\]
 
 #### T4 strategy
 
