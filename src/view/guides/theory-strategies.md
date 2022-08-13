@@ -259,6 +259,8 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 <br /> <br />
 
+<span class="h2-fake">Official Theories</span>
+
 ## Theory 1: Recurrence Relations
 
 ### T1<span style="color:#41AD21">SolarXLII xexxx</span>
@@ -3989,7 +3991,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 <br />
 
-## Official Custom Theories
+<span class="h2-fake">Official Custom Theories</span>
 
 ## Weierstraß Sine Product
 
