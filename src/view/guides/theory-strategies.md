@@ -4211,15 +4211,15 @@ Strategy Credits:
 **Milestone Swap:**
 
 The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4/3/1/2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone. <br /><br />
+For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone. <br /><br />
 
 There are 3 milestone states:<br />
 
-**State 1**: 4/3/1/2 (prioritizes boost for the \\(e-\gamma\\) term)<br />
+**State 1**: 4→3→1→2 (prioritizes boost for the \\(e-\gamma\\) term)<br />
 
-**State 2**: 2/1/4/3 (prioritizes boost for \\(\dot\rho_2\\)) <br />
+**State 2**: 2→1→4→3 (prioritizes boost for \\(\dot\rho_2\\)) <br />
 
-**State 3**: 1/2/4/3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br /><br />
+**State 3**: 1→2→4→3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br /><br />
 
 This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br /><br />
 
