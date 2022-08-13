@@ -776,7 +776,7 @@ Strategy Credits:
 - Solarion for \\(c_{12}\\) overpush idea.
 - xelaroc, whose sim was used to verify Playspout's results
 - rus9384#1864 for changing phase 3 start from pub mult 1 to pub mult 1.2, and changing phase 4 start from 2 to 2.4
-- XLII, whose sim was used by rus to test T3</span><span style="color:#4665F0">Play</span><span style="color:#41AD21">2</span> modifications, including the one stated above.
+- XLII, whose sim was used by rus to test T3</span><span style="color:#41AD21">Play2</span> modifications, including the one stated above.
 
 <br /> <br />
 
