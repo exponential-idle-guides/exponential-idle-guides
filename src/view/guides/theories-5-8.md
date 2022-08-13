@@ -259,7 +259,7 @@ this new equation is finding the volume of the graph within the bounds of planes
 
 The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\) 
 upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is 
-slightly different. It is negative because the purchasing a \\(c_i\\) upgarade will increase the value of the integral, thus 
+slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus 
 \\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example, 
 lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will 
 be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(C\\) needs to be equal to \\(20\\).
