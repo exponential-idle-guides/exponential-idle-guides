@@ -62,7 +62,7 @@ Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\
 
 <p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
 
-<table class="variable_summary">
+<table class="T2">
 <caption>Brief summary of variable strengths of WSP.</caption>
    <thead><tr>
    <th class="invisible"></th>
