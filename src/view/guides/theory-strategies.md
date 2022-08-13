@@ -84,6 +84,8 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
 
+- [T4<span style="color:#41AD21">SNAX</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4snax)&nbsp; — &nbsp;Semi-Idle
+
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
 - [T4<span style="color:#4665F0">C3</span>](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3)&nbsp; — &nbsp;Idle
@@ -1884,6 +1886,70 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
+### T4<span style="color:#41AD21">SNAX</span>
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T4SNAX</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier < 2.75</td>
+         <td class="rightHeader">Publication Multiplier > 2.75</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+<br /><br />
+
+Strategy Credits:
+- Snaeky
+- XLII
+
 
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
 <table class="spqcey">
