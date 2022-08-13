@@ -4211,7 +4211,7 @@ Strategy Credits:
 **Milestone Swap:**
 
 The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4/3/1/2 means you should prioritize buying third milestone levels first, then after the third milestone is maxed, then you buy fourth milestone levels, and then second milestone, then first milestone. <br />
+For example, 4/3/1/2 means you should prioritize buying third milestone levels first, then after the third milestone is maxed, then you buy fourth milestone levels, and then second milestone, then first milestone. <br /><br />
 
 There are 3 milestone states:<br />
 
