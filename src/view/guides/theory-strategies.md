@@ -81,7 +81,7 @@ T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span s
 
 - [T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">C11C12C21</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21d)&nbsp; — &nbsp;Idle
+- [T3<span style="color:#4665F0">C11C12C21</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21)&nbsp; — &nbsp;Idle
 
 <span class="h3-fake">Theory 4: Polynomials</span>
 
@@ -255,7 +255,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
 - [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
