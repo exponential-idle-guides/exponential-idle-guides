@@ -3223,7 +3223,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 
 <br /> <br />
 
-While the "X" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "X" also indirectly affects how much \\(c_1\\) is bought. <br /> <br />
+While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought. <br /> <br />
 
 The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br /> <br />
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
