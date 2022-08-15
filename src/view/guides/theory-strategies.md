@@ -4391,7 +4391,7 @@ Strategy Credit:
      </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>When 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br />If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
          <td>❌</td>
       </tr>
@@ -4403,7 +4403,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br />If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>When b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
