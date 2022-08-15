@@ -318,7 +318,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
-         <td>When ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When cost is ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
       </tr>
    </tbody>
 </table>
@@ -771,6 +771,8 @@ We generally recommend using [T2<span style="color:#41AD21">MC</span>](https://e
    </tbody>
 </table>
 
+<br /><br />
+
 Strategy Credits:
 - Playspout for creating this strategy.
 - Solarion for \\(c_{12}\\) overpush idea.
@@ -800,21 +802,21 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When 2/9 of c<sub><sub><small>12</small></sub></sub> cost, 4/9 of c<sub><sub><small>22</small></sub></sub> cost</td>
-         <td>When ¼ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost, ½ of c<sub><sub><small>22</small></sub></sub> cost</td>
+         <td>When cost is 2/9 of c<sub><sub><small>12</small></sub></sub> cost, 4/9 of c<sub><sub><small>22</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost, ½ of c<sub><sub><small>22</small></sub></sub> cost</td>
          <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost, 4/9 of c<sub><sub><small>33</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, 4/9 of c<sub><sub><small>33</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
@@ -842,8 +844,8 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>When ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>When ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>When cost is ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>When cost is ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -866,9 +868,9 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When 9/32 of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is 9/32 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
       </tr>
    </tbody>
 </table>
@@ -913,7 +915,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub> (auto c<sub><sub><small>12</small></sub></sub> <br />also works, is a bit slower)</td>
+         <td>When cost × 100 < ρ<sub><sub><small>2</small></sub></sub> (autobuy c<sub><sub><small>12</small></sub></sub> <br />also works, is a bit slower)</td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -974,18 +976,18 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of ρ<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of ρ<sub><sub><small>1</small></sub></sub></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
-         <td>When ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
-         <td>When ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost is ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost is ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
@@ -1010,7 +1012,7 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
          <td>✔️</td>
-         <td>When ⅛ of ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is ⅛ of ρ<sub><sub><small>2</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
@@ -1029,7 +1031,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When 1/10 of ρ<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost is 1/10 of ρ<sub><sub><small>3</small></sub></sub></td>
          <td>❌</td>
       </tr>
    </tbody>
@@ -1039,7 +1041,8 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 <br /> <br />
-Designed to be easily compatible with current versions of QoL.
+Designed to be easily compatible with current versions of QoL.<br /> <br />
+This is the only active SNAX strategy.
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
 <table class="spqcey">
@@ -1213,15 +1216,15 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/8 of c<sub><sub><small>31</small></sub></sub> cost</td>
+         <td>When cost is 1/8 of c<sub><sub><small>31</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When 1/5 of other ρ<sub><sub><small>2</small></sub></sub> variables’ cost (c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
+         <td>When cost is 1/5 of other ρ<sub><sub><small>2</small></sub></sub> variables’ cost (c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/8 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is 1/8 of c<sub><sub><small>23</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
@@ -1330,15 +1333,15 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
+         <td>When cost is 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
+         <td>When cost is ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
@@ -1383,7 +1386,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC13C33d</th>
+  <th>T3NoC13C33</th>
 </thead>
    <tbody>
       <tr>
@@ -1441,20 +1444,20 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC13C33d</th>
+  <th>T3NoC11C13C33d</th>
 </thead>
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
+         <td>When cost is 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
+         <td>When cost is ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
@@ -1499,7 +1502,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC13C33d</th>
+  <th>T3NoC11C13C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1678,11 +1681,11 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅐ of min(c<sub><sub><small>11</small></sub></sub> cost, c<sub><sub><small>21</small></sub></sub> cost)</td>
+         <td>When cost is ⅐ of min(c<sub><sub><small>11</small></sub></sub> cost, c<sub><sub><small>21</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When ⅐ of c<sub><sub><small>12</small></sub></sub> cost</td>
+         <td>When cost is ⅐ of c<sub><sub><small>12</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
@@ -1840,7 +1843,7 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
-         <td>When ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When cost is ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
       </tr>
    </tbody>
 </table>
@@ -1888,7 +1891,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost and c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost and c<sub><sub><small>3</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -1977,7 +1980,7 @@ Strategy Credits:
      </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -2007,8 +2010,8 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2069,7 +2072,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2093,7 +2096,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2157,7 +2160,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2265,7 +2268,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2349,7 +2352,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2699,7 +2702,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2707,7 +2710,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -2715,7 +2718,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2791,7 +2794,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2799,7 +2802,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -2883,7 +2886,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2891,7 +2894,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -2899,7 +2902,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -2979,7 +2982,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
+         <td>When cost is ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2987,7 +2990,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
+         <td>When cost is ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -3071,7 +3074,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅓ of min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When cost is ⅓ of min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -3153,7 +3156,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
@@ -3165,15 +3168,15 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
@@ -3192,7 +3195,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
@@ -3204,15 +3207,15 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
@@ -3221,9 +3224,10 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-<br /> <br />
+<br />
 
-While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought. <br /> <br />
+While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought.
+**Regardless of the "X" value, the \\(c_1\\) buying condition remains "When 10 + \\(c_1\\)lvl % 10 times cheaper than \\(c_2\\) cost"**<br /> <br />
 
 The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br /> <br />
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
@@ -3243,7 +3247,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
@@ -3259,11 +3263,11 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
+         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
@@ -3288,7 +3292,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>3</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>3</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
@@ -3326,11 +3330,11 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅛ of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is ⅛ of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3402,11 +3406,11 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When cost is ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3640,7 +3644,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
@@ -3648,7 +3652,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
    </tbody>
 </table>
@@ -3671,7 +3675,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3679,7 +3683,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
@@ -3687,13 +3691,13 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost ¼ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is ¼ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
    </tbody>
 </table>
 <br />
 
-If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor.
+<!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
 <br /> <br />
 Strategy Credits:
 - Playspout
@@ -3824,7 +3828,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3885,7 +3889,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3945,7 +3949,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4010,7 +4014,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -4051,8 +4055,8 @@ Strategy Credits:
      </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
-         <td>When cost is 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
+         <td>When 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
+         <td>When 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -4082,7 +4086,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 
 The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
 
-<br /> <br />
+<br />
 
 <table class="spqcey">
 <thead>
@@ -4132,7 +4136,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -4144,7 +4148,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>2</small></sub></sub> cost<br />(recommended to stop buying before this)</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost<br />(recommended to stop buying before this)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4681,7 +4685,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>Buy when 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -4705,7 +4709,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>Buy when ¼ of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is ¼ of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
