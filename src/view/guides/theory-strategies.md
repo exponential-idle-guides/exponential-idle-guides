@@ -3185,7 +3185,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-**If there is a number after T7<span style="color:#41AD21">PlaySpqcey</span> (Example: T7<span style="color:#41AD21">PlaySpqcey10</span>), then use this table:**
+**If there is a number after T7<span style="color:#41AD21">PlaySpqcey</span> (Example: T7<span style="color:#41AD21">PlaySpqcey10</span>or T7<span style="color:#41AD21">PlaySpqcey100</span>), then use this table:**
 
 <table class="spqcey">
 <thead>
