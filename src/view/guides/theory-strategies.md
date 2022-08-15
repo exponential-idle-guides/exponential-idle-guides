@@ -622,7 +622,7 @@ The “MC” in T2MC stands for **M**ultivariable**C**oast.
 </table>
 
 If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br /> <br />
-We generally recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc) instead of this strategy.
+We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc) instead of this strategy.
 
 ### T2
 <table class="spqcey">
