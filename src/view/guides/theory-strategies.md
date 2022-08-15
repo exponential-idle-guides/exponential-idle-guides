@@ -3199,7 +3199,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
