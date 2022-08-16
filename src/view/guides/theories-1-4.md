@@ -238,10 +238,10 @@ boost.
 
 #### T2 strategy
 
-The optimal multiplier is pretty high and is not known before \\(e30\\).
-The multipliers for active play we know at the moment are:<br />
-- \\(e25\\)-\\(e100\\) is \\(1k\\) to \\(10k\\); <br />
-- \\(e100\\)-\\(e175\\) \\(10k\\)-\\(100k\\).
+The optimal multiplier is pretty high and is not known before \\(e30\\). The theory sim will recommend publication multipliers below these values, but the sim's T2<span style="color:#41AD21">MS</span> does not currently have coasting.
+The multipliers for active play (which do use coasting) we know at the moment are:<br />
+- \\(e25\tau\\)-\\(e100\tau\\) = \\(1k\\) to \\(10k\\) <br />
+- \\(e100\tau\\)-\\(e175\tau\\) = \\(10k\\)-\\(100k\\)
 
 ##### Idle
 
@@ -255,8 +255,8 @@ about a \\(1000\\) multiplier, but larger multipliers are fine.
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 sec for
-exponent priority and 40 sec for derivative priority. You will start a publication with exponent priority as the cost of milestones 3 & 4 are
+milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
+exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 & 4 are
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below with milestone upgrade priority. Max all milestones in order shown for each part of the cycle.
 
