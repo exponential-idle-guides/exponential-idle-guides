@@ -240,8 +240,8 @@ boost.
 
 The optimal multiplier is pretty high and is not known before \\(e30\\). The theory sim will recommend publication multipliers below these values, but the sim's T2<span style="color:#41AD21">MS</span> does not currently have coasting.
 The multipliers for active play (which do use coasting) we know at the moment are:<br />
-- \\(e25\tau\\)-\\(e100\tau\\) = \\(1k\\) to \\(10k\\) <br />
-- \\(e100\tau\\)-\\(e175\tau\\) = \\(10k\\)-\\(100k\\)
+- \\(e25\\)-\\(e100\\) is \\(1k\\) to \\(10k\\) <br />
+- \\(e100\\)-\\(e175\\) is \\(10k\\)-\\(100k\\)
 
 ##### Idle
 
