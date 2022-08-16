@@ -260,10 +260,10 @@ exponent priority and 40 sec for derivative priority. You will start a publicati
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below with milestone upgrade priority. Max all milestones in order shown for each part of the cycle.
 
-**1 Milestone**
-<blockquote style="font-family:monospace;">3 (10s) → 1 (40s) → 4 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
+**1-3 Milestone**
+<blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 4>3 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
 
-**2+ Milestones**
+**4+ Milestones**
 <blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → <br>3>4>1>2 (10s) → 2>1>3>4 (40s) → <br>repeat →  coast and publish</blockquote>
 
 Past \\(e175\\), the active strat will become exponentially less
