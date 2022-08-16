@@ -255,12 +255,10 @@ about a \\(1000\\) multiplier, but larger multipliers are fine.
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones. The active for T2 is on a 50-second cycle: 10 seconds on
-0/0/x/x milestones and 40 sec on x/x/0/0 milestones. You will start a
-publication on 0/0/x/x as the cost of the x/x/0/0 milestone upgrades are
+milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 sec for
+exponent priority and 40 sec for derivative priority. You will start a publication with exponent priority as the cost of milestones 3 & 4 are
 too large for you to get right away. When you can afford them, you will
-start the cycle. This is what you will do for the following number of
-milestones:
+start the cycle. The full cycle is listed below:
 
 **1 Milestone**
 <blockquote style="font-family:monospace;">3 (10s) → 1 (40s) → 4 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
