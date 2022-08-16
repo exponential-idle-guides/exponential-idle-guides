@@ -255,121 +255,16 @@ about a \\(1000\\) multiplier, but larger multipliers are fine.
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones. The active for T2 is on a 50-second cycle: 10 seconds on
-0/0/x/x milestones and 40 sec on x/x/0/0 milestones. You will start a
-publication on 0/0/x/x as the cost of the x/x/0/0 milestone upgrades are
+milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 sec for
+exponent priority and 40 sec for derivative priority. You will start a publication with exponent priority as the cost of milestones 3 & 4 are
 too large for you to get right away. When you can afford them, you will
-start the cycle. This is what you will do for the following number of
-milestones:
+start the cycle. The full cycle is listed below with milestone upgrade priority. Max all milestones in order shown for each part of the cycle.
 
-<table class="T2">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th colspan="9" style="text-align:center">Milestone      Cycles</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">1-2</td>
-         <td>0/0/1(2)/0</td>
-         <td class="arrow">→</td>
-         <td>1(2)/0/0/0</td>
-         <td class="arrow">→</td>
-         <td>0/0/1(2)/0</td>
-         <td class="arrow">→</td>
-         <td>0/1(2)/0/0</td>
-         <td class="arrow">→</td>
-         <td>Repeat</td>
-      </tr>
-      <tr>
-         <td class="leftHeader"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>100s</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">3</td>
-         <td>0/0/3/0</td>
-         <td class="arrow">→</td>
-         <td>2/1/0/0</td>
-         <td class="arrow">→</td>
-         <td>0/0/3/0</td>
-         <td class="arrow">→</td>
-         <td>1/2/0/0</td>
-         <td class="arrow">→</td>
-         <td>Repeat</td>
-      </tr>
-      <tr>
-         <td class="leftHeader"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>100s</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">4</td>
-         <td>0/0/3/1</td>
-         <td class="arrow">→</td>
-         <td>2/2/0/0</td>
-         <td class="arrow">→</td>
-         <td>Repeat</td>
-      </tr>
-      <tr>
-         <td class="leftHeader"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>50s</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">5-6</td>
-         <td>0/0/3/x</td>
-         <td class="arrow">→</td>
-         <td>2/2/x/0</td>
-         <td class="arrow">→</td>
-         <td>Repeat</td>
-      </tr>
-      <tr>
-         <td class="leftHeader"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>50s</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">7+</td>
-         <td>x/y/3/3</td>
-         <td class="arrow">→</td>
-         <td>2/2/3/x</td>
-         <td class="arrow">→</td>
-         <td>Repeat</td>
-         <td class="invisible"></td>
-         <td>(<strong>x → y</strong>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader"></td>
-         <td>10s</td>
-         <td class="invisible"></td>
-         <td>40s</td>
-         <td class="invisible"></td>
-         <td>50s</td>
-      </tr>
-   </tbody>
-</table>
+**1 Milestone**
+<blockquote style="font-family:monospace;">3 (10s) → 1 (40s) → 4 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
+
+**2+ Milestones**
+<blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → <br>3>4>1>2 (10s) → 2>1>3>4 (40s) → <br>repeat →  coast and publish</blockquote>
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
