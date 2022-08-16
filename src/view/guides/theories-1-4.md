@@ -262,7 +262,7 @@ too large for you to get right away. When you can afford them, you will
 start the cycle. This is what you will do for the following number of
 milestones:
 
-<blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → repeat</blockquote>
+<blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → <br>3>4>1>2 (10s) → 2>1>3>4 (40s) → repeat</blockquote>
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
