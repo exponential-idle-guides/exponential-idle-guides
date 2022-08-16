@@ -206,22 +206,22 @@ We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doe
 #### Milestone Swapping Strategies
 (Courtesy of Gen).
 
-x/x/x/x represent the max buy order of milestones not the amount allocated.
-For example, 4/3/1/2 means "Allocate everything into 4th milestone, then use leftovers into 3rd milestone, then into 1st milestone, then into 2nd milestone". 
+x>x>x>x represent the max buy order of milestones not the amount allocated.
+For example, 4>3>1>2 means "Allocate everything into 4th milestone, then use leftovers into 3rd milestone, then into 1st milestone, then into 2nd milestone". 
 
-SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
+From e75-e100 is 4>3>1>2 (60s) <-> 1>2>4>3 (60s)
 
-SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
+SLMS2 is 1>2>4>3 (30s) --> 2>1>4>3 (60s) --> 1>2>4>3 (30s) --> 4>3>1>2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
 
-SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
+SLMS3 is 2>1>4>3  (20s) <-> 4>3>1>2 (60s)
 
 When to Use Strategies
 until e100: SLMS
-e100 - e175: SLMS2
+e100 - e175: SLMS (100-175)
 e175 - e200: SLMS3
 e200 - e300: SLMS
 
-(note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4/3/1/2 (60s) <-> 1/2/4/3 (20s)
+(note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4>3>1>2 (60s) <-> 1>2>4>3 (20s)
 
 #### Post e300+ rho
 
@@ -274,10 +274,10 @@ e200 - e300: SLMS
 
 #### EF Overview
 <p>
-This custom theory, along with Convergents to Square Root 2, were released at the same time. This theory was created jointly by Peanut, Snaeky, and XLII. This theory is based on Euler's Formula of 
+This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of 
 \\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
 
-This theory is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:</p>
+EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:</p>
 
 \\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
@@ -413,7 +413,7 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 #### CSR2 Overview
 
-<p> This custom theory was created by Solarion and released at the same time as Euler's Formula. This theory is based on approximations of square root 2 using recurrence formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:</p>
+<p> This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of square root 2 using recurrent formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:</p>
 
 #### CSR2 Equation Description
 
