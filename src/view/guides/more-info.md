@@ -91,9 +91,9 @@ The below tables are of the first \\(Ft\\) (in ee) and Psi (\\(ψ\\)) each is pu
 
 #### \\(x_{n}\\)
 
-Easy way to remember cost of next upgrade is \\(current \hspace ψ*64\\).
+Easy way to remember cost of next upgrade is \\(new\\) \\(ψ=current\\) \\(ψ*64\\).
 
-Easy way to remember next \\(Ft\\) is \\(current \hspace Ft + ee25\\) starting at \\(ee274.16\\).
+Easy way to remember next \\(Ft\\) is \\(new\\) \\(Ft=current\\) \\(Ft+ee25\\) starting at \\(ee274.16\\).
 
 <table class="newwords">
   <thead>
