@@ -382,4 +382,4 @@ Easy way to remember next \\(Ft\\) is \\(new\\) \\(Ft=ee\\) \\((log_{10}(current
    </tbody>
 </table>
 
-## Miscelaneous
+## Miscellaneous
