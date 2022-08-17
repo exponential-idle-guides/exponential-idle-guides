@@ -243,22 +243,23 @@ The multipliers for active play (which do use coasting) we know at the moment ar
 - \\(e25\\)-\\(e100\\) is \\(1k\\) to \\(10k\\) <br />
 - \\(e100\\)-\\(e175\\) is \\(10k\\)-\\(100k\\)
 
+__For both strategies the milestones are listed in the order X>Y, where X and Y are the milestones as numerically ordered top to bottom in-game, are to be maxed in order from left to right.__
+
 ##### Idle
 
-For the idle strategy, you want to prioritize your milestones on x/x/0/0
-with \\(q_{3}\\) and \\(q_{4}\\) being more important than \\(r_{3}\\)
-and \\(r_{4}\\). If you have more than 5 milestones, you will prioritize
-\\(q\\) exponent over the \\(r\\) exponent. You will want to publish at
-about a \\(1000\\) multiplier, but larger multipliers are fine.
+For the idle strategy, you want to prioritize buying milestone levels of 1>2. If you have more than 4 milestones, you will prioritize
+milestone 1>2>3>4. You will want to publish at
+about 10-100 multiplier before \\(e75\\) and about a \\(1000\\) multiplier after \\(e75\\), but larger multipliers are fine.
+If possible, swap to milestones 3>4>1>2 at end before publishing for an additional boost.
 
 ##### Active
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
+milestones too boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
 exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 and 4 are
 too large for you to get right away. When you can afford them, you will
-start the cycle. The full cycle is listed below with milestone upgrade priority. Max all milestones in order shown for each part of the cycle.
+start the cycle. The full cycle is listed below:
 
 **1-3 Milestone**
 <blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 4>3 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
@@ -271,7 +272,7 @@ effective. At \\(e250\\), you would start to idle T2 overnight only.
 Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
 to run idle overnight.
 
-###### When you get to Theory 3 at ee7k, move on to pushing Theory 3 \\(τ\\) and running T2 overnight. The above is simply as an option if you rather not work on T3 now.
+When you get to Theory 3 at ee7k, move on to pushing Theory 3 \\(τ\\) and running T2 overnight. The above is simply as an option if you rather not work on T3 now.
 
 #### T2 milestone route
 
