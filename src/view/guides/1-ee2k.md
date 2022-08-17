@@ -38,7 +38,7 @@ Playing and molding both sections will often deliver the best results for a part
   </ol>
   <li>Pay attention to <em>dμ</em> growth. <b>(OPTIONAL)</b></li>
   <ol type="a">
-    <li>Make mental note of two <em>μ</em> upgrades' costs (<kbd>↑ dt upgrade</kbd> & <kbd>↑ y factor upgrade</kbd>).</li>
+    <li>Make mental note of two <em>μ</em> upgrades' costs (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
     <ol type="i">
       <li>It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li></li>
     </ol>

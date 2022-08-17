@@ -125,7 +125,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 #### Variable overview
 
-\\(q_1\\) & \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
+\\(q_1\\) and \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
 production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
 
 \\(q\\): The crux of T5 is to grow this value as fast as possible, while
@@ -169,7 +169,7 @@ Before e30, you should repeat this after every publication:
 1. Buy everything **except** \\(c_2\\).
 2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased individually.
    Only buy when \\(c_2\\) is \\(e1\\) lower than your current \\(\rho\\).
-3. When you are within \\(e10\\) of your last publication, autobuy all but \\(q_1\\) & \\(c_1\\).
+3. When you are within \\(e10\\) of your last publication, autobuy all but \\(q_1\\) and \\(c_1\\).
    You should then manually buy \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than the \\(q_2\\) doubling.
    Buy \\(c_1\\) only when \\(q\\) is not capped.
 4. Repeat until \\(e25\\).
@@ -181,7 +181,7 @@ After autobuy at e30, you should repeat this after every publication:
 
 1. x1 (or x10 when above e200) buy \\(c_2\\) manually and autobuy the rest until within ~e10 of your previous publication.
    Your graph should resemble a linear function on the graph.
-2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
+2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) and \\(q_1\\). At this point:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
    2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q_2\\).
 3. Once you reach the desired publication point, publish.

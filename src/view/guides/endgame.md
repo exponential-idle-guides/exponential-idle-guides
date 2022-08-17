@@ -68,7 +68,7 @@ progress the theory is below.
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 1. x10 buy \\(c_2\\) manually and autobuy the rest until within ~\\(e10\\) of your previous publication.
-2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) & \\(q_1\\). At this point:
+2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) and \\(q_1\\). At this point:
    1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
    2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\). This limit will increase as you get higher \\(\tau\\) and further into a publication.
 3. Once you reach the desired publication point, publish.

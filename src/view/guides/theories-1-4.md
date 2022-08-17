@@ -118,7 +118,7 @@ past e150. T1 is the only theory where the recent value of \\(ρ\\)
 influences the rate of change of \\(ρ\\) therefore buying a variable as
 soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
-because \\(c_3\\) & \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
+because \\(c_3\\) and \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
 and you have \\(11ρ\\), buying that level will reduce \\(ρ_{n+1}\\) to \\(1\\). This reduces your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
 There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio) are to be
 only used when you are past \\(e150 τ\\) and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
@@ -256,7 +256,7 @@ about a \\(1000\\) multiplier, but larger multipliers are fine.
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
 milestones. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
-exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 & 4 are
+exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 and 4 are
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below with milestone upgrade priority. Max all milestones in order shown for each part of the cycle.
 
