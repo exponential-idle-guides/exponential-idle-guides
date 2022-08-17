@@ -49,7 +49,7 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 
 #### Three Steps To Getting The Best Result
 
-1. After your progress has slowed after recoverying from a graudation and nearing the next graduation, get results from the calculator. Only the \\(F(t)\\) output here is useful.
+1. After your progress has slowed after recovering from a graduation and nearing the next graduation, get results from the calculator. Only the \\(F(t)\\) output here is useful.
 2. Upon arriving to the most recent output, get a new set of results from the calculator.
 3. Repeat Step 2 until output is the same \\(F(t)\\) you are currently at. This is when you should graduate.
 
