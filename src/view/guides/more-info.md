@@ -100,11 +100,11 @@ Easy way to remember next \\(Ft\\) is [insert formula later].
     <tr>
         <th class="invisible"></th>
         <th>Ft</th>
-        <th>Psi</th>
+        <th>Psi (ψ)</th>
         <th class="invisible"></th>
         <th class="invisible"></th>
         <th>Ft</th>
-        <th>Psi</th>
+        <th>Psi (ψ)</th>
     </tr>
   </thead>
   <tbody>
@@ -302,7 +302,7 @@ Easy way to remember next \\(Ft\\) is \\(new\\) \\(Ft=ee\\) \\((log_{10}(current
     <tr>
         <th class="invisible"></th>
         <th>Ft</th>
-        <th>Psi</th>
+        <th>Psi (ψ)</th>
     </tr>
   </thead>
   <tbody>
