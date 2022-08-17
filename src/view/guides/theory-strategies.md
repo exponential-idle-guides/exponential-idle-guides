@@ -563,7 +563,7 @@ Strategy Credits:
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br />
 
-The “MC” in T2MC stands for **M**ultivariable**C**oast.
+The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
 ### T2<span style="color:#41AD21">Coast-X%</span>
 <table class="spqcey">
 <thead>
@@ -4473,6 +4473,7 @@ Strategy Credits:
 - xelaroc
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
+- XLII for buying ratios change and integration of modulus
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>
 <table class="spqcey">
