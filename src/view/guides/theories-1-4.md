@@ -186,7 +186,7 @@ In simpler terms, it works similar to how
 of the previous \\(term*dt\\) to the next \\(x_{i+1}\\) term, but with
 continuous addition of \\(q_i*dt\\) to the term above \\(q_{i-1}\\).
 These two values of \\(r_1\\) and \\(q_1\\) are multiplied to produce the derivative
-of \\(ρ(t)\\), shown by the newton derivative form \\(\dot{ρ}\\). This would give the
+of \\(ρ(t)\\), shown by Newton's derivative notation \\(\dot{ρ}\\). This would give the
 equation of \\(ρ\\) to be \\(ρ(t+dt)=ρ+\dot{ρ}*dt\\). The other milestones besides more \\(q\\)
 and \\(r\\) derivatives increase the exponent of \\(q\\) and \\(r\\) respectively. The
 reason why \\(q\\) and \\(r\\) derivatives are more powerful long-term than the
@@ -261,7 +261,7 @@ exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (M
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below:
 
-**1-3 Milestone**
+**1-3 Milestones**
 <blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 4>3 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
 
 **4+ Milestones**
@@ -269,10 +269,10 @@ start the cycle. The full cycle is listed below:
 
 Past \\(e175\\), the active strat will become exponentially less
 effective. At \\(e250\\), you would start to idle T2 overnight only.
-Until you are \\(1e350\\)+ \\(τ\\) for theory 2, this is the best theory
+Until you have over \\(1e350\tau\\) from theory 2, this is the best theory
 to run idle overnight.
 
-When you get to Theory 3 at ee7k, move on to pushing Theory 3 \\(τ\\) and running T2 overnight. The above is simply as an option if you rather not work on T3 now.
+When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
 #### T2 milestone route
 
@@ -328,7 +328,7 @@ how matrix multiplication works.
 
 This gives the basis for why certain upgrades are more powerful than
 others. The exponents on \\(b_1\\), \\(b_2\\), and \\(b_3\\)
-are all directly affecting \\(ρ_1\\) production which is used for \\(\tau\\). An extra
+all directly affect \\(ρ_1\\) production which is used for \\(\tau\\). An extra
 dimension roughly gives \\(50%\\) more \\(\tau\\) production as it adds an extra term
 to the \\(ρ_1\\) production.
 
@@ -345,18 +345,18 @@ happens. It happens when the following occurs:
 When this happens swap your exponents from \\(b_1\\) to \\(b_2\\) and you will get a
 little upgrade boost. It also allows for a slight push of \\(ρ_2\\) for
 upgrades to \\(b_2\\) and \\(c_{12}\\), but this is a lot less impactful and less
-noticeable. This strategy also works with \\(b_3\\) and \\(c_{13}\\) but is oftentimes
-not as common and good to note anyways.
+noticeable. This strategy also works with \\(b_3\\) and \\(c_{13}\\) but is usually
+not as common.
 
-If you decide to buy manually, the focus areas are \\(b_1\\), \\(b_2\\), and \\(b_3\\) when
-e1 lower than \\(c_{11}\\), \\(c_{12}\\), and \\(c_{13}\\). These all directly boost the production
-of \\(ρ_1\\) which is used for \\(\tau\\). After this, if doing the active exponent
-swapping strat in the previous paragraph, the next focus will be on \\(c_{21}\\),
-\\(c_{22}\\), and \\(c_{23}\\) as these boost \\(b_2\\) production which is the more likely cause
+If you decide to buy manually, the focus areas are buying \\(b_1\\), \\(b_2\\), and \\(b_3\\) when their cost is
+e1 lower than \\(c_{11}\\), \\(c_{12}\\), and \\(c_{13}\\) respectively. These all directly boost the production
+of \\(ρ_1\\) which is used for \\(\tau\\). After this, if you are doing the active exponent
+swapping strategy described in the previous paragraph, your next focus will be on \\(c_{21}\\),
+\\(c_{22}\\), and \\(c_{23}\\) as these boost \\(b_2\\) production which increases the likelihood
 for the exponent swap to occur. This leaves the \\(c_{31}\\), \\(c_{32}\\), and \\(c_{33}\\)
-upgrades as the last priority. If you are not using the exponent
-swapping strat in the previous paragraph, then all the remaining
-upgrades are at equivalent priority.
+upgrades at the lowest priority. If you are not using the exponent
+swapping strategy from the previous paragraph, then all the remaining
+upgrades should be bought at equivalent priority.
 
 At the end of any publication, around a 2-3 multiplier, you should turn
 off \\(b_1\\) and \\(c_{31}\\) as they cost \\(ρ_1\\). You will cruise until you get to a
@@ -470,10 +470,10 @@ repeat.
 
 #### T4 Overview
 
-We start out with just one term of constants \\(c_1c_2\\) and a changing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) with \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
+We start out with just one term of constants, \\(c_1c_2\\), and a continuously increasing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) where \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
-first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
-\\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the power of \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
+first 3 milestones we earn add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
+\\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the exponent on \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
 
 #### T4 formula
 
@@ -517,8 +517,8 @@ first 3 milestones we grab add more terms to the \\(ρ\\) equation with \\(c_4q_
 
 The optimal publication multiplier is 4-6. During publications, start
 with x/1/3, then you will switch to 3/0/x. This will be repeated back
-and forth throughout the publication. If you decide to manually buy and
-don’t have max milestones, focus on \\(q_1\\) and \\(q_2\\). The next priority is
+and forth throughout the publication. If you decide to manually buy upgrades and
+don’t have max milestones, focus on buying \\(q_1\\) when it costs e1 less than \\(q_2\\). The next priority is
 going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
 be bought \\(e1\\) cheaper than the priority tier above. If you decide to
 manually buy at max milestones, at the beginning of publications, buy
@@ -568,25 +568,25 @@ You may not hit the values and have a different distribution, but work on gettin
    <thead>
       <tr>
          <th class="invisible"></th>
-         <th>Multiplier</th>
+         <th>Approximate Tau</th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td class="leftHeader">T2</td>
-         <td>e300-e350 τ</td>
+         <td>e300-e350 𝜏</td>
       </tr>
       <tr>
          <td class="leftHeader">T1</td>
-         <td>e205-e215 τ</td>
+         <td>e205-e215 𝜏</td>
       </tr>
       <tr>
          <td class="leftHeader">T3</td>
-         <td>e150 τ</td>
+         <td>e150 𝜏</td>
       </tr>
       <tr>
          <td class="leftHeader">T4</td>
-         <td>e150 τ</td>
+         <td>e150 𝜏</td>
       </tr>
    </tbody>
 </table>
