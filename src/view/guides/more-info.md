@@ -12,6 +12,7 @@ order: 10
 ## Ft unlocks
 
 The below tables are of the first Ft each is purchasable at in ee.
+
 ### Variables
 
 <table class="newwords">
