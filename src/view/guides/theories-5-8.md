@@ -583,33 +583,6 @@ Once you get to 0/0/0/2, prioritize \\(c_2\\) and \\(c_5\\) then \\(c_1\\) then 
 rest. Once at 2/0/3/0, you will prioritize \\(c_2\\) and \\(c_4\\) then \\(c_1\\) then
 the rest after. This continues to max at 2/3/3/3.
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Starting Positions</th>
-         <th>Time Step</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">Lorenz</td>
-         <td>(-6, -8, 26)</td>
-         <td>0.02</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Chen</td>
-         <td>(-10.6, -4.4, 28.6)</td>
-         <td>0.002</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Rossler</td>
-         <td>(-6, 15, 0)</td>
-         <td>0.00014</td>
-      </tr>
-   </tbody>
-</table>
-
 #### T8 milestone route
 
 <table class="milestone_routing">
