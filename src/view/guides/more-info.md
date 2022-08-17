@@ -11,9 +11,9 @@ order: 10
 
 ## Ft unlocks
 
-The below tables are of the first Ft each is purchasable at in ee.
-
 ### Variables
+
+The below tables are of the first \\(Ft\\) each is purchasable at in ee.
 
 <table class="newwords">
   <thead>
@@ -86,6 +86,66 @@ The below tables are of the first Ft each is purchasable at in ee.
 </table>
 
 ### Supremacy upgrades
+
+The below tables are of the first \\(Ft\\) (in ee) and Psi (\\(ψ\\)) each is purchasable at.
+
+#### \\(x_{n}\\)
+
+Easy way to remember cost of next upgrade is \\(current\hspace ψ*64\\).
+
+Easy way to remember next \\(Ft\\) is \\(current\hspace Ft + ee25\\) starting at \\(ee274.16\\).
+
+<table class="newwords">
+  <thead>
+    <tr>
+        <th class="invisible"></th>
+        <th>Ft</th>
+        <th>Psi</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="leftHeader">x<sub>1</sub></td>
+        <td>274.16</td>
+        <td>1000</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>2</sub></td>
+        <td>424.14</td>
+        <td>64000</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>3</sub></td>
+        <td>574.14</td>
+        <td>4.096e+6</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>4</sub></td>
+        <td>724.14</td>
+        <td>2621e+8</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>5</sub></td>
+        <td>1174.1</td>
+        <td>6.872e+13</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>6</sub></td>
+        <td>1399.1</td>
+        <td>3.518e+16</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>7</sub></td>
+        <td>1624.1</td>
+        <td>1.801e+19</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">x<sub>8</sub></td>
+        <td>1849.1</td>
+        <td>9.223e+21</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Variable formulas
 
