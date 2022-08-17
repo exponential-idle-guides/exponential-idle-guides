@@ -472,8 +472,8 @@ repeat.
 
 We start out with just one term of constants, \\(c_1c_2\\), and a continuously increasing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) where \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
 equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
-first 3 milestones we earn add more terms to the \\(ρ\\) equation with \\(c_4q_2\\),
-\\(c_5q_3\\), and \\(c_6q_4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the exponent on \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
+first 3 milestones we earn add more terms to the \\(ρ\\) equation with \\(c_4q^2\\),
+\\(c_5q^3\\), and \\(c_6q^4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the exponent on \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
 
 #### T4 formula
 
