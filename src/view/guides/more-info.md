@@ -89,6 +89,8 @@ The below tables are of the first \\(Ft\\) each is purchasable at in ee.
 
 The below tables are of the first \\(Ft\\) (in ee) and Psi (\\(ψ\\)) each is purchasable at.
 
+####
+
 #### \\(y^{n}\\)
 
 Easy way to remember Psi (\\(ψ\\)) cost of next upgrade is [insert formula later].
