@@ -5,9 +5,10 @@
 
   --btn-width:auto;
   --btn-max-width:20vw;
-  --btn-marginLeft-width:0%;
-  --btn-marginRight-width:0%;
-  --btn-marginTop-height:0%;
+  --btn-marginLeft:0%;
+  --btn-marginTop:0%;
+  --btn-paddingLeft:0.5vw;
+  --btn-paddingRight:0.5vw;
 
   --sidebar-height:100%;
   --sidebar-width:0%;
@@ -25,8 +26,8 @@
 :root.mobile {
   --btn-width:33vw;
   --btn-max-width:33vw;
-  --btn-marginLeft-width:0.5vw;
-  --btn-marginRight-width:0.5vw;
+  --btn-paddingLeft:0.5vw;
+  --btn-paddingRight:0.5vw;
   
   --sidebar-height:0%;
   --sidebar-width:100%;
@@ -37,8 +38,8 @@
 :root.desktop {
   --btn-width:auto;
   --btn-max-width:20vw;
-  --btn-marginLeft-width:0%;
-  --btn-marginRight-width:0%;
+  --btn-paddingLeft:0%;
+  --btn-paddingRight:0%;
 
   --sidebar-height:100%;
   --sidebar-width:0%;
@@ -125,9 +126,10 @@
   width: var(--btn-width);
   position: fixed;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
-  margin-left: var(--btn-marginLeft-width);
-  margin-right: var(--btn-marginRight-width);
-  margin-top: var(--btn-marginTop-height);
+  margin-left: var(--btn-marginLeft);
+  margin-top: var(--btn-marginTop);
+  padding-right: var(--btn-paddingRight);
+  padding-left: var(--btn-paddingLeft);
   z-index: 100;
 }
 
