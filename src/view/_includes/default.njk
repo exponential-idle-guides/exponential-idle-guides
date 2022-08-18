@@ -34,7 +34,6 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
-      window.alert("Is Mobile? " + isMobile + "\nroot classes: " + root.classList);
 
       if (isMobile) {
         root.classList.add("mobile");
@@ -56,9 +55,8 @@
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
             max_width = 0;
-            max_header_width = 0;
             mainwidth = document.getElementById("sidebarmain").offsetWidth;
-            /*
+            
             for (const sidebar of sidebars) {
               document.getElementById(sidebar + "invis").style.width = "auto";
               if(document.getElementById(sidebar + "invis").offsetWidth > max_width){
@@ -66,39 +64,23 @@
               }
               document.getElementById(sidebar + "invis").style.width = 0;
             }
-            */
-            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
-            for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>max_width){max_width=document.getElementById(sidebar+"invis").offsetWidth;}}
-            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
 
             document.getElementById(sidebarheaders).style.width = "auto";
             max_header_width = document.getElementById(sidebarheaders).offsetWidth;
             document.getElementById(sidebarheaders).style.width = "0%";
 
-            window.alert("max_width: " + max_width + "\nmax_header_width: " + max_header_width + "\nmainwidth: " + mainwidth);
             if (max_width <= 0 && max_header_width <= 0) {
-              window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
               query_root.style.setProperty('--sidebar-width', 'auto');
               query_root.style.setProperty('--btn-marginLeft', 'auto');
             } else {
-              window.alert("inside else 1");
               view_max = getComputedStyle(query_root).getPropertyValue('--sidebar-desktop-max-width');
-              window.alert("inside else 2");
               if(max_header_width >= window.visualViewport.width * view_max){
-                window.alert("inside else 3");
                 output = max_header_width + window.visualViewport.width * 0.02;
               } else if (max_width >= window.visualViewport.width * view_max) {
-                
-                window.alert("inside else 3");
                 output = window.visualViewport.width * view_max;
               } else {
-                window.alert("inside else 3");
                 output = max_width;
               }
-              window.alert("inside else 4");
-              //window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
-
-              window.alert("inside else 5");
               if((output + mainwidth) >= window.visualViewport.width){
                 output = window.visualViewport.width * 0.96 - mainwidth;
               
@@ -106,11 +88,9 @@
               query_root.style.setProperty('--sidebar-width', output + "px");
               query_root.style.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
               query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
-              window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
             }
           }
         } else {
-          window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-padding') + "\n" + document.getElementById('SidebarHeaders').offsetHeight + "/" + document.getElementById('SidebarHeaders').clientHeight + "\n" + document.getElementById('HeaderSidebar').offsetHeight + "/" + document.getElementById('HeaderSidebar').clientHeight);
 
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
@@ -136,84 +116,63 @@
               query_root.style.setProperty('--sidebar-padding', window.visualViewport.height * 0.02 + "px");
             }
           }
-
-          window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-padding') + "\n" + document.getElementById('SidebarHeaders').offsetHeight + "/" + document.getElementById('SidebarHeaders').clientHeight + "\n" + document.getElementById('HeaderSidebar').offsetHeight + "/" + document.getElementById('HeaderSidebar').clientHeight);
         }
       }
 
       function CloseSidebar(){
-        window.alert("close");
         if (!isMobile){
-          window.alert("desktop close");
           query_root.style.setProperty('--sidebar-width', "0%");
           query_root.style.setProperty('--btn-marginLeft', "0%");
-          window.alert("desktop close finish");
         } else {
-          window.alert("mobile close");
           query_root.style.setProperty('--sidebar-height', "0%");
           query_root.style.setProperty('--btn-marginTop', "0%");
-          window.alert("mobile close finish");
         }
         query_root.style.setProperty('--sidebar-padding', "0");
-        window.alert("close full finish");
       }
 
       window.addEventListener('click', function(e){
-        if (!isMobile) {
-          window.alert(Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) +"/"+Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0])+"\n"+(Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0])) + "\n" +getComputedStyle(query_root).getPropertyValue('--sidebar-width')+"/"+(getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%"));
-
-          if (Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) 
-              && getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%") {
-            bool = true;
-            for(const btn of close_btn_list){
-              if (document.getElementById(btn).contains(e.target)==true){
-                bool=false;
-                CloseSidebar();
-                break;
-              }
-            }
-            if(bool) {
-              bool=false
-              for(const sidebars of sidebar_list){
-                if (document.getElementById(sidebars).contains(e.target)==true){
-                  bool = true;
-                  window.alert(sidebars);
-                  break;
-                }
-              }
-              window.alert("bool result: " + bool);
-            }
-            if(!bool){
-              CloseSidebar();
+        if (!isMobile 
+            && Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) 
+            && getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%") {
+          bool = true;
+          for(const btn of close_btn_list){
+            if (document.getElementById(btn).contains(e.target)==true){
+              bool=false;
+              break;
             }
           }
-        } else {
-          window.alert(document.getElementById(curr_sidebar).offsetHeight + "/" + Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) + "\n" + (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0])) + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + " / " + (getComputedStyle(query_root).getPropertyValue('--sidebar-height')!="0%"));
-
-          if (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
-              && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
-            bool = true;
-            for(const btn of close_btn_list){
-              if (document.getElementById(btn).contains(e.target)==true){
-                bool=false;
-                CloseSidebar();
+          if(bool) {
+            bool=false
+            for(const sidebars of sidebar_list){
+              if (document.getElementById(sidebars).contains(e.target)==true){
+                bool = true;
                 break;
               }
             }
-            if(bool) {
-              bool=false
-              for(const sidebars of sidebar_list){
-                if (document.getElementById(sidebars).contains(e.target)==true){
-                  bool = true;
-                  window.alert(sidebars);
-                  break;
-                }
+          }
+          if(!bool){
+            CloseSidebar();
+          }
+        } else if (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
+              && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
+          bool = true;
+          for(const btn of close_btn_list){
+            if (document.getElementById(btn).contains(e.target)==true){
+              bool=false;
+              break;
+            }
+          }
+          if(bool) {
+            bool=false
+            for(const sidebars of sidebar_list){
+              if (document.getElementById(sidebars).contains(e.target)==true){
+                bool = true;
+                break;
               }
-              window.alert("bool result: " + bool);
             }
-            if(!bool){
-              CloseSidebar();
-            }
+          }
+          if(!bool){
+            CloseSidebar();
           }
         }
       })
