@@ -6,9 +6,12 @@
   --btn-marginLeft-width:0%;
   --sidebar-content-padding:8px;
   --sidebar-header-font-size:1.5em;
+  --sidebar-transition-direction: margin-left;
+  --sidebar-height: 100%;
+  --sidebar-button-max-width: 20vw;
 }
 .sidebar {
-  height: 100%;
+  height: var(--sidebar-height);
   width:var(--sidebar-width);
   position: fixed;
   top: 0;
@@ -48,7 +51,7 @@
   top: min(3.5vh, 3.5vw, 20px);
   font-size: var(--sidebar-header-font-size);
   color: var(--palette-stroke-sidebar-header-hover);
-  padding-top:0px;
+  padding-top: 0px;
   padding: 0;
   margin-top: min(3.5vh, 3.5vw, 20px);
   transition: var(--sidebar-text-transition-time);
@@ -67,7 +70,7 @@
 }
 
 .openbtn {
-  max-width:20vw;
+  max-width: var(--sidebar-button-max-width);
   font-size: 1.2em;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
@@ -85,7 +88,7 @@
 #sidebarmain {
   width:auto;
   position:fixed;
-  transition: margin-left var(--sidebar-transition-time);
+  transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
   margin-left:var(--btn-marginLeft-width);
   z-index: 100;
 }
