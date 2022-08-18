@@ -141,10 +141,10 @@
           window.alert("mobile close");
           query_root.style.setProperty('--sidebar-height', "0%");
           query_root.style.setProperty('--btn-marginTop', "0%");
-          window.alert("desktop close finish");
+          window.alert("mobile close finish");
         }
         query_root.style.setProperty('--sidebar-padding', "0");
-        window.alert("desktop close full finish");
+        window.alert("close full finish");
       }
 
       window.addEventListener('click', function(e){
@@ -172,10 +172,14 @@
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
             bool = false;
             sidebarlist = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
-            for(const sidebars of sidebarlist){
-              if (document.getElementById(sidebars).contains(e.target)){
-                bool = true;
-                break;
+            while (!bool){
+              for(const sidebars of sidebarlist){
+                if (bool){
+                  break;
+                } else if (document.getElementById(sidebars).contains(e.target)==true){
+                  bool = true;
+                  window.alert(sidebars);
+                }
               }
             }
             window.alert("bool result: " + bool);
