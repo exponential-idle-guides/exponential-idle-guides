@@ -57,9 +57,9 @@
         
         window.alert("Mobile set full");
       }
-      */  
-
+      */
       function openSidebar(sidebars,sidebarheaders) {
+        window.alert("start");
         for (const sidebar of sidebars) {
           document.getElementById(sidebar).style.zIndex = "0";
         }
@@ -67,21 +67,19 @@
         
         if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%" 
             && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
+          window.alert("inside if");
           maxwidth = 0;
           maxheaderwidth = 0;
           mainwidth = document.getElementById("sidebarmain").offsetWidth;
 
           for (const sidebar of sidebars) {
             document.getElementById(sidebar + "invis").style.width = "auto";
-          }
-          for (const sidebar of sidebars) {
             if(document.getElementById(sidebar + "invis").offsetWidth > maxwidth){
               maxwidth = document.getElementById(sidebar + "invis").offsetWidth;
             }
-          }
-          for (const sidebar of sidebars) {
             document.getElementById(sidebar + "invis").style.width = 0;
           }
+
           document.getElementById(sidebarheaders).style.width = "auto";
           maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
           document.getElementById(sidebarheaders).style.width = "0%";
@@ -102,6 +100,7 @@
               output = window.visualViewport.width * 0.96 - mainwidth;
             
             }
+
             query_root.style.setProperty('--sidebar-width', "75vw");
             query_root.style.setProperty('--btn-marginLeft-width', "80vw");
             query_root.style.setProperty('--sidebar-padding', "2.5vw");
@@ -109,7 +108,7 @@
             query_root.style.setProperty('--sidebar-column-count', "3");
           }
           window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
-        }
+        } else {(window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%") + " " (getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%"));}
       }
 
       function closeSidebar() {
