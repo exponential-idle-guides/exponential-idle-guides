@@ -31,6 +31,7 @@
       const isMobile = navigator.userAgentData.mobile;
       const query_root  =  document.querySelector(':root');
       var curr_sidebar = 'none';
+      var max_sidebar_height = 0;
       window.alert("Is Mobile? " + isMobile + "\nroot classes: " + root.classList);
 
       if (isMobile) {
@@ -107,6 +108,7 @@
             
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
+            max_sidebar_height = max_height;
             document.getElementById(sidebars[0]+"invis").style.height=0;
 
             if (max_height <= 0) {
@@ -147,6 +149,8 @@
 
       window.addEventListener('click', function(e){
         if (!isMobile) {
+          window.alert(Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) +"/"+Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0])+"\n"+(Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0])) + "\n" +getComputedStyle(query_root).getPropertyValue('--sidebar-width')+"/"+(getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%"));
+
           if (Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%") {
             bool = false;
@@ -162,9 +166,9 @@
             }
           }
         } else {
-          window.alert(Math.round(document.getElementById("HeaderSidebar").offsetHeight - window.visualViewport.height * 0.04) + "/" + Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) + "\n" + (Math.round(document.getElementById("HeaderSidebar").offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0])) + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + " / " + (getComputedStyle(query_root).getPropertyValue('--sidebar-height')!="0%"));
+          window.alert(Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) + "/" + Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) + "\n" + (Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0])) + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + " / " + (getComputedStyle(query_root).getPropertyValue('--sidebar-height')!="0%"));
 
-          if (Math.round(document.getElementById("HeaderSidebar").offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
+          if (Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
             bool = false;
             sidebarlist = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
