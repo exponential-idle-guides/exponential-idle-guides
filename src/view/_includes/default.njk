@@ -32,33 +32,33 @@
       const query_root  =  document.querySelector(':root');
       window.alert("Is Mobile? " + isMobile);
       window.alert("things?");
-      window.alert(!root.classList)
-
+      window.alert(root.classList);
+      
       if (isMobile && !root.classList.contains('mobile')) {
-        //root.classList.add("mobile");
-        //root.classList.remove("desktop");
-
-        window.alert("Mobile set part 1");
-        //query_root.style.setProperty('--btn-width', "33vw");
-        //query_root.style.setProperty('btn-marginLeft-width', "0.5vw");
-        //query_root.style.setProperty('btn-marginRight-width', "0.5vw");
-        
-        window.alert("Mobile set part 2");
-        //query_root.style.setProperty('--sidebar-column-gap', "5vw");
-        //query_root.style.setProperty('--sidebar-column-count', "3");
-
-        window.alert("Mobile set full");
+        root.classList.add("mobile");
+        root.classList.remove("desktop");
+        window.alert("Mobile set");
       } else if(!isMobile && root.classList.contains('mobile')) {
-        //root.classList.add("desktop");
-        //root.classList.remove("mobile");
-
-        window.alert("desktop set part 1");
-        //query_root.style.setProperty('--sidebar-column-gap', "0");
-        window.alert("desktop set part 2");
-        //query_root.style.setProperty('--sidebar-column-count', "1");
-
-        window.alert("desktop set full");
+        root.classList.add("desktop");
+        root.classList.remove("mobile");
+        window.alert("desktop set");
       }
+      
+      if (!isMobile) {
+        query_root.style.setProperty('--sidebar-column-gap', "0");
+        query_root.style.setProperty('--sidebar-column-count', "1");
+        window.alert("desktop set full");
+      } else {
+        query_root.style.setProperty('--btn-width', "33vw");
+        query_root.style.setProperty('btn-marginLeft-width', "0.5vw");
+        query_root.style.setProperty('btn-marginRight-width', "0.5vw");
+        
+        query_root.style.setProperty('--sidebar-column-gap', "5vw");
+        query_root.style.setProperty('--sidebar-column-count', "3");
+        
+        window.alert("Mobile set full");
+      }
+      
 
       window.alert("thing2?");
     </script>
