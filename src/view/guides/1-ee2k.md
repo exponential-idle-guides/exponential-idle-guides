@@ -197,7 +197,7 @@ smooth(max(1,log10(gf)), (st>tr)
 
 #### What are these xi supremacy upgrades?
 
-After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x₁</kbd>.
+After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will unlock: <kbd>Unlock x<sub>1</sub></kbd>.
 
 ##### \\(x_i\\) Equation
 

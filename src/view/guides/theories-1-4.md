@@ -21,8 +21,6 @@ combination of all \\(τ\\) from each theory.
 __Don’t be afraid to skip getting all milestones to work on the next or a
 better theory.__
 
-###### Note: If you see # → [# → # → #] → # in the milestone route of a theory, this is the section that has an active strategy tied to it.
-
 ### Graduation routing
 
 Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
