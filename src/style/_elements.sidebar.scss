@@ -2,14 +2,17 @@
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
   --sidebar-padding:0%;
-  --sidebar-width:0%;
-  --sidebar-height:100%;
 
-  --btn-width: auto;
+  --btn-width:auto;
+  --btn-max-width:20vw;
   --btn-marginLeft-width:0%;
   --btn-marginRight-width:0%;
   --btn-marginTop-height:0%;
-  --btn-max-width:20vw;
+
+  --sidebar-height:100%;
+  --sidebar-width:0%;
+  --sidebar-column-gap:0;
+  --sidebar-column-count:1;
 
   --sidebar-content-padding:8px;
   --sidebar-header-font-size:1.5em;
@@ -18,6 +21,31 @@
   --sidebar-column-count:3;
   --sidebar-column-gap:5vw;
 }
+
+:root.mobile {
+  --btn-width:33vw;
+  --btn-max-width:33vw;
+  --btn-marginLeft-width:0.5vw;
+  --btn-marginRight-width:0.5vw;
+  
+  --sidebar-height:0%;
+  --sidebar-width:100%;
+  --sidebar-column-gap:5vw;
+  --sidebar-column-count:3;
+}
+
+:root.desktop {
+  --btn-width:auto;
+  --btn-max-width:20vw;
+  --btn-marginLeft-width:0%;
+  --btn-marginRight-width:0%;
+
+  --sidebar-height:100%;
+  --sidebar-width:0%;
+  --sidebar-column-gap:0;
+  --sidebar-column-count:1;
+}
+
 .sidebar {
   height: var(--sidebar-height);
   width:var(--sidebar-width);
