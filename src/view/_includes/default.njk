@@ -109,8 +109,7 @@
           }
           window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
         }
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width'));
-        window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width'));
+        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width') + "/" + (getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") + " " + getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') + "/" + getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%");
       }
 
       function closeSidebar() {
