@@ -30,6 +30,8 @@
       const root = document.documentElement;
       const isMobile = navigator.userAgentData.mobile;
       const query_root  =  document.querySelector(':root');
+      const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
+      const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
       window.alert("Is Mobile? " + isMobile + "\nroot classes: " + root.classList);
@@ -154,8 +156,7 @@
           if (Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%") {
             bool = false;
-            sidebarlist = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
-            for(const sidebars of sidebarlist){
+            for(const sidebars of sidebar_list){
               if (document.getElementById(sidebars).contains(e.target)){
                 bool = true;
                 break;
@@ -170,20 +171,25 @@
 
           if (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
-            bool = false;
-            sidebarlist = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
-            while (!bool){
-              for(const sidebars of sidebarlist){
-                if (bool){
-                  break;
-                } else if (document.getElementById(sidebars).contains(e.target)==true){
+            bool = true;
+            for(const btn of close_btn_list){
+              if (document.getElementById(btn).contains(e.target)==true){
+                bool=false;
+                CloseSidebar();
+                break;
+              }
+            }
+            if(bool) {
+              bool=false
+              for(const sidebars of sidebar_list){
+                if (document.getElementById(sidebars).contains(e.target)==true){
                   bool = true;
                   window.alert(sidebars);
+                  break;
                 }
               }
-              if (!bool){break;}
+              window.alert("bool result: " + bool);
             }
-            window.alert("bool result: " + bool);
             if(!bool){
               CloseSidebar();
             }

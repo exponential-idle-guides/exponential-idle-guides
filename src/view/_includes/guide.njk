@@ -36,14 +36,14 @@
     {% set tocs = content | toc %}
     {% if tocs %}
       <div id="HeaderSidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
         <h1 class="sidebartitle">Table of Contents</h1>
         <div class="content_wrapper square_list">
           {{content|toc|safe}}
         </div>
       </div>
       <div id="HeaderSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
         <h1 class="sidebartitle">Table of Contents</h1>
         <div class="content_wrapper square_list">
           {{content|toc|safe}}
@@ -51,14 +51,14 @@
       </div>
     {% else %}
       <div id="HeaderSidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
         <h1 class="sidebartitle">Table of Contents</h1>
         <div class="content_wrapper square_list">
           <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
         </div>
       </div>
       <div id="HeaderSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
         <h1 class="sidebartitle">Table of Contents</h1>
         <div class="content_wrapper square_list">
           <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
@@ -67,7 +67,7 @@
     {% endif %}
 
     <div id="GuideSidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guides</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -80,7 +80,7 @@
       </div>
     </div>
     <div id="GuideSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guides</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -94,14 +94,14 @@
     </div>
 
     <div id="ResourceSidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Resources</h1>
       <div class="content_wrapper square_list">
         {% include 'tools.njk' %}
       </div>
     </div>
     <div id="ResourceSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Resources</h1>
       <div class="content_wrapper square_list">
         {% include 'tools.njk' %}
