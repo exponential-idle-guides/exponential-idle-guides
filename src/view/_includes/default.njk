@@ -83,7 +83,8 @@
             
             }
             query_root.style.setProperty('--sidebar-width', output + "px");
-            query_root.style.setProperty('--btn-marginLeft-width', (output + window.visualViewport.width * 0.04) + "px");
+            query_root.style.setProperty('--btn-marginLeft-width', "50vw");
+            query_root.style.setProperty('--sidebar-column-gap', "5vw");
             query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
           }
           window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));

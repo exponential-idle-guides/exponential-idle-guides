@@ -9,7 +9,8 @@
   --sidebar-transition-direction: margin-left;
   --sidebar-height: 100%;
   --sidebar-button-max-width: 20vw;
-  --sidebar-column-count: 3;
+
+  --sidebar-column-count: 2;
   --sidebar-column-gap: 100px;
 }
 .sidebar {
@@ -133,6 +134,6 @@
 
   column-count: var(--sidebar-column-count);
   column-gap: var(--sidebar-column-gap);
-  
+
   list-style-position: inside;
 }
