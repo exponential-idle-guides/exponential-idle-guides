@@ -1,14 +1,19 @@
 :root{
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
-  --sidebar-padding:0%;
-  --sidebar-width:0%;
-  --btn-marginLeft-width:0%;
-  --sidebar-content-padding:8px;
-  --sidebar-header-font-size:1.5em;
-  --sidebar-transition-direction: margin-left;
+  --sidebar-padding: 0%;
+  --sidebar-width: 0%;
   --sidebar-height: 100%;
-  --sidebar-button-max-width: 20vw;
+
+  --btn-width: auto;
+  --btn-marginLeft-width: 0%;
+  --btn-marginRight-width: 0%;
+  --btn-marginTop-height: 0%;
+  --btn-max-width: 20vw;
+
+  --sidebar-content-padding: 8px;
+  --sidebar-header-font-size: 1.5em;
+  --sidebar-transition-direction: margin-left;
 
   --sidebar-column-count: 3;
   --sidebar-column-gap: 2.5vw;
@@ -73,7 +78,7 @@
 }
 
 .openbtn {
-  max-width: var(--sidebar-button-max-width);
+  max-width: var(--btn-max-width);
   font-size: 1.2em;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
@@ -89,10 +94,12 @@
 }
 
 #sidebarmain {
-  width:auto;
-  position:fixed;
+  width: var(--btn-width);
+  position: fixed;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
-  margin-left:var(--btn-marginLeft-width);
+  margin-left: var(--btn-marginLeft-width);
+  margin-right: var(--btn-marginRight-width);
+  margin-top: var(--btn-marginTop-height);
   z-index: 100;
 }
 

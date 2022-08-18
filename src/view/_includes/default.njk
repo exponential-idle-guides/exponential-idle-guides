@@ -29,18 +29,27 @@
     <script>
       const root = document.documentElement;
       const isMobile = navigator.userAgentData.mobile;
+      const query_root  =  document.querySelector(':root');
       window.alert("Is Mobile? " + isMobile);
 
       if (isMobile && !root.classList.contains('mobile')) {
-          root.classList.add("mobile");
-          root.classList.remove("desktop");
+        root.classList.add("mobile");
+        root.classList.remove("desktop");
+
+        query_root.style.setProperty('--btn-width', "33vw");
+        query_root.style.setProperty('btn-marginLeft-width', "0.5vw");
+        query_root.style.setProperty('btn-marginRight-width', "0.5vw");
+        
+        query_root.style.setProperty('--sidebar-column-gap', "5vw");
+        query_root.style.setProperty('--sidebar-column-count', "3");
       } else if(!isMobile && root.classList.contains('mobile')) {
-          root.classList.add("desktop");
-          root.classList.remove("mobile");
+        root.classList.add("desktop");
+        root.classList.remove("mobile");
+
+        query_root.style.setProperty('--sidebar-column-gap', "0");
+        query_root.style.setProperty('--sidebar-column-count', "1");
       }
-    </script>
-    <script>
-      const query_root  =  document.querySelector(':root');
+      
 
       function openSidebar(sidebars,sidebarheaders) {
         for (const sidebar of sidebars) {
@@ -48,46 +57,50 @@
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
         
-        if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%" 
-            && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
-          maxwidth = 0;
-          maxheaderwidth = 0;
-          mainwidth = document.getElementById("sidebarmain").offsetWidth;
+        if (isMobile) {
+          if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%" 
+              && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
+            maxwidth = 0;
+            maxheaderwidth = 0;
+            mainwidth = document.getElementById("sidebarmain").offsetWidth;
 
-          for (const sidebar of sidebars) {
-            document.getElementById(sidebar + "invis").style.width = "auto";
-            if(document.getElementById(sidebar + "invis").offsetWidth > maxwidth){
-              maxwidth = document.getElementById(sidebar + "invis").offsetWidth;
+            for (const sidebar of sidebars) {
+              document.getElementById(sidebar + "invis").style.width = "auto";
+              if(document.getElementById(sidebar + "invis").offsetWidth > maxwidth){
+                maxwidth = document.getElementById(sidebar + "invis").offsetWidth;
+              }
+              document.getElementById(sidebar + "invis").style.width = 0;
             }
-            document.getElementById(sidebar + "invis").style.width = 0;
-          }
 
-          document.getElementById(sidebarheaders).style.width = "auto";
-          maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
-          document.getElementById(sidebarheaders).style.width = "0%";
+            document.getElementById(sidebarheaders).style.width = "auto";
+            maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
+            document.getElementById(sidebarheaders).style.width = "0%";
 
-          if (maxwidth <= 0 && maxheaderwidth <= 0) {
-            query_root.style.setProperty('--sidebar-width', 'auto');
-            query_root.style.setProperty('--btn-marginLeft-width', 'auto');
-          } else {
-            if(maxheaderwidth >= window.visualViewport.width * 0.26){
-              output = maxheaderwidth + window.visualViewport.width * 0.02;
-            } else if (maxwidth >= window.visualViewport.width * 0.26) {
-              output = window.visualViewport.width * 0.26;
+            if (maxwidth <= 0 && maxheaderwidth <= 0) {
+              query_root.style.setProperty('--sidebar-width', 'auto');
+              query_root.style.setProperty('--btn-marginLeft-width', 'auto');
             } else {
-              output = maxwidth;
-            }
+              if(maxheaderwidth >= window.visualViewport.width * 0.26){
+                output = maxheaderwidth + window.visualViewport.width * 0.02;
+              } else if (maxwidth >= window.visualViewport.width * 0.26) {
+                output = window.visualViewport.width * 0.26;
+              } else {
+                output = maxwidth;
+              }
 
-            if((output + mainwidth) >= window.visualViewport.width){
-              output = window.visualViewport.width * 0.96 - mainwidth;
-            
+              if((output + mainwidth) >= window.visualViewport.width){
+                output = window.visualViewport.width * 0.96 - mainwidth;
+              
+              }
+              query_root.style.setProperty('--sidebar-width', "75vw");
+              query_root.style.setProperty('--btn-marginLeft-width', "80vw");
+              query_root.style.setProperty('--sidebar-column-gap', "5vw");
+              query_root.style.setProperty('--sidebar-padding', "2.5vw");
             }
-            query_root.style.setProperty('--sidebar-width', "75vw");
-            query_root.style.setProperty('--btn-marginLeft-width', "80vw");
-            query_root.style.setProperty('--sidebar-column-gap', "5vw");
-            query_root.style.setProperty('--sidebar-padding', "2.5vw");
+            window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
           }
-          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
+        } else {
+
         }
       }
 
