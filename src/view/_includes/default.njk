@@ -30,7 +30,7 @@
       const root = document.documentElement;
       const isMobile = navigator.userAgentData.mobile;
       const query_root  =  document.querySelector(':root');
-      window.alert("Is Mobile? " + isMobile + "\n root classes: " + root.classList);
+      window.alert("Is Mobile? " + isMobile + "\nroot classes: " + root.classList);
       
       /*
       if (isMobile && !root.classList.contains('mobile')) {
@@ -75,12 +75,15 @@
 
           for (const sidebar of sidebars) {
             document.getElementById(sidebar + "invis").style.width = "auto";
+          }
+          for (const sidebar of sidebars) {
             if(document.getElementById(sidebar + "invis").offsetWidth > maxwidth){
               maxwidth = document.getElementById(sidebar + "invis").offsetWidth;
             }
+          }
+          for (const sidebar of sidebars) {
             document.getElementById(sidebar + "invis").style.width = 0;
           }
-
           document.getElementById(sidebarheaders).style.width = "auto";
           maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
           document.getElementById(sidebarheaders).style.width = "0%";
@@ -104,6 +107,8 @@
             query_root.style.setProperty('--sidebar-width', "75vw");
             query_root.style.setProperty('--btn-marginLeft-width', "80vw");
             query_root.style.setProperty('--sidebar-padding', "2.5vw");
+            query_root.style.setProperty('--sidebar-column-gap', "5vw");
+            query_root.style.setProperty('--sidebar-column-count', "3");
           }
           window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
         }
