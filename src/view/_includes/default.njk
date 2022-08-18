@@ -36,23 +36,26 @@
         root.classList.add("mobile");
         root.classList.remove("desktop");
 
+        window.alert("Mobile set part 1");
         query_root.style.setProperty('--btn-width', "33vw");
         query_root.style.setProperty('btn-marginLeft-width', "0.5vw");
         query_root.style.setProperty('btn-marginRight-width', "0.5vw");
         
+        window.alert("Mobile set part 2");
         query_root.style.setProperty('--sidebar-column-gap', "5vw");
         query_root.style.setProperty('--sidebar-column-count', "3");
 
-        
-        window.alert("Mobile set");
+        window.alert("Mobile set full");
       } else if(!isMobile && root.classList.contains('mobile')) {
         root.classList.add("desktop");
         root.classList.remove("mobile");
 
+        window.alert("desktop set part 1");
         query_root.style.setProperty('--sidebar-column-gap', "0");
+        window.alert("desktop set part 2");
         query_root.style.setProperty('--sidebar-column-count', "1");
 
-        window.alert("desktop set");
+        window.alert("desktop set full");
       }
       
 
