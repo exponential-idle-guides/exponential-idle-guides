@@ -137,3 +137,18 @@
 
   list-style-position: inside;
 }
+.square_list ul ul, .square_list ol ol{
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0;
+
+  -moz-column-count: 1;
+  -moz-column-gap: 0;
+
+  -o-column-count: 1; 
+  -o-column-gap: 0;
+
+  column-count: 1;
+  column-gap: 0;
+
+  list-style-position: inside;
+}
