@@ -23,8 +23,6 @@
 
   --sidebar-column-count:3;
   --sidebar-column-gap:5vw;
-
-  --font-size:max(75%, 60% + 1.5vmin);
 }
 
 :root.mobile {
@@ -153,15 +151,15 @@
 .square_list li::before {
     content: '■';
     position: absolute;
-    left: calc((1- var(--font-size)) * 0.8em);
-    top: calc((1 - var(--font-size)) * 0.1em);
+    left: -0.8rem;
+    top: -0.3rem;
     font-size: 1.2em;
 }
 .square_list li li::before {
     content: '❖';
     position: absolute;
-    left: calc((1- var(--font-size)) * 0.8em);
-    top: calc(var(--font-size) * 0.1em);
+    left: -0.8rem;
+    top: -0.1rem;
     font-size: 1.2em;
 }
 
