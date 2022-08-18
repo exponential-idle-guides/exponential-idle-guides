@@ -9,6 +9,7 @@
   --btn-marginTop:0%;
   --btn-paddingLeft:0.5vw;
   --btn-paddingRight:0.5vw;
+  --btn-padding:min(2vh, 15px) min(3vw, 20px);
 
   --sidebar-height:100%;
   --sidebar-width:0%;
@@ -112,7 +113,7 @@
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
   color: var(--palette-stroke-sidebar-base);
-  padding: min(2vh, 15px) min(3vw, 20px);
+  padding: var(--btn-padding);
   border: none;
   word-wrap:normal;
   text-align:left;
