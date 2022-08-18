@@ -118,3 +118,11 @@
     top: -0.1em;
     font-size: 1.2em;
 }
+
+.square_list ul{
+  -webkit-column-count: 3; -webkit-column-gap:20px;
+  -moz-column-count:3; -moz-column-gap:20px;
+  -o-column-count: 3; -o-column-gap:20px;
+  column-count: 3; column-gap:20px;
+  list-style-position: inside;
+}
