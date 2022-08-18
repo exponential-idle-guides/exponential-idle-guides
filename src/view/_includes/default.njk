@@ -81,16 +81,24 @@
               query_root.style.setProperty('--sidebar-width', 'auto');
               query_root.style.setProperty('--btn-marginLeft', 'auto');
             } else {
+              window.alert("inside else 1");
               view_max = getComputedStyle(query_root).getPropertyValue('--sidebar-desktop-max-width');
+              window.alert("inside else 2");
               if(max_header_width >= window.visualViewport.width * view_max){
+                window.alert("inside else 3");
                 output = max_header_width + window.visualViewport.width * 0.02;
               } else if (max_width >= window.visualViewport.width * view_max) {
+                
+                window.alert("inside else 3");
                 output = window.visualViewport.width * view_max;
               } else {
+                window.alert("inside else 3");
                 output = max_width;
               }
+              window.alert("inside else 4");
               window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
 
+              window.alert("inside else 5");
               if((output + mainwidth) >= window.visualViewport.width){
                 output = window.visualViewport.width * 0.96 - mainwidth;
               
