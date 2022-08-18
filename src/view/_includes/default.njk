@@ -49,7 +49,6 @@
         document.getElementById(sidebars[0]).style.zIndex = "10";
         
         if (!isMobile) {
-          window.alert("desktop");
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
             window.alert("inside if");
@@ -86,15 +85,12 @@
               
               }
               query_root.style.setProperty('--sidebar-width', output + "px");
-              query_root.style.setProperty('--btn-marginTop', (output + window.visualViewport.width * 0.04) + "px");
               query_root.style.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
               query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
             }
           }
-          window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width'));
         } else {
           window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-padding') + "\n" + document.getElementById('SidebarHeaders').offsetHeight + "/" + document.getElementById('SidebarHeaders').clientHeight + "\n" + document.getElementById('HeaderSidebar').offsetHeight + "/" + document.getElementById('HeaderSidebar').clientHeight);
-          window.alert("mobile");
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") {
             window.alert("inside if");
@@ -132,15 +128,12 @@
               }
               query_root.style.setProperty('--sidebar-height', output + "px");
               query_root.style.setProperty('--btn-marginTop', (output + window.visualViewport.height * 0.04) + "px");
-              query_root.style.setProperty('--sidebar-padding', window.visualViewport.height * 0.02 + "px");
+              query_root.style.setProperty('--sidebar-padding', window.visualViewport.height * 0.04 + "px");
             }
           }
-          //window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight);
 
           window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-padding') + "\n" + document.getElementById('SidebarHeaders').offsetHeight + "/" + document.getElementById('SidebarHeaders').clientHeight + "\n" + document.getElementById('HeaderSidebar').offsetHeight + "/" + document.getElementById('HeaderSidebar').clientHeight);
         }
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-gap'));
       }
 
       window.addEventListener('click', function(e){
