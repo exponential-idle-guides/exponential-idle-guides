@@ -166,9 +166,9 @@
             }
           }
         } else {
-          window.alert(Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) + "/" + Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) + "\n" + (Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0])) + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + " / " + (getComputedStyle(query_root).getPropertyValue('--sidebar-height')!="0%"));
+          window.alert(document.getElementById(curr_sidebar).offsetHeight + "/" + Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) + "\n" + (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0])) + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + " / " + (getComputedStyle(query_root).getPropertyValue('--sidebar-height')!="0%"));
 
-          if (Math.round(document.getElementById(curr_sidebar).offsetHeight - window.visualViewport.height * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
+          if (document.getElementById(curr_sidebar).offsetHeight >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]) 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') != "0%") {
             bool = false;
             sidebarlist = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
