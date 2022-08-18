@@ -52,32 +52,36 @@
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
             window.alert("inside if");
-            maxwidth = 0;
-            maxheaderwidth = 0;
+            max_width = 0;
+            max_header_width = 0;
             mainwidth = document.getElementById("sidebarmain").offsetWidth;
 
             for (const sidebar of sidebars) {
               document.getElementById(sidebar + "invis").style.width = "auto";
-              if(document.getElementById(sidebar + "invis").offsetWidth > maxwidth){
-                maxwidth = document.getElementById(sidebar + "invis").offsetWidth;
+              if(document.getElementById(sidebar + "invis").offsetWidth > max_width){
+                max_width = document.getElementById(sidebar + "invis").offsetWidth;
               }
               document.getElementById(sidebar + "invis").style.width = 0;
             }
 
+            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
+            for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>maxwidth){maxwidth=document.getElementById(sidebar+"invis").offsetWidth;}}
+            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
+
             document.getElementById(sidebarheaders).style.width = "auto";
-            maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
+            max_header_width = document.getElementById(sidebarheaders).offsetWidth;
             document.getElementById(sidebarheaders).style.width = "0%";
 
-            if (maxwidth <= 0 && maxheaderwidth <= 0) {
+            if (max_width <= 0 && max_header_width <= 0) {
               query_root.style.setProperty('--sidebar-width', 'auto');
               query_root.style.setProperty('--btn-marginLeft', 'auto');
             } else {
-              if(maxheaderwidth >= window.visualViewport.width * 0.26){
-                output = maxheaderwidth + window.visualViewport.width * 0.02;
-              } else if (maxwidth >= window.visualViewport.width * 0.26) {
+              if(max_header_width >= window.visualViewport.width * 0.26){
+                output = max_header_width + window.visualViewport.width * 0.02;
+              } else if (max_width >= window.visualViewport.width * 0.26) {
                 output = window.visualViewport.width * 0.26;
               } else {
-                output = maxwidth;
+                output = max_width;
               }
 
               if((output + mainwidth) >= window.visualViewport.width){
@@ -97,7 +101,7 @@
             max_height = 0;
             max_header_height = 0;
             main_height = document.getElementById("sidebarmain").offsetHeight;
-
+            /*
             for (const sidebar of sidebars) {
               document.getElementById(sidebar + "invis").style.height = "auto";
               if(document.getElementById(sidebar + "invis").offsetHeight > max_height){
@@ -105,6 +109,10 @@
               }
               document.getElementById(sidebar + "invis").style.height = "0%";
             }
+            */
+            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.height="auto";}
+            for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetHeight>max_height){max_height=document.getElementById(sidebar+"invis").offsetHeight;}}
+            for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.height=0;}
 
             document.getElementById(sidebarheaders).style.height = "auto";
             max_header_height = document.getElementById(sidebarheaders).offsetHeight;
@@ -121,7 +129,7 @@
               } else {
                 output = max_height;
               }
-              window.alert(max_height+"\n"+max_header_height+"\n"+output+"\n"+main_height+"\n"+window.visualViewport.height)*0.26;
+              window.alert(max_height+"\n"+max_header_height+"\n"+output+"\n"+main_height+"\n"+window.visualViewport.height*0.26);
               if((output + main_height) >= window.visualViewport.height){
                 output = window.visualViewport.height * 0.96 - main_height;
               
