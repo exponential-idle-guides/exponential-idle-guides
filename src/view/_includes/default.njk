@@ -29,7 +29,7 @@
     <script>
       const root = document.documentElement;
       const isMobile = navigator.userAgentData.mobile;
-      window.alert(isMobile)
+      window.alert("Is Mobile? " + isMobile);
 
       if (isMobile && !root.classList.contains('mobile')) {
           root.classList.add("mobile");
@@ -61,7 +61,7 @@
             }
             document.getElementById(sidebar + "invis").style.width = 0;
           }
-          
+
           document.getElementById(sidebarheaders).style.width = "auto";
           maxheaderwidth = document.getElementById(sidebarheaders).offsetWidth;
           document.getElementById(sidebarheaders).style.width = "0%";
@@ -86,6 +86,7 @@
             query_root.style.setProperty('--btn-marginLeft-width', (output + window.visualViewport.width * 0.04) + "px");
             query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
           }
+          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width'));
         }
       }
 
