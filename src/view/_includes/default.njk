@@ -90,6 +90,7 @@
               query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
             }
           }
+          window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width'));
         } else {
           window.alert("mobile");
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
@@ -132,6 +133,7 @@
               query_root.style.setProperty('--sidebar-padding', window.visualViewport.height * 0.02 + "px");
             }
           }
+          window.alert(window.visualViewport.height * 0.04 + "\n" + getComputedStyle(query_root).getPropertyValue('--sidebar-height') + "\n" + getComputedStyle(query_root).getPropertyValue('--btn-marginTop') + "/" + document.getElementById('button_guides').offsetHeight);
         }
         window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
         window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-gap'));

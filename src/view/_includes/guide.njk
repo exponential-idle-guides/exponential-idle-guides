@@ -117,13 +117,13 @@
 
     <div id="sidebarmain">
       <div>
-        <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
+        <button id="button_guides" class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
       </div>
       <div>
-        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+        <button id="button_toc" class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
       </div>
       <div>
-        <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other Resources</button>
+        <button id="button_tools" class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other Resources</button>
       </div>
     </div>
   {% endif %}
