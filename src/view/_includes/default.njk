@@ -55,7 +55,6 @@
         if (!isMobile) {
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
-            window.alert("inside if");
             max_width = 0;
             max_header_width = 0;
             mainwidth = document.getElementById("sidebarmain").offsetWidth;
@@ -68,17 +67,15 @@
               document.getElementById(sidebar + "invis").style.width = 0;
             }
             */
-            window.alert("inside if 2");
             for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
             for (const sidebar of sidebars) {if(document.getElementById(sidebar+"invis").offsetWidth>max_width){max_width=document.getElementById(sidebar+"invis").offsetWidth;}}
             for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width=0;}
 
-            window.alert("inside if 3");
             document.getElementById(sidebarheaders).style.width = "auto";
             max_header_width = document.getElementById(sidebarheaders).offsetWidth;
             document.getElementById(sidebarheaders).style.width = "0%";
 
-            window.alert("inside if 4");
+            window.alert("max_width: " + max_width + "\nmax_header_width: " + max_header_width + "\nmainwidth: " + mainwidth);
             if (max_width <= 0 && max_header_width <= 0) {
               window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
               query_root.style.setProperty('--sidebar-width', 'auto');
