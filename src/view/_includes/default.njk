@@ -73,6 +73,7 @@
             document.getElementById(sidebarheaders).style.width = "0%";
 
             if (max_width <= 0 && max_header_width <= 0) {
+              window.alert(max_width+"\n"+max_header_width+"\n"+output+"\n"+main_width+"\n"+window.visualViewport.width*view_max);
               query_root.style.setProperty('--sidebar-width', 'auto');
               query_root.style.setProperty('--btn-marginLeft', 'auto');
             } else {
@@ -119,6 +120,7 @@
             document.getElementById(sidebarheaders).style.height = "0%";
 
             if (max_height <= 0 && max_header_height <= 0) {
+              window.alert(max_height+"\n"+max_header_height+"\n"+output+"\n"+main_height+"\n"+window.visualViewport.height*view_max);
               query_root.style.setProperty('--sidebar-height', 'auto');
               query_root.style.setProperty('--btn-marginTop', 'auto');
             } else {
@@ -131,7 +133,7 @@
                 output = max_height;
               }
               window.alert(max_height+"\n"+max_header_height+"\n"+output+"\n"+main_height+"\n"+window.visualViewport.height*view_max);
-              
+
               if((output + main_height) >= window.visualViewport.height){
                 output = window.visualViewport.height * 0.96 - main_height;
               
