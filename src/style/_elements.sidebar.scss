@@ -152,3 +152,7 @@
 
   list-style-position: inside;
 }
+
+.sidebartitle, .closebtn {
+  column-span:all;
+}
