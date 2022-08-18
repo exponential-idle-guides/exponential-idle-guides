@@ -9,6 +9,8 @@
   --sidebar-transition-direction: margin-left;
   --sidebar-height: 100%;
   --sidebar-button-max-width: 20vw;
+  --sidebar-column-count: 3;
+  --sidebar-column-gap: 100px;
 }
 .sidebar {
   height: var(--sidebar-height);
