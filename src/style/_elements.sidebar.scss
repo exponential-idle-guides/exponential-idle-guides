@@ -151,15 +151,15 @@
 .square_list li::before {
     content: '■';
     position: absolute;
-    left: calc(- var(--font-size) * 0.8);
-    top: calc(- var(--font-size) * 0.3);
+    left: calc(- var(--font-size) * 3);
+    top: calc(- var(--font-size) * 0.1);
     font-size: 1.2em;
 }
 .square_list li li::before {
     content: '❖';
     position: absolute;
-    left: calc(- var(--font-size) * 0.8);
-    top: calc(- var(--font-size) * 0.1);
+    left: calc(- var(--font-size) * 3);
+    top: calc(+ var(--font-size) * 0.1);
     font-size: 1.2em;
 }
 
