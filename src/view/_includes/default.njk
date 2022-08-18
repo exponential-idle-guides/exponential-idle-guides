@@ -32,7 +32,6 @@
       const query_root  =  document.querySelector(':root');
       window.alert("Is Mobile? " + isMobile + "\nroot classes: " + root.classList);
       
-      /*
       if (isMobile && !root.classList.contains('mobile')) {
         root.classList.add("mobile");
         root.classList.remove("desktop");
@@ -57,7 +56,7 @@
         
         window.alert("Mobile set full");
       }
-      */
+      
       function openSidebar(sidebars,sidebarheaders) {
         window.alert("start");
         for (const sidebar of sidebars) {
@@ -109,12 +108,6 @@
           }
           window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width')+" "+getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding'));
         }
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width'));
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width').length);
-        window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%");
-        window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width'));
-        window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width').length);
-        window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginLeft-width') == "0%");
       }
 
       function closeSidebar() {

@@ -1,22 +1,22 @@
 :root{
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
-  --sidebar-padding: 0%;
-  --sidebar-width: 0%;
-  --sidebar-height: 100%;
+  --sidebar-padding:0%;
+  --sidebar-width:0%;
+  --sidebar-height:100%;
 
   --btn-width: auto;
-  --btn-marginLeft-width: 0%;
-  --btn-marginRight-width: 0%;
-  --btn-marginTop-height: 0%;
-  --btn-max-width: 20vw;
+  --btn-marginLeft-width:0%;
+  --btn-marginRight-width:0%;
+  --btn-marginTop-height:0%;
+  --btn-max-width:20vw;
 
-  --sidebar-content-padding: 8px;
-  --sidebar-header-font-size: 1.5em;
-  --sidebar-transition-direction: margin-left;
+  --sidebar-content-padding:8px;
+  --sidebar-header-font-size:1.5em;
+  --sidebar-transition-direction:margin-left;
 
-  --sidebar-column-count: 3;
-  --sidebar-column-gap: 5vw;
+  --sidebar-column-count:3;
+  --sidebar-column-gap:5vw;
 }
 .sidebar {
   height: var(--sidebar-height);
