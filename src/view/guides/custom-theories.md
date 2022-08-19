@@ -1,6 +1,6 @@
 ---
 title: "Custom Theories"
-description: "Our guide for understanding and doing official custom theories."
+description: "Our guide for understanding and playing official custom theories."
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
@@ -12,12 +12,12 @@ order: 8
 
 <p>
 Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
-custom theories that contribute to tau up to e150 per theory. These are Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
+custom theories that contribute up to e150 tau per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
 
 
-Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contributions of 
-\\(\tau\\) = \\(\rho^{0.1}\\) while EF has a tau contribution of \\(\tau\\) = \\(\rho^{0.4}\\)
+In order to balance custom theories with the main theories and the endgame, custom theories have a low conversion rate from phi to tau. WSP, SL, and CSR2 have conversion rates of 
+\\(\tau\\) = \\(\rho^{0.1}\\) while EF has a tau converstion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
 </p>
 
 
@@ -25,7 +25,7 @@ Official custom theories contribute to tau in-game. WSP, SL, and CSR2 have contr
 <p> 
 If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
- For idles, do the one with the highest idle tau/hour (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just below.<br><br>
+ For idles, do the one with the highest idle tau/hour (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 </p>
 
@@ -149,7 +149,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 #### SL Overview
 
-SL is the second official custom theory, developed by Ellipsis. This theory uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing rhodot and rho. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
+SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing rhodot and rho since e-gamma approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
 
 \\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^{1.06}}}{e - \gamma}\\)
 
@@ -189,9 +189,7 @@ b2: Doubles in value every level. Toward the end of a publication this doubles r
 
 #### SL strategy
 
-None of the variables are very strong nor very weak. Therefore, we can get away with autobuy all for idle. Selectively buying variables at certain times (active) yields very little results. Therefore we will autobuy all. Before autobuy, simply buy the cheapest variable. 
-
-The milestone order for idle is all into 4th milestone, then 3rd milestone, then 1st milestone, then 2nd milestone. Since all we do for idle is autobuy, idling is very simple. 
+All variables in SL are about the same in power, except for \\a_1\\ and \\b_1\\ (which are slightly worse than a_2 and b_2). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
 
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
@@ -225,7 +223,7 @@ e200 - e300: SLMS
 
 #### Post e300+ rho
 
-At this point, the theory becomes very idle. We simply autobuy all. Publish at approximately 8 multiplier. If you wish to improve efficiency, you can disable a1a2 at about 4.5 publication multiplier until publish. 
+At this point, the theory becomes very idle. We simply autobuy all. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable a1a2 at about 4.5 publication multiplier until publish. 
 
 
 
@@ -275,9 +273,9 @@ e200 - e300: SLMS
 #### EF Overview
 <p>
 This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of 
-\\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
+\\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number. 
 
-EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:</p>
+EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 tau and has the largest instantaneous jump in tau out of all custom theories. The equations are as follows:</p>
 
 \\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
@@ -289,9 +287,9 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-<p>The first line is the main equation. We want to maximize rho1dot. All the a1a2a3 terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory. 
+<p>The first line is the main equation. We want to maximize rho1dot. All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
 
-The second line is not relevant to the strategies. 
+The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
 The third line describes g_r and g_i, which are used to generate 'R' and 'I' currencies. This line by itself doesn't do much. 
 
