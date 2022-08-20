@@ -1031,7 +1031,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 <br /> <br />
-Designed to be easily compatible with current versions of QoL.<br /> <br />
+It is designed to be an easier version of current t3 strategies.<br /> <br />
 This is the only active SNAX strategy.
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
