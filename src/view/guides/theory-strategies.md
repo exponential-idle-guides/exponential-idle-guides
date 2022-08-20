@@ -310,16 +310,6 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td>✔️</td>
          <td>❌</td>
       </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When cost is ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
    </tbody>
 </table>
 
