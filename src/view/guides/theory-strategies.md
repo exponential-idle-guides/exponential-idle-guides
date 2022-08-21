@@ -37,9 +37,11 @@ T1 is one of the theories that benefit the most from active strategies. T1<span 
 
 <span class="h3-fake">Theory 2: Differential Calculus</span>
 
-T2 is the only theory without an active strategy, despite attempts.
+T2 is the only theory without an active strategy after all milestones are bought, despite attempts.
 
 - [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
+
+- [T2<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2ms)&nbsp; — &nbsp;Active
 
 - [T2<span style="color:#41AD21">Coast-X%</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
 
@@ -554,6 +556,11 @@ Strategy Credits:
 - XLII, whose theory simulator was used to develop and test this strategy. <br />
 
 The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+
+### T2<span style="color:#41AD21">MS</span>
+
+**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
+
 ### T2<span style="color:#41AD21">Coast-X%</span>
 <table class="spqcey">
 <thead>
