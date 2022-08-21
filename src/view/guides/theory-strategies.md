@@ -559,7 +559,9 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 
 ### T2<span style="color:#41AD21">MS</span>
 
-**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
+<br /><br />
+
+**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
 
 ### T2<span style="color:#41AD21">Coast-X%</span>
 <table class="spqcey">
