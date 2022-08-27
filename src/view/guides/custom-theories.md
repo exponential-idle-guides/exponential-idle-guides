@@ -276,6 +276,7 @@ e200 - e300: SLMS
 <p>
 This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of 
 \\(cis{\theta} = cos{\theta} + isin{\theta}\\), where 'i' is a complex number. 
+\\(sin{\theta}\\)
 
 EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies, which some players found obnoxious. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1. We will explore each equation now:</p>
 
