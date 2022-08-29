@@ -356,6 +356,8 @@ Strategy Credits:
 </table>
 <br /> <br />
 
+**Do not buy \\(c_1\\) or \\(c_2\\) after e300\\(\rho\\).** <br /><br />
+
 **For the \\(c_2\\) Ratio:**
 
 ![\\(c_2\\) Ratio](/images/t1ratioc2ratio.png)
