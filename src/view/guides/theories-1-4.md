@@ -274,6 +274,8 @@ to run idle overnight.
 
 When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
+{{ yt.embed('https://www.youtube.com/watch?v=XcatIVPd8Jg') }}
+
 #### T2 milestone route
 
 <table class="milestone_routing">
