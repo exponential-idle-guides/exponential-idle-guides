@@ -29,7 +29,7 @@ In general, you want to be as efficient as possible since R9 does not affect cus
  
 If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
- For idles, do the one with the highest idle \\(\tau/hour \\)(or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\)and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+ For idles, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 
 
@@ -73,7 +73,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase on rhodot on average.</td>
       </tr>
       <tr>
-         <th>\\(q_2 \\)</th>
+         <th>q_2</th>
          <td>Doubles rhodot - instantaneous.</td>
       </tr>
       <tr>
@@ -85,7 +85,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
       </tr>
       <tr>
-         <th>\\(c_2 \\)</th>
+         <th>c_2</th>
          <td>Doubles rhodot - over time</td>
       </tr>
 
@@ -167,20 +167,20 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\)long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\)long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
 
-The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
+The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-\\(\gamma \\)) in the first equation will be halved. 
 
 
 The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
 
 The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase \\(b_1 \\) and \\(b_2 \\) to increase \\(\rho_3 \\). The '1.04' exponents are from milestones. 
 
-The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
+The final equation simply states the value of \\(a_3 \\). The lower the better. Default without milestone is \\(a_3 = 2 \\).
 
 From the equations above, the approximate long term effects of \\(\dot{rho_2} \\) and \\(\dot{\rho_3} \\) on \\(\rho_1 \\)are as follows:
 
-\\(\dot{rho_2} \\): square root effect - quadrupling \\(\dot{rho_2} \\) -> double rho1. 
+\\(\dot{\rho_2} \\): square root effect - quadrupling \\(\dot{\rho_2} \\) -> doubles \\(\rho_1 \\). 
 \\(\dot{\rho_3} \\): approximately ^0.64 - \\(\rho_1 \\)~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
 
 
