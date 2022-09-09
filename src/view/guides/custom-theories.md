@@ -100,10 +100,10 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 #### WSP strategy
 
 Early game the variable strengths are ordered as follows: <br>
-q2 ~= c2 > n > c1 > q1 <br><br>
+\\(q_2 \\) ~= c2 > n > c1 > \\(q_1 \\) <br><br>
 
 Late game these become: <br>
-n > q2 ~= c2 > q1 >>> c1 <br><br>
+n > \\(q_2 \\) ~= c2 > \\(q_1 \\) >>> c1 <br><br>
 
 ##### Idle
 
@@ -114,11 +114,11 @@ Once you have e400 \\(\rho \\), c1 starts to become extremely bad. Because of th
 
 ##### Active
 
-For a simple active strategy before e400 \\(\rho \\), simply autobuy q2 and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of q2 and c2. 
+For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of \\(q_2 \\) and c2. 
 <br>
-For q1, we will buy it when its cost is less than 10% of the minimum of q2 and c2. For example, if q1 costs 1.2e100 and q2 costs 1e101, we would not buy q1 as it's 'too expensive' compared to q2.  <br><br>
+For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and c2. For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to q2.  <br><br>
 
-For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and q2 costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 20 seconds or so. <br><br>
+For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 20 seconds or so. <br><br>
 
 
 #### WSP milestone route
@@ -312,34 +312,34 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 tau and has the largest instantaneous jump in tau out of all custom theories. The equations are as follows:
 
-\\(\dot{\rho} = (\\(a_1 \\)\\(a_2 \\)a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
+\\(\dot{\rho} = (\\(a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
 \\(G(t) = g_r+g_i\\)
 
-\\(g_r = \\(b_1 \\)\\(b_2 \\)cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
+\\(g_r = \\(b_1b_2)cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
 
 \\(\dot{q} = q_1q_2\\)
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and a_3 respectively, they are very important. 
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(\\(R^2 \\) \\) and the \\(\\(I^2 \\) \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
-The third line describes g_r and g_i, which are used to generate 'R' and 'I' currencies. This line by itself doesn't do much. 
+The third line describes \\(g_r \\) and \\(g_i \\), which are used to generate 'R' and 'I' currencies. This line by itself doesn't do much. 
 
 The fourth line simply describes qdot. This is used in the first equation directly. 
 
-The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = \\(b_1 \\)^{2}\\(b_2 \\)^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
+The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = \\(b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
 
 #### EF strategy
 
-Initially, you only have tdot, q1, q2 unlocked. Buy q1 at about 1/8th cost of q2, and buy tdot when it's available. At e20 rho when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying q1 at 1/8th cost of q2). 
+Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 rho when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). 
 
-The first 2 milestones are redundant by themselves. The R^2 term and the I^2 term are insignificant compared to the tq^2 term. 
-Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of q2 cost.
+The first 2 milestones are redundant by themselves. The \\(R^2 \\) term and the \\(I^2 \\) term are insignificant compared to the \\(tq^2 \\) term. 
+Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of \\(q_2 \\) cost.
 
 
 
@@ -458,7 +458,7 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 \\(m = n + log_2{(c_2)}\\)
 <br><br>
 
- The first line is self explanatory. The exponents on q1 are from milestones. 'q' will increase during the publication. 
+ The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. 'q' will increase during the publication. 
 <br>
 For the second line, both the variable c2 and its exponents are from milestones. The absolute value section on the right describes the approximation of Nm / Dm to square root 2. As Nm / Dm get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
 <br>
@@ -500,16 +500,16 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and q1, where you buy them when they are less than 10% cost of minimum(c2, q2, n). 
+The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(c2, \\(q_2 \\), n). 
 
-For the milestone swapping stratedy, the general idea is to switch milestones from c2 and its exponents, to q1 exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
+For the milestone swapping stratedy, the general idea is to switch milestones from c2 and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
 
 
 ##### CSR2 Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have q1 exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
 
-The reason milestone swapping works is because the benefits of using c2 related milestones (having high q), remain when you switch to q1 exponent milestones. If we only use q1 exponent, then we have really low q. If we only use c2 related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through c2 related milestones, then take advantage of the q1 exponent milestones, while keeping the high value of q we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using c2 related milestones (having high q), remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low q. If we only use c2 related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through c2 related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of q we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the Theory Strategies section of the guide.
 
