@@ -178,11 +178,6 @@ The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is 
 
 The final equation simply states the value of \\(a_3 \\). The lower the better. Default without milestone is \\(a_3 = 2 \\).
 
-From the equations above, the approximate long term effects of \\(\dot{rho_2} \\) and \\(\dot{\rho_3} \\) on \\(\rho_1 \\)are as follows:
-
-\\(\dot{\rho_2} \\): square root effect - quadrupling \\(\dot{\rho_2} \\) -> doubles \\(\rho_1 \\). 
-\\(\dot{\rho_3} \\): approximately ^0.64 - \\(\rho_1 \\)~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
-
 
 #### SL Variable Description
 Approximate variable strengths on rhodot with all milestones are as follows:
@@ -515,7 +510,7 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 \\(\dot{q} = c_1c_2^2 |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\), 
 \\(N_m = 2N_{m-1} + N_{m-2}, N_0 = 1, N_1 = 3\\)
 \\(D_m = 2D_{m-1} + D_{m-2}, D_0 = 1, D_1 = 2\\)
-\\(m = \\(n \\) + log_2{(c_2)}\\)
+\\(m = n + log_2{(c_2)}\\)
 <br><br>
 
  The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. 'q' will increase during the publication. 
