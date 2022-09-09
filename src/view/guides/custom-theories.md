@@ -155,6 +155,8 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing rhodot and rho since e-gamma approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
 
+#### SL Equation Description
+
 \\(\dot{\rho}_1 = \frac{\sqrt{\rho_2^{1.06}}}{e - \gamma}\\)
 
 \\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
@@ -193,19 +195,19 @@ Approximate variable strengths on rhodot with all milestones are as follows:
    </tr></thead>
    <tbody>
       <tr>
-         <th><p>\\(a_1 \\)</p></th>
-         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\dot{\rho_2} \\) per level. Since \\(\rho_1 \\) is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in \\(\rho_1 \\)per level.</td>
+         <th><p>a1</p></th>
+         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in rho2dot per level. Since rho1 is approximately square root of rho2, overall this comes down to about 23% increase in rho1 per level.</td>
       </tr>
       <tr>
-         <th>\\(a_2 \\)</th>
-         <td>Doubles in value every level. Doubles \\(\rho_2 \\) long term. Increases \\(\rho_1 \\)by 40% ish long term.</td>
+         <th>a2</th>
+         <td>Doubles in value every level. Doubles rho2 long term. Increases rho1 by 40% ish long term.</td>
       </tr>
       <tr>
-         <th>\\(b_1 \\)</th>
-         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in \\(\dot{\rho_3} \\). Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
+         <th>b1</th>
+         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in rho3dot. Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
       </tr>
       <tr>
-         <th>\\(b_2 \\)</th>
+         <th>b2</th>
          <td>Doubles in value every level. Toward the end of a publication this doubles rho1.</td>
       </tr>
       
@@ -310,19 +312,21 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number. 
 
 
-EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to \\(\tau \\) conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories. The equations are as follows:
+EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to \\(\tau \\) conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
 
-\\(\dot{\rho} = (\\(a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
+#### EF Equation Description
+
+\\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
 \\(G(t) = g_r+g_i\\)
 
-\\(g_r = \\(b_1b_2)cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
+\\(g_r = b_1b_2cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
 
 \\(\dot{q} = q_1q_2\\)
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(\\(R^2 \\) \\) and the \\(\\(I^2 \\) \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important. 
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
@@ -330,9 +334,65 @@ The third line describes \\(g_r \\) and \\(g_i \\), which are used to generate '
 
 The fourth line simply describes qdot. This is used in the first equation directly. 
 
-The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = \\(b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
+The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
+Approximate variable strengths on rhodot with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of EF.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>tdot</th>
+         <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
+      </tr>
+      <tr>
+         <th>q1</th>
+         <td>Standard variable. Doubles every 10 levels. Aproximately 7% increase in rhodot per level over time.</td>
+      </tr>
+      <tr>
+         <th>q2</th>
+         <td>Doubles in value every level. Also doubles rhodot for each level bought, over time.</td>
+      </tr>
+      <tr>
+         <th>b1</th>
+         <td>Costs R to buy rather than rho. Increases R by approximately 14% per level.</td>
+      </tr>
+      <tr>
+         <th>b2</th>
+         <td>Costs R to buy rather than rho. Increases R by approximately 20% per level. </td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>Costs I to buy rather than rho. Increases I by approximately 20% per level.</td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Costs I to buy rather than rho. Increases I by approximately 20% per level.</td>
+      </tr>
+      <tr>
+         <th>a1</th>
+         <td>Doubles approximately every 10 levels. Costs rho to buy. With full milestones this variable increases rhodot on average by about 11-12% for each level bought.</td>
+      </tr>
+      <tr>
+         <th>a2</th>
+         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. For example, buying from level 20 to 21 is more than 5 times increase in rhodot!! In general, if the last digit of the level is close to zero (9 is not close to zero), then buying this variable is very impactful. Overall, this variable ranges from 10% to 700%+ effectiveness in rhodot! </td>
+      </tr>
+      <tr>
+         <th>a3</th>
+         <td>Costs I to buy. With full ilestones, this variable approximately triples rhodot.</td>
+      </tr>
+
+   </tbody>
+
+</table>
+
+<br>
+<br>
 
 #### EF strategy
 
@@ -487,7 +547,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase in rhodot per level (instantaneous).</td>
       </tr>
       <tr>
-         <th>\\(q_2 \\)</th>
+         <th>q2</th>
          <td>Doubles rhodot per level (instantaneous).</td>
       </tr>
       <tr>
@@ -499,7 +559,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>Long term will multiply rhodot by 6 times! However, it is not instantaneous.</td>
       </tr>
       <tr>
-         <th>\\(c_2 \\)</th>
+         <th>c2</th>
          <td>Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
       </tr>
 
