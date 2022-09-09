@@ -52,7 +52,7 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
-For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the c2 variable is a milestone which is not initially available. <br>
+For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the \\(c_2 \\) variable is a milestone which is not initially available. <br>
 
 The third line is the most complicated. Generally we can factorize an equation when its graph touches the x-axis. For a sine curve, it touches the x-axis starting from x = 0, and repeats every x= \\(\pi\\). These multiplied factors form the basis of the Weierstrass Sine Product. A simpler interpretation is that we can see 'x' appearing both outside and inside the products in the numerator. Since \\(\chi\\) is 'x' here, the higher the \\(\chi\\), the higher the \\(s_n({\chi})\\) as stated earlier. <br>
 
@@ -100,10 +100,10 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 #### WSP strategy
 
 Early game the variable strengths are ordered as follows: <br>
-\\(q_2 \\) ~= c2 > n > c1 > \\(q_1 \\) <br><br>
+\\(q_2 \\) ~= \\(c_2 \\) > n > c1 > \\(q_1 \\) <br><br>
 
 Late game these become: <br>
-n > \\(q_2 \\) ~= c2 > \\(q_1 \\) >>> c1 <br><br>
+n > \\(q_2 \\) ~= \\(c_2 \\) > \\(q_1 \\) >>> c1 <br><br>
 
 ##### Idle
 
@@ -114,7 +114,7 @@ Once you have e400 \\(\rho \\), c1 starts to become extremely bad. Because of th
 
 ##### Active
 
-For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and c2 since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of \\(q_2 \\) and c2. 
+For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and \\(c_2 \\) since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of \\(q_2 \\) and c2. 
 <br>
 For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and c2. For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to q2.  <br><br>
 
@@ -450,9 +450,9 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 
 #### CSR2 Equation Description
 
-\\(\dot{rho} = q_1^{1.15}q_2q\\)
+\\(\dot{\rho} = q_1^{1.15}q_2q\\)
 
-\\(\dot{q} = c_1c_2^2 X |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\) 
+\\(\dot{q} = c_1c_2^2 |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\), 
 \\(N_m = 2N_{m-1} + N_{m-2}, N_0 = 1, N_1 = 3\\)
 \\(D_m = 2D_{m-1} + D_{m-2}, D_0 = 1, D_1 = 2\\)
 \\(m = n + log_2{(c_2)}\\)
@@ -460,28 +460,55 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 
  The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. 'q' will increase during the publication. 
 <br>
-For the second line, both the variable c2 and its exponents are from milestones. The absolute value section on the right describes the approximation of Nm / Dm to square root 2. As Nm / Dm get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
+For the second line, both the variable \\(c_2 \\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m \\)/ \\(D_m \\) to square root 2. As \\(N_m \\)/ \\(D_m \\) get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
 <br>
-The third and fourth lines are recurrence relations on Nm and Dm. This means that the current value of Nm and Dm depend on their previous values. We start with N0 = 1, N1 = 3. The equation will then read as:<br>
-N2 = 2N1 + N0 -> N2 = 2 x 3 + 1 = 7. 
-Then N3 = 2N2 + N1 -> 2 x 7 + 3 = 17. 
-Similar logic is applied to Dm equations. 
+The third and fourth lines are recurrence relations on \\(N_m \\)and Dm. This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
+\\(N_2 \\) = 2\\(N_1 \\) + \\(N_0 \\) -> \\(N_2 \\) = 2 x 3 + 1 = 7. 
+Then N3 = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17. 
+Similar logic is applied to \\(D_m \\) equations. 
 
-This occurs until we reach Nm and Dm reach whatever 'm' values we have. This is shown in the next equation:
+This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
 
-The fourth equation relates 'm' as described above. We can see that as we buy n and c2, our m will increase, so the 2 recurrence equations above will 'repeat' more often and Nm, Dm will increase. From how n and c2 values are calculated, buying 1 level of n or c2 will increase m by 1.
-
-
+The fourth equation relates 'm' as described above. We can see that as we buy n and \\(c_2 \\), our m will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how n and \\(c_2 \\) values are calculated, buying 1 level of n or \\(c_2 \\) will increase m by 1.
 
 
 #### CSR2 Variable Description
 Approximate variable strengths on rhodot with all milestones are as follows:
 
-q1: About 7% increase in rhodot per level (instantaneous).
-q2: Doubles rhodot per level (instantaneous).
-n: Long term will multiply rhodot by 6 times! However, it is not instantaneous.
-c1: About 7% increase in rhodot per level; not instantaneous. This is the weakest variable. 
-c2: Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.
+<table class="T2">
+<caption>Brief summary of variable strengths of CSR2.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q1</th>
+         <td>About 7% increase in rhodot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>q2</th>
+         <td>Doubles rhodot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>About 7% increase in rhodot per level; not instantaneous. This is the weakest variable. </td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Long term will multiply rhodot by 6 times! However, it is not instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
+      </tr>
+
+   </tbody>
+
+</table>
+
+<br>
+<br>
 
 
 
@@ -500,16 +527,16 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(c2, \\(q_2 \\), n). 
+The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), n). 
 
-For the milestone swapping stratedy, the general idea is to switch milestones from c2 and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
+For the milestone swapping stratedy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
 
 
 ##### CSR2 Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase rhodot straight away. We also have \\(c_2 \\) related milestones, which increases the q variable, which increases rhodot. 
 
-The reason milestone swapping works is because the benefits of using c2 related milestones (having high q), remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low q. If we only use c2 related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through c2 related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of q we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high q), remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low q. If we only use \\(c_2 \\) related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of q we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the Theory Strategies section of the guide.
 
