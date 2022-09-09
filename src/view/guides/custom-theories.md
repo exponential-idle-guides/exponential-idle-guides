@@ -391,7 +391,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 #### EF strategy
 
-Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 rho when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). 
+Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 \\(rho \\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). 
 
 The first 2 milestones are redundant by themselves. The \\(R^2 \\) term and the \\(I^2 \\) term are insignificant compared to the \\(tq^2 \\) term. 
 Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of \\(q_2 \\) cost.
