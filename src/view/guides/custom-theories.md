@@ -193,7 +193,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
    </tr></thead>
    <tbody>
       <tr>
-         <th>\\(a_1 \\)</th>
+         <th><p>\\(a_1 \\)</p></th>
          <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\dot{\rho_2} \\) per level. Since \\(\rho_1 \\) is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in \\(\rho_1 \\)per level.</td>
       </tr>
       <tr>
