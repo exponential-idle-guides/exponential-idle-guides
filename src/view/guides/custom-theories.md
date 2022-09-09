@@ -121,7 +121,7 @@ For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of 
 For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. <br><br>
 
 
-##### WSP milestone route
+#### WSP milestone route
 
 All milestones into the 3rd/last milestone. Then into 2nd milestone, then into 1st milestone. <br>
 For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. <br>
