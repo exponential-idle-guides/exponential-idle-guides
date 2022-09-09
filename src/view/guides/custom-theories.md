@@ -159,13 +159,13 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
 
-\\(\dot{\rho_2} = \\(a_1 \\)\\(a_2 \\)a_3^{-ln{\rho_3}}\\)
+\\(\dot{\rho_2} = \\(a_1a_2a_3^{-ln{\rho_3}}\\)
 
-\\(\dot{\rho_3} = \\(b_1 \\)^{1.04}\\(b_2 \\)^{1.04}\\)
+\\(\dot{\rho_3} = \\(b_1^{1.04}b_2^{1.04}\\)
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double rho1 long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\)long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
 
 The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
 
@@ -176,10 +176,10 @@ The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is 
 
 The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
 
-From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and \\(\dot{\rho_3} \\) on rho1 are as follows:
+From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and \\(\dot{\rho_3} \\) on \\(\rho_1 \\)are as follows:
 
 \\(\rho_2 \\)dot: square root effect - quadrupling \\(\rho_2 \\)dot -> double rho1. 
-\\(\dot{\rho_3} \\): approximately ^0.64 - rho1 ~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
+\\(\dot{\rho_3} \\): approximately ^0.64 - \\(\rho_1 \\)~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
 
 
 #### SL Variable Description
@@ -194,11 +194,11 @@ Approximate variable strengths on rhodot with all milestones are as follows:
    <tbody>
       <tr>
          <th>\\(a_1 \\)</th>
-         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\dot{\rho_2} \\) per level. Since \\(\rho_1 \\) is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in rho1 per level.</td>
+         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\dot{\rho_2} \\) per level. Since \\(\rho_1 \\) is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in \\(\rho_1 \\)per level.</td>
       </tr>
       <tr>
          <th>\\(a_2 \\)</th>
-         <td>Doubles in value every level. Doubles \\(\rho_2 \\) long term. Increases rho1 by 40% ish long term.</td>
+         <td>Doubles in value every level. Doubles \\(\rho_2 \\) long term. Increases \\(\rho_1 \\)by 40% ish long term.</td>
       </tr>
       <tr>
          <th>\\(b_1 \\)</th>
@@ -230,9 +230,9 @@ For active, there is a milestone swapping strategy that is significantly faster 
 1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. 
 3rd/4th milestone: Increase \\(b_1 \\)/\\(b_2 \\) exponents, and \\(\dot{\rho_3} \\), and \\(\rho_3 \\). This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
 
-We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize rho1 per hour. If you've done T2 milestone swapping, this should be familiar. 
+We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize \\(\rho_1 \\)per hour. If you've done T2 milestone swapping, this should be familiar. 
 
-We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3 \\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
+We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3 \\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our \\(\rho_1 \\)is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
 
 #### Milestone Swapping Strategies
 (Courtesy of Gen).
