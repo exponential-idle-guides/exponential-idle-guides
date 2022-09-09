@@ -12,12 +12,12 @@ order: 8
 
 
 Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
-custom theories that contribute up to e150 tau per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
+custom theories that contribute up to e150 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
 
 
 In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate from phi to tau. WSP, SL, and CSR2 have conversion rates of 
-\\(\tau\\) = \\(\rho^{0.1}\\) while EF has a tau converstion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
+\\(\tau\\) = \\(\rho^{0.1}\\) while EF has a \\(\tau \\) converstion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
 
 
 
@@ -29,7 +29,7 @@ In general, you want to be as efficient as possible since R9 does not affect cus
  
 If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
- For idles, do the one with the highest idle tau/hour (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+ For idles, do the one with the highest idle \\(\tau/hour \\)(or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\)and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 
 
@@ -52,11 +52,11 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
-For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the \\(c_2 \\) variable is a milestone which is not initially available. <br>
+For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing \\(n \\) and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the \\(c_2 \\) variable is a milestone which is not initially available. <br>
 
 The third line is the most complicated. Generally we can factorize an equation when its graph touches the x-axis. For a sine curve, it touches the x-axis starting from x = 0, and repeats every x= \\(\pi\\). These multiplied factors form the basis of the Weierstrass Sine Product. A simpler interpretation is that we can see 'x' appearing both outside and inside the products in the numerator. Since \\(\chi\\) is 'x' here, the higher the \\(\chi\\), the higher the \\(s_n({\chi})\\) as stated earlier. <br>
 
-Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. <br><br>
+Finally, the actual \\(\chi\\) equation: increasing \\(c_1 \\) and \\(n \\) increases \\(\chi\\). Note that from the fraction, we don't want to increase only \\(c_1 \\) or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that \\(n \\) is better than \\(c_1 \\) as more n/3 milestones are accumulated. <br><br>
 
 #### WSP Variable Description
 Approximate variable strengths on rhodot with all milestones are as follows:
@@ -73,7 +73,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase on rhodot on average.</td>
       </tr>
       <tr>
-         <th>q2</th>
+         <th>\\(q_2 \\)</th>
          <td>Doubles rhodot - instantaneous.</td>
       </tr>
       <tr>
@@ -85,7 +85,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
       </tr>
       <tr>
-         <th>c2</th>
+         <th>\\(c_2 \\)</th>
          <td>Doubles rhodot - over time</td>
       </tr>
 
@@ -100,25 +100,25 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 #### WSP strategy
 
 Early game the variable strengths are ordered as follows: <br>
-\\(q_2 \\) ~= \\(c_2 \\) > n > c1 > \\(q_1 \\) <br><br>
+\\(q_2 \\) ~= \\(c_2 \\) > \\(n \\) > \\(c_1 \\) > \\(q_1 \\) <br><br>
 
 Late game these become: <br>
-n > \\(q_2 \\) ~= \\(c_2 \\) > \\(q_1 \\) >>> c1 <br><br>
+n > \\(q_2 \\) ~= \\(c_2 \\) > \\(q_1 \\) >>> \\(c_1 \\) <br><br>
 
 ##### Idle
 
 <b>Before you get e400 \\(\rho \\) for idle, simply autobuy all.<b> <br><br>
 
-Once you have e400 \\(\rho \\), c1 starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 20 seconds or so. Then turn c1 OFF. Continue to autobuy the rest of the variables. <br>
+Once you have e400 \\(\rho \\), \\(c_1 \\) starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 20 seconds or so. Then turn \\(c_1 \\) OFF. Continue to autobuy the rest of the variables. <br>
 <br>
 
 ##### Active
 
-For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and \\(c_2 \\) since they double the rates long term. n and c1 give approximately 60% boost (with n becoming more powerful with milestones and vice versa for c1). We will buy n and c1 when their costs are less than 50% of the minimum of \\(q_2 \\) and c2. 
+For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and \\(c_2 \\) since they double the rates long term. \\(n \\) and \\(c_1 \\) give approximately 60% boost (with \\(n \\) becoming more powerful with milestones and vice versa for c1). We will buy \\(n \\) and \\(c_1 \\) when their costs are less than 50% of the minimum of \\(q_2 \\) and \\(c_2 \\). 
 <br>
-For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and c2. For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to q2.  <br><br>
+For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and \\(c_2 \\). For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to \\(q_2 \\).  <br><br>
 
-For active strategy, n starts to become more powerful than q2. If their costs are similar, we will prioritize n first. For example, if n costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy n first. Similarly to the idle strategy, we will buy c1 only for the first 20 seconds or so. <br><br>
+For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. <br><br>
 
 
 #### WSP milestone route
@@ -159,9 +159,9 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
 
-\\(\dot{\rho_2} = \\(a_1a_2a_3^{-ln{\rho_3}}\\)
+\\(\dot{\rho_2} = a_1a_2a_3^{-ln{\rho_3}}\\)
 
-\\(\dot{\rho_3} = \\(b_1^{1.04}b_2^{1.04}\\)
+\\(\dot{\rho_3} = b_1^{1.04}b_2^{1.04}\\)
 
 \\(a_3 = 1.96\\)
 
@@ -310,7 +310,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number. 
 
 
-EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 tau and has the largest instantaneous jump in tau out of all custom theories. The equations are as follows:
+EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to \\(\tau \\) conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories. The equations are as follows:
 
 \\(\dot{\rho} = (\\(a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
@@ -455,7 +455,7 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 \\(\dot{q} = c_1c_2^2 |\sqrt{2} - \frac{N_m}{D_m}|^{-1}\\), 
 \\(N_m = 2N_{m-1} + N_{m-2}, N_0 = 1, N_1 = 3\\)
 \\(D_m = 2D_{m-1} + D_{m-2}, D_0 = 1, D_1 = 2\\)
-\\(m = n + log_2{(c_2)}\\)
+\\(m = \\(n \\) + log_2{(c_2)}\\)
 <br><br>
 
  The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. 'q' will increase during the publication. 
@@ -469,7 +469,7 @@ Similar logic is applied to \\(D_m \\) equations.
 
 This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
 
-The fourth equation relates 'm' as described above. We can see that as we buy n and \\(c_2 \\), our m will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how n and \\(c_2 \\) values are calculated, buying 1 level of n or \\(c_2 \\) will increase m by 1.
+The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our m will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase m by 1.
 
 
 #### CSR2 Variable Description
@@ -487,7 +487,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase in rhodot per level (instantaneous).</td>
       </tr>
       <tr>
-         <th>q2</th>
+         <th>\\(q_2 \\)</th>
          <td>Doubles rhodot per level (instantaneous).</td>
       </tr>
       <tr>
@@ -499,7 +499,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>Long term will multiply rhodot by 6 times! However, it is not instantaneous.</td>
       </tr>
       <tr>
-         <th>c2</th>
+         <th>\\(c_2 \\)</th>
          <td>Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
       </tr>
 
@@ -527,7 +527,7 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), n). 
+The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), n). 
 
 For the milestone swapping stratedy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
 
