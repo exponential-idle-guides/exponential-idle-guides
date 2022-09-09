@@ -159,27 +159,27 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(\gamma = \frac{\rho_3}{\sqrt[\rho_3]{\rho_3!}}\\)
 
-\\(\dot{\rho_2} = a_1a_2a_3^{-ln{\rho_3}}\\)
+\\(\dot{\rho_2} = \\(a_1 \\)\\(a_2 \\)a_3^{-ln{\rho_3}}\\)
 
-\\(\dot{\rho_3} = b_1^{1.04}b_2^{1.04}\\)
+\\(\dot{\rho_3} = \\(b_1 \\)^{1.04}\\(b_2 \\)^{1.04}\\)
 
 \\(a_3 = 1.96\\)
 
 The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double rho1 long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
 
-The second equation refers to the Stirling's approximation of Euler's number 'e'. As rho3 increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double rho3, gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
+The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
 
 
-The third equation relates \\(\rho_2 \\) with rho3 and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as rho3 increases, \\(\rho_2 \\)dot DECREASES. If rho3 is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on rho3. 
+The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\rho_2 \\)dot DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
 
-The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase b1 and b2 to increase rho3. The '1.04' exponents are from milestones. 
+The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase \\(b_1 \\) and \\(b_2 \\) to increase \\(\rho_3 \\). The '1.04' exponents are from milestones. 
 
 The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
 
 From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and \\(\dot{\rho_3} \\) on rho1 are as follows:
 
 \\(\rho_2 \\)dot: square root effect - quadrupling \\(\rho_2 \\)dot -> double rho1. 
-\\(\dot{\rho_3} \\): approximately ^0.64 - rho1 ~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling rho3 -> double rho1. 
+\\(\dot{\rho_3} \\): approximately ^0.64 - rho1 ~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
 
 
 #### SL Variable Description
@@ -193,19 +193,19 @@ Approximate variable strengths on rhodot with all milestones are as follows:
    </tr></thead>
    <tbody>
       <tr>
-         <th>a1</th>
-         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\rho_2 \\)dot per level. Since rho1 is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in rho1 per level.</td>
+         <th>\\(a_1 \\)</th>
+         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in \\(\dot{\rho_2} \\) per level. Since \\(\rho_1 \\) is approximately square root of \\(\rho_2 \\), overall this comes down to about 23% increase in rho1 per level.</td>
       </tr>
       <tr>
-         <th>a2</th>
+         <th>\\(a_2 \\)</th>
          <td>Doubles in value every level. Doubles \\(\rho_2 \\) long term. Increases rho1 by 40% ish long term.</td>
       </tr>
       <tr>
-         <th>b1</th>
+         <th>\\(b_1 \\)</th>
          <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in \\(\dot{\rho_3} \\). Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
       </tr>
       <tr>
-         <th>b2</th>
+         <th>\\(b_2 \\)</th>
          <td>Doubles in value every level. Toward the end of a publication this doubles rho1.</td>
       </tr>
       
@@ -222,17 +222,17 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 #### SL strategy
 
-All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2\\) and \\(b_2\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
+All variables in SL are about the same in power, except for \\(\\(a_1 \\)\\) and \\(\\(b_1 \\)\\) (which are slightly worse than \\(\\(a_2 \\)\\) and \\(\\(b_2 \\)\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
 
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
 1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. 
-3rd/4th milestone: Increase b1/b2 exponents, and \\(\dot{\rho_3} \\), and rho3. This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
+3rd/4th milestone: Increase \\(b_1 \\)/\\(b_2 \\) exponents, and \\(\dot{\rho_3} \\), and \\(\rho_3 \\). This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
 
 We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize rho1 per hour. If you've done T2 milestone swapping, this should be familiar. 
 
-We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
+We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3 \\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
 
 #### Milestone Swapping Strategies
 (Courtesy of Gen).
@@ -242,7 +242,7 @@ For example, 4>3>1>2 means "Allocate everything into 4th milestone, then use lef
 
 From e75-e100 is 4>3>1>2 (60s) <-> 1>2>4>3 (60s)
 
-SLMS2 is 1>2>4>3 (30s) --> 2>1>4>3 (60s) --> 1>2>4>3 (30s) --> 4>3>1>2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
+SLMS2 is 1>2>4>3 (30s) --> 2>1>4>3 (60s) --> 1>2>4>3 (30s) --> 4>3>1>2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
 
 SLMS3 is 2>1>4>3  (20s) <-> 4>3>1>2 (60s)
 
@@ -256,7 +256,7 @@ e200 - e300: SLMS
 
 #### Post e300+ rho
 
-At this point, the theory becomes very idle. We simply autobuy all. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable a1a2 at about 4.5 publication multiplier until publish. 
+At this point, the theory becomes very idle. We simply autobuy all. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable \\(a_1 \\)\\(a_2 \\) at about 4.5 publication multiplier until publish. 
 
 
 
@@ -289,7 +289,7 @@ How to read notation: 4/3/1/2 means put all points into 4th milestones, use left
 
 SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
 
-SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with b1b2 off during the first two, and a1a2 off during the last two
+SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
 
 SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
 
@@ -312,17 +312,17 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to tau conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 tau and has the largest instantaneous jump in tau out of all custom theories. The equations are as follows:
 
-\\(\dot{\rho} = (a_1a_2a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
+\\(\dot{\rho} = (\\(a_1 \\)\\(a_2 \\)a_3)^{1.5}\sqrt{tq^2+R^2+I^2}\\)
 
 \\(G(t) = g_r+g_i\\)
 
-\\(g_r = b_1b_2cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
+\\(g_r = \\(b_1 \\)\\(b_2 \\)cos{(t)}, g_i = ic_1c_2sin{(t)}\\)
 
 \\(\dot{q} = q_1q_2\\)
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and a_3 respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
@@ -330,7 +330,7 @@ The third line describes g_r and g_i, which are used to generate 'R' and 'I' cur
 
 The fourth line simply describes qdot. This is used in the first equation directly. 
 
-The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
+The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = \\(b_1 \\)^{2}\\(b_2 \\)^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
 
@@ -339,7 +339,7 @@ The fifth and final line use the results from the 3rd line, so effectively \\(\d
 Initially, you only have tdot, q1, q2 unlocked. Buy q1 at about 1/8th cost of q2, and buy tdot when it's available. At e20 rho when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying q1 at 1/8th cost of q2). 
 
 The first 2 milestones are redundant by themselves. The R^2 term and the I^2 term are insignificant compared to the tq^2 term. 
-Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q2 cost.
+Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of q2 cost.
 
 
 
