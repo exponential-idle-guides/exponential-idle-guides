@@ -165,21 +165,21 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that rho1dot is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double rho1 long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double rho1 long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our rho increases, our gamma becomes closer to 'e', so the denominator will decrease, which increases rho1. We will explore gamma in the next equation.
 
 The second equation refers to the Stirling's approximation of Euler's number 'e'. As rho3 increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double rho3, gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
 
 
-The third equation relates \\(\rho_2 \\) with rho3 and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as rho3 increases, \\(\rho_2 \\)dot DECREASES. If rho3 is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since rho1dot depends on \\(\rho_2 \\), which depends on rho3. 
+The third equation relates \\(\rho_2 \\) with rho3 and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as rho3 increases, \\(\rho_2 \\)dot DECREASES. If rho3 is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on rho3. 
 
-The fourth equation relates rho3dot with some upgrades. This one is relatively simple; increase b1 and b2 to increase rho3. The '1.04' exponents are from milestones. 
+The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase b1 and b2 to increase rho3. The '1.04' exponents are from milestones. 
 
 The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
 
-From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and rho3dot on rho1 are as follows:
+From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and \\(\dot{\rho_3} \\) on rho1 are as follows:
 
 \\(\rho_2 \\)dot: square root effect - quadrupling \\(\rho_2 \\)dot -> double rho1. 
-rho3dot: approximately ^0.64 - rho1 ~= rho3dot^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling rho3 -> double rho1. 
+\\(\dot{\rho_3} \\): approximately ^0.64 - rho1 ~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling rho3 -> double rho1. 
 
 
 #### SL Variable Description
@@ -202,7 +202,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
       </tr>
       <tr>
          <th>b1</th>
-         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in rho3dot. Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
+         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in \\(\dot{\rho_3} \\). Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
       </tr>
       <tr>
          <th>b2</th>
@@ -227,12 +227,12 @@ All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
-1st milestone: Increases \\(\rho_2 \\) exponent, and increases rho1dot straight away. The actual value of \\(\rho_2 \\) does not increase. 
-3rd/4th milestone: Increase b1/b2 exponents, and rho3dot, and rho3. This also increases rho1dot. However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
+1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. 
+3rd/4th milestone: Increase b1/b2 exponents, and \\(\dot{\rho_3} \\), and rho3. This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
 
-We have different milestones which affect the same thing (rho1dot), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize rho1 per hour. If you've done T2 milestone swapping, this should be familiar. 
+We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize rho1 per hour. If you've done T2 milestone swapping, this should be familiar. 
 
-We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of rho1dot. Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
+We initially put our milestones in the 4th and 3rd milestones. Once our rho3 doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our rho1 is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
 
 #### Milestone Swapping Strategies
 (Courtesy of Gen).
@@ -322,7 +322,7 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize rho1dot. All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
