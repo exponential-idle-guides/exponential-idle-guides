@@ -638,10 +638,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
 <style>
 
 
-p {
 
-   font-size: 0.8rem;
-}
 
 h4 {
    font-size: 1.2rem;
