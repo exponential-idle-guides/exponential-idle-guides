@@ -73,7 +73,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>About 7% increase on rhodot on average.</td>
       </tr>
       <tr>
-         <th>q_2</th>
+         <th>q2</th>
          <td>Doubles rhodot - instantaneous.</td>
       </tr>
       <tr>
@@ -167,12 +167,12 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\)long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase tau. The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
 
 The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-\\(\gamma \\)) in the first equation will be halved. 
 
 
-The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
+The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln({\rho_3})\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{\rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
 
 The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase \\(b_1 \\) and \\(b_2 \\) to increase \\(\rho_3 \\). The '1.04' exponents are from milestones. 
 
@@ -224,10 +224,10 @@ All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
-1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. 
+1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. <br>
 3rd/4th milestone: Increase \\(b_1 \\)/\\(b_2 \\) exponents, and \\(\dot{\rho_3} \\), and \\(\rho_3 \\). This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone. 
 
-We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize \\(\rho_1 \\)per hour. If you've done T2 milestone swapping, this should be familiar. 
+We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize \\(\rho_1 \\) per hour. If you've done T2 milestone swapping, this should be familiar. 
 
 We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3 \\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1} \\). Once our \\(\rho_1 \\)is not increasing quickly anymore, we switch back to the 4th and 3rd milestone! 
 
@@ -307,7 +307,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number. 
 
 
-EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to \\(\tau \\) conversion for this theory is uniquely at rho^0.4 rather than the usual rho^0.1 meaning that less rho is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
+EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the thoery. Furthermore, the rho to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^0.4 \\) rather than the usual \\(\rho^0.1 \\) meaning that less \\(\rho \\) is needed to get an equivalent ammount of tau. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
 
 #### EF Equation Description
 
@@ -321,13 +321,13 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important. 
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
 The third line describes \\(g_r \\) and \\(g_i \\), which are used to generate 'R' and 'I' currencies. This line by itself doesn't do much. 
 
-The fourth line simply describes qdot. This is used in the first equation directly. 
+The fourth line simply describes \\(\dot{q} \\). This is used in the first equation directly. 
 
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
@@ -375,7 +375,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
       </tr>
       <tr>
          <th>a2</th>
-         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. For example, buying from level 20 to 21 is more than 5 times increase in rhodot!! In general, if the last digit of the level is close to zero (9 is not close to zero), then buying this variable is very impactful. Overall, this variable ranges from 10% to 700%+ effectiveness in rhodot! </td>
+         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. Overall, this variable ranges from 10% to 700%+ effectiveness in rhodot! </td>
       </tr>
       <tr>
          <th>a3</th>
@@ -515,16 +515,18 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 
  The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. 'q' will increase during the publication. 
 <br>
+
 For the second line, both the variable \\(c_2 \\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m \\)/ \\(D_m \\) to square root 2. As \\(N_m \\)/ \\(D_m \\) get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
 <br>
-The third and fourth lines are recurrence relations on \\(N_m \\)and Dm. This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
+
+The third and fourth lines are recurrence relations on \\(N_m \\)and \\(Dm \\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
 \\(N_2 \\) = 2\\(N_1 \\) + \\(N_0 \\) -> \\(N_2 \\) = 2 x 3 + 1 = 7. 
 Then N3 = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17. 
 Similar logic is applied to \\(D_m \\) equations. 
 
 This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
 
-The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our m will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase m by 1.
+The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our \\(m \\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase \\(m \\) by 1.
 
 
 #### CSR2 Variable Description
@@ -582,7 +584,7 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), n). 
+The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)). 
 
 For the milestone swapping stratedy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
 
