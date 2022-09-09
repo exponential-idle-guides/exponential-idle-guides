@@ -222,7 +222,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 #### SL strategy
 
-All variables in SL are about the same in power, except for \\(\\(a_1 \\)\\) and \\(\\(b_1 \\)\\) (which are slightly worse than \\(\\(a_2 \\)\\) and \\(\\(b_2 \\)\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
+All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2 \\) and \\(b_2 \\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
 
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
