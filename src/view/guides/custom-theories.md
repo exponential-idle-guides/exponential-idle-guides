@@ -1,7 +1,7 @@
 ---
 title: "Custom Theories"
 description: "Our guide for understanding and playing official custom theories."
-author: "Playspout"
+author: "Playspout and Snaeky"
 contributors: "the Amazing Community"
 draft: true
 order: 8
@@ -16,12 +16,16 @@ custom theories that contribute up to e150 tau per theory; Weierstrass Sine Prod
 
 
 
-In order to balance custom theories with the main theories and the endgame, custom theories have a low conversion rate from phi to tau. WSP, SL, and CSR2 have conversion rates of 
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate from phi to tau. WSP, SL, and CSR2 have conversion rates of 
 \\(\tau\\) = \\(\rho^{0.1}\\) while EF has a tau converstion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
 </p>
 
 
 ### Which Custom Theories (CTs) should I do?
+
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for Custom theory (SL before all milestones, CS2, or WSP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on tau/hour.
+</p>
+
  
 If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
@@ -467,9 +471,9 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies is much more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and q1, where you buy them when they are less than 10% cost of minimum(c2, q2, n). 
+The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and q1, where you buy them when they are less than 10% cost of minimum(c2, q2, n). 
 
-There's also a milestone swapping strategy. The general idea is to switch milestones from c2 and its exponents, to q1 exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
+For the milestone swapping stratedy, the general idea is to switch milestones from c2 and its exponents, to q1 exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
 </p>
 
 ##### CSR2 Milestone Swapping Explanation
