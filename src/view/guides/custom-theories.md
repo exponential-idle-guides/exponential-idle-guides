@@ -10,7 +10,7 @@ order: 8
 
 ### Custom Theory Basics
 
-<p>
+
 Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official 
 custom theories that contribute up to e150 tau per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
@@ -22,7 +22,7 @@ In order to balance custom theories with the main theories and the endgame, cust
 
 
 ### Which Custom Theories (CTs) should I do?
-<p> 
+ 
 If you have active time, try to do the CT with the highest active tau/hour. You can check this with [the sim](https://theory-simulator.tredec.repl.co/)<br><br>
  
  For idles, do the one with the highest idle tau/hour (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 tau/hour and CSR2 also has 2 tau/hour, ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
@@ -33,7 +33,7 @@ If you have active time, try to do the CT with the highest active tau/hour. You 
 
 #### WSP Overview
 
-<p>The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br></p>
+The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase rho. There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br></p>
 
 #### WSP Equation Description
 
@@ -46,7 +46,7 @@ If you have active time, try to do the CT with the highest active tau/hour. You 
 \\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 <br><br>
 
-<p>The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
+The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
 For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing n and c1. The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the c2 variable is a milestone which is not initially available. <br>
 
@@ -55,7 +55,7 @@ The third line is the most complicated. Generally we can factorize an equation w
 Finally, the actual \\(\chi\\) equation: increasing c1 and n increases \\(\chi\\). Note that from the fraction, we don't want to increase only c1 or only n. Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that n is better than c1 as more n/3 milestones are accumulated. <br><br></p>
 
 #### WSP Variable Description
-<p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
+Approximate variable strengths on rhodot with all milestones are as follows:</p>
 
 <table class="T2">
 <caption>Brief summary of variable strengths of WSP.</caption>
@@ -250,7 +250,7 @@ At this point, the theory becomes very idle. We simply autobuy all. Publish at a
 
 ##### Active
 
-<p>Milestone Swapping (active)
+Milestone Swapping (active)
 
 How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones etc.
 
@@ -271,7 +271,7 @@ e200 - e300: SLMS
 ### Euler's Formula (EF)
 
 #### EF Overview
-<p>
+
 This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of 
 
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number. 
@@ -289,7 +289,7 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-<p>The first line is the main equation. We want to maximize rho1dot. All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
+The first line is the main equation. We want to maximize rho1dot. All the a_n terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the R^2 and the I^2 terms are effectively redundant at all stages of this theory; but due to them purchasing a_2 and a_3 respectively, they are very important. 
 
 The second line defines the graph shown. Since G(t) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
@@ -413,7 +413,7 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 
 #### CSR2 Overview
 
-<p> This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of square root 2 using recurrent formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:</p>
+ This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of square root 2 using recurrent formulae. As the approximations improve, the qdot and rhodot improve, increasing tau. An explanation of each section of the equations are shown below:</p>
 
 #### CSR2 Equation Description
 
@@ -425,7 +425,7 @@ Once you unlock the 3rd milestone (a1 term) however, we can buy a1 at 1/4th of q
 \\(m = n + log_2{(c_2)}\\)
 <br><br>
 
-<p> The first line is self explanatory. The exponents on q1 are from milestones. 'q' will increase during the publication. 
+ The first line is self explanatory. The exponents on q1 are from milestones. 'q' will increase during the publication. 
 <br>
 For the second line, both the variable c2 and its exponents are from milestones. The absolute value section on the right describes the approximation of Nm / Dm to square root 2. As Nm / Dm get closer to square root 2, the entire right section gets larger and larger (because of the -1 power). 
 <br>
@@ -442,8 +442,8 @@ The fourth equation relates 'm' as described above. We can see that as we buy n 
 </p>
 
 #### CSR2 Variable Description
-<p>Approximate variable strengths on rhodot with all milestones are as follows:</p>
-<p>
+Approximate variable strengths on rhodot with all milestones are as follows:</p>
+
 q1: About 7% increase in rhodot per level (instantaneous).
 q2: Doubles rhodot per level (instantaneous).
 n: Long term will multiply rhodot by 6 times! However, it is not instantaneous.
@@ -457,7 +457,7 @@ c2: Approximately 22 times increase in rhodot per level! Not instantaneous. This
 
 ##### Idle
 
-<p>
+
 For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the q exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
 
 Once you have all milestones, autobuy all!
@@ -466,7 +466,7 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-<p>
+
 The active strategies is much more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except c1 and q1, where you buy them when they are less than 10% cost of minimum(c2, q2, n). 
 
 There's also a milestone swapping strategy. The general idea is to switch milestones from c2 and its exponents, to q1 exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
@@ -474,7 +474,7 @@ There's also a milestone swapping strategy. The general idea is to switch milest
 
 ##### CSR2 Milestone Swapping Explanation
 
-<p>This theory has a milestone swapping strategy before full milestones. We have q1 exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
+This theory has a milestone swapping strategy before full milestones. We have q1 exponent milestones, which increase rhodot straight away. We also have c2 related milestones, which increases the q variable, which increases rhodot. 
 
 The reason milestone swapping works is because the benefits of using c2 related milestones (having high q), remain when you switch to q1 exponent milestones. If we only use q1 exponent, then we have really low q. If we only use c2 related milestones, then we have high q, but low rhodot. If we regularly swap them, we can increase q through c2 related milestones, then take advantage of the q1 exponent milestones, while keeping the high value of q we've accumulated earlier!
 
