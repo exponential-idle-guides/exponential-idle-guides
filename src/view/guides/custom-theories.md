@@ -170,15 +170,15 @@ The first line is the main part of the equation. We want to maximize \\(\dot{\rh
 The second equation refers to the Stirling's approximation of Euler's number 'e'. As \\(\rho_3 \\) increases, gamma converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), gamma will be twice as close to Euler's number, so (e-gamma) in the first equation will be halved. 
 
 
-The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\rho_2 \\)dot DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
+The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln{\rho_3}\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\). 
 
 The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase \\(b_1 \\) and \\(b_2 \\) to increase \\(\rho_3 \\). The '1.04' exponents are from milestones. 
 
 The final equation simply states the value of a3. The lower the better. Default without milestone is a3 = 2.
 
-From the equations above, the approximate long term effects of \\(\rho_2 \\)dot and \\(\dot{\rho_3} \\) on \\(\rho_1 \\)are as follows:
+From the equations above, the approximate long term effects of \\(\dot{rho_2} \\) and \\(\dot{\rho_3} \\) on \\(\rho_1 \\)are as follows:
 
-\\(\rho_2 \\)dot: square root effect - quadrupling \\(\rho_2 \\)dot -> double rho1. 
+\\(\dot{rho_2} \\): square root effect - quadrupling \\(\dot{rho_2} \\) -> double rho1. 
 \\(\dot{\rho_3} \\): approximately ^0.64 - \\(\rho_1 \\)~= \\(\dot{\rho_3} \\)^0.64. Toward the end of a publication, is approximately linear with rho1. This means doubling \\(\rho_3 \\) -> double rho1. 
 
 
