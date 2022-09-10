@@ -385,7 +385,7 @@ repeat.
       <tr>
          <td>0/2/0</td>
          <td class="arrow">→</td>
-         <td>1/0/2/0</td>
+         <td>0/2/2</td>
          <td class="arrow">→</td>
          <td>1/2/2/0</td>
       </tr>
@@ -409,12 +409,12 @@ repeat.
       <tr>
          <td>3 x2</td>
          <td class="arrow">→</td>
-         <td>1</td>
-         <td class="arrow">→</td>
          <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>1</td>
       </tr>
       <tr>
-         <td>2 x2</td>
+         <td>1</td>
          <td class="arrow">→</td>
          <td>4 x2</td>
    </tbody>
