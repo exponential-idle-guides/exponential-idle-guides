@@ -407,9 +407,9 @@ repeat.
          <td class="invisible"></td>
       </tr>
       <tr>
-         <td>3 x2</td>
-         <td class="arrow">→</td>
          <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
          <td class="arrow">→</td>
          <td>1</td>
       </tr>
@@ -455,9 +455,9 @@ repeat.
          <td class="invisible"></td>
       </tr>
       <tr>
-         <td>3 x2</td>
-         <td class="arrow">→</td>
          <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
          <td class="arrow">→</td>
          <td>1</td>
       </tr>
