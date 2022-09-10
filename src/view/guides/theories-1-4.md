@@ -387,7 +387,7 @@ repeat.
          <td class="arrow">→</td>
          <td>0/2/2</td>
          <td class="arrow">→</td>
-         <td>1/2/2/0</td>
+         <td>1/2/2</td>
       </tr>
       <tr>
          <td>1/2/2/0</td>
