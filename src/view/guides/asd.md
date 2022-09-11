@@ -47,7 +47,7 @@ These tips in general are very helpful when starting out and further down the li
 
 ## Minigame rewards
 
-The amount of stars the you get from completing a minigame is determined by your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration Button, also known as Accel. These are the base star reward for each difficulty level of each minigame.
+The amount of stars you get from completing a minigame is determined by your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration Button, also known as Accel. These are the base star reward for each difficulty level of each minigame.
 
 <table class="newwords">
     <thead>
@@ -102,7 +102,7 @@ The algorithm goes as follows:
   </ol>
 </ol>
 
-##### This algorithm works for all difficulties and is a greater impact on the larger boards than smaller boards. 
+##### This algorithm works for all difficulties and is a greater impact on the larger boards than smaller boards.
 
 #### Example
 
