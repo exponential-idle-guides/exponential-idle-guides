@@ -85,7 +85,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
          <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
       </tr>
       <tr>
-         <th>c_2</th>
+         <th>c2</th>
          <td>Doubles rhodot - over time</td>
       </tr>
 
@@ -118,13 +118,13 @@ For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) 
 <br>
 For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and \\(c_2 \\). For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to \\(q_2 \\).  <br><br>
 
-For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. <br><br>
+For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. If you want more information on the different strategies pertaining to WSP, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/)<br><br>
 
 
 #### WSP milestone route
 
 All milestones into the 3rd/last milestone. Then into 2nd milestone, then into 1st milestone. <br>
-For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. <br>
+For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. Usually you only do this when you're about to publish. <br>
 
 <table class="milestone_routing">
    <tbody>
@@ -219,7 +219,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 #### SL strategy
 
-All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2 \\) and \\(b_2 \\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. 
+All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2 \\) and \\(b_2 \\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. If you want more details on SL strategies, in particular the execution of various strategies, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
@@ -391,7 +391,7 @@ Approximate variable strengths on rhodot with all milestones are as follows:
 
 #### EF strategy
 
-Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 \\(rho \\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). 
+Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 \\(rho \\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). There are also more advanced strategies, in particular EFAI. For its description and execution, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
 The first 2 milestones are redundant by themselves. The \\(R^2 \\) term and the \\(I^2 \\) term are insignificant compared to the \\(tq^2 \\) term. 
 Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of \\(q_2 \\) cost.
@@ -586,7 +586,7 @@ Once you have all milestones, autobuy all!
 
 The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)). 
 
-For the milestone swapping stratedy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the Theory Strategies section of the guide for how to perform milestone swapping.
+For the milestone swapping stratedy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/) section of the guide for how to perform milestone swapping.
 
 
 ##### CSR2 Milestone Swapping Explanation
