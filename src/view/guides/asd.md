@@ -97,12 +97,12 @@ The algorithm goes as follows:
   <li>Repeat Steps 1 and 2 for each additional layer until you reach the last 2x2.</li>
   <li>Solve last 2x2 by picking clockwise or counterclockwise and keep rotating until finish.</li>
   <ol type="a">
-    <li>This size does not matter which direction gaurunteeing finish in 4 or less full rotations.</li>
+    <li>This size does not matter which direction guaranteeing finish in 4 or less full rotations.</li>
     <li>However, in most cases, there is a better direction to spin but is less important than the previous steps.</li>
   </ol>
 </ol>
 
-##### This algorithm works for all difficulties and is a greater impact on the larger boards than smaller boards.
+##### This algorithm works for all difficulties and has a greater impact on the larger boards than on the smaller boards.
 
 #### Example
 
@@ -136,7 +136,7 @@ The algorithm goes as follows:
   <li>Solve each row until the last column.</li>
   <ol type="a">
     <li>Solve first row for 1 2 3 4.</li>
-    <li>Solve secopnd row for 6 7 8 9.</li>
+    <li>Solve second row for 6 7 8 9.</li>
     <li>Continue solving like a and b for the remaining rows.</li>
   </ol>
   <li>Solve right column with swaps.</li>
@@ -232,7 +232,7 @@ The algorithm goes as follows:
 
 The algorithm goes as follows:
 <ol type="1">
-  <li>Solve the rop row tapping tiles directly below the row.</li>
+  <li>Solve the top row by tapping tiles directly below the row.</li>
   <ol type="a">
     <li>Solve the center tile.</li>
     <li>Solve the tile to the left of the center tile.</li>
@@ -240,13 +240,14 @@ The algorithm goes as follows:
     <li>Solve the tile three spaces to the left of the center tile.</li>
     <li>Repeat steps b-d but to the right of the center tile.</li>
   </ol>
-  <li>Repeat step 1 for every row until the bottom row (don't solve bottom row).</li>
+  The top row should now be entirely filled with 1s.
+  <li>Repeat step 1 for every row until the bottom row (don't solve the bottom row yet).</li>
 </ol>
 
 ##### To verify there is no mistake:
 
 - When you are done, your board will be symmetric.
-- The two tiles adjacent to the bottom center tile wll always be 1 or 4.
+- The two tiles adjacent to the bottom center tile will always be 1 or 4.
 
 #### Example
 
@@ -256,7 +257,7 @@ The algorithm goes as follows:
 
 You will want to read [how to propagate](https://exponential-idle-guides.netlify.app/guides/asd/#propagation-for-hard-and-expert) before continuing. The algorithm goes as follows:
 <ol type="1">
-  <li>propagate.</li>
+  <li>Propagate.</li>
   <li>Label the bottom right cells (from left to right): <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>. Label the top right cells (from left to right): <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. We will be tapping the top row to encode the bottom row onto it.
   <ol type="a">
     <li>Tap <em>a</em> so that a is the same as <em>C</em>.</li>
@@ -264,7 +265,7 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
     <li>Tap <em>a</em> the number of times you would need to solve <em>D</em>.</li>
     <li>If <em>B</em> + <em>D</em> is odd, tap <em>c</em> three times (once in Hard). Otherwise, skip this step.</li>
   </ol>
-  <li>propagate from top once more to finish the solve.</li>
+  <li>Propagate from top once more to finish the solve.</li>
 </ol>
 
 #### Example
@@ -273,6 +274,6 @@ You will want to read [how to propagate](https://exponential-idle-guides.netlify
 
 #### Hard Lookup Table
 
-Because Hard only has 8 possible end cases, it is practical to learn and memorize the 8 optimal tapping solutions for each case. Obviously one of the 8 cases is already solved so this really leaves on 7 cases. These are not hard to learn and are learned best through just simply playing Hard Arrow more. Below are the 8 cases.
+Because Hard Arrow only has 8 possible end cases, it is practical to learn and memorize the 8 optimal tapping solutions for each case. Obviously one of the 8 cases is already solved so this really leaves on 7 cases. These are not hard to learn and are learned best through just simply playing Hard Arrow more. Below are the 8 cases.
 
 ![Hard Arrow Solution Lookup](/images/hard-arrow-lookup.png)
