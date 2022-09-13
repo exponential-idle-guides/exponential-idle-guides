@@ -40,7 +40,7 @@
       
       function mobile_columns(){
         window.alert("enter mobile_columns");
-        window.alert(root.classList.contains('mobile');
+        window.alert(root.classList.contains('mobile'));
         if (root.classList.contains('mobile')){
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
@@ -55,7 +55,7 @@
 
       function Set_Device(new_class, old_class){
         window.alert("enter Set_Device");
-        window.alert(root.classList.contains('mobile'));
+        //window.alert(root.classList.contains('mobile'));
         mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
