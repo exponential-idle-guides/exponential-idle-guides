@@ -35,8 +35,10 @@
       var max_sidebar_height = 0;
       var Mobile = false;
       
-      function mobile_columns(){
+      function mobile_setup(){
         if (root.classList.contains('mobile')){
+          window.alert(document.getElementById("SidebarMain").offsetWidth + 'px');
+          query_root.style.setProperty('--pagination-margin-top', document.getElementById("SidebarMain").offsetWidth + 'px');
           if (screen.availHeight > screen.availWidth){
             document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', '2');
           } else {
@@ -48,7 +50,7 @@
       function Set_Device(new_class, old_class){
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
-        mobile_columns();
+        mobile_setup();
       }
 
       if (navigator.userAgentData.mobile) {
