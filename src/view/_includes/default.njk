@@ -41,6 +41,7 @@
           window.alert(screen.availHeight.toString() + " , " + screen.availWidth.toString() + " , " + Boolean(screen.availWidth > screen.availHeight).toString());
           if (screen.availHeight > screen.availWidth){
             window.alert("2 columns");
+            window.alert(getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-column-count'))
             window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
             getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '2';
             window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
