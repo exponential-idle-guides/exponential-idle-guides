@@ -11,7 +11,7 @@ order: 8
 ### Custom Theory Basics
 
 
-Custom theories are theories made by players in the community. As of July 30th 2022, there are 4 official
+Custom theories are theories made by players in the community. As of September 3rd, 2022, there are 4 official
 custom theories that contribute up to e150 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
 
@@ -69,24 +69,24 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tr></thead>
    <tbody>
       <tr>
-         <th>q1</th>
-         <td>About 7% increase on rhodot on average.</td>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase on ρ dot on average.</td>
       </tr>
       <tr>
-         <th>q2</th>
-         <td>Doubles rhodot - instantaneous.</td>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot - instantaneous.</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Initially about 50% increase similar to c1. Slowly ramps up to 4 times increase in rhodot. At e400 rho and higher it is very close to 4x increase.</td>
+         <td>Initially about 50% increase similar to c<sub><sub><small>1</small></sub></sub>. Slowly ramps up to 4 times increase in ρdot. At e400 ρ and higher, it is very close to a 4x increase.</td>
       </tr>
       <tr>
-         <th>c1</th>
-         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 rho the increase is not noticeable anymore. Early game we still buy them throughout. Late game we only buy for the first 20 seconds or so.</td>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 ρ the increase is not noticeable anymore. Early in WSP we still buy them throughout. Late in WSP we only buy for the first 20 seconds or so of each publication.</td>
       </tr>
       <tr>
-         <th>c2</th>
-         <td>Doubles rhodot - over time</td>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot - over time</td>
       </tr>
 
    </tbody>
@@ -153,7 +153,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 #### SL Overview
 
-SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing \\(\dot\rho\\) and \\(\rho\\) since \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
+SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing \\(\dot\rho\\) and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
 
 #### SL Equation Description
 
@@ -169,7 +169,7 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase \\(\tau\\). The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
 
-The second equation refers to the Stirling's approximation of Euler's number '\\(e\\)'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), \\(\gamma\\) will be twice as close to Euler's number, so \\(e-\gamma\\) in the first equation will be halved.
+The second equation refers to Stirling's approximation of Euler's number '\\(e\\)'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), \\(\gamma\\) will be twice as close to Euler's number, so \\(e-\gamma\\) in the first equation will be halved.
 
 
 The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln({\rho_3})\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{\rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\).
@@ -190,20 +190,20 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tr></thead>
    <tbody>
       <tr>
-         <th><p>a1</p></th>
-         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in rho2dot per level. Since rho1 is approximately square root of rho2, overall this comes down to about 23% increase in rho1 per level.</td>
+         <th><p>a<sub><sub><small>1</small></sub></sub></p></th>
+         <td>Value times 3.5 every 3 levels on average. This comes to about 52% increase in ρ<sub><sub><small>2</small></sub></sub> dot per level. Since ρ<sub><sub><small>1</small></sub></sub> is approximately square root of ρ<sub><sub><small>2</small></sub></sub>, overall this comes down to about 23% increase in ρ<sub><sub><small>1</small></sub></sub> per level.</td>
       </tr>
       <tr>
-         <th>a2</th>
-         <td>Doubles in value every level. Doubles rho2 long term. Increases rho1 by 40% ish long term.</td>
+         <th>a<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles in value every level. Doubles ρ<sub><sub><small>2</small></sub></sub> long term. Increases ρ<sub><sub><small>1</small></sub></sub> by 40% ish long term.</td>
       </tr>
       <tr>
-         <th>b1</th>
-         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in rho3dot. Toward the end of a publication, this translates to approximately 60% increase in rho1. </td>
+         <th>b<sub><sub><small>1</small></sub></sub></th>
+         <td>Value times 6.5 every 4 levels on average. This comes down to about 60% increase in ρ<sub><sub><small>3</small></sub></sub> dot. Toward the end of a publication, this translates to approximately 60% increase in ρ<sub><sub><small>1</small></sub></sub>. </td>
       </tr>
       <tr>
-         <th>b2</th>
-         <td>Doubles in value every level. Toward the end of a publication this doubles rho1.</td>
+         <th>b<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles in value every level. Toward the end of a publication this doubles ρ<sub><sub><small>1</small></sub></sub>.</td>
       </tr>
 
 
@@ -224,8 +224,8 @@ All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1
 #### Milestone swapping - why it works
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
-1st milestone: Increases \\(\rho_2 \\) exponent, and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. <br>
-3rd/4th milestone: Increase \\(b_1 \\)/\\(b_2 \\) exponents, and \\(\dot{\rho_3} \\), and \\(\rho_3 \\). This also increases \\(\dot{\rho_1} \\). However, the effect is long term and not instantaneous unlike the effect of the 1st milestone.
+1st milestone: Increases \\(\rho_2 \\) exponent and increases \\(\dot{\rho_1} \\) straight away. The actual value of \\(\rho_2 \\) does not increase. <br>
+3rd/4th milestone: Increase \\(b_1 \\)/\\(b_2 \\) exponents, and \\(\dot{\rho_3} \\), and \\(\rho_3 \\). This also increases \\(\dot{\rho_1} \\). However, the effect is long-term and not instantaneous unlike the effect of the 1st milestone.
 
 We have different milestones which affect the same thing (\\(\dot{\rho_1} \\)), but one is instantaneous, while the other builds over time. This forms the basis of 'milestone swapping', swapping milestones at certain times to maximize \\(\rho_1 \\) per hour. If you've done T2 milestone swapping, this should be familiar.
 
@@ -282,7 +282,7 @@ At this point, the theory becomes very idle. We simply autobuy all variables. Pu
 
 Milestone Swapping (active)
 
-How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones etc.
+How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones, etc.
 
 SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
 
@@ -321,7 +321,7 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms, and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important.
+The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important.
 
 The second line defines the graph shown. Since \\(G(t)\\) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
@@ -346,40 +346,40 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
          <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
       </tr>
       <tr>
-         <th>q1</th>
-         <td>Standard variable. Doubles every 10 levels. Aproximately 7% increase in rhodot per level over time.</td>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>Standard variable. Doubles every 10 levels. Approximately 7% increase in ρ dot per level over time.</td>
       </tr>
       <tr>
-         <th>q2</th>
-         <td>Doubles in value every level. Also doubles rhodot for each level bought, over time.</td>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles in value every level. Also doubles ρ dot for each level bought, over time.</td>
       </tr>
       <tr>
-         <th>b1</th>
-         <td>Costs R to buy rather than rho. Increases R by approximately 14% per level.</td>
+         <th>b<sub><sub><small>1</small></sub></sub></th>
+         <td>Costs R to buy rather than ρ. Increases R by approximately 14% per level.</td>
       </tr>
       <tr>
-         <th>b2</th>
-         <td>Costs R to buy rather than rho. Increases R by approximately 20% per level. </td>
+         <th>b<sub><sub><small>2</small></sub></sub>
+         <td>Costs R to buy rather than ρ. Increases R by approximately 20% per level. </td>
       </tr>
       <tr>
-         <th>c1</th>
-         <td>Costs I to buy rather than rho. Increases I by approximately 20% per level.</td>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Costs I to buy rather than ρ. Increases I by approximately 20% per level.</td>
       </tr>
       <tr>
-         <th>c2</th>
-         <td>Costs I to buy rather than rho. Increases I by approximately 20% per level.</td>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Costs I to buy rather than ρ. Increases I by approximately 20% per level.</td>
       </tr>
       <tr>
-         <th>a1</th>
-         <td>Doubles approximately every 10 levels. Costs rho to buy. With full milestones this variable increases rhodot on average by about 11-12% for each level bought.</td>
+         <th>a<sub><sub><small>1</small></sub></sub></th>
+         <td>Doubles approximately every 10 levels. Costs ρ to buy. With full milestones this variable increases ρ dot on average by about 11-12% for each level bought.</td>
       </tr>
       <tr>
-         <th>a2</th>
-         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. Overall, this variable ranges from 10% to 700%+ effectiveness in rhodot! </td>
+         <th>a<sub><sub><small>2</small></sub></sub></th>
+         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. Overall, this variable ranges from 10% to 700%+ effectiveness in ρ dot! </td>
       </tr>
       <tr>
-         <th>a3</th>
-         <td>Costs I to buy. With full ilestones, this variable approximately triples rhodot.</td>
+         <th>a<sub><sub><small>3</small></sub></sub></th>
+         <td>Costs I to buy. With full milestones, this variable approximately triples ρ dot.</td>
       </tr>
 
    </tbody>
@@ -501,7 +501,7 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 
 #### CSR2 Overview
 
- This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the \\(\dot{q}\) and \\(\dot\rho\\) improve, increasing \\(\tau\\). An explanation of each section of the equations are shown below:
+ This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the \\(\dot{q}\\) and \\(\dot\rho\\) improve, increasing \\(\tau\\). An explanation of each section of the equations is shown below:
 
 #### CSR2 Equation Description
 
@@ -540,24 +540,24 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tr></thead>
    <tbody>
       <tr>
-         <th>q1</th>
-         <td>About 7% increase in rhodot per level (instantaneous).</td>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase in ρ dot per level (instantaneous).</td>
       </tr>
       <tr>
-         <th>q2</th>
-         <td>Doubles rhodot per level (instantaneous).</td>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot per level (instantaneous).</td>
       </tr>
       <tr>
-         <th>c1</th>
-         <td>About 7% increase in rhodot per level; not instantaneous. This is the weakest variable. </td>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase in ρ dot per level; not instantaneous. This is the weakest variable. </td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Long term will multiply rhodot by 6 times! However, it is not instantaneous.</td>
+         <td>Long term will multiply ρ dot by 6 times! However, it is not instantaneous.</td>
       </tr>
       <tr>
-         <th>c2</th>
-         <td>Approximately 22 times increase in rhodot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Approximately 22 times increase in ρ dot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
       </tr>
 
    </tbody>
