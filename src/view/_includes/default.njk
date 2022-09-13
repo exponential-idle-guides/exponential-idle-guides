@@ -106,7 +106,8 @@
             }
           }
         } else {
-
+            window.alert((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
+              && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") + ' , ' + curr_sidebar != sidebars[0]);
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0]) {
