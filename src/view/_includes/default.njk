@@ -119,7 +119,7 @@
               query_root.style.setProperty('--btn-marginTop', 'auto');
             } else {
               if((max_height + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
-                max_height = window.visualViewport.height * 0.96 - document.getElementById("sidebarmain").offsetHeight;
+                max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight;
                 window.alert(max_height + ' , ' + (max_height + window.visualViewport.height * 0.01) + ' , ' + document.getElementById("sidebarmain").offsetHeight)
               }
               query_root.style.setProperty('--sidebar-height', max_height + "px");
@@ -184,8 +184,11 @@
       }
 
       screen.orientation.addEventListener("change", function(e){
+        window.alert('mobile columns enter');
         mobile_columns();
+        window.alert('CloseSidebar enter');
         CloseSidebar();
+        window.alert('list start');
         let sidebar_temp=sidebar_list;
         window.alert(sidebar_temp + ' , ' + sidebar_list);
         sidebar_temp.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
