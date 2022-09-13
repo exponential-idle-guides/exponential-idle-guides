@@ -34,20 +34,14 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
-      var Mobile = new Boolean(isMobile);
+      window.alert("finish main var");
+      var Mobile = false;
+      window.alert("finish mobile var");
       
       function mobile_columns(){
-<<<<<<< HEAD
-<<<<<<< HEAD
         window.alert("enter mobile_columns");
         window.alert(root.classList.contains('mobile');
         if (root.classList.contains('mobile')){
-=======
-        if (element.classList.contains('mobile')){
->>>>>>> parent of e0cb9bf (Update default.njk)
-=======
-        if (element.classList.contains('mobile')){
->>>>>>> parent of e0cb9bf (Update default.njk)
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
             window.alert(2);
@@ -56,28 +50,24 @@
             window.alert(3);
           }
         }
-        window.alert(element.classList.contains('mobile'));
+        window.alert(root.classList.contains('mobile'));
       }
 
       function Set_Device(new_class, old_class){
-<<<<<<< HEAD
-<<<<<<< HEAD
         window.alert("enter Set_Device");
         window.alert(root.classList.contains('mobile'));
-=======
->>>>>>> parent of e0cb9bf (Update default.njk)
-=======
->>>>>>> parent of e0cb9bf (Update default.njk)
         mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
-        Mobile=new Boolean(new_class=="mobile");
+        var Mobile=Boolean(new_class=="mobile");
       }
 
       if (isMobile) {
+        Mobile=true;
         Set_Device("mobile","desktop");
       } else {
+        Mobile=false;
         Set_Device("desktop","mobile");
       }
 
