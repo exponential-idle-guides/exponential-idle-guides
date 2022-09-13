@@ -78,11 +78,11 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
       </tr>
       <tr>
          <th>n</th>
-         <td>Initially about 50% increase similar to c<sub><sub><small>1</small></sub></sub>. Slowly ramps up to 4 times increase in ρdot. At e400 ρ and higher, it is very close to a 4x increase.</td>
+         <td>Initially about 50% increase similar to c<sub><sub><small>1</small></sub></sub>. Slowly ramps up to 4 times increase in ρ dot. At e400 ρ and higher, it is very close to a 4x increase.</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>Initially about 50% increase. Tends to 0% increase as rho increases. At e400 ρ the increase is not noticeable anymore. Early in WSP we still buy them throughout. Late in WSP we only buy for the first 20 seconds or so of each publication.</td>
+         <td>Initially about 50% increase. Tends to 0% increase as ρ increases. At e400 ρ the increase is not noticeable anymore. Early in WSP we still buy them throughout. Late in WSP we only buy for the first 20 seconds or so of each publication.</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
@@ -391,7 +391,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
 
 #### EF strategy
 
-Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), and \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 \\(rho \\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). There are also more advanced strategies, in particular EFAI. For its description and execution, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
+Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), and \\(q_2 \\) unlocked. Buy \\(q_1 \\) at about 1/8th cost of \\(q_2 \\), and buy \\(\dot{t} \\) when it's available. At e20 \\(\rho \\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1 \\) at 1/8th cost of \\(q_2 \\)). There are also more advanced strategies, in particular EFAI. For its description and execution, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
 The first 2 milestones are redundant by themselves. The \\(R^2 \\) term and the \\(I^2 \\) term are insignificant compared to the \\(tq^2 \\) term.
 Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of \\(q_2 \\) cost.
