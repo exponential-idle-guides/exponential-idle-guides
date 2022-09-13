@@ -183,7 +183,15 @@
         }
       }
 
-      screen.orientation.addEventListener("change", function(e){mobile_columns();});
+      screen.orientation.addEventListener("change", function(e){
+        mobile_columns();
+        CloseSidebar();
+        let sidebar_temp=sidebar_list;
+        window.alert(sidebar_temp + ' , ' + sidebar_list);
+        sidebar_temp.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
+        window.alert(sidebar_temp + ' , ' + sidebar_list);
+        openSidebar(sidebar_temp, 'SidebarHeaders');
+      });
     </script>
   </head>
   <body>
