@@ -38,13 +38,15 @@
       function mobile_columns(){
         window.alert("enter mobile_columns");
         if (root.classList.contains('mobile')){
-          window.alert(screen.availHeight.toString() + " , " + screen.availWidth.toString());
+          window.alert(screen.availHeight.toString() + " , " + screen.availWidth.toString() + " , " + Boolean(screen.availWidth > screen.availHeight).toString());
           if (screen.availWidth > screen.availHeight){
-            query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
-            window.alert(2);
+            window.alert("2 columns");
+            document.querySelector(':root').getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
+            window.alert("2 columns");
           } else {
-            query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',3)
-            window.alert(3);
+            window.alert("3 columns");
+            document.querySelector(':root').getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',3)
+            window.alert("3 columns");
           }
         }
         window.alert("exit mobile_columns()");
