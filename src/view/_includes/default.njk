@@ -191,11 +191,8 @@
       }
 
       screen.orientation.addEventListener("change", function(e){
-        window.alert('mobile_setup enter');
         mobile_setup();
-        window.alert('CloseSidebar enter');
         CloseSidebar();
-        window.alert('list start');
         sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
         openSidebar(sidebar_list, 'SidebarHeaders');
       });
