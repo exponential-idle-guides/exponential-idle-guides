@@ -34,10 +34,12 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
+      window.alert("past main var");
       var Mobile = new Boolean(isMobile);
+      window.alert("past new mobile var");
       
       function mobile_columns(){
-        if (element.classList.contains('mobile')){
+        if (root.classList.contains('mobile')){
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
             window.alert(2);
@@ -46,15 +48,18 @@
             window.alert(3);
           }
         }
-        window.alert(element.classList.contains('mobile'));
+        window.alert(root.classList.contains('mobile'));
       }
 
       function Set_Device(new_class, old_class){
+        window.alert("enter Set_Device"); 
         mobile_columns();
+        window.alert("exit mobile_columns"); 
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
         Mobile=new Boolean(new_class=="mobile");
+        window.alert("exit Set_Device"); 
       }
 
       if (isMobile) {
