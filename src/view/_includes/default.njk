@@ -39,13 +39,17 @@
         window.alert("enter mobile_columns");
         if (root.classList.contains('mobile')){
           window.alert(screen.availHeight.toString() + " , " + screen.availWidth.toString() + " , " + Boolean(screen.availWidth > screen.availHeight).toString());
-          if (screen.availWidth > screen.availHeight){
+          if (screen.availHeight > screen.availWidth){
             window.alert("2 columns");
-            document.querySelector(':root').getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
+            window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+            getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '2';
+            window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
             window.alert("2 columns");
           } else {
             window.alert("3 columns");
-            document.querySelector(':root').getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',3)
+            window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+            getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '3';
+            window.alert(getComputedStyle(document.querySelector(':root').getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
             window.alert("3 columns");
           }
         }
@@ -142,7 +146,7 @@
       }
 
       function CloseSidebar(){
-        if (!Mobile){
+        if (!root.classList.contains('mobile')){
           query_root.style.setProperty('--sidebar-width', "0%");
           query_root.style.setProperty('--btn-marginLeft', "0%");
         } else {
