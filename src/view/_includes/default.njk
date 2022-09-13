@@ -40,17 +40,21 @@
         if (root.classList.contains('mobile')){
           window.alert(screen.availHeight.toString() + " , " + screen.availWidth.toString() + " , " + Boolean(screen.availWidth > screen.availHeight).toString());
           if (screen.availHeight > screen.availWidth){
-            window.alert("2 columns");
-            window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
-            getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '2';
-            window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
-            window.alert("2 columns");
+            try{
+              window.alert("2 columns");
+              window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+              getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '2';
+              window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+              window.alert("2 columns");
+            }catch(error){window.alert(error.toString());}
           } else {
-            window.alert("3 columns");
-            window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
-            getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '3';
-            window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
-            window.alert("3 columns");
+            try{
+              window.alert("3 columns");
+              window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+              getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count') = '3';
+              window.alert(getComputedStyle(query_root.getElementsByClassName("mobile")).getPropertyValue('--sidebar-column-count'))
+              window.alert("3 columns");
+            }catch(error){window.alert(error.toString());}
           }
         }
         window.alert("exit mobile_columns()");
