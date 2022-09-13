@@ -34,15 +34,21 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
+      var Mobile = false;
 
       function Set_Device(new_class, old_class){
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
+        if (new_class=="mobile"){Mobile=true;
+        } else {Mobile=false}
       }
 
-      if (isMobile) {Set_Device("mobile","desktop");
+      if (isMobile) {
+        Set_Device("mobile","desktop");
+        var Mobile=true;
       } else {Set_Device("desktop","mobile");
+        var Mobile=false;
       }
 
       function openSidebar(sidebars,sidebarheaders) {
@@ -51,7 +57,7 @@
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
 
-        if (!isMobile) {
+        if (!Mobile) {
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
             max_width = 0;
@@ -121,7 +127,7 @@
       }
 
       function CloseSidebar(){
-        if (!isMobile){
+        if (!Mobile){
           query_root.style.setProperty('--sidebar-width', "0%");
           query_root.style.setProperty('--btn-marginLeft', "0%");
         } else {
@@ -134,7 +140,7 @@
       }
 
       window.addEventListener('click', function(e){
-        if (!isMobile 
+        if (!Mobile 
             && Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04) >= Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) 
             && getComputedStyle(query_root).getPropertyValue('--sidebar-width') != "0%") {
           bool = true;
