@@ -34,13 +34,10 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
-      window.alert("finish main var");
       var Mobile = false;
-      window.alert("finish mobile var");
       
       function mobile_columns(){
         window.alert("enter mobile_columns");
-        window.alert(root.classList.contains('mobile'));
         if (root.classList.contains('mobile')){
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
@@ -50,17 +47,16 @@
             window.alert(3);
           }
         }
-        window.alert(root.classList.contains('mobile'));
+        window.alert("exit mobile_columns()",root.classList.contains('mobile'));
       }
 
       function Set_Device(new_class, old_class){
         window.alert("enter Set_Device");
-        //window.alert(root.classList.contains('mobile'));
-        mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
         var Mobile=Boolean(new_class=="mobile");
+        mobile_columns();
       }
 
       if (isMobile) {
