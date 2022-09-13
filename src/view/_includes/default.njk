@@ -35,8 +35,19 @@
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
       var Mobile = false;
+      
+      function mobile_columns(){
+        if (Mobile){
+          if (window.visualViewport.width >= window.visualViewport.height){
+            query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
+          } else {
+            query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',3)
+          }
+        }
+      }
 
       function Set_Device(new_class, old_class){
+        mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
@@ -193,6 +204,10 @@
           document.getElementById(display_id).style.display = "block";
         }
       }
+
+      screen.orientation.addEventListener("change", function(e) {
+        mobile_columns();
+      });
     </script>
   </head>
   <body>
