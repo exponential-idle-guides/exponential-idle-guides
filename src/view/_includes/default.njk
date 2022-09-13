@@ -36,8 +36,8 @@
       var max_sidebar_height = 0;
       var Mobile = false;
       
-      function mobile_columns(){
-        if (Mobile){
+      function mobile_columns(mobile){
+        if (mobile){
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
             window.alert(2);
@@ -50,11 +50,12 @@
       }
 
       function Set_Device(new_class, old_class){
-        mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
-        if (new_class=="mobile"){Mobile=true;
+        if (new_class=="mobile"){
+          Mobile=true;
+          mobile_columns(true);
         } else {Mobile=false}
       }
 
@@ -209,7 +210,7 @@
       }
 
       screen.orientation.addEventListener("change", function(e) {
-        mobile_columns();
+        mobile_columns(Mobile);
       });
     </script>
   </head>
