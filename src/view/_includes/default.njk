@@ -44,12 +44,18 @@
               window.alert("2 columns");
               window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
               window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
+              getComputedStyle(query_root).setProperty('--sidebar-column-count', '2');
+              window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
+              window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
               getComputedStyle(document.querySelector(':root.mobile')).setProperty('--sidebar-column-count', '2');
               window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
             }catch(error){window.alert(error.toString());}
           } else {
             try{
               window.alert("3 columns");
+              window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
+              window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
+              getComputedStyle(query_root).setProperty('--sidebar-column-count', '3');
               window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
               window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
               getComputedStyle(document.querySelector(':root.mobile')).setProperty('--sidebar-column-count', '3');
