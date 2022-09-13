@@ -54,13 +54,14 @@
       }
 
       function Set_Device(new_class, old_class){
-        window.alert("enter Set_Device"); 
+        window.alert("enter Set_Device");
+        window.alert(root.classList.contains('mobile'));
+        mobile_columns();
+        window.alert("exit mobile_columns"); 
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
         Mobile=new Boolean(new_class=="mobile");
-        mobile_columns();
-        window.alert("exit mobile_columns"); 
         window.alert("exit Set_Device"); 
       }
 
