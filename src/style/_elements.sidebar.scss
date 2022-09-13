@@ -1,4 +1,5 @@
 :root{
+  --sidebar-main-display-type: none;
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
   --sidebar-padding-lr:0%;
@@ -38,6 +39,8 @@
   --sidebar-column-gap:5vw;
   --sidebar-column-count:2;
   --sidebar-transition-direction:margin-top;
+  
+  --sidebar-main-display-type: inline-block;
 }
 
 :root.desktop {
@@ -138,6 +141,7 @@
   padding-right: var(--btn-paddingRight);
   padding-left: var(--btn-paddingLeft);
   z-index: 100;
+  display: var(--sidebar-main-display-type);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

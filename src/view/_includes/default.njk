@@ -37,8 +37,6 @@
       
       function mobile_setup(){
         if (root.classList.contains('mobile')){
-          window.alert(document.getElementById("SidebarMain").offsetWidth + 'px');
-          query_root.style.setProperty('--pagination-margin-top', document.getElementById("SidebarMain").offsetWidth + 'px');
           if (screen.availHeight > screen.availWidth){
             document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', '2');
           } else {

@@ -1,9 +1,5 @@
-:root{
-	--paginatin-margin-top:1em;
-}
-
 .pagination {
-	margin-top: var(--paginatin-margin-top);
+	margin-top: 1em;
 	font-size: 0.8rem;
 	display: flex;
 	flex-direction: row;
