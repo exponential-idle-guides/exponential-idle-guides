@@ -63,8 +63,9 @@
           document.getElementById(sidebar).style.zIndex = "0";
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
-        document.getElementById('sidebarmain').style.zIndex = "10";
+        document.getElementById('sidebarmain').style.zIndex = "11";
         window.alert(document.getElementById(sidebars[0]).offsetHeight);
+        window.alert(document.getElementById('sidebarmain').offsetHeight);
         if (!root.classList.contains('mobile')) {
           if (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") {
@@ -147,6 +148,8 @@
           query_root.style.setProperty('--btn-marginTop', "0%");
           query_root.style.setProperty('--sidebar-padding-b', "0");
         }
+        query_root.style.setProperty('--sidebar-padding-b', "0");
+        query_root.style.setProperty('--sidebar-padding-lr', "0");
         return
       }
 
