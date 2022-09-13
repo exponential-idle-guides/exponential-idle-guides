@@ -64,6 +64,7 @@
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
+        query_root.style.setProperty('--sidebar-content-padding', '8px');
         if (!root.classList.contains('mobile')) {
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") || force) {
@@ -122,13 +123,14 @@
               query_root.style.setProperty('--sidebar-height', 'auto');
               query_root.style.setProperty('--btn-marginTop', 'auto');
             } else {
-              if((max_height + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
+              if((max_height + bonus_offset + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
                 max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight - bonus_offset;
-                query_root.style.setProperty('--btn-marginTop', max_height + "px");
+                query_root.style.setProperty('--btn-marginTop', (max_height + bonus_offset) + "px");
               } else {
                 query_root.style.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.01 + "px");
                 query_root.style.setProperty('--btn-marginTop', (max_height + window.visualViewport.height * 0.01) + "px");
               }
+              
               query_root.style.setProperty('--sidebar-height', max_height + "px");
               query_root.style.setProperty('--sidebar-transition-time', '0.8s');
               query_root.style.setProperty('--sidebar-text-transition-time', '0.5s');
@@ -142,15 +144,14 @@
           query_root.style.setProperty('--sidebar-width', "0%");
           query_root.style.setProperty('--btn-marginLeft', "0%");
           query_root.style.setProperty('--sidebar-padding-lr', "0");
-          query_root.style.setProperty('--sidebar-padding-lr', "0");
         } else {
           query_root.style.setProperty('--sidebar-transition-time', '0.5s');
           query_root.style.setProperty('--sidebar-text-transition-time', '0.3s');
           query_root.style.setProperty('--sidebar-height', "0%");
           query_root.style.setProperty('--btn-marginTop', "0%");
           query_root.style.setProperty('--sidebar-padding-b', "0");
-          query_root.style.setProperty('--sidebar-padding-b', "0");
         }
+        query_root.style.setProperty('--sidebar-content-padding', '0');
         var curr_sidebar='none';
         return
       }
