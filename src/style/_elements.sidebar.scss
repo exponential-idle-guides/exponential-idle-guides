@@ -2,7 +2,7 @@
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
   --sidebar-padding-lr:0%;
-  --sidebar-padding-tb: 0%;
+  --sidebar-padding-b:0%;
 
   --btn-width:auto;
   --btn-max-width:25vw;
@@ -66,7 +66,6 @@
   scrollbar-width: none;
   padding-left: var(--sidebar-padding-lr);
   padding-right: var(--sidebar-padding-lr);
-  padding-top: var(--sidebar-padding-tb);
   padding-bottom: var(--sidebar-padding-tb);
 }
 .sidebar::-webkit-scrollbar {
