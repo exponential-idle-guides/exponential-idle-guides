@@ -105,8 +105,7 @@
             }
           }
         } else {
-            window.alert((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
-              && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%").toString() + ' , ' + (curr_sidebar != sidebars[0]).toString());
+            window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ' , ' + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() + ' , ' + (curr_sidebar != sidebars[0]).toString());
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0]
