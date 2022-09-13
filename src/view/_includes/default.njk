@@ -43,6 +43,7 @@
             try{
               window.alert("2 columns");
               window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
+              window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
               getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count') = '2';
               window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
             }catch(error){window.alert(error.toString());}
@@ -50,6 +51,7 @@
             try{
               window.alert("3 columns");
               window.alert(getComputedStyle(query_root).getPropertyValue('--sidebar-column-count'));
+              window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
               getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count') = '3';
               window.alert(getComputedStyle(document.querySelector(':root.mobile')).getPropertyValue('--sidebar-column-count'));
             }catch(error){window.alert(error.toString());}
