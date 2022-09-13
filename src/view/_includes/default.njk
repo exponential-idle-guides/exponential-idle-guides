@@ -64,7 +64,6 @@
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
-        query_root.style.setProperty('--sidebar-content-padding', '8px');
         if (!root.classList.contains('mobile')) {
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") || force) {
@@ -105,7 +104,9 @@
             }
           }
         } else {
-            window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ' , ' + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() + ' , ' + (curr_sidebar != sidebars[0]).toString());
+          query_root.style.setProperty('--sidebar-content-padding', '8px');
+          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ' , ' + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() + ' , ' + (curr_sidebar != sidebars[0]).toString() + ' , ' + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
+            && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") || curr_sidebar != sidebars[0]));
           if (((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0])
