@@ -99,7 +99,7 @@
               }
               query_root.style.setProperty('--sidebar-width', output + "px");
               query_root.style.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
-              query_root.style.setProperty('--sidebar-padding', window.visualViewport.width * 0.02 + "px");
+              query_root.style.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
             }
           }
         } else {
@@ -124,9 +124,11 @@
               }
               query_root.style.setProperty('--sidebar-height', output + "px");
               query_root.style.setProperty('--btn-marginTop', output + "px");
-              query_root.style.setProperty('--sidebar-padding', window.visualViewport.height * 0.02 + "px");
+              query_root.style.setProperty('--sidebar-padding-tb', window.visualViewport.height * 0.02 + "px");
               query_root.style.setProperty('--sidebar-transition-time', '0.8s');
               query_root.style.setProperty('--sidebar-text-transition-time', '0.5s');
+              
+              window.alert(output.toString() + 'px');
             }
           }
         }

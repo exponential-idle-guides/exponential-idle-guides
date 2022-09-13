@@ -1,7 +1,8 @@
 :root{
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
-  --sidebar-padding:0%;
+  --sidebar-padding-lr:0%;
+  --sidebar-padding-tb: 0%;
 
   --btn-width:auto;
   --btn-max-width:25vw;
@@ -29,10 +30,10 @@
   --btn-width:33vw;
   --btn-max-width:33vw;
   --btn-paddingLeft:0;
-  --btn-paddingRight:0.5vw;
+  --btn-paddingRight:0vw;
   
   --sidebar-height:0%;
-  --sidebar-width:90%;
+  --sidebar-width:100%;
   --sidebar-column-gap:5vw;
   --sidebar-column-count:2;
   --sidebar-transition-direction:margin-top;
@@ -63,8 +64,10 @@
   overflow-y:scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
-  padding-left: var(--sidebar-padding);
-  padding-right: var(--sidebar-padding);
+  padding-left: var(--sidebar-padding-lr);
+  padding-right: var(--sidebar-padding-lr);
+  padding-top: var(--sidebar-padding-tb);
+  padding-bottom: var(--sidebar-padding-tb);
 }
 .sidebar::-webkit-scrollbar {
   display:none;
