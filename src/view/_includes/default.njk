@@ -35,14 +35,14 @@
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
 
-      if (isMobile) {
-        root.classList.add("mobile");
-        try{root.classList.remove("desktop");}catch(error){}
-        window.alert("Mobile class set");
-      } else {
-        root.classList.add("desktop");
-        try{root.classList.remove("mobile");}catch(error){}
-        window.alert("desktop class set");
+      function Set_Device(new_class, old_class){
+        root.classList.add(new_class);
+        try{root.classList.remove(old_class);}catch(error){}
+        window.alert(new_class+" class set");
+      }
+
+      if (isMobile) {Set_Device("mobile","desktop");
+      } else {Set_Device("desktop","mobile");
       }
 
       function openSidebar(sidebars,sidebarheaders) {
@@ -200,6 +200,9 @@
       <h1><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>
+
+    <button onclick="Set_Device('mobile','desktop')">Mobile</button>
+    <button onclick="Set_Device('desktop','mobile')">Desktop</button>
 
     <main class="page-section content-wrapper">
       {% block title %}
