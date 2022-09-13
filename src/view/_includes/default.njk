@@ -34,10 +34,10 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var max_sidebar_height = 0;
-      var Mobile = false;
+      var Mobile = new Boolean(isMobile);
       
-      function mobile_columns(mobile){
-        if (mobile){
+      function mobile_columns(){
+        if (element.classList.contains('mobile')){
           if (window.visualViewport.width >= window.visualViewport.height){
             query_root.getElementsByClassName("mobile").style.setProperty('--sidebar-column-count',2)
             window.alert(2);
@@ -46,24 +46,21 @@
             window.alert(3);
           }
         }
-        window.alert(Mobile);
+        window.alert(element.classList.contains('mobile'));
       }
 
       function Set_Device(new_class, old_class){
+        mobile_columns();
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         window.alert(new_class+" class set");
-        if (new_class=="mobile"){
-          Mobile=true;
-          mobile_columns(true);
-        } else {Mobile=false}
+        Mobile=new Boolean(new_class=="mobile");
       }
 
       if (isMobile) {
         Set_Device("mobile","desktop");
-        var Mobile=true;
-      } else {Set_Device("desktop","mobile");
-        var Mobile=false;
+      } else {
+        Set_Device("desktop","mobile");
       }
 
       function openSidebar(sidebars,sidebarheaders) {
@@ -210,7 +207,7 @@
       }
 
       screen.orientation.addEventListener("change", function(e) {
-        mobile_columns(Mobile);
+        mobile_columns();
       });
     </script>
   </head>
