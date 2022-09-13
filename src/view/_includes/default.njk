@@ -64,8 +64,6 @@
         }
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
-        window.alert(document.getElementById(sidebars[0]).offsetHeight);
-        window.alert(document.getElementById('sidebarmain').offsetHeight);
         if (!root.classList.contains('mobile')) {
           if ((getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%") || force) {
@@ -112,6 +110,7 @@
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0]
               || force) {
+            bonus_offset=document.getElementById(sidebars[0]).offsetHeight;
             curr_sidebar = sidebars[0];
             
             document.getElementById(sidebars[0]+"invis").style.height="auto";
@@ -124,7 +123,7 @@
               query_root.style.setProperty('--btn-marginTop', 'auto');
             } else {
               if((max_height + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
-                max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight - getComputedStyle(query_root).getPropertyValue('--sidebar-content-padding') * 2;
+                max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight - bonus_offset;
                 query_root.style.setProperty('--btn-marginTop', max_height + "px");
               } else {
                 query_root.style.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.01 + "px");
