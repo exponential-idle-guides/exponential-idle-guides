@@ -2836,7 +2836,7 @@ Strategy Credits:
 
 
 **Note:**
-If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at 1/10 the entire publication.
+If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at e1 ratio the entire publication.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
 <table class="spqcey">
