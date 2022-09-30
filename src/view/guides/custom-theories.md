@@ -100,10 +100,10 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
 #### WSP strategy
 
 Early game the variable strengths are ordered as follows: <br>
-\\(q_2 \\) ~= \\(c_2 \\) > \\(n \\) > \\(c_1 \\) > \\(q_1 \\) <br><br>
+\\(q_2 \\) ≈ \\(c_2 \\) > \\(n \\) > \\(c_1 \\) > \\(q_1 \\) <br><br>
 
 Late game these become: <br>
-n > \\(q_2 \\) ~= \\(c_2 \\) > \\(q_1 \\) >>> \\(c_1 \\) <br><br>
+\\(n\\) > \\(q_2 \\) ≈ \\(c_2 \\) > \\(q_1 \\) >>> \\(c_1 \\) <br><br>
 
 ##### Idle
 
@@ -153,7 +153,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 #### SL Overview
 
-SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e~=2.71828). As upgrades are bought, the approximation becomes more precise, increasing \\(\dot\rho\\) and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. We'll explore each one now:
+SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e≈2.71828). As upgrades are bought, the approximation becomes more precise, increasing \\(\dot\rho\\) and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
 
 #### SL Equation Description
 
@@ -167,7 +167,7 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase \\(\tau\\). The '1.06' exponent are from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately square root of \\(\rho_2 \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase \\(\tau\\). The '1.06' exponent is from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately \\(\sqrt{\rho_2} \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol (\\(\gamma\\)) which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
 
 The second equation refers to Stirling's approximation of Euler's number '\\(e\\)'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), \\(\gamma\\) will be twice as close to Euler's number, so \\(e-\gamma\\) in the first equation will be halved.
 
@@ -519,9 +519,9 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 For the second line, both the variable \\(c_2 \\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m \\)/ \\(D_m \\) to \\(\sqrt{2}\\). As \\(N_m \\)/ \\(D_m \\) get closer to \\(\sqrt{2}\\), the entire right section gets larger and larger (because of the -1 power).
 <br>
 
-The third and fourth lines are recurrence relations on \\(N_m \\)and \\(Dm \\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
+The third and fourth lines are recurrence relations on \\(N_m \\) and \\(D_m\\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
 \\(N_2 \\) = 2\\(N_1 \\) + \\(N_0 \\) -> \\(N_2 \\) = 2 x 3 + 1 = 7.
-Then N3 = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17.
+Then \\(N_3\\) = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17.
 Similar logic is applied to \\(D_m \\) equations.
 
 This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
@@ -575,7 +575,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
 ##### Idle
 
 
-For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the q exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
 
 Once you have all milestones, autobuy all!
 
@@ -584,7 +584,7 @@ Once you have all milestones, autobuy all!
 ##### Active
 
 
-The active strategies significantly more involved. Depending on how active you'd like to be, there are several strategies to cater. There's the standard doubling chasing CSRd, which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
+The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
 
 For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
 
@@ -593,7 +593,7 @@ For the milestone swapping strategy, the general idea is to switch milestones fr
 
 This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
 
-The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)), remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
