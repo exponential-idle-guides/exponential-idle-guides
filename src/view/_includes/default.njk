@@ -32,7 +32,6 @@
       const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
-      var max_sidebar_height = 0;
       var Mobile = false;
       
       function mobile_setup(){
@@ -106,8 +105,16 @@
           }
         } else {
           query_root.style.setProperty('--sidebar-content-padding', '8px');
-          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ' , ' + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() + ' , ' + (curr_sidebar != sidebars[0]).toString() + ' , ' + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
-            && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") || curr_sidebar != sidebars[0]));
+          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
+            + ' , ' 
+            + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() 
+            + ' , ' 
+            + (curr_sidebar != sidebars[0])
+            + ' , ' 
+            + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
+              && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") 
+              || curr_sidebar != sidebars[0])
+          );
           if (((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0])
@@ -117,7 +124,7 @@
             
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
-            max_sidebar_height = max_height;
+            window.alert('max_height: ' + max_height.toString());
             document.getElementById(sidebars[0]+"invis").style.height=0;
 
             if (max_height <= 0) {
@@ -131,7 +138,7 @@
               } else {
                 query_root.style.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.01 + "px");
                 query_root.style.setProperty('--btn-marginTop', (max_height + window.visualViewport.height * 0.01) + "px");
-                window.alert('normal: ' + (max_height + window.visualViewport.height * 0.01).toString());
+                window.alert('normal: (' + (max_height + window.visualViewport.height * 0.01).toString() + ', ' + max_height.toString() + ', ' + window.visualViewport.height.toString() + ')');
               }
               
               query_root.style.setProperty('--sidebar-height', max_height + "px");
