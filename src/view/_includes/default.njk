@@ -118,7 +118,7 @@
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0])
               || force) {
-            bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseFloat(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2);
+            bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseFloat(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2));
             window.alert('bonus_offset' + bonus_offset.toString() + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ', ' + parseFloat(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2)).toString());
             curr_sidebar = sidebars[0];
             
