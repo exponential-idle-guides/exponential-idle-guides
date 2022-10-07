@@ -120,12 +120,12 @@
               || force) {
             
             bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10);
-            window.alert('bonus_offset: ' 
+            window.alert('bonus_offset: (' 
               + bonus_offset.toString() 
               + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() 
               + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
               + ', ' + parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10).toString()
-            );
+            + ')');
             curr_sidebar = sidebars[0];
             
             
@@ -164,8 +164,8 @@
               query_root.style.setProperty('--sidebar-transition-time', '0.8s');
               query_root.style.setProperty('--sidebar-text-transition-time', '0.5s');
             }
-            window.alert(''.concat(...alerts));
           }
+          window.alert(''.concat(...alerts));
         }
       }
 
