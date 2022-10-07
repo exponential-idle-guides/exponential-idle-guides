@@ -123,7 +123,7 @@
             curr_sidebar = sidebars[0];
             
             
-            query_root.style.setProperty('--sidebar-padding-b', '0');
+            query_root.style.setProperty('--sidebar-padding-b', "0");
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
             max_sidebar_height = max_height;
@@ -134,7 +134,7 @@
               query_root.style.setProperty('--sidebar-height', 'auto');
               query_root.style.setProperty('--btn-marginTop', 'auto');
             } else {
-              if((max_height + bonus_offset + document.getElementById("sidebarmain").offsetHeight) >= math.floor(window.visualViewport.height)){
+              if((max_height + bonus_offset + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
                 max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight - bonus_offset;
                 query_root.style.setProperty('--btn-marginTop', (max_height + bonus_offset) + "px");
                 alerts.push('\nmaximum: (' 
