@@ -27,12 +27,13 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script>
-      
+
       const root = document.documentElement;
       const query_root  =  document.querySelector(':root');
       const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
+      var max_sidebar_height = 0;
       var Mobile = false;
       
       function mobile_setup(){
@@ -106,16 +107,15 @@
           }
         } else {
           query_root.style.setProperty('--sidebar-content-padding', '8px');
-          window.alert(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
+          alerts=[(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
             + ' , ' 
             + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() 
             + ' , ' 
-            + (curr_sidebar != sidebars[0])
+            + (curr_sidebar != sidebars[0]).toString()
             + ' , ' 
             + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") 
-              || curr_sidebar != sidebars[0])
-          );
+              || curr_sidebar != sidebars[0]).toString())];
           if (((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0])
@@ -125,7 +125,8 @@
             
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
-            window.alert('max_height: ' + max_height.toString());
+            max_sidebar_height = max_height;
+            alerts.push('\nmax_height: ' + max_height.toString());
             document.getElementById(sidebars[0]+"invis").style.height=0;
 
             if (max_height <= 0) {
@@ -135,13 +136,13 @@
               if((max_height + bonus_offset + document.getElementById("sidebarmain").offsetHeight) >= window.visualViewport.height){
                 max_height = window.visualViewport.height - document.getElementById("sidebarmain").offsetHeight - bonus_offset;
                 query_root.style.setProperty('--btn-marginTop', (max_height + bonus_offset) + "px");
-                window.alert('maximum: ' + (max_height + bonus_offset).toString());
+                alerts.push('\nmaximum: ' + (max_height + bonus_offset).toString());
               } else {
                 query_root.style.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.01 + "px");
                 query_root.style.setProperty('--btn-marginTop', (max_height + window.visualViewport.height * 0.01) + "px");
-                window.alert('normal: (' + (max_height + window.visualViewport.height * 0.01).toString() + ', ' + max_height.toString() + ', ' + window.visualViewport.height.toString() + ')');
+                alerts.push('\nnormal: (' + (max_height + window.visualViewport.height * 0.01).toString() + ', ' + max_height.toString() + ', ' + window.visualViewport.height.toString() + ')');
               }
-              
+              window.alert(''.concat(...alerts));
               query_root.style.setProperty('--sidebar-height', max_height + "px");
               query_root.style.setProperty('--sidebar-transition-time', '0.8s');
               query_root.style.setProperty('--sidebar-text-transition-time', '0.5s');
