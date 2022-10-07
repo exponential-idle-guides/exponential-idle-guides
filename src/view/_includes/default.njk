@@ -119,10 +119,10 @@
               || curr_sidebar != sidebars[0])
               || force) {
             
-            bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10);
+            bonus_offset=document.getElementById(sidebarmain).offsetHeight - parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10);
             alerts.push('\nbonus_offset: (' 
               + bonus_offset.toString() 
-              + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() 
+              + ', ' + document.getElementById(sidebarmain).offsetHeight.toString() 
               + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
               + ', ' + parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10).toString()
             + ')');
