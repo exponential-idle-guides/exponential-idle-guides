@@ -110,21 +110,26 @@
           alerts=[(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
             + ' , '  + getComputedStyle(query_root).getPropertyValue('--sidebar-height').toString() 
             + ' , ' + (curr_sidebar != sidebars[0]).toString()
-            + ' , ' + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
+            + ' , ' + ((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0px" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%") 
               || curr_sidebar != sidebars[0]).toString())
           ];
-          if (((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%" 
+          if (((getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0px" 
               && getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%")
               || curr_sidebar != sidebars[0])
               || force) {
             
             bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10);
-            window.alert('bonus_offset: ' + bonus_offset.toString() + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() + ', ' + parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10).toString());
+            alert.push('bonus_offset: ' 
+              + bonus_offset.toString() 
+              + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() 
+              + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
+              + ', ' + parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10).toString()
+            );
             curr_sidebar = sidebars[0];
             
             
-            query_root.style.setProperty('--sidebar-padding-b', "0");
+            query_root.style.setProperty('--sidebar-padding-b', "0px");
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
             max_sidebar_height = max_height;
@@ -173,7 +178,7 @@
           query_root.style.setProperty('--sidebar-transition-time', '0.5s');
           query_root.style.setProperty('--sidebar-text-transition-time', '0.3s');
           query_root.style.setProperty('--sidebar-height', "0%");
-          query_root.style.setProperty('--btn-marginTop', "0%");
+          query_root.style.setProperty('--btn-marginTop', "0px");
           query_root.style.setProperty('--sidebar-padding-b', "0px");
         }
         query_root.style.setProperty('--sidebar-content-padding', '0');
