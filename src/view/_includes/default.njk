@@ -120,16 +120,15 @@
               || force) {
             
             bonus_offset=document.getElementById(sidebars[0]).offsetHeight - parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10);
-            window.alert('bonus_offset: (' 
+            alerts.push('bonus_offset: (' 
               + bonus_offset.toString() 
               + ', ' + document.getElementById(sidebars[0]).offsetHeight.toString() 
               + ', ' + getComputedStyle(query_root).getPropertyValue('--btn-marginTop').toString() 
               + ', ' + parseInt(getComputedStyle(query_root).getPropertyValue('--btn-marginTop').slice(0,-2),10).toString()
             + ')');
             curr_sidebar = sidebars[0];
-            
-            
             query_root.style.setProperty('--sidebar-padding-b', "0px");
+
             document.getElementById(sidebars[0]+"invis").style.height="auto";
             max_height=document.getElementById(sidebars[0]+"invis").offsetHeight;
             max_sidebar_height = max_height;
