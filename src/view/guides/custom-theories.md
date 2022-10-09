@@ -401,33 +401,24 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 #### EF milestone route
 
 <table class="milestone_routing">
-   <thead>
-      <tr>
-         <th>Active</th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
-      </tr>
-   </thead>
    <tbody>
       <tr>
-         <td>0/2/0</td>
+         <td>2/0</td>
          <td class="arrow">→</td>
-         <td>1/0/2/0</td>
+         <td>2/3/0</td>
          <td class="arrow">→</td>
-         <td>1/2/2/0</td>
+         <td>2/3/5/0</td></td>
+         <td class="arrow">→</td>
+         <td>2/3/5/2/0</td></td>
+         <td class="arrow">→</td>
+         <td>2/3/5/2/2</td></td>
       </tr>
-      <tr>
-         <td>1/2/2/0</td>
-         <td class="arrow">→</td>
-         <td>1/2/2/2</td>
    </tbody>
 </table>
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td class="invisible">Or</td>
+         <td class="invisible"><strong>Or</strong></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -436,64 +427,16 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
          <td class="invisible"></td>
       </tr>
       <tr>
-         <td>3 x2</td>
+         <td>1 x2</td>
          <td class="arrow">→</td>
-         <td>1</td>
+         <td>2 x3</td>
          <td class="arrow">→</td>
-         <td>2 x2</td>
-      </tr>
-      <tr>
-         <td>2 x2</td>
+         <td>3 x5</td>
          <td class="arrow">→</td>
          <td>4 x2</td>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <thead>
-      <tr>
-         <th>Idle</th>
-         <th></th>
-         <th></th>
-         <th></th>
-         <th></th>
+         <td class="arrow">→</td>
+         <td>5 x2</td>
       </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>0/2/0</td>
-         <td class="arrow">→</td>
-         <td>0/2/2</td>
-         <td class="arrow">→</td>
-         <td>1/2/2</td>
-      </tr>
-      <tr>
-         <td>1/2/2/0</td>
-         <td class="arrow">→</td>
-         <td>1/2/2/2</td>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible">Or</td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>3 x2</td>
-         <td class="arrow">→</td>
-         <td>2 x2</td>
-         <td class="arrow">→</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td class="arrow">→</td>
-         <td>4 x2</td>
    </tbody>
 </table>
 
