@@ -624,11 +624,11 @@ For a more detailed explanation on how to actually do the strategy, please see t
          <td class="invisible"></td>
       </tr>
       <tr>
-         <td>1 x3</td>
-         <td class="arrow">→</td>
-         <td>3 x3</td>
-         <td class="arrow">→</td>
          <td>2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>1 x3</td>
       </tr>
    </tbody>
 </table>
