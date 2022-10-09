@@ -997,7 +997,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is 1/100 of ρ<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -1849,7 +1849,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br /><br>
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
 The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br /> <br />

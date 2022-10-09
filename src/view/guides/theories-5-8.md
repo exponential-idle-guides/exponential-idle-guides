@@ -251,24 +251,24 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 T6 has the lowest decay of all the theories. It will be second place to T5 until about e750 and is the only theory that can
 get to \\(>e1100τ\\). You should overnight this and T4 after you get your T2 to \\(e350+\\).
 
-At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane. 
-This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the 
-opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\), 
-this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and 
-\\(0\\) to \\(r\\) respectively. 
+At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane.
+This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the
+opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\),
+this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and
+\\(0\\) to \\(r\\) respectively.
 
-The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\) 
-upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is 
-slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus 
-\\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example, 
-lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will 
+The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\)
+upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is
+slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus
+\\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example,
+lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will
 be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(C\\) needs to be equal to \\(20\\).
 
 [Video of T6 at Endgame](https://bit.ly/t6endgame)
 
 #### T6 strategy
 
-The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone. 
+The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
 If you want an accurate multiplier, check with [the sim](https://theory-simulator.tredec.repl.co/).
 
 <table class="spqcey">
@@ -287,27 +287,27 @@ If you want an accurate multiplier, check with [the sim](https://theory-simulato
       <tr>
          <td class="leftHeader">1ρ-e7ρ</td>
          <td>Buy All</td>
-         <td>Buy All with q<sub><sub><small>1</small></sub></sub> at e1 difference</td>
+         <td>Buy All with q<sub><sub><small>1</small></sub></sub> bought at 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">e7ρ-e25ρ</td>
-         <td>Turn off c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> when you unlock c<sub><sub><small>3</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> when 1/10 of q<sub><sub><small>2</small></sub></sub> cost and stop buying c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> when you unlock c<sub><sub><small>3</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e25ρ-e100ρ</td>
-         <td>Turn off c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> (and r<sub><sub><small>1</small></sub></sub> past e50) at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> when you unlock c<sub><sub><small>4</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> (and r<sub><sub><small>1</small></sub></sub> past e50) when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and stop buying c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> when you unlock c<sub><sub><small>4</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e130ρ</td>
          <td>Turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e130ρ-e175ρ</td>
          <td>Turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
       </tr>
    </tbody>
 </table>
