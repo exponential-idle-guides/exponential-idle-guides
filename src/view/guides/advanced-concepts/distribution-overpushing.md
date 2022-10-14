@@ -14,11 +14,11 @@ draft: true
 
 ### What is distribution overpushing?
 
-A naive way to push a theory distribution is to push all 8 original theories until they have similar tau/hour gains. Distribution overpushing is when you push certain theories such that their tau/hours are less than others. This seems to contradict optimal play, as generally you'd gain more students quicker if you push all theories to equal rates. However, some theories do not benefit as much from the 3rd level of the 9th Research in the Students tab (3R9). Therefore it makes more sense to push theories that don't benefit much from additional students first. This allows us to use the additional students to accelerate the rates of theories that do benefit significantly from 3R9. 
+A greedy way to push a theory distribution is to push all 8 original theories until they have similar tau/hour gains. However, this is not necessarily optimal for long term tau gains. Distribution overpushing is when you push certain theories such that their tau/hours are less than others. This seems to contradict optimal play, as generally you'd gain more students quicker if you push all theories to equal rates. However, some theories do not benefit as much from the 3rd level of the 9th Research in the Students tab (3R9). Therefore it makes more sense to push theories that don't benefit much from additional students first. This allows us to use the additional students to accelerate the rates of theories that do benefit significantly from 3R9. 
 
 ### How theories are affected by additional students
 
-We will compare the effect of students on taudot, vs the effect of time on taudot for each theory. If time and sigma affect rho For the equations below, 'K' and 'A' are just constants, 'S' is the multiplier gained from having students (3R9 multiplier).
+We will compare the effect of students on taudot, vs the effect of time on taudot for each theory. For the equations below, 'K' and 'A' are just constants, 'S' is the multiplier gained from having students (3R9 multiplier).
 
 #### Theory 1
 
