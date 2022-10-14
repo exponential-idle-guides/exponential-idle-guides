@@ -19,7 +19,7 @@ A naive way to push a theory distribution is to push all 8 original theories unt
 
 We will compare the effect of students on taudot, vs the effect of time on taudot for each theory. For the equations below, 'K' and 'A' are just constants, 'S' is the multiplier gained from having students (3R9 multiplier).
 
-### Theory 1
+#### Theory 1
 
 We know that in theory 1, the c4 term dominates late game: <br>
 \\(\dot{\rho} = KS\rho^{0.3}\\)
@@ -28,7 +28,7 @@ We know that in theory 1, the c4 term dominates late game: <br>
 Despite the 0.7 power, we can conclude that sigma and time affect rho equally. 
 
 
-### Theory 2
+#### Theory 2
 
 \\(\dot{q_4} and \dot{r_4) = A; so q_4 and r_4 ~= At\\)
 
@@ -41,27 +41,27 @@ By the same logic: <br>
 
 Here we see that time affects rho 10.2 magnitude higher than extra sigma. 
 
-### Theory 3
+#### Theory 3
 
-\\(all \dot{\rho} ~= A so \rho ~= KSt\\)
+\\(\dot{\rho_n} ~= A, \rho ~= KSt \\)
 
 Sigma and time affect rho equally. 
 
-### Theory 4
+#### Theory 4
 
 Late game c3 term dominates so: <br>
 
-\\(\dot{\rho} ~= Ac_3q \\)
+\\(\dot{\rho} ~= Ac_3q \\) <br>
 \\(\dot{q} ~= \frac{A}{1+q} \\)
 
 Solving the differential equation yields q is proportional to \\(\sqrt{t} \\) <br>
 
-\\(\dot{\rho} ~= Ac_3\sqrt{t}\\)
+\\(\dot{\rho} ~= Ac_3\sqrt{t}\\) <br>
 \\(\rho ~= KSt^{1.5}\\)
 
 Time affects rho 1.5 magnitude more than sigma.
 
-### Theory 5
+#### Theory 5
 
 Late game we can treat c2 gains as instantaneous, so q is treated as a constant.<br>
 
@@ -70,7 +70,7 @@ So \\(\dot{rho} ~= A only\\)
 
 Sigma and time affect rho equally. 
 
-### Theory 6
+#### Theory 6
 
 Late game c5 term dominates. <br>
 
@@ -80,7 +80,7 @@ Late game c5 term dominates. <br>
 
 Time affects rho 3 magnitude more than sigma.
 
-### Theory 7
+#### Theory 7
 
 Late game c6 term dominates. <br>
 
@@ -93,7 +93,7 @@ Therefore: \\(\dot{\rho} ~= Ac_6\\)
 
 Sigma and time affect rho equally. 
 
-### Theory 8
+#### Theory 8
 
 The cost value scalings for c3, c4, c5 are the same. Since they are additive with each other, we can simplify the equation as: <br>
 
@@ -102,3 +102,11 @@ The cost value scalings for c3, c4, c5 are the same. Since they are additive wit
 \\(\rho ~= KSt \\)
 
 Sigma and time affect rho equally. 
+
+
+From the equations above, we can conclude that for theories 1, 3, 5, 7, 8, rhodot and sigma are linearly dependent on each other. <br>
+For theory 4, rhodot^1.5 is proportional to sigma. <br>
+For theory 6, rhodot^3 is proportional to sigma. <br>
+For theory 2, rhodot^10.2 is proportional to sigma. <br>
+
+These conclusions imply that for theory 2 for example, increasing sigma hardly affects rhodot.
