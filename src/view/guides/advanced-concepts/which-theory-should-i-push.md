@@ -10,7 +10,7 @@ draft: true
 
 
 
-## Which Theory Should I Push During the Day?
+## Which Theory Should I Push?
 
 It depends :) <br>
 
