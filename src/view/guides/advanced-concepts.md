@@ -74,8 +74,8 @@ Sigma and time affect rho equally.
 
 Late game c5 term dominates. <br>
 
-\\(\rho ~= Ac_5qr^2 after integrating\\) <br>
-\\(\dot{r} and \dot{q} ~= A, so r and q ~= At\\) <br>
+\\(\rho ~= Ac_5qr^2 \\) after integrating <br>
+\\(\dot{r}, \dot{q} ~= A;  r, q ~= At\\) <br>
 \\(\rho ~= KSt^3\\) <br>
 
 Time affects rho 3 magnitude more than sigma.
@@ -110,3 +110,35 @@ For theory 6, rhodot^3 is proportional to sigma. <br>
 For theory 2, rhodot^10.2 is proportional to sigma. <br>
 
 These conclusions imply that for theory 2 for example, increasing sigma hardly affects rhodot.
+
+
+### Overpushing Coefficients
+
+From previous workings, the overpushing coefficients are:
+
+<table>
+<tbody>
+<tr>
+    <td>T1 </td>
+    <td>T2 </td>
+    <td>T3 </td>
+    <td>T4 </td>
+    <td>T5 </td>
+    <td>T6 </td>
+    <td>T7 </td>
+    <td>T8 </td>
+
+</tr>
+<tr>
+    <td>1 </td>
+    <td>10.2 </td>
+    <td>1 </td>
+    <td>1.5 </td>
+    <td>1 </td>
+    <td>3 </td>
+    <td>1 </td>
+    <td>1 </td>
+</tr>
+</tbody>
+
+</table>
