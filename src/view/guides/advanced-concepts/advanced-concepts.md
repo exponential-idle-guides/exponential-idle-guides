@@ -11,5 +11,5 @@ order: 11
 
 [Distribution Overpushing](/guides/advanced-concepts/distribution-overpushing)
 
-[Which Theory to Push During the Day?](/guides/advanced-concepts/which-theory-should-i-push)
+[Which Theory to Push?](/guides/advanced-concepts/which-theory-should-i-push)
 
