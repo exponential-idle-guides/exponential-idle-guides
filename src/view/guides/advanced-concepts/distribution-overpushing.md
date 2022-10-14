@@ -31,7 +31,7 @@ Despite the 0.7 power, we can conclude that sigma and time affect rho equally.
 
 #### Theory 2
 
-\\(\dot{q_4} and \dot{r_4} = A, q_4 and r_4 ~= At\\)
+\\(\dot{q_4}, \dot{r_4} = A; q_4, r_4 ~= At\\)
 
 By the same logic: <br>
 \\(\dot{q_3}, \dot{r_3} = At; q_3, r_3 ~= At^2\\) <br>
