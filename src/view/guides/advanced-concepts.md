@@ -22,28 +22,28 @@ We will compare the effect of students on taudot, vs the effect of time on taudo
 #### Theory 1
 
 We know that in theory 1, the c4 term dominates late game: <br>
-\\(\dot{\rho} = KS\rho^{0.3}\\)
-\\(\rho = (KSt)^{0.7}\\)
+\\(\dot{\rho} = KS\rho^{0.3}\\) <br>
+\\(\rho = (KSt)^{0.7}\\) <br>
 
 Despite the 0.7 power, we can conclude that sigma and time affect rho equally. 
 
 
 #### Theory 2
 
-\\(\dot{q_4} and \dot{r_4) = A; so q_4 and r_4 ~= At\\)
+\\(\dot{q_4} and \dot{r_4} = A, q_4 and r_4 ~= At\\)
 
 By the same logic: <br>
-\\(\dot{q_3} and \dot{r_3) = At; so q_3 and r_3 ~= At^2\\)
-\\(\dot{q_2} and \dot{r_2) = A; so q_2 and r_2 ~= At^3\\)
-\\(\dot{q_1} and \dot{r_1) = A; so q_1 and r_1 ~= At^4\\)
-\\(\dot{\rho} ~= (At^{4}At^{4})^{1.15} ~= At^{9.2}\\)
-\\(\rho ~= KSt^{10.2}\\)
+\\(\dot{q_3} and \dot{r_3} = At, q_3 and r_3 ~= At^2\\) <br>
+\\(\dot{q_2} and \dot{r_2} = At^2, q_2 and r_2 ~= At^3\\) <br>
+\\(\dot{q_1} and \dot{r_1{} = At^3, q_1 and r_1 ~= At^4\\) <br>
+\\(\dot{\rho} ~= (At^{4}At^{4})^{1.15} ~= At^{9.2}\\) <br>
+\\(\rho ~= KSt^{10.2}\\) <br>
 
 Here we see that time affects rho 10.2 magnitude higher than extra sigma. 
 
 #### Theory 3
 
-\\(\dot{\rho_n} ~= A, \rho ~= KSt \\)
+\\(\dot{\rho_n} ~= A, \rho ~= KSt \\) <br>
 
 Sigma and time affect rho equally. 
 
@@ -52,12 +52,12 @@ Sigma and time affect rho equally.
 Late game c3 term dominates so: <br>
 
 \\(\dot{\rho} ~= Ac_3q \\) <br>
-\\(\dot{q} ~= \frac{A}{1+q} \\)
+\\(\dot{q} ~= \frac{A}{1+q} \\) <br>
 
 Solving the differential equation yields q is proportional to \\(\sqrt{t} \\) <br>
 
 \\(\dot{\rho} ~= Ac_3\sqrt{t}\\) <br>
-\\(\rho ~= KSt^{1.5}\\)
+\\(\rho ~= KSt^{1.5}\\) <br>
 
 Time affects rho 1.5 magnitude more than sigma.
 
@@ -65,8 +65,8 @@ Time affects rho 1.5 magnitude more than sigma.
 
 Late game we can treat c2 gains as instantaneous, so q is treated as a constant.<br>
 
-So \\(\dot{rho} ~= A only\\)
-\\(\rho ~= KSt\\)
+\\(\dot{rho} ~= A \\) only <br>
+\\(\rho ~= KSt\\) <br>
 
 Sigma and time affect rho equally. 
 
@@ -74,9 +74,9 @@ Sigma and time affect rho equally.
 
 Late game c5 term dominates. <br>
 
-\\(\rho ~= Ac_5qr^2 after integrating\\)
-\\(\dot{r} and \dot{q} ~= A, so r and q ~= At\\)
-\\(\rho ~= KSt^3\\)
+\\(\rho ~= Ac_5qr^2 after integrating\\) <br>
+\\(\dot{r} and \dot{q} ~= A, so r and q ~= At\\) <br>
+\\(\rho ~= KSt^3\\) <br>
 
 Time affects rho 3 magnitude more than sigma.
 
@@ -84,12 +84,12 @@ Time affects rho 3 magnitude more than sigma.
 
 Late game c6 term dominates. <br>
 
-\\(\dot{\rho} ~= Ac_6\sqrt{\frac{\rho_2}{\rho_1}} after partial differentiation\\) 
+\\(\dot{\rho} ~= Ac_6\sqrt{\frac{\rho_2}{\rho_1}} \\) after partial differentiation <br>
 
 However rho2 / rho1 is effectively constant. This is because if rho2 is higher than rho1, rho1 will eventually catch up to rho2 and vice versa. <br>
 
-Therefore: \\(\dot{\rho} ~= Ac_6\\)
-\\(\rho ~= KSt\\)
+Therefore: \\(\dot{\rho} ~= Ac_6\\) <br>
+\\(\rho ~= KSt\\) <br>
 
 Sigma and time affect rho equally. 
 
@@ -97,9 +97,9 @@ Sigma and time affect rho equally.
 
 The cost value scalings for c3, c4, c5 are the same. Since they are additive with each other, we can simplify the equation as: <br>
 
-\\(\dot{\rho} ~= A\sqrt{Bc3}\\)
-\\(\dot{\rho} ~= A\\)
-\\(\rho ~= KSt \\)
+\\(\dot{\rho} ~= A\sqrt{Bc3}\\) <br>
+\\(\dot{\rho} ~= A\\) <br>
+\\(\rho ~= KSt \\) <br>
 
 Sigma and time affect rho equally. 
 
