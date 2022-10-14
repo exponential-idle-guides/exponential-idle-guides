@@ -1,7 +1,7 @@
 ---
 title: "Misc posts"
-description: "Our guide for routing through and understanding theories 5 to 8. We provide some strategies to help you make progress."
-author: "LE★Baldy, Snaeky, & Xelaroc"
+description: "Advanced concepts for players who would like to understand the game better."
+author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
 order: 11
