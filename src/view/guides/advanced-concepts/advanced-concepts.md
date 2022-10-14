@@ -9,7 +9,7 @@ order: 11
 
 {% import "embed-yt.njk" as yt %}
 
-[Distribution Overpushing](/guides/misc-posts/advanced-concepts/distribution-overpushing)
+[Distribution Overpushing](/guides/advanced-concepts/distribution-overpushing)
 
 ## Distribution Overpushing
 

@@ -1,5 +1,5 @@
 ---
-title: "Distribution Overpushing"
+
 description: "Distribution Overpushing concept."
 author: "Playspout"
 contributors: "the Amazing Community"
