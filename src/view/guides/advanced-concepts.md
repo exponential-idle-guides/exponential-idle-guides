@@ -17,7 +17,7 @@ A naive way to push a theory distribution is to push all 8 original theories unt
 
 ### How theories are affected by additional students
 
-We will compare the effect of students on taudot, vs the effect of time on taudot for each theory. For the equations below, 'K' and 'A' are just constants, 'S' is the multiplier gained from having students (3R9 multiplier).
+We will compare the effect of students on taudot, vs the effect of time on taudot for each theory. If time and sigma affect rho For the equations below, 'K' and 'A' are just constants, 'S' is the multiplier gained from having students (3R9 multiplier).
 
 #### Theory 1
 
@@ -33,9 +33,9 @@ Despite the 0.7 power, we can conclude that sigma and time affect rho equally.
 \\(\dot{q_4} and \dot{r_4} = A, q_4 and r_4 ~= At\\)
 
 By the same logic: <br>
-\\(\dot{q_3} and \dot{r_3} = At, q_3 and r_3 ~= At^2\\) <br>
-\\(\dot{q_2} and \dot{r_2} = At^2, q_2 and r_2 ~= At^3\\) <br>
-\\(\dot{q_1} and \dot{r_1{} = At^3, q_1 and r_1 ~= At^4\\) <br>
+\\(\dot{q_3}, \dot{r_3} = At, q_3 and r_3 ~= At^2\\) <br>
+\\(\dot{q_2}, \dot{r_2} = At^2, q_2 and r_2 ~= At^3\\) <br>
+\\(\dot{q_1}, \dot{r_1} = At^3, q_1 and r_1 ~= At^4\\) <br>
 \\(\dot{\rho} ~= (At^{4}At^{4})^{1.15} ~= At^{9.2}\\) <br>
 \\(\rho ~= KSt^{10.2}\\) <br>
 
