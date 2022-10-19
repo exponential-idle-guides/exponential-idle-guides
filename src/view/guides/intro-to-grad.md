@@ -40,8 +40,8 @@ students around as they make phi drop in value.
 
 <blockquote style="font-family:monospace;">timer(abs(d(log10(phi + 1))) < 50) > 15))</blockquote>
 
-This part prevents prestiging if phi were to change more than e5 within 1 tick. It
-will then wait 15 sec before checking if it can prestige again. This will allow you
+This part prevents prestiging if phi were to change by more than e5 within 1 tick. It
+will then wait 15 seconds before checking if it can prestige again. This will allow you
 to swap R9 or students freely without needing to worry about accidentally prestiging
 for a very small amount of \\(b\\).
 
@@ -58,7 +58,7 @@ If phi is equal to 1, then it uses the normal autoprestige expression. We don't 
 This lets the normal expression work when you supremacy or graduate up to 80% of
 \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to
 recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part
-of the expression above does not allow the normal expression to prestige for 15 sec after
+of the expression above does not allow the normal expression to prestige for 15 seconds after
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So,
 we allow the normal expression to work like normal while recovering.
 

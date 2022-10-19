@@ -1,13 +1,13 @@
 ---
 title: "Exponential Idle Basics"
-description: "A guide for stars, prestiges, supremecies, minigames, and the basics of the game."
+description: "A guide for stars, prestiges, supremacies, minigames, and the basics of the game."
 author: "LE★Baldy and Snaeky"
 contributors: "The Amazing Community"
 draft: true
 order: 0
 ---
 
-This intro and following guide are designed to help you play through the 1 to ee2000 
+This intro and following guide are designed to help you play through the 1 to ee2000
 section of the game. This introduction will give you some fundamentals to help you progress
 while playing this section of the game.
 
@@ -136,24 +136,24 @@ further ahead than you are already.
 ### What does ee mean?
 
 You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
-  
+
 ### Achievements and Minigames
 
 * Achievements are just that. They are goals to reach that give you stars as reward.
-* Minigames are puzzles that you can solve that will give you stars as a rewatd for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for how to solve each puzzle and more resources.
+* Minigames are puzzles that you can solve that will give you stars as a reward for getting solving them. Check out the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for how to solve each puzzle and more resources.
 
 ### Stars and Star upgrades
 
-* Stars are a currency that operates outside of the main game that you use to purchase star upgrades. 
-  These upgrades range from QoL features to boosts to the gameplay. For the most part, you should 
-  prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge 
-  boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on 
+* Stars are a currency that operates outside of the main game that you use to purchase star upgrades.
+  These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should
+  prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge
+  boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on
   star upgrades to prioritize can be found in following guides.
 
 ### Autoprestige expression
 
 ```
-timer(d(ln(db/b+1)/pt) < 0) 
+timer(d(ln(db/b+1)/pt) < 0)
 > 3 * tr && db > b
 ```
 
@@ -190,15 +190,15 @@ derivative (\\(d\\)) and see when it turns negative.
 ![AP graph](/images/AP-graph.png)
 
 ### Autosupremacy expression
- 
+
 ```
 timer(d(ln(db / b + 1) / pt) < 0)
-> 3 * tr && db > b && dpsi + psi 
-> min(min(costUpS(1), costUpS(2)), costUpS(3)) 
-&& ln(1 + max(1, log10(sf)) / 
-smooth(max(1, log10(gf)), (st > tr) * ee99)) 
-/ max(1, st) < smooth(ln(1 + max(1, log10(sf)) 
-/ smooth(max(1, log10(gf)), (st > tr) * ee99)) / 
+> 3 * tr && db > b && dpsi + psi
+> min(min(costUpS(1), costUpS(2)), costUpS(3))
+&& ln(1 + max(1, log10(sf)) /
+smooth(max(1, log10(gf)), (st > tr) * ee99))
+/ max(1, st) < smooth(ln(1 + max(1, log10(sf))
+/ smooth(max(1, log10(gf)), (st > tr) * ee99)) /
 max(1, st), (pt > tr) * ee99)
 ```
 
@@ -206,7 +206,7 @@ max(1, st), (pt > tr) * ee99)
 
 ###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock)
 
-#### Autosupremacy explanantion
+#### Autosupremacy explanation
 
 The autosupremacy expression is an attempt to do the autoprestige expression, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy expression than an autoprestige expression because after a new prestige, Supremacy \\(f(t)\\) doesn't increase until you get back to the \\(f(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
 
@@ -229,8 +229,8 @@ A simple expression like \\(smooth(expr, ee99)\\) will first compute expr and ke
 However, we can do better: instead of simply locking values, we can control when the locking mechanism comes in. Using conditions, we can switch back and forth between indefinite locks and instantaneous updates: \\(smooth(expr, ee99*cond)\\). If cond is true, then \\(ee99 *cond\\) will be ee99, thereby activating the lock. If cond is false, then \\(ee99 * cond\\) will be 0, thereby switching to instantaneous updates. The result is that we obtain the value of expr evaluated when the cond was last false.
 
 #### Method 3: Cumulative maximum
- 
-If we have two really large values, the average of the two will be in favor of the larger of the two. In fact, if the two numbers are really really big, the average will be indistinguishable from the larger of the two due to finite data storage (term: floating point precision). We can abuse this idea to convert the input of smooth into a very large value, thereby converting averages like \\(average = 0.5 *(new\\) \\(value) + 0.5 * (old\\) \\( value)\\) into the equivalent \\(average = max(new \\) \\(value, old \\) \\(value)\\). The effect is that we obtain the maximum value that the input attained ever since the expression was reset (from modifying the expression or from prestige (resp. supremacy) for prestige expression (resp. supremacy expresssion)). Of course, we have to cancel out the magnification of the inputs in order to retrieve the value we actually want.
+
+If we have two really large values, the average of the two will be in favor of the larger of the two. In fact, if the two numbers are really really big, the average will be indistinguishable from the larger of the two due to finite data storage (term: floating point precision). We can abuse this idea to convert the input of smooth into a very large value, thereby converting averages like \\(average = 0.5 *(new\\) \\(value) + 0.5 * (old\\) \\( value)\\) into the equivalent \\(average = max(new \\) \\(value, old \\) \\(value)\\). The effect is that we obtain the maximum value that the input attained ever since the expression was reset (from modifying the expression or from prestige (resp. supremacy) for prestige expression (resp. supremacy expression)). Of course, we have to cancel out the magnification of the inputs in order to retrieve the value we actually want.
 
 For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that it displays the largest value of \\(10^{10^{10^{db}}}\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))\\) to retrieve back the maximum \\(db\\).
 
