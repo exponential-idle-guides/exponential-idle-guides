@@ -682,3 +682,95 @@ the rest after. This continues to max at 2/3/3/3.
 </table>
 
 Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
+
+#### Final Push to ee20k
+
+In general, you will need about e2050 \\tau\\ in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Reccomended values for your theories \\tau\\ is as follows. Being above or below these values is fine, just as long as you have e2050 tau.
+
+#### Active
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e243 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e361 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e295 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e194 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e221 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e227 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e232 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>e277 τ</td>
+      </tr>
+   </tbody>
+</table>
+
+#### Idle
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e237 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e360 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e290 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e204 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e221 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e235 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e227 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>e276 τ</td>
+      </tr>
+   </tbody>
+</table>
