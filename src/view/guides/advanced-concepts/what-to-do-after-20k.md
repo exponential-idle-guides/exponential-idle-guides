@@ -1,6 +1,6 @@
 ---
 
-description: "A guide on selecting the best theories to push"
+description: "A guide on what to do after completing theory 9."
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
