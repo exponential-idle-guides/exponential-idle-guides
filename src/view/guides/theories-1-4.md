@@ -123,9 +123,9 @@ and you have \\(11ρ\\), buying that level will reduce \\(ρ_{n+1}\\) to \\(1\\)
 There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio) are to be
 only used when you are past \\(e150 τ\\) and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
 
-Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 2 (e50τ) and autobuy rest until ee6k.
+Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 1 (e25τ) and autobuy rest until ee6k.
 
-__The video below is only good for early tau between ee150 and ee250.__
+__The video below is only good for early tau between 1e150 and 1e250.__
 
 {{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
 
