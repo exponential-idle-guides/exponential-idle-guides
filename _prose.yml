@@ -7,7 +7,7 @@ prose:
     - /src/scripts
     - /src/view/_includes
     - /src/view/guides/guides.json
-    - /src/view/advanced-concepts/guides.json
+    - /src/view/advanced-concepts/advanced-concepts.json
   metadata:
     src/view/guides:
       - name: "title"
