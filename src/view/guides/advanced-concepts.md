@@ -4,7 +4,7 @@ description: "Advanced concepts for players who would like to understand the gam
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
-order: 9
+order: 10
 ---
 
 {% import "embed-yt.njk" as yt %}
