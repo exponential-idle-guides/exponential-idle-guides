@@ -1,5 +1,5 @@
 ---
-title: "Misc posts"
+title: "Miscellaneous Posts"
 description: "Advanced concepts for players who would like to understand the game better."
 author: "Playspout"
 contributors: "the Amazing Community"
@@ -9,9 +9,9 @@ order: 10
 
 {% import "embed-yt.njk" as yt %}
 
-[Distribution Overpushing](/guides/advanced-concepts/distribution-overpushing)
+[Distribution Overpushing](/src/view/advanced-concepts/distribution-overpushing)
 
-[Which Theory to Push?](/guides/advanced-concepts/which-theory-should-i-push)
+[Which Theory to Push?](/src/view/advanced-concepts/which-theory-should-i-push)
 
-[What to do after ee20k ft?](/guides/advanced-concepts/what-to-do-after-20k)
+[What to do after ee20k ft?](/src/view/advanced-concepts/what-to-do-after-20k)
 

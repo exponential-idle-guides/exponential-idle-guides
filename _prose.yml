@@ -33,3 +33,28 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+    src/view/advanced-concepts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Draft?"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
