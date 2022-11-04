@@ -3,7 +3,7 @@
 description: "A guide on selecting the best theories to push"
 author: "Playspout"
 contributors: "the Amazing Community"
-draft: true
+draft: false
 
 ---
 
