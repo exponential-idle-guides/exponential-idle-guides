@@ -4,7 +4,7 @@ description: "A guide on selecting the best theories to push"
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: false
-order: 3
+order: 1
 ---
 
 It depends :)
