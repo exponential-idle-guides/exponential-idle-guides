@@ -29,10 +29,12 @@
     <script>
       
       function openSidebar(sidebars,sidebarheaders) {
-        window.alert(sidebars)
-        window.alert(sidebarheaders)
+        window.alert(toString(sidebars) + "\n" toString(sidebarheaders));
+
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         
+        window.alert(toString(getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%") + " , " + toString(getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%"));
+
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
   	      maxwidth=0;maxheaderwidth=0;mainwidth=document.getElementById("sidebarmain").offsetWidth;
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
