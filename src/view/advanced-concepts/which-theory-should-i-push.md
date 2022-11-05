@@ -8,26 +8,23 @@ order: 3
 
 ---
 
-
-
-
 ## Which Theory Should I Push?
 
-It depends :) <br>
+It depends :)
 
 All jokes aside, this seemingly simple question can have more in-depth answers than you might realize. Selecting a theory to push during the day depends on many factors; some are:
 
 1. How often can you check your phones.
 2. Each theory's publication length.
 3. Each theory's active/idle ratio.
-4. Each theory's taudot.
+4. Each theory's \\(\dot{τ}\\).
 5. Overpushing implications.
 
-### How often can you check your phones
+### How often can you check your phone(s)
 
 If you can only check your phone once every 8 hours or less often, this is basically the same as overnight. In this case, you would prefer theories that do well while idling (low active/idle ratios). This makes sense because if a theory has a really strong active strategy, you wouldn't want to waste that potential by idling for 8 hours+. Examples of suitable theories are T2, T4, T6, SL. No other theories have low active/idle ratios. 
 
-### Each theory's publication length.
+### Each theory's publication length
 
 This relates to the first reason. Let's say you can check your phones once every 8 hours. However, the theory's publication length is only 4 hours, then you start to automatically lose efficiency by going over the optimal publication length. The efficiency lost depends on the theory.
 
@@ -41,22 +38,14 @@ If you have active time, you'd prefer to do theories that have high active/idle 
 
 However, do consider all the other factors as well. It is possible (and even likely) that it is best to just push a more idle theory even when you have active time. 
 
-### Each theory's taudot. 
+### Each theory's \\(\dot{τ}\\)
 
-The faster a theory's taudot, the more we should do it. This is because we can gain faster tau, which means more students, which means more taudot. Once again, do consider other factors in conjunction.
+The faster a theory's \\(\dot{τ}\\), the more we should do it. This is because we can gain faster tau, which means more students, which means more \\(\dot{τ}\\). Once again, do consider other factors in conjunction.
 
-### Overpushing implications.
+### Overpushing implications
 
-The better a theory is for [overpushing](/guides/advanced-concepts/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order. Custom theories are not affected by overpushing. 
+The better a theory is for [overpushing](/guides/advanced-concepts/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order. Custom theories are not affected by overpushing.
 
-### Conclusions.
+### Conclusions
 
 Most of the factors listed above are weighed toward doing more idle theories with long publication lengths and low active/idle ratios. By chance these theories are T2, T4, T6. The recommendation is to push these theories first. Once these theories' rates are significantly lower than others, push other theories active only when you have active time. If your T2, T4, T6 rates are MUCH slower than others however, you might decide to push other less idle friendly theories anyway even if you sacrifice the active strategy potentials. Ultimately, if you don't care about leaderboard rankings, you can just push whatever theories you enjoy.  
-
-
-
-
-
-
-
-

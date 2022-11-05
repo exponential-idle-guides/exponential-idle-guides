@@ -8,9 +8,6 @@ order: 1
 
 ---
 
-
-
-
 ## What to do after ee20k f(t)?
 
 ### A controversial theory
@@ -47,7 +44,7 @@ For this player, we will run TA until about ee40k ft. We will then manually do T
 
 #### Semi Active Player (3 times per day)
 
-For this player, we will abandon using TA for T2 straight away. At about ee30k ft, we will also abandon using TA for T6. At about ee40k ft, we will abandon TA on T4. Finally, at about ee50k ft, we will abandon using TA for everything else. 
+For this player, we will abandon using TA for T2 straight away. At about ee30k ft, we will also abandon using TA for T6. At about ee40k ft, we will abandon TA on T4. Finally, at about ee50k ft, we will abandon using TA for everything else.
 
 #### Hyper Active Player (10 times+ per day)
 

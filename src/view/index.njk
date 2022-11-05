@@ -41,9 +41,6 @@ home: true
     {%- for post in collections.advanced -%}
       <li>
         {{{post}.data.title }}
-        {% if{post}.data.subtitle %}
-          ({{{post}.data.subtitle }})
-        {% endif %}
       </li>
     {%- endfor -%}
   </ul>
