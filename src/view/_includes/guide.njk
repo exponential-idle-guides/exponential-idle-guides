@@ -107,23 +107,53 @@
         {% include 'tools.njk' %}
       </div>
     </div>
-
+    
+    <div id="MiscSidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Miscellaneous Posts</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.advanced -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div id="MiscSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Miscellaneous Posts</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.advanced -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
     
     <div id="SidebarHeaders" class="sidebar">
       <h1 class="sidebartitle">More Guides ⓧ</h1>
       <h1 class="sidebartitle">Table of Contents ⓧ</h1>
       <h1 class="sidebartitle">Other Resources ⓧ</h1>
+      <h1 class="sidebartitle">Misc Posts ⓧ</h1>
     </div>
 
     <div id="sidebarmain">
       <div>
-        <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
+        <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar','MiscSideBar'],'SidebarHeaders')">☰More Guides</button>
       </div>
       <div>
-        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+        <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar','MiscSideBar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
       </div>
       <div>
-        <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other Resources</button>
+        <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar','MiscSideBar'],'SidebarHeaders')">☰Other Resources</button>
+      </div>
+      <div>
+        <button class="openbtn" onclick="openSidebar(['MiscSideBar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Misc Posts</button>
       </div>
     </div>
   {% endif %}

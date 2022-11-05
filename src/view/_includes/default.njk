@@ -61,7 +61,7 @@
       }
       window.addEventListener('click', function(e){
         if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.visualViewport.width*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
-          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
+          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','MiscSideBar','sidebarmain'];
           while(bool==false){
             for(const sidebars of sidebarlist){
               if(bool==true){break;}
