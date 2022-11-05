@@ -18,7 +18,9 @@ We will compare the effect of students on \\(\dot{τ}\\), vs the effect of time 
 ### Theory 1
 
 We know that in Theory 1, the \\(c_4\\) term dominates late game:
+
 \\(\dot{\rho} = KS\rho^{0.3}\\)
+
 \\(\rho = (KSt)^{0.7}\\)
 
 Despite the 0.7 exponent, we can conclude that σ and time affect \\(\rho\\) equally.
@@ -28,10 +30,15 @@ Despite the 0.7 exponent, we can conclude that σ and time affect \\(\rho\\) equ
 \\(\dot{q_4}, \dot{r_4} = A; q_4, r_4 ~= At\\)
 
 By the same logic:
+
 \\(\dot{q_3}, \dot{r_3} = At; q_3, r_3 ~= At^2\\)
+
 \\(\dot{q_2}, \dot{r_2} = At^2; q_2, r_2 ~= At^3\\)
+
 \\(\dot{q_1}, \dot{r_1} = At^3; q_1, r_1 ~= At^4\\)
+
 \\(\dot{\rho} ~= (At^{4}At^{4})^{1.15} ~= At^{9.2}\\)
+
 \\(\rho ~= KSt^{10.2}\\)
 
 Here we see that time affects \\(\rho\\) 10.2 magnitude higher than extra σ.
@@ -47,11 +54,13 @@ Sigma and time affect \\(\rho\\) equally.
 Late game \\(c_3\\) term dominates so:
 
 \\(\dot{\rho} ~= Ac_3q \\)
+
 \\(\dot{q} ~= \frac{A}{1+q} \\)
 
 Solving the differential equation yields q is proportional to \\(\sqrt{t} \\)
 
 \\(\dot{\rho} ~= Ac_3\sqrt{t}\\)
+
 \\(\rho ~= KSt^{1.5}\\)
 
 Time affects \\(\rho\\) 1.5 magnitude more than σ.
@@ -61,6 +70,7 @@ Time affects \\(\rho\\) 1.5 magnitude more than σ.
 Late game we can treat \\(c_{2}\\) gains as instantaneous, so q is treated as a constant.
 
 \\(\dot{rho} ~= A \\) only
+
 \\(\rho ~= KSt\\)
 
 Sigma and time affect \\(\rho\\) equally.
@@ -70,7 +80,9 @@ Sigma and time affect \\(\rho\\) equally.
 Late game \\(c_5\\) term dominates.
 
 \\(\rho ~= Ac_5qr^2 \\) after integrating
+
 \\(\dot{r}, \dot{q} ~= A;  r, q ~= At\\)
+
 \\(\rho ~= KSt^3\\)
 
 Time affects \\(\rho\\) 3 magnitude more than σ.
@@ -84,6 +96,7 @@ Late game \\(c_4\\) term dominates.
 However, \\(\frac{\rho_2}{\rho_1}\\) is effectively constant. This is because if \\(\rho_2\\) is higher than \\(\rho_1\\), \\(\rho_1\\) will eventually catch up to \\(\rho_2\\) and vice versa.
 
 Therefore: \\(\dot{\rho} ~= Ac_6\\)
+
 \\(\rho ~= KSt\\)
 
 Sigma and time affect \\(\rho\\) equally.
@@ -93,14 +106,19 @@ Sigma and time affect \\(\rho\\) equally.
 The cost value scalings for \\(c_3\\), \\(c_4\\), \\(c_5\\) are the same. Since they are additive with each other, we can simplify the equation as:
 
 \\(\dot{\rho} ~= A\sqrt{Bc_3}\\)
+
 \\(\dot{\rho} ~= A\\)
+
 \\(\rho ~= KSt \\)
 
 Sigma and time affect \\(\rho\\) equally.
 
 From the equations above, we can conclude that for theories 1, 3, 5, 7, and 8, \\(\dot{\rho}\\) and σ are linearly dependent on each other.
+
 For Theory 4, \\(\dot{\rho}\\)^1.5 is proportional to σ.
+
 For Theory 6, \\(\dot{\rho}\\)^3 is proportional to σ.
+
 For Theory 2, \\(\dot{\rho}\\)^10.2 is proportional to σ.
 
 These conclusions imply that for Theory 2 for example, increasing σ hardly affects \\(\dot{\rho}\\).
