@@ -60,9 +60,10 @@
         document.querySelector(':root').style.setProperty('--btn-marginLeft-width', "0%");
         document.querySelector(':root').style.setProperty('--sidebar-padding', "0");
       }
+
       window.addEventListener('click', function(e){
         if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.visualViewport.width*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
-          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','MiscSideBar','sidebarmain'];
+          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','MiscSidebar','sidebarmain'];
           while(bool==false){
             for(const sidebars of sidebarlist){
               if(bool==true){break;}
