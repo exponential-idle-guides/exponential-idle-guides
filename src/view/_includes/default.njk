@@ -31,7 +31,11 @@
       function openSidebar(sidebars,sidebarheaders) {
         window.alert((sidebars).toString() + "\n" + (sidebarheaders).toString());
 
-        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
+        for (const sidebar of sidebars) {
+          window.alert(sidebar.toString() + "\n" + (document.getElementById(sidebar).offsetWidth).toString());
+          document.getElementById(sidebar).style.zIndex="0";
+        }
+        document.getElementById(sidebars[0]).style.zIndex="10";
         
         window.alert((getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%").toString() + "\n" + (getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%").toString());
 
