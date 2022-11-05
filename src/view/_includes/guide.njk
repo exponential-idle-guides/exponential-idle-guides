@@ -3,6 +3,9 @@
 {% set nav %}
   {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
   {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
+  
+  {% set previousPost = collections.advanced | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.advanced | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
@@ -10,6 +13,13 @@
     {% endif %}
     {% if nextGuide %}
       <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
+    {% endif %}
+    
+    {% if previousPost %}
+      <a href="{{previousPost.url}}">Previous: {{previousPost.data.title}}</a>
+    {% endif %}
+    {% if nextPost %}
+      <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
     {% endif %}
   </nav>
 {% endset %}

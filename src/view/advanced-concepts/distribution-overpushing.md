@@ -9,7 +9,7 @@ order: 0
 
 ## What is distribution overpushing?
 
-A greedy way to push a theory distribution is to push all 8 original theories until they have similar τ/hour gains. However, this is not necessarily optimal for long term τ gains. Distribution overpushing is when you push certain theories such that their τ/hours are less than others. This seems to contradict optimal play, as generally you'd gain more students quicker if you push all theories to equal rates. However, some theories do not benefit as much from the 3rd level of the 9th Research in the Students tab (3R9). Therefore it makes more sense to push theories that don't benefit much from additional students first. This allows us to use the additional students to accelerate the rates of theories that do benefit significantly from 3R9.
+A greedy way to push a theory distribution is to push all 8 original theories until they have similar \\(τ\\)/hour gains. However, this is not necessarily optimal for long term \\(τ\\) gains. Distribution overpushing is when you push certain theories such that their \\(τ\\)/hours are less than others. This seems to contradict optimal play, as generally you'd gain more students quicker if you push all theories to equal rates. However, some theories do not benefit as much from the 3rd level of the 9th Research in the Students tab (3R9). Therefore it makes more sense to push theories that don't benefit much from additional students first. This allows us to use the additional students to accelerate the rates of theories that do benefit significantly from 3R9.
 
 ## How theories are affected by additional students
 
@@ -151,4 +151,4 @@ From previous workings, the overpushing coefficients are:
    </tbody>
 </table>
 
-This means that for 'perfect' overpush, we should push the maximum of {T1, 10.2\*T2, T3, 1.5\*T4, T5, 3\*T6, T7, T8} where Tn are the \\(\dot{τ}\\)'s of each theory. This will maximize long term τ gain, assuming everything else is equal.
+This means that for 'perfect' overpush, we should push the maximum of {T1, 10.2\*T2, T3, 1.5\*T4, T5, 3\*T6, T7, T8} where Tn are the \\(\dot{τ}\\)'s of each theory. This will maximize long term \\(τ\\) gain, assuming everything else is equal.
