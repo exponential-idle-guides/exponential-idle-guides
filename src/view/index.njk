@@ -36,15 +36,6 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <h3>Our guides</h3>
-  <ul>
-    {%- for post in collections.advanced -%}
-      <li>
-        {{{post}.data.title }}
-      </li>
-    {%- endfor -%}
-  </ul>
-
   <h3>Other resources</h3>
   {% include "tools.njk" %}
 
