@@ -24,7 +24,7 @@ home: true
   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
     Let us know your feedback</a> and <a href="https://bit.ly/ex-guide-suggestion-responses"> check out our responses.<a/>
 
-  <h3>Our guides</h2>
+  <h3>Our guides</h3>
   <ul>
     {%- for guide in collections.guides -%}
       <li>
@@ -36,7 +36,19 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <h3>Other resources</h2>
+  <h3>Our guides</h3>
+  <ul>
+    {%- for post in collections.advanced -%}
+      <li>
+        <a href="{{post}.url}}">{{{post}.data.title }}</a>
+        {% if{post}.data.subtitle %}
+          ({{{post}.data.subtitle }})
+        {% endif %}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  <h3>Other resources</h3>
   {% include "tools.njk" %}
 
 {% endblock %}

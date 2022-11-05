@@ -110,6 +110,12 @@ module.exports = config => {
     });
   });
 
+  config.addCollection("advanced", function(collection) {
+    return collection.getFilteredByTag("advanced-concepts").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
+
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
