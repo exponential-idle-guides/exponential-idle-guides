@@ -169,4 +169,4 @@ From previous workings, the overpushing coefficients are:
    </tbody>
 </table>
 
-This means that for 'perfect' overpush, we should push the maximum of {T1, 10.2\*T2, T3, 1.5\*T4, T5, 3\*T6, T7, T8} where Tn are the \\(\dot{τ}\\)'s of each theory. This will maximize long term \\(τ\\) gain, assuming everything else is equal.
+This means that for 'perfect' overpush, we should push the maximum of {\\(\dot{τ}_1\\), \\(10.2*\dot{τ}_2\\), \\(\dot{τ}_3\\), \\(1.5*\dot{τ}_4\\), \\(\dot{τ}_5\\), \\(3*\dot{τ}_6\\), \\(\dot{τ}_7\\), \\(\dot{τ}_8\\)}. This will maximize long term \\(τ\\) gain, assuming everything else is equal.
