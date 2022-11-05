@@ -9,9 +9,9 @@ order: 10
 
 {% import "embed-yt.njk" as yt %}
 
-[Distribution Overpushing](/src/view/advanced-concepts/distribution-overpushing)
+[Distribution Overpushing](https://blog-fixing--exponential-idle-guides.netlify.app/advanced-concepts/distribution-overpushing)
 
-[Which Theory to Push?](/src/view/advanced-concepts/which-theory-should-i-push)
+[Which Theory to Push?](https://blog-fixing--exponential-idle-guides.netlify.app/advanced-concepts/which-theory-should-i-push)
 
-[What to do after ee20k ft?](/src/view/advanced-concepts/what-to-do-after-20k)
+[What to do after ee20k ft?](https://blog-fixing--exponential-idle-guides.netlify.app/advanced-concepts/what-to-do-after-20k)
 
