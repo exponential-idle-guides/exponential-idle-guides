@@ -29,8 +29,9 @@
     <script>
       
       function openSidebar(sidebars,sidebarheaders) {
-        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
-        
+        for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}
+        document.getElementById(sidebars[0]).style.zIndex="10";
+
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
   	      maxwidth=0;maxheaderwidth=0;mainwidth=document.getElementById("sidebarmain").offsetWidth;
           for (const sidebar of sidebars) {document.getElementById(sidebar+"invis").style.width="auto";}
@@ -61,7 +62,7 @@
       }
       window.addEventListener('click', function(e){
         if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.visualViewport.width*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
-          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
+          bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','MiscSideBar','sidebarmain'];
           while(bool==false){
             for(const sidebars of sidebarlist){
               if(bool==true){break;}
