@@ -29,6 +29,8 @@
     <script>
       
       function openSidebar(sidebars,sidebarheaders) {
+        window.alert(sidebars)
+        window.alert(sidebarheaders)
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}document.getElementById(sidebars[0]).style.zIndex="10";
         
         if (getComputedStyle(document.querySelector(':root')).getPropertyValue('--btn-marginLeft-width')=="0%" && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')=="0%") {
