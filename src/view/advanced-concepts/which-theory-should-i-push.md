@@ -23,7 +23,7 @@ If you can only check your phone once every 8 hours or less often, this is basic
 
 ## Each theory's publication length
 
-This relates to the first reason. Let's say you can check your phones once every 8 hours. However, the theory's publication length is only 4 hours, then you start to automatically lose efficiency by going over the optimal publication length. The efficiency lost depends on the theory.
+This relates to the first reason. Let's say you can check your phones once every 8 hours. However, the theory's optimal publication length is only 4 hours, then you start to automatically lose efficiency by going over the optimal publication length. The efficiency lost depends on the theory.
 
 For example, T2 has the lowest intra-publication decay, so it retains its efficiency quite well even if you go over the optimal publication length. In contrast, a theory like T3 has bad intra-publication decay. If the theory simulator says to publish T3 after 3 hours and you let it idle for 8 hours, you will lose a lot of efficiency. This intra-publication decay is directly related to the concept of overpushing efficiency explained [here](/advanced-concepts/distribution-overpushing).
 
@@ -33,7 +33,7 @@ From the explanations above, if you're forced to go over a theory's optimal publ
 
 If you have active time, you'd prefer to do theories that have high active/idle ratio (everything else being equal). This is because you can idle when you have time to do active, but you can't active when you can only idle. So we may as well make the most of the available active time. Theories with high active/idle ratio are T1/T5/T3/T8, WSP. T7, CSR2, EF have moderate active/idle ratio.
 
-However, do consider all the other factors as well. It is possible (and even likely) that it is best to just push a more idle theory even when you have active time. 
+However, do consider all the other factors as well. It is possible (and even likely) that it is best to just push a more idle theory even when you have active time.
 
 ## Each theory's taudot
 
@@ -41,7 +41,7 @@ The faster a theory's \\(\dot{τ}\\), the more we should do it. This is because 
 
 ## Overpushing implications
 
-The better a theory is for [overpushing](/advanced-concepts/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order. Custom theories are not affected by overpushing.
+The better a theory is for [overpushing](/advanced-concepts/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order should be pushed first. Custom theories are not affected by overpushing.
 
 ## Conclusions
 

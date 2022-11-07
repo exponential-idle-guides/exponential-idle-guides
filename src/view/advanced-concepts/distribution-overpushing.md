@@ -41,7 +41,7 @@ By the same logic:
 
 \\(\rho ~= KSt^{10.2}\\)
 
-Here we see that time affects \\(\rho\\) 10.2 magnitude higher than extra σ.
+Here we see that time affects \\(\rho\\) 10.2 times more than extra σ.
 
 ### Theory 3
 
@@ -63,13 +63,13 @@ Solving the differential equation yields q is proportional to \\(\sqrt{t} \\)
 
 \\(\rho ~= KSt^{1.5}\\)
 
-Time affects \\(\rho\\) 1.5 magnitude more than σ.
+Time affects \\(\rho\\) 1.5 times more than σ.
 
 ### Theory 5
 
 Late game we can treat \\(c_{2}\\) gains as instantaneous, so q is treated as a constant.
 
-\\(\dot{rho} ~= A \\) only
+\\(\dot{\rho} ~= A \\) only
 
 \\(\rho ~= KSt\\)
 
@@ -85,7 +85,7 @@ Late game \\(c_5\\) term dominates.
 
 \\(\rho ~= KSt^3\\)
 
-Time affects \\(\rho\\) 3 magnitude more than σ.
+Time affects \\(\rho\\) 3 times more than σ.
 
 ### Theory 7
 
