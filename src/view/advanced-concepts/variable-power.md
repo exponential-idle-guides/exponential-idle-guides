@@ -19,9 +19,7 @@ To visualize the power of each variable throughout the game, I've created a scri
 To create the graphs seen shortly, I repeated this computation at many different \\(f(t)\\) points, then graphed the power of each variable across an \\(f(t)\\) interval.<br><br>
 Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\). Because of how \\(x_8\\) is computed in-game, it can't be universally represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this post.
 
-## Unlocking Variables and y Power Upgrades (0 - ee4310)
-
-### Unlocking Variables (0 - ee791)
+## Unlocking Variables (0 - ee791)
 The cost of the first levels of each variable range from <kbd>Free</kbd> to an expensive ee791. Here's a table with the cost of the first level of each variable:
 <table class="newwords">
   <thead>
@@ -109,7 +107,7 @@ The cost of the first levels of each variable range from <kbd>Free</kbd> to an e
 
 ###### F(t) values courtesy of the [Exponential Idle Wiki](https://exponential-idle.fandom.com/wiki/Instructions).
 
-<br><br>
+<br>
 
 Here's a graph of variable power up to a \\(f(t)\\) of ee50. The initial purchase of variables \\(y\\) through \\(\beta\\) can be seen.
 
@@ -123,7 +121,7 @@ And here's a graph of variable power up to the purchase of the final variable at
 
 You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
 
-### y Power Upgrades (ee50 - ee4310)
+## y Power Upgrades (ee50 - ee4310)
 
 ## Psi3 Upgrades (ee9160 - ee47362)
 
