@@ -22,94 +22,89 @@ Something to note about the program is that it computes the base power, \\(x\\),
 ## Unlocking Variables and y Power Upgrades (0 - ee4310)
 
 ### Unlocking Variables (0 - ee791)
-The first levels of each variable range in cost from <kbd>Free</kbd> to a costly ee791. Here's a table with the cost of the first level of each variable:
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>Cost of First Level</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">x</td>
-         <td>Free</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">y</td>
-         <td>1.04</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">z</td>
-         <td>1.08</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">s</td>
-         <td>10.00</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">u</td>
-         <td>ee4.2871</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">v</td>
-         <td>ee10.045</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w</td>
-         <td>ee18.379</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">α</td>
-         <td>ee29.365</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">β</td>
-         <td>ee43.064</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">γ</td>
-         <td>ee59.526</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">δ</td>
-         <td>ee78.793</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ε</td>
-         <td>ee100.90</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ζ</td>
-         <td>ee153.79</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">η</td>
-         <td>ee218.41</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">θ</td>
-         <td>ee255.19</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ι</td>
-         <td>ee337.79</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">κ</td>
-         <td>ee432.59</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">λ</td>
-         <td>ee539.71</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ν</td>
-         <td>ee659.31</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ξ</td>
-         <td>ee791.49</td>
-      </tr>
-   </tbody>
+The cost of the first levels of each variable range from <kbd>Free</kbd> to an expensive ee791. Here's a table with the cost of the first level of each variable:
+<table class="newwords">
+  <thead>
+    <tr>
+        <th class="invisible"></th>
+        <th>Cost of First Level</th>
+        <th class="invisible"></th>
+        <th class="invisible"></th>
+        <th>Cost of First Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td class="leftHeader">x</td>
+        <td>Free</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">δ</td>
+        <td>ee78.793</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">y</td>
+        <td>1.04</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ε</td>
+        <td>ee100.90</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">z</td>
+        <td>1.08</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ζ</td>
+        <td>ee153.79</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">s</td>
+        <td>10.00</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">η</td>
+        <td>ee218.41</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">u</td>
+        <td>ee4.2871</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">θ</td>
+        <td>ee255.19</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">v</td>
+        <td>ee10.045</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ι</td>
+        <td>ee337.79</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">w</td>
+        <td>ee18.379</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">κ</td>
+        <td>ee432.59</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">α</td>
+        <td>ee29.365</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">λ</td>
+        <td>ee539.71</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">β</td>
+        <td>ee43.064</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ν</td>
+        <td>ee659.31</td>
+    </tr>
+    <tr>
+        <td class="leftHeader">γ</td>
+        <td>ee59.526</td>
+        <th class="invisible"></th>
+        <td class="leftHeader">ξ</td>
+        <td>ee791.49</td>
+    </tr>
+  </tbody>
 </table>
 
 ###### F(t) values courtesy of the [Exponential Idle Wiki](https://exponential-idle.fandom.com/wiki/Instructions).
