@@ -6,6 +6,10 @@ home: true
 
 {% extends "default.njk" %}
 
+{% macro list(spoiler-level) %}
+<li>{{ spoiler-level }}</li>
+{% endmacro %}
+
 {% block title %}
   <h2 hidden>Home</h2>
 {% endblock %}
@@ -38,6 +42,7 @@ home: true
 
   <h3>Guide Extensions</h3>
   <ul>
+    {{ list('T9') }}
     {%- for post in collections.extensions -%}
       <li>
         <a href="{{post.url}}">{{ post.data.title }}</a>
