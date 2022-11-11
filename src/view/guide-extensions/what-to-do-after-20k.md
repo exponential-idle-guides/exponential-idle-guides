@@ -3,7 +3,7 @@ title: "What To Do After ee20k"
 description: "A guide on what to do after completing theory 9."
 author: "Playspout"
 contributors: "the Amazing Community"
-spoiler: T9
+spoiler: ee20k
 order: 0
 ---
 

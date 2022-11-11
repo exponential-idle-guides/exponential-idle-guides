@@ -54,17 +54,16 @@ home: true
 
   <h3>Guide Extensions</h3>
 
-  {% set exts = ["T9"] %}
-  
+  {% set exts = ["T9", "ee20k"] %}
+
   <ul>
     {%- for spoiler in exts -%}
-      <li>{{ spoiler }}</li>
+      <li>{{ spoiler }}+</li>
       <ul>
         {%- for post in collections.extensions -%}
           {%- if (post.spoiler == spoil) -%}
             <li>
               <a href="{{post.url}}">{{ post.data.title }}</a>
-              {{ post.data.spoiler }}
               {% if post.data.subtitle %}
                 ({{ post.data.subtitle }})
               {% endif %}
