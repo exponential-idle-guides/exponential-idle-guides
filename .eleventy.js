@@ -110,8 +110,8 @@ module.exports = config => {
     });
   });
 
-  config.addCollection("advanced", function(collection) {
-    return collection.getFilteredByTag("advanced-concepts").sort(function(a, b) {
+  config.addCollection("extensions", function(collection) {
+    return collection.getFilteredByTag("extensions").sort(function(a, b) {
       return a.data.order - b.data.order;
     });
   });
