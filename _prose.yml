@@ -7,7 +7,7 @@ prose:
     - /src/scripts
     - /src/view/_includes
     - /src/view/guides/guides.json
-    - /src/view/advanced-concepts/advanced-concepts.json
+    - /src/view/guide-extensions/guide-extensions.json
   metadata:
     src/view/guides:
       - name: "title"
@@ -34,7 +34,7 @@ prose:
         field:
           element: "text"
           label: "Contributors"
-    src/view/advanced-concepts:
+    src/view/guide-extensions:
       - name: "title"
         field:
           element: "text"
@@ -43,10 +43,10 @@ prose:
         field:
           element: "text"
           label: "Subtitle"
-      - name: "draft"
+      - name: "spoiler"
         field:
-          element: "checkbox"
-          label: "Draft?"
+          element: "text"
+          label: "Spoiler Order"
       - name: "order"
         field:
           element: "number"

@@ -33,7 +33,7 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
-{{ yt.embed('https://www.youtube.com/watch?v=d7mWhOkD7TM') }}
+{{ yt.embed('d7mWhOkD7TM') }}
 
 ###### Also see [t stacking](https://exponential-idle-guides.netlify.app/guides/endgame/#t-stacking)
 
@@ -43,7 +43,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+{{ yt.embed('c8ekMzXWD_g') }}
 
 ### How to properly use the Graduation Calculator
 
@@ -78,11 +78,11 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 ###### Commentary
 
-{{ yt.embed('https://www.youtube.com/embed/AYI4U7Aob6o') }}
+{{ yt.embed('AYI4U7Aob6o') }}
 
 ###### No commentary
 
-{{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
+{{ yt.embed('pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and manually

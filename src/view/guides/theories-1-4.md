@@ -128,7 +128,7 @@ Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and 
 
 __The video below is only good for early tau between 1e150 and 1e250.__
 
-{{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
+{{ yt.embed('lFSAFIpWkb0') }}
 
 #### T1 milestone route
 
@@ -275,7 +275,7 @@ to run idle overnight.
 
 When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
-{{ yt.embed('https://www.youtube.com/embed/XcatIVPd8Jg') }}
+{{ yt.embed('XcatIVPd8Jg') }}
 
 #### T2 milestone route
 
@@ -368,7 +368,7 @@ repeat.
 
 ###### Commentary
 
-{{ yt.embed('https://www.youtube.com/embed/kqnBfdOI34c&t') }}
+{{ yt.embed('kqnBfdOI34c&t') }}
 
 #### T3 milestone route
 

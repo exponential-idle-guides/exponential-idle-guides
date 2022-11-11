@@ -3,7 +3,7 @@ title: "What To Do After ee20k"
 description: "A guide on what to do after completing theory 9."
 author: "Playspout"
 contributors: "the Amazing Community"
-draft: false
+spoiler: T9
 order: 0
 ---
 
@@ -19,7 +19,7 @@ An alternative overpush version of the same theory can be downloaded [here](http
 
 ## 2 TA versions? Which one should I choose?
 
-The overpush version is for LONG term maximisation of \\(f(t)\\) and tau. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/advanced-concepts/distribution-overpushing).
+The overpush version is for LONG term maximisation of \\(f(t)\\) and tau. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/guide-extensions/distribution-overpushing).
 
 ## How useful is TA for each theory?
 
