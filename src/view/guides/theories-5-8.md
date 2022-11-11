@@ -103,7 +103,7 @@ You can find the autoprestige used for R9 Swapping here: [Equation](https://expo
 
 ###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+{{ yt.embed('https://www.youtube.com/embed/Klw9lLPNqdY') }}
 
 ### Theory 1
 

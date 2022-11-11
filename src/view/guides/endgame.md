@@ -33,6 +33,8 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
+{{ yt.embed('https://www.youtube.com/watch?v=d7mWhOkD7TM') }}
+
 ###### Also see [t stacking](https://exponential-idle-guides.netlify.app/guides/endgame/#t-stacking)
 
 #### R9 autoprestige expression
