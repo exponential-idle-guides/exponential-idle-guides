@@ -41,18 +41,19 @@ home: true
   {% set exts = ["T9", "ee20k"] %}
 
   <ul>
+    {{ collections.extensions }}
     {%- for spoiler, post in collections.extensions | groupby("author") -%}
       <li>{{ post.title }} - {{ spoiler }} - {{ spoiler == "Playspout" }}</li>
       <ul>
-        {% if (spoiler == "T9") %}
+        {% if (spoiler == "Playspout") %}
           <li>
             <a href="{{post.url}}">{{ post.data.title }}</a>
             {% if post.data.subtitle %}
               ({{ post.data.subtitle }})
             {% endif %}
           </li>
+        {% endif %}
       </ul>
-      {% endif %}
     {%- endfor -%}
   </ul>
 
