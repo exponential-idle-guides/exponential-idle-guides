@@ -6,6 +6,7 @@ contributors: "the Amazing Community"
 draft: true
 order: 4
 ---
+
 {% import "embed-yt.njk" as yt %}
 
 ### Theory basics
