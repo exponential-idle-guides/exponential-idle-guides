@@ -43,7 +43,8 @@ home: true
   <ul>
     {{ collections.extensions }}
     {%- for spoiler, post in collections.extensions | groupby("author") -%}
-      <li>{{ post.title | string}} - {{ spoiler | string}} - {{ spoiler == "Playspout" }}</li>
+      {{ post }}
+      <li>{{ post.title }} - {{ spoiler }} - {{ spoiler == "Playspout" }}</li>
       <ul>
         {% if (spoiler == "Playspout") %}
           <li>
