@@ -103,7 +103,7 @@ You can find the autoprestige used for R9 Swapping here: [Equation](https://expo
 
 ###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+{{ yt.embed('https://www.youtube.com/embed/Klw9lLPNqdY') }}
 
 ### Theory 1
 
@@ -399,7 +399,7 @@ The optimal publication multiplier is \\(4\\)-\\(6\\). You will swap from 0/1/1 
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
 cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
 
-{{ yt.embed('https://www.youtube.com/watch?v=wnKLkd0zXwI') }}
+{{ yt.embed('https://www.youtube.com/embed/wnKLkd0zXwI') }}
 
 #### T7 milestone route
 

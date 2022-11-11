@@ -6,6 +6,7 @@ contributors: "the Amazing Community"
 draft: true
 order: 4
 ---
+
 {% import "embed-yt.njk" as yt %}
 
 ### Theory basics
@@ -127,7 +128,7 @@ Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and 
 
 __The video below is only good for early tau between 1e150 and 1e250.__
 
-{{ yt.embed('https://www.youtube.com/watch?v=lFSAFIpWkb0') }}
+{{ yt.embed('https://www.youtube.com/embed/lFSAFIpWkb0') }}
 
 #### T1 milestone route
 
@@ -256,13 +257,13 @@ If possible, swap to milestones 3>4>1>2 at end before publishing for an addition
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones too boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
-exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 and 4 are
+milestones too, yeilding a large boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
+exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 1 and 2 are
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below:
 
 **1-3 Milestones**
-<blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 4>3 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
+<blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 3>4 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
 
 **4+ Milestones**
 <blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → <br>3>4>1>2 (10s) → 2>1>3>4 (40s) → <br>repeat →  coast and publish</blockquote>
@@ -274,7 +275,7 @@ to run idle overnight.
 
 When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
-{{ yt.embed('https://www.youtube.com/watch?v=XcatIVPd8Jg') }}
+{{ yt.embed('https://www.youtube.com/embed/XcatIVPd8Jg') }}
 
 #### T2 milestone route
 
@@ -367,7 +368,7 @@ repeat.
 
 ###### Commentary
 
-{{ yt.embed('https://www.youtube.com/watch?v=kqnBfdOI34c') }}
+{{ yt.embed('https://www.youtube.com/embed/kqnBfdOI34c&t') }}
 
 #### T3 milestone route
 
