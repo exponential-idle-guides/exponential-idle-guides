@@ -41,9 +41,12 @@ home: true
   {% set exts = ["T9", "ee20k"] %}
 
   <ul>
-    {{ collections.extensions }}
+    <li>{{ collections.extensions }}</li>
     {%- for spoiler, post in collections.extensions | groupby("author") -%}
-      {{ post }}
+      <li>{{ post }}</li>
+      {%- for i in post -%}
+         - {{ i }}
+      {%- endfor -%}
       <li>{{ post.title }} - {{ spoiler }} - {{ spoiler == "Playspout" }}</li>
       <ul>
         {% if (spoiler == "Playspout") %}
