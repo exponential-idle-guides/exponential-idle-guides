@@ -46,7 +46,7 @@ prose:
       - name: "spoiler"
         field:
           element: "text"
-          label: "Spoiler Order"
+          label: "Spoiler"
       - name: "order"
         field:
           element: "number"
