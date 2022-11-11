@@ -19,6 +19,9 @@ To visualize the power of each variable throughout the game, I've created a scri
 To create the graphs seen shortly, I repeated this computation at many different \\(f(t)\\) points, then graphed the power of each variable across an \\(f(t)\\) interval.<br><br>
 Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\). Because of how \\(x_8\\) is computed in-game, it can't be universally represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this post.
 
+
+
+
 ## Unlocking Variables (0 - ee791)
 The cost of the first levels of each variable range from <kbd>Free</kbd> to an expensive ee791. Here's a table with the cost of the first level of each variable:
 <table class="newwords">
@@ -132,10 +135,12 @@ A bit more spiky ;)
 
 You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
 
+
+
 ## y Power Upgrades (ee50 - ee4310)
-After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^1.2\\). The upgrades continue all the way up to \\(y^9.0\\) at ~ee4310.<br><br>
+After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310.<br><br>
 Because the power each variable has is propagated down all of its lower variables (ex. z -> y -> x), the change in exponent affects how strong all of the variables are. <br><br>
-The cost of each upgrade from \\(y^1.2\\) through \\(y^1.8\\) is calculated using this formula:
+The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula:
 
 \\(\psi = 1.5 \times 2^{2(x-1)}\\)
 
