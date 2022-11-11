@@ -10,14 +10,14 @@ home: true
 
   <ul>
     {%- for post in collections.extensions -%}
-      {% if ((post.spoiler) == (spoiler-level)) %} 
+      {%- if ((post.spoiler) == (spoiler-level)) -%} 
       <li>
         <a href="{{post.url}}">{{ post.data.title }}</a>
         {% if post.data.subtitle %}
           ({{ post.data.subtitle }})
         {% endif %}
       </li>
-      {% endif %}
+      {%- endif -%}
     {%- endfor -%}
   </ul>
 {% endmacro %}
@@ -55,16 +55,27 @@ home: true
   <h3>Guide Extensions</h3>
 
   <h4>T9+</h4>
-  {{ list("T9") }}
+  {% set exts = ["T9"] %}
+  
+  {{ list('T9') }}
+
   <h5>Normal Stuff</h5>
   <ul>
-    {%- for post in collections.extensions -%}
-      <li>
-        <a href="{{post.url}}">{{ post.data.spoiler }}</a>
-        {% if post.data.subtitle %}
-          ({{ post.data.subtitle }})
-        {% endif %}
-      </li>
+    {%- for spoiler in exts | string -%}
+      <li>{{ spoiler }}</li>
+      <ul>
+        {%- for post in collections.extensions -%}
+          {%- if (post.spoiler == spoil) -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+              {{ post.data.spoiler }}
+              {% if post.data.subtitle %}
+                ({{ post.data.subtitle }})
+              {% endif %}
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
     {%- endfor -%}
   </ul>
 
