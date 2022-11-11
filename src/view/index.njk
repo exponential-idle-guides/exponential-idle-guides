@@ -7,8 +7,6 @@ home: true
 {% extends "default.njk" %}
 
 {% macro list(spoiler-level='ooga booga') %}
-  <h1>{{ spoiler-level }}</h1>
-
   <ul>
     {%- for post in collections.extensions -%}
       {% if (post.spoiler == spoiler-level) %} 
@@ -20,7 +18,7 @@ home: true
       </li>
       {% endif %}
     {%- endfor -%}
-  <ul>
+  </ul>
 {% endmacro %}
 
 {% block title %}
@@ -55,17 +53,11 @@ home: true
 
   <h3>Guide Extensions</h3>
 
-  {{ list('T9') }}
+  
 
   <ul>
-    {%- for post in collections.extensions -%}
-      <li>
-        <a href="{{post.url}}">{{ post.data.title }}</a>
-        {% if post.data.subtitle %}
-          ({{ post.data.subtitle }})
-        {% endif %}
-      </li>
-    {%- endfor -%}
+    <li>T9+</li>
+    {{ list('T9') }}
   </ul>
 
   <h3>Other resources</h3>
