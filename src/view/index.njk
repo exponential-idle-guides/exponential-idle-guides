@@ -54,14 +54,10 @@ home: true
 
   <h3>Guide Extensions</h3>
 
-  <h4>T9+</h4>
   {% set exts = ["T9"] %}
   
-  {{ list('T9') }}
-
-  <h5>Normal Stuff</h5>
   <ul>
-    {%- for spoiler in exts | string -%}
+    {%- for spoiler in exts -%}
       <li>{{ spoiler }}</li>
       <ul>
         {%- for post in collections.extensions -%}
