@@ -256,8 +256,8 @@ If possible, swap to milestones 3>4>1>2 at end before publishing for an addition
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones too boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
-exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 3 and 4 are
+milestones too, yeilding a large boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
+exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 1 and 2 are
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below:
 
