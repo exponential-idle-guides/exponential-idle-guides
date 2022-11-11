@@ -7,7 +7,6 @@ home: true
 {% extends "default.njk" %}
 
 {% macro list(spoiler-level='ooga booga') %}
-  <h1>{{ spoiler-level | string }}</h1>
 
   <ul>
     {%- for post in collections.extensions -%}
