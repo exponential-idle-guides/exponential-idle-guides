@@ -44,8 +44,8 @@ home: true
     <li>{{ collections.extensions }}</li>
     {%- for spoiler, post in collections.extensions | groupby("author") -%}
       <li>{{ post }}</li>
-      {%- for key, valud in post -%}
-         - {{ i }} / {{ value }}
+      {%- for key, value in post -%}
+         - {{ i | string}} / {{ value }}
       {%- endfor -%}
       <li>{{ post.title }} - {{ spoiler }} - {{ spoiler == "Playspout" }}</li>
       <ul>
