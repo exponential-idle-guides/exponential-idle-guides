@@ -11,7 +11,7 @@ order: 3
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
 We can split the progression through the game into three sections.<br><br>
 The first section, from the start to ee4310, includes the unlocking of all of the variables, which finishes with the unlocking of \\(\xi\\) at ee791. It also includes the purchase of \\(y\\) power upgrades, of which we will discuss more later.<br><br>
-The second section is from ee9160 to ee47362, and is the range when we buy supremacy upgrades known as "psi3" upgrades.<br><br>
+The second section is from ee9160 to ee47362, and is the range when we buy supremacy upgrades known as "\\(\psi 3\\)" or "psi3" upgrades.<br><br>
 The final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
 
 ### Program
@@ -132,23 +132,23 @@ And the percentage graph:
 ![Percentage variable power up to ee850](/images/variable-power/ee850_2.png)
 ###### Computed every ee1 from ee1 to ee850.
 A bit more spiky ;)
-
+<br>
 You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
 
 
 
-## y Power Upgrades (ee50 - ee4310)
+## \\(y\\) Power Upgrades (ee50 - ee4310)
 After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310.<br><br>
 Because the power each variable has is propagated down all of its lower variables (ex. z -> y -> x), the change in exponent affects how strong all of the variables are. <br><br>
-The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula:
+The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula, where x is the level you are buying starting at 1:
 
 \\(\psi = 1.5 \times 2^{2(x-1)}\\)
 
-The cost model changes after this, and from \\(y^2.0\\) through \\(y^4.0\\) is this formula:
+The cost model changes after this, and from \\(y^{2.0}\\) through \\(y^{4.0}\\) is this formula:
 
 \\(\psi = 0.488281 \times 2^{3(x-1)}\\)
 
-The cost model changes one final time, and from \\(y^4.2\\) to \\(y^9.0\\) is this formula:
+The cost model changes one final time, and from \\(y^{4.2}\\) to \\(y^{9.0}\\) is this formula:
 
 \\(\psi = 7.94093e-8 \times 2^{5(x-1)}\\)
 
@@ -167,7 +167,7 @@ Very spiky!
 
 ## Post-Psi3 Variable Power (ee47362+)
 
-## Why We Buy y During Endgame Graduation Recovery
+## Why We Buy \\(y\\) During Endgame Graduation Recovery
 
 ## Additional Graphs
 (will include the graphs I have with percentage power for each variable)
