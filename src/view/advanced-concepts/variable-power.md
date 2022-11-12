@@ -159,12 +159,13 @@ With all of these calculations in place, here is the new variable power graph, n
 <br>
 
 Each small jump present in the graph marks the purchase of an added \\(0.2\\) to the exponent of \\(y\\).
-<br>
+<br><br>
+
 And finally, here is the percentage of total power for each variable:
 
 ![Percentage variable power up to ee5000](/images/variable-power/ee5000_2.png)
 ###### Computed every ee1 from ee1 to ee5000.
-**Very spiky!**
+Very spiky!
 
 ## Psi3 Upgrades (ee9160 - ee47362)
 
