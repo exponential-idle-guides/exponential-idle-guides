@@ -17,7 +17,7 @@ The final section is after ee47362, where we see the title of strongest variable
 ### Program
 To visualize the power of each variable throughout the game, I've created a script in Python that can compute the strength of all variables at any given \\(f(t)\\). It does this by simulating the purchase of all of the variable levels it can, stopping when it costs more than can be afforded. It then computes the power the variable has at the level it has. It does this for every variable.<br><br>
 To create the graphs seen shortly, I repeated this computation at many different \\(f(t)\\) points, then graphed the power of each variable across an \\(f(t)\\) interval.<br><br>
-Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\). Because of how \\(x_8\\) is computed in-game, it can't be universally represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this post.
+Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\). Because of how \\(x_8\\) is computed in-game, it can't be universally represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this guide extension.
 
 
 
@@ -138,8 +138,8 @@ You may be wondering about the abrupt jumps in the power of all of variables. We
 
 
 ## \\(y\\) Power Upgrades (ee50 - ee4310)
-After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310.<br><br>
-Because the power each variable has is propagated down all of its lower variables (ex. z -> y -> x), the change in exponent affects how strong all of the variables are. <br><br>
+After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of 40 levels.<br><br>
+Because the power each variable has is propagated down all of its lower variables (ex. \\(z\\) -> \\(y\\) -> \\(x\\)), the change in exponent affects how strong all of the variables are. <br><br>
 The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula, where x is the level you are buying starting at 1:
 
 \\(\psi = 1.5 \times 2^{2(x-1)}\\)
@@ -168,10 +168,51 @@ And finally, here is the percentage of total power for each variable:
 Very spiky!
 
 ## Psi3 Upgrades (ee9160 - ee47362)
+After we buy \\(y^{9.0}\\) at around ee4310, we don't have anything to buy with \\(\psi\\) until ee9160 \\(f(t)\\), when we can finally afford the first Psi3 upgrade. This time, instead of 40 levels to buy, there's only 24 upgrades. However, each upgrade separated by e20\\(\psi\\), so the last level, bought with e570\\(\psi\\), is all the way up at ee47362 \\(f(t)\\). <br>
+These upgrades help delay the decay players would otherwise experience from ee20k-ee50k as their theories slow down and they gain less \\(\tau\\).<br><br>
+The first psi3 upgrade available increases \\(z\\)'s exponent to \\(z^{1.04}\\), and the second upgrade increases it further to \\(z^{1.08}\\). The third and fourth upgrade increase \\(s\\)'s exponent to \\(1.08\\), and so on until the final upgrade increases \\(\eta\\)'s exponent to \\(1.08\\). <br>
+To illustrate the effect these purchases have, let's use an example.
+<br><br>
+Let's say these are the current equations for your first five variables:
+
+\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)
+\\(y = 19891z^{1.08} + 2^419 \times 87522\\)
+\\(z = 18082s^{1.04} + 2^376 \times 70017\\)
+\\(s = 16433u + 2^341 \times 56007\\)
+\\(u = 14933v + 2^323 \times 48973\\)
+
+And let's say that shortly afterward you purchased a new psi3 level:
+
+\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)
+\\(y = 19891z^{1.08} + 2^419 \times 87522\\)
+\\(z = 18082s^{1.08} + 2^376 \times 70017\\)
+\\(s = 16433u + 2^341 \times 56007\\)
+\\(u = 14933v + 2^323 \times 48973\\)
+
+The power of \\(s\\) and \\(u\\) will increase, because in their propagation down to \\(x\\) they get boosted a bit more by the added \\(0.04\\) on \\(s\\)'s exponent. However, the power of \\(x\\), \\(y\\), and \\(x\\) will get no boost, because they are downstream of the added exponent.<br><br>
+But don't just take my word for it. Let's look at the data from the program around this upgrade.
+
+![Variable Power at Psi3 Upgrade](/images/variable-power/ee15000.png)
+###### Computed every ee1 from ee13000 to ee15000. For the purpose of this visualization, only the four variables discussed are plotted.
+<br>
+As can be seen in the image, both \\(y\\) and \\(z\\) get no boost, as we expected. However, both \\(s\\) and \\(u\\) get an equal boost from the upgrade, as will any subsequent variables all the way down to \\(\xi\\).<br><br>
+This leads to an interesting effect where every two psi3 upgrades, one of the variable's power stops getting boosted from the upgrade, so we see a line separate from the rest every two jumps:
+
+![Variable Power up to ee50000](/images/variable-power/ee50000.png)
+###### Computed every ee1 from ee1 to ee50000. This took a while to run...
+<br>
+And here's a rather interesting plot with the percentage of total power each variable has.
+
+![Percentage variable power up to ee50000](/images/variable-power/ee50000_2.png)
+###### Computed every ee1 from ee1 to ee50000.
 
 ## Post-Psi3 Variable Power (ee47362+)
 
+
+
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
+
+
 
 ## Additional Graphs
 (will include the graphs I have with log percentage power for each variable)
