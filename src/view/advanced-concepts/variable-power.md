@@ -209,7 +209,7 @@ And here's a rather interesting plot with the percentage of total power each var
 ###### Computed every ee1 from ee1 to ee50000.
 
 ## Post-Psi3 Variable Power (ee47362+)
-We've made it. The end of the supremacy upgrades is here. What's next?<br><br>
+We've made it. The end of the supremacy upgrades is upon us. What's next?<br><br>
 Well, now is when \\(f(t)\\) decay really hits. Let's take a look at an updated graph.
 
 ![Variable power from ee35000 to ee80000](/images/variable-power/ee80000.png)
@@ -217,12 +217,12 @@ Well, now is when \\(f(t)\\) decay really hits. Let's take a look at an updated 
 <br>
 
 Immediately after the final supremacy upgrade, we gain a lot less \\(x\\) per \\(f(t)\\). During the psi3 upgrades, we need an average of **\\(17 f(t)\\) for an \\(e1\\) increase in \\(x\\)**.<br><br>
-Shortly afterward, during the period up to ~ee52000, \\(\xi\\) is the most powerful variable. Unfortunately for us, its scaling is absolutely terrible, and it takes **\\(77 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, around 4.5 times worse.<br><br>
-Fortunately, \\(\xi\\) is soon dethroned as strongest variable by \\(\eta\\), which is the most powerful variable from ee52000 until ee70000 \\(f(t)\\). For \\(\eta\\), it takes **\\(45 f(t)\\) for an \\(e1\\) increase in \\(x\\)**. This is the section where all current endgame and top players are.<br><br>
+Shortly afterward, during the period up to ~ee52000, \\(\xi\\) is the most powerful variable. Unfortunately for us, its scaling is absolutely terrible, and it takes **\\(77 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, around 4.5 times worse than during the psi3 upgrades.<br><br>
+Fortunately, \\(\xi\\) is quickly dethroned by \\(\eta\\), which is the most powerful variable from ee52000 all the way until ee70000 \\(f(t)\\). For \\(\eta\\), it takes **\\(45 f(t)\\) for an \\(e1\\) increase in \\(x\\)**. This is the section where all current endgame and top players are.<br><br>
 Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the strongest variable for the rest of the game. Many of the top leaderboard players are looking forward to this mark, because for \\(y\\) it only takes **\\(22 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, which is intriguingly close to the \\(17 f(t)\\) the psi3 upgrades offered long ago in our distant past. We'll only truly know how much of a difference this makes when the first players reach ee70000 in maybe 6 months, but that time frame will depend on how many/when new custom theories become official.
 
 ![y, eta, and xi variable power](/images/variable-power/y_xi_eta.png)
-##### A plot with only \\(y\\), \\(\eta\\), and \\(\xi\\) to illustrate the difference in their scaling and where each variable becomes dominant.
+###### A plot with only \\(y\\), \\(\eta\\), and \\(\xi\\) to illustrate the difference in their scaling and where each variable becomes dominant.
 
 
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
