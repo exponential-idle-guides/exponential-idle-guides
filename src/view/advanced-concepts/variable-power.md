@@ -221,6 +221,31 @@ Shortly afterward, during the period up to ~ee52000, \\(\xi\\) is the most power
 Fortunately, \\(\xi\\) is quickly dethroned by \\(\eta\\), which is the most powerful variable from ee52000 all the way until ee70000 \\(f(t)\\). For \\(\eta\\), it takes **\\(45 f(t)\\) for an \\(e1\\) increase in \\(x\\)**. This is the section where all current endgame and top players are.<br><br>
 Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the strongest variable for the rest of the game. Many of the top leaderboard players are looking forward to this mark, because for \\(y\\) it only takes **\\(22 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, which is intriguingly close to the \\(17 f(t)\\) the psi3 upgrades offered long ago in our distant past. We'll only truly know how much of a difference this makes when the first players reach ee70000 in maybe 6 months, but that time frame will depend on how many/when new custom theories become official.
 
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>f(t) Required to gain e1 x</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">psi3 Upgrades</td>
+         <td>ee17</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ξ</td>
+         <td>ee77</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">η</td>
+         <td>ee45</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">y</td>
+         <td>ee22</td>
+      </tr>
+   </tbody>
+</table>
+
 ![y, eta, and xi variable power](/images/variable-power/y_xi_eta.png)
 ###### A plot with only \\(y\\), \\(\eta\\), and \\(\xi\\) to illustrate the difference in their scaling and where each variable becomes dominant.
 
