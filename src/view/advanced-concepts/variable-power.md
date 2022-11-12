@@ -168,35 +168,36 @@ And finally, here is the percentage of total power for each variable:
 Very spiky!
 
 ## Psi3 Upgrades (ee9160 - ee47362)
-After we buy \\(y^{9.0}\\) at around ee4310, we don't have anything to buy with \\(\psi\\) until ee9160 \\(f(t)\\), when we can finally afford the first Psi3 upgrade. This time, instead of 40 levels to buy, there's only 24 upgrades. However, each upgrade separated by e20\\(\psi\\), so the last level, bought with e570\\(\psi\\), is all the way up at ee47362 \\(f(t)\\). <br>
+After we buy \\(y^{9.0}\\) at around ee4310, we don't have anything to buy with \\(\psi\\) until ee9160 \\(f(t)\\), when we can finally afford the first Psi3 upgrade. This time, instead of 40 levels to buy, there's only 24 upgrades. However, each upgrade separated by e20\\(\psi\\), so the last level, bought with e570\\(\psi\\), is all the way up at ee47362 \\(f(t)\\). <br><br>
 These upgrades help delay the decay players would otherwise experience from ee20k-ee50k as their theories slow down and they gain less \\(\tau\\).<br><br>
-The first psi3 upgrade available increases \\(z\\)'s exponent to \\(z^{1.04}\\), and the second upgrade increases it further to \\(z^{1.08}\\). The third and fourth upgrade increase \\(s\\)'s exponent to \\(1.08\\), and so on until the final upgrade increases \\(\eta\\)'s exponent to \\(1.08\\). <br>
+The first psi3 upgrade increases \\(z\\)'s exponent to \\(z^{1.04}\\), and the second upgrade increases it further to \\(z^{1.08}\\). The third and fourth upgrade increase \\(s\\)'s exponent to \\(1.08\\), and so on until the final upgrade increases \\(\eta\\)'s exponent to \\(1.08\\). <br>
 To illustrate the effect these purchases have, let's use an example.
 <br><br>
 Let's say these are the current equations for your first five variables:
 
-\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)
-\\(y = 19891z^{1.08} + 2^419 \times 87522\\)
-\\(z = 18082s^{1.04} + 2^376 \times 70017\\)
-\\(s = 16433u + 2^341 \times 56007\\)
-\\(u = 14933v + 2^323 \times 48973\\)
+\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)<br>
+\\(y = 19891z^{1.08} + 2^{419} \times 87522\\)<br>
+\\(z = 18082s^{1.04} + 2^{376} \times 70017\\)<br>
+\\(s = 16433u + 2^{341} \times 56007\\)<br>
+\\(u = 14933v + 2^{323} \times 48973\\)<br>
 
 And let's say that shortly afterward you purchased a new psi3 level:
 
-\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)
-\\(y = 19891z^{1.08} + 2^419 \times 87522\\)
-\\(z = 18082s^{1.08} + 2^376 \times 70017\\)
-\\(s = 16433u + 2^341 \times 56007\\)
-\\(u = 14933v + 2^323 \times 48973\\)
+\\(x = 4.7893e7y^9 + 2^3 \times 165.2\\)<br>
+\\(y = 19891z^{1.08} + 2^{419} \times 87522\\)<br>
+\\(z = 18082s^{1.08} + 2^{376} \times 70017\\)<br>
+\\(s = 16433u + 2^{341} \times 56007\\)<br>
+\\(u = 14933v + 2^{323} \times 48973\\)<br>
 
-The power of \\(s\\) and \\(u\\) will increase, because in their propagation down to \\(x\\) they get boosted a bit more by the added \\(0.04\\) on \\(s\\)'s exponent. However, the power of \\(x\\), \\(y\\), and \\(x\\) will get no boost, because they are downstream of the added exponent.<br><br>
+With this new level, the power of \\(s\\) and \\(u\\) will increase, because in their propagation down to \\(x\\) they get boosted by the added \\(0.04\\) on \\(s\\)'s exponent. However, the power of \\(x\\), \\(y\\), and \\(z\\) will get no boost, because they are downstream of the added exponent.<br><br>
 But don't just take my word for it. Let's look at the data from the program around this upgrade.
 
 ![Variable Power at Psi3 Upgrade](/images/variable-power/ee15000.png)
 ###### Computed every ee1 from ee13000 to ee15000. For the purpose of this visualization, only the four variables discussed are plotted.
 <br>
-As can be seen in the image, both \\(y\\) and \\(z\\) get no boost, as we expected. However, both \\(s\\) and \\(u\\) get an equal boost from the upgrade, as will any subsequent variables all the way down to \\(\xi\\).<br><br>
-This leads to an interesting effect where every two psi3 upgrades, one of the variable's power stops getting boosted from the upgrade, so we see a line separate from the rest every two jumps:
+
+As can be seen in the image, both \\(y\\) and \\(z\\) get no boost, as we expected. Furthermore, both \\(s\\) and \\(u\\) get an equal boost from the upgrade, as will the subsequent variables all the way down to \\(\xi\\).<br><br>
+This leads to an interesting effect where every two psi3 upgrades one of the variable's power stops getting boosted from the upgrade, so we see a line separate from the rest every two jumps:
 
 ![Variable Power up to ee50000](/images/variable-power/ee50000.png)
 ###### Computed every ee1 from ee1 to ee50000. This took a while to run...
