@@ -224,11 +224,11 @@ Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the s
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>f(t) Required to gain e1 x</th>
+  <th>F(t) Needed to Gain e1 x</th>
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader">psi3 Upgrades</td>
+         <td class="leftHeader">Psi3</td>
          <td>ee17</td>
       </tr>
       <tr>
