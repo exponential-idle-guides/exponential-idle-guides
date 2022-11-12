@@ -11,7 +11,7 @@ order: 3
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
 We can split the progression through the game into three sections.<br><br>
 The first section, from the start to ee4310, includes the unlocking of all of the variables, which finishes with the unlocking of \\(\xi\\) at ee791. It also includes the purchase of \\(y\\) power upgrades, of which we will discuss more later.<br><br>
-The second section is from ee9160 to ee47362, and is the range when we buy supremacy upgrades known as "\\(\psi 3\\)" or "psi3" upgrades.<br><br>
+The second section is from ee9160 to ee47362, and is the range when we buy supremacy upgrades known as "psi3" upgrades.<br><br>
 The final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
 
 ### Program
@@ -156,12 +156,15 @@ With all of these calculations in place, here is the new variable power graph, n
 
 ![Variable power up to ee5000](/images/variable-power/ee5000.png)
 ###### Computed every ee1 from ee1 to ee5000.
+<br>
 
-And the percentage total power for each variable:
+Each small jump present in the graph marks the purchase of an added \\(0.2\\) to the exponent of \\(y\\).
+<br>
+And finally, here is the percentage of total power for each variable:
 
 ![Percentage variable power up to ee5000](/images/variable-power/ee5000_2.png)
 ###### Computed every ee1 from ee1 to ee5000.
-Very spiky!
+**Very spiky!**
 
 ## Psi3 Upgrades (ee9160 - ee47362)
 
@@ -170,4 +173,4 @@ Very spiky!
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
 
 ## Additional Graphs
-(will include the graphs I have with percentage power for each variable)
+(will include the graphs I have with log percentage power for each variable)
