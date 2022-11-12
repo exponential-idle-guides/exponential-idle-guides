@@ -223,25 +223,36 @@ Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the s
 
 <table class="spqcey">
 <thead>
-  <th></th>
-  <th>F(t) Needed to Gain e1 x</th>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">F(t) Needed to Gain e1 x</th>
+   </tr>
 </thead>
    <tbody>
       <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">F(t) needed for e1 x increase</td>
+         <td class="rightHeader">F(t) Range</td>
+     </tr>
+      <tr>
          <td class="leftHeader">Psi3</td>
          <td>ee17</td>
+         <td>ee9160 - ee47362</td>
       </tr>
       <tr>
          <td class="leftHeader">ξ</td>
          <td>ee77</td>
+         <td>ee47362 - ee52000</td>
       </tr>
       <tr>
          <td class="leftHeader">η</td>
          <td>ee45</td>
+         <td>ee52000 - ee70000</td>
       </tr>
       <tr>
          <td class="leftHeader">y</td>
          <td>ee22</td>
+         <td>ee70000+</td>
       </tr>
    </tbody>
 </table>
