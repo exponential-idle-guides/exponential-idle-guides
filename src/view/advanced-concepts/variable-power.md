@@ -151,7 +151,7 @@ The cost model changes after this, and from \\(y^{2.0}\\) through \\(y^{4.0}\\) 
 
 The cost model changes one final time, and from \\(y^{4.2}\\) to \\(y^{9.0}\\) is this formula:
 
-\\(\psi = 7.94093e-8 \times 2^{5(x-1)}\\)
+\\(\psi = 0.0000000794093 \times 2^{5(x-1)}\\)
 
 With all of these calculations in place, here is the new variable power graph, now ranging up to ee5000:
 
