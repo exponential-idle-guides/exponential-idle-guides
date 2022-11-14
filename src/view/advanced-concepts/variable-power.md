@@ -131,8 +131,8 @@ And here's a graph of variable power up to the purchase of the final variable at
 And the percentage graph:
 
 ![Percentage variable power up to ee850](/images/variable-power/ee850_2.png)
-###### Computed every ee1 from ee1 to ee850.
-A bit more spiky ;)
+###### Computed every ee1 from ee1 to ee850. A bit more spiky ;)
+
 <br>
 You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
 
@@ -140,7 +140,7 @@ You may be wondering about the abrupt jumps in the power of all of variables. We
 
 ## \\(y\\) Power Upgrades (ee50 - ee4310)
 After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of 40 levels.<br><br>
-Because the power each variable has is propagated down all of its lower variables (ex. \\(z\\) -> \\(y\\) -> \\(x\\)), the change in exponent affects how strong all of the variables are. <br><br>
+Because the power each variable has is propagated down all of its lower variables (ex. \\(z\\) → \\(y\\) → \\(x\\)), the change in exponent affects how strong all of the variables are. <br><br>
 The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula, where x is the level you are buying starting at 1:
 
 \\(\psi = 1.5 \times 2^{2(x-1)}\\)
@@ -262,7 +262,7 @@ Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the s
 
 
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
-
+Even before \\(y\\) becomes the most powerful variable
 
 
 ## Additional Graphs
