@@ -263,7 +263,7 @@ Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the s
 
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
 Even before \\(y\\) becomes the most powerful variable, as long as you are past ee48000, you should still buy \\(y\\) during graduation recovery. Why? Well, it has to do with the supremacy equations we begin adopting at ee48000.<br><br>
-At ee48000, the supremacy equation we recommend using skips most of the psi3 supremacy upgrades. In fact, it only supremacies at \\(e52, e411, e511, e531, e551, and e571d\psi\\). It doesn't buy any of the psi3 upgrades until e410\\(d\psi\\). Let's take a look at what that does to the power of the variables:
+At ee48000, the supremacy equation we recommend using skips most of the psi3 supremacy upgrades. In fact, it only supremacies at \\(e52, e411, e511, e531, e551,\\) and \\(e571d\psi\\). It doesn't buy any of the psi3 upgrades until e410\\(d\psi\\). Let's take a look at what that does to the power of the variables:
 
 ![Variable power with ee48k supremacy equation](/images/variable-power/ee48k_suprem_formula.png)
 ###### Computed every ee10 from ee1 to ee50000
@@ -283,7 +283,7 @@ Finally, somewhere between ee58000 and ee60000 (we aren't entirely sure where wi
 ###### Computed every ee10 from ee1 to ee50000
 <br>
 
-There we go! Now we need to buy \\(y\\) all the way up to e570\\(\psi\\).
+There we go! Now we should buy \\(y\\) all the way up to e570\\(\psi\\).
 
 ## Additional Graphs
 ###### Where I put all of the interesting plots that didn't fit well in any section.
