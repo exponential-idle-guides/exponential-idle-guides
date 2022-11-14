@@ -262,8 +262,30 @@ Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the s
 
 
 ## Why We Buy \\(y\\) During Endgame Graduation Recovery
-Even before \\(y\\) becomes the most powerful variable
+Even before \\(y\\) becomes the most powerful variable, as long as you are past ee48000, you should still buy \\(y\\) during graduation recovery. Why? Well, it has to do with the supremacy equations we begin adopting at ee48000.<br><br>
+At ee48000, the supremacy equation we recommend using skips most of the psi3 supremacy upgrades. In fact, it only supremacies at \\(e52, e411, e511, e531, e551, and e571d\psi\\). It doesn't buy any of the psi3 upgrades until e410\\(d\psi\\). Let's take a look at what that does to the power of the variables:
 
+![Variable power with ee48k supremacy equation](/images/ee48k_suprem_formula.png)
+###### Computed every ee10 from ee1 to ee50000
+<br>
+
+Very interesting! So it looks like we should be buying \\(y\\) until the supremacy at e410\\(\psi\\). When we were buying every psi3 upgrade, it wasn't worth buying \\(y\\) because the other variables were stronger than it. However, these variables were only stronger than \\(y\\) because they had been boosted by the psi3 upgrades, none of which affect \\(y\\)'s power.<br><br>
+After we reach ee52000, we are recommended to use a new supremacy equation. This equation only supremacies at e52, e511, and e571 \\(d\psi\\). Let's see what that does to the power:
+
+![Variable power with ee52k supremacy equation](/images/ee52k_suprem_formula.png)
+###### Computed every ee10 from ee1 to ee50000
+<br>
+
+Once again, it looks like we should be buying \\(y\\) during graduation recovery. This time, we should be buying \\(y\\) until the e510\\(\psi\\) supremacy.<br><br>
+Finally, somewhere between ee58000 and ee60000 (we aren't entirely sure where within this range) we switch to our final supremacy equation. This supremacy equation only supremacies at e52 \\(d\psi\\) and e571 \\(d\psi\\).
+
+![Variable power with ee58-60k supremacy equation](/images/ee60k_suprem_formula.png)
+###### Computed every ee10 from ee1 to ee50000
+<br>
+
+There we go! Now we need to buy \\(y\\) all the way up to e570\\(\psi\\).
 
 ## Additional Graphs
+###### Where I put all of the interesting plots that didn't fit well in any section.
+
 (will include the graphs I have with log percentage power for each variable)
