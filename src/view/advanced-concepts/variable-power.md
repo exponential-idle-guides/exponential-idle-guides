@@ -134,9 +134,8 @@ And the percentage graph:
 ###### Computed every ee1 from ee1 to ee850. A bit more spiky ;)
 
 <br>
+
 You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
-
-
 
 ## \\(y\\) Power Upgrades (ee50 - ee4310)
 After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of 40 levels.<br><br>
