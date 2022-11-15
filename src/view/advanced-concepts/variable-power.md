@@ -288,7 +288,7 @@ There we go! Now we should buy \\(y\\) all the way up to e570\\(\psi\\).
 ###### Where I put all of the interesting plots that didn't fit well in any section.
 
 **Full Graph**<br>
-Includes the graphs of variable power from ee1 to ee75000
+The graphs of variable power from ee1 to ee75000.
 
 ![Variable Power up to ee75000](/images/variable-power/ee75000.png)
 ###### Computed every ee5 from ee1 to ee75000.
