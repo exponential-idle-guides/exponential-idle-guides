@@ -287,4 +287,19 @@ There we go! Now we should buy \\(y\\) all the way up to e570\\(\psi\\).
 ## Additional Graphs
 ###### Where I put all of the interesting plots that didn't fit well in any section.
 
-(will include the graphs I have with log percentage power for each variable)
+**Full Graph**<br>
+Includes the graphs of variable power from ee1 to ee75000
+
+![Variable Power up to ee75000](/images/variable-power/ee75000.png)
+###### Computed every ee5 from ee1 to ee75000.
+
+And the graph with percentage of total power for each variable:
+
+![Percentage variable Power up to ee75000](/images/variable-power/ee75000_2.png)
+###### Computed every ee5 from ee1 to ee75000.
+
+### Log Percentage Total Power Graphs
+
+More than just the regular percentage total power graphs, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results.
+
+(will insert images)
