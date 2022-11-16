@@ -300,7 +300,7 @@ And the plot with percentage of total power for each variable:
 
 ### Log Percentage Total Power Plots
 
-More than just the regular percentage total power plots, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results. Ignore the initial xi/\\(\xi\\) line in the first image; it's a remnant that only shows up in these logged plots.
+More than just the regular percentage total power plots, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results. Ignore the initial xi/ \\(\xi\\) line in the first image; it's a remnant that only shows up in these logged plots.
 
 ![Logged percentage variable power up to ee120](/images/variable-power/ee120.png)
 ###### Computed every ee1 from ee1 to ee120.
