@@ -1,6 +1,6 @@
 ---
 title: "Visualizing Variable Power Throughout the Game"
-description: "Using graphs to show how the power of variables changes throughout the purchase of y power upgrades, the psi3 upgrades, why we buy y during recovery, and the eventual domination of the y variable."
+description: "Using plots to show how the power of variables changes throughout the purchase of y power upgrades and the psi3 upgrades, why we buy y during graduation recovery, and the eventual domination of the y variable."
 author: "spqcey"
 contributors: "the Amazing Community"
 draft: false
@@ -288,18 +288,33 @@ There we go! Now we should buy \\(y\\) all the way up to e570\\(\psi\\).
 ###### Where I put all of the interesting plots that didn't fit well in any section.
 
 **Full Graph**<br>
-The graphs of variable power from ee1 to ee75000.
+The plots of variable power from ee1 to ee75000.
 
 ![Variable Power up to ee75000](/images/variable-power/ee75000.png)
 ###### Computed every ee5 from ee1 to ee75000.
 
-And the graph with percentage of total power for each variable:
+And the plot with percentage of total power for each variable:
 
 ![Percentage variable Power up to ee75000](/images/variable-power/ee75000_2.png)
 ###### Computed every ee5 from ee1 to ee75000.
 
-### Log Percentage Total Power Graphs
+### Log Percentage Total Power Plots
 
-More than just the regular percentage total power graphs, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results.
+More than just the regular percentage total power plots, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results. Ignore the initial xi/\\(\xi\\) line in the first image; it's a remnant that only shows up in these logged plots.
 
-(will insert images)
+![Logged percentage variable power up to ee120](/images/variable-power/ee120.png)
+###### Computed every ee1 from ee1 to ee120.
+
+![Logged percentage variable power up to ee1000](/images/variable-power/ee1000.png)
+###### Computed every ee1 from ee1 to ee1000.
+
+![Logged percentage variable power up to ee3000](/images/variable-power/ee3000.png)
+###### Computed every ee1 from ee1 to ee3000.
+
+![Logged percentage variable power up to ee20000](/images/variable-power/ee20000.png)
+###### Computed every ee1 from ee1 to ee20000.
+
+![Logged percentage variable power up to ee75000](/images/variable-power/ee75000_3.png)
+###### Computed every ee10 from ee1 to ee75000.
+
+So many stories told in one plot!
