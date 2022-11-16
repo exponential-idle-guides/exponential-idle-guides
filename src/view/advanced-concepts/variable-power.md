@@ -16,9 +16,9 @@ The second section is from ee9160 to ee47362, and is the range when we buy supre
 The final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
 
 ### Program
-To visualize the power of each variable throughout the game, I've created a script in Python that can compute the strength of all variables at any given \\(f(t)\\). It does this by simulating the purchase of all of the variable levels it can, stopping when it costs more than can be afforded. It then computes the power the variable has at the level it has. It does this for every variable.<br><br>
+To visualize the power of each variable throughout the game, I've created a script in Python that can compute the power of all variables at any given \\(f(t)\\). It does this by simulating the purchase of all of the variable levels it can afford. It then computes the power the variable has at its current level. It does this for every variable.<br><br>
 To create the graphs seen shortly, I repeated this computation at many different \\(f(t)\\) points, then graphed the power of each variable across an \\(f(t)\\) interval.<br><br>
-Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\). Because of how \\(x_8\\) is computed in-game, it can't be universally represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this guide extension.
+Something to note about the program is that it computes the base power, \\(x\\), not \\(x_8\\) which is used in the main equation to compute \\(f(t)\\) after \\(x_8\\) is bought as an upgrade. Because of how \\(x_8\\) is computed in-game, it can't be well represented in these graphs. However, this has no effect on which variable is strongest, so it doesn't matter given the purpose of this guide extension.
 
 
 
@@ -113,12 +113,12 @@ The cost of the first levels of each variable range from <kbd>Free</kbd> to an e
 
 <br>
 
-Here's a graph of variable power up to a \\(f(t)\\) of ee50. The initial purchase of variables \\(y\\) through \\(\beta\\) can be seen.
+Here's a graph of variable power up to ee50 \\(f(t)\\). The initial purchase of variables \\(y\\) through \\(\beta\\) can be seen.
 
 ![Variable power up to ee50](/images/variable-power/ee50.png)
 ###### Computed every ee1 from ee1 to ee50.
 
-And here's a graph with the same \\(f(t)\\) range, but instead of the power of each variable, it graphs the percentage of total power each variable has at any given \\(f(t)\\)
+And here's a graph with the same \\(f(t)\\) range, but instead of the power of each variable, it graphs the percentage of total power each variable has at any given \\(f(t)\\).
 
 ![Percentage variable power up to ee50](/images/variable-power/ee50_2.png)
 ###### Computed every ee1 from ee1 to ee50.
@@ -135,10 +135,10 @@ And the percentage graph:
 
 <br>
 
-You may be wondering about the abrupt jumps in the power of all of variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
+You may be wondering about the abrupt jumps in the power of the variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
 
 ## \\(y\\) Power Upgrades (ee50 - ee4310)
-After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). The upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of 40 levels.<br><br>
+After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). These upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of \\(40\\) levels.<br><br>
 Because the power each variable has is propagated down all of its lower variables (ex. \\(z\\) → \\(y\\) → \\(x\\)), the change in exponent affects how strong all of the variables are. <br><br>
 The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula, where x is the level you are buying starting at 1:
 
@@ -168,9 +168,9 @@ And finally, here is the percentage of total power for each variable:
 Very spiky!
 
 ## Psi3 Upgrades (ee9160 - ee47362)
-After we buy \\(y^{9.0}\\) at around ee4310, we don't have anything to buy with \\(\psi\\) until ee9160 \\(f(t)\\), when we can finally afford the first Psi3 upgrade. This time, instead of 40 levels to buy, there's only 24 upgrades. However, each upgrade separated by e20\\(\psi\\), so the last level, bought with e570\\(\psi\\), is all the way up at ee47362 \\(f(t)\\). <br><br>
+After we buy \\(y^{9.0}\\) at around ee4310, we don't have anything to buy with \\(\psi\\) until ee9160 \\(f(t)\\), when we can finally afford the first Psi3 upgrade. This time, instead of 40 levels to buy, there's only 24 upgrades. However, each upgrade is separated by e20\\(\psi\\), so the last level, bought with e570\\(\psi\\), is all the way up at ee47362 \\(f(t)\\). <br><br>
 These upgrades help delay the decay players would otherwise experience from ee20k-ee50k as their theories slow down and they gain less \\(\tau\\).<br><br>
-The first psi3 upgrade increases \\(z\\)'s exponent to \\(z^{1.04}\\), and the second upgrade increases it further to \\(z^{1.08}\\). The third and fourth upgrade increase \\(s\\)'s exponent to \\(1.08\\), and so on until the final upgrade increases \\(\eta\\)'s exponent to \\(1.08\\). <br>
+The first psi3 upgrade increases \\(z\\)'s exponent to \\(z^{1.04}\\), and the second upgrade increases it further to \\(z^{1.08}\\). The third and fourth upgrades increase \\(s\\)'s exponent to \\(1.08\\), and so on until the final upgrade increases \\(\eta\\)'s exponent to \\(1.08\\). <br>
 To illustrate the effect these purchases have, let's use an example.
 <br><br>
 Let's say these are the current equations for your first five variables:
@@ -218,7 +218,7 @@ Well, now is when \\(f(t)\\) decay really hits. Let's take a look at an updated 
 Immediately after the final supremacy upgrade, we gain a lot less \\(x\\) per \\(f(t)\\). During the psi3 upgrades, we need an average of **\\(17 f(t)\\) for an \\(e1\\) increase in \\(x\\)**.<br><br>
 Shortly afterward, during the period up to ~ee52000, \\(\xi\\) is the most powerful variable. Unfortunately for us, its scaling is absolutely terrible, and it takes **\\(77 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, around 4.5 times worse than during the psi3 upgrades.<br><br>
 Fortunately, \\(\xi\\) is quickly dethroned by \\(\eta\\), which is the most powerful variable from ee52000 all the way until ee70000 \\(f(t)\\). For \\(\eta\\), it takes **\\(45 f(t)\\) for an \\(e1\\) increase in \\(x\\)**. This is the section where all current endgame and top players are.<br><br>
-Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the strongest variable for the rest of the game. Many of the top leaderboard players are looking forward to this mark, because for \\(y\\) it only takes **\\(22 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, which is intriguingly close to the \\(17 f(t)\\) the psi3 upgrades offered long ago in our distant past. We'll only truly know how much of a difference this makes when the first players reach ee70000 in maybe 6 months, but that time frame will depend on how many/when new custom theories become official.
+Finally, at ee70000, \\(\eta\\) is dethroned by \\(y\\), which will remain the strongest variable for the rest of the game. Many of the top leaderboard players are looking forward to this mark, because for \\(y\\) it only takes **\\(22 f(t)\\) for an \\(e1\\) increase in \\(x\\)**, which is intriguingly close to the \\(17 f(t)\\) the psi3 upgrades offered long ago in our distant past. We'll only truly know how much of a difference this makes when the first players reach ee70000 in around 6 months, but that time frame will depend on how many/when new custom theories become official.
 
 <table class="spqcey">
 <thead>
