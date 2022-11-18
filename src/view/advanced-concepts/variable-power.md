@@ -10,7 +10,7 @@ order: 3
 
 ## Introduction
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
-We can split the progression through the game into three sections.<br><br>
+We can split the progression through the game into three sections:<br><br>
 - From 0 to ee4310, this section includes the unlocking of all of the variables, finishing with the unlocking of \\(\xi\\) at ee791. It also includes the purchase of \\(y\\) power upgrades, of which we will discuss more later.<br><br>
 - From ee9160 to ee47362, this is the range when we buy supremacy upgrades known as "psi3" upgrades.<br><br>
 - Finally, the final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
