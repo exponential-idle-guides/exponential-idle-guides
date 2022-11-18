@@ -11,9 +11,9 @@ order: 3
 ## Introduction
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
 We can split the progression through the game into three sections.<br><br>
-The first section, from the start to ee4310, includes the unlocking of all of the variables, which finishes with the unlocking of \\(\xi\\) at ee791. It also includes the purchase of \\(y\\) power upgrades, of which we will discuss more later.<br><br>
-The second section is from ee9160 to ee47362, and is the range when we buy supremacy upgrades known as "psi3" upgrades.<br><br>
-The final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
+- From 0 to ee4310, this section includes the unlocking of all of the variables, finishing with the unlocking of \\(\xi\\) at ee791. It also includes the purchase of \\(y\\) power upgrades, of which we will discuss more later.<br><br>
+- From ee9160 to ee47362, this is the range when we buy supremacy upgrades known as "psi3" upgrades.<br><br>
+- Finally, the final section is after ee47362, where we see the title of strongest variable change hands a few more times with a final change at ~ee70000.
 
 ### Program
 To visualize the power of each variable throughout the game, I've created a script in Python that can compute the power of all variables at any given \\(f(t)\\). It does this by simulating the purchase of all of the variable levels it can afford. It then computes the power the variable has at its current level. It does this for every variable.<br><br>
@@ -135,9 +135,9 @@ And the percentage graph:
 
 <br>
 
-You may be wondering about the abrupt jumps in the power of the variables. Well, that's what we'll discuss in our next section, about the \\(y\\) power upgrades.
-
 ## \\(y\\) Power Upgrades (ee50 - ee4310)
+
+You may have noticed the abrupt jumps in the above graphs. We'll now discuss why that occurs.<br>
 After we supremacy for the first time at ee50, we are given a currency \\(\psi\\) (psi). With this new currency, we can buy upgrades to increase the exponent on \\(y\\). Each upgrade raises the exponent by \\(0.2\\), so the initial supremacy at ee50 turns \\(y\\) into \\(y^{1.2}\\). These upgrades continue all the way up to \\(y^{9.0}\\) at ~ee4310, for a total of \\(40\\) levels.<br><br>
 Because the power each variable has is propagated down all of its lower variables (ex. \\(z\\) → \\(y\\) → \\(x\\)), the change in exponent affects how strong all of the variables are. <br><br>
 The cost of each upgrade from \\(y^{1.2}\\) through \\(y^{1.8}\\) is calculated using this formula, where x is the level you are buying starting at 1:
