@@ -298,7 +298,7 @@ And the plot with percentage of total power for each variable:
 ![Percentage variable Power up to ee75000](/images/variable-power/ee75000_2.png)
 ###### Computed every ee5 from ee1 to ee75000.
 
-### Log Percentage Total Power Plots
+#### Log Percentage Total Power Plots
 
 More than just the regular percentage total power plots, I also tried logging the percentage so we can see more than just 0% power for almost all of the variables, creating fascinating results. Ignore the initial xi/ \\(\xi\\) line in the first image; it's a remnant that only shows up in these logged plots.
 
