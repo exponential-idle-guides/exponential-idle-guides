@@ -6,7 +6,7 @@ contributors: "the Amazing Community"
 draft: false
 order: 3
 ---
-###### Initial Publication on November 1X, 2022
+###### Initial Publication on November 19, 2022
 
 ## Introduction
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
