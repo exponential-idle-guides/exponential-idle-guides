@@ -105,6 +105,14 @@ Custom Theories
 
 These are the 4 official custom theories (as of 24th November 2022).
 
+### Coasting
+
+The act of not buying variables and letting theories reach its publication point. This is usually done when your publication multiplier is close to where you want to pubish. For example, you might start coasting at 2.0 multiplier with the intention to publish at 2.5 multiplier. 
+
+### Acceleration / Accel
+
+Refers to the usage of the acceleration upgrade. It speeds up f(t) gains through increasing phi and artificially speeding up time. However it does not affect theories. 
+
 
 ### Hax
 
