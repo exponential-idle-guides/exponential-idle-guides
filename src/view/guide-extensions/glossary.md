@@ -114,8 +114,4 @@ The act of not buying variables and letting theories reach its publication point
 Refers to the usage of the acceleration upgrade. It speeds up f(t) gains through increasing phi and artificially speeding up time. However it does not affect theories. 
 
 
-### Hax
-
-Refers to someone who is really pro or did something really well in the game. E.g. Nubesthax.
-
 
