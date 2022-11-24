@@ -89,7 +89,7 @@ A subset of strategies that usually involve buying mod10 variables at 1/10th of 
 
 ### Pub multi
 
-Usually refer to the current increase in the total multiplier when you publish. For example, most theories in the publication tab will have texts that say 'Reset theory upgrades and currencies to multiply your income by xxxxx'. Pub multi is the 'xxxx' number.
+Usually refer to the current increase in the total multiplier when you publish. For example, most theories in the publication tab will have texts that say 'Reset theory upgrades and currencies to multiply your income by xxxx'. Pub multi is the 'xxxx' number.
 
 ### Total multi
 
