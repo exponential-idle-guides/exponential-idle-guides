@@ -1,10 +1,10 @@
 ---
-
+title: "Glossary"
 description: "A guide on Exponential Idle Glossary and Terms"
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
-
+order: 4
 ---
 
 ### Sigma
@@ -25,11 +25,11 @@ Publication/Pub is the act of resetting theories to accumulate higher multiplier
 
 ### Dot
 
-rhodot, taudot, qdot, or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second. 
+rhodot, taudot, qdot, or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
 
 ### Milestone
 
-In theories, milestones are upgrades to aspects of theory equations. They are unlocked when your maximum rho reach certain points. Milestones persist through publications. Furthermore, for most theories you can allocate milestone points to different milestone combinations. 
+In theories, milestones are upgrades to aspects of theory equations. They are unlocked when your maximum rho reach certain points. Milestones persist through publications. Furthermore, for most theories you can allocate milestone points to different milestone combinations.
 
 ### Distribution Overpushing
 
@@ -37,7 +37,7 @@ A strategy to do theories that have high publication multipliers first to accumu
 
 ### Graduation / Grad
 
-A prestige layer, which resets most variables except tau. Graduations allow accumulation of more students. 
+A prestige layer, which resets most variables except tau. Graduations allow accumulation of more students.
 
 ### Supremacy / Sup
 
@@ -57,35 +57,35 @@ Refers to the 9th Research of the student upgrades in the 'students' tab. This r
 
 ### R9 swapping
 
-A strategy where you keep your students in 3R9 for 99.99% of the time, swapping to other researches to increase phi and f(t), then prestige. This allows us to gain the benefit of having 3R9 AND higher f(t) at the same time. 
+A strategy where you keep your students in 3R9 for 99.99% of the time, swapping to other researches to increase phi and f(t), then prestige. This allows us to gain the benefit of having 3R9 AND higher f(t) at the same time.
 
 ### Strategy / Strat
 
-Usually refers to theory strategies. A strategy might refer to the order at which theory variables are bought, or which ones are autobought and which ones to ignore. 
+Usually refers to theory strategies. A strategy might refer to the order at which theory variables are bought, or which ones are autobought and which ones to ignore.
 
 ### Active and Idle
 
-Usually referred in context of strategies. An active strategy requires more attention and manual variable buying, but has a higher potential tau/hour gains. 
+Usually referred in context of strategies. An active strategy requires more attention and manual variable buying, but has a higher potential tau/hour gains.
 
 ### Hard Strat
 
-Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions. 
+Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions.
 
 ### Milestone Swapping / MS
 
-The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost tau/hour. 
+The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost tau/hour.
 
 ### Doubling Variables / Doublings
 
-Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with 2^x). Can sometimes refer to a really powerful variable. 
+Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with 2^x). Can sometimes refer to a really powerful variable.
 
 ### mod10 Variables
 
-A lot of the variables increase their values in a stepwise function, with modulus 10 increments. 
+A lot of the variables increase their values in a stepwise function, with modulus 10 increments.
 
 ### Doubling strats / d strats
 
-A subset of strategies that usually involve buying mod10 variables at 1/10th of the cost of a doubling variable. These strategies usually perform admirably for most theories. 
+A subset of strategies that usually involve buying mod10 variables at 1/10th of the cost of a doubling variable. These strategies usually perform admirably for most theories.
 
 ### Pub multi
 
@@ -93,7 +93,7 @@ Usually refer to the current increase in the total multiplier when you publish. 
 
 ### Total multi
 
-This is the number underneath the pub multi number above. It is the total multiplier of all your publications in that theory. 
+This is the number underneath the pub multi number above. It is the total multiplier of all your publications in that theory.
 
 ### CT, WSP, SL, EF, CSR2
 
@@ -107,11 +107,8 @@ These are the 4 official custom theories (as of 24th November 2022).
 
 ### Coasting
 
-The act of not buying variables and letting theories reach its publication point. This is usually done when your publication multiplier is close to where you want to pubish. For example, you might start coasting at 2.0 multiplier with the intention to publish at 2.5 multiplier. 
+The act of not buying variables and letting theories reach its publication point. This is usually done when your publication multiplier is close to where you want to pubish. For example, you might start coasting at 2.0 multiplier with the intention to publish at 2.5 multiplier.
 
 ### Acceleration / Accel
 
-Refers to the usage of the acceleration upgrade. It speeds up f(t) gains through increasing phi and artificially speeding up time. However it does not affect theories. 
-
-
-
+Refers to the usage of the acceleration upgrade. It speeds up f(t) gains through increasing phi and artificially speeding up time. However it does not affect theories.
