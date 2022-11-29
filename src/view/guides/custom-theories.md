@@ -27,7 +27,7 @@ In general, you want to be as efficient as possible since R9 does not affect cus
 
 
 
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://theory-simulator.tredec.repl.co/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim. ](https://theory-simulator.tredec.repl.co/)<br><br>
 
  For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
