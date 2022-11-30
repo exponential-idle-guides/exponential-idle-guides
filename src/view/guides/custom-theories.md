@@ -10,28 +10,19 @@ order: 8
 
 ### Custom Theory Basics
 
-
 Custom theories are theories made by players in the community. As of September 3rd, 2022, there are 4 official
 custom theories that contribute up to e150 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
 
-
-
 In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate from \\(\rho\\) to \\(\tau\\). WSP, SL, and CSR2 have conversion rates of
 \\(\tau\\) = \\(\rho^{0.1}\\) while EF has a \\(\tau \\) conversion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
-
-
 
 ### Which Custom Theories (CTs) should I do?
 
 In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for Custom theory (SL before all milestones, CSR2, or WSP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
-
-
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim. ](https://theory-simulator.tredec.repl.co/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim](https://theory-simulator.tredec.repl.co/).<br><br>
 
  For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
-
-
 
 ### Weierstrass Sine Product (WSP)
 
@@ -88,26 +79,25 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
          <th>c<sub><sub><small>2</small></sub></sub></th>
          <td>Doubles ρ dot - over time</td>
       </tr>
-
    </tbody>
-
 </table>
 
 <br>
 <br>
 
-
 #### WSP strategy
 
-Early game the variable strengths are ordered as follows: <br>
+Early game the variable strengths are ordered as follows: 
+
 \\(q_2 \\) ≈ \\(c_2 \\) > \\(n \\) > \\(c_1 \\) > \\(q_1 \\) <br><br>
 
-Late game these become: <br>
+Late game these become:
+
 \\(n\\) > \\(q_2 \\) ≈ \\(c_2 \\) > \\(q_1 \\) >>> \\(c_1 \\) <br><br>
 
 ##### Idle
 
-<b>Before you get e400 \\(\rho \\) for idle, simply autobuy all.<b> <br><br>
+Before you get e400 \\(\rho \\) for idle, simply autobuy all. <br><br>
 
 Once you have e400 \\(\rho \\), \\(c_1 \\) starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 20 seconds or so. Then turn \\(c_1 \\) OFF. Continue to autobuy the rest of the variables. <br>
 <br>
@@ -119,7 +109,6 @@ For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) 
 For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and \\(c_2 \\). For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to \\(q_2 \\).  <br><br>
 
 For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. If you want more information on the different strategies pertaining to WSP, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/)<br><br>
-
 
 #### WSP milestone route
 
@@ -145,9 +134,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
          <td>3/1/3</td>
          <td class="arrow">→</td>
          <td>4/1/3</td>
-
 </table>
-
 
 ### Sequential Limits (SL)
 
@@ -171,13 +158,11 @@ The first line is the main part of the equation. We want to maximize \\(\dot{\rh
 
 The second equation refers to Stirling's approximation of Euler's number '\\(e\\)'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), \\(\gamma\\) will be twice as close to Euler's number, so \\(e-\gamma\\) in the first equation will be halved.
 
-
 The third equation relates \\(\rho_2 \\) with \\(\rho_3 \\) and some upgrades. The most interesting part is the exponent part containing \\(ln({\rho_3})\\). The negative exponent actually implies that as \\(\rho_3 \\) increases, \\(\dot{\rho_2} \\) DECREASES. If \\(\rho_3 \\) is high, \\(\rho_2 \\) doesn't grow as fast (it still grows). This has implication on the first equation as well, since \\(\dot{\rho_1} \\) depends on \\(\rho_2 \\), which depends on \\(\rho_3 \\).
 
 The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is relatively simple; increase \\(b_1 \\) and \\(b_2 \\) to increase \\(\rho_3 \\). The '1.04' exponents are from milestones.
 
 The final equation simply states the value of \\(a_3 \\). The lower the better. Default without milestone is \\(a_3 = 2 \\).
-
 
 #### SL Variable Description
 Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
@@ -205,17 +190,11 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
          <th>b<sub><sub><small>2</small></sub></sub></th>
          <td>Doubles in value every level. Toward the end of a publication this doubles ρ<sub><sub><small>1</small></sub></sub>.</td>
       </tr>
-
-
    </tbody>
-
 </table>
 
 <br>
 <br>
-
-
-
 
 #### SL strategy
 
@@ -255,9 +234,6 @@ e200 - e300: SLMS
 
 At this point, the theory becomes very idle. We simply autobuy all variables. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable \\(a_1 \\)\\(a_2 \\) at about 4.5 publication multiplier and \\(b_1 \\)\\(b_2 \\) at 6.0 multiplier until publish.
 
-
-
-
 #### SL milestone route
 
 ##### Idle
@@ -274,8 +250,6 @@ At this point, the theory becomes very idle. We simply autobuy all variables. Pu
          <td>3/5/2/2</td>
       </tr>
 
-
-
 </table>
 
 ##### Active
@@ -291,12 +265,13 @@ SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), wi
 SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
 
 When to Use Strategies
-until e100: SLMS<br>
-e100 - e175: SLMS2<br>
-e175 - e200: SLMS3<br>
+until e100: SLMS
+
+e100 - e175: SLMS2
+
+e175 - e200: SLMS3
+
 e200 - e300: SLMS
-
-
 
 ### Euler's Formula (EF)
 
@@ -305,7 +280,6 @@ e200 - e300: SLMS
 This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of
 
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number.
-
 
 EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^{0.4} \\) rather than the usual \\(\rho^{0.1} \\) meaning that less \\(\rho \\) is needed to get an equivalent amount of \\(\tau\\). Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
 
@@ -381,9 +355,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
          <th>a<sub><sub><small>3</small></sub></sub></th>
          <td>Costs I to buy. With full milestones, this variable approximately triples ρ dot.</td>
       </tr>
-
    </tbody>
-
 </table>
 
 <br>
@@ -395,8 +367,6 @@ Initially, you only have \\(\dot{t} \\),  \\(q_1 \\), and \\(q_2 \\) unlocked. B
 
 The first 2 milestones are redundant by themselves. The \\(R^2 \\) term and the \\(I^2 \\) term are insignificant compared to the \\(tq^2 \\) term.
 Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \\) at 1/4th of \\(q_2 \\) cost.
-
-
 
 #### EF milestone route
 
@@ -502,35 +472,25 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
          <th>c<sub><sub><small>2</small></sub></sub></th>
          <td>Approximately 22 times increase in ρ dot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
       </tr>
-
    </tbody>
-
 </table>
 
 <br>
 <br>
 
-
-
-
 #### CSR2 strategy
 
 ##### Idle
-
 
 For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
 
 Once you have all milestones, autobuy all!
 
-
-
 ##### Active
-
 
 The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
 
 For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
-
 
 ##### CSR2 Milestone Swapping Explanation
 
@@ -539,8 +499,6 @@ This theory has a milestone swapping strategy before full milestones. We have \\
 The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
-
-
 
 #### CSR2 milestone route
 
@@ -576,12 +534,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
    </tbody>
 </table>
 
-
-
 <style>
-
-
-
 
 h4 {
    font-size: 1.2rem;
