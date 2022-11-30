@@ -280,4 +280,4 @@ Because Hard Arrow only has 8 possible end cases, it is practical to learn and m
 
 Video of solves for each case:
 
-{{ yt.embed('dFGlcaV_GNk'_) }}
+{{ yt.embed('dFGlcaV_GNk') }}
