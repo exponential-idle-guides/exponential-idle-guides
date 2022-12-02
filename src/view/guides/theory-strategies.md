@@ -257,7 +257,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<span style="color:#41AD21">XL x.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
 - [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
@@ -4784,12 +4784,12 @@ Strategy Credits:
 
 ## Convergents to √2
 
-### CSR2<span style="color:#41AD21">XLx.xx</span>
+### CSR2<span style="color:#41AD21">XL x.xx</span>
 <table class="spqcey">
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">CSR2XLx.xx</th>
+      <th colspan="2" style="text-align:center">CSR2XL x.xx</th>
    </tr>
 </thead>
    <tbody>
