@@ -4601,11 +4601,10 @@ Strategy Credits:
 <br>
 
 When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br> <br>
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br><br>
 
 Strategy Credits:
-- XLII
-- Playspout
+- The Amazing Community (EF<span style="color:#41AD21">AI</span> is a product of a bunch of ideas from various players)
 
 ### EF<span style="color:#41AD21">SNAX</span>
 <table class="spqcey">
