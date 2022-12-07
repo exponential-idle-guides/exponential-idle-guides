@@ -2,6 +2,8 @@
 {%- macro list(tags) -%}
 <ul>
   {%- for tag in tags -%}
+    <li>{{ ['ext-',tag] | join }}
+    <li>{{ collections[ ['ext-',tag] | join ] | length }}
     {%- if collections[ ['ext-',tag] | join ] | length > 0 -%}
       <li>{{ tag | capitalize }}
       <ul>
