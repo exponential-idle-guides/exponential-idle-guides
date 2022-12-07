@@ -4,7 +4,7 @@
   {%- for tag in collection | keys | dump | safe -%}
     <li>{{ tag | capitalize }}
     <ul>
-      {%- for post in collection.getFilteredByTag( tag ) -%}
+      {%- for post in collection.tag -%}
         <li>
           <a href="{{post.url}}">{{ post.data.title }}</a>
           {% if post.data.subtitle %}
