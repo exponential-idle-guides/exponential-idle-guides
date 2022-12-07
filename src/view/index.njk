@@ -48,7 +48,7 @@ home: true
 
   <ul>
     <li>{{ collections.extensions }}</li>
-    {%- for author, posts in collections.extensions | groupby("author") -%}
+    {%- for author, posts in collections.extensions | groupby("post.author") -%}
       {%- for post in posts -%}
         <li>{{ author }}: {{ post }}</li>
       {%- endfor -%}
