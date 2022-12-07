@@ -2,12 +2,12 @@
 {%- macro list(tags) -%}
 <ul>
   {%- for tag in tags -%}
-    <li>{{ ['ext-',tag] | join }}
-    <li>{{ collections[ ['ext-',tag] | join ] | length }}
-    {%- if collections[ ['ext-',tag] | join ] | length > 0 -%}
-      <li>{{ tag | capitalize }}
+    <li>{{ [tag,' extensions'] | join }}
+    <li>{{ collections[ [tag,' extensions'] | join ] | length }}
+    {%- if collections[ [tag,' extensions'] | join ] | length > 0 -%}
+      <li>{{ tag | capitalize }}+
       <ul>
-        {%- for post in collections[ ['ext-',tag] |  join ] -%}
+        {%- for post in collections[ [tag,' extensions'] |  join ] -%}
           <li>
             <a href="{{post.url}}">{{ post.data.title }}</a>
             {% if post.data.subtitle %}
