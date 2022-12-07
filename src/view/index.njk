@@ -38,14 +38,6 @@ home: true
 
   <h3>Guide Extensions</h3>
 
-  <p>{{ collections | keys | dump(2) | safe }}</p>
-
-  <section>
-    {%- for tag, posts in collections -%}
-      tag: {{ tag }}, posts: {{posts | length }}<br/>
-    {%- endfor -%}
-  </section>
-
   {%- set tags = ['T9'] -%}
   <ul>
     {%- for pretag in tags -%}
@@ -67,7 +59,6 @@ home: true
       {%- endif -%}
     {%- endfor -%}
   </ul>
-
 
   <h3>Other resources</h3>
   {% include "tools.njk" %}
