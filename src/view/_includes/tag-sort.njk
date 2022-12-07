@@ -4,11 +4,11 @@
   {%- for tag in tags -%}
     {%- set tagged = ['ext-',tag] | join  -%}
     <li>{{ tagged }}
-    <li>{{ collections.tagged | length }}
-    {%- if collections.tagged | length > 0 -%}
+    <li>{{ collections.ext-T9 | length }}
+    {%- if collections.ext-T9 | length > 0 -%}
       <li>{{ tag | capitalize }}+
       <ul>
-        {%- for post in collections.tagged -%}
+        {%- for post in collections.ext-T9 -%}
           <li>
             <a href="{{post.url}}">{{ post.data.title }}</a>
             {% if post.data.subtitle %}
