@@ -2,13 +2,13 @@
 {%- macro list(tags) -%}
 <ul>
   {%- for tag in tags -%}
-    {%- set tagged = ['ext-',tag] | join  -%}
+    {%- set tagged = ['ext',tag] | join  -%}
     <li>{{ tagged }}
-    <li>{{ collections.ext-T9 | length }}
-    {%- if collections.ext-T9 | length > 0 -%}
+    <li>{{ collections.extT9 | length }}
+    {%- if collections.extT9 | length > 0 -%}
       <li>{{ tag | capitalize }}+
       <ul>
-        {%- for post in collections.ext-T9 -%}
+        {%- for post in collections.extT9 -%}
           <li>
             <a href="{{post.url}}">{{ post.data.title }}</a>
             {% if post.data.subtitle %}
