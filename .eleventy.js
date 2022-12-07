@@ -125,8 +125,6 @@ module.exports = config => {
     });
   });
 
-  eleventyConfig.addFilter("inspect", require("node:util").inspect);
-
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
