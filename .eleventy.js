@@ -128,4 +128,6 @@ module.exports = config => {
   };
 }
 
-
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addFilter("keys", obj => Object.keys(obj));
+};
