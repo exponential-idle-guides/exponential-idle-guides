@@ -2,17 +2,19 @@
 {%- macro list(tags) -%}
 <ul>
   {%- for tag in tags -%}
-    <li>{{ tag | capitalize }}
-    <ul>
-      {%- for post in collections['ext-'+tag -%}
-        <li>
-          <a href="{{post.url}}">{{ post.data.title }}</a>
-          {% if post.data.subtitle %}
-            ({{ post.data.subtitle }})
-          {% endif %}
-        </li>
-      {%- endfor -%}
-    </ul>
+    {%- if collections['ext-'+tag] | length > 0 -%}
+      <li>{{ tag | capitalize }}
+      <ul>
+        {%- for post in collections['ext-'+tag] -%}
+          <li>
+            <a href="{{post.url}}">{{ post.data.title }}</a>
+            {% if post.data.subtitle %}
+              ({{ post.data.subtitle }})
+            {% endif %}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
   {%- endfor -%}
 </ul>
 {%- endmacro -%}
