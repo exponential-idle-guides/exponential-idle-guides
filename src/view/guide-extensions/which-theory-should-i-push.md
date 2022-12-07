@@ -4,7 +4,7 @@ description: "A guide on selecting the best theories to push"
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 1
-tags: extT9
+tags: T9
 ---
 
 It depends :)
