@@ -41,10 +41,8 @@ home: true
   <ul>
     {%- for pretag in ['T9'] -%}
       {%- set tag = ['ext-',pretag] | join  -%}
-      <li>{{ tag }}
-      <li>{{ collections[tag] | length }}
       {%- if collections[tag] | length > 0 -%}
-        <li>{{ tag | capitalize }}+
+        <li>{{ pretag | capitalize }}+
         <ul>
           {%- for post in collections[tag] -%}
             <li>
