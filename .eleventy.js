@@ -18,11 +18,6 @@ const transformExcludes = [
   "_site/sitemap.xml"
 ];
 
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addNunjucksFilter("keys", obj => Object.keys(obj));
-};
-
 module.exports = config => {
 
   const markdownItOptions = {
@@ -108,6 +103,8 @@ module.exports = config => {
   config.addFilter("inspect", (s, d) =>
     util.inspect(s, {depth: d === undefined ? 2 : d})
   );
+
+  config.addFilter("keys", obj => Object.keys(obj));
 
   config.addCollection("guides", function(collection) {
     return collection.getFilteredByTag("guide").sort(function(a, b) {
