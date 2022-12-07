@@ -118,6 +118,15 @@ module.exports = config => {
     });
   });
 
+  const tags = ['T1', 'T9', 'Endgame'];
+  tags.map((tag) => {
+    config.addCollection('ext-'+tag, (collectionApi) => {
+      return collectionApi.getFilteredByTags(['extensions', tag]);
+    });
+  });
+
+  eleventyConfig.addFilter("inspect", require("node:util").inspect);
+
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
