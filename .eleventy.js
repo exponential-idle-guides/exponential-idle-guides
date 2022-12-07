@@ -18,6 +18,11 @@ const transformExcludes = [
   "_site/sitemap.xml"
 ];
 
+
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addNunjucksFilter("keys", obj => Object.keys(obj));
+};
+
 module.exports = config => {
 
   const markdownItOptions = {
@@ -127,7 +132,3 @@ module.exports = config => {
     markdownTemplateEngine: "njk"
   };
 }
-
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addFilter("keys", obj => Object.keys(obj));
-};
