@@ -2,7 +2,7 @@
 {%- macro list(tags) -%}
 <ul>
   {%- for tag in tags -%}
-    {%- set tagged = ['ext-',tag] | join ] -%}
+    {%- set tagged = ['ext-',tag] | join  -%}
     <li>{{ tagged }}
     <li>{{ collections.tagged | length }}
     {%- if collections.tagged | length > 0 -%}
