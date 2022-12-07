@@ -120,7 +120,7 @@ module.exports = config => {
 
   const tags = ['T9'];
   tags.map((tag) => {
-    config.addCollection(tag+' extensions', (collectionApi) => {
+    config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag);
     });
   });
