@@ -49,6 +49,18 @@ home: true
 
   {% import "tag-sort.njk" as tagged %}
 
+  <ul>
+    {%- for guide in collections.extT9 -%}
+      <li>
+        <a href="{{guide.url}}">{{ guide.data.title }}</a>
+        {% if guide.data.subtitle %}
+          ({{ guide.data.subtitle }})
+        {% endif %}
+      </li>
+    {%- endfor -%}
+  </ul>
+
+
   {{ tagged.list(['T9'])}}
 
 
