@@ -107,7 +107,7 @@ module.exports = config => {
   config.addFilter("keys", obj => Object.keys(obj));
 
   config.addCollection("guides", function(collection) {
-    return collection.getFilteredByTag("guide").sort(function(a, b) {
+    return collection.getFilteredByTag("guides").sort(function(a, b) {
       return a.data.order - b.data.order;
     });
   });
