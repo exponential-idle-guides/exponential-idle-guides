@@ -11,7 +11,16 @@ order: 3
 
 Here you'll find links to all the rankings and news.
 
-[October 2022](https://rankings--exponential-idle-guides.netlify.app/guide-extensions/rankings-news/oct2022/).
-[November 2022](https://rankings--exponential-idle-guides.netlify.app/guide-extensions/rankings-news/nov2022/).
+Branch:
+
+[October 2022](https://rankings--exponential-idle-guides.netlify.app/rankings-news/oct2022/).
+
+[November 2022](https://rankings--exponential-idle-guides.netlify.app/rankings-news/nov2022/).
+
+Local:
+
+[October 2022](http://localhost:8000/rankings-news/oct2022/).
+
+[November 2022](http://localhost:8000/rankings-news/nov2022/).
 
 More coming in the future...

@@ -116,6 +116,12 @@ module.exports = config => {
     });
   });
 
+  config.addCollection("rankings", function(collection) {
+    return collection.getFilteredByTag("rankings-news").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
+
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
