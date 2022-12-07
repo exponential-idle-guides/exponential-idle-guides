@@ -1,11 +1,10 @@
 
 {%- macro list(tags) -%}
-<h6>start</h6>
 <ul>
   {%- for tag in tags -%}
     <li>{{ tag | capitalize }}
     <ul>
-      {%- for post in collections['ext'+tag] -%}
+      {%- for post in collections['ext-'+tag -%}
         <li>
           <a href="{{post.url}}">{{ post.data.title }}</a>
           {% if post.data.subtitle %}
