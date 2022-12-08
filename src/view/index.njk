@@ -65,7 +65,7 @@ home: true
   <ul>
   {%- for rem in ignore -%}
     <li>{{rem}}
-    {%- set collect =  collect.splice(collect.indexOf(rem), 1) -%}
+    {%- set collect =  collect | splice(collect.indexOf(rem), 1) -%}
     <li>{{collect}}
   {%- endfor -%}
   </ul>
