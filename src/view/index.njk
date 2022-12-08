@@ -83,15 +83,6 @@ home: true
         <li>{{spliced}}
       </ul>
     {% endfor %}
-    {% for i in range(collect | length) %}
-      <li>{{i}}</li>
-      {% if not(i in ignore_index) %}
-        {% set spliced = (spliced.push(collect.index(i)), spliced) %}
-      {% endif %}
-      <ul>
-        <li>{{spliced}}
-      </ul>
-    {% endfor %}
   </ul>
   
 
