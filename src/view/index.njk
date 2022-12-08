@@ -34,6 +34,8 @@ home: true
 
   <h3>Guide Extensions</h3>
 
+  <p>{{ collections | keys | dump(2) | safe }}</p>
+
   <ul>
     {% for tag, posts in collections %}
       <li>tag: {{tag}}, tag-sliced: {{tag.slice(0,11 - (tag | length))}} ({{tag.slice(0,11 - (tag | length) == 'extensions-'}}), collections-length: {{collections[tag] | length }} ({{collections[tag] | length > 0}})
