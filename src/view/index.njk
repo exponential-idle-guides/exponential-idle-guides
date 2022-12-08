@@ -57,9 +57,17 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <p>{{ collections[tag] }}</p>
+  <p>{{ collections | keys | dump(2) | safe }}</p>
 
-  {%- set collect = collections[tag] -%}
+  {%- set collect = [] -%}
+  {%- for tag, posts in collectins -%}
+    {%- if tag not in collect -%}
+      {%- set collect = (collect.push(tag), collect) -%}
+    {%- endif -%}
+  {%- endfor -%}
+  
+  <p>{{collect}}</p>
+
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
   {%- set ignore_index = [] -%}
   {%- set spliced = [] -%}
