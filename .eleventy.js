@@ -118,7 +118,7 @@ module.exports = config => {
     });
   });
 
-  const tags = ['T1', 'T9'];
+  const tags = ['T9', 'other'];
   tags.map((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
