@@ -1,0 +1,41 @@
+li {
+  line-height: var(--body-line-height);
+  margin-top: 0.5em;
+}
+
+ul, ol {
+  padding-left: 1em;
+  margin-top: 0.5em;
+}
+
+ul {
+  li {
+    list-style-type: disc;
+  }
+}
+
+ol {
+  li {
+    list-style-type: decimal;
+  }
+}
+
+ol ol {
+  li {
+    list-style-type: lower-alpha;
+  }
+}
+
+ol ol ol {
+  li {
+    list-style-type: lower-roman;
+  }
+}
+
+i {
+  font-style: italic;
+}
+
+li.invisible {
+  list-style-type: none;
+}
