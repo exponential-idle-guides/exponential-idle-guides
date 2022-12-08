@@ -62,8 +62,7 @@ home: true
   {% set collect = [] %}
   {% set ignore = ['all', 'extensions', 'guides'] %}
   {% for tag, posts in collections %}
-    <li>{{tag.slice(4)}}
-    {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect) and not(tag in ignore) %}
+    {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect)) and not(tag in ignore) %}
       {% set collect = (collect.push(tag), collect) %}
     {% endif %}
     <p>tag: {{tag}}, collect: {{collect}}</p>
