@@ -39,7 +39,15 @@ home: true
   <h3>Guide Extensions</h3>
 
   <ul>
-    {% for pretag in ['T9'] %}
+    {% set collect = [] %}
+    {% set ignore = ['all', 'extensions', 'guides'] %}
+    {% for tag, posts in collections %}
+      {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect)) and not(tag in ignore) %}
+        {% set collect = (collect.push(tag), collect) %}
+      {% endif %}
+    {% endfor %}
+
+    {% for pretag in collect %}
       {% set tag = ['ext-',pretag] | join  %}
       {% if collections[tag] | length > 0 %}
         <li>{{ pretag | capitalize }}+
@@ -59,14 +67,7 @@ home: true
 
   <p>{{ collections | keys | dump(2) | safe }}</p>
 
-  {% set collect = [] %}
-  {% set ignore = ['all', 'extensions', 'guides'] %}
-  {% for tag, posts in collections %}
-    {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect)) and not(tag in ignore) %}
-      {% set collect = (collect.push(tag), collect) %}
-    {% endif %}
-    <p>tag: {{tag}}, collect: {{collect}}</p>
-  {% endfor %}
+  
 
   <ul>
     {% for item in collect %}
