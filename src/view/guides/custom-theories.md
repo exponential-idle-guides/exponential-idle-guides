@@ -4,7 +4,7 @@ description: "Our guide for understanding and playing official custom theories."
 author: "Playspout and Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 8
+order: 7
 ---
 {% import "embed-yt.njk" as yt %}
 
