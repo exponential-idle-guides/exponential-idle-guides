@@ -71,7 +71,7 @@ home: true
     {%- for val in collect -%}
       <li>{{val}}</li>
       {%- if not (val = '') -%}
-        {%- set spliced = spliced.push(val, spliced) -%}
+        {%- set spliced = (spliced.push(val), spliced) -%}
       {%- endif -%}
       <ul>
         <li>{{spliced}}
