@@ -61,15 +61,11 @@ home: true
 
   {%- set collect = collections | keys | dump(2) | safe -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
-  <ul>
+  
   {%- for rem in ignore -%}
+    {{collect | replace('all', '')}}
   {%- endfor -%}
-  {%- for val in collect -%}
-    <li>{{val}}</li>
-    {%- (set spliced = spliced.push(val, spliced)) if val != '' -%}
-    <ul><li>{{spliced}}</li></ul>
-  {%- endfor -%}
-  </ul>
+  
 
   <h3>Other resources</h3>
   {% include "tools.njk" %}
