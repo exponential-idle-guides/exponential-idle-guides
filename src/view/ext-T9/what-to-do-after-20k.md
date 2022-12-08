@@ -4,8 +4,10 @@ description: "A guide on what to do after completing theory 9."
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 0
+<<<<<<< HEAD:src/view/ext-T9/what-to-do-after-20k.md
 =======
 tags: T9
+>>>>>>> parent of 1ed8ea8 (shifted + to tags and fixed var power tag):src/view/guide-extensions/what-to-do-after-20k.md
 ---
 
 ## A controversial theory

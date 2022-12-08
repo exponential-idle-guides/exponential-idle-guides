@@ -4,8 +4,10 @@ description: "Introduction to the concept of distribution overpushing."
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 2
+<<<<<<< HEAD:src/view/ext-T9/distribution-overpushing.md
 =======
 tags: T9
+>>>>>>> parent of 1ed8ea8 (shifted + to tags and fixed var power tag):src/view/guide-extensions/distribution-overpushing.md
 ---
 
 ## What is distribution overpushing?

@@ -4,8 +4,10 @@ description: "A guide on selecting the best theories to push"
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 1
+<<<<<<< HEAD:src/view/ext-T9/which-theory-should-i-push.md
 =======
 tags: T9
+>>>>>>> parent of 1ed8ea8 (shifted + to tags and fixed var power tag):src/view/guide-extensions/which-theory-should-i-push.md
 ---
 
 It depends :)

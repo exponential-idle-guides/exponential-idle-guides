@@ -5,8 +5,10 @@ author: "spqcey"
 contributors: "the Amazing Community"
 draft: false
 order: 3
+<<<<<<< HEAD:src/view/ext-T9/variable-power.md
 =======
 tags: other
+>>>>>>> parent of 1ed8ea8 (shifted + to tags and fixed var power tag):src/view/guide-extensions/variable-power.md
 ---
 ###### Initial Publication on November 19, 2022
 
