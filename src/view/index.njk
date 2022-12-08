@@ -65,6 +65,7 @@ home: true
     {% if not((tag in collect) or ((['ext-',tag] | join) in collect)) and not(tag in ignore) %}
       {% if tag|length >=4 %}
         {% if not(tag.slice(4,-4) in collect) %}
+          <li>tag.slice(4,-4)
           {% set collect = (collect.push(tag), collect) %}
         {% endif %}
       {% else %}
