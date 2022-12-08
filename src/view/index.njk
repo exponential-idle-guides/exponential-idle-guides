@@ -61,17 +61,19 @@ home: true
 
   {%- set collect = collections | keys | dump(2) | safe -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
+  {%- set ignore_index = [] -%}
   {%- set spliced = [] -%}
   
   <ul>
-    {%- for rem in ignore -%}
-      <li>{{rem}}</li>
-      {%- set collect =  collect | replace(rem, '') -%}
-      <ul><li>{{collect}}</li></ul>
+    {%- for item in collect -%}
+      <li>{{item}}</li>
+      {%- if item in ignore -%}
+        {%- set ignore_index = (ignore_index.push(loop.index), ignore_index) -%}
+      <ul><li>{{ignore_index}}</li></ul>
     {%- endfor -%}
-    {%- for val in collect -%}
-      <li>{{val}}</li>
-      {%- if val !== '' -%}
+    {%- for i in range(collect | length) -%}
+      <li>{{i}}</li>
+      {%- if i in ignore_index -%}
         {%- set spliced = (spliced.push('apple'), spliced) -%}
       {%- endif -%}
       <ul>
