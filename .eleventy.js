@@ -112,16 +112,11 @@ module.exports = config => {
     });
   });
 
-  config.addCollection("extensions", function(collection) {
-    return collection.getFilteredByTag("extensions").sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
 
   const tags = ['T9+', 'other'];
   tags.map((tag) => {
-    config.addCollection('ext-'+tag, (collectionApi) => {
-      return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
+    config.addCollection('extensions-'+tag, (collectionApi) => {
+      return collectionApi.getFilteredByTag('extensions-'+tag).sort(function(a, b) {
         return a.data.order - b.data.order;
       });
     });
