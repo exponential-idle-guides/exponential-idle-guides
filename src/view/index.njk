@@ -64,12 +64,9 @@ home: true
   
   <ul>
     {%- for rem in ignore -%}
-      {{collect | replace('all', '')}}
-    {%- endfor -%}
-    {%- for val in collect -%}
-      <li>{{val}}</li>
-      {%- (set spliced = spliced.push(val, spliced)) if val != '' -%}
-      <ul><li>{{spliced}}</li></ul>
+      <li>{{rem}}</li>
+      {%- set collect =  collect | replace(rem, '') -%}
+      <ul><li>{{collect}}</li></ul>
     {%- endfor -%}
   </ul>
   
