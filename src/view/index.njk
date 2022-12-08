@@ -5,6 +5,7 @@ home: true
 ---
 
 {% extends "default.njk" %}
+{% import "guide-link.njk" as list %}
 
 {% block title %}
   <h2 hidden>Home</h2>
@@ -27,41 +28,19 @@ home: true
   <h3>Our guides</h3>
   <ul>
     {% for guide in collections.guides %}
-      <li>
-        <a href="{{guide.url}}">{{ guide.data.title }}</a>
-        {% if guide.data.subtitle %}
-          ({{ guide.data.subtitle }})
-        {% endif %}
-      </li>
+      {{ list.linked(guide) }}
     {% endfor %}
   </ul>
 
   <h3>Guide Extensions</h3>
 
   <ul>
-    {% set collect = [] %}
-    {% set ignore = ['all', 'extensions', 'guides'] %}
     {% for tag, posts in collections %}
-      <li>tag: {{tag}}, slice: {{tag.slice(0,4 - (tag | length))}}
-      {% if tag.slice(0,4 - (tag | length)) == 'ext-' and not(tag in collect or tag in ignore)%}
-        {#% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect) or tag in ignore) %#}
-        {% set collect = (collect.push(tag), collect) %}
-      {% endif %}
-      <li>tag: {{tag}}, collect: [{{collect}}]
-    {% endfor %}
-
-    {% for tag in collect %}
-      
-      {% if collections[tag] | length > 0 %}
+      {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
         <li>{{ tag.slice(4) | capitalize }}+
         <ul>
-          {% for post in collections[tag] %}
-            <li>
-              <a href="{{post.url}}">{{ post.data.title }}</a>
-              {% if post.data.subtitle %}
-                ({{ post.data.subtitle }})
-              {% endif %}
-            </li>
+          {% for guide in collections[tag] %}
+            {{ list.linked(guide) }}
           {% endfor %}
         </ul>
       {% endif %}
