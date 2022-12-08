@@ -36,6 +36,7 @@ home: true
 
   <ul>
     {% for tag, posts in collections %}
+      <li>tag: {{tag}}
       {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
         <li>{{ tag.slice(4) | capitalize }}
         <ul>
