@@ -26,71 +26,71 @@ home: true
 
   <h3>Our guides</h3>
   <ul>
-    {%- for guide in collections.guides -%}
+    {% for guide in collections.guides %}
       <li>
         <a href="{{guide.url}}">{{ guide.data.title }}</a>
         {% if guide.data.subtitle %}
           ({{ guide.data.subtitle }})
         {% endif %}
       </li>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
 
   <h3>Guide Extensions</h3>
 
   <ul>
-    {%- for pretag in ['T9'] -%}
-      {%- set tag = ['ext-',pretag] | join  -%}
-      {%- if collections[tag] | length > 0 -%}
+    {% for pretag in ['T9'] %}
+      {% set tag = ['ext-',pretag] | join  %}
+      {% if collections[tag] | length > 0 %}
         <li>{{ pretag | capitalize }}+
         <ul>
-          {%- for post in collections[tag] -%}
+          {% for post in collections[tag] %}
             <li>
               <a href="{{post.url}}">{{ post.data.title }}</a>
               {% if post.data.subtitle %}
                 ({{ post.data.subtitle }})
               {% endif %}
             </li>
-          {%- endfor -%}
+          {% endfor %}
         </ul>
-      {%- endif -%}
-    {%- endfor -%}
+      {% endif %}
+    {% endfor %}
   </ul>
 
   <p>{{ collections | keys | dump(2) | safe }}</p>
 
-  {%- set collect = [] -%}
-  {%- for tag, posts in collectins -%}
-    {%- if tag not in collect -%}
-      {%- set collect = (collect.push(tag), collect) -%}
-    {%- endif -%}
-  {%- endfor -%}
+  {% set collect = [] %}
+  {% for tag, posts in collectins %}
+    {% if tag not in collect %}
+      {% set collect = (collect.push(tag), collect) %}
+    {% endif %}
+  {% endfor %}
   
   <p>{{collect}}</p>
 
-  {%- set ignore = ['all', 'extensions', 'guides'] -%}
-  {%- set ignore_index = [] -%}
-  {%- set spliced = [] -%}
+  {% set ignore = ['all', 'extensions', 'guides'] %}
+  {% set ignore_index = [] %}
+  {% set spliced = [] %}
   
-  <p>{{collect | length}}
+  <p>{{collect | length}}</p>
 
   <ul>
-    {%- for item in collect -%}
+    {% for item in collect %}
       <li>{{item}}</li>
-      {%- if item in ignore -%}
-        {%- set ignore_index = (ignore_index.push(loop.index), ignore_index) -%}
-      {%- endif -%}
+      {% if item in ignore %}
+        {% set ignore_index = (ignore_index.push(loop.index), ignore_index) %}
+      {% endif %}
       <ul><li>{{ignore_index}}</li></ul>
-    {%- endfor -%}
-    {%- for i in range(collect | length) -%}
+    {% endfor %}
+    {% for i in range(collect | length) %}
       <li>{{i}}</li>
-      {%- if i in ignore_index -%}
-        {%- set spliced = (spliced.push('apple'), spliced) -%}
-      {%- endif -%}
+      {% if i in ignore_index %}
+        {% set spliced = (spliced.push('apple'), spliced) %}
+      {% endif %}
       <ul>
         <li>{{spliced}}
       </ul>
-    {%- endfor -%}
+    {% endfor %}
   </ul>
   
 
