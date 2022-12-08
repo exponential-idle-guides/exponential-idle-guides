@@ -61,20 +61,14 @@ home: true
 
   {% set collect = [] %}
   {% for tag, posts in collections %}
-    <p>tag: {{tag}}</p>
     {% if not(tag in collect) %}
       {% set collect = (collect.push(tag), collect) %}
     {% endif %}
   {% endfor %}
-  
-  <p>collect: {{collect}}</p>
 
   {% set ignore = ['all', 'extensions', 'guides'] %}
   {% set ignore_index = [] %}
   {% set spliced = [] %}
-  
-  <p>length: {{collect | length}}</p>
-  <p>collect: {{collect}}</p>
 
   <ul>
     {% for item in collect %}
@@ -86,8 +80,8 @@ home: true
     {% endfor %}
     {% for i in range(collect | length) %}
       <li>{{i}}</li>
-      {% if i in ignore_index %}
-        {% set spliced = (spliced.push('apple'), spliced) %}
+      {% if not(i in ignore_index) %}
+        {% set spliced = (spliced.push(collect.index(i)), spliced) %}
       {% endif %}
       <ul>
         <li>{{spliced}}
