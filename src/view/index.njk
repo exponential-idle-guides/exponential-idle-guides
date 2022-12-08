@@ -65,7 +65,7 @@ home: true
   <ul>
   {%- for rem in ignore -%}
     <li>{{rem}}</li>
-    <ul><li>{{collect | replace(rem, '')}}</li></ul>
+    <ul><li>{{collect | replace(['',rem] | join, '')}}</li></ul>
   {%- endfor -%}
   {%- for val in collect -%}
     <li>{{val}}</li>
