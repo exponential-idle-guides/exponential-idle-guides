@@ -1,0 +1,61 @@
+prose:
+  rooturl: 'src'
+  siteurl: 'https://exponential-idle-guides.netlify.app/'
+  media: 'src/images'
+  ignore:
+    - /src/style
+    - /src/scripts
+    - /src/view/_includes
+    - /src/view/guides/guides.json
+    - /src/view/guide-extensions/guide-extensions.json
+  metadata:
+    src/view/guides:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Draft?"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+    src/view/guide-extensions:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
