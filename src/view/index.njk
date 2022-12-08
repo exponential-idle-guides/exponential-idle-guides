@@ -57,6 +57,19 @@ home: true
     {%- endfor -%}
   </ul>
 
+  <p>{{ collections | keys | dump(2) | safe }}</p>
+
+  {%- set collect = collections | keys | dump(2) | safe -%}
+  {%- set ignore = ['all', 'guides'] -%}
+  {%- set collect_splice = [] -%}
+  <ul>
+  {%- for rem in ignore -%}
+    <li>{{rem}}
+    {%- do collect.splice(collect.indexOf(rem), 1) -%}
+    <li>{{collect}}
+  {%- endfor -%}
+  </ul>
+
   <h3>Other resources</h3>
   {% include "tools.njk" %}
 
