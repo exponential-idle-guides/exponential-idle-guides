@@ -61,9 +61,16 @@ home: true
 
   {% set collect = [] %}
   {% for tag, posts in collections %}
-    {% if not(tag in collect) %}
-      {% set collect = (collect.push(tag), collect) %}
+    {% if not((tag in collect) or ((['ext-',tag] | join) in collect))  %}
+      {% if tag|length >=4 %}
+        {% if not(tag.slice(4,-4) in collect) %}
+          {% set collect = (collect.push(tag), collect) %}
+        {% endif %}
+      {% else %}
+        {% set collect = (collect.push(tag), collect) %}
+      {% endif %}
     {% endif %}
+    <p>tag: {{tag}}, collect: {{collect}}</p>
   {% endfor %}
 
   {% set ignore = ['all', 'extensions', 'guides'] %}
@@ -75,7 +82,7 @@ home: true
       <li>{{item}}</li>
       {% if item in ignore %}
         {% set ignore_index = (ignore_index.push(loop.index), ignore_index) %}
-      {% else %}
+      {% elif  %}
         {% set spliced = (spliced.push(item), spliced) %}
       {% endif %}
       <ul>
