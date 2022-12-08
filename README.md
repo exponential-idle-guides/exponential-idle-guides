@@ -16,7 +16,7 @@ Pre-requisites to build and develop this site:
  - Install [Node](https://nodejs.org/en/)
  - Add Node to your PATH
 
-### Building
+### Building 
 
 To build to website, run:
 ```
