@@ -1,9 +1,0 @@
-
-{% macro linked(guide) %}
-<li>
-  <a href="{{guide.url}}">{{ guide.data.title }}</a>
-  {% if guide.data.subtitle %}
-    ({{ guide.data.subtitle }})
-  {% endif %}
-</li>
-{% endmacro %}
