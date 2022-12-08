@@ -57,9 +57,9 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <p>{{ collections[tags] }}</p>
+  <p>{{ collections[tag] }}</p>
 
-  {%- set collect = collections[tags] -%}
+  {%- set collect = collections[tag] -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
   {%- set ignore_index = [] -%}
   {%- set spliced = [] -%}
