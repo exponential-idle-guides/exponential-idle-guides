@@ -113,7 +113,7 @@ module.exports = config => {
   });
 
 
-  const tags = ['T9+', 'other'];
+  const tags = ['T9', 'other'];
   tags.map((tag) => {
     config.addCollection('extensions-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTag('extensions-'+tag).sort(function(a, b) {
