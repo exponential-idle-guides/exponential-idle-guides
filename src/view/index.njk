@@ -59,7 +59,7 @@ home: true
 
   <p>{{ collections | keys | safe }}</p>
 
-  {%- set collect = collections | keys | safe -%}
+  {%- set collect = [collections | keys | safe] -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
   {%- set ignore_index = [] -%}
   {%- set spliced = [] -%}
