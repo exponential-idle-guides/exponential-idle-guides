@@ -69,6 +69,7 @@ home: true
       <li>{{item}}</li>
       {%- if item in ignore -%}
         {%- set ignore_index = (ignore_index.push(loop.index), ignore_index) -%}
+      {%- endif -%}
       <ul><li>{{ignore_index}}</li></ul>
     {%- endfor -%}
     {%- for i in range(collect | length) -%}
