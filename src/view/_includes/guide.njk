@@ -4,10 +4,10 @@
   {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
   {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
   
-  {% set previousPost = collections.extensions-T9+ | getPreviousCollectionItem(page) %}
-  {% set nextPost = collections.extensions-T9+ | getNextCollectionItem(page) %}
-  {% set previousPosta = collections.extensions-other | getPreviousCollectionItem(page) %}
-  {% set nextPosta = collections.extensions-other | getNextCollectionItem(page) %}
+  {% set previousPost = collections['extensions-T9+'] | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections['extensions-T9+'] | getNextCollectionItem(page) %}
+  {% set previousPosta = collections['extensions-other'] | getPreviousCollectionItem(page) %}
+  {% set nextPosta = collections['extensions-other'] | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
