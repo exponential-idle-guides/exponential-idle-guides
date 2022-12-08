@@ -61,6 +61,7 @@ home: true
 
   {%- set collect = collections | keys | dump(2) | safe -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
+  {%- set spliced = [] -%}
   
   <ul>
     {%- for rem in ignore -%}
