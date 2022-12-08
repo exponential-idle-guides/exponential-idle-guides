@@ -75,8 +75,13 @@ home: true
       <li>{{item}}</li>
       {% if item in ignore %}
         {% set ignore_index = (ignore_index.push(loop.index), ignore_index) %}
+      {% else %}
+        {% set spliced = (spliced.push(item), spliced) %}
       {% endif %}
-      <ul><li>{{ignore_index}}</li></ul>
+      <ul>
+        <li>{{ignore_index}}
+        <li>{{spliced}}
+      </ul>
     {% endfor %}
     {% for i in range(collect | length) %}
       <li>{{i}}</li>
