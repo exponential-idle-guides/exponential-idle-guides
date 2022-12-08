@@ -57,13 +57,15 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <p>{{ collections | keys | dump(2) | safe }}</p>
+  <p>{{ collections | keys | safe }}</p>
 
-  {%- set collect = collections | keys | dump(2) | safe -%}
+  {%- set collect = collections | keys | safe -%}
   {%- set ignore = ['all', 'extensions', 'guides'] -%}
   {%- set ignore_index = [] -%}
   {%- set spliced = [] -%}
   
+  <p>{{collect | length}}
+
   <ul>
     {%- for item in collect -%}
       <li>{{item}}</li>
