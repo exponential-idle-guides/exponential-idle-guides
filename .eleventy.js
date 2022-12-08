@@ -121,7 +121,9 @@ module.exports = config => {
   const tags = ['T1', 'T9'];
   tags.map((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
-      return collectionApi.getFilteredByTags('extensions', tag);
+      return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
+        return a.data.order - b.data.order;
+      });
     });
   });
 

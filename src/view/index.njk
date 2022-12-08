@@ -66,16 +66,7 @@ home: true
     {% endfor %}
   </ul>
 
-  <p>{{ collections | keys | dump(2) | safe }}</p>
-
-  
-
-  <ul>
-    {% for item in collect %}
-      <li>{{item}}
-    {% endfor %}
-  </ul>
-  
+  <p>{{ collections | keys | dump(2) | safe }}</p>  
 
   <h3>Other resources</h3>
   {% include "tools.njk" %}
