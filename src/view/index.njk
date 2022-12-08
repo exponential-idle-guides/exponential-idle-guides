@@ -60,7 +60,7 @@ home: true
   <p>{{ collections | keys | dump(2) | safe }}</p>
 
   {% set collect = [] %}
-  {% for tag, posts in collectins %}
+  {% for tag, posts in collections %}
     <p>tag: {{tag}}</p>
     {% if not(tag in collect) %}
       {% set collect = (collect.push(tag), collect) %}
