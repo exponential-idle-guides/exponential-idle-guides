@@ -68,6 +68,15 @@ home: true
       {%- set collect =  collect | replace(rem, '') -%}
       <ul><li>{{collect}}</li></ul>
     {%- endfor -%}
+    {%- for val in collect -%}
+      <li>{{val}}</li>
+      {%- if not (val = '') -%}
+        {%- set spliced = spliced.push(val, spliced) -%}
+      {%- endif -%}
+      <ul>
+        <li>{{spliced}}
+      </ul>
+    {%- endfor -%}
   </ul>
   
 
