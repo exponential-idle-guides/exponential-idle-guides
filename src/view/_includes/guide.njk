@@ -4,8 +4,10 @@
   {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
   {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
   
-  {% set previousPost = collections.extensions | getPreviousCollectionItem(page) %}
-  {% set nextPost = collections.extensions | getNextCollectionItem(page) %}
+  {% set previousPost = collections.extensions-T9+ | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.extensions-T9+ | getNextCollectionItem(page) %}
+  {% set previousPosta = collections.extensions-other | getPreviousCollectionItem(page) %}
+  {% set nextPosta = collections.extensions-other | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
@@ -20,6 +22,13 @@
     {% endif %}
     {% if nextPost %}
       <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
+    {% endif %}
+
+    {% if previousPosta %}
+      <a href="{{previousPosta.url}}">Previous: {{previousPosta.data.title}}</a>
+    {% endif %}
+    {% if nextPosta %}
+      <a href="{{nextPosta.url}}" class="pagination__next">Next: {{nextPosta.data.title}}</a>
     {% endif %}
   </nav>
 {% endset %}
