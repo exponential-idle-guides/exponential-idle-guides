@@ -42,7 +42,9 @@ home: true
     {% set collect = [] %}
     {% set ignore = ['all', 'extensions', 'guides'] %}
     {% for tag, posts in collections %}
-      {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect)) and not(tag in ignore) %}
+      <li>tag: {{tag}}, slice: {{tag.slice(0,4 - (tag | length))}}
+      {% if tag.slice(0,4 - (tag | length)) == 'ext-' and not(tag in collect or tag in ignore)%}
+        {#% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect) or tag in ignore) %#}
         {% set collect = (collect.push(tag), collect) %}
       {% endif %}
       <li>tag: {{tag}}, collect: [{{collect}}]
