@@ -72,7 +72,8 @@ home: true
   {% set ignore_index = [] %}
   {% set spliced = [] %}
   
-  <p>{{collect | length}}</p>
+  <p>length: {{collect | length}}</p>
+  <p>collect: {{collect}}</p>
 
   <ul>
     {% for item in collect %}
