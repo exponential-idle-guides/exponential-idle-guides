@@ -64,7 +64,7 @@ home: true
   
   <ul>
     {%- for rem in ignore -%}
-      {{collect | replace('all', '')}}
+      {{collect | replace(rem, '')}}
     {%- endfor -%}
   </ul>
   
