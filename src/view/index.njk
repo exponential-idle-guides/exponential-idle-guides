@@ -62,15 +62,8 @@ home: true
   {% set collect = [] %}
   {% set ignore = ['all', 'extensions', 'guides'] %}
   {% for tag, posts in collections %}
-    {% if not((tag in collect) or ((['ext-',tag] | join) in collect)) and not(tag in ignore) %}
-      {% if tag|length >=4 %}
-        {% if not(tag.slice(4,-4) in collect) %}
-          <li>{{tag.slice(4)}} then {{tag.slice(4)|first}}
-          {% set collect = (collect.push(tag), collect) %}
-        {% endif %}
-      {% else %}
-        {% set collect = (collect.push(tag), collect) %}
-      {% endif %}
+    {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or not((tag.slice(4) | join) in collect)) and not(tag in ignore) %}
+      {% set collect = (collect.push(tag), collect) %}
     {% endif %}
     <p>tag: {{tag}}, collect: {{collect}}</p>
   {% endfor %}
