@@ -4,8 +4,7 @@ description: "A guide on Exponential Idle Glossary and Terms"
 author: "Playspout"
 contributors: "the Amazing Community"
 draft: true
-order: 4
-tags: other
+order: 0
 ---
 
 ### Sigma

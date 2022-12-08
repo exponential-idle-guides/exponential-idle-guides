@@ -4,7 +4,7 @@ description: "Our guide for running the theory simulator and understanding the r
 author: "LE★Baldy, Snaeky, and Gaunter"
 contributors: "Antharion for the original simulator, Xelaroc for the dedicated continuation, XLII for the current simulator, and the many others whom have developed strategies"
 draft: true
-order: 7
+order: 8
 ---
 
 **This section will be updated to accommodate the new simulator and its features. Please read the link's instructions.**

@@ -4,7 +4,6 @@ description: "Introduction to the concept of distribution overpushing."
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 2
-tags: T9+
 ---
 
 ## What is distribution overpushing?

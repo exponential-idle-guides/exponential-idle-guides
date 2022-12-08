@@ -7,7 +7,8 @@ prose:
     - /src/scripts
     - /src/view/_includes
     - /src/view/guides/guides.json
-    - /src/view/guide-extensions/guide-extensions.json
+    - /src/view/ext-other/guide-extensions.json
+    - /src/view/ext-T9/guide-extensions.json
   metadata:
     src/view/guides:
       - name: "title"
@@ -34,7 +35,32 @@ prose:
         field:
           element: "text"
           label: "Contributors"
-    src/view/guide-extensions:
+    src/view/ext-other:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+    src/view/ext-T9:
       - name: "title"
         field:
           element: "text"
