@@ -37,7 +37,7 @@ home: true
   <ul>
     {% for tag, posts in collections %}
       {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
-        <li>{{ tag.slice(4) | capitalize }}+
+        <li>{{ tag.slice(4) | capitalize }}
         <ul>
           {% for guide in collections[tag] %}
             {{ list.linked(guide) }}
