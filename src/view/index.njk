@@ -50,10 +50,10 @@ home: true
       <li>tag: {{tag}}, collect: [{{collect}}]
     {% endfor %}
 
-    {% for pretag in collect %}
-      {% set tag = ['ext-',pretag] | join  %}
+    {% for tag in collect %}
+      
       {% if collections[tag] | length > 0 %}
-        <li>{{ pretag | capitalize }}+
+        <li>{{ tag.slice(4) | capitalize }}+
         <ul>
           {% for post in collections[tag] %}
             <li>
