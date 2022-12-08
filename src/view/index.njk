@@ -45,6 +45,7 @@ home: true
       {% if not((tag in collect) or ((['ext-',tag] | join) in collect) or (tag.slice(4) in collect)) and not(tag in ignore) %}
         {% set collect = (collect.push(tag), collect) %}
       {% endif %}
+      <li>tag: {{tag}}, collect: [{{collect}}]
     {% endfor %}
 
     {% for pretag in collect %}
