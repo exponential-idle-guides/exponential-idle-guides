@@ -63,6 +63,8 @@
         copyText.select();
         copyText.setSelectionRange(0,99999);
         window.alert(copyText.value)
+        
+        var retVal = document.execCommand("copy");
         navigator.clipboard
           .writeText(copyText.value)
           .then(() => {
@@ -74,6 +76,16 @@
 
         var tooltip = document.getElementById(id+"_Tooltip");
         tooltip.innerHTML = "Text copied to clipboard";
+      }
+
+      function copy(id="apple") {
+        let copyText = document.querySelector("#" + id + "_btn");
+        copyText.select();
+        document.execCommand("copy");
+      }
+
+      for (const id in ['apple']){
+        document.querySelector("#" + id).addEventListener("click", copy);
       }
 
       function hover_clipboard(id){
