@@ -118,18 +118,20 @@
       <h1 class="sidebartitle">Other Resources ⓧ</h1>
     </div>
     
-    <div id="sidebarNavigation">
-      <button id="button_nav" class="openbtn" onclick="Navigation('sidebarMain')">☰Navigation</button>
-    </div>
     <div id="sidebarMain">
-      <div>
-        <button id="button_guides" class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
+      <div id="sidebarNavigation">
+        <button id="button_nav" class="openbtn" onclick="Navigation('sidebarOptions')">☰Navigation</button>
       </div>
-      <div>
-        <button id="button_toc" class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
-      </div>
-      <div>
-        <button id="button_tools" class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other Resources</button>
+      <div id="sidebarOptions">
+        <div>
+          <button id="button_guides" class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
+        </div>
+        <div>
+          <button id="button_toc" class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+        </div>
+        <div>
+          <button id="button_tools" class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other Resources</button>
+        </div>
       </div>
     </div>
   {% endif %}
