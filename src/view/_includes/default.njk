@@ -47,7 +47,8 @@
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         
-        var Mobile = (new_class == 'mobile');
+        //var Mobile = (new_class == 'mobile');
+        window.Mobile = (new_class == 'mobile');
         if (Mobile){Mobile_Setup();}
 
         window.alert("Mobile: " + String(Mobile));
@@ -131,6 +132,7 @@
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
 
+        window.alert(Mobile);
         if (Mobile) {
           let btn_top = getComputedStyle(query_root).getPropertyValue('--btn-marginTop');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
