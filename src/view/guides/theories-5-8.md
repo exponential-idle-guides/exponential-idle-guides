@@ -78,7 +78,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
 ### Student routing with R9
 
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
-[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 seaping (below).
+[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 swapping (below).
 
 There is also the [theory simulator](https://theory-simulator.tredec.repl.co/) by XLII, which works both below max milestones and after max milestones for all theories.
 
@@ -99,11 +99,11 @@ still helps if you get used to it.
 
 #### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each seap.
+You can find the autoprestige used for R9 Swapping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each swap.
 
 ###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+{{ yt.embed('Klw9lLPNqdY') }}
 
 ### Theory 1
 
@@ -189,11 +189,11 @@ After autobuy at e30, you should repeat this after every publication:
 
 ###### Commentary
 
-{{ yt.embed('https://www.youtube.com/embed/AYI4U7Aob6o') }}
+{{ yt.embed('AYI4U7Aob6o') }}
 
 ###### No commentary
 
-{{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
+{{ yt.embed('pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and
@@ -251,24 +251,24 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 T6 has the lowest decay of all the theories. It will be second place to T5 until about e750 and is the only theory that can
 get to \\(>e1100τ\\). You should overnight this and T4 after you get your T2 to \\(e350+\\).
 
-At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane. 
-This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the 
-opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\), 
-this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and 
-\\(0\\) to \\(r\\) respectively. 
+At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane.
+This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the
+opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\),
+this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and
+\\(0\\) to \\(r\\) respectively.
 
-The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\) 
-upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is 
-slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus 
-\\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example, 
-lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will 
+The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\)
+upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is
+slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus
+\\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example,
+lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will
 be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(C\\) needs to be equal to \\(20\\).
 
 [Video of T6 at Endgame](https://bit.ly/t6endgame)
 
 #### T6 strategy
 
-The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone. 
+The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
 If you want an accurate multiplier, check with [the sim](https://theory-simulator.tredec.repl.co/).
 
 <table class="spqcey">
@@ -287,27 +287,27 @@ If you want an accurate multiplier, check with [the sim](https://theory-simulato
       <tr>
          <td class="leftHeader">1ρ-e7ρ</td>
          <td>Buy All</td>
-         <td>Buy All with q<sub><sub><small>1</small></sub></sub> at e1 difference</td>
+         <td>Buy All with q<sub><sub><small>1</small></sub></sub> bought at 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">e7ρ-e25ρ</td>
-         <td>Turn off c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> at c<sub><sub><small>3</small></sub></sub> purchase</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> when you unlock c<sub><sub><small>3</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> when 1/10 of q<sub><sub><small>2</small></sub></sub> cost and stop buying c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> when you unlock c<sub><sub><small>3</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e25ρ-e100ρ</td>
-         <td>Turn off c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> (and r<sub><sub><small>1</small></sub></sub> past e50) at e1 difference and stop buying c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> at c<sub><sub><small>4</small></sub></sub> purchase</td>
+         <td>Turn off c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> when you unlock c<sub><sub><small>4</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> (and r<sub><sub><small>1</small></sub></sub> past e50) when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and stop buying c<sub><sub><small>1</small></sub></sub>, c<sub><sub><small>2</small></sub></sub>, and c<sub><sub><small>3</small></sub></sub> when you unlock c<sub><sub><small>4</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e130ρ</td>
          <td>Turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
       </tr>
       <tr>
          <td class="leftHeader">e130ρ-e175ρ</td>
          <td>Turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> at e1 difference and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
       </tr>
    </tbody>
 </table>
@@ -399,7 +399,7 @@ The optimal publication multiplier is \\(4\\)-\\(6\\). You will swap from 0/1/1 
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
 cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
 
-{{ yt.embed('https://www.youtube.com/watch?v=wnKLkd0zXwI') }}
+{{ yt.embed('wnKLkd0zXwI') }}
 
 #### T7 milestone route
 
@@ -682,3 +682,95 @@ the rest after. This continues to max at 2/3/3/3.
 </table>
 
 Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
+
+#### Final Push to ee20k
+
+In general, you will need about e2050 \\(\tau\\) in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories \\(\tau\\) is as follows. Being above or below these values is fine, just as long as you have e2050 tau.
+
+#### Active
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e243 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e361 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e295 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e194 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e221 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e227 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e232 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>e277 τ</td>
+      </tr>
+   </tbody>
+</table>
+
+#### Idle
+
+<table class="newwords">
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th>Tau</th>
+         <th class="invisible"></th>
+         <th class="invisible"></th>
+         <th>Tau</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">T1</td>
+         <td>e237 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T5</td>
+         <td>e360 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T2</td>
+         <td>e290 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T6</td>
+         <td>e204 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T3</td>
+         <td>e221 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T7</td>
+         <td>e235 τ</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">T4</td>
+         <td>e227 τ</td>
+         <th class="invisible"></th>
+         <td class="leftHeader">T8</td>
+         <td>e276 τ</td>
+      </tr>
+   </tbody>
+</table>

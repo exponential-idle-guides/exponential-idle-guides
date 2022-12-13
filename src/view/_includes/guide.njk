@@ -3,6 +3,9 @@
 {% set nav %}
   {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
   {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
+  
+  {% set previousPost = collections.extensions | getPreviousCollectionItem(page) %}
+  {% set nextPost = collections.extensions | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
@@ -10,6 +13,13 @@
     {% endif %}
     {% if nextGuide %}
       <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
+    {% endif %}
+    
+    {% if previousPost %}
+      <a href="{{previousPost.url}}">Previous: {{previousPost.data.title}}</a>
+    {% endif %}
+    {% if nextPost %}
+      <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
     {% endif %}
   </nav>
 {% endset %}
@@ -107,6 +117,33 @@
         {% include 'tools.njk' %}
       </div>
     </div>
+    
+    <div id="ExtensionsSidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guide Extensions</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.extensions -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div id="ExtensionsSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guide Extensions</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.extensions -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
 
     
     <div id="SidebarHeaders" class="sidebar">
@@ -121,13 +158,16 @@
       </div>
       <div id="sidebarOptions">
         <div>
-          <button id="button_guides" class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar'],'SidebarHeaders')">☰More Guides</button>
+          <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰More Guides</button>
         </div>
         <div>
-          <button id="button_toc" class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+          <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
         </div>
         <div>
-          <button id="button_tools" class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Other <span style="display:inline-block;">Resources</span></button>
+          <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Other Resources</button>
+        </div>
+        <div>
+          <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
         </div>
       </div>
     </div>

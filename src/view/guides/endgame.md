@@ -33,6 +33,8 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
+{{ yt.embed('d7mWhOkD7TM') }}
+
 ###### Also see [t stacking](https://exponential-idle-guides.netlify.app/guides/endgame/#t-stacking)
 
 #### R9 autoprestige expression
@@ -41,7 +43,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('https://youtube.com/embed/c8ekMzXWD_g') }}
+{{ yt.embed('c8ekMzXWD_g') }}
 
 ### How to properly use the Graduation Calculator
 
@@ -76,11 +78,11 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 ###### Commentary
 
-{{ yt.embed('https://www.youtube.com/embed/AYI4U7Aob6o') }}
+{{ yt.embed('AYI4U7Aob6o') }}
 
 ###### No commentary
 
-{{ yt.embed('https://www.youtube.com/embed/pM-pjSnMByw') }}
+{{ yt.embed('pM-pjSnMByw') }}
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and manually
@@ -94,11 +96,11 @@ Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{1.1}\\).
 
 Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
-### t Stacking
+### t stacking
 
 A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\varphi\\) due to additional \\(dt\\) and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
 
-### Skipped Students Routing
+### Skipped students routing
 
 Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 

@@ -1,8 +1,8 @@
 Guides for [Exponential Idle](https://conicgames.github.io/exponentialidle/)
 hosted at [https://exponential-idle-guides.netlify.app/](https://exponential-idle-guides.netlify.app/).
 
-The guide's content has been written by Snaeky and LE⭐Baldy with
-contributions from the Exponential Idle community. The website
+The guide's content has been written by [Snaeky](https://github.com/Snaeks) and [LE⭐Baldy](https://github.com/LEBaldy) with
+contributions from the Exponential Idle community and the rest of the [Exponential Idle Guides Team](https://github.com/orgs/exponential-idle-guides/people). The website
 was created by [TickleThePanda](https://ticklethepanda.dev).
 
 The site is built using [11ty](https://www.11ty.dev) and hosted on
@@ -16,7 +16,7 @@ Pre-requisites to build and develop this site:
  - Install [Node](https://nodejs.org/en/)
  - Add Node to your PATH
 
-### Building
+### Building 
 
 To build to website, run:
 ```

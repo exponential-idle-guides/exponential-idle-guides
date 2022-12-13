@@ -3,7 +3,7 @@ title: "Theory Strategies Explained"
 description: "Our guide for comprehension of what each theory strategy means."
 author: "spqcey"
 contributors: "everyone who has innovated new strategies and the Amazing Community"
-draft: true
+draft: false
 order: 8
 ---
 
@@ -12,11 +12,11 @@ order: 8
 The theory sim we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
 ## Modulus Explanation
-A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br />So, <br />
-13 % 10 = 3<br />
-21 % 10 = 1<br />
-20 % 10 = 0<br />
-Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br />
+A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br>So, <br>
+13 % 10 = 3<br>
+21 % 10 = 1<br>
+20 % 10 = 0<br>
+Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br>
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 ## List of Strategies
@@ -37,9 +37,11 @@ T1 is one of the theories that benefit the most from active strategies. T1<span 
 
 <span class="h3-fake">Theory 2: Differential Calculus</span>
 
-T2 is the only theory without an active strategy, despite attempts.
+T2 is the only theory without an active strategy after all milestones are bought, despite attempts.
 
 - [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
+
+- [T2<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2ms)&nbsp; — &nbsp;Active
 
 - [T2<span style="color:#41AD21">Coast-X%</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
 
@@ -185,7 +187,7 @@ T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of
 <span class="h3-fake">Theory 8: Chaos Theory</span>
 
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
-T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br />
+T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br>
 Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
@@ -255,12 +257,12 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
-- [CSR2<span style="color:#41AD21">XLx.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<span style="color:#41AD21">XL x.xx</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
 - [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
 - [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
-<br /> <br />
+<br> <br>
 
 <span class="h2-fake">Official Theories</span>
 
@@ -282,7 +284,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost <br /> And q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost <br /> And ρ > 5 × cost</td>
+         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost <br> And q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost <br> And ρ > 5 × cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -310,21 +312,11 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
          <td>✔️</td>
          <td>❌</td>
       </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When cost is ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
    </tbody>
 </table>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br />
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br>
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
@@ -362,15 +354,17 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
+
+**Do not buy \\(c_1\\) or \\(c_2\\) after e300\\(\rho\\).** <br><br>
 
 **For the \\(c_2\\) Ratio:**
 
 ![\\(c_2\\) Ratio](/images/t1ratioc2ratio.png)
-<br /> <br />
+<br> <br>
 
 **For the \\(c_3\\) Ratio:**
-<br /> <br />
+<br> <br>
 
 <table class="spqcey">
 <thead>
@@ -400,7 +394,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - XLII
@@ -561,9 +555,16 @@ Strategy Credits:
 
 Strategy Credits:
 - rus9384#1864
-- XLII, whose theory simulator was used to develop and test this strategy. <br />
+- XLII, whose theory simulator was used to develop and test this strategy. <br>
 
 The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+
+### T2<span style="color:#41AD21">MS</span>
+
+<br><br>
+
+**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
+
 ### T2<span style="color:#41AD21">Coast-X%</span>
 <table class="spqcey">
 <thead>
@@ -621,7 +622,7 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
    </tbody>
 </table>
 
-If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br /> <br />
+If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br> <br>
 We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc) instead of this strategy.
 
 ### T2
@@ -771,7 +772,7 @@ We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential
    </tbody>
 </table>
 
-<br /><br />
+<br><br>
 
 Strategy Credits:
 - Playspout for creating this strategy.
@@ -780,7 +781,7 @@ Strategy Credits:
 - rus9384#1864 for changing phase 3 start from pub mult 1 to pub mult 1.2, and changing phase 4 start from 2 to 2.4
 - XLII, whose sim was used by rus to test T3</span><span style="color:#41AD21">Play2</span> modifications, including the one stated above.
 
-<br /> <br />
+<br> <br>
 
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
@@ -915,7 +916,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When cost × 100 < ρ<sub><sub><small>2</small></sub></sub> (autobuy c<sub><sub><small>12</small></sub></sub> <br />also works, is a bit slower)</td>
+         <td>When cost × 100 < ρ<sub><sub><small>2</small></sub></sub> (autobuy c<sub><sub><small>12</small></sub></sub> <br>also works, is a bit slower)</td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -996,7 +997,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When e2 below ρ<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is 1/100 of ρ<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -1040,8 +1041,8 @@ Strategy Credits:
 Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
-<br /> <br />
-Designed to be easily compatible with current versions of QoL.<br /> <br />
+<br> <br>
+It is designed to be an easier version of current t3 strategies.<br> <br>
 This is the only active SNAX strategy.
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
@@ -1848,10 +1849,10 @@ Strategy Credits:
    </tbody>
 </table>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br />The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br>The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br><br>
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br /> <br />
+The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br> <br>
 
 Strategy Credits:
 - XLII
@@ -1957,7 +1958,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-<br /><br />
+<br><br>
 
 Strategy Credits:
 - Snaeky
@@ -2534,9 +2535,9 @@ This active strategy does not work well with this method of showing theory strat
 </table>
 
 **IMPORTANT:**
-Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br /> <br />
+Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br> <br>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br /> <br />
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credit:
 - XLII
@@ -2602,7 +2603,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>As the publication progresses, buy less and <br />less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
+         <td>As the publication progresses, buy less and <br>less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
@@ -2619,7 +2620,7 @@ Strategy Credit:
    </tbody>
 </table>
 
-<br />
+<br>
 
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
@@ -2686,7 +2687,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    </tbody>
 </table>
 
-The “x.xxexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br /> <br />
+The “x.xxexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credits:
 - Snaeky
@@ -2830,6 +2831,12 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
+<br><br>
+
+
+**Note:**
+If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at e1 ratio the entire publication.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
 <table class="spqcey">
@@ -3224,13 +3231,13 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-<br />
+<br>
 
-While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought.<br />
-**Regardless of the "X" value, the \\(c_1\\) buying condition remains "When cost is 1/10 of \\(c_2\\) cost"**<br /> <br />
+While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought.<br>
+**Regardless of the "X" value, the \\(c_1\\) buying condition remains "When cost is 1/10 of \\(c_2\\) cost"**<br> <br>
 
-The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br /> <br />
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br> <br>
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 Strategy Credits:
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
@@ -3275,10 +3282,10 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
 T7<span style="color:#41AD21">Play-25</span> has a “25” due to the two 25% (¼) ratios
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - Playspout
@@ -3636,7 +3643,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br /> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3657,10 +3664,10 @@ Strategy Credits:
    </tbody>
 </table>
 
-**Milestone Swap:**<br />
+**Milestone Swap:**<br>
 Every 34 seconds, remove one level from the first milestone then immediately add the level back.
-<br /> <br />
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+<br> <br>
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 Strategy Credits:
 - Playspout for the variable buying strategy
 - Solarion for the milestone swap idea
@@ -3695,10 +3702,10 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
 <!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
-<br /> <br />
+<br> <br>
 Strategy Credits:
 - Playspout
 
@@ -3750,7 +3757,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-<br /><br />
+<br><br>
 
 Strategy Credits:
 - Snaeky
@@ -3765,7 +3772,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br /> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -3785,9 +3792,9 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>
 <table class="spqcey">
@@ -3878,7 +3885,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 <table class="spqcey">
@@ -3999,7 +4006,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
 <span class="h2-fake">Official Custom Theories</span>
 
@@ -4026,7 +4033,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>Stop buying a few seconds into a<br />publication (or do e5 difference at lower ρ)</td>
+         <td>Stop buying a few seconds into a<br>publication (or do e5 difference at lower ρ)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4034,7 +4041,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - xelaroc
@@ -4080,13 +4087,13 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
 
-<br />
+<br>
 
 <table class="spqcey">
 <thead>
@@ -4120,7 +4127,7 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - xelaroc for testing/creating the strategy
@@ -4148,7 +4155,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost<br />(recommended to stop buying before this)</td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost<br>(recommended to stop buying before this)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4156,7 +4163,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - xelaroc
@@ -4193,7 +4200,7 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
-         <td>If ρ < e450, ✔️<br />If ρ > e450, ❌</td>
+         <td>If ρ < e450, ✔️<br>If ρ > e450, ❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4202,7 +4209,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - xelaroc for simulating it/adding it to the sim
@@ -4212,36 +4219,36 @@ Strategy Credits:
 ## Sequential Limits
 
 ### SL<span style="color:#41AD21">MS</span>
-<br />
+<br>
 
 **Milestone Swap:**
 
 The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone. <br /><br />
+For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone. <br><br>
 
-There are 3 milestone states:<br />
+There are 3 milestone states:<br>
 
-**State 1**: 4→3→1→2 (prioritizes boost for the \\(e-\gamma\\) term)<br />
+**State 1**: 4→3→1→2 (prioritizes boost for the \\(e-\gamma\\) term)<br>
 
-**State 2**: 2→1→4→3 (prioritizes boost for \\(\dot\rho_2\\)) <br />
+**State 2**: 2→1→4→3 (prioritizes boost for \\(\dot\rho_2\\)) <br>
 
-**State 3**: 1→2→4→3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br /><br />
+**State 3**: 1→2→4→3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br><br>
 
-This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br /><br />
+This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br><br>
 
 The goal of this strategy is:
 1. Buy \\(b_1\\)/\\(b_2\\)
 2. Swap milestones into State 1 to fully utilize the boost from the new \\(b_1\\)/\\(b_2\\) upgrade.
 3. After some time (the exact amount of time will be described later in the strategy), we want to swap to State 2. This way we boost \\(\dot\rho_2\\) so we get more \\(\rho_2\\) quicker.
 4. When we are closer to the next \\(b_1\\)/\\(b_2\\) upgrade, swap to State 3 so we utilize the boost that we just got for \\(\rho_2\\). This will get us to the next \\(b_1\\)/\\(b_2\\) upgrade a lot quicker.
-5. Repeat.<br /><br />
+5. Repeat.<br><br>
 
 This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50\\(\rho\\)-e300\\(\rho\\). This means there can be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publishing. <br /><br />
+At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publishing. <br><br>
 
-As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br /><br />
+As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br><br>
 
-**Note: <span style="color:var(--palette-stroke-warning)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br /><br />
+**Note: <span style="color:var(--palette-stroke-warning)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br><br>
 
 The ratios for swapping are as follows, where you enter the next state when the ratio: \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
 
@@ -4309,19 +4316,19 @@ The ratios for swapping are as follows, where you enter the next state when the 
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
-**cost** in the table refers to minimum(\\(b_1\\) cost, \\(b_2\\) cost) <br /><br />
+**cost** in the table refers to minimum(\\(b_1\\) cost, \\(b_2\\) cost) <br><br>
 
-This may seem confusing, but let's take the first row as an example.<br /><br />
-In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
-Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br />
-After that, swap to State 3 until you get the upgrade.<br /><br />
+This may seem confusing, but let's take the first row as an example.<br><br>
+In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br>
+Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br>
+After that, swap to State 3 until you get the upgrade.<br><br>
 
-**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br /><br />
-The numbers are just important to give the idea for around where you want to swap.<br />
-e.g. in e200\\(\rho\\)+ range, you only want to swap when close to next \\(b_1\\)/\\(b_2\\). and e75-e150\\(\rho\\) you swap very early.<br />
-These numbers also tell you that you never want to be in State 2 for a long time.<br /><br /><br />
+**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br><br>
+The numbers are just important to give the idea for around where you want to swap.<br>
+e.g. in e200\\(\rho\\)+ range, you only want to swap when close to next \\(b_1\\)/\\(b_2\\). and e75-e150\\(\rho\\) you swap very early.<br>
+These numbers also tell you that you never want to be in State 2 for a long time.<br><br><br>
 
 **Variable Buying**
 
@@ -4365,13 +4372,13 @@ These numbers also tell you that you never want to be in State 2 for a long time
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credit:
 - XLII
 
 ### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
-<br />
+<br>
 
 **For the milestone swapping details, read the above strategy, [SLMS](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms). This strategy only modifies the variable buying strategies.**
 
@@ -4391,7 +4398,7 @@ Strategy Credit:
      </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br />If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br>If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
          <td>❌</td>
       </tr>
@@ -4403,8 +4410,8 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br />If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br />If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -4415,9 +4422,9 @@ Strategy Credit:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 Strategy Credit:
 - XLII
@@ -4439,7 +4446,7 @@ Strategy Credit:
      </tr>
       <tr>
          <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br />If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br>If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
          <td>❌</td>
       </tr>
@@ -4451,8 +4458,8 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br />If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br />If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -4463,12 +4470,12 @@ Strategy Credit:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>.
-<br /> <br />
+<br> <br>
 Strategy Credits:
 - xelaroc
 - Playspout
@@ -4516,7 +4523,7 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - xelaroc
@@ -4591,14 +4598,13 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br /> <br />
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br /> <br />
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br> <br>
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br><br>
 
 Strategy Credits:
-- XLII
-- Playspout
+- The Amazing Community (EF<span style="color:#41AD21">AI</span> is a product of a bunch of ideas from various players)
 
 ### EF<span style="color:#41AD21">SNAX</span>
 <table class="spqcey">
@@ -4666,13 +4672,13 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br /> <br />
+<br> <br>
 
 Strategy Credits:
 - Snaeky
 - XLII
 - Gaunter for buying \\(a_1\\) after recovery when past e150\\(\rho\\) strategy
-<br /> <br />
+<br> <br>
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
 ### EF<span style="color:#41AD21">d</span>
@@ -4777,12 +4783,12 @@ Strategy Credits:
 
 ## Convergents to √2
 
-### CSR2<span style="color:#41AD21">XLx.xx</span>
+### CSR2<span style="color:#41AD21">XL x.xx</span>
 <table class="spqcey">
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">CSR2XLx.xx</th>
+      <th colspan="2" style="text-align:center">CSR2XL x.xx</th>
    </tr>
 </thead>
    <tbody>
@@ -4798,7 +4804,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either n or c<sub><sub><small>2</small></sub></sub>, <br />prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
+         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either n or c<sub><sub><small>2</small></sub></sub>, <br>prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
          <td>❌</td>
       </tr>
       <tr>
@@ -4818,16 +4824,16 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br />
+<br>
 
-The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CSR2<span style="color:#41AD21">XL2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br />
+The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CSR2<span style="color:#41AD21">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
 
-**Milestone Swap (pre e500\\(\rho\\))**<br />
-Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br />
+**Milestone Swap (pre e500\\(\rho\\))**<br>
+Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br>
 Swap to \\(q_1\\) exponent when one of these is true:
 - \\(\rho\\) × Ratio > \\(c_2\\) cost
 - \\(\rho\\) × \\(\frac{Ratio}{2}\\) > \\(n\\) cost
-- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1<br />							
+- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1<br>							
 Follow the sim’s advice for when to start coasting.
 
 The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
@@ -4840,7 +4846,7 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
    <tbody>
       <tr>
          <td class="leftHeader">ρ < e45</td>
-         <td>Couldn't find any good ratio here, just swap<br />when you are very close to the upgrade. - XLII</td>
+         <td>Couldn't find any good ratio here, just swap<br>when you are very close to the upgrade. - XLII</td>
       </tr>
       <tr>
          <td class="leftHeader">e45 < ρ < e80</td>
@@ -4861,7 +4867,7 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
    </tbody>
 </table>
 
-<br /> <br />
+<br> <br>
 Strategy Credits:
 - XLII
 
