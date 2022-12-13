@@ -149,29 +149,30 @@
       }
 
       function CloseSidebar(){
-        let attr_list = ['sidebar-width', 'btn-marginLeft', 'sidebar-padding-lr'];
+        attr_list = ['sidebar-width', 'btn-marginLeft', 'sidebar-padding-lr'];
         
         if (Mobile){
           query_root.style.setProperty('--sidebar-transition-time', '0.5s');
           query_root.style.setProperty('--sidebar-text-transition-time', '0.3s');
-          let attr_list = ['sidebar-height', 'btn-marginTop', 'sidebar-padding-b'];
+          attr_list = ['sidebar-height', 'btn-marginTop', 'sidebar-padding-b'];
         }
         
         attr_list.push('sidebar-content-padding');
+
+        window.alert(attr_list);
         for (const attr in attr_list){
           query_root.style.setProperty('--'+attr, "0%");
         }
         var curr_sidebar='none';
+        window.alert("Sidebars Closed");
         return
       }
 
       function testSidebar(btn_list, sidebar_list, e){
         bool = true;
-        window.alert("btn_list: " + String(btn_list) + "\nsidebar_list: " + String(sidebar_list));
         for(const btn of btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
-            window.alert(String(bool) + ' button: ' + String(btn) + ' , ' + String(close_btn_list));
             break;
           }
         }
@@ -181,7 +182,6 @@
           for(const sidebars of sidebar_list){
             if (document.getElementById(sidebars).contains(e.target)==true){
               bool = true;
-              window.alert(String(bool) + ' sidebar: ' + String(sidebars) + ' , ' + String(sidebar_list));
               break;
             }
           }
@@ -206,7 +206,7 @@
 
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
           sidebar_bool = testSidebar(close_btn_list, sidebar_list, e);
-          window.alert(sidebar_bool);
+          window.alert("CloseSidebar bool: " + String(sidebar_bool));
           if(sidebar_bool){CloseSidebar();}
         }
       })
