@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-	font-size: max(75%, 60% + 1.5vmin);
+	--font-size:max(75%, 60% + 1.5vmin);
+	font-size: var(--font-size);
 	--body-line-height: 1.4;
 
 	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
+}
+
+:root.mobile {
+	--font-size:max(60%, 48% + 1.2vmin);
+	font-size: var(--font-size);
+	--body-line-height: 1.12;
 }
 
 p {

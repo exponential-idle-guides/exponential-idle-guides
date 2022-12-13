@@ -1,14 +1,48 @@
 :root{
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
-  --sidebar-padding:0%;
+  --sidebar-padding-lr:0%;
+  --sidebar-padding-b:0%;
+
+  --btn-marginLeft:0%;
+  --btn-marginTop:0%;
+  --btn-paddingLeft:0%;
+  --btn-paddingRight:0%;
+  --btn-padding:min(2vh, 15px) min(3vw, 20px);
+
+  --sidebar-height:100%;
   --sidebar-width:0%;
-  --btn-marginLeft-width:0%;
-  --sidebar-content-padding:8px;
+  --sidebar-column-gap:0;
+  --sidebar-column-count:1;
+  --sidebar-desktop-max-width:0.26;
+
+  --sidebar-content-padding:0px;
   --sidebar-header-font-size:1.5em;
+  --sidebar-transition-direction:margin-left;
+
+  --sidebar-column-count:3;
+  --sidebar-column-gap:5vw;
 }
+
+:root.mobile {
+  --sidebar-height:0%;
+  --sidebar-width:96%;
+  --sidebar-padding-lr:2%;
+  --sidebar-column-gap:3vw;
+  --sidebar-column-count:2;
+  --sidebar-transition-direction:margin-top;
+}
+
+:root.desktop {
+  --sidebar-height:100%;
+  --sidebar-width:0%;
+  --sidebar-column-gap:0;
+  --sidebar-column-count:1;
+  --sidebar-transition-direction:margin-left;
+}
+
 .sidebar {
-  height: 100%;
+  height: var(--sidebar-height);
   width:var(--sidebar-width);
   position: fixed;
   top: 0;
@@ -19,8 +53,9 @@
   overflow-y:scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
-  padding-left: var(--sidebar-padding);
-  padding-right: var(--sidebar-padding);
+  padding-left: var(--sidebar-padding-lr);
+  padding-right: var(--sidebar-padding-lr);
+  padding-bottom: var(--sidebar-padding-b);
 }
 .sidebar::-webkit-scrollbar {
   display:none;
@@ -48,7 +83,7 @@
   top: min(3.5vh, 3.5vw, 20px);
   font-size: var(--sidebar-header-font-size);
   color: var(--palette-stroke-sidebar-header-hover);
-  padding-top:0px;
+  padding-top: 0px;
   padding: 0;
   margin-top: min(3.5vh, 3.5vw, 20px);
   transition: var(--sidebar-text-transition-time);
@@ -67,12 +102,12 @@
 }
 
 .openbtn {
-  max-width:20vw;
+  max-width: 20vw;
   font-size: 1.2em;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
   color: var(--palette-stroke-sidebar-base);
-  padding: min(2vh, 15px) min(3vw, 20px);
+  padding: var(--btn-padding);
   border: none;
   word-wrap:normal;
   text-align:left;
@@ -82,13 +117,15 @@
   background-color: var(--palette-fill-sidebar-hover);
 }
 
-#sidebarmain {
-  width:auto;
-  position:fixed;
-  transition: margin-left var(--sidebar-transition-time);
-  margin-left:var(--btn-marginLeft-width);
+#sidebarMain {
+  width: auto;
+  position: fixed;
+  transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
+  margin-left: var(--btn-marginLeft);
+  margin-top: var(--btn-marginTop);
   z-index: 100;
 }
+#sidebarOptions {display:none;}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -104,14 +141,45 @@
 .square_list li::before {
     content: '■';
     position: absolute;
-    left: -0.8em;
-    top: -0.3em;
-    font-size: 1.2em;
+    left: -0.8rem;
+    top: -0.2rem;
+    font-size: 1.2rem;
 }
 .square_list li li::before {
     content: '❖';
     position: absolute;
-    left: -0.8em;
-    top: -0.1em;
-    font-size: 1.2em;
+    left: -1.2rem;
+    top: -0.1rem;
+    font-size: 1.2rem;
+}
+
+.square_list ul, .square_list ol{
+  -webkit-column-count: var(--sidebar-column-count);
+  -webkit-column-gap: var(--sidebar-column-gap);
+
+  -moz-column-count:var(--sidebar-column-count);
+  -moz-column-gap: var(--sidebar-column-gap);
+
+  -o-column-count: var(--sidebar-column-count); 
+  -o-column-gap: var(--sidebar-column-gap);
+
+  column-count: var(--sidebar-column-count);
+  column-gap: var(--sidebar-column-gap);
+
+  list-style-position: inside;
+}
+.square_list ul ul, .square_list ol ol{
+  -webkit-column-count: 1;
+  -webkit-column-gap: 0;
+
+  -moz-column-count: 1;
+  -moz-column-gap: 0;
+
+  -o-column-count: 1; 
+  -o-column-gap: 0;
+
+  column-count: 1;
+  column-gap: 0;
+
+  list-style-position: inside;
 }

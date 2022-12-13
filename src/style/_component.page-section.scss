@@ -1,7 +1,17 @@
+:root {
+	--section-max-width:60vw;
+}
+:root.mobile {
+	--section-max-width:90vw;
+}
+:root.desktop {
+	--section-max-width:60vw;
+}
+
 .page-section {
 	box-sizing: border-box;
 	max-width: 100%;
-	width: 60vw;
+	width: var(--section-max-width);
 	padding-left: 1rem;
 	padding-right: 1rem;
 	margin: auto;
