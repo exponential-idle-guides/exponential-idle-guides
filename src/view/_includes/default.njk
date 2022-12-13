@@ -138,12 +138,12 @@
         background = query.getPropertyValue('--palette-fill-sidebar');
         stroke = query.getPropertyValue('--palette-stroke-sidebar-base');
         if (Navbar) {
-          nav.backgroundColor = stroke;
-          nav.color = background;
-          document.getElementById(nav_id).style.display = "none";
-        } else {
           nav.backgroundColor = background;
           nav.color = stroke;
+          document.getElementById(nav_id).style.display = "none";
+        } else {
+          nav.backgroundColor = stroke;
+          nav.color = background;
           document.getElementById(nav_id).style.display = "block";
         }
         window.Navbar = !Navbar;
