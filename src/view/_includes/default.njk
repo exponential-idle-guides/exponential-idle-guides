@@ -58,6 +58,21 @@
         Set_Device("desktop","mobile");
       }
 
+      function copy_to_clipboard(id){
+        var copyText = document.getElementById(id);
+        copyText.select();
+        copyText.setSelectionRange(0,99999);
+        navigator.clipboard.writeText(copyText.value);
+
+        var tooltip = document.getElementById(id+"Tooltip");
+        tooltip.innerHTML = "Text copied to clipboard";
+      }
+
+      function hover_clipboard(id){
+        var tooltip = document.getElementById(id);
+        tooltip.innerHTML = "Copy to clipboard";
+      }
+
       function openMobileSidebars(sidebars, sidebarheaders, open_bool){
         curr_sidebar = sidebars[0];
         query_root.style.setProperty('--sidebar-content-padding', '8px');
