@@ -1,4 +1,4 @@
-b---
+---
 title: "1 to ee2000"
 author: "LE★Baldy"
 contributors: "The Amazing Community"
@@ -141,7 +141,13 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
 <br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
-<button onclick="copy_to_clipboard('autoprestigeEquation')" onmouseout="hover_clipboard()>
+<button onclick="copy_to_clipboard('autoprestigeEquation')" onmouseout="hover_clipboard()">
+  <span class="tooltip_text" id="autoprestigeEquation_Toolip">Copy to clipboard</span>
+  Copy Text
+</button>
+
+<input id="autoprestigeEquation">Hello World</input>
+<button onclick="copy_to_clipboard('autoprestigeEquation')" onmouseout="hover_clipboard()">
   <span class="tooltip_text" id="autoprestigeEquation_Toolip">Copy to clipboard</span>
   Copy Text
 </button>
