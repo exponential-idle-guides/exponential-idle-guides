@@ -148,13 +148,16 @@
       }
 
       function Navigation(nav_id){
+        nav = document.getElementById('button_nav').style
+        background = getComputedStyle(query_root).getPropertyValue('--palette-fill-sidebar');
+        stroke = getComputedStyle(query_root).getPropertyValue('--palette-stroke-sidebar-base');
         if (Navbar) {
-          document.getElementById('button_nav').style.color = getComputedStyle(query_root).getPropertyValue('--palette-fill-sidebar');
-          document.getElementById('button_nav').style.backgroundColor = getComputedStyle(query_root).getPropertyValue('--palette-stroke-sidebar-base');
+          nav.backgroundColor = stroke;
+          nav.color = background;
           document.getElementById(nav_id).style.display = "none";
         } else {
-          document.getElementById('button_nav').style.backgroundColor = getComputedStyle(query_root).getPropertyValue('--palette-fill-sidebar');
-          document.getElementById('button_nav').style.color = getComputedStyle(query_root).getPropertyValue('--palette-stroke-sidebar-base');
+          nav.color = background;
+          nav.backgroundColor = stroke;
           document.getElementById(nav_id).style.display = "block";
         }
         window.Navbar = !Navbar;
