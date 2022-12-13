@@ -167,6 +167,7 @@
 
       function testSidebar(btn_list, sidebar_list){
         bool = true;
+        window.alert("btn_list: " + String(btn_list) + "\nsidebar_list: " + String(sidebar_list));
         for(const btn of btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
@@ -174,6 +175,7 @@
             break;
           }
         }
+        window.alert("btn_list results: " + String(bool));
         if(bool) {
           bool=false
           for(const sidebars of sidebar_list){
@@ -190,24 +192,16 @@
 
       window.addEventListener('click', function(e){
         sidebar=0;sidebar_attr=0;sidebar_root='';
-        window.alert("enter click: " + String(Mobile));
         if (Mobile){
           sidebar = document.getElementById(curr_sidebar).offsetHeight;
-          window.alert("sidebar: " + String(sidebar));
           sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]);
-          window.alert("sidebar_attr: " + String(sidebar_attr));
           sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
-          window.alert("sidebar_root: " + String(sidebar_root));
         } else {
           sidebar = Math.round(document.getElementById("HeaderSidebar").offsetWidth - window.visualViewport.width * 0.04);
-          window.alert("sidebar: " + String(sidebar));
           sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]);
-          window.alert("sidebar_attr: " + String(sidebar_attr));
           sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
-          window.alert("sidebar_root: " + String(sidebar_root));
         }
-        window.alert("if out");
-        window.alert(String(sidebar >= sidebar_attr) + " && " + String(sidebar_root != "0%"));
+        window.alert("Close Listener: " + String(sidebar >= sidebar_attr) + " && " + String(sidebar_root != "0%"));
 
 
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
