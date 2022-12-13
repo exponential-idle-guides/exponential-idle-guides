@@ -148,11 +148,13 @@
       }
 
       function Navigation(nav_id){
+        window.alert(Navbar);
         if (Navbar) {
           document.getElementById('sidebarMain').style.display = "none";
         } else {
           document.getElementById('sidebarMain').style.display = "block";
         }
+        window.Navbar = !Navbar;
         return
       }
 
