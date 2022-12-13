@@ -50,7 +50,7 @@
         var Mobile = (new_class == 'mobile');
         if (Mobile){Mobile_Setup();}
 
-        window.alert(Mobile);
+        window.alert("Mobile: " + String(Mobile));
       }
 
       if (navigator.userAgentData.mobile) {
@@ -185,12 +185,11 @@
           }
         }
         window.alert('Click Bool: ' + String(bool));
-        if(!bool){
-          CloseSidebar();
-        }
+        return (!bool)
       }
 
       window.addEventListener('click', function(e){
+        window.alert("enter click: " + String(Mobile));
         if (Mobile){
           let sidebar = document.getElementById(curr_sidebar).offsetHeight;
           let sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]);
@@ -201,10 +200,10 @@
           let sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
         }
 
-        window.alert((sidebar >= sidebar_attr) && (sidebar_root != "0%"));
+        window.alert(String((sidebar >= sidebar_attr) && (sidebar_root != "0%")));
 
         if ((sidebar >= sidebar_attr) && (sidebar_root != "0%")) {
-          testSidebar();
+          if(testSidebar()){CloseSidebar();}
         }
       })
 
