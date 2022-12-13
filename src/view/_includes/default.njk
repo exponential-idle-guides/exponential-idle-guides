@@ -78,14 +78,14 @@
         tooltip.innerHTML = "Text copied to clipboard";
       }
 
-      function copy(id="apple") {
-        let copyText = document.querySelector("#" + id + "_btn");
+      function copy() {
+        let copyText = document.querySelector("#apple");
         copyText.select();
         document.execCommand("copy");
       }
 
       for (const id in ['apple']){
-        document.querySelector("#" + id).addEventListener("click", copy);
+        document.querySelector("#" + id + "_btn").addEventListener("click", copy);
       }
 
       function hover_clipboard(id){
