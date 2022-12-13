@@ -205,9 +205,9 @@
 
 
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
-          sidebar_bool = testSidebar();
+          sidebar_bool = testSidebar(close_btn_list, sidebar_list);
           window.alert(sidebar_bool);
-          if(sidebar_bool){CloseSidebar(close_btn_list, sidebar_list);}
+          if(sidebar_bool){CloseSidebar();}
         }
       })
 
