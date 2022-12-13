@@ -169,6 +169,7 @@
         bool = true;
         window.alert("btn_list: " + String(btn_list) + "\nsidebar_list: " + String(sidebar_list));
         for(const btn of btn_list){
+          window.alert(String(btn));
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
             window.alert(String(bool) + ' button: ' + String(btn) + ' , ' + String(close_btn_list));
@@ -179,6 +180,7 @@
         if(bool) {
           bool=false
           for(const sidebars of sidebar_list){
+            window.alert(String(sidebars));
             if (document.getElementById(sidebars).contains(e.target)==true){
               bool = true;
               window.alert(String(bool) + ' sidebar: ' + String(sidebars) + ' , ' + String(sidebar_list));
