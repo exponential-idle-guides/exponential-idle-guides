@@ -206,11 +206,14 @@
           window.alert("sidebar_root: " + String(sidebar_root));
         }
         window.alert("if out");
+        window.alert(sidebar >= sidebar_attr);
+        window.alert(sidebar_root != "0%");
 
 
-        if ((sidebar >= sidebar_attr) && (sidebar_root != "0%")) {
+        if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
+          window.alert("click if: true");
           if(testSidebar()){CloseSidebar();}
-        }
+        } else {window.alert("click if: false");}
       })
 
       function openpopup(display_id){
