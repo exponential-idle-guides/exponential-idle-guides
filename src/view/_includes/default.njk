@@ -62,9 +62,10 @@
         var copyText = document.getElementById(id);
         copyText.select();
         copyText.setSelectionRange(0,99999);
+        window.alert(copyText.value)
         navigator.clipboard.writeText(copyText.value);
 
-        var tooltip = document.getElementById(id+"Tooltip");
+        var tooltip = document.getElementById(id+"_Tooltip");
         tooltip.innerHTML = "Text copied to clipboard";
       }
 

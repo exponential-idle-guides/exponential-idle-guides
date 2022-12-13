@@ -5,17 +5,17 @@
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 10vw;
+  width: 140px;
   background-color: var(--palette-fill-sidebar);
   color: var(--palette-stroke-sidebar-base);
   text-align: center;
-  border-radius: 0.43vw;
-  padding: 0.36vw;
+  border-radius: 6px;
+  padding: 5px;
   position: absolute;
   z-index: 1;
   bottom: 150%;
   left: 50%;
-  margin-left: -5.36vw;
+  margin-left: -75px;
   opacity: 0;
   transition: opacity 0.3s;
 }
