@@ -117,7 +117,7 @@
   background-color: var(--palette-fill-sidebar-hover);
 }
 
-#sidebarmain {
+#sidebarMain, #sidebarNavigation {
   width: auto;
   position: fixed;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
