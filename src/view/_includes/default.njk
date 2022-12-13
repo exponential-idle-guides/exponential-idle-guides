@@ -33,6 +33,7 @@
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
       var Mobile = false;
+      var Navbar = false;
 
       function Mobile_Setup(){
         if (screen.availHeight > screen.availWidth){
@@ -147,6 +148,19 @@
       }
 
       function Navigation(nav_id){
+        main = document.getElementById('sidebarMain').style;
+        if (Navbar) {
+          main.marginLeft = "0%";
+          main.marginTop = "0%";
+          main.height = "0%";
+          main.width = "0%";
+        } else {
+          query = getComputedStyle(query_root);
+          main.marginLeft = query.getPropertyValue('--btn-marginLeft');
+          main.marginTop = query.getPropertyValue('--btn-marginTop');
+          main.height = "auto";
+          main.width = "auto";
+        }
         return
       }
 
