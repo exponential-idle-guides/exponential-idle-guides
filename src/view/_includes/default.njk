@@ -124,7 +124,7 @@
         }
       }
 
-      function openSidebar(sidebars,sidebarheaders, force=false) {
+      function openSidebar(sidebars, sidebarheaders, force=false) {
         for (const sidebar of sidebars) {
           document.getElementById(sidebar).style.zIndex = "0";
         }
@@ -165,9 +165,9 @@
         return
       }
 
-      function testSidebar(){
+      function testSidebar(btn_list, sidebar_list){
         bool = true;
-        for(const btn of close_btn_list){
+        for(const btn of btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
             window.alert(String(bool) + ' button: ' + String(btn) + ' , ' + String(close_btn_list));
@@ -207,14 +207,14 @@
           window.alert("sidebar_root: " + String(sidebar_root));
         }
         window.alert("if out");
-        window.alert(sidebar >= sidebar_attr);
-        window.alert(sidebar_root != "0%");
+        window.alert(String(sidebar >= sidebar_attr) + " && " + String(sidebar_root != "0%"));
 
 
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
-          window.alert("click if: true");
-          if(testSidebar()){CloseSidebar();}
-        } else {window.alert("click if: false");}
+          sidebar_bool = testSidebar();
+          window.alert(sidebar_bool);
+          if(sidebar_bool){CloseSidebar(close_btn_list, sidebar_list);}
+        }
       })
 
       function openpopup(display_id){
