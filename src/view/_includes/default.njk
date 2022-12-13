@@ -150,9 +150,9 @@
       function Navigation(nav_id){
         window.alert(Navbar);
         if (Navbar) {
-          document.getElementById('sidebarMain').style.display = "none";
+          document.getElementById(nav_id).style.display = "none";
         } else {
-          document.getElementById('sidebarMain').style.display = "block";
+          document.getElementById(nav_id).style.display = "block";
         }
         window.Navbar = !Navbar;
         return
