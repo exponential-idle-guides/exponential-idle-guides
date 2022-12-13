@@ -33,6 +33,7 @@
       const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','sidebarmain'];
       const close_btn_list = ['GuideClose', 'HeaderClose', 'ResourceClose'];
       var curr_sidebar = 'none';
+      var Mobile = false;
       
       function Mobile_Setup(){
         if (screen.availHeight > screen.availWidth){
@@ -47,7 +48,10 @@
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         
-        if (root.classList.contains('mobile')){Mobile_Setup();}
+        var Mobile = (new_class == 'mobile');
+        if (Mobile){Mobile_Setup();}
+
+        window.alert(Mobile);
       }
 
       if (navigator.userAgentData.mobile) {
@@ -127,18 +131,18 @@
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
 
-        if (root.classList.contains('mobile')) {
-          let btn_top = (getComputedStyle(query_root).getPropertyValue('--btn-marginTop') == "0%");
-          let sidebar_height = (getComputedStyle(query_root).getPropertyValue('--sidebar-height') == "0%");
+        if (Mobile) {
+          let btn_top = getComputedStyle(query_root).getPropertyValue('--btn-marginTop');
+          let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
           
-          if ((btn_top && sidebar_height) || curr_sidebar != sidebars[0] || force) {
+          if ((btn_top == "0%" && sidebar_height == "0%") || curr_sidebar != sidebars[0] || force) {
             openMobileSidebars(sidebars, sidebarheaders);
           }
         } else {
-          let btn_left = (getComputedStyle(query_root).getPropertyValue('--btn-marginLeft') == "0%");
-          let sidebar_height = (getComputedStyle(query_root).getPropertyValue('--sidebar-width') == "0%");
+          let btn_left = getComputedStyle(query_root).getPropertyValue('--btn-marginLeft');
+          let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
 
-          if ( btn_left && sidebar_height || force) {
+          if ((btn_left == "0%" && sidebar_height == "0%") || force) {
             openDesktopSidebars(sidebars, sidebarheaders);
           }
         }
@@ -147,7 +151,7 @@
       function CloseSidebar(){
         let attr_list = ['sidebar-width', 'btn-marginLeft', 'sidebar-padding-lr']);
         
-        if (root.classList.contains('mobile')){
+        if (Mobile){
           query_root.style.setProperty('--sidebar-transition-time', '0.5s');
           query_root.style.setProperty('--sidebar-text-transition-time', '0.3s');
           let attr_list = ['sidebar-height', 'btn-marginTop', 'sidebar-padding-b']);
@@ -162,7 +166,7 @@
       }
 
       window.addEventListener('click', function(e){
-        if (root.classList.contains('mobile')){
+        if (Mobile){
           let sidebar = document.getElementById(curr_sidebar).offsetHeight;
           let sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-height').match(/\d+/)[0]);
           let sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
