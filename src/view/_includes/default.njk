@@ -63,7 +63,14 @@
         copyText.select();
         copyText.setSelectionRange(0,99999);
         window.alert(copyText.value)
-        navigator.clipboard.writeText(copyText.value);
+        navigator.clipboard
+          .writeText(copyText.value)
+          .then(() => {
+            alert("successfully copied");
+          })
+          .catch(() => {
+            alert("something went wrong");
+          });
 
         var tooltip = document.getElementById(id+"_Tooltip");
         tooltip.innerHTML = "Text copied to clipboard";
