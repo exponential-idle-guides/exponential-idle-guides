@@ -148,18 +148,10 @@
       }
 
       function Navigation(nav_id){
-        main = document.getElementById('sidebarMain').style;
         if (Navbar) {
-          main.marginLeft = "0%";
-          main.marginTop = "0%";
-          main.height = "0%";
-          main.width = "0%";
+          document.getElementById('sidebarMain').style.display = "none";
         } else {
-          query = getComputedStyle(query_root);
-          main.marginLeft = query.getPropertyValue('--btn-marginLeft');
-          main.marginTop = query.getPropertyValue('--btn-marginTop');
-          main.height = "auto";
-          main.width = "auto";
+          document.getElementById('sidebarMain').style.display = "block";
         }
         return
       }
