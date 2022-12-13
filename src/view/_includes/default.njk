@@ -47,11 +47,8 @@
         root.classList.add(new_class);
         try{root.classList.remove(old_class);}catch(error){}
         
-        //var Mobile = (new_class == 'mobile');
         window.Mobile = (new_class == 'mobile');
         if (Mobile){Mobile_Setup();}
-
-        window.alert("Mobile: " + String(Mobile));
       }
 
       if (navigator.userAgentData.mobile) {
@@ -132,24 +129,21 @@
         document.getElementById(sidebars[0]).style.zIndex = "10";
         document.getElementById('sidebarmain').style.zIndex = "11";
 
-        window.alert(Mobile);
         if (Mobile) {
           let btn_top = getComputedStyle(query_root).getPropertyValue('--btn-marginTop');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
           let bool = (btn_top == "0%" && sidebar_height == "0%");
 
           if (bool || curr_sidebar != sidebars[0] || force) {
-            window.alert("Mobile Open: True");
             openMobileSidebars(sidebars, sidebarheaders, bool);
-          } else {window.alert("Mobile Open: False");}
+          }
         } else {
           let btn_left = getComputedStyle(query_root).getPropertyValue('--btn-marginLeft');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
 
           if ((btn_left == "0%" && sidebar_height == "0%") || force) {
-            window.alert("Desktop Open: True");
             openDesktopSidebars(sidebars, sidebarheaders);
-          } else {window.alert("Desktop Open: False");}
+          }
         }
       }
 
@@ -222,12 +216,9 @@
           sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]);
           sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
         }
-        window.alert("Close Listener: " + String(sidebar >= sidebar_attr) + " && " + String(sidebar_root != "0%"));
-
 
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
           sidebar_bool = testSidebar(close_btn_list, sidebar_list, e);
-          window.alert("CloseSidebar bool: " + String(sidebar_bool));
           if(sidebar_bool){CloseSidebar();}
         }
       })

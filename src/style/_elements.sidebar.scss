@@ -1,16 +1,13 @@
 :root{
-  --sidebar-main-display-type: inline;
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
   --sidebar-padding-lr:0%;
-  --sidebar-padding-b:0px;
+  --sidebar-padding-b:0%;
 
-  --btn-width:auto;
-  --btn-max-width:25vw;
   --btn-marginLeft:0%;
   --btn-marginTop:0%;
-  --btn-paddingLeft:0.5vw;
-  --btn-paddingRight:0.5vw;
+  --btn-paddingLeft:0%;
+  --btn-paddingRight:0%;
   --btn-padding:min(2vh, 15px) min(3vw, 20px);
 
   --sidebar-height:100%;
@@ -28,27 +25,15 @@
 }
 
 :root.mobile {
-  --btn-width:33vw;
-  --btn-max-width:33vw;
-  --btn-paddingLeft:0;
-  --btn-paddingRight:0;
-  
   --sidebar-height:0%;
   --sidebar-width:96%;
   --sidebar-padding-lr:2%;
   --sidebar-column-gap:3vw;
   --sidebar-column-count:2;
   --sidebar-transition-direction:margin-top;
-  
-  --sidebar-main-display-type: inline-block;
 }
 
 :root.desktop {
-  --btn-width:auto;
-  --btn-max-width:25vw;
-  --btn-paddingLeft:0%;
-  --btn-paddingRight:0%;
-
   --sidebar-height:100%;
   --sidebar-width:0%;
   --sidebar-column-gap:0;
@@ -117,7 +102,7 @@
 }
 
 .openbtn {
-  max-width: var(--btn-max-width);
+  max-width: 20vw;
   font-size: 1.2em;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
@@ -133,15 +118,12 @@
 }
 
 #sidebarmain {
-  width: var(--btn-width);
+  width: auto;
   position: fixed;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
   margin-left: var(--btn-marginLeft);
   margin-top: var(--btn-marginTop);
-  padding-right: var(--btn-paddingRight);
-  padding-left: var(--btn-paddingLeft);
   z-index: 100;
-  display: var(--sidebar-main-display-type);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -200,7 +182,8 @@
 
   list-style-position: inside;
 }
-
+/*
 .sidebartitle, .closebtn {
   column-span:all;
 }
+*/
