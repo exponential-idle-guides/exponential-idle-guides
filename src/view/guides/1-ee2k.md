@@ -136,20 +136,10 @@ Automation routing changes per playstyle but here is the autoprestige equation t
 
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
 
-<blockquote id="autoprestigeEquation">
-timer(d(ln(db/b+1)/pt) &lt; 0)
-<br>
-&gt; 3 * tr &amp;&amp; db &gt; b
-</blockquote>
-<button onclick="copy_to_clipboard('autoprestigeEquation')" onmouseout="hover_clipboard()">
-  <span class="tooltip_text" id="autoprestigeEquation_Toolip">Copy to clipboard</span>
-  Copy Text
-</button>
-
-<input id="apple" value="Hello World" type="text"></input>
-<button id="apple_btn" onmouseout="hover_clipboard()">
-  Copy Text
-</button>
+```
+timer(d(ln(db/b+1)/pt) < 0)
+> 3 * tr && db > b
+```
 
 #### Active strategies
 
