@@ -146,7 +146,7 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
   Copy Text
 </button>
 
-<input id="autoprestigeEquation">Hello World</input>
+<input id="autoprestigeEquation" value="Hello World"></input>
 <button onclick="copy_to_clipboard('autoprestigeEquation')" onmouseout="hover_clipboard()">
   <span class="tooltip_text" id="autoprestigeEquation_Toolip">Copy to clipboard</span>
   Copy Text
