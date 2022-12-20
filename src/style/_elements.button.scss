@@ -39,5 +39,5 @@
 	border-color: 1em solid var(--palette-fill-table-headers-dark);
 	border-radius: 0.5em;
   stroke: var(--palette-stroke);
-  font-size: var(--font-size);
+  font-size: calc(var(--font-size) * 50%);
 }

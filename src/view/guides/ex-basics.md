@@ -158,7 +158,7 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
-<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text of Blockquote</button>
+<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
 
 #### Autoprestige explanation
 
@@ -194,16 +194,18 @@ derivative (\\(d\\)) and see when it turns negative.
 
 ### Autosupremacy expression
 
-```
-timer(d(ln(db / b + 1) / pt) < 0)
-> 3 * tr && db > b && dpsi + psi
-> min(min(costUpS(1), costUpS(2)), costUpS(3))
-&& ln(1 + max(1, log10(sf)) /
-smooth(max(1, log10(gf)), (st > tr) * ee99))
-/ max(1, st) < smooth(ln(1 + max(1, log10(sf))
-/ smooth(max(1, log10(gf)), (st > tr) * ee99)) /
-max(1, st), (pt > tr) * ee99)
-```
+<blockquote id="as_eq">
+timer(d(ln(db / b + 1) / pt) &lt; 0)
+&gt; 3 * tr &amp;&amp; db &gt; b &amp;&amp; dpsi + psi
+&gt; min(min(costUpS(1), costUpS(2)), costUpS(3))
+&amp;&amp; ln(1 + max(1, log10(sf)) /
+smooth(max(1, log10(gf)), (st &gt; tr) * ee99))
+/ max(1, st) &lt; smooth(ln(1 + max(1, log10(sf))
+/ smooth(max(1, log10(gf)), (st &gt; tr) * ee99)) /
+max(1, st), (pt &gt; tr) * ee99)
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
 
 **YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!**
 
