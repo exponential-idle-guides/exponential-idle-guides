@@ -27,19 +27,26 @@
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
       function HTMLsafe_to_Text(text){
-
-        const input = document.createElement('input');
-        input.value = text.replace(/'<br>'/gm, ' ');
-
-        text = input.value;
+        text.replace(/'<br>'/gm, '');
+        text.replace(/' '/gm, '');
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
           'text/html'
         );
-        return dom.body.textContent;
+        dom_text = dom.body.textContent;
+        return decomp_to_charCode(dom_text)
       }
+
+      function decomp_to_charCode(text){
+        output_text = "";
+        for (const char in text){
+          output_text += char + ': ' + char.charCodeAt(0) + '\n';
+        }
+        return output_text;
+      }
+
       async function copyText(id){
         text = document.getElementById(id).innerHTML;
         text = HTMLsafe_to_Text(text);
@@ -50,6 +57,7 @@
         } catch (err) {
           window.alert('Copy Failure: \n' + toString(err));
         }
+        document.getElementById(id).innerHTML = text;
       }
     </script>
     <script>
