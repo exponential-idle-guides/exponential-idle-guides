@@ -36,6 +36,10 @@
         */
 
         text.replace(newline, '');
+        text.replace(newline, '');
+        text.replace(newline, '');
+        text.replace(newline, '');
+        text.replace(newline, '');
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
@@ -43,15 +47,6 @@
           'text/html'
         );
         return dom.body.textContent;
-      }
-
-      async function copyText_two(text){
-        try {
-          await navigator.clipboard.writeText(text);
-          window.alert('Copy Success: \n' + toString(text));
-        } catch (err) {
-          window.alert('Copy Failure: \n' + toString(err));
-        }
       }
 
       async function copyText(id){
@@ -65,7 +60,6 @@
           window.alert(err);
         }
         document.getElementById(id).innerHTML = text;
-        copyText_two(document.getElementById(id).innerHTML);
       }
     </script>
     <script>
