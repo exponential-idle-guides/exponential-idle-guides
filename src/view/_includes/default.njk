@@ -25,6 +25,17 @@
       gtag('config', 'G-CQWRWZCSZW');
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
+    <script async>
+      async function copyText(id){
+        text = toString(document.getElementById(id).value);
+        try {
+          await navigator.clipboard.writeText(text);
+          window.alert('Copy Success: \n' + toString(text));
+        } catch (err) {
+          window.alert('Copy Failure: \n' + toString(err));
+        }
+      }
+    </script>
     <script>
       const root = document.documentElement;
       const query_root  =  document.querySelector(':root');
@@ -205,6 +216,7 @@
         }
         return (!bool)
       }
+      
       window.addEventListener('click', function(e){
         sidebar=0;sidebar_attr=0;sidebar_root='';
         if (Mobile){

@@ -152,10 +152,13 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 
 ### Autoprestige expression
 
-```
+```text
 timer(d(ln(db/b+1)/pt) < 0)
 > 3 * tr && db > b
 ```
+
+<input id='test_1' type='text' value='copy input box'>
+<button onClick="copyText('test_1');">Click to Copy Text</button>
 
 #### Autoprestige explanation
 
