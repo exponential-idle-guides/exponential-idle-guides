@@ -28,18 +28,17 @@
     <script async>
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
-        newline = String.fromCharCode(10);
         /*
         for (let i = 1; i < (text.split(newline)).length; i++) {
           text.replace(newline, '');
         }
         */
 
-        text.replace(newline, '');
-        text.replace(newline, '');
-        text.replace(newline, '');
-        text.replace(newline, '');
-        text.replace(newline, '');
+        text.replace(String.fromCharCode(10), '');
+        text.replace(String.fromCharCode(10), '');
+        text.replace(String.fromCharCode(10), '');
+        text.replace(String.fromCharCode(10), '');
+        text.replace(String.fromCharCode(10), '');
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
