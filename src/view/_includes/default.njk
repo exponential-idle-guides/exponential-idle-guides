@@ -33,10 +33,10 @@
           console.log(text);
           switch(index){
             case 0:
-              text.slice(1);
+              text.slice(2);
               break;
             case text.length:
-              text.slice(0,text.length-1);
+              text.slice(0,text.length-2);
               break;
             default:
               text = text.substr(0,i-1) + text.substr(i, text.length);
