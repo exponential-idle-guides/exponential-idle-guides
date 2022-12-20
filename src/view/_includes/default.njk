@@ -28,7 +28,9 @@
     <script>
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, ' ');
-        text.replace(/[\r\n]/gm, '');
+        text.replace(/' '/gm,'jfds');
+        text.replace(/'jfds'/gm, ' ');
+        text.replace(/(\r\n|\n|\r)/gm, '');
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
