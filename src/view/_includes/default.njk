@@ -27,13 +27,14 @@
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
       function remove_newline(text){
-        out_text = text;
+        out_text = text;ticker=0;
         for (const i in text){
           if (text.charCodeAt(i) == 10){
             out_text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
+            ticker +=1;
           }
         }
-        return out_text
+        return [out_text,ticker]
       }
 
       function HTMLsafe_to_Text(text){
@@ -43,23 +44,26 @@
           text.replace(newline, '');
         }
         */
-        text = remove_newline(text);
+        res = remove_newline(text);
+        text = res[0];tick = res[1];
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
           'text/html'
         );
-        return dom.body.textContent;
+        return ([dom.body.textContent,tick];
       }
 
       async function copyText(id){
         text = document.getElementById(id).innerHTML;
-        text = HTMLsafe_to_Text(text);
+        res = HTMLsafe_to_Text(text);
+        text = res[0];
         document.getElementById('test_1').value = text;
         try {
           await navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));
+          window.alert('Newlines Removed: ' + toString(tick) + '\nNewlines Remaining: ' + toString((text.split(String.fromCharCode(10))).length));
         } catch (err) {
           window.alert(err);
         }
