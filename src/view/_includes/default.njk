@@ -28,11 +28,13 @@
     <script async>
       function remove_newline(text){
         out_text = text;
-        for (let i = 0; i < text.length; i++){
+        for (const i in text.slice(1,text.length-1)){
           if (text.charCodeAt(i) == 10){
             out_text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
           }
         }
+        if (text.charCodeAt(0)==10){out_text.slice(1);}
+        if (text.charCodeAt(text.length)==10){out_text.slice(0,out_text.length-1);}
         return out_text
       }
 
