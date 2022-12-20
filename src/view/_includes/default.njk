@@ -44,7 +44,7 @@
         }
       }
       function HTMLsafe_to_Text(text){
-        text.replace('<br>'/g, ' ');
+        text.replace(/'<br>'/g, ' ');
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
