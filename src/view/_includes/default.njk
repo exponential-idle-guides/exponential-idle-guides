@@ -45,6 +45,7 @@
       }
       async function copyText_blockquote(id){
         text = document.getElementById(id).innerHTML;
+        document.getElementById('test_1').value = text;
         try {
           await navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));

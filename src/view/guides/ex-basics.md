@@ -154,6 +154,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 
 <blockquote id='test_blockquote'>
 timer(d(ln(db/b+1)/pt) &lt; 0)
+<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
