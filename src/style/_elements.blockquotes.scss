@@ -3,6 +3,6 @@ blockquote {
 	padding: 0.5em 20px 0.5em 20px;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
-	border-left: 10px solid #5a5858;
+	border-left: 10px solid var(--palette-fill-table-headers-dark);
 	border-radius: 5px
 }

@@ -32,3 +32,11 @@
   text-decoration: underline;
   color: var(--palette-stroke);
 }
+
+.copy-btn {
+  display: block;
+  background-color: var(--palette-fill-table-headers-dark);
+	background-color: 10px solid var(--palette-fill-table-headers-dark);
+	border-radius: 5px;
+  stroke: var(--palette-stroke-sidebar-base);
+}
