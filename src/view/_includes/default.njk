@@ -44,9 +44,12 @@
         }
       }
       function HTMLsafe_to_Text(text){
-        return text.replace(/(&#(\d+);)/g, function(match, capture, charCode){
-          return String.fromCharCode(charCode);
-        });
+        var parser = new DOMParser;
+        var dom = parser.parseFromString(
+          '<!doctype html><body>' + text,
+          'text/html'
+        );
+        return dom.body.textContent;
       }
       async function copyText_blockquote(id){
         text = document.getElementById(id).innerHTML;
