@@ -26,25 +26,25 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
-function remove_char(text, char){
-  var index = text.indexOf(char);
-  while (index >= 0) {
-    console.log(index);
-    console.log(text);
-    switch(index){
-      case 0:
-        text.slice(1);
-        break;
-      case text.length:
-        text.slice(0,text.length-1);
-        break;
-      default:
-        text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
-    }
-    index = text.indexOf(char);
-  }
-  return out_text
-}
+      function remove_char(text, char){
+        var index = text.indexOf(char);
+        while (index >= 0) {
+          console.log(index);
+          console.log(text);
+          switch(index){
+            case 0:
+              text.slice(1);
+              break;
+            case text.length:
+              text.slice(0,text.length-1);
+              break;
+            default:
+              text = text.substr(0,i-1) + text.substr(i, text.length);
+          }
+          index = text.indexOf(char);
+        }
+        return text
+      }
 
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
