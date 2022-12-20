@@ -43,6 +43,15 @@
           window.alert('Copy Failure: \n' + toString(err));
         }
       }
+      async function copyText_blockquote(id){
+        text = document.getElementById(id).innerHTML;
+        try {
+          await navigator.clipboard.writeText(text);
+          window.alert('Copy Success: \n' + toString(text));
+        } catch (err) {
+          window.alert('Copy Failure: \n' + toString(err));
+        }
+      }
     </script>
     <script>
       const root = document.documentElement;
