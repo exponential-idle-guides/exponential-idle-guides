@@ -36,7 +36,8 @@
 .copy-btn {
   display: block;
   background-color: var(--palette-fill-table-headers-dark);
-	border-color: 10px solid var(--palette-fill-table-headers-dark);
-	border-radius: 5px;
+	border-color: 1em solid var(--palette-fill-table-headers-dark);
+	border-radius: 0.5em;
   stroke: var(--palette-stroke);
+  font-size: var(--font-size);
 }
