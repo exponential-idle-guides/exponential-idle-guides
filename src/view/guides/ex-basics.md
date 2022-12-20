@@ -158,7 +158,8 @@ timer(d(ln(db/b+1)/pt) < 0)
 ```
 
 <input id='test_1' type='text' value='copy input box'>
-<button onClick="copyText('test_1');">Click to Copy Text</button>
+<button onClick="copyText_id('test_1');">Click to Copy Text From ID</button>
+<button onClick="copyText(document.getElementById('test_1').value);">Click to Copy Text Straight</button>
 
 #### Autoprestige explanation
 

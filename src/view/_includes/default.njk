@@ -26,8 +26,16 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
-      async function copyText(id){
-        text = toString(document.getElementById(id).value);
+      async function copyText_id(id){
+        text = document.getElementById(id).value;
+        try {
+          await navigator.clipboard.writeText(text);
+          window.alert('Copy Success: \n' + toString(text));
+        } catch (err) {
+          window.alert('Copy Failure: \n' + toString(err));
+        }
+      }
+      async function copyText(text){
         try {
           await navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));
