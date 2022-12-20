@@ -158,7 +158,7 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
-<button onClick="copyText_id('test_blockquote');">Copy Text of Blockquote</button>
+<button onClick="copyText_blockquote('test_blockquote');">Copy Text of Blockquote</button>
 
 <input id='test_1' type='text' value='copy input box'>
 <button onClick="copyText_id('test_1');">Copy Text From ID</button>
