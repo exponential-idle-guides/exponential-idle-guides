@@ -25,13 +25,10 @@
       gtag('config', 'G-CQWRWZCSZW');
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
-    <script async>
+    <script>
       function remove_char(text, char){
         var index = text.indexOf(char);
         while (index >= 0) {
-          console.log(index);
-          console.log(text.length)
-          console.log(text);
           switch(index){
             case 0:
               text = text.slice(1);
@@ -44,7 +41,6 @@
           }
           index = text.indexOf(char);
         }
-        console.log('final: \n' + text);
         return text
       }
 
@@ -60,17 +56,15 @@
         return dom.body.textContent;
       }
 
-      async function copyText(id){
+      function copyText(id){
         text = document.getElementById(id).innerHTML;
         text = HTMLsafe_to_Text(text);
-        document.getElementById('test_1').value = text;
         try {
-          await navigator.clipboard.writeText(text);
-          window.alert('Copy Success: \n' + toString(text));
+          navigator.clipboard.writeText(text);
+          console.log('Copy Success: \n' + toString(text));
         } catch (err) {
-          window.alert(err);
+          console.log('Copy Failure: \n' + toString(err));
         }
-        document.getElementById(id).innerHTML = text;
       }
     </script>
     <script>

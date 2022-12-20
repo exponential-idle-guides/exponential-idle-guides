@@ -160,10 +160,6 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
 
 <button onClick="copyText('test_blockquote');">Copy Text of Blockquote</button>
 
-<input id='test_1' type='text' value='copy input box'>
-<button onClick="copyText_id('test_1');">Copy Text From ID</button>
-<button onClick="copyText(document.getElementById('test_1').value);">Copy Text Straight</button>
-
 #### Autoprestige explanation
 
 The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^{(1/pt)}) < 0\\).
