@@ -35,7 +35,7 @@
         );
         return dom.body.textContent;
       }
-      function copyText(id){
+      async function copyText(id){
         text = document.getElementById(id).innerHTML;
         text = HTMLsafe_to_Text(text);
         try {
