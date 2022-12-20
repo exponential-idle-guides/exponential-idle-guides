@@ -39,11 +39,6 @@
 
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
-        /*
-        for (let i = 1; i < (text.split(newline)).length; i++) {
-          text.replace(newline, '');
-        }
-        */
         res = remove_newline(text);
         text = res[0];tick = res[1];
 
@@ -52,7 +47,7 @@
           '<!doctype html><body>' + text,
           'text/html'
         );
-        return [dom.body.textContent,tick];
+        return [dom.body.textContent,tick,(text.split(String.fromCharCode(10))).length];
       }
 
       async function copyText(id){
@@ -63,7 +58,7 @@
         try {
           await navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));
-          window.alert('Newlines Removed: ' + toString(tick) + '\nNewlines Remaining: ' + toString((text.split(String.fromCharCode(10))).length));
+          window.alert('Newlines Removed: ' + toString(res[1]) + '\nNewlines Remaining: ' + toString(res[2]));
         } catch (err) {
           window.alert(err);
         }
