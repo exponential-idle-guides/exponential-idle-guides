@@ -27,9 +27,12 @@
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
       function HTMLsafe_to_Text(text){
-        text.replace(/'<br>'/gm, ' ');
-        text.replace(/' '/gm,'jfds');
-        text.replace(/'jfds'/gm, ' ');
+
+        const input = document.createElement('input');
+        input.value = text.replace(/'<br>'/gm, ' ');
+
+        text = input.value;
+
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
