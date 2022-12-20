@@ -29,6 +29,7 @@
 function remove_char(text, char){
   var index = text.indexOf(char);
   while (index >= 0) {
+    window.alert(toString(index) + ' , ' + toString(text));
     switch(index){
       case 0:
         text.slice(1);
