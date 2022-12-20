@@ -38,12 +38,10 @@
               text = text.slice(1);
               break;
             case text.length:
-              out_text += text.slice(0,text.length-1) + ' ';
-              console.log(out_text);
-              text = text.slice(text.length);
+              text = text.slice(0,text.length-1);
               break;
             default:
-              text = text.substr(0,index-1) + text.substr(index, text.length);
+              text = text.substr(0,index) + text.substr(index+1, text.length);
           }
           index = text.indexOf(char);
         }
