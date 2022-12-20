@@ -27,7 +27,6 @@
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
       function remove_char(text, char){
-        out_text = ""
         var index = text.indexOf(char);
         while (index >= 0) {
           console.log(index);
@@ -45,8 +44,8 @@
           }
           index = text.indexOf(char);
         }
-        console.log('final: \n' + out_text);
-        return out_text
+        console.log('final: \n' + text);
+        return text
       }
 
       function HTMLsafe_to_Text(text){
