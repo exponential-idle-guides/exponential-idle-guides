@@ -41,7 +41,7 @@
 
       function decomp_to_charCode(text){
         output_text = "";
-        for (const char in text){
+        for (const char of text){
           output_text += char + ': ' + char.charCodeAt(0) + '\n';
         }
         return output_text;
