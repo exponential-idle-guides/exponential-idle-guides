@@ -39,7 +39,7 @@
               text = text.slice(0,text.length-1);
               break;
             default:
-              text = text.substr(0,i-1) + text.substr(i, text.length);
+              text = text.substr(0,index-1) + text.substr(index, text.length);
           }
           index = text.indexOf(char);
         }
