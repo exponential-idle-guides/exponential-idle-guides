@@ -9,12 +9,12 @@
   --btn-paddingLeft:0%;
   --btn-paddingRight:0%;
   --btn-padding:min(2vh, 15px) min(3vw, 20px);
+  --btn-width: 20vw;
 
   --sidebar-height:100%;
   --sidebar-width:0%;
   --sidebar-column-gap:0;
   --sidebar-column-count:1;
-  --sidebar-desktop-max-width:0.26;
 
   --sidebar-content-padding:0px;
   --sidebar-header-font-size:1.5em;
@@ -31,6 +31,7 @@
   --sidebar-column-gap:3vw;
   --sidebar-column-count:2;
   --sidebar-transition-direction:margin-top;
+  --btn-width: 30vw;
 }
 
 :root.desktop {
@@ -102,7 +103,7 @@
 }
 
 .openbtn {
-  max-width: 20vw;
+  max-width: var(--btn-width);
   font-size: 1.2em;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
