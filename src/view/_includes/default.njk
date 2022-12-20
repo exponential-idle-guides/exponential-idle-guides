@@ -28,23 +28,14 @@
     <script async>
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
-        text.replace(/' '/gm, '');
+        text.replace(/String.fromCharCode(10)/gm, '');
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
           'text/html'
         );
-        dom_text = dom.body.textContent;
-        return decomp_to_charCode(dom_text)
-      }
-
-      function decomp_to_charCode(text){
-        output_text = "";
-        for (const char of text){
-          output_text += char + ': ' + char.charCodeAt(0) + '\n';
-        }
-        return output_text;
+        return dom.body.textContent;
       }
 
       async function copyText(id){
