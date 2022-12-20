@@ -26,24 +26,8 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
-      async function copyText_id(id){
-        text = document.getElementById(id).value;
-        try {
-          await navigator.clipboard.writeText(text);
-          window.alert('Copy Success: \n' + toString(text));
-        } catch (err) {
-          window.alert('Copy Failure: \n' + toString(err));
-        }
-      }
-      async function copyText(text){
-        try {
-          await navigator.clipboard.writeText(text);
-          window.alert('Copy Success: \n' + toString(text));
-        } catch (err) {
-          window.alert('Copy Failure: \n' + toString(err));
-        }
-      }
       function HTMLsafe_to_Text(text){
+        text.replace('<br>'\g,' ');
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
@@ -51,12 +35,11 @@
         );
         return dom.body.textContent;
       }
-      async function copyText_blockquote(id){
+      function copyText(id){
         text = document.getElementById(id).innerHTML;
         text = HTMLsafe_to_Text(text);
-        document.getElementById('test_1').value = text;
         try {
-          await navigator.clipboard.writeText(text);
+          navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));
         } catch (err) {
           window.alert('Copy Failure: \n' + toString(err));

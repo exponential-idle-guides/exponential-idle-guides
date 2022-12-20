@@ -152,17 +152,14 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 
 ### Autoprestige expression
 
-<blockquote id='test_blockquote'>
+<blockquote id='autoprestige_eq'>
 timer(d(ln(db/b+1)/pt) &lt; 0)
 <br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
-<button onClick="copyText_blockquote('test_blockquote');">Copy Text of Blockquote</button>
+<button onClick="copyText('autoprestige_eq');">Copy Text</button>
 
-<input id='test_1' type='text' value='copy input box'>
-<button onClick="copyText_id('test_1');">Copy Text From ID</button>
-<button onClick="copyText(document.getElementById('test_1').value);">Copy Text Straight</button>
 
 #### Autoprestige explanation
 
