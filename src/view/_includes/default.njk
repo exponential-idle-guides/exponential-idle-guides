@@ -31,6 +31,7 @@
         var index = text.indexOf(char);
         while (index >= 0) {
           console.log(index);
+          console.log(text.length)
           console.log(text);
           switch(index){
             case 0:
@@ -38,7 +39,8 @@
               break;
             case text.length:
               out_text += text.slice(0,text.length-1) + ' ';
-              text.slice(text.length);
+              console.log(out_text);
+              text = text.slice(text.length);
               break;
             default:
               text = text.substr(0,index-1) + text.substr(index, text.length);
