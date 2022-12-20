@@ -35,14 +35,20 @@
         );
         return dom.body.textContent;
       }
-      function copyText(id){
-        text = document.getElementById(id).innerHTML;
-        text = HTMLsafe_to_Text(text);
+      async function copyText(id){
         try {
-          await navigator.clipboard.writeText(text);
-          window.alert('Copy Success: \n' + toString(text));
+          window.alert("inside copyText() with id: " + id);
+          text = document.getElementById(id).innerHTML;
+          document.getElementById('ap_eq_btn').innerHTML = text;
+          text = HTMLsafe_to_Text(text);
+          try {
+            await navigator.clipboard.writeText(text);
+            window.alert('Copy Success: \n' + toString(text));
+          } catch (err) {
+            window.alert('Copy Failure: \n' + toString(err));
+          }
         } catch (err) {
-          window.alert('Copy Failure: \n' + toString(err));
+          window.alert('Function Failure: \n' + toString(err));
         }
       }
     </script>

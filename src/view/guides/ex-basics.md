@@ -158,7 +158,7 @@ timer(d(ln(db/b+1)/pt) &lt; 0)
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
-<button onClick="copyText('autoprestige_eq');">Copy Text</button>
+<button id="ap_eq_btn" onClick="copyText('autoprestige_eq');">Copy Text</button>
 
 
 #### Autoprestige explanation
