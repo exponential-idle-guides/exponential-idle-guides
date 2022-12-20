@@ -25,12 +25,11 @@
       gtag('config', 'G-CQWRWZCSZW');
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
-    <script>
+    <script async>
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, ' ');
         text.replace(/' '/gm,'jfds');
         text.replace(/'jfds'/gm, ' ');
-        text.replace(/(\r\n|\n|\r)/gm, '');
         var parser = new DOMParser;
         var dom = parser.parseFromString(
           '<!doctype html><body>' + text,
@@ -38,12 +37,12 @@
         );
         return dom.body.textContent;
       }
-      function copyText(id){
+      async function copyText(id){
         text = document.getElementById(id).innerHTML;
         text = HTMLsafe_to_Text(text);
         document.getElementById('test_1').value = text;
         try {
-          navigator.clipboard.writeText(text);
+          await navigator.clipboard.writeText(text);
           window.alert('Copy Success: \n' + toString(text));
         } catch (err) {
           window.alert('Copy Failure: \n' + toString(err));
