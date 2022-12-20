@@ -26,21 +26,27 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
-      function remove_newline(text){
-        out_text = text;
-        for (const i in text.slice(1,text.length-1)){
-          if (text.charCodeAt(i) == 10){
-            out_text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
-          }
-        }
-        if (text.charCodeAt(0)==10){out_text.slice(1);}
-        if (text.charCodeAt(text.length)==10){out_text.slice(0,out_text.length-1);}
-        return out_text
-      }
+function remove_char(text, char){
+  var index = text.indexOf(char);
+  while (index >= 0) {
+    switch(index){
+      case 0:
+        text.slice(1);
+        break;
+      case text.length:
+        text.slice(0,text.length-1);
+        break;
+      default:
+        text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
+    }
+    index = text.indexOf(char);
+  }
+  return out_text
+}
 
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
-        text = remove_newline(text);
+        text = remove_char(text, String.fromCharCode(10));
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
