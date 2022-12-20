@@ -26,6 +26,16 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script async>
+      function remove_newline(text){
+        out_text = text;
+        for (const i in text){
+          if (text.charCodeAt(i) == 10){
+            out_text = out_text.substr(0,i-1) + out_text.substr(i, out_text.length);
+          }
+        }
+        return out_text
+      }
+
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
         /*
@@ -33,12 +43,7 @@
           text.replace(newline, '');
         }
         */
-
-        text.replace(String.fromCharCode(10), '');
-        text.replace(String.fromCharCode(10), '');
-        text.replace(String.fromCharCode(10), '');
-        text.replace(String.fromCharCode(10), '');
-        text.replace(String.fromCharCode(10), '');
+        text = remove_newline(text);
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
