@@ -14,15 +14,20 @@ further ahead than you are already.
 
 ### New autoprestige expression
 
-```
-((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr && db > b &&
-((d(smooth(10^10^10^(phi * tau), 1)) > 1) &&
-timer(abs(d(log10(phi + 1))) < 50) > 15)) && phi > 1) ||
-((timer(d(ln(db / b + 1) / pt) < 0) > 3 * tr) && db > b &&
-((phi >= 1 && phi <= 1)||
-((0.8*log10(log10(lf))>log10(log10(gf)))||
-(0.8*log10(log10(gf))>log10(log10(sf))))))
-```
+<blockquote id="ap_eq">
+timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
+&gt; 3 * tr &amp;&amp; db &gt; b &amp;&amp;<br>
+((d(smooth(10^10^10^(phi * tau), 1)) &gt; 1)<br>
+&amp;&amp; timer(abs(d(log10(phi + 1))) < 50) &gt; 15))<br>
+&amp;&amp; phi &gt; 1) ||<br>
+((timer(d(ln(db / b + 1) / pt) < 0)<br>
+&gt; 3 * tr) &amp;&amp; db &gt; b &amp;&amp;<br>
+((phi &gt;= 1 &amp;&amp; phi &lt;= 1) ||<br>
+((0.8 * log10(log10(lf)) &gt; log10(log10(gf))) ||<br>
+(0.8 * log10(log10(gf)) &gt; log10(log10(sf))))))
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
 
 #### Autoprestige explanation
 
@@ -68,18 +73,20 @@ we allow the normal expression to work like normal while recovering.
 
 ### Autosupremacy
 
-```
-timer(d(ln(db/b+1)/pt) < 0)
-> 3 * tr && db > b
-&& dpsi + psi > min(min(costUpS(1),
-costUpS(2)), costUpS(3))
-&& ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)),
-(st>tr) * ee99))/max(1,st)<
-smooth(ln(1 + max(1,log10(sf))/
-smooth(max(1,log10(gf)), (st>tr)
-* ee99))/max(1,st), (pt>tr) * ee99)
-```
+<blockquote id="as_eq">
+timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
+&gt; 3 * tr &amp;&amp; db &gt; b<br>
+&amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
+costUpS(2)), costUpS(3))<br>
+&amp;&amp; ln(1 + max(1, log10(sf)) /<br>
+smooth(max(1, log10(gf)),<br>
+(st &gt; tr) * ee99)) / max(1, st) &lt;<br>
+smooth(ln(1 + max(1, log10(sf)) /<br>
+smooth(max(1, log10(gf)), (st &gt; tr)<br>
+* ee99)) / max(1, st), (pt &gt; tr) * ee99)
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
 
 **Do a manual supremacy when you input this expression and never enter the
 edit expression field again afterwards. Make sure autobuyers are on x1
