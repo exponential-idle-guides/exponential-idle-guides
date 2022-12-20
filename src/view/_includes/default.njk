@@ -29,9 +29,14 @@
       function HTMLsafe_to_Text(text){
         text.replace(/'<br>'/gm, '');
         newline = String.fromCharCode(10);
+        window.alert((text.split(newline)).length);
+        /*
         for (let i = 1; i < (text.split(newline)).length; i++) {
           text.replace(newline, '');
         }
+        */
+
+        text.replace(newline, '');
 
         var parser = new DOMParser;
         var dom = parser.parseFromString(
