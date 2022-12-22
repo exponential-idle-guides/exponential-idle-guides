@@ -34,6 +34,10 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"
     src/view/guide-extensions:
       - name: "title"
         field:
@@ -59,3 +63,7 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"

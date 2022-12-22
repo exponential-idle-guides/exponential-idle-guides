@@ -38,7 +38,9 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
-  <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.</p>
+  {% if not glossary %}
+    < class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
+  {% endif %}
   
   {{ content | safe }}
 {% endblock %}
