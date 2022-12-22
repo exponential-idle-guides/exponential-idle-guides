@@ -15,12 +15,12 @@ further ahead than you are already.
 ### New autoprestige expression
 
 <blockquote id="ap_eq">
-timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
+((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b &amp;&amp;<br>
 ((d(smooth(10^10^10^(phi * tau), 1)) &gt; 1)<br>
 &amp;&amp; timer(abs(d(log10(phi + 1))) < 50) &gt; 15))<br>
 &amp;&amp; phi &gt; 1) ||<br>
-((timer(d(ln(db / b + 1) / pt) < 0)<br>
+((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr) &amp;&amp; db &gt; b &amp;&amp;<br>
 ((phi &gt;= 1 &amp;&amp; phi &lt;= 1) ||<br>
 ((0.8 * log10(log10(lf)) &gt; log10(log10(gf))) ||<br>
@@ -50,7 +50,8 @@ will then wait 15 seconds before checking if it can prestige again. This will al
 to swap R9 or students freely without needing to worry about accidentally prestiging
 for a very small amount of \\(b\\).
 
-<blockquote style="font-family:monospace;">((timer(d(ln(db / b + 1) / pt) < 0)<br>> 3 * tr) && (phi >= 1 && phi <= 1)</blockquote>
+<blockquote style="font-family:monospace;">((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
+&gt; 3 * tr) &amp;&amp; db &gt; b && (phi >= 1 && phi <= 1)</blockquote>
 
 If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
  "=" in the expressions, so we had to work around it by using both ">=" (greater than
@@ -74,7 +75,7 @@ we allow the normal expression to work like normal while recovering.
 ### Autosupremacy
 
 <blockquote id="as_eq">
-timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b<br>
 &amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
 costUpS(2)), costUpS(3))<br>
