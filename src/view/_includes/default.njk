@@ -28,7 +28,7 @@
     <script>
       function copyText(id){
         text = document.getElementById(id).innerText;
-        const remove_list = ['\n', String.fromCharCode(8203)]
+        const remove_list = ['\n', String.fromCharCode(8203), String.fromCharCode(10)]
         for(const string of remove_list){
           text.replaceAll(string,'');
         }
