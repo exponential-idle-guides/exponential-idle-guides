@@ -26,13 +26,40 @@
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
     <script>
+      function remove_char(text, char){
+        var index = text.indexOf(char);
+        while (index >= 0) {
+          switch(index){
+            case 0:
+              text = text.slice(1);
+              break;
+            case text.length:
+              text = text.slice(0,text.length-1);
+              break;
+            default:
+              text = text.substr(0,index) + text.substr(index+1, text.length);
+          }
+          index = text.indexOf(char);
+        }
+        return text
+      }
+
+      function HTMLsafe_to_Text(text){
+        text.replace(/'<br>'/gm, '');
+        text = remove_char(text, String.fromCharCode(10));
+        text = remove_char(text, String.fromCharCode(8203));
+
+        var parser = new DOMParser;
+        var dom = parser.parseFromString(
+          '<!doctype html><body>' + text,
+          'text/html'
+        );
+        return dom.body.textContent;
+      }
+
       function copyText(id){
         text = document.getElementById(id).innerText;
-        const remove_list = ['\n', String.fromCharCode(8203), String.fromCharCode(10)]
-        for(const string of remove_list){
-          text.replaceAll(string,'');
-        }
-
+        text = HTMLsafe_to_Text(text);
         try {
           navigator.clipboard.writeText(text);
           console.log('Copy Success: \n' + toString(text));
