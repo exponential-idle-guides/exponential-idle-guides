@@ -44,25 +44,15 @@
         return text
       }
 
-      function HTMLsafe_to_Text(text){
+      function copyText(id){
+        text = document.getElementById(id).innerText;
         text.replace(/'<br>'/gm, '');
         text = remove_char(text, String.fromCharCode(10));
         text = remove_char(text, String.fromCharCode(8203));
 
-        var parser = new DOMParser;
-        var dom = parser.parseFromString(
-          '<!doctype html><body>' + text,
-          'text/html'
-        );
-        return dom.body.textContent;
-      }
-
-      function copyText(id){
-        text = document.getElementById(id).innerText;
-        text = HTMLsafe_to_Text(text);
         try {
           navigator.clipboard.writeText(text);
-          console.log('Copy Success: \n' + toString(text));
+          console.log('Copy Success: \n' + text);
         } catch (err) {
           console.log('Copy Failure: \n' + toString(err));
         }
