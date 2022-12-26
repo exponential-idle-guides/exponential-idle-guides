@@ -577,7 +577,7 @@ You may not hit the values and have a different distribution, but work on gettin
    <tbody>
       <tr>
          <td class="leftHeader">T2</td>
-         <td>e300-e350 𝜏</td>
+         <td>e240-e300 𝜏</td>
       </tr>
       <tr>
          <td class="leftHeader">T1</td>
