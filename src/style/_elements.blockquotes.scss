@@ -1,6 +1,8 @@
 blockquote {
   display: block;
-	padding: 0.25em 20px 0.25em 20px;
+	padding: 0.1em 20px 0.1em 20px;
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
 	border-left: 10px solid var(--palette-fill-table-headers-dark);
 	border-radius: 5px
 }
