@@ -122,7 +122,7 @@ module.exports = config => {
     });
   });
 
-  config.addCollectino("postsByYear", (collection) => {
+  config.addCollection("postsByYear", (collection) => {
     return _.chain(collection.getAllSorted())
       .groupBy((post) => post.date.getFullYear())
       .toPairs()
