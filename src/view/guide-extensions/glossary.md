@@ -15,19 +15,19 @@ Sigma is the number of students. E.g. "I have 300 sigma" means I have 300 total 
 
 ### Tau
 
-Tau is the main currency gained from doing theories. Tau is used to increase f(t).
+Tau, formatted in the game as \\(\tau\\), is the main currency gained from doing theories. Tau is used to increase f(t).
 
 ### Rho
 
-Rho is also a currency gained from doing theories. However, rho is reset upon publication. In fact for most theories, the tau in a theory is simply the maximum rho ever reached in that theory.
+Rho, formatted in the game as \\(\rho\\), is also a currency gained from doing theories. However, rho is reset upon publication. In fact for most theories, the tau in a theory is simply the maximum rho ever reached in that theory.
 
 ### Publication / Pub
 
-Publication/Pub is the act of resetting theories to accumulate higher multipliers. Higher multipliers allow us to reach higher rho and tau in the future. In England Publication is also a place where people can socialise and drink.
+Publication/Pub is the act of resetting theories to accumulate higher total multipliers. Higher multipliers allow us to reach higher rho and tau in the future. In England Publication is also a place where people can socialise and drink (joke).
 
 ### Dot
 
-rhodot, taudot, qdot, or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
+rhodot, taudot, qdot, (formatted as \\(\dot\rho\\)), \\(\dot\tau\\)), and \\(\dot{q}\\))) or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
 
 ### Milestone
 
@@ -39,7 +39,7 @@ A strategy to do theories that have high publication multipliers first to accumu
 
 ### Graduation / Grad
 
-A prestige layer, which resets most variables except tau. Graduations allow accumulation of more students.
+A prestige layer, which resets most variables except tau. Graduations allow accumulation of more students, increasing tau rates through increased R9 power.
 
 ### Supremacy / Sup
 
@@ -55,7 +55,7 @@ A currency gained from spending students on student upgrades. Usually written as
 
 ### R9
 
-Refers to the 9th Research of the student upgrades in the 'students' tab. This research boosts theory rates significantly. You start the game with '0r9' (0 levels). The maximum is '3R9', which means you have all 3 levels of the upgrade.
+Refers to the 9th Research of the student upgrades in the 'students' tab, which is the research upgrade below theories. This research boosts theory rates significantly. You start the game with '0r9' (0 levels). The maximum is '3R9', which means you have all 3 levels of the upgrade.
 
 ### R9 swapping
 
@@ -71,15 +71,15 @@ Usually referred in context of strategies. An active strategy requires more atte
 
 ### Hard Strat
 
-Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions.
+Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions. Examples of hard strategies include T3Play2 and T8PlaySolarSwap.
 
 ### Milestone Swapping / MS
 
-The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost tau/hour.
+The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost tau/hour. This type of strategy is most common prior to reaching all milestones in a theory, with a notable exception of T8PlaySolarSwap, which continues using milestone swapping past full milestones.
 
 ### Doubling Variables / Doublings
 
-Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with 2^x). Can sometimes refer to a really powerful variable.
+Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with 2^x). Can sometimes refer to a really powerful variable. An example of a doubling variable is \\(q_2\\) in theory 4.
 
 ### mod10 Variables
 
@@ -91,11 +91,11 @@ A subset of strategies that usually involve buying mod10 variables at 1/10th of 
 
 ### Pub multi
 
-Usually refer to the current increase in the total multiplier when you publish. For example, most theories in the publication tab will have texts that say 'Reset theory upgrades and currencies to multiply your income by xxxx'. Pub multi is the 'xxxx' number.
+A short-hand of Publication Multiplier. Usually refer to the current increase in the total multiplier when you publish. For example, most theories in the publication tab will have texts that say 'Reset theory upgrades and currencies to multiply your income by xxxx'. Pub multi is the 'xxxx' number.
 
 ### Total multi
 
-This is the number underneath the pub multi number above. It is the total multiplier of all your publications in that theory.
+This is the number underneath the pub multi number above. It is the total multiplier of all your publications in that theory. It is dependent on both your progress in the theory and on the amount of students you have.
 
 ### CT, WSP, SL, EF, CSR2
 
@@ -105,7 +105,7 @@ Custom Theories
  - Euler's Formula
  - Convergents to Square Root 2
 
-These are the 4 official custom theories (as of 24th November 2022).
+These are the 4 current official custom theories. More custom theories will eventually be released, and we will update this portion of the guide when they do so.
 
 ### Coasting
 
