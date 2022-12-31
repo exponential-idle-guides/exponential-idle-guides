@@ -57,7 +57,7 @@
               <li>
                 <a href="{{post.url}}">
                   {% if 'Rankings & News' in title %}
-                    {{ title.splice(16,-5) }}
+                    {{ title.slice(16,-5) }}
                   {% else %}
                     {{ post.data.title }}
                   {% endif %}
@@ -191,7 +191,7 @@
                     <li>
                       <a href="{{post.url}}">
                         {% if 'Rankings & News' in title %}
-                          {{ title.splice(16,-5) }}
+                          {{ title.slice(16,-5) }}
                         {% else %}
                           {{ post.data.title }}
                         {% endif %}
@@ -218,7 +218,7 @@
                     <li>
                       <a href="{{post.url}}">
                         {% if 'Rankings & News' in title %}
-                          {{ title.splice(16,-5) }}
+                          {{ title.slice(16,-5) }}
                         {% else %}
                           {{ post.data.title }}
                         {% endif %}
