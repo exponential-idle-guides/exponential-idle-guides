@@ -38,8 +38,11 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
-  <p>collection index:<p>
-  {{ collections.rankings | getCollectionItemIndex: page }}
+  {% if '/ranking-news' in page.url %}
+    <p>collection index:<p>
+    {{ collections.rankings | getCollectionItemIndex(page) }}
+  {% endif %}
+  
 
   {{ content | safe }}
 {% endblock %}
