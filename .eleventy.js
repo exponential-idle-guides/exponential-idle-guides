@@ -14,6 +14,8 @@ const util = require('util');
 
 const pluginTOC = require('eleventy-plugin-toc');
 
+const _ = require("lodash");
+
 const transformExcludes = [
   "_site/sitemap.xml"
 ];
