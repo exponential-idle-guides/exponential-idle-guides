@@ -39,7 +39,7 @@
   {% endif %}
 
   <p>collection index:<p>
-  {{ collections.rankings | getCollectionItem(page) }}
+  {{ collections.rankings | getCollectionItemIndex: page }}
 
   {{ content | safe }}
 {% endblock %}
