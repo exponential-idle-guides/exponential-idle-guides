@@ -6,6 +6,9 @@
   
   {% set previousPost = collections.advanced | getPreviousCollectionItem(page) %}
   {% set nextPost = collections.advanced | getNextCollectionItem(page) %}
+  
+  {% set previousRanking = collections.rankings | getPreviousCollectionItem(page) %}
+  {% set nextRanking = collections.rankings | getNextCollectionItem(page) %}
 
   <nav class="pagination">
     {% if previousGuide %}
@@ -20,6 +23,13 @@
     {% endif %}
     {% if nextPost %}
       <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
+    {% endif %}
+
+    {% if previousRanking %}
+      <a href="{{previousRanking.url}}">Previous: {{previousRanking.data.title}}</a>
+    {% endif %}
+    {% if nextRanking %}
+      <a href="{{nextRanking.url}}" class="pagination__next">Next: {{nextRanking.data.title}}</a>
     {% endif %}
   </nav>
 {% endset %}
