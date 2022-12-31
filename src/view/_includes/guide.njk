@@ -2,10 +2,10 @@
 
 {% set nav %}
 
-  {% set nav-list = [collections.guides, collections.advanced, collections.rankings] %}
+  {% set navlist = [collections.guides, collections.advanced, collections.rankings] %}
   
   <nav class="pagination">
-    {% for posts in nav-list %}
+    {% for posts in navlist %}
       {% set previous = posts | getPreviousCollectionItem(page) %}
       {% set next = posts | getNextCollectionItem(page) %}
 
