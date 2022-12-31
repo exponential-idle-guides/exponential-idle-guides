@@ -10,7 +10,7 @@
       {% set next = posts | getNextCollectionItem(page) %}
 
       {% if previous %}
-        <a href="{{next.url}}">Previous: {{previous.data.title}}</a>
+        <a href="{{previous.url}}">Previous: {{previous.data.title}}</a>
       {% endif %}
       {% if next %}
         <a href="{{next.url}}" class="pagination__next">Next: {{next.data.title}}</a>
@@ -33,6 +33,14 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
+  {% if discord %}
+    <p>This was originally written on Discord so the text may be confusing. 
+      It is kept this way to preserve the original posts how they were.
+  {% endif %}
+
+  {% if '/ranking-news' in page.url %}
+    <a href="https://rankings--exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a>
+  {% endif %}
   
   {{ content | safe }}
 

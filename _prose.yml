@@ -44,6 +44,10 @@ prose:
         field:
           element: "text"
           label: "Subtitle"
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Draft?"
       - name: "spoiler"
         field:
           element: "text"
@@ -69,6 +73,10 @@ prose:
         field:
           element: "text"
           label: "Subtitle"
+      - name: "draft"
+        field:
+          element: "checkbox"
+          label: "Draft?"
       - name: "spoiler"
         field:
           element: "text"
@@ -85,3 +93,7 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+      - name: "discord"
+        field:
+          element: "checkbox"
+          label: "originally discord"
