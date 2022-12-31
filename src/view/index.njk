@@ -43,7 +43,7 @@ home: true
     {%- for post in collections.advanced -%}
       {% set rank = True %}
       {% for site in rankinglist %}
-        {% if (site in post.url) && rank %}
+        {% if (site in post.url) and rank %}
           {% set rank = False %}
         {% endif %}
       {% endfor %}
