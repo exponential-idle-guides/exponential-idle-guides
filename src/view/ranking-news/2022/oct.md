@@ -15,6 +15,15 @@ So after once again avoiding the rankings in favor of news for a bit, it is fina
 
 October 2022 Top 20 on the leaderboard, their \\(F(t)\\) at the time the list was compiled and their Discord connection (Discord names in brackets are not their nicknames!):
 
+### News
+
+- Let's start with some sad news: Snaeky was the last victim of the save switch bug where a save is overwritten and lost his main save (I hope this will be resolved soon!). So remember kids: always make backup and do it regularly enough! We do have a website for that if you don't have your own cloud storage.
+- Playspout is the first person to break 6700 tau! Congrats!
+- I managed to make the rankings a bit earlier! I won't try to say I'll keep it at that but it's something^^
+- Gilles was on vacation, he certainly deserved it. Okay, so when 1.5? ;)
+- In important news: d4Nf6Bg5 overtook birrel (if this seems like random news to you: no problem). This did maybe show the practical effect  of overpush and keeping 2 saves at the same time.
+- Playspout did it again and managed to get a custom theory to the new limit of e150 tau: Sequential Limits has been finished!
+
 ### Rankings
 
 1. GenErationNation (Gen) - ee67017:
@@ -139,9 +148,9 @@ October 2022 Top 20 on the leaderboard, their \\(F(t)\\) at the time the list wa
 >
 > This month he stayed and if only barely.
 >
-> Some enter the list and so some have to leave the list as well. Here are our fallen fellows from this month:
->
-> No one is here, that is a surprise!
+Some enter the list and so some have to leave the list as well. Here are our fallen fellows from this month:
+
+No one is here, that is a surprise!
 
 ### An honourable mention goes to
 
@@ -162,12 +171,3 @@ And in the end it is of course time for the "real" honourable mention (please no
 > Unfortunately after such a long time it gets hard to remember much details , so I'll end on a nice quote by him: "T5 is a massively underrated theory"
 >
 > As it turned out to be quite the undertaking to write this month edition (as always, might need to overthink the format?), we had some \\(F(t)\\) changes. Luckily for me none of them was enough to change any ranks (at least on my leaderboard).
-
-### News
-
-- Let's start with some sad news: Snaeky was the last victim of the save switch bug where a save is overwritten and lost his main save (I hope this will be resolved soon!). So remember kids: always make backup and do it regularly enough! We do have a website for that if you don't have your own cloud storage.
-- Playspout is the first person to break 6700 tau! Congrats!
-- I managed to make the rankings a bit earlier! I won't try to say I'll keep it at that but it's something^^
-- Gilles was on vacation, he certainly deserved it. Okay, so when 1.5? ;)
-- In important news: d4Nf6Bg5 overtook birrel (if this seems like random news to you: no problem). This did maybe show the practical effect  of overpush and keeping 2 saves at the same time.
-- Playspout did it again and managed to get a custom theory to the new limit of e150 tau: Sequential Limits has been finished!
