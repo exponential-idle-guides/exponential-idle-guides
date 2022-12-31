@@ -73,10 +73,6 @@ prose:
         field:
           element: "text"
           label: "Subtitle"
-      - name: "draft"
-        field:
-          element: "checkbox"
-          label: "Draft?"
       - name: "spoiler"
         field:
           element: "text"
