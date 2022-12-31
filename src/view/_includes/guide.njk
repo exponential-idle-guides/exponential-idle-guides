@@ -38,16 +38,10 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
-
-  {% if '/ranking-news' in page.url %}
-  
-    <p>collection works<p>
-
-    {% set index = collections.rankings | getCollectionItemIndex(page) %}
-    <p>collection index:<p>
-    {{ index }}
+  {% if '/ranking-news/rankings' in page.url %}
+    {% block rankings-main %}{% endblock %}
+  {% else %}
+    {{ content | safe }}
   {% endif %}
   
-
-  {{ content | safe }}
 {% endblock %}
