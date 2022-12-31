@@ -59,7 +59,7 @@ home: true
           <li>
             <a href="{{post.url}}">
               {% if 'Rankings & News' in post.data.title %}
-                {{ post.data.title.splice(16) }}
+                {{ post.data.title.splice(16,-5) }}
               {% else %}
                 {{ post.data.title }}
               {% endif %}
