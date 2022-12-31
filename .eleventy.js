@@ -122,6 +122,14 @@ module.exports = config => {
     });
   });
 
+  config.addCollectino("postsByYear", (collection) => {
+    return _.chain(collection.getAllSorted())
+      .groupBy((post) => post.date.getFullYear())
+      .toPairs()
+      .reverse()
+      .value();
+  });
+
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
