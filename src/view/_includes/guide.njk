@@ -38,6 +38,9 @@
       Keep in mind, <strong>strategies may change</strong>.
   {% endif %}
 
+  
+  {{ content | safe }}
+
   {% if '/rankings-main' in page.url %}
     <h3>Previous Rankings</h3>
     <ul>
@@ -52,8 +55,6 @@
         {% endif %}
       {%- endfor -%}
     </ul>
-  {% else %}
-    {{ content | safe }}
   {% endif %}
   
 {% endblock %}
