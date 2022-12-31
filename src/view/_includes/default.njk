@@ -29,6 +29,10 @@
     <script>
       
       function openSidebar(sidebars,sidebarheaders) {
+        console.log(window.location.href);
+        console.log(window.location.href.includes('/rankings-news'));
+        if((window.location.href).includes('/rankings-news')){sidebars.append('RankingsSidebar');}
+        console.log(sidebars);
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}
         document.getElementById(sidebars[0]).style.zIndex="10";
 
