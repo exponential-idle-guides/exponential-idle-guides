@@ -153,7 +153,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 ### Autoprestige expression
 
 <blockquote>
-timer(d(ln(db/b+1)/pt) < 0)
+timer(d(ln(db/b+1)/pt) < 0)<br>
 > 3 * tr && db > b
 </blockquote>
 
@@ -192,14 +192,14 @@ derivative (\\(d\\)) and see when it turns negative.
 ### Autosupremacy expression
 
 <blockquote>
-timer(d(ln(db / b + 1) / pt) < 0)
-> 3 * tr && db > b && dpsi + psi
-> min(min(costUpS(1), costUpS(2)), costUpS(3))
-&& ln(1 + max(1, log10(sf)) /
-smooth(max(1, log10(gf)), (st > tr) * ee99))
-/ max(1, st) < smooth(ln(1 + max(1, log10(sf))
-/ smooth(max(1, log10(gf)), (st > tr) * ee99)) /
-max(1, st), (pt > tr) * ee99)
+timer(d(ln(db / b + 1) / pt) < 0)<br>
+> 3 * tr && db > b && dpsi + psi<br>
+> min(min(costUpS(1), costUpS(2)), costUpS(3))<br>
+&& ln(1 + max(1, log10(sf)) /<br>
+smooth(max(1, log10(gf)), (st > tr) * ee99))<br>
+/ max(1, st) < smooth(ln(1 + max(1, log10(sf))<br>
+/ smooth(max(1, log10(gf)), (st > tr) * ee99)) /<br>
+max(1, st), (pt > tr) * ee99)<br>
 </blockquote>
 
 **YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!**
