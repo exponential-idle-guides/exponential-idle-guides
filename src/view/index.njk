@@ -41,10 +41,10 @@ home: true
   <h3>Guide Extensions</h3>
   <ul>
     {%- for post in collections.advanced -%}
-      {% set rank = True %}
+      {% set rank = true %}
       {% for site in rankinglist %}
         {% if (site in post.url) and rank %}
-          {% set rank = False %}
+          {% set rank = false %}
         {% endif %}
       {% endfor %}
 
