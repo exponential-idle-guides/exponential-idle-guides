@@ -36,23 +36,26 @@ home: true
     {%- endfor -%}
   </ul>
 
+  {% set rankinglist = ['/rankings-main', '/rankings-hall-of-fame'] %}
+
   <h3>Guide Extensions</h3>
   <ul>
     {%- for post in collections.advanced -%}
-      {% if not ('/rankings-main' in post.url) %}
-        <li>
-          <a href="{{post.url}}">{{ post.data.title }}</a>
-          {% if post.data.subtitle %}
-            ({{ post.data.subtitle }})
-          {% endif %}
-        </li>
-      {% endif %}
+      {% for site in rankinglist %}
+        {% if not (site in post.url) %}
+          <li>
+            <a href="{{post.url}}">{{ post.data.title }}</a>
+            {% if post.data.subtitle %}
+              ({{ post.data.subtitle }})
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
     {%- endfor -%}
   </ul>
 
   <h3>Rankings</h3>
   <ul>
-    {% set rankinglist = ['/rankings-main', '/rankings-hall-of-fame'] %}
     {%- for post in collections.advanced -%}
       {% for site in rankinglist %}
         {% if site in post.url %}
