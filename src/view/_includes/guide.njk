@@ -42,6 +42,10 @@
   {% if '/ranking-news' in page.url %}
   
     <p>collection works<p>
+
+    {% set index = collections.rankings | getCollectionItemIndex(page) %}
+    <p>collection index:<p>
+    {{ index }}
   {% endif %}
   
 
