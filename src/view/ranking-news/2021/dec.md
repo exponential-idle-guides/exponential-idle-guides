@@ -4,7 +4,7 @@ description: "Rankings of the Top 20 players with more infos and news about occu
 author: "AfuroZamurai"
 contributors: "the Amazing Community"
 discord: true
-date: 2021-12-5
+date: 2021-12-05
 ---
 
 ## December 2021
