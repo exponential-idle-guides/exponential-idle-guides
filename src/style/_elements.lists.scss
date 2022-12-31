@@ -40,12 +40,14 @@ li.invisible {
   list-style-type: none;
 }
 
-ul.unknown-bullet {
+ol.unknown-bullet {
   list-style-type: none;
+  counter-reset: elementcounter;
   padding-left: 0;
 }
 
-ul.unknown-bullet li {
-  content: "??.";
+ol.unknown-bullet li {
+  content: "??" counter(elementcounter) ". ";
+  counter-increment: elementcounter;
   font-weight: bold;
 }
