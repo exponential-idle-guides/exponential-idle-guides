@@ -125,7 +125,8 @@ module.exports = config => {
   });
 
   config.addCollection("rankingsByYear", (collection) => {
-    return _.chain(collection.getFilteredByTag("ranking-news").getAllSorted())
+    return _.chain(collection.getAllSorted())
+      .getFilteredByTag("ranking-news")
       .groupBy((post) => post.date.getFullYear())
       .toPairs()
       .reverse()
