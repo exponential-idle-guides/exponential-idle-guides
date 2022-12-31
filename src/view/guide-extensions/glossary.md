@@ -51,7 +51,7 @@ A currency gained from performing supremacies. Usually written as \\(\psi \\). I
 
 ### Phi
 
-A currency gained from spending students on student upgrades. Usually written as \\(\phi \\). It is used to boost f(t) or boost theory rates.
+A currency gained from spending students on student upgrades. Usually written as \\(\varphi \\). It is used to boost f(t) or boost theory rates.
 
 ### R9
 
