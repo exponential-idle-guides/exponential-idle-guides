@@ -30,8 +30,8 @@
       
       function openSidebar(sidebars,sidebarheaders) {
         console.log(window.location.href);
-        console.log(window.location.href.includes('/rankings-news'));
-        if((window.location.href).includes('/rankings-news')){sidebars.append('RankingsSidebar');}
+        console.log(window.location.href.includes('/ranking-news'));
+        if((window.location.href).includes('/ranking-news')){sidebars.append('RankingsSidebar');}
         console.log(sidebars);
         for (const sidebar of sidebars) {document.getElementById(sidebar).style.zIndex="0";}
         document.getElementById(sidebars[0]).style.zIndex="10";
@@ -69,7 +69,7 @@
         if (Math.round(document.getElementById("HeaderSidebar").offsetWidth-window.visualViewport.width*0.04)>=Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]) && getComputedStyle(document.querySelector(':root')).getPropertyValue('--sidebar-width')!="0%") {
           bool=false;sidebarlist=['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar','sidebarmain'];
           console.log(window.location.href);
-          if((window.location.href).includes('/rankings-news')){sidebarlist.append('RankingsSidebar');}
+          if((window.location.href).includes('/ranking-news')){sidebarlist.append('RankingsSidebar');}
           while(bool==false){
             for(const sidebars of sidebarlist){
               if(bool==true){break;}
