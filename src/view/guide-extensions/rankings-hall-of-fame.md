@@ -1,10 +1,10 @@
 ---
-title: "F(t) Rankings"
+title: "F(t) Rankings Hall of Fame"
 description: "Hall of Fame for Exponential Idle Players"
 author: "AfuroZamurai"
 contributors: "the Amazing Community"
 draft: false
-order: 999
+order: 1000
 ---
 
 The Hall of Fame is dedicated to any player with an honorable mention or ranking on the [\\(F(t)\\) Rankings](/rankings-main.md). Below are all the players listed with their first appearance (does not include all as many have multiple). 
