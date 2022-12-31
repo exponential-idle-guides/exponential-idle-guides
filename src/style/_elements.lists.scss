@@ -39,3 +39,13 @@ i {
 li.invisible {
   list-style-type: none;
 }
+
+ul.unknown-bullet {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul.unknown-bullet li {
+  content: "??.";
+  font-weight: bold;
+}
