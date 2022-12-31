@@ -39,7 +39,19 @@
   {% endif %}
 
   {% if '/rankings_main' in page.url %}
-    {% block mainrankings %}{% endblock %}
+    <h3>Previous Rankings</h3>
+    <ul>
+      {%- for post in collections.ranking | reverse -%}
+        {% if not ('/rankings-main' in post.url) %}
+          <li>
+            <a href="{{post.url}}">{{ post.data.title }}</a>
+            {% if post.data.subtitle %}
+              ({{ post.data.subtitle }})
+            {% endif %}
+          </li>
+        {% endif %}
+      {%- endfor -%}
+    </ul>
   {% else %}
     {{ content | safe }}
   {% endif %}
