@@ -27,7 +27,7 @@ Publication/Pub is the act of resetting theories to accumulate higher total mult
 
 ### Dot
 
-rhodot, taudot, qdot, (formatted as \\(\dot\rho\\)), \\(\dot\tau\\)), and \\(\dot{q}\\))) or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
+rhodot, taudot, qdot, (formatted as \\(\dot\rho\\), \\(\dot\tau\\), and \\(\dot{q}\\)) or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
 
 ### Milestone
 
