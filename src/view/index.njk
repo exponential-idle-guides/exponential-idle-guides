@@ -66,10 +66,10 @@ home: true
 
   <h3>Sorted By Year</h3>
   <ul>
-    {% for year, yearPosts in collections.postsByYear %}
+    {% for year, yearRankings in collections.rankingsByYear %}
       <li>{{ year }}</li>
       <ul>
-        {% for post in yearPosts | reverse %}
+        {% for post in yearRankings | reverse %}
           <li>
             <a href="{{post.url}}">{{ post.data.title }} ({{ post.data.date}})</a>
             {% if post.data.subtitle %}

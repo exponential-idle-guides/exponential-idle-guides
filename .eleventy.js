@@ -124,8 +124,8 @@ module.exports = config => {
     });
   });
 
-  config.addCollection("postsByYear", (collection) => {
-    return _.chain(collection.getAllSorted())
+  config.addCollection("rankingsByYear", (collection) => {
+    return _.chain(collection.getFilteredByTag("ranking-news").getAllSorted())
       .groupBy((post) => post.date.getFullYear())
       .toPairs()
       .reverse()
