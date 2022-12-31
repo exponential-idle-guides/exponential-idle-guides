@@ -53,17 +53,15 @@
         <ul>
           {% for post in yearPosts | reverse %}
             {% if '/ranking-news' in post.url %}
+              {% set title = post.data.title | string %}
               <li>
                 <a href="{{post.url}}">
-                  {% if 'Rankings & News' in post.data.title %}
-                    {{ post.data.title.splice(16,-5) }}
+                  {% if 'Rankings & News' in title %}
+                    {{ title.splice(16,-5) }}
                   {% else %}
                     {{ post.data.title }}
                   {% endif %}
                 </a>
-                {% if post.data.subtitle %}
-                  ({{ post.data.subtitle }})
-                {% endif %}
               </li>
             {% endif %}
           {% endfor %}
@@ -189,10 +187,11 @@
               <ul>
                 {% for post in yearPosts | reverse %}
                   {% if '/ranking-news' in post.url %}
+                    {% set title = post.data.title | string %}
                     <li>
                       <a href="{{post.url}}">
-                        {% if 'Rankings & News' in post.data.title %}
-                          {{ post.data.title.splice(16,-5) }}
+                        {% if 'Rankings & News' in title %}
+                          {{ title.splice(16,-5) }}
                         {% else %}
                           {{ post.data.title }}
                         {% endif %}
@@ -215,10 +214,11 @@
               <ul>
                 {% for post in yearPosts | reverse %}
                   {% if '/ranking-news' in post.url %}
+                    {% set title = post.data.title | string %}
                     <li>
                       <a href="{{post.url}}">
-                        {% if 'Rankings & News' in post.data.title %}
-                          {{ post.data.title.splice(16,-5) }}
+                        {% if 'Rankings & News' in title %}
+                          {{ title.splice(16,-5) }}
                         {% else %}
                           {{ post.data.title }}
                         {% endif %}

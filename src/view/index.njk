@@ -56,10 +56,11 @@ home: true
     {%- for post in collections.advanced -%}
       {% for site in rankinglist %}
         {% if site in post.url %}
+          {% set title = post.data.title | string %}
           <li>
             <a href="{{post.url}}">
-              {% if 'Rankings & News' in post.data.title %}
-                {{ post.data.title.splice(16,-5) }}
+              {% if 'Rankings & News' in title %}
+                {{ title.splice(16,-5) }}
               {% else %}
                 {{ post.data.title }}
               {% endif %}
