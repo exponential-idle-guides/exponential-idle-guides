@@ -64,25 +64,6 @@ home: true
     {%- endfor -%}
   </ul>
 
-  <h3>Sorted By Year</h3>
-  <ul>
-    {% for year, yearPosts in collections.postsByYear %}
-      <li>{{ year }}</li>
-      <ul>
-        {% for post in yearPosts | reverse %}
-          {% if '/ranking-news' in post.url %}
-            <li>
-              <a href="{{post.url}}">{{ post.data.title }} ({{ post.data.date}})</a>
-              {% if post.data.subtitle %}
-                ({{ post.data.subtitle }})
-              {% endif %}
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endfor %}
-  </ul>
-
   <h3>Other resources</h3>
   {% include "tools.njk" %}
 
