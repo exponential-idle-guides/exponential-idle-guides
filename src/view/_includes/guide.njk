@@ -1,36 +1,21 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
-  {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
-  
-  {% set previousPost = collections.advanced | getPreviousCollectionItem(page) %}
-  {% set nextPost = collections.advanced | getNextCollectionItem(page) %}
-  
-  {% set previousRanking = collections.rankings | getPreviousCollectionItem(page) %}
-  {% set nextRanking = collections.rankings | getNextCollectionItem(page) %}
 
+  {% set nav-list = [collections.guides, collections.advanced, collections.rankings] %}
+  
   <nav class="pagination">
-    {% if previousGuide %}
-      <a href="{{previousGuide.url}}">Previous: {{previousGuide.data.title}}</a>
-    {% endif %}
-    {% if nextGuide %}
-      <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
-    {% endif %}
-    
-    {% if previousPost %}
-      <a href="{{previousPost.url}}">Previous: {{previousPost.data.title}}</a>
-    {% endif %}
-    {% if nextPost %}
-      <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
-    {% endif %}
+    {% for posts in nav-list %}
+      {% set previous = posts | getPreviousCollectionItem(page) %}
+      {% set next = posts | getNextCollectionItem(page) %}
 
-    {% if previousRanking %}
-      <a href="{{previousRanking.url}}">Previous: {{previousRanking.data.title}}</a>
-    {% endif %}
-    {% if nextRanking %}
-      <a href="{{nextRanking.url}}" class="pagination__next">Next: {{nextRanking.data.title}}</a>
-    {% endif %}
+      {% if previous %}
+        <a href="{{next.url}}">Previous: {{previous.data.title}}</a>
+      {% endif %}
+      {% if next %}
+        <a href="{{next.url}}" class="pagination__next">Next: {{next.data.title}}</a>
+      {% endif %}
+    {% endfor %}
   </nav>
 {% endset %}
 
