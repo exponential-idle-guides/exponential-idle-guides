@@ -47,7 +47,7 @@ ol.unknown-bullet {
 }
 
 ol.unknown-bullet li {
-  content: "??" counter(elementcounter) ". ";
+  content: "Hello " counter(elementcounter) ". ";
   counter-increment: elementcounter;
   font-weight: bold;
 }
