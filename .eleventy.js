@@ -126,13 +126,6 @@ module.exports = config => {
     });
   });
 
-  config.addCollection("postsByYear", (collection) => {
-    return _.chain(collection.getAllSorted())
-      .groupBy((post) => post.date.getFullYear())
-      .toPairs()
-      .reverse()
-      .value();
-  });
 
   const tags = ['T9+', 'other', 'rank'];
   tags.map((tag) => {
