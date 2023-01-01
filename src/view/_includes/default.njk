@@ -59,7 +59,7 @@
     <script>
       const root = document.documentElement;
       const query_root  =  document.querySelector(':root');
-      const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar','sidebarMain'];
+      const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar','sidebarOptions'];
       const close_btn_list = ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'];
       var curr_sidebar = 'none';
       var Mobile = false;
@@ -145,6 +145,9 @@
       }
 
       function openSidebar(sidebars, sidebarheaders, force=false) {
+        if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
+        console.log(sidebars);
+        console.log(sidebarheaders);
         for (const sidebar of sidebars) {
           document.getElementById(sidebar).style.zIndex = "0";
         }
@@ -155,20 +158,19 @@
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
           let bool = (btn_top == "0%" && sidebar_height == "0%");
           if (bool || curr_sidebar != sidebars[0] || force) {
-            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
             openMobileSidebars(sidebars, sidebarheaders, bool);
           }
         } else {
           let btn_left = getComputedStyle(query_root).getPropertyValue('--btn-marginLeft');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
           if ((btn_left == "0%" && sidebar_height == "0%") || force) {
-            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
             openDesktopSidebars(sidebars, sidebarheaders);
           }
         }
       }
       
       function Navigation(nav_id){
+        if(
         nav = document.getElementById('button_nav').style
         query = getComputedStyle(query_root)
         background = query.getPropertyValue('--palette-fill-sidebar');
@@ -185,25 +187,7 @@
         window.Navbar = !Navbar;
         return
       }
-      /*
-      function CloseSidebar(){
-        attr_list = ['sidebar-width', 'btn-marginLeft', 'sidebar-padding-lr'];
-        
-        if (Mobile){
-          query_root.style.setProperty('--sidebar-transition-time', '0.5s');
-          query_root.style.setProperty('--sidebar-text-transition-time', '0.3s');
-          attr_list = ['sidebar-height', 'btn-marginTop', 'sidebar-padding-b'];
-        }
-        
-        attr_list.push('sidebar-content-padding');
-        for (const attr in attr_list){
-          change_attr = '--' + attr;
-          query_root.style.setProperty(change_attr, "0%");
-        }
-        var curr_sidebar='none';
-        return
-      }
-      */
+
       function CloseSidebar(){
         if (Mobile){
           query_root.style.setProperty('--sidebar-transition-time', '0.5s');
@@ -218,17 +202,17 @@
         }
         query_root.style.setProperty('--sidebar-content-padding', "0%");
         var curr_sidebar='none';
-        Navigation('sidebarOptions');
+        if(Navbar){Navigation('sidebarOptions');}
         return
       }
-      function testSidebar(btn_list, sidebar_list, e){
+
+      function testSidebar(e){
         if((window.location.href).includes('/ranking-news') && !(btn_list.includes('RankingClose'))){
-          btn_list.push('RankingClose');
+          close_btn_list.push('RankingClose');
           sidebar_list.push('RankingSidebar');
         };
         bool = true;
-        for(const btn of btn_list){
-          console.log(btn);
+        for(const btn of close_btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
             break;
@@ -237,7 +221,6 @@
         if(bool) {
           bool=false
           for(const sidebars of sidebar_list){
-            console.log(sidebars);
             if (document.getElementById(sidebars).contains(e.target)==true){
               bool = true;
               break;
@@ -258,9 +241,8 @@
           sidebar_attr = Number(window.getComputedStyle(document.body).getPropertyValue('--sidebar-width').match(/\d+/)[0]);
           sidebar_root = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
         }
-        if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
-          sidebar_bool = testSidebar(close_btn_list, sidebar_list, e);
-          if(sidebar_bool){CloseSidebar();}
+        if((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")){
+          if(testSidebar(e)){CloseSidebar();}
         }
       })
       function openpopup(display_id){
