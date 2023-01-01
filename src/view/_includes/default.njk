@@ -59,7 +59,7 @@
     <script>
       const root = document.documentElement;
       const query_root  =  document.querySelector(':root');
-      const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar','sidebarMain'];
+      const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar','sidebarMain'];
       const close_btn_list = ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'];
       var curr_sidebar = 'none';
       var Mobile = false;
@@ -155,14 +155,14 @@
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
           let bool = (btn_top == "0%" && sidebar_height == "0%");
           if (bool || curr_sidebar != sidebars[0] || force) {
-            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingsSidebar'))){sidebars.push('RankingsSidebar');}
+            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
             openMobileSidebars(sidebars, sidebarheaders, bool);
           }
         } else {
           let btn_left = getComputedStyle(query_root).getPropertyValue('--btn-marginLeft');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
           if ((btn_left == "0%" && sidebar_height == "0%") || force) {
-            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingsSidebar'))){sidebars.push('RankingsSidebar');}
+            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
             openDesktopSidebars(sidebars, sidebarheaders);
           }
         }
@@ -222,16 +222,9 @@
         return
       }
       function testSidebar(btn_list, sidebar_list, e){
-        console.log(window.location.href);
-        console.log(btn_list);
-        console.log(close_btn_list);
-        console.log(sidebar_list);
-        if((window.location.href).includes('/ranking-news') && !(btn_list.includes('RankingsClose'))){
-          btn_list.push('RankingsClose');
-          sidebar_list.push('RankingsSidebar');
-          console.log(btn_list);
-          console.log(close_btn_list);
-          console.log(sidebar_list);
+        if((window.location.href).includes('/ranking-news') && !(btn_list.includes('RankingClose'))){
+          btn_list.push('RankingClose');
+          sidebar_list.push('RankingSidebar');
         };
         bool = true;
         for(const btn of btn_list){
@@ -267,7 +260,6 @@
         }
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
           sidebar_bool = testSidebar(close_btn_list, sidebar_list, e);
-          console.log(sidebar_bool);
           if(sidebar_bool){CloseSidebar();}
         }
       })

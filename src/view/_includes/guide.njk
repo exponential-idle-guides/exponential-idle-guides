@@ -144,8 +144,8 @@
       </div>
     </div>
     
-    <div id="ExtensionsSidebar" class="sidebar">
-      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+    <div id="ExtensionSidebar" class="sidebar">
+      <a href="javascript:void(0)" id="ExtensionClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -157,8 +157,8 @@
         </ul>
       </div>
     </div>
-    <div id="ExtensionsSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+    <div id="ExtensionSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" id="ExtensionClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -262,20 +262,20 @@
       </div>
       <div id="sidebarOptions">
         <div>
-          <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰More Guides</button>
+          <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],'SidebarHeaders')">☰More Guides</button>
         </div>
         <div>
-          <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+          <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar','ExtensionSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
         </div>
         <div>
-          <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Other Resources</button>
+          <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar','ExtensionSidebar'],'SidebarHeaders')">☰Other Resources</button>
         </div>
         <div>
-          <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
+          <button class="openbtn" onclick="openSidebar(['ExtensionSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
         </div>
       {% if '/ranking-news' in page.url %}
         <div>
-          <button class="openbtn" onclick="openSidebar(['RankingsSidebar','ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Rankings</button>
+          <button class="openbtn" onclick="openSidebar(['RankingSidebar','ExtensionSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Rankings</button>
         </div>
       {% endif %}
       </div>
