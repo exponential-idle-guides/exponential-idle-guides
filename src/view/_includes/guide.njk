@@ -186,18 +186,7 @@
               <li>{{ year }}</li>
               <ul>
                 {% for post in yearPosts | reverse %}
-                  {% if ('/ranking-news' in post.url) and not ('index' in post.url) %}
-                    {% set title = post.data.title | string %}
-                    <li>
-                      <a href="{{post.url}}">
-                        {% if 'Rankings & News' in title %}
-                          {{ title.slice(16,-5) }}
-                        {% else %}
-                          {{ post.data.title }}
-                        {% endif %}
-                      </a>
-                    </li>
-                  {% endif %}
+                  <li>{{ post.data.title }}</li>
                 {% endfor %}
               </ul>
             {% endfor %}
@@ -213,18 +202,7 @@
               <li>{{ year }}</li>
               <ul>
                 {% for post in yearPosts | reverse %}
-                  {% if ('/ranking-news' in post.url) and not ('index' in post.url) %}
-                    {% set title = post.data.title | string %}
-                    <li>
-                      <a href="{{post.url}}">
-                        {% if 'Rankings & News' in title %}
-                          {{ title.slice(16,-5) }}
-                        {% else %}
-                          {{ post.data.title }}
-                        {% endif %}
-                      </a>
-                    </li>
-                  {% endif %}
+                  <li>{{ post.data.title }}</li>=
                 {% endfor %}
               </ul>
             {% endfor %}
