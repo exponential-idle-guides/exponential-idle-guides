@@ -45,30 +45,7 @@
   {% endif %}
   
   {{ content | safe }}
-  {% if '/rankings-main' in page.url %}
-    <h3>Previous Rankings</h3>
-    <ul>
-      {% for year, yearPosts in collections.postsByYear %}
-        <li>{{ year }}</li>
-        <ul>
-          {% for post in yearPosts | reverse %}
-            {% if '/ranking-news' in post.url %}
-              {% set title = post.data.title | string %}
-              <li>
-                <a href="{{post.url}}">
-                  {% if 'Rankings & News' in title %}
-                    {{ title.slice(16,-5) }}
-                  {% else %}
-                    {{ post.data.title }}
-                  {% endif %}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endfor %}
-    </ul>
-  {% endif %}
+  
   
 {% endblock %}
 
