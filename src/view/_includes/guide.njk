@@ -6,10 +6,165 @@
 
 {% block main %}
 
+  {% if author or contributors %}
+    <p class="byline">
+      {% if author %}Guide written by <strong>{{ author }}</strong>.{% endif %}
+      {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
+  {% endif %}
+
+  {% if draft %}
+    <p class="draft-warning">
+      This guide is currently undergoing change.
+      Keep in mind, <strong>strategies may change</strong>.
+    </p>
+  {% endif %}
+
+  {% if discord %}
+    <p>This was originally written on Discord so the text may be confusing. 
+      It is kept this way to preserve the original posts how they were.<br>
+  {% endif %}
+
+  
+  {% if not glossary %}
+    <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
+  {% endif %}
+  
+  {{ content | safe }}
   
   
 {% endblock %}
 
 {% block sidebar %}
-  
+  {% if not home %}
+    {% set tocs = content | toc %}
+    {% if tocs %}
+      <div id="HeaderSidebar" class="sidebar">
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          {{content|toc|safe}}
+        </div>
+      </div>
+      <div id="HeaderSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          {{content|toc|safe}}
+        </div>
+      </div>
+    {% else %}
+      <div id="HeaderSidebar" class="sidebar">
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        </div>
+      </div>
+      <div id="HeaderSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Table of Contents</h1>
+        <div class="content_wrapper square_list">
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
+        </div>
+      </div>
+    {% endif %}
+
+    <div id="GuideSidebar" class="sidebar">
+      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guides</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for guide in collections.guides -%}
+            <li>
+              <a href="{{guide.url}}">{{ guide.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div id="GuideSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guides</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for guide in collections.guides -%}
+            <li>
+              <a href="{{guide.url}}">{{ guide.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    <div id="ResourceSidebar" class="sidebar">
+      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Resources</h1>
+      <div class="content_wrapper square_list">
+        {% include 'tools.njk' %}
+      </div>
+    </div>
+    <div id="ResourceSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Resources</h1>
+      <div class="content_wrapper square_list">
+        {% include 'tools.njk' %}
+      </div>
+    </div>
+    
+    <div id="ExtensionsSidebar" class="sidebar">
+      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guide Extensions</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.extensions -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    <div id="ExtensionsSidebarinvis" class="sidebar">
+      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <h1 class="sidebartitle">Guide Extensions</h1>
+      <div class="content_wrapper square_list">
+        <ul>
+          {%- for post in collections.extensions -%}
+            <li>
+              <a href="{{post.url}}">{{ post.data.title }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    
+      
+    <div id="SidebarHeaders" class="sidebar">
+      <h1 class="sidebartitle">More Guides ⓧ</h1>
+      <h1 class="sidebartitle">Table of Contents ⓧ</h1>
+      <h1 class="sidebartitle">Other Resources ⓧ</h1>
+      <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
+    </div>
+    
+    <div id="sidebarMain">
+      <div id="sidebarNavigation">
+        <button id="button_nav" class="openbtn" onclick="Navigation('sidebarOptions')">☰Navigation</button>
+      </div>
+      <div id="sidebarOptions">
+        <div>
+          <button class="openbtn" onclick="openSidebar(['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰More Guides</button>
+        </div>
+        <div>
+          <button class="openbtn" onclick="openSidebar(['HeaderSidebar','GuideSidebar','ResourceSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Table of <span style="display:inline-block;">Contents</span></button>
+        </div>
+        <div>
+          <button class="openbtn" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar','ExtensionsSidebar'],'SidebarHeaders')">☰Other Resources</button>
+        </div>
+        <div>
+          <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
+        </div>
+      </div>
+    </div>
+  {% endif %}
 {% endblock %}
