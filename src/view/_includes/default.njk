@@ -146,8 +146,6 @@
 
       function openSidebar(sidebars, sidebarheaders, force=false) {
         if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
-        console.log(sidebars);
-        console.log(sidebarheaders);
         for (const sidebar of sidebars) {
           document.getElementById(sidebar).style.zIndex = "0";
         }

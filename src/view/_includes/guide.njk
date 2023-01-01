@@ -1,7 +1,21 @@
 {% extends "default.njk" %}
 
 {% set nav %}
+  {% set navlist = [collections.rankings] %}
   
+  <nav class="pagination">
+    {% for posts in navlist %}
+      {% set previous = posts | getPreviousCollectionItem(page) %}
+      {% set next = posts | getNextCollectionItem(page) %}
+
+      {% if previous %}
+        <a href="{{previous.url}}">Previous: {{previous.data.title}}</a>
+      {% endif %}
+      {% if next %}
+        <a href="{{next.url}}" class="pagination__next">Next: {{next.data.title}}</a>
+      {% endif %}
+    {% endfor %}
+  </nav>
 {% endset %}
 
 {% block main %}
