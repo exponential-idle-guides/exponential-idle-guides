@@ -106,14 +106,16 @@ module.exports = config => {
     util.inspect(s, {depth: d === undefined ? 2 : d})
   );
 
+  config.addFilter("keys", obj => Object.keys(obj));
+
   config.addCollection("guides", function(collection) {
-    return collection.getFilteredByTag("guide").sort(function(a, b) {
+    return collection.getFilteredByTag("guides").sort(function(a, b) {
       return a.data.order - b.data.order;
     });
   });
 
-  config.addCollection("advanced", function(collection) {
-    return collection.getFilteredByTag("advanced-concepts").sort(function(a, b) {
+  config.addCollection("extensions", function(collection) {
+    return collection.getFilteredByTag("extensions").sort(function(a, b) {
       return a.data.order - b.data.order;
     });
   });
@@ -132,6 +134,15 @@ module.exports = config => {
       .value();
   });
 
+  const tags = ['T9+', 'other'];
+  tags.map((tag) => {
+    config.addCollection('ext-'+tag, (collectionApi) => {
+      return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
+        return a.data.order - b.data.order;
+      });
+    });
+  });
+
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
   return {
@@ -143,5 +154,3 @@ module.exports = config => {
     markdownTemplateEngine: "njk"
   };
 }
-
-

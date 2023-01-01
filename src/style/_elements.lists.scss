@@ -39,15 +39,3 @@ i {
 li.invisible {
   list-style-type: none;
 }
-
-ol.unknown-bullet {
-  list-style-type: none;
-  counter-reset: elementcounter;
-  padding-left: 0;
-}
-
-ol.unknown-bullet li {
-  content: "Hello " counter(elementcounter) ". ";
-  counter-increment: elementcounter;
-  font-weight: bold;
-}

@@ -218,29 +218,35 @@ When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can 
 
 Suprem Equation past ee48k:
 
-```
-(costUpS(1)<e52&&psi+dpsi>e52)
-||(costUpS(3)<e411&&psi+dpsi>e411)
-||(costUpS(3)<e511&&psi+dpsi>e511)
-||(costUpS(3)<e531&&psi+dpsi>e531)
-||(costUpS(3)<e551&&psi+dpsi>e551)
-||(costUpS(3)<e571&&psi+dpsi>e571)
-```
+<blockquote id="as-post-48k">
+(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
+||(costUpS(3)&gt;e411&amp;&amp;psi+dpsi&lt;e411)<br>
+||(costUpS(3)&gt;e511&amp;&amp;psi+dpsi&lt;e511)<br>
+||(costUpS(3)&gt;e531&amp;&amp;psi+dpsi&lt;e531)<br>
+||(costUpS(3)&gt;e551&amp;&amp;psi+dpsi&lt;e551)<br>
+||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as-post-48k');">Copy Text</button>
 
 Suprem Equation past ee52k:
 
-```
-(costUpS(1)<e52&&psi+dpsi>e52)
-||(costUpS(3)<e511&&psi+dpsi>e511)
-||(costUpS(3)<e571&&psi+dpsi>e571)
-```
+<blockquote id="as-post-52k">
+(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
+||(costUpS(3)&gt;e511&amp;&amp;psi+dpsi&lt;e511)<br>
+||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as-post-52k');">Copy Text</button>
 
 Suprem Equation past ee58-60k:
 
-```
-(costUpS(1)<e52&&psi+dpsi>e52)
-||(costUpS(3)<e571&&psi+dpsi>e571)
-```
+<blockquote id="as-post-58-60k">
+(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
+||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as-post-58-60k');">Copy Text</button>
 
 ### How to respec
 

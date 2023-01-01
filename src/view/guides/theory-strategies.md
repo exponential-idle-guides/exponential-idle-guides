@@ -245,7 +245,7 @@ The second official custom theory, abbreviated SL, was created by ellipsis and r
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
-- [EF<span style="color:#41AD21">AI (post-e50ρ)</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efai-post-e50r)&nbsp; — &nbsp;Active
+- [EF<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efai)&nbsp; — &nbsp;Active
 
 - [EF<span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#efsnax)&nbsp; — &nbsp;Semi-Idle
 
@@ -4532,7 +4532,7 @@ Strategy Credits:
 
 ## Euler's Formula
 
-### EF<span style="color:#41AD21">AI (post-e50ρ)</span>
+### EF<span style="color:#41AD21">AI</span>
 <table class="spqcey">
 <thead>
    <tr>

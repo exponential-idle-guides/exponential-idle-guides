@@ -35,6 +35,10 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"
     src/view/guide-extensions:
       - name: "title"
         field:
@@ -44,14 +48,10 @@ prose:
         field:
           element: "text"
           label: "Subtitle"
-      - name: "draft"
-        field:
-          element: "checkbox"
-          label: "Draft?"
       - name: "spoiler"
         field:
           element: "text"
-          label: "Spoiler Order"
+          label: "Spoiler"
       - name: "order"
         field:
           element: "number"
@@ -64,6 +64,10 @@ prose:
         field:
           element: "text"
           label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"
     src/view/ranking-news:
       - name: "title"
         field:

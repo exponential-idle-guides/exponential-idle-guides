@@ -5,6 +5,7 @@ home: true
 ---
 
 {% extends "default.njk" %}
+{% import "list-link.njk" as list %}
 
 {% block title %}
   <h2 hidden>Home</h2>
@@ -26,61 +27,25 @@ home: true
 
   <h3>Our guides</h3>
   <ul>
-    {%- for guide in collections.guides -%}
-      <li>
-        <a href="{{guide.url}}">{{ guide.data.title }}</a>
-        {% if guide.data.subtitle %}
-          ({{ guide.data.subtitle }})
-        {% endif %}
-      </li>
-    {%- endfor -%}
+    {% for guide in collections.guides %}
+      {{ list.linked(guide) }}
+    {% endfor %}
   </ul>
-
-  {% set rankinglist = ['/rankings-main', '/rankings-hall-of-fame'] %}
 
   <h3>Guide Extensions</h3>
-  <ul>
-    {%- for post in collections.advanced -%}
-      {% set rank = true %}
-      {% for site in rankinglist %}
-        {% if (site in post.url) and rank %}
-          {% set rank = false %}
-        {% endif %}
-      {% endfor %}
 
-      {% if rank %}
-        <li>
-          <a href="{{post.url}}">{{ post.data.title }}</a>
-          {% if post.data.subtitle %}
-            ({{ post.data.subtitle }})
-          {% endif %}
-        </li>
+  <ul>
+    {% for tag, posts in collections %}
+      {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
+        <li>{{ tag.slice(4) | capitalize }}
+        <ul>
+          {% for guide in collections[tag] %}
+            {{ list.linked(guide) }}
+          {% endfor %}
+        </ul>
       {% endif %}
-    {%- endfor -%}
-  </ul>
-
-  <h3>Rankings</h3>
-  <ul>
-    {%- for post in collections.advanced -%}
-      {% for site in rankinglist %}
-        {% if site in post.url %}
-          {% set title = post.data.title | string %}
-          <li>
-            <a href="{{post.url}}">
-              {% if 'Rankings & News' in title %}
-                {{ title.slice(16,-5) }}
-              {% else %}
-                {{ post.data.title }}
-              {% endif %}
-            </a>
-            {% if post.data.subtitle %}
-              ({{ post.data.subtitle }})
-            {% endif %}
-          </li>
-        {% endif %}
-      {% endfor %}
-    {%- endfor -%}
-  </ul>
+    {% endfor %}
+  </ul> 
 
   <h3>Other resources</h3>
   {% include "tools.njk" %}

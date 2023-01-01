@@ -152,10 +152,12 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 
 ### Autoprestige expression
 
-<blockquote>
-timer(d(ln(db/b+1)/pt) < 0)<br>
-> 3 * tr && db > b
+<blockquote id='ap_eq'>
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
+&gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
+
+<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
 
 #### Autoprestige explanation
 
@@ -191,16 +193,20 @@ derivative (\\(d\\)) and see when it turns negative.
 
 ### Autosupremacy expression
 
-<blockquote>
-timer(d(ln(db / b + 1) / pt) < 0)<br>
-> 3 * tr && db > b && dpsi + psi<br>
-> min(min(costUpS(1), costUpS(2)), costUpS(3))<br>
-&& ln(1 + max(1, log10(sf)) /<br>
-smooth(max(1, log10(gf)), (st > tr) * ee99))<br>
-/ max(1, st) < smooth(ln(1 + max(1, log10(sf))<br>
-/ smooth(max(1, log10(gf)), (st > tr) * ee99)) /<br>
-max(1, st), (pt > tr) * ee99)<br>
+<blockquote id="as_eq">
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
+&gt; 3 * tr &amp;&amp; db &gt; b<br>
+&amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
+costUpS(2)), costUpS(3))<br>
+&amp;&amp; ln(1 + max(1, log10(sf)) /<br>
+smooth(max(1, log10(gf)),<br>
+(st &gt; tr) * ee99)) / max(1, st) &lt;<br>
+smooth(ln(1 + max(1, log10(sf)) /<br>
+smooth(max(1, log10(gf)), (st &gt; tr)<br>
+* ee99)) / max(1, st), (pt &gt; tr) * ee99)
 </blockquote>
+
+<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
 
 **YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!**
 

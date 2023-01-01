@@ -3,8 +3,8 @@ title: "Distribution Overpushing"
 description: "Introduction to the concept of distribution overpushing."
 author: "Playspout"
 contributors: "the Amazing Community"
-spoiler: T9
 order: 2
+tags: T9+
 ---
 
 ## What is distribution overpushing?

@@ -683,7 +683,7 @@ the rest after. This continues to max at 2/3/3/3.
 
 Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
 
-#### Final Push to ee20k
+### Final Push to ee20k
 
 In general, you will need about e2050 \\(\tau\\) in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories \\(\tau\\) is as follows. Being above or below these values is fine, just as long as you have e2050 tau.
 
