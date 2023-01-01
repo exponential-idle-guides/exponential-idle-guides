@@ -226,15 +226,16 @@
         console.log(btn_list);
         console.log(close_btn_list);
         console.log(sidebar_list);
-        if((window.location.href).includes('/ranking-news')){
+        if((window.location.href).includes('/ranking-news') && !(btn_list.includes('RankingsClose'))){
           btn_list.push('RankingsClose');
           sidebar_list.push('RankingsSidebar');
+          console.log(btn_list);
+          console.log(close_btn_list);
+          console.log(sidebar_list);
         };
-        console.log(btn_list);
-        console.log(close_btn_list);
-        console.log(sidebar_list);
         bool = true;
         for(const btn of btn_list){
+          console.log(btn);
           if (document.getElementById(btn).contains(e.target)==true){
             bool=false;
             break;
@@ -243,6 +244,7 @@
         if(bool) {
           bool=false
           for(const sidebars of sidebar_list){
+            console.log(sidebars);
             if (document.getElementById(sidebars).contains(e.target)==true){
               bool = true;
               break;
