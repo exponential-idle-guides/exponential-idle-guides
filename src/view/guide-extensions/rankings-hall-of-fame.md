@@ -1,5 +1,5 @@
 ---
-title: "Exonential Idle Hall of Fame"
+title: "Exponential Idle Hall of Fame"
 description: "Hall of Fame for Exponential Idle Players"
 author: "LE★Baldy"
 contributors: "AfuroZamurai for the F(t) Rankigs and the Amazing Community"
