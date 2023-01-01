@@ -1,7 +1,7 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set navlist = [collections.guides, collections.advanced] %}
+  {% set navlist = [collections.guides, collections.advanced, collections.rankings] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
@@ -39,7 +39,7 @@
   {% endif %}
 
   {% if '/ranking-news' in page.url %}
-    <a href="https://rankings--exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a>
+    <a href="https://exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a>
   {% elif not glossary %}
     <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
   {% endif %}
@@ -176,7 +176,7 @@
       </div>
     </div>
 
-    
+    {% comment %}
     {% if '/ranking-news' in page.url %}
       <div id="RankingsSidebar" class="sidebar">
         <a href="javascript:void(0)" id="RankingsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
@@ -233,6 +233,7 @@
         </div>
       </div>
     {% endif %}
+    {% endcomment %}
       
     <div id="SidebarHeaders" class="sidebar">
       <h1 class="sidebartitle">More Guides ⓧ</h1>
