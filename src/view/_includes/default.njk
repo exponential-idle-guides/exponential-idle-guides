@@ -222,12 +222,17 @@
         return
       }
       function testSidebar(btn_list, sidebar_list, e){
-        console.log('href: ' + toString(window.location.href) + '\nbtn_list: ' +  toString(btn_list) + '\nsidebar_list: ' + toString(sidebar_list));
+        console.log(window.location.href);
+        console.log(btn_list);
+        console.log(close_btn_list);
+        console.log(sidebar_list);
         if((window.location.href).includes('/ranking-news')){
           btn_list.push('RankingsClose');
           sidebar_list.push('RankingsSidebar');
         };
-        console.log('btn_list: ' +  toString(btn_list) + '\nclose_btn_list: ' + toString(close_btn_list) + '\nsidebar_list: ' + toString(sidebar_list));
+        console.log(btn_list);
+        console.log(close_btn_list);
+        console.log(sidebar_list);
         bool = true;
         for(const btn of btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
@@ -260,7 +265,7 @@
         }
         if ((sidebar >= sidebar_attr) && (String(sidebar_root) != "0%")) {
           sidebar_bool = testSidebar(close_btn_list, sidebar_list, e);
-          console.log('sidebar_bool' + toString(sidebar_bool));
+          console.log(sidebar_bool);
           if(sidebar_bool){CloseSidebar();}
         }
       })
