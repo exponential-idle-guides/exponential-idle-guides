@@ -15,7 +15,9 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 ###### Discord names in brackets are not their nicknames!
 
-### [October 2021](/ranking-news/2021-oct)
+## 2021
+
+### [October](/ranking-news/2021-oct)
 
 - GenErationNation (Gen)
 - GrimJuniper55831 (wind)
@@ -40,40 +42,42 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - Phask (Phask)
 - SnaekySnacks (SnaekySnacks)
 
-### [November 2021](/ranking-news/2021-nov)
+### [November](/ranking-news/2021-nov)
 
 - nubestlol [and many other names] (nubest)
 - ellipsi5 (ellipsis)
 
-### [December 2021](/ranking-news/2021-dec)
+### [December](/ranking-news/2021-dec)
 
 - xelaroc (AlexCord)
 
-### [January 2022](/ranking-news/2022-jan)
+## 2022
+
+### [January](/ranking-news/2022-jan)
 
 - AdamH99 (nemesis)
 - spqcey (randomname)
 
-### [February 2022](/ranking-news/2022-feb)
+### [February](/ranking-news/2022-feb)
 
 - TREDEC42 (XLII)
 
-### [March 2022](/ranking-news/2022-mar)
+### [March](/ranking-news/2022-mar)
 
 - BeardCore19 (BeardCore19)
 - MorsMessorem (MorsMessorem)
 
-### [April 2022](/ranking-news/2022-apr)
+### [April](/ranking-news/2022-apr)
 
 - IntellectualPower (NGZ001)
 - LEBaldy2002 (LE★Baldy)
 
-### [May 2022](/ranking-news/2022-may)
+### [May](/ranking-news/2022-may)
 
 - TertiaryJourneyman34 (Solarion)
 - orangepeanut19 (peanut)
 
-### [June 2022](/ranking-news/2022-jun)
+### [June](/ranking-news/2022-jun)
 
 - cajuncooks (?)
 - colinc719 (?)
@@ -81,23 +85,23 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - birrel69 (?)
 - Gilles-Philippe (Gilles-Philippe)
 
-### [July 2022](/ranking-news/2022-jul)
+### [July](/ranking-news/2022-jul)
 
 - rus9384 (rus9384)
 
-### [August 2022](/ranking-news/2022-aug)
+### [August](/ranking-news/2022-aug)
 
 - adequateryan (adequate ryan)
 - d4Nf6Bg5 (d4Nf6Bg5)
 
-### [September 2022](/ranking-news/2022-sep)
+### [September](/ranking-news/2022-sep)
 
 - FnInt (H₂Eaux)
 
-### [October 2022](/ranking-news/2022-sep)
+### [October](/ranking-news/2022-sep)
 
 - NerdyLunatic (namwen)
 
-### [November 2022](/ranking-news/2022-nov)
+### [November](/ranking-news/2022-nov)
 
 - Jo (Huevos Revueltos)
