@@ -1,7 +1,7 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set navlist = [collections.guides, collections.advanced, collections.rankings] %}
+  {% set navlist = [collections.guides, collections.advanced] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
@@ -45,7 +45,6 @@
   {% endif %}
   
   {{ content | safe }}
-  {% comment %}
   {% if '/rankings-main' in page.url %}
     <h3>Previous Rankings</h3>
     <ul>
@@ -70,7 +69,6 @@
       {% endfor %}
     </ul>
   {% endif %}
-  {% endcomment %}
   
 {% endblock %}
 
