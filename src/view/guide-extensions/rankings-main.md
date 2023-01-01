@@ -4,6 +4,7 @@ description: "Collection of all ranking pages of the Top 20 players"
 author: "AfuroZamurai"
 contributors: "the Amazing Community"
 draft: false
+tags: Rankings
 order: 999
 ---
 

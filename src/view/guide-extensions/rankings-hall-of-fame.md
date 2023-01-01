@@ -4,6 +4,7 @@ description: "Hall of Fame for Exponential Idle Players"
 author: "AfuroZamurai"
 contributors: "the Amazing Community"
 draft: false
+tags: Rankings
 order: 1000
 eleventyExcludeFromCollections: true
 ---
