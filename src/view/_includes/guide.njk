@@ -38,9 +38,8 @@
       It is kept this way to preserve the original posts how they were.<br>
   {% endif %}
 
-  {% if '/ranking-news' in page.url %}
-    <a href="https://exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a>
-  {% elif not glossary %}
+  
+  {% if not glossary %}
     <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
   {% endif %}
   
@@ -160,9 +159,6 @@
       <h1 class="sidebartitle">Table of Contents ⓧ</h1>
       <h1 class="sidebartitle">Other Resources ⓧ</h1>
       <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
-      {% if '/ranking-news' in page.url %}
-        <h1 class="sidebartitle">Rankings ⓧ</h1>
-      {% endif %}
     </div>
     
     <div id="sidebarMain">
@@ -183,11 +179,6 @@
           <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
         </div>
       </div>
-      {% if '/ranking-news' in page.url %}
-        <div>
-          <button class="openbtn" onclick="openSidebar(['RankingsSidebar','ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Rankings</button>
-        </div>
-      {% endif %}
     </div>
   {% endif %}
 {% endblock %}
