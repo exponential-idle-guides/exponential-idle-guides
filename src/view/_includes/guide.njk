@@ -184,11 +184,7 @@
           <ul>
             {% for year, yearPosts in collections.postsByYear %}
               <li>{{ year }}</li>
-              <ul>
-                {% for post in yearPosts | reverse %}
-                  <li>{{ post.data.title }}</li>
-                {% endfor %}
-              </ul>
+              
             {% endfor %}
           </ul>
         </div>
@@ -200,11 +196,7 @@
           <ul>
             {% for year, yearPosts in collections.postsByYear %}
               <li>{{ year }}</li>
-              <ul>
-                {% for post in yearPosts | reverse %}
-                  <li>{{ post.data.title }}</li>=
-                {% endfor %}
-              </ul>
+              
             {% endfor %}
           </ul>
         </div>
