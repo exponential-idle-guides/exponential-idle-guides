@@ -199,3 +199,23 @@ table.variable_summary {
 .spqcey sub {
 	vertical-align: sub
 }
+
+.rankings {
+	text-align: center;
+}
+
+.rankings th {
+	border: 1px solid white;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.rankings td {
+	border: 1px solid white;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.rankings caption {
+	margin-bottom: 1em;
+}

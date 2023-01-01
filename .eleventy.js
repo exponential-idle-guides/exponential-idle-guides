@@ -14,6 +14,8 @@ const util = require('util');
 
 const pluginTOC = require('eleventy-plugin-toc');
 
+const _ = require("lodash");
+
 const transformExcludes = [
   "_site/sitemap.xml"
 ];
@@ -116,6 +118,20 @@ module.exports = config => {
     return collection.getFilteredByTag("extensions").sort(function(a, b) {
       return a.data.order - b.data.order;
     });
+  });
+
+  config.addCollection("rankings", function(collection) {
+    return collection.getFilteredByTag("ranking-news").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
+
+  config.addCollection("postsByYear", (collection) => {
+    return _.chain(collection.getAllSorted())
+      .groupBy((post) => post.date.getFullYear())
+      .toPairs()
+      .reverse()
+      .value();
   });
 
   const tags = ['T9+', 'other'];

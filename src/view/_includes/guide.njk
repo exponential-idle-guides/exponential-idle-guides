@@ -1,26 +1,20 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set previousGuide = collections.guides | getPreviousCollectionItem(page) %}
-  {% set nextGuide = collections.guides | getNextCollectionItem(page) %}
+  {% set navlist = [collections.guides, collections.advanced, collections.rankings] %}
   
-  {% set previousPost = collections.extensions | getPreviousCollectionItem(page) %}
-  {% set nextPost = collections.extensions | getNextCollectionItem(page) %}
-
   <nav class="pagination">
-    {% if previousGuide %}
-      <a href="{{previousGuide.url}}">Previous: {{previousGuide.data.title}}</a>
-    {% endif %}
-    {% if nextGuide %}
-      <a href="{{nextGuide.url}}" class="pagination__next">Next: {{nextGuide.data.title}}</a>
-    {% endif %}
-    
-    {% if previousPost %}
-      <a href="{{previousPost.url}}">Previous: {{previousPost.data.title}}</a>
-    {% endif %}
-    {% if nextPost %}
-      <a href="{{nextPost.url}}" class="pagination__next">Next: {{nextPost.data.title}}</a>
-    {% endif %}
+    {% for posts in navlist %}
+      {% set previous = posts | getPreviousCollectionItem(page) %}
+      {% set next = posts | getNextCollectionItem(page) %}
+
+      {% if previous %}
+        <a href="{{previous.url}}">Previous: {{previous.data.title}}</a>
+      {% endif %}
+      {% if next %}
+        <a href="{{next.url}}" class="pagination__next">Next: {{next.data.title}}</a>
+      {% endif %}
+    {% endfor %}
   </nav>
 {% endset %}
 
@@ -36,13 +30,47 @@
     <p class="draft-warning">
       This guide is currently undergoing change.
       Keep in mind, <strong>strategies may change</strong>.
+    </p>
   {% endif %}
 
-  {% if not glossary %}
+  {% if discord %}
+    <p>This was originally written on Discord so the text may be confusing. 
+      It is kept this way to preserve the original posts how they were.<br>
+  {% endif %}
+
+  {% if '/ranking-news' in page.url %}
+    <a href="https://rankings--exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a>
+  {% elif not glossary %}
     <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
   {% endif %}
   
   {{ content | safe }}
+
+  {% if '/rankings-main' in page.url %}
+    <h3>Previous Rankings</h3>
+    <ul>
+      {% for year, yearPosts in collections.postsByYear %}
+        <li>{{ year }}</li>
+        <ul>
+          {% for post in yearPosts | reverse %}
+            {% if '/ranking-news' in post.url %}
+              {% set title = post.data.title | string %}
+              <li>
+                <a href="{{post.url}}">
+                  {% if 'Rankings & News' in title %}
+                    {{ title.slice(16,-5) }}
+                  {% else %}
+                    {{ post.data.title }}
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
 {% endblock %}
 
 {% block sidebar %}
@@ -123,7 +151,7 @@
     </div>
     
     <div id="ExtensionsSidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -136,7 +164,7 @@
       </div>
     </div>
     <div id="ExtensionsSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <a href="javascript:void(0)" id="ExtensionsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
@@ -150,10 +178,71 @@
     </div>
 
     
+    {% if '/ranking-news' in page.url %}
+      <div id="RankingsSidebar" class="sidebar">
+        <a href="javascript:void(0)" id="RankingsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Rankings</h1>
+        <div class="content_wrapper square_list">
+          <ul>
+            {% for year, yearPosts in collections.postsByYear %}
+              <li>{{ year }}</li>
+              <ul>
+                {% for post in yearPosts | reverse %}
+                  {% if '/ranking-news' in post.url %}
+                    {% set title = post.data.title | string %}
+                    <li>
+                      <a href="{{post.url}}">
+                        {% if 'Rankings & News' in title %}
+                          {{ title.slice(16,-5) }}
+                        {% else %}
+                          {{ post.data.title }}
+                        {% endif %}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div id="RankingsSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" id="RankingsClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">Rankings</h1>
+        <div class="content_wrapper square_list">
+          <ul>
+            {% for year, yearPosts in collections.postsByYear %}
+              <li>{{ year }}</li>
+              <ul>
+                {% for post in yearPosts | reverse %}
+                  {% if '/ranking-news' in post.url %}
+                    {% set title = post.data.title | string %}
+                    <li>
+                      <a href="{{post.url}}">
+                        {% if 'Rankings & News' in title %}
+                          {{ title.slice(16,-5) }}
+                        {% else %}
+                          {{ post.data.title }}
+                        {% endif %}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
+      
     <div id="SidebarHeaders" class="sidebar">
       <h1 class="sidebartitle">More Guides ⓧ</h1>
       <h1 class="sidebartitle">Table of Contents ⓧ</h1>
       <h1 class="sidebartitle">Other Resources ⓧ</h1>
+      <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
+      {% if '/ranking-news' in page.url %}
+        <h1 class="sidebartitle">Rankings ⓧ</h1>
+      {% endif %}
     </div>
     
     <div id="sidebarMain">
@@ -174,6 +263,11 @@
           <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
         </div>
       </div>
+      {% if '/ranking-news' in page.url %}
+        <div>
+          <button class="openbtn" onclick="openSidebar(['RankingsSidebar','ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Rankings</button>
+        </div>
+      {% endif %}
     </div>
   {% endif %}
 {% endblock %}

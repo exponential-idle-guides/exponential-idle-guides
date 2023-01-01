@@ -8,6 +8,7 @@ prose:
     - /src/view/_includes
     - /src/view/guides/guides.json
     - /src/view/guide-extensions/guide-extensions.json
+    - /src/view/ranking-news/ranking-news.json
   metadata:
     src/view/guides:
       - name: "title"
@@ -67,3 +68,32 @@ prose:
         field:
           element: "text"
           label: "Glossary"
+    src/view/ranking-news:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler Order"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "discord"
+        field:
+          element: "checkbox"
+          label: "originally discord"

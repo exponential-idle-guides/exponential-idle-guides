@@ -60,7 +60,7 @@
       const root = document.documentElement;
       const query_root  =  document.querySelector(':root');
       const sidebar_list = ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar','sidebarMain'];
-      const close_btn_list = ['GuideClose','HeaderClose','ResourceClose','ExtensionsSidebar'];
+      const close_btn_list = ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'];
       var curr_sidebar = 'none';
       var Mobile = false;
       var Navbar = false;
@@ -143,6 +143,7 @@
           query_root.style.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
         }
       }
+
       function openSidebar(sidebars, sidebarheaders, force=false) {
         for (const sidebar of sidebars) {
           document.getElementById(sidebar).style.zIndex = "0";
@@ -154,16 +155,19 @@
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-height');
           let bool = (btn_top == "0%" && sidebar_height == "0%");
           if (bool || curr_sidebar != sidebars[0] || force) {
+            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingsSidebar'))){sidebars.push('RankingsSidebar');}
             openMobileSidebars(sidebars, sidebarheaders, bool);
           }
         } else {
           let btn_left = getComputedStyle(query_root).getPropertyValue('--btn-marginLeft');
           let sidebar_height = getComputedStyle(query_root).getPropertyValue('--sidebar-width');
           if ((btn_left == "0%" && sidebar_height == "0%") || force) {
+            if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingsSidebar'))){sidebars.push('RankingsSidebar');}
             openDesktopSidebars(sidebars, sidebarheaders);
           }
         }
       }
+      
       function Navigation(nav_id){
         nav = document.getElementById('button_nav').style
         query = getComputedStyle(query_root)
@@ -218,6 +222,10 @@
         return
       }
       function testSidebar(btn_list, sidebar_list, e){
+        if((window.location.href).includes('/ranking-news')){
+          btn_list.push('RankingsClose');
+          sidebar_list.push('RankingsSidebar');
+        };
         bool = true;
         for(const btn of btn_list){
           if (document.getElementById(btn).contains(e.target)==true){
