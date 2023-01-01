@@ -35,23 +35,32 @@
     <h3>Previous Rankings</h3>
     <ul>
       {% for year, yearPosts in collections.postsByYear %}
-        <li>{{ year }}</li>
-        <ul>
-          {% for post in yearPosts | reverse %}
-            {% if '/ranking-news' in post.url %}
-              {% set title = post.data.title | string %}
-              <li>
-                <a href="{{post.url}}">
-                  {% if 'Rankings & News' in title %}
-                    {{ title.slice(16,-5) }}
-                  {% else %}
-                    {{ post.data.title }}
-                  {% endif %}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+        {% set yearbool = false %}
+        {% for post in yearPosts %}
+          {% if '/ranking-news' in post.url %}
+            {% set yearbool = true %}
+          {% endif %}
+        {% endfor %}
+
+        {% if yearbool %}
+          <li>{{ year }}</li>
+          <ul>
+            {% for post in yearPosts | reverse %}
+              {% if '/ranking-news' in post.url %}
+                {% set title = post.data.title | string %}
+                <li>
+                  <a href="{{post.url}}">
+                    {% if 'Rankings & News' in title %}
+                      {{ title.slice(16,-5) }}
+                    {% else %}
+                      {{ post.data.title }}
+                    {% endif %}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
       {% endfor %}
     </ul>
   {% endif %}
@@ -169,23 +178,32 @@
         <div class="content_wrapper square_list">
           <ul>
             {% for year, yearPosts in collections.postsByYear %}
-              <li>{{ year }}</li>
-              <ul>
-                {% for post in yearPosts | reverse %}
-                  {% if '/ranking-news' in post.url %}
-                    {% set title = post.data.title | string %}
-                    <li>
-                      <a href="{{post.url}}">
-                        {% if 'Rankings & News' in title %}
-                          {{ title.slice(16,-5) }}
-                        {% else %}
-                          {{ post.data.title }}
-                        {% endif %}
-                      </a>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
+              {% set yearbool = false %}
+              {% for post in yearPosts %}
+                {% if '/ranking-news' in post.url %}
+                  {% set yearbool = true %}
+                {% endif %}
+              {% endfor %}
+
+              {% if yearbool %}
+                <li>{{ year }}</li>
+                <ul>
+                  {% for post in yearPosts | reverse %}
+                    {% if '/ranking-news' in post.url %}
+                      {% set title = post.data.title | string %}
+                      <li>
+                        <a href="{{post.url}}">
+                          {% if 'Rankings & News' in title %}
+                            {{ title.slice(16,-5) }}
+                          {% else %}
+                            {{ post.data.title }}
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -196,23 +214,32 @@
         <div class="content_wrapper square_list">
           <ul>
             {% for year, yearPosts in collections.postsByYear %}
-              <li>{{ year }}</li>
-              <ul>
-                {% for post in yearPosts | reverse %}
-                  {% if '/ranking-news' in post.url %}
-                    {% set title = post.data.title | string %}
-                    <li>
-                      <a href="{{post.url}}">
-                        {% if 'Rankings & News' in title %}
-                          {{ title.slice(16,-5) }}
-                        {% else %}
-                          {{ post.data.title }}
-                        {% endif %}
-                      </a>
-                    </li>
-                  {% endif %}
-                {% endfor %}
-              </ul>
+              {% set yearbool = false %}
+              {% for post in yearPosts %}
+                {% if '/ranking-news' in post.url %}
+                  {% set yearbool = true %}
+                {% endif %}
+              {% endfor %}
+
+              {% if yearbool %}
+                <li>{{ year }}</li>
+                <ul>
+                  {% for post in yearPosts | reverse %}
+                    {% if '/ranking-news' in post.url %}
+                      {% set title = post.data.title | string %}
+                      <li>
+                        <a href="{{post.url}}">
+                          {% if 'Rankings & News' in title %}
+                            {{ title.slice(16,-5) }}
+                          {% else %}
+                            {{ post.data.title }}
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
@@ -246,12 +273,12 @@
         <div>
           <button class="openbtn" onclick="openSidebar(['ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Extensions</button>
         </div>
-      </div>
       {% if '/ranking-news' in page.url %}
         <div>
           <button class="openbtn" onclick="openSidebar(['RankingsSidebar','ExtensionsSidebar','ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">☰Rankings</button>
         </div>
       {% endif %}
+      </div>
     </div>
   {% endif %}
 {% endblock %}

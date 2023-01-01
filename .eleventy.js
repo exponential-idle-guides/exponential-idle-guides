@@ -134,7 +134,7 @@ module.exports = config => {
       .value();
   });
 
-  const tags = ['T9+', 'other', 'rank'];
+  const tags = ['T9+', 'other', 'rankings'];
   tags.map((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
