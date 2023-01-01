@@ -9,3 +9,5 @@ order: 999
 ---
 
 Here is the collection of all the prior in game rankings on all platforms. They also include more info and news for each section.
+
+Also check out the [\\(F(t)\\) Rankings Hall of Fame](/guide-extensions/rankings-hall-of-fame).
