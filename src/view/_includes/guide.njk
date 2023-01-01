@@ -1,7 +1,7 @@
 {% extends "default.njk" %}
 
 {% set nav %}
-  {% set navlist = [collections.rankings] %}
+  {% set navlist = [collections.advanced, collections.rankings] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
