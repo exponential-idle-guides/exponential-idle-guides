@@ -43,12 +43,11 @@
         }
         return text
       }     
-       
+
       window.onload = ()=>{
         const blockquote_list = document.getElementsByTagName('blockquote');
-        for(i=0;i<blockquote_list.length;i++){
-          html = blockquote_list[i].innerHTML;
-          blockquote_list[i].innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
+        for(blockquote of blockquote_list){
+          blockquote_list.innerHTML = blockquote_list.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
         }
 
       }
