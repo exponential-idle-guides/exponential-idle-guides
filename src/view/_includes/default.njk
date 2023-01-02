@@ -54,8 +54,7 @@
         document.getElementById(id).innerHTML = text.replaceAll(String.fromCharCode(0x00ad),"");
       }
       
-      function copyText(id_base=String){
-        const id = toString(id_base);
+      function copyText(id){
         text = document.getElementById(id).innerText;
         console.log(document.getElementById(id).innerHTML);
         console.log(copy_id_list[1])
