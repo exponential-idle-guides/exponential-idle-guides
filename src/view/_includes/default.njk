@@ -57,6 +57,7 @@
         text = document.getElementById(id).innerText;
         console.log(document.getElementById(id).innerHTML);
         console.log(id);
+        consoel.log(id in copy_id_list);
         text = remove_char(text, String.fromCharCode(10));
         text = text.replaceAll(String.fromCharCode(0x00ad),"") 
         try {
