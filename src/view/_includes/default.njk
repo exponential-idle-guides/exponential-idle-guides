@@ -44,7 +44,8 @@
         return text
       }
       function blockquote_fix(blockquotes){
-        console.log('blockquotes.length: ' + toString(blockquotes.length));
+        console.log('blockquotes.length:');
+        console.log(blockquotes.length);
         for (var i=0; i < blockquotes.length; i++){
           html = blockquotes[i].innerHTML;
           console.log('html:\n' + toString(html));
@@ -55,7 +56,8 @@
         }
       }
       blockquote_list = document.getElementsByTagName('blockquote');
-      console.log('blockquote_list.length: ' + toString(blockquote_list.length));
+      console.log('blockquote_list.length:');
+      console.log(blockquote_list.length);
       try{
         copied_class_list = document.body.querySelector('.copied');
         console.log('copied_class_list.length: ' + toString(copied_class_list.length));
