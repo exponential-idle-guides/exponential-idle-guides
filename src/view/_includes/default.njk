@@ -25,7 +25,7 @@
       gtag('config', 'G-CQWRWZCSZW');
     </script>
     <title>{{title}} - Exponential Idle Guides</title>
-    <script async defer>
+    <script>
       function remove_char(text, char){
         var index = text.indexOf(char);
         while (index >= 0) {
@@ -44,20 +44,25 @@
         return text
       }      
       window.onload = ()=>{
-      const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
-      function remove_blank(id_index){
-        id = copy_id_list[id_index];
-        html = document.getElementById(id).innerHTML;
-        console.log(html.length)
-        html = html.replaceAll(String.fromCharCode(0x00ad),"");
-        console.log(html.length)
-        document.getElementById(id).innerHTML = html;
-      }
-      for (i=0;i<copy_id_list.length;i++){
-        console.log(copy_id_list[i]);
-        console.log(typeof copy_id_list[i]);
-        try{remove_blank(i);}catch(err){console.log(err);}
-      }
+        /*
+        const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
+        for (id of copy_id_list){
+          try{
+            html = document.getElementById(id).innerHTML;
+            document.getElementById(id).innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
+          }catch(err){console.log(err);}
+        }
+        */
+        const blockquote_list = document.getElementsByTagName('blockquote');
+        for(blockquote in blockquote_list){
+          html = blockquote.innerHTML;
+          console.log(html);
+          console.log(html.length);
+          html = html.replaceAll(String.fromCharCode(0x00ad),"");
+          console.log(html.length);
+          blockquote.innerHTML = html;
+        }
+
       }
       
       function copyText(id){
