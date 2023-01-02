@@ -55,11 +55,10 @@
 
       function copyText(id){
         text = document.getElementById(id).innerText;
-        console.log(text.length);
+        console.log(document.getElementById(id).innerHTML);
+        console.log(id);
         text = remove_char(text, String.fromCharCode(10));
-        console.log(text.length);
         text = text.replaceAll(String.fromCharCode(0x00ad),"") 
-        console.log(text.length)
         try {
           navigator.clipboard.writeText(text);
           console.log('Copy Success: \n' + text);
