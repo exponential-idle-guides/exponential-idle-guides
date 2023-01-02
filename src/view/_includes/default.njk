@@ -42,26 +42,13 @@
           index = text.indexOf(char);
         }
         return text
-      }      
+      }     
+       
       window.onload = ()=>{
-        /*
-        const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
-        for (id of copy_id_list){
-          try{
-            html = document.getElementById(id).innerHTML;
-            document.getElementById(id).innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
-          }catch(err){console.log(err);}
-        }
-        */
         const blockquote_list = document.getElementsByTagName('blockquote');
-        console.log(blockquote_list.length)
         for(i=0;i<blockquote_list.length;i++){
           html = blockquote_list[i].innerHTML;
-          console.log(html);
-          console.log(html.length);
-          html = html.replaceAll(String.fromCharCode(0x00ad),"");
-          console.log(html.length);
-          blockquote_list[i].innerHTML = html;
+          blockquote_list[i].innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
         }
 
       }
@@ -69,7 +56,6 @@
       function copyText(id){
         text = document.getElementById(id).innerText;
         text = remove_char(text, String.fromCharCode(10));
-        text = text.replaceAll(String.fromCharCode(0x00ad),"") 
         try {
           navigator.clipboard.writeText(text);
           console.log('Copy Success: \n' + text);
