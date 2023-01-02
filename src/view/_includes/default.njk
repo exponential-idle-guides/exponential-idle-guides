@@ -65,13 +65,14 @@
       } catch (err) {
         console.log('document.querySelector Failed');
       }
-      blockquote_list_window = window.getElementsByTagName('blockquote');
+      window_doc = document.window;
+      blockquote_list_window = window_doc.getElementsByTagName('blockquote');
       console.log('blockquote_list_window.length:');
-      console.log(blockquote_list_window.length);
+      console.log(blockquote_list_window_doc.length);
       try{
-        copied_class_list_window = window.body.querySelector('.copied');
+        copied_class_list_window = window_doc.body.querySelector('.copied');
         console.log('copied_class_list_window.length:');
-        console.log(copied_class_list_window.length);
+        console.log(copied_class_list_window_doc.length);
       } catch (err) {
         console.log('window.querySelector Failed');
       }
