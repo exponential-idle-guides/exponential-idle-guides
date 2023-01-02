@@ -61,8 +61,7 @@
         console.log(typeof copy_id_list[1])
         console.log(id);
         console.log(typeof id);
-        console.log(id in copy_id_list);
-        console.log(id == copy_id_list[1]);
+        console.log(copy_id_list.includes(id));
         console.log(id === copy_id_list[1]);
         text = remove_char(text, String.fromCharCode(10));
         text = text.replaceAll(String.fromCharCode(0x00ad),"") 
@@ -72,6 +71,7 @@
         } catch (err) {
           console.log('Copy Failure: \n' + toString(err));
         }
+        console.log(document.getElementById(copy_id_list[1]));
       }
     </script>
     <script>
