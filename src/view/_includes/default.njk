@@ -54,7 +54,7 @@
           console.log(html.length)
         }
       }
-      blockquote_fix(document.getElementsByTagName('blockquote'));
+      blockquote_fix(document.body.querySelector('blockquote'));
 
       function copyText(id){
         text = document.getElementById(id).innerText;
