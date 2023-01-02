@@ -55,16 +55,30 @@
           console.log('html.length final:\n' + toString(html.length));
         }
       }
-      blockquote_list = document.getElementsByTagName('blockquote');
-      console.log('blockquote_list.length:');
-      console.log(blockquote_list.length);
+      blockquote_list_document = document.getElementsByTagName('blockquote');
+      console.log('blockquote_list_document.length:');
+      console.log(blockquote_list_document.length);
       try{
-        copied_class_list = document.body.querySelector('.copied');
-        console.log('copied_class_list.length: ' + toString(copied_class_list.length));
+        copied_class_list_document = document.body.querySelector('.copied');
+        console.log('copied_class_list_document.length:');
+        console.log(copied_class_list_document.length);
       } catch (err) {
-        console.log('.querySelector Failed');
+        console.log('document.querySelector Failed');
       }
-      blockquote_fix(blockquote_list);
+      blockquote_list_window = window.getElementsByTagName('blockquote');
+      console.log('blockquote_list_window.length:');
+      console.log(blockquote_list_window.length);
+      try{
+        copied_class_list_window = window.body.querySelector('.copied');
+        console.log('copied_class_list_window.length:');
+        console.log(copied_class_list_window.length);
+      } catch (err) {
+        console.log('window.querySelector Failed');
+      }
+      console.log('blockquote_fix(document):');
+      blockquote_fix(blockquote_list_document);
+      console.log('blockquote_fix(window):');
+      blockquote_fix(blockquote_list_window);
 
       function copyText(id){
         text = document.getElementById(id).innerText;
