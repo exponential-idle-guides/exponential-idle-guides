@@ -44,16 +44,16 @@
         return text
       }      
       
-      function remove_blank(id){
+      const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
+      function remove_blank(id_index){
+        id = copy_id_list[id_index];
         html = document.getElementById(id).innerHTML;
         document.getElementById(id).innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
       }
-
-      const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
-      for (id of copy_id_list){
-        console.log(id);
-        console.log(typeof id);
-        remove_blank(id);
+      for (i=0;i<copy_id_list.length;i++){
+        console.log(copy_id_list[i]);
+        console.log(typeof copy_id_list[i]);
+        remove_blank(i);
       }
       
       function copyText(id){
