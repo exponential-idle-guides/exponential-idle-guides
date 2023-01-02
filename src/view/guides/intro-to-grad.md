@@ -14,7 +14,7 @@ further ahead than you are already.
 
 ### New autoprestige expression
 
-<blockquote class="copied" id="ap_eq">
+<blockquote id="ap_eq">
 ((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b &amp;&amp;<br>
 ((d(smooth(10^10^10^(phi * tau), 1)) &gt; 1)<br>
@@ -74,7 +74,7 @@ we allow the normal expression to work like normal while recovering.
 
 ### Autosupremacy
 
-<blockquote class="copied" id="as_eq">
+<blockquote id="as_eq">
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b<br>
 &amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>

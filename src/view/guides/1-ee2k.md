@@ -136,7 +136,7 @@ Automation routing changes per playstyle but here is the autoprestige equation t
 
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
 
-<blockquote class="copied" id='ap_eq'>
+<blockquote id='ap_eq'>
 timer(d(ln(db/b+1)/pt) &lt; 0)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
@@ -184,7 +184,7 @@ There is a chance you get Autosupremacy before ee2000 if you star grind a lot. I
 ###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> once to cycle.
 
-<blockquote class="copied" id="as_eq">
+<blockquote id="as_eq">
 timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b<br>
 &amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>

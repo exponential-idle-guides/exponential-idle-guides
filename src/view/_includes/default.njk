@@ -42,44 +42,14 @@
           index = text.indexOf(char);
         }
         return text
+      }      
+      
+      const copy_id_list = ['ap_eq', 'as_eq', 'as-post-48k', 'as-post-52k', 'as-post-58-60k'];
+      for (const id of copy_id_list){
+        console.log(id);
+        html = document.getElementById(id).innerHTML;
+        document.getElementById(id).innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
       }
-      function blockquote_fix(blockquotes){
-        console.log('blockquotes.length:');
-        console.log(blockquotes.length);
-        for (var i=0; i < blockquotes.length; i++){
-          html = blockquotes[i].innerHTML;
-          console.log('html:\n' + toString(html));
-          console.log('html.length original:\n' + toString(html.length));
-          html = html.replaceAll(String.fromCharCode(0x00ad),"");
-          blockquotes[i].innerHTML = html;
-          console.log('html.length final:\n' + toString(html.length));
-        }
-      }
-      blockquote_list_document = document.getElementsByTagName('blockquote');
-      console.log('blockquote_list_document.length:');
-      console.log(blockquote_list_document.length);
-      try{
-        copied_class_list_document = document.body.querySelector('.copied');
-        console.log('copied_class_list_document.length:');
-        console.log(copied_class_list_document.length);
-      } catch (err) {
-        console.log('document.querySelector Failed');
-      }
-      window_doc = document.window;
-      blockquote_list_window = window_doc.getElementsByTagName('blockquote');
-      console.log('blockquote_list_window.length:');
-      console.log(blockquote_list_window_doc.length);
-      try{
-        copied_class_list_window = window_doc.body.querySelector('.copied');
-        console.log('copied_class_list_window.length:');
-        console.log(copied_class_list_window_doc.length);
-      } catch (err) {
-        console.log('window.querySelector Failed');
-      }
-      console.log('blockquote_fix(document):');
-      blockquote_fix(blockquote_list_document);
-      console.log('blockquote_fix(window):');
-      blockquote_fix(blockquote_list_window);
 
       function copyText(id){
         text = document.getElementById(id).innerText;
