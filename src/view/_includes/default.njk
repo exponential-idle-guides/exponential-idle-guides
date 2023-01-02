@@ -48,12 +48,15 @@
       function remove_blank(id_index){
         id = copy_id_list[id_index];
         html = document.getElementById(id).innerHTML;
-        document.getElementById(id).innerHTML = html.replaceAll(String.fromCharCode(0x00ad),"");
+        console.log(html.length)
+        html = html.replaceAll(String.fromCharCode(0x00ad),"");
+        console.log(html.length)
+        document.getElementById(id).innerHTML = html;
       }
       for (i=0;i<copy_id_list.length;i++){
         console.log(copy_id_list[i]);
         console.log(typeof copy_id_list[i]);
-        remove_blank(i);
+        try{remove_blank(i);}catch(err){console.log(err);}
       }
       }
       
