@@ -47,7 +47,7 @@
       window.onload = ()=>{
         const blockquote_list = document.getElementsByTagName('blockquote');
         for(blockquote of blockquote_list){
-          blockquote_list.innerHTML = blockquote_list.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
+          blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
         }
 
       }
