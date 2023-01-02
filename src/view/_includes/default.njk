@@ -54,13 +54,14 @@
         }
         */
         const blockquote_list = document.getElementsByTagName('blockquote');
-        for(blockquote in blockquote_list){
-          html = blockquote.innerHTML;
+        console.log(blockquote_list.length)
+        for(i=0;i<blockquote_list.length;i++){
+          html = blockquote_list[i].innerHTML;
           console.log(html);
           console.log(html.length);
           html = html.replaceAll(String.fromCharCode(0x00ad),"");
           console.log(html.length);
-          blockquote.innerHTML = html;
+          blockquote_list[i].innerHTML = html;
         }
 
       }
