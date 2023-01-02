@@ -56,9 +56,13 @@
       }
       blockquote_list = document.getElementsByTagName('blockquote');
       console.log('blockquote_list.length: ' + toString(blockquote_list.length));
-      copied_class_list = document.body.querySelector('.copied');
-      console.log('copied_class_list.length: ' + toString(copied_class_list.length));
-      blockquote_fix();
+      try{
+        copied_class_list = document.body.querySelector('.copied');
+        console.log('copied_class_list.length: ' + toString(copied_class_list.length));
+      } catch (err) {
+        console.log('.querySelector Failed');
+      }
+      blockquote_fix(blockquote_list);
 
       function copyText(id){
         text = document.getElementById(id).innerText;
