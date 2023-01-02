@@ -44,17 +44,21 @@
         return text
       }
       function blockquote_fix(blockquotes){
-        console.log(blockquotes.length)
+        console.log('blockquotes.length: ' + toString(blockquotes.length));
         for (var i=0; i < blockquotes.length; i++){
           html = blockquotes[i].innerHTML;
-          console.log(html);
-          console.log(html.length)
+          console.log('html:\n' + toString(html));
+          console.log('html.length original:\n' + toString(html.length));
           html = html.replaceAll(String.fromCharCode(0x00ad),"");
           blockquotes[i].innerHTML = html;
-          console.log(html.length)
+          console.log('html.length final:\n' + toString(html.length));
         }
       }
-      blockquote_fix(document.body.querySelector('blockquote'));
+      blockquote_list = document.getElementByTagName('blockquote');
+      console.log('blockquote_list.length: ' + toString(blockquote_list.length));
+      copied_class_list = document.body.querySelector('.copied');
+      console.log('copied_class_list.length: ' + toString(copied_class_list.length));
+      blockquote_fix();
 
       function copyText(id){
         text = document.getElementById(id).innerText;

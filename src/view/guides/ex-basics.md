@@ -152,7 +152,7 @@ You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) n
 
 ### Autoprestige expression
 
-<blockquote id='ap_eq'>
+<blockquote class="copied" id='ap_eq'>
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
@@ -193,7 +193,7 @@ derivative (\\(d\\)) and see when it turns negative.
 
 ### Autosupremacy expression
 
-<blockquote id="as_eq">
+<blockquote class="copied" id="as_eq">
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b<br>
 &amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
