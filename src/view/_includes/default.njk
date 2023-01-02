@@ -44,6 +44,16 @@
         return text
       }
 
+      var blockquotes = document.getElementsByTagName('blockquote');
+      for (var i=0; i < blockquotes.length; i++){
+        html = blockquotes[i].innerHTML;
+        console.log(html);
+        console.log(html.length)
+        html = html.replaceAll(String.fromCharCode(0x00ad),"");
+        blockquotes[i].innerHTML = html;
+        console.log(html.length)
+      }
+
       function copyText(id){
         text = document.getElementById(id).innerText;
         text = remove_char(text, String.fromCharCode(10));
