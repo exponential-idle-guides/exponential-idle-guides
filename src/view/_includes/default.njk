@@ -45,7 +45,8 @@
       }      
       
       const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
-      for (const id of copy_id_list){
+      for (i=0;i<copy_id_list.length;i++){
+        id=copy_id_list[i];
         console.log(id);
         console.log(typeof id);
         console.log(document.getElementById(id));
