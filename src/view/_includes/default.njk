@@ -43,7 +43,7 @@
         }
         return text
       }      
-      
+      window.onload = ()=>{
       const copy_id_list = ["ap_eq", "as_eq", "as-post-48k", "as-post-52k", "as-post-58-60k"];
       function remove_blank(id_index){
         id = copy_id_list[id_index];
@@ -54,6 +54,7 @@
         console.log(copy_id_list[i]);
         console.log(typeof copy_id_list[i]);
         remove_blank(i);
+      }
       }
       
       function copyText(id){
