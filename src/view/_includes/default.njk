@@ -49,8 +49,8 @@
         id=copy_id_list[i];
         console.log(id);
         console.log(typeof id);
-        console.log(document.getElementById(id));
-        text = document.getElementById(id).innerHTML;
+        console.log(document.getElementById(copy_id_list[i]));
+        text = document.getElementById(copy_id_list[i]).innerHTML;
         console.log(text);
         document.getElementById(id).innerHTML = text.replaceAll(String.fromCharCode(0x00ad),"");
       }
