@@ -47,22 +47,14 @@
       window.onload = ()=>{
         const blockquote_list = document.getElementsByTagName('blockquote');
         for(blockquote of blockquote_list){
-          console.log(blockquote.innerHTML);
-          console.log(blockquote.innerHTML.length);
           blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
-          console.log(blockquote.innerHTML.length);
         }
 
       }
       
       function copyText(id){
-        console.log(id);
         text = document.getElementById(id).innerText;
-        console.log(text.length);
         text = remove_char(text, String.fromCharCode(10));
-        console.log(text.length);
-        text = text.replaceAll(String.fromCharCode(0x00ad),"");
-        console.log(text.length);
         try {
           navigator.clipboard.writeText(text);
           console.log('Copy Success: \n' + text);
