@@ -1,5 +1,5 @@
 import { globals } from './init.js';
-const qstyle = globals.query_root.style;
+var qstyle = '';
 
 function openMobileSidebars(sidebars, open=true){
   globals.curr_sidebar = sidebars[0];
@@ -63,6 +63,7 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
 }
 
 export function openSidebar(sidebars, force=false) {
+  if(qstyle===''){window.qstyle = globals.query_root.style;}
   for (const sidebar of sidebars) {
     document.getElementById(sidebar).style.zIndex = "0";
   }
