@@ -1,5 +1,4 @@
 import { globals } from './init.js';
-
 const qstyle = globals.query_root.style;
 
 function openMobileSidebars(sidebars, open=true){
