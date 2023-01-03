@@ -87,10 +87,15 @@ export function openSidebar(sidebars, force=false) {
 }
 
 screen.orientation.addEventListener("click", function(e){
+  console.log(document.getElementById("sidebarOptions").contains(e.target))
   if(document.getElementById("sidebarOptions").contains(e.target)){
+    console.log(globals.sidebar_btn_list);
     for(const btn in globals.sidebar_btn_list){
+      console.log(btn);
+      console.log(document.getElementById(btn).contains(e.target));
       if(document.getElementById(btn).contains(e.target)){
         globals.sidebar_list.sort(function(x,y){ return x == btn ? -1 : y == btn ? 1 : 0 });
+        console.log(globals.sidebar_list);
         openSidebar(globals.sidebar_list);
         break
       }
