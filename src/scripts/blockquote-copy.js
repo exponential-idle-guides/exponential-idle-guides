@@ -18,6 +18,7 @@ function remove_char(text, char){
 
 window.onload = ()=>{
   const blockquote_list = document.getElementsByTagName('blockquote');
+  console.log(blockquote_list.length);
   for(blockquote of blockquote_list){
     blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
   }
