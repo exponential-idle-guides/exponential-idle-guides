@@ -5,7 +5,7 @@ function openMobileSidebars(sidebars, open=true){
   globals.curr_sidebar = sidebars[0];
   qstyle.setProperty('--sidebar-content-padding', '8px');
   document.getElementById(sidebars[0]+"invis").style.height="auto";
-  max_height = document.getElementById(sidebars[0]+"invis").offsetHeight;
+  var max_height = document.getElementById(sidebars[0]+"invis").offsetHeight;
   max_height += open ? 16:0;
   document.getElementById(sidebars[0]+"invis").style.height=0;
   if (max_height <= 0) {
@@ -27,8 +27,8 @@ function openMobileSidebars(sidebars, open=true){
 
 function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
   globals.curr_sidebar = sidebars[0];
-  max_width = 0;
-  mainwidth = document.getElementById("sidebarMain").offsetWidth;
+  var max_width = 0;
+  const mainwidth = document.getElementById("sidebarMain").offsetWidth;
   
   for (const sidebar of sidebars) {
     document.getElementById(sidebar + "invis").style.width = "auto";
@@ -38,23 +38,22 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
     document.getElementById(sidebar + "invis").style.width = 0;
   }
   document.getElementById(sidebarheaders).style.width = "auto";
-  max_header_width = document.getElementById(sidebarheaders).offsetWidth;
+  var max_header_width = document.getElementById(sidebarheaders).offsetWidth;
   document.getElementById(sidebarheaders).style.width = "0%";
   if (max_width <= 0 && max_header_width <= 0) {
     qstyle.setProperty('--sidebar-width', 'auto');
     qstyle.setProperty('--btn-marginLeft', 'auto');
   } else {
-    view_max = globals.style_var.getPropertyValue('--sidebar-desktop-max-width');
+    const view_max = globals.style_var.getPropertyValue('--sidebar-desktop-max-width');
     if (max_header_width >= window.visualViewport.width * view_max){
-      output = max_header_width + window.visualViewport.width * 0.02;
+      const output = max_header_width + window.visualViewport.width * 0.02;
     } else if (max_width >= window.visualViewport.width * view_max) {
-      output = window.visualViewport.width * view_max;
+      const output = window.visualViewport.width * view_max;
     } else {
-      output = max_width;
+      const output = max_width;
     }
     if((output + mainwidth) >= window.visualViewport.width){
-      output = window.visualViewport.width * 0.96 - mainwidth;
-    
+      const output = window.visualViewport.width * 0.96 - mainwidth;
     }
     qstyle.setProperty('--sidebar-width', output + "px");
     qstyle.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
@@ -70,11 +69,11 @@ export function openSidebar(sidebars, force=false) {
   document.getElementById(sidebars[0]).style.zIndex = "10";
   document.getElementById('sidebarMain').style.zIndex = "11";
   
-  margin = globals.Mobile ? 'Top' : 'Left';
-  direct = globals.Mobile ? 'height' : 'width';
-  btn = globals.style_var.getPropertyValue('--btn-margin'+margin);
-  sidebar = globals.style_var.getPropertyValue('--sidebar-'+direct);
-  open = (btn == "0%" && sidebar == "0%");
+  const margin = globals.Mobile ? 'Top' : 'Left';
+  const direct = globals.Mobile ? 'height' : 'width';
+  const btn = globals.style_var.getPropertyValue('--btn-margin'+margin);
+  const sidebar = globals.style_var.getPropertyValue('--sidebar-'+direct);
+  const open = (btn == "0%" && sidebar == "0%");
   switch(open || force){
     case true:
       globals.Mobile ? openMobileSidebars(sidebars, open) : openDesktopSidebars(sidebars);

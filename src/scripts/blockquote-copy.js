@@ -17,7 +17,7 @@ function remove_char(text, char){
 }     
 
 function copyText(id){
-  text = document.getElementById(id).innerText;
+  var text = document.getElementById(id).innerText;
   text = remove_char(text, String.fromCharCode(10));
   try {
     navigator.clipboard.writeText(text);

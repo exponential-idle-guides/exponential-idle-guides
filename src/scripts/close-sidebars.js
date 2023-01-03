@@ -1,10 +1,10 @@
 import { globals } from './init.js';
 
 function Navigation(nav_id='sidebarOptions'){
-  nav = document.getElementById('button_nav').style;
-  background = globals.Navbar ? '--palette-fill-sidebar' : '--palette-stroke-sidebar-base';
-  stroke = globals.Navbar ? '--palette-stroke-sidebar-base' : '--palette-fill-sidebar';
-  display = globals.Navbar ? 'none' : 'block';
+  const nav = document.getElementById('button_nav').style;
+  const background = globals.Navbar ? '--pavarte-fill-sidebar' : '--pavarte-stroke-sidebar-base';
+  const stroke = globals.Navbar ? '--pavarte-stroke-sidebar-base' : '--pavarte-fill-sidebar';
+  const display = globals.Navbar ? 'none' : 'block';
 
   nav.backgroundColor = globals.style_var.getPropertyValue(background);
   nav.color = globals.style_var.getPropertyValue(stroke);
@@ -15,9 +15,9 @@ function Navigation(nav_id='sidebarOptions'){
 
 export function closeSidebar(){
   const qstyle = globals.query_root.style;
-  direct = globals.Mobile ? 'height' : 'width';
-  padding = globals.Mobile ? 'b' : 'lr';
-  margin = globals.Mobile ? 'Top' : 'Left';
+  const direct = globals.Mobile ? 'height' : 'width';
+  const padding = globals.Mobile ? 'b' : 'lr';
+  const margin = globals.Mobile ? 'Top' : 'Left';
 
   globals.curr_sidebar='none';
   qstyle.setProperty('--sidebar-'+direct, "0%");
@@ -41,12 +41,12 @@ function testSidebar(e, list, bool=true, stop=false){
 }
 
 window.addEventListener('click', function(e){
-  let id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
-  let property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
+  const id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
+  const property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
   
-  let sidebar = document.getElementById(id).offsetHeight;
-  let sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
-  let sidebar_root = globals.style_var.getPropertyValue(property);
+  const sidebar = document.getElementById(id).offsetHeight;
+  const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
+  const sidebar_root = globals.style_var.getPropertyValue(property);
 
   if((sidebar >= Number(sidebar_attr.match(/\d+/)[0])) 
     && (String(sidebar_root) != "0%")
