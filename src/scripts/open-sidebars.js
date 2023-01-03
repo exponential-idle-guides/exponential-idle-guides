@@ -87,7 +87,8 @@ export function openSidebar(sidebars, force=false) {
 }
 
 screen.orientation.addEventListener("click", function(e){
-  console.log(document.getElementById("sidebarOptions").contains(e.target))
+  console.log("hello?");
+  console.log(document.getElementById("sidebarOptions").contains(e.target));
   if(document.getElementById("sidebarOptions").contains(e.target)){
     console.log(globals.sidebar_btn_list);
     for(const btn in globals.sidebar_btn_list){

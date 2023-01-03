@@ -9,8 +9,7 @@ function Navigation(nav_id='sidebarOptions'){
   nav.backgroundColor = globals.style_var.getPropertyValue(background);
   nav.color = globals.style_var.getPropertyValue(stroke);
   document.getElementById(nav_id).style.display = display;
-
-  globals.Navbar = !globals.Navbar;
+  globals.Navbar = !(globals.Navbar);
 }
 
 export function closeSidebar(){
@@ -40,14 +39,17 @@ function testSidebar(e, list, bool=true, stop=false){
   return (stop ? true: testSidebar(e, globals.sidebar_list, false, true))
 }
 
+
 window.addEventListener('click', function(e){
   const id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
-  const property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
+  const property = globals.Mobile ? '--sidebar-height' : '--sidebar-width';
   
-  const sidebar = document.getElementById(id).offsetHeight;
+  var sidebar = "";
+  if(globals.Mobile){sidebar = document.getElementById(id).offsetHeight;
+  }else{sidebar = document.getElementById(id).offsetWidth;}
+  
   const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
   const sidebar_root = globals.style_var.getPropertyValue(property);
-
   if((sidebar >= Number(sidebar_attr.match(/\d+/)[0])) 
     && (String(sidebar_root) != "0%")
     && testSidebar(e, globals.close_btn_list)){
@@ -57,7 +59,7 @@ window.addEventListener('click', function(e){
 
 window.addEventListener('click', function(e){
   if(document.getElementById("button_nav").contains(e.target)
-    || document.getElementById("sidebarNavigation")){
+    || document.getElementById("sidebarNavigation").contains(e.target)){
     Navigation();
   }
 })
