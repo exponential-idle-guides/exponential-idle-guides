@@ -27,6 +27,7 @@ function openMobileSidebars(sidebars, open=true){
 }
 
 function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
+  globals.curr_sidebar = sidebars[0];
   max_width = 0;
   mainwidth = document.getElementById("sidebarMain").offsetWidth;
   
@@ -62,8 +63,7 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
   }
 }
 
-function openSidebar(sidebars, force=false) {
-  if((window.location.href).includes('/ranking-news') && !(sidebars.includes('RankingSidebar'))){sidebars.push('RankingSidebar');}
+export function openSidebar(sidebars, force=false) {
   for (const sidebar of sidebars) {
     document.getElementById(sidebar).style.zIndex = "0";
   }
@@ -86,3 +86,15 @@ function openSidebar(sidebars, force=false) {
       break;
   }
 }
+
+screen.orientation.addEventListener("click", function(e){
+  if(document.getElementById("sidebarOptions").contains(e.target)){
+    for(const btn in globals.sidebar_btn_list){
+      if(document.getElementById(btn).contains(e.target)){
+        globals.sidebar_list.sort(function(x,y){ return x == btn ? -1 : y == btn ? 1 : 0 });
+        openSidebar(globals.sidebar_list);
+        break
+      }
+    }
+  }
+})

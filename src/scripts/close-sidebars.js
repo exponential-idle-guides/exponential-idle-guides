@@ -13,7 +13,7 @@ function Navigation(nav_id='sidebarOptions'){
   globals.Navbar = !globals.Navbar;
 }
 
-function closeSidebar(){
+export function closeSidebar(){
   const qstyle = globals.query_root.style;
   direct = globals.Mobile ? 'height' : 'width';
   padding = globals.Mobile ? 'b' : 'lr';
