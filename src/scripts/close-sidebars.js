@@ -56,5 +56,8 @@ window.addEventListener('click', function(e){
 })
 
 window.addEventListener('click', function(e){
-  if(document.getElementById("button_nav").contains(e.target)){Navigation();}
+  if(document.getElementById("button_nav").contains(e.target)
+    || document.getElementById("sidebarNavigation")){
+    Navigation();
+  }
 })
