@@ -34,9 +34,9 @@ function Set_Device(new_class, old_class){
 window.onload = ()=>{
   color();
 
-  console.log(document.body.length);
+  console.log(document.body.innerHTML.length);
   document.body.innerHTML = document.body.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
-  console.log(document.body.length);
+  console.log(document.body.innerHTML.length);
 
   if (navigator.userAgentData.mobile) {
     Set_Device("mobile","desktop");
