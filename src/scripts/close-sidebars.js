@@ -41,12 +41,12 @@ function testSidebar(e, list, bool=true, stop=false){
 }
 
 window.addEventListener('click', function(e){
-  id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
-  property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
+  let id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
+  let property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
   
-  sidebar = document.getElementById(id).offsetHeight;
-  sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
-  sidebar_root = globals.style_var.getPropertyValue(property);
+  let sidebar = document.getElementById(id).offsetHeight;
+  let sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
+  let sidebar_root = globals.style_var.getPropertyValue(property);
 
   if((sidebar >= Number(sidebar_attr.match(/\d+/)[0])) 
     && (String(sidebar_root) != "0%")
