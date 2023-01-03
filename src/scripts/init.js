@@ -34,11 +34,7 @@ function Set_Device(new_class, old_class){
 window.onload = ()=>{
   color();
 
-  const blockquote_list = document.getElementsByTagName('blockquote');
-  console.log(blockquote_list.length);
-  for(const blockquote of blockquote_list){
-    blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
-  }
+  document.head.innerHTML = document.head.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
 
   if (navigator.userAgentData.mobile) {
     Set_Device("mobile","desktop");
