@@ -50,7 +50,7 @@ window.addEventListener('click', function(e){
 
   if((sidebar >= Number(sidebar_attr.match(/\d+/)[0])) 
     && (String(sidebar_root) != "0%")
-    && testSidebar(e)){
+    && testSidebar(e, globals.close_btn_list)){
     closeSidebar();
   }
 })
