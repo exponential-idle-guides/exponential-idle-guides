@@ -17,7 +17,7 @@ function remove_char(text, char){
 }     
 
 window.onload = ()=>{
-  initialize_color_scheme();
+  //initialize_color_scheme();
   const blockquote_list = document.getElementsByTagName('blockquote');
   console.log(blockquote_list.length);
   for(i=0;i<blockquote_list.length;i++){
