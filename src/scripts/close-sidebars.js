@@ -41,8 +41,8 @@ function testSidebar(e, list, bool=true, stop=false){
 }
 
 window.addEventListener('click', function(e){
-  id = Mobile ? globals.curr_sidebar : "HeaderSidebar";
-  property = Mobile ? '--sidebar-height' : '--sidebar-height';
+  id = globals.Mobile ? globals.curr_sidebar : "HeaderSidebar";
+  property = globals.Mobile ? '--sidebar-height' : '--sidebar-height';
   
   sidebar = document.getElementById(id).offsetHeight;
   sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
