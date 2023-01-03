@@ -54,3 +54,7 @@ window.addEventListener('click', function(e){
     closeSidebar();
   }
 })
+
+window.addEventListener('click', function(e){
+  if(document.getElementById("button_nav").contains(e.target)){Navigation();}
+})
