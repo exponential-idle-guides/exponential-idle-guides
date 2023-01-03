@@ -1,7 +1,9 @@
-export function initialize_color_scheme(){
+import { globals } from './init.js';
+const root = globals.root;
+
+export function init_color_scheme(){
   // Select the button
   const btn = document.querySelector(".btn-color-scheme-toggle");
-  const root = document.documentElement;
 
   const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
