@@ -1,8 +1,6 @@
 import { globals } from './init.js';
-var root = "";
 
 export function init_color_scheme(){
-  if(root===""){window.root = globals.root;}
   // Select the button
   const btn = document.querySelector(".btn-color-scheme-toggle");
 
@@ -19,7 +17,7 @@ export function init_color_scheme(){
   // Listen for a click on the button
   btn.addEventListener("click", function() {
 
-    const mode = root.classList.contains("dark-mode") ? "light" : "dark";
+    const mode = globals.root.classList.contains("dark-mode") ? "light" : "dark";
 
     setColorScheme(mode);
 
@@ -30,13 +28,13 @@ export function init_color_scheme(){
     // If the user's preference in localStorage is dark...
     if (type == "dark") {
       // ...let's toggle the .dark-theme class on the body
-      root.classList.add("dark-mode");
-      root.classList.remove("light-mode");
+      globals.root.classList.add("dark-mode");
+      globals.root.classList.remove("light-mode");
     // Otherwise, if the user's preference in localStorage is light...
     } else if (type == "light") {
       // ...let's toggle the .light-theme class on the body
-      root.classList.add("light-mode");
-      root.classList.remove("dark-mode");
+      globals.root.classList.add("light-mode");
+      globals.root.classList.remove("dark-mode");
     }
   }
 }
