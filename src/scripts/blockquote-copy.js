@@ -1,3 +1,5 @@
+import {initialize_color_scheme} from './color-scheme.js'
+
 function remove_char(text, char){
   var index = text.indexOf(char);
   while (index >= 0) {
@@ -17,11 +19,11 @@ function remove_char(text, char){
 }     
 
 window.onload = ()=>{
-  //initialize_color_scheme();
+  initialize_color_scheme();
   const blockquote_list = document.getElementsByTagName('blockquote');
   console.log(blockquote_list.length);
-  for(i=0;i<blockquote_list.length;i++){
-    blockquote_list[i].innerHTML = blockquote_list[i].innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
+  for(const blockquote of blockquote_list){
+    blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
   }
 }
 
