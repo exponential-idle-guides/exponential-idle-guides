@@ -1,4 +1,4 @@
-function initialize_color_scheme(){
+export function initialize_color_scheme(){
   // Select the button
   const btn = document.querySelector(".btn-color-scheme-toggle");
   const root = document.documentElement;
