@@ -1,7 +1,8 @@
 import { globals } from './init.js';
-const root = globals.root;
+var root = "";
 
 export function init_color_scheme(){
+  if(root===""){window.root = globals.root;}
   // Select the button
   const btn = document.querySelector(".btn-color-scheme-toggle");
 
