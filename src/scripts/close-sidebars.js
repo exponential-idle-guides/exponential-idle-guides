@@ -24,7 +24,7 @@ export function closeSidebar(){
   qstyle.setProperty('--sidebar-padding-'+padding, "0%");
   qstyle.setProperty('--btn-margin'+margin, "0%");
   qstyle.setProperty('--sidebar-content-padding', "0%");
-  if (Mobile){
+  if (globals.Mobile){
     qstyle.setProperty('--sidebar-transition-time', '0.5s');
     qstyle.setProperty('--sidebar-text-transition-time', '0.3s');
   }
