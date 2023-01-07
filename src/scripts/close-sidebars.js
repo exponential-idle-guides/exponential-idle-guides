@@ -35,7 +35,7 @@ function testSidebar(e, list, bool=true, stop=false){
       return bool
     }
   }
-  return (stop ? true: testSidebar(e, globals.sidebar_list, false, true))
+  return (stop ? true: testSidebar(e, concat(globals.sidebar_list, ['SidebarOptions']), false, true))
 }
 
 

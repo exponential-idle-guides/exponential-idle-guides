@@ -5,7 +5,7 @@ import { closeSidebar } from './close-sidebars.js';
 const globals = {
   root: document.documentElement,
   query_root: document.querySelector(':root'),
-  qstyle: document.querySelector(':root'),
+  qstyle: document.querySelector(':root').style,
   close_btn_list: ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'],
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],
