@@ -3,7 +3,7 @@ import { globals } from './init.js';
 function openMobileSidebars(sidebars, open=true){
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-content-padding', '8px');
-  
+
   document.getElementById(sidebars[0]+"invis").style.height="auto";
   var max_height = document.getElementById(sidebars[0]+"invis").offsetHeight;
   max_height += open ? 16:0;
@@ -85,7 +85,7 @@ export function openSidebar(sidebars, force=false) {
 
 window.addEventListener("click", function(e){
   if(document.getElementById("sidebarOptions").contains(e.target)){
-    for(const btn in globals.sidebar_btn_list){
+    for(const btn of globals.sidebar_btn_list){
       if(document.getElementById(btn).contains(e.target)){
         const side = btn.slice(0,-3) + 'Sidebar';
         globals.sidebar_list.sort(function(x,y){ return x == side ? -1 : y == side ? 1 : 0 });

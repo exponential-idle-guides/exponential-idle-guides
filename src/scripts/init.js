@@ -7,8 +7,8 @@ const globals = {
   query_root: document.querySelector(':root'),
   qstyle: document.querySelector(':root'),
   close_btn_list: ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'],
-  sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionsbtn'],
-  sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionsSidebar'],
+  sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
+  sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],
   curr_sidebar: 'none',
   Mobile: false,
   Navbar: false
@@ -54,7 +54,7 @@ window.onload = ()=>{
   }
 }
 
-screen.orientation.addEventListener("change", function(e){
+window.addEventListener("change", function(e){
   Mobile_Setup();
   if(globals.curr_sidebar!='none'){
     globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
