@@ -13,19 +13,18 @@ function Navigation(nav_id='sidebarOptions'){
 }
 
 export function closeSidebar(){
-  const qstyle = globals.query_root.style;
   const direct = globals.Mobile ? 'height' : 'width';
   const padding = globals.Mobile ? 'b' : 'lr';
   const margin = globals.Mobile ? 'Top' : 'Left';
 
   globals.curr_sidebar='none';
-  qstyle.setProperty('--sidebar-'+direct, "0%");
-  qstyle.setProperty('--sidebar-padding-'+padding, "0%");
-  qstyle.setProperty('--btn-margin'+margin, "0%");
-  qstyle.setProperty('--sidebar-content-padding', "0%");
+  globals.qstyle.setProperty('--sidebar-'+direct, "0%");
+  globals.qstyle.setProperty('--sidebar-padding-'+padding, "0%");
+  globals.qstyle.setProperty('--btn-margin'+margin, "0%");
+  globals.qstyle.setProperty('--sidebar-content-padding', "0%");
   if (globals.Mobile){
-    qstyle.setProperty('--sidebar-transition-time', '0.5s');
-    qstyle.setProperty('--sidebar-text-transition-time', '0.3s');
+    globals.qstyle.setProperty('--sidebar-transition-time', '0.5s');
+    globals.qstyle.setProperty('--sidebar-text-transition-time', '0.3s');
   }
   if(globals.Navbar){Navigation();}
 }
