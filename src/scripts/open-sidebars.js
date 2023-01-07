@@ -74,19 +74,14 @@ export function openSidebar(sidebars, force=false) {
   const btn = globals.style_var.getPropertyValue('--btn-margin'+margin);
   const sidebar = globals.style_var.getPropertyValue('--sidebar-'+direct);
   const open = (btn == "0%" && sidebar == "0%");
-  switch(open || force){
-    case true:
-      globals.Mobile ? openMobileSidebars(sidebars, open) : openDesktopSidebars(sidebars);
-      break;
-    default:
-      if(globals.Mobile && globals.curr_sidebar != sidebars[0]){
-        openMobileSidebars(sidebars, false);
-      }
-      break;
+  if(open || force){
+    globals.Mobile ? openMobileSidebars(sidebars, open) : openDesktopSidebars(sidebars);
+  } else if (globals.Mobile && globals.curr_sidebar != sidebars[0]){
+    openMobileSidebars(sidebars, false);
   }
 }
 
-screen.orientation.addEventListener("click", function(e){
+window.addEventListener("click", function(e){
   console.log("hello?");
   console.log(document.getElementById("sidebarOptions").contains(e.target));
   if(document.getElementById("sidebarOptions").contains(e.target)){
