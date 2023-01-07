@@ -18,6 +18,7 @@ function remove_char(text, char){
 
 function copyText(id){
   var text = document.getElementById(id).innerText;
+  text = text.replaceAll(String.fromCharCode(0x00ad),"");
   text = remove_char(text, String.fromCharCode(10));
   try {
     navigator.clipboard.writeText(text);
