@@ -33,6 +33,13 @@ rhodot, taudot, qdot, (formatted as \\(\dot\rho\\), \\(\dot\tau\\), and \\(\dot{
 
 In theories, milestones are upgrades to aspects of theory equations. They are unlocked when your maximum rho reach certain points. Milestones persist through publications. Furthermore, for most theories you can allocate milestone points to different milestone combinations.
 
+### Distribution
+
+Distribution refers to the current tau amounts of all of your theories. So, in a conversation, someone might ask:<br>
+"What's your distribution?"<br>
+"my distribution is 564 486 552 635 856 902 531 470." <br> 
+This means that their theory 1 is at e564 tau, theory 2 at e486 tau, and so on with theory 8 at e470 tau.
+
 ### Distribution Overpushing
 
 A strategy to do theories that have high publication multipliers first to accumulate more students. We then use these extra students on theories that benefit more from having more students. See [overpushing](/guides/advanced-concepts/distribution-overpushing).
