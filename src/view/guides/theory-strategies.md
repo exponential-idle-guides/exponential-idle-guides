@@ -1,13 +1,15 @@
 ---
 title: "Theory Strategies Explained"
-description: "Our guide for learning what each theory strategy means."
+description: "Our guide for comprehension of what each theory strategy means."
 author: "spqcey"
 contributors: "everyone who has innovated new strategies and the Amazing Community"
 draft: false
 order: 8
 ---
 
-The theory sim (simulation) we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
+**This guide is highly recommended to be viewed on desktop/pc for the time being until mobile support is added.**
+
+The theory sim we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
 
 ## Modulus Explanation
 A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br>So, <br>
