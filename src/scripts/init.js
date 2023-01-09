@@ -16,14 +16,6 @@ const globals = {
 globals.style_var = getComputedStyle(globals.query_root);
 export {globals};
 
-function Mobile_Setup(){
-  if (screen.availHeight > screen.availWidth){
-    document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', '2');
-  } else {
-    document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', '3');
-  }
-}
-
 function Set_Device(new_class, old_class){
   globals.root.classList.add(new_class);
   try{globals.root.classList.remove(old_class);}catch(error){}
@@ -42,9 +34,13 @@ window.onload = ()=>{
   }
 
   if (navigator.userAgentData.mobile) {
-    Set_Device("mobile","desktop");
+    document.documentElement.classList.add('mobile');
+    globals.Mobile = true;
+    columns = screen.availHeight > screen.availWidth ? '2' : '3';
+    document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   } else {
-    Set_Device("desktop","mobile");
+    document.documentElement.classList.add('desktop');
+    globals.Mobile = false;
   }
 
   if(window.location.href.includes('/ranking-news')){
@@ -55,7 +51,8 @@ window.onload = ()=>{
 }
 
 window.addEventListener("change", function(e){
-  Mobile_Setup();
+  columns = screen.availHeight > screen.availWidth ? '2' : '3';
+  document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   if(globals.curr_sidebar!='none'){
     globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
     closeSidebar();
