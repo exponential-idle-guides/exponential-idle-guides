@@ -10,7 +10,7 @@ const globals = {
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],
   curr_sidebar: 'none',
-  Mobile: !(navigator.userAgentData.mobile),
+  Mobile: false,
   Navbar: false
 }
 globals.style_var = getComputedStyle(globals.query_root);
@@ -25,14 +25,6 @@ window.onload = ()=>{
     blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
   }
 
-  if (globals.Mobile) {
-    globals.root.classList.add('mobile');
-    const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-    document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
-  } else {
-    globals.root.classList.add('desktop');
-  }
-
   if(window.location.href.includes('/ranking-news')){
     globals.close_btn_list.push('RankingClose');
     globals.sidebar_btn_list.push('Rankingbtn');
@@ -41,8 +33,6 @@ window.onload = ()=>{
 }
 
 window.addEventListener("change", function(e){
-  const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-  document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   if(globals.curr_sidebar!='none'){
     globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
     closeSidebar();
