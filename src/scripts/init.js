@@ -37,6 +37,10 @@ window.onload = ()=>{
     globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
     globals.qstyle.setProperty('--body-line-height', '1.4');
     globals.qstyle.setProperty('--section-max-width', '90vw');
+
+    if(window.location.href!='https://exponential-idle-guides.netlify.app/'){
+      globals.qstyle.setProperty('--title-align', 'right');
+    }
   }
 
   if(window.location.href.includes('/ranking-news')){
