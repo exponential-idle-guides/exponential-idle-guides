@@ -37,7 +37,7 @@ In theories, milestones are upgrades to aspects of theory equations. They are un
 
 Distribution refers to the current tau amounts of all of your theories. So, in a conversation, someone might ask:<br>
 "What's your distribution?"<br>
-"my distribution is 564 486 552 635 856 902 531 470." <br>
+"my distribution is 564 486 552 635 856 902 531 470." <br> 
 This means that their theory 1 is at e564 tau, theory 2 at e486 tau, and so on with theory 8 at e470 tau.
 
 ### Distribution Overpushing
@@ -121,8 +121,3 @@ The act of not buying variables and letting theories reach its publication point
 ### Acceleration / Accel
 
 Refers to the usage of the acceleration upgrade. It speeds up f(t) gains through increasing phi and artificially speeding up time (by temporarily increasing \\(dt\\)). However it does not affect theories. The equation used in-game for acceleration is \\(Acceleration = (9t+1)^{1/9}\\), where \\(t\\) is the number of seconds the acceleration button is held for. To reduce the potential for player abuse, acceleration resets after being held for 1 hour, at \\(3.17x\\).
-
-### LB
-
-LB (usually in the lowercase form "lb") is a short hand for "leaderboard". Both the iOS and Android versions have built-in leaderboards, which can be accessed through the settings menu. There are built-in leaderboard for max F(t) and for the best times in each difficulty of every minigame.<br>
-There's also a [player-updated spreadsheet](https://docs.google.com/spreadsheets/d/1VlHgt1y4GWCDph3zPfsm2foX40NK5aM0IUfZlEgy_ac/edit#gid=0) with more leaderboards, including the highest known values that have been reached for each theory among many other statistics.
