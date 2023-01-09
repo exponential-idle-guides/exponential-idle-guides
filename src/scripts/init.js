@@ -26,11 +26,11 @@ window.onload = ()=>{
   }
 
   if (globals.Mobile) {
-    globals.root.classList.add('mobile');
+    //globals.root.classList.add('mobile');
     const columns = screen.availHeight > screen.availWidth ? '2' : '3';
     //document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   } else {
-    globals.root.classList.add('desktop');
+    //globals.root.classList.add('desktop');
   }
 
   if(window.location.href.includes('/ranking-news')){
@@ -42,7 +42,7 @@ window.onload = ()=>{
 
 window.addEventListener("change", function(e){
   const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-  document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
+  //document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   if(globals.curr_sidebar!='none'){
     globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
     closeSidebar();
