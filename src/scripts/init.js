@@ -28,7 +28,7 @@ window.onload = ()=>{
   if (globals.Mobile) {
     globals.root.classList.add('mobile');
     const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-    document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
+    //document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
   } else {
     globals.root.classList.add('desktop');
   }
