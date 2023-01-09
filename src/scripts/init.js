@@ -10,7 +10,7 @@ const globals = {
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],
   curr_sidebar: 'none',
-  Mobile: navigator.userAgentData.mobile,
+  Mobile: !(navigator.userAgentData.mobile),
   Navbar: false
 }
 globals.style_var = getComputedStyle(globals.query_root);
