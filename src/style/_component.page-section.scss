@@ -1,12 +1,6 @@
 :root {
 	--section-max-width:60vw;
 }
-:root.mobile {
-	--section-max-width:90vw;
-}
-:root.desktop {
-	--section-max-width:60vw;
-}
 
 .page-section {
 	box-sizing: border-box;

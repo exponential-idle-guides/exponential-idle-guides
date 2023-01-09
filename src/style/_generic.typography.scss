@@ -8,12 +8,6 @@
 	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
 }
 
-:root.mobile {
-	--font-size:max(60%, 48% + 1.2vmin);
-	font-size: var(--font-size);
-	--body-line-height: 1.12;
-}
-
 p {
 	line-height: var(--body-line-height);
 }

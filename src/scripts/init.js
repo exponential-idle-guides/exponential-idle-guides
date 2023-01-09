@@ -26,11 +26,17 @@ window.onload = ()=>{
   }
 
   if (globals.Mobile) {
-    //globals.root.classList.add('mobile');
+    globals.qstyle.setProperty('--sidebar-height', '0%');
+    globals.qstyle.setProperty('--sidebar-width', '96%');
+    globals.qstyle.setProperty('--sidebar-padding-lr', '2%');
+    globals.qstyle.setProperty('--sidebar-column-gap', '3vw');
     const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-    //document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
-  } else {
-    //globals.root.classList.add('desktop');
+    globals.qstyle.setProperty('--sidebar-column-count', columns);
+    globals.qstyle.setProperty('--sidebar-transition-direction', 'margin-top');
+    globals.qstyle.setProperty('--btn-width', '30vw');
+    globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
+    globals.qstyle.setProperty('--body-line-height', '1.4');
+    globals.qstyle.setProperty('--section-max-width', '90vw');
   }
 
   if(window.location.href.includes('/ranking-news')){
@@ -42,7 +48,7 @@ window.onload = ()=>{
 
 window.addEventListener("change", function(e){
   const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-  //document.querySelector(':root.mobile').style.setProperty('--sidebar-column-count', columns);
+  globals.qstyle.setProperty('--sidebar-column-count', columns);
   if(globals.curr_sidebar!='none'){
     globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
     closeSidebar();
