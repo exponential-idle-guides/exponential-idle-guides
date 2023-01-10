@@ -65,6 +65,7 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
 }
 
 export function openSidebar(sidebars, force=false) {
+  globals.root.classList.add('mobile');
   for (const sidebar of sidebars) {
     document.getElementById(sidebar).style.zIndex = "0";
   }
