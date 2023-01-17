@@ -113,6 +113,8 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4<span style="color:#4665F0">C4</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c4)&nbsp; — &nbsp;Idle
 
+- [T4<span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5d)&nbsp; — &nbsp;Active
+
 - [T4<span style="color:#4665F0">C5</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c5)&nbsp; — &nbsp;Idle
 
 - [T4](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4)&nbsp; — &nbsp;Idle
@@ -2394,6 +2396,48 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+### T4<span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C5d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
