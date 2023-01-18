@@ -82,7 +82,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - cajuncooks (?)
 - colinc719 (?)
 - Finalultima (Finalultima)
-- birrel69 (birrel69)
+- birrel69 (birrel)
 - Gilles-Philippe (Gilles-Philippe)
 
 ### [July](/ranking-news/2022-jul)
