@@ -281,7 +281,10 @@ All milestones into the 2nd milestone to unlock \\(c_3\\). Then into 1st milesto
 
 ###### No commentary
 (By Snaeky)
-{{ yt.embed('pM-pjSnMByw') }} 
+{{ yt.embed('pM-pjSnMByw') }}
+
+(By Playspout)
+{{ yt.embed('PWjEADc1P7M') }}
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and
