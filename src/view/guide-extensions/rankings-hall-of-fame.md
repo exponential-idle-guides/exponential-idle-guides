@@ -2,7 +2,7 @@
 title: "Exponential Idle Hall of Fame"
 description: "Hall of Fame for Exponential Idle Players"
 author: "LE★Baldy"
-contributors: "AfuroZamurai for the F(t) Rankigs and the Amazing Community"
+contributors: "AfuroZamurai for the F(t) Rankings and the Amazing Community"
 draft: false
 tags: rankings
 order: 1000
@@ -82,7 +82,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - cajuncooks (?)
 - colinc719 (?)
 - Finalultima (Finalultima)
-- birrel69 (?)
+- birrel69 (birrel69)
 - Gilles-Philippe (Gilles-Philippe)
 
 ### [July](/ranking-news/2022-jul)
@@ -105,3 +105,13 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 ### [November](/ranking-news/2022-nov)
 
 - Jo (Huevos Revueltos)
+
+### [December](/rankings-news/2022-dec)
+
+- Can't remember how sad [not his user name] (Ignacio De Leva)
+
+## 2023
+
+### [January](/rankings-news/2023-jan)
+
+- TBD
