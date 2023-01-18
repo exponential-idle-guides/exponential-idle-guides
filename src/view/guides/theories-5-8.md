@@ -204,7 +204,15 @@ Note that \\(c_1\\) and \\(c_2\\) have special interactions.
 
 ##### Manual buying c2 - READ THIS BEFORE DOING THE STRATEGIES
 
-For step 2 of each strategy below, you should be manually buying \\(c_2\\). 
+For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buy 10x variables at a time. Otherwise buy 1 level of c2 at a time. <br><br>
+
+You want to buy \\(c_2\\) until the value of \\(q\\) increases slowly. The pattern should be: <br>
+1. Buy \\(c_2\\). \\(q\\) should increase. 
+2. Once \\(q\\) increases slowly (or stops increasing), buy more \\(c_2\\). <br><br>
+
+If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilise and then continue buying \\(c_2\\). <br><br>
+
+Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click 'publish'! <br><br>
 
 ##### Idle
 
@@ -228,7 +236,7 @@ Semi idle is very similar to idle, with 1 difference.
 For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\) 1 level at a time. 
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark. 
 2. Then we autobuy all until \\(\rho \\) has reached its previous publication value (finished recovery).
 2. Afterwards, deactivate \\(c_1\\) and autobuy the rest until publish.
 
@@ -244,6 +252,7 @@ For each publication: autobuy \\(c_3\\) and \\(q_2\\). Buy \\(c_1\\) ONLY right 
 Note that for faster speed, for the first part of step 2, you may buy 10 levels at a time
 
 1. For the first 10 seconds, autobuy everything except \\(c_2\\).
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy).
 2. Then we autobuy \\(c_3, q_2, c_2\\). Out of these 3 variables, find the one with the cheapest cost. Then buy \\(q_1\\) until its cost exceeds 15% of the cheapest variable you found above. Buy \\(c_1\\) ONLY right after buying a level of \\(c_2\\). 
 3. Once the theory has recovered to its previous publication mark, you can slowly put less emphasis on \\(c_1\\). When in doubt, have \\(c_1\\)'s cost be similar to \\(q_1\\)'s cost. Continue doing step 2 until publish.
 
@@ -259,20 +268,20 @@ All milestones into the 2nd milestone to unlock \\(c_3\\). Then into 1st milesto
       <tr>
          <td>0/1/0</td>
          <td class="arrow">→</td>
-         <td>2/1/0</td>
+         <td>3/1/0</td>
          <td class="arrow">→</td>
-         <td>2/1/3</td>
+         <td>3/1/2</td>
       </tr>
       
 </table>
 
 ###### Commentary
 
-{{ yt.embed('AYI4U7Aob6o') }}
+{{ yt.embed('AYI4U7Aob6o') }} (By Snaeky)
 
 ###### No commentary
 
-{{ yt.embed('pM-pjSnMByw') }}
+{{ yt.embed('pM-pjSnMByw') }} (By Snaeky)
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and
@@ -280,39 +289,6 @@ manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly les
 
 **Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
 
-#### T5 milestone route
-
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td>0/1/0</td>
-         <td class="arrow">→</td>
-         <td>3/1/0</td>
-         <td class="arrow">→</td>
-         <td>3/1/2</td>
-      </tr>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible"><strong>Or</strong></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td class="arrow">→</td>
-         <td>1 x3</td>
-         <td class="arrow">→</td>
-         <td>3 x2</td>
-      </tr>
-   </tbody>
-</table>
 
 ##### Additional information
 
