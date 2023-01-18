@@ -229,7 +229,7 @@ For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 ##### Semi-Idle
 
-Semi idle is very similar to idle, with 1 difference.
+Semi idle is similar to idle, but we do manual \\(c_2\\) buying and disabling \\(c_1\\) once the theory is recovered.
 
 <br>
 
