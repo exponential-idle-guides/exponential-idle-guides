@@ -108,7 +108,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 ### [December](/rankings-news/2022-dec)
 
-- Can't remember how sad [not his user name] (Ignacio De Leva)
+- Can't remember how sad [not his user name] (Ignacio Di Leva)
 
 ## 2023
 
