@@ -114,4 +114,4 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 ### [January](/rankings-news/2023-jan)
 
-- TBD
+- ? (TickleThePanda)
