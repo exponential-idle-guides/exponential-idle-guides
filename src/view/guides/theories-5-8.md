@@ -123,6 +123,128 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 ### Theory 5 (40σ / 9k)
 
+#### Theory 5 Overview
+
+Theory 5 is based on logistic function. 
+<br><br>
+
+#### Theory 5 Equation Description
+
+\\(\dot{\rho} = q_1^{1.15}q_2q\\)
+
+\\(\dot{q} = (c_1/c_2)q(c_3^{1.1} - q/c_2)\\)
+
+
+<br><br>
+
+The first line states that the rate of change of rho is the product of some \\(q_1, q_2, q\\). Note that \\(q_1\\) and \\(q_2\\) are variables that you can buy directly, while \\(q\\) is a separate variable that is based off something else.
+ <br>
+The second line defines this theory. It describes the behaviour of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once. <br>
+\\(c_3\\) is similar to \\(c_2\\) in which buying it increases the maximum value of \\(q\\). However it does not have the drawback that \\(c_2\\) has. So we can buy this unconditionally.
+<br> 
+The maximum value of \\(q\\) is \\(c_2c_3^{1.1}\\). Once \\(q\\) reaches this maximum value, \\(q\\) dot will be zero and \\(q\\) will not grow anymore until we buy either more \\(c_2, c_3\\)
+
+ <br><br>
+
+
+
+#### Theory 5 Variable Description
+Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of Theory 5.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q1<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase on ρ dot on average - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>q2<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>This variable allows you to reach the maximum value of q faster. Note that it DOES NOT increase the maximum value of q itself. If q is close to its maximum value already, there's no point in buying this variable. </td>
+      </tr>
+      <tr>
+         <th>c2<sub><sub><small>1</small></sub></sub></th>
+         <td>Doubles the maximum value of q. However it also HALVES the speed. We must be careful to not buy too many, as this can cause q growth to be too slow. At the same time, we can't just ignore this variable, as otherwise the maximum value of q will never go up. </td>
+      </tr>
+      <tr>
+         <th>c3<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles the maximum value of q. No drawbacks.</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+#### Bicycle Analogy (alternative explanation) of c1 and c2 interactions.
+
+Think of buying \\(c_1\\) as throttling on the bicycle faster. Buying \\(c_2\\) is similar to shifting the bicycle gear up by 1 gear.<br>
+If all we do is buy \\(c_1\\) and never \\(c_2\\), then we're stuck in gear 1 forever and make no progress.
+However, if all we do is buy \\(c_2\\) and never \\(c_1\\), then this is similar to trying to ride from highest gear, which we know takes a long time and a lot of effort. <br><br>
+
+Therefore using the bicycle analogy, we should buy \\(c_2\\) only when we have the speed to support it; not too early and not too late. Furthermore, later in the publication, we should buy only 1 level of \\(c_2\\) at a time. We should buy \\(c_1\\) only right after buying \\(c_2\\) (shifting up gear). <br><br>
+
+When deciding when to buy \\(c_1, c_2\\), think of \\(c_1\\) as throttling a bicycle, and \\(c_2\\) as shifting up gear by 1 level.
+#### Theory 5 strategy
+
+The strengths of each variable are as follows:
+
+\\(c3\\) ~= \\(q_2\\) ≈ \\(c_2 \\) > \\(q_1 \\) > \\(c_1 \\) <br><br>
+
+Note that \\(c_1\\) and \\(c_2\\) have special interactions.
+<br><br>
+
+##### Idle
+
+It is not recommended to idle the 1st part of a theory 5 publication (see explanation on \\(c_1\\) and \\(c_2\\) above).
+
+Before you get e400 \\(\rho \\) for idle, simply autobuy all. <br><br>
+
+Once you have e400 \\(\rho \\), \\(c_1 \\) starts to become extremely bad. Because of this, the new idle strategy would be to autobuy all for 20 seconds or so. Then turn \\(c_1 \\) OFF. Continue to autobuy the rest of the variables. <br>
+<br>
+
+##### Active
+
+For a simple active strategy before e400 \\(\rho \\), simply autobuy \\(q_2 \\) and \\(c_2 \\) since they double the rates long term. \\(n \\) and \\(c_1 \\) give approximately 60% boost (with \\(n \\) becoming more powerful with milestones and vice versa for \\(c_1\\)). We will buy \\(n \\) and \\(c_1 \\) when their costs are less than 50% of the minimum of \\(q_2 \\) and \\(c_2 \\).
+<br>
+For \\(q_1 \\), we will buy it when its cost is less than 10% of the minimum of \\(q_2 \\) and \\(c_2 \\). For example, if \\(q_1 \\) costs 1.2e100 and \\(q_2 \\) costs 1e101, we would not buy \\(q_1 \\) as it's 'too expensive' compared to \\(q_2 \\).  <br><br>
+
+For active strategy, \\(n \\) starts to become more powerful than \\(q_2 \\). If their costs are similar, we will prioritize \\(n \\) first. For example, if \\(n \\) costs 1.4e101 and \\(q_2 \\) costs 1.2e101, we will buy \\(n \\) first. Similarly to the idle strategy, we will buy \\(c_1 \\) only for the first 20 seconds or so. If you want more information on the different strategies pertaining to WSP, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/)<br><br>
+
+#### WSP milestone route
+
+All milestones into the 3rd/last milestone. Then into 2nd milestone, then into 1st milestone. <br>
+For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. Usually you only do this when you're about to publish. <br>
+
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/0/1</td>
+         <td class="arrow">→</td>
+         <td>0/0/2</td>
+         <td class="arrow">→</td>
+         <td>0/0/3</td>
+      </tr>
+      <tr>
+         <td>0/1/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/3</td>
+         <td class="arrow">→</td>
+         <td>2/1/3</td>
+         <td class="arrow">→</td>
+         <td>3/1/3</td>
+         <td class="arrow">→</td>
+         <td>4/1/3</td>
+</table>
+
 #### Variable overview
 
 \\(q_1\\) and \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
