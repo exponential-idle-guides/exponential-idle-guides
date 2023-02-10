@@ -156,7 +156,7 @@ making it the strongest theory until the very late game due
 to a very low multiplier decay rate. Here is what is known about optimal multiplier: \\(3\\) until \\(e25\\);
 \\(6\\) to \\(10\\) during mid to late game. Publishing at higher
 multiples is not drastically less efficient and allows for slightly less
-active play. When you have max milestones, use the <a href="https://replit.com/@xelaroc/AnthSim">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the multiplier for the next publication.
+active play. When you have max milestones, use the <a href="https://theory-simulator.tredec.repl.co/">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the multiplier for the next publication.
 
 ##### Active
 
