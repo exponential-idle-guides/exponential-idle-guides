@@ -601,97 +601,42 @@ There's no strategic difference between semi-idle and idle for this theory. The 
 
 ##### Active
 
-Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimised strategies, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
+T4 active is more involved. However it is not as demanding as T3 or T1 active.
 
-<br>
+<br><br> start to e75 <br><br>
 
-For each publication: autobuy \\(c_3\\) and \\(q_2\\). Buy \\(c_1\\) ONLY right after buying \\(c_2\\) from steps 2 onwards. Practically, everytime you buy a level of \\(c_2\\) from steps 2 onwards, you'd buy about 5-6 levels of \\(c_1\\). <br>
-Note that for faster speed, for the first part of step 2, you may buy 10 levels at a time
+Autobuy c2. DON'T buy c3, q1, q2! The \\(c_3q\\) term is bad early on. Buy c1 until its cost exceed about 15% of c2 cost. Publish at about 2.5-3 if possible. When we reach e25 rho, we get the c1 exponent milestone (note the difference between this strategy and the idle strategy). With the c1 exponent milestone, the c1c2 term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying c1 and c2 (NO c3, c4, c5, c6, q1, q2!), all the 'q' related milestones are useless for now.
 
-1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy).
-2. Then we autobuy \\(c_3, q_2, c_2\\). Out of these 3 variables, find the one with the cheapest cost. Then buy \\(q_1\\) until its cost exceeds 15% of the cheapest variable you found above. Buy \\(c_1\\) ONLY right after buying a level of \\(c_2\\). 
-3. Once the theory has recovered to its previous publication mark, you can slowly put less emphasis on \\(c_1\\). When in doubt, have \\(c_1\\)'s cost be similar to \\(q_1\\)'s cost. Continue doing step 2 until publish.
+<br><br> e75 to e175 OR 14k ft <br><br>
 
-<br>
+Now here is where we can apply some more advanced strategies. Consider that the c1c2 term is strong early on, but falls off as the value of q increases. Then we can conclude that we can start with the same strategy as before. But once we reach our previous publication point, we can switch to the following strategy: <br><br>
 
+1. Do the same strategy as before until we reach our previous publication point.
+2. Take point(s) out of the c1 exponent milestones and unlock all the terms (the first milestone). We should now have access to c6.
+3. Autobuy c4, c5, c6, q2.
+4. If you want to optimise a bit more, you can buy q1 until its cost exceed about 15% of q2. Otherwise it's ok to also autobuy q1.
+5. DO NOT autobuy c1, c2, c3.
+6. Publish at about 10-20. Once published, remember to take out the milestone point and put it back into the c1 exponent to repeat step 1. 
 
-#### Theory 5 milestone route
+<br><br>
 
-All milestones into the 2nd milestone to unlock \\(c_3\\). Then into 1st milestone because \\(q_1\\) variable is higher value than \\(c_3\\) variable, finally put the rest into the last milestones. This theory does not have a known effective milestone swapping strategy. <br>
-
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td>0/1/0</td>
-         <td class="arrow">→</td>
-         <td>3/1/0</td>
-         <td class="arrow">→</td>
-         <td>3/1/2</td>
-      </tr>
-      
-</table>
+If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is the c4, c5, c6 terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only c1c2 as usual to accumulate enough rho so that we can buy q1q2 to stack q. Once we have enough q, the c4, c5, c6 terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make c1c2 better again.
 
 
 
-### Theory 4 (35σ / 8k)
 
-#### T4 Overview
+<br><br> e175 OR 14k ft to ~e300 T4 <br><br>
 
-We start out with just one term of constants, \\(c_1c_2\\), and a continuously increasing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) where \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
-equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
-first 3 milestones we earn add more terms to the \\(ρ\\) equation with \\(c_4q^2\\),
-\\(c_5q^3\\), and \\(c_6q^4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the exponent on \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
+We will do the exact same strategy as in the #start to e75 section above. This is because c1c2 become really strong again and the c4c5c6 terms take too long to outscale. Note that we still don't buy c3.
 
-#### T4 formula
+<br><br> ~e300 to endgame <br><br>
 
-##### Initial
+At this point the c3 term starts to become dominant. Therefore we will prioritise buying c3, q1, q2. We will NOT buy anything else except 1 level of c1 to start the theory. If you wish, you can buy q1 at about 15% ratio to q2 cost. It is also ok to autobuy q1. The c3 term will remain dominant until endgame.
 
-\\[\dot{ρ}=c_1c_2+c_3q\\]
+<br><br>
 
-\\[\dot{q}=q_1q_2/(1+q)\\]
 
-##### First milestone
 
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2\\]
-
-\\[\dot{q}=q_1q_2/(1+q)\\]
-
-##### Second milestone
-
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3\\]
-
-\\[\dot{q}=q_1q_2/(1+q)\\]
-
-##### Third milestone
-
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
-
-\\[\dot{q}=q_1q_2/(1+q)\\]
-
-##### Fourth to Sixth milestones
-
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
-
-\\[\dot{q}=2^3q_1q_2/(1+q)\\]
-
-##### Seventh milestone
-
-\\[\dot{ρ}=c_1^{1.15}c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
-
-\\[\dot{q}=2^3q_1q_2/(1+q)\\]
-
-#### T4 strategy
-
-The optimal publication multiplier is 4-6. During publications, start
-with x/1/3, then you will switch to 3/0/x. This will be repeated back
-and forth throughout the publication. If you decide to manually buy upgrades and
-don’t have max milestones, focus on buying \\(q_1\\) when it costs e1 less than \\(q_2\\). The next priority is
-going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
-be bought \\(e1\\) cheaper than the priority tier above. If you decide to
-manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_2\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
-mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
 
 #### T4 milestone route
 
