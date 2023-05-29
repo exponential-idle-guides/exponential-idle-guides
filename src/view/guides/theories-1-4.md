@@ -581,32 +581,23 @@ Autobuy c1, c2. DON'T buy c3, q1, q2! The \\(c_3q\\) term is bad early on. Publi
 
 <br><br> e25 to e175 <br><br>
 
-Get the 'Add the term' milestones. Prioritise these ones first until maximum. Now we autobuy c4, q1, q2 ONLY. 
+Get the 'Add the term' milestones. Prioritise these ones first until maximum. Now we autobuy c4, q1, q2 ONLY. Best publication multiplier is about 6-7.
 
 <br>
 
-When we unlock c5 and c6, we can add these to the autobuy variables. DON'T autobuy c3, c2, c1! Prioitise the qdot milestones over the c1 exponents. See the idle section of milestone order below.
+When we unlock c5 and c6, we can add these to the autobuy variables. DON'T autobuy c3, c2, c1! Prioritise the qdot milestones over the c1 exponents. Try to publish between 12-20. See the idle section of milestone order below.
 
 <br><br> e175 to endgame <br><br>
 
-Simply autobuy c3, q1, q2 ONLY. Buy 1 level of c1 to start the theory.
+Simply autobuy c3, q1, q2 ONLY. Buy 1 level of c1 to start the theory. Publish at about 4-5.
 
 <br><br>
 
 ##### Semi-Idle
 
-Semi idle is similar to idle, but we do manual \\(c_2\\) buying and disabling \\(c_1\\) once the theory is recovered.
+There's no strategic difference between semi-idle and idle for this theory. The main difference is with semi-idle, we would publish more often since we check the game more often. We wouldn't overshoot the optimal multiplier as much.
 
-<br>
-
-For each publication: autobuy \\(c_3\\) and \\(q_2\\).
-
-1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark. 
-2. Then we autobuy all until \\(\rho \\) has reached its previous publication value (finished recovery).
-2. Afterwards, deactivate \\(c_1\\) and autobuy the rest until publish.
-
-<br>
+<br><br>
 
 ##### Active
 
