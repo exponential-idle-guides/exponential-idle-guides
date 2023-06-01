@@ -106,31 +106,31 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 - Jo (Huevos Revueltos)
 
-### [December](/rankings-news/2022-dec)
+### [December](/ranking-news/2022-dec)
 
 - Can't remember how sad [not his user name] (Ignacio Di Leva)
 
 ## 2023
 
-### [January](/rankings-news/2023-jan)
+### [January](/ranking-news/2023-jan)
 
 - ? (TickleThePanda)
 
-### [February](/rankings-news/2023-feb)
+### [February](/ranking-news/2023-feb)
 
 - hotab1 (hotab)
 - neasi_cz (neasi)
 
-### [March](/rankings-news/2023-mar)
+### [March](/ranking-news/2023-mar)
 
 - Melv0r (Melv0r)
 - blephin (Eylanding)
 
-### [April](/rankings-news/2023-apr)
+### [April](/ranking-news/2023-apr)
 
 - ChatGPT ("author")
 
-### [May](/rankings-news/2023-may)
+### [May](/ranking-news/2023-may)
 
 - gAlexLee (Dusk)
 - propfeds (propfeds)
