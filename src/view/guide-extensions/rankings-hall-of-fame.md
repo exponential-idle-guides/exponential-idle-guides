@@ -115,3 +115,22 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 ### [January](/rankings-news/2023-jan)
 
 - ? (TickleThePanda)
+
+### [February](/rankings-news/2023-feb)
+
+- hotab1 (hotab)
+- neasi_cz (neasi)
+
+### [March](/rankings-news/2023-mar)
+
+- Melv0r (Melv0r)
+- blephin (Eylanding)
+
+### [April](/rankings-news/2023-apr)
+
+- ChatGPT ("author")
+
+### [May](/rankings-news/2023-may)
+
+- gAlexLee (Dusk)
+- propfeds (propfeds)
