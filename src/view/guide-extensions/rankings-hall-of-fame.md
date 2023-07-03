@@ -135,7 +135,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - gAlexLee (Dusk)
 - propfeds (propfeds)
 
-### [June](/rankings-news/2023-jun)
+### [June](/ranking-news/2023-jun)
 
 - AramakiSH (?)
 - Axiss3200 (Axiss)
