@@ -137,4 +137,5 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 ### [June](/rankings-news/2023-jun)
 
-- AramakiSH
+- AramakiSH (?)
+- Axiss3200 (Axiss)
