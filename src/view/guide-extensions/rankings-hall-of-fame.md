@@ -139,3 +139,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 - AramakiSH (?)
 - Axiss3200 (Axiss)
+
+### [July](/ranking-news/2023-jul)
+
+- ? (IOM)
