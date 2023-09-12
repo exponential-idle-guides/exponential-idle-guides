@@ -219,12 +219,12 @@ When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can 
 Suprem Equation past ee48k:
 
 <blockquote id="as-post-48k">
-(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
-||(costUpS(3)&gt;e411&amp;&amp;psi+dpsi&lt;e411)<br>
-||(costUpS(3)&gt;e511&amp;&amp;psi+dpsi&lt;e511)<br>
-||(costUpS(3)&gt;e531&amp;&amp;psi+dpsi&lt;e531)<br>
-||(costUpS(3)&gt;e551&amp;&amp;psi+dpsi&lt;e551)<br>
-||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+(costUpS(1)&lt;e52&amp;&amp;psi+dpsi&gt;e52)<br>
+||(costUpS(3)&lt;e411&amp;&amp;psi+dpsi&gt;e411)<br>
+||(costUpS(3)&lt;e511&amp;&amp;psi+dpsi&gt;e511)<br>
+||(costUpS(3)&lt;e531&amp;&amp;psi+dpsi&gt;e531)<br>
+||(costUpS(3)&lt;e551&amp;&amp;psi+dpsi&gt;e551)<br>
+||(costUpS(3)&lt;e571&amp;&amp;psi+dpsi&gt;e571)<br>
 </blockquote>
 
 <button class="copy-btn" onClick="copyText('as-post-48k');">Copy Text</button>
@@ -232,9 +232,9 @@ Suprem Equation past ee48k:
 Suprem Equation past ee52k:
 
 <blockquote id="as-post-52k">
-(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
-||(costUpS(3)&gt;e511&amp;&amp;psi+dpsi&lt;e511)<br>
-||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+(costUpS(1)&lt;e52&amp;&amp;psi+dpsi&gt;e52)<br>
+||(costUpS(3)&lt;e511&amp;&amp;psi+dpsi&gt;e511)<br>
+||(costUpS(3)&lt;e571&amp;&amp;psi+dpsi&gt;e571)<br>
 </blockquote>
 
 <button class="copy-btn" onClick="copyText('as-post-52k');">Copy Text</button>
@@ -242,8 +242,8 @@ Suprem Equation past ee52k:
 Suprem Equation past ee58-60k:
 
 <blockquote id="as-post-58-60k">
-(costUpS(1)&gt;e52&amp;&amp;psi+dpsi&lt;e52)<br>
-||(costUpS(3)&gt;e571&amp;&amp;psi+dpsi&lt;e571)<br>
+(costUpS(1)&lt;e52&amp;&amp;psi+dpsi&gt;e52)<br>
+||(costUpS(3)&lt;e571&amp;&amp;psi+dpsi&gt;e571)<br>
 </blockquote>
 
 <button class="copy-btn" onClick="copyText('as-post-58-60k');">Copy Text</button>

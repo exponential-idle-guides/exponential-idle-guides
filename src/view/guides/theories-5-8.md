@@ -359,13 +359,13 @@ If you want an accurate multiplier, check with [the sim](https://theory-simulato
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e130ρ</td>
-         <td>Turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub> and c<sub><sub><small>5</small></sub></sub></td>
       </tr>
       <tr>
-         <td class="leftHeader">e130ρ-e175ρ</td>
+         <td class="leftHeader">e130ρ+</td>
          <td>Turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
-         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub>, c<sub><sub><small>4</small></sub></sub>, and c<sub><sub><small>5</small></sub></sub></td>
+         <td>Buy q<sub><sub><small>1</small></sub></sub> and r<sub><sub><small>1</small></sub></sub> when they are 1/10 of q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub> costs respectively and turn off c<sub><sub><small>3</small></sub></sub> and c<sub><sub><small>4</small></sub></sub></td>
       </tr>
    </tbody>
 </table>

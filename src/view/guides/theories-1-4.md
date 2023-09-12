@@ -112,7 +112,7 @@ up the theory.
 The publication multiplier has no optimal fit, as it fluctuates a lot,
 but here is known: 4-6 to start; 3-4 between 1e100 and 1e150; the
 publication multiplier oscillates between 2.5 and 5 past e150. Once you
-get your second milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
+get your first milestone, you can turn off \\(c_1\\) and \\(c_2\\) until e150 active strat.
 
 The active strat follows but only works when you have all milestones
 past e150. T1 is the only theory where the recent value of \\(ρ\\)
