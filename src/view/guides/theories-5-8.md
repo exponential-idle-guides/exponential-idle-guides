@@ -125,7 +125,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 #### Theory 5 Overview
 
-Theory 5 is based on logistic function. 
+Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
 <br><br>
 
 #### Theory 5 Equation Description
