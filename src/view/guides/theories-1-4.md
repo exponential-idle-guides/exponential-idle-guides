@@ -471,62 +471,172 @@ repeat.
 
 ### Theory 4 (35σ / 8k)
 
-#### T4 Overview
+#### Theory 4 Overview
 
-We start out with just one term of constants, \\(c_1c_2\\), and a continuously increasing term \\(c_3q\\) with \\(q\\) being equal to \\(q(t+dt)=q+\dot{q}*dt\\) where \\(dt=0.1\\) for each tick. \\(\dot{q}\\) is
-equal to an inverse equation of \\(\dot{q}=q_1q_2/(1+q)\\) with \\(q\\) being the current value. The
-first 3 milestones we earn add more terms to the \\(ρ\\) equation with \\(c_4q^2\\),
-\\(c_5q^3\\), and \\(c_6q^4\\). Next, we increase \\(\dot{q}\\) by a factor of \\(2^x\\) up to \\(2^3\\) or \\(8\\). Finally, we increase the exponent on \\(c_1\\) from \\(1.00\\) to \\(1.15\\).
+Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c\\) etc. In this case, instead of 'x' it's 'q'. The strategies for this theory are quite simple compared to the previous theory, especially late game strategies. 
+<br><br>
 
-#### T4 formula
+#### Theory 4 Equation Description
 
-##### Initial
+\\(\dot{\rho} = c_1^{1.15}c_2 + c_3q + c_4q^2 + c_5q^3 + c_6q^4\\)
 
-\\[\dot{ρ}=c_1c_2+c_3q\\]
+\\(\dot{q} = 8q_1q_2 / (1 + q)\\)
 
-\\[\dot{q}=q_1q_2/(1+q)\\]
 
-##### First milestone
+<br><br>
 
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2\\]
+The first line statest that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
 
-\\[\dot{q}=q_1q_2/(1+q)\\]
 
-##### Second milestone
+ <br><br>
+The second line is more unique. It says that \\(qdot\\) is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as \\(qdot\\) decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth. 
+ <br><br>
+ For the more mathematically observant reader, we may integrate the \\(\dot{q}\\) equation and conclude that \\(q\\) is proportional to the square root of time. This means that even though \\(\dot{q}\\) grows slower with increasing \\(q\\), there is theoretically no finite limit on the maximum value of \\(q\\).
 
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3\\]
+ <br><br>
 
-\\[\dot{q}=q_1q_2/(1+q)\\]
 
-##### Third milestone
 
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
+#### Theory  Variable Description
+Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
 
-\\[\dot{q}=q_1q_2/(1+q)\\]
+<table class="T2">
+<caption>Brief summary of variable strengths of Theory 5.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>c1<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase on the \\(c_1^{1.15}c_2\\) term. Instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c2<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles the \\(c_1^{1.15}c_2\\) term. Instantaneous. Note that this doesn't mean double ρ dot. </td>
+      </tr>
+      <tr>
+         <th>c3</th>
+         <td> Doubles the \\(c_3q\\) term. Instantaneous. </td>
+      </tr>
+      <tr>
+         <th>c4</th>
+         <td>Doubles the \\(c_4q^2\\) term. Instantaneous. </td>
+      </tr>
+      <tr>
+         <th>c5</th>
+         <td>Doubles the \\(c_5q^3\\) term. Instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c6</th>
+         <td>Doubles the \\(c_6q^4\\) term. Instantaneous.</td>
+      </tr>
+      <tr>
+         <th>q1</th>
+         <td>About 7% increase on q dot. Note that because of the square root relationship between time and q mentioned earlier, this translates to about 3.5% increase in long term q. No instantaneous effect on rho dot.</td>
+      </tr>
+      <tr>
+         <th>q2</th>
+         <td>Doubles the instantaneous value of q dot. Note that because of the square root relationship between time and q mentioned earlier, this translates to about 41% increase in long term q. No instantaneous effect on rho dot.</td>
+      </tr>
+   </tbody>
+</table>
 
-##### Fourth to Sixth milestones
+<br>
+<br>
 
-\\[\dot{ρ}=c_1c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
 
-\\[\dot{q}=2^3q_1q_2/(1+q)\\]
+#### Theory 4 strategy
 
-##### Seventh milestone
+The strengths of each variable are as follows:
 
-\\[\dot{ρ}=c_1^{1.15}c_2+c_3q+c_4q^2+c_5q^3+c_6q^4\\]
+<br><br>
 
-\\[\dot{q}=2^3q_1q_2/(1+q)\\]
+Early game (before 14k ft):
+<br><br>
 
-#### T4 strategy
+\\(c_6\\) > \\(c_5\\) > \\(c_4\\) > \\(q_2\\) > \\(c_2\\) > \\(q_1\\) > \\(c_3\\) > \\(c_1\\)
 
-The optimal publication multiplier is 4-6. During publications, start
-with x/1/3, then you will switch to 3/0/x. This will be repeated back
-and forth throughout the publication. If you decide to manually buy upgrades and
-don’t have max milestones, focus on buying \\(q_1\\) when it costs e1 less than \\(q_2\\). The next priority is
-going from the highest \\(c_x\\) upgrade down to \\(c_1\\). Each lower priority should
-be bought \\(e1\\) cheaper than the priority tier above. If you decide to
-manually buy at max milestones, at the beginning of publications, buy
-\\(c_1\\), \\(c_2\\), \\(c_3\\), \\(q_1\\), and \\(q_2\\). Once you are within \\(e1\\)-\\(e2\\) of your publication
-mark, swap to only buying \\(c_3\\), \\(q_1\\), and \\(q_2\\).
+<br><br>
+
+From 14k ft to mid-late game (about e350+ T4):
+
+\\(c_2\\) > \\(c_3\\) > \\(q_2\\) > \\(c_1\\) > \\(q_1\\) > everything else <br><br>
+
+From e350+ T4 to end game:
+
+\\(c_3\\) > \\(q_2\\) > \\(q_1\\) > everything else <br><br>
+
+<br><br>
+
+
+
+##### Idle
+
+T4 is quite idle friendly compared to T3 and T1. Here are some simple idle strategies for T4:
+
+<br><br> start to e25 <br><br>
+
+Autobuy c1, c2. DON'T buy c3, q1, q2! The \\(c_3q\\) term is bad early on. Publish at about 2.5-3 if possible. 
+
+<br><br> e25 to e175 <br><br>
+
+Get the 'Add the term' milestones. Prioritise these ones first until maximum. Now we autobuy c4, q1, q2 ONLY. Best publication multiplier is about 6-7.
+
+<br>
+
+When we unlock c5 and c6, we can add these to the autobuy variables. DON'T autobuy c3, c2, c1! Prioritise the qdot milestones over the c1 exponents. Try to publish between 12-20. See the idle section of milestone order below.
+
+<br><br> e175 to endgame <br><br>
+
+Simply autobuy c3, q1, q2 ONLY. Buy 1 level of c1 to start the theory. Publish at about 4-5.
+
+<br><br>
+
+##### Semi-Idle
+
+There's no strategic difference between semi-idle and idle for this theory. The main difference is with semi-idle, we would publish more often since we check the game more often. We wouldn't overshoot the optimal multiplier as much.
+
+<br><br>
+
+##### Active
+
+T4 active is more involved. However it is not as demanding as T3 or T1 active.
+
+<br><br> start to e75 <br><br>
+
+Autobuy c2. DON'T buy c3, q1, q2! The \\(c_3q\\) term is bad early on. Buy c1 until its cost exceed about 15% of c2 cost. Publish at about 2.5-3 if possible. When we reach e25 rho, we get the c1 exponent milestone (note the difference between this strategy and the idle strategy). With the c1 exponent milestone, the c1c2 term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying c1 and c2 (NO c3, c4, c5, c6, q1, q2!), all the 'q' related milestones are useless for now.
+
+<br><br> e75 to e175 OR 14k ft <br><br>
+
+Now here is where we can apply some more advanced strategies. Consider that the c1c2 term is strong early on, but falls off as the value of q increases. Then we can conclude that we can start with the same strategy as before. But once we reach our previous publication point, we can switch to the following strategy: <br><br>
+
+1. Do the same strategy as before until we reach our previous publication point.
+2. Take point(s) out of the c1 exponent milestones and unlock all the terms (the first milestone). We should now have access to c6.
+3. Autobuy c4, c5, c6, q2.
+4. If you want to optimise a bit more, you can buy q1 until its cost exceed about 15% of q2. Otherwise it's ok to also autobuy q1.
+5. DO NOT autobuy c1, c2, c3.
+6. Publish at about 10-20. Once published, remember to take out the milestone point and put it back into the c1 exponent to repeat step 1. 
+
+<br><br>
+
+If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is the c4, c5, c6 terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only c1c2 as usual to accumulate enough rho so that we can buy q1q2 to stack q. Once we have enough q, the c4, c5, c6 terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make c1c2 better again.
+
+
+
+
+<br><br> e175 OR 14k ft to ~e300 T4 <br><br>
+
+We will do the exact same strategy as in the #start to e75 section above. This is because c1c2 become really strong again and the c4c5c6 terms take too long to outscale. Note that we still don't buy c3.
+
+<br><br> ~e300 to endgame <br><br>
+
+At this point the c3 term starts to become dominant. Therefore we will prioritise buying c3, q1, q2. We will NOT buy anything else except 1 level of c1 to start the theory. If you wish, you can buy q1 at about 15% ratio to q2 cost. It is also ok to autobuy q1. The c3 term will remain dominant until endgame.
+
+<br><br>
+
+
+
 
 #### T4 milestone route
 

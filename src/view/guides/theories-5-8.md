@@ -123,85 +123,145 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 ### Theory 5 (40σ / 9k)
 
-#### Variable overview
+#### Theory 5 Overview
 
-\\(q_1\\) and \\(q_2\\):  Simple multipliers that directly affect \\(\rho\\)
-production. \\(q_2\\) is a doubling while \\(q_1\\) is not.
+Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
+<br><br>
 
-\\(q\\): The crux of T5 is to grow this value as fast as possible, while
-increasing its maximum value.
+#### Theory 5 Equation Description
 
-\\(c_1\\): Increases the speed that \\(q\\) will approach its limit. You
-need enough levels of \\(c_1\\) to allow \\(q\\) to reach its limit,
-once \\(q\\) has reached its cap \\(c_1\\) has no additional benefit
-until more \\(c_2\\) is purchased.
+\\(\dot{\rho} = q_1^{1.15}q_2q\\)
 
-\\(c_2\\): Doubles the limit of \\(q\\) and halves the effect of \\(c_1\\).
-Needed to balance 2 parts of the equation appearing twice: \\(c_1/c_2\\)
-and \\(c_3^{1.1}-q/c_2\\). If you buy too much \\(c_2\\), it will make
-\\(q\\) growth effectively nothing as \\(c_1/c_2\\) approaches \\(0\\).
-However, you still need to buy \\(c_2\\) when \\(q\\) approaches
-\\(c_2*c_3^{1.1}\\) because \\(c_3^{1.1}-q/c_2\\) approaches \\(0\\)
-making \\(q=c_2*c_3^{1.1}\\) the maximum value of \\(q\\).
+\\(\dot{q} = (c_1/c_2)q(c_3^{1.1} - q/c_2)\\)
 
-\\(c_3\\): Increases the limit of \\(q\\) by \\(2^{1+m/20}\\), where \\(m\\)
-is the number of milestones, by increasing what
-\\(q/c_2\\) fraction can reach. It does not have the problems of \\(c_2\\)
-as lowering your \\(\dot{q}\\), making it an always auto-bought variable.
 
-#### T5 strategy
+<br><br>
 
-Theory 5 benefits the most from active play and a lot of attention
-making it the strongest theory until the very late game due
-to a very low multiplier decay rate. Here is what is known about optimal multiplier: \\(3\\) until \\(e25\\);
-\\(6\\) to \\(10\\) during mid to late game. Publishing at higher
-multiples is not drastically less efficient and allows for slightly less
-active play. When you have max milestones, use the <a href="https://theory-simulator.tredec.repl.co/">Theory Sim</a> and <a href="https://exponential-idle-guides.netlify.app/guides/theory-sim/">Sim Guide</a> to give the multiplier for the next publication.
+The first line states that the rate of change of rho is the product of some \\(q_1, q_2, q\\). Note that \\(q_1\\) and \\(q_2\\) are variables that you can buy directly, while \\(q\\) is a separate variable that is based off something else.
+ <br><br>
+The second line defines this theory. It describes the behaviour of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once. <br><br>
+\\(c_3\\) is similar to \\(c_2\\) in which buying it increases the maximum value of \\(q\\). However it does not have the drawback that \\(c_2\\) has. So we can buy this unconditionally.
+<br><br> 
+The maximum value of \\(q\\) is \\(c_2c_3^{1.1}\\). Once \\(q\\) reaches this maximum value, \\(q\\) dot will be zero and \\(q\\) will not grow anymore until we buy either more \\(c_2, c_3\\)
+
+ <br><br>
+
+
+
+#### Theory 5 Variable Description
+Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of Theory 5.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q1<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase on ρ dot on average - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>q2<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c1</th>
+         <td>This variable allows you to reach the maximum value of q faster. Note that it DOES NOT increase the maximum value of q itself. If q is close to its maximum value already, there's no point in buying this variable. </td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Doubles the maximum value of q. However it also HALVES the speed. We must be careful to not buy too many, as this can cause q growth to be too slow. At the same time, we can't just ignore this variable, as otherwise the maximum value of q will never go up. </td>
+      </tr>
+      <tr>
+         <th>c3</th>
+         <td>Doubles the maximum value of q. No drawbacks.</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+#### Bicycle Analogy (alternative explanation) of c1 and c2 interactions.
+
+Think of buying \\(c_1\\) as throttling on the bicycle faster. Buying \\(c_2\\) is similar to shifting the bicycle gear up by 1 gear.<br><br>
+If all we do is buy \\(c_1\\) and never \\(c_2\\), then we're stuck in gear 1 forever and make no progress.
+However, if all we do is buy \\(c_2\\) and never \\(c_1\\), then this is similar to trying to ride from highest gear from 0 speed, which we know takes a long time and a lot of effort. <br><br>
+
+Therefore using the bicycle analogy, we should buy \\(c_2\\) only when we have the speed to support it; not too early and not too late. Furthermore, later in the publication, we should buy only 1 level of \\(c_2\\) at a time. We should buy \\(c_1\\) only right after buying \\(c_2\\) (shifting up gear). <br><br>
+
+When deciding when to buy \\(c_1, c_2\\), think of \\(c_1\\) as throttling a bicycle, and \\(c_2\\) as shifting up gear by 1 level.
+#### Theory 5 strategy
+
+The strengths of each variable are as follows:
+
+\\(c_3\\) ~= \\(q_2\\) ≈ \\(c_2 \\) > \\(q_1 \\) > \\(c_1 \\) <br><br>
+
+Note that \\(c_1\\) and \\(c_2\\) have special interactions.
+<br><br>
+
+##### Manual buying c2 - READ THIS BEFORE DOING THE STRATEGIES
+
+For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buy 10x variables at a time. Otherwise buy 1 level of c2 at a time. <br><br>
+
+You want to buy \\(c_2\\) until the value of \\(q\\) increases slowly. The pattern should be: <br>
+1. Buy \\(c_2\\). \\(q\\) should increase. 
+2. Once \\(q\\) increases slowly (or stops increasing), buy more \\(c_2\\). <br><br>
+
+If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilise and then continue buying \\(c_2\\). <br><br>
+
+Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click 'publish'! <br><br>
+
+##### Idle
+
+It is not recommended to idle theory 5 (see explanation on \\(c_1\\) and \\(c_2\\) above). Do try the semi-idle strategy below.
+
+<br>
+
+For each publication: autobuy \\(c_3\\) and \\(q_2\\).
+
+1. For the first 10 seconds, autobuy everything except \\(c_2\\).
+2. Afterwards, simply autobuy all until publish.
+
+<br>
+
+##### Semi-Idle
+
+Semi idle is similar to idle, but we do manual \\(c_2\\) buying and disabling \\(c_1\\) once the theory is recovered.
+
+<br>
+
+For each publication: autobuy \\(c_3\\) and \\(q_2\\).
+
+1. For the first 10 seconds, autobuy everything except \\(c_2\\).
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark. 
+2. Then we autobuy all until \\(\rho \\) has reached its previous publication value (finished recovery).
+2. Afterwards, deactivate \\(c_1\\) and autobuy the rest until publish.
+
+<br>
 
 ##### Active
 
-Running the active strats, with some modifications, will help you get
-this theory to \\(e30\\) easily, but it will take some time. A step-by-step on
-how to progress the theory is detailed below.
+Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimised strategies, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
-Before e30, you should repeat this after every publication:
+<br>
 
-1. Buy everything **except** \\(c_2\\).
-2. Once \\(q\\) growth reduces, \\(c_2\\) levels can then be purchased individually.
-   Only buy when \\(c_2\\) is \\(e1\\) lower than your current \\(\rho\\).
-3. When you are within \\(e10\\) of your last publication, autobuy all but \\(q_1\\) and \\(c_1\\).
-   You should then manually buy \\(q_1\\) and \\(c_1\\) when it costs \\(e1\\) lower than the \\(q_2\\) doubling.
-   Buy \\(c_1\\) only when \\(q\\) is not capped.
-4. Repeat until \\(e25\\).
-   At \\(e25\\), push for \\(e30\\) with 0/1/0 milestone and start \\(x6-10\\) multipliers.
+For each publication: autobuy \\(c_3\\) and \\(q_2\\). Buy \\(c_1\\) ONLY right after buying \\(c_2\\) from steps 2 onwards. Practically, everytime you buy a level of \\(c_2\\) from steps 2 onwards, you'd buy about 5-6 levels of \\(c_1\\). <br>
+Note that for faster speed, for the first part of step 2, you may buy 10 levels at a time
 
-</br>
+1. For the first 10 seconds, autobuy everything except \\(c_2\\).
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy).
+2. Then we autobuy \\(c_3, q_2, c_2\\). Out of these 3 variables, find the one with the cheapest cost. Then buy \\(q_1\\) until its cost exceeds 15% of the cheapest variable you found above. Buy \\(c_1\\) ONLY right after buying a level of \\(c_2\\). 
+3. Once the theory has recovered to its previous publication mark, you can slowly put less emphasis on \\(c_1\\). When in doubt, have \\(c_1\\)'s cost be similar to \\(q_1\\)'s cost. Continue doing step 2 until publish.
 
-After autobuy at e30, you should repeat this after every publication:
+<br>
 
-1. x1 (or x10 when above e200) buy \\(c_2\\) manually and autobuy the rest until within ~e10 of your previous publication.
-   Your graph should resemble a linear function on the graph.
-2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) and \\(q_1\\). At this point:
-   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
-   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q_2\\).
-3. Once you reach the desired publication point, publish.
-4. Repeat this for stonks.
 
-###### Commentary
+#### Theory 5 milestone route
 
-{{ yt.embed('AYI4U7Aob6o') }}
-
-###### No commentary
-
-{{ yt.embed('pM-pjSnMByw') }}
-
-T5 will always give its best results from active play. However, after
-step 3, you can still get good results while autobuying \\(q_1\\) and
-manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
-
-**Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
-
-#### T5 milestone route
+All milestones into the 2nd milestone to unlock \\(c_3\\). Then into 1st milestone because \\(q_1\\) variable is higher value than \\(c_3\\) variable, finally put the rest into the last milestones. This theory does not have a known effective milestone swapping strategy. <br>
 
 <table class="milestone_routing">
    <tbody>
@@ -212,28 +272,26 @@ manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly les
          <td class="arrow">→</td>
          <td>3/1/2</td>
       </tr>
-   </tbody>
+      
 </table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible"><strong>Or</strong></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td class="arrow">→</td>
-         <td>1 x3</td>
-         <td class="arrow">→</td>
-         <td>3 x2</td>
-      </tr>
-   </tbody>
-</table>
+
+###### Commentary
+(By Snaeky)
+{{ yt.embed('AYI4U7Aob6o') }} 
+
+###### No commentary
+(By Snaeky)
+{{ yt.embed('pM-pjSnMByw') }}
+
+(By Playspout)
+{{ yt.embed('PWjEADc1P7M') }}
+
+T5 will always give its best results from active play. However, after
+step 3, you can still get good results while autobuying \\(q_1\\) and
+manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
+
+**Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
+
 
 ##### Additional information
 
