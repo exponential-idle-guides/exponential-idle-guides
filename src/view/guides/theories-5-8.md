@@ -544,7 +544,7 @@ Here we simply buy everything and try to unlock autobuyer.
 
 We unlock c3 and autobuy q1 and c3 ONLY. We disable c1 and c2. Furthermore, other milestones are redundant all the way until e100 rho. So we just stick with the above strategy until e100 rho and DO NOT buy c4, c5, c6 for now.
 
-##### 100 rho to endgame
+###### 100 rho to endgame
 
 At e100 rho we unlock 4 milestones. This is significant because with 4 milestones we can unlock all of c3, c4, c5 and c6. With this we continue to disable c1 and c2. We then autobuy everything else including c6. <br><br>
 
@@ -563,7 +563,7 @@ We unlock c3 and autobuy q1 and c3 ONLY. We disable c1 and c2. Furthermore, othe
 At e75 rho we unlock 3 milestones. This allows us to get triple exponent milestones on c1. This actually makes autobuying c1c2 and q1 (disable c3) faster than autobuying c3. The reason this strategy wasn't recommended in the idle section above is that if you idle for several hours then the autobuying c3 strategy becomes better. However, if you're semi-idle and are able to publish at close to optimal ratios, then this strategy becomes better. 
 
 
-##### 100 rho to endgame
+###### 100 rho to endgame
 
 The semi-idle strategy at this stage will be the same as the idle strategy, which is no c1 and c2, autobuy everything else. The main difference will be with semi-idle, you'd check the game and publish closer to the optimal values of about 2.5-3. 
 
@@ -585,7 +585,7 @@ We unlock c3 and autobuy c3 ONLY. We disable c1 and c2. We will then buy q1 if i
 At e75 rho we unlock 3 milestones. This allows us to get triple exponent milestones on c1. The strategy is to autobuy c2. We will buy c1 and q1 when their costs are cheaper than 1/8th of c2's cost. Every other variable is disabled. 
 
 
-##### 100 rho to endgame
+###### 100 rho to endgame
 
 The active strategies for this theory is quite taxing post 100, therefore I recommend simply executing the semi-idle strategy for post e100 rho, which was described above. If you'd like to know more about active strategies, I recommend waiting until e400+ rho and go to [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/). In particular, the prominent active strategies are T7PlaySpqcey and T7Play-25.
 
