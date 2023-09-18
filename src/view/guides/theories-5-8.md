@@ -432,7 +432,7 @@ If you want an accurate multiplier, check with [the sim](https://theory-simulato
 
 #### Theory 7 Overview
 
-Theory 7 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
+Theory 7 is based on numerical methods to estimate solutions. This theory is very fast early if you're attentive with publishing. However, in endgame, it decays faster than most other theories, so other theories eventually catch up in terms of tau. This theory is NOT overnight friendly. However, I consider it to be quite semi-idle friendly, as the semi-idle strategies are almost as good as active strategies, especially at lower tau. 
 <br><br>
 
 #### Theory 7 Equation Description
