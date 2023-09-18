@@ -428,36 +428,169 @@ If you want an accurate multiplier, check with [the sim](https://theory-simulato
    </tbody>
 </table>
 
-### Theory 7 (50σ / 11k)
+### Theory 7 (60σ / 11k)
 
-#### T7 overview
+#### Theory 7 Overview
 
-T7 can be summarized as a maximization problem : given a surface in 3-dimensional space,
-you want to find its highest altitude by moving along the surface, always in the direction
-of steepest ascent (that's basically a gradient ascent).
-The function \\(g(x,y)\\) can be seen as a surface in \\(\mathbb{R}^{3}\\) (considering the set
-of points \\((x,y,g(x,y))\\), see attached image).
-\\((\rho_1,\rho_2,g(\rho_1,\rho_2))\\) is a point on this surface. Our goal is to
-maximize \\(g(\rho_1,\rho_2)\\), i.e. to find \\((\rho_1,\rho_2)\\) that maximize \\(g(\rho_1,\rho_2)\\).
-Notice that the function \\(g\\) is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditioned); so one way to maximize \\(g(\rho_1,\rho_2)\\) is to move \\((\rho_1,\rho_2)\\) towards the direction of steepest ascent.
-This is what is precisely done by setting \\(\dot{\mathbf{\rho}}\\) (which is the direction the
-point \\(\mathbf{\rho}=(\rho_1,\rho_2)\\) will move toward) to \\(\nabla g(\rho_1,\rho_2)\\)
-(i.e. the gradient of \\(g\\) evaluated at \\((\rho_1,\rho_2)\\), which gives the direction of
-steepest ascent of \\(g\\) at the point \\((\rho_1,\rho_2)\\).
+Theory 7 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
+<br><br>
 
-![T7 Graph of function](/images/T7-graph.png)
+#### Theory 7 Equation Description
 
-This is the graph of the function \\(g\\), taken after the first four milestones have been unlocked
-(Note: here, coefficients like \\(c_1,c_2\ldots\\) are ignored. The effect of those coefficients is
-simply making the graph steeper in \\(x\\) or \\(y\\) direction, depending on the value of each coef).
+\\(g(\rho_1 , \rho_2 ) = c_1^{1.15}c_2\rho_1 + c_3\rho_1^{1.5} + c_4\rho_2 + c_5\rho_2^{1.5} + c_6\rho_1^{0.5}rho_2^{0.5}\\)
 
-#### T7 strategy
+\\(\dot{\rho} = q_1 \nabla g \\)
 
-The optimal publication multiplier is \\(4\\)-\\(6\\). You will swap from 0/1/1 → 0/0/2 at near the 2/3 mark of your next milestone. The strategy for
-manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
-cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
+\\(\rho = [\rho1, \rho2]\\)
 
-{{ yt.embed('wnKLkd0zXwI') }}
+
+
+
+<br><br>
+
+The first line states that a function 'g' is a function of rho1 and rho2. It is separated into 5 terms: <br>
+A linear term in rho1 (the c1c2 term) <br>
+A non-linear term in rho1 (the c3 term)<br>
+A linear term in rho2 (the c4 term) <br>
+A non-linear term in rho2 (the c5 term) <br>
+Finally a non-linear term in both rho1 and rho2 (the c6 term) <br> <br>
+
+The next line is the rhodot equation. It is stated as q1 x nabla g. The nabla is the inverted triangle symbol. 
+This inverted triangle symbol is a vector of partial derivatives of 'g', which is the equation mentioned above. 
+This is supported by the next equation, which stated that rho is a vector of rho1 and rho2. <br><br>
+
+Partial differentiation differentiates an equation, treating the other variables as constants. For example, partial derivatives of 'g' with respect to rho1 would treat rho2 as a constant, and vice versa. For those unfamiliar with derivatives, the resulting partial derivatives of 'g' with respect to rho1 and rho2 are: <br> <br>
+
+\\(\dot{rho_1} = c_1^{1.15}c_2 + 1.5c_3 \sqrt{\rho_1} + 0.5\sqrt{\frac{\rho_2, \rho_1}}\\)<br><br>
+\\(\dot{rho_2} = c_4 + 1.5c_5 \sqrt{\rho_2} + 0.5\sqrt{\frac{\rho_1, \rho_1}}\\) <br><br>
+
+From this we can conclude that \rho_1 is directly affected by c_1, c_2, c_3, and c_6. \rho_2 is directly
+affected by c_4, c_5, and c_6. Note that c_6 is the only variable affecting both \rho_1 and \rho_2 directly.
+This has implications and some of the strategies in endgame. <br><br>
+
+Also note that none of the upgrades cost rho2 to buy. This combined with the fact that the c6 term is the only term that directly affect both rho2dot and rho1dot, meant that until the c6 term is unlocked, rho2 is useless as a variable. 
+
+
+
+ <br><br>
+
+
+
+#### Theory 7 Variable Description
+Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of Theory 5.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q1<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase on ρ dot on average - instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c1<sub><sub><small>2</small></sub></sub></th>
+         <td>About 7% increase in the c1c2 term. Lategame this variable is quite useless.</td>
+      </tr>
+      <tr>
+         <th>c2</th>
+         <td>Doubles the c1c2 term. However lategame the c1c2 term is insignificant, therefore this variable also becomes insignificant later on. </td>
+      </tr>
+      <tr>
+         <th>c3</th>
+         <td>Doubles the value of the c3 term. In endgame, this term is quite weak, however it is not completely insignificant unlike the c1c2 term mentioned above. </td>
+      </tr>
+      <tr>
+         <th>c4</th>
+         <td>Doubles the c4 term. This variable slightly boosts rho2dot. Lategame this variable is weak, but still stronger than c1c2c3.</td>
+      </tr>
+      <tr>
+         <th>c5</th>
+         <td>Doubles the value of the c5 term. Lategame this variable is stronger than c1c2c3c4.</td>
+      </tr>
+      <tr>
+         <th>c6</th>
+         <td>Doubles the value of the c6 term. By far the strongest variable in endgame, as the c6 term becomes dominant.</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+
+#### Theory 7 strategy
+
+The strengths of each variable in endgame with full milestones are as follows:
+
+\\(c_6\\) >> \\(c_5\\) > \\(c_4 \\)  ~= \\(q_1 \\) > \\(c_3 \\) >>> \\(c_1 c_2 \\) <br><br>
+
+Note that in endgame, c1 and c2 are so weak we ignore them even in active strategies. 
+<br><br>
+
+##### Publication Multiplier
+
+The optimal publication multiplier lies between 2-3.5. In endgame, this number is close to 2.5. It is NOT recommended to overnight this theory, or idle for a long period of time.
+
+##### Idle
+
+###### 0-25 rho
+
+Here we simply buy everything and try to unlock autobuyer.
+
+###### 25-100 rho
+
+We unlock c3 and autobuy q1 and c3 ONLY. We disable c1 and c2. Furthermore, other milestones are redundant all the way until e100 rho. So we just stick with the above strategy until e100 rho and DO NOT buy c4, c5, c6 for now.
+
+##### 100 rho to endgame
+
+At e100 rho we unlock 4 milestones. This is significant because with 4 milestones we can unlock all of c3, c4, c5 and c6. With this we continue to disable c1 and c2. We then autobuy everything else including c6. <br><br>
+
+##### Semi-Idle
+
+###### 0-25 rho
+
+Here we simply buy everything and try to unlock autobuyer.
+
+###### 25-75 rho
+
+We unlock c3 and autobuy q1 and c3 ONLY. We disable c1 and c2. Furthermore, other milestones are redundant all the way until e100 rho. So we just stick with the above strategy until e100 rho and DO NOT buy c4, c5, c6 for now.
+
+###### 75-100 rho
+
+At e75 rho we unlock 3 milestones. This allows us to get triple exponent milestones on c1. This actually makes autobuying c1c2 and q1 (disable c3) faster than autobuying c3. The reason this strategy wasn't recommended in the idle section above is that if you idle for several hours then the autobuying c3 strategy becomes better. However, if you're semi-idle and are able to publish at close to optimal ratios, then this strategy becomes better. 
+
+
+##### 100 rho to endgame
+
+The semi-idle strategy at this stage will be the same as the idle strategy, which is no c1 and c2, autobuy everything else. The main difference will be with semi-idle, you'd check the game and publish closer to the optimal values of about 2.5-3. 
+
+<br>
+
+
+##### Active
+
+###### 0-25 rho
+
+Here we simply buy everything and try to unlock autobuyer. If you want to optimise further, you can try to buy q1 and c1 when their costs are cheaper than 1/8th of c2's cost.
+
+###### 25-75 rho
+
+We unlock c3 and autobuy c3 ONLY. We disable c1 and c2. We will then buy q1 if its cost is cheaper than 1/8th of c3's cost. Other milestones and variables are redundant until e75 rho.
+
+###### 75-100 rho
+
+At e75 rho we unlock 3 milestones. This allows us to get triple exponent milestones on c1. The strategy is to autobuy c2. We will buy c1 and q1 when their costs are cheaper than 1/8th of c2's cost. Every other variable is disabled. 
+
+
+##### 100 rho to endgame
+
+The active strategies for this theory is quite taxing post 100, therefore I recommend simply executing the semi-idle strategy for post e100 rho, which was described above. If you'd like to know more about active strategies, I recommend waiting until e400+ rho and go to [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/). In particular, the prominent active strategies are T7PlaySpqcey and T7Play-25.
+
+<br>
+
 
 #### T7 milestone route
 
