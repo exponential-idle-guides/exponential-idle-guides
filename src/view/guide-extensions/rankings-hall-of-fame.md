@@ -147,3 +147,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 ### [August](/ranking-news/2023-aug)
 
 - ? (Omega)
+
+### [September](/ranking-news/2023-sep)
+
+- jgaumer (jgaumer)
