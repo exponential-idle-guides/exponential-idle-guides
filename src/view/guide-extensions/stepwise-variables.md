@@ -1,5 +1,5 @@
 ---
-title: "Stepwise Variables
+title: "Stepwise Variables"
 description: "A guide on stepwise variables."
 author: "Playspout"
 contributors: "the Amazing Community"
