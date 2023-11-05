@@ -151,3 +151,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 ### [September](/ranking-news/2023-sep)
 
 - jgaumer (jgaumer)
+
+### [October](/ranking-news/2023-oct)
+
+- アケローン川に住む入道坊主 (?)
