@@ -155,3 +155,9 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 ### [October](/ranking-news/2023-oct)
 
 - アケローン川に住む入道坊主 (?)
+
+### [January](/ranking-news/2024-jan)
+
+- EdgeOfDreams (EdgeOfDreams)
+- AbsoPerf (?)
+- NeirinD (Neirin)
