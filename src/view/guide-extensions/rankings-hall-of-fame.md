@@ -156,6 +156,8 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 - アケローン川に住む入道坊主 (?)
 
+## 2023
+
 ### [January](/ranking-news/2024-jan)
 
 - EdgeOfDreams (EdgeOfDreams)
