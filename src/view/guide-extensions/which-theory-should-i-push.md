@@ -3,7 +3,7 @@ title: "What Theory Should I Push"
 description: "A guide on selecting the best theories to push"
 author: "Playspout"
 contributors: "the Amazing Community"
-order: 1
+order: 2
 tags: T9+
 ---
 
