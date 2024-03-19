@@ -3,31 +3,34 @@ title: "On the Middle-Term Modeling of Endgame Theories and the Optimal Publicat
 description: "Constructing a general mathematical model to determine when should we publish in the endgame of each theory in the game."
 author: "pacowoc"
 contributors: "the Amazing Community"
-order: 5001
+order: 5
 tags: T9+
 ---
 ## Introduction
+
 The game features 8 theories each with its distinct characteristics and means of behavior. Although they seem wildly different from each other visually and numerically short-term, the general long-term concept of purchasing variables of exponentially-higher prices to aid the main currency's near-exponential progress remains constant despite the difference of how they actually affect the growth of the theories they belong to.
 Therefore, we can use a single model deduced from the Cost and the Effect of all the variables used in a theory to explain the long-term and middle-term behavior of a theory, and make meaningful conclusions from the observed properties of the model about the original theories.
 
-## Background knowledge required to fully understand this article
+## Required Background Knowledge
 
 1. High school level mathematics
 2. [Asymptotic Notations](https://en.wikipedia.org/wiki/Big_O_notation)
 3. [The Concept of ODEs](https://en.wikipedia.org/wiki/Ordinary_differential_equation)
 
 ## How Variable Upgrades Work in the Long Term?
+
 Almost every upgrade in the game follows a Cost-Level relation of:
 \\[Cost = ab^{Level}\qquad (1-1)\\] 
 In which \\(a>0\\) and \\(b>1\\) are pre-determined constants.
 On the other hand, upgrades have two ways to determine the value of the variable:
 
-### Direct Multiplication: 
+### Direct Multiplication:
+
 This type of upgrade has an identical equation to the equation mentioned above, just with different constants in the places of \\(a\\) and \\(b\\). It can be represented as the expression below:
 \\[Value = cd^{Level}\qquad (1-2)\\] 
 In which \\(c>0\\) and \\(d>1\\) are pre-determined constants.
 
-#### **Lemma 1.1** 
+#### **Lemma 1.1**
 
 If we always buy the \\((L\in\mathbb{N})\\)-th and latest upgrade of a "Direct Multiplication" variable \\(u\\), which indicates \\(\rho = Cost(u,L)\\). Then, the value of \\(u\\) and the peak value of its currency \\(\rho\\) at the purchase follows a relation described by \\(u = K\rho^{r}\\), in which \\(K\in\mathbb{R}^+\\) and \\(r\in\mathbb{R}^+\\), in which \\(r\\) only depends on the exponent part of the Cost and Value equations.
 
@@ -73,26 +76,25 @@ Since \\(b>1\\), \\(K'< K\\), from Lemma 1.1 we have:
 Which is the definition  of:
 \\[u(\rho) \in \Theta(\rho^r)\\]
 
-### Step-wise: 
+### Step-wise:
 This type of variable follows a rather unorthodox path of progression, an explaination of its mechanic is explained [here](/guide-extensions/stepwise-variables). Let's suppose there exist a Stepwise variable \\(v\\) that has the following properties:
+
 1. A cycle of \\(v\\) spans \\(m>0\\) levels.
 2. On the first cycle of \\(v\\), it increases by \\(p>0\\) per level.
 3. On each cycle, the amount of increase per level gets multiplied by \\(q>1\\).
 
-#### **Lemma 1.3** 
+#### **Lemma 1.3**
 
 For each "Stepwise" variable \\(v\\), there exist \\((c_1, c_2) \in \mathbb{R}^+\\) and \\(d \in \mathbb{R}^+\\) so that for any level \\((L \in \mathbb{N} \ge m)\\), the inequality below holds:
 \\[c_1d^L \le v_L \le c_2d^L\\]
 
-#### **Proof** 
+#### **Proof**
 
 Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 \le l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\):
 From the definition of a Stepwise variable we have:
 \\[v_{mk+l} = p((m+l(q-1))q^k-m)\qquad (1-4)\\]
 
-1. 
-
-Since \\(m\\)>0,from (1-4) we have:
+1. Since \\(m\\)>0,from (1-4) we have:
 \\[p((m+l(q-1))q^k-m) < p((m+l(q-1))q^k)=mpq^k(1+\frac{l}{m}(q-1))\qquad (1-5)\\]
 Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\),
 \\[mpq^k(1+\frac{l}{m}(q-1)) < mpq^k(1+(q-1)) = mpq^(k+1) < mpqq^{\frac{mk+l}{m}}\\] 
@@ -100,9 +102,7 @@ Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\),
 Therefore, 
 \\[v_{mk+l} < mpq(q^\frac{1}{m})^{mk+l}\qquad (1-6)\\]
 
-2. 
-
-Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
+2. Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
 \\[p((m+l(q-1))q^k-m) > p((m+l(q-1))q^k-q^{k-1}m)\\]
 \\[= p(mq^k-mq^{k-1}+l(q-1)q^k)\\] 
 \\[= p(m(q-1)q^{k-1}+l(q-1)q^k)\\]
@@ -114,9 +114,7 @@ Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>-1\\), we can ap­ply Bernoul­li�
 Therefore, 
 \\[v_{mk+l} > mp\frac{q-1}{q}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)\\]
 
-3. 
-
-From (1-6) and (1-8) we have:
+3. From (1-6) and (1-8) we have:
 \\[mp\frac{q-1}{q}(q^{\frac{1}{m}})^{mk+l} < v_{mk+l} < mpq(q^\frac{1}{m})^{mk+l}\\]
 Since \\(mk+l = L\\) in this case,
 \\[mp\frac{q-1}{q}(q^{\frac{1}{m}})^L < v_L < mpq(q^\frac{1}{m})^L\\]
@@ -143,7 +141,6 @@ In which \\(r \in \mathbb{R}^+\\).
 From (1-9), (1-10) and the definition mentioned in , we have:
 \\[v(\rho) \in \Theta(\rho^r)\\]
 
-
 From Lemma 1.2 and Lemma 1.4 we can obtain an important conclusion:
 
 ### **Lemma 1.5**
@@ -152,6 +149,7 @@ From Lemma 1.2 and Lemma 1.4 we can obtain an important conclusion:
 \\[v(\rho) \in {\Theta(\rho^r)}\\]*
 
 ## How Variables Propagate towards the Main Variable
+
 Theories all have one or more currencies, they are used to purchase variables or interact with other currencies. One shared feature of the theories is that the currencies they contain are either derived from a set of other variables and currencies via arithmetic operations, or that there is some key features in a theory that makes a few un-purchasable variables practically constant in the long term. (For example, the x,y and z in T8 due to Solarswap). Therefore, we can get the relation of a certain currency to the main currency in the long term by factoring in the currencies and variables that contribute in the growth of that specific currency. We can generalize the growth of all but a few derived variables or currencies into.
 \\[\frac{da_n}{dt} = f(a_1,a_2...,\rho)\\]
 In which \\(\rho_i\\) are any variable, if the right side of the equation involves the variable itself, the variable is called "self-influenced".
@@ -165,7 +163,8 @@ For any Derived Variable \\(a\\) with uniform \\(t\\) exponents and is neither c
 
 #### **Proof**
 
-Since all the \\(t\\) exponents of the contributing variables are identical as a prerequisite of this Lemma, we only need to discuss the exponents of the main currency to analyze the derived variable asymptotically. Because \\(\frac{∂a}{∂t}\\) is the result of a series of Addition and Multiplication of the variables, we can use the arithemic laws of polynomial asymptotic notations.  
+Since all the \\(t\\) exponents of the contributing variables are identical as a prerequisite of this Lemma, we only need to discuss the exponents of the main currency to analyze the derived variable asymptotically. Because \\(\frac{∂a}{∂t}\\) is the result of a series of Addition and Multiplication of the variables, we can use the arithemic laws of polynomial asymptotic notations.
+
 1. Multiplication:  \\(\Theta(\rho^{r_1}) \cdot \Theta(\rho^{r_2}) → \Theta(\rho^{(r_1+r_2)})\\)
 2. Addition:  \\(\Theta(\rho^{r_1}) + \Theta(\rho^{r_2}) → \Theta(\rho^{max(r_1,r_2)})\\)
 
@@ -178,6 +177,7 @@ Therefore,
 Since \\(y \in \mathbb{R}^+\\), \\((y+1) \in \mathbb{R}^+\\).
 
 ### Cases with Self-Interference
+
 We can determine the asymptotic notation of a variable of this kind by solving a first order ODE, below is an example with the \\(q\\) variable in T4:
 \\[\frac{dq}{dt} = \frac{8q_1q_2}{q+1}\\]
 This is a classic example of a self-influenced variable, fortunately, the ODE is separable: 
@@ -188,12 +188,15 @@ As \\(\rho\\) approaches infinity, we can see that \\(q\\) approaches \\(\sqrt{1
 We can then do the asymptotic analysis on the entire system normally from here.
 
 ### More Complicated Cases
+
 In more complicated cases such as these which have multiple powers of \\(t\\) in the growth of a variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
+
 1. Determine the strongest term by experiment and use the previous two methods (which is how we analyze T6, which has an intricate main equation)
 2. Use Numerical Methods (which the Theory Simulator incorporates)
 3. Reverse engineer the exponent of \\(\rho\\) of a specific variable from the final Decay Factor experimentally.
 
 If we manage to get everything sorted, we will get a powerful conclusion:
+
 ### **Lemma 2.2**
 
 *For any theory system in which Lemma 2.1 can apply fully on or can be analyzed asymptotically by other means, there exists \\((x,y) \in \mathbb{R}^+\\) so that: 
@@ -204,8 +207,7 @@ If we manage to get everything sorted, we will get a powerful conclusion:
 Here, we use the concept from Lemma 2.2, and factor in the mechanic of publication. Since all theories have the publication multiplier in the form of:
 \\[K\rho^{r}_{pub}\qquad (3-1)\\]
 In which \\(K,r \in \mathbb{R}^+\\), \\(\rho_{pub}\\) is the value of \\(\rho\\) at the last publication
-Since the publication multiplier is directly multiplied on the \\(\rho\\) gain of the theory, we can construct a model using Lemma 2.2 and 
-(3-1):
+Since the publication multiplier is directly multiplied on the \\(\rho\\) gain of the theory, we can construct a model using Lemma 2.2 and (3-1):
 \\[\frac{d\rho}{dt} = K\rho^{x}t^{y}\rho^{z}_{pub}\qquad (3-2)\\]
 In which \\(K,x,y,z \in \mathbb{R}^+\\) are constants.
 
@@ -219,6 +221,7 @@ the long-term mean Publication Multiplier of \\( T\\) when \\(\rho → ∞\\)is:
 \\[e^{\frac{z(y+1)}{1-x}}\\]*
 
 ### **Proof**
+
 \\[\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_{pub}\\]
 This is a separable differential equation, after some rearrangement we have:
 \\[\rho^{-x}d\rho = Kt^{y}\rho^{z}_{pub}dt\\]
@@ -267,17 +270,18 @@ From (3-9), we get:
 *\\[r = e^{\frac{z(y+1)}{1-x}}\\]*
 **Q.E.D.**
 
-
-
 ## The Observations We Can Get from Theorem 1
+
 1. The more time-sensitive the theory is, which is reflected on a higher \\(y\\),the higher the publication multiplier will be.
 2. The lower the intra-publication decay, which is reflected on a higher \\(x\\), the longer the publication will be. If the intra-publication decay is negative, which means the theory is diverging without any aid from publication and \\(x>1\\), the publication multiplier with fall below 1, making publication un-economical.
 3. In a balanced theory that is not sensitive to time (All main theories except T2,4,6), the publication multiplier will be slightly lower than \\(e\\), the more severe the decay is, the lower it goes.
 
 ## Examples of an Analysis
+
 This section will use the first two theories to explain how you compute the optimal publication multiplier of a theory solely from the information about a theory system.
 
 ### Theory 1
+
 The main equation in the Endgame is:
 \\[\frac{d\rho}{dt} = q_1q_2(c_1^{1.15}c_2 + c_3\rho^{0.2} + c_4\rho^{0.3})\\]
 Using Lemma 1.5, we can get:
@@ -294,6 +298,7 @@ Thus, from Theorem 1 we get:
 This is very close to the geometric mean of the results of [Theory Simulator](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-sim/) from e1000 to e1500.
 
 ### Theory 2
+
 The main equation is:
 \\[\frac{d\rho}{dt} = (q_1r_1)^{1.15}\\]
 This theory features four layers of non-main equations, all in the form of:
@@ -313,10 +318,12 @@ Thus, from Theorem 1 we get:
 *\\[r \simeq e^{\frac{0.198*9.2}{0.475-log2}} \simeq 1360\\]*
 Which is close to the results of [Theory Simulator](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-sim/) without T2MC from e1000 to e1500. This behavior is expected since Coasting -- The main concept of T2MC is not considered at all in this analysis.
 
-## Credits 
+## Credits
+
 (The people below are not sorted)
 
 ### Thanks the following people for their research contribution!
+
 1. Ghost(Playsprout)
 2. Spiral(a_spiralist)
 3. Megaminx
@@ -328,6 +335,6 @@ Which is close to the results of [Theory Simulator](https://spqcey-additions--ex
 3. scide(scbose)
 4. Ghost(Playsprout)
 5. Helper(Axiss)
-6. <span style = "color:gray"> [nubest](/images/nub.png) </span>
+6. [nubest](/images/nub.png)
 
-**Thanks the Entire Community for supporting my on the way of researching and creating such a wonderful environment!**
+**Thanks the entire community for supporting my on the way of researching and creating such a wonderful environment!**

@@ -4,7 +4,7 @@ description: "Using plots to show how the power of variables changes throughout 
 author: "spqcey"
 contributors: "the Amazing Community"
 draft: false
-order: 3
+order: 4
 tags: T9+
 ---
 ###### Initial Publication on November 19, 2022
