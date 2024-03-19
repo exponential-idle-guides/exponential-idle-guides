@@ -324,17 +324,17 @@ Which is close to the results of [Theory Simulator](https://spqcey-additions--ex
 
 ### Thanks the following people for their research contribution!
 
-1. Ghost(Playsprout)
-2. Spiral(a_spiralist)
+1. Ghost (Playsprout)
+2. Spiral (a_spiralist)
 3. Megaminx
 
 ### Thanks the following people for their feedbacks!
 
-1. Mr. Optimal(NGZ)
-2. Speedrunner(Jooo)
-3. scide(scbose)
-4. Ghost(Playsprout)
-5. Helper(Axiss)
+1. Mr. Optimal (NGZ)
+2. Speedrunner (Jooo)
+3. scide (scbose)
+4. Ghost (Playsprout)
+5. Helper (Axiss)
 6. [nubest](/images/nub.png)
 
 **Thanks the entire community for supporting my on the way of researching and creating such a wonderful environment!**
