@@ -188,7 +188,7 @@ As \\(\rho\\) approaches infinity, we can see that \\(q\\) approaches \\(\sqrt{1
 We can then do the asymptotic analysis on the entire system normally from here.
 
 ### More Complicated Cases
-In more complicated cases such as the systems that contains multiple powers of \\(t\\) in the growth of a single variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
+In more complicated cases such as the systems that contain multiple powers of \\(t\\) in the growth of a single variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
 1. Determine the strongest term by experiment and use the previous two methods (which is how we analyze T6, which has an intricate main equation)
 2. Use Numerical Methods (which the Theory Simulator incorporates)
 3. Reverse engineer the exponent of \\(\rho\\) of a specific variable from the final Decay Factor experimentally.
