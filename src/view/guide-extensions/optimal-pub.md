@@ -188,9 +188,7 @@ As \\(\rho\\) approaches infinity, we can see that \\(q\\) approaches \\(\sqrt{1
 We can then do the asymptotic analysis on the entire system normally from here.
 
 ### More Complicated Cases
-
-In more complicated cases such as these which have multiple powers of \\(t\\) in the growth of a variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
-
+In more complicated cases such as the systems that contain multiple powers of \\(t\\) in the growth of a single variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
 1. Determine the strongest term by experiment and use the previous two methods (which is how we analyze T6, which has an intricate main equation)
 2. Use Numerical Methods (which the Theory Simulator incorporates)
 3. Reverse engineer the exponent of \\(\rho\\) of a specific variable from the final Decay Factor experimentally.
@@ -273,7 +271,7 @@ From (3-9), we get:
 ## The Observations We Can Get from Theorem 1
 
 1. The more time-sensitive the theory is, which is reflected on a higher \\(y\\),the higher the publication multiplier will be.
-2. The lower the intra-publication decay, which is reflected on a higher \\(x\\), the longer the publication will be. If the intra-publication decay is negative, which means the theory is diverging without any aid from publication and \\(x>1\\), the publication multiplier with fall below 1, making publication un-economical.
+2. The lower the intra-publication decay, which is reflected on a higher \\(x\\), the longer the publication will be. If the intra-publication decay is negative, which means the theory is diverging without any aid from publication and \\(x>1\\), the publication multiplier will fall below 1, making publication un-economical.
 3. In a balanced theory that is not sensitive to time (All main theories except T2,4,6), the publication multiplier will be slightly lower than \\(e\\), the more severe the decay is, the lower it goes.
 
 ## Examples of an Analysis
