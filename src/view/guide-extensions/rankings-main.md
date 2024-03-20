@@ -5,7 +5,7 @@ author: "AfuroZamurai"
 contributors: "the Amazing Community"
 draft: false
 tags: rankings
-order: 999
+order: 0
 ---
 
 Here is the collection of all the prior in game rankings on all platforms. They also include more info and news for each section.
