@@ -313,7 +313,7 @@ Using Lemma 2.2, we can analyze all the layers and factor in the publication mul
 \\[\frac{d\rho}{dt} \in \Theta(\rho^{1.15*2*(0.1+0.1+\frac{log2}{10log3}+0.05)}t^{9.2}\rho^{0.198}_{pub})\\]
 Therefore, \\(x \simeq 0.72011 , y = 9.2, z = 0.198\\)
 Thus, from Theorem 1 we get:
-*\\[r \simeq e^{\frac{0.198*9=10.2}{0.27989}} \simeq 1360.61\\]*
+*\\[r \simeq e^{\frac{0.198*10.2}{0.27989}} \simeq 1360.61\\]*
 Which is close to the results of [Theory Simulator](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-sim/) without T2MC from e1000 to e1500. This behavior is expected since Coasting -- The main concept of T2MC is not considered at all in this analysis.
 
 ## Credits
