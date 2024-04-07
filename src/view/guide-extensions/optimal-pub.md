@@ -92,33 +92,31 @@ For each "Stepwise" variable \\(v\\), there exist \\((c_1, c_2) \in \mathbb{R}^+
 
 Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 \le l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\):
 From the definition of a Stepwise variable we have:
-\\[v_{mk+l} = p((m+l(q-1))q^k-m)\qquad (1-4)\\]
+\\[v_{mk+l} = p((m+l)q^k-m)\qquad (1-4)\\]
 
-1. Since \\(m\\)>0,from (1-4) we have:
-\\[p((m+l(q-1))q^k-m) < p((m+l(q-1))q^k)=mpq^k(1+\frac{l}{m}(q-1))\qquad (1-5)\\]
+Since \\(m\\)>0,from (1-4) we have:
+\\[p((m+l)q^k-m) < p((m+l)q^k)=mpq^k(1+\frac{l}{m})\qquad (1-5)\\]
 Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\),
-\\[mpq^k(1+\frac{l}{m}(q-1)) < mpq^k(1+(q-1)) = mpq^(k+1) < mpqq^{\frac{mk+l}{m}}\\] 
-\\[= mpq(q^\frac{1}{m})^{mk+l}\\]
-Therefore, 
-\\[v_{mk+l} < mpq(q^\frac{1}{m})^{mk+l}\qquad (1-6)\\]
+\\[mpq^k(1+\frac{l}{m}) < 2mpq^k = 2mpq^k < mpq^{\frac{mk+l}{m}}\\]
+\\[= mp(q^\frac{1}{m})^{mk+l}\\]
+Therefore,
+\\[v_{mk+l} < mp(q^\frac{1}{m})^{mk+l}\qquad (1-6)\\]
 
-2. Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
-\\[p((m+l(q-1))q^k-m) > p((m+l(q-1))q^k-q^{k-1}m)\\]
-\\[= p(mq^k-mq^{k-1}+l(q-1)q^k)\\] 
-\\[= p(m(q-1)q^{k-1}+l(q-1)q^k)\\]
-\\[= mp(q-1)q^{k-1}(1+\frac{l}{m}q)\qquad (1-7)\\]
-Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>-1\\), we can ap­ply Bernoul­li’s in­equal­ity to get:
-\\[1+\frac{l}{m}q \ge (1+q)^{\frac{l}{m}}\\]
-\\[mp(q-1)q^{k-1}(1+\frac{l}{m}q) \ge mp(q-1)q^{k-1}(1+q)^{\frac{l}{m}}>mp(q-1)q^{k-1}q^{\frac{l}{m}}\\]
-\\[= \frac{mp(q-1)}{q}(q^{\frac{1}{m}})^{mk+l}\\]
-Therefore, 
-\\[v_{mk+l} > mp\frac{q-1}{q}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)\\]
+Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
+\\[p((m+l)q^k-m) > p((m+l)q^k-q^{k-1}m)\\]
+\\[= p(mq^k-mq^{k-1}+lq^k)\\]
+\\[= p(m(q-1)q^{k-1}+lq^k)\\]
+\\[> mp(q-1)q^{k-1}(1+\frac{l}{m})\qquad (1-7)\\]
+\\[mp(q-1)q^{k-1}(1+\frac{l}{m})>mp(q-1)q^{k-2} \\]
+\\[> \frac{mp(q-1)}{q^2}(q^{\frac{1}{m}})^{mk+l}\\]
+Therefore,
+\\[v_{mk+l} > mp\frac{q-1}{q^2}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)\\]
 
-3. From (1-6) and (1-8) we have:
-\\[mp\frac{q-1}{q}(q^{\frac{1}{m}})^{mk+l} < v_{mk+l} < mpq(q^\frac{1}{m})^{mk+l}\\]
+From (1-6) and (1-8) we have:
+\\[mp\frac{q-1}{q^2}(q^{\frac{1}{m}})^{mk+l} < v_{mk+l} < mp(q^\frac{1}{m})^{mk+l}\\]
 Since \\(mk+l = L\\) in this case,
-\\[mp\frac{q-1}{q}(q^{\frac{1}{m}})^L < v_L < mpq(q^\frac{1}{m})^L\\]
-Apparently, \\((mp\frac{q-1}{q},mpq) \in \mathbb{R}^+\\) and \\(q^\frac{1}{m} \in \mathbb{R}^+\\)
+\\[mp\frac{q-1}{q^2}(q^{\frac{1}{m}})^L < v_L < mp(q^\frac{1}{m})^L\\]
+Apparently, \\((mp\frac{q-1}{q^2},mp) \in \mathbb{R}^+\\) and \\(q^\frac{1}{m} \in \mathbb{R}^+\\)
 
 Therefore, there exist \\((c_1,c_2)\\) and \\(d\\) that fit the conditions.
 
