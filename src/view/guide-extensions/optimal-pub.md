@@ -107,7 +107,7 @@ Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
 \\[= p(mq^k-mq^{k-1}+lq^k)\\]
 \\[= p(m(q-1)q^{k-1}+lq^k)\\]
 \\[> mp(q-1)q^{k-1}(1+\frac{l}{m})\qquad (1-7)\\]
-\\[mp(q-1)q^{k-1}(1+\frac{l}{m})>mp(q-1)q^{k-2} \\]
+\\[mp(q-1)q^{k-1}(1+\frac{l}{m})>mp(q-1)q^{k-1} \\]
 \\[> \frac{mp(q-1)}{q^2}(q^{\frac{1}{m}})^{mk+l}\\]
 Therefore,
 \\[v_{mk+l} > mp\frac{q-1}{q^2}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)\\]
