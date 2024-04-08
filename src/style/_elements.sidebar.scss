@@ -127,6 +127,7 @@ the sidenav list icons (less padding and smaller font size) */
   list-style-type: none;
   display: block;
   position: relative;
+  padding-left: 0em;
 }
 .square_list li::before {
   content: '■';
