@@ -43,10 +43,10 @@ window.onload = ()=>{
     globals.qstyle.setProperty('--sidebar-transition-direction', 'margin-top');
     globals.qstyle.setProperty('--btn-width', '30vw');
     globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
-    globals.qstyle.setProperty('--sidebar-list-1-left', '-0.8rem');
-    globals.qstyle.setProperty('--sidebar-list-1-right', '-0.1rem');
+    globals.qstyle.setProperty('--sidebar-list-1-left', '-1.2rem');
+    globals.qstyle.setProperty('--sidebar-list-1-right', '0.1rem');
     globals.qstyle.setProperty('--sidebar-list-2-left', '-1rem');
-    globals.qstyle.setProperty('--sidebar-list-2-right', '0rem');
+    globals.qstyle.setProperty('--sidebar-list-2-right', '0.5rem');
     globals.qstyle.setProperty('--sidebar-list-font-size', '1.2rem');
     globals.qstyle.setProperty('--body-line-height', '1.4');
     globals.qstyle.setProperty('--section-max-width', '90vw');
