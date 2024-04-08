@@ -98,7 +98,7 @@ Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have: \\[\frac{1}{q-1}p((m+l(q-1
 
 From (1-6) and (1-8) we have: \\[\frac{mp}{q}(q^{\frac{1}{m}})^{mk+l} < v_{mk+l} < mp\frac{q}{q-1}(q^\frac{1}{m})^{mk+l}\\] Since \\(mk+l = L\\) in this case, \\[\frac{mp}{q}(q^{\frac{1}{m}})^L < v_L < mp\frac{q}{q-1}(q^\frac{1}{m})^L\\] Apparently, \\((\frac{mp}{q},\frac{mpq}{q-1}) \in \mathbb{R}^+\\) and \\(q^\frac{1}{m} \in \mathbb{R}^+\\)
 
-Therefore, there exist \((c_1,c_2)\) and \(d\) that fit the conditions.
+Therefore, there exist \\((c_1,c_2)\\) and \\(d\\) that fit the conditions.
 
 #### **Lemma 1.4**
 
