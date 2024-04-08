@@ -19,6 +19,12 @@
   --sidebar-content-padding:0px;
   --sidebar-header-font-size:1.5em;
   --sidebar-transition-direction:margin-left;
+
+  --sidebar-list-1-left: -0.8rem;
+  --sidebar-list-1-top: -0.2rem;
+  --sidebar-list-2-left: -1.2rem;
+  --sidebar-list-2-top: -0.1rem;
+  --sidebar-list-font-size: 1.2rem;
 }
 
 .sidebar {
@@ -121,16 +127,16 @@
 .square_list li::before {
     content: '■';
     position: absolute;
-    left: -0.8rem;
-    top: -0.2rem;
-    font-size: 1.2rem;
+    left: var(--sidebar-list-1-left);
+    top: var(--sidebar-list-1-top);
+    font-size: var(--sidebar-list-font-size);
 }
 .square_list li li::before {
     content: '❖';
     position: absolute;
-    left: -1.2rem;
-    top: -0.1rem;
-    font-size: 1.2rem;
+    left: var(--sidebar-list-2-left);
+    top: var(--sidebar-list-2-top);
+    font-size: var(--sidebar-list-font-size);
 }
 
 .square_list ul, .square_list ol{
