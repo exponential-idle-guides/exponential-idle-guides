@@ -127,14 +127,11 @@ the sidenav list icons (less padding and smaller font size) */
   list-style-type: none;
   display: block;
   position: relative;
-  padding-left: 0em;
-  margin-left: 0em;
 }
 .square_list li::before {
   content: '■';
   color: inherit;
   padding-right: 0.5em;
-  padding-left: 0em;
   font-size: 1.2em;
   line-height: 1em;
 }
@@ -156,6 +153,7 @@ the sidenav list icons (less padding and smaller font size) */
   column-gap: var(--sidebar-column-gap);
 
   list-style-position: inside;
+  padding-left: 0em;
 }
 .square_list ul ul, .square_list ol ol{
   -webkit-column-count: 1;
