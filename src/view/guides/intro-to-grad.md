@@ -120,9 +120,11 @@ Because of replit changes, you can no longer simply click play and it runs the c
 3. On the fork you made, go to the shell terminal.
 4. Type in the command below to start the calculator:
 
-<blockquote id="grad_inst">
+<blockquote id="grad_command">
 python main.py
 </blockquote>
+
+<button class="copy-btn" onClick="copyText('grad_command');">Copy Text</button>
 
 5. Use the calculator as you would previously.
 
