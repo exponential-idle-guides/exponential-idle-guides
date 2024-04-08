@@ -109,7 +109,22 @@ Upon unlocking all variables, you can use the [star calculator](https://conicgam
 
 When you are within ee5 of the graduation, turn off autoprestige. It is faster
 to cruise than recover and push. Best bet is to use the [Graduation
-calculator](https://replit.com/@LEBaldy2002/gradcalc). Please [contribute to the Phi\*Tau sheet](https://docs.google.com/forms/d/12ldZ22WXQrmsHVt_269-a55KTir-KvT65gmX2JXTYpQ/edit) before graduating.
+calculator](https://replit.com/@LEBaldy2002/gradcalc) (instructions below). Please [contribute to the Phi\*Tau sheet](https://docs.google.com/forms/d/12ldZ22WXQrmsHVt_269-a55KTir-KvT65gmX2JXTYpQ/edit) before graduating.
+
+#### How to use the graduation calculator
+
+Because of replit changes, you can no longer simply click play and it runs the calculator (linked above). You can still use it, but it will be through the following steps:
+
+1. Make a replit account (or login to an existing account).
+2. Fork the graduation calculator.
+3. On the fork you made, go to the shell terminal.
+4. Type in the command below to start the calculator:
+
+<blockquote id="grad_inst">
+python main.py
+</blockquote>
+
+5. Use the calculator as you would previously.
 
 ### Student use routing
 

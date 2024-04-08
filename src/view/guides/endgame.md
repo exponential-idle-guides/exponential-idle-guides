@@ -47,7 +47,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](https://expon
 
 ### How to properly use the Graduation Calculator
 
-The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](https://exponential-idle-guides.netlify.app/guides/endgame/#skipped-students-routing) so no extra work needs to be done.
+The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](https://exponential-idle-guides.netlify.app/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 #### Three Steps To Getting The Best Result
 
@@ -106,7 +106,7 @@ Once you have enough students to always have R4 to R7 maxed out (about 30k), you
 
 Due to fluctuations with stars, accel, \\(t\\), and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
 
-##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ.
+##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
 <table class="newwords">
    <thead>
