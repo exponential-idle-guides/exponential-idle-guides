@@ -17,7 +17,7 @@
   --sidebar-column-count:1;
 
   --sidebar-content-padding:0px;
-  --sidebar-header-font-size:1.5rem;
+  --sidebar-header-font-size:1.5em;
   --sidebar-transition-direction:margin-left;
 }
 
@@ -132,7 +132,6 @@ the sidenav list icons (less padding and smaller font size) */
   content: '■';
   color: inherit;
   padding-right: 0.5em;
-  padding-bottom: 0.2em;
   font-size: 1.2em;
   line-height: 1em;
 }
