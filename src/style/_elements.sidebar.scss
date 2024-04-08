@@ -19,14 +19,6 @@
   --sidebar-content-padding:0px;
   --sidebar-header-font-size:1.5rem;
   --sidebar-transition-direction:margin-left;
-
-  /*
-  --sidebar-list-1-left: -0.8rem;
-  --sidebar-list-1-top: -0.2rem;
-  --sidebar-list-2-left: -1.2rem;
-  --sidebar-list-2-top: -0.1rem;
-  --sidebar-list-font-size: 1.2rem;
-  */
 }
 
 .sidebar {
@@ -121,36 +113,21 @@
   .sidebar a {font-size: 18px;}
 }
 
-/*
-.square_list li {
-    list-style-type: none;
-    position: relative;    /* It's needed for setting position to absolute in the next rule. * /
+/* On narrower screens, where width is less than 750px, change the style of 
+the sidenav list icons (less padding and smaller font size) */
+@media screen and (max-width: 750px) {
+  .square_list li::before,
+  .square_list li li::before {
+    padding-right: 0.3em;
+    font-size: 1em;
+  }
 }
-
-.square_list li::before {
-    content: '■';
-    position: absolute;
-    left: var(--sidebar-list-1-left);
-    top: var(--sidebar-list-1-top);
-    font-size: var(--sidebar-list-font-size);
-}
-.square_list li li::before {
-    content: '❖';
-    position: absolute;
-    left: var(--sidebar-list-2-left);
-    top: var(--sidebar-list-2-top);
-    font-size: var(--sidebar-list-font-size);
-}
-*/
 
 .square_list li {
   list-style-type: none;
   display: block;
   position: relative;
-  padding-left: 1.5em;
-  margin-bottom: 0.5em;
 }
-
 .square_list li::before {
   content: '■';
   color: inherit;
@@ -159,7 +136,6 @@
   font-size: 1.2em;
   line-height: 1em;
 }
-
 .square_list li li::before {
   content: '❖';
 }
