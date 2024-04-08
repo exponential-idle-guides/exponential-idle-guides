@@ -28,7 +28,6 @@ window.onload = ()=>{
   color();
 
   const blockquote_list = document.getElementsByTagName('blockquote');
-  console.log(blockquote_list.length);
   for(const blockquote of blockquote_list){
     blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
   }
