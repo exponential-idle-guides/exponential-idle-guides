@@ -17,14 +17,16 @@
   --sidebar-column-count:1;
 
   --sidebar-content-padding:0px;
-  --sidebar-header-font-size:1.5em;
+  --sidebar-header-font-size:1.5rem;
   --sidebar-transition-direction:margin-left;
 
+  /*
   --sidebar-list-1-left: -0.8rem;
   --sidebar-list-1-top: -0.2rem;
   --sidebar-list-2-left: -1.2rem;
   --sidebar-list-2-top: -0.1rem;
   --sidebar-list-font-size: 1.2rem;
+  */
 }
 
 .sidebar {
@@ -119,9 +121,10 @@
   .sidebar a {font-size: 18px;}
 }
 
+/*
 .square_list li {
     list-style-type: none;
-    position: relative;    /* It's needed for setting position to absolute in the next rule. */
+    position: relative;    /* It's needed for setting position to absolute in the next rule. * /
 }
 
 .square_list li::before {
@@ -137,6 +140,28 @@
     left: var(--sidebar-list-2-left);
     top: var(--sidebar-list-2-top);
     font-size: var(--sidebar-list-font-size);
+}
+*/
+
+.square_list li {
+  list-style-type: none;
+  display: block;
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.square_list li::before {
+  content: '■';
+  color: inherit;
+  padding-right: 0.5em;
+  padding-bottom: 0.2em;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+.square_list li li::before {
+  content: '❖';
 }
 
 .square_list ul, .square_list ol{
