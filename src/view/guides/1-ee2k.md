@@ -69,7 +69,7 @@ There is also a 0.04% chance to gain a star from tapping the equation, however, 
 These can be unlocked once \\(b>=1\\). Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
 You can buy variables and permanent levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
-I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
+I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
 
@@ -152,6 +152,7 @@ You can buy variables and permanent levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
+If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
 
@@ -221,7 +222,7 @@ If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle a
 You can buy variables and permanent levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
-If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
+If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
 

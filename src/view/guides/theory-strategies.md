@@ -197,7 +197,7 @@ T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
 
-Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
+Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://tredec.github.io/sim-3.0/). We have since decided to remove the attractor letter from strategy names.
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
@@ -326,7 +326,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
    </tbody>
 </table>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
+The “xexxx” is returned by the recommended [theory simulator.](https://tredec.github.io/sim-3.0/) For example, it could say “3e647”.
 
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)<br>
 
@@ -1897,7 +1897,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+When the [theory simulator](https://tredec.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
 
 The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
 
@@ -2649,7 +2649,7 @@ This active strategy does not work well with this method of showing theory strat
 **IMPORTANT:**
 Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br> <br>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
+The “xexxx” is returned by the recommended [theory simulator.](https://tredec.github.io/sim-3.0/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credit:
 
@@ -2801,7 +2801,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
    </tbody>
 </table>
 
-The “x.xxexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
+The “x.xxexxx” is returned by the recommended [theory simulator.](https://tredec.github.io/sim-3.0/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credits:
 
@@ -4765,7 +4765,7 @@ Strategy Credits:
 </table>
 <br>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
+When the [theory simulator](https://tredec.github.io/sim-3.0/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
 
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br><br>
 
@@ -5000,7 +5000,7 @@ Strategy Credits:
 </table>
 <br>
 
-The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CSR2<span style="color:#41AD21">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
+The “x.xx” is returned by the recommended [theory simulator.](https://tredec.github.io/sim-3.0/) For example, it could say "CSR2<span style="color:#41AD21">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
 
 **Milestone Swap (pre e500\\(\rho\\))**
 
