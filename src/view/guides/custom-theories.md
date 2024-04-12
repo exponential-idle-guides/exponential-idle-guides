@@ -20,7 +20,7 @@ In order to balance custom theories with the main theories in the endgame, custo
 
 In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for Custom theory (SL before all milestones, CSR2, or WSP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://theory-simulator.tredec.repl.co/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://tredec.github.io/sim-3.0/)<br><br>
 
  For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 

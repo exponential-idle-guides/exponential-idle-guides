@@ -35,7 +35,7 @@ You may want to do multiple simulations after each publication for some theories
 
 ### **Strat Active / Idle**
 
-Full documentation of strategies that are not listed here as well as the full collection is very long. The strategies can be found in the [Theory Strategies Guide](https://spqcey-additions--exponential-idle-guides.netlify.app/guides/theory-strategies/).
+Full documentation of strategies that are not listed here as well as the full collection is very long. The strategies can be found in the [Theory Strategies Guide](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
 ### **Time Active / Idle and Pub Time**
 

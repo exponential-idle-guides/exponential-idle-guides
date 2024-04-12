@@ -473,7 +473,7 @@ repeat.
 
 #### Theory 4 Overview
 
-Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c\\) etc. In this case, instead of 'x' it's 'q'. The strategies for this theory are quite simple compared to the previous theory, especially late game strategies. 
+Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c\\) etc. In this case, instead of 'x' it's 'q'. The strategies for this theory are quite simple compared to the previous theory, especially late game strategies.
 <br><br>
 
 #### Theory 4 Equation Description
@@ -482,11 +482,9 @@ Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c
 
 \\(\dot{q} = 8q_1q_2 / (1 + q)\\)
 
-
 <br><br>
 
 The first line statest that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
-
 
  <br><br>
 The second line is more unique. It says that \\(qdot\\) is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as \\(qdot\\) decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth. 
@@ -494,8 +492,6 @@ The second line is more unique. It says that \\(qdot\\) is proportional to the i
  For the more mathematically observant reader, we may integrate the \\(\dot{q}\\) equation and conclude that \\(q\\) is proportional to the square root of time. This means that even though \\(\dot{q}\\) grows slower with increasing \\(q\\), there is theoretically no finite limit on the maximum value of \\(q\\).
 
  <br><br>
-
-
 
 #### Theory  Variable Description
 Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
@@ -542,9 +538,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tbody>
 </table>
 
-<br>
-<br>
-
+<br><br>
 
 #### Theory 4 strategy
 
@@ -568,8 +562,6 @@ From e350+ T4 to end game:
 \\(c_3\\) > \\(q_2\\) > \\(q_1\\) > everything else <br><br>
 
 <br><br>
-
-
 
 ##### Idle
 
@@ -622,9 +614,6 @@ Now here is where we can apply some more advanced strategies. Consider that the 
 
 If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is the c4, c5, c6 terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only c1c2 as usual to accumulate enough rho so that we can buy q1q2 to stack q. Once we have enough q, the c4, c5, c6 terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make c1c2 better again.
 
-
-
-
 <br><br> e175 OR 14k ft to ~e300 T4 <br><br>
 
 We will do the exact same strategy as in the #start to e75 section above. This is because c1c2 become really strong again and the c4c5c6 terms take too long to outscale. Note that we still don't buy c3.
@@ -634,9 +623,6 @@ We will do the exact same strategy as in the #start to e75 section above. This i
 At this point the c3 term starts to become dominant. Therefore we will prioritise buying c3, q1, q2. We will NOT buy anything else except 1 level of c1 to start the theory. If you wish, you can buy q1 at about 15% ratio to q2 cost. It is also ok to autobuy q1. The c3 term will remain dominant until endgame.
 
 <br><br>
-
-
-
 
 #### T4 milestone route
 

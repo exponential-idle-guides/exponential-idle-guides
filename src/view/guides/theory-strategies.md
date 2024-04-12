@@ -7,14 +7,22 @@ draft: false
 order: 8
 ---
 
-The theory sim (simulation) we currently recommend was made by XLII and can be [accessed here.](https://theory-simulator.tredec.repl.co/)
+The theory sim (simulation) we currently recommend was made by XLII and can be [accessed here.](https://tredec.github.io/sim-3.0/)
 
 ## Modulus Explanation
-A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division. <br>So, <br>
-13 % 10 = 3<br>
-21 % 10 = 1<br>
-20 % 10 = 0<br>
-Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.<br>
+
+A "%" can be seen in the table of some strategies. The “%” indicates modulus, which to simplify, is the remainder of a division.
+
+So,
+
+13 % 10 = 3
+
+21 % 10 = 1
+
+20 % 10 = 0
+
+Because the modulus used is mod10, and we use a base 10 numbering system, we can look at the last digit of the level to easily find the result of the modulus.
+
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 ## List of Strategies
@@ -187,7 +195,8 @@ T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of
 <span class="h3-fake">Theory 8: Chaos Theory</span>
 
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
-T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here. <br>
+T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
+
 Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://theory-simulator.tredec.repl.co/). We have since decided to remove the attractor letter from strategy names.
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
@@ -262,6 +271,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
 - [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
+
 <br> <br>
 
 <span class="h2-fake">Official Theories</span>
@@ -269,6 +279,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 ## Theory 1: Recurrence Relations
 
 ### T1<span style="color:#41AD21">SolarXLII xexxx</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -315,13 +326,17 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
    </tbody>
 </table>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br>
-If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
+The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”.
+
+If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)<br>
+
 Strategy Credits:
+
 - Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
 ### T1<span style="color:#41AD21">Ratio</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -354,7 +369,8 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-<br> <br>
+
+<br><br>
 
 **Do not buy \\(c_1\\) or \\(c_2\\) after e300\\(\rho\\).** <br><br>
 
@@ -397,9 +413,11 @@ Strategy Credits:
 <br> <br>
 
 Strategy Credits:
+
 - XLII
 
 ### T1<span style="color:#41AD21">AI</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -434,6 +452,7 @@ Strategy Credits:
 </table>
 
 ### T1<span style="color:#4665F0">C34</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -470,6 +489,7 @@ Strategy Credits:
 ## Theory 2: Differential Calculus
 
 ### T2<span style="color:#41AD21">MC</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -554,6 +574,7 @@ Strategy Credits:
 </table>
 
 Strategy Credits:
+
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br>
 
@@ -566,6 +587,7 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 **T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
 
 ### T2<span style="color:#41AD21">Coast-X%</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -622,10 +644,12 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
    </tbody>
 </table>
 
-If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span> <br> <br>
+If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span><br>
+
 We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc) instead of this strategy.
 
 ### T2
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -669,7 +693,8 @@ We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential
 
 ## Theory 3: Linear Algebra
 
-### T3</span><span style="color:#41AD21">Play2</span>
+### T3<span style="color:#41AD21">Play2</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -775,6 +800,7 @@ We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential
 <br><br>
 
 Strategy Credits:
+
 - Playspout for creating this strategy.
 - Solarion for \\(c_{12}\\) overpush idea.
 - xelaroc, whose sim was used to verify Playspout's results
@@ -786,7 +812,8 @@ Strategy Credits:
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
-### T3</span><span style="color:#41AD21">Play</span>
+### T3<span style="color:#41AD21">Play</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -877,10 +904,12 @@ Strategy Credits:
 </table>
 
 Strategy Credits:
+
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3</span><span style="color:#41AD21">SNAX</span>
+### T3<span style="color:#41AD21">SNAX</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -958,10 +987,12 @@ Strategy Credits:
 </table>
 
 Strategy Credits:
+
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3</span><span style="color:#41AD21">SNAX2</span>
+### T3<span style="color:#41AD21">SNAX2</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -1039,6 +1070,7 @@ Strategy Credits:
 </table>
 
 Strategy Credits:
+
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 <br> <br>
@@ -1046,6 +1078,7 @@ It is designed to be an easier version of current t3 strategies.<br> <br>
 This is the only active SNAX strategy.
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -1123,11 +1156,13 @@ This is the only active SNAX strategy.
 </table>
 
 Strategy Credits:
+
 - xelaroc
 - Playspout
 
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -1204,11 +1239,14 @@ Strategy Credits:
    </tbody>
 </table>
 
+
 Strategy Credits:
+
 - xelaroc
 - Playspout
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1268,6 +1306,7 @@ Strategy Credits:
 
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1326,6 +1365,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1384,6 +1424,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1442,6 +1483,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1500,6 +1542,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1558,6 +1601,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1616,6 +1660,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1674,6 +1719,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1732,6 +1778,7 @@ Strategy Credits:
 </table>
 
 ### T3<span style="color:#4665F0">C11C12C21</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1793,6 +1840,7 @@ Strategy Credits:
 ## Theory 4: Polynomials
 
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -1849,17 +1897,22 @@ Strategy Credits:
    </tbody>
 </table>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”. <br>The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br><br>
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+
+The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
+
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation)
 
-The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br> <br>
+The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br><br>
 
 Strategy Credits:
+
 - XLII
 - rus9384#1864
 
 
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -1902,6 +1955,7 @@ Strategy Credits:
 </table>
 
 ### T4<span style="color:#41AD21">SNAX</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -1961,11 +2015,13 @@ Strategy Credits:
 <br><br>
 
 Strategy Credits:
+
 - Snaeky
 - XLII
 
 
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -2023,6 +2079,7 @@ Strategy Credits:
 </table>
 
 ### T4<span style="color:#4665F0">C3</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2065,6 +2122,7 @@ Strategy Credits:
 </table>
 
 ### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2109,6 +2167,7 @@ Strategy Credits:
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>.
 
 ### T4<span style="color:#4665F0">C123</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2153,6 +2212,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span>.
 
 ### T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2195,6 +2255,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C12</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2237,6 +2298,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2279,6 +2341,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C56</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2321,6 +2384,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2363,6 +2427,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C4</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2405,6 +2470,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2447,6 +2513,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4<span style="color:#4665F0">C5</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2489,6 +2556,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 </table>
 
 ### T4
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2533,9 +2601,11 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 ## Theory 5: Logistic Function
 
 ### T5<span style="color:#41AD21">AI</span>
+
 This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
 
 ### T5<span style="color:#41AD21">Idle xexxx</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -2582,6 +2652,7 @@ Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, an
 The “xexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credit:
+
 - XLII
 
 ### T5
@@ -2617,6 +2688,7 @@ Strategy Credit:
 ## Theory 6: Integral Calculus
 
 ### T6<span style="color:#41AD21">AI</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2732,11 +2804,13 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 The “x.xxexxx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say “3e647”. <br> <br>
 
 Strategy Credits:
+
 - Snaeky
 - XLII
 
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2783,6 +2857,7 @@ Strategy Credits:
 </table>
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2829,6 +2904,7 @@ Strategy Credits:
 </table>
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2881,6 +2957,7 @@ Strategy Credits:
 If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at e1 ratio the entire publication.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2927,6 +3004,7 @@ If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) unti
 </table>
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -2975,6 +3053,7 @@ If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) unti
 This strategy is sometimes seen at lower taus but not at higher taus.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3023,6 +3102,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 This strategy is sometimes seen at lower taus but not at higher taus.
 
 ### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3069,6 +3149,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 </table>
 
 ### T6<span style="color:#4665F0">C4</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3115,6 +3196,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 </table>
 
 ### T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3154,6 +3236,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
 
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 ### T6<span style="color:#4665F0">C3</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3282,12 +3365,14 @@ The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at 
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 Strategy Credits:
+
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
 - Snaeky for number after T7<span style="color:#41AD21">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
 - XLII for simulating Snaeky's idea
 
 ### T7<span style="color:#41AD21">Play-25</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3330,9 +3415,11 @@ T7<span style="color:#41AD21">Play-25</span> has a “25” due to the two 25% (
 <br> <br>
 
 Strategy Credits:
+
 - Playspout
 
 ### T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3371,6 +3458,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3409,6 +3497,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:#4665F0">C12</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3447,6 +3536,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3485,6 +3575,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3523,6 +3614,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3561,6 +3653,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3599,6 +3692,7 @@ Strategy Credits:
 </table>
 
 ### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3677,6 +3771,7 @@ Strategy Credits:
 ## Theory 8: Chaos Theory
 
 ### T8<span style="color:#41AD21">PlaySolarSwap</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3711,11 +3806,13 @@ Every 34 seconds, remove one level from the first milestone then immediately add
 <br> <br>
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 Strategy Credits:
+
 - Playspout for the variable buying strategy
 - Solarion for the milestone swap idea
 
 
 ### T8<span style="color:#41AD21">Play</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3749,9 +3846,11 @@ Strategy Credits:
 <!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
 <br> <br>
 Strategy Credits:
+
 - Playspout
 
 ### T8<span style="color:#41AD21">SNAX</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -3802,10 +3901,12 @@ Strategy Credits:
 <br><br>
 
 Strategy Credits:
+
 - Snaeky
 - XLII
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3839,6 +3940,7 @@ Strategy Credits:
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3869,6 +3971,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3899,6 +4002,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3930,6 +4034,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 <br>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3960,6 +4065,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 
 ### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -3990,6 +4096,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 
 ### T8<span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4055,6 +4162,7 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 ## Weierstraß Sine Product
 
 ### WSP<span style="color:#41AD21">AI</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4086,9 +4194,11 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 <br> <br>
 
 Strategy Credits:
+
 - xelaroc
 
 ### WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4172,11 +4282,13 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
 <br> <br>
 
 Strategy Credits:
+
 - xelaroc for testing/creating the strategy
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
 ### WSP<span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4208,9 +4320,11 @@ Strategy Credits:
 <br> <br>
 
 Strategy Credits:
+
 - xelaroc
 
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4254,6 +4368,7 @@ Strategy Credits:
 <br> <br>
 
 Strategy Credits:
+
 - xelaroc for simulating it/adding it to the sim
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for \\(c_1\\) modification
@@ -4414,9 +4529,11 @@ These numbers also tell you that you never want to be in State 2 for a long time
       </tr>
    </tbody>
 </table>
-<br> <br>
+
+<br><br>
 
 Strategy Credit:
+
 - XLII
 
 ### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
@@ -4469,9 +4586,11 @@ Strategy Credit:
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br> <br>
 
 Strategy Credit:
+
 - XLII
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4519,12 +4638,14 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>.
 <br> <br>
 Strategy Credits:
+
 - xelaroc
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 - XLII for buying ratios change and integration of modulus
 
 ### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4568,6 +4689,7 @@ Strategy Credits:
 <br> <br>
 
 Strategy Credits:
+
 - xelaroc
 - Playspout
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
@@ -4575,6 +4697,7 @@ Strategy Credits:
 ## Euler's Formula
 
 ### EF<span style="color:#41AD21">AI</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4642,13 +4765,16 @@ Strategy Credits:
 </table>
 <br>
 
-When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br> <br>
+When the [theory simulator](https://theory-simulator.tredec.repl.co/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
+
 If you are confused about the "%", read about [it here.](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation) <br><br>
 
 Strategy Credits:
+
 - The Amazing Community (EF<span style="color:#41AD21">AI</span> is a product of a bunch of ideas from various players)
 
 ### EF<span style="color:#41AD21">SNAX</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4717,13 +4843,17 @@ Strategy Credits:
 <br> <br>
 
 Strategy Credits:
+
 - Snaeky
 - XLII
 - Gaunter for buying \\(a_1\\) after recovery when past e150\\(\rho\\) strategy
-<br> <br>
+
+<br>
+
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
 ### EF<span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4774,6 +4904,7 @@ Strategy Credits:
 </table>
 
 ### EF
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4826,6 +4957,7 @@ Strategy Credits:
 ## Convergents to √2
 
 ### CSR2<span style="color:#41AD21">XL x.xx</span>
+
 <table class="spqcey">
 <thead>
    <tr>
@@ -4870,12 +5002,16 @@ Strategy Credits:
 
 The “x.xx” is returned by the recommended [theory simulator.](https://theory-simulator.tredec.repl.co/) For example, it could say "CSR2<span style="color:#41AD21">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
 
-**Milestone Swap (pre e500\\(\rho\\))**<br>
-Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. <br>
+**Milestone Swap (pre e500\\(\rho\\))**
+
+Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. 
+
 Swap to \\(q_1\\) exponent when one of these is true:
+
 - \\(\rho\\) × Ratio > \\(c_2\\) cost
 - \\(\rho\\) × \\(\frac{Ratio}{2}\\) > \\(n\\) cost
-- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1<br>							
+- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1
+						
 Follow the sim’s advice for when to start coasting.
 
 The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
@@ -4909,11 +5045,14 @@ The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows
    </tbody>
 </table>
 
-<br> <br>
+<br>
+
 Strategy Credits:
+
 - XLII
 
 ### CSR2<span style="color:#41AD21">d</span>
+
 <table class="spqcey">
 <thead>
   <th></th>
@@ -4944,6 +5083,7 @@ Strategy Credits:
 </table>
 
 ### CSR2
+
 <table class="spqcey">
 <thead>
   <th></th>
