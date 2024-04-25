@@ -90,7 +90,7 @@ For each "Stepwise" variable \\(v\\), there exist \\((c_1, c_2) \in \mathbb{R}^+
 
 #### **Proof**
 
-Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 \le l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\): From the definition of a Stepwise variable we have: \\[v_{mk+l} = \frac{1}{q-1}p((m+l(q-1))q^k-m)\qquad (1-4)\\]
+Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 < l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\): From the definition of a Stepwise variable we have: \\[v_{mk+l} = \frac{1}{q-1}p((m+l(q-1))q^k-m)\qquad (1-4)\\]
 
 Since \\(m\\)>0,from (1-4) we have: \\[\frac{1}{q-1}p((m+l(q-1))q^k-m) < \frac{1}{q-1}p((m+l(q-1))q^k)=\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1))\qquad (1-5)\\] Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\), \\[\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1)) < \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^(k+1) < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}}\\] \\[= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}\\] Therefore, \\[v_{mk+l} < mp\frac{q}{q-1}(q^\frac{1}{m})^{mk+l}\qquad (1-6)\\]
 
