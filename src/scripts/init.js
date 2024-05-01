@@ -69,7 +69,10 @@ window.onload = ()=>{
               let curr_td = curr_tr_td[k];
               let curr_td_HTML = $(curr_td).wrap('<p/>').parent().html();
               $(curr_td).unwrap();
-              const transform = curr_td.getAttribute('transform')
+              let transform = curr_td.getAttribute('transform')
+              if (transform === null){
+                transform = curr_td_HTML.match(/.*translate\(.*\)/gm)[0]
+              }
               console.log("curr_td.transform");
               console.log(transform);
               const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
