@@ -56,15 +56,20 @@ window.onload = ()=>{
         let eqnarray = eqnarrays[i];
         let eqnarray_tr = eqnarray.querySelectorAll('[data-mml-node="mtr"]'),
           new_tr_innnerHTML = "";
+        console.log(eqnarray_tr)
         if (eqnarray_tr.length > 1) {
           for (let j = 0; j < eqnarray.length; j++) {
             let curr_tr = eqnarray_tr[j];
+            console.log(curr_tr)
             new_tr_innnerHTML += curr_tr.innerHTML;
+            console.log(new_tr_innnerHTML)
             if (j > 0) {
               curr_tr.remove()
             }
+            console.log(curr_tr)
           }
-          curr_tr.innerHTML = new_tr_innnerHTML;
+          eqnarray_tr[0].innerHTML = new_tr_innnerHTML;
+          console.log(eqnarray_tr)
         }
       }
     }
