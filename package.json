@@ -22,7 +22,7 @@
     "jsdom": "^16.7.0",
     "markdown-it": "^12.1.0",
     "markdown-it-anchor": "^8.1.2",
-    "markdown-it-mathjax": "^2.0.0",
+    "markdown-it-mathjax3": "^4.3.2",
     "sass": "^1.37.0",
     "slugify": "^1.6.0"
   },

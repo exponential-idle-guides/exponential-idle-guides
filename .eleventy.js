@@ -48,7 +48,7 @@ module.exports = config => {
     "md",
     markdownIt(markdownItOptions)
       .use(markdownItAnchor, markdownItAnchorOptions)
-      .use(require('markdown-it-mathjax')())
+      .use(require('markdown-it-mathjax3'))
   );
 
   config.setDataDeepMerge(true);

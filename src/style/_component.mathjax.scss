@@ -1,5 +1,7 @@
-.MathJax_SVG_Display {
+.MathJax_Display, .MJXc-display, .MathJax_SVG_Display, mjx-container[display="block"] {
   max-width: 100%;
   margin: 0 !important;
   padding-bottom: 1em;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
