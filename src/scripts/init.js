@@ -49,7 +49,6 @@ window.onload = ()=>{
       globals.qstyle.setProperty('--title-align', 'right');
     }
   } else {
-    /*
     let eqnarrays = document.querySelectorAll('[data-mml-node="mtable"]');
     if (eqnarrays !== undefined && eqnarrays.length != 0) {
       // array does not exist or is empty
@@ -60,13 +59,26 @@ window.onload = ()=>{
         console.log("eqnarray_tr");
         console.log(eqnarray_tr);
         if (eqnarray_tr.length > 1) {
+          let curr_offset = 0
           for (let j = 0; j < eqnarray_tr.length; j++) {
             let curr_tr = eqnarray_tr[j];
             console.log("curr_tr");
             console.log(curr_tr);
+            let inner_HTML = curr_tr.innerHTML
             console.log("curr_tr.innerHTML");
-            console.log(curr_tr.innerHTML);
-            new_tr_innnerHTML += curr_tr.innerHTML;
+            console.log(inner_HTML);
+            const translates = [...inner_HTML.matchAll(/"translate\((.*?),(.*?)\)/g)]
+            console.log("translates")
+            console.log(translates)
+            for (let k = translates.length - 1; k >= 0; k--) {
+              inner_HTML = inner_HTML.replace(translates[k][1], +translates[k][1] + curr_offset);
+            }
+            console.log("translates")
+            console.log([...inner_HTML.matchAll(/"translate\((.*?),(.*?)\)/g)])
+            curr_offset = +translates[translates.length - 1][1];
+            console.log("curr_offset");
+            console.log(curr_offset);
+            new_tr_innnerHTML += inner_HTML;
             console.log("new_tr_innnerHTML");
             console.log(new_tr_innnerHTML);
             if (j > 0) {
@@ -81,7 +93,8 @@ window.onload = ()=>{
         }
       }
     }
-    */
+    
+    /*
     let inner_HTML = document.body.innerHTML;
     let eqnarrays = inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm);
     console.log("inner_HTML")
@@ -101,6 +114,7 @@ window.onload = ()=>{
       console.log("eqnarrays_after")
       console.log(inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm))
     }
+    */
   }
 
   if(window.location.href.includes('/ranking-news')){
