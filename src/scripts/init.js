@@ -49,6 +49,7 @@ window.onload = ()=>{
       globals.qstyle.setProperty('--title-align', 'right');
     }
   } else {
+    /*
     let eqnarrays = document.querySelectorAll('[data-mml-node="mtable"]');
     if (eqnarrays !== undefined && eqnarrays.length != 0) {
       // array does not exist or is empty
@@ -79,6 +80,24 @@ window.onload = ()=>{
           console.log(eqnarray_tr);
         }
       }
+    }
+    */
+    let inner_HTML = document.body.innerHTML;
+    let eqnarrays = inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm);
+    console.log("eqnarrays");
+    console.log(eqnarrays);
+    if (eqnarrays !== undefined && eqnarrays.length != 0) {
+      for (let i = 0; i < eqnarrays.length; i++) {
+        const old_html = eqnarrays[i];
+        console.log("old_html");
+        console.log(old_html);
+        const new_html = old_html.replaceAll('\\\\', "");
+        console.log("new_html");
+        console.log(new_html);
+        inner_HTML.replace(old_html, new_html);
+      }
+      console.log("eqnarrays_after")
+      console.log(inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm))
     }
   }
 
