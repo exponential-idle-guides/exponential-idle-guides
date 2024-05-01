@@ -71,7 +71,7 @@ window.onload = ()=>{
               const transform = curr_td.getAttribute('transform')
               console.log("curr_td.transform");
               console.log(transform);
-              const translate = [...transform.matchAll(/"translate\((.*?),(.*?)\)/g)][0]
+              const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
               console.log("curr_td.translate");
               console.log(translate);
               curr_td.transform = transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString()));
