@@ -65,6 +65,7 @@ window.onload = ()=>{
             console.log("curr_tr");
             console.log(curr_tr);
             let curr_tr_td = curr_tr.querySelectorAll('[data-mml-node="mtd"]');
+            let prior_offset = 0;
             for (let k = 0; k < curr_tr_td.length; k++) {
               let curr_td = curr_tr_td[k];
               let curr_td_HTML = $(curr_td).wrap('<p/>').parent().html();
@@ -72,21 +73,27 @@ window.onload = ()=>{
               let transform = curr_td.getAttribute('transform')
               if (transform === null){
                 transform = curr_td_HTML.match(/.*translate\(.*\)/gm)[0]
-              }
-              console.log("curr_td.transform");
-              console.log(transform);
-              const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
-              console.log("curr_td.translate");
-              console.log(translate);
-              new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString()));
-              console.log("curr_td.transform");
-              console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString())));
-              if (k == curr_tr_td.length - 1) {
-                curr_offset = +translate[1];
-                console.log("curr_offset");
-                console.log(curr_offset);
+                console.log("curr_td.transform");
+                console.log(transform);
+                const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
+                console.log("curr_td.translate");
+                console.log(translate);
+                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (curr_offset + prior_offset).toString() + ')"');
+              } else {
+                console.log("curr_td.transform");
+                console.log(transform);
+                const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
+                console.log("curr_td.translate");
+                console.log(translate);
+                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString()));
+                console.log("curr_td.transform");
+                console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString())));
+                prior_offset = +translate[1];
               }
             }
+            curr_offset += curr_tr.getBoundingClientRect().width
+            console.log("curr_offset");
+            console.log(curr_offset);
             console.log("new_tr_innnerHTML");
             console.log(new_tr_innnerHTML);
             if (j > 0) {
