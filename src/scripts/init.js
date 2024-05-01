@@ -84,6 +84,8 @@ window.onload = ()=>{
     */
     let inner_HTML = document.body.innerHTML;
     let eqnarrays = inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm);
+    console.log("inner_HTML")
+    console.log(inner_HTML)
     console.log("eqnarrays");
     console.log(eqnarrays);
     if (eqnarrays !== undefined && eqnarrays.length != 0) {
