@@ -59,7 +59,7 @@ window.onload = ()=>{
         console.log("eqnarray_tr");
         console.log(eqnarray_tr);
         if (eqnarray_tr.length > 1) {
-          for (let j = 0; j < eqnarray.length; j++) {
+          for (let j = 0; j < eqnarray_tr.length; j++) {
             let curr_tr = eqnarray_tr[j];
             console.log("curr_tr");
             console.log(curr_tr);
