@@ -219,25 +219,25 @@ We substitute (3-3) into (3-4) and get:
 \\[ = \frac{\frac{ln(K'(1-x))+ln(\rho^{z}_{pub})+ln(t^{y+1})}{1-x} - ln(\rho_{pub})}{t}\qquad (3-5)\\]
 In the Endgame, \\(ln(K'(1-x))\\) is ignorable:
 \\[\frac{\frac{ln(K'(1-x))+ln(\rho^{z}_{pub})+ln(t^{y+1})}{1-x} - ln(\rho_{pub})}{t} \simeq \frac{\frac{ln(\rho^{z}_{pub})+ln(t^{y+1})}{1-x} - ln(\rho_{pub})}{t}\\]
-\\[ = \frac{(\frac{z}{1-x} - 1)ln\rho_{pub} + \frac{y+1}{1-x}ln(t)}{t}\\]
-\\[ = \frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln(t)}{t}\qquad (3-6)\\]
+\\[ = \frac{(\frac{z}{1-x} - 1)ln\rho_{pub} + \frac{y+1}{1-x}ln( t )}{t}\\]
+\\[ = \frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln( t )}{t}\qquad (3-6)\\]
 We use differentiation to find the maximum of the expression above:
-\\[\frac{d}{dt}(\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln(t)}{t}) = 0\\]
-\\[\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{d}{dt}\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{d}{dt}\frac{ln(t)}{t} = 0\\]
-\\[\frac{x+z-1}{1-x}ln\rho_{pub}\cdot(-\frac{1}{t^2}) + \frac{y+1}{1-x}\cdot\frac{d}{dt}\frac{\frac{1}{t}\cdot t-ln(t)}{t^2} = 0\\]
-\\[\frac{y+1}{1-x}\frac{1-ln(t)}{t^2} = \frac{x+z-1}{1-x}ln\rho_{pub}\frac{1}{t^2}\\]
+\\[\frac{d}{dt}(\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln( t )}{t}) = 0\\]
+\\[\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{d}{dt}\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{d}{dt}\frac{ln( t )}{t} = 0\\]
+\\[\frac{x+z-1}{1-x}ln\rho_{pub}\cdot(-\frac{1}{t^2}) + \frac{y+1}{1-x}\cdot\frac{d}{dt}\frac{\frac{1}{t}\cdot t-ln( t )}{t^2} = 0\\]
+\\[\frac{y+1}{1-x}\frac{1-ln( t )}{t^2} = \frac{x+z-1}{1-x}ln\rho_{pub}\frac{1}{t^2}\\]
 Since \\(t>0, x \neq 1\\),
-\\[(y+1)(1-ln(t)) = (x+z-1)ln\rho_{pub}\\]
+\\[(y+1)(1-ln( t )) = (x+z-1)ln\rho_{pub}\\]
 Thus,
-\\[ln(t) = 1-\frac{x+z-1}{y+1}ln\rho_{pub}\qquad (3-7)\\]
+\\[ln( t ) = 1-\frac{x+z-1}{y+1}ln\rho_{pub}\qquad (3-7)\\]
 The publication multiplier of the theory is:
 \\[r = (\frac{\rho}{\rho_{pub}})^z\\]
 Since \\(r>0\\), we can take the natural logarithm on both sides:
-\\[ln(r) = z(ln(\rho)-ln(\rho_{pub}))\\]
-\\[ln(r) = zt(\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln(t)}{t})\\]
-\\[= \frac{x+z-1}{1-x}ln\rho_{pub} + \frac{y+1}{1-x}ln(t)\qquad (3-8)\\]
+\\[ln( r ) = z(ln(\rho)-ln(\rho_{pub}))\\]
+\\[ln( r ) = zt(\frac{x+z-1}{1-x}ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{ln( t )}{t})\\]
+\\[= \frac{x+z-1}{1-x}ln\rho_{pub} + \frac{y+1}{1-x}ln( t )\qquad (3-8)\\]
 Substitute (3-7) into (3-8),
-\\[ln(r)=\\]
+\\[ln( r )=\\]
 \\[z(\frac{x+z-1}{1-x}ln\rho_{pub}+\frac{y+1}{1-x}(1-\frac{x+z-1}{y+1}ln\rho_{pub}))\\]
 \\[ = z(\frac{(x+z-1)ln\rho_{pub} + (y+1)(1-\frac{x+z-1}{y+1}ln\rho_{pub})}{1-x})\\]
 \\[ = z(\frac{(x+z-1)ln\rho_{pub} + (y+1) - (x+z-1)ln\rho_{pub}}{1-x})\\]
