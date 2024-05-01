@@ -48,6 +48,26 @@ window.onload = ()=>{
     if(window.location.href!='https://mobile-js-split-fix--exponential-idle-guides.netlify.app/'){
       globals.qstyle.setProperty('--title-align', 'right');
     }
+  } else {
+    let eqnarrays = document.querySelectorAll('[data-mml-node="mtable"]');
+    if (eqnarrays !== undefined && eqnarrays.length != 0) {
+      // array does not exist or is empty
+      for (let i = 0; i < eqnarrays.length; i++) {
+        let eqnarray = eqnarrays[i];
+        let eqnarray_tr = eqnarray.querySelectorAll('[data-mml-node="mtr"]'),
+          new_tr_innnerHTML = "";
+        if (eqnarray_tr.length > 1) {
+          for (let j = 0; j < eqnarray.length; j++) {
+            let curr_tr = eqnarray_tr[j];
+            new_tr_innnerHTML += curr_tr.innerHTML;
+            if (j > 0) {
+              curr_tr.remove()
+            }
+          }
+          curr_tr.innerHTML = new_tr_innnerHTML;
+        }
+      }
+    }
   }
 
   if(window.location.href.includes('/ranking-news')){
