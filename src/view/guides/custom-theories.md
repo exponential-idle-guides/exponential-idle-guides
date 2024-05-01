@@ -4,7 +4,7 @@ description: "Our guide for understanding and playing official custom theories."
 author: "Playspout and Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 7
+order: 8
 ---
 {% import "embed-yt.njk" as yt %}
 
@@ -20,7 +20,7 @@ In order to balance custom theories with the main theories in the endgame, custo
 
 In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for Custom theory (SL before all milestones, CSR2, or WSP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://tredec.github.io/sim-3.0/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://theory-simulator.tredec.repl.co/)<br><br>
 
  For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
@@ -216,11 +216,11 @@ We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_
 x>x>x>x represent the max buy order of milestones not the amount allocated.
 For example, 4>3>1>2 means "Allocate everything into 4th milestone, then use leftovers into 3rd milestone, then into 1st milestone, then into 2nd milestone".
 
-From e75-e100 is 4>3>1>2 (60s) <-> 1>2>4>3 (60s)
+From e75-e100 is 4>3>1>2 (60s) ↔ 1>2>4>3 (60s)
 
-SLMS2 is 1>2>4>3 (30s) --> 2>1>4>3 (60s) --> 1>2>4>3 (30s) --> 4>3>1>2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
+SLMS2 is 1>2>4>3 (30s) → 2>1>4>3 (60s) → 1>2>4>3 (30s) → 4>3>1>2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
 
-SLMS3 is 2>1>4>3  (20s) <-> 4>3>1>2 (60s)
+SLMS3 is 2>1>4>3  (20s) ↔ 4>3>1>2 (60s)
 
 When to Use Strategies
 until e100: SLMS<br>
@@ -228,7 +228,7 @@ e100 - e175: SLMS (100-175)<br>
 e175 - e200: SLMS3<br>
 e200 - e300: SLMS
 
-(note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4>3>1>2 (60s) <-> 1>2>4>3 (20s)
+(note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4>3>1>2 (60s) ↔ 1>2>4>3 (20s)
 
 #### Post e300+ \\(\rho\\)
 
@@ -258,11 +258,11 @@ Milestone Swapping (active)
 
 How to read notation: 4/3/1/2 means put all points into 4th milestones, use leftovers into 3rd milestones, etc.
 
-SLMS is 4/3/1/2 (60s) <-> 1/2/4/3 (60s)
+SLMS is 4/3/1/2 (60s) ↔ 1/2/4/3 (60s)
 
-SLMS2 is 1/2/4/3 (30s) --> 2/1/4/3 (60s) --> 1/2/4/3 (30s) --> 4/3/1/2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
+SLMS2 is 1/2/4/3 (30s) → 2/1/4/3 (60s) → 1/2/4/3 (30s) → 4/3/1/2 (60s), with \\(b_1 \\)\\(b_2 \\) off during the first two, and \\(a_1 \\)\\(a_2 \\) off during the last two
 
-SLMS3 is 2/1/4/3  (20s) <-> 4/3/1/2 (60s)
+SLMS3 is 2/1/4/3  (20s) ↔ 4/3/1/2 (60s)
 
 When to Use Strategies
 until e100: SLMS
@@ -281,7 +281,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number.
 
-EF is unique in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^{0.4} \\) rather than the usual \\(\rho^{0.1} \\) meaning that less \\(\rho \\) is needed to get an equivalent amount of \\(\tau\\). Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
+EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^{0.4} \\) rather than the usual \\(\rho^{0.1} \\) meaning that less \\(\rho \\) is needed to get an equivalent amount of \\(\tau\\). Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
 
 #### EF Equation Description
 
@@ -295,7 +295,7 @@ EF is unique in that all the milestone paths are locked, so there's no choice in
 
 \\(\dot{R} = (g_r)^2, \dot{I} = -(g_i)^2\\)
 
-The first line is the main equation. We want to maximize \\(\dot{\rho_1} \\). All the \\(a_n \\) terms and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important.
+The first line is the main equation. We want to maximize \\(\dot{\rho} \\). All the \\(a_n \\) terms and their exponents are obtained from milestones. Parts of the square root term are also obtained from milestones. Note that the \\(R^2 \\) and the \\(I^2 \\) terms are effectively redundant at all stages of this theory; but due to them purchasing \\(a_2 \\) and \\(a_3 \\) respectively, they are very important.
 
 The second line defines the graph shown. Since \\(G(t)\\) is graphed on the complex over time, it is possible to have it show as a particle spiraling through space.
 
@@ -316,7 +316,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tr></thead>
    <tbody>
       <tr>
-         <th>tdot</th>
+         <th>$$\dot{ t }$$</th>
          <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
       </tr>
       <tr>
@@ -432,7 +432,8 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 For the second line, both the variable \\(c_2 \\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m \\)/ \\(D_m \\) to \\(\sqrt{2}\\). As \\(N_m \\)/ \\(D_m \\) get closer to \\(\sqrt{2}\\), the entire right section gets larger and larger (because of the -1 power).
 <br>
 
-The third and fourth lines are recurrence relations on \\(N_m \\) and \\(D_m\\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
+The third and fourth lines are recurrence relations on \\(N_m \\) and \\(D_m\\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:
+
 \\(N_2 \\) = 2\\(N_1 \\) + \\(N_0 \\) -> \\(N_2 \\) = 2 x 3 + 1 = 7.
 Then \\(N_3\\) = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17.
 Similar logic is applied to \\(D_m \\) equations.
@@ -440,7 +441,6 @@ Similar logic is applied to \\(D_m \\) equations.
 This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
 
 The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our \\(m \\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase \\(m \\) by 1.
-
 
 #### CSR2 Variable Description
 Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
@@ -475,8 +475,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tbody>
 </table>
 
-<br>
-<br>
+<br><br>
 
 #### CSR2 strategy
 
@@ -530,6 +529,498 @@ For a more detailed explanation on how to actually do the strategy, please see t
          <td>3 x2</td>
          <td class="arrow">→</td>
          <td>1 x3</td>
+      </tr>
+   </tbody>
+</table>
+
+<style>
+h4 {
+   font-size: 1.2rem;
+}
+h3 {
+   font-size: 1.5rem;
+}
+</style>
+
+### Fractional Integration (FI)
+
+#### FI Overview
+
+ This custom theory was released at the same time as Fractal Patterns. FI is based on [Riemann–Liouville Integrals](https://en.wikipedia.org/wiki/Riemann%E2%80%93Liouville_integral) and allows you to approach the full integral as the fraction approaches 1. An explanation of each section of the equations is shown below:
+
+#### FI Equation Description
+
+##### Base Equation
+
+$$\dot{ \rho }=tr\sqrt[ \pi ]{q/ \pi },\ \ \dot{q}=q_1q_2$$
+$$\dot{r}=( \int_{0}^{ \pi }g(x)dx - _{ \lambda }\int_{0}^{ \pi }g(x)dx^{ \lambda } )^{-1}$$
+$$\lambda \int_{0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_{0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
+
+<br>
+
+With \\(\dot\rho\\) and \\(\dot{q}\\) Equations Becoming:
+
+$$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q/ \pi }g(x)dx },\ \ \dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q }g(x)dx }$$
+$$\dot{q}=q_1^{1.03}q_2$$
+
+##### g(x) Equations
+
+<table class="T2">
+<caption></caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Equation</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>Milestone 0</th>
+         <td>$$1 - \frac { x^2 }{ 2! } + \frac { x^4 }{ 4! }$$</td>
+      </tr>
+      <tr>
+         <th>Milestone 1</th>
+         <td>$$x - \frac { x^3 }{ 3! } + \frac { x^5 }{ 5! }$$</td>
+      </tr>
+      <tr>
+         <th>Milestone 2</th>
+         <td>$$\frac{ x-\frac{ x^2 }{ 2 }+\frac{ x^3 }{ 3 }-\frac{ x^4 }{ 4 }+\frac{ x^5 }{ 5 }}{\ln( 10 )}$$</td>
+      </tr>
+      <tr>
+         <th>Milestone 3</th>
+         <td>$$1+x+\frac{ x^2 }{ 2! }+\frac{ x^3 }{ 3! }+\frac{ x^4 }{ 4! }+\frac{ x^5 }{ 5! }$$</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+##### Lambda Equations
+
+<table class="T2">
+<caption></caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Equation</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>Milestone 0</th>
+         <td>$$\lambda = \frac{ 1 }{ 2 }$$</td>
+      </tr>
+      <tr>
+         <th>Milestone 1</th>
+         <td>$$\sum_{ i=1 }^{ K }\frac{ 2 }{ 3^{ i } }$$</td>
+      </tr>
+      <tr>
+         <th>Milestone 2</th>
+         <td>$$\sum_{ i=1 }^{ K }\frac{ 3 }{ 4^{ i } }$$</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+<br><br>
+
+ The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades
+ are purchased. Initially, rho is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
+ dotq/pi is just q1 * q2. However, once g(x) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
+ essentially raises q to the highest power of g(x) + 1. The variables m and n are simple multipliers that do not change over time without
+ purchasing them with rho.
+
+<br>
+
+The second equation is for dotr, which seems simple at first, but gets more difficult to understand once we get to the factional integral. The notation in game is a rarely used notation, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral is approaching aproaching 1, which makes the fractional integral be closer, yet still smaller than, the full integral. By subracting the two, then dividing 1 be that number, we get a very large number.
+
+#### FI Variable Description
+Approximate variable strengths on their respective vardots are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of FI.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to qdot</td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles qdot dot per level</td>
+      </tr>
+      <tr>
+         <th>K</th>
+         <td>Will anywhere from double to quadrouple dotr depending on milestones</td>
+      </tr>
+      <tr>
+         <th>m</th>
+         <td>Will instantly increase dotrho by 1.5x</td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Will instantly increase dotrho by x every 11 levels</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+#### FI strategy
+
+##### Idle
+
+For idle, we simply autobuy all. The idle strategy doesn't change much other than we will not Milestone Swap. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones before you're about to publish for a few minutes after e350 rho, then buying back K, m, and n milestones, letting rho grow for another few minutes before you publish.
+
+Once you have all milestones, autobuy all!
+
+##### Active
+
+The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
+
+For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+
+##### FI Milestone Swapping Explanation
+
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
+
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+
+#### FI milestone route
+
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/1/0/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/2/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/2/1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/1/0/2/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/2/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/0/2/2/1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/1/1/2/2/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/2/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/2/2/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/1/2/2/2/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/3/2/2/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/3/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/1/3/2/3/2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>4-x2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>4-x1 5-x1</td>
+         <td class="arrow">→</td>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>3-x1 6-x1</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>3-x1 5-x1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>3-x2</td>
+         <td class="arrow">→</td>
+         <td>3-x1 6-x1</td>
+         <td class="arrow">→</td>
+         <td>3-x2</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>3-x1 5-x1</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+      </tr>
+   </tbody>
+</table>
+
+<style>
+
+h4 {
+   font-size: 1.2rem;
+}
+h3 {
+   font-size: 1.5rem;
+}
+</style>
+
+### Fractal Patterns (FP)
+
+#### FP Overview
+
+ This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the \\(\dot{q}\\) and \\(\dot\rho\\) improve, increasing \\(\tau\\). An explanation of each section of the equations is shown below:
+
+#### FP Equation Description
+
+##### Main Equations
+
+$$\begin{eqnarray}
+\dot{\rho} &=& c_1c_2tT_n^{7} \\
+\to \dot{\rho} &=& c_1c_2qtT_n^{7} \\
+\to \dot{\rho} &=& c_1c_2qrtT_n^{7} \\
+\to \dot{\rho} &=& c_1c_2qrtT_n^{5+s}
+\end{eqnarray}$$
+
+\begin{eqnarray}
+y &=& (x-1)^2 \\
+  &=& (x-1)(x-1) \\
+  &=& x^2 - 2x + 1
+\end{eqnarray}
+
+$$\begin{eqnarray}
+y &=& (x-1)^2 \\
+  &=& (x-1)(x-1) \\
+  &=& x^2 - 2x + 1
+\end{eqnarray}$$
+
+$$\begin{eqnarray}y &=& (x-1)^2 \\&=& (x-1)(x-1) \\&=& x^2 - 2x + 1\end{eqnarray}$$
+
+$$\begin{eqnarray}
+y = (x-1)^2 \\
+  = (x-1)(x-1) \\
+  = x^2 - 2x + 1
+\end{eqnarray}$$
+
+$$\begin{eqnarray}y = (x-1)^2 \\ = (x-1)(x-1) \\ = x^2 - 2x + 1\end{eqnarray}$$
+
+$$y &=& (x-1)^2
+&=& (x-1)(x-1)
+&=& x^2 - 2x + 1$$
+
+$$y &=& (x-1)^2 &=& (x-1)(x-1) &=& x^2 - 2x + 1$$
+
+$$y = (x-1)^2 = (x-1)(x-1) = x^2 - 2x + 1$$
+
+$$\dot{q} = q_1AU_n^{7}/1000 → \dot{q} = q_1AU_n^{7+s}/1000$$
+$$\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} → \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} → \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}$$
+$$A=(2-U_{q_2}/T_{q_2})^{-1}$$
+
+
+##### Toothpick Sequence
+$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
+$$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
+
+##### Ulam-Warburton Cellular Automaton
+$$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
+$$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
+$$\\U_n = \sum_{i=0}^n u_i$$
+
+##### Sierpiński Triangle
+$$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
+
+
+<br><br>
+
+ The first line is self explanatory. The exponents on \\(q_1 \\) are from milestones. '\\(q\\)' will increase during the publication.
+<br>
+
+For the second line, both the variable \\(c_2 \\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m \\)/ \\(D_m \\) to \\(\sqrt{2}\\). As \\(N_m \\)/ \\(D_m \\) get closer to \\(\sqrt{2}\\), the entire right section gets larger and larger (because of the -1 power).
+<br>
+
+The third and fourth lines are recurrence relations on \\(N_m \\) and \\(D_m\\). This means that the current value of \\(N_m \\) and \\(D_m \\) depend on their previous values. We start with \\(N_0 \\) = 1, \\(N_1 \\) = 3. The equation will then read as:<br>
+\\(N_2 \\) = 2\\(N_1 \\) + \\(N_0 \\) -> \\(N_2 \\) = 2 x 3 + 1 = 7.
+Then \\(N_3\\) = 2\\(N_2 \\) + \\(N_1 \\) -> 2 x 7 + 3 = 17.
+Similar logic is applied to \\(D_m \\) equations.
+
+This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values we have. This is shown in the next equation:
+
+The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our \\(m \\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase \\(m \\) by 1.
+
+
+#### FP Variable Description
+Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of CSR2.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>tdot</th>
+         <td>This is tdot</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>c_1 is funny mod 100</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>easy doubling</td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>easy mod10 qdot change</td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>is funny A equation things and a doubling</td>
+      </tr>
+            <tr>
+         <th>r<sub><sub><small>1</small></sub></sub></th>
+         <td>is easy mod10 variable</td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>is big number go big</td>
+      </tr>
+      <tr>
+         <th>s</th>
+         <td>funny exponents go funnier after e910</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+#### FP strategy
+
+##### Idle
+
+For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+
+Once you have all milestones, autobuy all!
+
+##### Active
+
+The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
+
+For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+
+##### FP Milestone Swapping Explanation
+
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
+
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+
+#### FP milestone route
+
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>2/2</td>
+         <td class="arrow">→</td>
+         <td>2/2/3</td></td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1/1/1</td></td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1 x2</td>
+         <td class="arrow">→</td>
+         <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>3 x3</td>
+         <td class="arrow">→</td>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>5</td>
+         <td class="arrow">→</td>
+         <td>6</td>
       </tr>
    </tbody>
 </table>
