@@ -368,7 +368,7 @@ repeat.
 
 ###### Commentary
 
-{{ yt.embed('kqnBfdOI34c&t') }}
+{{ yt.embed('kqnBfdOI34c') }}
 
 #### T3 milestone route
 
