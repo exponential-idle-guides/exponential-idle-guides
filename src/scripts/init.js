@@ -110,7 +110,7 @@ window.onload = ()=>{
                 }
               }
               if(k === curr_tr_td.length - 1){
-                tr_offset += [...curr_td[curr_td.length - 1].matchAll(/translate\((.*?),(.*?)\)/g)][0][1];
+                tr_offset += [...$(curr_td[curr_td.length - 1]).wrap('<p/>').parent().html().matchAll(/translate\((.*?),(.*?)\)/g)][0][1];
               }
             }
             console.log("tr_offset");
@@ -129,28 +129,6 @@ window.onload = ()=>{
         }
       }
     }
-    
-    /*
-    let inner_HTML = document.body.innerHTML;
-    let eqnarrays = inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm);
-    console.log("inner_HTML")
-    console.log(inner_HTML)
-    console.log("eqnarrays");
-    console.log(eqnarrays);
-    if (eqnarrays !== undefined && eqnarrays.length != 0) {
-      for (let i = 0; i < eqnarrays.length; i++) {
-        const old_html = eqnarrays[i];
-        console.log("old_html");
-        console.log(old_html);
-        const new_html = old_html.replaceAll('\\\\', "");
-        console.log("new_html");
-        console.log(new_html);
-        inner_HTML.replace(old_html, new_html);
-      }
-      console.log("eqnarrays_after")
-      console.log(inner_HTML.match(/(\$\$.begin\{eqnarray\}([\S\s]*?)end\{eqnarray\}\$\$?)/gm))
-    }
-    */
   }
 
   if(window.location.href.includes('/ranking-news')){
