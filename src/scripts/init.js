@@ -113,7 +113,7 @@ window.onload = ()=>{
                 let last_td = $(curr_td).children().last();
                 console.log("last_td");
                 console.log(last_td);
-                let last_td_HTML = $().wrap('<p/>').parent().html();
+                let last_td_HTML = $(last_td).wrap('<p/>').parent().html();
                 $(last_td_HTML).unwrap();
                 console.log("last_td_HTML");
                 console.log(last_td_HTML);
