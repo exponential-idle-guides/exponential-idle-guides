@@ -81,31 +81,32 @@ window.onload = ()=>{
               let curr_td_HTML = $(curr_td).wrap('<p/>').parent().html();
               $(curr_td).unwrap();
               // get `transform` attribute of the td
-              let transform = curr_td.getAttribute('transform')
+              let transform = curr_td.getAttribute('transform');
               // `transform` attr === null if no attr is present
               if (transform === null){
                 console.log("curr_td.transform === null");
-                const translate = [...curr_td_HTML.matchAll(/translate\((.*?)\)/g)][0]
+                const translate = [...curr_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (tr_offset + td_offset).toString() + ')"');
+                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (+translate[1] + tr_offset + td_offset).toString() + ')"');
+                tr_offset += +translate[1];
                 if(k === curr_tr_td.length - 1){
-                  tr_offset += td_offset + curr_td.getBoundingClientRect().width
+                  tr_offset += td_offset + curr_td.getBoundingClientRect().width;
                 }
               } else {
                 console.log("curr_td.transform");
                 console.log(transform);
-                const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
+                const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("curr_td.translate");
                 console.log(translate);
                 new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString()));
                 console.log("curr_td.transform");
                 console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString())));
                 td_offset = +translate[1];
-                console.log("td_offset")
-                console.log(td_offset)
+                console.log("td_offset");
+                console.log(td_offset);
                 if(k === curr_tr_td.length - 1){
-                  tr_offset += +translate[1] + curr_td.getBoundingClientRect().width
+                  tr_offset += +translate[1] + curr_td.getBoundingClientRect().width;
                 }
               }
             }
