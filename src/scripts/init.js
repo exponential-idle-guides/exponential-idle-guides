@@ -110,7 +110,7 @@ window.onload = ()=>{
                 }
               }
               if(k === curr_tr_td.length - 1){
-                let last_td = curr_td[curr_td.length - 1];
+                let last_td = $(curr_td).children().last();
                 console.log("last_td");
                 console.log(last_td);
                 let last_td_HTML = $().wrap('<p/>').parent().html();
