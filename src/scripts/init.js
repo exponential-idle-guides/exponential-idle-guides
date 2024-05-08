@@ -114,7 +114,7 @@ window.onload = ()=>{
                 console.log("last_td");
                 console.log(last_td);
                 let last_td_HTML = $(last_td).wrap('<p/>').parent().html();
-                $(last_td_HTML).unwrap();
+                $(last_td).unwrap();
                 console.log("last_td_HTML");
                 console.log(last_td_HTML);
                 let translate = [...last_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];

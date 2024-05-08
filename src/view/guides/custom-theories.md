@@ -837,10 +837,10 @@ h3 {
 ##### Main Equations
 
 $$\begin{eqnarray}
-\dot{\rho} &=& c_1c_2tT_n^{7} 
-\to \dot{\rho} &=& c_1c_2qtT_n^{7} \\
-\to \dot{\rho} &=& c_1c_2qrtT_n^{7} 
-\to \dot{\rho} &=& c_1c_2qrtT_n^{5+s}
+\dot{\rho} = c_1c_2tT_n^{7} 
+\to \dot{\rho} = c_1c_2qtT_n^{7} \\
+\to \dot{\rho} = c_1c_2qrtT_n^{7} 
+\to \dot{\rho} = c_1c_2qrtT_n^{5+s}
 \end{eqnarray}$$
 
 $$\dot{q} = q_1AU_n^{7}/1000 → \dot{q} = q_1AU_n^{7+s}/1000$$
