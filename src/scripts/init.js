@@ -111,7 +111,10 @@ window.onload = ()=>{
                 }
               }
               if(last_bool){
-                let last_td = $(curr_td).children().last();
+                let curr_td_children = $(curr_td).children().last();
+                console.log("curr_td_children");
+                console.log(curr_td_children);
+                let last_td = $(curr_td_children).last()
                 console.log("last_td");
                 console.log(last_td);
                 let last_td_HTML = $(last_td).wrap('<p/>').parent().html();
