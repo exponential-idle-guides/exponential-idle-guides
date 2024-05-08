@@ -109,6 +109,9 @@ window.onload = ()=>{
                   tr_offset += +translate[1] + curr_td.getBoundingClientRect().width;
                 }
               }
+              if(k === curr_tr_td.length - 1){
+                tr_offset += [...curr_td[curr_td.length - 1].matchAll(/translate\((.*?),(.*?)\)/g)][0][1];
+              }
             }
             console.log("tr_offset");
             console.log(tr_offset);
