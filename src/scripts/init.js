@@ -110,7 +110,17 @@ window.onload = ()=>{
                 }
               }
               if(k === curr_tr_td.length - 1){
-                tr_offset += [...$(curr_td[curr_td.length - 1]).wrap('<p/>').parent().html().matchAll(/translate\((.*?),(.*?)\)/g)][0][1];
+                let last_td = curr_td[curr_td.length - 1];
+                console.log("last_td");
+                console.log(last_td);
+                let last_td_HTML = $().wrap('<p/>').parent().html();
+                $(last_td_HTML).unwrap();
+                console.log("last_td_HTML");
+                console.log(last_td_HTML);
+                let translate = [...last_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
+                console.log("translate");
+                console.log(translate);
+                tr_offset += translate[1];
               }
             }
             console.log("tr_offset");
