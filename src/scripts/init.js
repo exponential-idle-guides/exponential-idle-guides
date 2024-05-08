@@ -120,7 +120,7 @@ window.onload = ()=>{
                 let translate = [...last_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("translate");
                 console.log(translate);
-                tr_offset += translate[1];
+                tr_offset += +translate[1];
               }
             }
             console.log("tr_offset");
