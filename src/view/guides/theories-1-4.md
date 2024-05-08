@@ -368,7 +368,7 @@ repeat.
 
 ###### Commentary
 
-{{ yt.embed('kqnBfdOI34c&t') }}
+{{ yt.embed('kqnBfdOI34c') }}
 
 #### T3 milestone route
 
@@ -487,7 +487,7 @@ Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c
 The first line statest that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
 
  <br><br>
-The second line is more unique. It says that \\(qdot\\) is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as \\(qdot\\) decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth. 
+The second line is more unique. It says that \\(qdot\\) is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as \\(qdot\\) decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth.
  <br><br>
  For the more mathematically observant reader, we may integrate the \\(\dot{q}\\) equation and conclude that \\(q\\) is proportional to the square root of time. This means that even though \\(\dot{q}\\) grows slower with increasing \\(q\\), there is theoretically no finite limit on the maximum value of \\(q\\).
 

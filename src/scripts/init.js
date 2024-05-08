@@ -49,51 +49,68 @@ window.onload = ()=>{
       globals.qstyle.setProperty('--title-align', 'right');
     }
   } else {
+    // all mtables in the document
     let eqnarrays = document.querySelectorAll('[data-mml-node="mtable"]');
     if (eqnarrays !== undefined && eqnarrays.length != 0) {
       // array does not exist or is empty
       for (let i = 0; i < eqnarrays.length; i++) {
         let eqnarray = eqnarrays[i];
-        let eqnarray_tr = eqnarray.querySelectorAll('[data-mml-node="mtr"]'),
-          new_tr_innnerHTML = "";
-        console.log("eqnarray_tr");
-        console.log(eqnarray_tr);
+        // all tr's within the mtables
+        let eqnarray_tr = eqnarray.querySelectorAll('[data-mml-node="mtr"]')
+        // if eqnarray_tr.length === 1, there is only one row so no need to unstack
         if (eqnarray_tr.length > 1) {
-          let curr_offset = 0
+          console.log("eqnarray_tr");
+          console.log(eqnarray_tr);
+          let new_tr_innnerHTML = "";
+          // offset between tr
+          let tr_offset = 0;
+          // loop each row in eqnarray_tr
           for (let j = 0; j < eqnarray_tr.length; j++) {
             let curr_tr = eqnarray_tr[j];
             console.log("curr_tr");
             console.log(curr_tr);
+            // all td's within the tr
             let curr_tr_td = curr_tr.querySelectorAll('[data-mml-node="mtd"]');
-            let prior_offset = 0;
+            // offset between td within a tr
+            let td_offset = 0;
+            //loop each td of the tr
             for (let k = 0; k < curr_tr_td.length; k++) {
+              // current td of the tr
               let curr_td = curr_tr_td[k];
+              // get html of the td including the tag (not just innerHTML)
               let curr_td_HTML = $(curr_td).wrap('<p/>').parent().html();
               $(curr_td).unwrap();
+              // get `transform` attribute of the td
               let transform = curr_td.getAttribute('transform')
+              // `transform` attr === null if no attr is present
               if (transform === null){
-                transform = curr_td_HTML.match(/.*translate\(.*\)/gm)[0]
-                console.log("curr_td.transform");
-                console.log(transform);
-                const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
+                console.log("curr_td.transform === null");
+                const translate = [...curr_td_HTML.matchAll(/translate\((.*?)\)/g)][0]
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (curr_offset + prior_offset).toString() + ')"');
+                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (tr_offset + td_offset).toString() + ')"');
+                if(k === curr_tr_td.length - 1){
+                  tr_offset += td_offset + curr_td.getBoundingClientRect().width
+                }
               } else {
                 console.log("curr_td.transform");
                 console.log(transform);
                 const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0]
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString()));
+                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString()));
                 console.log("curr_td.transform");
-                console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + curr_offset).toString())));
-                prior_offset = +translate[1];
+                console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString())));
+                td_offset = +translate[1];
+                console.log("td_offset")
+                console.log(td_offset)
+                if(k === curr_tr_td.length - 1){
+                  tr_offset += +translate[1] + curr_td.getBoundingClientRect().width
+                }
               }
             }
-            curr_offset += curr_tr.getBoundingClientRect().width
-            console.log("curr_offset");
-            console.log(curr_offset);
+            console.log("tr_offset");
+            console.log(tr_offset);
             console.log("new_tr_innnerHTML");
             console.log(new_tr_innnerHTML);
             if (j > 0) {
@@ -103,7 +120,7 @@ window.onload = ()=>{
             console.log(curr_tr);
           }
           eqnarray_tr[0].innerHTML = new_tr_innnerHTML;
-          console.log("eqnarray_tr");
+          console.log("final_eqnarray_tr");
           console.log(eqnarray_tr);
         }
       }

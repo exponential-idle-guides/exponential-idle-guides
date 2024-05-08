@@ -278,7 +278,7 @@ All milestones into the 2nd milestone to unlock \\(c_3\\). Then into 1st milesto
 
 ###### Commentary
 (By Snaeky)
-{{ yt.embed('AYI4U7Aob6o') }} 
+{{ yt.embed('AYI4U7Aob6o') }}
 
 ###### No commentary
 (By Snaeky)
