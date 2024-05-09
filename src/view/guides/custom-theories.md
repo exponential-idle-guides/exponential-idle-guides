@@ -845,9 +845,7 @@ $$\dot{q} = q_1AU_n^{7}/1000 → \dot{q} = q_1AU_n^{7+s}/1000$$
 
 $$\begin{eqnarray}
 \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
-\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
-\end{eqnarray}$$
-$$\begin{eqnarray}
+\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\
 \to \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
 \end{eqnarray}$$
 
