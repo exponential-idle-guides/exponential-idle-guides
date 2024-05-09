@@ -42,20 +42,14 @@ Remember to follow our routing advice from the [introduction to graduation](http
          <td class="arrow">→</td>
          <td>14k</td>
       </tr>
-   </tbody>
-</table>
-<div class="table graduation_routing">
-   <div class="tr">
-      <div class="td"></div>
-      <div class="td"></div>
-      <div class="td" style="row-span:2;"><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></div>
-      <div class="td"></div>
-      <div class="td"></div>
-      <div class="td"></div>
-   </div>
-</div>
-<table class="graduation_routing">
-   <tbody>
+      <tr>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td colspan="2"><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
       <tr>
          <td>14k</td>
          <td class="arrow">→</td>
