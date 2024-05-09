@@ -624,8 +624,8 @@ $$\dot{q}=q_1^{1.03}q_2$$
 <br><br>
 
  The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades
- are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just 1/2, dott is just the t variable, and the $\sqrt[\pi]$ radical is just
- $\dot{q}$/$\pi$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]$ radical becomes int from 0 to $q$/$\pi$ of g(x) which
+ are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just 1/2, dott is just the t variable, and the \\(\sqrt[\pi]\\) radical is just
+ $\dot{q}$/$\pi$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the \\(\sqrt[\pi]\\) radical becomes int from 0 to $q$/$\pi$ of g(x) which
  essentially raises $q$ to the highest power of g(x) + 1. The variables $m$ and $n$ are simple multipliers that do not change over time without
  purchasing them with rho.
 
