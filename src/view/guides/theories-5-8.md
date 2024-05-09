@@ -46,12 +46,12 @@ Remember to follow our routing advice from the [introduction to graduation](http
 </table>
 <div class="table graduation_routing">
    <div class="tr">
-      <div class="td invisible"></div>
-      <div class="td invisible"></div>
+      <div class="td"></div>
+      <div class="td"></div>
       <div class="td" style="row-span:2;"><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></div>
-      <div class="td invisible"></div>
-      <div class="td invisible"></div>
-      <div class="td invisible"></div>
+      <div class="td"></div>
+      <div class="td"></div>
+      <div class="td"></div>
    </div>
 </div>
 <table class="graduation_routing">
