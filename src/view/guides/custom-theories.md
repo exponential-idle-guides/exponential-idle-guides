@@ -624,8 +624,8 @@ $$\dot{q}=q_1^{1.03}q_2$$
 <br><br>
 
  The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades
- are purchased. Initially, \\(rho\\) is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
- dotq/pi is just \\(q1 * q2\\). However, once \\(g(x)\\) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
+ are purchased. Initially, \\(\rho\\) is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
+ dotq/pi is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
  essentially raises q to the highest power of g(x) + 1. The variables m and n are simple multipliers that do not change over time without
  purchasing them with rho.
 
@@ -645,23 +645,23 @@ Approximate variable strengths on their respective vardots with all milestones a
    <tbody>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to \\(\dotq\\)</td>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to $\dotq$</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles \\(\dotq\\) dot per level</td>
+         <td>Doubles $\dotq$ dot per level</td>
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadrouple \\(\dotr\\) depending on milestones</td>
+         <td>Will double, triple, or quadrouple $\dotr$ depending on milestones</td>
       </tr>
       <tr>
          <th>m</th>
-         <td>Will instantly increase \\(\dot\rho\\) by 1.5x</td>
+         <td>Will instantly increase $\dot\rho$ by 1.5x</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Will instantly increase \\(\dot\rho\\) by x every 11 levels</td>
+         <td>Will instantly increase $\dot\rho$ by x every 11 levels</td>
       </tr>
    </tbody>
 </table>
