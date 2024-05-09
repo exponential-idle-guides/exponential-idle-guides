@@ -107,7 +107,7 @@ window.onload = ()=>{
                 console.log("td_offset");
                 console.log(td_offset);
                 if(last_bool){
-                  tr_offset += (+translate[1] + +curr_td.getBoundingClientRect().width).toString().replace('px', '');
+                  tr_offset += +translate[1] + +curr_td.getBoundingClientRect().width;
                 }
               }
               if(last_bool){
@@ -125,8 +125,8 @@ window.onload = ()=>{
                 console.log("translate");
                 console.log(translate);
                 console.log("last_td.getBBox().width")
-                console.log(last_td[0].getBBox().width)
-                tr_offset += +translate[1] + +last_td[0].getBBox().width;
+                console.log(last_td[0].getBoundingClientRect().width)
+                tr_offset += +translate[1] + +last_td[0].getBoundingClientRect().width;
               }
             }
             console.log("tr_offset");
