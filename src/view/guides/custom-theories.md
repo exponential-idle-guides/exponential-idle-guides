@@ -645,23 +645,23 @@ Approximate variable strengths on their respective vardots with all milestones a
    <tbody>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to qdot</td>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to \\(\dotq\\)</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles qdot dot per level</td>
+         <td>Doubles \\(\dotq\\) dot per level</td>
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadrouple dotr depending on milestones</td>
+         <td>Will double, triple, or quadrouple \\(\dotr\\) depending on milestones</td>
       </tr>
       <tr>
          <th>m</th>
-         <td>Will instantly increase dotrho by 1.5x</td>
+         <td>Will instantly increase \\(\dot\rho\\) by 1.5x</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Will instantly increase dotrho by x every 11 levels</td>
+         <td>Will instantly increase \\(\dot\rho\\) by x every 11 levels</td>
       </tr>
    </tbody>
 </table>
@@ -677,26 +677,28 @@ For idle, we simply autobuy all. The idle strategy doesn't change much other tha
 
 ##### Active
 
-The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1 \\) and \\(n \\), where you buy them when they are less than 10% cost of minimum(\\(q_2 \\), \\(K_2 \\), and \\(m \\)).
+The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1 \\) and \\(n \\), where you buy them when they are less than 10% cost of minimum(\\(q_2 \\), \\(K \\), and \\(m \\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1 \\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1 \\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for \\(\dotq\\) from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
 
 ##### FI Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\q\\).
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot \q\\).
 
-The reason milestone swapping works is because the benefits of using \\(q_1 \\) related milestones (having high \\(q\\)) remain when you switch to \\(m \\) and \\(n\\) milestones. If we only use \\(q_1 \\) exponent, then we have really high \\(q\\), however, we dont have the benefits from \\(rho\\) that \\(m\\) and \\(n\\) provide. If we only use \\(m \\) and \\(n\\) milestones, then we have low \\(q\\), but have normal \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through the \\(q_1 \\) milestone, then take advantage of the \\(m \\) and \\(n\\) milestones to gain \\(rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(q_1 \\) related milestones (having high \\(q\\)) remain when you switch to \\(m \\) and \\(n\\) milestones. If we only use \\(q_1 \\) exponent, then we have really high \\(q\\), however, we dont have the benefits to \\(\dot\rho\\) that \\(m\\) and \\(n\\) provide. If we only use \\(m \\) and \\(n\\) milestones, then we have low \\(q\\), but have normal \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through the \\(q_1 \\) milestone, then take advantage of the \\(m \\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
-#### FI Milestone Rounting Explaination
+#### FI Milestone Routing Explaination
 
 In FI, you can unlock milestones in 2 ways: 
-1) by gaining \\(rho\\) like normal, or 
-2) 2) buy purchasing the milestone upgrades for \\(lambda\\) and \\(g(x)\\) in the permanent upgrades tab
+1) by gaining \\(\rho\\) like normal, or 
+2) 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
 Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the g(x) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the g(x) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
+
+FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
 
 Below is the milestone route for FI, where the milestones that are color coded are where you will buy a perma-upgrade milestone and move a milestone into that upgrade.
 
@@ -916,7 +918,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
       </tr>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>easy mod10 qdot change</td>
+         <td>easy mod10 \\(\dotq\\) change</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
