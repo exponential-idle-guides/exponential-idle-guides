@@ -5153,7 +5153,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, m)</td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -5169,7 +5169,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, m)</td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
       </tr>
    </tbody>
 </table>
