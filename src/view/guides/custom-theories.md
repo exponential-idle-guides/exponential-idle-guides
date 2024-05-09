@@ -10,19 +10,19 @@ order: 8
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of September 3rd, 2022, there are 4 official
-custom theories that contribute up to e150 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), and Convergents to Square Root 2 (CSR2/CS2) by Solarion. The theories will be abbreviated as WSP, SL, EF, and CSR2 from now on.
+Custom theories are theories made by players in the community. As of April 1st, 2024, there are 6 official
+custom theories that contribute up to e600 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, and Fractal Patterns (FP) by XLII. The theories will be abbreviated as WSP, SL, EF, CSR2, FI, and FP from now on.
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate from \\(\rho\\) to \\(\tau\\). WSP, SL, and CSR2 have conversion rates of
-\\(\tau\\) = \\(\rho^{0.1}\\) while EF has a \\(\tau \\) conversion rate of \\(\tau\\) = \\(\rho^{0.4}\\)
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to \\(\tau\\). WSP, SL, and CSR2 have conversion rates of
+\\(\tau\\) = \\(\rho^{0.4}\\) while EF has a \\(\tau \\) conversion rate of \\(\tau\\) = \\(\rho^{1.6}\\) and FP with a conversion rate of \\(\tau\\) = \\(\rho^{0.3}\\).
 
 ### Which Custom Theories (CTs) should I do?
 
-In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for Custom theory (SL before all milestones, CSR2, or WSP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\). You can check this with [the sim.](https://theory-simulator.tredec.repl.co/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\), or you can chase a spike in tau/hour, such as EF e50 \\(rho\\) or FP e95 \\(rho\\). You can check this with [the sim.](https://theory-simulator.tredec.repl.co/)<br><br>
 
- For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF and SL. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL and EF is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+ For idle time, do the one with the highest idle \\(\tau/hour \\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour \\) and CSR2 also has 2 \\(\tau/hour \\), ideally we would pick SL. The reason we prefer SL, EF, FP and FI is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 ### Weierstrass Sine Product (WSP)
 
@@ -337,7 +337,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>Costs I to buy rather than ρ. Increases I by approximately 20% per level.</td>
+         <td>Costs I to buy rather than ρ. Increases I by approximately 14% per level.</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
@@ -487,7 +487,7 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
+The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), and \\(n \\)).
 
 For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
 
@@ -624,8 +624,8 @@ $$\dot{q}=q_1^{1.03}q_2$$
 <br><br>
 
  The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades
- are purchased. Initially, rho is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
- dotq/pi is just q1 * q2. However, once g(x) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
+ are purchased. Initially, \\(rho\\) is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
+ dotq/pi is just \\(q1 * q2\\). However, once \\(g(x)\\) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
  essentially raises q to the highest power of g(x) + 1. The variables m and n are simple multipliers that do not change over time without
  purchasing them with rho.
 
@@ -634,7 +634,7 @@ $$\dot{q}=q_1^{1.03}q_2$$
 The second equation is for dotr, which seems simple at first, but gets more difficult to understand once we get to the factional integral. The notation in game is a rarely used notation, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral is approaching aproaching 1, which makes the fractional integral be closer, yet still smaller than, the full integral. By subracting the two, then dividing 1 be that number, we get a very large number.
 
 #### FI Variable Description
-Approximate variable strengths on their respective vardots are as follows:
+Approximate variable strengths on their respective vardots with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of FI.</caption>
@@ -653,7 +653,7 @@ Approximate variable strengths on their respective vardots are as follows:
       </tr>
       <tr>
          <th>K</th>
-         <td>Will anywhere from double to quadrouple dotr depending on milestones</td>
+         <td>Will double, triple, or quadrouple dotr depending on milestones</td>
       </tr>
       <tr>
          <th>m</th>
@@ -673,25 +673,34 @@ Approximate variable strengths on their respective vardots are as follows:
 
 ##### Idle
 
-For idle, we simply autobuy all. The idle strategy doesn't change much other than we will not Milestone Swap. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones before you're about to publish for a few minutes after e350 rho, then buying back K, m, and n milestones, letting rho grow for another few minutes before you publish.
-
-Once you have all milestones, autobuy all!
+For idle, we simply autobuy all. The idle strategy doesn't change much other than we will not Milestone Swap. If you are able to check in every 30 minutes or so, you can manually buy \\(q_1\\) and \\(n\\). Just make sure that you autobuy \\(q_1\\) when you are close to getting a mod23 boost.
 
 ##### Active
 
-The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1 \\) and \\(q_1 \\), where you buy them when they are less than 10% cost of minimum(\\(c_2 \\), \\(q_2 \\), \\(n \\)).
+The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1 \\) and \\(n \\), where you buy them when they are less than 10% cost of minimum(\\(q_2 \\), \\(K_2 \\), and \\(m \\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2 \\) and its exponents, to \\(q_1 \\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1 \\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
 
 ##### FI Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\q\\).
 
-The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(q_1 \\) related milestones (having high \\(q\\)) remain when you switch to \\(m \\) and \\(n\\) milestones. If we only use \\(q_1 \\) exponent, then we have really high \\(q\\), however, we dont have the benefits from \\(rho\\) that \\(m\\) and \\(n\\) provide. If we only use \\(m \\) and \\(n\\) milestones, then we have low \\(q\\), but have normal \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through the \\(q_1 \\) milestone, then take advantage of the \\(m \\) and \\(n\\) milestones to gain \\(rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
-For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+For a more detailed explanation on how to actually do the strategy, please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
-#### FI milestone route
+#### FI Milestone Rounting Explaination
+
+In FI, you can unlock milestones in 2 ways: 
+1) by gaining \\(rho\\) like normal, or 
+2) 2) buy purchasing the milestone upgrades for \\(lambda\\) and \\(g(x)\\) in the permanent upgrades tab
+where you would normally buy publishing, buy all, and autobuy.
+
+Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the g(x) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the g(x) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
+
+Below is the milestone route for FI, where the milestones that are color coded are where you will buy a perma-upgrade milestone and move a milestone into that upgrade.
+
+#### FI Milestone Route
 
 <table class="milestone_routing">
    <tbody>
@@ -709,7 +718,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>1/1/0/1/1</td>
+         <td class="perm_upg">1/1/0/1/1</td>
          <td class="arrow">→</td>
          <td>1/1/0/2/1</td>
          <td class="arrow">→</td>
@@ -720,11 +729,11 @@ For a more detailed explanation on how to actually do the strategy, please see t
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>1/1/0/2/1/1</td>
+         <td class="perm_upg">1/1/0/2/1/1</td>
          <td class="arrow">→</td>
          <td>1/1/1/2/1/1</td>
          <td class="arrow">→</td>
-         <td>1/1/0/2/2/1</td>
+         <td class="perm_upg">1/1/0/2/2/1</td>
       </tr>
    </tbody>
 </table>
@@ -735,7 +744,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
          <td class="arrow">→</td>
          <td>1/1/2/2/2/1</td>
          <td class="arrow">→</td>
-         <td>1/1/1/2/2/2</td>
+         <td class="perm_upg">1/1/1/2/2/2</td>
       </tr>
    </tbody>
 </table>
@@ -746,7 +755,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
          <td class="arrow">→</td>
          <td>1/1/3/2/2/2</td>
          <td class="arrow">→</td>
-         <td>1/1/2/2/3/2</td>
+         <td class="perm_upg">1/1/2/2/3/2</td>
       </tr>
    </tbody>
 </table>
