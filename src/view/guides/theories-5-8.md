@@ -232,7 +232,7 @@ If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than b
 
 <br>
 
-Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click 'publish'!
+Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click <kbd>publish</kbd>!
 
 ##### Idle
 
