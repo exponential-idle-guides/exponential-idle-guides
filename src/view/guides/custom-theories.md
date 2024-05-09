@@ -787,7 +787,7 @@ Below is the milestone route for FI, where the milestones that are color coded a
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>4-x1 5-x1</td>
+         <td>4-x1 <span class="perm_upg">5x1</span></td>
          <td class="arrow">→</td>
          <td>4</td>
          <td class="arrow">→</td>
@@ -798,29 +798,29 @@ Below is the milestone route for FI, where the milestones that are color coded a
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>3-x1 6-x1</td>
+         <td>3-x1 <span class="perm_upg">6x1</span></td>
          <td class="arrow">→</td>
          <td>3</td>
          <td class="arrow">→</td>
-         <td>3-x1 5-x1</td>
+         <td>3-x1 <span class="perm_upg">5x1</span></td>
       </tr>
    </tbody>
 </table>
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>3-x2</td>
+         <td>3x2</td>
          <td class="arrow">→</td>
-         <td>3-x1 6-x1</td>
+         <td>3-x1 <span class="perm_upg">6x1</span></td>
          <td class="arrow">→</td>
-         <td>3-x2</td>
+         <td>3x2</td>
       </tr>
    </tbody>
 </table>
 <table class="milestone_routing">
    <tbody>
       <tr>
-         <td>3-x1 5-x1</td>
+         <td>3-x1 <span class="perm_upg">5x1</span></td>
          <td class="arrow">→</td>
          <td>3</td>
       </tr>
