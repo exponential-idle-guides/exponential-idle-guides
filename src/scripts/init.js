@@ -86,13 +86,17 @@ window.onload = ()=>{
               // `transform` attr === null if no attr is present
               if (transform === null){
                 console.log("curr_td.transform === null");
-                const translate = [...curr_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
-                console.log("curr_td.translate");
-                console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (+translate[1] + tr_offset + td_offset).toString() + ')"');
-                tr_offset += +translate[1];
+                if(k === 0){
+                  new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' (tr_offset).toString() + ')"');
+                } else {
+                  const translate = [...curr_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
+                  console.log("curr_td.translate");
+                  console.log(translate);
+                  new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (+translate[1] + tr_offset + td_offset).toString() + ')"');
+                  tr_offset += +translate[1];
+                }
                 if(last_bool){
-                  tr_offset += td_offset + curr_td.getBoundingClientRect().width;
+                  tr_offset += curr_td.getBoundingClientRect().width;
                 }
               } else {
                 console.log("curr_td.transform");
@@ -100,14 +104,25 @@ window.onload = ()=>{
                 const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString()));
-                console.log("curr_td.transform");
-                console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString())));
-                td_offset = +translate[1];
-                console.log("td_offset");
-                console.log(td_offset);
-                if(last_bool){
-                  tr_offset += +translate[1] + +curr_td.getBoundingClientRect().width;
+                if(k === 0){
+                  new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (tr_offset).toString()));
+                  console.log("curr_td.transform");
+                  console.log(transform.replace(translate[0], translate[0].replace(translate[1], (tr_offset).toString())));
+                  console.log("td_offset");
+                  console.log(td_offset);
+                  if(last_bool){
+                    tr_offset += curr_td.getBoundingClientRect().width;
+                  }
+                } else {
+                  new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString()));
+                  console.log("curr_td.transform");
+                  console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString())));
+                  td_offset = +translate[1];
+                  console.log("td_offset");
+                  console.log(td_offset);
+                  if(last_bool){
+                    tr_offset += +translate[1] + +curr_td.getBoundingClientRect().width;
+                  }
                 }
               }
               if(last_bool){

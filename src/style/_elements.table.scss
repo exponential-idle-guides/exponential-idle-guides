@@ -157,6 +157,9 @@ table.variable_summary {
 .milestone_routing .arrow {
 	padding: 0em 0em 0em 0em;
 }
+.milestone_routing .perm_upg {
+	color: var(--palette-stroke-warning);
+}
 
 // spqcey's Tables
 .spqcey {
