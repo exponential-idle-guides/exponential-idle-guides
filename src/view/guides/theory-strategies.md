@@ -5112,3 +5112,34 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
+### FI
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>FI</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
