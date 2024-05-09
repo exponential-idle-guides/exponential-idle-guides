@@ -673,7 +673,7 @@ For idle, we simply autobuy all. The idle strategy doesn't change much other tha
 
 ##### Active
 
-The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FId), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
+The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FId), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
 
 For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1\\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dot{q}$ from purchasing \\(q_1\\). Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FI) section of the guide for how to perform milestone swapping.
 
