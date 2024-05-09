@@ -623,11 +623,11 @@ $$\dot{q}=q_1^{1.03}q_2$$
 
 <br><br>
 
- The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which essentially raises $q$ to the highest power of \\(g(x)\\) + 1 and apon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
+ The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated as raising $q$ to the highest power of \\(g(x)\\) + 1 and apon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
 
 <br>
 
-The second equation is for $\dot{r}$, which seems simple at first, but gets more difficult to understand once we get to the factional integral. The notation in game is a rarely used notation, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral is approaching 1, which makes the fractional integral get closer to, yet still smaller than, the full integral. By subracting the two, then dividing 1 be that number, we get a very large number.
+The second equation is for $\dot{r}$, which seems simple at first, but gets more difficult to understand once we get to the fractional integral. The notation in game is rarely used, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral approaches 1, which makes the fractional integral get closer to, yet still smaller than, the full integral. By subracting the two, then dividing 1 by the difference, we get a very large number.
 
 #### FI Variable Description
 Approximate variable strengths on their respective vardots with all milestones are as follows:
