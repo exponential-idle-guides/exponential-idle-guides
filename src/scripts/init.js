@@ -89,8 +89,9 @@ window.onload = ()=>{
                 const translate = [...curr_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (+translate[1] + tr_offset + td_offset).toString() + 'px)"');
-                tr_offset += +translate[1];
+                translate_1 = translate[1].replace('px', '');
+                new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (+translate_1 + tr_offset + td_offset).toString() + 'px)"');
+                tr_offset += +translate_1;
                 if(last_bool){
                   tr_offset += td_offset + curr_td.getBoundingClientRect().width;
                 }
@@ -100,10 +101,11 @@ window.onload = ()=>{
                 const translate = [...transform.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                 console.log("curr_td.translate");
                 console.log(translate);
-                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString()));
+                translate_1 = translate[1].replace('px', '');
+                new_tr_innnerHTML += curr_td_HTML.replace(translate[0], translate[0].replace(translate_1, (+translate_1 + tr_offset).toString()));
                 console.log("curr_td.transform");
-                console.log(transform.replace(translate[0], translate[0].replace(translate[1], (+translate[1] + tr_offset).toString() + "px")));
-                td_offset = +translate[1];
+                console.log(transform.replace(translate[0], translate[0].replace(translate_1, (+translate_1 + tr_offset).toString() + "px")));
+                td_offset = +translate_1;
                 console.log("td_offset");
                 console.log(td_offset);
                 if(last_bool){
