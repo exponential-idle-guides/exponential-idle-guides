@@ -697,9 +697,9 @@ Buying the milestone upgrades will not give you a milestone, but will instead in
 
 FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
 
-Below is the milestone route for FI, where the milestones that are color coded are where you will buy a perma-upgrade milestone and move a milestone into that upgrade.
-
 #### FI Milestone Route
+
+###### <span style="color: var(--palette-stroke-warning);">Colored milestones</span> are perma-upgrade milestones that move into that upgrade.
 
 <table class="milestone_routing">
    <tbody>
