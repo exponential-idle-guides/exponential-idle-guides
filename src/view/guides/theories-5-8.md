@@ -44,7 +44,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
    <div class="tr">
       <div class="td invisible"></div>
       <div class="td invisible"></div>
-      <a class="td" style="row-span:2;" href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a>
+      <div class="td" style="row-span:2;"><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></div>
       <div class="td invisible"></div>
       <div class="td invisible"></div>
       <div class="td invisible"></div>
@@ -124,7 +124,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
 
-<br><br>
+<br>
 
 #### Theory 5 Equation Description
 
@@ -138,16 +138,16 @@ The first line states that the rate of change of rho is the product of some \\(q
 
 <br>
 
-The second line defines this theory. It describes the behaviour of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once. <br><br>
+The second line defines this theory. It describes the behaviour of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once.
+
+<br>
+
 \\(c_3\\) is similar to \\(c_2\\) in which buying it increases the maximum value of \\(q\\). However it does not have the drawback that \\(c_2\\) has. So we can buy this unconditionally.
 
 <br>
 
-The maximum value of \\(q\\) is \\(c_2c_3^{1.1}\\). Once \\(q\\) reaches this maximum value, \\(q\\) dot will be zero and \\(q\\) will not grow anymore until we buy either more \\(c_2, c_3\\)
+The maximum value of \\(q\\) is \\(c_2c_3^{1.1}\\). Once \\(q\\) reaches this maximum value, \\(q\\) dot will be zero and \\(q\\) will not grow anymore until we buy either more \\(c_2, c_3\\).
 
-<br><br>
-
-#### Theory 5 Variable Description
 Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
 
 <table class="T2">
@@ -180,15 +180,20 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    </tbody>
 </table>
 
-<br><br>
-
 #### Bicycle Analogy (alternative explanation) of c1 and c2 interactions
 
-Think of buying \\(c_1\\) as throttling on the bicycle faster. Buying \\(c_2\\) is similar to shifting the bicycle gear up by 1 gear.<br><br>
-If all we do is buy \\(c_1\\) and never \\(c_2\\), then we're stuck in gear 1 forever and make no progress.
-However, if all we do is buy \\(c_2\\) and never \\(c_1\\), then this is similar to trying to ride from highest gear from 0 speed, which we know takes a long time and a lot of effort. <br><br>
+Think of buying \\(c_1\\) as throttling on the bicycle faster. Buying \\(c_2\\) is similar to shifting the bicycle gear up by 1 gear.
 
-Therefore using the bicycle analogy, we should buy \\(c_2\\) only when we have the speed to support it; not too early and not too late. Furthermore, later in the publication, we should buy only 1 level of \\(c_2\\) at a time. We should buy \\(c_1\\) only right after buying \\(c_2\\) (shifting up gear). <br><br>
+<br>
+
+If all we do is buy \\(c_1\\) and never \\(c_2\\), then we're stuck in gear 1 forever and make no progress.
+However, if all we do is buy \\(c_2\\) and never \\(c_1\\), then this is similar to trying to ride from highest gear from 0 speed, which we know takes a long time and a lot of effort.
+
+<br>
+
+Therefore using the bicycle analogy, we should buy \\(c_2\\) only when we have the speed to support it; not too early and not too late. Furthermore, later in the publication, we should buy only 1 level of \\(c_2\\) at a time. We should buy \\(c_1\\) only right after buying \\(c_2\\) (shifting up gear).
+
+<br>
 
 When deciding when to buy \\(c_1, c_2\\), think of \\(c_1\\) as throttling a bicycle, and \\(c_2\\) as shifting up gear by 1 level.
 
@@ -196,23 +201,30 @@ When deciding when to buy \\(c_1, c_2\\), think of \\(c_1\\) as throttling a bic
 
 The strengths of each variable are as follows:
 
-\\(c_3\\) ~= \\(q_2\\) ≈ \\(c_2 \\) > \\(q_1 \\) > \\(c_1 \\) <br><br>
+\\(c_3\\) ~= \\(q_2\\) ≈ \\(c_2 \\) > \\(q_1 \\) > \\(c_1 \\)
 
 Note that \\(c_1\\) and \\(c_2\\) have special interactions.
-<br><br>
+
+<br>
 
 ##### Manual buying c2 - READ THIS BEFORE DOING THE STRATEGIES
 
-For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buy 10x variables at a time. Otherwise buy 1 level of c2 at a time. <br><br>
+For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buy 10x variables at a time. Otherwise buy 1 level of c2 at a time.
+
+<br>
 
 You want to buy \\(c_2\\) until the value of \\(q\\) increases slowly. The pattern should be:
 
 1. Buy \\(c_2\\). \\(q\\) should increase.
-2. Once \\(q\\) increases slowly (or stops increasing), buy more \\(c_2\\). <br><br>
+2. Once \\(q\\) increases slowly (or stops increasing), buy more \\(c_2\\).
 
-If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilise and then continue buying \\(c_2\\). <br><br>
+<br>
 
-Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click 'publish'! <br><br>
+If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilise and then continue buying \\(c_2\\).
+
+<br>
+
+Once you've reached within e5 of the previous publication point, you can safely autobuy \\(c_2\\) for the rest of the publication. Remember to untick \\(c_2\\) autobuy at the end of the publication when you click 'publish'!
 
 ##### Idle
 
@@ -236,7 +248,7 @@ Semi idle is similar to idle, but we do manual \\(c_2\\) buying and disabling \\
 For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark. 
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark.
 3. Then we autobuy all until \\(\rho \\) has reached its previous publication value (finished recovery).
 4. Afterwards, deactivate \\(c_1\\) and autobuy the rest until publish.
 
