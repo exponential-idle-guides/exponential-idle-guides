@@ -33,6 +33,11 @@ window.onload = ()=>{
   }
 
   if (globals.Mobile) {
+    globals.qstyle.setProperty('--btn-width', '30vw');
+    globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
+    globals.qstyle.setProperty('--body-line-height', '1.4');
+    globals.qstyle.setProperty('--section-max-width', '90vw');
+    globals.qstyle.setProperty('--title-align', 'right');
     globals.qstyle.setProperty('--sidebar-height', '0%');
     globals.qstyle.setProperty('--sidebar-width', '96%');
     globals.qstyle.setProperty('--sidebar-padding-lr', '2%');
@@ -40,14 +45,6 @@ window.onload = ()=>{
     const columns = screen.availHeight > screen.availWidth ? '2' : '3';
     globals.qstyle.setProperty('--sidebar-column-count', columns);
     globals.qstyle.setProperty('--sidebar-transition-direction', 'margin-top');
-    globals.qstyle.setProperty('--btn-width', '30vw');
-    globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
-    globals.qstyle.setProperty('--body-line-height', '1.4');
-    globals.qstyle.setProperty('--section-max-width', '90vw');
-
-    if(window.location.href!='https://mobile-js-split-fix--exponential-idle-guides.netlify.app/'){
-      globals.qstyle.setProperty('--title-align', 'right');
-    }
   }
 
   if(window.location.href.includes('/ranking-news')){
