@@ -148,6 +148,15 @@ table.variable_summary {
 .graduation_routing .arrow {
 	padding: 0em 0em 0em 0em;
 }
+.table {
+	display: table;
+}
+.tr {
+	display: table-row;
+}
+.td {
+	display: table-cell;
+}
 
 //Milestone Routing
 .milestone_routing {

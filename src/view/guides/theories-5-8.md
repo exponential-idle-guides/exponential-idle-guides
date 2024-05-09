@@ -13,67 +13,64 @@ order: 5
 
 Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
-<table class="graduation_routing">
-   <tbody>
-      <tr>
-         <td>9k</td>
-         <td class="arrow">→</td>
-         <td>9.4k</td>
-         <td class="arrow">→</td>
-         <td>9.8k</td>
-         <td class="arrow">→</td>
-         <td>10k</td>
-      </tr>
-      <tr>
-         <td>10k</td>
-         <td class="arrow">→</td>
-         <td>10.4k</td>
-         <td class="arrow">→</td>
-         <td>10.6k</td>
-         <td class="arrow">→</td>
-         <td>11k</td>
-      </tr>
-            <tr>
-         <td>11k</td>
-         <td class="arrow">→</td>
-         <td>12.4k</td>
-         <td class="arrow">→</td>
-         <td>13.4k</td>
-         <td class="arrow">→</td>
-         <td>14k</td>
-      </tr>
-      <tr>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>14k</td>
-         <td class="arrow">→</td>
-         <td>14.8k</td>
-         <td class="arrow">→</td>
-         <td>15.6k</td>
-         <td class="arrow">→</td>
-         <td>16k</td>
-      </tr>
-      <tr>
-         <td>16k</td>
-         <td class="arrow">→</td>
-         <td>16.8k</td>
-         <td class="arrow">→</td>
-         <td>18k</td>
-      </tr>
-      <tr>
-         <td>18k</td>
-         <td class="arrow">→</td>
-         <td>20k</td>
-      </tr>
-   </tbody>
-</table>
+<div class="table graduation_routing">
+   <div class="tr">
+      <div class="td">9k</div>
+      <div class="td arrow">→</div>
+      <div class="td">9.4k</div>
+      <div class="td arrow">→</div>
+      <div class="td">9.8k</div>
+      <div class="td arrow">→</div>
+      <div class="td">10k</div>
+   </div>
+   <div class="tr">
+      <div class="td">10k</div>
+      <div class="td arrow">→</div>
+      <div class="td">10.4k</div>
+      <div class="td arrow">→</div>
+      <div class="td">10.6k</div>
+      <div class="td arrow">→</div>
+      <div class="td">11k</div>
+   </div>
+   <div class="tr">
+      <div class="td">11k</div>
+      <div class="td arrow">→</div>
+      <div class="td">12.4k</div>
+      <div class="td arrow">→</div>
+      <div class="td">13.4k</div>
+      <div class="td arrow">→</div>
+      <div class="td">14k</div>
+   </div>
+   <div class="tr">
+      <div class="td invisible"></div>
+      <div class="td invisible"></div>
+      <a class="td" style="row-span:2;" href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a>
+      <div class="td invisible"></div>
+      <div class="td invisible"></div>
+      <div class="td invisible"></div>
+   </div>
+   <div class="tr">
+      <div class="td">14k</td>
+      <div class="td arrow">→</div>
+      <div class="td">14.8k</div>
+      <div class="td arrow">→</div>
+      <div class="td">15.6k</div>
+      <div class="td arrow">→</div>
+      <div class="td">16k</div>
+   </div>
+   <div class="tr">
+      <div class="td">16k</div>
+      <div class="td arrow">→</div>
+      <div class="td">16.8k</div>
+      <div class="td arrow">→</div>
+      <div class="td">18k</div>
+   </div>
+   <div class="tr">
+      <div class="td">18k</div>
+      <div class="td arrow">→</div>
+      <div class="td">20k</div>
+   </div>
+</div>
 
 ### Student routing with R9
 
@@ -162,23 +159,23 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
    <tbody>
       <tr>
          <th>q1<sub><sub><small>1</small></sub></sub></th>
-         <td>About 7% increase on ρ dot on average - instantaneous.</td>
+         <td>About 7% increase on <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.17ex" height="2.224ex" role="img" focusable="false" viewBox="0 -767 517 983" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(341.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>ρ</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> on average - instantaneous.</td>
       </tr>
       <tr>
          <th>q2<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles ρ dot - instantaneous.</td>
+         <td>Doubles <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.17ex" height="2.224ex" role="img" focusable="false" viewBox="0 -767 517 983" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(341.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>ρ</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> - instantaneous.</td>
       </tr>
       <tr>
          <th>c1</th>
-         <td>This variable allows you to reach the maximum value of q faster. Note that it DOES NOT increase the maximum value of q itself. If q is close to its maximum value already, there's no point in buying this variable. </td>
+         <td>This variable allows you to reach the maximum value of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> faster. Note that it DOES NOT increase the maximum value of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> itself. If <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> is close to its maximum value already, there's no point in buying this variable. </td>
       </tr>
       <tr>
          <th>c2</th>
-         <td>Doubles the maximum value of q. However it also HALVES the speed. We must be careful to not buy too many, as this can cause q growth to be too slow. At the same time, we can't just ignore this variable, as otherwise the maximum value of q will never go up. </td>
+         <td>Doubles the maximum value of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container>. However it also HALVES the speed. We must be careful to not buy too many, as this can cause <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> growth to be too slow. At the same time, we can't just ignore this variable, as otherwise the maximum value of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container> will never go up. </td>
       </tr>
       <tr>
          <th>c3</th>
-         <td>Doubles the maximum value of q. No drawbacks.</td>
+         <td>Doubles the maximum value of <mjx-container class="MathJax CtxtMenu_Attached_0" jax="CHTML" tabindex="0" ctxtmenu_counter="56" style="font-size: 119.9%; position: relative;"><mjx-math class="MJX-TEX" aria-hidden="true"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45E TEX-I"></mjx-c></mjx-mi></mjx-math><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mi>q</mi></math></mjx-assistive-mml></mjx-container>. No drawbacks.</td>
       </tr>
    </tbody>
 </table>
@@ -312,7 +309,7 @@ get to \\(>e1100τ\\). You should overnight this and T4 after you get your T2 to
 At first, T6 only finds the area under the curve of the graph \\(f(q)\\) from \\(0\\) to \\(q\\), which is essentially a 2d plane.
 This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the
 opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable \\(r\\),
-this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f(r)\\) from \\(0\\) to \\(q\\) and
+this new equation is finding the volume of the graph within the bounds of planes \\(f(q)\\) and \\(f ( r ) \\) from \\(0\\) to \\(q\\) and
 \\(0\\) to \\(r\\) respectively.
 
 The \\(-C\\) variable outside of the integral is defined as the sum of the instantaneous change in \\(\rho\\) caused by all of the \\(c_i\\)

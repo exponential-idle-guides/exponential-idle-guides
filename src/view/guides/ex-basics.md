@@ -135,7 +135,7 @@ further ahead than you are already.
 
 ### What does ee mean?
 
-You start out with normal numbers and quickly work your way up to \\(X.xxeX\\) notation. This notation is scientific notation. It stands for \\(X.xx*10^X\\). Later you are introduced to \\(X.xxeeX\\). This is a custom game notation that stands for \\(X.xx*10^{10^X}\\).
+You start out with normal numbers and quickly work your way up to $X.xxeX$ notation. This notation is scientific notation. It stands for $X.xx*10^X$. Later you are introduced to $X.xxeeX$. This is a custom game notation that stands for $X.xx*10^{10^X}$.
 
 ### Achievements and Minigames
 
