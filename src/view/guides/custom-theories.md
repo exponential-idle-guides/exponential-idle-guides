@@ -697,7 +697,7 @@ In FI, you can unlock milestones in 2 ways:
 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
-Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the g(x) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the g(x) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
+Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
 
 FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
 
