@@ -645,11 +645,11 @@ Approximate variable strengths on their respective vardots with all milestones a
    <tbody>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to $\dot{q}$</td>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to \\(\dot{q}\\)</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles $\dot{q}$ dot per level</td>
+         <td>Doubles \\(\dot{q}\\) dot per level</td>
       </tr>
       <tr>
          <th>K</th>
@@ -657,11 +657,11 @@ Approximate variable strengths on their respective vardots with all milestones a
       </tr>
       <tr>
          <th>m</th>
-         <td>Will instantly increase $\dot\rho$ by 1.5x</td>
+         <td>Will instantly increase \\(\dot{\rho}\\) by 1.5x</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Will instantly increase $\dot\rho$ by x every 11 levels</td>
+         <td>Will instantly increase \\(\dot{\rho}\\) by x every 11 levels</td>
       </tr>
    </tbody>
 </table>
