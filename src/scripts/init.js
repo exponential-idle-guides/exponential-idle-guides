@@ -87,7 +87,7 @@ window.onload = ()=>{
               if (transform === null){
                 console.log("curr_td.transform === null");
                 if(k === 0){
-                  new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' (tr_offset).toString() + ')"');
+                  new_tr_innnerHTML += curr_td_HTML.replace('data-mml-node="mtd"', 'data-mml-node="mtd"' + ' transform="translate(' + (tr_offset).toString() + ')"');
                 } else {
                   const translate = [...curr_td_HTML.matchAll(/translate\((.*?),(.*?)\)/g)][0];
                   console.log("curr_td.translate");
