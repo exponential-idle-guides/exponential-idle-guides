@@ -30,6 +30,14 @@ th, td {
 	}
 }
 
+.invisible {
+	border: none;
+	background-color:transparent;
+}
+.arrow {
+	padding: 0em 0em 0em 0em;
+}
+
 //CT Guide tables
 table.variable_summary {
 	border: 5px solid blue;
@@ -42,10 +50,6 @@ table.variable_summary {
 //New Table Look
 .newwords {
 	text-align: center;
-}
-.newwords .invisible {
-	border: none;
-	background-color:transparent;
 }
 .newwords .leftHeader, .newwords .leftlastHeader {
 	color: var(--palette-stroke-table-headers);
@@ -76,10 +80,6 @@ table.variable_summary {
 .T2 {
 	text-align: center;
 }
-.T2 .invisible {
-	border: none;
-	background-color:transparent;
-}
 .T2 .leftHeader {
 	font-weight: bold;
 	color: var(--palette-stroke-table-headers);
@@ -98,9 +98,7 @@ table.variable_summary {
 .T2 sub {
 	vertical-align: sub
 }
-.T2 .arrow {
-	padding: 0em 0em 0em 0em;
-}
+
 
 //Theory Sim Playspout
 .PlayStrats {
@@ -145,8 +143,14 @@ table.variable_summary {
   margin-left: 0;
 	margin-top: 0;
 }
-.graduation_routing .arrow {
-	padding: 0em 0em 0em 0em;
+.table {
+	display: table;
+}
+.tr {
+	display: table-row;
+}
+.td {
+	display: table-cell;
 }
 
 //Milestone Routing
@@ -154,18 +158,15 @@ table.variable_summary {
   margin-left: 0;
 	margin-top: 0;
 }
-.milestone_routing .arrow {
-	padding: 0em 0em 0em 0em;
+.milestone_routing .perm_upg {
+	color: var(--palette-stroke-warning);
 }
 
 // spqcey's Tables
 .spqcey {
 	text-align: left;
 }
-.spqcey .invisible {
-	border: none;
-	background-color:transparent;
-}
+
 .spqcey .leftHeader, .spqcey .leftlastHeader {
 	color: var(--palette-stroke-table-headers);
 	font-weight: bold;
