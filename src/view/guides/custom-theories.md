@@ -13,8 +13,8 @@ order: 8
 Custom theories are theories made by players in the community. As of April 1st, 2024, there are 6 official
 custom theories that contribute up to e600 \\(\tau \\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, and Fractal Patterns (FP) by XLII. The theories will be abbreviated as WSP, SL, EF, CSR2, FI, and FP from now on.
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to \\(\tau\\). WSP, SL, and CSR2 have conversion rates of
-\\(\tau\\) = \\(\rho^{0.4}\\) while EF has a \\(\tau \\) conversion rate of \\(\tau\\) = \\(\rho^{1.6}\\) and FP with a conversion rate of \\(\tau\\) = \\(\rho^{0.3}\\).
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, and CSR2 have conversion rates of
+$\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau \\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\).
 
 ### Which Custom Theories (CTs) should I do?
 
@@ -50,7 +50,7 @@ The third line is the most complicated. Generally we can factorize an equation w
 Finally, the actual \\(\chi\\) equation: increasing \\(c_1 \\) and \\(n \\) increases \\(\chi\\). Note that from the fraction, we don't want to increase only \\(c_1 \\) or only \\(n\\). Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that \\(n \\) is better than \\(c_1 \\) as more \\(n/3\\) milestones are accumulated. <br><br>
 
 #### WSP Variable Description
-Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of WSP.</caption>
@@ -140,7 +140,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 #### SL Overview
 
-SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e≈2.71828). As upgrades are bought, the approximation becomes more precise, increasing \\(\dot\rho\\) and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
+SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e≈2.71828). As upgrades are bought, the approximation becomes more precise, increasing $\dot\rho$ and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
 
 #### SL Equation Description
 
@@ -154,7 +154,7 @@ SL, the second official custom theory, uses a variation of Stirling's formula to
 
 \\(a_3 = 1.96\\)
 
-The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase \\(\tau\\). The '1.06' exponent is from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately \\(\sqrt{\rho_2} \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol (\\(\gamma\\)) which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
+The first line is the main part of the equation. We want to maximize \\(\dot{\rho_1}\\) to increase $\tau$. The '1.06' exponent is from milestones. The default is no exponent. From the equation, we can see that \\(\dot{\rho_1} \\) is proportional to approximately \\(\sqrt{\rho_2} \\). This means that if we quadruple \\(\rho_2 \\), we would approximately double \\(\rho_1 \\) long term. The denominator of the fraction has a gamma symbol (\\(\gamma\\)) which looks like the letter 'y'. As our \\(\rho \\) increases, our \\(\gamma \\) becomes closer to 'e', so the denominator will decrease, which increases \\(\rho_1 \\). We will explore \\(\gamma \\) in the next equation.
 
 The second equation refers to Stirling's approximation of Euler's number '\\(e\\)'. As \\(\rho_3 \\) increases, \\(\gamma \\) converges to Euler's number. Long term we can approximate this convergence as linear. The implication is if we double \\(\rho_3 \\), \\(\gamma\\) will be twice as close to Euler's number, so \\(e-\gamma\\) in the first equation will be halved.
 
@@ -165,7 +165,7 @@ The fourth equation relates \\(\dot{\rho_3} \\) with some upgrades. This one is 
 The final equation simply states the value of \\(a_3 \\). The lower the better. Default without milestone is \\(a_3 = 2 \\).
 
 #### SL Variable Description
-Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of SL.</caption>
@@ -281,7 +281,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number.
 
-EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^{0.4} \\) rather than the usual \\(\rho^{0.1} \\) meaning that less \\(\rho \\) is needed to get an equivalent amount of \\(\tau\\). Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
+EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau \\) conversion for this theory is uniquely at \\(\rho^{0.4} \\) rather than the usual \\(\rho^{0.1} \\) meaning that less \\(\rho \\) is needed to get an equivalent amount of $\tau$. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau \\) and has the largest instantaneous jump in \\(\tau \\) out of all custom theories.
 
 #### EF Equation Description
 
@@ -306,7 +306,7 @@ The fourth line simply describes \\(\dot{q} \\). This is used in the first equat
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
-Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of EF.</caption>
@@ -414,7 +414,7 @@ Once you unlock the 3rd milestone (\\(a_1 \\) term) however, we can buy \\(a_1 \
 
 #### CSR2 Overview
 
- This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the \\(\dot{q}\\) and \\(\dot\rho\\) improve, increasing \\(\tau\\). An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the $\dotq$ and $\dot\rho$ improve, increasing $\tau$. An explanation of each section of the equations is shown below:
 
 #### CSR2 Equation Description
 
@@ -443,7 +443,7 @@ This occurs until we reach \\(N_m \\) and \\(D_m \\) reach whatever 'm' values w
 The fourth equation relates 'm' as described above. We can see that as we buy \\(n \\) and \\(c_2 \\), our \\(m \\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m \\), \\(D_m \\) will increase. From how \\(n \\) and \\(c_2 \\) values are calculated, buying 1 level of \\(n \\) or \\(c_2 \\) will increase \\(m \\) by 1.
 
 #### CSR2 Variable Description
-Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of CSR2.</caption>
@@ -493,9 +493,9 @@ For the milestone swapping strategy, the general idea is to switch milestones fr
 
 ##### CSR2 Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase $\dot\rho$ straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases $\dot\rho$.
 
-The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
@@ -558,7 +558,7 @@ $$\lambda \int_{0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) }
 
 <br>
 
-With \\(\dot\rho\\) and \\(\dot{q}\\) Equations Becoming:
+With $\dot\rho$ and $\dotq$ Equations Becoming:
 
 $$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q/ \pi }g(x)dx },\ \ \dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q }g(x)dx }$$
 $$\dot{q}=q_1^{1.03}q_2$$
@@ -645,23 +645,23 @@ Approximate variable strengths on their respective vardots with all milestones a
    <tbody>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to \\(\dotq\\)</td>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to $\dotq$</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles \\(\dotq\\) dot per level</td>
+         <td>Doubles $\dotq$ dot per level</td>
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadrouple \\(\dotr\\) depending on milestones</td>
+         <td>Will double, triple, or quadrouple $\dotr$ depending on milestones</td>
       </tr>
       <tr>
          <th>m</th>
-         <td>Will instantly increase \\(\dot\rho\\) by 1.5x</td>
+         <td>Will instantly increase $\dot\rho$ by 1.5x</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Will instantly increase \\(\dot\rho\\) by x every 11 levels</td>
+         <td>Will instantly increase $\dot\rho$ by x every 11 levels</td>
       </tr>
    </tbody>
 </table>
@@ -679,21 +679,22 @@ For idle, we simply autobuy all. The idle strategy doesn't change much other tha
 
 The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1 \\) and \\(n \\), where you buy them when they are less than 10% cost of minimum(\\(q_2 \\), \\(K \\), and \\(m \\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1 \\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for \\(\dotq\\) from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1 \\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dotq$ from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
 
 ##### FI Milestone Swapping Explanation
 
 This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot \q\\).
 
-The reason milestone swapping works is because the benefits of using \\(q_1 \\) related milestones (having high \\(q\\)) remain when you switch to \\(m \\) and \\(n\\) milestones. If we only use \\(q_1 \\) exponent, then we have really high \\(q\\), however, we dont have the benefits to \\(\dot\rho\\) that \\(m\\) and \\(n\\) provide. If we only use \\(m \\) and \\(n\\) milestones, then we have low \\(q\\), but have normal \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through the \\(q_1 \\) milestone, then take advantage of the \\(m \\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(q_1 \\) related milestones (having high \\(q\\)) remain when you switch to \\(m \\) and \\(n\\) milestones. If we only use \\(q_1 \\) exponent, then we have really high \\(q\\), however, we dont have the benefits to $\dot\rho$ that \\(m\\) and \\(n\\) provide. If we only use \\(m \\) and \\(n\\) milestones, then we have low \\(q\\), but have normal $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through the \\(q_1 \\) milestone, then take advantage of the \\(m \\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
 #### FI Milestone Routing Explaination
 
-In FI, you can unlock milestones in 2 ways: 
-1) by gaining \\(\rho\\) like normal, or 
-2) 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
+In FI, you can unlock milestones in 2 ways:
+
+1) by gaining \\(\rho\\) like normal, or
+2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
 Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the g(x) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the g(x) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
@@ -841,7 +842,7 @@ h3 {
 
 #### FP Overview
 
- This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the \\(\dot{q}\\) and \\(\dot\rho\\) improve, increasing \\(\tau\\). An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the $\dotq$ and $\dot\rho$ improve, increasing $\tau$. An explanation of each section of the equations is shown below:
 
 #### FP Equation Description
 
@@ -895,7 +896,7 @@ The fourth equation relates 'm' as described above. We can see that as we buy \\
 
 
 #### FP Variable Description
-Approximate variable strengths on \\(\dot\rho\\) with all milestones are as follows:
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
 <caption>Brief summary of variable strengths of CSR2.</caption>
@@ -918,7 +919,7 @@ Approximate variable strengths on \\(\dot\rho\\) with all milestones are as foll
       </tr>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>easy mod10 \\(\dotq\\) change</td>
+         <td>easy mod10 $\dotq$ change</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
@@ -958,9 +959,9 @@ For the milestone swapping strategy, the general idea is to switch milestones fr
 
 ##### FP Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase \\(\dot\rho\\) straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases \\(\dot\rho\\).
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1 \\) exponent milestones, which increase $\dot\rho$ straight away. We also have \\(c_2 \\) related milestones, which increases the \\(q\\) variable, which increases $\dot\rho$.
 
-The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low \\(\dot\rho\\). If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(c_2 \\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1 \\) exponent milestones. If we only use \\(q_1 \\) exponent, then we have really low \\(q\\). If we only use \\(c_2 \\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2 \\) related milestones, then take advantage of the \\(q_1 \\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
