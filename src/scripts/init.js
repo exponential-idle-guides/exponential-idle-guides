@@ -96,7 +96,7 @@ window.onload = ()=>{
                   tr_offset += +translate[1];
                 }
                 if(last_bool){
-                  tr_offset += curr_td.getBoundingClientRect().width;
+                  tr_offset += td_offset + curr_td.getBoundingClientRect().width;
                 }
               } else {
                 console.log("curr_td.transform");
