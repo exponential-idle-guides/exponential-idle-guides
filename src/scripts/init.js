@@ -126,7 +126,7 @@ window.onload = ()=>{
                 console.log(translate);
                 console.log("last_td.getBBox().width")
                 console.log(last_td[0].getBoundingClientRect().width)
-                tr_offset += +translate[1] + +((last_td[0].getBoundingClientRect().width).toString().replace('px', ''));
+                tr_offset += +translate[1] + +last_td[0].getBoundingClientRect().width;
               }
             }
             console.log("tr_offset");
