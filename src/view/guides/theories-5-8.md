@@ -13,34 +13,38 @@ order: 5
 
 Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
 
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>9k</td>
+         <td class="arrow">→</td>
+         <td>9.4k</td>
+         <td class="arrow">→</td>
+         <td>9.8k</td>
+         <td class="arrow">→</td>
+         <td>10k</td>
+      </tr>
+      <tr>
+         <td>10k</td>
+         <td class="arrow">→</td>
+         <td>10.4k</td>
+         <td class="arrow">→</td>
+         <td>10.6k</td>
+         <td class="arrow">→</td>
+         <td>11k</td>
+      </tr>
+      <tr>
+         <td>11k</td>
+         <td class="arrow">→</td>
+         <td>12.4k</td>
+         <td class="arrow">→</td>
+         <td>13.4k</td>
+         <td class="arrow">→</td>
+         <td>14k</td>
+      </tr>
+   </tbody>
+</table>
 <div class="table graduation_routing">
-   <div class="tr">
-      <div class="td">9k</div>
-      <div class="td arrow">→</div>
-      <div class="td">9.4k</div>
-      <div class="td arrow">→</div>
-      <div class="td">9.8k</div>
-      <div class="td arrow">→</div>
-      <div class="td">10k</div>
-   </div>
-   <div class="tr">
-      <div class="td">10k</div>
-      <div class="td arrow">→</div>
-      <div class="td">10.4k</div>
-      <div class="td arrow">→</div>
-      <div class="td">10.6k</div>
-      <div class="td arrow">→</div>
-      <div class="td">11k</div>
-   </div>
-   <div class="tr">
-      <div class="td">11k</div>
-      <div class="td arrow">→</div>
-      <div class="td">12.4k</div>
-      <div class="td arrow">→</div>
-      <div class="td">13.4k</div>
-      <div class="td arrow">→</div>
-      <div class="td">14k</div>
-   </div>
    <div class="tr">
       <div class="td invisible"></div>
       <div class="td invisible"></div>
@@ -49,28 +53,32 @@ Remember to follow our routing advice from the [introduction to graduation](http
       <div class="td invisible"></div>
       <div class="td invisible"></div>
    </div>
-   <div class="tr">
-      <div class="td">14k</td>
-      <div class="td arrow">→</div>
-      <div class="td">14.8k</div>
-      <div class="td arrow">→</div>
-      <div class="td">15.6k</div>
-      <div class="td arrow">→</div>
-      <div class="td">16k</div>
-   </div>
-   <div class="tr">
-      <div class="td">16k</div>
-      <div class="td arrow">→</div>
-      <div class="td">16.8k</div>
-      <div class="td arrow">→</div>
-      <div class="td">18k</div>
-   </div>
-   <div class="tr">
-      <div class="td">18k</div>
-      <div class="td arrow">→</div>
-      <div class="td">20k</div>
-   </div>
 </div>
+<table class="graduation_routing">
+   <tbody>
+      <tr>
+         <td>14k</td>
+         <td class="arrow">→</td>
+         <td>14.8k</td>
+         <td class="arrow">→</td>
+         <td>15.6k</td>
+         <td class="arrow">→</td>
+         <td>16k</td>
+      </div>
+      <tr>
+         <td>16k</td>
+         <td class="arrow">→</td>
+         <td>16.8k</td>
+         <td class="arrow">→</td>
+         <td>18k</td>
+      </tr>
+      <tr>
+         <td>18k</td>
+         <td class="arrow">→</td>
+         <td>20k</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Student routing with R9
 
