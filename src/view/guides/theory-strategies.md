@@ -5061,7 +5061,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c), where c = cost</td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, c<sub><sub><small>2</small></sub></sub>), where c = cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -5069,7 +5069,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c), where c = cost</td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, c<sub><sub><small>2</small></sub></sub>), where c = cost</td>
       </tr>
       <tr>
          <td class="leftHeader">n</td>
@@ -5139,6 +5139,37 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">n</td>
          <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+### FId
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>FId</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, m)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, m)</td>
       </tr>
    </tbody>
 </table>

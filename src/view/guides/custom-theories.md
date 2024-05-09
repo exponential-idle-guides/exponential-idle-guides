@@ -674,9 +674,9 @@ For idle, we simply autobuy all. The idle strategy doesn't change much other tha
 
 ##### Active
 
-The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
+The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FId), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1\\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dot{q}$ from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1\\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dot{q}$ from purchasing \\(q_1\\). Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FI) section of the guide for how to perform milestone swapping.
 
 ##### FI Milestone Swapping Explanation
 
@@ -684,7 +684,7 @@ This theory has a milestone swapping strategy before full milestones. We have \\
 
 The reason milestone swapping works is because the benefits of using \\(q_1\\) related milestones (having high \\(q\\)) remain when you switch to \\(m\\) and \\(n\\) milestones. If we only use \\(q_1\\) exponent, then we have really high \\(q\\), however, we dont have the benefits to $\dot\rho$ that \\(m\\) and \\(n\\) provide. If we only use \\(m\\) and \\(n\\) milestones, then we have low \\(q\\), but have normal $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through the \\(q_1\\) milestone, then take advantage of the \\(m\\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
-For a more detailed explanation on how to actually do the strategy, please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FI) section of the guide.
 
 #### FI Milestone Routing Explaination
 
