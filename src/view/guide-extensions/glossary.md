@@ -81,11 +81,11 @@ Usually referred in context of strategies. An active strategy requires more atte
 
 ### Hard Strat
 
-Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions. Examples of hard strategies include [T3<span style="color:#41AD21">Play2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2) and [<span style="color:#41AD21">T8PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap).
+Strategies that are considered 'super active' and/or hard to execute by the majority of players. This may be because of specific buy timings or requiring constant attentions. Examples of hard strategies include [T3<span style="color:#41AD21">Play2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3play2) and [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap).
 
 ### Milestone Swapping / MS
 
-The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost $\tau$/hour. This type of strategy is most common prior to reaching all milestones in a theory, with a notable exception of [<span style="color:#41AD21">T8PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap), which continues using milestone swapping past full milestones.
+The act of swapping milestones, usually in the middle of a publication. This is usually part of a super active strategy. If done correctly, it can significantly boost $\tau$/hour. This type of strategy is most common prior to reaching all milestones in a theory, with a notable exception of [T8<span style="color:#41AD21">PlaySolarSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8playsolarswap), which continues using milestone swapping past full milestones.
 
 ### Doubling Variables / Doublings
 
