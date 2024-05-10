@@ -20,14 +20,14 @@ Therefore, we can use a single model deduced from the Cost and the Effect of all
 ## How Variable Upgrades Work in the Long Term?
 
 Almost every upgrade in the game follows a Cost-Level relation of:
-$$Cost = ab^{Level}\qquad (1-1)$$ 
+$$Cost = ab^{Level}\qquad (1-1)$$
 In which \\(a>0\\) and \\(b>1\\) are pre-determined constants.
 On the other hand, upgrades have two ways to determine the value of the variable:
 
 ### Direct Multiplication:
 
 This type of upgrade has an identical equation to the equation mentioned above, just with different constants in the places of \\(a\\) and \\(b\\). It can be represented as the expression below:
-$$Value = cd^{Level}\qquad (1-2)$$ 
+$$Value = cd^{Level}\qquad (1-2)$$
 In which \\(c>0\\) and \\(d>1\\) are pre-determined constants.
 
 #### **Lemma 1.1**
@@ -43,7 +43,7 @@ $$\frac{\rho}{a} = b^{L}$$
 Since \\(b > 0\\), logarithm with a base of \\(b\\) is defined,
 $$log_b(\frac{\rho}{a}) = L$$
 Thus,
-$$log_b(\rho) - log_b(a) = L\qquad (1-3)$$ 
+$$log_b(\rho) - log_b(a) = L\qquad (1-3)$$
 From (1-2) and (1-3) we have:
 $$u = cd^{log_b(\rho) - log_b(a)}$$
 $$= \frac{c}{d^{log_b(a)}}d^{log_b(\rho)}$$
@@ -70,7 +70,7 @@ $$ab^{L} \le \rho < ab^{L+1}$$
 We can see the upper bound as an expression of a virtual variable \\(u'\\), in which:
 $$a' = ab\quad c'= c$$
 $$b' = b \quad d'= d$$
-According to Lemma 1.1, \\(u\\) and \\(u'\\) share the same exponent \\(r\\), let's name the \\(K\\) for the two variables \\(K\\) and \\(K'\\) respectively. 
+According to Lemma 1.1, \\(u\\) and \\(u'\\) share the same exponent \\(r\\), let's name the \\(K\\) for the two variables \\(K\\) and \\(K'\\) respectively.
 Since \\(b>1\\), \\(K'< K\\), from Lemma 1.1 we have:
 $$K'\rho^r \le u \le K\rho^r$$
 Which is the definition  of:
@@ -90,11 +90,51 @@ $$c_1d^L \le v_L \le c_2d^L$$
 
 #### **Proof**
 
-Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 < l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\): From the definition of a Stepwise variable we have: $$v_{mk+l} = \frac{1}{q-1}p((m+l(q-1))q^k-m)\qquad (1-4)$$
+Without loss of generality, let's consider the \\((k+1 \ge 2)\\)-th cycle of \\(v\\), therefore, the value of \\(v\\) after the \\((0 < l \in \mathbb{N}\ \le m\\))-th upgrade in the cycle is \\(v_{mk+l}\\): From the definition of a Stepwise variable we have:
 
-Since \\(m\\)>0,from (1-4) we have: $$\frac{1}{q-1}p((m+l(q-1))q^k-m) < \frac{1}{q-1}p((m+l(q-1))q^k)=\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1))\qquad (1-5)$$ Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\), $$\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1)) < \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^(k+1) < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}}$$ $$= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}$$ Therefore, $$v_{mk+l} < mp\frac{q}{q-1}(q^\frac{1}{m})^{mk+l}\qquad (1-6)$$
+$$v_{mk+l} = \frac{1}{q-1}p((m+l(q-1))q^k-m)\qquad (1-4)$$
 
-Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have: $$\frac{1}{q-1}p((m+l(q-1))q^k-m) > \frac{1}{q-1}p((m+l(q-1))q^k-q^{k-1}m)$$ $$= \frac{1}{q-1}p(mq^k-mq^{k-1}+l(q-1)q^k)$$ $$= \frac{1}{q-1}p(m(q-1)q^{k-1}+l(q-1)q^k)$$ $$= mpq^{k-1}(1+\frac{l}{m}q)\qquad (1-7)$$ Since \\(0 \le \frac{l}{m} \le 1\) and \(q>-1\\), we can ap­ply Bernoul­li’s in­equal­ity to get: $$1+\frac{l}{m}q \ge (1+q)^{\frac{l}{m}}$$ $$mpq^{k-1}(1+\frac{l}{m}q) \ge mpq^{k-1}(1+q)^{\frac{l}{m}}>mpq^{k-1}q^{\frac{l}{m}}$$ $$= \frac{mp}{q}(q^{\frac{1}{m}})^{mk+l}$$ Therefore, $$v_{mk+l} > \frac{mp}{q}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)$$
+Since \\(m\\)>0,from (1-4) we have:
+
+$$\begin{eqnarray}
+\frac{1}{q-1}p((m+l(q-1))q^k-m)\qquad (1-5) \\
+< \frac{1}{q-1}p((m+l(q-1))q^k)=\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1))
+\end{eqnarray}$$
+
+Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\),
+
+$$\begin{eqnarray}
+\frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1)) \\
+< \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^(k+1) \\
+< \frac{1}{q-1}mpqq^{\frac{mk+l}{m}}$$ $$= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
+\end{eqnarray}$$
+
+Therefore,
+
+$$v_{mk+l} < mp\frac{q}{q-1}(q^\frac{1}{m})^{mk+l}\qquad\\(1-6)$$
+
+Since \\(k>1\\), \\(q^{k-1}>1\\), from (1-4) we have:
+
+$$\begin{eqnarray}
+\frac{1}{q-1}p((m+l(q-1))q^k-m) \\
+> \frac{1}{q-1}p((m+l(q-1))q^k-q^{k-1}m)
+\end{eqnarray}$$
+
+$$= \frac{1}{q-1}p(mq^k-mq^{k-1}+l(q-1)q^k)$$ $$= \frac{1}{q-1}p(m(q-1)q^{k-1}+l(q-1)q^k)$$
+
+$$= mpq^{k-1}(1+\frac{l}{m}q)\qquad (1-7)$$
+
+Since \\(0 \le \frac{l}{m} \le 1\) and \(q>-1\\), we can ap­ply Bernoul­li’s in­equal­ity to get:
+
+$$1+\frac{l}{m}q \ge (1+q)^{\frac{l}{m}}$$
+
+$$mpq^{k-1}(1+\frac{l}{m}q) \ge mpq^{k-1}(1+q)^{\frac{l}{m}}>mpq^{k-1}q^{\frac{l}{m}}$$
+
+$$= \frac{mp}{q}(q^{\frac{1}{m}})^{mk+l}$$
+
+Therefore,
+
+$$v_{mk+l} > \frac{mp}{q}(q^{\frac{1}{m}})^{mk+l}\qquad (1-8)$$
 
 From (1-6) and (1-8) we have: $$\frac{mp}{q}(q^{\frac{1}{m}})^{mk+l} < v_{mk+l} < mp\frac{q}{q-1}(q^\frac{1}{m})^{mk+l}$$ Since \\(mk+l = L\\) in this case, $$\frac{mp}{q}(q^{\frac{1}{m}})^L < v_L < mp\frac{q}{q-1}(q^\frac{1}{m})^L$$ Apparently, \\((\frac{mp}{q},\frac{mpq}{q-1}) \in \mathbb{R}^+\\) and \\(q^\frac{1}{m} \in \mathbb{R}^+\\)
 
@@ -110,7 +150,7 @@ $$v(\rho) \in {\Theta(\rho^r)}$$
 From Lemma 1.3 we have:
 $$c_1d^L \le v_L \le c_2d^L$$
 We can see the upper and lower bound as two virtual variables, let's call them \\(v_1\\) and \\(v_2\\).
-$$v_1 \le v \le v_2\qquad (1-9)$$ 
+$$v_1 \le v \le v_2\qquad (1-9)$$
 Since \\(v_1\\) and \\(v_2\\) are both "Direct Multiplication" variables, we can apply Lemma 1.2 on \\(v_1\\) and \\(v_2\\) and get:
 $$v_1 \in \Theta(\rho^r)$$
 $$v_2 \in \Theta(\rho^r)\qquad$$ \
@@ -124,12 +164,15 @@ From Lemma 1.2 and Lemma 1.4 we can obtain an important conclusion:
 ### **Lemma 1.5**
 
 *For any purchasable variable \\(v\\), there exists \\(r \in \mathbb{R}^+\\) so that the value of \\(v\\) and the peak value of its currency \\(\rho\\) meet the expression below:
-$$v(\rho) \in {\Theta(\rho^r)}$$*
+
+$$v(\rho) \in {\Theta(\rho^r)}$$
 
 ## How Variables Propagate towards the Main Variable
 
 Theories all have one or more currencies, they are used to purchase variables or interact with other currencies. One shared feature of the theories is that the currencies they contain are either derived from a set of other variables and currencies via arithmetic operations, or that there is some key features in a theory that makes a few un-purchasable variables practically constant in the long term. (For example, the x,y and z in T8 due to Solarswap). Therefore, we can get the relation of a certain currency to the main currency in the long term by factoring in the currencies and variables that contribute in the growth of that specific currency. We can generalize the growth of all but a few derived variables or currencies into.
+
 $$\frac{da_n}{dt} = f(a_1,a_2...,\rho)$$
+
 In which \\(\rho_i\\) are any variable, if the right side of the equation involves the variable itself, the variable is called "self-influenced".
 
 ### Normal Cases
@@ -158,7 +201,7 @@ Since \\(y \in \mathbb{R}^+\\), \\((y+1) \in \mathbb{R}^+\\).
 
 We can determine the asymptotic notation of a variable of this kind by solving a first order ODE, below is an example with the \\(q\\) variable in T4:
 $$\frac{dq}{dt} = \frac{8q_1q_2}{q+1}$$
-This is a classic example of a self-influenced variable, fortunately, the ODE is separable: 
+This is a classic example of a self-influenced variable, fortunately, the ODE is separable:
 $$(q+1)dq = 8q_1q_2dt$$
 Integrate both sides,
 $$\frac{q^2}{2}+q = 8q_1q_2t + C$$
@@ -166,6 +209,7 @@ As \\(\rho\\) approaches infinity, we can see that \\(q\\) approaches \\(\sqrt{1
 We can then do the asymptotic analysis on the entire system normally from here.
 
 ### More Complicated Cases
+
 In more complicated cases such as the systems that contain multiple powers of \\(t\\) in the growth of a single variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
 1. Determine the strongest term by experiment and use the previous two methods (which is how we analyze T6, which has an intricate main equation)
 2. Use Numerical Methods (which the Theory Simulator incorporates)
@@ -175,8 +219,8 @@ If we manage to get everything sorted, we will get a powerful conclusion:
 
 ### **Lemma 2.2**
 
-*For any theory system in which Lemma 2.1 can apply fully on or can be analyzed asymptotically by other means, there exists \\((x,y) \in \mathbb{R}^+\\) so that: 
-$$\frac{d\rho}{dt} \in \Theta(\rho^xt^y)$$*
+*For any theory system in which Lemma 2.1 can apply fully on or can be analyzed asymptotically by other means, there exists \\((x,y) \in \mathbb{R}^+\\) so that:
+$$\frac{d\rho}{dt} \in \Theta(\rho^xt^y)$$
 
 ## Finally, the Model
 
@@ -192,9 +236,12 @@ In which \\(K,x,y,z \in \mathbb{R}^+\\) are constants.
 ### **Theorem 1**
 
 *For any theory system \\(T\\) that fits the expression below asymptotically
+
 $$\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_{pub}$$
-the long-term mean Publication Multiplier of \\( T\\) when \\(\rho → ∞\\)is:
-$$e^{\frac{z(y+1)}{1-x}}$$*
+
+the long-term mean Publication Multiplier of \\( T\\) when \\(\rho → ∞\\) is:
+
+$$e^{\frac{z(y+1)}{1-x}}$$
 
 ### **Proof**
 
@@ -203,7 +250,7 @@ This is a separable differential equation, after some rearrangement we have:
 $$\rho^{-x}d\rho = Kt^{y}\rho^{z}_{pub}dt$$
 Integrate both sides,
 $$\int\rho^{-x}d\rho = \int Kt^{y}\rho^{z}_{pub}dt$$
-Since \\(Kt^{y}\rho^{z}_{pub}\\) is a constant in a publication, 
+Since \\(Kt^{y}\rho^{z}_{pub}\\) is a constant in a publication,
 $$\int\rho^{-x}d\rho = K\rho^{z}_{pub}\int t^{y}dt$$
 Evaluate both Integrals,
 $$\frac{\rho^{1-x}}{1-x} = \frac{K\rho^{z}_{pub}}{z+1}t^{y+1} + C$$
@@ -243,7 +290,7 @@ $$ = z(\frac{(x+z-1)ln\rho_{pub} + (y+1)(1-\frac{x+z-1}{y+1}ln\rho_{pub})}{1-x})
 $$ = z(\frac{(x+z-1)ln\rho_{pub} + (y+1) - (x+z-1)ln\rho_{pub}}{1-x})$$
 $$ = \frac{z(y+1)}{1-x}\qquad (3-9)$$
 From (3-9), we get:
-*$$r = e^{\frac{z(y+1)}{1-x}}$$*
+$$r = e^{\frac{z(y+1)}{1-x}}$$
 **Q.E.D.**
 
 ## The Observations We Can Get from Theorem 1
@@ -270,7 +317,7 @@ $$\frac{d\rho}{dt} \in \Theta(\rho^{0.3+0.125+0.1+log2}t^0\rho^{0.164}_{pub})$$
 Therfore, \\(x = 0.525+log2, y = 0, z = 0.164\\)
 
 Thus, from Theorem 1 we get:
-*$$r = e^{\frac{0.164}{0.475-log2}} \simeq 2.5669$$*
+$$r = e^{\frac{0.164}{0.475-log2}} \simeq 2.5669$$
 This is very close to the geometric mean of the results of [Theory Simulator](https://exponential-idle-guides.netlify.app/guides/theory-sim/) from e1000 to e1500.
 
 ### Theory 2
@@ -290,8 +337,11 @@ $$c_4, d_4 \in \Theta(\rho^{0.05})$$
 Using Lemma 2.2, we can analyze all the layers and factor in the publication multiplier equation of \\(K\rho^{0.198}\\)and get:
 $$\frac{d\rho}{dt} \in \Theta(\rho^{1.15*2*(0.1+0.1+\frac{log2}{10log3}+0.05)}t^{9.2}\rho^{0.198}_{pub})$$
 Therefore, \\(x \simeq 0.72011 , y = 9.2, z = 0.198\\)
+
 Thus, from Theorem 1 we get:
-*$$r \simeq e^{\frac{0.198*10.2}{0.27989}} \simeq 1360.61$$*
+
+$$r \simeq e^{\frac{0.198*10.2}{0.27989}} \simeq 1360.61$$
+
 Which is close to the results of [Theory Simulator](https://exponential-idle-guides.netlify.app/guides/theory-sim/) without T2MC from e1000 to e1500. This behavior is expected since Coasting -- The main concept of T2MC is not considered at all in this analysis.
 
 ## Credits

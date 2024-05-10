@@ -57,7 +57,7 @@ Late game \\(c_3\\) term dominates so:
 
 \\(\dot{q} ~= \frac{A}{1+q} \\)
 
-Solving the differential equation yields q is proportional to \\(\sqrt{t} \\)
+Solving the differential equation yields $q$ is proportional to \\(\sqrt{t} \\)
 
 \\(\dot{\rho} ~= Ac_3\sqrt{t}\\)
 
@@ -67,7 +67,7 @@ Time affects \\(\rho\\) 1.5 magnitudes more than σ.
 
 ### Theory 5
 
-Late game we can treat \\(c_{2}\\) gains as instantaneous, so q is treated as a constant.
+Late game we can treat \\(c_{2}\\) gains as instantaneous, so $q$ is treated as a constant.
 
 \\(\dot{\rho} ~= A \\) only
 
@@ -81,7 +81,7 @@ Late game \\(c_5\\) term dominates.
 
 \\(\rho ~= Ac_5qr^2 \\) after integrating
 
-\\(\dot{r}, \dot{q} ~= A;  r, q ~= At\\)
+\\(\dot{r}, \dot{q} ~= A;  r, $q$ ~= At\\)
 
 \\(\rho ~= KSt^3\\)
 
@@ -115,11 +115,11 @@ Sigma and time affect \\(\rho\\) equally.
 
 From the equations above, we can conclude that for theories 1, 3, 5, 7, and 8, \\(\dot{\rho}\\) and σ are linearly dependent on each other.
 
-For Theory 4, \\(\dot{\rho}\\)^1.5 is proportional to σ.
+For Theory 4, \\(\dot{\rho}^{1.5}\\) is proportional to σ.
 
-For Theory 6, \\(\dot{\rho}\\)^3 is proportional to σ.
+For Theory 6, \\(\dot{\rho}^{3}\\) is proportional to σ.
 
-For Theory 2, \\(\dot{\rho}\\)^10.2 is proportional to σ.
+For Theory 2, \\(\dot{\rho}^{10.2}\\) is proportional to σ.
 
 These conclusions imply that for Theory 2 for example, increasing σ hardly affects \\(\dot{\rho}\\).
 

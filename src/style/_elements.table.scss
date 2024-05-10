@@ -10,6 +10,7 @@ table {
 	margin: auto;
 	margin-top: 1em;
 	padding-bottom: 1em;
+
 	// CT guide tables
 	.variable_summary {
 		border: 5px solid blue;
@@ -66,6 +67,9 @@ sub {
 	}
 	.leftlastHeader, th{
 		border-bottom: $table-border;
+		.invisible {
+			border-bottom: none;
+		}
 	}
 	th, td{
 		text-align: center;
