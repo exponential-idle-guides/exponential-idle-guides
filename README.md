@@ -2,8 +2,8 @@ Guides for [Exponential Idle](https://conicgames.github.io/exponentialidle/)
 hosted at [https://exponential-idle-guides.netlify.app/](https://exponential-idle-guides.netlify.app/).
 
 The guide's content has been written by [Snaeky](https://github.com/Snaeks) and [LE⭐Baldy](https://github.com/LEBaldy) with
-contributions from the Exponential Idle community and the rest of the [Exponential Idle Guides Team](https://github.com/orgs/exponential-idle-guides/people). The website
-was created by [TickleThePanda](https://ticklethepanda.dev).
+contributions from the Exponential Idle community and the rest of the [Exponential Idle Guides Team](https://github.com/orgs/exponential-idle-guides/people).
+The website was created by [TickleThePanda](https://ticklethepanda.dev).
 
 The site is built using [11ty](https://www.11ty.dev) and hosted on
 [Netlify](https://www.netlify.com/).
@@ -48,6 +48,8 @@ Each guide file has a few different elements:
 - Front matter data which describes some things about the page. This is
   written in yaml format.
 
+Example is below, but it can vary depending on guide type.
+
 ```text
 ---
 title: <title>
@@ -59,13 +61,18 @@ order: <relative order>
   
 - [Markdown](https://daringfireball.net/projects/markdown/) content,
   written below the second `---`
-- Mathematical formula using [MathJax tex](https://docs.mathjax.org/en/v2.7-latest/tex.html):
-  - Inline using `\\(` to open and `\\)` to close
-  - On its own lines using `\\[` and `\\]`
+- Mathematical formula using [MathJax tex](https://docs.mathjax.org/en/latest/index.html) using :
+  - Inline using `$` to open and to close. Can also use `\\(` to open and `\\)` to close.
+  - On its own lines using `$$` to open and to close. Can also use `\\[` to open and `\\]` to close.
 
 If you want to create a new guide, add a new `.md` file in the
 `src/view/guides` directory with the header content as above, replacing
 `<>` as appropriate. The content is written below the second `---`.
+There is also `src/view/guide-extensions` and `src/view/rankings`
+directories for guide extensions and rankings respectively.
+
+Please follow the format within `---` for each respectively type of guide
+(model off other `.md` in same directory).
 
 ### License
 
