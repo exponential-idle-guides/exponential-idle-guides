@@ -896,31 +896,31 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>c_1 is funny mod 100 <!-- for the pain --></td>
+         <td>c_1 is 150x over 100 levels for mod 100 <!-- for the pain --></td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
-         <td>easy doubling</td>
+         <td>Simple Doubling <!-- i cant fucking spell amn--></td>
       </tr>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>easy mod10 $\dot{q}$ change</td>
+         <td>Roughly is a 10x over 10 lvls mod10 for $\dot{q}$ change (don't ask)</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>is funny A equation things and a doubling doubling</td>
+         <td>Quaduples qdot except for the first few levels</td>
       </tr>
             <tr>
          <th>r<sub><sub><small>1</small></sub></sub></th>
-         <td>is easy mod10 variable</td>
+         <td>is roughtly 10-20% every level to rdot. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
       </tr>
       <tr>
          <th>n</th>
-         <td>is big number go big</td>
+         <td>2^k=n is very nice, but n is very hard to describe</td>
       </tr>
       <tr>
          <th>s</th>
-         <td>funny exponents go funnier after e910</td>
+         <td>s is an additive to an exponent, whose value changes occationally.</td>
       </tr>
    </tbody>
 </table>
