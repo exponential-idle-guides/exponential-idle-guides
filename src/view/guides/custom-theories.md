@@ -1022,15 +1022,4 @@ Milestone swap saves a LOT of time.
    </tbody>
 </table>
 
-<style>
-
-h4 {
-   font-size: 1.2rem;
-}
-h3 {
-   font-size: 1.5rem;
-}
-</style>
 FP Guide written by Snaeky and Hotab
-=======
-</style>
