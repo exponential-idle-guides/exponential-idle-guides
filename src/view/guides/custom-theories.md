@@ -832,4 +832,205 @@ h4 {
 h3 {
    font-size: 1.5rem;
 }
+
+</style>
+
+### Fractal Patterns (FP)
+
+#### FP Overview
+
+ This custom theory was released at the same time as Fractional Integration. FP is A theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence (Tₙ), Ulam-Warburton cellular automaton (Uₙ), Sierpiński triangle (Sₙ). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
+
+#### FP Equation Description
+
+##### Main Equations
+
+$$\begin{eqnarray}
+\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\
+\to \dot{\rho} = c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
+\end{eqnarray}$$
+
+$$\dot{q} = q_1AU_n^{7}/1000 → \dot{q} = q_1AU_n^{7+s}/1000$$
+
+$$\begin{eqnarray}
+\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
+\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\
+\to \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
+\end{eqnarray}$$
+
+$$A=(2-U_{q_2}/T_{q_2})^{-1}$$
+
+
+##### Toothpick Sequence
+$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
+$$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
+
+##### Ulam-Warburton Cellular Automaton
+$$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
+$$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
+$$\\U_n = \sum_{i=0}^n u_i$$
+
+##### Sierpiński Triangle
+$$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
+
+
+
+
+
+#### FP Variable Description
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of FP.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>tdot</th>
+         <td>This is tdot</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>c_1 is 150x over 100 levels for mod 100 <!-- for the pain --></td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Simple Doubling <!-- i cant fucking spell amn--></td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>Roughly is a 10x over 10 lvls mod10 for $\dot{q}$ change (don't ask)</td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Quaduples qdot except for the first few levels</td>
+      </tr>
+            <tr>
+         <th>r<sub><sub><small>1</small></sub></sub></th>
+         <td>is roughtly 10-20% every level to rdot. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>2^k=n is very nice, but n is very hard to describe</td>
+      </tr>
+      <tr>
+         <th>s</th>
+         <td>s is an additive to an exponent, whose value changes occationally.</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+<br>
+
+#### FP strategy
+
+##### Idle
+
+For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 didgets in the level are 50 or more, then but them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
+
+Once you have all milestones, autobuy all!
+
+##### Active
+
+The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables is very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
+
+###### C1 and C2 Buying
+
+BUYING c1 EFFICIENTLY IS THE LARGEST BOOST TO RATES YOU CAN DO (outside of MS).
+
+The only known ratio currently is c1 to c2 and, specifically, it is c1 price < 3/(lvl%100 + 2) * c2 price. But, for a more digestible strategy, you would want to:
+When c1 mod 100 is < 92, buy c1 if c1 is (c1 mod 100) times cheaper than c2.
+When c1 mod 100 is >= 92, wait until the sum to buy up to c1 mod 100 = 1 is cheaper than c2. Buy c1 upgrades as they become available.
+
+More human way to do the second part is this: when c1 mod 100 == 91, switch to buying x10, see the cumulative price to get c1 mod 100 = 1, and if that is below c2 - it is time to buy c1 up to mod 100 = 1 using autobuy.
+
+Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human
+
+###### q1 and q2 Buying
+
+q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to qdot.
+q2 always quadruples the qdot (except the first few purchases)
+
+This plays roughly like doubling chase, but in this case you have to adjust ratios slightly - for example, if q1 mod 10 is 0, you want to wait until q1 upgrade price is twice as cheap as q2, and so on.
+
+###### Other variables and what to do about them.
+
+s - always buy on sight.
+n - buy after s.
+r1 - check how much percentage increase it will give to rdot, and then buy like normal doubling chase
+
+Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
+
+##### FP Milestone Swapping Explanation
+
+FP has a milestone swap that involves 1 milestone. This is the milestone that adds s as an exponent (e700 rho). The swap arises from the idea that initially, Tn power drops from 7 to 5 + s in the rho equation, and s is less than 2. Because of this, it makes sense to swap this milestone in for q growth, and swap it out for rho growth.
+
+The swap is really hard to describe in terms of how long to keep it in and out but what can be said qualitatively:
+- At first, you follow very fast swaps to recover rho, and swaps gradually become slower and slower.
+- As s grows, it makes sense to keep the milestone swapped in longer.
+
+Milestone swap ends when s becomes > 2, and dies out when you can recover to that point very fast. Past ~e950 rho, recovery takes ~1-3 minutes of idle time.
+
+Milestone swap saves a LOT of time.
+
+#### FP milestone route
+
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>2/2</td>
+         <td class="arrow">→</td>
+         <td>2/2/3</td></td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1/1</td>
+         <td class="arrow">→</td>
+         <td>2/2/3/1/1/1</td></td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1 x2</td>
+         <td class="arrow">→</td>
+         <td>2 x2</td>
+         <td class="arrow">→</td>
+         <td>3 x3</td>
+         <td class="arrow">→</td>
+         <td>4</td>
+         <td class="arrow">→</td>
+         <td>5</td>
+         <td class="arrow">→</td>
+         <td>6</td>
+      </tr>
+   </tbody>
+</table>
+
+<style>
+
+h4 {
+   font-size: 1.2rem;
+}
+h3 {
+   font-size: 1.5rem;
+}
+</style>
+FP Guide written by Snaeky and Hotab
+=======
 </style>
