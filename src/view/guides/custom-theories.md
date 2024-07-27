@@ -281,7 +281,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 \\(e^{i*\theta} = cos{\theta} + isin{\theta}\\), where 'i' is the complex number.
 
-EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau\\) conversion for this theory is uniquely at \\(\rho^{0.4}\\) rather than the usual \\(\rho^{0.1}\\) meaning that less \\(\rho\\) is needed to get an equivalent amount of $\tau$. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau\\) and has the largest instantaneous jump in \\(\tau\\) out of all custom theories.
+EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the \\(\rho\\) to \\(\tau\\) conversion for this theory is uniquely at \\(\rho^{1.6}\\) rather than the usual \\(\rho^{0.4}\\) meaning that less \\(\rho\\) is needed to get an equivalent amount of $\tau$. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 \\(\tau\\) and has the largest instantaneous jump in \\(\tau\\) out of all custom theories.
 
 #### EF Equation Description
 
@@ -905,7 +905,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Quaduples qdot except for the first few levels</td>
+         <td>Quadruples qdot except for the first few levels</td>
       </tr>
             <tr>
          <th>r<sub><sub><small>1</small></sub></sub></th>
