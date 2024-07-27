@@ -594,7 +594,7 @@ $$\dot{q}=q_1^{1.03}q_2$$
 <br>
 <br>
 
-##### Lambda Equations
+##### $\lambda$ Equations
 
 <table class="T2">
 <caption></caption>
@@ -623,15 +623,11 @@ $$\dot{q}=q_1^{1.03}q_2$$
 
 <br><br>
 
- The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades
- are purchased. Initially, \\(\rho\\) is fairly simple to calculate as rdot is just 1/2, dott is just the t variable, and the rootpi radical is just
- dotq/pi is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the dotrho equation, the rootpi radical becomes int from 0 to q/pi of g(x) which
- essentially raises q to the highest power of g(x) + 1. The variables m and n are simple multipliers that do not change over time without
- purchasing them with rho.
+ The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated by raising $q$ to the highest power of \\(g(x)\\) by 1 and apon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
 
 <br>
 
-The second equation is for dotr, which seems simple at first, but gets more difficult to understand once we get to the factional integral. The notation in game is a rarely used notation, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral is approaching aproaching 1, which makes the fractional integral be closer, yet still smaller than, the full integral. By subracting the two, then dividing 1 be that number, we get a very large number.
+The second equation is for $\dot{r}$, which seems simple at first, but gets more difficult to understand once we get to the fractional integral. The notation in game is rarely used, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral approaches 1, which makes the fractional integral get closer to, yet still smaller than, the full integral. By subracting the two, then dividing 1 by the difference, we get a very large number.
 
 #### FI Variable Description
 Approximate variable strengths on their respective vardots with all milestones are as follows:
@@ -645,23 +641,23 @@ Approximate variable strengths on their respective vardots with all milestones a
    <tbody>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
-         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to \\(\dot{q}\\)</td>
+         <td>Grows by 50x every 23 levels. Mod23 levels are a 2.6x to <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.041ex" height="2.174ex" role="img" focusable="false" viewBox="0 -767 460 961" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(316.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>q</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container></td>
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubles \\(\dot{q}\\) dot per level</td>
+         <td>Doubles <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.041ex" height="2.174ex" role="img" focusable="false" viewBox="0 -767 460 961" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(316.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>q</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> per level</td>
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadrouple $\dotr$ depending on milestones</td>
+         <td>Will double, triple, or quadrouple <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> depending on milestones</td>
       </tr>
       <tr>
          <th>m</th>
-         <td>Will instantly increase \\(\dot{\rho}\\) by 1.5x</td>
+         <td>Will instantly increase <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.17ex" height="2.224ex" role="img" focusable="false" viewBox="0 -767 517 983" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(341.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>ρ</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> by 1.5x</td>
       </tr>
       <tr>
          <th>n</th>
-         <td>Will instantly increase \\(\dot{\rho}\\) by x every 11 levels</td>
+         <td>Will instantly increase <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.489ex;" xmlns="http://www.w3.org/2000/svg" width="1.17ex" height="2.224ex" role="img" focusable="false" viewBox="0 -767 517 983" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D70C" d="M58 -216Q25 -216 23 -186Q23 -176 73 26T127 234Q143 289 182 341Q252 427 341 441Q343 441 349 441T359 442Q432 442 471 394T510 276Q510 219 486 165T425 74T345 13T266 -10H255H248Q197 -10 165 35L160 41L133 -71Q108 -168 104 -181T92 -202Q76 -216 58 -216ZM424 322Q424 359 407 382T357 405Q322 405 287 376T231 300Q217 269 193 170L176 102Q193 26 260 26Q298 26 334 62Q367 92 389 158T418 266T424 322Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(341.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>ρ</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> by 3x every 11 levels</td>
       </tr>
    </tbody>
 </table>
@@ -677,17 +673,17 @@ For idle, we simply autobuy all. The idle strategy doesn't change much other tha
 
 ##### Active
 
-The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing (wrong link) [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
+The active strategies are a bit more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [FId](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FId), which is just autobuy all except \\(q_1\\) and \\(n\\), where you buy them when they are less than 10% cost of minimum(\\(q_2\\), \\(K\\), and \\(m\\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1\\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dot{q}$ from purchasing \\(q_1\\). Please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(q_1\\), to \\(m\\)/\\(n\\) milestones whenever we gain 3x to \\(q\\) after purchasing \\(q_2\\), or some gain adjusted for $\dot{q}$ from purchasing \\(q_1\\). Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FI) section of the guide for how to perform milestone swapping.
 
 ##### FI Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1\\) exponent milestones, which increase \\(\dotq\\).
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1\\) exponent milestones, which increases $\dot{q}$.
 
 The reason milestone swapping works is because the benefits of using \\(q_1\\) related milestones (having high \\(q\\)) remain when you switch to \\(m\\) and \\(n\\) milestones. If we only use \\(q_1\\) exponent, then we have really high \\(q\\), however, we dont have the benefits to $\dot\rho$ that \\(m\\) and \\(n\\) provide. If we only use \\(m\\) and \\(n\\) milestones, then we have low \\(q\\), but have normal $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through the \\(q_1\\) milestone, then take advantage of the \\(m\\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
-For a more detailed explanation on how to actually do the strategy, please see the (wrong link) [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#FI) section of the guide.
 
 #### FI Milestone Routing Explaination
 
@@ -697,13 +693,13 @@ In FI, you can unlock milestones in 2 ways:
 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
-Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the g(x) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the g(x) milestone. moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable ot do so.
+Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable to do so.
 
 FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
 
-Below is the milestone route for FI, where the milestones that are color coded are where you will buy a perma-upgrade milestone and move a milestone into that upgrade.
-
 #### FI Milestone Route
+
+###### <span style="color: var(--palette-stroke-warning);">Colored milestones</span> are perma-upgrade milestones that move into that upgrade.
 
 <table class="milestone_routing">
    <tbody>
@@ -836,6 +832,7 @@ h4 {
 h3 {
    font-size: 1.5rem;
 }
+
 </style>
 
 ### Fractal Patterns (FP)
@@ -1035,3 +1032,5 @@ h3 {
 }
 </style>
 FP Guide written by Snaeky and Hotab
+=======
+</style>

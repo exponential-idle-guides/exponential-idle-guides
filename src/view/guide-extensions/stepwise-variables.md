@@ -6,32 +6,32 @@ contributors: "the Amazing Community"
 order: 0
 tags: T9+
 ---
-##  Introduction to stepwise variables
 
-Stepwise variables are variables that don't increase by the same percentage with each level. For some variables, such as q2 in T1, doubles its value each time it is bought. However, for some other variables, such as q1 in T1, buying a level will not always increase its value by the same amount. Sometimes its value increases by 10%, sometimes by 5.5%. This guide will explain these stepwise variables, how to determine the percentage increase from buying these variables, and how to use these information to optimise strategies. 
+## Introduction to stepwise variables
+
+Stepwise variables are variables that don't increase by the same percentage with each level. For some variables, such as q2 in T1, doubles its value each time it is bought. However, for some other variables, such as q1 in T1, buying a level will not always increase its value by the same amount. Sometimes its value increases by 10%, sometimes by 5.5%. This guide will explain these stepwise variables, how to determine the percentage increase from buying these variables, and how to use these information to optimise strategies.
 
 ## Stepwise variables in original theories
 
 All stepwise variables in original theories are based on modulus 10 (mod10). The general formula is:
 
-\\((10 + x mod 10)^{\floor(\frac{x}{10})} - 10 \\)
+$$(10 + x mod 10)^{\floor{\frac{x}{10}}} - 10$$
 
-For original theories, all variables written in scientific notation are stepwise variables. 
-
+For original theories, all variables written in scientific notation are stepwise variables.
 
 ## A controversial theory
 
-After reaching ee20k \\(F(t)\\) and completing Theory 9, you will unlock custom theories. Each custom theory gives up to 150 tau. It usually takes more than 3 months to reach this point. It takes approximately 1 month of active play for each custom theory to reach 100 tau. Therefore it is not feasible for us to reach e150 tau on all custom theories.
+After reaching ee20k \\(F(t)\\) and completing Theory 9, you will unlock custom theories. Each custom theory gives up to 150 $\tau$. It usually takes more than 3 months to reach this point. It takes approximately 1 month of active play for each custom theory to reach 100 $\tau$. Therefore it is not feasible for us to reach e150 $\tau$ on all custom theories.
 
-After theory 9 completion, you might notice that the tau/hour of a lot of theories are very quick. In fact, because of 3R9, this tau/hour is one of the highest in the whole game. Because of this, it would be helpful to have something to reliably utilise this tau/hour peaks.
+After Theory 9 completion, you might notice that the $\tau$/hour of a lot of theories are very quick. In fact, because of 3R9, this $\tau$/hour is one of the highest in the whole game. Because of this, it would be helpful to have something to reliably utilise this $\tau$/hour peaks.
 
-There exists a custom theory that can automatically buy variables according to pre-programmed rules. It can also automatically publish the theory at close to optimal points. Furthermore, it can switch between different theories depending on the extrapolated tau/hour of each one. This custom theory is quite controversial amongst top players, however it is valid to use. The custom theory, made by rus, is called Theory Automator (TA) and it can be downloaded [here](https://raw.githubusercontent.com/skyllic/Custom-Theories/main/Theory%20Automator.js).
+There exists a custom theory that can automatically buy variables according to pre-programmed rules. It can also automatically publish the theory at close to optimal points. Furthermore, it can switch between different theories depending on the extrapolated $\tau$/hour of each one. This custom theory is quite controversial amongst top players, however it is valid to use. The custom theory, made by rus, is called Theory Automator (TA) and it can be downloaded [here](https://raw.githubusercontent.com/skyllic/Custom-Theories/main/Theory%20Automator.js).
 
 An alternative overpush version of the same theory can be downloaded [here](https://raw.githubusercontent.com/Gen1Code/TA-Overpush/main/TA-Overpush.js).
 
 ## 2 TA versions? Which one should I choose?
 
-The overpush version is for LONG term maximisation of \\(f(t)\\) and tau. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/guide-extensions/distribution-overpushing).
+The overpush version is for LONG term maximisation of \\(f(t)\\) and $\tau$. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/guide-extensions/distribution-overpushing).
 
 ## How useful is TA for each theory?
 
