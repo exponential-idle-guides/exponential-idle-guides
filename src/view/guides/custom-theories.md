@@ -842,7 +842,7 @@ h3 {
 
 #### FP Overview
 
- This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the $\dot{q}$ and $\dot\rho$ improve, increasing $\tau$. An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Fractional Integration. FP is A theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence (Tₙ), Ulam-Warburton cellular automaton (Uₙ), Sierpiński triangle (Sₙ). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
 
 #### FP Equation Description
 
@@ -877,29 +877,14 @@ $$\\U_n = \sum_{i=0}^n u_i$$
 $$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
 
 
-<br><br>
 
- The first line is self explanatory. The exponents on \\(q_1\\) are from milestones. '\\(q\\)' will increase during the publication.
-<br>
-
-For the second line, both the variable \\(c_2\\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m\\)/ \\(D_m\\) to \\(\sqrt{2}\\). As \\(N_m\\)/ \\(D_m\\) get closer to \\(\sqrt{2}\\), the entire right section gets larger and larger (because of the -1 power).
-<br>
-
-The third and fourth lines are recurrence relations on \\(N_m\\) and \\(D_m\\). This means that the current value of \\(N_m\\) and \\(D_m\\) depend on their previous values. We start with \\(N_0\\) = 1, \\(N_1\\) = 3. The equation will then read as:<br>
-\\(N_2\\) = 2\\(N_1\\) + \\(N_0\\) -> \\(N_2\\) = 2 x 3 + 1 = 7.
-Then \\(N_3\\) = 2\\(N_2\\) + \\(N_1\\) -> 2 x 7 + 3 = 17.
-Similar logic is applied to \\(D_m\\) equations.
-
-This occurs until we reach \\(N_m\\) and \\(D_m\\) reach whatever 'm' values we have. This is shown in the next equation:
-
-The fourth equation relates 'm' as described above. We can see that as we buy \\(n\\) and \\(c_2\\), our \\(m\\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m\\), \\(D_m\\) will increase. From how \\(n\\) and \\(c_2\\) values are calculated, buying 1 level of \\(n\\) or \\(c_2\\) will increase \\(m\\) by 1.
 
 
 #### FP Variable Description
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
-<caption>Brief summary of variable strengths of CSR2.</caption>
+<caption>Brief summary of variable strengths of FP.</caption>
    <thead><tr>
    <th class="invisible"></th>
    <th colspan="2" style="text-align:center">Brief Description</th>
@@ -911,7 +896,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>c_1 is funny mod 100</td>
+         <td>c_1 is funny mod 100 <!-- for the pain --></td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
@@ -923,7 +908,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>is funny A equation things and a doubling</td>
+         <td>is funny A equation things and a doubling doubling</td>
       </tr>
             <tr>
          <th>r<sub><sub><small>1</small></sub></sub></th>
@@ -947,23 +932,52 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Idle
 
-For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 didgets in the level are 50 or more, then but them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
 
 Once you have all milestones, autobuy all!
 
 ##### Active
 
-The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1\\) and \\(q_1\\), where you buy them when they are less than 10% cost of minimum(\\(c_2\\), \\(q_2\\), \\(n\\)).
+The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables is very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+###### C1 and C2 Buying
+
+BUYING c1 EFFICIENTLY IS THE LARGEST BOOST TO RATES YOU CAN DO (outside of MS).
+
+The only known ratio currently is c1 to c2 and, specifically, it is c1 price < 3/(lvl%100 + 2) * c2 price. But, for a more digestible strategy, you would want to:
+When c1 mod 100 is < 92, buy c1 if c1 is (c1 mod 100) times cheaper than c2.
+When c1 mod 100 is >= 92, wait until the sum to buy up to c1 mod 100 = 1 is cheaper than c2. Buy c1 upgrades as they become available.
+
+More human way to do the second part is this: when c1 mod 100 == 91, switch to buying x10, see the cumulative price to get c1 mod 100 = 1, and if that is below c2 - it is time to buy c1 up to mod 100 = 1 using autobuy.
+
+Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human
+
+###### q1 and q2 Buying
+
+q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to qdot.
+q2 always quadruples the qdot (except the first few purchases)
+
+This plays roughly like doubling chase, but in this case you have to adjust ratios slightly - for example, if q1 mod 10 is 0, you want to wait until q1 upgrade price is twice as cheap as q2, and so on.
+
+###### Other variables and what to do about them.
+
+s - always buy on sight.
+n - buy after s.
+r1 - check how much percentage increase it will give to rdot, and then buy like normal doubling chase
+
+Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
 
 ##### FP Milestone Swapping Explanation
 
-This theory has a milestone swapping strategy before full milestones. We have \\(q_1\\) exponent milestones, which increase $\dot\rho$ straight away. We also have \\(c_2\\) related milestones, which increases the \\(q\\) variable, which increases $\dot\rho$.
+FP has a milestone swap that involves 1 milestone. This is the milestone that adds s as an exponent (e700 rho). The swap arises from the idea that initially, Tn power drops from 7 to 5 + s in the rho equation, and s is less than 2. Because of this, it makes sense to swap this milestone in for q growth, and swap it out for rho growth.
 
-The reason milestone swapping works is because the benefits of using \\(c_2\\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1\\) exponent milestones. If we only use \\(q_1\\) exponent, then we have really low \\(q\\). If we only use \\(c_2\\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2\\) related milestones, then take advantage of the \\(q_1\\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+The swap is really hard to describe in terms of how long to keep it in and out but what can be said qualitatively:
+- At first, you follow very fast swaps to recover rho, and swaps gradually become slower and slower.
+- As s grows, it makes sense to keep the milestone swapped in longer.
 
-For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+Milestone swap ends when s becomes > 2, and dies out when you can recover to that point very fast. Past ~e950 rho, recovery takes ~1-3 minutes of idle time.
+
+Milestone swap saves a LOT of time.
 
 #### FP milestone route
 
@@ -1020,3 +1034,4 @@ h3 {
    font-size: 1.5rem;
 }
 </style>
+FP Guide written by Snaeky and Hotab
