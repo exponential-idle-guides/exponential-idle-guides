@@ -905,11 +905,11 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>q<sub><sub><small>2</small></sub></sub></th>
-         <td>Quadruples qdot except for the first few levels</td>
+         <td>Quadruples <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.041ex" height="2.174ex" role="img" focusable="false" viewBox="0 -767 460 961" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45E" d="M33 157Q33 258 109 349T280 441Q340 441 372 389Q373 390 377 395T388 406T404 418Q438 442 450 442Q454 442 457 439T460 434Q460 425 391 149Q320 -135 320 -139Q320 -147 365 -148H390Q396 -156 396 -157T393 -175Q389 -188 383 -194H370Q339 -192 262 -192Q234 -192 211 -192T174 -192T157 -193Q143 -193 143 -185Q143 -182 145 -170Q149 -154 152 -151T172 -148Q220 -148 230 -141Q238 -136 258 -53T279 32Q279 33 272 29Q224 -10 172 -10Q117 -10 75 30T33 157ZM352 326Q329 405 277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q233 26 290 98L298 109L352 326Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(316.8,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>q</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> except for the first few levels</td>
       </tr>
             <tr>
          <th>r<sub><sub><small>1</small></sub></sub></th>
-         <td>is roughtly 10-20% every level to rdot. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
+         <td>is roughtly 10-20% every level to <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container>. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
       </tr>
       <tr>
          <th>n</th>
@@ -951,8 +951,8 @@ Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's ha
 
 ###### q1 and q2 Buying
 
-q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to qdot.
-q2 always quadruples the qdot (except the first few purchases)
+q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to $\dot{q}$.
+q2 always quadruples the $\dot{q}$ (except the first few purchases)
 
 This plays roughly like doubling chase, but in this case you have to adjust ratios slightly - for example, if q1 mod 10 is 0, you want to wait until q1 upgrade price is twice as cheap as q2, and so on.
 
@@ -960,7 +960,7 @@ This plays roughly like doubling chase, but in this case you have to adjust rati
 
 s - always buy on sight.
 n - buy after s.
-r1 - check how much percentage increase it will give to rdot, and then buy like normal doubling chase
+r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase
 
 Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
 
