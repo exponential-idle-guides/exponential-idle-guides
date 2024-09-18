@@ -15,16 +15,13 @@ further ahead than you are already.
 ### New autoprestige expression
 
 <blockquote id="ap_eq">
-((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b &amp;&amp;<br>
-((d(smooth(10^10^10^(phi * tau), 1)) &gt; 1)<br>
-&amp;&amp; timer(abs(d(log10(phi + 1))) < 50) &gt; 15))<br>
-&amp;&amp; phi &gt; 1) ||<br>
-((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
-&gt; 3 * tr) &amp;&amp; db &gt; b &amp;&amp;<br>
-((phi &gt;= 1 &amp;&amp; phi &lt;= 1) ||<br>
-((0.8 * log10(log10(lf)) &gt; log10(log10(gf))) ||<br>
-(0.8 * log10(log10(gf)) &gt; log10(log10(sf))))))
+((d(smooth(10^10^10^(phi * tau), 1)) &gt; 1<br>
+&amp;&amp; timer(abs(d(log10(phi + 1))) &lt; 50) &gt; 15<br>
+&amp;&amp; phi &gt; 1) || phi &lt;= 1 ||<br>
+(0.8 * log10(log10(lf)) &gt; log10(log10(gf)) ||<br>
+0.8 * log10(log10(gf)) &gt; log10(log10(sf))))
 </blockquote>
 
 <button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
@@ -35,7 +32,7 @@ This is the new expression for prestige. It looks intimidating, but it will work
 you never have to turn it off (you would have to if you didn't use this one later on). Here is
 an explanation for all parts except the normal expression which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
 
-<blockquote style="font-family:monospace;">((d(smooth(10^10^10^(phi * tau), 1)) > 1)</blockquote>
+<blockquote style="font-family:monospace;">((d(smooth(10^10^10^(phi * tau), 1)) > 1</blockquote>
 
 This returns true if phi and/or tau grows a very very small amount more than the max
 reached that prestige. The many "10^" is to make any tiny changes explode into very large
@@ -50,16 +47,14 @@ will then wait 15 seconds before checking if it can prestige again. This will al
 to swap R9 or students freely without needing to worry about accidentally prestiging
 for a very small amount of \\(b\\).
 
-<blockquote style="font-family:monospace;">((timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
-&gt; 3 * tr) &amp;&amp; db &gt; b && (phi >= 1 && phi <= 1)</blockquote>
+<blockquote style="font-family:monospace;">|| phi &lt;= 1 ||</blockquote>
 
 If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
- "=" in the expressions, so we had to work around it by using both ">=" (greater than
- or equal to) and "<=" (less than or equal to). This means that, even if you don't
- have any phi upgrades, it will allow you to prestige like normal and not require you
- to swap out of theories (or R9 until the end of a graduation).
+"=" in the expressions, so we had to work around it by using <= (less than). Phi can never be less than 1 so if \\(phi <= 1\\), \\(phi = 1\\).
+This means that, even if you don't have any phi upgrades, it will allow you to
+prestige like normal and not require you to swap out of theories (or R9 until the end of a graduation).
 
-<blockquote style="font-family:monospace;">((0.8*log10(log10(lf))>log10(log10(gf)))||<br>(0.8*log10(log10(gf))>log10(log10(sf))))</blockquote>
+<blockquote style="font-family:monospace;">(0.8 * log10(log10(lf)) > log10(log10(gf)) ||<br>0.8 * log10(log10(gf)) > log10(log10(sf))))</blockquote>
 
 This lets the normal expression work when you supremacy or graduate up to 80% of
 \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to
