@@ -15,7 +15,7 @@ Stepwise variables are variables that don't increase by the same percentage with
 
 All stepwise variables in original theories are based on modulus 10 (mod10). The general formula is:
 
-$$(10 + x mod 10)^{\floor{\frac{x}{10}}} - 10$$
+$$(10 + x mod 10)^{\left\lfloor {\frac{x}{10}} \right\rfloor} - 10$$
 
 For original theories, all variables written in scientific notation are stepwise variables.
 

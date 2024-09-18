@@ -81,7 +81,7 @@ Late game \\(c_5\\) term dominates.
 
 \\(\rho ~= Ac_5qr^2 \\) after integrating
 
-\\(\dot{r}, \dot{q} ~= A;  r, $q$ ~= At\\)
+\\( \dot{$r$}, \dot{$q$} ~= A;  $r$, $q$ ~= At \\)
 
 \\(\rho ~= KSt^3\\)
 

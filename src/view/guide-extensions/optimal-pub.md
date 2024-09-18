@@ -105,8 +105,8 @@ Since \\(0 \le \frac{l}{m} \le 1\\) and \\(q>1\\),
 
 $$\begin{eqnarray}
 \frac{1}{q-1}mpq^k(1+\frac{l}{m}(q-1)) \\
-< \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^(k+1) \\
-< \frac{1}{q-1}mpqq^{\frac{mk+l}{m}}$$ $$= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
+< \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^{(k+1)} \\
+< \frac{1}{q-1}mpqq^{\frac{mk+l}{m}} = \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
 \end{eqnarray}$$
 
 Therefore,
@@ -120,7 +120,7 @@ $$\begin{eqnarray}
 > \frac{1}{q-1}p((m+l(q-1))q^k-q^{k-1}m)
 \end{eqnarray}$$
 
-$$= \frac{1}{q-1}p(mq^k-mq^{k-1}+l(q-1)q^k)$$ $$= \frac{1}{q-1}p(m(q-1)q^{k-1}+l(q-1)q^k)$$
+$$= \frac{1}{q-1}p(mq^k-mq^{k-1}+l(q-1)q^k) = \frac{1}{q-1}p(m(q-1)q^{k-1}+l(q-1)q^k)$$
 
 $$= mpq^{k-1}(1+\frac{l}{m}q)\qquad (1-7)$$
 
@@ -153,8 +153,8 @@ We can see the upper and lower bound as two virtual variables, let's call them \
 $$v_1 \le v \le v_2\qquad (1-9)$$
 Since \\(v_1\\) and \\(v_2\\) are both "Direct Multiplication" variables, we can apply Lemma 1.2 on \\(v_1\\) and \\(v_2\\) and get:
 $$v_1 \in \Theta(\rho^r)$$
-$$v_2 \in \Theta(\rho^r)\qquad$$ \
-$$(1-10)$$
+$$v_2 \in \Theta(\rho^r)\qquad \
+(1-10)$$
 In which \\(r \in \mathbb{R}^+\\).
 From (1-9), (1-10) and the definition mentioned in , we have:
 $$v(\rho) \in \Theta(\rho^r)$$
