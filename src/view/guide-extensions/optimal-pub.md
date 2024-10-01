@@ -163,7 +163,7 @@ From Lemma 1.2 and Lemma 1.4 we can obtain an important conclusion:
 
 ### **Lemma 1.5**
 
-*For any purchasable variable \\(v\\), there exists \\(r \in \mathbb{R}^+\\) so that the value of \\(v\\) and the peak value of its currency \\(\rho\\) meet the expression below:
+For any purchasable variable \\(v\\), there exists \\(r \in \mathbb{R}^+\\) so that the value of \\(v\\) and the peak value of its currency \\(\rho\\) meet the expression below:
 
 $$v(\rho) \in {\Theta(\rho^r)}$$
 
@@ -219,7 +219,7 @@ If we manage to get everything sorted, we will get a powerful conclusion:
 
 ### **Lemma 2.2**
 
-*For any theory system in which Lemma 2.1 can apply fully on or can be analyzed asymptotically by other means, there exists \\((x,y) \in \mathbb{R}^+\\) so that:
+For any theory system in which Lemma 2.1 can apply fully on or can be analyzed asymptotically by other means, there exists \\((x,y) \in \mathbb{R}^+\\) so that:
 $$\frac{d\rho}{dt} \in \Theta(\rho^xt^y)$$
 
 ## Finally, the Model
@@ -235,7 +235,7 @@ In which \\(K,x,y,z \in \mathbb{R}^+\\) are constants.
 
 ### **Theorem 1**
 
-*For any theory system \\(T\\) that fits the expression below asymptotically
+For any theory system \\(T\\) that fits the expression below asymptotically
 
 $$\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_{pub}$$
 
