@@ -163,3 +163,7 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - EdgeOfDreams (EdgeOfDreams)
 - AbsoPerf (?)
 - NeirinD (Neirin)
+
+### [January](/ranking-news/2024-sep)
+
+- PythonKoala (Python's Koala)
