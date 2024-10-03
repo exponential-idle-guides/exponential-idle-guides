@@ -14,9 +14,9 @@ const globals = {
   root: document.documentElement,
   query_root: document.querySelector(':root'),
   qstyle: document.querySelector(':root').style,
-  close_btn_list: ['GuideClose','HeaderClose','ResourceClose','ExtensionClose'],
+  close_btn_list: ['GuideClose', 'HeaderClose', 'ResourceClose', 'ExtensionClose'],
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
-  sidebar_list: ['GuideSidebar','HeaderSidebar','ResourceSidebar','ExtensionSidebar'],
+  sidebar_list: ['GuideSidebar', 'HeaderSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
   curr_sidebar: 'none',
   Mobile: isMobileUser(),
   Navbar: false
@@ -51,6 +51,10 @@ window.onload = ()=>{
     globals.close_btn_list.push('RankingClose');
     globals.sidebar_btn_list.push('Rankingbtn');
     globals.sidebar_list.push('RankingSidebar');
+  } else if(window.location.href.includes('/season-news')){
+    globals.close_btn_list.push('SeasonClose');
+    globals.sidebar_btn_list.push('Seasonbtn');
+    globals.sidebar_list.push('SeasonSidebar');
   }
 }
 

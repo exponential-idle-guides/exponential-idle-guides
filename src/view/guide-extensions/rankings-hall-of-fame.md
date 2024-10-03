@@ -5,7 +5,7 @@ author: "LE★Baldy"
 contributors: "AfuroZamurai for the F(t) Rankings and the Amazing Community"
 draft: false
 tags: rankings
-order: 1
+order: 2
 glossary: true
 ---
 
