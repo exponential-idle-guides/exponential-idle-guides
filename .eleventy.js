@@ -126,6 +126,12 @@ module.exports = config => {
     });
   });
 
+  config.addCollection("seasons", function(collection) {
+    return collection.getFilteredByTag("season-news").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
+
   config.addCollection("postsByYear", (collection) => {
     return _.chain(collection.getAllSorted())
       .groupBy((post) => post.date.getFullYear())
@@ -134,7 +140,7 @@ module.exports = config => {
       .value();
   });
 
-  const tags = ['T9+', 'other', 'rankings'];
+  const tags = ['T9+', 'other', 'rankings', 'seasons'];
   tags.map((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {

@@ -1,7 +1,7 @@
 Guides for [Exponential Idle](https://conicgames.github.io/exponentialidle/)
 hosted at [https://exponential-idle-guides.netlify.app/](https://exponential-idle-guides.netlify.app/).
 
-The guide's content has been written by [Snaeky](https://github.com/Snaeks) and [LE⭐Baldy](https://github.com/LEBaldy) with
+The guide's content has been written by [Snaeky](https://github.com/Snaeks) and [LE★Baldy](https://github.com/LEBaldy) with
 contributions from the Exponential Idle community and the rest of the [Exponential Idle Guides Team](https://github.com/orgs/exponential-idle-guides/people).
 The website was created by [TickleThePanda](https://ticklethepanda.dev).
 
@@ -17,7 +17,7 @@ Pre-requisites to build and develop this site:
 - Install [Node](https://nodejs.org/en/)
 - Add Node to your PATH
 
-### Building 
+### Building
 
 To build to website, run:
 
@@ -68,8 +68,8 @@ order: <relative order>
 If you want to create a new guide, add a new `.md` file in the
 `src/view/guides` directory with the header content as above, replacing
 `<>` as appropriate. The content is written below the second `---`.
-There is also `src/view/guide-extensions` and `src/view/rankings`
-directories for guide extensions and rankings respectively.
+There is also `src/view/guide-extensions`, `src/view/ranking-news`, and `src/view/season-news`
+directories for guide extensions, rankings, and seasons respectively.
 
 Please follow the format within `---` for each respectively type of guide
 (model off other `.md` in same directory).
