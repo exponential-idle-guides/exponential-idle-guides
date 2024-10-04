@@ -6,6 +6,7 @@ contributors: "the Amazing Community"
 draft: false
 tags: rankings
 order: 1
+eleventyExcludeFromCollections: true
 ---
 
 Here is the collection of all the prior in-game rankings for each season on all platforms. They also include more info and news for each section.
