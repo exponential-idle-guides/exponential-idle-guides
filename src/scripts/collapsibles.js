@@ -215,12 +215,12 @@ for (let i = 0; i < coll.length; i++) {
       content.style.display = "none";
       $(this).removeClass('collapsible-open');
       $(this).addClass('collapsible-closed');
-      $(this).text($(this).text().replace(new RegExp(open_char), closed_char));
+      $(this).html($(this).html().replace(new RegExp(open_char), closed_char));
     } else {
       content.style.display = "block";
       $(this).removeClass('collapsible-closed');
       $(this).addClass('collapsible-open');
-      $(this).text($(this).text().replace(new RegExp(closed_char), open_char));
+      $(this).html($(this).html().replace(new RegExp(closed_char), open_char));
     }
   });
 }
