@@ -1,4 +1,3 @@
-import { globals } from './init.js';
 const skiplist = ['#AP-visual', '#smooth-formula'];
 const closed_char = '\u25B6';
 const open_char = '\u25BC';
@@ -41,7 +40,7 @@ if ($('h2').length > 1) {
     const h2_text = strRepl(h2.text());
     h2.text(closed_char + ' ' + h2.text())
     h2.attr('id', h2_text);
-    h2.addClass('collapsible');
+    h2.addClass('collapsible collapsible-closed');
 
     $('h3').each(function() {
       const h3 = $(this);
@@ -54,7 +53,7 @@ if ($('h2').length > 1) {
         const h3_text = strRepl((h2_text + h3.text()));
         h3.text(closed_char + ' ' + h3.text())
         h3.attr('id', h3_text);
-        h3.addClass('collapsible');
+        h3.addClass('collapsible collapsible-closed');
 
         $('h4').each(function() {
           const h4 = $(this);
@@ -69,7 +68,7 @@ if ($('h2').length > 1) {
             
             h4.attr('id', strRepl((h3_text + h4.text())));
             h4.text(closed_char + ' ' + h4.text())
-            h4.addClass('collapsible');
+            h4.addClass('collapsible collapsible-closed');
           } else {return false;}
         });
       } else {return false;}
@@ -81,7 +80,7 @@ if ($('h2').length > 1) {
     const h3_text = strRepl(h3.text());
     h3.text(closed_char + ' ' + h3.text())
     h3.attr('id', h3_text);
-    h3.addClass('collapsible');
+    h3.addClass('collapsible collapsible-closed');
     $('h4').each(function() {
       const h4 = $(this);
       if (h4.isBefore($(h3).nextEle('h3'))
@@ -93,14 +92,15 @@ if ($('h2').length > 1) {
         
         h4.attr('id', strRepl((h3_text + h4.text())));
         h4.text(closed_char + ' ' + h4.text())
-        h4.addClass('collapsible');
+        h4.addClass('collapsible collapsible-closed');
       } else {return false;}
     });
   });
 }
 
 let arr_collap = [];
-$('.collapsible').each(function() {
+const coll = $('.collapsible');
+coll.each(function() {
   const ele = $(this);
   let temp = [];
   $.each(skiplist, function() {
@@ -201,37 +201,25 @@ if ($('h2').length > 1) {
             .wrapAll("<div class='content'/>");
         }
         h4_inside = true;
-      } else if (h3_inside) {return false}
+      } else if (h4_inside) {return false}
     });
   });
 }
 
-const coll = $('.collapsible');
+
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     const content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
-      globals.qstyle.setProperty(
-        '--palette-fill-collapsible',
-        globals.style_var.getPropertyValue('--palette-fill-collapsible-closed')
-      );
-      globals.qstyle.setProperty(
-        '--palette-fill-collapsible-hover',
-        globals.style_var.getPropertyValue('--palette-fill-collapsible-open')
-      );
+      $(this).removeClass('collapsible-open');
+      $(this).addClass('collapsible-closed');
       $(this).text($(this).text().replace(new RegExp(open_char), closed_char));
     } else {
       content.style.display = "block";
-      globals.qstyle.setProperty(
-        '--palette-fill-collapsible',
-        globals.style_var.getPropertyValue('--palette-fill-collapsible-open')
-      );
-      globals.qstyle.setProperty(
-        '--palette-fill-collapsible-hover',
-        globals.style_var.getPropertyValue('--palette-fill-collapsible-closed')
-      );
+      $(this).removeClass('collapsible-closed');
+      $(this).addClass('collapsible-open');
       $(this).text($(this).text().replace(new RegExp(closed_char), open_char));
     }
   });

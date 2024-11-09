@@ -26,12 +26,12 @@ export function init_color_scheme(){
 
   function setColorScheme(type) {
     // If the user's preference in localStorage is dark...
-    if (type == "dark") {
+    if (type === "dark") {
       // ...let's toggle the .dark-theme class on the body
       globals.root.classList.add("dark-mode");
       globals.root.classList.remove("light-mode");
     // Otherwise, if the user's preference in localStorage is light...
-    } else if (type == "light") {
+    } else if (type === "light") {
       // ...let's toggle the .light-theme class on the body
       globals.root.classList.add("light-mode");
       globals.root.classList.remove("dark-mode");
