@@ -54,33 +54,34 @@ $("h3").each(function() { //add collapsible to every h3 and h4 with unique ids b
 });
 */
 
-$("h2").each(function() {
-  const h2 = $(this);
+$('h2').each(function(index, h2) {
+  //const h2 = $(this);
+  if(i===0){return}
   const h2_text = strRepl(h2.text());
   h2.attr('id', h2_text);
   h2.addClass('collapsible');
 
-  $("h3").each(function() {
+  $('h3').each(function() {
     const h3 = $(this);
-    if (h3.isBefore($(h2).nextEle("h2")) || $(h2).nextEle("h2").text() === "") {
+    if (h3.isBefore($(h2).nextEle('h2')) || $(h2).nextEle('h2').text() === "") {
       if (!(h3.isAfter($(h2)))
           || skipped(h3.attr('class'), h3.attr('id') !== undefined ? h3.attr('id'): "")) {
         return false
       }
 
-      const h3_text = strRepl((h3texts + h4.text()))
+      const h3_text = strRepl((h2_text + h3.text()))
       h3.attr('id', h3_text);
       h3.addClass('collapsible');
 
-      $("h4").each(function() {
+      $('h4').each(function() {
         const h4 = $(this);
-        if (h4.isBefore($(h3).nextEle("h3")) || $(h3).nextEle("h3").text() === "") {
+        if (h4.isBefore($(h3).nextEle('h3')) || $(h3).nextEle('h3').text() === "") {
           if (!(h4.isAfter($(h3)))
               || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")) {
             return false
           }
           
-          const h4text = strRepl((h3texts + h4.text()))
+          const h4_text = strRepl((h3_text + h4.text()))
           h4.attr('id', h4text);
           h4.addClass('collapsible');
         } else {return false;}
@@ -141,13 +142,14 @@ $('h3').each(function(i, e) {
 */
 
 $('h2').each(function(i, e) {
+  if(i===0){return}
   $(this)
     .nextUntil(this.tagName)
     .wrapAll('<div class="content"/>');
 
   const h2_content = $('.content').last();
   var h3_inside = false;
-  $('h3').each(function(p, q) {
+  $('h3').each(function() {
     const h3 = $(this)
     h3_id = '#' + h3.attr('id');
     if ($.contains(h2_content[0], h3[0])) {
@@ -169,7 +171,7 @@ $('h2').each(function(i, e) {
 
       const h3_content = $('.content').last();
       var h4_inside = false;
-      $('h4').each(function(p, q) {
+      $('h4').each(function() {
         const h4 = $(this)
         h4_id = '#' + h4.attr('id');
         if ($.contains(h3_content[0], h4[0])) {
