@@ -7,18 +7,22 @@
   border: none;
   text-align: left;
   outline: none;
+
+  h2 {font-size: 1.35em;}
+  h3 {font-size: 1.08em;}
+  h4 {font-size: 0.9em;}
 }
 .collapsible-closed {
   background-color: var(--palette-fill-collapsible-closed);
-}
-.collapsible-closed:hover {
-  background-color: var(--palette-fill-collapsible-open);
+  &:hover {
+    background-color: var(--palette-fill-collapsible-open);
+  }
 }
 .collapsible-open {
   background-color: var(--palette-fill-collapsible-open);
-}
-.collapsible-open:hover {
-  background-color: var(--palette-fill-collapsible-closed);
+  &:hover {
+    background-color: var(--palette-fill-collapsible-closed);
+  }
 }
 
 

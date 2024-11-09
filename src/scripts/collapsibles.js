@@ -47,7 +47,8 @@ if ($('h2').length > 1) {
       if (h3.isBefore($(h2).nextEle('h2')) 
           || $(h2).nextEle('h2').text() === ""
           || !(h3.isAfter($(h2)))
-          || skipped(h3.attr('class'), h3.attr('id') !== undefined ? h3.attr('id'): "")) {
+          || skipped(h3.attr('class'), h3.attr('id') !== undefined ? h3.attr('id'): "")
+          || h3.hasClass('collapsible')) {
         return
       }
       const h3_text = strRepl((h2_text + h3.text()));
@@ -62,8 +63,9 @@ if ($('h2').length > 1) {
             || $(h3).nextEle('h3').text() === "" 
             || $(h2).nextEle('h2').text() === ""
             || !(h4.isAfter($(h3)))
-            || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")) {
-          return
+            || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")
+            || h4.hasClass('collapsible')) {
+          return false;
         }
         h4.attr('id', strRepl((h3_text + h4.text())));
         h4.html(closed_char + ' ' + h4.html());
@@ -83,7 +85,8 @@ if ($('h2').length > 1) {
       if (h4.isBefore($(h3).nextEle('h3'))
           || $(h3).nextEle('h3').text() === ""
           || !(h4.isAfter($(h3)))
-          || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")) {
+          || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")
+          || h4.hasClass('collapsible')) {
         return false;
       }
       h4.attr('id', strRepl((h3_text + h4.text())));
