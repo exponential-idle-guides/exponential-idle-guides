@@ -160,9 +160,9 @@ if ($('h2').length > 1) {
               $(this)
                 .nextUntil(skiplist[0])
                 .wrapAll("<div class='content'/>");
-            } else if (h4_next_collap.slice(1) === h4.next().attr('id')) {
-              $(this).removeClass('collapsible');
-              h4_inside = true;
+            //} else if (h4_next_collap.slice(1) === h4.next().attr('id')) {
+            //  $(this).removeClass('collapsible');
+            //  h4_inside = true;
             } else {
               $(this)
                 .nextUntil(h4_next_collap)
@@ -193,8 +193,8 @@ if ($('h2').length > 1) {
             .nextUntil(skiplist[0])
             .wrapAll("<div class='content'/>");
           return false
-        } else if (h4_next_collap.slice(1) === h4.next().attr('id')) {
-          $(this).removeClass('collapsible');
+        //} else if (h4_next_collap.slice(1) === h4.next().attr('id')) {
+        //  $(this).removeClass('collapsible');
         } else {
           $(this)
             .nextUntil(h4_next_collap)
