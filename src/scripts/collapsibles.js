@@ -38,7 +38,7 @@ if ($('h2').length > 1) {
     console.log("i:", i);
     if(i===0){return}
     const h2_text = strRepl(h2.text());
-    h2.text(closed_char + ' ' + h2.text())
+    h2.html(closed_char + ' ' + h2.html());
     h2.attr('id', h2_text);
     h2.addClass('collapsible collapsible-closed');
 
@@ -51,7 +51,7 @@ if ($('h2').length > 1) {
         }
 
         const h3_text = strRepl((h2_text + h3.text()));
-        h3.text(closed_char + ' ' + h3.text())
+        h3.html(closed_char + ' ' + h3.html());
         h3.attr('id', h3_text);
         h3.addClass('collapsible collapsible-closed');
 
@@ -67,7 +67,7 @@ if ($('h2').length > 1) {
             }
             
             h4.attr('id', strRepl((h3_text + h4.text())));
-            h4.text(closed_char + ' ' + h4.text())
+            h4.html(closed_char + ' ' + h4.html());
             h4.addClass('collapsible collapsible-closed');
           } else {return false;}
         });
@@ -78,7 +78,7 @@ if ($('h2').length > 1) {
   $('h3').each(function() {
     const h3 = $(this);
     const h3_text = strRepl(h3.text());
-    h3.text(closed_char + ' ' + h3.text())
+    h3.html(closed_char + ' ' + h3.html());
     h3.attr('id', h3_text);
     h3.addClass('collapsible collapsible-closed');
     $('h4').each(function() {
@@ -91,7 +91,7 @@ if ($('h2').length > 1) {
         }
         
         h4.attr('id', strRepl((h3_text + h4.text())));
-        h4.text(closed_char + ' ' + h4.text())
+        h4.html(closed_char + ' ' + h4.html());
         h4.addClass('collapsible collapsible-closed');
       } else {return false;}
     });
