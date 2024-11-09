@@ -54,7 +54,7 @@ $("h3").each(function() { //add collapsible to every h3 and h4 with unique ids b
 });
 */
 
-$('h2').each(function(index, h2) {
+$('h2').each(function(i, h2) {
   //const h2 = $(this);
   if(i===0){return}
   const h2_text = strRepl(h2.text());
