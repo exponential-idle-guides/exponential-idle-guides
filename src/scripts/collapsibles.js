@@ -49,7 +49,7 @@ if ($('h2').length > 1) {
           || !(h3.isAfter($(h2)))
           || skipped(h3.attr('class'), h3.attr('id') !== undefined ? h3.attr('id'): "")
           || h3.hasClass('collapsible')) {
-        return
+        return false;
       }
       const h3_text = strRepl((h2_text + h3.text()));
       h3.html(closed_char + ' ' + h3.html());
