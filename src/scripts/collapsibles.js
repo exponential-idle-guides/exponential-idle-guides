@@ -99,14 +99,14 @@ if ($('h2').length > 1) {
   });
 }
 
-arrcollap = [];
+let arr_collap = [];
 $('.collapsible').each(function() {
   const ele = $(this);
   let temp = [];
   $.each(skiplist, function() {
     if ($(String(this)).isBefore(ele)) {
       temp.push(String(this));
-      arrcollap.push(String(this));
+      arr_collap.push(String(this));
     } else {
       return false
     }
@@ -115,7 +115,7 @@ $('.collapsible').each(function() {
     skiplist.shift()
     temp.shift()
   }
-  arrcollap.push('#' + ele.attr('id'))
+  arr_collap.push('#' + ele.attr('id'))
 })
 
 
@@ -132,8 +132,8 @@ if ($('h2').length > 1) {
       const h3 = $(this)
       h3_id = '#' + h3.attr('id');
       if ($.contains(h2_content[0], h3[0])) {
-        const h3_index = arrcollap.indexOf(h3_id)
-        const h3_next_collap = arrcollap[h3_index + 1];
+        const h3_index = arr_collap.indexOf(h3_id)
+        const h3_next_collap = arr_collap[h3_index + 1];
         if (h3_next_collap === undefined || h3_index === -1) {
           $(this)
             .nextUntil(skiplist[0])
@@ -154,8 +154,8 @@ if ($('h2').length > 1) {
           const h4 = $(this)
           h4_id = '#' + h4.attr('id');
           if ($.contains(h3_content[0], h4[0])) {
-            const h4_index = arrcollap.indexOf(h4_id)
-            const h4_next_collap = arrcollap[h4_index + 1];
+            const h4_index = arr_collap.indexOf(h4_id)
+            const h4_next_collap = arr_collap[h4_index + 1];
             if (h4_next_collap === undefined || h4_index === -1) {
               $(this)
                 .nextUntil(skiplist[0])
@@ -186,8 +186,8 @@ if ($('h2').length > 1) {
       const h4 = $(this)
       h4_id = '#' + h4.attr('id');
       if ($.contains(h3_content[0], h4[0])) {
-        const h4_index = arrcollap.indexOf(h4_id)
-        const h4_next_collap = arrcollap[h4_index + 1];
+        const h4_index = arr_collap.indexOf(h4_id)
+        const h4_next_collap = arr_collap[h4_index + 1];
         if (h4_next_collap === undefined || h4_index === -1) {
           $(this)
             .nextUntil(skiplist[0])
