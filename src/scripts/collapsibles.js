@@ -130,7 +130,7 @@ if ($('h2').length > 1) {
     let h3_inside = false;
     $('h3').each(function() {
       const h3 = $(this)
-      h3_id = '#' + h3.attr('id');
+      const h3_id = '#' + h3.attr('id');
       if ($.contains(h2_content[0], h3[0])) {
         const h3_index = arr_collap.indexOf(h3_id)
         const h3_next_collap = arr_collap[h3_index + 1];
@@ -152,7 +152,7 @@ if ($('h2').length > 1) {
         let h4_inside = false;
         $('h4').each(function() {
           const h4 = $(this)
-          h4_id = '#' + h4.attr('id');
+          const h4_id = '#' + h4.attr('id');
           if ($.contains(h3_content[0], h4[0])) {
             const h4_index = arr_collap.indexOf(h4_id)
             const h4_next_collap = arr_collap[h4_index + 1];
@@ -184,7 +184,7 @@ if ($('h2').length > 1) {
     let h4_inside = false;
     $('h4').each(function() {
       const h4 = $(this)
-      h4_id = '#' + h4.attr('id');
+      const h4_id = '#' + h4.attr('id');
       if ($.contains(h3_content[0], h4[0])) {
         const h4_index = arr_collap.indexOf(h4_id)
         const h4_next_collap = arr_collap[h4_index + 1];
