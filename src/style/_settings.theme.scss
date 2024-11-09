@@ -6,6 +6,10 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
+  --palette-fill-collapsible: #171717;
+  --palette-fill-collapsible-closed: #171717;
+  --palette-fill-collapsible-open: #111111;
+  --palette-fill-collapsible-hover: #111111;
 
   
 	--palette-fill-table-headers-light: #7c7c7c;
@@ -26,6 +30,9 @@
     --palette-stroke-hc: #333;
     --palette-stroke-warning: #b22;
     --palette-fill-shadow: rgba(34, 34, 34, 0.25)
+    --palette-fill-collapsible: #e1e1e1;
+    --palette-fill-collapsible-closed: #e1e1e1;
+    --palette-fill-collapsible-open: #c9c9c9;
   }
 }
 
@@ -37,6 +44,9 @@
   --palette-stroke-hc: #333;
   --palette-stroke-warning: #b22;
   --palette-fill-shadow: rgba(34, 34, 34, 0.25)
+  --palette-fill-collapsible: #e1e1e1;
+  --palette-fill-collapsible-closed: #e1e1e1;
+  --palette-fill-collapsible-open: #c9c9c9;
 }
 
 :root.dark-mode {
@@ -47,4 +57,7 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
+  --palette-fill-collapsible: #171717;
+  --palette-fill-collapsible-closed: #171717;
+  --palette-fill-collapsible-open: #111111;
 }

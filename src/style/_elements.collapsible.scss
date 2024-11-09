@@ -1,7 +1,7 @@
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: var(--palette-fill-sidebar);
-  color: var(--palette-stroke-sidebar-base);
+  background-color: var(--palette-fill-collapsible);
+  color: var(--palette-stroke);
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -13,7 +13,7 @@
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: var(--palette-fill-sidebar-hover);
+  background-color: var(--palette-fill-collapsible-hover);
 }
 
 /* Style the collapsible content. Note: hidden by default */
