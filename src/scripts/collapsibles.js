@@ -51,10 +51,11 @@ $("h3").each(function() { //add collapsible to every h3 and h4 with unique ids b
 });
 */
 
-
-if (('h2').length > 1) {
-  $('h2').each(function(i, h2) {
-    //const h2 = $(this);
+console.log($('h2').length);
+if ($('h2').length > 1) {
+  $('h2').each(function(i) {
+    const h2 = $(this);
+    console.log("i:", i);
     if(i===0){return}
     const h2_text = strRepl(h2.text());
     h2.attr('id', h2_text);
@@ -167,7 +168,7 @@ $('h3').each(function(i, e) {
 })
 */
 
-if (('h2').length > 1) {
+if ($('h2').length > 1) {
   $('h2').each(function(i, e) {
     if(i===0){return}
     $(this)
