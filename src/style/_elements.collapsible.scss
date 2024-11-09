@@ -10,16 +10,17 @@
 }
 .collapsible-closed {
   background-color: var(--palette-fill-collapsible-closed);
-  &:hover {
-    background-color: var(--palette-fill-collapsible-open);
-  }
+}
+.collapsible-closed:hover {
+  background-color: var(--palette-fill-collapsible-open);
 }
 .collapsible-open {
   background-color: var(--palette-fill-collapsible-open);
-  &:hover {
-    background-color: var(--palette-fill-collapsible-closed);
-  }
 }
+.collapsible-open:hover {
+  background-color: var(--palette-fill-collapsible-closed);
+}
+
 
 /* Style the collapsible content. Note: hidden by default */
 .content {

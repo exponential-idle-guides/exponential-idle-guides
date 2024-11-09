@@ -6,7 +6,7 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
-  --palette-fill-collapsible-closed: #171717;
+  --palette-fill-collapsible-closed: #1b1b1b;
   --palette-fill-collapsible-open: #111111;
 
   
@@ -29,7 +29,7 @@
     --palette-stroke-warning: #b22;
     --palette-fill-shadow: rgba(34, 34, 34, 0.25)
     --palette-fill-collapsible-closed: #e1e1e1;
-    --palette-fill-collapsible-open: #c9c9c9;
+    --palette-fill-collapsible-open: #b8b8b8;
   }
 }
 
@@ -42,7 +42,7 @@
   --palette-stroke-warning: #b22;
   --palette-fill-shadow: rgba(34, 34, 34, 0.25)
   --palette-fill-collapsible-closed: #e1e1e1;
-  --palette-fill-collapsible-open: #c9c9c9;
+  --palette-fill-collapsible-open: #b8b8b8;
 }
 
 :root.dark-mode {
@@ -53,6 +53,6 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
-  --palette-fill-collapsible-closed: #171717;
+  --palette-fill-collapsible-closed: #1b1b1b;
   --palette-fill-collapsible-open: #111111;
 }
