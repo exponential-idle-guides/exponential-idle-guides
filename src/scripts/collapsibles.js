@@ -1,4 +1,4 @@
-const skiplist = ['#AP-visual', '#smooth-formula'];
+const skiplist = ['#AP-visual', '#smooth-formula', '#ft-prior-ranks'];
 const closed_char = '\u25B6';
 const open_char = '\u25BC';
 
@@ -218,8 +218,7 @@ if (collap_dict.h2.ids.length) {
         }
       
       });
-    }    
-    
+    }
   });
 } else {
 	const h4_h3 = lt_arr(collap_dict.h4.indexes, collap_dict.h3.indexes[0]);
