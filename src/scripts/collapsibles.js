@@ -15,7 +15,7 @@ const open_char = '\u25BC';
 })(jQuery);
 
 function strRepl(str) {
-  return str.replace(/\s/g, "").replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
+  return str.replace(/\s/g, "").replace(/[\\+.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "");
 }
 
 function skipped(classlist, id = "") {
@@ -30,12 +30,33 @@ function skipped(classlist, id = "") {
   }
 }
 
+let h_dict = {h2: [], h3: [], h4: []};
+$('h2').each(function(){h_dict.h2.push($(this).index())});
+$('h3').each(function(){h_dict.h3.push($(this).index())});
+$('h4').each(function(){h_dict.h4.push($(this).index())});
 
-console.log($('h2').length);
+function gt_arr(arr, val){
+	if (Math.min(...arr) > val){
+  	return arr.slice();
+  } else if (Math.max(...arr) < val) {
+  	return [];
+  }
+  const i = arr.findIndex((e) => e > val);
+  return arr.slice(i);
+}
+function lt_arr(arr, val){
+	if (Math.max(...arr) < val || val === undefined){
+  	return arr.slice();
+  } else if (Math.min(...arr) > val) {
+  	return [];
+  }
+  const i = arr.length - [...arr].reverse().findIndex((e) => e < val);
+  return arr.slice(0,i);
+}
+
 if ($('h2').length > 1) {
   $('h2').each(function(i) {
     const h2 = $(this);
-    console.log("i:", i);
     if(i===0){return}
     const h2_text = strRepl(h2.text());
     h2.html(closed_char + ' ' + h2.html());
@@ -44,12 +65,12 @@ if ($('h2').length > 1) {
 
     $('h3').each(function() {
       const h3 = $(this);
-      if (h3.isBefore($(h2).nextEle('h2')) 
-          || $(h2).nextEle('h2').text() === ""
-          || !(h3.isAfter($(h2)))
+      
+      if ((h3.isAfter($(h2).nextEle('h2')) && $(h2).text() !== $('h2').last().text())
+          || h3.isBefore($(h2))
           || skipped(h3.attr('class'), h3.attr('id') !== undefined ? h3.attr('id'): "")
           || h3.hasClass('collapsible')) {
-        return false;
+        return;
       }
       const h3_text = strRepl((h2_text + h3.text()));
       h3.html(closed_char + ' ' + h3.html());
@@ -58,14 +79,11 @@ if ($('h2').length > 1) {
 
       $('h4').each(function() {
         const h4 = $(this);
-        if (h4.isBefore($(h3).nextEle('h3'))
-            || h4.isBefore($(h2).nextEle('h2'))
-            || $(h3).nextEle('h3').text() === "" 
-            || $(h2).nextEle('h2').text() === ""
-            || !(h4.isAfter($(h3)))
+        if ((h4.isAfter($(h3).nextEle('h3')) && $(h3).text() !== $('h3').last().text())
+            || h4.isBefore($(h3))
             || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")
             || h4.hasClass('collapsible')) {
-          return false;
+          return;
         }
         h4.attr('id', strRepl((h3_text + h4.text())));
         h4.html(closed_char + ' ' + h4.html());
@@ -82,12 +100,11 @@ if ($('h2').length > 1) {
     h3.addClass('collapsible collapsible-closed');
     $('h4').each(function() {
       const h4 = $(this);
-      if (h4.isBefore($(h3).nextEle('h3'))
-          || $(h3).nextEle('h3').text() === ""
-          || !(h4.isAfter($(h3)))
+      if ((h4.isAfter($(h3).nextEle('h3')) && $(h3).text() !== $('h3').last().text())
+          || h4.isBefore($(h3))
           || skipped(h4.attr('class'), h4.attr('id') !== undefined ? h4.attr('id'): "")
           || h4.hasClass('collapsible')) {
-        return false;
+        return;
       }
       h4.attr('id', strRepl((h3_text + h4.text())));
       h4.html(closed_char + ' ' + h4.html());
@@ -96,111 +113,162 @@ if ($('h2').length > 1) {
   });
 }
 
-let arr_collap = [];
 const coll = $('.collapsible');
+let collap_dict = {
+	h2: {ids: [], indexes: []},
+  h3: {ids: [], indexes: []},
+  h4: {ids: [], indexes: []}
+ };
 coll.each(function() {
-  const ele = $(this);
-  let temp = [];
-  $.each(skiplist, function() {
-    if ($(String(this)).isBefore(ele)) {
-      temp.push(String(this));
-      arr_collap.push(String(this));
-    } else {
-      return false
-    }
-  })
-  while (temp.length > 0) {
-    skiplist.shift()
-    temp.shift()
+	const tag = this.tagName;
+  switch(this.tagName) {
+  	case 'H2':
+      collap_dict.h2.ids.push('#' + $(this).attr('id'));
+      collap_dict.h2.indexes.push($(this).index());
+      break;
+  	case 'H3':
+      collap_dict.h3.ids.push('#' + $(this).attr('id'));
+      collap_dict.h3.indexes.push($(this).index());
+      break;
+  	case 'H4':
+      collap_dict.h4.ids.push('#' + $(this).attr('id'));
+      collap_dict.h4.indexes.push($(this).index());
+      break;
+    default:
+    	console.log('collap_dict ERROR', $(this));
   }
-  arr_collap.push('#' + ele.attr('id'))
-})
+});
 
+function get_id(dict, i){
+	return dict.ids[dict.indexes.indexOf(i)];
+}
 
-if ($('h2').length > 1) {
-  $('h2').each(function(i, e) {
-    if(i===0){return}
-    $(this)
-      .nextUntil(this.tagName)
+if (collap_dict.h2.ids.length) {
+	collap_dict.h2.ids.forEach(function(h2_id,i) {
+    $(h2_id)
+    	.nextUntil(collap_dict.h2.ids[i+1])
       .wrapAll('<div class="content"/>');
-
-    const h2_content = $('.content').last();
-    let h3_inside = false;
-    $('h3').each(function() {
-      const h3 = $(this)
-      const h3_id = '#' + h3.attr('id');
-      if ($.contains(h2_content[0], h3[0])) {
-        const h3_index = arr_collap.indexOf(h3_id)
-        //const h3_next_collap = arr_collap[h3_index + 1];
-        if (arr_collap[h3_index + 1] === undefined || h3_index === -1) {
-          $(this)
-            .nextUntil(skiplist[0])
-            .wrapAll("<div class='content'/>");
-        //} else if (arr_collap[h3_index + 1].slice(1) === h3.next().attr('id')) {
-        //  $(this).removeClass('collapsible');
-        //  h3_inside = true;
+    
+    const h2_i = collap_dict.h2.indexes[i];
+    const next_h2 = collap_dict.h2.indexes[i+1];
+    const h2_h3 = lt_arr(gt_arr(collap_dict.h3.indexes, h2_i), next_h2);
+    const first_h3 = h2_h3[0] === undefined ? 0 : h2_h3[0];
+    const h2_h4 = lt_arr(gt_arr(collap_dict.h4.indexes, h2_i), first_h3);
+    
+    if (h2_h4.length) {
+      const last_h4 = lt_arr(h_dict.h4, first_h3).slice(-1)[0];
+      const next_h3 = get_id(collap_dict.h3, first_h3);
+      h2_h4.forEach(function(h4_i, k) {
+      	const h4_id = get_id(collap_dict.h4,h4_i)
+        $(h4_id).next('.content').children().unwrap();
+        if (h4_i >= last_h4) {
+        	const h4_final = first_h3 ? $(next_h3).prev() : $(h4_id).siblings().last();
+          h4_final.attr('id', h4_id.replace('#', '') + 'finalh4wrap');
+          $(h4_id)
+          	.nextUntil(h4_id + 'finalh4wrap')
+            .add(h4_id + 'finalh4wrap')
+            .wrapAll('<div class="content"/>');
         } else {
-          $(this)
-            .nextUntil(arr_collap[h3_index + 1])
-            .wrapAll("<div class='content'/>");
-          h3_inside = true;
+        	$(h4_id)
+            .nextUntil('h3')
+            .wrapAll('<div class="content"/>');
         }
-
-        const h3_content = $('.content').last();
-        let h4_inside = false;
-        $('h4').each(function() {
-          const h4 = $(this)
-          const h4_id = '#' + h4.attr('id');
-          if ($.contains(h3_content[0], h4[0])) {
-            const h4_index = arr_collap.indexOf(h4_id)
-            //const h4_next_collap = arr_collap[h4_index + 1];
-            if (arr_collap[h4_index + 1] === undefined || h4_index === -1) {
-              $(this)
-                .nextUntil(skiplist[0])
-                .wrapAll("<div class='content'/>");
-            //} else if (arr_collap[h4_index + 1].slice(1) === h4.next().attr('id')) {
-            //  $(this).removeClass('collapsible');
-            //  h4_inside = true;
+      });
+    }
+    
+    if (h2_h3.length) {
+    	const last_h3 = lt_arr(h_dict.h3, next_h2).slice(-1)[0];
+      h2_h3.forEach(function(h3_i, l) {
+        const h3_id = get_id(collap_dict.h3,h3_i);
+        $(h3_id).next('.content').children().unwrap();
+        if (h3_i >= last_h3) {
+        	const h3_final  = $(h3_id).siblings().last();
+          h3_final.attr('id', h3_id.replace('#', '') + 'finalh3wrap');
+          $(h3_id)
+          	.nextUntil(h3_id + 'finalh3wrap')
+            .add(h3_id + 'finalh3wrap')
+            .wrapAll('<div class="content"/>');
+        } else {
+        	$(h3_id)
+            .nextUntil('h3')
+            .wrapAll('<div class="content"/>');
+        }
+        
+        const next_h3 = h_dict.h3[h_dict.h3.indexOf(h3_i)+1];
+        const next_h2_h3 = (next_h2 === undefined && next_h3 === undefined) ? Infinity : (next_h3 === undefined ? next_h2 : (next_h2 === undefined ? next_h3 : Math.min(next_h3, next_h2)));
+        const h3_h4 = lt_arr(gt_arr(collap_dict.h4.indexes, h3_i), next_h2_h3);
+        if (h3_h4.length) {
+        	const last_h4 = lt_arr(h_dict.h4, next_h2_h3).slice(-1)[0];
+        	h3_h4.forEach(function(h4_i, m) {
+            const h4_id = get_id(collap_dict.h4,h4_i);
+            $(h4_id).next('.content').children().unwrap();
+            if (h4_i >= last_h4) {
+              const h4_final  = $(h4_id).siblings().last();
+              h4_final.attr('id', h4_id.replace('#', '') + 'finalh4wrap');
+              $(h4_id)
+                .nextUntil(h4_id + 'finalh4wrap')
+                .add(h4_id + 'finalh4wrap')
+                .wrapAll('<div class="content"/>');
             } else {
-              $(this)
-                .nextUntil(arr_collap[h4_index + 1])
-                .wrapAll("<div class='content'/>");
-              h4_inside = true;
+              $(h4_id)
+                .nextUntil('h4')
+                .wrapAll('<div class="content"/>');
             }
-          } else if (h4_inside) {return false}
-        });
-      } else if (h3_inside) {return false}
-    });
+          });
+        }
+      
+      });
+    }    
+    
   });
 } else {
-  $('h3').each(function() {
-    $(this)
-      .nextUntil(this.tagName)
-      .wrapAll('<div class="content"/>');
-
-    const h3_content = $('.content').last();
-    let h4_inside = false;
-    $('h4').each(function() {
-      const h4 = $(this)
-      const h4_id = '#' + h4.attr('id');
-      if ($.contains(h3_content[0], h4[0])) {
-        const h4_index = arr_collap.indexOf(h4_id)
-        //const h4_next_collap = arr_collap[h4_index + 1];
-        if (arr_collap[h4_index + 1] === undefined || h4_index === -1) {
-          $(this)
-            .nextUntil(skiplist[0])
-            .wrapAll("<div class='content'/>");
-          return false
-        //} else if (arr_collap[h4_index + 1].slice(1) === h4.next().attr('id')) {
-        //  $(this).removeClass('collapsible');
-        } else {
-          $(this)
-            .nextUntil(arr_collap[h4_index + 1])
-            .wrapAll("<div class='content'/>");
-        }
-        h4_inside = true;
-      } else if (h4_inside) {return false}
+	const h4_h3 = lt_arr(collap_dict.h4.indexes, collap_dict.h3.indexes[0]);
+  if (h4_h3.length) {
+		const last_h4 = h4_h3.slice(-1)[0];
+  	h4_h3.forEach(function(h4_i, i) {
+    	const h4_id = get_id(collap_dict.h4, h4_i);
+      if (h4_i >= last_h4) {
+      	const h4_final = collap_dict.h3.indexes.length ? $(next_h3).prev() : $(h4_id).siblings().last();
+        h4_final.attr('id', h4_id.replace('#', '') + 'finalh4wrap');
+        $(h4_id)
+          .nextUntil(h4_id + 'finalh4wrap')
+          .add(h4_id + 'finalh4wrap')
+          .wrapAll('<div class="content"/>');
+      } else {
+      	$(h4_id)
+        	.nextUntil('h4')
+          .wrapAll('<div class="content"/>');
+      }
     });
+  }
+	collap_dict.h3.ids.forEach(function(h3_id,i) {
+    $(h3_id)
+    	.nextUntil(collap_dict.h3.ids[i+1])
+      .wrapAll('<div class="content"/>');
+    
+    const h3_i = collap_dict.h3.indexes[i];
+    const next_h3 = collap_dict.h3.indexes[i+1];
+    const h4 = lt_arr(gt_arr(collap_dict.h4.indexes, h3_i), next_h3);
+    
+    if (h4.length) {
+    	const last_h4 = lt_arr(h_dict.h4, next_h3).slice(-1)[0];
+      h4.forEach(function(h4_i, l) {
+        const h4_id = get_id(collap_dict.h4,h4_i);
+        $(h4_id).next('.content').children().unwrap();
+        if (h4_i >= last_h4) {
+        	const h4_final  = $(h4_id).siblings().last();
+          h4_final.attr('id', h4_id.replace('#', '') + 'finalh4wrap');
+          $(h4_id)
+          	.nextUntil(h4_id + 'finalh4wrap')
+            .add(h4_id + 'finalh4wrap')
+            .wrapAll('<div class="content"/>');
+        } else {
+        	$(h4_id)
+            .nextUntil('h4')
+            .wrapAll('<div class="content"/>');
+        }
+      });
+    }    
   });
 }
 
@@ -213,13 +281,11 @@ for (let i = 0; i < coll.length; i++) {
       content.style.display = "none";
       $(this).removeClass('collapsible-open');
       $(this).addClass('collapsible-closed');
-      console.log($(this).html().replace(new RegExp(open_char), closed_char));
       $(this).html($(this).html().replace(new RegExp(open_char), closed_char));
     } else {
       content.style.display = "block";
       $(this).removeClass('collapsible-closed');
       $(this).addClass('collapsible-open');
-      console.log($(this).html().replace(new RegExp(closed_char), open_char));
       $(this).html($(this).html().replace(new RegExp(closed_char), open_char));
     }
   });
