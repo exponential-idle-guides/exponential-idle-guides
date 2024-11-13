@@ -291,24 +291,23 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
-window.addEventListener("click", function(e){
-  if(document.getElementById("openCollapsibles").contains(e.target)){
-    coll.each(function() {
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      content.style.display = "block";
-      $(this).removeClass('collapsible-closed');
-      $(this).addClass('collapsible-open');
-      $(this).html($(this).html().replace(new RegExp(closed_char), open_char));
-    });
-  } else if (document.getElementById("closeCollapsibles").contains(e.target)) {
-    coll.each(function() {
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      content.style.display = "none";
-      $(this).removeClass('collapsible-open');
-      $(this).addClass('collapsible-closed');
-      $(this).html($(this).html().replace(new RegExp(open_char), closed_char));
-    });
-  }
-})
+$('#openCollapsibles')[0].addEventListener("click", function(e){
+  coll.each(function() {
+    this.classList.toggle("active");
+    const content = this.nextElementSibling;
+    content.style.display = "block";
+    $(this).removeClass('collapsible-closed');
+    $(this).addClass('collapsible-open');
+    $(this).html($(this).html().replace(new RegExp(closed_char), open_char));
+  });
+});
+$('#closeCollapsibles')[0].addEventListener("click", function(e){
+  coll.each(function() {
+    this.classList.toggle("active");
+    const content = this.nextElementSibling;
+    content.style.display = "none";
+    $(this).removeClass('collapsible-open');
+    $(this).addClass('collapsible-closed');
+    $(this).html($(this).html().replace(new RegExp(open_char), closed_char));
+  });
+});
