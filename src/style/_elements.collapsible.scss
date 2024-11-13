@@ -34,3 +34,24 @@
 	background-color: var(--palette-fill);
 	color: var(--palette-stroke);
 }
+
+.closecollapsibles, .opencollapsibles{
+  position: fixed;
+  right: var(--floating-margin);
+  margin: 0;
+  svg {
+    color: var(--palette-stroke);
+    background-color: var(--palette-fill);
+    width: 1.5em;
+    height: auto;
+    border-radius: 0.25em;
+    border: 1px solid var(--palette-stroke);
+    box-shadow: var(--floating-shadow);
+  }
+}
+.closecollapsibles {
+  bottom: 2 * var(--floating-margin) + 1.5em;
+}
+.opencollapsibles {
+  bottom: 3 * var(--floating-margin) + 3em;
+}
