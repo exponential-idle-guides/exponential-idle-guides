@@ -164,6 +164,10 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 - AbsoPerf (?)
 - NeirinD (Neirin)
 
-### [January](/ranking-news/2024-sep)
+### [September](/ranking-news/2024-sep)
 
 - PythonKoala (Python's Koala)
+
+### [October](/ranking-news/2024-oct)
+
+- Bobbly­ben (bobbly­ben)
