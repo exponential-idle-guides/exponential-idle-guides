@@ -1129,6 +1129,8 @@ Strategy in development, please be patient.
          <td>3</td>
          <td class="arrow">→</td>
          <td>1 x3</td>
+         <td class="arrow">→</td>
+         <td>4</td>
       </tr>
    </tbody>
 </table>
