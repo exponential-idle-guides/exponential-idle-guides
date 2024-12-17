@@ -1039,7 +1039,7 @@ $$\dot{\rho}=\frac{t{\mkern 1mu}c_1^{1.25}c_2w_1}{|\zeta(\frac{1}{2}+it)|/2^{b}+
 $$\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b$$
 
 <br><br>
-Funcrion Description Under Construction please be patient.
+Function Description Under Construction please be patient.
 <br>
 
 #### RZ Variable Description
