@@ -544,7 +544,7 @@ h3 {
 
 ### Fractional Integration (FI)
 
-#### FI Overview
+####  Overview
 
  This custom theory was released at the same time as Fractal Patterns. FI is based on [Riemann–Liouville Integrals](https://en.wikipedia.org/wiki/Riemann%E2%80%93Liouville_integral) and allows you to approach the full integral as the fraction approaches 1. An explanation of each section of the equations is shown below:
 
@@ -1023,3 +1023,133 @@ Milestone swap saves a LOT of time.
 </table>
 
 FP Guide written by Snaeky and Hotab
+
+### Riemann Zeta Function (RZ)
+
+#### RZ Overview
+
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function
+
+#### RZ Equation Description
+
+\\(\dot{\rho}=\frac{t{\mkern 1mu}c_1^{1.25}c_2w_1}{|\zeta(\frac{1}{2}+it)|/2^{b}+10^{-2}}\\)
+
+\\(\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b\\)
+
+<br><br>
+
+ The first line is self explanatory. The exponents on \\(q_1\\) are from milestones. '\\(q\\)' will increase during the publication.
+<br>
+
+For the second line, both the variable \\(c_2\\) and its exponents are from milestones. The absolute value section on the right describes the approximation of \\(N_m\\)/ \\(D_m\\) to \\(\sqrt{2}\\). As \\(N_m\\)/ \\(D_m\\) get closer to \\(\sqrt{2}\\), the entire right section gets larger and larger (because of the -1 power).
+<br>
+
+The third and fourth lines are recurrence relations on \\(N_m\\) and \\(D_m\\). This means that the current value of \\(N_m\\) and \\(D_m\\) depend on their previous values. We start with \\(N_0\\) = 1, \\(N_1\\) = 3. The equation will then read as:
+
+\\(N_2\\) = 2\\(N_1\\) + \\(N_0\\) -> \\(N_2\\) = 2 x 3 + 1 = 7.
+Then \\(N_3\\) = 2\\(N_2\\) + \\(N_1\\) -> 2 x 7 + 3 = 17.
+Similar logic is applied to \\(D_m\\) equations.
+
+This occurs until we reach \\(N_m\\) and \\(D_m\\) reach whatever 'm' values we have. This is shown in the next equation:
+
+The fourth equation relates 'm' as described above. We can see that as we buy \\(n\\) and \\(c_2\\), our \\(m\\) will increase, so the 2 recurrence equations above will 'repeat' more often and \\(N_m\\), \\(D_m\\) will increase. From how \\(n\\) and \\(c_2\\) values are calculated, buying 1 level of \\(n\\) or \\(c_2\\) will increase \\(m\\) by 1.
+
+#### RZ Variable Description
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of CSR2.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>q<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase in ρ dot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>q<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>About 7% increase in ρ dot per level; not instantaneous. This is the weakest variable. </td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Long term will multiply ρ dot by 6 times! However, it is not instantaneous.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Approximately 22 times increase in ρ dot per level! Not instantaneous. This is the strongest variable by quite a lot.</td>
+      </tr>
+   </tbody>
+</table>
+
+<br><br>
+
+#### RZ strategy
+
+##### Idle
+
+For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(q\\) exponent milestones when you're about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+
+Once you have all milestones, autobuy all!
+
+##### Active
+
+The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1\\) and \\(q_1\\), where you buy them when they are less than 10% cost of minimum(\\(c_2\\), \\(q_2\\), and \\(n\\)).
+
+For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+
+##### RZ Milestone Swapping Explanation
+
+This theory has a milestone swapping strategy before full milestones. We have \\(q_1\\) exponent milestones, which increase $\dot\rho$ straight away. We also have \\(c_2\\) related milestones, which increases the \\(q\\) variable, which increases $\dot\rho$.
+
+The reason milestone swapping works is because the benefits of using \\(c_2\\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1\\) exponent milestones. If we only use \\(q_1\\) exponent, then we have really low \\(q\\). If we only use \\(c_2\\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2\\) related milestones, then take advantage of the \\(q_1\\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
+
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+
+#### RZ milestone route
+
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>0/1/0</td>
+         <td class="arrow">→</td>
+         <td>0/1/2</td>
+         <td class="arrow">→</td>
+         <td>3/1/2</td></td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>1 x3</td>
+      </tr>
+   </tbody>
+</table>
+
+<style>
+h4 {
+   font-size: 1.2rem;
+}
+h3 {
+   font-size: 1.5rem;
+}
+</style>
