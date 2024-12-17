@@ -1030,7 +1030,7 @@ Guide Writing is in progress. Not everything here is accurate, or from RZ at the
 
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
 #### RZ Equation Description
 
@@ -1039,7 +1039,7 @@ $$\dot{\rho}=\frac{t{\mkern 1mu}c_1^{1.25}c_2w_1}{|\zeta(\frac{1}{2}+it)|/2^{b}+
 $$\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b$$
 
 <br><br>
-Overview Under Construction please be patient.
+Funcrion Description Under Construction please be patient.
 <br>
 
 #### RZ Variable Description
