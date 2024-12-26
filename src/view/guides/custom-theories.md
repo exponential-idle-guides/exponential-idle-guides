@@ -1024,7 +1024,7 @@ Milestone swap saves a LOT of time.
 
 FP Guide written by Snaeky and Hotab
 
-### Riemann Zeta Function (RZ)
+## Riemann Zeta Function (RZ)
 
 Guide Writing is in progress. Not everything here is accurate, or from RZ at the moment.
 
