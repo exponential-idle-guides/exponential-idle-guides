@@ -1087,33 +1087,33 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Pre-e600 \\(\rho\\)
 
-###### Idle
+##### Idle
 
 For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(c_1\\) exponent milestones when you're about to publish (from e50 to e400). Don't forget to change milestones back after publishing!
 
 Once you have all milestones, autobuy all!
 
-###### Active
+##### Active
 
 Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. With a milestone swap from from e50 to e400 e3 \\(\rho\\) from recovery and publish between 7 and 10 multi.
 
-###### RZ Milestone Swapping Explanation
+##### RZ Milestone Swapping Explanation
 
 Strategy in development, please be patient.
 
 ##### Post-e600 \\(\rho\\)
 
-###### Black Hole (BH)
+##### Black Hole (BH)
 
 Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 1.5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
 When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(25.025t\\), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
-###### Idle
+##### Idle
 
 Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero.
 
-###### Active
+##### Active
 
 
 
