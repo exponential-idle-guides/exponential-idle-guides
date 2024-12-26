@@ -11,7 +11,7 @@ order: 8
 
 ### Before you start
 
-The current theory simulator is made by XLII and is run on a [website](https://tredec.github.io/sim-3.0/). Below will go through the individual parts of the output.
+The current theory simulator is made by XLII and is run on a [website](https://exponential-developers.github.io/sim-3.0/). Below will go through the individual parts of the output.
 
 ### **τ/h Active / Idle**
 

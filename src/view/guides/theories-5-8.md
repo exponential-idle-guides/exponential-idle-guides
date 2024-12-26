@@ -79,7 +79,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
 [star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 swapping (below).
 
-There is also the [theory simulator](https://tredec.github.io/sim-3.0/) by XLII, which works both below max milestones and after max milestones for all theories.
+There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) orriginally by XLII and now developed by the Exponential Develpers, which works both below max milestones and after max milestones for all theories.
 
 #### How to push F(t) with R9 swapping
 
@@ -106,7 +106,7 @@ You can find the autoprestige used for R9 Swapping here: [Equation](https://expo
 
 ### Theory 1
 
-You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://tredec.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
+You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
@@ -124,7 +124,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 #### Theory 5 Overview
 
-Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
+The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy. Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
 
 <br>
 
@@ -338,7 +338,7 @@ be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(
 #### T6 strategy
 
 The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
-If you want an accurate multiplier, check with [the sim](https://tredec.github.io/sim-3.0/).
+If you want an accurate multiplier, check with [the sim](https://exponential-developers.github.io/sim-3.0/).
 
 <table class="spqcey">
 <thead>

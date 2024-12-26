@@ -59,7 +59,7 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 
 ### Theory routing and strategies
 
-For best theory routing and pushing, use the [Theory Sim](https://tredec.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publications. Human T5 is below:
+For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publications. Human T5 is below:
 
 #### T5 routing
 

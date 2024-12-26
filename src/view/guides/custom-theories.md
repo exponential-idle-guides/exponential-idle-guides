@@ -1024,7 +1024,7 @@ Milestone swap saves a LOT of time.
 
 FP Guide written by Snaeky and Hotab
 
-## Riemann Zeta Function (RZ)
+### Riemann Zeta Function (RZ)
 
 Guide Writing is in progress. Not everything here is accurate, or from RZ at the moment.
 
@@ -1064,15 +1064,15 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>w<sub><sub><small>1</small></sub></sub></th>
-         <td>Doubles every 8 lvls </td>
+         <td>Doubles every 8 lvls. Bought with delta.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubling</td>
+         <td>Doubling. Bought with delta.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>3</small></sub></sub></th>
-         <td>Doubling</td>
+         <td>Doubling every e30 rho from e600 delta on. Bought with delta.</td>
       </tr>
      <tr>
          <th>b</th>
@@ -1099,7 +1099,11 @@ Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\
 
 ##### RZ Milestone Swapping Explanation
 
-Strategy in development, please be patient.
+From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explaination for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery.
+
+For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This is extremely hard and may slow down progress if you are not accurate/fast enough. The sim has NOT confirmed any strategies as of current since the sim is not working yet*.
+
+###### *The sim may be working before this is updated and this may be outdated for strategies. Please check [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy.
 
 ##### Post-e600 \\(\rho\\)
 
@@ -1111,7 +1115,7 @@ When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encounter
 
 ##### Idle
 
-Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero.
+Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good 0. Good 0s are 0s where \\(\zeta'\\) is higher than all other local 0s. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$.
 
 ##### Active
 
