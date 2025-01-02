@@ -47,6 +47,10 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 - [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
 
+- [T2<span style="color:#41AD21">MCAlt2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
+
+- [T2<span style="color:#41AD21">MCAlt3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
+
 - [T2<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2ms)&nbsp; — &nbsp;Active
 
 - [T2<span style="color:#41AD21">Coast-X%</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
@@ -575,6 +579,192 @@ Strategy Credits:
 
 Strategy Credits:
 
+- rus9384#1864
+- XLII, whose theory simulator was used to develop and test this strategy. <br>
+
+The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+
+### T2<span style="color:#41AD21">MCAlt2</span>
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="5" style="text-align:center">T2MCAlt2</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier below 550</td>
+         <td class="rightHeader">Publication Multiplier 550-2050</td>
+         <td class="rightHeader">Publication Multiplier 2050-2700</td>
+         <td class="rightHeader">Publication Multiplier 2700-3500</td>
+         <td class="rightHeader">Publication Multiplier above 3500</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+
+- hotab (better multipliers for the strat)
+- rus9384#1864
+- XLII, whose theory simulator was used to develop and test this strategy. <br>
+
+The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+
+### T2<span style="color:#41AD21">MCAlt3</span>
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="5" style="text-align:center">T2MCAlt3</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Publication Multiplier below 750</td>
+         <td class="rightHeader">Publication Multiplier 750-1700</td>
+         <td class="rightHeader">Publication Multiplier 1700-2650</td>
+         <td class="rightHeader">Publication Multiplier 2650-3700</td>
+         <td class="rightHeader">Publication Multiplier above 3700</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+
+- hotab (better multipliers for the strat)
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br>
 
