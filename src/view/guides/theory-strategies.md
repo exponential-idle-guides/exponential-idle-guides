@@ -48,8 +48,8 @@ T2 is the only theory without an active strategy after all milestones are bought
 - [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc)&nbsp; — &nbsp;Semi-Idle
 
 - [T2<span style="color:#41AD21">MCAlt2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
-- 
-- [T2<span style="color:#41AD21">MCAlt2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
+
+- [T2<span style="color:#41AD21">MCAlt3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
 
 - [T2<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2ms)&nbsp; — &nbsp;Active
 
