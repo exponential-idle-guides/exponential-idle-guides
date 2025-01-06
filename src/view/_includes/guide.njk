@@ -197,11 +197,16 @@
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
-          {%- for post in collections.extensions -%}
-            <li>
-              <a href="{{post.url}}">{{ post.data.title }}</a>
-            </li>
-          {%- endfor -%}
+          {% for tag, posts in collections.extensions %}
+            {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
+              <li>{{ tag.slice(4) | capitalize }}
+              <ul>
+                {% for guide in collections[tag] %}
+                  {{ list.linked(guide) }}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
         </ul>
       </div>
     </div>
@@ -210,7 +215,7 @@
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
-          {% for tag, posts in collections %}
+          {% for tag, posts in collections.extensions %}
             {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
               <li>{{ tag.slice(4) | capitalize }}
               <ul>
