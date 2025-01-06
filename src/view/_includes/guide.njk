@@ -197,7 +197,7 @@
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
-          {% for tag, posts in collections.extensions %}
+          {% for tag in collections.extensions %}
             {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
               <li>{{ tag.slice(4) | capitalize }}
               <ul>
@@ -215,7 +215,7 @@
       <h1 class="sidebartitle">Guide Extensions</h1>
       <div class="content_wrapper square_list">
         <ul>
-          {% for tag, posts in collections.extensions %}
+          {% for tag in collections.extensions %}
             {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
               <li>{{ tag.slice(4) | capitalize }}
               <ul>
