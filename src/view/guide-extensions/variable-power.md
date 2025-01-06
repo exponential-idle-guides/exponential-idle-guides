@@ -8,6 +8,7 @@ order: 4
 tags: T9+
 ---
 ###### Initial Publication on November 19, 2022
+###### Some information (with regards to top players) may be inaccurate
 
 ## Introduction
 Let's start by defining which variables we're discussing. We will discuss the main-game variables, (\\(x-\xi\\)), NOT the upgrades bought in theories.<br><br>
