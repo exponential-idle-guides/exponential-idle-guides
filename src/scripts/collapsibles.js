@@ -1,4 +1,4 @@
-const skiplist = ['#AP-visual', '#smooth-formula', '#ft-prior-ranks','#season-prior-ranks', '#hall-of-fame'];
+const skiplist = ['#AP-visual', '#smooth-formula', '#ft-prior-ranks','#season-prior-ranks', '#hall-of-fame', '.ct-overviews'];
 const closed_char = '\u25B6';
 const open_char = '\u25BC';
 const check_url_interval = 500; // ms
