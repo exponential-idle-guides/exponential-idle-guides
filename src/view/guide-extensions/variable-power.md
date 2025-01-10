@@ -203,7 +203,7 @@ This leads to an interesting effect where every two psi3 upgrades one of the var
 
 ![Variable Power up to ee50000](/images/variable-power/ee50000.png)
 ###### Computed every ee1 from ee1 to ee50000. This took a while to run...
-<br>
+
 And here's a rather interesting plot with the percentage of total power each variable has.
 
 ![Percentage variable power up to ee50000](/images/variable-power/ee50000_2.png)

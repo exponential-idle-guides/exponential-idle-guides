@@ -6,6 +6,8 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
+  --palette-fill-collapsible-closed: #1b1b1b;
+  --palette-fill-collapsible-open: #111111;
 
   
 	--palette-fill-table-headers-light: #7c7c7c;
@@ -13,7 +15,7 @@
 	--palette-stroke-table-headers: #a7a7a7;
   --palette-fill-sidebar-hover: #444;
   --palette-fill-sidebar: #111;
-  --palette-stroke-sidebar-base: #a7a7a7;
+  --palette-stroke-sidebar-base: #d3bbbb;
   --palette-stroke-sidebar-header-hover: #fff;
 }
 
@@ -25,7 +27,9 @@
     --palette-stroke: #444;
     --palette-stroke-hc: #333;
     --palette-stroke-warning: #b22;
-    --palette-fill-shadow: rgba(34, 34, 34, 0.25)
+    --palette-fill-shadow: rgba(34, 34, 34, 0.25);
+    --palette-fill-collapsible-closed: #e1e1e1;
+    --palette-fill-collapsible-open: #b8b8b8;
   }
 }
 
@@ -36,7 +40,9 @@
   --palette-stroke: #444;
   --palette-stroke-hc: #333;
   --palette-stroke-warning: #b22;
-  --palette-fill-shadow: rgba(34, 34, 34, 0.25)
+  --palette-fill-shadow: rgba(34, 34, 34, 0.25);
+  --palette-fill-collapsible-closed: #e0e0e0;
+  --palette-fill-collapsible-open: #b8b8b8;
 }
 
 :root.dark-mode {
@@ -47,4 +53,6 @@
   --palette-stroke-hc: #fff;
   --palette-stroke-warning: #f88;
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
+  --palette-fill-collapsible-closed: #1b1b1b;
+  --palette-fill-collapsible-open: #111111;
 }

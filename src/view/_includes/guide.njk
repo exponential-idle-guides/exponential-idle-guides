@@ -49,7 +49,7 @@
   
   {{ content | safe }}
   {% if '/rankings-main' in page.url %}
-    <h3>Previous Rankings</h3>
+    <h3 id="ft-prior-ranks">Previous Rankings</h3>
     <ul>
       {% for year, yearPosts in collections.postsByYear %}
         {% set yearbool = false %}
@@ -81,7 +81,7 @@
       {% endfor %}
     </ul>
   {% elif '/seasons-main' in page.url %}
-    <h3>Previous Rankings</h3>
+    <h3 id="season-prior-ranks">Previous Rankings</h3>
     <ul>
       {% for year, yearPosts in collections.postsByYear %}
         {% set yearbool = false %}
