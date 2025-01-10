@@ -349,15 +349,17 @@ function url_collapsibles(url) {
   }
   const target_i = target_arr[index];
   let open_ids = [collap_dict[h_layer].ids[collap_dict[h_layer].indexes.indexOf(target_i)]];
-  const last_h2 = Math.max.apply(Math, collap_dict.h2.indexes.filter((x) => x < target_i));
-  if (last_h2 != -Infinity) {
-    open_ids.push(collap_dict.h2.ids[collap_dict.h2.indexes.indexOf(last_h2)]);
-  };
-  if (h_layer === "h4") {
-    const last_h3 = Math.max.apply(Math, collap_dict.h3.indexes.filter((x) => last_h2 < x && x < target_i));
-    if (last_h3 != -Infinity) {
-      open_ids.push(collap_dict.h3.ids[collap_dict.h3.indexes.indexOf(last_h3)]);
+  if (h_layer !== "h2") {
+    const last_h2 = Math.max.apply(Math, collap_dict.h2.indexes.filter((x) => x < target_i));
+    if (last_h2 != -Infinity) {
+      open_ids.push(collap_dict.h2.ids[collap_dict.h2.indexes.indexOf(last_h2)]);
     };
+    if (h_layer === "h4") {
+      const last_h3 = Math.max.apply(Math, collap_dict.h3.indexes.filter((x) => last_h2 < x && x < target_i));
+      if (last_h3 != -Infinity) {
+        open_ids.push(collap_dict.h3.ids[collap_dict.h3.indexes.indexOf(last_h3)]);
+      };
+    }
   }
   url_h_arr = coll.filter(function() {return open_ids.includes('#' + $(this).attr('id'))});
   for (let i = 0; i < url_h_arr.length; i++) {
