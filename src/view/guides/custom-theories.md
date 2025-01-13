@@ -85,7 +85,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 <br>
 <br>
 
-#### WSP strategy
+#### WSP Strategy
 
 Early game the variable strengths are ordered as follows: 
 
@@ -110,7 +110,7 @@ For \\(q_1\\), we will buy it when its cost is less than 10% of the minimum of \
 
 For active strategy, \\(n\\) starts to become more powerful than \\(q_2\\). If their costs are similar, we will prioritize \\(n\\) first. For example, if \\(n\\) costs 1.4e101 and \\(q_2\\) costs 1.2e101, we will buy \\(n\\) first. Similarly to the idle strategy, we will buy \\(c_1\\) only for the first 20 seconds or so. If you want more information on the different strategies pertaining to WSP, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/)<br><br>
 
-#### WSP milestone route
+#### WSP Milestone Route
 
 All milestones into the 3rd/last milestone. Then into 2nd milestone, then into 1st milestone. <br>
 For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone. Usually you only do this when you're about to publish. <br>
@@ -196,7 +196,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 <br>
 <br>
 
-#### SL strategy
+#### SL Strategy
 
 All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2\\) and \\(b_2\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. If you want more details on SL strategies, in particular the execution of various strategies, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
@@ -234,7 +234,7 @@ e200 - e300: SLMS
 
 At this point, the theory becomes very idle. We simply autobuy all variables. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable \\(a_1\\)\\(a_2\\) at about 4.5 publication multiplier and \\(b_1\\)\\(b_2\\) at 6.0 multiplier until publish.
 
-#### SL milestone route
+#### SL Milestone Route
 
 ##### Idle
 
@@ -361,14 +361,14 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 <br>
 <br>
 
-#### EF strategy
+#### EF Strategy
 
 Initially, you only have \\(\dot{t}\\),  \\(q_1\\), and \\(q_2\\) unlocked. Buy \\(q_1\\) at about 1/8th cost of \\(q_2\\), and buy \\(\dot{t}\\) when it's available. At e20 \\(\rho\\) when autobuyers are unlocked, for idle, simply autobuy all. For active, continue to do what you were doing (buying \\(q_1\\) at 1/8th cost of \\(q_2\\)). There are also more advanced strategies, in particular EFAI. For its description and execution, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
 
 The first 2 milestones are redundant by themselves. The \\(R^2\\) term and the \\(I^2\\) term are insignificant compared to the \\(tq^2\\) term.
 Once you unlock the 3rd milestone (\\(a_1\\) term) however, we can buy \\(a_1\\) at 1/4th of \\(q_2\\) cost.
 
-#### EF milestone route
+#### EF Milestone Route
 
 <table class="milestone_routing">
    <tbody>
@@ -477,7 +477,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <br><br>
 
-#### CSR2 strategy
+#### CSR2 Strategy
 
 ##### Idle
 
@@ -499,7 +499,7 @@ The reason milestone swapping works is because the benefits of using \\(c_2\\) r
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
 
-#### CSR2 milestone route
+#### CSR2 Milestone Route
 
 <table class="milestone_routing">
    <tbody>
@@ -665,7 +665,7 @@ Approximate variable strengths on their respective vardots with all milestones a
 <br>
 <br>
 
-#### FI strategy
+#### FI Strategy
 
 ##### Idle
 
@@ -925,7 +925,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 <br>
 <br>
 
-#### FP strategy
+#### FP Strategy
 
 ##### Idle
 
@@ -976,7 +976,7 @@ Milestone swap ends when s becomes > 2, and dies out when you can recover to tha
 
 Milestone swap saves a LOT of time.
 
-#### FP milestone route
+#### FP Milestone Route
 
 <table class="milestone_routing">
    <tbody>
@@ -1083,7 +1083,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <br><br>
 
-#### RZ strategy
+#### RZ Strategy
 
 ##### Pre-e600 \\(\rho\\)
 
@@ -1121,7 +1121,7 @@ Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to 
 
 
 
-#### RZ milestone route
+#### RZ Milestone Route
 
 <table class="milestone_routing">
    <tbody>
