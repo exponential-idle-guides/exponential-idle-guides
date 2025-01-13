@@ -11,7 +11,7 @@ glossary: true
 
 The Hall of Fame is dedicated to any player with an honorable mention or ranking on the [\\(F(t)\\) Rankings](/guide-extensions/rankings-main). Below are all the players listed with their first appearance (does not include all as many have multiple).
 
-## Hall of Fame
+<h2 id="hall-of-fame">Hall of Fame</h2>
 
 ###### Discord names in brackets are not their nicknames!
 

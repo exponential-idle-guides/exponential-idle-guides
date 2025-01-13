@@ -8,10 +8,13 @@
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/scripts/slugify.js"></script>
     <script type="module" async defer src="/scripts/init.js"></script>
     <script type="module" defer src="/scripts/color-scheme.js"></script>
     <script type="module" defer src="/scripts/open-sidebars.js"></script>
     <script type="module" defer src="/scripts/close-sidebars.js"></script>
+    <script type="module" defer src="/scripts/collapsibles.js"></script>
     <script type="text/javascript" defer src="/scripts/blockquote-copy.js"></script>
     <script type="text/javascript" defer src="/scripts/popup.js"></script>
     <script type="text/x-mathjax-config">
@@ -91,6 +94,36 @@
           <polyline points="18 15 12 9 6 15" />
         </svg>
       </a>
+      <span class="closecollapsibles" id="closeCollapsibles">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="5.075,4 5.075,20 18.925,12" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="opencollapsibles" id="openCollapsibles">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polygon points="4,5.075 20,5.075 12,18.925" fill="currentColor"/>
+        </svg>
+      </span>
     </footer>
   </body>
 </html>

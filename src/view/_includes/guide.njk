@@ -43,13 +43,13 @@
     <p><a href="https://exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
   {% elif '/season-news' in page.url %}
     <p><a href="https://exponential-idle-guides.netlify.app/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
-  {% elif not glossary %}
+  {% elif not ((glossary) or ('/rankings-main' in page.url) or ('/seasons-main' in page.url)) %}
     <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
   {% endif %}
   
   {{ content | safe }}
   {% if '/rankings-main' in page.url %}
-    <h3>Previous Rankings</h3>
+    <h3 id="ft-prior-ranks">Previous Rankings</h3>
     <ul>
       {% for year, yearPosts in collections.postsByYear %}
         {% set yearbool = false %}
@@ -81,7 +81,7 @@
       {% endfor %}
     </ul>
   {% elif '/seasons-main' in page.url %}
-    <h3>Previous Rankings</h3>
+    <h3 id="season-prior-ranks">Previous Rankings</h3>
     <ul>
       {% for year, yearPosts in collections.postsByYear %}
         {% set yearbool = false %}

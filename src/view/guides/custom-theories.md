@@ -26,7 +26,7 @@ If you have time for active strategies, try to do the CT with the highest active
 
 ### Weierstrass Sine Product (WSP)
 
-#### WSP Overview
+<h4 class="ct-overviews">WSP Overview</h4>
 
 The very first official custom theory; WSP was developed by Xelaroc, who also came up with some of the strategies used in the theory. The idea behind the theory is to use the factorization of sine to increase \\(\rho\\). There are multiple equations with this theory, and some may look daunting, so we'll have a look at each one.<br><br>
 
@@ -138,7 +138,7 @@ For milestone swapping, swap all milestones from 2nd and 3rd into 1st milestone.
 
 ### Sequential Limits (SL)
 
-#### SL Overview
+<h4 class="ct-overviews">SL Overview</h4>
 
 SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e≈2.71828). As upgrades are bought, the approximation becomes more precise, increasing $\dot\rho$ and \\(\rho\\) because \\(e-\gamma\\) approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
 
@@ -275,7 +275,7 @@ e200 - e300: SLMS
 
 ### Euler's Formula (EF)
 
-#### EF Overview
+<h4 class="ct-overviews">EF Overview</h4>
 
 This custom theory, along with Convergents to Square Root 2, were released at the same time and is based on Euler's Formula of
 
@@ -412,7 +412,7 @@ Once you unlock the 3rd milestone (\\(a_1\\) term) however, we can buy \\(a_1\\)
 
 ### Convergents to Square Root 2 (CSR2)
 
-#### CSR2 Overview
+<h4 class="ct-overviews">CSR2 Overview</h4>
 
  This custom theory was released at the same time as Euler's Formula. CSR2 is based on approximations of \\(\sqrt{2}\\) using recurrent formulae. As the approximations improve, the $\dot{q}$ and $\dot\rho$ improve, increasing $\tau$. An explanation of each section of the equations is shown below:
 
@@ -544,7 +544,7 @@ h3 {
 
 ### Fractional Integration (FI)
 
-####  Overview
+<h4 class="ct-overviews">FI Overview</h4>
 
  This custom theory was released at the same time as Fractal Patterns. FI is based on [Riemann–Liouville Integrals](https://en.wikipedia.org/wiki/Riemann%E2%80%93Liouville_integral) and allows you to approach the full integral as the fraction approaches 1. An explanation of each section of the equations is shown below:
 
@@ -837,7 +837,7 @@ h3 {
 
 ### Fractal Patterns (FP)
 
-#### FP Overview
+<h4 class="ct-overviews">FP Overview</h4>
 
  This custom theory was released at the same time as Fractional Integration. FP is A theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence (Tₙ), Ulam-Warburton cellular automaton (Uₙ), Sierpiński triangle (Sₙ). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
 
@@ -1028,7 +1028,7 @@ FP Guide written by Snaeky and Hotab
 
 Guide Writing is in progress. Not everything here is accurate, or from RZ at the moment.
 
-#### RZ Overview
+<h4 class="ct-overviews">RZ Overview</h4>
 
 This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 

@@ -5,6 +5,7 @@ author: "Playspout"
 contributors: "the Amazing Community"
 order: 0
 tags: T9+
+eleventyExcludeFromCollections: true
 ---
 
 ## Introduction to stepwise variables

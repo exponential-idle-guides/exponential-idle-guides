@@ -90,7 +90,6 @@ window.addEventListener("click", function(e){
       if(document.getElementById(btn).contains(e.target)){
         const side = btn.slice(0,-3) + 'Sidebar';
         globals.sidebar_list.sort(function(x,y){ return x == side ? -1 : y == side ? 1 : 0 });
-        console.log(globals.sidebar_list);
         openSidebar(globals.sidebar_list);
         break
       }
