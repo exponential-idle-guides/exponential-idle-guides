@@ -58,7 +58,6 @@ function gt_dict(dict, val){
 }
 function lt_dict(dict, val){
   const arr = dict.indexes;
-  //console.log(arr, dict, val);
 	if (Math.max(...arr) < val || val === undefined){
   	return copy_dict(dict, (d,k) => d[k].slice());
   } else if (Math.min(...arr) > val) {
@@ -69,8 +68,8 @@ function lt_dict(dict, val){
 }
 
 function zip() {
-    var args = [].slice.call(arguments);
-    var shortest = args.length==0 ? [] : args.reduce(function(a,b){
+    const args = [].slice.call(arguments);
+    const shortest = args.length==0 ? [] : args.reduce(function(a,b){
         return a.length<b.length ? a : b
     });
 
@@ -96,8 +95,7 @@ function skipped(classlist, id = "") {
 // {h2: {ids: [], indexes: []}, ...}
 const h_subkeys = ["ids", "indexes"];
 const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: (h_subkeys.reduce((b, i) => ({...b,[i]: [...$(h)].map((c) => i === "ids" ? "#" + strRepl($(c).attr('id'))  : $(c).index())}), {}))}), {});
-console.log("h_dict", h_dict);
-///*
+
 const collap_dict = copy_dict(h_dict, function f(d, h) {
   return (h === "h2" ? zip(d[h].ids.slice(1), d[h].indexes.slice(1)) : zip_idi(d[h]))
     .filter(function([id, i]){
@@ -112,7 +110,6 @@ const collap_dict = copy_dict(h_dict, function f(d, h) {
     .map(([id, i]) => ({ids: id, indexes: i}))
     .reduce((a,b) => h_subkeys.reduce((c, d) => ({...c, [d]: [...a[d],b[d]]}), {}), h_subkeys.reduce((c, d) => ({...c, [d]: []}), {}))
 })
-console.log("collap_dict", collap_dict);
 const coll = $('.collapsible');
 
 if (collap_dict.h2.ids.length) {
@@ -187,9 +184,7 @@ if (collap_dict.h2.ids.length) {
   });
 } else {
   const first_h3 = {ids: collap_dict.h3.ids[0], indexes: collap_dict.h3.indexes[0]};
-  console.log("first_h3", first_h3);
   const h4_h3 = lt_dict(collap_dict.h4, first_h3.indexes);
-  console.log("h4_h3", h4_h3);
   if (h4_h3.ids.length) {
 		const last_h4_i = h4_h3.indexes.slice(-1)[0];
   	zip_idi(h4_h3).forEach(function([h4_id, h4_i], i) {
@@ -207,7 +202,6 @@ if (collap_dict.h2.ids.length) {
       }
     });
   }
-  console.log(zip_idi(collap_dict.h3));
 	zip_idi(collap_dict.h3).forEach(function([h3_id, h3_i],i) {
     $(h3_id)
     	.nextUntil(collap_dict.h3.ids[i+1])
@@ -215,7 +209,6 @@ if (collap_dict.h2.ids.length) {
     
     const next_h3_i = collap_dict.h3.indexes[i+1];
     const h4 = lt_dict(gt_dict(collap_dict.h4, h3_i), next_h3_i);
-    console.log(h3_id, next_h3_i, h4, h4.ids.length);
     if (h4.ids.length) {
     	const last_h4 = lt_dict(h_dict.h4, next_h3_i).indexes.slice(-1)[0];
       zip_idi(h4).forEach(function([h4_id,h4_i], l) {
