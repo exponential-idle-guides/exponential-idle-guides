@@ -187,7 +187,7 @@ grew by \\(this\\) \\(ratio\\) per second." To maximize this value, we note that
 one local maximum (by working through the behaviors of (\\(f\\) over time) so we may simply take a
 derivative (\\(d\\)) and see when it turns negative.
 
-<h4 id="AP-visual">Visual representation</h4>
+#### Visual representation
 
 ![AP graph](/images/AP-graph.png)
 
@@ -240,6 +240,6 @@ If we have two really large values, the average of the two will be in favor of t
 
 For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that it displays the largest value of \\(10^{10^{10^{db}}}\\) that occurred so far. However, we wouldn't want db blown up this way, so we can use \\(log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))\\) to retrieve back the maximum \\(db\\).
 
-<h4 id="smooth-formula">Reference formula</h4>
+#### Reference formula
 
 ![Smooth Formula](/images/smooth-formula.jpg)
