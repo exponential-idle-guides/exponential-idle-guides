@@ -5,8 +5,8 @@ const full_skiplist = {
   },
   "guide-extensions": {
     "rankings-hall-of-fame": ["#hall-of-fame"],
-    "rankings-main": ["#ft-prior-ranks"],
-    "seasons-main": ["#season-prior-ranks"]
+    "rankings-main": ["#previous-rankings"],
+    "seasons-main": ["#previous-rankings"]
   },
   "ranking-news": {},
   "season-news": {},
@@ -20,10 +20,11 @@ const check_url_interval = 500; // ms
 let current_url = window.location.href;
 
 function get_skiplist(url) {
+  if(["http://localhost:8000/", "https://exponential-idle-guides.netlify.app/"].includes(url)){return []}
   const p = /^https\:\/\/[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app\/([a-z\-\/0-9]*)/g.exec(url);
   const path = [...(p === null ? /^http\:\/\/localhost\:8000([a-z\-\/0-9]*)/g.exec(url) : p)[1].matchAll(/[a-z\-0-9]+/g)];
   const s = full_skiplist[path[0]][path[1]];
-  return s === undefined ? ["#top"] : ["#top",...s];
+  return s === undefined ? [] : [,...s];
 }
 const skiplist = get_skiplist(current_url);
 
@@ -79,10 +80,10 @@ function zip() {
 }
 let zip_idi = dict => zip(dict.ids, dict.indexes);
 
-function skipped(classlist, id = "") {
-  if (classlist === undefined && id === "") {
+function skipped(classlist, id = "#") {
+  if (classlist === undefined && id === "#") {
     return false;
-  } else if (skiplist.includes("#" + id)) {
+  } else if (skiplist.includes(id)) {
     return true
   } else if (classlist !== undefined) {
     return classlist.split(/(\s+)/).some(r => skiplist.includes("." + r))
@@ -91,11 +92,21 @@ function skipped(classlist, id = "") {
   }
 }
 
+// any non-md headers with ids will be given permalink
+["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {if(!/\" aria\-label\=\"Permalink\: /g.test($(h).html())){$(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + strRepl($(h).html()) + '" aria-label="Permalink: ' + strRepl($(h).html()) + '">#</a>')}})
+
+// any headers with no id will be given permalink and an id (not first h2)
+for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")], []).slice(1)) {
+  const new_h = strRepl($(h).html());
+  $(h).attr('id', new_h);
+  $(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + new_h + '" aria-label="Permalink: ' + new_h + '">#</a>');
+}
+
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) =>"#" + strRepl($(c).attr('id'))),indexes: [...$(h)].map((c) =>$(c).index())}}), {});
+const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) => "#" + strRepl($(c).attr('id'))), indexes: [...$(h)].map((c) =>$(c).index())}}), {});
 
-const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? (i === '#' ? false: !skipped($(i).attr('class'), i.replace("#",""))) : a.ids.includes(d[h].ids[idx]))}), {}));
+const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
 for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
   h.html(closed_char + ' ' + h.html());
   h.addClass('collapsible collapsible-closed');

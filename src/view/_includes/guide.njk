@@ -49,69 +49,63 @@
   
   {{ content | safe }}
   {% if '/rankings-main' in page.url %}
-    <h3 id="ft-prior-ranks">Previous Rankings</h3>
-    <ul>
-      {% for year, yearPosts in collections.postsByYear %}
-        {% set yearbool = false %}
-        {% for post in yearPosts %}
-          {% if '/ranking-news' in post.url %}
-            {% set yearbool = true %}
-          {% endif %}
-        {% endfor %}
-
-        {% if yearbool %}
-          <li>{{ year }}</li>
-          <ul>
-            {% for post in yearPosts | reverse %}
-              {% if '/ranking-news' in post.url %}
-                {% set title = post.data.title | string %}
-                <li>
-                  <a href="{{post.url}}">
-                    {% if 'Rankings & News' in title %}
-                      {{ title.slice(16,-5) }}
-                    {% else %}
-                      {{ post.data.title }}
-                    {% endif %}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+    {% for year, yearPosts in collections.postsByYear %}
+      {% set yearbool = false %}
+      {% for post in yearPosts %}
+        {% if '/ranking-news' in post.url %}
+          {% set yearbool = true %}
         {% endif %}
       {% endfor %}
-    </ul>
+      
+      {% if yearbool %}
+        <h3>{{ year }}</h3>
+        <ul>
+          {% for post in yearPosts | reverse %}
+            {% if '/ranking-news' in post.url %}
+              {% set title = post.data.title | string %}
+              <li>
+                <a href="{{post.url}}">
+                  {% if 'Rankings & News' in title %}
+                    {{ title.slice(16,-5) }}
+                  {% else %}
+                    {{ post.data.title }}
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
   {% elif '/seasons-main' in page.url %}
-    <h3 id="season-prior-ranks">Previous Rankings</h3>
-    <ul>
-      {% for year, yearPosts in collections.postsByYear %}
-        {% set yearbool = false %}
-        {% for post in yearPosts %}
-          {% if '/season-news' in post.url %}
-            {% set yearbool = true %}
-          {% endif %}
-        {% endfor %}
-
-        {% if yearbool %}
-          <li>{{ year }}</li>
-          <ul>
-            {% for post in yearPosts | reverse %}
-              {% if '/season-news' in post.url %}
-                {% set title = post.data.title | string %}
-                <li>
-                  <a href="{{post.url}}">
-                    {% if 'Season Rankings & News' in title %}
-                      {{ title.slice(23,-5) }}
-                    {% else %}
-                      {{ post.data.title }}
-                    {% endif %}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+    {% for year, yearPosts in collections.postsByYear %}
+      {% set yearbool = false %}
+      {% for post in yearPosts %}
+        {% if '/season-news' in post.url %}
+          {% set yearbool = true %}
         {% endif %}
       {% endfor %}
-    </ul>
+
+      {% if yearbool %}
+        <h3>{{ year }}</h3>
+        <ul>
+          {% for post in yearPosts | reverse %}
+            {% if '/season-news' in post.url %}
+              {% set title = post.data.title | string %}
+              <li>
+                <a href="{{post.url}}">
+                  {% if 'Season Rankings & News' in title %}
+                    {{ title.slice(23,-5) }}
+                  {% else %}
+                    {{ post.data.title }}
+                  {% endif %}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endfor %}
   {% endif %}
   
 {% endblock %}
