@@ -293,9 +293,8 @@ function url_collapsibles(url) {
       };
     }
   }
-  const url_h_arr = coll.filter(function() {return open_ids.includes('#' + $(this).attr('id'))});
-  for (let i = 0; i < url_h_arr.length; i++) {
-    open_collapsible(url_h_arr[i]);
+  for (const i of coll.filter(function() {return open_ids.includes('#' + $(this).attr('id'))})) {
+    open_collapsible(i);
   }
 }
 
