@@ -93,23 +93,13 @@ function skipped(classlist, id = "") {
 
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_subkeys = ["ids", "indexes"];
-const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: (h_subkeys.reduce((b, i) => ({...b,[i]: [...$(h)].map((c) => i === "ids" ? "#" + strRepl($(c).attr('id'))  : $(c).index())}), {}))}), {});
+const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) =>"#" + strRepl($(c).attr('id'))),indexes: [...$(h)].map((c) =>$(c).index())}}), {});
 
-const collap_dict = copy_dict(h_dict, function f(d, h) {
-  return (h === "h2" ? zip(d[h].ids.slice(1), d[h].indexes.slice(1)) : zip_idi(d[h]))
-    .filter(function([id, i]){
-      const head = $(id);
-      if (!skipped(head.attr('class'), id.replace("#",""))){
-        head.html(closed_char + ' ' + head.html());
-        head.addClass('collapsible collapsible-closed');
-        return true;
-      }
-      return false;
-    })
-    .map(([id, i]) => ({ids: id, indexes: i}))
-    .reduce((a,b) => h_subkeys.reduce((c, d) => ({...c, [d]: [...a[d],b[d]]}), {}), h_subkeys.reduce((c, d) => ({...c, [d]: []}), {}))
-})
+const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? (i === '#' ? false: !skipped($(i).attr('class'), i.replace("#",""))) : a.ids.includes(d[h].ids[idx]))}), {}));
+for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
+  h.html(closed_char + ' ' + h.html());
+  h.addClass('collapsible collapsible-closed');
+}
 const coll = $('.collapsible');
 
 if (collap_dict.h2.ids.length) {
@@ -275,7 +265,7 @@ function url_collapsibles(url) {
 
   function url_h_search(search) {
     let canidates; let final_h;
-    for (const [h, dict] of Object.entries(collap_dict)) {
+    for (const [h, dict] of Object.entries(h_dict)) {
       final_h = h;
       canidates = dict.indexes.filter((i) => dict.ids[dict.indexes.indexOf(i)].replaceAll(new RegExp('\u00AD', 'g'),'').match(new RegExp(search + '$')) !== null);
       if(canidates.length){break};
