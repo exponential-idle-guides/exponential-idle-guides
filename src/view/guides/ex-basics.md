@@ -152,12 +152,14 @@ You start out with normal numbers and quickly work your way up to $X.xxeX$ notat
 
 ### Autoprestige expression
 
+#### Autoprestige ex­pres­sion
+
+<button class="copy-btn" onClick="copyText('ap_eq');">Copy Equation Text</button>
+
 <blockquote id='ap_eq'>
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
-
-<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
 
 #### Autoprestige explanation
 
@@ -193,22 +195,65 @@ derivative (\\(d\\)) and see when it turns negative.
 
 ### Autosupremacy expression
 
+#### Auto­su­prem­acy ex­pres­sion
+
+<button class="copy-btn" onClick="copyText('as_eq');">Copy Equation Text</button>
+
 <blockquote id="as_eq">
-timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
-&gt; 3 * tr &amp;&amp; db &gt; b<br>
-&amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
-costUpS(2)), costUpS(3))<br>
-&amp;&amp; ln(1 + max(1, log10(sf)) /<br>
-smooth(max(1, log10(gf)),<br>
-(st &gt; tr) * ee99)) / max(1, st) &lt;<br>
-smooth(ln(1 + max(1, log10(sf)) /<br>
-smooth(max(1, log10(gf)), (st &gt; tr)<br>
-* ee99)) / max(1, st), (pt &gt; tr) * ee99)
+dpsi + psi &gt; min(costUpS(1), <br>
+    costUpS(2), costUpS(3)) <br>
+&amp;&amp; (((lf &lt; ee48000) <br>
+&amp;&amp; ((log10(log10(gf)) &gt;= <br>
+    log10(log10(lf))-400) <br>
+    || ((log10(log10(gf)) &gt;= <br>
+        log10(log10(lf)) * 0.8) <br>
+        &amp;&amp; (((dpsi + psi &gt; costUpS(1, 3)) <br>
+        || (dpsi + psi &gt; <br>
+            (costUpS(2) + costUpS(1, 2)))) <br>
+        || ((log10(log10(gf)) &gt;= <br>
+                log10(log10(lf))-10000) <br>
+            &amp;&amp; (dpsi + psi &gt; costUpS(3, 3))) <br>
+        || ((log10(log10(gf)) &gt;= <br>
+                log10(log10(lf))-4000) <br>
+            &amp;&amp; (dpsi + psi &gt; costUpS(3, 2))) <br>
+        || ((log10(log10(gf)) &gt;= <br>
+                log10(log10(lf))-1000) <br>
+            &amp;&amp; (dpsi + psi &gt; costUpS(3, 1))))) <br>
+    || ((log10(log10(gf)) &lt; <br>
+        log10(log10(lf)) * 0.8) <br>
+    &amp;&amp; (timer(d(ln(db / b + 1) / pt) &lt; 0) <br>
+        &gt; 3 * tr &amp;&amp; db &gt; b <br>
+    &amp;&amp; dpsi + psi &gt; min(costUpS(1), <br>
+        costUpS(2), costUpS(3)) <br>
+    &amp;&amp; ln(1 + max(1, log10(sf)) / <br>
+        smooth(max(1, log10(gf)), <br>
+        (st &gt; tr) * ee99)) / <br>
+    max(1, st) &lt; <br>
+        smooth(ln(1 + max(1, log10(sf)) / <br>
+            smooth(max(1, log10(gf)), <br>
+            (st &gt; tr) * ee99)) / <br>
+            max(1, st), (pt &gt; tr) * ee99))))) <br>
+|| ((lf &gt;= ee48000) <br>
+    &amp;&amp; (((lf &lt; ee52000) <br>
+            &amp;&amp; ((costUpS(3) &lt; e411 <br>
+            &amp;&amp; psi + dpsi &gt; e411) <br>
+            || (costUpS(3) &lt; e531 <br>
+            &amp;&amp; psi + dpsi &gt; e531) <br>
+            || (costUpS(3) &lt; e551 <br>
+            &amp;&amp; psi + dpsi &gt; e551))) <br>
+        || ((lf &lt; ee58000) <br>
+            &amp;&amp; (costUpS(3) &lt; e511 <br>
+            &amp;&amp; psi + dpsi &gt; e511)))) <br>
+|| ((lf &lt; ee75000) <br>
+    &amp;&amp; (costUpS(3) &lt; e571 <br>
+    &amp;&amp; psi + dpsi &gt; e571)) <br>
+|| (costUpS(1) &lt; e52 <br>
+&amp;&amp; psi + dpsi &gt; 4.2e51))
 </blockquote>
 
-<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
-
-**YOU NEED TO MANUALLY SUPREMACY WHEN YOU PUT THIS INTO YOUR GAME!**
+**Do a manual supremacy when you input this expression and never enter the
+edit expression field again afterwards. Make sure autobuyers are on x1
+or xMax.**
 
 ###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock)
 
