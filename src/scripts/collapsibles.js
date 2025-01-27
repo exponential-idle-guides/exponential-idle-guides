@@ -121,7 +121,7 @@ if (collap_dict.h2.ids.length) {
     
     const next_h2_i = collap_dict.h2.indexes[i+1];
     const h2_h3 = lt_dict(gt_dict(collap_dict.h3, h2_i), next_h2_i);
-    const next_h3 = h2_h3.indexes[0] === undefined ? 0 : copy_dict(h2_h3, (d,k) => d[k][0]);
+    const next_h3 = h2_h3.indexes[0] === undefined ? {ids: collap_dict.h2[next_h2_i], indexes: [next_h2_i]} : copy_dict(h2_h3, (d,k) => d[k][0]);
     const h2_h4 = lt_dict(gt_dict(collap_dict.h4, h2_i), next_h3.indexes);
     if (h2_h4.ids.length) {
       const last_h4_i = lt_dict(h_dict.h4, next_h3.indexes).indexes.slice(-1)[0];
