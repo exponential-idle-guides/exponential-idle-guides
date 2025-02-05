@@ -5303,6 +5303,8 @@ Strategy Credits:
    </tbody>
 </table>
 
+## Fractional Integration
+
 ### FI
 <table class="spqcey">
 <thead>
