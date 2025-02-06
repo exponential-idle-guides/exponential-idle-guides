@@ -1071,10 +1071,6 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
          <td>Doubling. Bought with delta.</td>
       </tr>
       <tr>
-         <th>w<sub><sub><small>3</small></sub></sub></th>
-         <td>Doubling every e30 rho from e600 delta on. Bought with delta.</td>
-      </tr>
-     <tr>
          <th>b</th>
          <td>Is capped at 6 lvls maxing out at 3 (+0.5/lvl)</td>
       </tr>
@@ -1109,7 +1105,7 @@ For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near o
 
 ##### Black Hole (BH)
 
-Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 1.5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
+Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
 When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(25.025t\\), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
