@@ -1071,6 +1071,10 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
          <td>Doubling. Bought with delta.</td>
       </tr>
       <tr>
+         <th>w<sub><sub><small>3</small></sub></sub></th>
+         <td>Doub­ling every e30 rho from e600 delta on. Bought with delta.</td>
+      </tr>
+      <tr>
          <th>b</th>
          <td>Is capped at 6 lvls maxing out at 3 (+0.5/lvl)</td>
       </tr>
