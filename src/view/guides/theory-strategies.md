@@ -294,6 +294,12 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
 
 - [FP](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fp)&nbsp; — &nbsp;Idle
 
+<span class="h3-fake">Custom Theory 7: Riemann Zeta Function</span>
+
+The seventh official custom theory, abbreviated RZ, was created by prop and released on December 15, 2024.
+
+- [RZ](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rz)&nbsp; — &nbsp;Idle
+
 <br> <br>
 
 <span class="h2-fake">Official Theories</span>
@@ -5553,3 +5559,45 @@ Strategy Credits:
    </tbody>
 </table>
 <br>
+
+## Riemann Zeta Function
+
+### RZ
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">RZ</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+
+The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
