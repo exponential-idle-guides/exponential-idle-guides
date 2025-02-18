@@ -286,6 +286,12 @@ The fifth/sixth official custom theory, abbreviated FI, was first planned by Sna
 
 - [FI](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fi)&nbsp; — &nbsp;Idle
 
+<span class="h3-fake">Custom Theory 6: Fractal Patterns</span>
+
+The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT tau contribution rate increase by x4.
+
+- [FP](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fp)&nbsp; — &nbsp;Idle
+
 <br> <br>
 
 <span class="h2-fake">Official Theories</span>
@@ -5431,6 +5437,53 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">n</td>
          <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+
+## Fractal Patterns
+
+### FP
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>FP</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">s</td>
+         <td>✔️</td>
       </tr>
    </tbody>
 </table>
