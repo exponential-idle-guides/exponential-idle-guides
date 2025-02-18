@@ -37,9 +37,9 @@ T1 is one of the theories that benefit the most from active strategies. T1<span 
 
 - [T1<span style="color:#41AD21">Ratio</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio)&nbsp; — &nbsp;Active
 
-- [T1<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ai)&nbsp; — &nbsp;Active
-
 - [T1<span style="color:#4665F0">C34</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
+
+- [T1<span style="color:#4665F0">C4</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c4)&nbsp; — &nbsp;Idle
 
 <span class="h3-fake">Theory 2: Differential Calculus</span>
 
@@ -309,17 +309,17 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
+         <td>See T1<span style="color:#41AD21">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
+         <td>See T1<span style="color:#41AD21">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When ρ > 5 × cost</td>
+         <td>See T1<span style="color:#41AD21">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
@@ -420,41 +420,6 @@ Strategy Credits:
 
 - XLII
 
-### T1<span style="color:#41AD21">AI</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T1AI</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ρ > 5 × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>When ρ > 1.15 × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When ρ > 2 × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
 ### T1<span style="color:#4665F0">C34</span>
 
 <table class="spqcey">
@@ -489,6 +454,42 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
+
+### T1<span style="color:#4665F0">C4</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T1C4</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 
 ## Theory 2: Differential Calculus
 
