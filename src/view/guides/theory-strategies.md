@@ -288,6 +288,10 @@ The fifth/sixth official custom theory, abbreviated FI, was first planned by Sna
 
 The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT tau contribution rate increase by x4.
 
+- [FP<span style="color:#41AD21">modBurst<span style="color:#4665F0">C1</span>MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fpmodburstc1ms)&nbsp; — &nbsp;Active
+
+- [FP<span style="color:#41AD21">dMS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fpdms)&nbsp; — &nbsp;Active
+
 - [FP](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fp)&nbsp; — &nbsp;Idle
 
 <br> <br>
@@ -323,17 +327,17 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>See T1<span style="color:#41AD21">Ratio</span></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio">T1<span style="color:#41AD21">Ratio</span></a></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>See T1<span style="color:#41AD21">Ratio</span></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio">T1<span style="color:#41AD21">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>See T1<span style="color:#41AD21">Ratio</span></td>
+         <td>See <a href="https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio">T1<span style="color:#41AD21">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
@@ -5408,12 +5412,110 @@ Strategy Credits:
 
 ## Fractal Patterns
 
+### FP<span style="color:#41AD21">modBurst<span style="color:#4665F0">C1</span>MS</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FPmodBurstC1MS</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small></small></sub></sub></td>
+         <td>When cost × (1 + lvl % 100) < min(c<sub><sub><small>2</small></sub></sub> cost, s cost)<br>
+         (Autobuy if you can afford the next lvl%100=1 before the next c<sub><sub><small>2</small></sub></sub> or s)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️(if c<sub><sub><small>2</small></sub></sub> and s have similar costs, prioritize s)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (1 + lvl % 10) < min(q<sub><sub><small>2</small></sub></sub> cost, s cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️(if q<sub><sub><small>2</small></sub></sub> and s have similar costs, prioritize s)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">s</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**The milestone swapping strategy for FP (e700ρ+) can be found [over here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-strategy)**
+
+<br>
+
+Strategy Credits:
+- hotab for implementing this strategy into the sim and adjusting it
+
+### FP<span style="color:#41AD21">dMS</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FPdMS</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ṫ</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small></small></sub></sub></td>
+         <td>When cost × (1 + lvl % 100) < c<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">s</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**The milestone swapping strategy for FP (e700ρ+) can be found [over here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-strategy)**
+
 ### FP
 
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>FP</th>
+  <th style="text-align:center">FP</th>
 </thead>
    <tbody>
       <tr>
