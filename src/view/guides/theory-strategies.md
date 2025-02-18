@@ -53,8 +53,6 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 - [T2<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2ms)&nbsp; — &nbsp;Active
 
-- [T2<span style="color:#41AD21">Coast-X%</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2coast-xpercent)&nbsp; — &nbsp;Semi-Idle
-
 - [T2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
 
 <span class="h3-fake">Theory 3: Linear Algebra</span>
@@ -72,6 +70,8 @@ T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span s
 - [T3</span><span style="color:#41AD21">SNAX2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 
 - [T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3r2c23d)&nbsp; — &nbsp;Active
+
+- [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13C33</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13c33)&nbsp; — &nbsp;Idle
 
 - [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
 
@@ -779,68 +779,6 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 
 **T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
 
-### T2<span style="color:#41AD21">Coast-X%</span>
-
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T2Coast-X%</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Before X% of T2’s Optimal Multiplier</td>
-         <td class="rightHeader">After X% of T2’s Optimal Multiplier</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-
-If the sim recommends this, it will return a percentage in the box: T2<span style="color:#41AD21">Coast-☐%</span><br>
-
-We recommend using [T2<span style="color:#41AD21">MC</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2mc) instead of this strategy.
-
 ### T2
 
 <table class="spqcey">
@@ -1330,6 +1268,64 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
+### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13C33</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">T3Noρ<sub><sub><small>1</small></sub></sub>C13C33</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
 
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
 
