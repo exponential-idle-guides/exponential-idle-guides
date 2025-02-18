@@ -74,36 +74,6 @@ Remember to follow our routing advice from the [introduction to graduation](http
    </tbody>
 </table>
 
-### Student routing with R9
-
-All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
-[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 swapping (below).
-
-There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) orriginally by XLII and now developed by the Exponential Develpers, which works both below max milestones and after max milestones for all theories.
-
-#### How to push F(t) with R9 swapping
-
-###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
-
-1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
-2. Start accel (preferably keep it between prestiges).
-3. Potentially sit here to stack t for bigger \\(\varphi_2\\) when you have students in \\(\varphi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\varphi_2\\).
-4. Respec all 10/20/30 students from R9.
-5. Wait for the autoprestige to prestige and swap back students to R9.
-6. Repeat.
-
-This method allows you to push \\(f(t)\\) with almost no loss of R9
-uptime or pushing power. This is harder with fewer levels of R9 but
-still helps if you get used to it.
-
-#### R9 autoprestige expression
-
-You can find the autoprestige used for R9 Swapping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each swap.
-
-###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
-
-{{ yt.embed('Klw9lLPNqdY') }}
-
 ### Theory 1
 
 You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
@@ -635,6 +605,36 @@ The current recommendation for your \\(\tau\\) distribution for T8 skip is as fo
 If your numbers are different, that is fine. You just need to reach 1e1350
 \\(\Pi\tau\\) to get to R9 at 14k.
 
+### Student routing with R9
+
+All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
+[star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 swapping (below).
+
+There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) orriginally by XLII and now developed by the Exponential Develpers, which works both below max milestones and after max milestones for all theories.
+
+#### How to push F(t) with R9 swapping
+
+###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
+
+1. Wait till \\(f(t)\\) stops growing with students in R9 pushing \\(\tau\\).
+2. Start accel (preferably keep it between prestiges).
+3. Potentially sit here to stack t for bigger \\(\varphi_2\\) when you have students in \\(\varphi_2\\). Only do this when you are near a graduation mark. This is not useful if you will not swap into \\(\varphi_2\\).
+4. Respec all 10/20/30 students from R9.
+5. Wait for the autoprestige to prestige and swap back students to R9.
+6. Repeat.
+
+This method allows you to push \\(f(t)\\) with almost no loss of R9
+uptime or pushing power. This is harder with fewer levels of R9 but
+still helps if you get used to it.
+
+#### R9 autoprestige expression
+
+You can find the autoprestige used for R9 Swapping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each swap.
+
+###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
+
+{{ yt.embed('Klw9lLPNqdY') }}
+
 ### Theory 8 (55σ / 12k)
 
 #### T8 strategy
@@ -751,6 +751,8 @@ the rest after. This continues to max at 2/3/3/3.
 </table>
 
 Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
+
+
 
 ### Final Push to ee20k
 
