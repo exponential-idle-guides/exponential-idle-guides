@@ -278,6 +278,14 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 - [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
 
+<span class="h3-fake">Custom Theory 5: Fractional Integration</span>
+
+The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT tau contribution rate increase by x4.
+
+- [FI<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fid)&nbsp; — &nbsp;Active
+
+- [FI](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fi)&nbsp; — &nbsp;Idle
+
 <br> <br>
 
 <span class="h2-fake">Official Theories</span>
@@ -5397,7 +5405,7 @@ Strategy Credits:
 </table>
 <br>
 
-### FId
+### FI<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5406,7 +5414,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 23) < q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -5422,7 +5430,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
       </tr>
    </tbody>
 </table>
