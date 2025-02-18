@@ -240,8 +240,6 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 - [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspd)&nbsp; — &nbsp;Active
-
 - [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 <span class="h3-fake">Custom Theory 2: Sequential Limits</span>
@@ -4552,41 +4550,6 @@ Strategy Credits:
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
-### WSP<span style="color:#41AD21">d</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>WSPd</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost<br>(recommended to stop buying before this)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
-
-Strategy Credits:
-
-- xelaroc
 
 ### WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
 
