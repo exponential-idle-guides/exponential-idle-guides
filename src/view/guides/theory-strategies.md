@@ -71,6 +71,8 @@ T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span s
 
 - [T3</span><span style="color:#41AD21">SNAX2</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3snax2)&nbsp; — &nbsp;Active
 
+- [T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3r2c23d)&nbsp; — &nbsp;Active
+
 - [T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcvnoc12)&nbsp; — &nbsp;Semi-Idle
 
 - [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3nor1c13rcv)&nbsp; — &nbsp;Semi-Idle
@@ -344,7 +346,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T1Ratio</th>
+  <th style="text-align:center">T1Ratio</th>
 </thead>
    <tbody>
       <tr>
@@ -773,7 +775,7 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 
 ### T2<span style="color:#41AD21">MS</span>
 
-<br><br>
+<br>
 
 **T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
 
@@ -1268,6 +1270,67 @@ Strategy Credits:
 It is designed to be an easier version of current t3 strategies.<br> <br>
 This is the only active SNAX strategy.
 
+
+### T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">T3ρ<sub><sub><small>2</small></sub></sub>C23d</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>When cost is ⅓ of min(c<sub><sub><small>12</small></sub></sub> cost, c<sub><sub><small>22</small></sub></sub> cost, c<sub><sub><small>32</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
+         <td>When cost is 1/9 of c<sub><sub><small>23</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+
 ### T3<span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">ρ1C13</span><span style="color:#41AD21">rcv</span><span style="color:var(--palette-stroke-warning)">No</span></span><span style="color:#4665F0">C12</span>
 
 <table class="spqcey">
@@ -1441,7 +1504,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC11C13C21C33d</th>
+  <th style="text-align:center">T3NoC11C13C21C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1501,7 +1564,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC11C13C21C33</th>
+  <th style="text-align:center">T3NoC11C13C21C33</th>
 </thead>
    <tbody>
       <tr>
@@ -1560,7 +1623,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC13C33d</th>
+  <th style="text-align:center">T3NoC13C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1619,7 +1682,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC13C33</th>
+  <th style="text-align:center">T3NoC13C33</th>
 </thead>
    <tbody>
       <tr>
@@ -1678,7 +1741,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC11C13C33d</th>
+  <th style="text-align:center">T3NoC11C13C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1737,7 +1800,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3NoC11C13C33d</th>
+  <th style="text-align:center">T3NoC11C13C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1796,7 +1859,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3C13C32C33d</th>
+  <th style="text-align:center">T3C13C32C33d</th>
 </thead>
    <tbody>
       <tr>
@@ -1914,7 +1977,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3C11C12C21d</th>
+  <th style="text-align:center">T3C11C12C21d</th>
 </thead>
    <tbody>
       <tr>
@@ -1973,7 +2036,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T3C11C12C21</th>
+  <th style="text-align:center">T3C11C12C21</th>
 </thead>
    <tbody>
       <tr>
@@ -3466,6 +3529,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 </table>
 
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+
 ## Theory 7: Numerical Methods
 
 ### T7<span style="color:#41AD21">PlaySpqceyX</span>
