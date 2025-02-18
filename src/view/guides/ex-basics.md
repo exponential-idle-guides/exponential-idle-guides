@@ -287,4 +287,9 @@ For example, \\(smooth(10^{10^{10^{db}}}, 1)\\) has the input large enough that 
 
 #### Reference formula
 
-![Smooth Formula](/images/smooth-formula.jpg)
+$$
+\begin{align}
+smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \\
+&=\alpha h_T+(1-\alpha)\bar{h}_{T-\Delta T},\;\alpha=1-e^{-\frac{\Delta T}{c_T}}
+\end{align}
+$$
