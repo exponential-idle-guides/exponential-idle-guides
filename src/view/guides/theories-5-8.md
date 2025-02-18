@@ -612,6 +612,8 @@ All routing follows the [student calculator](https://conicgames.github.io/expone
 
 There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) orriginally by XLII and now developed by the Exponential Develpers, which works both below max milestones and after max milestones for all theories.
 
+![R9 Location](/images/R9.png)
+
 #### How to push F(t) with R9 swapping
 
 ###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
@@ -751,8 +753,6 @@ the rest after. This continues to max at 2/3/3/3.
 </table>
 
 Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
-
-
 
 ### Final Push to ee20k
 
