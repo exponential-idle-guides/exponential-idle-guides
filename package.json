@@ -7,7 +7,7 @@
     "build": "gulp build",
     "watch": "gulp watch",
     "serve": "http-server _site -p8000 -c-1 -s",
-    "dev": "npm run build && concurrently \"npm:watch\" \"npm:serve\""
+    "dev": "npm install && npm audit fix --force && npm run build && concurrently \"npm:watch\" \"npm:serve\""
   },
   "author": "",
   "license": "None",
