@@ -38,7 +38,7 @@ module.exports = config => {
     permalinkAttrs: (slug, state) => ({
       "aria-label": "Permalink: " + slug
     }),
-    level: [1,2,3,4]
+    level: [1,2,3,4,5]
   };
 
 
