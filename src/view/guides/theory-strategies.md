@@ -27,9 +27,9 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 ## List of Strategies
 
-<span class="h2-fake">Official Theories</span>
+### Official Theories {data-toc-exclude}
 
-<span class="h3-fake">Theory 1: Recurrence Relations</span>
+#### Theory 1: Recurrence Relations {data-toc-exclude}
 
 T1 is one of the theories that benefit the most from active strategies. T1<span style="color:#41AD21">SolarXLII xexxx</span> improves slightly on T1<span style="color:#41AD21">AI</span>.
 
@@ -41,7 +41,7 @@ T1 is one of the theories that benefit the most from active strategies. T1<span 
 
 - [T1<span style="color:#4665F0">C34</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1c34)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 2: Differential Calculus</span>
+#### Theory 2: Differential Calculus {data-toc-exclude}
 
 T2 is the only theory without an active strategy after all milestones are bought, despite attempts.
 
@@ -57,7 +57,7 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 - [T2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t2)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 3: Linear Algebra</span>
+#### Theory 3: Linear Algebra {data-toc-exclude}
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
 T3</span><span style="color:#41AD21">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
@@ -95,7 +95,7 @@ T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span s
 
 - [T3<span style="color:#4665F0">C11C12C21</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t3c11c12c21)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 4: Polynomials</span>
+#### Theory 4: Polynomials {data-toc-exclude}
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
@@ -131,7 +131,7 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 5: Logistic Function</span>
+#### Theory 5: Logistic Function {data-toc-exclude}
 
 T5 is the second-strongest theory in endgame, only behind T6.
 
@@ -141,7 +141,7 @@ T5 is the second-strongest theory in endgame, only behind T6.
 
 - [T5](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t5)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 6: Integral Calculus</span>
+#### Theory 6: Integral Calculus {data-toc-exclude}
 
 T6 is the most powerful theory in endgame, with several players reaching well over e1100𝜏 on their main save, some even over e1200𝜏.
 
@@ -169,7 +169,7 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 
 - [T6<span style="color:#4665F0">C3</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t6c3)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 7: Numerical Methods</span>
+#### Theory 7: Numerical Methods {data-toc-exclude}
 
 T7 is the third-weakest theory, ahead of T2 and T8.
 T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of T7<span style="color:#41AD21">Play-25</span>.
@@ -196,7 +196,7 @@ T7<span style="color:#41AD21">PlaySpqceyX</span> is a slightly faster version of
 
 - [T7](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t7)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Theory 8: Chaos Theory</span>
+#### Theory 8: Chaos Theory {data-toc-exclude}
 
 T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
 T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
@@ -225,12 +225,12 @@ Older theory simulators may return the attractor as part of the strategy name (E
 
 - [T8](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t8)&nbsp; — &nbsp;Idle
 
-<span class="h2-fake">Official Custom Theories</span>
+### Official Custom Theories {data-toc-exclude}
 
 In chronological order of release.
 <!-- Read more about custom theories on (link to custom theory guide page) -->
 
-<span class="h3-fake">Custom Theory 1: Weierstraß Sine Product</span>
+#### Custom Theory 1: Weierstraß Sine Product {data-toc-exclude}
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
@@ -242,7 +242,7 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 - [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
-<span class="h3-fake">Custom Theory 2: Sequential Limits</span>
+#### Custom Theory 2: Sequential Limits {data-toc-exclude}
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
@@ -254,7 +254,7 @@ The second official custom theory, abbreviated SL, was created by ellipsis and r
 
 - [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slstopa)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Custom Theory 3: Euler's Formula</span>
+#### Custom Theory 3: Euler's Formula {data-toc-exclude}
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
 
@@ -266,7 +266,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 - [EF](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#ef)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Custom Theory 4: Convergents to √2</span>
+#### Custom Theory 4: Convergents to √2 {data-toc-exclude}
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
 
@@ -275,10 +275,6 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 - [CSR2<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d)&nbsp; — &nbsp;Active
 
 - [CSR2](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2)&nbsp; — &nbsp;Idle
-
-<br> <br>
-
-<span class="h2-fake">Official Theories</span>
 
 ## Theory 1: Recurrence Relations
 
@@ -339,7 +335,7 @@ Strategy Credits:
 - Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
-### T1<span style="color:#41AD21">Ratio</span>
+### T1<span style="color:#41AD21">Ratio {data-toc-exclude}
 
 <table class="spqcey">
 <thead>
@@ -3465,6 +3461,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 </table>
 
 Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+
 ## Theory 7: Numerical Methods
 
 ### T7<span style="color:#41AD21">PlaySpqceyX</span>
@@ -4347,7 +4344,6 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 </table>
 <br>
 
-<span class="h2-fake">Official Custom Theories</span>
 
 ## Weierstraß Sine Product
 
