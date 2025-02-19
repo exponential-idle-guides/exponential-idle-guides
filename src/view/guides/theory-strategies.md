@@ -300,6 +300,10 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 
 - [RZ<span style="color:#41AD21">BH</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rzbh)&nbsp; — &nbsp;Idle
 
+- [RZ<span style="color:#41AD21">dMS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rzdms)&nbsp; — &nbsp;Active
+
+- [RZ<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rzms)&nbsp; — &nbsp;Semi-Idle
+
 - [RZ<span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rzd)&nbsp; — &nbsp;Active
 
 - [RZ](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#rz)&nbsp; — &nbsp;Idle
@@ -5334,7 +5338,7 @@ Strategy Credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>FId</th>
+  <th style="text-align:center">FId</th>
 </thead>
    <tbody>
       <tr>
@@ -5409,7 +5413,13 @@ Strategy Credits:
 </table>
 <br>
 
-**The milestone swapping strategy for FP (e700ρ+) can be found [over here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-strategy)**
+**Milestone swapping strategy (e700ρ+)**
+
+After you unlock the s milestone, you can perform milestone swapping until s > 2.
+Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
+Milestone swapping is no longer required once you can reach s > 2 quickly.
+
+For more information about the FP milestone swapping strategy, check [here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-milestone-swapping-explanation)
 
 <br>
 
@@ -5460,7 +5470,14 @@ Strategy Credits:
 </table>
 <br>
 
-**The milestone swapping strategy for FP (e700ρ+) can be found [over here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-strategy)**
+**Milestone swapping strategy (e700ρ+)**
+
+After you unlock the s milestone, you can perform milestone swapping until s > 2.
+Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
+Milestone swapping is no longer required once you can reach s > 2 quickly.
+
+For more information about the FP milestone swapping strategy, check [here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-milestone-swapping-explanation)
+
 
 ### FP
 
@@ -5561,7 +5578,7 @@ Strategy credits:
 <table class="spqcey">
 <thead>
   <th></th>
-  <th style="text-align:center">RZ</th>
+  <th style="text-align:center">RZBH</th>
 </thead>
    <tbody>
       <tr>
@@ -5602,6 +5619,102 @@ Strategy credits:
 
 - hotab, blackseal, Mathis S. for the implementation in the sim
 - hotab, blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
+- hotab & blackseal for the coasting strategy
+
+### RZ<span style="color:#41AD21">dMS</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">RZdMS</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When 4 × c<sub><sub><small>1</small></sub></sub>lvl + 2 < c<sub><sub><small>2</small></sub></sub>lvl</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × 5 < min(w<sub><sub><small>2</small></sub></sub> cost, w<sub><sub><small>3</small></sub></sub> cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b</td>
+         <td>✔️(Don't buy until t>16)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">dMS</span> swap:197 c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+
+Start the publication with the w2 milestone on.
+The value after swap is the ρ value were you should swith it to c<sub><sub><small>1</small></sub></sub> exponent.
+
+The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
+<br>
+Strategy credits:
+
+- hotab for the dynamic swap implementation
+- hotab & blackseal for the coasting strategy
+
+### RZ<span style="color:#41AD21">MS</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">RZMS</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">MS</span> swap:196 c<sub><sub><small>1</small></sub></sub>: 952 c<sub><sub><small>2</small></sub></sub>: 238.
+
+Start the publication with the w2 milestone on.
+The value after swap is the ρ value were you should swith it to c<sub><sub><small>1</small></sub></sub> exponent.
+
+The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
+<br>
+Strategy credits:
+
+- hotab for the dynamic swap implementation
 - hotab & blackseal for the coasting strategy
 
 ### RZ<span style="color:#41AD21">d</span>
