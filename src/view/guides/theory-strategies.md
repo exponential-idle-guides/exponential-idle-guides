@@ -103,9 +103,7 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d66)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3d)&nbsp; — &nbsp;Active
-
-- [T4<span style="color:#41AD21">SNAX</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4snax)&nbsp; — &nbsp;Semi-Idle
+- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
@@ -2183,114 +2181,56 @@ Strategy Credits:
 - rus9384#1864
 
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C3d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost and c<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
-### T4<span style="color:#41AD21">SNAX</span>
+### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span>
 
 <table class="spqcey">
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4SNAX</th>
+      <th colspan="2" style="text-align:center">T4C3coast</th>
    </tr>
 </thead>
    <tbody>
       <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier < 2.75</td>
-         <td class="rightHeader">Publication Multiplier > 2.75</td>
-     </tr>
-      <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
          <td>❌</td>
-         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
          <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>❌</td>
-         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
          <td>❌</td>
-         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
-         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
-         <td>✔️</td>
       </tr>
    </tbody>
 </table>
+<br>
 
-<br><br>
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span> \\(q_1\\): 377 \\(q_2\\): 252”.
 
-Strategy Credits:
-
-- Snaeky
-- XLII
-
+The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
 
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
 
@@ -5601,3 +5541,7 @@ Strategy Credits:
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
+<br>
+Strategy credits:
+
+- hotab & blackseal for the coasting strategy
