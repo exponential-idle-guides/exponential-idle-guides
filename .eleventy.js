@@ -1,5 +1,6 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItAttrs = require("markdown-it-attrs");
 
 const Hypher = require('hypher')
 const english = require('hyphenation.en-gb');
@@ -13,6 +14,8 @@ const { JSDOM } = require('jsdom');
 const util = require('util');
 
 const pluginTOC = require('eleventy-plugin-toc');
+
+const pluginNestingTOC = require('eleventy-plugin-nesting-toc');
 
 const _ = require("lodash");
 
@@ -43,12 +46,18 @@ module.exports = config => {
 
 
   config.addPlugin(pluginTOC)
+  config.addPlugin(pluginNestingTOC)
 
   config.setLibrary(
     "md",
     markdownIt(markdownItOptions)
       .use(markdownItAnchor, markdownItAnchorOptions)
       .use(require('markdown-it-mathjax3'))
+      .use(markdownItAttrs, {
+        leftDelimiter: '{',
+        rightDelimiter: '}',
+        allowedAttributes: []
+      })
   );
 
   config.setDataDeepMerge(true);

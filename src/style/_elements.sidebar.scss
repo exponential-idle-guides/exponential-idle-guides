@@ -139,6 +139,10 @@ the sidenav list icons (less padding and smaller font size) */
   content: '❖';
   padding-left: 1.5em;
 }
+.square_list li li li::before {
+  content: '»';
+  padding-left: 3em;
+}
 
 .square_list ul, .square_list ol{
   -webkit-column-count: var(--sidebar-column-count);
@@ -156,7 +160,7 @@ the sidenav list icons (less padding and smaller font size) */
   list-style-position: inside;
   padding-left: 0em;
 }
-.square_list ul ul, .square_list ol ol{
+.square_list ul ul, .square_list ol ol, .square_list ul ul ul, .square_list ol ol ol{
   -webkit-column-count: 1;
   -webkit-column-gap: 0;
 
