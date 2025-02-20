@@ -280,6 +280,18 @@ The fifth/sixth official custom theory, abbreviated FI, was first planned by Sna
 
 - [FI](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fi)&nbsp; — &nbsp;Idle
 
+- [FI<span style="color:#41AD21">MSd</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fimsd)&nbsp; — &nbsp;Active
+
+- [FI<span style="color:#41AD21">MS</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fims)&nbsp; — &nbsp;Active
+
+- [FI<span style="color:#41AD21">dPermaSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fidpermaswap)&nbsp; — &nbsp;Active
+
+- [FI<span style="color:#41AD21">PermaSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fipermaswap)&nbsp; — &nbsp;Semi-Idle
+
+- [FI<span style="color:#41AD21">MSdPermaSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fimsdpermaswap)&nbsp; — &nbsp;Active
+
+- [FI<span style="color:#41AD21">MSPermaSwap</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#fimspermaswap)&nbsp; — &nbsp;Active
+
 <span class="h3-fake">Custom Theory 6: Fractal Patterns</span>
 
 The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT tau contribution rate increase by x4.
@@ -519,7 +531,6 @@ Strategy Credits:
       </tr>
    </tbody>
 </table>
-
 
 ## Theory 2: Differential Calculus
 
