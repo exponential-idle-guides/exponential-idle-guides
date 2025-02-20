@@ -184,8 +184,8 @@ $$q=a*t^n ↔ q’=n*a*t^{n-1}$$
 
 In simpler terms, it works similar to how
 \\(x_i\\) upgrades work for \\(f(t)\\) equation with continuous addition
-of the previous \\(term*dt\\) to the next \\(x_{i+1}\\) term, but with
-continuous addition of \\(q_i*dt\\) to the term above \\(q_{i-1}\\).
+of the previous \\(term\*dt\\) to the next \\(x_{i+1}\\) term, but with
+continuous addition of \\(q_i\*dt\\) to the term above \\(q_{i-1}\\).
 These two values of \\(r_1\\) and \\(q_1\\) are multiplied to produce the derivative
 of \\(ρ(t)\\), shown by Newton's derivative notation \\(\dot{ρ}\\). This would give the
 equation of \\(ρ\\) to be \\(ρ(t+dt)=ρ+\dot{ρ}*dt\\). The other milestones besides more \\(q\\)
