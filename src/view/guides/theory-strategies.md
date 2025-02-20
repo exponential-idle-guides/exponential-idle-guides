@@ -7,7 +7,7 @@ draft: false
 order: 8
 ---
 
-The theory sim (simulation) we currently recommend was made by XLII and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
+The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the sim team and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
 
 ## Modulus Explanation
 
@@ -5274,7 +5274,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 23) < q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -5296,11 +5296,15 @@ Strategy Credits:
 </table>
 <br>
 
+**Milestone routing information**
+
+This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until you unlock the last milestone point at e1150ρ.
+
 ### FI
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>FI</th>
+  <th style="text-align:center">FI</th>
 </thead>
    <tbody>
       <tr>
@@ -5326,6 +5330,374 @@ Strategy Credits:
    </tbody>
 </table>
 <br>
+
+**Milestone routing information**
+
+This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until you unlock the last milestone point at e1150ρ.
+
+### FI<span style="color:#41AD21">MSd</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIMSd</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**Milestone swapping strategy**
+
+When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+
+Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+
+<table class="spqcey">
+<thead>
+  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
+  <th style="text-align:center">q ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-4</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-9</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">10-19</td>
+         <td>2.5</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">20+</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+Strategy Credits:
+
+- Playspout
+
+### FI<span style="color:#41AD21">MS</span>
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIMS</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**Milestone swapping strategy**
+
+When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+
+Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+
+<table class="spqcey">
+<thead>
+  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
+  <th style="text-align:center">q ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-4</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-9</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">10-19</td>
+         <td>2.5</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">20+</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+Strategy Credits:
+
+- Playspout
+
+### FI<span style="color:#41AD21">dPermaSwap</span>
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIdPermaSwap</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**PermaSwap strategy**
+
+Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+
+Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+
+### FI<span style="color:#41AD21">PermaSwap</span>
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIPermaSwap</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**PermaSwap strategy**
+
+Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+
+Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+
+### FI<span style="color:#41AD21">MSdPermaSwap</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIMSdPermaSwap</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**Milestone swapping strategy**
+
+When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+
+Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+
+<table class="spqcey">
+<thead>
+  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
+  <th style="text-align:center">q ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-4</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-9</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">10-19</td>
+         <td>2.5</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">20+</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+**PermaSwap strategy**
+
+Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+
+Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+
+<br>
+
+Strategy Credits:
+
+- Playspout
+
+### FI<span style="color:#41AD21">MSPermaSwap</span>
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">FIMSPermaSwap</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+**Milestone swapping strategy**
+
+When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+
+Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+
+<table class="spqcey">
+<thead>
+  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
+  <th style="text-align:center">q ratio</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">1-4</td>
+         <td>4</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">5-9</td>
+         <td>3</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">10-19</td>
+         <td>2.5</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">20+</td>
+         <td>2</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+**PermaSwap strategy**
+
+Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+
+Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+
+<br>
+
+Strategy Credits:
+
+- Playspout
 
 
 ## Fractal Patterns
