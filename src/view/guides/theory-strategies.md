@@ -234,8 +234,6 @@ In chronological order of release.
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSP<span style="color:#41AD21">AI</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspai)&nbsp; — &nbsp;Active
-
 - [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspdstopc1)&nbsp; — &nbsp;Active
 
 - [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#wspstopc1)&nbsp; — &nbsp;Semi-Idle
@@ -4384,42 +4382,6 @@ If you are confused about the "%", read about [it here.](https://exponential-idl
 
 ## Weierstraß Sine Product
 
-### WSP<span style="color:#41AD21">AI</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>WSPAI</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(Autobuy when not saving up for n)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️ Save up for n when ρ > cost/4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>Stop buying a few seconds into a<br>publication (or do e5 difference at lower ρ)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️ (Autobuy when not saving up for n)</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
-
-Strategy Credits:
-
-- xelaroc
-
 ### WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
 
 <table class="spqcey">
@@ -5303,37 +5265,6 @@ Strategy Credits:
 
 ## Fractional Integration
 
-### FI
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>FI</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
-
 ### FI<span style="color:#41AD21">d</span>
 <table class="spqcey">
 <thead>
@@ -5360,6 +5291,37 @@ Strategy Credits:
       <tr>
          <td class="leftHeader">n</td>
          <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+      </tr>
+   </tbody>
+</table>
+<br>
+
+### FI
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>FI</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">K</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">m</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
       </tr>
    </tbody>
 </table>
@@ -5424,7 +5386,7 @@ For more information about the FP milestone swapping strategy, check [here.](htt
 <br>
 
 Strategy Credits:
-- hotab for implementing this strategy into the sim and adjusting it
+- Hotab for implementing this strategy into the sim and adjusting it
 
 ### FP<span style="color:#41AD21">dMS</span>
 
@@ -5569,9 +5531,9 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab, blackseal, Mathis S. for the implementation in the sim
-- hotab, blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
-- hotab & blackseal for the coasting strategy
+- Hotab, Blackseal, Mathis S. for the implementation in the sim
+- Hotab, Blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
+- Hotab & Blackseal for the coasting strategy
 
 ### RZ<span style="color:#41AD21">BH</span>
 
@@ -5617,9 +5579,9 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab, blackseal, Mathis S. for the implementation in the sim
-- hotab, blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
-- hotab & blackseal for the coasting strategy
+- Hotab, Blackseal, Mathis S. for the implementation in the sim
+- Hotab, Blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
+- Hotab & Blackseal for the coasting strategy
 
 ### RZ<span style="color:#41AD21">dMS</span>
 
@@ -5666,8 +5628,8 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab for the dynamic swap implementation
-- hotab & blackseal for the coasting strategy
+- Hotab for the dynamic swap implementation
+- Hotab & Blackseal for the coasting strategy
 
 ### RZ<span style="color:#41AD21">MS</span>
 
@@ -5714,8 +5676,8 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab for the dynamic swap implementation
-- hotab & blackseal for the coasting strategy
+- Hotab for the dynamic swap implementation
+- Hotab & Blackseal for the coasting strategy
 
 ### RZ<span style="color:#41AD21">d</span>
 
@@ -5762,7 +5724,7 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab & blackseal for the coasting strategy
+- Hotab & Blackseal for the coasting strategy
 
 ### RZ
 
@@ -5806,4 +5768,4 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 <br>
 Strategy credits:
 
-- hotab & blackseal for the coasting strategy
+- Hotab & Blackseal for the coasting strategy
