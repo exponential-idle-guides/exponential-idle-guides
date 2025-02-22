@@ -175,7 +175,7 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 
 <span class="h3-fake">Theory 7: Numerical Methods</span>
 
-T7 is the third-weakest theory, ahead of T2 and T8.
+T7 is the third-weakest theory in endgame, ahead of T2 and T8.
 
 - [T7<span style="color:#41AD21">PlaySpqceyX</span>](#t7playspqceyx)&nbsp; — &nbsp;Active
 
@@ -199,10 +199,7 @@ T7 is the third-weakest theory, ahead of T2 and T8.
 
 <span class="h3-fake">Theory 8: Chaos Theory</span>
 
-T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
-T8 also has the largest number of strategies (20+ total), but only those recommended by the sim are shown here.
-
-Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://exponential-developers.github.io/sim-3.0/). We have since decided to remove the attractor letter from strategy names.
+T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:#41AD21">PlaySolarSwap</span>).
 
 - [T8<span style="color:#41AD21">PlaySolarSwap</span>](#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
@@ -6110,6 +6107,7 @@ Strategy credits:
 To perform SpiralSwap, switch milestones to prioritize c<sub><sub><small>1</small></sub></sub> exponent when ζ is close to zero (when the graph is close to the origin) and to prioritize w<sub><sub><small>2</small></sub></sub> when |ζ| is > 1.
 
 This strategy is **extremely** active. Using [RZ<span style="color:#41AD21">dMS</span>](#rzdms) is much easier and doesn't lose that much time compared to spiralswap.
+<br>
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">SpiralSwap</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
