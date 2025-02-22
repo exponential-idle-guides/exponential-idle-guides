@@ -215,7 +215,7 @@ Older theory simulators may return the attractor as part of the strategy name (E
 
 - [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](#t8noc5d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>](#t8noc5t834)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>](#t8noc5t834)&nbsp; — &nbsp;Idle
 
 - [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](#t8noc3d)&nbsp; — &nbsp;Active
 
@@ -4218,7 +4218,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
+         <td>When 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -4304,12 +4304,12 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>/T8<span style="color:#4665F0">34</span>
+### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>
 
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T8NoC5/T834</th>
+  <th>T8NoC5</th>
 </thead>
    <tbody>
       <tr>
