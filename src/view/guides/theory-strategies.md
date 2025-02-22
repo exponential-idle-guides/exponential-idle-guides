@@ -60,6 +60,7 @@ T2 is the only theory without an active strategy after all milestones are bought
 <span class="h3-fake">Theory 3: Linear Algebra</span>
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
+T3</span><span style="color:#41AD21">Play2</span> is currently the best active strategy above e350\\(\rho\\). T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span> is an easier version being 10-15% slower.
 T3</span><span style="color:#41AD21">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
 T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span style="color:#41AD21">SNAX</span> but is designed to be QoL compatible.
 
@@ -145,7 +146,7 @@ T5 is the second-strongest theory in endgame, only behind T6.
 
 <span class="h3-fake">Theory 6: Integral Calculus</span>
 
-T6 is the most powerful theory in endgame, with several players reaching well over e1100𝜏 on their main save, some even over e1200𝜏.
+T6 is the most powerful theory in endgame, with several players reaching well over e1300𝜏 on their main save, some even over e1400𝜏.
 
 - [T6<span style="color:#41AD21">AI</span>](#t6ai)&nbsp; — &nbsp;Active
 
@@ -197,8 +198,8 @@ T7 is the third-weakest theory, ahead of T2 and T8.
 
 <span class="h3-fake">Theory 8: Chaos Theory</span>
 
-T8 is the weakest theory in endgame and has the most active strategy of any theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
-T8 also has the largest number of strategies (20+ total), but only those I have seen recommended by the sim are shown here.
+T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:#41AD21">PlaySolarSwap</span>)
+T8 also has the largest number of strategies (20+ total), but only those recommended by the sim are shown here.
 
 Older theory simulators may return the attractor as part of the strategy name (Example: T8<span style="color:#41AD21">R</span> instead of T8). As always, we recommend using [XLII's sim](https://exponential-developers.github.io/sim-3.0/). We have since decided to remove the attractor letter from strategy names.
 
