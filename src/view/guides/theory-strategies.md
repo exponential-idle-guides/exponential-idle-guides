@@ -61,6 +61,7 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
 T3</span><span style="color:#41AD21">Play2</span> is currently the best active strategy above e350\\(\rho\\). T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span> is an easier version being 10-15% slower.
+
 T3</span><span style="color:#41AD21">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
 T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span style="color:#41AD21">SNAX</span> but is designed to be QoL compatible.
 
@@ -2637,7 +2638,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>.
 
 ### T4<span style="color:#4665F0">C123</span>
 
