@@ -237,6 +237,8 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 - [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
+- [WSP](#wsp)&nbsp; — &nbsp;Idle
+
 <span class="h3-fake">Custom Theory 2: Sequential Limits</span>
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
@@ -4601,6 +4603,40 @@ Strategy Credits:
 - xelaroc for simulating it/adding it to the sim
 - Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
 - XLII for \\(c_1\\) modification
+
+### WSP
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">WSP</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">n</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+<br>
 
 ## Sequential Limits
 
