@@ -313,9 +313,9 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 
 - [RZ<span style="color:#41AD21">BH</span>](#rzbh)&nbsp; — &nbsp;Idle
 
-- [RZ<span style="color:#41AD21">dMS</span>](#rzdms)&nbsp; — &nbsp;Active
-
 - [RZ<span style="color:#41AD21">SpiralSwap</span>](#rzspiralswap)&nbsp; — &nbsp;**EXTREMELY** Active
+
+- [RZ<span style="color:#41AD21">dMS</span>](#rzdms)&nbsp; — &nbsp;Active
 
 - [RZ<span style="color:#41AD21">MS</span>](#rzms)&nbsp; — &nbsp;Semi-Idle
 
@@ -6091,14 +6091,10 @@ Strategy credits:
       </tr>
       <tr>
          <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < min(w<sub><sub><small>2</small></sub></sub> cost, w<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When cost × 5 < w<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -6142,14 +6138,10 @@ Strategy credits:
       </tr>
       <tr>
          <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < min(w<sub><sub><small>2</small></sub></sub> cost, w<sub><sub><small>3</small></sub></sub> cost)</td>
+         <td>When cost × 5 < w<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -6195,10 +6187,6 @@ Strategy credits:
       </tr>
       <tr>
          <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
          <td>✔️</td>
       </tr>
       <tr>
