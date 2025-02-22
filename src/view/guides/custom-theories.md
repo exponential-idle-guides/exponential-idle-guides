@@ -1032,7 +1032,7 @@ Guide Writing is in progress. Not everything here is accurate, or from RZ at the
 
 This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
-This strategies range a lot in comparison to other theories, however, RZ is not an idle thoery and you must be active before about e700 \\(\rho\\). After e600, the entire dynamic of the thoery changes and becomes more idle in some ways and more active in others.
+This strategies range a lot in comparison to other theories, however, RZ is not an idle theory and you must be active before about e700 \\(\rho\\). After e600, the entire dynamic of the thoery changes and becomes more idle in some ways and more active in others.
 
 #### RZ Equation Description
 
@@ -1099,7 +1099,7 @@ Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\
 
 ##### RZ Milestone Swapping Explanation
 
-From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explaination for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery.
+From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explanation for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery.
 
 For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This is extremely hard and may slow down progress if you are not accurate/fast enough. The sim has NOT confirmed any strategies as of current since the sim is not working yet*.
 
@@ -1111,7 +1111,7 @@ For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near o
 
 Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
-When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(25.025t\\), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
+When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
 ##### Idle
 
