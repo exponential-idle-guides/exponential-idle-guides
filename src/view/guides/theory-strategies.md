@@ -69,6 +69,8 @@ T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span s
 
 - [T3</span><span style="color:#41AD21">SNAX</span>](#t3snax)&nbsp; — &nbsp;Semi-Idle
 
+- [T3</span><span style="color:#41AD21">SNAXd</span><span style="color:#4665F0">C12</span>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
+
 - [T3</span><span style="color:#41AD21">SNAX2</span>](#t3snax2)&nbsp; — &nbsp;Active
 
 - [T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>](#t3r2c23d)&nbsp; — &nbsp;Active
@@ -1197,7 +1199,90 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When cost × 100 < ρ<sub><sub><small>2</small></sub></sub> (autobuy c<sub><sub><small>12</small></sub></sub> <br>also works, is a bit slower)</td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+   </tbody>
+</table>
+
+Strategy Credits:
+
+- Snaeky for the idea.
+- XLII for simulating the strategy
+
+### T3<span style="color:#41AD21">SNAXd</span><span style="color:#4665F0">C12</span>
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T3SNAXdC12</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
+         <td>When cost × 100 < c<sub><sub><small>32</small></sub></sub> cost</td>
          <td>✔️</td>
       </tr>
       <tr>
@@ -2687,7 +2772,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 <table class="spqcey">
 <thead>
   <th></th>
-  <th>T4C56d</th>
+  <th>T4C56</th>
 </thead>
    <tbody>
       <tr>
@@ -2953,7 +3038,7 @@ Strategy Credit:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than q<sub><sub><small>2</small></sub></sub></td>
+         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -2961,7 +3046,7 @@ Strategy Credit:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than r<sub><sub><small>2</small></sub></sub></td>
+         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>)</td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
@@ -2993,6 +3078,10 @@ Strategy Credit:
 <br>
 
 If you are confused about the "%", read about [it here.](#modulus-explanation)
+
+**How does \\(c_2\\) purchasing works exactly?**
+
+In the sim, the ratio at which \\(c_2\\) is bought to min(\\(q_2\\), \\(r_2\\), \\(c_5\\)) is defined as the term ratio between the \\(c_5\\) term and the \\({c_1}^{1.15}{c_2}\\) term, which equates to \\({c_5}r/{c_1}^{1.15}{c_2}\\). If this ratio is 2, then the sim will buy \\(c_2\\) when 2 times cheaper than min(\\(q_2\\), \\(r_2\\), \\(c_5\\)).
 
 ### T6<span style="color:#41AD21">SNAX x.xxexxx</span>
 
@@ -3169,7 +3258,7 @@ Strategy Credits:
    <tbody>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>,)</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -3177,7 +3266,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When 5 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>,)</td>
       </tr>
       <tr>
          <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
