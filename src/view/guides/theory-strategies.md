@@ -53,6 +53,8 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 - [T2<span style="color:#41AD21">MS</span>](#t2ms)&nbsp; — &nbsp;Active
 
+- [T2<span style="color:#41AD21">QS</span>](#t2ms)&nbsp; — &nbsp;Semi-Idle
+
 - [T2](#t2)&nbsp; — &nbsp;Idle
 
 <span class="h3-fake">Theory 3: Linear Algebra</span>
@@ -105,9 +107,13 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
+- [T4<span style="color:#4665F0">C3</span>](#t4c3)&nbsp; — &nbsp;Idle
+
 - [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C3</span>](#t4c3)&nbsp; — &nbsp;Idle
+- [T4<span style="color:#4665F0">C356</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
+
+- [T4<span style="color:#4665F0">C456</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcvMS</span>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
 
 - [T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](#t4c123d)&nbsp; — &nbsp;Active
 
@@ -117,15 +123,9 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 - [T4<span style="color:#4665F0">C12</span>](#t4c12)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>](#t4c56d)&nbsp; — &nbsp;Active
-
 - [T4<span style="color:#4665F0">C56</span>](#t4c56)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](#t4c4d)&nbsp; — &nbsp;Active
-
 - [T4<span style="color:#4665F0">C4</span>](#t4c4)&nbsp; — &nbsp;Idle
-
-- [T4<span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](#t4c5d)&nbsp; — &nbsp;Active
 
 - [T4<span style="color:#4665F0">C5</span>](#t4c5)&nbsp; — &nbsp;Idle
 
@@ -816,6 +816,89 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 <br>
 
 **T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
+
+### T2<span style="color:#41AD21">QS</span>
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="5" style="text-align:center">T2QS</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+<br>
+
+Start the publication with milestones in the 1→2→3→4 order.
+
+When your publication multiplier reaches a certain point, switch your milestones to the 3→4→1→2 order.
+
+The publication multiplier when you should switch is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">Publication Multiplier</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">ρ < e75</td>
+         <td>10</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e75 < ρ < e150</td>
+         <td>200</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e150 < ρ < e200</td>
+         <td>600</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">e200 < ρ < e225</td>
+         <td>100</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">ρ > e225</td>
+         <td>25</td>
+      </tr>
+   </tbody>
+</table>
+<br>
 
 ### T2
 
@@ -2201,6 +2284,49 @@ When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) r
 
 The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
 
+### T4<span style="color:#4665F0">C3</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th>T4C3</th>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
 ### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
 
 <table class="spqcey">
@@ -2259,48 +2385,126 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C3</span>
+### T4<span style="color:#4665F0">C356</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
 
 <table class="spqcey">
 <thead>
-  <th></th>
-  <th>T4C3</th>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T4C356dC12rcv</th>
+   </tr>
 </thead>
    <tbody>
       <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
+     </tr>
+      <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
          <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
          <td>❌</td>
+         <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
+         <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
+         <td>✔️</td>
+         <td>✔️</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
          <td>✔️</td>
+         <td>✔️</td>
       </tr>
    </tbody>
 </table>
+
+### T4<span style="color:#4665F0">C456</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcvMS</span>
+
+<table class="spqcey">
+<thead>
+   <tr>
+      <th class="invisible"></th>
+      <th colspan="2" style="text-align:center">T4C456dC12rcvMS</th>
+   </tr>
+</thead>
+   <tbody>
+      <tr>
+         <td class="leftHeader"></td>
+         <td class="topHeader">Recovery (pub mult < 1)</td>
+         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
+     </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+         <td>❌</td>
+         <td>❌</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
+      </tr>
+      <tr>
+         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
+         <td>✔️</td>
+         <td>✔️</td>
+      </tr>
+   </tbody>
+</table>
+
+**Milestone swapping strategy**
+
+- During your recovery phase, set your milestones in the order 2→3→1
+- During the tau gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
 
 ### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
 
@@ -2478,49 +2682,6 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C56</span><span style="color:#41AD21">d</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C56d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
 ### T4<span style="color:#4665F0">C56</span>
 
 <table class="spqcey">
@@ -2564,49 +2725,6 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C4d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
 ### T4<span style="color:#4665F0">C4</span>
 
 <table class="spqcey">
@@ -2642,49 +2760,6 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
       <tr>
          <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
          <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
-### T4<span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C5d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
       </tr>
       <tr>
          <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
@@ -5205,7 +5280,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
       </tr>
    </tbody>
 </table>
@@ -5276,7 +5351,7 @@ This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until 
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
       </tr>
    </tbody>
 </table>
@@ -5317,7 +5392,7 @@ Swap back to m and n when your q got multiplied by a ratio (since you started th
 
 Strategy Credits:
 
-- Playspout
+- Playspout for the milestone swapping strategy
 
 ### FI<span style="color:#41AD21">MS</span>
 <table class="spqcey">
@@ -5385,7 +5460,7 @@ Swap back to m and n when your q got multiplied by a ratio (since you started th
 
 Strategy Credits:
 
-- Playspout
+- Playspout for the milestone swapping strategy
 
 ### FI<span style="color:#41AD21">dPermaSwap</span>
 <table class="spqcey">
@@ -5412,7 +5487,7 @@ Strategy Credits:
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
       </tr>
    </tbody>
 </table>
@@ -5487,7 +5562,7 @@ Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of
       </tr>
       <tr>
          <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub>, K, m)</td>
+         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
       </tr>
    </tbody>
 </table>
@@ -5536,7 +5611,7 @@ Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of
 
 Strategy Credits:
 
-- Playspout
+- Playspout for the milestone swapping strategy
 
 ### FI<span style="color:#41AD21">MSPermaSwap</span>
 <table class="spqcey">
@@ -5612,7 +5687,7 @@ Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of
 
 Strategy Credits:
 
-- Playspout
+- Playspout for the milestone swapping strategy
 
 
 ## Fractal Patterns
