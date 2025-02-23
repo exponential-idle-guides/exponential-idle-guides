@@ -10,10 +10,10 @@ order: 8
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of April 1st, 2024, there are 6 official
-custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, and Fractal Patterns (FP) by XLII. The theories will be abbreviated as WSP, SL, EF, CSR2, FI, and FP from now on.
+Custom theories are theories made by players in the community. As of December 15th, there are 7 official
+custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, and Riemann Zeta Function by Prop (RZ). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP and RZ from now on.
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, and CSR2 have conversion rates of
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI and RZ have conversion rates of
 $\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\).
 
 ### Which Custom Theories (CTs) should I do?
@@ -230,6 +230,8 @@ e200 - e300: SLMS
 
 (note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4>3>1>2 (60s) ↔ 1>2>4>3 (20s)
 
+For a more precise description of SLMS, check out the [theory strategy section](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms).
+
 #### Post e300+ \\(\rho\\)
 
 At this point, the theory becomes very idle. We simply autobuy all variables. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable \\(a_1\\)\\(a_2\\) at about 4.5 publication multiplier and \\(b_1\\)\\(b_2\\) at 6.0 multiplier until publish.
@@ -272,6 +274,8 @@ e100 - e175: SLMS2
 e175 - e200: SLMS3
 
 e200 - e300: SLMS
+
+For a more precise description of SLMS, check out the [theory strategy section](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms).
 
 ### Euler's Formula (EF)
 
@@ -349,7 +353,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>a<sub><sub><small>2</small></sub></sub></th>
-         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. Overall, this variable ranges from 10% to 700%+ effectiveness in ρ dot! </td>
+         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others, specifically 1 mod 10 levels. Overall, this variable ranges from 10% to 700%+ effectiveness in ρ dot! </td>
       </tr>
       <tr>
          <th>a<sub><sub><small>3</small></sub></sub></th>
@@ -489,7 +493,7 @@ Once you have all milestones, autobuy all!
 
 The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1\\) and \\(q_1\\), where you buy them when they are less than 10% cost of minimum(\\(c_2\\), \\(q_2\\), and \\(n\\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx) section of the guide for how to perform milestone swapping.
 
 ##### CSR2 Milestone Swapping Explanation
 
@@ -497,7 +501,7 @@ This theory has a milestone swapping strategy before full milestones. We have \\
 
 The reason milestone swapping works is because the benefits of using \\(c_2\\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1\\) exponent milestones. If we only use \\(q_1\\) exponent, then we have really low \\(q\\). If we only use \\(c_2\\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2\\) related milestones, then take advantage of the \\(q_1\\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
-For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx) section of the guide.
 
 #### CSR2 Milestone Route
 
