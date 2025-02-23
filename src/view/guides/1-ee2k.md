@@ -212,7 +212,7 @@ After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will un
 
 ##### \\(x_i\\) Equation explanation
 
-The equation shown is the calculation done on every tick. Let's give the example of \\(x_1\\): \\(x_1 ← x_1+x*dt\\). Each tick, \\(x*dt\\) is added to \\(x_1\\). This is done for every new value of x and \\(dt\\). A simple way of phrasing it is as repeated addition of the product of \\(x*dt\\).
+The equation shown is the calculation done on every tick. Let's give the example of \\(x_1\\): \\(x_1 ← x_1+x * dt\\). Each tick, \\(x * dt\\) is added to \\(x_1\\). This is done for every new value of x and \\(dt\\). A simple way of phrasing it is as repeated addition of the product of \\(x * dt\\).
 
 #### Active strategies
 
