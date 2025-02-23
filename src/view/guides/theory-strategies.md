@@ -272,7 +272,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 - [CSR2](#csr2)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Custom Theory 5: Fractional Integration</span>
+#### Custom Theory 5: Fractional Integration {data-toc-exclude}
 
 The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT tau contribution rate increase by x4.
 
@@ -292,7 +292,7 @@ The fifth/sixth official custom theory, abbreviated FI, was first planned by Sna
 
 - [FI<span style="color:#41AD21">MSPermaSwap</span>](#fimspermaswap)&nbsp; — &nbsp;Active
 
-<span class="h3-fake">Custom Theory 6: Fractal Patterns</span>
+#### Custom Theory 6: Fractal Patterns {data-toc-exclude}
 
 The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT tau contribution rate increase by x4.
 
@@ -302,7 +302,7 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
 
 - [FP](#fp)&nbsp; — &nbsp;Idle
 
-<span class="h3-fake">Custom Theory 7: Riemann Zeta Function</span>
+#### Custom Theory 7: Riemann Zeta Function {data-toc-exclude}
 
 The seventh official custom theory, abbreviated RZ, was created by prop and released on December 15, 2024.
 
