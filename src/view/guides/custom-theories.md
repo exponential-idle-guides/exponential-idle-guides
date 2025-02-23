@@ -699,7 +699,11 @@ where you would normally buy publishing, buy all, and autobuy.
 
 Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable to do so.
 
+It is important to note, however, is that buying or refunding \\(g(x)\\) milestones will reset your \\(q\\), \\(q_2\\) level and will change the \\(q_2\\) cost function. Similarly, buying or refunding \\(\lambda\\) milestones will reset your \\(K\\) and change the \\(K\\) cost function.
+
 FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
+
+There is one exception, however. The 3rd level of the \\(g(x)\\) milestone is bad early on, and is only worth buying at e1076ρ. Swapping to the 3rd level of the \\(g(x)\\) milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
 
 #### FI Milestone Route
 
@@ -843,7 +847,7 @@ h3 {
 
 #### FP Overview
 
- This custom theory was released at the same time as Fractional Integration. FP is A theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence (Tₙ), Ulam-Warburton cellular automaton (Uₙ), Sierpiński triangle (Sₙ). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Fractional Integration. FP is a theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence \\(T_n\\), Ulam-Warburton cellular automaton \\(U_n\\), Sierpiński triangle \\(S_n\\). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
 
 #### FP Equation Description
 
@@ -876,9 +880,6 @@ $$\\U_n = \sum_{i=0}^n u_i$$
 
 ##### Sierpiński Triangle
 $$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
-
-
-
 
 
 #### FP Variable Description
@@ -917,11 +918,11 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>n</th>
-         <td>2^k=n is very nice, but n is very hard to describe</td>
+         <td>n makes the fractal grow and helps ρ, q and r growth. n is very strong when getting a power of two, but weaker right after it</td>
       </tr>
       <tr>
          <th>s</th>
-         <td>s is an additive to an exponent, whose value changes occationally.</td>
+         <td>s is an additive to Tn and Un exponents. Usually +0.15 per level, but increases to +0.2 from level 33 to level 40. s is the strongest purchase after a n=2^k</td>
       </tr>
    </tbody>
 </table>
@@ -933,7 +934,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Idle
 
-For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 didgets in the level are 50 or more, then but them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
+For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 digits in the level are 50 or more, then buy them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
 
 Once you have all milestones, autobuy all!
 
@@ -964,7 +965,7 @@ This plays roughly like doubling chase, but in this case you have to adjust rati
 
 s - always buy on sight.
 n - buy after s.
-r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase
+r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine
 
 Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
 
@@ -1034,9 +1035,9 @@ Guide Writing is in progress. Not everything here is accurate, or from RZ at the
 
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
-This strategies range a lot in comparison to other theories, however, RZ is not an idle theory and you must be active before about e700 \\(\rho\\). After e600, the entire dynamic of the thoery changes and becomes more idle in some ways and more active in others.
+Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 \\(\rho\\) due to its short pubs. It also has a milestone swapping phase from e50 to e400 \\(\rho\\). After e600, the entire dynamic of the theory changes.
 
 #### RZ Equation Description
 
