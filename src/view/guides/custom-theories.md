@@ -653,7 +653,7 @@ Approximate variable strengths on their respective vardots with all milestones a
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadruple <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> depending on milestones</td>
+         <td>Will double, triple, or quadruple <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> depending on λ milestones</td>
       </tr>
       <tr>
          <th>m</th>
@@ -868,19 +868,35 @@ $$\begin{eqnarray}
 
 $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
+The first equation is for \\(\rho\\), which is the product of \\(c_1 c_2 qr\\) and the fractal term $T_n^{7}$, where \\(T_n\\) is the nth term of the Toothpick Sequence shown below. Its exponent starts at 7, but when you unlock the \\(s\\) milestone, it will change to \\(5+s\\), where \\(s\\) is an upgrade.
+
+The \\(q\\) equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) untike \\(\rho\\). \\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
+
+The \\(r\\) equation depends on all fractals available in FP.
 
 ##### Toothpick Sequence
 $$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
 $$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
+
+This is the Toothpick Sequence. We can't really explain it without getting technical, but this sequence grows as \\(n\\) grows. It is important to note that it grows faster right before a new power of two, and slower right after a power of two. This trait is shared with the next fractal. These \\(n=2^k\\) spikes have **a lot** of influence on the theory speed, especially on the second half of it.
+
+If you want to learn more about the Toothpick Sequence, you can search about it on the internet. You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html).
 
 ##### Ulam-Warburton Cellular Automaton
 $$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
 $$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
 $$\\U_n = \sum_{i=0}^n u_i$$
 
+These equations are used to describe the Ulam-Warburton Cellular Automaton (\\(U_n\\)). This is the second main fractal used in FP. Like \\(T_n\\), grows faster right before a new power of two, and slower right after a power of two.
+
+The \\(w_n\\) equation can look intimidating, but it is simpler to explain than some of the other formulas. \\(w_n\\) is the Hamming weight of the binary representation of \\(n\\), which is the number of 1s that appear in its representation. Right before a power of two, a number has a lot of 1s on the left of its binary representation, which means \\(w_n\\) is higher, and as such \\(U_n\\) grows faster with \\(n\\). The opposite is true for right after a power of two.
+
+You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selectionning it in "Main sequence".
+
 ##### Sierpiński Triangle
 $$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
 
+This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdivising each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
 
 #### FP Variable Description
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
@@ -918,7 +934,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>n</th>
-         <td>n makes the fractal grow and helps ρ, q and r growth. n is very strong when getting a power of two, but weaker right after it</td>
+         <td>n makes the fractal grow and helps ρ, q and r growth. n is very strong when getting a power of two, but weaker right after it.</td>
       </tr>
       <tr>
          <th>s</th>
@@ -940,7 +956,7 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables is very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
+The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
 
 ###### C1 and C2 Buying
 
@@ -1027,17 +1043,17 @@ Milestone swap saves a LOT of time.
    </tbody>
 </table>
 
-FP Guide written by Snaeky and Hotab
+FP Guide written by Snaeky, Hotab and Mathis S.
 
 ### Riemann Zeta Function (RZ)
 
-Guide Writing is in progress. Not everything here is accurate, or from RZ at the moment.
+Guide Writing is in progress. Not everything here is accurate at the moment.
 
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
-Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 \\(\rho\\) due to its short pubs. It also has a milestone swapping phase from e50 to e400 \\(\rho\\). After e600, the entire dynamic of the theory changes.
+Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 \\(\rho\\) due to its short publications. It also has a milestone swapping phase from e50 to e400 \\(\rho\\). After e600, the entire dynamic of the theory changes with the inclusion of the black hole.
 
 #### RZ Equation Description
 
