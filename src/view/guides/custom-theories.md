@@ -627,7 +627,7 @@ $$\dot{q}=q_1^{1.03}q_2$$
 
 <br><br>
 
- The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated by raising $q$ to the highest power of \\(g(x)\\) by 1 and apon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
+ The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated by raising $q$ to the highest power of \\(g(x)\\) by 1 and upon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
 
 <br>
 
@@ -637,7 +637,7 @@ The second equation is for $\dot{r}$, which seems simple at first, but gets more
 Approximate variable strengths on their respective vardots with all milestones are as follows:
 
 <table class="T2">
-<caption>Brief summary of variable strengths of FI.</caption>
+<caption>Brief summary of variable strengths of FI</caption>
    <thead><tr>
    <th class="invisible"></th>
    <th colspan="2" style="text-align:center">Brief Description</th>
@@ -697,13 +697,13 @@ In FI, you can unlock milestones in 2 ways:
 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
-Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable to do so.
+Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
 
 It is important to note, however, is that buying or refunding \\(g(x)\\) milestones will reset your \\(q\\), \\(q_2\\) level and will change the \\(q_2\\) cost function. Similarly, buying or refunding \\(\lambda\\) milestones will reset your \\(K\\) and change the \\(K\\) cost function.
 
-FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
+FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Upon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have, **except for the 3rd level of the \\(g(x)\\) milestone**.
 
-There is one exception, however. The 3rd level of the \\(g(x)\\) milestone is bad early on, and is only worth buying at e1076ρ. Swapping to the 3rd level of the \\(g(x)\\) milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
+The 3rd level of the \\(g(x)\\) milestone is bad early on, and is only worth buying at e1076ρ. Swapping to the 3rd level of the \\(g(x)\\) milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
 
 #### FI Milestone Route
 
@@ -970,12 +970,12 @@ When c1 mod 100 is >= 92, wait until the sum to buy up to c1 mod 100 = 1 is chea
 
 More human way to do the second part is this: when c1 mod 100 == 91, switch to buying x10, see the cumulative price to get c1 mod 100 = 1, and if that is below c2 - it is time to buy c1 up to mod 100 = 1 using autobuy.
 
-Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human
+Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human.
 
 ###### q1 and q2 Buying
 
 q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to $\dot{q}$.
-q2 always quadruples the $\dot{q}$ (except the first few purchases)
+q2 always quadruples the $\dot{q}$ (except the first few purchases).
 
 This plays roughly like doubling chase, but in this case you have to adjust ratios slightly - for example, if q1 mod 10 is 0, you want to wait until q1 upgrade price is twice as cheap as q2, and so on.
 
@@ -983,7 +983,7 @@ This plays roughly like doubling chase, but in this case you have to adjust rati
 
 s - always buy on sight.
 n - buy after s.
-r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine
+r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine.
 
 Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
 
