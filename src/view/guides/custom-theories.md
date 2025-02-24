@@ -1061,8 +1061,18 @@ $$\dot{\rho}=\frac{t{\mkern 1mu}c_1^{1.25}c_2w_1}{|\zeta(\frac{1}{2}+it)|/2^{b}+
 
 $$\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b$$
 
-<br><br>
-Function Description Under Construction please be patient.
+<br>
+
+These two equations follow the analytic continuation of the Riemann Zeta function along the critical $1/2 + it$ line, where all the "non-trivials" zeros of this function should be located according to the Riemann Hypothesis.
+
+The background animation of the CT helps to understand the behavior of the \\(\zeta\\) along the critical line. You can see the background as the complex plane, with the middle point being zero, and the particle following the value of \\(\zeta\\) at the given \\(t\\). The further the particle is from the origin, the higher $|\zeta(\frac{1}{2}+it)|$ is. The faster the particle travels, the higher $|\zeta '(\textstyle\frac{1}{2}+it)|$ is.
+
+This particle describes spirals, and passes by the origin at each of its turns.
+
+We can see in the $\dot{\rho}$ that $|\zeta(\frac{1}{2}+it)|/2^{b}+10^{-2}$ is on the denominator, which means \\(\rho\\) grows faster when $\zeta(\frac{1}{2}+it)$ is close to zero. The $10^{-2}$ term prevents $\dot{\rho}$ from exploding at each zero. The $2^{b}$ term helps the growth of \\(\rho\\) when $\zeta(\frac{1}{2}+it)$ is away from zero.
+
+$\delta$ grows faster as $|\zeta '(\textstyle\frac{1}{2}+it)|$ is higher.
+
 <br>
 
 #### RZ Variable Description
@@ -1077,7 +1087,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
    <tbody>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>Doubles every 8 lvls</td>
+         <td>Instant boost to ρ dot, doubles every 8 lvls</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
@@ -1085,19 +1095,19 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>w<sub><sub><small>1</small></sub></sub></th>
-         <td>Doubles every 8 lvls. Bought with delta.</td>
+         <td>Instant boost to both ρ dot and δ dot. Doubles every 8 lvls. Bought with δ.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubling. Bought with delta.</td>
+         <td>Doubles δ dot every level. Bought with δ.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>3</small></sub></sub></th>
-         <td>Doub­ling every e30 rho from e600 delta on. Bought with delta.</td>
+         <td>Doubles δ dot every e30δ from e600δ on. Bought with δ.</td>
       </tr>
       <tr>
          <th>b</th>
-         <td>Is capped at 6 lvls maxing out at 3 (+0.5/lvl)</td>
+         <td>Boosts ρ dot (when ζ is away from zero) and δ dot. Is capped at 6 lvls maxing out at 3 (+0.5/lvl).</td>
       </tr>
    </tbody>
 </table>
@@ -1132,15 +1142,19 @@ For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near o
 
 Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
-When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
+When BH is unleached, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
-##### Idle
+Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero. Good zeros are zeros where \\(\zeta'\\) is higher than all other local zeros. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$. We also want a good \\(t\\) value for our publication.
 
-Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good 0. Good 0s are 0s where \\(\zeta'\\) is higher than all other local 0s. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$.
+To know which zero to use, please use the [the sim](https://exponential-developers.github.io/sim-3.0/). It will output the exact \\(t\\) of the zero to use.
 
-##### Active
+**Always set your BH activation thresold to 0.01 above the value recommended by the sim to ensure that the Black Hole will correctly lock to your zero**. For example, if it recommends t=3797.85, put your activation thresold to 3797.86.
 
+The optimal publication multiplier is often 5, but it is sometimes higher depending on the zero used or if you get a new \\(w_3\\) during the publication. Check the sim to know the optimal multiplier for your publication.
 
+Variable buying strategies stay the same as before.
+
+**Don't forget to buy $w_3$ after reaching e1000ρ!** It will not be available straight away, so you can buy the permanent upgrade at the end of the pub.
 
 #### RZ Milestone Route
 
