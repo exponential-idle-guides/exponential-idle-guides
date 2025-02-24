@@ -870,7 +870,9 @@ $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
 The first equation is for \\(\rho\\), which is the product of \\(c_1 c_2 qr\\) and the fractal term $T_n^{7}$, where \\(T_n\\) is the nth term of the Toothpick Sequence shown below. Its exponent starts at 7, but when you unlock the \\(s\\) milestone, it will change to \\(5+s\\), where \\(s\\) is an upgrade.
 
-The \\(q\\) equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) untike \\(\rho\\). \\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
+The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\). 
+
+\\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
 
 The \\(r\\) equation depends on all fractals available in FP.
 
@@ -887,7 +889,7 @@ $$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
 $$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
 $$\\U_n = \sum_{i=0}^n u_i$$
 
-These equations are used to describe the Ulam-Warburton Cellular Automaton (\\(U_n\\)). This is the second main fractal used in FP. Like \\(T_n\\), grows faster right before a new power of two, and slower right after a power of two.
+These equations are used to describe the Ulam-Warburton Cellular Automaton (\\(U_n\\)). This is the second main fractal used in FP. Like \\(T_n\\), it grows faster right before a new power of two, and slower right after a power of two.
 
 The \\(w_n\\) equation can look intimidating, but it is simpler to explain than some of the other formulas. \\(w_n\\) is the Hamming weight of the binary representation of \\(n\\), which is the number of 1s that appear in its representation. Right before a power of two, a number has a lot of 1s on the left of its binary representation, which means \\(w_n\\) is higher, and as such \\(U_n\\) grows faster with \\(n\\). The opposite is true for right after a power of two.
 
@@ -1051,7 +1053,7 @@ Guide Writing is in progress. Not everything here is accurate at the moment.
 
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
 Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 \\(\rho\\) due to its short publications. It also has a milestone swapping phase from e50 to e400 \\(\rho\\). After e600, the entire dynamic of the theory changes with the inclusion of the black hole.
 
@@ -1063,7 +1065,7 @@ $$\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b$$
 
 <br>
 
-These two equations follow the analytic continuation of the Riemann Zeta function along the critical $1/2 + it$ line, where all the "non-trivials" zeros of this function should be located according to the Riemann Hypothesis.
+These two equations follow the analytic continuation of the Riemann Zeta function along the critical $1/2 + it$ line, where all the "non-trivial" zeros of this function should be located according to the Riemann Hypothesis.
 
 The background animation of the CT helps to understand the behavior of the \\(\zeta\\) along the critical line. You can see the background as the complex plane, with the middle point being zero, and the particle following the value of \\(\zeta\\) at the given \\(t\\). The further the particle is from the origin, the higher $|\zeta(\frac{1}{2}+it)|$ is. The faster the particle travels, the higher $|\zeta '(\textstyle\frac{1}{2}+it)|$ is.
 
@@ -1148,7 +1150,7 @@ Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to 
 
 To know which zero to use, please use the [the sim](https://exponential-developers.github.io/sim-3.0/). It will output the exact \\(t\\) of the zero to use.
 
-**Always set your BH activation thresold to 0.01 above the value recommended by the sim to ensure that the Black Hole will correctly lock to your zero**. For example, if it recommends t=3797.85, put your activation thresold to 3797.86.
+**Always set your BH activation threshold to 0.01 above the value recommended by the sim to ensure that the Black Hole will correctly lock to your zero**. For example, if it recommends t=3797.85, put your activation threshold to 3797.86.
 
 The optimal publication multiplier is often 5, but it is sometimes higher depending on the zero used or if you get a new \\(w_3\\) during the publication. Check the sim to know the optimal multiplier for your publication.
 
