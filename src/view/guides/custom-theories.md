@@ -911,16 +911,16 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
    </tr></thead>
    <tbody>
       <tr>
-         <th>tdot</th>
-         <td>This is tdot</td>
+         <th>$$\dot{ t }$$</th>
+         <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>c_1 is 150x over 100 levels for mod 100 <!-- for the pain --></td>
+         <td>c<sub><sub><small>1</small></sub></sub> is 150x over 100 levels for mod 100 <!-- for the pain --></td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
-         <td>Simple Doubling <!-- i cant fucking spell amn--></td>
+         <td>Doubles ρ dot per level (instantaneous).</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
@@ -1071,7 +1071,7 @@ The background animation of the CT helps to understand the behavior of the \\(\z
 
 This particle describes spirals, and passes by the origin at each of its turns.
 
-We can see in the $\dot{\rho}$ that $|\zeta(\frac{1}{2}+it)|/2^{b}+10^{-2}$ is on the denominator, which means \\(\rho\\) grows faster when $\zeta(\frac{1}{2}+it)$ is close to zero. The $10^{-2}$ term prevents $\dot{\rho}$ from exploding at each zero. The $2^{b}$ term helps the growth of \\(\rho\\) when $\zeta(\frac{1}{2}+it)$ is away from zero.
+We can see in the $\dot{\rho}$ equation that $|\zeta(\frac{1}{2}+it)|/2^{b}+10^{-2}$ is on the denominator, which means \\(\rho\\) grows faster when $\zeta(\frac{1}{2}+it)$ is close to zero. The $10^{-2}$ term prevents $\dot{\rho}$ from exploding at each zero. The $2^{b}$ term helps the growth of \\(\rho\\) when $\zeta(\frac{1}{2}+it)$ is away from zero.
 
 $\delta$ grows faster as $|\zeta '(\textstyle\frac{1}{2}+it)|$ is higher.
 
@@ -1132,11 +1132,9 @@ Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\
 
 ##### RZ Milestone Swapping Explanation
 
-From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explanation for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery.
+From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explanation for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery. [The sim](https://exponential-developers.github.io/sim-3.0/) can tell you when you should perform this swap.
 
-For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This is extremely hard and may slow down progress if you are not accurate/fast enough. The sim has NOT confirmed any strategies as of current since the sim is not working yet*.
-
-###### *The sim may be working before this is updated and this may be outdated for strategies. Please check [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy.
+For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This strategy is known as SpiralSwap. This is extremely hard and may slow down progress if you are not accurate/fast enough.
 
 ##### Post-e600 \\(\rho\\)
 
