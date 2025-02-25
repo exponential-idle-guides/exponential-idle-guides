@@ -1049,8 +1049,6 @@ FP Guide written by Snaeky, Hotab and Mathis S.
 
 ### Riemann Zeta Function (RZ)
 
-Guide Writing is in progress. Not everything here is accurate at the moment.
-
 #### RZ Overview
 
 This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
@@ -1120,6 +1118,8 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Pre-e600 \\(\rho\\)
 
+The optimal publication multiplier is around 2-4 before e50 \\(\rho\\) and 4-8 after, but can vary if you are close to the next milestone. As always, you can check with [the sim](https://exponential-developers.github.io/sim-3.0/).
+
 ##### Idle
 
 For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(c_1\\) exponent milestones when you're about to publish (from e50 to e400). Don't forget to change milestones back after publishing!
@@ -1128,7 +1128,7 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. With a milestone swap from from e50 to e400 e3 \\(\rho\\) from recovery and publish between 7 and 10 multi.
+For an active buying strategy, buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. Read the next section for the milestone swapping strategies.
 
 ##### RZ Milestone Swapping Explanation
 
@@ -1137,8 +1137,6 @@ From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (exp
 For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This strategy is known as SpiralSwap. This is extremely hard and may slow down progress if you are not accurate/fast enough.
 
 ##### Post-e600 \\(\rho\\)
-
-##### Black Hole (BH)
 
 Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
@@ -1154,7 +1152,7 @@ The optimal publication multiplier is often 5, but it is sometimes higher depend
 
 Variable buying strategies stay the same as before.
 
-**Don't forget to buy $w_3$ after reaching e1000ρ!** It will not be available straight away, so you can buy the permanent upgrade at the end of the pub.
+**Don't forget to buy the $w_3$ permanent upgrade after reaching e1000ρ!** The first level of \\(w_3\\) will not be available right away, so you can buy the permanent upgrade at the end of the pub.
 
 #### RZ Milestone Route
 
