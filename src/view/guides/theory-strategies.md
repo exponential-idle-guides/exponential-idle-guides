@@ -5978,7 +5978,7 @@ For more information about the FP milestone swapping strategy, check [here.](htt
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 4 × c<sub><sub><small>1</small></sub></sub>lvl + 2 < c<sub><sub><small>2</small></sub></sub>lvl<sup></sup></td>
+         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -6075,7 +6075,7 @@ Strategy credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 4 × c<sub><sub><small>1</small></sub></sub>lvl + 2 < c<sub><sub><small>2</small></sub></sub>lvl</td>
+         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -6123,7 +6123,7 @@ Strategy credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 4 × c<sub><sub><small>1</small></sub></sub>lvl + 2 < c<sub><sub><small>2</small></sub></sub>lvl</td>
+         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -6212,7 +6212,7 @@ Strategy credits:
    <tbody>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 4 × c<sub><sub><small>1</small></sub></sub>lvl + 2 < c<sub><sub><small>2</small></sub></sub>lvl<sup>*</sup></td>
+         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2*</sup></td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
@@ -6238,7 +6238,7 @@ Strategy credits:
 </table>
 <br>
 
-\* If you don't have \\(c_1\\) exponent milestones, use 4×\\(c_1\\)lvl + 1 instead.
+\* If you don't have \\(c_1\\) exponent milestones, use 4×\\(c_2\\)lvl + 1 instead.
 
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">d</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
