@@ -10,10 +10,10 @@ order: 8
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of April 1st, 2024, there are 6 official
-custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, and Fractal Patterns (FP) by XLII. The theories will be abbreviated as WSP, SL, EF, CSR2, FI, and FP from now on.
+Custom theories are theories made by players in the community. As of December 15th, there are 7 official
+custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, and Riemann Zeta Function by Prop (RZ). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP and RZ from now on.
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, and CSR2 have conversion rates of
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI and RZ have conversion rates of
 $\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\).
 
 ### Which Custom Theories (CTs) should I do?
@@ -230,6 +230,8 @@ e200 - e300: SLMS
 
 (note that it depends also on the swapping durations, on the last range SLMS should be run with 60s [4/3/1/2] and 20s on [1/2/4/3] to be best). So from e200-e300, SLMS 4>3>1>2 (60s) ↔ 1>2>4>3 (20s)
 
+For a more precise description of SLMS, check out the [theory strategy section](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms).
+
 #### Post e300+ \\(\rho\\)
 
 At this point, the theory becomes very idle. We simply autobuy all variables. Publish at approximately 8-10 multiplier. If you wish to improve efficiency, you can disable \\(a_1\\)\\(a_2\\) at about 4.5 publication multiplier and \\(b_1\\)\\(b_2\\) at 6.0 multiplier until publish.
@@ -272,6 +274,8 @@ e100 - e175: SLMS2
 e175 - e200: SLMS3
 
 e200 - e300: SLMS
+
+For a more precise description of SLMS, check out the [theory strategy section](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#slms).
 
 ### Euler's Formula (EF)
 
@@ -349,7 +353,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>a<sub><sub><small>2</small></sub></sub></th>
-         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others. Overall, this variable ranges from 10% to 700%+ effectiveness in ρ dot! </td>
+         <td>Costs R to buy. Increases 40 folds for every 10 levels bought. However, note that some levels are much more impactful than others, specifically 1 mod 10 levels. Overall, this variable ranges from 10% to 700%+ effectiveness in ρ dot! </td>
       </tr>
       <tr>
          <th>a<sub><sub><small>3</small></sub></sub></th>
@@ -489,7 +493,7 @@ Once you have all milestones, autobuy all!
 
 The active strategies are significantly more involved. Depending on how active you'd like to be, there are several potential strategies. There's the standard doubling chasing [CSRd](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2d), which is just autobuy all except \\(c_1\\) and \\(q_1\\), where you buy them when they are less than 10% cost of minimum(\\(c_2\\), \\(q_2\\), and \\(n\\)).
 
-For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide for how to perform milestone swapping.
+For the milestone swapping strategy, the general idea is to switch milestones from \\(c_2\\) and its exponents, to \\(q_1\\) exponent milestones whenever we are 'close' to a powerful upgrade. Please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx) section of the guide for how to perform milestone swapping.
 
 ##### CSR2 Milestone Swapping Explanation
 
@@ -497,7 +501,7 @@ This theory has a milestone swapping strategy before full milestones. We have \\
 
 The reason milestone swapping works is because the benefits of using \\(c_2\\) related milestones (having high \\(q\\)) remain when you switch to \\(q_1\\) exponent milestones. If we only use \\(q_1\\) exponent, then we have really low \\(q\\). If we only use \\(c_2\\) related milestones, then we have high \\(q\\), but low $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through \\(c_2\\) related milestones, then take advantage of the \\(q_1\\) exponent milestones, while keeping the high value of \\(q\\) we've accumulated earlier!
 
-For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xlxxx) section of the guide.
+For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#csr2xl-xxx) section of the guide.
 
 #### CSR2 Milestone Route
 
@@ -623,7 +627,7 @@ $$\dot{q}=q_1^{1.03}q_2$$
 
 <br><br>
 
- The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated by raising $q$ to the highest power of \\(g(x)\\) by 1 and apon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
+ The first equation is for \\(\rho\\), which starts off simple, but gets more complicated as more milestones are reached and perma-upgrades are purchased. Initially, \\(\rho\\) is fairly simple to calculate as $\dot{r}$ is just \\(1/2\\), $\dot{t}$ is just the $t$ variable, and the $\sqrt[\pi]{}$ radical is just \\(\dot{q}\\)/$\pi$ where $\dot{q}$ is just \\(q_1 * q_2\\). However, once \\(g(x)\\) is added to the $\dot{\rho}$ equation, the $\sqrt[\pi]{}$ radical becomes $\int_{0}^{q/\pi} g(x) \,dx$ which can be estimated by raising $q$ to the highest power of \\(g(x)\\) by 1 and upon maxing out the \\(g(x)\\) milestone, it becomes $\int_{0}^{q} g(x) \,dx$. The variables $m$ and $n$ are simple multipliers that do not change over time without purchasing them with $\rho$.
 
 <br>
 
@@ -633,7 +637,7 @@ The second equation is for $\dot{r}$, which seems simple at first, but gets more
 Approximate variable strengths on their respective vardots with all milestones are as follows:
 
 <table class="T2">
-<caption>Brief summary of variable strengths of FI.</caption>
+<caption>Brief summary of variable strengths of FI</caption>
    <thead><tr>
    <th class="invisible"></th>
    <th colspan="2" style="text-align:center">Brief Description</th>
@@ -649,7 +653,7 @@ Approximate variable strengths on their respective vardots with all milestones a
       </tr>
       <tr>
          <th>K</th>
-         <td>Will double, triple, or quadruple <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> depending on milestones</td>
+         <td>Will double, triple, or quadruple <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container> depending on λ milestones</td>
       </tr>
       <tr>
          <th>m</th>
@@ -693,9 +697,13 @@ In FI, you can unlock milestones in 2 ways:
 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
-Buying the milestone upgrades will not give you a milestone, but will instead increase the max level of the miletone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are always the best things you can do mid publish, even if you need to sacrifice a variable to do so.
+Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
 
-FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Apon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have.
+It is important to note, however, is that buying or refunding \\(g(x)\\) milestones will reset your \\(q\\), \\(q_2\\) level and will change the \\(q_2\\) cost function. Similarly, buying or refunding \\(\lambda\\) milestones will reset your \\(K\\) and change the \\(K\\) cost function.
+
+FI perma-upgrades are at 1e100, 1e450, and 1e1050 \\(\rho\\) for the \\(g(x)\\) milestone and 1e350 and 1e750 \\(\rho\\) for the \\(\lambda\\) milestone. Upon buying these milestone, immediately put a milestone from \\(q_1\\) or \\(n\\) into them depending on how many milestone you have, **except for the 3rd level of the \\(g(x)\\) milestone**.
+
+The 3rd level of the \\(g(x)\\) milestone is bad early on, and is only worth buying at e1076ρ. Swapping to the 3rd level of the \\(g(x)\\) milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
 
 #### FI Milestone Route
 
@@ -839,7 +847,7 @@ h3 {
 
 #### FP Overview
 
- This custom theory was released at the same time as Fractional Integration. FP is A theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence (Tₙ), Ulam-Warburton cellular automaton (Uₙ), Sierpiński triangle (Sₙ). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Fractional Integration. FP is a theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence \\(T_n\\), Ulam-Warburton cellular automaton \\(U_n\\), Sierpiński triangle \\(S_n\\). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
 
 #### FP Equation Description
 
@@ -860,22 +868,37 @@ $$\begin{eqnarray}
 
 $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
+The first equation is for \\(\rho\\), which is the product of \\(c_1 c_2 qr\\) and the fractal term $T_n^{7}$, where \\(T_n\\) is the nth term of the Toothpick Sequence shown below. Its exponent starts at 7, but when you unlock the \\(s\\) milestone, it will change to \\(5+s\\), where \\(s\\) is an upgrade.
+
+The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\). 
+
+\\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
+
+The \\(r\\) equation depends on all fractals available in FP.
 
 ##### Toothpick Sequence
 $$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
 $$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
+
+This is the Toothpick Sequence. We can't really explain it without getting technical, but this sequence grows as \\(n\\) grows. It is important to note that it grows faster right before a new power of two, and slower right after a power of two. This trait is shared with the next fractal. These \\(n=2^k\\) spikes have **a lot** of influence on the theory speed, especially on the second half of it.
+
+If you want to learn more about the Toothpick Sequence, you can search about it on the internet. You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html).
 
 ##### Ulam-Warburton Cellular Automaton
 $$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
 $$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
 $$\\U_n = \sum_{i=0}^n u_i$$
 
+These equations are used to describe the Ulam-Warburton Cellular Automaton (\\(U_n\\)). This is the second main fractal used in FP. Like \\(T_n\\), it grows faster right before a new power of two, and slower right after a power of two.
+
+The \\(w_n\\) equation can look intimidating, but it is simpler to explain than some of the other formulas. \\(w_n\\) is the Hamming weight of the binary representation of \\(n\\), which is the number of 1s that appear in its representation. Right before a power of two, a number has a lot of 1s on the left of its binary representation, which means \\(w_n\\) is higher, and as such \\(U_n\\) grows faster with \\(n\\). The opposite is true for right after a power of two.
+
+You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selectionning it in "Main sequence".
+
 ##### Sierpiński Triangle
 $$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
 
-
-
-
+This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdivising each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
 
 #### FP Variable Description
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
@@ -888,16 +911,16 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
    </tr></thead>
    <tbody>
       <tr>
-         <th>tdot</th>
-         <td>This is tdot</td>
+         <th>$$\dot{ t }$$</th>
+         <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>c_1 is 150x over 100 levels for mod 100 <!-- for the pain --></td>
+         <td>c<sub><sub><small>1</small></sub></sub> is 150x over 100 levels for mod 100 <!-- for the pain --></td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
-         <td>Simple Doubling <!-- i cant fucking spell amn--></td>
+         <td>Doubles ρ dot per level (instantaneous).</td>
       </tr>
       <tr>
          <th>q<sub><sub><small>1</small></sub></sub></th>
@@ -913,11 +936,11 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>n</th>
-         <td>2^k=n is very nice, but n is very hard to describe</td>
+         <td>n makes the fractal grow and helps ρ, q and r growth. n is very strong when getting a power of two, but weaker right after it.</td>
       </tr>
       <tr>
          <th>s</th>
-         <td>s is an additive to an exponent, whose value changes occationally.</td>
+         <td>s is an additive to Tn and Un exponents. Usually +0.15 per level, but increases to +0.2 from level 33 to level 40. s is the strongest purchase after a n=2^k</td>
       </tr>
    </tbody>
 </table>
@@ -929,13 +952,13 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Idle
 
-For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 didgets in the level are 50 or more, then but them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
+For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying $c_1$ around mod%100 50 lvls, or around when the last 2 digits in the level are 50 or more, then buy them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
 
 Once you have all milestones, autobuy all!
 
 ##### Active
 
-The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables is very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
+The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
 
 ###### C1 and C2 Buying
 
@@ -947,12 +970,12 @@ When c1 mod 100 is >= 92, wait until the sum to buy up to c1 mod 100 = 1 is chea
 
 More human way to do the second part is this: when c1 mod 100 == 91, switch to buying x10, see the cumulative price to get c1 mod 100 = 1, and if that is below c2 - it is time to buy c1 up to mod 100 = 1 using autobuy.
 
-Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human
+Note: the actual ratio for part 1 is actually (c1 mod 100) + 0.67, but that's harder to play as a human.
 
 ###### q1 and q2 Buying
 
 q1 follows a mod 10 cycle, and adds ~100%, then ~50%, then ~33% and so on to $\dot{q}$.
-q2 always quadruples the $\dot{q}$ (except the first few purchases)
+q2 always quadruples the $\dot{q}$ (except the first few purchases).
 
 This plays roughly like doubling chase, but in this case you have to adjust ratios slightly - for example, if q1 mod 10 is 0, you want to wait until q1 upgrade price is twice as cheap as q2, and so on.
 
@@ -960,7 +983,7 @@ This plays roughly like doubling chase, but in this case you have to adjust rati
 
 s - always buy on sight.
 n - buy after s.
-r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase
+r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine.
 
 Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
 
@@ -1022,17 +1045,15 @@ Milestone swap saves a LOT of time.
    </tbody>
 </table>
 
-FP Guide written by Snaeky and Hotab
+FP Guide written by Snaeky, Hotab and Mathis S.
 
 ### Riemann Zeta Function (RZ)
 
-Guide Writing is in progress. Not everything here is accurate, or from RZ at the moment.
-
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast, very active CT with a completion time estimated at 100 days. The function follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the \\(\rho\\).
 
-This strategies range a lot in comparison to other theories, however, RZ is not an idle theory and you must be active before about e700 \\(\rho\\). After e600, the entire dynamic of the thoery changes and becomes more idle in some ways and more active in others.
+Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 \\(\rho\\) due to its short publications. It also has a milestone swapping phase from e50 to e400 \\(\rho\\). After e600, the entire dynamic of the theory changes with the inclusion of the black hole.
 
 #### RZ Equation Description
 
@@ -1040,8 +1061,18 @@ $$\dot{\rho}=\frac{t{\mkern 1mu}c_1^{1.25}c_2w_1}{|\zeta(\frac{1}{2}+it)|/2^{b}+
 
 $$\dot{\delta}=w_1w_2w_3\times|\zeta '(\textstyle\frac{1}{2}+it)|^b$$
 
-<br><br>
-Function Description Under Construction please be patient.
+<br>
+
+These two equations follow the analytic continuation of the Riemann Zeta function along the critical $1/2 + it$ line, where all the "non-trivial" zeros of this function should be located according to the Riemann Hypothesis.
+
+The background animation of the CT helps to understand the behavior of the \\(\zeta\\) along the critical line. You can see the background as the complex plane, with the middle point being zero, and the particle following the value of \\(\zeta\\) at the given \\(t\\). The further the particle is from the origin, the higher $|\zeta(\frac{1}{2}+it)|$ is. The faster the particle travels, the higher $|\zeta '(\textstyle\frac{1}{2}+it)|$ is.
+
+This particle describes spirals, and passes by the origin at each of its turns.
+
+We can see in the $\dot{\rho}$ equation that $|\zeta(\frac{1}{2}+it)|/2^{b}+10^{-2}$ is on the denominator, which means \\(\rho\\) grows faster when $\zeta(\frac{1}{2}+it)$ is close to zero. The $10^{-2}$ term prevents $\dot{\rho}$ from exploding at each zero. The $2^{b}$ term helps the growth of \\(\rho\\) when $\zeta(\frac{1}{2}+it)$ is away from zero.
+
+$\delta$ grows faster as $|\zeta '(\textstyle\frac{1}{2}+it)|$ is higher.
+
 <br>
 
 #### RZ Variable Description
@@ -1056,7 +1087,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
    <tbody>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>
-         <td>Doubles every 8 lvls</td>
+         <td>Instant boost to ρ dot, doubles every 8 lvls</td>
       </tr>
       <tr>
          <th>c<sub><sub><small>2</small></sub></sub></th>
@@ -1064,19 +1095,19 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
       <tr>
          <th>w<sub><sub><small>1</small></sub></sub></th>
-         <td>Doubles every 8 lvls. Bought with delta.</td>
+         <td>Instant boost to both ρ dot and δ dot. Doubles every 8 lvls. Bought with δ.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>2</small></sub></sub></th>
-         <td>Doubling. Bought with delta.</td>
+         <td>Doubles δ dot every level. Bought with δ.</td>
       </tr>
       <tr>
          <th>w<sub><sub><small>3</small></sub></sub></th>
-         <td>Doub­ling every e30 rho from e600 delta on. Bought with delta.</td>
+         <td>Doubles δ dot every e30δ from e600δ on. Bought with δ.</td>
       </tr>
       <tr>
          <th>b</th>
-         <td>Is capped at 6 lvls maxing out at 3 (+0.5/lvl)</td>
+         <td>Boosts ρ dot (when ζ is away from zero) and δ dot. Is capped at 6 lvls maxing out at 3 (+0.5/lvl).</td>
       </tr>
    </tbody>
 </table>
@@ -1087,6 +1118,8 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 ##### Pre-e600 \\(\rho\\)
 
+The optimal publication multiplier is around 2-4 before e50 \\(\rho\\) and 4-8 after, but can vary if you are close to the next milestone. As always, you can check with [the sim](https://exponential-developers.github.io/sim-3.0/).
+
 ##### Idle
 
 For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can remove milestones and stack them into the \\(c_1\\) exponent milestones when you're about to publish (from e50 to e400). Don't forget to change milestones back after publishing!
@@ -1095,31 +1128,31 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-Active stragies are still being developed. Right now, Buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. With a milestone swap from from e50 to e400 e3 \\(\rho\\) from recovery and publish between 7 and 10 multi.
+For an active buying strategy, buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. Read the next section for the milestone swapping strategies.
 
 ##### RZ Milestone Swapping Explanation
 
-From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explanation for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery.
+From e50 to e400 \\(\rho\\), you will swap from 2>3>1 for recovery to 2>1>3 (explanation for this notation can be found [here](/guides/theories-1-4/#t2-strategy)) for pushing \\(\rho\\) once you get e3 away from recovery. [The sim](https://exponential-developers.github.io/sim-3.0/) can tell you when you should perform this swap.
 
-For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This is extremely hard and may slow down progress if you are not accurate/fast enough. The sim has NOT confirmed any strategies as of current since the sim is not working yet*.
-
-###### *The sim may be working before this is updated and this may be outdated for strategies. Please check [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy.
+For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near or are at a 0. This strategy is known as SpiralSwap. This is extremely hard and may slow down progress if you are not accurate/fast enough.
 
 ##### Post-e600 \\(\rho\\)
 
-##### Black Hole (BH)
-
 Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
-When BH is unleased, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
+When BH is unleached, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
-##### Idle
+Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero. Good zeros are zeros where \\(\zeta'\\) is higher than all other local zeros. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$. We also want a good \\(t\\) value for our publication.
 
-Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good 0. Good 0s are 0s where \\(\zeta'\\) is higher than all other local 0s. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$.
+To know which zero to use, please use the [the sim](https://exponential-developers.github.io/sim-3.0/). It will output the exact \\(t\\) of the zero to use.
 
-##### Active
+**Always set your BH activation threshold to 0.01 above the value recommended by the sim to ensure that the Black Hole will correctly lock to your zero**. For example, if it recommends t=3797.85, put your activation threshold to 3797.86.
 
+The optimal publication multiplier is often 5, but it is sometimes higher depending on the zero used or if you get a new \\(w_3\\) during the publication. Check the sim to know the optimal multiplier for your publication.
 
+Variable buying strategies stay the same as before.
+
+**Don't forget to buy the $w_3$ permanent upgrade after reaching e1000ρ!** The first level of \\(w_3\\) will not be available right away, so you can buy the permanent upgrade at the end of the pub.
 
 #### RZ Milestone Route
 
