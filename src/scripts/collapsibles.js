@@ -1,7 +1,8 @@
 const full_skiplist = {
   "guides": {
     "ex-basics": ["#visual-representation", "#reference-formula"],
-    "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview"]
+    "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview"],
+    "endgame": ["#bigmas"]
     //"custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview"],
     //"theory-strategies": ["#official-theories", "#official-custom-theories"]
   },
