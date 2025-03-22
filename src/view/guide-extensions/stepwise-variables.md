@@ -71,7 +71,7 @@ As before, in an attempt for a better explanation, I made my own nomenclature (s
 
 The easiest way to determine what Stepwise variable you are working with is to look into the code. The code of all main and official custom theories are at ConicGames' GitHub. Main theories are found in the SDK [here](https://github.com/conicgames/theory-sdk/tree/main/samples) and official custom theories are found [here](https://github.com/conicgames/custom-theories/tree/main/official).
 
-In **ALL** official custom theories, all Stepwise variables are (2, 10) Stepwise variables. Furthermore, there are no linear variables.
+In **ALL** main theories, all Stepwise variables are (2, 10) Stepwise variables. Furthermore, there are no linear variables.
 
 ### Basic Stepwise variable strategy
 
