@@ -99,7 +99,7 @@ Many strategies make use of this understanding of Stepwise variables by changing
 <thead>
    <tr>
       <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C3dC12rcv</th>
+      <th colspan="2" style="text-align:center">Example Strategy</th>
    </tr>
 </thead>
    <tbody>
