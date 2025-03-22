@@ -81,7 +81,7 @@ First of all, Stepwise variables work differently at the very beginning. The fir
 
  Stepwise power functions have a jump at each step length. This jump means that just after getting the increase to their amount per level, they are stronger. For example, a (2, 10) Stepwise variable would be slightly stronger just after each multiple of 10, level 10 -> level 11 is stronger than level 9 -> level 10.
 
-![Stepwise Power Function](images/stepwise.png)
+![Stepwise Power Function](/images/stepwise.png)
 
 ###### $s(x)$ is the (2, 10) Stepwise power function. Red: $s(x)$, Blue: $100\left(\frac{b\left(x+1\right)}{b\left(x\right)}-1\right)$, i.e. the amount s(x) increases when you buy an upgrade starting from upgrade x, as a percentage.
 
