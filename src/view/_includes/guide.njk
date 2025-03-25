@@ -40,11 +40,11 @@
   {% endif %}
 
   {% if '/ranking-news' in page.url %}
-    <p><a href="https://exponential-idle-guides.netlify.app/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
   {% elif '/season-news' in page.url %}
-    <p><a href="https://exponential-idle-guides.netlify.app/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
   {% elif not ((glossary) or ('/rankings-main' in page.url) or ('/seasons-main' in page.url)) %}
-    <p class="draft-warning">Feel free to use the <a href="https://exponential-idle-guides.netlify.app/guide-extensions/glossary/">glossary</a> as needed.
+    <p class="draft-warning">Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> as needed.
   {% endif %}
   
   {{ content | safe }}

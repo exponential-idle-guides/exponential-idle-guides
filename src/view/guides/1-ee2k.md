@@ -5,7 +5,7 @@ contributors: "The Amazing Community"
 draft: true
 order: 1
 ---
-###### First read the [game basics](https://exponential-idle-guides.netlify.app/guides/ex-basics/).
+###### First read the [game basics](/guides/ex-basics).
 
 ### Introduction
 
@@ -71,7 +71,7 @@ You can buy variables and permanent levels while you wait.
 Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
 I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.If you do play, accel button also increases minigame reward.
 
-###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
+###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
 ##### Accel button
 
@@ -154,7 +154,7 @@ I highly highly suggest focusing and learning hard arrow puzzle if you plan on p
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
 If you do play, accel button also increases minigame reward.
 
-###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
+###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
 ##### Accel button
 
@@ -224,7 +224,7 @@ Doing one game of expert arrow or a few of hard arrow makes up all the stars and
 I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
 If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.If you do play, accel button also increases minigame reward.
 
-###### Look at the [Minigame Guide](https://exponential-idle-guides.netlify.app/guides/asd/) for help on solving.
+###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
 ##### Accel button
 

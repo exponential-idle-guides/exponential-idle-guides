@@ -75,7 +75,7 @@ In **ALL** main theories, all Stepwise variables are (2, 10) Stepwise variables.
 
 ### Basic Stepwise variable strategy
 
-(2, 10) Stepwise variables increase by on average $7\%$ per upgrade, and in all listed strats in the [Theory Strategies Explained Guide](https://exponential-idle-guides.netlify.app/guides/theory-strategies/) are bought at a 10x ratio to doubling variables (Direct Multi variables with a base of 2). However, due to the nature of Stepwise variables, sometimes it is wise not to follow this ratio.
+(2, 10) Stepwise variables increase by on average $7\%$ per upgrade, and in all listed strats in the [Theory Strategies Explained Guide](/guides/theory-strategies/) are bought at a 10x ratio to doubling variables (Direct Multi variables with a base of 2). However, due to the nature of Stepwise variables, sometimes it is wise not to follow this ratio.
 
 First of all, Stepwise variables work differently at the very beginning. The first upgrade is usually free and required, as it moves it from 0 to 1. Very early upgrades are usually unusually powerful. For example, the level 3 -> 4 upgrade increases it by $33\%$, much more than the $7\%$ average increase. More importantly is the non-smooth nature of Stepwise power functions.
 
@@ -93,7 +93,7 @@ More specifically, the ratio is 5x at a multiple of 10, increasing to 10x at 5 m
 
 ### Mod10 strategies
 
-Many strategies make use of this understanding of Stepwise variables by changing the ratio bought at depending on where one is in the cycle of these Stepwise variables. This is done using the [modulo operator](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#modulus-explanation), $\%$. Take the above example. $c_1$ is a (2, 10) Stepwise and $c_2$ is a 2x Direct Multi variable. The ratio we want to buy it at is 5x when $c_1$'s current level = 10, 20, 30 etc. and up to 15x when it's current level is 19, 29, 39 etc. Thus, we define the strategy like this
+Many strategies make use of this understanding of Stepwise variables by changing the ratio bought at depending on where one is in the cycle of these Stepwise variables. This is done using the [modulo operator](/guides/theory-strategies/#modulus-explanation), $\%$. Take the above example. $c_1$ is a (2, 10) Stepwise and $c_2$ is a 2x Direct Multi variable. The ratio we want to buy it at is 5x when $c_1$'s current level = 10, 20, 30 etc. and up to 15x when it's current level is 19, 29, 39 etc. Thus, we define the strategy like this
 
 <table class="spqcey">
 <thead>

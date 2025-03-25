@@ -318,7 +318,7 @@ Therfore, \\(x = 0.525+log2, y = 0, z = 0.164\\)
 
 Thus, from Theorem 1 we get:
 $$r = e^{\frac{0.164}{0.475-log2}} \simeq 2.5669$$
-This is very close to the geometric mean of the results of [Theory Simulator](https://exponential-idle-guides.netlify.app/guides/theory-sim/) from e1000 to e1500.
+This is very close to the geometric mean of the results of [Theory Simulator](/guides/theory-sim/) from e1000 to e1500.
 
 ### Theory 2
 
@@ -342,7 +342,7 @@ Thus, from Theorem 1 we get:
 
 $$r \simeq e^{\frac{0.198*10.2}{0.27989}} \simeq 1360.61$$
 
-Which is close to the results of [Theory Simulator](https://exponential-idle-guides.netlify.app/guides/theory-sim/) without T2MC from e1000 to e1500. This behavior is expected since Coasting -- The main concept of T2MC is not considered at all in this analysis.
+Which is close to the results of [Theory Simulator](/guides/theory-sim/) without T2MC from e1000 to e1500. This behavior is expected since Coasting -- The main concept of T2MC is not considered at all in this analysis.
 
 ## Credits
 

@@ -22,10 +22,15 @@ const open_char = '\u25BC';
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
 
-function get_skiplist(url) {
+function get_url_paths(url) {
   if(["http://localhost:8000/", "https://exponential-idle-guides.netlify.app/"].includes(url)){return []}
   const p = /^https\:\/\/[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app\/([a-z\-\/0-9]*)/g.exec(url);
-  const path = [...(p === null ? /^http\:\/\/localhost\:8000([a-z\-\/0-9]*)/g.exec(url) : p)[1].matchAll(/[a-z\-0-9]+/g)];
+  return [...(p === null ? /^http\:\/\/localhost\:8000([a-z\-\/0-9]*)/g.exec(url) : p)[1].matchAll(/[a-z\-0-9]+/g)];
+}
+
+function get_skiplist(url) {
+  if(["http://localhost:8000/", "https://exponential-idle-guides.netlify.app/"].includes(url)){return []}
+  const path = get_url_paths(url);
   const s = full_skiplist[path[0]][path[1]];
   return s === undefined ? [] : [,...s];
 }
@@ -92,6 +97,14 @@ function skipped(classlist, id = "#") {
     return classlist.split(/(\s+)/).some(r => skiplist.includes("." + r))
   } else {
     return false
+  }
+}
+
+const path = get_url_paths(current_url);
+if (path[0][0] === "ranking-news" && $("h2").length > 1) {
+  const second = $("h2")[1];
+  if ((new RegExp(path[1][0].slice(5) + '[a-z]*-' + path[1][0].slice(0,4), "g")).test(strRepl(second.innerText.toLowerCase()))) {
+    $(second).remove();
   }
 }
 

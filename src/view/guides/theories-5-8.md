@@ -76,7 +76,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
 
 ### Theory 1
 
-You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) to give the best strategy and multiplier for the next publication.
+You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publication.
 
 ### Theory 2
 
@@ -228,7 +228,7 @@ For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 ##### Active
 
-Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimised strategies, please see [List of theory strategies](https://exponential-idle-guides.netlify.app/guides/theory-strategies/).
+Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimised strategies, please see [List of theory strategies](/guides/theory-strategies).
 
 <br>
 
@@ -436,7 +436,7 @@ simply making the graph steeper in \\(x\\) or \\(y\\) direction, depending on th
 
 The optimal publication multiplier is \\(4\\)-\\(6\\). You will swap from 0/1/1 → 0/0/2 at near the 2/3 mark of your next milestone. The strategy for
 manual buy before 4 milestones is to only manual buy \\(q_1\\) and \\(c_1\\)
-cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](https://exponential-idle-guides.netlify.app/guides/theory-sim/) or watch the video below.
+cheap (e1 less \\(\rho\\)) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, you will follow the strat described in the [theory sim guide](/guides/theory-sim) or watch the video below.
 
 {{ yt.embed('wnKLkd0zXwI') }}
 
