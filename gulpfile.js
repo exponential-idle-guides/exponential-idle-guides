@@ -14,7 +14,7 @@ gulp.task('scripts', () => {
 })
 
 gulp.task('images', () => {
-  return gulp.src('src/images/**/*.{png,jpg,jpeg,svg}')
+  return gulp.src('src/images/**/*.{png,jpg,jpeg,svg}', {encoding: false})
           .pipe(gulp.dest('_site/images/'));
 });
 
