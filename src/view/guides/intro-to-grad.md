@@ -30,7 +30,7 @@ timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 
 This is the new expression for prestige. It looks intimidating, but it will work normally and
 you never have to turn it off (you would have to if you didn't use this one later on). Here is
-an explanation for all parts except the normal expression which has an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation) already.
+an explanation for all parts except the normal expression which has an [explanation](/guides/ex-basics/#autoprestige-explanation) already.
 
 <blockquote style="font-family:monospace;">((d(smooth(10^10^10^(phi * tau), 1)) > 1</blockquote>
 
@@ -63,7 +63,7 @@ of the expression above does not allow the normal expression to prestige for 15 
 a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So,
 we allow the normal expression to work like normal while recovering.
 
-###### Reference [Cumulative Maximum Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-3-cumulative-maximum)
+###### Reference [Cumulative Maximum Smooth()](/guides/ex-basics/#method-3-cumulative-maximum)
 
 ###### Note: If you don't know what R9 is, you will find out later in the game
 
@@ -129,11 +129,11 @@ dpsi + psi &gt; min(costUpS(1), <br>
 edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.**
 
-###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock)
+###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
 
 #### Autosupremacy explanation
 
-Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max \\(f(t)\\) during that supremacy is increased, but due to prestiges, this \\(f(t)\\) isn't being pushed during prestige recovery which is why we use [smooth() locking](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock) and general smooth() to mitigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of \\(f(t)\\) out of that prestige to make sure it is time to supremacy.
+Autosupremacy works the same as autoprestige, but more complicated due to the staircase nature of supremacy progress. This is due to it not progressing unless max \\(f(t)\\) during that supremacy is increased, but due to prestiges, this \\(f(t)\\) isn't being pushed during prestige recovery which is why we use [smooth() locking](/guides/ex-basics/#method-2-lock) and general smooth() to mitigate this phenomenon. The autosupremacy also is lined up with the end of a prestige so that we get the maximum amount of \\(f(t)\\) out of that prestige to make sure it is time to supremacy.
 
 ### Star spending
 

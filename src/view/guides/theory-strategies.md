@@ -814,7 +814,7 @@ The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivari
 
 <br>
 
-**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](https://exponential-idle-guides.netlify.app/guides/theories-1-4/#t2-strategy)**
+**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](/guides/theories-1-4/#t2-strategy)**
 
 ### T2<span style="color:#41AD21">QS</span>
 
@@ -2940,7 +2940,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 
 ### T5<span style="color:#41AD21">AI</span>
 
-This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](https://exponential-idle-guides.netlify.app/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
 
 ### T5<span style="color:#41AD21">Idle xexxx</span>
 
@@ -5862,7 +5862,7 @@ After you unlock the s milestone, you can perform milestone swapping until s > 2
 Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
 Milestone swapping is no longer required once you can reach s > 2 quickly.
 
-For more information about the FP milestone swapping strategy, check [here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-milestone-swapping-explanation)
+For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
 <br>
 
@@ -5919,7 +5919,7 @@ After you unlock the s milestone, you can perform milestone swapping until s > 2
 Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
 Milestone swapping is no longer required once you can reach s > 2 quickly.
 
-For more information about the FP milestone swapping strategy, check [here.](https://exponential-idle-guides.netlify.app/guides/custom-theories/#fp-milestone-swapping-explanation)
+For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
 
 ### FP

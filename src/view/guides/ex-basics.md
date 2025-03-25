@@ -255,7 +255,7 @@ dpsi + psi &gt; min(costUpS(1), <br>
 edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.**
 
-###### Reference [Locking Smooth()](https://exponential-idle-guides.netlify.app/guides/ex-basics/#method-2-lock)
+###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
 
 #### Autosupremacy explanation
 

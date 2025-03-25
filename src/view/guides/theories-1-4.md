@@ -26,7 +26,7 @@ better theory.__
 
 ### Graduation routing
 
-Remember to follow our routing advice from [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+Remember to follow our routing advice from [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 <table class="graduation_routing">
    <tbody>
@@ -121,7 +121,7 @@ soon as you can afford it will slow your progress. Lategame, buying
 upgrades immediately will slow you more than the benefit of the upgrade
 because \\(c_3\\) and \\(c_4\\) dominate. If the next level costs \\(10ρ\\)
 and you have \\(11ρ\\), buying that level will reduce \\(ρ_{n+1}\\) to \\(1\\). This reduces your \\(ρ_{n+1}\\) by roughly a factor of \\(10\\).
-There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](https://exponential-idle-guides.netlify.app/guides/theory-strategies/#t1ratio) are to be
+There are \\(3\\) terms that influence the rate of change of \\(ρ\\), and all are affected by the previous state of \\(ρ\\). The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](/guides/theory-strategies/#t1ratio) are to be
 only used when you are past \\(e150 τ\\) and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
 
 Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 1 (e25τ) and autobuy rest until ee6k.

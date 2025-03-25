@@ -11,7 +11,7 @@ order: 5
 
 ### Graduation routing
 
-Remember to follow our routing advice from the [introduction to graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+Remember to follow our routing advice from the [introduction to graduation](/guides/intro-to-grad/#graduation-routing).
 
 <table class="graduation_routing">
    <tbody>
@@ -45,7 +45,7 @@ Remember to follow our routing advice from the [introduction to graduation](http
       <tr>
          <td class="invisible"></td>
          <td class="invisible"></td>
-         <td colspan="2"><a href="https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-8-skipping">Skip T8</a></td>
+         <td colspan="2"><a href="/guides/theories-5-8/#theory-8-skipping">Skip T8</a></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
          <td class="invisible"></td>
@@ -220,7 +220,7 @@ Semi idle is similar to idle, but we do manual \\(c_2\\) buying and disabling \\
 For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark.
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within about e5 \\(\rho\\) under last publication mark.
 3. Then we autobuy all until \\(\rho \\) has reached its previous publication value (finished recovery).
 4. Afterwards, deactivate \\(c_1\\) and autobuy the rest until publish.
 
@@ -236,7 +236,7 @@ For each publication: autobuy \\(c_3\\) and \\(q_2\\). Buy \\(c_1\\) ONLY right 
 Note that for faster speed, for the first part of step 2, you may buy 10 levels at a time
 
 1. For the first 10 seconds, autobuy everything except \\(c_2\\).
-2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#theory-5-strategy).
+2. Then we want to manually buy \\(c_2\\). See [Manual Buying c2](/guides/theories-5-8/#theory-5-strategy).
 3. Then we autobuy \\(c_3, q_2, c_2\\). Out of these 3 variables, find the one with the cheapest cost. Then buy \\(q_1\\) until its cost exceeds 15% of the cheapest variable you found above. Buy \\(c_1\\) ONLY right after buying a level of \\(c_2\\). 
 4. Once the theory has recovered to its previous publication mark, you can slowly put less emphasis on \\(c_1\\). When in doubt, have \\(c_1\\)'s cost be similar to \\(q_1\\)'s cost. Continue doing step 2 until publish.
 
@@ -631,9 +631,9 @@ still helps if you get used to it.
 
 #### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Swapping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each swap.
+You can find the autoprestige used for R9 Swapping here: [Equation](/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each swap.
 
-###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
+###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
 {{ yt.embed('Klw9lLPNqdY') }}
 

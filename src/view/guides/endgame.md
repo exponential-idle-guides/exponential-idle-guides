@@ -35,19 +35,19 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 
 {{ yt.embed('d7mWhOkD7TM') }}
 
-###### Also see [t stacking](https://exponential-idle-guides.netlify.app/guides/endgame/#t-stacking)
+###### Also see [t stacking](/guides/endgame/#t-stacking)
 
 #### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
+You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
 
-###### Reference [R9 Swapping Autoprestige Explanation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#autoprestige-explanation)
+###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
 {{ yt.embed('c8ekMzXWD_g') }}
 
 ### How to properly use the Graduation Calculator
 
-The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](https://exponential-idle-guides.netlify.app/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 #### Three Steps To Getting The Best Result
 
@@ -98,7 +98,7 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### t stacking
 
-A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](https://exponential-idle-guides.netlify.app/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\varphi\\) due to additional \\(dt\\) and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
+A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap inbetween profits from more \\(\varphi\\) due to additional \\(dt\\) and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
 
 ### Skipped students routing
 
@@ -106,7 +106,7 @@ Once you have enough students to always have R4 to R7 maxed out (about 30k), you
 
 Due to fluctuations with stars, accel, \\(t\\), and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
 
-##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#graduation-routing).
+##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 <table class="newwords">
    <thead>
@@ -252,7 +252,7 @@ Suprem Equation past ee58-60k:
 
 ### How to respec
 
-See the [introduction guide](https://exponential-idle-guides.netlify.app/guides/intro-to-grad/#respecing-students) for respecing students and
+See the [introduction guide](/guides/intro-to-grad/#respecing-students) for respecing students and
 milestones.
 
 #### Lemma

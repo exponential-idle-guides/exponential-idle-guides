@@ -134,7 +134,7 @@ It is better to combine both of these supremacies into one than have to recovery
 
 Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it.
 
-###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autoprestige-explanation)
+###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](/guides/ex-basics/#autoprestige-explanation)
 
 <blockquote id='ap_eq'>
 timer(d(ln(ln(db/b+1)/pt)) &lt; 0)<br>
@@ -164,7 +164,7 @@ It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the 1 hour 
 
 ##### Star upgrades
 
-Buy accel button and use it for speed boost to the game and stars. You should be able to unlock both autobuyers and autoprestige relatively easily with only some star grinding. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
+Buy accel button and use it for speed boost to the game and stars. You should be able to unlock both autobuyers and autoprestige relatively easily with only some star grinding. After you obtain autoprestige, input [the autoprestige equation](/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
 
 #### Idle strategies
 
@@ -174,13 +174,13 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 ##### Star upgrades
 
-If you don't use the accel button, don't buy it. When you can buy the autobuyers, buy the variable autobuyer then the upgrade autobuyer. After you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
+If you don't use the accel button, don't buy it. When you can buy the autobuyers, buy the variable autobuyer then the upgrade autobuyer. After you obtain autoprestige, input [the autoprestige equation](/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
 
 ### ee200 to ee2000
 
 #### Autosupremacy
 
-There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get it later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](https://exponential-idle-guides.netlify.app/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
+There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get it later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
 
 ###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> once to cycle.
@@ -234,7 +234,7 @@ It gives an x2.85 boost to \\(dt\\) and thus the game if you max out the 1 hour 
 
 ##### Star upgrades
 
-You will max all star upgrades besides permanent levels (no attainable limit) and autosupremacy (only if you grind enough). When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
+You will max all star upgrades besides permanent levels (no attainable limit) and autosupremacy (only if you grind enough). When you obtain autoprestige, input [the autoprestige equation](/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
 
 #### Idle strategies
 
@@ -244,6 +244,6 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 ##### Star upgrades
 
-You will max all star upgrades besides permanent levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](https://exponential-idle-guides.netlify.app/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
+You will max all star upgrades besides permanent levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](/guides/1-ee2k/#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after \\(\zeta\\); lvl 2 after \\(\iota\\); and lvl 3 after \\(\xi\\) (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
 
 ###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graduation routing anyway

@@ -255,7 +255,7 @@ The algorithm goes as follows:
 
 ### Hard and Expert
 
-You will want to read [how to propagate](https://exponential-idle-guides.netlify.app/guides/asd/#propagation-for-hard-and-expert) before continuing. The algorithm goes as follows:
+You will want to read [how to propagate](/guides/asd/#propagation-for-hard-and-expert) before continuing. The algorithm goes as follows:
 <ol type="1">
   <li>Propagate.</li>
   <li>Label the bottom right cells (from left to right): <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>. Label the top right cells (from left to right): <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. We will be tapping the top row to encode the bottom row onto it.
