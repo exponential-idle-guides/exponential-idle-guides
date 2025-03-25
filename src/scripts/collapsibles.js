@@ -101,10 +101,12 @@ function skipped(classlist, id = "#") {
 }
 
 const path = get_url_paths(current_url);
-if (path[0][0] === "ranking-news" && $("h2").length > 1) {
-  const second = $("h2")[1];
-  if ((new RegExp(path[1][0].slice(5) + '[a-z]*-' + path[1][0].slice(0,4), "g")).test(strRepl(second.innerText.toLowerCase()))) {
-    $(second).remove();
+if (path.length == 2) {
+  if (path[0][0] === "ranking-news" && $("h2").length > 1) {
+    const second = $("h2")[1];
+    if ((new RegExp(path[1][0].slice(5) + '[a-z]*-' + path[1][0].slice(0,4), "g")).test(strRepl(second.innerText.toLowerCase()))) {
+      $(second).remove();
+    }
   }
 }
 
