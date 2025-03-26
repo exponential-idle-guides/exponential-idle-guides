@@ -631,7 +631,7 @@ $$\dot{q}=q_1^{1.03}q_2$$
 
 <br>
 
-The second equation is for $\dot{r}$, which seems simple at first, but gets more difficult to understand once we get to the fractional integral. The notation in game is rarely used, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral approaches 1, which makes the fractional integral get closer to, yet still smaller than, the full integral. By subracting the two, then dividing 1 by the difference, we get a very large number.
+The second equation is for $\dot{r}$, which seems simple at first, but gets more difficult to understand once we get to the fractional integral. The notation in game is rarely used, but it is used to save space. Tapping and holding the equation will give the full equation. When K increases, the fractional integral approaches 1, which makes the fractional integral get closer to, yet still smaller than, the full integral. By subtracting the two, then dividing 1 by the difference, we get a very large number.
 
 #### FI Variable Description
 Approximate variable strengths on their respective vardots with all milestones are as follows:
@@ -697,7 +697,7 @@ In FI, you can unlock milestones in 2 ways:
 2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
-Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
+Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
 
 It is important to note, however, is that buying or refunding \\(g(x)\\) milestones will reset your \\(q\\), \\(q_2\\) level and will change the \\(q_2\\) cost function. Similarly, buying or refunding \\(\lambda\\) milestones will reset your \\(K\\) and change the \\(K\\) cost function.
 
@@ -847,7 +847,7 @@ h3 {
 
 #### FP Overview
 
- This custom theory was released at the same time as Fractional Integration. FP is a theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence \\(T_n\\), Ulam-Warburton cellular automaton \\(U_n\\), Sierpiński triangle \\(S_n\\). As each of the fractals grow, so does $\tau$. An explanation of each section of the equations is shown below:
+ This custom theory was released at the same time as Fractional Integration. FP is a theory that takes advantage of the growth of the 3 fractal patterns: Toothpick Sequence \\(T_n\\), Ulam-Warburton cellular automaton \\(U_n\\), Sierpiński triangle \\(S_n\\). As each of the fractals grows, so does $\tau$. An explanation of each section of the equations is shown below:
 
 #### FP Equation Description
 
@@ -893,12 +893,12 @@ These equations are used to describe the Ulam-Warburton Cellular Automaton (\\(U
 
 The \\(w_n\\) equation can look intimidating, but it is simpler to explain than some of the other formulas. \\(w_n\\) is the Hamming weight of the binary representation of \\(n\\), which is the number of 1s that appear in its representation. Right before a power of two, a number has a lot of 1s on the left of its binary representation, which means \\(w_n\\) is higher, and as such \\(U_n\\) grows faster with \\(n\\). The opposite is true for right after a power of two.
 
-You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selectionning it in "Main sequence".
+You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selecting it in "Main sequence".
 
 ##### Sierpiński Triangle
 $$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
 
-This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdivising each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
+This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdividing each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
 
 #### FP Variable Description
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
@@ -958,7 +958,7 @@ Once you have all milestones, autobuy all!
 
 ##### Active
 
-The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying straegy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
+The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying strategy is between c1 and c2. However, generally you can follow this order of buying s>n=q2>c2>=c1>q1>r1 but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where q1 is mod%10=0 and may be stronger than c1, which may be mid mod%100 cycle. The variable relationships are as follows:
 
 ###### C1 and C2 Buying
 
@@ -1138,11 +1138,11 @@ For a more active recovery, you can swap from 2>3>1 to 2>1>3 when you are near o
 
 ##### Post-e600 \\(\rho\\)
 
-Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate ralative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
+Black Hole (BH) is not a normal milestone. Once you get BH, you will get 2 new buttons added to your theory, one on the bottom right of your equation screen that looks like a black hole; and one on the top right next to your publish button that looks like a back arrow. The back arrow button will reduce \\(t\\) by 5 and will move \\(\zeta\\) back to where it was at that \\(t\\). The BH button will bring up the BH menu. In the BH menu you can set a value where you want BH to activate relative to \\(t\\) and the game will automatically activate BH, or you can activate it manually at any time by pressing the "Unleash a black hole" button.
 
 When BH is unleashed, \\(t\\) gets set back and frozen at the last 0 it encountered. For example, when \\(\zeta\\) crosses 0 at \\(14.15t\\), that 0 is saved, if you Unleash BH after \\(14.15t\\) and before the next 0 (\\(21.025t\\)), \\(t\\) will be locked to \\(14.15\\) and \\(\zeta'\\) will be locked at the value it was at at \\(14.15t\\).
 
-Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero. Good zeros are zeros where \\(\zeta'\\) is higher than all other local zeros. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible becuase we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$. We also want a good \\(t\\) value for our publication.
+Once you get Black Hole (BH), you will use it to push both \\(\rho\\) to get to a good zero. Good zeros are zeros where \\(\zeta'\\) is higher than all other local zeros. For example, all zeroes from \\(14.15t\\) to \\(25.025t\\) either have less \\(\zeta'\\) or have a lower \\(t\\):\\(\zeta'\\) ratio. We want as much \\(\zeta'\\) as possible because we can now permanently maximize the \\(\zeta\\) function for $\dot{\rho}$. We also want a good \\(t\\) value for our publication.
 
 To know which zero to use, please use the [the sim](https://exponential-developers.github.io/sim-3.0/). It will output the exact \\(t\\) of the zero to use.
 
