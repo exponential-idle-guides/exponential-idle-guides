@@ -141,7 +141,7 @@ Upon unlocking all variables, you can use the [star calculator](https://conicgam
 
 #### When to recalculate star distribution
 
-[Your star distribution](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often but should be done if it has been a while since you last did. A good rule of measurement is every ee1000 to ee2000 gain to your highest reached \\(f(t)\\) as any closer between breaks normally won't be significant enough. The exception to this is during the ee6000 push which, similar to the ee5000 push, redistribution can be handy as it is a long push.
+[Your star distribution](https://conicgames.github.io/exponentialidle/stars) does not need to be updated the most often but should be done if it has been a while since you last did. A good rule of measurement is every ee1000 to ee2000 gain to your highest reached \\(f(t)\\), as any closer between breaks normally won't be significant enough. The exception to this is during the ee6000 push which, similar to the ee5000 push, redistribution can be handy as it is a long push.
 
 ### Graduation routing
 
@@ -177,7 +177,7 @@ Use the [student calculator](https://conicgames.github.io/exponentialidle/studen
 ### Respecing students
 
 The button at the bottom labeled “Respec” removes all used \\(σ\\) in
-Research and gives you back without consequence. This allows for testing
+Research and gives it back to you without any consequences. This allows for testing
 or reallocating easily, but it will remove **ALL** of your students from
 everything including theories. On the bottom left is located a list-shaped
 button. Pressing this will reveal the <kbd>-</kbd> buttons. These
