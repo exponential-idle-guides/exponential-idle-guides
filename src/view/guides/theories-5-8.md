@@ -181,7 +181,7 @@ Note that \\(c_1\\) and \\(c_2\\) have special interactions.
 
 ##### Manual buying c2 - READ THIS BEFORE DOING THE STRATEGIES
 
-For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buy 10x variables at a time. Otherwise buy 1 level of c2 at a time.
+For step 2 of the semi-idle and active strategies below, you should be manually buying \\(c_2\\). If you're over e150 \\(\rho\\), start with buying 10x variables at a time. Otherwise buy 1 level of c2 at a time.
 
 <br>
 
@@ -300,14 +300,14 @@ The \\(-C\\) variable outside of the integral is defined as the sum of the insta
 upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all \\(c_i\\) upgrades, but is
 slightly different. It is negative because purchasing \\(c_i\\) upgrades will increase the value of the integral, thus
 \\(\rho\\), by the change in \\(c_i\\) instantly. \\(-C\\) is used to offset this so that \\(\rho\\) does not diverge. For example,
-lets say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will
+let's say that the integral is equal to \\(10\\) and that you can buy the first upgrade (cost \\(10\\)). After buying it, the integral will
 be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(C\\) needs to be equal to \\(20\\).
 
 [Video of T6 at Endgame](https://bit.ly/t6endgame)
 
 #### T6 strategy
 
-The optimal multipler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
+The optimal multipiler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
 If you want an accurate multiplier, check with [the sim](https://exponential-developers.github.io/sim-3.0/).
 
 <table class="spqcey">
@@ -610,7 +610,7 @@ If your numbers are different, that is fine. You just need to reach 1e1350
 All routing follows the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) and
 [star calculator](https://conicgames.github.io/exponentialidle/stars.html) (by Eaux Tacous#1021). When you are not pushing \\(f(t)\\) you should always have the 9th research option maxed (after Theory 8). When pushing \\(f(t)\\), you should be R9 swapping (below).
 
-There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) orriginally by XLII and now developed by the Exponential Develpers, which works both below max milestones and after max milestones for all theories.
+There is also the [theory simulator](https://exponential-developers.github.io/sim-3.0/) originally by XLII and now developed by the Exponential Developers, which works both below max milestones and after max milestones for all theories.
 
 ![R9 Location](/images/R9.png)
 
