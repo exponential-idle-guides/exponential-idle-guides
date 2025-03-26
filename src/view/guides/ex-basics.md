@@ -140,7 +140,7 @@ You start out with normal numbers and quickly work your way up to $X.xxeX$ notat
 ### Achievements and Minigames
 
 * Achievements are just that. They are goals to reach that give you stars as reward.
-* Minigames are puzzles that you can solve that will give you stars as a reward for getting solving them. Check out the [Minigame Guide](/guides/asd) for how to solve each puzzle and more resources.
+* Minigames are puzzles that you can solve that will give you stars as a reward for solving them. Check out the [Minigame Guide](/guides/asd) for how to solve each puzzle and more resources.
 
 ### Stars and Star upgrades
 
@@ -259,15 +259,15 @@ or xMax.**
 
 #### Autosupremacy explanation
 
-The autosupremacy expression is an attempt to do the autoprestige expression, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy expression than an autoprestige expression because after a new prestige, Supremacy \\(f(t)\\) doesn't increase until you get back to the \\(f(t)\\) you left off at. This creates the growth of a supremacy staircase shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
+The autosupremacy expression is an attempt to do the autoprestige expression, but for supremacy. It tracks the same information, but over multiple prestiges. It is harder to make an autosupremacy expression than an autoprestige expression because after a new prestige, Supremacy \\(f(t)\\) doesn't increase until you get back to the \\(f(t)\\) you left off at. This makes the growth of a supremacy staircase-shaped. This makes it difficult to find the optimal point as we did with autoprestige and is why we time it with the end of a prestige to be sure.
 
 ### Smooth() for auto expressions
 
-Internally, smooth is implemented using exponential moving average. Here are some ways to use this construction.
+Internally, smooth is implemented using an exponential moving average. Here are some ways to use this construction.
 
 #### Method 1: Moving average
 
-If a value fluctuates too much, you can use smooth so that the value does not go rampant, triggering some conditions incorrectly. One main example is to use it when you use multiple \\(d()\\) function on the same expression.
+If a value fluctuates too much, you can use smooth so that the value does not go rampant, triggering some conditions incorrectly. One main example is to use it when you use multiple \\(d()\\) functions on the same expression.
 
 For instance, \\(smooth( d(d(ln(db))), 10)\\) will behave much better than the simple \\(d(d(ln(db)))\\) because using d multiple times creates a lot of fluctuation, due to the discrete nature of \\(d()\\) (not a true derivative, but an extrapolation of slope over the last tick). Of course, this introduces some "lag factor" in the sense that when some threshold is passed, smooth won't display it until a short after.
 
