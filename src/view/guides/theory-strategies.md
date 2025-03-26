@@ -2303,7 +2303,7 @@ This is the only active SNAX strategy.
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
 
-The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
+The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them in this publication. <br>
 
 If you are confused about the "%", read about [it here.](#modulus-explanation)
 
@@ -6006,7 +6006,7 @@ For more information about the FP milestone swapping strategy, check [here.](/gu
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">dBH</span> t=388.85 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
 
-The value after t is the t value at which the black hole should be set. We recommend putting the thresold 0.01 above this value to avoid precision issues.
+The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
@@ -6055,7 +6055,7 @@ Strategy credits:
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">BH</span> t=462.07 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
 
-The value after t is the t value at which the black hole should be set. We recommend putting the thresold 0.01 above this value to avoid precision issues.
+The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
@@ -6148,7 +6148,7 @@ Strategy credits:
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">dMS</span> swap:197 c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
 Start the publication with the w2 milestone on.
-The value after swap is the ρ value were you should swith it to c<sub><sub><small>1</small></sub></sub> exponent.
+The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
@@ -6193,7 +6193,7 @@ Strategy credits:
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">MS</span> swap:196 c<sub><sub><small>1</small></sub></sub>: 952 c<sub><sub><small>2</small></sub></sub>: 238.
 
 Start the publication with the w2 milestone on.
-The value after swap is the ρ value were you should swith it to c<sub><sub><small>1</small></sub></sub> exponent.
+The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
