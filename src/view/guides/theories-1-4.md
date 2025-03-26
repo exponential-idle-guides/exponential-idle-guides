@@ -251,13 +251,13 @@ __For both strategies the milestones are listed in the order X>Y, where X and Y 
 For the idle strategy, you want to prioritize buying milestone levels of 1>2. If you have more than 4 milestones, you will prioritize
 milestone 1>2>3>4. You will want to publish at
 about 10-100 multiplier before \\(e75\\) and about a \\(1000\\) multiplier after \\(e75\\), but larger multipliers are fine.
-If possible, swap to milestones 3>4>1>2 at end before publishing for an additional boost.
+If possible, swap to milestones 3>4>1>2 at the end before publishing for an additional boost.
 
 ##### Active
 
 The goal of the active strategy is to grow \\(q_1\\) and \\(r_1\\) as
 much as possible while being able to take advantage of the exponent
-milestones too, yeilding a large boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
+milestones too, yielding a large boost from that growth. The active for T2 is on a 50-second cycle between two milestone sets: 10 seconds for
 exponent priority (Milestones 3 and 4) and 40 seconds for derivative priority (Milestones 1 and 2) . You will start a publication with exponent priority as the cost of the variables gained from milestones 1 and 2 are
 too large for you to get right away. When you can afford them, you will
 start the cycle. The full cycle is listed below:
@@ -484,7 +484,7 @@ Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c
 
 <br><br>
 
-The first line statest that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
+The first line states that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
 
  <br><br>
 The second line is more unique. It says that $\dot{q}$ is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as $\dot{q}$ decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth.
@@ -590,7 +590,7 @@ T4 active is more involved. However it is not as demanding as T3 or T1 active.
 
 <br><u>Start to e75</u>
 
-Autobuy $c_2$. DON'T buy $c_3$, $q_1$, $q_2$! The \\(c_3q\\) term is bad early on. Buy $c_1$ until its cost exceed about 15% of $c_2$ cost. Publish at about 2.5-3 if possible. When we reach e25 rho, we get the $c_1$ exponent milestone (note the difference between this strategy and the idle strategy). With the $c_1$ exponent milestone, the $c_1c_2$ term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying $c_1$ and $c_2$ (NO $c_3$, $c_4$, $c_5$, $c_6$, $q_1$, $q_2$!), all the 'q' related milestones are useless for now.
+Autobuy $c_2$. DON'T buy $c_3$, $q_1$, $q_2$! The \\(c_3q\\) term is bad early on. Buy $c_1$ until its cost exceeds about 15% of $c_2$ cost. Publish at about 2.5-3 if possible. When we reach e25 rho, we get the $c_1$ exponent milestone (note the difference between this strategy and the idle strategy). With the $c_1$ exponent milestone, the $c_1c_2$ term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying $c_1$ and $c_2$ (NO $c_3$, $c_4$, $c_5$, $c_6$, $q_1$, $q_2$!), all the 'q' related milestones are useless for now.
 
 <br><u>e75 to e175 OR 14k ft</u>
 
@@ -601,13 +601,13 @@ Now here is where we can apply some more advanced strategies. Consider that the 
 1. Do the same strategy as before until we reach our previous publication point.
 2. Take point(s) out of the $c_1$ exponent milestones and unlock all the terms (the first milestone). We should now have access to $c_6$.
 3. Autobuy $c_4$, $c_5$, $c_6$, $q_2$.
-4. If you want to optimise a bit more, you can buy $q_1$ until its cost exceed about 15% of $q_2$. Otherwise it's ok to also autobuy $q_1$.
+4. If you want to optimise a bit more, you can buy $q_1$ until its cost exceeds about 15% of $q_2$. Otherwise it's ok to also autobuy $q_1$.
 5. DO NOT autobuy $c_1$, $c_2$, $c_3$.
 6. Publish at about 10-20. Once published, remember to take out the milestone point and put it back into the $c_1$ exponent to repeat step 1.
 
 <br>
 
-If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is the $c_4$, $c_5$, $c_6$ terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only $c_1c_2$ as usual to accumulate enough rho so that we can buy $q_1q_2$ to stack q. Once we have enough q, the $c_4$, $c_5$, $c_6$ terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make $c_1c_2$ better again.
+If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is that the $c_4$, $c_5$, $c_6$ terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only $c_1c_2$ as usual to accumulate enough rho so that we can buy $q_1q_2$ to stack q. Once we have enough q, the $c_4$, $c_5$, $c_6$ terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make $c_1c_2$ better again.
 
 <br><u>e175 OR 14k ft to ~e300 T4</u>
 
