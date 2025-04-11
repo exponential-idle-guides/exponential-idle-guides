@@ -1233,6 +1233,54 @@ Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the
 
 #### MF Variable Description
 
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of MF.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Instant boost to ρ dot, doubles every 7 levels.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>a<sub><sub><small>1</small></sub></sub></th>
+         <td>Instant boost to I dot, doubles every 5 levels.</td>
+      </tr>
+      <tr>
+         <th>a<sub><sub><small>2</small></sub></sub></th>
+         <td>x1.25 to I's cap, results in a ~x2.5 total boost once the new cap is reached.</td>
+      </tr>
+      <tr>
+         <th>δ</th>
+         <td>Ιnstant ~x1.5 boost to ρ dot per level.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>1</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>x</small></sub></sub>, making v larger and x grow faster, doubles every 10 levels. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>2</small></sub></sub></th>
+         <td>x1.3 to v<sub><sub><small>x</small></sub></sub>, making v larger and x grow faster. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>3</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>y</small></sub></sub> and v<sub><sub><small>z</small></sub></sub>, making v larger, doubles every 10 levels. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>4</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>y</small></sub></sub> and v<sub><sub><small>z</small></sub></sub>, making v larger. Only effective after a particle reset.</td>
+      </tr>
+   </tbody>
+</table>
+
 #### MF Strategy
 
 #### MF Milestone Route
