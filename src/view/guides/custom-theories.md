@@ -10,19 +10,19 @@ order: 8
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of December 15th, there are 7 official
-custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, and Riemann Zeta Function by Prop (RZ). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP and RZ from now on.
+Custom theories are theories made by players in the community. As of March 2025, there are 9 official
+custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, Riemann Zeta Function by Prop (RZ), Magnetic Fields by Mathis (MF) and Basel Problem by Python's Koala (BaP). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP, RZ, MF and BaP from now on. The choice for a three letter abbreviation for BaP was made to avoid confusion with a previous unofficial custom theory sharing the same initials (Bin Packing).
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI and RZ have conversion rates of
-$\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\).
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with two exceptions) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI, RZ and BaP have conversion rates of
+$\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\). Meanwhile, MF is the only custom theory to this day to have $\tau$ = \\(\rho\\).
 
 ### Which Custom Theories (CTs) should I do?
 
-In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
 If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\), or you can chase a spike in tau/hour, such as EF e50 \\(rho\\) or FP e95 \\(rho\\). You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)<br><br>
 
- For idle time, do the one with the highest idle \\(\tau/hour\\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour\\) and CSR2 also has 2 \\(\tau/hour\\), ideally we would pick SL. The reason we prefer SL, EF, FP and FI is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+ For idle time, do the one with the highest idle \\(\tau/hour\\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, BaP, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour\\) and CSR2 also has 2 \\(\tau/hour\\), ideally we would pick SL. The reason we prefer SL, EF, FP, FI and BaP is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 ### Weierstrass Sine Product (WSP)
 
