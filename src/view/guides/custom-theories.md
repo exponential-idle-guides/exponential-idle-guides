@@ -50,6 +50,7 @@ The third line is the most complicated. Generally we can factorize an equation w
 Finally, the actual \\(\chi\\) equation: increasing \\(c_1\\) and \\(n\\) increases \\(\chi\\). Note that from the fraction, we don't want to increase only \\(c_1\\) or only \\(n\\). Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that \\(n\\) is better than \\(c_1\\) as more \\(n/3\\) milestones are accumulated. <br><br>
 
 #### WSP Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -87,7 +88,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### WSP Strategy
 
-Early game the variable strengths are ordered as follows: 
+Early game the variable strengths are ordered as follows:
 
 \\(q_2\\) ≈ \\(c_2\\) > \\(n\\) > \\(c_1\\) > \\(q_1\\) <br><br>
 
@@ -165,6 +166,7 @@ The fourth equation relates \\(\dot{\rho_3}\\) with some upgrades. This one is r
 The final equation simply states the value of \\(a_3\\). The lower the better. Default without milestone is \\(a_3 = 2\\).
 
 #### SL Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -201,6 +203,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2\\) and \\(b_2\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. If you want more details on SL strategies, in particular the execution of various strategies, please see [List of theory strategies](/guides/theory-strategies).
 
 #### Milestone swapping - why it works
+
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
 1st milestone: Increases \\(\rho_2\\) exponent and increases \\(\dot{\rho_1}\\) straight away. The actual value of \\(\rho_2\\) does not increase. <br>
@@ -211,6 +214,7 @@ We have different milestones which affect the same thing (\\(\dot{\rho_1}\\)), b
 We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3\\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1}\\). Once our \\(\rho_1\\)is not increasing quickly anymore, we switch back to the 4th and 3rd milestone!
 
 #### Milestone Swapping Strategies
+
 (Courtesy of Gen).
 
 x>x>x>x represent the max buy order of milestones not the amount allocated.
@@ -310,6 +314,7 @@ The fourth line simply describes \\(\dot{q}\\). This is used in the first equati
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -870,14 +875,14 @@ $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
 The first equation is for \\(\rho\\), which is the product of \\(c_1 c_2 qr\\) and the fractal term $T_n^{7}$, where \\(T_n\\) is the nth term of the Toothpick Sequence shown below. Its exponent starts at 7, but when you unlock the \\(s\\) milestone, it will change to \\(5+s\\), where \\(s\\) is an upgrade.
 
-The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\). 
+The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\).
 
 \\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
 
 The \\(r\\) equation depends on all fractals available in FP.
 
 ##### Toothpick Sequence
-$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
+$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$
 $$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
 
 This is the Toothpick Sequence. We can't really explain it without getting technical, but this sequence grows as \\(n\\) grows. It is important to note that it grows faster right before a new power of two, and slower right after a power of two. This trait is shared with the next fractal. These \\(n=2^k\\) spikes have **a lot** of influence on the theory speed, especially on the second half of it.
@@ -985,7 +990,7 @@ s - always buy on sight.
 n - buy after s.
 r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine.
 
-Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
+Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand.
 
 ##### FP Milestone Swapping Explanation
 
@@ -1229,7 +1234,7 @@ We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) w
 
 The current is given by the last formula. The equation reminds the one found in Theory 5, but simpler. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). Unlike in Theory 5, buying \\(a_2\\) has no drawback. The current increases \\(B\\) which itself increases \\(\omega\\).
 
-Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\). \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
+Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\), calculated as \\(\sqrt{v_x^2+v_y^2+v_z^2}\\). Because \\(\sin^2(\theta)+\cos^2(\theta)\\) is always 1, \\(v\\) is independant of time. \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
 
 #### MF Variable Description
 
@@ -1284,6 +1289,53 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 #### MF Strategy
 
 #### MF Milestone Route
+
+MF has a locked milestone path, like EF and FP
+
+<br>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/0</td></td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/0</td></td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/2/0</td></td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/2/1</td></td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>4 x2</td>
+         <td class="arrow">→</td>
+         <td>5 x2</td>
+         <td class="arrow">→</td>
+         <td>6</td>
+      </tr>
+   </tbody>
+</table>
 
 ### Basel Problem (BaP)
 
