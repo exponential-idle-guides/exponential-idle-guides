@@ -1302,13 +1302,13 @@ MF has a locked milestone path, like EF and FP
          <td class="arrow">→</td>
          <td>1/1/0</td>
          <td class="arrow">→</td>
-         <td>1/1/2/0</td></td>
+         <td>1/1/2/0</td>
          <td class="arrow">→</td>
-         <td>1/1/2/2/0</td></td>
+         <td>1/1/2/2/0</td>
          <td class="arrow">→</td>
-         <td>1/1/2/2/2/0</td></td>
+         <td>1/1/2/2/2/0</td>
          <td class="arrow">→</td>
-         <td>1/1/2/2/2/1</td></td>
+         <td>1/1/2/2/2/1</td>
       </tr>
    </tbody>
 </table>
@@ -1371,6 +1371,155 @@ $\dot{\rho}$ is also monitored by the \\(a\\) exponent, which will always be les
 
 #### BaP Variable Description
 
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of BaP.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>$$\dot{ t }$$</th>
+         <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Increases r growth. After the first milestone, rdot becomes c<sub><sub><small>1</small></sub></sub>. Has a very powerful x1024 boost every 64 levels.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>x2 to q<sub><sub><small>1</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>3</small></sub></sub></th>
+         <td>x3 to q<sub><sub><small>2</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>4</small></sub></sub></th>
+         <td>x4 to q<sub><sub><small>3</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>5</small></sub></sub></th>
+         <td>x5 to q<sub><sub><small>4</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>6</small></sub></sub></th>
+         <td>x6 to q<sub><sub><small>5</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>7</small></sub></sub></th>
+         <td>x7 to q<sub><sub><small>6</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>8</small></sub></sub></th>
+         <td>x8 to q<sub><sub><small>7</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>9</small></sub></sub></th>
+         <td>x9 to q<sub><sub><small>8</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>10</small></sub></sub></th>
+         <td>x10 to q<sub><sub><small>9</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Small increase to a per level</td>
+      </tr>
+   </tbody>
+</table>
+
 #### BaP Strategy
 
+TBA
+
+#### BaP Milestone Routing Explaination
+
+Like FI, in BaP, you can unlock milestones in 2 ways:
+
+1) by gaining \\(\rho\\) like normal, or
+2) buy purchasing the milestone upgrades for \\(a\\) and \\(q\\) in the permanent upgrades tab
+
+Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(a\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(a\\) milestone.
+
+While, for most milestones, you unlock the permanent upgrade at the same time you get the milestone point for it, there are 6 exceptions: \\(q\\) milestone levels 3,4,5 and \\(a\\) milestone levels 4,5,6 in which you unlock the milestone level before you unlock the milestone point, meaning you have a vacant milestone space. This creates an opportunity for milestone swapping between the \\(a\\) and \\(q\\) milestone, however, in reality, MS is only applicable where you unlock a new \\(q\\) milestone level, as, when you unlock a \\(a\\) milestone level, it's generally best to put your milestones into it since you have already built enough \\(q_i\\)j, and these MS phases are short anyways.
+
+
 #### BaP Milestone Route
+
+BaP has 20 milestones, the most out of any official theory to this day.
+
+<br>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/3/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/3/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/4/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/4/4</td>
+         <td class="arrow">→</td>
+         <td>1/1/5/4</td>
+         <td class="arrow">→</td>
+         <td>1/1/5/5</td>
+         <td class="arrow">→</td>
+         <td>1/1/6/5</td>
+         <td class="arrow">→</td>
+         <td>1/1/6/6</td>
+         <td class="arrow">→</td>
+         <td>1/1/7/6</td>
+         <td class="arrow">→</td>
+         <td>1/1/7/7</td>
+         <td class="arrow">→</td>
+         <td>1/1/8/7</td>
+         <td class="arrow">→</td>
+         <td>1/1/8/8</td>
+         <td class="arrow">→</td>
+         <td>1/1/9/8/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/9/8/1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>(3</td>
+         <td class="arrow">→</td>
+         <td>4) x8</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>5</td>
+      </tr>
+   </tbody>
+</table>
