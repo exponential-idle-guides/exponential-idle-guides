@@ -1351,6 +1351,24 @@ BaP is much slower than the other CTs early, so it is better to not push it unti
 
 #### BaP Equation Description
 
+$$\dot{\rho} = (tq_1r)^a \to \dot{\rho} = t(q_1r)^a$$
+$$a=0.3 \to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}$$
+$$\dot{q}_i=c_{i+1}q_{i+1}, 1\le i\le 9$$
+$$\dot{q}_9=c_{10}$$
+$$\dot{r}=\sum_{i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_{i=c_1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
+
+The $\dot{\rho}$ equation features 3 terms: \\(t\\), \\(q_1\\) and \\(r\\).
+
+\\(t\\) is a variable with constant growth once all $\dot{t}$ variables are bought.
+
+The \\(q_i\\) variables work the same way as with T2, the bottom layer has a constant growth, then the growth of each other layer is affected by the value of the layer below, with factors being the \\(c_i\\) variables (except \\(c_1\\)).
+
+Finally, we have the \\(r\\) equation. At the start of the theory, it is the partial sum of the inverse of the squares, which converges. As such, there is no point to buy \\(c_1\\) past a certain point.
+After getting the first milestone, the \\(r\\) equation changes to be the inverse of the remainder of the sum. As we omit more and more of the first terms of the sum, the remainder converges to zero, making \\(c_1\\) useful again.
+Past earlygame, we approximate $\dot{r}=c_1$.
+
+$\dot{\rho}$ is also monitored by the \\(a\\) exponent, which will always be less than 1, but you will be able to increase it with milestones, and, later, with a variable called \\(n\\).
+
 #### BaP Variable Description
 
 #### BaP Strategy
