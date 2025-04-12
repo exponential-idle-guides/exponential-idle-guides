@@ -1288,6 +1288,8 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### MF Strategy
 
+TBA
+
 #### MF Milestone Route
 
 MF has a locked milestone path, like EF and FP
@@ -1340,6 +1342,12 @@ MF has a locked milestone path, like EF and FP
 ### Basel Problem (BaP)
 
 #### BaP Overview
+
+BaP was released on March 10th, 2025, alongside MF. It is based on the Basel Problem, a famous mathematical problem solved by Euler about the convergence of the series $\sum_{n=1}^{∞}\frac{1}{n^2}$, which converges to $\frac{\pi^2}{6}$.
+
+BaP is an idle-friendly custom theory (except for a bit of milestone swapping), and has several similarities with T2.
+
+BaP is much slower than the other CTs early, so it is better to not push it until your other CTs are slow enough. However, BaP holds a secret, a milestone unlocked at e1000\\(\rho\\) that allows to complete the remaining e200\\(\tau\\) in under a week! for a total completion time of about 5 months.
 
 #### BaP Equation Description
 
