@@ -1288,7 +1288,21 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### MF Strategy
 
-TBA
+**Keep in mind that strategies are still under development and could change in the future.**
+
+##### When to publish
+
+The optimal publication multiplier slowly increases the later you are in the theory, and also depends on your last reset.
+
+It ranges from 10-50 early to 100-500 at the end of the theory.
+
+Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accurate results.
+
+##### When to reset the particle
+
+There isn't a clear rule yet on how often you must perform a particle reset. We recommend using [the sim](https://exponential-developers.github.io/sim-3.0/) to check the \\(v_i\\) levels bought with each reset to give you a clearer idea.
+
+##### Variable buying strats
 
 #### MF Milestone Route
 
@@ -1433,6 +1447,8 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### BaP Strategy
 
+**Keep in mind that strategies are still under development and could change in the future.**
+
 Basel Problem is an idle-friendly CT except during its MS phases.
 
 ##### When to publish
@@ -1479,7 +1495,7 @@ While, for most milestones, you unlock the permanent upgrade at the same time yo
 
 BaP has 20 milestones, the most out of any official theory to this day.
 
-<br>
+<!--br>
 <table class="milestone_routing">
    <tbody>
       <tr>
@@ -1550,4 +1566,5 @@ BaP has 20 milestones, the most out of any official theory to this day.
          <td>5</td>
       </tr>
    </tbody>
-</table>
+</table-->
+
