@@ -699,7 +699,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
 In FI, you can unlock milestones in 2 ways:
 
 1) by gaining \\(\rho\\) like normal, or
-2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
+2) by purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
 Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
@@ -1433,21 +1433,49 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### BaP Strategy
 
-TBA
+Basel Problem is an idle-friendly CT except during its MS phases.
+
+##### When to publish
+
+BaP progress is hard carried by its milestones, which means the best time to publish can vary a lot. For \\(a\\) milestones, it is better to push past them to collect the massive boost it gives with all the \\(q_1\\) and \\(r\\) you stacked waiting for the milestone. On the contrary, for \\(q\\) milestones, it is better to push for them, buy the matching permanent upgrade and publish right away, as you can enjoy the boost right away without waiting for the boost to climb all the way to \\(q_1\\).
+
+To know when to publish, please check [the sim](https://exponential-developers.github.io/sim-3.0/).
+
+##### Idle
+
+For idle, you autobuy all. For more efficiency, turn off autobuy when your \\(\rho\\) is around x25 away from your publication mark or the next milestone.
+
+##### Active
+
+BaP active strategies take advantage of active \\(c_1\\) buying. \\(c_1\\) is an unique variable with a low cost scaling and that gains a massive x1024 boost every 64 levels, when (\\(c_1\\) level) % 64 = 1.
+
+For the strategy, you want to chase those boosts and autobuy \\(c_1\\) when you are close to the next boost (when the cumulative cost of \\(c_1\\) purchases until the boost is below x2 of other variables). When you are not chasing a boost, you can buy \\(c_1\\) at (\\(c_1\\) level % 64)/2 ratio to other variables. 
+
+##### Milestone Swapping Strategy
+
+Milestone Swapping is possible when you don't have enough milestone points to buy all the milestones. In that case, you can swap between \\(a\\) and \\(q\\) milestones.
+
+MS is only relevant when you need to stack \\(q_i\\) layers, which typically happens when you unlock a new \\(q_i\\) layer. The cycle goes:
+
+Put the milestone point in the \\(q_i\\) layer $\to$ wait for \\(q_i\\) and \\(q_{i-1}\\) to grow $\to$ put the milestone point back in the \\(a\\) milestone.
+
+You generally want to start a cycle once you buy a new \\(c_i\\) and \\(c_{i+1}\\) which boost \\(q_{i-1}\\) and \\(q_i\\) respectively.
 
 #### BaP Milestone Routing Explaination
 
 Like FI, in BaP, you can unlock milestones in 2 ways:
 
 1) by gaining \\(\rho\\) like normal, or
-2) buy purchasing the milestone upgrades for \\(a\\) and \\(q\\) in the permanent upgrades tab
+2) by purchasing the milestone upgrades for \\(a\\) and \\(q\\) in the permanent upgrades tab
 
 Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(a\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(a\\) milestone.
 
-While, for most milestones, you unlock the permanent upgrade at the same time you get the milestone point for it, there are 6 exceptions: \\(q\\) milestone levels 3,4,5 and \\(a\\) milestone levels 4,5,6 in which you unlock the milestone level before you unlock the milestone point, meaning you have a vacant milestone space. This creates an opportunity for milestone swapping between the \\(a\\) and \\(q\\) milestone, however, in reality, MS is only applicable where you unlock a new \\(q\\) milestone level, as, when you unlock a \\(a\\) milestone level, it's generally best to put your milestones into it since you have already built enough \\(q_i\\)j, and these MS phases are short anyways.
+While, for most milestones, you unlock the permanent upgrade at the same time you get the milestone point for it, there are 6 exceptions: \\(q\\) milestone levels 3,4,5 and \\(a\\) milestone levels 4,5,6 in which you unlock the milestone level before you unlock the milestone point, meaning you have a vacant milestone space. This creates an opportunity for milestone swapping between the \\(a\\) and \\(q\\) milestone, however, in reality, MS is only applicable where you unlock a new \\(q\\) milestone level, as, when you unlock a \\(a\\) milestone level, it's generally best to put your milestones into it since you have already built enough \\(q_i\\), and these MS phases are short anyways.
 
 
 #### BaP Milestone Route
+
+<!--This section needs to be redone-->
 
 BaP has 20 milestones, the most out of any official theory to this day.
 
