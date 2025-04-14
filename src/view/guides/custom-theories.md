@@ -1300,9 +1300,20 @@ Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accu
 
 ##### When to reset the particle
 
-There isn't a clear rule yet on how often you must perform a particle reset. We recommend using [the sim](https://exponential-developers.github.io/sim-3.0/) to check the \\(v_i\\) levels bought with each reset to give you a clearer idea.
+There isn't an exact rule yet on how often you must perform a particle reset.
+A good baseline is to reset every 1e9 \\(\rho\\), which is every two \\(v_2\\) levels, but it varies slightly from that. For example, early in the CT you want to reset a bit more often.
+
+It is also important to stop resetting at an appropriate point, you want to only reset once after recovering to your previous publication mark.
+
+We recommend using [the sim](https://exponential-developers.github.io/sim-3.0/) to check the \\(v_i\\) levels bought with each reset to give you a clearer idea.
 
 ##### Variable buying strats
+
+For variable buy strats, you can save a bit of time with active \\(c_1\\) buying.
+
+You can also save time by not buying \\(a_1\\) when \\(I\\) is very close to its cap ($a_2\times 10^{-15}$) and not buying \\(a_2\\) when \\(I\\) is far away from its cap (which typically happens near the end of the CT).
+
+For more details, check out the [theory strategy section](/guides/theory-strategies).
 
 #### MF Milestone Route
 
