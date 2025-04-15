@@ -4,7 +4,7 @@ description: "Constructing a general mathematical model to determine when should
 author: "pacowoc"
 contributors: "the Amazing Community"
 order: 5
-tags: T9+
+tags: T9+ Research
 ---
 ## Introduction
 

@@ -4,7 +4,7 @@ description: "A guide on Stepwise variables."
 author: "Eylanding"
 contributors: "the Amazing Community"
 order: 0
-tags: T9+
+tags: T9+ Recommendations
 ---
 
 ## What are Stepwise variables?

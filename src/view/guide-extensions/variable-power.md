@@ -5,7 +5,7 @@ author: "spqcey"
 contributors: "the Amazing Community"
 draft: false
 order: 4
-tags: T9+
+tags: T9+ Research
 ---
 ###### Initial Publication on November 19, 2022
 ###### Some information (with regards to top players) may be inaccurate
