@@ -3,7 +3,7 @@ title: "A Possible Idle RZ Theory By Time"
 description: "Evaluating the effect of time for implementing black hole on RZ CT progression."
 author: "Hacker118"
 contributors: "the Amazing Community"
-order: 3
+order: 6
 tags: T9+ Research
 ---
 
