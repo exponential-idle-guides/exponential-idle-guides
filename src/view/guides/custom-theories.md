@@ -1208,11 +1208,15 @@ h3 {
 
 ### Magnetic Fields (MF)
 
+MF Guide written by Mathis and Eylanding.
+
 #### MF Overview
 
 MF was released on March 10th, 2025, alongside BaP. MF is the first physics-inspired official CT, specifically Electromagnetism.
 
-MF has an unique mechanic called "particle reset", a form of partial publication where you reset \\(x\\) to zero but increase \\(v_x\\), \\(v_y\\) and \\(v_z\\) with the \\(v_i\\) variables you bought in-between. The existence of this mechanic makes MF a very active custom theory at first, however it quickly slows down to longer publications where resets later in a publication take several hours to recover, offering idle breaks.
+MF has an unique mechanic called "particle reset", a form of partial publication where you reset \\(x\\) to zero but increase \\(v_x\\), \\(v_y\\) and \\(v_z\\) with the \\(v_i\\) variables you bought in-between. This mechanic acts like a second prestige layer.
+
+The existence of this mechanic makes MF a very active custom theory at first, however it quickly slows down to longer publications where resets later in a publication take several hours to recover, offering idle breaks.
 
 While MF slows down quickly, regular milestones sustain its rates, making it completable in a bit over 6 months.
 
@@ -1230,9 +1234,14 @@ $$\dot{I}=\frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)$$
 
 The MF equations describe the movement of a particle of constant mass \\(m\\) and constant charge \\(q\\) inside a charged solenoid of infinite length with a current \\(I\\) and a density of turns \\(\delta\\), creating a magnetic field \\(B\\).
 
-We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) with an initial velocity given by the \\(v_i\\) variables. In these conditions, the particle has an helix trajectory with a constant \\(x\\) velocity, and an angular velocity \\(\omega\\). Buying \\(v_i\\) variables will have no effect until you perform a "particle reset" where the simulation is reset (\\(t_s\\) and \\(x\\) are set to 0), so that the initial velocity can be applied again.
+We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) with an initial velocity given by the \\(v_i\\) variables. In these conditions, the particle has an helix trajectory with a constant \\(x\\) velocity, and an angular velocity \\(\omega\\). 
+As you can see, the equations for velocity include $(t_s=0)$, which means here that the equation only updates when $t_s=0$, that is when doing a "particle reset". As such, buying \\(v_i\\) variables will have no effect until you perform a "particle reset" where the simulation is reset (\\(t_s\\) and \\(x\\) are set to 0), so that the initial velocity can be applied again.
 
-The current is given by the last formula. The equation reminds the one found in Theory 5, but simpler. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). Unlike in Theory 5, buying \\(a_2\\) has no drawback. The current increases \\(B\\) which itself increases \\(\omega\\).
+The current is given by the last formula. The equation reminds the one found in Theory 5, but different. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). 
+
+Unlike in Theory 5, buying \\(a_2\\) has no drawback as it does not appear in the denominator below \\(a_1\\). 
+
+The current increases \\(B\\) which itself increases \\(\omega\\).
 
 Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\), calculated as \\(\sqrt{v_x^2+v_y^2+v_z^2}\\). Because \\(\sin^2(\theta)+\cos^2(\theta)\\) is always 1, \\(v\\) is independant of time. \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
 
