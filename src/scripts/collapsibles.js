@@ -23,7 +23,7 @@ const check_url_interval = 500; // ms
 let current_url = window.location.href;
 
 function get_url_paths(url) {
-  if(["http://localhost:8000/", "https://exponential-idle-guides.netlify.app/"].includes(url)){return []}
+  if("http://localhost:8000/" == url || /^https\:\/\/[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app\//g.test(url)){return []}
   const p = /^https\:\/\/[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app\/([a-z\-\/0-9]*)/g.exec(url);
   return [...(p === null ? /^http\:\/\/localhost\:8000([a-z\-\/0-9]*)/g.exec(url) : p)[1].matchAll(/[a-z\-0-9]+/g)];
 }
