@@ -320,6 +320,22 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 
 - [RZ](#rz)&nbsp; — &nbsp;Idle
 
+#### Custom Theory 8: Magnetic Fields {data-toc-exclude}
+
+The eigth official custom theory, abbreviated MF, was developed by Mathis. It was released on March 10, 2025 alongside BaP.
+
+The strategies listed here are only variable buying strategies. For resets, plese check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
+
+#### Custom Theory 9: Basel Problem {data-toc-exclude}
+
+- [BaP<span style="color:#41AD21">AI</span>](#bapai)&nbsp; — &nbsp;Active
+
+- [BaP<span style="color:#41AD21">AIMS</span>](#bapaims)&nbsp; — &nbsp;Active
+
+- [BaP<span style="color:#41AD21">coast</span>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
+
+- [BaP](#bap)&nbsp; — &nbsp;Idle
+
 ## Theory 1: Recurrence Relations
 
 ### T1<span style="color:#41AD21">SolarXLII xexxx</span>
@@ -6294,3 +6310,212 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 Strategy credits:
 
 - Hotab & Blackseal for the coasting strategy
+
+## Magnetic Fields
+
+## Basel Problem
+
+### BaP<span style="color:#41AD21">AI</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaPAI</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>
+         Go for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1 when the cumulative cost to buy it is less than 2x the cheapest other purchase <br>
+         When saving for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1: ✔️ <br>
+         Else: Buy at (c<sub><sub><small>1</small></sub></sub> lvl % 64)/2 ratio to other variables
+      </td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>
+
+Start coasting when x25 away from the next publication mark or next milestone.
+<br>
+Strategy credits:
+
+- Mathis S.
+
+
+### BaP<span style="color:#41AD21">AIMS</span>
+
+BaP<span style="color:#41AD21">AIMS</span> is the milestone swapping strategy for BaP.
+
+For how to perform the milestone swapping strategy, check [here](/guides/custom-theories/#bap-strategy).
+
+For the variable buying strategy, check [BaP<span style="color:#41AD21">AI</span>](#bapai)
+
+### BaP<span style="color:#41AD21">coast</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaPcoast</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>
+
+Start coasting when x25 away from the next publication mark or next milestone.
+<br>
+Strategy credits:
+
+- Mathis S.
+
+### BaP
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaP</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>
