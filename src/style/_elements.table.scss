@@ -173,6 +173,12 @@ sub {
 		@extend %spqcey-headers;
 		border-left: 3px solid black;
 	}
+	.leftMainHeader, .leftlastMainHeader {
+		border-right: $table-border;
+	}
+	.rightMainHeader {
+		border-left: 3px solid black;
+	}
 	td {
 		text-align: center;
 		padding: 0.5em 0.4em 0.5em 0.4em;

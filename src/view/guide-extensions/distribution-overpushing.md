@@ -103,7 +103,7 @@ Sigma and time affect \\(\rho\\) equally.
 
 ### Theory 8
 
-The cost value scalings for \\(c_3\\), \\(c_4\\), \\(c_5\\) are the same. Since they are additive with each other, we can simplify the equation as:
+The cost value scaling for \\(c_3\\), \\(c_4\\), \\(c_5\\) are the same. Since they are additive with each other, we can simplify the equation as:
 
 \\(\dot{\rho} ~= A\sqrt{Bc_3}\\)
 

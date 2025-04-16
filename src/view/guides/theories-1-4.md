@@ -568,9 +568,9 @@ Autobuy $c_1$, $c_2$. DON'T buy $c_3$, $q_1$, $q_2$! The \\(c_3q\\) term is bad 
 
 <br><u>e25 to e175</u>
 
-Get the 'Add the term' milestones. Prioritise these ones first until maximum. Now we autobuy $c_4$, $q_1$, $q_2$ ONLY. Best publication multiplier is about 6-7.
+Get the 'Add the term' milestones. Prioritize these ones first until maximum. Now we autobuy $c_4$, $q_1$, $q_2$ ONLY. Best publication multiplier is about 6-7.
 
-<br>When we unlock $c_5$ and $c_6$, we can add these to the autobuy variables. DON'T autobuy $c_3$, $c_2$, $c_1$! Prioritise the $\dot{q}$ milestones over the $c_1$ exponents. Try to publish between 12-20. See the idle section of milestone order below.
+<br>When we unlock $c_5$ and $c_6$, we can add these to the autobuy variables. DON'T autobuy $c_3$, $c_2$, $c_1$! Prioritize the $\dot{q}$ milestones over the $c_1$ exponents. Try to publish between 12-20. See the idle section of milestone order below.
 
 <br><u>e175 to endgame</u>
 
@@ -601,7 +601,7 @@ Now here is where we can apply some more advanced strategies. Consider that the 
 1. Do the same strategy as before until we reach our previous publication point.
 2. Take point(s) out of the $c_1$ exponent milestones and unlock all the terms (the first milestone). We should now have access to $c_6$.
 3. Autobuy $c_4$, $c_5$, $c_6$, $q_2$.
-4. If you want to optimise a bit more, you can buy $q_1$ until its cost exceeds about 15% of $q_2$. Otherwise it's ok to also autobuy $q_1$.
+4. If you want to optimize a bit more, you can buy $q_1$ until its cost exceeds about 15% of $q_2$. Otherwise it's ok to also autobuy $q_1$.
 5. DO NOT autobuy $c_1$, $c_2$, $c_3$.
 6. Publish at about 10-20. Once published, remember to take out the milestone point and put it back into the $c_1$ exponent to repeat step 1.
 
@@ -615,7 +615,7 @@ We will do the exact same strategy as in the #start to e75 section above. This i
 
 <br><u>~e300 to endgame</u>
 
-At this point the $c_3$ term starts to become dominant. Therefore we will prioritise buying $c_3$, $q_1$, $q_2$. We will NOT buy anything else except 1 level of $c_1$ to start the theory. If you wish, you can buy $q_1$ at about 15% ratio to $q_2$ cost. It is also ok to autobuy $q_1$. The $c_3$ term will remain dominant until endgame.
+At this point the $c_3$ term starts to become dominant. Therefore we will prioritize buying $c_3$, $q_1$, $q_2$. We will NOT buy anything else except 1 level of $c_1$ to start the theory. If you wish, you can buy $q_1$ at about 15% ratio to $q_2$ cost. It is also ok to autobuy $q_1$. The $c_3$ term will remain dominant until endgame.
 
 <br>
 

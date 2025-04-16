@@ -77,7 +77,7 @@ Which is the definition  of:
 $$u(\rho) \in \Theta(\rho^r)$$
 
 ### Step-wise:
-This type of variable follows a rather unorthodox path of progression, an explaination of its mechanic is explained [here](/guide-extensions/stepwise-variables). Let's suppose there exist a Stepwise variable \\(v\\) that has the following properties:
+This type of variable follows a rather unorthodox path of progression, an explanation of its mechanic is explained [here](/guide-extensions/stepwise-variables). Let's suppose there exist a Stepwise variable \\(v\\) that has the following properties:
 
 1. A cycle of \\(v\\) spans \\(m>0\\) levels.
 2. On the first cycle of \\(v\\), it increases by \\(p>0\\) per level.
@@ -184,7 +184,7 @@ $$a(\rho,t) \in \Theta(\rho^xt^y)$$
 
 #### **Proof**
 
-Since all the \\(t\\) exponents of the contributing variables are identical as a prerequisite of this Lemma, we only need to discuss the exponents of the main currency to analyze the derived variable asymptotically. Because \\(\frac{∂a}{∂t}\\) is the result of a series of Addition and Multiplication of the variables, we can use the arithemic laws of polynomial asymptotic notations.
+Since all the \\(t\\) exponents of the contributing variables are identical as a prerequisite of this Lemma, we only need to discuss the exponents of the main currency to analyze the derived variable asymptotically. Because \\(\frac{∂a}{∂t}\\) is the result of a series of Addition and Multiplication of the variables, we can use the arithmetic laws of polynomial asymptotic notations.
 
 1. Multiplication:  \\(\Theta(\rho^{r_1}) \cdot \Theta(\rho^{r_2}) → \Theta(\rho^{(r_1+r_2)})\\)
 2. Addition:  \\(\Theta(\rho^{r_1}) + \Theta(\rho^{r_2}) → \Theta(\rho^{max(r_1,r_2)})\\)
@@ -210,7 +210,7 @@ We can then do the asymptotic analysis on the entire system normally from here.
 
 ### More Complicated Cases
 
-In more complicated cases such as the systems that contain multiple powers of \\(t\\) in the growth of a single variable, the differential equation that correspounds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
+In more complicated cases such as the systems that contain multiple powers of \\(t\\) in the growth of a single variable, the differential equation that corresponds to the main equation often fails to have a closed form solution for us to analyze. Common methods to analyze such a system are:
 1. Determine the strongest term by experiment and use the previous two methods (which is how we analyze T6, which has an intricate main equation)
 2. Use Numerical Methods (which the Theory Simulator incorporates)
 3. Reverse engineer the exponent of \\(\rho\\) of a specific variable from the final Decay Factor experimentally.

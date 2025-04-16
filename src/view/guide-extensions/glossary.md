@@ -23,7 +23,7 @@ Rho, formatted in the game as \\(\rho\\), is also a currency gained from doing t
 
 ### Publication / Pub
 
-Publication/Pub is the act of resetting theories to accumulate higher total multipliers. Higher multipliers allow us to reach higher $\rho$ and $\tau$ in the future. In England Publication is also a place where people can socialise and drink (joke).
+Publication/Pub is the act of resetting theories to accumulate higher total multipliers. Higher multipliers allow us to reach higher $\rho$ and $\tau$ in the future. In England Publication is also a place where people can socialize and drink (joke).
 
 ### Dot
 
