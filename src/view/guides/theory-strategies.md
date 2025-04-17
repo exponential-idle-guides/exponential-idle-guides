@@ -324,7 +324,7 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 
 The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It was released on March 10, 2025 alongside BaP.
 
-The strategies listed here are only variable buying strategies. For resets, plese check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
+The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
 
 - [MF<span style="color:#41AD21">d2</span>](#mfd2)&nbsp; — &nbsp;Very Active
 

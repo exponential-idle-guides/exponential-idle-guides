@@ -690,11 +690,11 @@ For the milestone swapping strategy, the general idea is to switch milestones fr
 
 This theory has a milestone swapping strategy before full milestones. We have \\(q_1\\) exponent milestones, which increases $\dot{q}$.
 
-The reason milestone swapping works is because the benefits of using \\(q_1\\) related milestones (having high \\(q\\)) remain when you switch to \\(m\\) and \\(n\\) milestones. If we only use \\(q_1\\) exponent, then we have really high \\(q\\), however, we dont have the benefits to $\dot\rho$ that \\(m\\) and \\(n\\) provide. If we only use \\(m\\) and \\(n\\) milestones, then we have low \\(q\\), but have normal $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through the \\(q_1\\) milestone, then take advantage of the \\(m\\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
+The reason milestone swapping works is because the benefits of using \\(q_1\\) related milestones (having high \\(q\\)) remain when you switch to \\(m\\) and \\(n\\) milestones. If we only use \\(q_1\\) exponent, then we have really high \\(q\\), however, we don't have the benefits to $\dot\rho$ that \\(m\\) and \\(n\\) provide. If we only use \\(m\\) and \\(n\\) milestones, then we have low \\(q\\), but have normal $\dot\rho$. If we regularly swap them, we can increase \\(q\\) through the \\(q_1\\) milestone, then take advantage of the \\(m\\) and \\(n\\) milestones to gain \\(\rho\\), while keeping the high value of \\(q\\) we've accumulated earlier!
 
 For a more detailed explanation on how to actually do the strategy, please see the [Theory Strategies](/guides/theory-strategies/#fims) section of the guide.
 
-#### FI Milestone Routing Explaination
+#### FI Milestone Routing Explanation
 
 In FI, you can unlock milestones in 2 ways:
 
@@ -937,7 +937,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
       </tr>
             <tr>
          <th>r<sub><sub><small>1</small></sub></sub></th>
-         <td>is roughtly 10-20% every level to <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container>. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
+         <td>is roughly 10-20% every level to <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.02ex" height="1.76ex" role="img" focusable="false" viewBox="0 -767 451 778" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mover"><g data-mml-node="mi"><path data-c="1D45F" d="M21 287Q22 290 23 295T28 317T38 348T53 381T73 411T99 433T132 442Q161 442 183 430T214 408T225 388Q227 382 228 382T236 389Q284 441 347 441H350Q398 441 422 400Q430 381 430 363Q430 333 417 315T391 292T366 288Q346 288 334 299T322 328Q322 376 378 392Q356 405 342 405Q286 405 239 331Q229 315 224 298T190 165Q156 25 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 114 189T154 366Q154 405 128 405Q107 405 92 377T68 316T57 280Q55 278 41 278H27Q21 284 21 287Z" style="stroke-width: 3;"></path></g><g data-mml-node="mo" transform="translate(281.1,-2) translate(-250 0)"><path data-c="2D9" d="M190 609Q190 637 208 653T252 669Q275 667 292 652T309 609Q309 579 292 564T250 549Q225 549 208 564T190 609Z" style="stroke-width: 3;"></path></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><mrow data-mjx-texclass="ORD"><mover><mi>r</mi><mo>˙</mo></mover></mrow></math></mjx-assistive-mml></mjx-container>. It is roughly a 2x over mod5 (don't ask again) <!-- paco was right, its not mod10 --></td>
       </tr>
       <tr>
          <th>n</th>
@@ -1214,7 +1214,7 @@ MF Guide written by Mathis and Eylanding.
 
 MF was released on March 10th, 2025, alongside BaP. MF is the first physics-inspired official CT, specifically Electromagnetism.
 
-MF has an unique mechanic called "particle reset", a form of partial publication where you reset \\(x\\) to zero but increase \\(v_x\\), \\(v_y\\) and \\(v_z\\) with the \\(v_i\\) variables you bought in-between. This mechanic acts like a second prestige layer.
+MF has a unique mechanic called "particle reset", a form of partial publication where you reset \\(x\\) to zero but increase \\(v_x\\), \\(v_y\\) and \\(v_z\\) with the \\(v_i\\) variables you bought in-between. This mechanic acts like a second prestige layer.
 
 The existence of this mechanic makes MF a very active custom theory at first, however it quickly slows down to longer publications where resets later in a publication take several hours to recover, offering idle breaks.
 
@@ -1234,16 +1234,16 @@ $$\dot{I}=\frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)$$
 
 The MF equations describe the movement of a particle of constant mass \\(m\\) and constant charge \\(q\\) inside a charged solenoid of infinite length with a current \\(I\\) and a density of turns \\(\delta\\), creating a magnetic field \\(B\\).
 
-We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) with an initial velocity given by the \\(v_i\\) variables. In these conditions, the particle has an helix trajectory with a constant \\(x\\) velocity, and an angular velocity \\(\omega\\). 
+We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) with an initial velocity given by the \\(v_i\\) variables. In these conditions, the particle has a helix trajectory with a constant \\(x\\) velocity, and an angular velocity \\(\omega\\). 
 As you can see, the equations for velocity include $(t_s=0)$, which means here that the equation only updates when $t_s=0$, that is when doing a "particle reset". As such, buying \\(v_i\\) variables will have no effect until you perform a "particle reset" where the simulation is reset (\\(t_s\\) and \\(x\\) are set to 0), so that the initial velocity can be applied again.
 
-The current is given by the last formula. The equation reminds the one found in Theory 5, but different. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). 
+The current is given by the last formula. The equation is very similar to that of T5, but different. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). 
 
 Unlike in Theory 5, buying \\(a_2\\) has no drawback as it does not appear in the denominator below \\(a_1\\). 
 
 The current increases \\(B\\) which itself increases \\(\omega\\).
 
-Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\), calculated as \\(\sqrt{v_x^2+v_y^2+v_z^2}\\). Because \\(\sin^2(\theta)+\cos^2(\theta)\\) is always 1, \\(v\\) is independant of time. \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
+Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\), calculated as \\(\sqrt{v_x^2+v_y^2+v_z^2}\\). Because \\(\sin^2(\theta)+\cos^2(\theta)\\) is always 1, \\(v\\) is independent of time. \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
 
 #### MF Variable Description
 
@@ -1483,7 +1483,7 @@ For idle, you autobuy all. For more efficiency, turn off autobuy when your \\(\r
 
 ##### Active
 
-BaP active strategies take advantage of active \\(c_1\\) buying. \\(c_1\\) is an unique variable with a low cost scaling and that gains a massive x1024 boost every 64 levels, when (\\(c_1\\) level) % 64 = 1.
+BaP active strategies take advantage of active \\(c_1\\) buying. \\(c_1\\) is a unique variable with a low cost scaling and that gains a massive x1024 boost every 64 levels, when (\\(c_1\\) level) % 64 = 1.
 
 For the strategy, you want to chase those boosts and autobuy \\(c_1\\) when you are close to the next boost (when the cumulative cost of \\(c_1\\) purchases until the boost is below x2 of other variables). When you are not chasing a boost, you can buy \\(c_1\\) at (\\(c_1\\) level % 64)/2 ratio to other variables. 
 
@@ -1497,7 +1497,7 @@ Put the milestone point in the \\(q_i\\) layer $\to$ wait for \\(q_i\\) and \\(q
 
 You generally want to start a cycle once you buy a new \\(c_i\\) and \\(c_{i+1}\\) which boost \\(q_{i-1}\\) and \\(q_i\\) respectively.
 
-#### BaP Milestone Routing Explaination
+#### BaP Milestone Routing Explanation
 
 Like FI, in BaP, you can unlock milestones in 2 ways:
 
