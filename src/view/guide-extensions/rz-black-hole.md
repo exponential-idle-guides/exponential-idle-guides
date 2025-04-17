@@ -18,7 +18,7 @@ tags: T9+ Research
 
 ### Abstract
 
-Implementing black hole at the correct time is very essential for progression of RZ $\rho$ and delta, and hence $\tau$ at an efficient way. Due to technological difficulties of myself, several major assumptions are made in the process to ensure a fair comparison between data sets, **including the effect of the variables $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$ remain the same throughout the publication.** After a series of calculation, it will be practical and ideal with **black hole implemented at 60% of the publication.**
+Implementing black hole at the correct time is very essential for progression of RZ $\rho$ and $\delta$, and hence $\tau$ at an efficient way. Due to technological difficulties of myself, several major assumptions are made in the process to ensure a fair comparison between data sets, **including the effect of the variables $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$ remain the same throughout the publication.** After a series of calculation, it will be practical and ideal with **black hole implemented at 60% of the publication.**
 
 ### Methodology
 
@@ -38,7 +38,7 @@ $$\begin{flalign}
   &= w_1w_2\left(\Delta t\sum^{a}_{t=0}z'(t)^b + z'(a)^b(900-a\Delta t)\right)&&
 \end{flalign}$$
 
-Do note that $w_3$ behaves the same as $w_2$ with a larger interval of purchasing. It has been omitted in the above-shown formula due to the fact that this study was prepared before the effect of $w_3$ was fully interpret by myself. Meanwhile, $w_3$ has no effect on rho progression, so not accounting $w_3$ base on the assumption and formula given in game will have no net effect on rho progression.
+Do note that $w_3$ behaves the same as $w_2$ with a larger interval of purchasing. It has been omitted in the above-shown formula due to the fact that this study was prepared before the effect of $w_3$ was fully interpret by myself. Meanwhile, $w_3$ has no effect on $\rho$ progression, so not accounting $w_3$ base on the assumption and formula given in game will have no net effect on $\rho$ progression.
 
 Next, a publication data set had been simulated with the following settings: Given a publication that had **the same levels of $w_1$ and $w_2$ throughout**, the cumulative $\rho/\delta$ at the end of the publication had been manipulated with **black hole implemented at varying $t$ towards the end of the publication.** Then, the result could be visualized and represented by **plotting a graph of cumulative $\rho/\delta$ at the end of the publication against the time for implementing the black hole.**
 
@@ -110,7 +110,7 @@ All 4 data sets showed similar results that **maximum cumulative $\rho$ was obta
 
 #### Evaluating the effect of varying $b$ on cumulative $\rho$ & $\delta$
 
-As **$b$ has no effect on rho dot after black hole is implemented**, it can be concluded that $b$ has no alteration on the result on the time of implementing black hole for maximum cumulative $\rho$ to be obtained based on the major assumption of constant effect of $c_1$, $c_2$, $w_1$, $w_2$, and $w_3$ throughout the publication.
+As **$b$ has no effect on $\dot{\rho}$ after black hole is implemented**, it can be concluded that $b$ has no alteration on the result on the time of implementing black hole for maximum cumulative $\rho$ to be obtained based on the major assumption of constant effect of $c_1$, $c_2$, $w_1$, $w_2$, and $w_3$ throughout the publication.
 
 The 4 above-mentioned data sets were repeated with the simulation of $b = 1.5$ (i.e., **Level 3**), $b = 2$ (i.e., **Level 4**), $b = 2.5$ (i.e., **Level 5**), and $b = 3$ (i.e., **Level 6**). The results were obtained and were
 
@@ -259,7 +259,7 @@ In response of this, there are also data from [Discord](https://discord.gg/S9Uhe
 
 #### Proposing a Possible New Idle Route for Completion of RZ CT
 
-Base on the discussion and all available data we have at this moment, it may be reasonable to **propose a new idle route of publication** for completion of RZ CT after e600 rho, the general routing will be as follow:
+Base on the discussion and all available data we have at this moment, it may be reasonable to **propose a new idle route of publication** for completion of RZ CT after e600 $\rho$  the general routing will be as follow:
 
 1. **Take an estimate on the duration** of the upcoming publication wish to be idled. **Calculate the hypothesized time** for implementing black hole (i.e., 60% of your publication time. **Do estimate a longer time if a $w_3$ and/or $b$ upgrade is close to your previous publication point).**
 
@@ -282,7 +282,7 @@ Lastly, I would like to give a huge thanks to the following people/group of peop
   - For designing the simulation for RZ CT and suggesting the concept of deviating from theoretical time and selecting $t$ with high $z'$.
 
 - invalid.user_, Megaminx
-  - For suggesting the point of assessing the effect of b on cumulative rho and delta, and bringing up several points in discussion section to investigate with.
+  - For suggesting the point of assessing the effect of $b$ on cumulative $\rho$ and $\delta$, and bringing up several points in discussion section to investigate with.
 
 - Axiss, lll333, Black Seal, Mathis S., Megamin, Maimai
   - For willing to test my hypothesis with their save and bringing up several points on my hypothesis. (ofc, thanks Maimai for enlightening of RZyoyoyo lol)
