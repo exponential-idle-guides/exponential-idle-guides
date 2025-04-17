@@ -320,6 +320,30 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 
 - [RZ](#rz)&nbsp; — &nbsp;Idle
 
+#### Custom Theory 8: Magnetic Fields {data-toc-exclude}
+
+The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It was released on March 10, 2025 alongside BaP.
+
+The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
+
+- [MF<span style="color:#41AD21">d2</span>](#mfd2)&nbsp; — &nbsp;Very Active
+
+- [MF<span style="color:#41AD21">d</span>](#mfd)&nbsp; — &nbsp;Active
+
+- [MF](#mf)&nbsp; — &nbsp;Semi-Idle
+
+#### Custom Theory 9: Basel Problem {data-toc-exclude}
+
+The 8th/9th official custom theory, abbreviated BaP, was developed by Python's Koala. It was released on March 10, 2025 alongside MF.
+
+- [BaP<span style="color:#41AD21">AI</span>](#bapai)&nbsp; — &nbsp;Active
+
+- [BaP<span style="color:#41AD21">AIMS</span>](#bapaims)&nbsp; — &nbsp;Active
+
+- [BaP<span style="color:#41AD21">coast</span>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
+
+- [BaP](#bap)&nbsp; — &nbsp;Idle
+
 ## Theory 1: Recurrence Relations
 
 ### T1<span style="color:#41AD21">SolarXLII xexxx</span>
@@ -6294,3 +6318,366 @@ The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub
 Strategy credits:
 
 - Hotab & Blackseal for the coasting strategy
+
+## Magnetic Fields
+
+### MF<span style="color:#41AD21">d2</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">MFd2</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>When cost × 8 + (lvl % 7) < min(2 × c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, 3 × δ cost)</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+      <td>When I×1.2 < I<sub><sub><small>cap</small></sub></sub> or cost × 20 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost) and I < I<sub><sub><small>cap</small></sub></sub></td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">δ</td>
+      <td>When cost × 3 < min(2 × c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost)</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+</tbody>
+</table>
+
+Strategy Credits:
+
+- Gnarwhals for the variable buying strategy
+- BlackSeal for the implementation of resets in the sim
+
+### MF<span style="color:#41AD21">d</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">MFd</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>When cost × 10 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost)</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+      <td>When I < I<sub><sub><small>cap</small></sub></sub>/2 or cost × 10 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost)</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">δ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+</tbody>
+</table>
+
+Strategy Credits:
+
+- BlackSeal for the implementation of resets in the sim
+
+### MF
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">MF</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">δ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
+      <td>Only buy right before a reset</td>
+   </tr>
+</tbody>
+</table>
+
+Strategy Credits:
+
+- BlackSeal for the implementation of resets in the sim
+
+## Basel Problem
+
+### BaP<span style="color:#41AD21">AI</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaPAI</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>
+         Go for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1 when the cumulative cost to buy it is less than 2x the cheapest other purchase <br>
+         When saving for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1: ✔️ <br>
+         Else: Buy at (c<sub><sub><small>1</small></sub></sub> lvl % 64)/2 ratio to other variables
+      </td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>
+
+Start coasting when x25 away from the next publication mark or next milestone.
+<br>
+Strategy credits:
+
+- Mathis S.
+
+
+### BaP<span style="color:#41AD21">AIMS</span>
+
+BaP<span style="color:#41AD21">AIMS</span> is the milestone swapping strategy for BaP.
+
+For how to perform the milestone swapping strategy, check [here](/guides/custom-theories/#bap-strategy).
+
+For the variable buying strategy, check [BaP<span style="color:#41AD21">AI</span>](#bapai).
+
+### BaP<span style="color:#41AD21">coast</span>
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaPcoast</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>
+
+Start coasting when x25 away from the next publication mark or next milestone.
+<br>
+Strategy credits:
+
+- Mathis S.
+
+### BaP
+
+<table class="spqcey">
+<thead>
+  <th></th>
+  <th style="text-align:center">BaP</th>
+</thead>
+<tbody>
+   <tr>
+      <td class="leftHeader">ṫ</td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
+      <td>✔️</td>
+   </tr>
+   <tr>
+      <td class="leftHeader">n</td>
+      <td>✔️</td>
+   </tr>
+</tbody>
+</table>
+<br>

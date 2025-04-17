@@ -10,19 +10,19 @@ order: 8
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of December 15th, there are 7 official
-custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, and Riemann Zeta Function by Prop (RZ). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP and RZ from now on.
+Custom theories are theories made by players in the community. As of March 2025, there are 9 official
+custom theories that contribute up to e600 \\(\tau\\) per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, Riemann Zeta Function by Prop (RZ), Magnetic Fields by Mathis (MF) and Basel Problem by Python's Koala (BaP). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP, RZ, MF and BaP from now on. The choice for a three letter abbreviation for BaP was made to avoid confusion with a previous unofficial custom theory sharing the same initials (Bin Packing).
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with one exception) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI and RZ have conversion rates of
-$\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\).
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with two exceptions) from \\(\rho\\) to $\tau$. WSP, SL, CSR2, FI, RZ and BaP have conversion rates of
+$\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = \\(\rho^{1.6}\\) and FP with a conversion rate of $\tau$ = \\(\rho^{0.3}\\). Meanwhile, MF is the only custom theory to this day to have $\tau$ = \\(\rho\\).
 
 ### Which Custom Theories (CTs) should I do?
 
-In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
 If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\), or you can chase a spike in $\tau/hour$, such as EF e50 \\(\rho\\) or FP e95 \\(\rho\\). You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)<br><br>
 
- For idle time, do the one with the highest idle \\(\tau/hour\\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour\\) and CSR2 also has 2 \\(\tau/hour\\), ideally we would pick SL. The reason we prefer SL, EF, FP and FI is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+ For idle time, do the one with the highest idle \\(\tau/hour\\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, BaP, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour\\) and CSR2 also has 2 \\(\tau/hour\\), ideally we would pick SL. The reason we prefer SL, EF, FP, FI and BaP is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
 
 ![CT Rate vs. $\tau$](/images/ct_rate_graph.png)
 
@@ -54,6 +54,7 @@ The third line is the most complicated. Generally we can factorize an equation w
 Finally, the actual \\(\chi\\) equation: increasing \\(c_1\\) and \\(n\\) increases \\(\chi\\). Note that from the fraction, we don't want to increase only \\(c_1\\) or only \\(n\\). Rather we should increase both. Using standard strategies this should be no problem. The \\(n/3^{3}\\) part in the denominator is a milestone term. This means that \\(n\\) is better than \\(c_1\\) as more \\(n/3\\) milestones are accumulated. <br><br>
 
 #### WSP Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -91,7 +92,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 #### WSP Strategy
 
-Early game the variable strengths are ordered as follows: 
+Early game the variable strengths are ordered as follows:
 
 \\(q_2\\) ≈ \\(c_2\\) > \\(n\\) > \\(c_1\\) > \\(q_1\\) <br><br>
 
@@ -169,6 +170,7 @@ The fourth equation relates \\(\dot{\rho_3}\\) with some upgrades. This one is r
 The final equation simply states the value of \\(a_3\\). The lower the better. Default without milestone is \\(a_3 = 2\\).
 
 #### SL Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -205,6 +207,7 @@ Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 All variables in SL are about the same in power, except for \\(a_1\\) and \\(b_1\\) (which are slightly worse than \\(a_2\\) and \\(b_2\\). Selectively buying variables at certain times (active) yields very little results. Therefore, we can get away with autobuy all for idle. Before autobuy, simply buy the cheapest variable. If you want more details on SL strategies, in particular the execution of various strategies, please see [List of theory strategies](/guides/theory-strategies).
 
 #### Milestone swapping - why it works
+
 For active, there is a milestone swapping strategy that is significantly faster than idling (approximately twice the speed). If we carefully examine the effects of each milestone, we can conclude the following:
 
 1st milestone: Increases \\(\rho_2\\) exponent and increases \\(\dot{\rho_1}\\) straight away. The actual value of \\(\rho_2\\) does not increase. <br>
@@ -215,6 +218,7 @@ We have different milestones which affect the same thing (\\(\dot{\rho_1}\\)), b
 We initially put our milestones in the 4th and 3rd milestones. Once our \\(\rho_3\\) doesn't increase quickly anymore, we switch milestones to the 1st one to gain a burst of \\(\dot{\rho_1}\\). Once our \\(\rho_1\\)is not increasing quickly anymore, we switch back to the 4th and 3rd milestone!
 
 #### Milestone Swapping Strategies
+
 (Courtesy of Gen).
 
 x>x>x>x represent the max buy order of milestones not the amount allocated.
@@ -314,6 +318,7 @@ The fourth line simply describes \\(\dot{q}\\). This is used in the first equati
 The fifth and final line use the results from the 3rd line, so effectively \\(\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}\\) and \\(\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}\\)
 
 #### EF Variable Description
+
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
 <table class="T2">
@@ -698,7 +703,7 @@ For a more detailed explanation on how to actually do the strategy, please see t
 In FI, you can unlock milestones in 2 ways:
 
 1) by gaining \\(\rho\\) like normal, or
-2) buy purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
+2) by purchasing the milestone upgrades for \\(\lambda\\) and \\(g(x)\\) in the permanent upgrades tab
 where you would normally buy publishing, buy all, and autobuy.
 
 Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(g(x)\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(g(x)\\) milestone. Moving milestones into these are **almost** always the best thing you can do mid publish, even if you need to sacrifice a variable to do so, with one exception.
@@ -874,14 +879,14 @@ $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
 The first equation is for \\(\rho\\), which is the product of \\(c_1 c_2 qr\\) and the fractal term $T_n^{7}$, where \\(T_n\\) is the nth term of the Toothpick Sequence shown below. Its exponent starts at 7, but when you unlock the \\(s\\) milestone, it will change to \\(5+s\\), where \\(s\\) is an upgrade.
 
-The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\). 
+The $\dot{q}$ equation is similar, but depends on Ulam-Warburton Cellular Automaton \\(U_n\\) instead. Its exponent starts at 7, and changes to \\(7+s\\) when you unlock the \\(s\\) milestone, meaning this milestone has no drawback to \\(q\\) unlike \\(\rho\\).
 
 \\(q\\) growth also depends on the \\(A\\) term, which itself depends on \\(q_2\\). For the exact formula, if \\(k\\) is the level of \\(q_2\\), then $A=(2^{2k+1}+1)/3$. This means that each level of \\(q_2\\) tends to a x4 increase to $\dot{q}$.
 
 The \\(r\\) equation depends on all fractals available in FP.
 
 ##### Toothpick Sequence
-$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$ 
+$$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$
 $$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
 
 This is the Toothpick Sequence. We can't really explain it without getting technical, but this sequence grows as \\(n\\) grows. It is important to note that it grows faster right before a new power of two, and slower right after a power of two. This trait is shared with the next fractal. These \\(n=2^k\\) spikes have **a lot** of influence on the theory speed, especially on the second half of it.
@@ -989,7 +994,7 @@ s - always buy on sight.
 n - buy after s.
 r1 - check how much percentage increase it will give to $\dot{r}$, and then buy like normal doubling chase, autobuying is also fine.
 
-Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand. 
+Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work roughly like doubling chase to the former most of the time, with additions of what was said about them beforehand.
 
 ##### FP Milestone Swapping Explanation
 
@@ -1130,6 +1135,8 @@ For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd
 
 Once you have all milestones, autobuy all!
 
+Also check out [A Pos­sible Idle RZ The­ory By Time](/guide-extensions/rz-black-hole) for more in-depth look at idle RZ strategies.
+
 ##### Active
 
 For an active buying strategy, buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. Read the next section for the milestone swapping strategies.
@@ -1204,3 +1211,386 @@ h3 {
    font-size: 1.5rem;
 }
 </style>
+
+### Magnetic Fields (MF)
+
+MF Guide written by Mathis and Eylanding.
+
+#### MF Overview
+
+MF was released on March 10th, 2025, alongside BaP. MF is the first physics-inspired official CT, specifically Electromagnetism.
+
+MF has a unique mechanic called "particle reset", a form of partial publication where you reset \\(x\\) to zero but increase \\(v_x\\), \\(v_y\\) and \\(v_z\\) with the \\(v_i\\) variables you bought in-between. This mechanic acts like a second prestige layer.
+
+The existence of this mechanic makes MF a very active custom theory at first, however it quickly slows down to longer publications where resets later in a publication take several hours to recover, offering idle breaks.
+
+While MF slows down quickly, regular milestones sustain its rates, making it completable in a bit over 6 months.
+
+#### MF Equation Description
+
+$$\dot{\rho}=C{c_1}{c_2}{\omega^{4.4}}{x^{3.4}}{v^{1.92}}$$
+$$v=\sqrt{v_x^2+v_y^2+v_z^2}$$
+$$x={v_x}{t_s}$$
+$$B=\mu_0I\delta$$
+$$\omega=\frac{q}{m}B$$
+$${v_x}=[v_1v_2\times 10^{-20}](t_s=0)$$
+$${v_y}=[v_3v_4\times 10^{-18}](t_s=0)\times\sin(\omega t_s)$$
+$${v_z}=[v_3v_4\times 10^{-18}](t_s=0)\times\cos(\omega t_s)$$
+$$\dot{I}=\frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)$$
+
+The MF equations describe the movement of a particle of constant mass \\(m\\) and constant charge \\(q\\) inside a charged solenoid of infinite length with a current \\(I\\) and a density of turns \\(\delta\\), creating a magnetic field \\(B\\).
+
+We consider a simulation where the particle starts at \\(x=0\\) at \\(t_s=0\\) with an initial velocity given by the \\(v_i\\) variables. In these conditions, the particle has a helix trajectory with a constant \\(x\\) velocity, and an angular velocity \\(\omega\\). 
+As you can see, the equations for velocity include $(t_s=0)$, which means here that the equation only updates when $t_s=0$, that is when doing a "particle reset". As such, buying \\(v_i\\) variables will have no effect until you perform a "particle reset" where the simulation is reset (\\(t_s\\) and \\(x\\) are set to 0), so that the initial velocity can be applied again.
+
+The current is given by the last formula. The equation is very similar to that of T5, but different. Here, \\(I\\) is capped at $a_2\times 10^{-15}$, and \\(a_1\\) only affects the growth speed of \\(I\\). 
+
+Unlike in Theory 5, buying \\(a_2\\) has no drawback as it does not appear in the denominator below \\(a_1\\). 
+
+The current increases \\(B\\) which itself increases \\(\omega\\).
+
+Finally, \\(\rho\\) growth is affected by variables \\(c_1\\) and \\(c_2\\), the position \\(x\\) of the particle, its angular velocity \\(\omega\\) and its total velocity \\(v\\), calculated as \\(\sqrt{v_x^2+v_y^2+v_z^2}\\). Because \\(\sin^2(\theta)+\cos^2(\theta)\\) is always 1, \\(v\\) is independent of time. \\(C\\) is an adjustment constant that compensates the parameters being less than one, it only changes with milestones by an amount indicated in-game.
+
+#### MF Variable Description
+
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of MF.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Instant boost to ρ dot, doubles every 7 levels.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>Doubles ρ dot per level (instantaneous).</td>
+      </tr>
+      <tr>
+         <th>a<sub><sub><small>1</small></sub></sub></th>
+         <td>Instant boost to I dot, doubles every 5 levels.</td>
+      </tr>
+      <tr>
+         <th>a<sub><sub><small>2</small></sub></sub></th>
+         <td>x1.25 to I's cap, results in a ~x2.5 total boost once the new cap is reached.</td>
+      </tr>
+      <tr>
+         <th>δ</th>
+         <td>Ιnstant ~x1.5 boost to ρ dot per level.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>1</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>x</small></sub></sub>, making v larger and x grow faster, doubles every 10 levels. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>2</small></sub></sub></th>
+         <td>x1.3 to v<sub><sub><small>x</small></sub></sub>, making v larger and x grow faster. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>3</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>y</small></sub></sub> and v<sub><sub><small>z</small></sub></sub>, making v larger, doubles every 10 levels. Only effective after a particle reset.</td>
+      </tr>
+      <tr>
+         <th>v<sub><sub><small>4</small></sub></sub></th>
+         <td>Increases v<sub><sub><small>y</small></sub></sub> and v<sub><sub><small>z</small></sub></sub>, making v larger. Only effective after a particle reset.</td>
+      </tr>
+   </tbody>
+</table>
+
+#### MF Strategy
+
+**Keep in mind that strategies are still under development and could change in the future.**
+
+##### When to publish
+
+The optimal publication multiplier slowly increases the later you are in the theory, and also depends on your last reset.
+
+It ranges from 10-50 early to 100-500 at the end of the theory.
+
+Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accurate results.
+
+##### When to reset the particle
+
+There isn't an exact rule yet on how often you must perform a particle reset.
+A good baseline is to reset every 1e9 \\(\rho\\), which is every two \\(v_2\\) levels, but it varies slightly from that. For example, early in the CT you want to reset a bit more often.
+
+It is also important to stop resetting at an appropriate point, you want to only reset once after recovering to your previous publication mark.
+
+We recommend using [the sim](https://exponential-developers.github.io/sim-3.0/) to check the \\(v_i\\) levels bought with each reset to give you a clearer idea.
+
+##### Variable buying strats
+
+For variable buy strats, you can save a bit of time with active \\(c_1\\) buying.
+
+You can also save time by not buying \\(a_1\\) when \\(I\\) is very close to its cap ($a_2\times 10^{-15}$) and not buying \\(a_2\\) when \\(I\\) is far away from its cap (which typically happens near the end of the CT).
+
+For more details, check out the [theory strategy section](/guides/theory-strategies).
+
+#### MF Milestone Route
+
+MF has a locked milestone path, like EF and FP
+
+<br>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/2/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2/2/1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>3 x2</td>
+         <td class="arrow">→</td>
+         <td>4 x2</td>
+         <td class="arrow">→</td>
+         <td>5 x2</td>
+         <td class="arrow">→</td>
+         <td>6</td>
+      </tr>
+   </tbody>
+</table>
+
+### Basel Problem (BaP)
+
+#### BaP Overview
+
+BaP was released on March 10th, 2025, alongside MF. It is based on the Basel Problem, a famous mathematical problem solved by Euler about the convergence of the series $\sum_{n=1}^{∞}\frac{1}{n^2}$, which converges to $\frac{\pi^2}{6}$.
+
+BaP is an idle-friendly custom theory (except for a bit of milestone swapping), and has several similarities with T2.
+
+BaP is much slower than the other CTs early, so it is better to not push it until your other CTs are slow enough. However, BaP holds a secret, a milestone unlocked at e1000\\(\rho\\) that allows to complete the remaining e200\\(\tau\\) in under a week! for a total completion time of about 5 months.
+
+#### BaP Equation Description
+
+$$\dot{\rho} = (tq_1r)^a \to \dot{\rho} = t(q_1r)^a$$
+$$a=0.3 \to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}$$
+$$\dot{q}_i=c_{i+1}q_{i+1}, 1\le i\le 9$$
+$$\dot{q}_9=c_{10}$$
+$$\dot{r}=\sum_{i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_{i=c_1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
+
+The $\dot{\rho}$ equation features 3 terms: \\(t\\), \\(q_1\\) and \\(r\\).
+
+\\(t\\) is a variable with constant growth once all $\dot{t}$ variables are bought.
+
+The \\(q_i\\) variables work the same way as with T2, the bottom layer has a constant growth, then the growth of each other layer is affected by the value of the layer below, with factors being the \\(c_i\\) variables (except \\(c_1\\)).
+
+Finally, we have the \\(r\\) equation. At the start of the theory, it is the partial sum of the inverse of the squares, which converges. As such, there is no point to buy \\(c_1\\) past a certain point.
+After getting the first milestone, the \\(r\\) equation changes to be the inverse of the remainder of the sum. As we omit more and more of the first terms of the sum, the remainder converges to zero, making \\(c_1\\) useful again.
+Past earlygame, we approximate $\dot{r}=c_1$.
+
+$\dot{\rho}$ is also monitored by the \\(a\\) exponent, which will always be less than 1, but you will be able to increase it with milestones, and, later, with a variable called \\(n\\).
+
+#### BaP Variable Description
+
+Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
+
+<table class="T2">
+<caption>Brief summary of variable strengths of BaP.</caption>
+   <thead><tr>
+   <th class="invisible"></th>
+   <th colspan="2" style="text-align:center">Brief Description</th>
+   </tr></thead>
+   <tbody>
+      <tr>
+         <th>$$\dot{ t }$$</th>
+         <td>Makes t increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>1</small></sub></sub></th>
+         <td>Increases r growth. After the first milestone, rdot becomes c<sub><sub><small>1</small></sub></sub>. Has a very powerful x1024 boost every 64 levels.</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>2</small></sub></sub></th>
+         <td>x2 to q<sub><sub><small>1</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>3</small></sub></sub></th>
+         <td>x3 to q<sub><sub><small>2</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>4</small></sub></sub></th>
+         <td>x4 to q<sub><sub><small>3</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>5</small></sub></sub></th>
+         <td>x5 to q<sub><sub><small>4</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>6</small></sub></sub></th>
+         <td>x6 to q<sub><sub><small>5</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>7</small></sub></sub></th>
+         <td>x7 to q<sub><sub><small>6</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>8</small></sub></sub></th>
+         <td>x8 to q<sub><sub><small>7</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>9</small></sub></sub></th>
+         <td>x9 to q<sub><sub><small>8</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>c<sub><sub><small>10</small></sub></sub></th>
+         <td>x10 to q<sub><sub><small>9</small></sub></sub> growth per level</td>
+      </tr>
+      <tr>
+         <th>n</th>
+         <td>Small increase to a per level</td>
+      </tr>
+   </tbody>
+</table>
+
+#### BaP Strategy
+
+**Keep in mind that strategies are still under development and could change in the future.**
+
+Basel Problem is an idle-friendly CT except during its MS phases.
+
+##### When to publish
+
+BaP progress is hard carried by its milestones, which means the best time to publish can vary a lot. For \\(a\\) milestones, it is better to push past them to collect the massive boost it gives with all the \\(q_1\\) and \\(r\\) you stacked waiting for the milestone. On the contrary, for \\(q\\) milestones, it is better to push for them, buy the matching permanent upgrade and publish right away, as you can enjoy the boost right away without waiting for the boost to climb all the way to \\(q_1\\).
+
+To know when to publish, please check [the sim](https://exponential-developers.github.io/sim-3.0/). Check out the [BaP Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for variable checks mid-publication.
+
+##### Idle
+
+For idle, you autobuy all. For more efficiency, turn off autobuy when your \\(\rho\\) is around x25 away from your publication mark or the next milestone.
+
+##### Active
+
+BaP active strategies take advantage of active \\(c_1\\) buying. \\(c_1\\) is a unique variable with a low cost scaling and that gains a massive x1024 boost every 64 levels, when (\\(c_1\\) level) % 64 = 1.
+
+For the strategy, you want to chase those boosts and autobuy \\(c_1\\) when you are close to the next boost (when the cumulative cost of \\(c_1\\) purchases until the boost is below x2 of other variables). When you are not chasing a boost, you can buy \\(c_1\\) at (\\(c_1\\) level % 64)/2 ratio to other variables. 
+
+##### Milestone Swapping Strategy
+
+Milestone Swapping is possible when you don't have enough milestone points to buy all the milestones. In that case, you can swap between \\(a\\) and \\(q\\) milestones.
+
+MS is only relevant when you need to stack \\(q_i\\) layers, which typically happens when you unlock a new \\(q_i\\) layer. The cycle goes:
+
+Put the milestone point in the \\(q_i\\) layer $\to$ wait for \\(q_i\\) and \\(q_{i-1}\\) to grow $\to$ put the milestone point back in the \\(a\\) milestone.
+
+You generally want to start a cycle once you buy a new \\(c_i\\) and \\(c_{i+1}\\) which boost \\(q_{i-1}\\) and \\(q_i\\) respectively.
+
+#### BaP Milestone Routing Explanation
+
+Like FI, in BaP, you can unlock milestones in 2 ways:
+
+1) by gaining \\(\rho\\) like normal, or
+2) by purchasing the milestone upgrades for \\(a\\) and \\(q\\) in the permanent upgrades tab
+
+Buying the milestone upgrades will **not** give you a milestone, but will instead increase the max level of the milestone that you purchased the upgrade for. For example, if you buy the \\(a\\) perma-upgrade for lvl 1, you will permanently unlock the first lvl of the \\(a\\) milestone.
+
+While, for most milestones, you unlock the permanent upgrade at the same time you get the milestone point for it, there are 6 exceptions: \\(q\\) milestone levels 3,4,5 and \\(a\\) milestone levels 4,5,6 in which you unlock the milestone level before you unlock the milestone point, meaning you have a vacant milestone space. This creates an opportunity for milestone swapping between the \\(a\\) and \\(q\\) milestone, however, in reality, MS is only applicable where you unlock a new \\(q\\) milestone level, as, when you unlock a \\(a\\) milestone level, it's generally best to put your milestones into it since you have already built enough \\(q_i\\), and these MS phases are short anyways.
+
+
+#### BaP Milestone Route
+
+<!--This section needs to be redone-->
+
+BaP has 20 milestones, the most out of any official theory to this day.
+
+<!--br>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td>1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/1/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/1</td>
+         <td class="arrow">→</td>
+         <td>1/1/2/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/3/2</td>
+         <td class="arrow">→</td>
+         <td>1/1/3/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/4/3</td>
+         <td class="arrow">→</td>
+         <td>1/1/4/4</td>
+         <td class="arrow">→</td>
+         <td>1/1/5/4</td>
+         <td class="arrow">→</td>
+         <td>1/1/5/5</td>
+         <td class="arrow">→</td>
+         <td>1/1/6/5</td>
+         <td class="arrow">→</td>
+         <td>1/1/6/6</td>
+         <td class="arrow">→</td>
+         <td>1/1/7/6</td>
+         <td class="arrow">→</td>
+         <td>1/1/7/7</td>
+         <td class="arrow">→</td>
+         <td>1/1/8/7</td>
+         <td class="arrow">→</td>
+         <td>1/1/8/8</td>
+         <td class="arrow">→</td>
+         <td>1/1/9/8/0</td>
+         <td class="arrow">→</td>
+         <td>1/1/9/8/1</td>
+      </tr>
+   </tbody>
+</table>
+<table class="milestone_routing">
+   <tbody>
+      <tr>
+         <td class="invisible"><strong>Or</strong></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+         <td class="invisible"></td>
+      </tr>
+      <tr>
+         <td>1</td>
+         <td class="arrow">→</td>
+         <td>2</td>
+         <td class="arrow">→</td>
+         <td>(3</td>
+         <td class="arrow">→</td>
+         <td>4) x8</td>
+         <td class="arrow">→</td>
+         <td>3</td>
+         <td class="arrow">→</td>
+         <td>5</td>
+      </tr>
+   </tbody>
+</table-->
+
