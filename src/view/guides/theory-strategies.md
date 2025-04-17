@@ -252,7 +252,7 @@ The second official custom theory, abbreviated SL, was created by ellipsis and r
 
 #### Custom Theory 3: Euler's Formula {data-toc-exclude}
 
-The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the tau cap increase.
+The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the $\tau$ cap increase.
 
 - [EF<span style="color:#41AD21">AI</span>](#efai)&nbsp; — &nbsp;Active
 
@@ -264,7 +264,7 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 #### Custom Theory 4: Convergents to √2 {data-toc-exclude}
 
-The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT tau cap increase from e100 to e150.
+The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT $\tau$ cap increase from e100 to e150.
 
 - [CSR2<span style="color:#41AD21">XL x.xx</span>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
@@ -274,7 +274,7 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 #### Custom Theory 5: Fractional Integration {data-toc-exclude}
 
-The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT tau contribution rate increase by x4.
+The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT $\tau$ contribution rate increase by x4.
 
 - [FI<span style="color:#41AD21">d</span>](#fid)&nbsp; — &nbsp;Active
 
@@ -294,7 +294,7 @@ The fifth/sixth official custom theory, abbreviated FI, was first planned by Sna
 
 #### Custom Theory 6: Fractal Patterns {data-toc-exclude}
 
-The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT tau contribution rate increase by x4.
+The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT $\tau$ contribution rate increase by x4.
 
 - [FP<span style="color:#41AD21">modBurst<span style="color:#4665F0">C1</span>MS</span>](#fpmodburstc1ms)&nbsp; — &nbsp;Active
 
@@ -2586,7 +2586,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
 **Milestone swapping strategy**
 
 - During your recovery phase, set your milestones in the order 2→3→1
-- During the tau gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
+- During the $\tau$ gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
 
 ### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
 
@@ -3392,7 +3392,7 @@ If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) unti
    </tbody>
 </table>
 
-This strategy is sometimes seen at lower taus but not at higher taus.
+This strategy is sometimes seen at lower $\tau's$s but not at higher $\tau's$.
 
 ### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
 
@@ -3441,7 +3441,7 @@ This strategy is sometimes seen at lower taus but not at higher taus.
    </tbody>
 </table>
 
-This strategy is sometimes seen at lower taus but not at higher taus.
+This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
 
 ### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
 

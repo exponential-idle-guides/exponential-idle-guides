@@ -126,7 +126,7 @@ only used when you are past \\(e150 τ\\) and max milestones. They represent how
 
 Note: If you are not doing the active strat, then simply turn off \\(c_1\\) and \\(c_2\\) after milestone 1 (e25τ) and autobuy rest until ee6k.
 
-__The video below is only good for early tau between 1e150 and 1e250.__
+__The video below is only good for early $\tau_{1}$ between 1e150 and 1e250.__
 
 {{ yt.embed('lFSAFIpWkb0') }}
 
@@ -484,7 +484,7 @@ Theory 4 is based on Polynomials, which contain terms of the form \\(x^a+x^b+x^c
 
 <br><br>
 
-The first line states that the rate of change of rho is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
+The first line states that the rate of change of $\rho$ is the sum of a bunch of polynomial terms. We have a bunch of 'c' variables multiplied by 'q'. We can increase \\(q\\) by buying \\(q_1\\) and \\(q_2\\) upgrades. Note that this is with all milestones. You'll not have all of these at the beginning.
 
  <br><br>
 The second line is more unique. It says that $\dot{q}$ is proportional to the inverse of \\(q\\) itself! This means that the more \\(q\\) we have, the slower \\(q\\) grows, as $\dot{q}$ decreases. This means that \\(q_1\\) and \\(q_2\\) are not as strong as they first appear. However, we still want to buy them in general unless stated otherwise as slow growth is better than no growth.
@@ -590,7 +590,7 @@ T4 active is more involved. However it is not as demanding as T3 or T1 active.
 
 <br><u>Start to e75</u>
 
-Autobuy $c_2$. DON'T buy $c_3$, $q_1$, $q_2$! The \\(c_3q\\) term is bad early on. Buy $c_1$ until its cost exceeds about 15% of $c_2$ cost. Publish at about 2.5-3 if possible. When we reach e25 rho, we get the $c_1$ exponent milestone (note the difference between this strategy and the idle strategy). With the $c_1$ exponent milestone, the $c_1c_2$ term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying $c_1$ and $c_2$ (NO $c_3$, $c_4$, $c_5$, $c_6$, $q_1$, $q_2$!), all the 'q' related milestones are useless for now.
+Autobuy $c_2$. DON'T buy $c_3$, $q_1$, $q_2$! The \\(c_3q\\) term is bad early on. Buy $c_1$ until its cost exceeds about 15% of $c_2$ cost. Publish at about 2.5-3 if possible. When we reach e25 $\rho$, we get the $c_1$ exponent milestone (note the difference between this strategy and the idle strategy). With the $c_1$ exponent milestone, the $c_1c_2$ term remains the strongest term IF we can babysit and publish often (at about 2.5-3). The strategy remains the same otherwise. Note that since we're only buying $c_1$ and $c_2$ (NO $c_3$, $c_4$, $c_5$, $c_6$, $q_1$, $q_2$!), all the 'q' related milestones are useless for now.
 
 <br><u>e75 to e175 OR 14k ft</u>
 
@@ -607,7 +607,7 @@ Now here is where we can apply some more advanced strategies. Consider that the 
 
 <br>
 
-If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is that the $c_4$, $c_5$, $c_6$ terms scale well with 'q'. However we need enough rho to buy a lot of q. So in the beginning we buy only $c_1c_2$ as usual to accumulate enough rho so that we can buy $q_1q_2$ to stack q. Once we have enough q, the $c_4$, $c_5$, $c_6$ terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make $c_1c_2$ better again.
+If done right, this strategy is significantly faster than the idle strategies above. The logic with this strategy is that the $c_4$, $c_5$, $c_6$ terms scale well with 'q'. However we need enough $\rho$ to buy a lot of q. So in the beginning we buy only $c_1c_2$ as usual to accumulate enough $\rho$ so that we can buy $q_1q_2$ to stack q. Once we have enough q, the $c_4$, $c_5$, $c_6$ terms will outscale. Note that after ee14k ft, we will unlock certain upgrades that make $c_1c_2$ better again.
 
 <br><u>e175 OR 14k ft to ~e300 T4</u>
 

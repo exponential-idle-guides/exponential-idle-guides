@@ -20,9 +20,13 @@ $\tau$ = \\(\rho^{0.4}\\) while EF has a \\(\tau\\) conversion rate of $\tau$ = 
 
 In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on \\(\tau/hour\\).
 
-If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\), or you can chase a spike in tau/hour, such as EF e50 \\(rho\\) or FP e95 \\(rho\\). You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)<br><br>
+If you have time for active strategies, try to do the CT with the highest active \\(\tau/hour\\), or you can chase a spike in $\tau/hour$, such as EF e50 \\(\rho\\) or FP e95 \\(\rho\\). You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)<br><br>
 
  For idle time, do the one with the highest idle \\(\tau/hour\\), (or the longest publication time if you're doing overnights), with preference toward EF, SL, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 \\(\tau/hour\\) and CSR2 also has 2 \\(\tau/hour\\), ideally we would pick SL. The reason we prefer SL, EF, FP and FI is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.<br><br>
+
+[CT Rate vs. $\tau$](/images/ct_rate_graph.png)
+
+###### Graph made by Hackzzz ([Source](https://redd.it/1jv7t75))
 
 ### Weierstrass Sine Product (WSP)
 
@@ -41,7 +45,7 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 \\(\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1\\)
 <br><br>
 
-The first line states that the rate of change in rho is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
+The first line states that the rate of change in $\rho$ is \\(q_1^{1.04}q_2q\\). Initially it's simply \\(q_1q_2q\\) without any exponent. With milestones we add more exponents. <br>
 
 For the second line, the higher the \\(\chi\\) (spelled 'chi', pronounced as 'kai'), the higher the \\(s_n({\chi})\\). We want to increase \\(\chi\\) by increasing \\(n\\) and \\(c_1\\). The signs of \\(s_n({\chi})\\) and \\(sin({\chi})\\) will always match, so the fraction can't be negative. Additionally, the \\(c_2\\) variable is a milestone which is not initially available. <br>
 
@@ -989,13 +993,13 @@ Overall, We have s, n, c2 and q2, and we have c1, q1, and r1. The latter work ro
 
 ##### FP Milestone Swapping Explanation
 
-FP has a milestone swap that involves 1 milestone. This is the milestone that adds s as an exponent (e700 rho). The swap arises from the idea that initially, Tn power drops from 7 to 5 + s in the rho equation, and s is less than 2. Because of this, it makes sense to swap this milestone in for q growth, and swap it out for rho growth.
+FP has a milestone swap that involves 1 milestone. This is the milestone that adds s as an exponent (e700 $\rho$). The swap arises from the idea that initially, Tn power drops from 7 to 5 + s in the $\rho$ equation, and s is less than 2. Because of this, it makes sense to swap this milestone in for q growth, and swap it out for $\rho$ growth.
 
 The swap is really hard to describe in terms of how long to keep it in and out but what can be said qualitatively:
-- At first, you follow very fast swaps to recover rho, and swaps gradually become slower and slower.
+- At first, you follow very fast swaps to recover $\rho$, and swaps gradually become slower and slower.
 - As s grows, it makes sense to keep the milestone swapped in longer.
 
-Milestone swap ends when s becomes > 2, and dies out when you can recover to that point very fast. Past ~e950 rho, recovery takes ~1-3 minutes of idle time.
+Milestone swap ends when s becomes > 2, and dies out when you can recover to that point very fast. Past ~e950 $\rho$, recovery takes ~1-3 minutes of idle time.
 
 Milestone swap saves a LOT of time.
 

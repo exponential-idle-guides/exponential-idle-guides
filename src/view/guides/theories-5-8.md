@@ -80,7 +80,7 @@ You will not touch this theory until after ee14k. Once you begin pushing T1 afte
 
 ### Theory 2
 
-This theory will be used as overnight until 1e350 Tau where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
+This theory will be used as overnight until 1e350 $\tau$ where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
 ### Theory 3
 
@@ -106,7 +106,7 @@ The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with
 
 <br>
 
-The first line states that the rate of change of rho is the product of some \\(q_1, q_2, q\\). Note that \\(q_1\\) and \\(q_2\\) are variables that you can buy directly, while \\(q\\) is a separate variable that is based off something else.
+The first line states that the rate of change of $\rho$ is the product of some \\(q_1, q_2, q\\). Note that \\(q_1\\) and \\(q_2\\) are variables that you can buy directly, while \\(q\\) is a separate variable that is based off something else.
 
 <br>
 
@@ -752,11 +752,11 @@ the rest after. This continues to max at 2/3/3/3.
    </tbody>
 </table>
 
-Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 tau.
+Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 $\tau$.
 
 ### Final Push to ee20k
 
-In general, you will need about e2050 \\(\tau\\) in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories \\(\tau\\) is as follows. Being above or below these values is fine, just as long as you have e2050 tau.
+In general, you will need about e2050 \\(\tau\\) in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories \\(\tau\\) is as follows. Being above or below these values is fine, just as long as you have e2050 $\tau$.
 
 #### Active
 

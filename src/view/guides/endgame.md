@@ -14,7 +14,7 @@ order: 6
 
 ### Theory 9
 
-There is no theory 9 guide and this is a guide for what to do after theory 9. Have fun figuring out T9 for yourself and remove students when finished and put back into R9 and phi.
+There is no theory 9 guide and this is a guide for what to do after theory 9. Have fun figuring out T9 for yourself and remove students when finished and put back into R9 and $\varphi$.
 
 ### Graduation routing
 
@@ -106,7 +106,7 @@ Once you have enough students to always have R4 to R7 maxed out (about 30k), you
 
 Due to fluctuations with stars, accel, \\(t\\), and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
 
-##### Note: The best way to decide a bigma skipma is to either calculate phi distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
+##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 <table class="newwords">
    <thead>
