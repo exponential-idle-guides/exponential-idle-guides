@@ -26,7 +26,7 @@ If you have time for active strategies, try to do the CT with the highest active
 
 ![CT Rate vs. $\tau$](/images/ct_rate_graph.png)
 
-###### Graph made by Hackzzz ([Source](https://redd.it/1jv7t75))
+###### Graph made by Hackzzz118 ([Source](https://redd.it/1jv7t75))
 
 ### Weierstrass Sine Product (WSP)
 
