@@ -176,6 +176,6 @@ The Hall of Fame is dedicated to any player with an honorable mention or ranking
 
 ### [March](/ranking-news/2025-mar)
 
-- Hackzzz118 (hacker118)
+- Hackz118 (hacker118)
 - Mathis (Mathis S.)
 - Jooo (Jooo)

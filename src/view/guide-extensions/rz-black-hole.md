@@ -1,7 +1,7 @@
 ---
 title: "A Possible Idle RZ Theory By Time"
 description: "Evaluating the effect of time for implementing black hole on RZ CT progression."
-author: "Hackzzz118"
+author: "Hackzzzzzz"
 contributors: "the Amazing Community"
 order: 6
 draft: true
