@@ -22,7 +22,7 @@ Implementing black hole at the correct time is very essential for progression of
 
 ### Methodology
 
-A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation of $\dot{\rho}$ and $\dot{\delta}$ respectively via. the formula provided in game, i.e.,  $\dot{\rho} = (time\ interval) * \frac{t}{\frac{z}{2^b} + 0.01}$ & $\dot{\delta} = (time interval) * z'^b$. Then, cumulative $\frac{\rho}{\delta}$ up to an arbitrary time, $t$, was manipulated by summing up all $\frac{\rho}{\dot{\delta}}$ up to the time $t$. Finally, by fixing $\frac{\dot{\rho}}{\dot{\delta}}$ after time $t$, which mimicked the effect of implementing black hole, cumulative $\frac{\rho}{\delta}$ was manipulated by summing up all $\frac{\rho}{\dot{\delta}}$ from $t = 0$ until the end of the publication.
+A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation of $\dot{\rho}$ and $\dot{\delta}$ respectively via. the formula provided in game, i.e.,  $\dot{\rho} = (time\ interval) * \frac{t}{\frac{z}{2^b} + 0.01}$ & $\dot{\delta} = (time interval) * z'^b$. Then, cumulative $\rho/\delta$ up to an arbitrary time, $t$, was manipulated by summing up all $\rho/\dot{\delta}$ up to the time $t$. Finally, by fixing $\dot{\rho}/\dot{\delta}$ after time $t$, which mimicked the effect of implementing black hole, cumulative $\rho/\delta$ was manipulated by summing up all $\rho/\dot{\delta}$ from $t = 0$ until the end of the publication.
 
 Take an example of $t = 900$ simulation, given $\dot{\delta}$ formula in the game, $\delta$ can be manipulated as
 
@@ -40,11 +40,11 @@ $$\begin{flalign}
 
 Do note that $w_3$ behaves the same as $w_2$ with a larger interval of purchasing. It has been omitted in the above-shown formula due to the fact that this study was prepared before the effect of $w_3$ was fully interpret by myself. Meanwhile, $w_3$ has no effect on rho progression, so not accounting $w_3$ base on the assumption and formula given in game will have no net effect on rho progression.
 
-Next, a publication data set had been simulated with the following settings: Given a publication that had **the same levels of $w_1$ and $w_2$ throughout**, the cumulative $\frac{\rho}{\delta}$ at the end of the publication had been manipulated with **black hole implemented at varying $t$ towards the end of the publication.** Then, the result could be visualized and represented by **plotting a graph of cumulative $\frac{\rho}{\delta}$ at the end of the publication against the time for implementing the black hole.**
+Next, a publication data set had been simulated with the following settings: Given a publication that had **the same levels of $w_1$ and $w_2$ throughout**, the cumulative $\rho/\delta$ at the end of the publication had been manipulated with **black hole implemented at varying $t$ towards the end of the publication.** Then, the result could be visualized and represented by **plotting a graph of cumulative $\rho/\delta$ at the end of the publication against the time for implementing the black hole.**
 
 In short, one should interpret the graphs as the following:
 
-- $y$-axis is the **maximum $\frac{\rho}{\delta}$ (in arbitrary unit) obtained at the end of the publication**
+- $y$-axis is the **maximum $\rho/\delta$ (in arbitrary unit) obtained at the end of the publication**
 
 - $x$-axis is the **time, in $t$, when black hole is being implemented**
 
@@ -227,9 +227,9 @@ The above investigations illustrate the fact that **implementing black hole at d
 
 #### Evaluating the Effect of $c_1$, $c_2$, $w_1$, $w_2$, and $w_3$
 
-The above simulations took on a major assumption of a publication that had **the same levels of $c_1$, $c_2$, $w_1$, $w_2$, and $w_3$ throughout**, which allowed the manipulation of cumulative $\frac{\rho}{\delta}$ in a **single independent variable setting** and hence validated the fair comparison among independent variables. However, such assumption was **practically impossible** during the actual situation. As the effect of variables on the cumulative $\rho$ is **complex** and **highly dependent on the activeness of player**, it was also theoretically challenging to simulate the exact effects on all available data I had in my excel. To evaluate the general/rough effects of $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$, I will explore them **in the view of the equation of $\dot{\rho}$ and $\dot{\delta}$ in-game** and in turn **evaluate the effect of such on the graphs**, hence provide a more refined hypothesis.
+The above simulations took on a major assumption of a publication that had **the same levels of $c_1$, $c_2$, $w_1$, $w_2$, and $w_3$ throughout**, which allowed the manipulation of cumulative $\rho/\delta$ in a **single independent variable setting** and hence validated the fair comparison among independent variables. However, such assumption was **practically impossible** during the actual situation. As the effect of variables on the cumulative $\rho$ is **complex** and **highly dependent on the activeness of player**, it was also theoretically challenging to simulate the exact effects on all available data I had in my excel. To evaluate the general/rough effects of $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$, I will explore them **in the view of the equation of $\dot{\rho}$ and $\dot{\delta}$ in-game** and in turn **evaluate the effect of such on the graphs**, hence provide a more refined hypothesis.
 
-1. **The cost of purchasing $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$ has no effect on the graphs**, as the graphs plot the cumulative $\frac{\rho}{\delta}$, not the $\frac{\rho}{\delta}$ a player have at a specific $t$.
+1. **The cost of purchasing $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$ has no effect on the graphs**, as the graphs plot the cumulative $\rho/\delta$, not the $\rho/\delta$ a player have at a specific $t$.
 
 2. **The effect of $c_1$, $c_2$, and $w_1$ will shift the graphs of cumulative $\rho$ upward and rightward** at a non-linear scale, as $\dot{\rho}$ directly depends on $c_1$, $c_2$, and $w_1$.
 
@@ -243,7 +243,7 @@ The above simulations took on a major assumption of a publication that had **the
 
 Overall, purchasing $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$ have an effect of **shifting graphs upward and slightly rightward**, indicating the **implement of black hole is possible to be pushed back slightly for optimization.**
 
-**The above-mentioned effects were later verified by the sim** (with the most optimal strategy implemented by brute-forcing different $t$ for implementing black hole on a pub), which takes into the account of the effects of variable purchases (i.e., $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$) and usage of level chasing strategy (Using a ratio of approximately 4x in terms of levels for $c_1$ over $c_2$). The duration of a publication, the time of implementing black hole and their relative percentage, $\frac{t_{bh}}{t_{pub}}$ has been calculated and plotted as a graph of relative duration against $\tau$ (Graph 9).
+**The above-mentioned effects were later verified by the sim** (with the most optimal strategy implemented by brute-forcing different $t$ for implementing black hole on a pub), which takes into the account of the effects of variable purchases (i.e., $c_1$, $c_2$, $w_1$, $w_2$, $w_3$, and $b$) and usage of level chasing strategy (Using a ratio of approximately 4x in terms of levels for $c_1$ over $c_2$). The duration of a publication, the time of implementing black hole and their relative percentage, $\frac{t_{bh}}{t_{pub}}$, has been calculated and plotted as a graph of relative duration against $\tau$ (Graph 9).
 
 ![Graph 9: Relative time of implementing black hole plotted against different $\tau$, with orange horizontal line as 60% line and yellow plots as 30 moving average for relative time](/images/rz-black-hole/graph_9.png)
 
@@ -255,7 +255,7 @@ The plot supports the **consistency of implementing black hole at 60% of the pub
 
 Implementing the black hole at the right time is essential for $\rho/\tau$ growth since it fixes $z'$ as well. However, the continuity of the publication duration does not have the same nature of the discreteness of the solution for $z = 0$, which may **lead to suboptimal $z'$ if the hypothesis is strictly followed.**
 
-In response of this, there are also data from [Discord](https://discord.gg/S9UheTC) about $z = 0$ with particularly higher $z'$ as a list. One can consider **selectively setting t with $z = 0$ and high $z'$ as the time of implementing black hole** instead of the theoretical values obtained from the hypothesis. From the graphs above, it can be observed that **selecting a time for implementing black hole that slightly deviates from the hypothesized time minimally affect the cumulative $\frac{\rho}{\delta}$** obtained at the end of the publication.
+In response of this, there are also data from [Discord](https://discord.gg/S9UheTC) about $z = 0$ with particularly higher $z'$ as a list. One can consider **selectively setting t with $z = 0$ and high $z'$ as the time of implementing black hole** instead of the theoretical values obtained from the hypothesis. From the graphs above, it can be observed that **selecting a time for implementing black hole that slightly deviates from the hypothesized time minimally affect the cumulative $\rho/\delta$** obtained at the end of the publication.
 
 #### Proposing a Possible New Idle Route for Completion of RZ CT
 
