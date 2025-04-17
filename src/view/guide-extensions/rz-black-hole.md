@@ -22,7 +22,7 @@ Implementing black hole at the correct time is very essential for progression of
 
 ### Methodology
 
-A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation of $\dot{\rho}$ and $\dot{\delta}$ respectively via. the formula provided in game, i.e.,  $\dot{\rho} = (time\ interval) * \frac{t}{\frac{z}{2^b} + 0.01}$ & $\dot{\delta} = (time interval) * z'^b$. Then, cumulative $\rho/\delta$ up to an arbitrary time, $t$, was manipulated by summing up all $\rho/\dot{\delta}$ up to the time $t$. Finally, by fixing $\dot{\rho}/\dot{\delta}$ after time $t$, which mimicked the effect of implementing black hole, cumulative $\rho/\delta$ was manipulated by summing up all $\rho/\dot{\delta}$ from $t = 0$ until the end of the publication.
+A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation of $\dot{\rho}$ and $\dot{\delta}$ respectively via. the formula provided in game, i.e.,  $\dot{\rho} = (time\ interval) * \frac{t}{\frac{z}{2^b} + 0.01}$ & $\dot{\delta} = (time interval) * z'^b$. Then, cumulative $\rho/\delta$ up to an arbitrary time, $t$, was manipulated by summing up all $\dot{\rho}/\dot{\delta}$ up to the time $t$. Finally, by fixing $\dot{\rho}/\dot{\delta}$ after time $t$, which mimicked the effect of implementing black hole, cumulative $\rho/\delta$ was manipulated by summing up all $\dot{\rho}/\dot{\delta}$ from $t = 0$ until the end of the publication.
 
 Take an example of $t = 900$ simulation, given $\dot{\delta}$ formula in the game, $\delta$ can be manipulated as
 
