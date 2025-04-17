@@ -1131,6 +1131,8 @@ For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd
 
 Once you have all milestones, autobuy all!
 
+Also check out [A Pos­sible Idle RZ The­ory By Time](/guide-extensions/rz-black-hole) for more in-depth look at idle RZ strategies.
+
 ##### Active
 
 For an active buying strategy, buy \\(c_1\\) and \\(w_1\\) and a 4x difference to \\(c_2\\) and \\(w_2\\) respectively. Read the next section for the milestone swapping strategies.
@@ -1475,7 +1477,7 @@ Basel Problem is an idle-friendly CT except during its MS phases.
 
 BaP progress is hard carried by its milestones, which means the best time to publish can vary a lot. For \\(a\\) milestones, it is better to push past them to collect the massive boost it gives with all the \\(q_1\\) and \\(r\\) you stacked waiting for the milestone. On the contrary, for \\(q\\) milestones, it is better to push for them, buy the matching permanent upgrade and publish right away, as you can enjoy the boost right away without waiting for the boost to climb all the way to \\(q_1\\).
 
-To know when to publish, please check [the sim](https://exponential-developers.github.io/sim-3.0/).
+To know when to publish, please check [the sim](https://exponential-developers.github.io/sim-3.0/). Check out the [BaP Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for variable checks mid-publication.
 
 ##### Idle
 
