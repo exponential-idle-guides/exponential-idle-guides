@@ -8,7 +8,6 @@ draft: true
 tags: T9+ Research
 ---
 
-
 ###### Originally From [[LONG POST] A Possible Idle RZ Theory By Time - Evaluating the Effect of Time for Implementing Black Hole on RZ CT Progression](https://redd.it/1juk67i)
 
 ###### Revised From [Evaluating the Effect of Time for Implementing Black Hole on Rho Progression of RZ CT](https://docs.google.com/document/d/1XlRLMZWcGToxlQcoHqaov_ttTC4Yozgn/) and [Evaluating the Effect of Time for Implementing Black Hole on Delta Progression of RZ CT](https://docs.google.com/document/d/1Z1D-LC_lsgN5WBh0V-CX40kjJqY_x5mU/)
