@@ -149,7 +149,7 @@ module.exports = config => {
       .value();
   });
 
-  const tags = ['T9+', 'other', 'rankings', 'seasons'];
+  const tags = ['T9+ Recommendations', 'T9+ Research', 'other', 'rankings', 'seasons'];
   tags.map((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {

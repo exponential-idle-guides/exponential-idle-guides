@@ -2,7 +2,7 @@
 title: "Exponential Idle Hall of Fame"
 description: "Hall of Fame for Exponential Idle Players"
 author: "LE★Baldy"
-contributors: "AfuroZamurai for the F(t) Rankings and the Amazing Community"
+contributors: "AfuroZamurai for the (Original) $F(t)$ Rankings and the Amazing Community"
 draft: false
 tags: rankings
 order: 2

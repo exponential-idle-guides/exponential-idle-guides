@@ -4,7 +4,7 @@ description: "A guide on Stepwise variables."
 author: "Eylanding"
 contributors: "the Amazing Community"
 order: 0
-tags: T9+
+tags: T9+ Recommendations
 ---
 
 ## What are Stepwise variables?
@@ -23,6 +23,7 @@ Which type of variable a given variable is can be mostly determined simply by lo
 However, there indicators are not perfect. $c_1$ in FP grows linearly up to 100, and even though it stays an integer, the linear growth has a low value, growing by 1 per level keeping it small. It is actually a Stepwise variable with an unusually high step length).
 
 For example:
+
 - $c_1 = 2^{52}$ - Direct Multi
 - $q_1 = 1.67e91$ - Probably Stepwise
 - $r_2 = 7.4^{81}$ - Direct Multi

@@ -4,14 +4,14 @@ description: "A guide on what to do after completing theory 9."
 author: "Playspout"
 contributors: "the Amazing Community"
 order: 1
-tags: T9+
+tags: T9+ Recommendations
 ---
 
 ## A controversial theory
 
 After reaching ee20k \\(F(t)\\) and completing Theory 9, you will unlock custom theories. Each custom theory gives up to 150 $\tau$. It usually takes more than 3 months to reach this point. It takes approximately 1 month of active play for each custom theory to reach 100 $\tau$. Therefore it is not feasible for us to reach e150 $\tau$ on all custom theories.
 
-After Theory 9 completion, you might notice that the $\tau$/hour of a lot of theories are very quick. In fact, because of 3R9, this $\tau$/hour is one of the highest in the whole game. Because of this, it would be helpful to have something to reliably utilise this $\tau$/hour peaks.
+After Theory 9 completion, you might notice that the $\tau$/hour of a lot of theories are very quick. In fact, because of 3R9, this $\tau$/hour is one of the highest in the whole game. Because of this, it would be helpful to have something to reliably utilize this $\tau$/hour peaks.
 
 There exists a custom theory that can automatically buy variables according to pre-programmed rules. It can also automatically publish the theory at close to optimal points. Furthermore, it can switch between different theories depending on the extrapolated $\tau$/hour of each one. This custom theory is quite controversial amongst top players, however it is valid to use. The custom theory, made by rus, is called Theory Automator (TA) and it can be downloaded [here](https://raw.githubusercontent.com/skyllic/Custom-Theories/main/Theory%20Automator.js).
 
@@ -19,7 +19,7 @@ An alternative overpush version of the same theory can be downloaded [here](http
 
 ## 2 TA versions? Which one should I choose?
 
-The overpush version is for LONG term maximisation of \\(f(t)\\) and $\tau$. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/guide-extensions/distribution-overpushing).
+The overpush version is for LONG term maximization of \\(f(t)\\) and $\tau$. It is better if you wish to play the game for at least 1 year. It is also better if you wish to climb the leaderboards LONG term. If you want more instant gratification, the 'standard' TA is better. It is also faster to ee50k \\(f(t)\\). For a more detailed explanation on overpushing and cashing in, please see my other blog post on [overpushing](/guide-extensions/distribution-overpushing).
 
 ## How useful is TA for each theory?
 
@@ -29,7 +29,7 @@ Therefore, the most useful theories for TA are T1, 3, 5, 7, 8. TA in particular 
 
 ## How long to use Theory Automator (TA)
 
-Here we assume that your goal is to maximise the \\(f(t)\\) gain. There are many factors to consider; the main one being how often do you check the game. The more often you check the game, the earlier you should stop using TA. We will go through a couple of examples and give generic advice:
+Here we assume that your goal is to maximize the \\(f(t)\\) gain. There are many factors to consider; the main one being how often do you check the game. The more often you check the game, the earlier you should stop using TA. We will go through a couple of examples and give generic advice:
 
 ### Super Idle Player (once per week)
 

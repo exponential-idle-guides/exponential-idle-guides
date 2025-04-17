@@ -94,7 +94,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 #### Theory 5 Overview
 
-The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy. Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behaviour of c1 and c2 variables in this theory, as the behaviours are quite unique.
+The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy. Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behavior of c1 and c2 variables in this theory, as the behaviors are quite unique.
 
 <br>
 
@@ -110,7 +110,7 @@ The first line states that the rate of change of rho is the product of some \\(q
 
 <br>
 
-The second line defines this theory. It describes the behaviour of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once.
+The second line defines this theory. It describes the behavior of a typical logistic function. A logistic function typically has slow growth at the beginning, then fast growth in the middle, then it flattens out at the end. Here we have \\(c_1\\), which speeds up the rate at which we reach the maximum value of \\(q\\). Note it DOES NOT increase the actual maximum value of \\(q\\) itself. We also have \\(c_2\\). This increases the maximum value of \\(q\\). However, it HALVES the speed at which this maximum value is reached. Therefore we must be careful to not buy too many at once.
 
 <br>
 
@@ -192,7 +192,7 @@ You want to buy \\(c_2\\) until the value of \\(q\\) increases slowly. The patte
 
 <br>
 
-If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilise and then continue buying \\(c_2\\).
+If you buy a \\(c_2\\) and the value of \\(q\\) is increasing even slower than before, this means you bought too many levels of \\(c_2\\). Wait for \\(q\\) to stabilize and then continue buying \\(c_2\\).
 
 <br>
 
@@ -228,7 +228,7 @@ For each publication: autobuy \\(c_3\\) and \\(q_2\\).
 
 ##### Active
 
-Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimised strategies, please see [List of theory strategies](/guides/theory-strategies).
+Here's a simple yet effective active strategy that can be used right until endgame. If you want more optimized strategies, please see [List of theory strategies](/guides/theory-strategies).
 
 <br>
 
@@ -307,7 +307,7 @@ be equal to \\(20\\). But, at this point, the currency should be \\(0\\), so \\(
 
 #### T6 strategy
 
-The optimal multipiler varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
+The optimal multiplier varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
 If you want an accurate multiplier, check with [the sim](https://exponential-developers.github.io/sim-3.0/).
 
 <table class="spqcey">
@@ -674,7 +674,7 @@ the rest after. This continues to max at 2/3/3/3.
          <td>0.002</td>
       </tr>
       <tr>
-         <td class="leftHeader">Rossler</td>
+         <td class="leftHeader">Rössler</td>
          <td>(-6, 15, 0)</td>
          <td>0.00014</td>
       </tr>
