@@ -2,13 +2,10 @@ $table-border: 5px solid black;
 $table-border-thin: 3px solid black;
 $table-padding: 0.5em 0.4em 0.5em 0.4em;
 
-.table-wrapper {
-	max-width: 100%;
-	overflow-x: auto;
-	overflow-y: clip;
-}
-
 table {
+	max-width: 100% !important;
+	overflow-x: auto !important;
+	overflow-y: clip !important;
 	margin: auto;
 	margin-top: 1em;
 	padding-bottom: 1em;
@@ -210,49 +207,6 @@ sub {
 	}
 }
 
-// breakdown tables
-%breakdown_headers {
-  color: var(--palette-stroke-table-headers);
-  background-color: var(--palette-fill-table-headers-dark);
-}
-.breakdown {
-	overflow-wrap: always;
-	word-break: keep-all;
-	text-align: center;
-	.leftHeader, .leftlastHeader {
-		@extend %breakdown_headers;
-		font-weight: bold;
-		border-right: $table-border;
-		color: black;
-	}
-	.categoryHeader {
-		@extend %breakdown_headers;
-		font-weight: bold;
-		border-top: $table-border-thin;
-		border-bottom: $table-border-thin;
-		color: black;
-		background-color: #6a6868;
-	}
-	.rightHeader {
-		@extend %breakdown_headers;
-		border-left: $table-border-thin;
-	}
-	.leftMainHeader, .leftlastMainHeader {
-		border-right: $table-border;
-	}
-	.rightMainHeader {
-		border-left: $table-border-thin;
-	}
-	td {
-		padding: $table-padding;
-	}
-	th {
-		color: black;
-		background-color:var(--palette-fill-table-headers-light);
-		border-bottom: $table-border;
-		padding: $table-padding;
-	}
-}
 
 // breakdown tables
 %breakdown_headers {

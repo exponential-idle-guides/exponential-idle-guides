@@ -14,44 +14,6 @@ while playing this section of the game.
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
-
-breakdown-simplified tables
-
-Caption: Caption;Class: breakdown-simplified;
-
-
-| Syntax      | Description | INVIS |  | Happy |
-| ----------- | ----------- | ----- | - | -----|
-| Header      | Title       | invis | col1 | col2 |
-| Paragraph   | Text        | invis | col1 | col2 |
-
-Caption: ungusbungus;Class: breakdown-simplified;
-
-| Syntax      | Description | INVIS |  |  |  |  | Happy |
-| ----------- | ----------- | ----- | - | - | - | - | -----|
-| Header      | Title       | invis | MATHJAX TEST: | $a_5$ |
-| Paragraph   | Text        | INVIS |   |  |  | col1 | col2 |
-
-
-
-newwords tables
-
-Caption: Caption2;Class: newwords;
-
-
-| Syntax      | Description | INVIS |  | Happy |
-| ----------- | ----------- | ----- | - | -----|
-| Header      | Title       | invis | col1 | col2 |
-| Paragraph   | Text        | invis | col1 | col2 |
-
-Caption: ungusbungus2;Class: newwords;
-
-| Syntax      | Description | INVIS |  |  |  |  | Happy |
-| ----------- | ----------- | ----- | - | - | - | - | -----|
-| Header      | Title       | invis | col1 | col2 |
-| Paragraph   | Text        | INVIS |   |  |  | col1 | col2 |
-
-
 ### Variables and Upgrades
 
 * Variables are the main purchases in the game. They will be the most important to buy,
@@ -66,32 +28,21 @@ Caption: ungusbungus2;Class: newwords;
 
 ### Variable Names
 
-Caption: Some caption idfk;
 ID: var-names-table;
 Class: breakdown-simplified;
-last_row: fALsE;
+last_row: false;
 
-Caption: Some caption idfk;
-ID: var-names-table;
-Class: breakdown-simplified;
-last_row: fALsE;
-
-| INVIS | Name | INVIS | INVIS | Name |
-| ----- | ---- | ----- | ----- | ---- |
-| [type="th";]x | x | INVIS | [type="th";]$\nu$ | nu |
-| [type="th";]y | y | INVIS | [type="th";]$\varepsilon$ | epsilon |
-| [type="th";]z | z | [type="th";]INVIS | [type="th";]$\zeta$ | zeta |
-| [type="th";]s | s | INVIS | [type="th";]$\eta$ | eta |
-| [type="th";]u | u | INVIS | [type="th";]$\theta$ | theta |
-| [type="th";]v | v | INVIS | [type="th";]$\iota$ | iota |
-| [type="th";]w | w | INVIS | [type="th";]$\xi$ | xi |
-| | | | | [class="category";type="td";style="color:red;";]Example Category |
-| [type="th";]$\alpha$ | alpha | INVIS | [type="th";]$\mu$ | mu |
-| [type="th";]$\beta$ | beta | INVIS | [type="th";]$\psi$ | psi |
-| [type="th";]$\gamma$ | gamma | INVIS | [type="th";]$\tau$ | tau |
-| [type="th";]$\delta$ | delta | INVIS | [type="th";]$\phi$ | phi |
-| [type="th";]$\kappa$ | kappa | INVIS | [type="th";]$\sigma$ | sigma |
-| [type="th";]$\lambda$ | lambda | INVIS | [type="th";]$\rho$ | rho |
+| INVIS | Name | INVIS | Name | INVIS | Name |
+| ----- | ---- | ----- | ---- | ----- | ---- |
+| [type="th";]x | x | [type="th";]$\gamma$ | gamma | [type="th";]$\iota$ | iota |
+| [type="th";]y | y | [type="th";]$\delta$ | delta | [type="th";]$\xi$ | xi |
+| [type="th";]z | z | [type="th";]$\kappa$ | kappa | [type="th";]$\mu$ | mu |
+| [type="th";]s | s | [type="th";]$\lambda$ | lambda | [type="th";]$\psi$ | psi |
+| [type="th";]u | u | [type="th";]$\nu$ | nu | [type="th";]$\tau$ | tau |
+| [type="th";]v | v | [type="th";]$\varepsilon$ | epsilon | [type="th";]$\phi$ | phi |
+| [type="th";]w | w | [type="th";]$\zeta$ | zeta | [type="th";]$\sigma$ | sigma |
+| [type="th";]$\alpha$ | alpha | [type="th";]$\eta$ | eta | [type="th";]$\rho$ | rho |
+| [type="th";]$\beta$ | beta | [type="th";]$\theta$ | theta | INVIS | INVIS |
 
 ### What does ee mean?
 
