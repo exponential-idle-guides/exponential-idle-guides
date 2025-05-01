@@ -1087,12 +1087,14 @@ $\delta$ grows faster as $|\zeta '(\textstyle\frac{1}{2}+it)|$ is higher.
 #### RZ Variable Description
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
-<table class="T2">
+<table class="breakdown-simplified">
 <caption>Brief summary of variable strengths of RZ.</caption>
-   <thead><tr>
-   <th class="invisible"></th>
-   <th colspan="2" style="text-align:center">Brief Description</th>
-   </tr></thead>
+   <thead>
+      <tr>
+         <th class="invisible"></th>
+         <th colspan="2" style="text-align:center">Brief Description</th>
+      </tr>
+   </thead>
    <tbody>
       <tr>
          <th>c<sub><sub><small>1</small></sub></sub></th>

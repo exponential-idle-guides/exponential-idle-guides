@@ -14,6 +14,46 @@ while playing this section of the game.
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.
 
+<span class="breakdown-simplified">
+
+Caption: Caption;
+
+breakdown-simplified tables
+
+| Syntax      | Description | INVIS |  | Happy |
+| ----------- | ----------- | ----- | - | -----|
+| Header      | Title       | invis | col1 | col2 |
+| Paragraph   | Text        | invis | col1 | col2 |
+
+Caption: ungusbungus;
+
+| Syntax      | Description | INVIS |  |  |  |  | Happy |
+| ----------- | ----------- | ----- | - | - | - | - | -----|
+| Header      | Title       | invis | MATHJAX TEST: | $a_5$ |
+| Paragraph   | Text        | INVIS |   |  |  | col1 | col2 |
+
+</span>
+
+<span class="newwords">
+
+Caption: Caption2;
+
+newwords tables
+
+| Syntax      | Description | INVIS |  | Happy |
+| ----------- | ----------- | ----- | - | -----|
+| Header      | Title       | invis | col1 | col2 |
+| Paragraph   | Text        | invis | col1 | col2 |
+
+Caption: ungusbungus2;
+
+| Syntax      | Description | INVIS |  |  |  |  | Happy |
+| ----------- | ----------- | ----- | - | - | - | - | -----|
+| Header      | Title       | invis | col1 | col2 |
+| Paragraph   | Text        | INVIS |   |  |  | col1 | col2 |
+
+</span>
+
 ### Variables and Upgrades
 
 * Variables are the main purchases in the game. They will be the most important to buy,
@@ -28,110 +68,25 @@ further ahead than you are already.
 
 ### Variable Names
 
-<table class="newwords">
-  <thead>
-    <tr>
-        <th class="invisible"></th>
-        <th>Name</th>
-        <th class="invisible"></th>
-        <th class="invisible"></th>
-        <th>Name</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-        <td class="leftHeader">x</td>
-        <td>x</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ν</td>
-        <td>nu</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">y</td>
-        <td>y</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ε</td>
-        <td>epsilon</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">z</td>
-        <td>z</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ζ</td>
-        <td>zeta</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">s</td>
-        <td>s</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">η</td>
-        <td>eta</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">u</td>
-        <td>u</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">θ</td>
-        <td>theta</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">v</td>
-        <td>v</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ι</td>
-        <td>iota</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">w</td>
-        <td>w</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ξ</td>
-        <td>xi</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">α</td>
-        <td>alpha</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">μ</td>
-        <td>mu</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">β</td>
-        <td>beta</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ψ</td>
-        <td>psi</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">γ</td>
-        <td>gamma</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">τ</td>
-        <td>tau</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">δ</td>
-        <td>delta</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">φ</td>
-        <td>phi</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">κ</td>
-        <td>kappa</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">σ</td>
-        <td>sigma</td>
-    </tr>
-    <tr>
-        <td class="leftHeader">λ</td>
-        <td>lambda</td>
-        <th class="invisible"></th>
-        <td class="leftHeader">ρ</td>
-        <td>rho</td>
-    </tr>
-  </tbody>
-</table>
+<span class="breakdown-simplified">
+
+| INVIS | Name | INVIS | INVIS | Name |
+| ----- | ---- | ----- | ----- | ---- |
+| [type="th";]x | x | INVIS | [type="th";]$\nu$ | nu |
+| [type="th";]y | y | INVIS | [type="th";]$\varepsilon$ | epsilon |
+| [type="th";]z | z | INVIS | [type="th";]$\zeta$ | zeta |
+| [type="th";]s | s | INVIS | [type="th";]$\eta$ | eta |
+| [type="th";]u | u | INVIS | [type="th";]$\theta$ | theta |
+| [type="th";]v | v | INVIS | [type="th";]$\iota$ | iota |
+| [type="th";]w | w | INVIS | [type="th";]$\xi$ | xi |
+| [type="th";]$\alpha$ | alpha | INVIS | [type="th";]$\mu$ | mu |
+| [type="th";]$\beta$ | beta | INVIS | [type="th";]$\psi$ | psi |
+| [type="th";]$\gamma$ | gamma | INVIS | [type="th";]$\tau$ | tau |
+| [type="th";]$\delta$ | delta | INVIS | [type="th";]$\phi$ | phi |
+| [type="th";]$\kappa$ | kappa | INVIS | [type="th";]$\sigma$ | sigma |
+| [type="th";]$\lambda$ | lambda | INVIS | [type="th";]$\rho$ | rho |
+
+</span>
 
 ### What does ee mean?
 
