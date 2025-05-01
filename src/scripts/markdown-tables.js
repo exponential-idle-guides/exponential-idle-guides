@@ -14,79 +14,90 @@ const table_classes = ["variable_summary", "newwords", "T2", "PlayStrats", "spqc
     }
 })(jQuery);
 
-table_classes.reduce((a,c) => [...a, ...$("span." + c).has(".table-wrapper")], []).forEach((s) => {
-  s = $(s);
-  const table_wrapper = s.find("div.table-wrapper");
-  table_wrapper.each(function() {
-  	const t = $(this);
-    const i = table_wrapper.index(this);
-    const table = $(t.find("table")[0]);
-    // caption support
-    const basis = (i == 0 ?
-          	t
-            	.prevUntil(s.children().first())
-              .add(s.children().first())
-            : t.prevUntil(table_wrapper[i-1])
-         	);
-    const caption = /^Caption:\s?(?<caption>[^;]*);$/g
-      	.exec(
-        	basis.html().replaceAll(String.fromCharCode(0x00ad),"")
-         );
-    if (caption != null) {
-      table[0].createCaption().textContent = caption.groups.caption;
-      basis.each(function() {
-        if(/^Caption:\s?(?<caption>[^;]*);$/g.test($(this).html().replaceAll(String.fromCharCode(0x00ad),""))) {$(this).remove();}
-      });
-    }
-    // colspan support
-    while (/<th(?: colspan="(?<first>\d+)")?><\/th>[\n\t\s]*<th(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/th>/g.test(table.html())) {
-      table.html().matchAll(/<th(?: colspan="(?<first>\d+)")?><\/th>[\n\t\s]*<th(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/th>/g)
-      	.forEach((s) => {
-        	table.html(table.html()
-          	.replace(s[0],
-            	"<th colspan=\"" 
-          		+ [s[1],s[2]].reduce((a,b) => a + ((b == undefined || b == NaN || Number(b) < 1) ? 1: Number(b)),0)
-            	+ "\">" + s[3] + "</th>"
-            )
-          );
-      	}
-      );
-    }
-    while (/<td(?: colspan="(?<first>\d+)")?><\/td>[\n\t\s]*<td(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/td>/g.test(table.html())) {
-      table.html().matchAll(/<td(?: colspan="(?<first>\d+)")?><\/td>[\n\t\s]*<td(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/td>/g)
-      	.forEach((s) => {
-        	table.html(table.html()
-          	.replace(s[0],
-            	"<td colspan=\"" 
-          		+ [s[1],s[2]].reduce((a,b) => a + ((b == undefined || b == NaN || Number(b) < 1) ? 1: Number(b)),0)
-            	+ "\">" + s[3] + "</td>"
-            )
-          );
-      	}
-      );
-    }
-    // invisible support
-    table.html(table.html()
-    	.replaceAll(/<td>\u00AD*I\u00AD*N\u00AD*V\u00AD*I\u00AD*S\u00AD*<\/td>/g, "<td class=\"invisible\"></td>")
-      .replaceAll(/<th>\u00AD*I\u00AD*N\u00AD*V\u00AD*I\u00AD*S\u00AD*<\/th>/g, "<th class=\"invisible\"></th>"));
-    // individual element class support
-    ["td", "th"].forEach((ele) => {table.find(ele).each(function() {
-      // /^\[(?:style\s?=\s?"(?<style>(?:[a-zA-z\-]*\s?\]
-      var t = $(this);
-      let inner = "";
-      // class support
-      const class_res = /^\[[a-zA-Z\-\s=;"“”]*(?:class\s*=\s*["|“](?<classes>[a-zA-Z\-\s]*)["|”])\s*;[a-zA-Z\-\s=;"“”]*\](?<inner>.*)/g.exec(t.html().replaceAll(String.fromCharCode(0x00ad),""));
-      if (class_res != null) {
-        inner = class_res.groups.inner;
-        t.addClass(class_res.groups.classes);
+const colspan_num = (s) => (s == undefined || s == NaN || Number(s) < 1) ? 1: Number(s);
+const lowercase = (s) => s == undefined ? undefined: s.toLowerCase();
+const soft_hyphen = (s) => s.replaceAll(String.fromCharCode(0x00ad),"");
+
+const table_wrapper = $("div.table-wrapper");
+table_wrapper.each(function() {
+  const t = $(this);
+  const i = table_wrapper.index(this);
+  const table = $(t.find("table")[0]);
+  // caption, table id, table classes, and last_row
+  const prev = t.prev();
+  if (prev.is("p")) {
+    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>[^;]*)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?!\-)|[a-zA-Z\d]+(?:\-[a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?!\-)|[a-zA-Z\d]+(?:\-[a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?))\s*$/msg
+        .exec(soft_hyphen(prev.html()));
+    if (res != null){
+      const caption = res.groups.caption;
+      const id = res.groups.id;
+      const classes = res.groups.classes;
+      const last_row = res.groups.last_row;
+      if (caption != undefined) {table[0].createCaption().textContent = caption;}
+      if (id != undefined) {table.attr("id", id);}
+      if (classes != undefined) {table.addClass(classes);}
+      if (last_row == undefined || last_row.toLowerCase() == "true") {
+        table.find("tbody").find("tr:last-child").addClass("last_row");
       }
-      if(inner != "") {t.html(inner);}
-      // type change support
-      const type_res = /^\[[a-zA-Z\-\s=;"“”]*(?:type\s*=\s*["|“](?<type>[a-z]*)["|”])\s*;[a-zA-Z\-\s=;"“”]*\](?<inner>.*)/g.exec(t.html().replaceAll(String.fromCharCode(0x00ad),""));
-      if (type_res != null) {
-        t.html(type_res.groups.inner);
-        t = t.changeElementType(type_res.groups.type);
+      $(this).prev().remove();
+    }
+  }
+  // colspan
+  while (/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/\1>/g.test(table.html())) {
+    table.html().matchAll(/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>[^<]*)<\/\1>/g)
+      .forEach((s) => {
+        table.html(table.html()
+          .replace(s[0],
+            "<" + s[1] + " colspan=\"" 
+            + (colspan_num(s[2]) + colspan_num(s[3]))
+            + "\">" + s[4]
+            + "</" + s[1] + ">"
+          )
+        );
       }
-    })});
-  });
+    );
+  }
+  
+  // individual element classes, styles, types
+  // Also includes INVIS & ARROW shorthand support when alongside modifications
+  ["td", "th"].forEach((ele) => {table.find(ele).each(function() {
+    var t = $(this);
+    const t_html = soft_hyphen(t.html());
+
+    function process_inner(s) {
+      if (s == "INVIS") {
+        t.addClass("invisible");
+        t.html("");
+        return true;
+      } else if (s == "ARROW") {
+        t.addClass("arrow");
+        t.html("→");
+        return true;
+      }
+      return false;
+    }
+    // INVIS and ARROW shorthand
+    const shorthand_res = /^(?<inner>INVIS|ARROW)$/g.exec(t_html);
+    process_inner(shorthand_res == null ? undefined: shorthand_res.groups.inner);
+    
+    const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["|“](?<classes>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+))*)["|”];)?)(?=(?:.*?type\s*=\s*["|“](?<type>[a-z]*)["|”];)?)(?=(?:.*?style\s*=\s*["|“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["|”];)?)(?=.*?](?<inner>(?:.*$)?))/gs
+      .exec(t_html);
+    if (res == null) {return;}
+    const classes = res.groups.classes;
+    const type = res.groups.type;
+    const styles = res.groups.styles;
+    const inner = res.groups.inner;
+    // INVIS and ARROW shorthand w/ modifications present
+    const inner_bool = process_inner(inner);
+    // if no modifications within the [], then let it be
+    if (classes == undefined && type == undefined && styles == undefined) {return;}
+    // remove styling after grabbing
+    if(!inner_bool) {t.html(t.html().replace(/\[.*\](?=.*)/g, ""));}
+    // add classes, styling, and change types (if applicable)
+    if (classes != undefined) {t.addClass(classes);}
+    if (styles != undefined) {
+      styles.split(";").forEach((s) => {if (s.length) {t.attr("style", s + " !important;");}});
+    }
+    if (type != undefined) {t.changeElementType(type);}
+  })});
 });

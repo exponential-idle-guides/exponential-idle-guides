@@ -52,7 +52,7 @@ caption {
 	padding: 0em 0em 0em 0em;
 }
 .last_row {
-	border-bottom: $table-border;
+	border-bottom: $table-border !important;
 }
 sub {
 	vertical-align: sub;
@@ -84,7 +84,7 @@ sub {
 }
 
 //T2
-%T2-headers {
+%T2_headers {
 	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers-light);
 }
@@ -96,7 +96,7 @@ sub {
 	border-right: $table-border;
 	}
 	th, .leftHeader {
-		@extend %T2-headers;
+		@extend %T2_headers;
 		border-bottom: $table-border;
 	}
 	th, td{
@@ -107,7 +107,7 @@ sub {
 
 
 //Theory Sim Playspout
-%PlayStrat-headers {
+%PlayStrat_headers {
 	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers-dark);
 }
@@ -115,16 +115,16 @@ sub {
 	text-align: left;
 
 	.leftHeader {
-		@extend %PlayStrat-headers;
+		@extend %PlayStrat_headers;
 		font-weight: bold;
 		border-right: $table-border;
 	}
 	.topHeader {
-		@extend %PlayStrat-headers;
+		@extend %PlayStrat_headers;
 		border-bottom: none;
 	}
 	.leftlastHeader {
-		@extend %PlayStrat-headers;
+		@extend %PlayStrat_headers;
 		font-weight: bold;
 		border-right: $table-border;
 		border-bottom: $table-border;
@@ -160,23 +160,23 @@ sub {
 }
 
 // spqcey's Tables
-%spqcey-headers {
+%spqcey_headers {
 	color: var(--palette-stroke-table-headers);
 	background-color:var(--palette-fill-table-headers-dark);
 }
 .spqcey {
 	text-align: center;
 	.leftHeader, .leftlastHeader {
-		@extend %spqcey-headers;
+		@extend %spqcey_headers;
 		font-weight: bold;
 		border-right: $table-border;
 	}
 	.topHeader {
-		@extend %spqcey-headers;
+		@extend %spqcey_headers;
 		border-bottom: none;
 	}
 	.rightHeader {
-		@extend %spqcey-headers;
+		@extend %spqcey_headers;
 	}
 	.rightHeader, .rightMainHeader {
 		border-left: $table-border-thin;
@@ -211,7 +211,7 @@ sub {
 }
 
 // breakdown tables
-%breakdown-headers {
+%breakdown_headers {
   color: var(--palette-stroke-table-headers);
   background-color: var(--palette-fill-table-headers-dark);
 }
@@ -220,13 +220,13 @@ sub {
 	word-break: keep-all;
 	text-align: center;
 	.leftHeader, .leftlastHeader {
-		@extend %breakdown-headers;
+		@extend %breakdown_headers;
 		font-weight: bold;
 		border-right: $table-border;
 		color: black;
 	}
 	.categoryHeader {
-		@extend %breakdown-headers;
+		@extend %breakdown_headers;
 		font-weight: bold;
 		border-top: $table-border-thin;
 		border-bottom: $table-border-thin;
@@ -234,7 +234,7 @@ sub {
 		background-color: #6a6868;
 	}
 	.rightHeader {
-		@extend %breakdown-headers;
+		@extend %breakdown_headers;
 		border-left: $table-border-thin;
 	}
 	.leftMainHeader, .leftlastMainHeader {
@@ -255,7 +255,7 @@ sub {
 }
 
 // breakdown tables
-%breakdown-headers {
+%breakdown_headers {
   color: var(--palette-stroke-table-headers) !important;
   background-color: var(--palette-fill-table-headers-dark) !important;
 }
@@ -269,11 +269,12 @@ sub {
 		font-weight: bold;
 		border-top: $table-border-thin;
 		border-bottom: $table-border-thin;
+		border-right: none !important;
 	}
 	td {
 		padding: $table-padding;
 		&:first-child {
-			@extend %breakdown-headers;
+			@extend %breakdown_headers;
 			font-weight: bold;
 			border-right: $table-border;
 		}
