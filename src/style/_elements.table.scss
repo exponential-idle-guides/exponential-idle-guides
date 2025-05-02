@@ -1,6 +1,7 @@
 $table-border: 5px solid black;
 $table-border-thin: 3px solid black;
 $table-padding: 0.5em 0.4em 0.5em 0.4em;
+$table-padding-narrow: 0.2em 0.1em 0.2em 0.1em;
 
 table {
 	max-width: 100% !important;
@@ -12,10 +13,10 @@ table {
 
 	// CT guide tables
 	.variable_summary {
-		border: 5px solid blue;
-		letter-spacing: 2px;
-		font-family: sans-serif;
-		font-size: .8rem;
+		border: 5px solid blue !important;
+		letter-spacing: 2px !important;
+		font-family: sans-serif !important;
+		font-size: .8rem !important;
 	}
 }
 thead {
@@ -53,6 +54,10 @@ caption {
 }
 sub {
 	vertical-align: sub;
+}
+tfoot {
+	font-size: 0.72rem;
+	font-style: italic;
 }
 
 //New Table Look
@@ -213,8 +218,10 @@ sub {
 
 // breakdown tables
 %breakdown_headers {
-  color: var(--palette-stroke-table-headers) !important;
+  color: var(--palette-stroke-table-headers);
   background-color: var(--palette-fill-table-headers-dark);
+	font-weight: bold;
+	border-right: $table-border;
 }
 .breakdown {
 	overflow-wrap: always;
@@ -227,13 +234,18 @@ sub {
 		border-bottom: $table-border-thin;
 		border-right: none !important;
 	}
+	.bheader {
+		@extend %breakdown_headers;
+		border-left: $table-border-thin;
+		&:first-child {
+			border-left: none;
+		}
+	}
 	td {
 		padding: $table-padding;
 		text-align: center;
 		&:first-child {
 			@extend %breakdown_headers;
-			font-weight: bold;
-			border-right: $table-border;
 		}
 	}
 	th {
@@ -250,5 +262,11 @@ sub {
 		border-right: $table-border;
 		border-bottom: none;
 		border-left: $table-border-thin;
+	}
+	tfoot td {
+		border: none !important;
+		background-color:transparent !important;
+		text-align: left;
+		font-weight: normal !important;
 	}
 }

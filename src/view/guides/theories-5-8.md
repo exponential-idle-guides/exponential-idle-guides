@@ -242,7 +242,8 @@ last_row: false;
 | -- | ----- | ---------- | ----- | ----- | ----- | ----- |
 | OR | INVIS | INVIS      | INVIS | INVIS | INVIS | INVIS |
 | 2  | ARROW | 1          | ARROW | 3     | INVIS | INVIS |
-| 3  | ARROW | 4 (2,3→4)  | ARROW | 3     | ARROW | 2     |
+| 3  | ARROW | 4*  | ARROW | 3     | ARROW | 2     |
+| | | | | | | [FOOT;]* Swap 1/1/1/0 → 1/0/0/3 |
 
 ### Theory 7 (50σ / 11k)
 
@@ -281,7 +282,7 @@ last_row: false;
 |           |       |           |       |           |
 | --------- | ----- | --------- | ----- | --------- |
 | 0/0/0     | ARROW | 0/1/0     | ARROW | 0/1/1     |
-| 0/1/1     | ARROW | 0/0/2     | ARROW | 0/0/3     |
+| 0/1/1     | ARROW | 0/0/2*    | ARROW | 0/0/3     |
 | 0/0/3     | ARROW | 0/1/3     | ARROW | 1/1/1/1/1 |
 | 1/1/1/1/1 | ARROW | 1/1/1/1/3 | INVIS | INVIS     |
 
@@ -293,171 +294,27 @@ last_row: false;
 | OR        | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
 | 2         | ARROW | 3*    | ARROW | 3     | ARROW | 2     |
 | 2         | ARROW | 1**   | ARROW | 3 x2  | INVIS | INVIS |
-| | | | | | | [FOOTER]*Swap 2 → 3 at ~$e67$ |
-| | | | | | | [FOOTER]**Swap 5 → 3 and 4 |
-
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td>0/0/0</td>
-         <td class="arrow">→</td>
-         <td>0/1/0</td>
-         <td class="arrow">→</td>
-         <td>0/1/1</td>
-      </tr>
-      <tr>
-         <td>0/1/1</td>
-         <td class="arrow">→</td>
-         <td>0/0/2</td>
-         <td class="arrow">→</td>
-         <td>0/0/3</td>
-      </tr>
-      <tr>
-         <td>0/0/3</td>
-         <td class="arrow">→</td>
-         <td>0/1/3</td>
-         <td class="arrow">→</td>
-         <td>1/1/1/1/1</td>
-      </tr>
-      <tr>
-         <td>1/1/1/1/1</td>
-         <td class="arrow">→</td>
-         <td>1/1/1/1/2</td>
-         <td class="arrow">→</td>
-         <td>1/1/1/1/3</td>
-      </tr>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible"><strong>Or</strong></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>3</td>
-         <td class="arrow">→</td>
-         <td>3</td>
-         <td class="arrow">→</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>2</td>
-         <td class="arrow">→</td>
-         <td>1 {5→3&4}</td>
-         <td class="arrow">→</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td>3</td>
-         <td class="arrow">→</td>
-         <td>2</td>
-      </tr>
-   </tbody>
-</table>
+| | | | | | | [FOOT;]* Swap 0/1/1 → 0/0/2 at ~$e67$ |
+| | | | | | | [FOOT;]** Swap 0/1/3 → 1/1/1/1/1 |
 
 ### Theory 8 skipping
 
-Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from 0-e60 (don't worry, you will still buy it, just at 14k, not 12k). T8 is very slow until you get to ~$e60$ (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying t8 for the achievement, then selling it right away and using those students for $\varphi$. You will need
-~$e1350\ \tau$ in order to get R9 ($ee14k$) without T8, which will help you get
-through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that**
-The current recommendation for your $\tau$ distribution for T8 skip is as follows:
+Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from $0-e60$ (don't worry, you will still buy it, just at $ee14k$, not $ee12k$). T8 is very slow until you get to ~$e60$ (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying T8 for the achievement, then selling it right away to use those students for $\varphi$. You will need ~$e1350\ \tau$ in order to get R9 ($ee14k$) without T8, which will help you get through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that** The current recommendation for your $\tau$ distribution for T8 skip is as follows:
 
-#### Idle
+Class: breakdown;
+Caption: T8 skip $\tau$ recommendations;
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Tau</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Tau</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>e200 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
-         <td>e240 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>e295 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
-         <td>e172 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>e133 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
-         <td>e145 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>e165 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
-         <td>Skip</td>
-      </tr>
-   </tbody>
-</table>
-
-#### Active
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Tau</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Tau</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>e200 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
-         <td>e265 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>e290 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
-         <td>e165 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>e130 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
-         <td>e145 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>e155 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
-         <td>Skip</td>
-      </tr>
-   </tbody>
-</table>
-
-If your numbers are different, that is fine. You just need to reach 1e1350
-$\Pi\tau$ to get to R9 at 14k.
+| [class="category";]INVIS | [class="category";style="border-left:$table-border-thin;";]Idle | [class="category";style="border-left:$table-border-thin;";]Active |
+| ----- | ------- | --------|
+| [style="border-right:$table-border-thin;";]T1 | $e200\tau$                      | $e200\tau$                       |
+| [style="border-right:$table-border-thin;";]T2 | $e295\tau$                      | $e290\tau$                       |
+| [style="border-right:$table-border-thin;";]T3 | $e133\tau$                      | $e130\tau$                       |
+| [style="border-right:$table-border-thin;";]T4 | $e165\tau$                      | $e155\tau$                       |
+| [style="border-right:$table-border-thin;";]T5 | $e240\tau$                      | $e265\tau$                       |
+| [style="border-right:$table-border-thin;";]T6 | $e172\tau$                      | $e165\tau$                       |
+| [style="border-right:$table-border-thin;";]T7 | $e145\tau$                      | $e145\tau$                       |
+| [style="border-right:$table-border-thin;";]T8 | [style="color:var(--palette-stroke-warning);";]Skip | [style="color:var(--palette-stroke-warning);";]Skip  |
+| | | [FOOT;style="width:20vw;";]If your numbers are different, that is fine. You just need to reach $1e1350\ \Pi\tau$ to get to R9 at $ee14k$. |
 
 ### Student routing with R9
 
@@ -508,194 +365,53 @@ Once you get to 0/0/0/2, prioritize $c_2$ and $c_5$ then $c_1$ then the
 rest. Once at 2/0/3/0, you will prioritize $c_2$ and $c_4$ then $c_1$ then
 the rest after. This continues to max at 2/3/3/3.
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Starting Positions</th>
-         <th>Time Step</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">Lorenz</td>
-         <td>(-6, -8, 26)</td>
-         <td>0.02</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Chen</td>
-         <td>(-10.6, -4.4, 28.6)</td>
-         <td>0.002</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">Rössler</td>
-         <td>(-6, 15, 0)</td>
-         <td>0.00014</td>
-      </tr>
-   </tbody>
-</table>
+Class: breakdown;
+Caption: T8 Attractor Information;
+
+| INVIS   | Starting Positions   | Time Step |
+| ------- | -------------------- | --------- |
+| Lorenz  | (-6, -8, 26)         | 0.02      |
+| Chen    | (-10.6, -4.4, -28.6) | 0.002     |
+| Rössler | (-6, 15, 0)          | 0.00014   |
 
 #### T8 milestone route
 
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td>0/0/0/0</td>
-         <td class="arrow">→</td>
-         <td>1/0/0/0</td>
-         <td class="arrow">→</td>
-         <td>2/0/0/0</td>
-      </tr>
-      <tr>
-         <td>2/0/0/0</td>
-         <td class="arrow">→</td>
-         <td>0/0/0/2</td>
-         <td class="arrow">→</td>
-         <td>0/0/0/3</td>
-      </tr>
-      <tr>
-         <td>0/0/0/3</td>
-         <td class="arrow">→</td>
-         <td>1/0/0/3</td>
-         <td class="arrow">→</td>
-         <td>2/0/3/0</td>
-      </tr>
-      <tr>
-         <td>2/0/3/0</td>
-         <td class="arrow">→</td>
-         <td>2/3/3/0</td>
-         <td class="arrow">→</td>
-         <td>2/3/3/3</td>
-      </tr>
-   </tbody>
-</table>
-<table class="milestone_routing">
-   <tbody>
-      <tr>
-         <td class="invisible"><strong>Or</strong></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-         <td class="invisible"></td>
-      </tr>
-      <tr>
-         <td>1x2</td>
-         <td class="arrow">→</td>
-         <td>{1→4}</td>
-         <td class="arrow">→</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td>4</td>
-         <td class="arrow">→</td>
-         <td>1</td>
-         <td class="arrow">→</td>
-         <td>1 {4→3}</td>
-         <td class="arrow">→</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td>1</td>
-         <td class="arrow">→</td>
-         <td>2 x3</td>
-         <td class="arrow">→</td>
-         <td>4 x3</td>
-      </tr>
-   </tbody>
-</table>
+Class: milestone_routing;
+last_row: false;
 
-Note: the 2/0/0/0 → 0/0/0/2 swap happens at e52 $\tau$.
+|         |       |          |       |         |
+| ------- | ----- | -------- | ----- | ------- |
+| 0/0/0/0 | ARROW | 1/0/0/0  | ARROW | 2/0/0/0 |
+| 2/0/0/0 | ARROW | 0/0/0/2* | ARROW | 0/0/0/3 |
+| 0/0/0/3 | ARROW | 1/0/0/3  | ARROW | 2/0/3/0 |
+| 2/0/3/0 | ARROW | 2/3/3/0  | ARROW | 2/3/3/3 |
+
+Class: milestone_routing;
+last_row: false;
+
+|           |       |       |       |       |       |       |
+| --------- | ----- | ----- | ----- | ----- | ----- | ----- |
+| OR        | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
+| 1x2*      | ARROW | 4     | ARROW | 1     | ARROW | 1**   |
+| 1**       | ARROW | 1     | ARROW | 2 x3  | ARROW | 4 x3  |
+| | | | | | | [FOOT;]* Swap 2/0/0/0 → 0/0/0/2 at $e52\tau$ |
+| | | | | | | [FOOT;]** Swap 1/0/0/3 →2 /0/3/0 |
 
 ### Final Push to ee20k
 
 In general, you will need ~$e2050\ \tau$ in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories $\tau$ is as follows. Being above or below these values is fine, just as long as you have ~$e2050\ \tau$.
 
-#### Active
+Class: breakdown;
+Caption: $ee20$k $\tau$ recommendations;
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Tau</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Tau</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>e243 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
-         <td>e361 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>e295 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
-         <td>e194 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>e221 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
-         <td>e227 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>e232 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
-         <td>e277 τ</td>
-      </tr>
-   </tbody>
-</table>
-
-#### Idle
-
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Tau</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Tau</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>e237 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
-         <td>e360 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>e290 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
-         <td>e204 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>e221 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
-         <td>e235 τ</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>e227 τ</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
-         <td>e276 τ</td>
-      </tr>
-   </tbody>
-</table>
+| [class="category";]INVIS | [class="category";style="border-left:$table-border-thin";]Idle | [class="category";style="border-left:$table-border-thin";]Active |
+| ----- | ------- | --------|
+| [style="border-right:$table-border-thin;";]T1 | $e237\tau$ | $e243\tau$ |
+| [style="border-right:$table-border-thin;";]T2 | $e290\tau$ | $e295\tau$ |
+| [style="border-right:$table-border-thin;";]T3 | $e221\tau$ | $e221\tau$ |
+| [style="border-right:$table-border-thin;";]T4 | $e227\tau$ | $e232\tau$ |
+| [style="border-right:$table-border-thin;";]T5 | $e360\tau$ | $e361\tau$ |
+| [style="border-right:$table-border-thin;";]T6 | $e204\tau$ | $e194\tau$ |
+| [style="border-right:$table-border-thin;";]T7 | $e235\tau$ | $e227\tau$ |
+| [style="border-right:$table-border-thin;";]T8 | $e276\tau$ | $e277\tau$ |
+| | | [FOOT;style="width:20vw;";]Being above or below these values is fine, just as long as you have ~$e2050\ \tau$. |

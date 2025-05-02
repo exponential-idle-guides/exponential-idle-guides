@@ -24,22 +24,6 @@ const soft_hyphen = (s) => s.replaceAll(String.fromCharCode(0x00ad),"");
 
 $("table").each(function() {
   const table = $(this);
-  // caption, table id, table classes, and last_row
-  const prev = table.prev();
-  if (prev.is("p")) {
-    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>[^;]*)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
-        .exec(soft_hyphen(prev.html()));
-    if (res != null){
-      const {caption, id, classes, last_row} = res.groups;
-      if (caption != undefined) {table[0].createCaption().textContent = caption;}
-      if (id != undefined) {table.attr("id", id);}
-      if (classes != undefined) {table.addClass(classes);}
-      if (last_row == undefined || last_row.toLowerCase() == "true") {
-        table.find("tbody").find("tr:last-child").addClass("last_row");
-      }
-      prev.remove();
-    }
-  }
   // colspan
   // TODO: Make this cleaner (and not as recursive and dumb)
   while (/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/g.test(table.html())) {
@@ -57,10 +41,12 @@ $("table").each(function() {
     );
   }
   // Removing thead/tbody if empty
+  
   const thead = table.find("thead");
-  if (/^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(thead.html().replaceAll(/\n/g,""))) {thead.remove();}
+  if (thead[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(thead.html().replaceAll(/\n/g,""))) {thead.remove();}
   const tbody = table.find("tbody");
-  if (/^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(tbody.html().replaceAll(/\n/g,""))) {tbody.remove();}
+  if (tbody[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(tbody.html().replaceAll(/\n/g,""))) {tbody.remove();}
+  
   // individual element classes, styles, types, and shorthands
   ["td", "th"].forEach((ele) => {table.find(ele).each(function() {
     let t = $(this);
@@ -102,26 +88,57 @@ $("table").each(function() {
     // Shorthands
     const shorthand_res = /^(?<inner>INVIS|ARROW|CHECK|REDX|RED_X|OR)$/g.exec(t_html);
     process_inner(shorthand_res == null ? undefined: shorthand_res.groups.inner);
-    const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["“](?<classes>(?:\s*(?:[a-zA-Z]+(?!\-)|[a-zA-Z]+(?:\-[a-zA-Z]+)+))*)["”];)?)(?=(?:.*?type\s*=\s*["“](?<type>[a-z]*)["”];)?)(?=(?:.*?style\s*=\s*["“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["”];)?)(?=(?:.*?footer\s*=\s*(?<footer>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE]);)?)(?=.*?](?<inner>(?:.*$)?))/gs
+    const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["“](?<classes>(?:\s*(?:[a-zA-Z]+(?![_\-])|[a-zA-Z]+(?:[_\-][a-zA-Z]+)+))*)["”];)?)(?=(?:.*?type\s*=\s*["“](?<type>[a-z]*)["”];)?)(?=(?:.*?style\s*=\s*["“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["”];)?)(?=(?:.*?(?<footer>[fF][oO][oO][tT](?:[eE][rR])?);)?)(?=.*?](?<inner>(?:.*$)?))/gs
       .exec(t_html);
     if (res == null) {return;}
-    const {classes, type, styles, inner, footer} = res.groups;
+    const {classes, type, styles, footer, inner} = res.groups;
+    //console.log("classes: ", classes, "type: ", type, "styles: ", styles, "footer: ", footer, "inner: ", inner);
     // Shorthands w/ modifications present
     const inner_bool = process_inner(inner);
     // if no modifications within the [], then let it be
-    if (classes == undefined && type == undefined && styles == undefined) {return;}
+    if (classes == undefined && type == undefined && styles == undefined && footer == undefined) {return;}
     // remove styling after grabbing
     if(!inner_bool) {t.html(t.html().replace(/\[.*\](?=.*)/g, ""));}
     // add classes, styling, and change types (if applicable)
     if (classes != undefined) {t.addClass(classes);}
+    console.log("past inner_bool");
     if (styles != undefined) {
       styles.split(";").forEach((s) => {
         if (!s.length) {return;}
-        const {style, value} = /^(?<style>[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+):(?<value>[^;]*)$/g.exec(s.replaceAll(/\s*/g,"")).groups;
+        const {style, value} = /^(?<style>[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+):(?<value>[^;]*)$/g
+          .exec(s.replaceAll(/\s*/g,"").replaceAll(/(.*):var\([\u2013\-]([^\u2013\-])/g,"$1:var(--$2"))
+          .groups;
         t.attr("style", style + ":" + ((value in table_scss_var) ? table_scss_var[value]: value) + " !important;");
       });
+    }
+    //console.log("footer: ", footer, footer.toLowerCase(), ["foot", "footer"].includes(footer.toLowerCase()), t_html);
+    if (footer != undefined && (footer.toLowerCase() == "foot" || footer.toLowerCase() == "footer")) {
+      console.log("footer detected", table.has("tfoot"));
+      if (!table.has("tfoot").length) {$('<tfoot>').appendTo(table);}
+      t.parent().detach().appendTo(table.find("tfoot"));
     }
     // TODO: IMPLEMENT TABLE FOOTERS
     if (type != undefined) {t.changeElementType(type);}
   })});
+  // caption, table id, table classes, and last_row
+  const prev = table.prev();
+  if (prev.is("p")) {
+    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>.*)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
+        .exec(soft_hyphen(prev.html()));
+    if (res != null){
+      const {caption, id, classes, last_row} = res.groups;
+      if (caption != undefined) {
+        console.log("caption detected");
+        const new_caption = $("<caption>");
+        new_caption.html(caption);
+        new_caption.prependTo(table);
+      }
+      if (id != undefined) {table.attr("id", id);}
+      if (classes != undefined) {table.addClass(classes);}
+      if (last_row == undefined || last_row.toLowerCase() == "true") {
+        table.find("tbody").find("tr:last-child").addClass("last_row");
+      }
+      prev.remove();
+    }
+  }
 });
