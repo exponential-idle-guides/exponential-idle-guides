@@ -28,8 +28,7 @@ further ahead than you are already.
 
 ### Variable Names
 
-ID: var-names-table;
-Class: breakdown-simplified;
+Class: breakdown;
 last_row: false;
 
 | INVIS | Name | INVIS | Name | INVIS | Name |

@@ -102,7 +102,6 @@ sub {
 	}
 }
 
-
 //Theory Sim Playspout
 %PlayStrat_headers {
 	color: var(--palette-stroke-table-headers);
@@ -141,16 +140,20 @@ sub {
 	}
 }
 
+%routing {
+  margin-left: 0;
+	margin-top: 0;
+	th {
+		text-align: center;
+	}
+}
 //Graduation Routing
 .graduation_routing {
-  margin-left: 0;
-	margin-top: 0;
+	@extend %routing;
 }
-
 //Milestone Routing
 .milestone_routing {
-  margin-left: 0;
-	margin-top: 0;
+	@extend %routing;
 	.perm_upg {
 		color: var(--palette-stroke-warning);
 	}
@@ -211,15 +214,14 @@ sub {
 // breakdown tables
 %breakdown_headers {
   color: var(--palette-stroke-table-headers) !important;
-  background-color: var(--palette-fill-table-headers-dark) !important;
+  background-color: var(--palette-fill-table-headers-dark);
 }
-.breakdown-simplified {
+.breakdown {
 	overflow-wrap: always;
 	word-break: keep-all;
-	text-align: center;
 	.category {
 		color: var(--palette-stroke-table-headers);
-		background-color: var(--palette-fill-table-headers-neutral);
+		background-color: var(--palette-fill-table-headers-neutral) !important;
 		font-weight: bold;
 		border-top: $table-border-thin;
 		border-bottom: $table-border-thin;
@@ -227,6 +229,7 @@ sub {
 	}
 	td {
 		padding: $table-padding;
+		text-align: center;
 		&:first-child {
 			@extend %breakdown_headers;
 			font-weight: bold;
@@ -237,6 +240,7 @@ sub {
 		background-color:var(--palette-fill-table-headers-light);
 		border-bottom: $table-border;
 		padding: $table-padding;
+		text-align: center;
 	}
 	tbody th{
 		&:first-child {
