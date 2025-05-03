@@ -80,7 +80,6 @@ $("table").each(function() {
         default:
           return false;
       }
-      console.log("classes: ", classes, "html: ", html);
       t.addClass(classes);
       t.html(html);
       return true;
@@ -88,20 +87,20 @@ $("table").each(function() {
     // Shorthands
     const shorthand_res = /^(?<inner>INVIS|ARROW|CHECK|REDX|RED_X|OR)$/g.exec(t_html);
     process_inner(shorthand_res == null ? undefined: shorthand_res.groups.inner);
-    const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["“](?<classes>(?:\s*(?:[a-zA-Z]+(?![_\-])|[a-zA-Z]+(?:[_\-][a-zA-Z]+)+))*)["”];)?)(?=(?:.*?type\s*=\s*["“](?<type>[a-z]*)["”];)?)(?=(?:.*?style\s*=\s*["“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["”];)?)(?=(?:.*?(?<footer>[fF][oO][oO][tT](?:[eE][rR])?);)?)(?=.*?](?<inner>(?:.*$)?))/gs
+    const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["“](?<classes>(?:\s*(?:[a-zA-Z]+(?![_\-])|[a-zA-Z]+(?:[_\-][a-zA-Z]+)+))*)["”];)?)(?=(?:.*?type\s*=\s*["“](?<type>[a-z]*)["”];)?)(?=(?:.*?style\s*=\s*["“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["”];)?)(?=(?:.*?(?<footer>[fF][oO][oO][tT](?:[eE][rR])?);)?)(?=(?:.*?(?<perm>[pP][eE][rR][mM]);)?)(?=.*?](?<inner>(?:.*$)?))/gs
       .exec(t_html);
     if (res == null) {return;}
-    const {classes, type, styles, footer, inner} = res.groups;
-    //console.log("classes: ", classes, "type: ", type, "styles: ", styles, "footer: ", footer, "inner: ", inner);
+    const {classes, type, styles, footer, perm, inner} = res.groups;
+    //console.log("classes: ", classes, "type: ", type, "styles: ", styles, "footer: ", footer, "perm: ", perm, "inner: ", inner);
     // Shorthands w/ modifications present
     const inner_bool = process_inner(inner);
     // if no modifications within the [], then let it be
-    if (classes == undefined && type == undefined && styles == undefined && footer == undefined) {return;}
+    if (classes == undefined && type == undefined && styles == undefined && footer == undefined && perm == undefined) {return;}
     // remove styling after grabbing
     if(!inner_bool) {t.html(t.html().replace(/\[.*\](?=.*)/g, ""));}
     // add classes, styling, and change types (if applicable)
+    if (perm != undefined) {t.addClass("perm_upg");}
     if (classes != undefined) {t.addClass(classes);}
-    console.log("past inner_bool");
     if (styles != undefined) {
       styles.split(";").forEach((s) => {
         if (!s.length) {return;}
@@ -111,9 +110,7 @@ $("table").each(function() {
         t.attr("style", style + ":" + ((value in table_scss_var) ? table_scss_var[value]: value) + " !important;");
       });
     }
-    //console.log("footer: ", footer, footer.toLowerCase(), ["foot", "footer"].includes(footer.toLowerCase()), t_html);
     if (footer != undefined && (footer.toLowerCase() == "foot" || footer.toLowerCase() == "footer")) {
-      console.log("footer detected", table.has("tfoot"));
       if (!table.has("tfoot").length) {$('<tfoot>').appendTo(table);}
       t.parent().detach().appendTo(table.find("tfoot"));
     }
@@ -123,12 +120,11 @@ $("table").each(function() {
   // caption, table id, table classes, and last_row
   const prev = table.prev();
   if (prev.is("p")) {
-    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>.*)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
+    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>.*?)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
         .exec(soft_hyphen(prev.html()));
     if (res != null){
       const {caption, id, classes, last_row} = res.groups;
       if (caption != undefined) {
-        console.log("caption detected");
         const new_caption = $("<caption>");
         new_caption.html(caption);
         new_caption.prependTo(table);

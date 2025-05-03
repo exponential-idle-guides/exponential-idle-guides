@@ -70,8 +70,8 @@ last_row: false;
 
 | INVIS | Brief Description |
 | ----- | ----------------- |
-| [type="th";]$q_1$ | ~7% increase on $\dot{\rho}$ on average. Instantaneous. |
-| [type="th";]$q_2$ | Doubles $\dot{\rho}$. Instantaneous. |
+| [type="th";]$q_1$ | ~7% increase on $\dot{\rho}$ on average (instantaneous). |
+| [type="th";]$q_2$ | Doubles $\dot{\rho}$ (instantaneous). |
 | [type="th";]$c_1$ | $c_1$ reduces time to maximum value of $q$. Note that it DOES NOT increase the maximum value of $q$ itself. If $q$ is close to maximum value already, there is no point in buying $c_1$. |
 | [type="th";]$c_2$ | Doubles the maximum value of $q$, however, it also HALVES $\dot{q}$. Be careful to not buy too much $c_2$ as this can cause $\dot{q}$ to be too low. Do not ignore $c_2$ as, otherwise, the maximum value of $q$ will never increase. |
 | [type="th";]$c_3$ | Doubles the maximum value of $q$. No drawbacks. |
