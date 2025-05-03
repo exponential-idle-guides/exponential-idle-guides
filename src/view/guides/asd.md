@@ -14,77 +14,26 @@ order: 9
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
 
-<table class="newwords">
-    <thead>
-        <tr>
-            <th class="invisible"></th>
-            <th>15-Puzzle</th>
-            <th>Torus</th>
-            <th>Arrow</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="leftHeader">Visual Scheme</td>
-            <td>Fringe</td>
-            <td>Insertion</td>
-            <td>Grayscale + Numbers</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">Hover/Slide Control</td>
-            <td>Enabled</td>
-            <td>Enabled</td>
-            <td>-</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">Animation</td>
-            <td>Disabled</td>
-            <td>Disabled</td>
-            <td>Disabled</td>
-        </tr>
-    </tbody>
-</table>
+Class: breakdown;
+
+| INVIS | 15-Puzzle | Torus | Arrow |
+| ----- | --------- | ----- | ----- |
+| Visual Scheme       | Fringe   | Insertion | Greyscale + Numbers |
+| Hover/Slide Control | Enabled  | Enabled   | -                   |
+| Animation           | Disabled | Disabled  | Disabled            |
 
 ## Minigame rewards
 
 The amount of stars you get from completing a minigame is determined by your current __dt__ and puzzle difficulty. This reward can be increased by using the Acceleration Button, also known as Accel. These are the base star reward for each difficulty level of each minigame.
 
-<table class="newwords">
-    <thead>
-        <tr>
-            <th class="invisible"></th>
-            <th>15-Puzzle</th>
-            <th>Torus</th>
-            <th>Arrow</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td class="leftHeader">Easy</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">Medium</td>
-            <td>3</td>
-            <td>8</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">Hard</td>
-            <td>6</td>
-            <td>14</td>
-            <td>14</td>
-        </tr>
-        <tr>
-            <td class="leftHeader">Expert</td>
-            <td>-</td>
-            <td>-</td>
-            <td>25</td>
-        </tr>
-    </tbody>
-</table>
+Class: breakdown;
+
+| INVIS  | 15-Puzzle | Torus | Arrow |
+| ------ | --------- | ----- | ----- |
+| Easy   | 1         | 1     | 1     |
+| Medium | 3         | 8     | 8     |
+| Hard   | 6         | 14    | 14    |
+| Expert | -         | -     | 25    |
 
 ## 15-Puzzle
 
