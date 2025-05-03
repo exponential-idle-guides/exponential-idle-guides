@@ -31,107 +31,107 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 #### Theory 1: Recurrence Relations {data-toc-exclude}
 
-T1 is one of the theories that benefit the most from active strategies. T1<span style="color:#41AD21">SolarXLII xexxx</span> improves slightly on T1<span style="color:#41AD21">Ratio</span>.
+T1 is one of the theories that benefit the most from active strategies. T1<span style="color:var(--strat-green)">SolarXLII xexxx</span> improves slightly on T1<span style="color:var(--strat-green)">Ratio</span>.
 
-- [T1<span style="color:#41AD21">SolarXLII xexxx</span>](#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+- [T1<span style="color:var(--strat-green)">SolarXLII xexxx</span>](#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 
-- [T1<span style="color:#41AD21">Ratio</span>](#t1ratio)&nbsp; — &nbsp;Active
+- [T1<span style="color:var(--strat-green)">Ratio</span>](#t1ratio)&nbsp; — &nbsp;Active
 
-- [T1<span style="color:#4665F0">C34</span>](#t1c34)&nbsp; — &nbsp;Idle
+- [T1<span style="color:var(--strat-blue)">C34</span>](#t1c34)&nbsp; — &nbsp;Idle
 
-- [T1<span style="color:#4665F0">C4</span>](#t1c4)&nbsp; — &nbsp;Idle
+- [T1<span style="color:var(--strat-blue)">C4</span>](#t1c4)&nbsp; — &nbsp;Idle
 
 #### Theory 2: Differential Calculus {data-toc-exclude}
 
 T2 is the only theory without an active strategy after all milestones are bought, despite attempts.
 
-- [T2<span style="color:#41AD21">MC</span>](#t2mc)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:var(--strat-green)">MC</span>](#t2mc)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:#41AD21">MCAlt2</span>](#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:var(--strat-green)">MCAlt2</span>](#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:#41AD21">MCAlt3</span>](#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:var(--strat-green)">MCAlt3</span>](#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:#41AD21">MS</span>](#t2ms)&nbsp; — &nbsp;Active
+- [T2<span style="color:var(--strat-green)">MS</span>](#t2ms)&nbsp; — &nbsp;Active
 
-- [T2<span style="color:#41AD21">QS</span>](#t2ms)&nbsp; — &nbsp;Semi-Idle
+- [T2<span style="color:var(--strat-green)">QS</span>](#t2ms)&nbsp; — &nbsp;Semi-Idle
 
 - [T2](#t2)&nbsp; — &nbsp;Idle
 
 #### Theory 3: Linear Algebra {data-toc-exclude}
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3</span><span style="color:#41AD21">Play2</span> is currently the best active strategy above e350\\(\rho\\). T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span> is an easier version being 10-15% slower.
+T3</span><span style="color:var(--strat-green)">Play2</span> is currently the best active strategy above e350\\(\rho\\). T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span> is an easier version being 10-15% slower.
 
-T3</span><span style="color:#41AD21">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
-T3</span><span style="color:#41AD21">SNAX2</span> is similar to T3</span><span style="color:#41AD21">SNAX</span> but is designed to be QoL compatible.
+T3</span><span style="color:var(--strat-green)">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
+T3</span><span style="color:var(--strat-green)">SNAX2</span> is similar to T3</span><span style="color:var(--strat-green)">SNAX</span> but is designed to be QoL compatible.
 
-- [T3</span><span style="color:#41AD21">Play2</span>](#t3play2)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:var(--strat-green)">Play2</span>](#t3play2)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#41AD21">Play</span>](#t3play)&nbsp; — &nbsp;Very Active
+- [T3</span><span style="color:var(--strat-green)">Play</span>](#t3play)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:#41AD21">SNAX</span>](#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><span style="color:var(--strat-green)">SNAX</span>](#t3snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T3</span><span style="color:#41AD21">SNAXd</span><span style="color:#4665F0">C12</span>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
+- [T3</span><span style="color:var(--strat-green)">SNAXd</span><span style="color:var(--strat-blue)">C12</span>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
 
-- [T3</span><span style="color:#41AD21">SNAX2</span>](#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><span style="color:var(--strat-green)">SNAX2</span>](#t3snax2)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>](#t3r2c23d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span>](#t3r2c23d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">ρ2C23</span>](#t3r2c23)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-blue)">ρ2C23</span>](#t3r2c23)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:#4665F0">ρ2C23C33</span><span style="color:#41AD21">d</span>](#t3r2c23c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-blue)">ρ2C23C33</span><span style="color:var(--strat-green)">d</span>](#t3r2c23c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">ρ2C23C33</span>](#t3r2c23c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-blue)">ρ2C23C33</span>](#t3r2c23c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>](#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span><span style="color:var(--strat-green)">d</span>](#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>](#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span>](#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>](#t3noc13c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span><span style="color:var(--strat-green)">d</span>](#t3noc13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>](#t3noc13c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span>](#t3noc13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>](#t3noc11c13c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span><span style="color:var(--strat-green)">d</span>](#t3noc11c13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>](#t3noc11c13c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span>](#t3noc11c13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>](#t3noc13c32c33d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span><span style="color:var(--strat-green)">d</span>](#t3noc13c32c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>](#t3noc13c32c33)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span>](#t3noc13c32c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>](#t3c11c12c21d)&nbsp; — &nbsp;Active
+- [T3<span style="color:var(--strat-blue)">C11C12C21</span><span style="color:var(--strat-green)">d</span>](#t3c11c12c21d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:#4665F0">C11C12C21</span>](#t3c11c12c21)&nbsp; — &nbsp;Idle
+- [T3<span style="color:var(--strat-blue)">C11C12C21</span>](#t3c11c12c21)&nbsp; — &nbsp;Idle
 
 #### Theory 4: Polynomials {data-toc-exclude}
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>](#t4c3d66)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>](#t4c3d66)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
+- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
-- [T4<span style="color:#4665F0">C3</span>](#t4c3)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C3</span>](#t4c3)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C356</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C356</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C456</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcvMS</span>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C456</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcvMS</span>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](#t4c123d)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>](#t4c123d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C123</span>](#t4c123)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C123</span>](#t4c123)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](#t4c12d)&nbsp; — &nbsp;Active
+- [T4<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>](#t4c12d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:#4665F0">C12</span>](#t4c12)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C12</span>](#t4c12)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C56</span>](#t4c56)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C56</span>](#t4c56)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C4</span>](#t4c4)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C4</span>](#t4c4)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:#4665F0">C5</span>](#t4c5)&nbsp; — &nbsp;Idle
+- [T4<span style="color:var(--strat-blue)">C5</span>](#t4c5)&nbsp; — &nbsp;Idle
 
 - [T4](#t4)&nbsp; — &nbsp;Idle
 
@@ -139,9 +139,9 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 T5 is the second-strongest theory in endgame, only behind T6.
 
-- [T5<span style="color:#41AD21">AI</span>](#t5ai)&nbsp; — &nbsp;Active
+- [T5<span style="color:var(--strat-green)">AI</span>](#t5ai)&nbsp; — &nbsp;Active
 
-- [T5<span style="color:#41AD21">Idle xexxx</span>](#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
+- [T5<span style="color:var(--strat-green)">Idle xexxx</span>](#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
 
 - [T5](#t5)&nbsp; — &nbsp;Idle
 
@@ -149,77 +149,77 @@ T5 is the second-strongest theory in endgame, only behind T6.
 
 T6 is the most powerful theory in endgame, with several players reaching well over e1300𝜏 on their main save, some even over e1400𝜏.
 
-- [T6<span style="color:#41AD21">AI</span>](#t6ai)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-green)">AI</span>](#t6ai)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#41AD21">SNAX x.xxexxx</span>](#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
+- [T6<span style="color:var(--strat-green)">SNAX x.xxexxx</span>](#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>](#t6noc34d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span><span style="color:var(--strat-green)">d</span>](#t6noc34d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>](#t6noc34)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span>](#t6noc34)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>](#t6noc1234d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span><span style="color:var(--strat-green)">d</span>](#t6noc1234d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](#t6noc1234)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>](#t6noc1234)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>](#t6noc345d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span><span style="color:var(--strat-green)">d</span>](#t6noc345d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>](#t6noc345)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span>](#t6noc345)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>](#t6c4d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-blue)">C4</span><span style="color:var(--strat-green)">d</span>](#t6c4d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#4665F0">C4</span>](#t6c4)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--strat-blue)">C4</span>](#t6c4)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](#t6c3d)&nbsp; — &nbsp;Active
+- [T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t6c3d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:#4665F0">C3</span>](#t6c3)&nbsp; — &nbsp;Idle
+- [T6<span style="color:var(--strat-blue)">C3</span>](#t6c3)&nbsp; — &nbsp;Idle
 
 #### Theory 7: Numerical Methods {data-toc-exclude}
 
 T7 is the third-weakest theory in endgame, ahead of T2 and T8.
 
-- [T7<span style="color:#41AD21">PlaySpqceyX</span>](#t7playspqceyx)&nbsp; — &nbsp;Active
+- [T7<span style="color:var(--strat-green)">PlaySpqceyX</span>](#t7playspqceyx)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](#t7c3d)&nbsp; — &nbsp;Active
+- [T7<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t7c3d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>](#t7c12d)&nbsp; — &nbsp;Active
+- [T7<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>](#t7c12d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:#4665F0">C12</span>](#t7c12)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--strat-blue)">C12</span>](#t7c12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>](#t7c123d)&nbsp; — &nbsp;Active
+- [T7<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>](#t7c123d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>](#t7noc12)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C12</span>](#t7noc12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>](#t7noc123)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C123</span>](#t7noc123)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>](#t7noc124)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C124</span>](#t7noc124)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>](#t7noc1234)&nbsp; — &nbsp;Idle
+- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>](#t7noc1234)&nbsp; — &nbsp;Idle
 
 - [T7](#t7)&nbsp; — &nbsp;Idle
 
 #### Theory 8: Chaos Theory {data-toc-exclude}
 
-T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:#41AD21">PlaySolarSwap</span>).
+T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:var(--strat-green)">PlaySolarSwap</span>).
 
-- [T8<span style="color:#41AD21">PlaySolarSwap</span>](#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
+- [T8<span style="color:var(--strat-green)">PlaySolarSwap</span>](#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
-- [T8<span style="color:#41AD21">Play</span>](#t8play)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--strat-green)">Play</span>](#t8play)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:#41AD21">SNAX</span>](#t8snax)&nbsp; — &nbsp;Semi-Idle
+- [T8<span style="color:var(--strat-green)">SNAX</span>](#t8snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>](#t8noc35d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span><span style="color:var(--strat-green)">d</span>](#t8noc35d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>](#t8noc35)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span>](#t8noc35)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>](#t8noc5d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span><span style="color:var(--strat-green)">d</span>](#t8noc5d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>](#t8noc5t834)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span>](#t8noc5t834)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>](#t8noc3d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t8noc3d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>](#t8noc3)&nbsp; — &nbsp;Idle
+- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span>](#t8noc3)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:#41AD21">d</span>](#t8d)&nbsp; — &nbsp;Active
+- [T8<span style="color:var(--strat-green)">d</span>](#t8d)&nbsp; — &nbsp;Active
 
 - [T8](#t8)&nbsp; — &nbsp;Idle
 
@@ -232,9 +232,9 @@ In chronological order of release.
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](#wspdstopc1)&nbsp; — &nbsp;Active
+- [WSP<span style="color:var(--strat-green)">d</span><span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>](#wspdstopc1)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>](#wspstopc1)&nbsp; — &nbsp;Semi-Idle
+- [WSP<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>](#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 - [WSP](#wsp)&nbsp; — &nbsp;Idle
 
@@ -242,23 +242,23 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:#41AD21">MS</span>](#slms)&nbsp; — &nbsp;Active
+- [SL<span style="color:var(--strat-green)">MS</span>](#slms)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>](#slmsd)&nbsp; — &nbsp;Very Active
+- [SL<span style="color:var(--strat-green)">MS</span><span style="color:var(--strat-green)">d</span>](#slmsd)&nbsp; — &nbsp;Very Active
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>](#slstopad)&nbsp; — &nbsp;Active
+- [SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span><span style="color:var(--strat-green)">d</span>](#slstopad)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>](#slstopa)&nbsp; — &nbsp;Idle
+- [SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>](#slstopa)&nbsp; — &nbsp;Idle
 
 #### Custom Theory 3: Euler's Formula {data-toc-exclude}
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the $\tau$ cap increase.
 
-- [EF<span style="color:#41AD21">AI</span>](#efai)&nbsp; — &nbsp;Active
+- [EF<span style="color:var(--strat-green)">AI</span>](#efai)&nbsp; — &nbsp;Active
 
-- [EF<span style="color:#41AD21">SNAX</span>](#efsnax)&nbsp; — &nbsp;Semi-Idle
+- [EF<span style="color:var(--strat-green)">SNAX</span>](#efsnax)&nbsp; — &nbsp;Semi-Idle
 
-- [EF<span style="color:#41AD21">d</span>](#efd)&nbsp; — &nbsp;Active
+- [EF<span style="color:var(--strat-green)">d</span>](#efd)&nbsp; — &nbsp;Active
 
 - [EF](#ef)&nbsp; — &nbsp;Idle
 
@@ -266,9 +266,9 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT $\tau$ cap increase from e100 to e150.
 
-- [CSR2<span style="color:#41AD21">XL x.xx</span>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<span style="color:var(--strat-green)">XL x.xx</span>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
 
-- [CSR2<span style="color:#41AD21">d</span>](#csr2d)&nbsp; — &nbsp;Active
+- [CSR2<span style="color:var(--strat-green)">d</span>](#csr2d)&nbsp; — &nbsp;Active
 
 - [CSR2](#csr2)&nbsp; — &nbsp;Idle
 
@@ -276,29 +276,29 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT $\tau$ contribution rate increase by x4.
 
-- [FI<span style="color:#41AD21">d</span>](#fid)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">d</span>](#fid)&nbsp; — &nbsp;Active
 
 - [FI](#fi)&nbsp; — &nbsp;Idle
 
-- [FI<span style="color:#41AD21">MSd</span>](#fimsd)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">MSd</span>](#fimsd)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:#41AD21">MS</span>](#fims)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">MS</span>](#fims)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:#41AD21">dPermaSwap</span>](#fidpermaswap)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">dPermaSwap</span>](#fidpermaswap)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:#41AD21">PermaSwap</span>](#fipermaswap)&nbsp; — &nbsp;Semi-Idle
+- [FI<span style="color:var(--strat-green)">PermaSwap</span>](#fipermaswap)&nbsp; — &nbsp;Semi-Idle
 
-- [FI<span style="color:#41AD21">MSdPermaSwap</span>](#fimsdpermaswap)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">MSdPermaSwap</span>](#fimsdpermaswap)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:#41AD21">MSPermaSwap</span>](#fimspermaswap)&nbsp; — &nbsp;Active
+- [FI<span style="color:var(--strat-green)">MSPermaSwap</span>](#fimspermaswap)&nbsp; — &nbsp;Active
 
 #### Custom Theory 6: Fractal Patterns {data-toc-exclude}
 
 The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT $\tau$ contribution rate increase by x4.
 
-- [FP<span style="color:#41AD21">modBurst<span style="color:#4665F0">C1</span>MS</span>](#fpmodburstc1ms)&nbsp; — &nbsp;Active
+- [FP<span style="color:var(--strat-green)">modBurst<span style="color:var(--strat-blue)">C1</span>MS</span>](#fpmodburstc1ms)&nbsp; — &nbsp;Active
 
-- [FP<span style="color:#41AD21">dMS</span>](#fpdms)&nbsp; — &nbsp;Active
+- [FP<span style="color:var(--strat-green)">dMS</span>](#fpdms)&nbsp; — &nbsp;Active
 
 - [FP](#fp)&nbsp; — &nbsp;Idle
 
@@ -306,17 +306,17 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
 
 The seventh official custom theory, abbreviated RZ, was created by prop and released on December 15, 2024.
 
-- [RZ<span style="color:#41AD21">dBH</span>](#rzdbh)&nbsp; — &nbsp;Active
+- [RZ<span style="color:var(--strat-green)">dBH</span>](#rzdbh)&nbsp; — &nbsp;Active
 
-- [RZ<span style="color:#41AD21">BH</span>](#rzbh)&nbsp; — &nbsp;Idle
+- [RZ<span style="color:var(--strat-green)">BH</span>](#rzbh)&nbsp; — &nbsp;Idle
 
-- [RZ<span style="color:#41AD21">SpiralSwap</span>](#rzspiralswap)&nbsp; — &nbsp;**EXTREMELY** Active
+- [RZ<span style="color:var(--strat-green)">SpiralSwap</span>](#rzspiralswap)&nbsp; — &nbsp;**EXTREMELY** Active
 
-- [RZ<span style="color:#41AD21">dMS</span>](#rzdms)&nbsp; — &nbsp;Active
+- [RZ<span style="color:var(--strat-green)">dMS</span>](#rzdms)&nbsp; — &nbsp;Active
 
-- [RZ<span style="color:#41AD21">MS</span>](#rzms)&nbsp; — &nbsp;Semi-Idle
+- [RZ<span style="color:var(--strat-green)">MS</span>](#rzms)&nbsp; — &nbsp;Semi-Idle
 
-- [RZ<span style="color:#41AD21">d</span>](#rzd)&nbsp; — &nbsp;Active
+- [RZ<span style="color:var(--strat-green)">d</span>](#rzd)&nbsp; — &nbsp;Active
 
 - [RZ](#rz)&nbsp; — &nbsp;Idle
 
@@ -326,9 +326,9 @@ The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It 
 
 The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
 
-- [MF<span style="color:#41AD21">d2</span>](#mfd2)&nbsp; — &nbsp;Very Active
+- [MF<span style="color:var(--strat-green)">d2</span>](#mfd2)&nbsp; — &nbsp;Very Active
 
-- [MF<span style="color:#41AD21">d</span>](#mfd)&nbsp; — &nbsp;Active
+- [MF<span style="color:var(--strat-green)">d</span>](#mfd)&nbsp; — &nbsp;Active
 
 - [MF](#mf)&nbsp; — &nbsp;Semi-Idle
 
@@ -336,17 +336,17 @@ The strategies listed here are only variable buying strategies. For resets, plea
 
 The 8th/9th official custom theory, abbreviated BaP, was developed by Python's Koala. It was released on March 10, 2025 alongside MF.
 
-- [BaP<span style="color:#41AD21">AI</span>](#bapai)&nbsp; — &nbsp;Active
+- [BaP<span style="color:var(--strat-green)">AI</span>](#bapai)&nbsp; — &nbsp;Active
 
-- [BaP<span style="color:#41AD21">AIMS</span>](#bapaims)&nbsp; — &nbsp;Active
+- [BaP<span style="color:var(--strat-green)">AIMS</span>](#bapaims)&nbsp; — &nbsp;Active
 
-- [BaP<span style="color:#41AD21">coast</span>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
+- [BaP<span style="color:var(--strat-green)">coast</span>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
 
 - [BaP](#bap)&nbsp; — &nbsp;Idle
 
 ## Theory 1: Recurrence Relations
 
-### T1<span style="color:#41AD21">SolarXLII xexxx</span>
+### T1<span style="color:var(--strat-green)">SolarXLII xexxx</span>
 
 <table class="spqcey">
 <thead>
@@ -373,17 +373,17 @@ The 8th/9th official custom theory, abbreviated BaP, was developed by Python's K
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:#41AD21">Ratio</span></a></td>
+         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></a></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:#41AD21">Ratio</span></td>
+         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
          <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:#41AD21">Ratio</span></td>
+         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></td>
          <td>❌</td>
       </tr>
       <tr>
@@ -400,10 +400,10 @@ If you are confused about the "%", read about [it here.](#modulus-explanation)<b
 
 Strategy Credits:
 
-- Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:#41AD21">AI</span>.
+- Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:var(--strat-green)">AI</span>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
-### T1<span style="color:#41AD21">Ratio {data-toc-exclude}
+### T1<span style="color:var(--strat-green)">Ratio {data-toc-exclude}
 
 <table class="spqcey">
 <thead>
@@ -484,7 +484,7 @@ Strategy Credits:
 
 - XLII
 
-### T1<span style="color:#4665F0">C34</span>
+### T1<span style="color:var(--strat-blue)">C34</span>
 
 <table class="spqcey">
 <thead>
@@ -519,7 +519,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T1<span style="color:#4665F0">C4</span>
+### T1<span style="color:var(--strat-blue)">C4</span>
 
 <table class="spqcey">
 <thead>
@@ -556,7 +556,7 @@ Strategy Credits:
 
 ## Theory 2: Differential Calculus
 
-### T2<span style="color:#41AD21">MC</span>
+### T2<span style="color:var(--strat-green)">MC</span>
 
 <table class="spqcey">
 <thead>
@@ -646,9 +646,9 @@ Strategy Credits:
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br>
 
-The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:#41AD21">MCAlt2</span>
+### T2<span style="color:var(--strat-green)">MCAlt2</span>
 
 <table class="spqcey">
 <thead>
@@ -739,9 +739,9 @@ Strategy Credits:
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br>
 
-The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:#41AD21">MCAlt3</span>
+### T2<span style="color:var(--strat-green)">MCAlt3</span>
 
 <table class="spqcey">
 <thead>
@@ -832,15 +832,15 @@ Strategy Credits:
 - rus9384#1864
 - XLII, whose theory simulator was used to develop and test this strategy. <br>
 
-The “MC” in T2<span style="color:#41AD21">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:#41AD21">MS</span>
+### T2<span style="color:var(--strat-green)">MS</span>
 
 <br>
 
-**T2<span style="color:#41AD21">MS</span> is the milestone swap strategy for T2, which can be found [over here.](/guides/theories-1-4/#t2-strategy)**
+**T2<span style="color:var(--strat-green)">MS</span> is the milestone swap strategy for T2, which can be found [over here.](/guides/theories-1-4/#t2-strategy)**
 
-### T2<span style="color:#41AD21">QS</span>
+### T2<span style="color:var(--strat-green)">QS</span>
 
 <table class="spqcey">
 <thead>
@@ -968,7 +968,7 @@ The publication multiplier when you should switch is determined as follows, wher
 
 ## Theory 3: Linear Algebra
 
-### T3<span style="color:#41AD21">Play2</span>
+### T3<span style="color:var(--strat-green)">Play2</span>
 
 <table class="spqcey">
 <thead>
@@ -1080,14 +1080,14 @@ Strategy Credits:
 - Solarion for \\(c_{12}\\) overpush idea.
 - xelaroc, whose sim was used to verify Playspout's results
 - rus9384#1864 for changing phase 3 start from pub mult 1 to pub mult 1.2, and changing phase 4 start from 2 to 2.4
-- XLII, whose sim was used by rus to test T3</span><span style="color:#41AD21">Play2</span> modifications, including the one stated above.
+- XLII, whose sim was used by rus to test T3</span><span style="color:var(--strat-green)">Play2</span> modifications, including the one stated above.
 
 <br> <br>
 
 \* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
 
 
-### T3<span style="color:#41AD21">Play</span>
+### T3<span style="color:var(--strat-green)">Play</span>
 
 <table class="spqcey">
 <thead>
@@ -1183,7 +1183,7 @@ Strategy Credits:
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3<span style="color:#41AD21">SNAX</span>
+### T3<span style="color:var(--strat-green)">SNAX</span>
 
 <table class="spqcey">
 <thead>
@@ -1266,7 +1266,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy
 
-### T3<span style="color:#41AD21">SNAXd</span><span style="color:#4665F0">C12</span>
+### T3<span style="color:var(--strat-green)">SNAXd</span><span style="color:var(--strat-blue)">C12</span>
 
 <table class="spqcey">
 <thead>
@@ -1349,7 +1349,7 @@ Strategy Credits:
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3<span style="color:#41AD21">SNAX2</span>
+### T3<span style="color:var(--strat-green)">SNAX2</span>
 
 <table class="spqcey">
 <thead>
@@ -1436,7 +1436,7 @@ It is designed to be an easier version of current t3 strategies.<br> <br>
 This is the only active SNAX strategy.
 
 
-### T3<span style="color:#4665F0">ρ2C23</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -1495,7 +1495,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">ρ2C23</span>
+### T3<span style="color:var(--strat-blue)">ρ2C23</span>
 
 <table class="spqcey">
 <thead>
@@ -1554,7 +1554,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">ρ2C23C33</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-blue)">ρ2C23C33</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -1613,7 +1613,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">ρ2C23C33</span>
+### T3<span style="color:var(--strat-blue)">ρ2C23C33</span>
 
 <table class="spqcey">
 <thead>
@@ -1673,7 +1673,7 @@ This is the only active SNAX strategy.
 </table>
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -1733,7 +1733,7 @@ This is the only active SNAX strategy.
 </table>
 
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C21C33</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span>
 
 <table class="spqcey">
 <thead>
@@ -1792,7 +1792,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -1851,7 +1851,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C33</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span>
 
 <table class="spqcey">
 <thead>
@@ -1910,7 +1910,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -1969,7 +1969,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C11C13C33</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span>
 
 <table class="spqcey">
 <thead>
@@ -2028,7 +2028,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -2087,7 +2087,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C13C32C33</span>
+### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span>
 
 <table class="spqcey">
 <thead>
@@ -2146,7 +2146,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">C11C12C21</span><span style="color:#41AD21">d</span>
+### T3<span style="color:var(--strat-blue)">C11C12C21</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -2205,7 +2205,7 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-### T3<span style="color:#4665F0">C11C12C21</span>
+### T3<span style="color:var(--strat-blue)">C11C12C21</span>
 
 <table class="spqcey">
 <thead>
@@ -2267,7 +2267,7 @@ This is the only active SNAX strategy.
 
 ## Theory 4: Polynomials
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>
+### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>
 
 <table class="spqcey">
 <thead>
@@ -2325,13 +2325,13 @@ This is the only active SNAX strategy.
    </tbody>
 </table>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
 
 The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them in this publication. <br>
 
 If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-The “66” in the name T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br><br>
+The “66” in the name T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br><br>
 
 Strategy Credits:
 
@@ -2340,7 +2340,7 @@ Strategy Credits:
 
 
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span>
+### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span>
 
 <table class="spqcey">
 <thead>
@@ -2386,11 +2386,11 @@ Strategy Credits:
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">coast</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span> \\(q_1\\): 377 \\(q_2\\): 252”.
 
 The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
 
-### T4<span style="color:#4665F0">C3</span>
+### T4<span style="color:var(--strat-blue)">C3</span>
 
 <table class="spqcey">
 <thead>
@@ -2433,7 +2433,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
+### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>
 
 <table class="spqcey">
 <thead>
@@ -2491,7 +2491,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C356</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcv</span>
+### T4<span style="color:var(--strat-blue)">C356</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>
 
 <table class="spqcey">
 <thead>
@@ -2549,7 +2549,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C456</span><span style="color:#41AD21">d</span><span style="color:#4665F0">C12</span><span style="color:#41AD21">rcvMS</span>
+### T4<span style="color:var(--strat-blue)">C456</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcvMS</span>
 
 <table class="spqcey">
 <thead>
@@ -2612,7 +2612,7 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
 - During your recovery phase, set your milestones in the order 2→3→1
 - During the $\tau$ gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
 
-### T4<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+### T4<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -2655,9 +2655,9 @@ The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should
    </tbody>
 </table>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span><span style="color:#41AD21">d66</span>.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>.
 
-### T4<span style="color:#4665F0">C123</span>
+### T4<span style="color:var(--strat-blue)">C123</span>
 
 <table class="spqcey">
 <thead>
@@ -2700,9 +2700,9 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:#4665F0">C3</span>.
+This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:var(--strat-blue)">C3</span>.
 
-### T4<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+### T4<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -2745,7 +2745,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C12</span>
+### T4<span style="color:var(--strat-blue)">C12</span>
 
 <table class="spqcey">
 <thead>
@@ -2788,7 +2788,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C56</span>
+### T4<span style="color:var(--strat-blue)">C56</span>
 
 <table class="spqcey">
 <thead>
@@ -2831,7 +2831,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C4</span>
+### T4<span style="color:var(--strat-blue)">C4</span>
 
 <table class="spqcey">
 <thead>
@@ -2874,7 +2874,7 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
    </tbody>
 </table>
 
-### T4<span style="color:#4665F0">C5</span>
+### T4<span style="color:var(--strat-blue)">C5</span>
 
 <table class="spqcey">
 <thead>
@@ -2962,11 +2962,11 @@ This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced b
 
 ## Theory 5: Logistic Function
 
-### T5<span style="color:#41AD21">AI</span>
+### T5<span style="color:var(--strat-green)">AI</span>
 
-This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:#41AD21">AI</span>.
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:var(--strat-green)">AI</span>.
 
-### T5<span style="color:#41AD21">Idle xexxx</span>
+### T5<span style="color:var(--strat-green)">Idle xexxx</span>
 
 <table class="spqcey">
 <thead>
@@ -3049,7 +3049,7 @@ Strategy Credit:
 
 ## Theory 6: Integral Calculus
 
-### T6<span style="color:#41AD21">AI</span>
+### T6<span style="color:var(--strat-green)">AI</span>
 
 <table class="spqcey">
 <thead>
@@ -3104,7 +3104,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 In the sim, the ratio at which \\(c_2\\) is bought to min(\\(q_2\\), \\(r_2\\), \\(c_5\\)) is defined as the term ratio between the \\(c_5\\) term and the \\({c_1}^{1.15}{c_2}\\) term, which equates to \\({c_5}r/{c_1}^{1.15}{c_2}\\). If this ratio is 2, then the sim will buy \\(c_2\\) when 2 times cheaper than min(\\(q_2\\), \\(r_2\\), \\(c_5\\)).
 
-### T6<span style="color:#41AD21">SNAX x.xxexxx</span>
+### T6<span style="color:var(--strat-green)">SNAX x.xxexxx</span>
 
 <table class="spqcey">
 <thead>
@@ -3175,7 +3175,7 @@ Strategy Credits:
 - XLII
 
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span><span style="color:#41AD21">d</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3222,7 +3222,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C34</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span>
 
 <table class="spqcey">
 <thead>
@@ -3269,7 +3269,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span><span style="color:#41AD21">d</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3322,7 +3322,7 @@ Strategy Credits:
 **Note:**
 If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at e1 ratio the entire publication.
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>
 
 <table class="spqcey">
 <thead>
@@ -3369,7 +3369,7 @@ If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) unti
    </tbody>
 </table>
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span><span style="color:#41AD21">d</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3418,7 +3418,7 @@ If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) unti
 
 This strategy is sometimes seen at lower $\tau's$s but not at higher $\tau's$.
 
-### T6<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C345</span>
+### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span>
 
 <table class="spqcey">
 <thead>
@@ -3467,7 +3467,7 @@ This strategy is sometimes seen at lower $\tau's$s but not at higher $\tau's$.
 
 This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
 
-### T6<span style="color:#4665F0">C4</span><span style="color:#41AD21">d</span>
+### T6<span style="color:var(--strat-blue)">C4</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3514,7 +3514,7 @@ This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
    </tbody>
 </table>
 
-### T6<span style="color:#4665F0">C4</span>
+### T6<span style="color:var(--strat-blue)">C4</span>
 
 <table class="spqcey">
 <thead>
@@ -3561,7 +3561,7 @@ This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
    </tbody>
 </table>
 
-### T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+### T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3600,9 +3600,9 @@ This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
    </tbody>
 </table>
 
-Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+Both T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span> and T6<span style="color:var(--strat-blue)">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 
-### T6<span style="color:#4665F0">C3</span>
+### T6<span style="color:var(--strat-blue)">C3</span>
 
 <table class="spqcey">
 <thead>
@@ -3641,11 +3641,11 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span> and T6<span style="color:#4665F0">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+Both T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span> and T6<span style="color:var(--strat-blue)">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
 
 ## Theory 7: Numerical Methods
 
-### T7<span style="color:#41AD21">PlaySpqceyX</span>
+### T7<span style="color:var(--strat-green)">PlaySpqceyX</span>
 
 **If there is no number after T7PlaySpqcey, then use this table:**
 <table class="spqcey">
@@ -3685,7 +3685,7 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
    </tbody>
 </table>
 
-**If there is a number after T7<span style="color:#41AD21">PlaySpqcey</span> (Example: T7<span style="color:#41AD21">PlaySpqcey10</span> or T7<span style="color:#41AD21">PlaySpqcey100</span>), then use this table:**
+**If there is a number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> (Example: T7<span style="color:var(--strat-green)">PlaySpqcey10</span> or T7<span style="color:var(--strat-green)">PlaySpqcey100</span>), then use this table:**
 
 <table class="spqcey">
 <thead>
@@ -3726,20 +3726,20 @@ Both T6<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
 
 <br>
 
-While the "<span style="color:#41AD21">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:#41AD21">X</span>" also indirectly affects how much \\(c_1\\) is bought.<br>
+While the "<span style="color:var(--strat-green)">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:var(--strat-green)">X</span>" also indirectly affects how much \\(c_1\\) is bought.<br>
 **Regardless of the "X" value, the \\(c_1\\) buying condition remains "When cost is 1/10 of \\(c_2\\) cost"**<br> <br>
 
-The number after T7<span style="color:#41AD21">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br> <br>
+The number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br> <br>
 If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
 
 Strategy Credits:
 
 - Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
 - spqcey for the addition of \\(c_3\\)
-- Snaeky for number after T7<span style="color:#41AD21">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
+- Snaeky for number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
 - XLII for simulating Snaeky's idea
 
-### T7<span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+### T7<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3778,7 +3778,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C12</span><span style="color:#41AD21">d</span>
+### T7<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3817,7 +3817,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C12</span>
+### T7<span style="color:var(--strat-blue)">C12</span>
 
 <table class="spqcey">
 <thead>
@@ -3856,7 +3856,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:#4665F0">C123</span><span style="color:#41AD21">d</span>
+### T7<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -3895,7 +3895,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C12</span>
+### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C12</span>
 
 <table class="spqcey">
 <thead>
@@ -3934,7 +3934,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C123</span>
+### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C123</span>
 
 <table class="spqcey">
 <thead>
@@ -3973,7 +3973,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C124</span>
+### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C124</span>
 
 <table class="spqcey">
 <thead>
@@ -4012,7 +4012,7 @@ Strategy Credits:
    </tbody>
 </table>
 
-### T7<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C1234</span>
+### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>
 
 <table class="spqcey">
 <thead>
@@ -4091,7 +4091,7 @@ Strategy Credits:
 
 ## Theory 8: Chaos Theory
 
-### T8<span style="color:#41AD21">PlaySolarSwap</span>
+### T8<span style="color:var(--strat-green)">PlaySolarSwap</span>
 
 <table class="spqcey">
 <thead>
@@ -4132,7 +4132,7 @@ Strategy Credits:
 - Solarion for the milestone swap idea
 
 
-### T8<span style="color:#41AD21">Play</span>
+### T8<span style="color:var(--strat-green)">Play</span>
 
 <table class="spqcey">
 <thead>
@@ -4170,7 +4170,7 @@ Strategy Credits:
 
 - Playspout
 
-### T8<span style="color:#41AD21">SNAX</span>
+### T8<span style="color:var(--strat-green)">SNAX</span>
 
 <table class="spqcey">
 <thead>
@@ -4226,7 +4226,7 @@ Strategy Credits:
 - Snaeky
 - XLII
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span><span style="color:#41AD21">d</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -4260,7 +4260,7 @@ Strategy Credits:
 
 If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C35</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span>
 
 <table class="spqcey">
 <thead>
@@ -4291,7 +4291,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span><span style="color:#41AD21">d</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -4322,7 +4322,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C5</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span>
 
 <table class="spqcey">
 <thead>
@@ -4354,7 +4354,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
 </table>
 <br>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span><span style="color:#41AD21">d</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -4385,7 +4385,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
    </tbody>
 </table>
 
-### T8<span style="color:var(--palette-stroke-warning)">No</span><span style="color:#4665F0">C3</span>
+### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span>
 
 <table class="spqcey">
 <thead>
@@ -4416,7 +4416,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
    </tbody>
 </table>
 
-### T8<span style="color:#41AD21">d</span>
+### T8<span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -4481,7 +4481,7 @@ If you are confused about the "%", read about [it here.](#modulus-explanation) <
 
 ## Weierstraß Sine Product
 
-### WSP<span style="color:#41AD21">d</span><span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+### WSP<span style="color:var(--strat-green)">d</span><span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>
 
 <table class="spqcey">
 <thead>
@@ -4568,11 +4568,11 @@ The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\
 Strategy Credits:
 
 - xelaroc for testing/creating the strategy
-- Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
+- Snaeky for the <span style="color:var(--strat-red)">stop</span> \\(c_1\\) idea
 - XLII for some modifications including adding modulus and \\(c_1\\) changes
 
 
-### WSP<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">C1</span>
+### WSP<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>
 
 <table class="spqcey">
 <thead>
@@ -4619,7 +4619,7 @@ Strategy Credits:
 Strategy Credits:
 
 - xelaroc for simulating it/adding it to the sim
-- Snaeky for the <span style="color:var(--palette-stroke-warning)">stop</span> \\(c_1\\) idea
+- Snaeky for the <span style="color:var(--strat-red)">stop</span> \\(c_1\\) idea
 - XLII for \\(c_1\\) modification
 
 ### WSP
@@ -4658,7 +4658,7 @@ Strategy Credits:
 
 ## Sequential Limits
 
-### SL<span style="color:#41AD21">MS</span>
+### SL<span style="color:var(--strat-green)">MS</span>
 <br>
 
 **Milestone Swap:**
@@ -4688,7 +4688,7 @@ At the very end of publications, you will also not have to milestone swap, as we
 
 As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br><br>
 
-**Note: <span style="color:var(--palette-stroke-warning)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br><br>
+**Note: <span style="color:var(--strat-red)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br><br>
 
 The ratios for swapping are as follows, where you enter the next state when the ratio: \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
 
@@ -4708,49 +4708,49 @@ The ratios for swapping are as follows, where you enter the next state when the 
      </tr>
       <tr>
          <td class="leftHeader">e25ρ-e50ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">5x</span> cost/ρ Ratio</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">4x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">5x</span> cost/ρ Ratio</td>
+         <td>Until <span style="color:var(--strat-red)">4x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e50ρ-e75ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">7x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">6x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">7x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">6x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e75ρ-e100ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">12x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">10x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">12x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">10x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e100ρ-e150ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">20x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">15x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">20x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">15x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e150ρ-e175ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">8x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">6x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">8x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">6x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e175ρ-e200ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">1.5x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">1.5x</span> cost/ρ Ratio</td></td>
          <td>Until upgrade is bought</td>
          <td>Skip</td>
       </tr>
       <tr>
          <td class="leftHeader">e200ρ-e275ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">3x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">3x</span> cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
       <tr>
          <td class="leftHeader">e275ρ-e300ρ</td>
-         <td>Until <span style="color:var(--palette-stroke-warning)">2x</span> cost/ρ Ratio</td></td>
+         <td>Until <span style="color:var(--strat-red)">2x</span> cost/ρ Ratio</td></td>
          <td>Skip</td>
          <td>Until upgrade is bought</td>
       </tr>
@@ -4819,7 +4819,7 @@ Strategy Credit:
 
 - XLII
 
-### SL<span style="color:#41AD21">MS</span><span style="color:#41AD21">d</span>
+### SL<span style="color:var(--strat-green)">MS</span><span style="color:var(--strat-green)">d</span>
 <br>
 
 **For the milestone swapping details, read the above strategy, [SLMS](#slms). This strategy only modifies the variable buying strategies.**
@@ -4872,7 +4872,7 @@ Strategy Credit:
 
 - XLII
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span><span style="color:#41AD21">d</span>
+### SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span><span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -4918,7 +4918,7 @@ Strategy Credit:
 
 If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
 
-The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>.
+The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>.
 <br> <br>
 Strategy Credits:
 
@@ -4927,7 +4927,7 @@ Strategy Credits:
 - rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
 - XLII for buying ratios change and integration of modulus
 
-### SL<span style="color:var(--palette-stroke-warning)">Stop</span><span style="color:#4665F0">A</span>
+### SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>
 
 <table class="spqcey">
 <thead>
@@ -4979,7 +4979,7 @@ Strategy Credits:
 
 ## Euler's Formula
 
-### EF<span style="color:#41AD21">AI</span>
+### EF<span style="color:var(--strat-green)">AI</span>
 
 <table class="spqcey">
 <thead>
@@ -5048,15 +5048,15 @@ Strategy Credits:
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: “EF<span style="color:#41AD21">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: “EF<span style="color:var(--strat-green)">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
 
 If you are confused about the "%", read about [it here.](#modulus-explanation) <br><br>
 
 Strategy Credits:
 
-- The Amazing Community (EF<span style="color:#41AD21">AI</span> is a product of a bunch of ideas from various players)
+- The Amazing Community (EF<span style="color:var(--strat-green)">AI</span> is a product of a bunch of ideas from various players)
 
-### EF<span style="color:#41AD21">SNAX</span>
+### EF<span style="color:var(--strat-green)">SNAX</span>
 
 <table class="spqcey">
 <thead>
@@ -5135,7 +5135,7 @@ Strategy Credits:
 
 \* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
 
-### EF<span style="color:#41AD21">d</span>
+### EF<span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -5239,7 +5239,7 @@ Strategy Credits:
 
 ## Convergents to √2
 
-### CSR2<span style="color:#41AD21">XL x.xx</span>
+### CSR2<span style="color:var(--strat-green)">XL x.xx</span>
 
 <table class="spqcey">
 <thead>
@@ -5283,7 +5283,7 @@ Strategy Credits:
 </table>
 <br>
 
-The “x.xx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say "CSR2<span style="color:#41AD21">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
+The “x.xx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say "CSR2<span style="color:var(--strat-green)">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
 
 **Milestone Swap (pre e500\\(\rho\\))**
 
@@ -5334,7 +5334,7 @@ Strategy Credits:
 
 - XLII
 
-### CSR2<span style="color:#41AD21">d</span>
+### CSR2<span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -5398,7 +5398,7 @@ Strategy Credits:
 
 ## Fractional Integration
 
-### FI<span style="color:#41AD21">d</span>
+### FI<span style="color:var(--strat-green)">d</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5468,7 +5468,7 @@ This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until 
 
 This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until you unlock the last milestone point at e1150ρ.
 
-### FI<span style="color:#41AD21">MSd</span>
+### FI<span style="color:var(--strat-green)">MSd</span>
 
 <table class="spqcey">
 <thead>
@@ -5537,7 +5537,7 @@ Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:#41AD21">MS</span>
+### FI<span style="color:var(--strat-green)">MS</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5605,7 +5605,7 @@ Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:#41AD21">dPermaSwap</span>
+### FI<span style="color:var(--strat-green)">dPermaSwap</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5642,7 +5642,7 @@ Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level
 
 Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
 
-### FI<span style="color:#41AD21">PermaSwap</span>
+### FI<span style="color:var(--strat-green)">PermaSwap</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5679,7 +5679,7 @@ Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level
 
 Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
 
-### FI<span style="color:#41AD21">MSdPermaSwap</span>
+### FI<span style="color:var(--strat-green)">MSdPermaSwap</span>
 
 <table class="spqcey">
 <thead>
@@ -5756,7 +5756,7 @@ Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:#41AD21">MSPermaSwap</span>
+### FI<span style="color:var(--strat-green)">MSPermaSwap</span>
 <table class="spqcey">
 <thead>
   <th></th>
@@ -5835,7 +5835,7 @@ Strategy Credits:
 
 ## Fractal Patterns
 
-### FP<span style="color:#41AD21">modBurst<span style="color:#4665F0">C1</span>MS</span>
+### FP<span style="color:var(--strat-green)">modBurst<span style="color:var(--strat-blue)">C1</span>MS</span>
 
 <table class="spqcey">
 <thead>
@@ -5893,7 +5893,7 @@ For more information about the FP milestone swapping strategy, check [here.](/gu
 Strategy Credits:
 - Hotab for implementing this strategy into the sim and adjusting it
 
-### FP<span style="color:#41AD21">dMS</span>
+### FP<span style="color:var(--strat-green)">dMS</span>
 
 <table class="spqcey">
 <thead>
@@ -5992,7 +5992,7 @@ For more information about the FP milestone swapping strategy, check [here.](/gu
 
 ## Riemann Zeta Function
 
-### RZ<span style="color:#41AD21">dBH</span>
+### RZ<span style="color:var(--strat-green)">dBH</span>
 
 <table class="spqcey">
 <thead>
@@ -6028,7 +6028,7 @@ For more information about the FP milestone swapping strategy, check [here.](/gu
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">dBH</span> t=388.85 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">dBH</span> t=388.85 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
 
 The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
 
@@ -6041,7 +6041,7 @@ Strategy credits:
 - prop for the variable buying strategy
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:#41AD21">BH</span>
+### RZ<span style="color:var(--strat-green)">BH</span>
 
 <table class="spqcey">
 <thead>
@@ -6077,7 +6077,7 @@ Strategy credits:
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">BH</span> t=462.07 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">BH</span> t=462.07 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
 
 The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
 
@@ -6089,7 +6089,7 @@ Strategy credits:
 - Hotab, Blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:#41AD21">SpiralSwap</span>
+### RZ<span style="color:var(--strat-green)">SpiralSwap</span>
 
 <table class="spqcey">
 <thead>
@@ -6125,10 +6125,10 @@ Strategy credits:
 
 To perform SpiralSwap, switch milestones to prioritize c<sub><sub><small>1</small></sub></sub> exponent when ζ is close to zero (when the graph is close to the origin) and to prioritize w<sub><sub><small>2</small></sub></sub> when |ζ| is > 1.
 
-This strategy is **extremely** active. Using [RZ<span style="color:#41AD21">dMS</span>](#rzdms) is much easier and doesn't lose that much time compared to spiralswap.
+This strategy is **extremely** active. Using [RZ<span style="color:var(--strat-green)">dMS</span>](#rzdms) is much easier and doesn't lose that much time compared to spiralswap.
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">SpiralSwap</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">SpiralSwap</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
@@ -6137,7 +6137,7 @@ Strategy credits:
 - prop for the milestone swapping and variable buying strategy
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:#41AD21">dMS</span>
+### RZ<span style="color:var(--strat-green)">dMS</span>
 
 <table class="spqcey">
 <thead>
@@ -6169,7 +6169,7 @@ Strategy credits:
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">dMS</span> swap:197 c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">dMS</span> swap:197 c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
 Start the publication with the w2 milestone on.
 The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
@@ -6182,7 +6182,7 @@ Strategy credits:
 - Hotab for the dynamic swap implementation
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:#41AD21">MS</span>
+### RZ<span style="color:var(--strat-green)">MS</span>
 
 <table class="spqcey">
 <thead>
@@ -6214,7 +6214,7 @@ Strategy credits:
 </table>
 <br>
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">MS</span> swap:196 c<sub><sub><small>1</small></sub></sub>: 952 c<sub><sub><small>2</small></sub></sub>: 238.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">MS</span> swap:196 c<sub><sub><small>1</small></sub></sub>: 952 c<sub><sub><small>2</small></sub></sub>: 238.
 
 Start the publication with the w2 milestone on.
 The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
@@ -6226,7 +6226,7 @@ Strategy credits:
 - Hotab for the dynamic swap implementation
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:#41AD21">d</span>
+### RZ<span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -6265,7 +6265,7 @@ Strategy credits:
 \* If you don't have \\(c_1\\) exponent milestones, use 4×\\(c_2\\)lvl + 1 instead.
 
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:#41AD21">d</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">d</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
 
 The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
 <br>
@@ -6321,7 +6321,7 @@ Strategy credits:
 
 ## Magnetic Fields
 
-### MF<span style="color:#41AD21">d2</span>
+### MF<span style="color:var(--strat-green)">d2</span>
 
 <table class="spqcey">
 <thead>
@@ -6373,7 +6373,7 @@ Strategy Credits:
 - Gnarwhals for the variable buying strategy
 - BlackSeal for the implementation of resets in the sim
 
-### MF<span style="color:#41AD21">d</span>
+### MF<span style="color:var(--strat-green)">d</span>
 
 <table class="spqcey">
 <thead>
@@ -6477,7 +6477,7 @@ Strategy Credits:
 
 ## Basel Problem
 
-### BaP<span style="color:#41AD21">AI</span>
+### BaP<span style="color:var(--strat-green)">AI</span>
 
 <table class="spqcey">
 <thead>
@@ -6548,15 +6548,15 @@ Strategy credits:
 - Mathis S.
 
 
-### BaP<span style="color:#41AD21">AIMS</span>
+### BaP<span style="color:var(--strat-green)">AIMS</span>
 
-BaP<span style="color:#41AD21">AIMS</span> is the milestone swapping strategy for BaP.
+BaP<span style="color:var(--strat-green)">AIMS</span> is the milestone swapping strategy for BaP.
 
 For how to perform the milestone swapping strategy, check [here](/guides/custom-theories/#bap-strategy).
 
-For the variable buying strategy, check [BaP<span style="color:#41AD21">AI</span>](#bapai).
+For the variable buying strategy, check [BaP<span style="color:var(--strat-green)">AI</span>](#bapai).
 
-### BaP<span style="color:#41AD21">coast</span>
+### BaP<span style="color:var(--strat-green)">coast</span>
 
 <table class="spqcey">
 <thead>

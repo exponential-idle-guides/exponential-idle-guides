@@ -40,6 +40,7 @@ Class: breakdown;
 ### All Difficulties
 
 The algorithm goes as follows:
+
 <ol type="1">
   <li>Solve the top row.</li>
   <li>Solve the left column.</li>
@@ -141,6 +142,7 @@ The algorithm goes as follows:
 ### Easy
 
 The algorithm goes as follows:
+
 <ol type="one">
   <li>Solve top row then the middle tapping tiles below the row.</li>
   <ol type="a">
@@ -159,6 +161,7 @@ The algorithm goes as follows:
 ### Medium
 
 The algorithm goes as follows:
+
 <ol type="1">
   <li>Solve the top three rows after another tapping tiles below the row.</li>
   <ol type="a">
@@ -180,6 +183,7 @@ The algorithm goes as follows:
 ### Propagation (for Hard and Expert)
 
 The algorithm goes as follows:
+
 <ol type="1">
   <li>Solve the top row by tapping tiles directly below the row.</li>
   <ol type="a">
@@ -205,6 +209,7 @@ The algorithm goes as follows:
 ### Hard and Expert
 
 You will want to read [how to propagate](/guides/asd/#propagation-for-hard-and-expert) before continuing. The algorithm goes as follows:
+
 <ol type="1">
   <li>Propagate.</li>
   <li>Label the bottom right cells (from left to right): <em>A</em>, <em>B</em>, <em>C</em>, <em>D</em>. Label the top right cells (from left to right): <em>a</em>, <em>b</em>, <em>c</em>, <em>d</em>. We will be tapping the top row to encode the bottom row onto it.
