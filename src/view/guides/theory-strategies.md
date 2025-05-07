@@ -31,107 +31,107 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 #### Theory 1: Recurrence Relations {data-toc-exclude}
 
-T1 is one of the theories that benefit the most from active strategies. T1<span style="color:var(--strat-green)">SolarXLII xexxx</span> improves slightly on T1<span style="color:var(--strat-green)">Ratio</span>.
+T1 is one of the theories that benefit the most from active strategies. T1<green>SolarXLII xexxx</green> improves slightly on T1<green>Ratio</green>.
 
-- [T1<span style="color:var(--strat-green)">SolarXLII xexxx</span>](#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
+- [T1<green>SolarXLII xexxx</green>](#t1solarxlii-xexxx)&nbsp; — &nbsp;Very Active
 
-- [T1<span style="color:var(--strat-green)">Ratio</span>](#t1ratio)&nbsp; — &nbsp;Active
+- [T1<green>Ratio</green>](#t1ratio)&nbsp; — &nbsp;Active
 
-- [T1<span style="color:var(--strat-blue)">C34</span>](#t1c34)&nbsp; — &nbsp;Idle
+- [T1<blue>C34</blue>](#t1c34)&nbsp; — &nbsp;Idle
 
-- [T1<span style="color:var(--strat-blue)">C4</span>](#t1c4)&nbsp; — &nbsp;Idle
+- [T1<blue>C4</blue>](#t1c4)&nbsp; — &nbsp;Idle
 
 #### Theory 2: Differential Calculus {data-toc-exclude}
 
 T2 is the only theory without an active strategy after all milestones are bought, despite attempts.
 
-- [T2<span style="color:var(--strat-green)">MC</span>](#t2mc)&nbsp; — &nbsp;Semi-Idle
+- [T2<green>MC</green>](#t2mc)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:var(--strat-green)">MCAlt2</span>](#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
+- [T2<green>MCAlt2</green>](#t2mcalt2)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:var(--strat-green)">MCAlt3</span>](#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
+- [T2<green>MCAlt3</green>](#t2mcalt3)&nbsp; — &nbsp;Semi-Idle
 
-- [T2<span style="color:var(--strat-green)">MS</span>](#t2ms)&nbsp; — &nbsp;Active
+- [T2<green>MS</green>](#t2ms)&nbsp; — &nbsp;Active
 
-- [T2<span style="color:var(--strat-green)">QS</span>](#t2ms)&nbsp; — &nbsp;Semi-Idle
+- [T2<green>QS</green>](#t2ms)&nbsp; — &nbsp;Semi-Idle
 
 - [T2](#t2)&nbsp; — &nbsp;Idle
 
 #### Theory 3: Linear Algebra {data-toc-exclude}
 
 T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3</span><span style="color:var(--strat-green)">Play2</span> is currently the best active strategy above e350\\(\rho\\). T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span> is an easier version being 10-15% slower.
+T3</span><green>Play2</green> is currently the best active strategy above e350$\rho$. T3<blue>ρ2C23</blue><green>d</green> is an easier version being 10-15% slower.
 
-T3</span><span style="color:var(--strat-green)">SNAX</span> is currently the best idle strategy above e200\\(\rho\\).
-T3</span><span style="color:var(--strat-green)">SNAX2</span> is similar to T3</span><span style="color:var(--strat-green)">SNAX</span> but is designed to be QoL compatible.
+T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho$.
+T3</span><green>SNAX2</green> is similar to T3</span><green>SNAX</green> but is designed to be QoL compatible.
 
-- [T3</span><span style="color:var(--strat-green)">Play2</span>](#t3play2)&nbsp; — &nbsp;Very Active
+- [T3</span><green>Play2</green>](#t3play2)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:var(--strat-green)">Play</span>](#t3play)&nbsp; — &nbsp;Very Active
+- [T3</span><green>Play</green>](#t3play)&nbsp; — &nbsp;Very Active
 
-- [T3</span><span style="color:var(--strat-green)">SNAX</span>](#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><green>SNAX</green>](#t3snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T3</span><span style="color:var(--strat-green)">SNAXd</span><span style="color:var(--strat-blue)">C12</span>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
+- [T3</span><green>SNAXd</green><blue>C12</blue>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
 
-- [T3</span><span style="color:var(--strat-green)">SNAX2</span>](#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><green>SNAX2</green>](#t3snax2)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span>](#t3r2c23d)&nbsp; — &nbsp;Active
+- [T3<blue>ρ2C23</blue><green>d</green>](#t3r2c23d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-blue)">ρ2C23</span>](#t3r2c23)&nbsp; — &nbsp;Idle
+- [T3<blue>ρ2C23</blue>](#t3r2c23)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-blue)">ρ2C23C33</span><span style="color:var(--strat-green)">d</span>](#t3r2c23c33d)&nbsp; — &nbsp;Active
+- [T3<blue>ρ2C23C33</blue><green>d</green>](#t3r2c23c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-blue)">ρ2C23C33</span>](#t3r2c23c33)&nbsp; — &nbsp;Idle
+- [T3<blue>ρ2C23C33</blue>](#t3r2c23c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span><span style="color:var(--strat-green)">d</span>](#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
+- [T3<red>No</red><blue>C11C13C21C33</blue><green>d</green>](#t3noc11c13c21c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span>](#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
+- [T3<red>No</red><blue>C11C13C21C33</blue>](#t3noc11c13c21c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span><span style="color:var(--strat-green)">d</span>](#t3noc13c33d)&nbsp; — &nbsp;Active
+- [T3<red>No</red><blue>C13C33</blue><green>d</green>](#t3noc13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span>](#t3noc13c33)&nbsp; — &nbsp;Idle
+- [T3<red>No</red><blue>C13C33</blue>](#t3noc13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span><span style="color:var(--strat-green)">d</span>](#t3noc11c13c33d)&nbsp; — &nbsp;Active
+- [T3<red>No</red><blue>C11C13C33</blue><green>d</green>](#t3noc11c13c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span>](#t3noc11c13c33)&nbsp; — &nbsp;Idle
+- [T3<red>No</red><blue>C11C13C33</blue>](#t3noc11c13c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span><span style="color:var(--strat-green)">d</span>](#t3noc13c32c33d)&nbsp; — &nbsp;Active
+- [T3<red>No</red><blue>C13C32C33</blue><green>d</green>](#t3noc13c32c33d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span>](#t3noc13c32c33)&nbsp; — &nbsp;Idle
+- [T3<red>No</red><blue>C13C32C33</blue>](#t3noc13c32c33)&nbsp; — &nbsp;Idle
 
-- [T3<span style="color:var(--strat-blue)">C11C12C21</span><span style="color:var(--strat-green)">d</span>](#t3c11c12c21d)&nbsp; — &nbsp;Active
+- [T3<blue>C11C12C21</blue><green>d</green>](#t3c11c12c21d)&nbsp; — &nbsp;Active
 
-- [T3<span style="color:var(--strat-blue)">C11C12C21</span>](#t3c11c12c21)&nbsp; — &nbsp;Idle
+- [T3<blue>C11C12C21</blue>](#t3c11c12c21)&nbsp; — &nbsp;Idle
 
 #### Theory 4: Polynomials {data-toc-exclude}
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>](#t4c3d66)&nbsp; — &nbsp;Active
+- [T4<blue>C3</blue><green>d66</green>](#t4c3d66)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
+- [T4<blue>C3</blue><green>coast</green>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
-- [T4<span style="color:var(--strat-blue)">C3</span>](#t4c3)&nbsp; — &nbsp;Idle
+- [T4<blue>C3</blue>](#t4c3)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
+- [T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C356</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
+- [T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C456</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcvMS</span>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
+- [T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>](#t4c123d)&nbsp; — &nbsp;Active
+- [T4<blue>C123</blue><green>d</green>](#t4c123d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C123</span>](#t4c123)&nbsp; — &nbsp;Idle
+- [T4<blue>C123</blue>](#t4c123)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>](#t4c12d)&nbsp; — &nbsp;Active
+- [T4<blue>C12</blue><green>d</green>](#t4c12d)&nbsp; — &nbsp;Active
 
-- [T4<span style="color:var(--strat-blue)">C12</span>](#t4c12)&nbsp; — &nbsp;Idle
+- [T4<blue>C12</blue>](#t4c12)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:var(--strat-blue)">C56</span>](#t4c56)&nbsp; — &nbsp;Idle
+- [T4<blue>C56</blue>](#t4c56)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:var(--strat-blue)">C4</span>](#t4c4)&nbsp; — &nbsp;Idle
+- [T4<blue>C4</blue>](#t4c4)&nbsp; — &nbsp;Idle
 
-- [T4<span style="color:var(--strat-blue)">C5</span>](#t4c5)&nbsp; — &nbsp;Idle
+- [T4<blue>C5</blue>](#t4c5)&nbsp; — &nbsp;Idle
 
 - [T4](#t4)&nbsp; — &nbsp;Idle
 
@@ -139,9 +139,9 @@ T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
 T5 is the second-strongest theory in endgame, only behind T6.
 
-- [T5<span style="color:var(--strat-green)">AI</span>](#t5ai)&nbsp; — &nbsp;Active
+- [T5<green>AI</green>](#t5ai)&nbsp; — &nbsp;Active
 
-- [T5<span style="color:var(--strat-green)">Idle xexxx</span>](#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
+- [T5<green>Idle xexxx</green>](#t5idle-xexxx)&nbsp; — &nbsp;Semi-Idle
 
 - [T5](#t5)&nbsp; — &nbsp;Idle
 
@@ -149,92 +149,92 @@ T5 is the second-strongest theory in endgame, only behind T6.
 
 T6 is the most powerful theory in endgame, with several players reaching well over e1300𝜏 on their main save, some even over e1400𝜏.
 
-- [T6<span style="color:var(--strat-green)">AI</span>](#t6ai)&nbsp; — &nbsp;Active
+- [T6<green>AI</green>](#t6ai)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-green)">SNAX x.xxexxx</span>](#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
+- [T6<green>SNAX x.xxexxx</green>](#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span><span style="color:var(--strat-green)">d</span>](#t6noc34d)&nbsp; — &nbsp;Active
+- [T6<red>No</red><blue>C34</blue><green>d</green>](#t6noc34d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span>](#t6noc34)&nbsp; — &nbsp;Idle
+- [T6<red>No</red><blue>C34</blue>](#t6noc34)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span><span style="color:var(--strat-green)">d</span>](#t6noc1234d)&nbsp; — &nbsp;Active
+- [T6<red>No</red><blue>C1234</blue><green>d</green>](#t6noc1234d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>](#t6noc1234)&nbsp; — &nbsp;Idle
+- [T6<red>No</red><blue>C1234</blue>](#t6noc1234)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span><span style="color:var(--strat-green)">d</span>](#t6noc345d)&nbsp; — &nbsp;Active
+- [T6<red>No</red><blue>C345</blue><green>d</green>](#t6noc345d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span>](#t6noc345)&nbsp; — &nbsp;Idle
+- [T6<red>No</red><blue>C345</blue>](#t6noc345)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--strat-blue)">C4</span><span style="color:var(--strat-green)">d</span>](#t6c4d)&nbsp; — &nbsp;Active
+- [T6<blue>C4</blue><green>d</green>](#t6c4d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-blue)">C4</span>](#t6c4)&nbsp; — &nbsp;Idle
+- [T6<blue>C4</blue>](#t6c4)&nbsp; — &nbsp;Idle
 
-- [T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t6c3d)&nbsp; — &nbsp;Active
+- [T6<blue>C3</blue><green>d</green>](#t6c3d)&nbsp; — &nbsp;Active
 
-- [T6<span style="color:var(--strat-blue)">C3</span>](#t6c3)&nbsp; — &nbsp;Idle
+- [T6<blue>C3</blue>](#t6c3)&nbsp; — &nbsp;Idle
 
 #### Theory 7: Numerical Methods {data-toc-exclude}
 
 T7 is the third-weakest theory in endgame, ahead of T2 and T8.
 
-- [T7<span style="color:var(--strat-green)">PlaySpqceyX</span>](#t7playspqceyx)&nbsp; — &nbsp;Active
+- [T7<green>PlaySpqceyX</green>](#t7playspqceyx)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t7c3d)&nbsp; — &nbsp;Active
+- [T7<blue>C3</blue><green>d</green>](#t7c3d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>](#t7c12d)&nbsp; — &nbsp;Active
+- [T7<blue>C12</blue><green>d</green>](#t7c12d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--strat-blue)">C12</span>](#t7c12)&nbsp; — &nbsp;Idle
+- [T7<blue>C12</blue>](#t7c12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>](#t7c123d)&nbsp; — &nbsp;Active
+- [T7<blue>C123</blue><green>d</green>](#t7c123d)&nbsp; — &nbsp;Active
 
-- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C12</span>](#t7noc12)&nbsp; — &nbsp;Idle
+- [T7<red>No</red><blue>C12</blue>](#t7noc12)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C123</span>](#t7noc123)&nbsp; — &nbsp;Idle
+- [T7<red>No</red><blue>C123</blue>](#t7noc123)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C124</span>](#t7noc124)&nbsp; — &nbsp;Idle
+- [T7<red>No</red><blue>C124</blue>](#t7noc124)&nbsp; — &nbsp;Idle
 
-- [T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>](#t7noc1234)&nbsp; — &nbsp;Idle
+- [T7<red>No</red><blue>C1234</blue>](#t7noc1234)&nbsp; — &nbsp;Idle
 
 - [T7](#t7)&nbsp; — &nbsp;Idle
 
 #### Theory 8: Chaos Theory {data-toc-exclude}
 
-T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<span style="color:var(--strat-green)">PlaySolarSwap</span>).
+T8 is the weakest theory in endgame and has the most active strategy of any main theory (T8<green>PlaySolarSwap</green>).
 
-- [T8<span style="color:var(--strat-green)">PlaySolarSwap</span>](#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
+- [T8<green>PlaySolarSwap</green>](#t8playsolarswap)&nbsp; — &nbsp;**VERY** Active
 
-- [T8<span style="color:var(--strat-green)">Play</span>](#t8play)&nbsp; — &nbsp;Active
+- [T8<green>Play</green>](#t8play)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--strat-green)">SNAX</span>](#t8snax)&nbsp; — &nbsp;Semi-Idle
+- [T8<green>SNAX</green>](#t8snax)&nbsp; — &nbsp;Semi-Idle
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span><span style="color:var(--strat-green)">d</span>](#t8noc35d)&nbsp; — &nbsp;Active
+- [T8<red>No</red><blue>C35</blue><green>d</green>](#t8noc35d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span>](#t8noc35)&nbsp; — &nbsp;Idle
+- [T8<red>No</red><blue>C35</blue>](#t8noc35)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span><span style="color:var(--strat-green)">d</span>](#t8noc5d)&nbsp; — &nbsp;Active
+- [T8<red>No</red><blue>C5</blue><green>d</green>](#t8noc5d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span>](#t8noc5t834)&nbsp; — &nbsp;Idle
+- [T8<red>No</red><blue>C5</blue>](#t8noc5t834)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>](#t8noc3d)&nbsp; — &nbsp;Active
+- [T8<red>No</red><blue>C3</blue><green>d</green>](#t8noc3d)&nbsp; — &nbsp;Active
 
-- [T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span>](#t8noc3)&nbsp; — &nbsp;Idle
+- [T8<red>No</red><blue>C3</blue>](#t8noc3)&nbsp; — &nbsp;Idle
 
-- [T8<span style="color:var(--strat-green)">d</span>](#t8d)&nbsp; — &nbsp;Active
+- [T8<green>d</green>](#t8d)&nbsp; — &nbsp;Active
 
 - [T8](#t8)&nbsp; — &nbsp;Idle
 
 ### Official Custom Theories {data-toc-exclude}
 
 In chronological order of release.
-<!-- Read more about custom theories on (link to custom theory guide page) -->
+Read more about custom theories in the [Custom Theory Guide](/guides/custom-theories.md).
 
 #### Custom Theory 1: Weierstraß Sine Product {data-toc-exclude}
 
 The first official custom theory, abbreviated WSP, was created by xelaroc and released on January 15, 2022.
 
-- [WSP<span style="color:var(--strat-green)">d</span><span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>](#wspdstopc1)&nbsp; — &nbsp;Active
+- [WSP<green>d</green><red>Stop</red><blue>C1</blue>](#wspdstopc1)&nbsp; — &nbsp;Active
 
-- [WSP<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>](#wspstopc1)&nbsp; — &nbsp;Semi-Idle
+- [WSP<red>Stop</red><blue>C1</blue>](#wspstopc1)&nbsp; — &nbsp;Semi-Idle
 
 - [WSP](#wsp)&nbsp; — &nbsp;Idle
 
@@ -242,23 +242,23 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<span style="color:var(--strat-green)">MS</span>](#slms)&nbsp; — &nbsp;Active
+- [SL<green>MS</green>](#slms)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:var(--strat-green)">MS</span><span style="color:var(--strat-green)">d</span>](#slmsd)&nbsp; — &nbsp;Very Active
+- [SL<green>MSd</green>](#slmsd)&nbsp; — &nbsp;Very Active
 
-- [SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span><span style="color:var(--strat-green)">d</span>](#slstopad)&nbsp; — &nbsp;Active
+- [SL<red>Stop</red><blue>A</blue><green>d</green>](#slstopad)&nbsp; — &nbsp;Active
 
-- [SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>](#slstopa)&nbsp; — &nbsp;Idle
+- [SL<red>Stop</red><blue>A</blue>](#slstopa)&nbsp; — &nbsp;Idle
 
 #### Custom Theory 3: Euler's Formula {data-toc-exclude}
 
 The third/fourth official custom theory, abbreviated EF, was first planned by Snaeky, coded by peanut, and balanced with help by XLII. It was released on May 4, 2022, in the same update as CSR2 and the $\tau$ cap increase.
 
-- [EF<span style="color:var(--strat-green)">AI</span>](#efai)&nbsp; — &nbsp;Active
+- [EF<green>AI</green>](#efai)&nbsp; — &nbsp;Active
 
-- [EF<span style="color:var(--strat-green)">SNAX</span>](#efsnax)&nbsp; — &nbsp;Semi-Idle
+- [EF<green>SNAX</green>](#efsnax)&nbsp; — &nbsp;Semi-Idle
 
-- [EF<span style="color:var(--strat-green)">d</span>](#efd)&nbsp; — &nbsp;Active
+- [EF<green>d</green>](#efd)&nbsp; — &nbsp;Active
 
 - [EF](#ef)&nbsp; — &nbsp;Idle
 
@@ -266,9 +266,9 @@ The third/fourth official custom theory, abbreviated EF, was first planned by Sn
 
 The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by Solarion. It was released on May 4, 2022, in the same update as Euler’s Formula and the CT $\tau$ cap increase from e100 to e150.
 
-- [CSR2<span style="color:var(--strat-green)">XL x.xx</span>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500\\(\rho\\), Active post-e500\\(\rho\\)
+- [CSR2<green>XL x.xx</green>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500$\rho$, Active post-e500$\rho$
 
-- [CSR2<span style="color:var(--strat-green)">d</span>](#csr2d)&nbsp; — &nbsp;Active
+- [CSR2<green>d</green>](#csr2d)&nbsp; — &nbsp;Active
 
 - [CSR2](#csr2)&nbsp; — &nbsp;Idle
 
@@ -276,29 +276,29 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT $\tau$ contribution rate increase by x4.
 
-- [FI<span style="color:var(--strat-green)">d</span>](#fid)&nbsp; — &nbsp;Active
+- [FI<green>d</green>](#fid)&nbsp; — &nbsp;Active
 
 - [FI](#fi)&nbsp; — &nbsp;Idle
 
-- [FI<span style="color:var(--strat-green)">MSd</span>](#fimsd)&nbsp; — &nbsp;Active
+- [FI<green>MSd</green>](#fimsd)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:var(--strat-green)">MS</span>](#fims)&nbsp; — &nbsp;Active
+- [FI<green>MS</green>](#fims)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:var(--strat-green)">dPermaSwap</span>](#fidpermaswap)&nbsp; — &nbsp;Active
+- [FI<green>dPermaSwap</green>](#fidpermaswap)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:var(--strat-green)">PermaSwap</span>](#fipermaswap)&nbsp; — &nbsp;Semi-Idle
+- [FI<green>PermaSwap</green>](#fipermaswap)&nbsp; — &nbsp;Semi-Idle
 
-- [FI<span style="color:var(--strat-green)">MSdPermaSwap</span>](#fimsdpermaswap)&nbsp; — &nbsp;Active
+- [FI<green>MSdPermaSwap</green>](#fimsdpermaswap)&nbsp; — &nbsp;Active
 
-- [FI<span style="color:var(--strat-green)">MSPermaSwap</span>](#fimspermaswap)&nbsp; — &nbsp;Active
+- [FI<green>MSPermaSwap</green>](#fimspermaswap)&nbsp; — &nbsp;Active
 
 #### Custom Theory 6: Fractal Patterns {data-toc-exclude}
 
 The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It was released on April 1, 2024, in the same update as Fractional Integration and the CT $\tau$ contribution rate increase by x4.
 
-- [FP<span style="color:var(--strat-green)">modBurst<span style="color:var(--strat-blue)">C1</span>MS</span>](#fpmodburstc1ms)&nbsp; — &nbsp;Active
+- [FP<green>modBurst<blue>C1</blue>MS</green>](#fpmodburstc1ms)&nbsp; — &nbsp;Active
 
-- [FP<span style="color:var(--strat-green)">dMS</span>](#fpdms)&nbsp; — &nbsp;Active
+- [FP<green>dMS</green>](#fpdms)&nbsp; — &nbsp;Active
 
 - [FP](#fp)&nbsp; — &nbsp;Idle
 
@@ -306,17 +306,17 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
 
 The seventh official custom theory, abbreviated RZ, was created by prop and released on December 15, 2024.
 
-- [RZ<span style="color:var(--strat-green)">dBH</span>](#rzdbh)&nbsp; — &nbsp;Active
+- [RZ<green>dBH</green>](#rzdbh)&nbsp; — &nbsp;Active
 
-- [RZ<span style="color:var(--strat-green)">BH</span>](#rzbh)&nbsp; — &nbsp;Idle
+- [RZ<green>BH</green>](#rzbh)&nbsp; — &nbsp;Idle
 
-- [RZ<span style="color:var(--strat-green)">SpiralSwap</span>](#rzspiralswap)&nbsp; — &nbsp;**EXTREMELY** Active
+- [RZ<green>SpiralSwap</green>](#rzspiralswap)&nbsp; — &nbsp;**EXTREMELY** Active
 
-- [RZ<span style="color:var(--strat-green)">dMS</span>](#rzdms)&nbsp; — &nbsp;Active
+- [RZ<green>dMS</green>](#rzdms)&nbsp; — &nbsp;Active
 
-- [RZ<span style="color:var(--strat-green)">MS</span>](#rzms)&nbsp; — &nbsp;Semi-Idle
+- [RZ<green>MS</green>](#rzms)&nbsp; — &nbsp;Semi-Idle
 
-- [RZ<span style="color:var(--strat-green)">d</span>](#rzd)&nbsp; — &nbsp;Active
+- [RZ<green>d</green>](#rzd)&nbsp; — &nbsp;Active
 
 - [RZ](#rz)&nbsp; — &nbsp;Idle
 
@@ -326,9 +326,9 @@ The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It 
 
 The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
 
-- [MF<span style="color:var(--strat-green)">d2</span>](#mfd2)&nbsp; — &nbsp;Very Active
+- [MF<green>d2</green>](#mfd2)&nbsp; — &nbsp;Very Active
 
-- [MF<span style="color:var(--strat-green)">d</span>](#mfd)&nbsp; — &nbsp;Active
+- [MF<green>d</green>](#mfd)&nbsp; — &nbsp;Active
 
 - [MF](#mf)&nbsp; — &nbsp;Semi-Idle
 
@@ -336,6089 +336,2432 @@ The strategies listed here are only variable buying strategies. For resets, plea
 
 The 8th/9th official custom theory, abbreviated BaP, was developed by Python's Koala. It was released on March 10, 2025 alongside MF.
 
-- [BaP<span style="color:var(--strat-green)">AI</span>](#bapai)&nbsp; — &nbsp;Active
+- [BaP<green>AI</green>](#bapai)&nbsp; — &nbsp;Active
 
-- [BaP<span style="color:var(--strat-green)">AIMS</span>](#bapaims)&nbsp; — &nbsp;Active
+- [BaP<green>AIMS</green>](#bapaims)&nbsp; — &nbsp;Active
 
-- [BaP<span style="color:var(--strat-green)">coast</span>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
+- [BaP<green>coast</green>](#bapcoast)&nbsp; — &nbsp;Semi-Idle
 
 - [BaP](#bap)&nbsp; — &nbsp;Idle
 
 ## Theory 1: Recurrence Relations
 
-### T1<span style="color:var(--strat-green)">SolarXLII xexxx</span>
+### T1<green>SolarXLII xexxx</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T1SolarXLII xexxx</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Below xexxx</td>
-         <td class="rightHeader">Above xexxx</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When q<sub><sub><small>1</small></sub></sub>cost × (6 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost <br> And q<sub><sub><small>1</small></sub></sub> cost × (15 + lvl % 10) < c<sub><sub><small>4</small></sub></sub> cost <br> And ρ > 5 × cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>When ρ > 1.11 × cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></a></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>See <a href="#t1ratio">T1<span style="color:var(--strat-green)">Ratio</span></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T1<green>SolarXLII xexxx</green>;
 
-The “xexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say “3e647”.
+| INVIS | Below xexxx $\rho$ | Above xexxx $\rho$ |
+| ----- | ----------- | ------------|
+| $q_1$ | When $q_1$ cost$\times(6+$lvl%$10)\lt q_2$ cost<br>**and** $q_1$ cost$\times(15+$lvl%$10)\lt c_4$ cost<br>**and** $\rho\gt5\times$ cost | REDX |
+| $q_2$ | when $\rho\gt5\times$ cost | REDX |
+| $c_1$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
+| $c_2$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
+| $c_3$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
+| $c_4$ | CHECK | REDX |
 
-If you are confused about the "%", read about [it here.](#modulus-explanation)<br>
+The “xexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>T1<green>SolarXLII</green> 3e647.
+
+This means to begin coasting at $3e647\rho$.
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credits:
 
-- Solarion and XLII for creating and refining this strategy off of the existing T1<span style="color:var(--strat-green)">AI</span>.
+- Solarion and XLII for creating and refining this strategy off of the existing T1<green>AI</green>.
 - rus9384#1864 for implementing coasting and a constant publication cycle for this strategy.
 
-### T1<span style="color:var(--strat-green)">Ratio {data-toc-exclude}
+### T1<green>Ratio</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T1Ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When ρ > 10 × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>When ρ > 1.11 × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When ρ > 10 × c<sub><sub><small>2</small></sub></sub>ratio × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>When ρ > c<sub><sub><small>2</small></sub></sub>ratio × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When ρ > c<sub><sub><small>3</small></sub></sub>ratio × cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T1<green>Ratio</green>;
 
-<br><br>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When $\rho\gt10\times$ cost                  |
+| $q_2$ | When $\rho\gt1.11\times$ cost                |
+| $c_1$ | When $\rho\gt10\times c_2$ratio$\times$ cost |
+| $c_2$ | When $\rho\gt c_2$ratio$\times$ cost          |
+| $c_3$ | When $\rho\gt c_3$ratio$\times$ cost          |
+| $c_4$ | CHECK                                     |
 
-**Do not buy \\(c_1\\) or \\(c_2\\) after e300\\(\rho\\).** <br><br>
+**Do not buy $c_1$ or $c_2$ after e300$\rho$.**
 
-**For the \\(c_2\\) Ratio:**
+**For the $c_2$ Ratio:**
 
-![\\(c_2\\) Ratio](/images/t1ratioc2ratio.png)
-<br> <br>
+![$c_2$ Ratio](/images/t1ratioc2ratio.png)
 
-**For the \\(c_3\\) Ratio:**
-<br> <br>
+**For the $c_3$ Ratio:**
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>c<sub><sub><small>3</small></sub></sub> Ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ρ < e300</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e300 < ρ < e450</td>
-         <td>1.1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e450 < ρ < e550</td>
-         <td>2</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e550 < ρ < e655</td>
-         <td>5</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ρ > e655</td>
-         <td>10</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat;
+Caption: $c_3$ Ratio;
+
+|                       |     |
+| --------------------- | --- |
+| $\rho\lt e300$        | 1   |
+| $e300\le\rho\lt e450$ | 1.1 |
+| $e450\le\rho\lt e550$ | 2   |
+| $e550\le\rho\lt e655$ | 5   |
+| $\rho\gt e655$        | 10  |
 
 Strategy Credits:
 
 - XLII
 
-### T1<span style="color:var(--strat-blue)">C34</span>
+### T1<blue>C34</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T1C34</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T1<blue>C34</blue>;
 
-### T1<span style="color:var(--strat-blue)">C4</span>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T1C4</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T1<blue>C4</blue>
+
+Class: strat;
+Caption: T1<blue>C4</blue>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
 
 ## Theory 2: Differential Calculus
 
-### T2<span style="color:var(--strat-green)">MC</span>
+### T2<green>MC</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="5" style="text-align:center">T2MC</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier below 1150</td>
-         <td class="rightHeader">Publication Multiplier 1150-2250</td>
-         <td class="rightHeader">Publication Multiplier 2250-2900</td>
-         <td class="rightHeader">Publication Multiplier 2900-4650</td>
-         <td class="rightHeader">Publication Multiplier above 4650</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T2<green>MC</green>;
+
+| Pub. Mult.* | $\lt1150$ | $1150-2250$ | $2250-2900$ | $2900-4650$ | $\gt4650$ |
+| ----------- | --------- | ----------- | ----------- | ----------- | --------- |
+| $q_1$       | CHECK     | CHECK       | CHECK       | CHECK       | REDX      |
+| $q_2$       | CHECK     | CHECK       | CHECK       | REDX        | REDX      |
+| $q_3$       | CHECK     | CHECK       | REDX        | REDX        | REDX      |
+| $q_4$       | CHECK     | REDX        | REDX        | REDX        | REDX      |
+| $r_1$       | CHECK     | CHECK       | CHECK       | CHECK       | REDX      |
+| $r_2$       | CHECK     | CHECK       | CHECK       | REDX        | REDX      |
+| $r_3$       | CHECK     | CHECK       | REDX        | REDX        | REDX      |
+| $r_4$       | CHECK     | REDX        | REDX        | REDX        | REDX      |
+| | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - rus9384#1864
-- XLII, whose theory simulator was used to develop and test this strategy. <br>
+- XLII, whose theory simulator was used to develop and test this strategy.
 
-The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:var(--strat-green)">MCAlt2</span>
+### T2<green>MCAlt2</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="5" style="text-align:center">T2MCAlt2</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier below 550</td>
-         <td class="rightHeader">Publication Multiplier 550-2050</td>
-         <td class="rightHeader">Publication Multiplier 2050-2700</td>
-         <td class="rightHeader">Publication Multiplier 2700-3500</td>
-         <td class="rightHeader">Publication Multiplier above 3500</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T2<green>MCAlt2</green>;
+
+| Pub. Mult.* | $\lt550$ | $550-2050$ | $2050-2700$ | $2700-3500$ | $\gt3500$ |
+| ----------- | -------- | ---------- | ----------- | ----------- | --------- |
+| $q_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
+| $q_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
+| $q_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
+| $q_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| $r_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
+| $r_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
+| $r_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
+| $r_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - hotab (better multipliers for the strat)
 - rus9384#1864
-- XLII, whose theory simulator was used to develop and test this strategy. <br>
+- XLII, whose theory simulator was used to develop and test this strategy.
 
-The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:var(--strat-green)">MCAlt3</span>
+### T2<green>MCAlt3</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="5" style="text-align:center">T2MCAlt3</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier below 750</td>
-         <td class="rightHeader">Publication Multiplier 750-1700</td>
-         <td class="rightHeader">Publication Multiplier 1700-2650</td>
-         <td class="rightHeader">Publication Multiplier 2650-3700</td>
-         <td class="rightHeader">Publication Multiplier above 3700</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T2<green>MCAlt3</green>;
+
+| Pub. Mult.* | $\lt750$ | $750-1700$ | $1700-2650$ | $2650-3700$ | $\gt3700$ |
+| ----------- | -------- | ---------- | ----------- | ----------- | --------- |
+| $q_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
+| $q_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
+| $q_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
+| $q_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| $r_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
+| $r_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
+| $r_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
+| $r_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - hotab (better multipliers for the strat)
 - rus9384#1864
-- XLII, whose theory simulator was used to develop and test this strategy. <br>
+- XLII, whose theory simulator was used to develop and test this strategy.
 
-The “MC” in T2<span style="color:var(--strat-green)">MC</span> stands for **M**ultivariable**C**oast.
+The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 
-### T2<span style="color:var(--strat-green)">MS</span>
+### T2<green>MS</green>
 
-<br>
+**T2<green>MS</green> is the milestone swap strategy for T2, which can be found [over here.](/guides/theories-1-4/#t2-strategy)**
 
-**T2<span style="color:var(--strat-green)">MS</span> is the milestone swap strategy for T2, which can be found [over here.](/guides/theories-1-4/#t2-strategy)**
+### T2<green>QS</green>
 
-### T2<span style="color:var(--strat-green)">QS</span>
+Class: strat;
+Caption: T2<green>QS</green>;
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="5" style="text-align:center">T2QS</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-
-<br>
+|       |       |
+| ----- | ----  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $q_3$ | CHECK |
+| $q_4$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $r_3$ | CHECK |
+| $r_4$ | CHECK |
 
 Start the publication with milestones in the 1→2→3→4 order.
 
 When your publication multiplier reaches a certain point, switch your milestones to the 3→4→1→2 order.
 
-The publication multiplier when you should switch is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
+The publication multiplier when you should switch is determined as follows, where $\rho$ is $\rho$ at the end of your last publication:
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">Publication Multiplier</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ρ < e75</td>
-         <td>10</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e75 < ρ < e150</td>
-         <td>200</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e150 < ρ < e200</td>
-         <td>600</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e200 < ρ < e225</td>
-         <td>100</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ρ > e225</td>
-         <td>25</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: Publication Multiplier;
+
+|                       |     |
+| --------------------- | --- |
+| $\rho\lt e75$         | 10  |
+| $e75\le\rho\lt e150$  | 200 |
+| $e150\le\rho\lt e200$ | 600 |
+| $e200\le\rho\lt e225$ | 100 |
+| $\rho\gt e225$        | 25  |
 
 ### T2
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T2</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T2;
+
+|       |       |
+| ----- | ----  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $q_3$ | CHECK |
+| $q_4$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $r_3$ | CHECK |
+| $r_4$ | CHECK |
 
 ## Theory 3: Linear Algebra
 
-### T3<span style="color:var(--strat-green)">Play2</span>
+### T3<green>Play2</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="4" style="text-align:center">T3Play2</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery up until e1 away from recovered *</td>
-         <td class="rightHeader">From e1 away from recovered until 1.2 Pub Mult</td>
-         <td class="rightHeader">Publication Mult 1.2-2.4</td>
-         <td class="rightHeader">Coasting (pub mult > 2.4)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When ⅕ of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>When ⅕ of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When 1/100 of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>When 1/100 of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>When ⅖ of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>When ⅖ of c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>When ⅛ of c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T3<green>Play2</green>;
 
-<br><br>
+| INVIS    | Before $e1$ from recovered* | $e1$ from recovered to $1.2$ Pub. Mult. | Pub. Mult $1.2-2.4$ | Pub. Mult.$\gt2.4$** |
+| -------- | --------------------------- | --------------------------------------- | ------------------- | -------------------- |
+| $b_1$    | When $\frac{1}{8}$ of $c_{31}$ cost | REDX | REDX | REDX |
+| $b_2$    | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | CHECK |
+| $b_3$    | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | CHECK |
+| $c_{11}$ | REDX  | REDX  | REDX  | REDX  |
+| $c_{12}$ | When $\frac{1}{100}$ of $c_{32}$ cost | When $\frac{1}{100}$ of $c_{32}$ cost | CHECK | CHECK |
+| $c_{13}$ | REDX  | REDX  | REDX  | REDX  |
+| $c_{21}$ | REDX  | REDX  | REDX  | REDX  |
+| $c_{22}$ | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | REDX  |
+| $c_{23}$ | CHECK | CHECK | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX  | REDX  | REDX  |
+| $c_{32}$ | CHECK | CHECK | When $\frac{1}{8}$ of $c_{12}$ cost | REDX  |
+| $c_{33}$ | When $\frac{1}{10}$ of $c_{23}$ cost | When $\frac{1}{10}$ of $c_{23}$ cost | REDX  | REDX  |
+| | | | | [FOOT;]* An earlier version of the strategy did not buy any $ρ_1$ variables. This is only around 1% slower than the strategy shown above, which does buy $c_{31}$ and $b_1$ in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not. |
+| | | | | [FOOT;]** Coasting Phase |
 
 Strategy Credits:
 
 - Playspout for creating this strategy.
-- Solarion for \\(c_{12}\\) overpush idea.
+- Solarion for $c_{12}$ overpush idea.
 - xelaroc, whose sim was used to verify Playspout's results
 - rus9384#1864 for changing phase 3 start from pub mult 1 to pub mult 1.2, and changing phase 4 start from 2 to 2.4
-- XLII, whose sim was used by rus to test T3</span><span style="color:var(--strat-green)">Play2</span> modifications, including the one stated above.
+- XLII, whose sim was used by rus to test T3<green>Play2</green> modifications, including the one stated above.
 
-<br> <br>
+### T3<green>Play</green>
 
-\* An earlier version of the strategy did not buy any \\(ρ_1\\) variables. This is only around 1% slower than the strategy shown above, which does buy \\(c_{31}\\) and \\(b_1\\) in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not.
+Class: strat_separated;
+Caption: T3<green>Play</green>;
 
-
-### T3<span style="color:var(--strat-green)">Play</span>
-
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">T3Play</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Publication Mult 1-2</td>
-         <td class="rightHeader">Coasting (pub mult > 2)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
-         <td>When cost is ⅛ of c<sub><sub><small>31</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is 2/9 of c<sub><sub><small>12</small></sub></sub> cost, 4/9 of c<sub><sub><small>22</small></sub></sub> cost</td>
-         <td>When cost is ¼ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost, ½ of c<sub><sub><small>22</small></sub></sub> cost</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, 4/9 of c<sub><sub><small>33</small></sub></sub> cost</td>
-         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
-         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost, ½ of c<sub><sub><small>33</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>When cost is ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>When cost is ½ of c<sub><sub><small>32</small></sub></sub>, c<sub><sub><small>12</small></sub></sub> cost</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When cost is 9/32 of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When cost is ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
-         <td>When cost is ¼ of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-   </tbody>
-</table>
+| Pub. Mult.* | $\lt1$ (Recovery) | $1-2$ | $\gt2$ (Coasting) |
+| -------- | --------------------------- | --------------------------------------- | -------------------- |
+| $b_1$    | When $\frac{1}{8}$ of $c_{31}$ cost | When $\frac{1}{8}$ of $c_{31}$ cost | REDX |
+| $b_2$    | When $\frac{2}{9}$ of $c_{12}$ cost<br>and $\frac{4}{9}$ of $c_{22}$ cost | When $\frac{1}{4}$ of $c_{32},c_{12}$ cost<br>and $\frac{1}{2}$ of $c_{22}$ cost | CHECK |
+| $b_3$    | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{4}{9}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost |
+| $c_{11}$ | REDX  | REDX  | REDX  |
+| $c_{12}$ | CHECK | CHECK | CHECK |
+| $c_{13}$ | REDX  | REDX  | REDX  |
+| $c_{21}$ | REDX  | REDX  | REDX  |
+| $c_{22}$ | When $\frac{1}{2}$ of $c_{32},c_{12}$ cost | When $\frac{1}{2}$ of $c_{32},c_{12}$ cost | CHECK |
+| $c_{23}$ | CHECK | CHECK | CHECK |
+| $c_{31}$ | CHECK | CHECK | REDX  |
+| $c_{32}$ | CHECK | CHECK | CHECK |
+| $c_{33}$ | When $\frac{9}{32}$ of $c_{23}$ cost | When $\frac{1}{4}$ of $c_{23}$ cost | When $\frac{1}{4}$ of $c_{23}$ cost |
+| | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3<span style="color:var(--strat-green)">SNAX</span>
+### T3<green>SNAX</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T3SNAX</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T3<green>SNAX</green>;
+
+| INVIS    | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| -------- | -------------------------- | ----------------------------- |
+| $b_1$    | CHECK                      | REDX                          |
+| $b_2$    | CHECK                      | CHECK                         |
+| $b_3$    | CHECK                      | CHECK                         |
+| $c_{11}$ | REDX                       | REDX                          |
+| $c_{12}$ | CHECK                      | CHECK                         |
+| $c_{13}$ | REDX                       | REDX                          |
+| $c_{21}$ | REDX                       | REDX                          |
+| $c_{22}$ | CHECK                      | CHECK                         |
+| $c_{23}$ | CHECK                      | CHECK                         |
+| $c_{31}$ | CHECK                      | REDX                          |
+| $c_{32}$ | CHECK                      | REDX                          |
+| $c_{33}$ | CHECK                      | REDX                          |
 
 Strategy Credits:
 
 - Snaeky for the idea.
 - XLII for simulating the strategy
 
-### T3<span style="color:var(--strat-green)">SNAXd</span><span style="color:var(--strat-blue)">C12</span>
+### T3<green>SNAXd</green><blue>C12</blue>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T3SNAXdC12</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When cost × 100 < c<sub><sub><small>32</small></sub></sub> cost</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T3<green>SNAXd</green><blue>C12</blue>;
+
+| INVIS    | Recovery (pub mult $\lt1$)          | $\tau$ Gain (pub mult $\gt1$) |
+| -------- | ----------------------------------- | ----------------------------- |
+| $b_1$    | CHECK                               | REDX                          |
+| $b_2$    | CHECK                               | CHECK                         |
+| $b_3$    | CHECK                               | CHECK                         |
+| $c_{11}$ | REDX                                | REDX                          |
+| $c_{12}$ | When cost$\times100\lt c_{32}$ cost | CHECK                         |
+| $c_{13}$ | REDX                                | REDX                          |
+| $c_{21}$ | REDX                                | REDX                          |
+| $c_{22}$ | CHECK                               | CHECK                         |
+| $c_{23}$ | CHECK                               | CHECK                         |
+| $c_{31}$ | CHECK                               | REDX                          |
+| $c_{32}$ | CHECK                               | REDX                          |
+| $c_{33}$ | CHECK                               | REDX                          |
 
 Strategy Credits:
 
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
 
-### T3<span style="color:var(--strat-green)">SNAX2</span>
+### T3<green>SNAX2</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T3SNAX2</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of ρ<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅓ of ρ<sub><sub><small>2</small></sub></sub></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅕ of ρ<sub><sub><small>3</small></sub></sub></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>When cost is 1/100 of ρ<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When cost is ⅛ of ρ<sub><sub><small>2</small></sub></sub></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>When cost is 1/10 of ρ<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T3<green>SNAX2</green>;
+
+| INVIS    | Recovery (pub mult $\lt1$)               | $\tau$ Gain (pub mult $\gt1$)          |
+| -------- | ---------------------------------------- | -------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{10}$ of $\rho_1$  | REDX                                   |
+| $b_2$    | When cost is $\frac{1}{3}$ of $\rho_2$   | When cost is $\frac{1}{3}$ of $\rho_2$ |
+| $b_3$    | When cost is $\frac{1}{5}$ of $\rho_3$   | When cost is $\frac{1}{5}$ of $\rho_3$ |
+| $c_{11}$ | REDX                                     | REDX                                   |
+| $c_{12}$ | When cost is $\frac{1}{100}$ of $\rho_2$ | CHECK                                  |
+| $c_{13}$ | REDX                                     | REDX                                   |
+| $c_{21}$ | REDX                                     | REDX                                   |
+| $c_{22}$ | CHECK                                    | When cost is $\frac{1}{8}$ of $\rho_2$ |
+| $c_{23}$ | CHECK                                    | CHECK                                  |
+| $c_{31}$ | CHECK                                    | REDX                                   |
+| $c_{32}$ | CHECK                                    | REDX                                   |
+| $c_{33}$ | When cost is $\frac{1}{100}$ of $\rho_3$ | REDX                                   |
 
 Strategy Credits:
 
 - Snaeky for the idea.
 - XLII for simulating the strategy and finding optimal ratios.
-<br> <br>
-It is designed to be an easier version of current t3 strategies.<br> <br>
+
+It is designed to be an easier version of current T3 strategies.
+
 This is the only active SNAX strategy.
 
+### T3<blue>ρ2C23</blue><green>d</green>
 
-### T3<span style="color:var(--strat-blue)">ρ2C23</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T3<blue>ρ2C23</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3ρ<sub><sub><small>2</small></sub></sub>C23d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅓ of min(c<sub><sub><small>12</small></sub></sub> cost, c<sub><sub><small>22</small></sub></sub> cost, c<sub><sub><small>32</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/9 of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | REDX                                                           |
+| $b_2$    | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{9}$ of $c_{23}$ cost                    |
+| $c_{11}$ | REDX                                                           |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | REDX                                                           |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | REDX                                                           |
+| $c_{32}$ | CHECK                                                          |
+| $c_{33}$ | REDX                                                           |
 
-### T3<span style="color:var(--strat-blue)">ρ2C23</span>
+### T3<blue>ρ2C23</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3ρ2C23</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T3<blue>ρ2C23</blue>;
 
-### T3<span style="color:var(--strat-blue)">ρ2C23C33</span><span style="color:var(--strat-green)">d</span>
+|          |       |
+| -------- | ----- |
+| $b_1$    | REDX  |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | REDX  |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | REDX  |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | REDX  |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX  |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3ρ<sub><sub><small>2</small></sub></sub>C23C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅓ of min(c<sub><sub><small>12</small></sub></sub> cost, c<sub><sub><small>22</small></sub></sub> cost, c<sub><sub><small>32</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/9 of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T3<blue>ρ2C23C33</blue><green>d</green>
 
-### T3<span style="color:var(--strat-blue)">ρ2C23C33</span>
+Class: strat;
+Caption: T3<blue>ρ2C23C33</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3ρ2C23C33</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | REDX                                                           |
+| $b_2$    | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{9}$ of $c_{23}$ cost                    |
+| $c_{11}$ | REDX                                                           |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | REDX                                                           |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | REDX                                                           |
+| $c_{32}$ | CHECK                                                          |
+| $c_{33}$ | CHECK                                                          |
 
+### T3<blue>ρ2C23C33</blue>
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T3<blue>ρ2C23C33</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC11C13C21C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/8 of c<sub><sub><small>31</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is 1/5 of other ρ<sub><sub><small>2</small></sub></sub> variables’ cost (c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/8 of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|          |       |
+| -------- | ----- |
+| $b_1$    | REDX  |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | REDX  |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | REDX  |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | REDX  |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | CHECK |
 
+### T3<red>No</red><blue>C11C13C21C33</blue><green>d</green>
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C21C33</span>
+Class: strat;
+Caption: T3<red>No</red><blue>C11C13C21C33</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC11C13C21C33</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{8}$ of $c_{31}$ cost                    |
+| $b_2$    | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{8}$ of $c_{23}$ cost                    |
+| $c_{11}$ | REDX                                                           |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | REDX                                                           |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | CHECK                                                          |
+| $c_{32}$ | CHECK                                                          |
+| $c_{33}$ | REDX                                                           |
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span><span style="color:var(--strat-green)">d</span>
+### T3<red>No</red><blue>C11C13C21C33</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC13C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T3<red>No</red><blue>C11C13C21C33</blue>;
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C33</span>
+|          |       |
+| -------- | ----- |
+| $b_1$    | CHECK |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | REDX  |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | REDX  |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX  |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC13C33</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T3<red>No</red><blue>C13C33</blue><green>d</green>
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T3<red>No</red><blue>C13C33</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC11C13C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of min(c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ¼ of min(c<sub><sub><small>12</small></sub></sub>, c<sub><sub><small>22</small></sub></sub>, c<sub><sub><small>32</small></sub></sub>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost       |
+| $b_2$    | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{10}$ of $c_{23}$ cost                   |
+| $c_{11}$ | CHECK                                                          |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | CHECK                                                          |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | CHECK                                                          |
+| $c_{32}$ | CHECK                                                          |
+| $c_{33}$ | REDX                                                           |
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C11C13C33</span>
+### T3<red>No</red><blue>C13C33</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3NoC11C13C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T3<red>No</red><blue>C13C33</blue>;
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span><span style="color:var(--strat-green)">d</span>
+|          |       |
+| -------- | ----- |
+| $b_1$    | CHECK |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX  |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3C13C32C33d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of min(c<sub><sub><small>11</small></sub></sub> cost, c<sub><sub><small>21</small></sub></sub> cost, c<sub><sub><small>31</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅕ of min(c<sub><sub><small>12</small></sub></sub> cost, c<sub><sub><small>22</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅛ of c<sub><sub><small>23</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T3<red>No</red><blue>C11C13C33</blue><green>d</green>
 
-### T3<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C13C32C33</span>
+Class: strat;
+Caption: T3<red>No</red><blue>C11C13C33</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T3C13C32C33</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost       |
+| $b_2$    | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{10}$ of $c_{23}$ cost                   |
+| $c_{11}$ | REDX                                                           |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | CHECK                                                          |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | CHECK                                                          |
+| $c_{32}$ | CHECK                                                          |
+| $c_{33}$ | REDX                                                           |
 
-### T3<span style="color:var(--strat-blue)">C11C12C21</span><span style="color:var(--strat-green)">d</span>
+### T3<red>No</red><blue>C11C13C33</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3C11C12C21d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅐ of min(c<sub><sub><small>11</small></sub></sub> cost, c<sub><sub><small>21</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>When cost is ⅐ of c<sub><sub><small>12</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T3<red>No</red><blue>C11C13C33</blue>;
 
-### T3<span style="color:var(--strat-blue)">C11C12C21</span>
+|          |       |
+| -------- | ----- |
+| $b_1$    | CHECK |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | REDX  |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX  |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">T3C11C12C21</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>11</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>12</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>13</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>21</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>22</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>23</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>31</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>32</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>33</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T3<red>No</red><blue>C13C32C33</blue><green>d</green>
 
+Class: strat;
+Caption: T3<red>No</red><blue>C13C32C33</blue><green>d</green>;
+
+|          |                                                                |
+| -------- | -------------------------------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{8}$ of $\text{min}(c_{11},c_{21},c_{31})$ cost |
+| $b_2$    | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$    | When cost is $\frac{1}{8}$ of $c_{23}$ cost                    |
+| $c_{11}$ | CHECK                                                          |
+| $c_{12}$ | CHECK                                                          |
+| $c_{13}$ | REDX                                                           |
+| $c_{21}$ | CHECK                                                          |
+| $c_{22}$ | CHECK                                                          |
+| $c_{23}$ | CHECK                                                          |
+| $c_{31}$ | CHECK                                                          |
+| $c_{32}$ | REDX                                                           |
+| $c_{33}$ | REDX                                                           |
+
+### T3<red>No</red><blue>C13C32C33</blue>
+
+Class: strat;
+Caption: T3<red>No</red><blue>C13C32C33</blue>;
+
+|          |       |
+| -------- | ----- |
+| $b_1$    | CHECK |
+| $b_2$    | CHECK |
+| $b_3$    | CHECK |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | REDX  |
+| $c_{33}$ | REDX  |
+
+### T3<blue>C11C12C21</blue><green>d</green>
+
+Class: strat;
+Caption: T3<blue>C11C12C21</blue><green>d</green>;
+
+|          |                                                         |
+| -------- | ------------------------------------------------------- |
+| $b_1$    | When cost is $\frac{1}{7}$ of $\text{min}(c_{11},c_{21})$ cost |
+| $b_2$    | When cost is $\frac{1}{5}$ of $c_{12}$ cost             |
+| $b_3$    | REDX                                                    |
+| $c_{11}$ | CHECK                                                   |
+| $c_{12}$ | CHECK                                                   |
+| $c_{13}$ | REDX                                                    |
+| $c_{21}$ | CHECK                                                   |
+| $c_{22}$ | REDX                                                    |
+| $c_{23}$ | REDX                                                    |
+| $c_{31}$ | REDX                                                    |
+| $c_{32}$ | REDX                                                    |
+| $c_{33}$ | REDX                                                    |
+
+### T3<blue>C11C12C21</blue>
+
+Class: strat;
+Caption: T3<blue>C11C12C21</blue>;
+
+|          |       |
+| -------- | ----- |
+| $b_1$    | CHECK |
+| $b_2$    | CHECK |
+| $b_3$    | REDX  |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX  |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | REDX  |
+| $c_{23}$ | REDX  |
+| $c_{31}$ | REDX  |
+| $c_{32}$ | REDX  |
+| $c_{33}$ | REDX  |
 
 ## Theory 4: Polynomials
 
-### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>
+### T4<blue>C3</blue><green>d66</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C3d66</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-         <td>When 10 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When cost is ⅔ of c<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T4<blue>C3</blue><green>d66</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+| INVIS | Recovery (pub mult $\lt1$)                              | $\tau$ Gain (pub mult $\gt1$)                           |
+| ----- | ------------------------------------------------------- | ------------------------------------------------------- |
+| $c_1$ | REDX                                                    | REDX                                                    |
+| $c_2$ | REDX                                                    | REDX                                                    |
+| $c_3$ | CHECK                                                   | CHECK                                                   |
+| $c_4$ | REDX                                                    | REDX                                                    |
+| $c_5$ | REDX                                                    | REDX                                                    |
+| $c_6$ | REDX                                                    | REDX                                                    |
+| $q_1$ | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost |
+| $q_2$ | CHECK                                                   | When cost is $\frac{2}{3}$ of $c_3$ cost                |
 
-The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them in this publication. <br>
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d66</green> $q_1$: 377 $q_2$: 252”.
 
-If you are confused about the "%", read about [it here.](#modulus-explanation)
+The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them in this publication.
 
-The “66” in the name T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span> refers to the ⅔ ratio \\(q_2\\) is bought at relative to \\(c_3\\). <br><br>
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
+
+The “66” in the name T4<blue>C3</blue><green>d66</green> refers to the ⅔ ratio $q_2$ is bought at relative to $c_3$.
 
 Strategy Credits:
 
 - XLII
 - rus9384#1864
 
+### T4<blue>C3</blue><green>coast</green>
 
+Class: strat;
+Caption: T4<blue>C3</blue><green>coast</green>;
 
-### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span>
+|       |       |
+| ----- | ----- |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C3coast</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>coast</green> $q_1$: 377 $q_2$: 252”.
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">coast</span> \\(q_1\\): 377 \\(q_2\\): 252”.
+The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them to in this publication.
 
-The levels it shows after \\(q_1\\) and \\(q_2\\) are the last levels you should buy them to in this publication. <br>
+### T4<blue>C3</blue>
 
-### T4<span style="color:var(--strat-blue)">C3</span>
+Class: strat;
+Caption: T4<blue>C3</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C3</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
 
-### T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>
+### T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C3dC12rcv</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>;
 
-### T4<span style="color:var(--strat-blue)">C356</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcv</span>
+| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
+| $c_2$ | CHECK                                     | REDX                                      |
+| $c_3$ | CHECK                                     | CHECK                                     |
+| $c_4$ | REDX                                      | REDX                                      |
+| $c_5$ | REDX                                      | REDX                                      |
+| $c_6$ | REDX                                      | REDX                                      |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     | CHECK                                     |
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C356dC12rcv</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>
 
-### T4<span style="color:var(--strat-blue)">C456</span><span style="color:var(--strat-green)">d</span><span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">rcvMS</span>
+Class: strat_separated;
+Caption: T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>;
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T4C456dC12rcvMS</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
+| $c_2$ | CHECK                                     | REDX                                      |
+| $c_3$ | CHECK                                     | CHECK                                     |
+| $c_4$ | REDX                                      | REDX                                      |
+| $c_5$ | CHECK                                     | CHECK                                     |
+| $c_6$ | CHECK                                     | CHECK                                     |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     | CHECK                                     |
+
+### T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>
+
+Class: strat_separated;
+Caption: T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>;
+
+| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
+| $c_2$ | CHECK                                     | REDX                                      |
+| $c_3$ | REDX                                      | REDX                                      |
+| $c_4$ | CHECK                                     | CHECK                                     |
+| $c_5$ | CHECK                                     | CHECK                                     |
+| $c_6$ | CHECK                                     | CHECK                                     |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     | CHECK                                     |
 
 **Milestone swapping strategy**
 
 - During your recovery phase, set your milestones in the order 2→3→1
 - During the $\tau$ gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
 
-### T4<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>
+### T4<blue>C123</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C123d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T4<blue>C123</blue><green>d</green>;
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d66</span>.
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_2$ | CHECK                                     |
+| $c_3$ | CHECK                                     |
+| $c_4$ | REDX                                      |
+| $c_5$ | REDX                                      |
+| $c_6$ | REDX                                      |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     |
 
-### T4<span style="color:var(--strat-blue)">C123</span>
+This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d66</green>.
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C123</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T4<blue>C123</blue>
 
-This strategy is typically seen at lower \\(\rho\\) and is eventually outpaced by T4<span style="color:var(--strat-blue)">C3</span>.
+Class: strat;
+Caption: T4<blue>C123</blue>;
 
-### T4<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C12d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue>.
 
-### T4<span style="color:var(--strat-blue)">C12</span>
+### T4<blue>C12</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C12</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T4<blue>C12</blue><green>d</green>;
 
-### T4<span style="color:var(--strat-blue)">C56</span>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_2$ | CHECK                                     |
+| $c_3$ | REDX                                      |
+| $c_4$ | REDX                                      |
+| $c_5$ | REDX                                      |
+| $c_6$ | REDX                                      |
+| $q_1$ | REDX                                      |
+| $q_2$ | REDX                                      |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C56</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T4<blue>C12</blue>
 
-### T4<span style="color:var(--strat-blue)">C4</span>
+Class: strat;
+Caption: T4<blue>C12</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C4</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
+| $q_1$ | REDX  |
+| $q_2$ | REDX  |
 
-### T4<span style="color:var(--strat-blue)">C5</span>
+### T4<blue>C56</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4C5</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T4<blue>C56</blue>;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+
+### T4<blue>C4</blue>
+
+Class: strat;
+Caption: T4<blue>C4</blue>;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+
+### T4<blue>C5</blue>
+
+Class: strat;
+Caption: T4<blue>C5</blue>;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
+| $c_6$ | REDX  |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
 
 ### T4
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T4</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T4;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
 
 ## Theory 5: Logistic Function
 
-### T5<span style="color:var(--strat-green)">AI</span>
+### T5<green>AI</green>
 
-This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](/guides/endgame/#t5-routing) to learn how to perform T5<span style="color:var(--strat-green)">AI</span>.
+This active strategy does not work well with this method of showing theory strategies. Please visit [this guide page](/guides/endgame/#t5-routing) to learn how to perform T5<green>AI</green>.
 
-### T5<span style="color:var(--strat-green)">Idle xexxx</span>
+### T5<green>Idle xexxx</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T5Idle xexxx</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Before xexxx ρ</td>
-         <td class="rightHeader">After xexxx ρ</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T5<green>Idle xexxx</green>;
+
+| INVIS | Before xexxx $\rho$ | After xexxx $\rho$ |
+| ----- | ------------------- | ------------------ |
+| $q_1$ | CHECK               | CHECK              |
+| $q_2$ | CHECK               | CHECK              |
+| $c_1$ | CHECK               | REDX               |
+| $c_2$ | CHECK               | CHECK              |
+| $c_3$ | CHECK               | CHECK              |
 
 **IMPORTANT:**
-Do active \\(c_2\\) buying (buying \\(c_2\\) when \\(q\\) isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br> <br>
+Do active $c_2$ buying (buying $c_2$ when $q$ isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br> <br>
 
-The “xexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say “3e647”. <br> <br>
+The “xexxx” is returned by the [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>T1<green>Idle</green> 3e647.
+
+This means to start coasting at $3e647\rho$.
 
 Strategy Credit:
 
 - XLII
 
 ### T5
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T5</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+
+Class: strat;
+Caption: T5;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
 
 ## Theory 6: Integral Calculus
 
-### T6<span style="color:var(--strat-green)">AI</span>
+### T6<green>AI</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6AI</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + r<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 8 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than c<sub><sub><small>2</small></sub></sub></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>As the publication progresses, buy less and <br>less c<sub><sub><small>2</small></sub></sub> (and therefore less c<sub><sub><small>1</small></sub></sub> too)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T6<green>AI</green>;
 
-<br>
+|       |                                                            |
+| ----- | ---------------------------------------------------------- |
+| $q_1$ | When cost$\times(7+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
+| $q_2$ | CHECK                                                      |
+| $r_1$ | When cost$\times(5+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
+| $r_2$ | CHECK                                                      |
+| $c_1$ | When cost$\times(7+$ lvl%$10)\lt c_2$ cost                |
+| $c_2$ | As the publication progresses, buy less $c_2$ (and $c_1$). |
+| $c_3$ | REDX                                                       |
+| $c_4$ | REDX                                                       |
+| $c_5$ | CHECK                                                      |
 
-If you are confused about the "%", read about [it here.](#modulus-explanation)
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-**How does \\(c_2\\) purchasing works exactly?**
+**How does $c_2$ purchasing works exactly?**
 
-In the sim, the ratio at which \\(c_2\\) is bought to min(\\(q_2\\), \\(r_2\\), \\(c_5\\)) is defined as the term ratio between the \\(c_5\\) term and the \\({c_1}^{1.15}{c_2}\\) term, which equates to \\({c_5}r/{c_1}^{1.15}{c_2}\\). If this ratio is 2, then the sim will buy \\(c_2\\) when 2 times cheaper than min(\\(q_2\\), \\(r_2\\), \\(c_5\\)).
+In the sim, the ratio at which $c_2$ is bought to $\text{min}(q_2$, $r_2$, $c_5)$ is defined as the term ratio between the $c_5$ term and the ${c_1}^{1.15}{c_2}$ term, which equates to ${c_5}r/{c_1}^{1.15}{c_2}$. If this ratio is 2, then the sim will buy $c_2$ when 2 times cheaper than $\text{min}(q_2$, $r_2$, $c_5)$.
 
-### T6<span style="color:var(--strat-green)">SNAX x.xxexxx</span>
+### T6<green>SNAX x.xxexxx</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">T6SNAX x.xxexxx</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Before x.xxexxx</td>
-         <td class="rightHeader">After x.xxexxx</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T6<green>SNAX x.xxexxx</green>;
 
-The “x.xxexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say “3e647”. <br> <br>
+| INVIS | Before x.xxexxx $\rho$ | After x.xxexxx $\rho$ |
+| ----- | ---------------------- | --------------------- |
+| $q_1$ | CHECK                  | CHECK                 |
+| $q_2$ | CHECK                  | CHECK                 |
+| $r_1$ | CHECK                  | CHECK                 |
+| $r_2$ | CHECK                  | CHECK                 |
+| $c_1$ | CHECK                  | REDX                  |
+| $c_2$ | CHECK                  | REDX                  |
+| $c_3$ | REDX                   | REDX                  |
+| $c_4$ | REDX                   | REDX                  |
+| $c_5$ | CHECK                  | CHECK                 |
+
+The “x.xxexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>T6<green>SNAX</green> 4.52e760.
+
+This means to start coasting at $4.52e760\rho$.
 
 Strategy Credits:
 
 - Snaeky
 - XLII
 
+### T6<red>No</red><blue>C34</blue><green>d</green>
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC34d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     |
+| $r_1$ | When cost is $\frac{1}{10}$ of $r_2$ cost |
+| $r_2$ | CHECK                                     |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_2$ | CHECK                                     |
+| $c_3$ | REDX                                      |
+| $c_4$ | REDX                                      |
+| $c_5$ | CHECK                                     |
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C34</span>
+### T6<red>No</red><blue>C34</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC34</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T6<red>No</red><blue>C34</blue>;
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span><span style="color:var(--strat-green)">d</span>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC1234d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 7 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>,)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 times cheaper than min(q<sub><sub><small>2</small></sub></sub>, r<sub><sub><small>2</small></sub></sub>, c<sub><sub><small>5</small></sub></sub>,)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T6<red>No</red><blue>C1234</blue><green>d</green>
 
-<br><br>
+Class: strat;
+Caption: T6<red>No</red><blue>C1234</blue><green>d</green>;
 
+|       |                                                            |
+| ----- | ---------------------------------------------------------- |
+| $q_1$ | When cost$\times(7+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
+| $q_2$ | CHECK                                                      |
+| $r_1$ | When $5\times$ cost$\lt$ $\text{min}(q_2,r_2,c_5)$ cost           |
+| $r_2$ | CHECK                                                      |
+| $c_1$ | REDX                                                       |
+| $c_2$ | REDX                                                       |
+| $c_3$ | REDX                                                       |
+| $c_4$ | REDX                                                       |
+| $c_5$ | CHECK                                                      |
 
 **Note:**
-If you need to, you can idle recovery by autobuying \\(q_1\\) and \\(r_1\\) until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying \\(q_1\\) and \\(r_1\\) at e1 ratio the entire publication.
+If you need to, you can idle recovery by autobuying $q_1$ and $r_1$ until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying $q_1$ and $r_1$ at e1 ratio the entire publication.
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>
+### T6<red>No</red><blue>C1234</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC1234</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T6<red>No</red><blue>C1234</blue>;
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span><span style="color:var(--strat-green)">d</span>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC345d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of r<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T6<red>No</red><blue>C345</blue><green>d</green>
 
-This strategy is sometimes seen at lower $\tau's$s but not at higher $\tau's$.
+Class: strat;
+Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
 
-### T6<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C345</span>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK                                     |
+| $r_1$ | When cost is $\frac{1}{10}$ of $r_2$ cost |
+| $r_2$ | CHECK                                     |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_2$ | CHECK                                     |
+| $c_3$ | REDX                                      |
+| $c_4$ | REDX                                      |
+| $c_5$ | REDX                                      |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6NoC345</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 
-This strategy is sometimes seen at lower $\tau's$ but not at higher $\tau's$.
+### T6<red>No</red><blue>C345</blue>
 
-### T6<span style="color:var(--strat-blue)">C4</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T6<red>No</red><blue>C345</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6C4d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅕ of min(c<sub><sub><small>4</small></sub></sub> cost, q<sub><sub><small>2</small></sub></sub> cost, r<sub><sub><small>2</small></sub></sub> cost) </td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
 
-### T6<span style="color:var(--strat-blue)">C4</span>
+This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6C4</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T6<blue>C4</blue><green>d</green>
 
-### T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T6<blue>C4</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6C3d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅓ of min(q<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|       |                                                       |
+| ----- | ----------------------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,r_2,c_4)$ cost |
+| $q_2$ | CHECK                                                 |
+| $r_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,r_2,c_4)$ cost |
+| $r_2$ | CHECK                                                 |
+| $c_1$ | REDX                                                  |
+| $c_2$ | REDX                                                  |
+| $c_3$ | REDX                                                  |
+| $c_4$ | CHECK                                                 |
+| $c_5$ | REDX                                                  |
 
-Both T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span> and T6<span style="color:var(--strat-blue)">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+### T6<blue>C4</blue>
 
-### T6<span style="color:var(--strat-blue)">C3</span>
+Class: strat;
+Caption: T6<blue>C4</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T6C3</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $r_2$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
+| $c_5$ | REDX  |
 
-Both T6<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span> and T6<span style="color:var(--strat-blue)">C3</span> don't have \\(r_1\\) or \\(r_2\\) listed because the two strategies only appear on the sim below the milestones that give \\(r_1\\) and \\(r_2\\).
+### T6<blue>C3</blue><green>d</green>
+
+Class: strat;
+Caption: T6<blue>C3</blue><green>d</green>;
+
+|       |                                                   |
+| ----- | ------------------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,c_3)$ cost |
+| $q_2$ | CHECK                                             |
+| $c_1$ | REDX                                              |
+| $c_2$ | REDX                                              |
+| $c_3$ | CHECK                                             |
+| $c_4$ | REDX                                              |
+| $c_5$ | REDX                                              |
+
+Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or $r_2$ listed because the two strategies only appear on the sim below the milestones that give $r_1$ and $r_2$.
+
+### T6<blue>C3</blue>
+
+Class: strat;
+Caption: T6<blue>C3</blue>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+
+Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or $r_2$ listed because the two strategies only appear on the sim below the milestones that give $r_1$ and $r_2$.
 
 ## Theory 7: Numerical Methods
 
-### T7<span style="color:var(--strat-green)">PlaySpqceyX</span>
+### T7<green>PlaySpqceyX</green>
 
 **If there is no number after T7PlaySpqcey, then use this table:**
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7PlaySpqcey</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
 
-**If there is a number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> (Example: T7<span style="color:var(--strat-green)">PlaySpqcey10</span> or T7<span style="color:var(--strat-green)">PlaySpqcey100</span>), then use this table:**
+Class: strat;
+Caption: T7<green>PlaySpqcey</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7PlaySpqceyX</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>When X times cheaper than c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost is ¼ of c<sub><sub><small>6</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost  |
+| $c_1$ | REDX                                      |
+| $c_2$ | REDX                                      |
+| $c_3$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
+| $c_4$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
+| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost  |
+| $c_6$ | CHECK                                     |
 
-<br>
+**If there is a number after T7<green>PlaySpqcey</green> (Example: T7<green>PlaySpqcey10</green> or T7<green>PlaySpqcey100</green>), then use this table:**
 
-While the "<span style="color:var(--strat-green)">X</span>" is only directly in the \\(c_2\\) buying condition, because the \\(c_1\\) buying condition is based on the cost of \\(c_2\\), the "<span style="color:var(--strat-green)">X</span>" also indirectly affects how much \\(c_1\\) is bought.<br>
-**Regardless of the "X" value, the \\(c_1\\) buying condition remains "When cost is 1/10 of \\(c_2\\) cost"**<br> <br>
+Class: strat;
+Caption: T7<green>PlaySpqceyX</green>;
 
-The number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> occurs more at lower \\(\tau\\) values. <br> <br>
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+|       |                                                     |
+| ----- | --------------------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost            |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost           |
+| $c_2$ | When <green>X</green> times cheaper than $c_6$ cost |
+| $c_3$ | When cost is $\frac{1}{10}$ of $c_6$ cost           |
+| $c_4$ | When cost is $\frac{1}{10}$ of $c_6$ cost           |
+| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost            |
+| $c_6$ | CHECK                                               |
+
+While the "<green>X</green>" is only directly in the $c_2$ buying condition, because the $c_1$ buying condition is based on the cost of $c_2$, the "<green>X</green>" also indirectly affects how much $c_1$ is bought.
+
+**Regardless of the "X" value, the $c_1$ buying condition remains "When cost is $\frac{1}{10}$ of $c_2$ cost"**
+
+The number after T7<green>PlaySpqcey</green> occurs more at lower $\tau$ values.
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credits:
 
-- Playspout for \\(q_1\\), \\(c_4\\), \\(c_5\\), \\(c_6\\) buying strategy
-- spqcey for the addition of \\(c_3\\)
-- Snaeky for number after T7<span style="color:var(--strat-green)">PlaySpqcey</span> for if \\(c_2\\) and \\(c_1\\) are bought, and if so, what ratio
+- Playspout for $q_1$, $c_4$, $c_5$, $c_6$ buying strategy
+- spqcey for the addition of $c_3$
+- Snaeky for number after T7<green>PlaySpqcey</green> for if $c_2$ and $c_1$ are bought, and if so, what ratio
 - XLII for simulating Snaeky's idea
 
-### T7<span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
+### T7<blue>C3</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7C3d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T7<blue>C3</blue><green>d</green>;
 
-### T7<span style="color:var(--strat-blue)">C12</span><span style="color:var(--strat-green)">d</span>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $c_3$ cost |
+| $c_1$ | REDX                                      |
+| $c_2$ | REDX                                      |
+| $c_3$ | CHECK                                     |
+| $c_4$ | REDX                                      |
+| $c_5$ | REDX                                      |
+| $c_6$ | REDX                                      |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7C12d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T7<blue>C12</blue><green>d</green>
 
-### T7<span style="color:var(--strat-blue)">C12</span>
+Class: strat;
+Caption: T7<blue>C12</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7C12</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_1$ | When cost is $\frac{1}{8}$ of $c_2$ cost  |
+| $c_2$ | CHECK                                     |
+| $c_3$ | REDX                                      |
+| $c_4$ | REDX                                      |
+| $c_5$ | REDX                                      |
+| $c_6$ | REDX                                      |
 
-### T7<span style="color:var(--strat-blue)">C123</span><span style="color:var(--strat-green)">d</span>
+### T7<blue>C12</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7C123d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T7<blue>C12</blue>;
 
-### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C12</span>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | REDX  |
+| $c_6$ | REDX  |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7NoC12</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T7<blue>C123</blue><green>d</green>
 
-### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C123</span>
+Class: strat;
+Caption: T7<blue>C123</blue><green>d</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7NoC123</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |                                                           |
+| ----- | --------------------------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_3)$ cost |
+| $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_3)$ cost  |
+| $c_2$ | CHECK                                                     |
+| $c_3$ | CHECK                                                     |
+| $c_4$ | REDX                                                      |
+| $c_5$ | REDX                                                      |
+| $c_6$ | REDX                                                      |
 
-### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C124</span>
+### T7<red>No</red><blue>C12</blue>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7NoC124</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T7<red>No</red><blue>C12</blue>;
 
-### T7<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C1234</span>
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7NoC1234</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T7<red>No</red><blue>C123</blue>
+
+Class: strat;
+Caption: T7<red>No</red><blue>C123</blue>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+
+### T7<red>No</red><blue>C124</blue>
+
+Class: strat;
+Caption: T7<red>No</red><blue>C124</blue>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | CHECK |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+
+### T7<red>No</red><blue>C1234</blue>
+
+Class: strat;
+Caption: T7<red>No</red><blue>C1234</blue>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | REDX  |
+| $c_2$ | REDX  |
+| $c_3$ | REDX  |
+| $c_4$ | REDX  |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
 
 ### T7
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T7</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+
+Class: strat;
+Caption: T7;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
 
 ## Theory 8: Chaos Theory
 
-### T8<span style="color:var(--strat-green)">PlaySolarSwap</span>
+### T8<green>PlaySolarSwap</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8PlaySolarSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 5 + c<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T8<green>PlaySolarSwap</green>;
 
-**Milestone Swap:**<br>
+|       |                                                        |
+| ----- | ------------------------------------------------------ |
+| $c_1$ | When cost$\times(5+$ lvl%$10)\lt$ $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK                                                  |
+| $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost      |
+| $c_4$ | CHECK                                                  |
+| $c_5$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost      |
+
+**Milestone Swap:**
+
 Every 34 seconds, remove one level from the first milestone then immediately add the level back.
-<br> <br>
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
+
 Strategy Credits:
 
 - Playspout for the variable buying strategy
 - Solarion for the milestone swap idea
 
+### T8<green>Play</green>
 
-### T8<span style="color:var(--strat-green)">Play</span>
+Class: strat;
+Caption: T8<green>Play</green>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8Play</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ⅛ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>When cost is ⅖ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>When cost is ¼ of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+|       |                                                   |
+| ----- | ------------------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK                                             |
+| $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_4$ | CHECK                                             |
+| $c_5$ | When cost is $\frac{1}{4}$ of $\text{min}(c_2,c_4)$ cost |
 
 <!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
-<br> <br>
+
 Strategy Credits:
 
 - Playspout
 
-### T8<span style="color:var(--strat-green)">SNAX</span>
+### T8<green>SNAX</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">T8SNAX</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Multiplier < 1.6</td>
-         <td class="rightHeader">Publication Multiplier 1.6-2.3</td>
-         <td class="rightHeader">Publication Multiplier > 2.3</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: T8<green>SNAX</green>;
 
-<br><br>
+| Pub. Mult.* | $\lt1.6$ | $1.6-2.3$ | $\gt2.3$ |
+| ----------- | -------- | --------- | -------- |
+| $c_1$       | CHECK    | REDX      | REDX     |
+| $c_2$       | CHECK    | CHECK     | CHECK    |
+| $c_3$       | CHECK    | CHECK     | REDX     |
+| $c_4$       | CHECK    | CHECK     | CHECK    |
+| $c_5$       | CHECK    | CHECK     | REDX     |
+| | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - Snaeky
 - XLII
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span><span style="color:var(--strat-green)">d</span>
+### T8<red>No</red><blue>C35</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC35d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When 10 times cheaper than <br> min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: T8<red>No</red><blue>C35</blue><green>d</green>;
 
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+|       |                                                    |
+| ----- | -------------------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK                                              |
+| $c_3$ | REDX                                               |
+| $c_4$ | CHECK                                              |
+| $c_5$ | REDX                                               |
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C35</span>
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC35</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+### T8<red>No</red><blue>C35</blue>
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span><span style="color:var(--strat-green)">d</span>
+Class: strat;
+Caption: T8<red>No</red><blue>C35</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC5d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
+| $c_5$ | REDX  |
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C5</span>
+### T8<red>No</red><blue>C5</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC5</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: T8<red>No</red><blue>C5</blue><green>d</green>;
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span><span style="color:var(--strat-green)">d</span>
+|       |                                                    |
+| ----- | -------------------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK                                              |
+| $c_3$ | CHECK                                              |
+| $c_4$ | CHECK                                              |
+| $c_5$ | REDX                                               |
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC3d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of min(c<sub><sub><small>2</small></sub></sub> cost, c<sub><sub><small>4</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+### T8<red>No</red><blue>C5</blue>
 
-### T8<span style="color:var(--strat-red)">No</span><span style="color:var(--strat-blue)">C3</span>
+Class: strat;
+Caption: T8<red>No</red><blue>C5</blue>;
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8NoC3</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | REDX  |
 
-### T8<span style="color:var(--strat-green)">d</span>
+### T8<red>No</red><blue>C3</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: T8<red>No</red><blue>C3</blue><green>d</green>;
+
+|       |                                                    |
+| ----- | -------------------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK                                              |
+| $c_3$ | REDX                                               |
+| $c_4$ | CHECK                                              |
+| $c_5$ | CHECK                                              |
+
+### T8<red>No</red><blue>C3</blue>
+
+Class: strat;
+Caption: T8<red>No</red><blue>C3</blue>;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | REDX  |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+
+### T8<green>d</green>
+
+Class: strat;
+Caption: T8<green>d</green>;
+
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
+| $c_2$ | CHECK                                     |
+| $c_3$ | CHECK                                     |
+| $c_4$ | CHECK                                     |
+| $c_5$ | CHECK                                     |
 
 ### T8
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>T8</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
 
+Class: strat;
+Caption: T8;
+
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
 
 ## Weierstraß Sine Product
 
-### WSP<span style="color:var(--strat-green)">d</span><span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>
+### WSP<green>d</green><red>Stop</red><blue>C1</blue>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">WSPdStopC1</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">First 15 Seconds of Publication</td>
-         <td class="rightHeader">Rest of Publication</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
-         <td>When 8 + q<sub><sub><small>1</small></sub></sub>lvl % 10 times cheaper than min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When cost 1/Ratio of min(q<sub><sub><small>2</small></sub></sub> cost, n cost, c<sub><sub><small>2</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat_separated;
+Caption: WSP<green>d</green><red>Stop</red><blue>C1</blue>;
 
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+| INVIS | First 15sec of Publication                                     | Rest of Publication                                              |
+| ----- | -------------------------------------------------------------- | ---------------------------------------------------------------- |
+| $q_1$ | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost   |
+| $q_2$ | CHECK                                                          | CHECK                                                            |
+| $n$   | CHECK                                                          | CHECK                                                            |
+| $c_1$ | CHECK                                                          | When cost is Ratio* of $\text{min}(q_2,n,c_2)$ cost              |
+| $c_2$ | CHECK                                                          | CHECK                                                            |
 
-The “Ra­tio” stated in \\(c_1\\) is de­term­ined as fol­lows, where \\(\rho\\) is \\(\rho\\) at the end of your last pub­lic­a­tion:
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-<br>
+**\*** The “Ra­tio” stated in $c_1$ is de­term­ined as fol­lows, where $\rho$ is $\rho$ at the end of your last pub­lic­a­tion:
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>c<sub><sub><small>1</small></sub></sub> Ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ρ < e25</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e25 < ρ < e40</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e40 < ρ < e200</td>
-         <td>10</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e200 < ρ < e400</td>
-         <td>50</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e400 < ρ < e700</td>
-         <td>1000</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ρ > e700</td>
-         <td>Do not buy c<sub><sub><small>1</small></sub></sub> after 15 seconds into publication</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat;
+Caption: $c_1$ Ratio;
+
+|                       |                                               |
+| --------------------- | --------------------------------------------- |
+| $\rho\lt e25$         | 1                                             |
+| $e25\le\rho\lt e40$   | $\frac{1}{3}$                                 |
+| $e40\le\rho\lt e200$  | $\frac{1}{10}$                                |
+| $e200\le\rho\lt e400$ | $\frac{1}{50}$                                |
+| $e400\le\rho\lt e700$ | $\frac{1}{1,000}$                              |
+| $\rho\gt e700$        | Do not buy $c_1$ after 15sec into publication |
 
 Strategy Credits:
 
 - xelaroc for testing/creating the strategy
-- Snaeky for the <span style="color:var(--strat-red)">stop</span> \\(c_1\\) idea
-- XLII for some modifications including adding modulus and \\(c_1\\) changes
+- Snaeky for the <red>stop</red> $c_1$ idea
+- XLII for some modifications including adding modulus and $c_1$ changes
 
+### WSP<red>Stop</red><blue>C1</blue>
 
-### WSP<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">C1</span>
+Class: strat_separated;
+Caption: WSP<red>Stop</red><blue>C1</blue>;
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">WSPStopC1</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">First 15 Seconds of Publication</td>
-         <td class="rightHeader">Rest of Publication</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>If ρ < e450, ✔️<br>If ρ > e450, ❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+| INVIS | First 15sec of Publication | Rest of Publication                            |
+| ----- | -------------------------- | ---------------------------------------------- |
+| $q_1$ | CHECK                      | CHECK                                          |
+| $q_2$ | CHECK                      | CHECK                                          |
+| $n$   | CHECK                      | CHECK                                          |
+| $c_1$ | CHECK                      | If $\rho\lt e450$, ✔️<br>If $\rho\gt e450$,❌ |
+| $c_2$ | CHECK                      | CHECK                                          |
 
 Strategy Credits:
 
 - xelaroc for simulating it/adding it to the sim
-- Snaeky for the <span style="color:var(--strat-red)">stop</span> \\(c_1\\) idea
-- XLII for \\(c_1\\) modification
+- Snaeky for the <red>stop</red> $c_1$ idea
+- XLII for $c_1$ modification
 
 ### WSP
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">WSP</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: WSP;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $n$   | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
 
 ## Sequential Limits
 
-### SL<span style="color:var(--strat-green)">MS</span>
-<br>
+### SL<green>MS</green>
 
-**Milestone Swap:**
+**Milestone Swap**
 
 The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone. <br><br>
+For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone.
 
-There are 3 milestone states:<br>
+<br>There are 3 milestone states:
 
-**State 1**: 4→3→1→2 (prioritizes boost for the \\(e-\gamma\\) term)<br>
+<orange>**State 1**</orange>: 4→3→1→2 (prioritizes boost for the $e-\gamma$ term)
 
-**State 2**: 2→1→4→3 (prioritizes boost for \\(\dot\rho_2\\)) <br>
+<orange>**State 2**</orange>: 2→1→4→3 (prioritizes boost for $\dot\rho_2$)
 
-**State 3**: 1→2→4→3 (prioritizes boost for instantaneous \\(\rho\\) gain, aka \\(\rho_2\\) exponent)<br><br>
+<orange>**State 3**</orange>: 1→2→4→3 (prioritizes boost for instantaneous $\rho$ gain, aka $\rho_2$ exponent)
 
-This strategy swaps milestones depending on how far away the next \\(b_1\\) or \\(b_2\\) upgrade is.<br><br>
+<br>This strategy swaps milestones depending on how far away the next $b_1$ or $b_2$ upgrade is.
 
 The goal of this strategy is:
-1. Buy \\(b_1\\)/\\(b_2\\)
-2. Swap milestones into State 1 to fully utilize the boost from the new \\(b_1\\)/\\(b_2\\) upgrade.
-3. After some time (the exact amount of time will be described later in the strategy), we want to swap to State 2. This way we boost \\(\dot\rho_2\\) so we get more \\(\rho_2\\) quicker.
-4. When we are closer to the next \\(b_1\\)/\\(b_2\\) upgrade, swap to State 3 so we utilize the boost that we just got for \\(\rho_2\\). This will get us to the next \\(b_1\\)/\\(b_2\\) upgrade a lot quicker.
-5. Repeat.<br><br>
+1. Buy $b_1$/$b_2$
+2. Swap milestones into <orange>State 1</orange> to fully utilize the boost from the new $b_1$/$b_2$ upgrade.
+3. After some time (the exact amount of time will be described later in the strategy), we want to swap to <orange>State 2</orange>. This way we boost $\dot\rho_2$ so we get more $\rho_2$ quicker.
+4. When we are closer to the next $b_1$/$b_2$ upgrade, swap to <orange>State 3</orange> so we utilize the boost that we just got for $\rho_2$. This will get us to the next $b_1$/$b_2$ upgrade a lot quicker.
+5. Repeat.
 
-This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50\\(\rho\\)-e300\\(\rho\\). This means there can be up to 5-10 minute gaps between \\(b_1\\)/\\(b_2\\) upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use State 3 only, to get the last \\(\rho\\) boost before publishing. <br><br>
+<br>This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50$\rho$-e300$\rho$. This means there can be up to 5-10 minute gaps between $b_1$/$b_2$ upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
+At the very end of publications, you will also not have to milestone swap, as we will use <orange>State 3</orange> only, to get the last $\rho$ boost before publishing.
 
-As long as \\(\rho\\) < e175, we will swap between the three states, after that its just the first two states.<br><br>
+<br>As long as $\rho$ < e175, we will swap between the three states, after that its just the first two states.
 
-**Note: <span style="color:var(--strat-red)">NEVER</span> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**<br><br>
+**Note: <red>NEVER</red> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**
 
-The ratios for swapping are as follows, where you enter the next state when the ratio: \\(\frac{min(b_1 cost, b_2 cost)}{\rho}\\) is lower than the ratio provided under the header:
+<br>The ratios for swapping are as follows, where you enter the next state when the ratio: $\frac{min(b_1 cost, b_2 cost)}{\rho}$ is lower than the ratio provided under the header:
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">Ratios for Swapping</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">State 1</td>
-         <td class="rightHeader">State 2</td>
-         <td class="rightHeader">State 3</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">e25ρ-e50ρ</td>
-         <td>Until <span style="color:var(--strat-red)">5x</span> cost/ρ Ratio</td>
-         <td>Until <span style="color:var(--strat-red)">4x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e50ρ-e75ρ</td>
-         <td>Until <span style="color:var(--strat-red)">7x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--strat-red)">6x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e75ρ-e100ρ</td>
-         <td>Until <span style="color:var(--strat-red)">12x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--strat-red)">10x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e100ρ-e150ρ</td>
-         <td>Until <span style="color:var(--strat-red)">20x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--strat-red)">15x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e150ρ-e175ρ</td>
-         <td>Until <span style="color:var(--strat-red)">8x</span> cost/ρ Ratio</td></td>
-         <td>Until <span style="color:var(--strat-red)">6x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e175ρ-e200ρ</td>
-         <td>Until <span style="color:var(--strat-red)">1.5x</span> cost/ρ Ratio</td></td>
-         <td>Until upgrade is bought</td>
-         <td>Skip</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e200ρ-e275ρ</td>
-         <td>Until <span style="color:var(--strat-red)">3x</span> cost/ρ Ratio</td></td>
-         <td>Skip</td>
-         <td>Until upgrade is bought</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e275ρ-e300ρ</td>
-         <td>Until <span style="color:var(--strat-red)">2x</span> cost/ρ Ratio</td></td>
-         <td>Skip</td>
-         <td>Until upgrade is bought</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat_separated;
+Caption: Ratios for SLMS Swapping;
 
-**cost** in the table refers to minimum(\\(b_1\\) cost, \\(b_2\\) cost) <br><br>
+| INVIS                 | <orange>State 1</orange>                         | <orange>State 2</orange>                        | <orange>State 3</orange> |
+| --------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------------ |
+| $e25\le\rho\lt e50$   | Until <red>5x</red> $\frac{\text{cost}}{\rho}$   | Until <red>4x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
+| $e50\le\rho\lt e75$   | Until <red>7x</red> $\frac{\text{cost}}{\rho}$   | Until <red>6x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
+| $e75\le\rho\lt e100$  | Until <red>12x</red> $\frac{\text{cost}}{\rho}$  | Until <red>10x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought  |
+| $e100\le\rho\lt e150$ | Until <red>20x</red> $\frac{\text{cost}}{\rho}$  | Until <red>15x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought  |
+| $e150\le\rho\lt e175$ | Until <red>8x</red> $\frac{\text{cost}}{\rho}$   | Until <red>6x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
+| $e175\le\rho\lt e200$ | Until <red>1.5x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought                         | <red>Skip</red>          |
+| $e200\le\rho\lt e275$ | Until <red>3x</red> $\frac{\text{cost}}{\rho}$   | <red>Skip</red>                                 | Until upgrade is bought  |
+| $e275\le\rho\lt e300$ | Until <red>2x</red> $\frac{\text{cost}}{\rho}$   | <red>Skip</red>                                 | Until upgrade is bought  |
+| | | | [FOOT;]**cost** in the table refers to $\text{min}(b_1,b_2)$ cost. |
 
-This may seem confusing, but let's take the first row as an example.<br><br>
-In the first phase (e25\\(\rho\\) - e50\\(\rho\\)) you should have your milestones in State 1 until \\(\rho\\) is 1/5 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br>
-Then, swap to State 2 until \\(\rho\\) is 1/4 of min(\\(b_1\\) cost, \\(b_2\\) cost).<br>
-After that, swap to State 3 until you get the upgrade.<br><br>
+This may seem confusing, but let's take the first row as an example.
 
-**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**<br><br>
-The numbers are just important to give the idea for around where you want to swap.<br>
-e.g. in e200\\(\rho\\)+ range, you only want to swap when close to next \\(b_1\\)/\\(b_2\\). and e75-e150\\(\rho\\) you swap very early.<br>
-These numbers also tell you that you never want to be in State 2 for a long time.<br><br><br>
+In the first phase,$e25\rho-e50\rho$, you should have your milestones in <orange>State 1</orange> until $\rho$ is $\frac{1}{5$} of min($b_1$ cost, $b_2$ cost).
+
+Then, swap to <orange>State 2</orange> until $\rho$ is 1/4 of min($b_1$ cost, $b_2$ cost).
+
+After that, swap to <orange>State 3</orange> until you get the upgrade.
+
+**Note: You do not have to follow those ratios exactly. It does not make much difference if you do it slightly differently.**
+
+The numbers are just important to give the idea for around where you want to swap.
+
+e.g. in e200$\rho$+ range, you only want to swap when close to next $b_1$/$b_2$. and e75-e150$\rho$ you swap very early.
+
+These numbers also tell you that you never want to be in <orange>State 2</orange> for a long time.
 
 **Variable Buying**
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">SLMS</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Mult < 4</td>
-         <td class="rightHeader">Publication Mult 4-7.5</td>
-         <td class="rightHeader">Publication Mult > 7.5</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat_separated;
+Caption: SL<green>MS</green>;
 
-<br><br>
+| Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
+| ----------- | ------ | ------- | -------- |
+| $a_1$       | CHECK  | REDX    | REDX     |
+| $a_2$       | CHECK  | REDX    | REDX     |
+| $b_1$       | CHECK  | CHECK   | REDX     |
+| $b_2$       | CHECK  | CHECK   | REDX     |
+| | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credit:
 
 - XLII
 
-### SL<span style="color:var(--strat-green)">MS</span><span style="color:var(--strat-green)">d</span>
-<br>
+### SL<green>MSd</green>
 
-**For the milestone swapping details, read the above strategy, [SLMS](#slms). This strategy only modifies the variable buying strategies.**
+**For the milestone swapping details, read the above strategy, [SLMS](#milestone-swap). This strategy only modifies the variable buying strategies.**
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">SLMSd</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Mult < 4</td>
-         <td class="rightHeader">Publication Mult 4-7.5</td>
-         <td class="rightHeader">Publication Mult > 7.5</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br>If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat_separated;
+Caption: SL<green>MSd</green>;
 
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+| Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
+| ----------- | ------ | ------- | -------- |
+| $a_1$       | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_2$       | CHECK  | REDX    | REDX     |
+| $b_1$       | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_2$       | CHECK  | CHECK   | REDX     |
+| | | | [FOOT;]* Publication Multiplier |
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credit:
 
 - XLII
 
-### SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span><span style="color:var(--strat-green)">d</span>
+### SL<red>Stop</red><blue>A</blue><green>d</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">SLStopAd</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Mult < 4.5</td>
-         <td class="rightHeader">Publication Mult 4.5-6</td>
-         <td class="rightHeader">Publication Mult > 6</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>If a<sub><sub><small>1</small></sub></sub>lvl % 3 = 0, then ✔️<br>If not, buy when 2 × (a<sub><sub><small>1</small></sub></sub>lvl % 3) times cheaper than a<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>If b<sub><sub><small>1</small></sub></sub>lvl % 4 = 0 or 1, then ✔️<br>If not, buy when b<sub><sub><small>1</small></sub></sub>lvl % 4 times cheaper than b<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat_separated;
+Caption: SL<red>Stop</red><blue>A</blue><green>d</green>;
 
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br> <br>
+| Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
+| ----------- | -------- | ------- | ------ |
+| $a_1$       | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_2$       | CHECK    | REDX    | REDX   |
+| $b_1$       | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_2$       | CHECK    | CHECK   | REDX   |
+| | | | [FOOT;]* Publication Multiplier |
 
-The boost from doublings (\\(a_1\\) to \\(a_2\\), \\(b_1\\) to \\(b_2\\)) is rarely enough to justify choosing this strategy over the idle strategy SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>.
-<br> <br>
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
+
+The boost from doublings ($a_1$ to $a_2$, $b_1$ to $b_2$) is rarely enough to justify choosing this strategy over the idle strategy SL<red>Stop</red><blue>A</blue>.
+
 Strategy Credits:
 
 - xelaroc
 - Playspout
-- rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
+- rus9384#1864 for $b_1$, $b_2$ coasting at 6 publication multiplier
 - XLII for buying ratios change and integration of modulus
 
-### SL<span style="color:var(--strat-red)">Stop</span><span style="color:var(--strat-blue)">A</span>
+### SL<red>Stop</red><blue>A</blue>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="3" style="text-align:center">SLStopA</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Publication Mult < 4.5</td>
-         <td class="rightHeader">Publication Mult 4.5-6</td>
-         <td class="rightHeader">Publication Mult > 6</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat_separated;
+Caption: SL<red>Stop</red><blue>A</blue>;
+
+| Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
+| ----------- | -------- | ------- | ------ |
+| $a_1$       | CHECK    | REDX    | REDX   |
+| $a_2$       | CHECK    | REDX    | REDX   |
+| $b_1$       | CHECK    | CHECK   | REDX   |
+| $b_2$       | CHECK    | CHECK   | REDX   |
+| | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
 
 - xelaroc
 - Playspout
-- rus9384#1864 for \\(b_1\\), \\(b_2\\) coasting at 6 publication multiplier
+- rus9384#1864 for $b_1$, $b_2$ coasting at 6 publication multiplier
 
 ## Euler's Formula
 
-### EF<span style="color:var(--strat-green)">AI</span>
+### EF<green>AI</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">EFAI</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (10 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When cost × (10 + lvl % 10) < q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When ⅕ of a<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When ⅕ of a<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When ⅕ of a<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>When ⅕ of a<sub><sub><small>3</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (4 + (lvl % 10)/2) < q<sub><sub><small>2</small></sub></sub> cost</td>
-         <td>When cost × (4 + (lvl % 10)/2) < q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat_separated;
+Caption: EF<green>AI</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: “EF<span style="color:var(--strat-green)">AI</span> \\(q_1\\): 1223 \\(q_2\\): 144 \\(a_1\\): 382”. The levels it shows after each variable are the last levels you should buy them to in this publication. <br>
+| INVIS     | Recovery (pub mult $\lt1$)                                 | $\tau$ Gain (pub mult $\gt1$)                              |
+| --------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
+| $\dot{t}$ | CHECK                                                      | CHECK                                                      |
+| $q_1$     | When cost$\times(10+$lvl%$10)\lt q_2$ cost                 | When cost$\times(10+$lvl%$10)\lt q_2$ cost                 |
+| $q_2$     | CHECK                                                      | CHECK                                                      |
+| $b_1$     | CHECK                                                      | When $\frac{1}{5}$ of $a_2$ cost                           |
+| $b_2$     | CHECK                                                      | When $\frac{1}{5}$ of $a_2$ cost                           |
+| $c_1$     | CHECK                                                      | When $\frac{1}{5}$ of $a_3$ cost                           |
+| $c_2$     | CHECK                                                      | When $\frac{1}{5}$ of $a_3$ cost                           |
+| $a_1$     | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost  | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost  |
+| $a_2$     | CHECK                                                      | CHECK                                                      |
+| $a_3$     | CHECK                                                      | CHECK                                                      |
 
-If you are confused about the "%", read about [it here.](#modulus-explanation) <br><br>
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>AI</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
+
+The levels it shows after each variable are the last levels you should buy them to in this publication.
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credits:
 
-- The Amazing Community (EF<span style="color:var(--strat-green)">AI</span> is a product of a bunch of ideas from various players)
+- The Amazing Community (EF<green>AI</green> is a product of a bunch of ideas from various players)
 
-### EF<span style="color:var(--strat-green)">SNAX</span>
+### EF<green>SNAX</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">EFSNAX</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Recovery (pub mult < 1)</td>
-         <td class="rightHeader">Tau Gain (pub mult > 1)</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br> <br>
+Class: strat_separated;
+Caption: EF<green>SNAX</green>;
+
+| INVIS     | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| --------- | -------------------------- | ----------------------------- |
+| $\dot{t}$ | CHECK                      | CHECK                         |
+| $q_1$     | CHECK                      | REDX                          |
+| $q_2$     | CHECK                      | CHECK                         |
+| $b_1$     | CHECK                      | REDX                          |
+| $b_2$     | CHECK                      | REDX                          |
+| $c_1$     | CHECK                      | REDX                          |
+| $c_2$     | CHECK                      | REDX                          |
+| $a_1$     | CHECK                      | CHECK                         |
+| $a_2$     | CHECK                      | CHECK                         |
+| $a_3$     | CHECK                      | CHECK                         |
+| | | [FOOT;]**If below $e150\rho$, don’t autobuy $a_1$ after recovery.** |
 
 Strategy Credits:
 
 - Snaeky
 - XLII
-- Gaunter for buying \\(a_1\\) after recovery when past e150\\(\rho\\) strategy
+- Gaunter for buying $a_1$ after recovery when past e150$\rho$ strategy
 
-<br>
+### EF<green>d</green>
 
-\* If below e150\\(\rho\\), don’t autobuy \\(a_1\\) after recovery.
+Class: strat;
+Caption: EF<green>d</green>;
 
-### EF<span style="color:var(--strat-green)">d</span>
-
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>EFd</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is 1/10 of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost is ¼ of q<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+|           |                                           |
+| --------- | ----------------------------------------- |
+| $\dot{t}$ | CHECK                                     |
+| $q_1$     | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$     | CHECK                                     |
+| $b_1$     | CHECK                                     |
+| $b_2$     | CHECK                                     |
+| $c_1$     | CHECK                                     |
+| $c_2$     | CHECK                                     |
+| $a_1$     | When cost is $\frac{1}{4}$ of $q_2$ cost  |
+| $a_2$     | CHECK                                     |
+| $a_3$     | CHECK                                     |
 
 ### EF
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>EF</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">a<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: EF;
+
+|           |       |
+| --------- | ----- |
+| $\dot{t}$ | CHECK |
+| $q_1$     | CHECK |
+| $q_2$     | CHECK |
+| $b_1$     | CHECK |
+| $b_2$     | CHECK |
+| $c_1$     | CHECK |
+| $c_2$     | CHECK |
+| $a_1$     | CHECK |
+| $a_2$     | CHECK |
+| $a_3$     | CHECK |
 
 ## Convergents to √2
 
-### CSR2<span style="color:var(--strat-green)">XL x.xx</span>
+### CSR2<green>XL x.xx</green>
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">CSR2XL x.xx</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader"></td>
-         <td class="topHeader">Before x.xx Publication Multiplier</td>
-         <td class="rightHeader">After x.xx Publication Multiplier</td>
-     </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c), where c = cost</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(if q<sub><sub><small>2</small></sub></sub> has a similar cost to either n or c<sub><sub><small>2</small></sub></sub>, <br>prioritize the other variable over q<sub><sub><small>2</small></sub></sub>)</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min (q<sub><sub><small>2</small></sub></sub>c, nc, c<sub><sub><small>2</small></sub></sub>c)</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️(if n and c<sub><sub><small>2</small></sub></sub> have similar costs, prioritize c<sub><sub><small>2</small></sub></sub>)</td>
-         <td>❌</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-         <td>❌</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat_separated;
+Caption: CSR2<green>XL x.xx</green>;
 
-The “x.xx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say "CSR2<span style="color:var(--strat-green)">XL 2.85</span>", which would mean turn off autobuy on all variables at 2.85 publication multiplier. <br>
+| INVIS | Before x.xx Pub Mult                                 | After x.xxx Pub Mult |
+| ----- | ---------------------------------------------------- | -------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost | REDX                 |
+| $q_2$ | ✔️*                                                  | REDX                 |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost | REDX                 |
+| $n$   | ✔️**                                                 | REDX                 |
+| $c_2$ | CHECK                                                | REDX                 |
+| | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
+| | | [FOOT;]** If $n$ and $c_2$ have similar costs, prioritize $c_2$. |
 
-**Milestone Swap (pre e500\\(\rho\\))**
+The “x.xx” is returned by the [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>CSR2<green>XL 2.85</green>.
 
-Start publication with milestones in \\(c_2\\)/\\(c_2\\) exponent. 
+This means turn off autobuy on all variables at 2.85 publication multiplier.
 
-Swap to \\(q_1\\) exponent when one of these is true:
+**Milestone Swap (pre e500$\rho$)**
 
-- \\(\rho\\) × Ratio > \\(c_2\\) cost
-- \\(\rho\\) × \\(\frac{Ratio}{2}\\) > \\(n\\) cost
-- \\(\rho\\) × 2 > \\(q_2\\) cost **and** publication multiplier > 1
+Start publication with milestones in $c_2$/$c_2$ exponent. 
+
+Swap to $q_1$ exponent when one of these is true:
+
+- $\rho\times$Ratio$\gt c_2$ cost
+- $\rho\times\frac{\text{Ratio}}{2}\gt n$ cost
+- $\rho\times2\gt q_2$ cost **and** publication multiplier > 1
 						
 Follow the sim’s advice for when to start coasting.
 
-The “Ratio” stated in the \\(q_1\\) swap conditions is determined as follows, where \\(\rho\\) is \\(\rho\\) at the end of your last publication:
+The “Ratio” stated in the $q_1$ swap conditions is determined as follows, where $\rho$ is $\rho$ at the end of your last publication:
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>Ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ρ < e45</td>
-         <td>Couldn't find any good ratio here, just swap<br>when you are very close to the upgrade. - XLII</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e45 < ρ < e80</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e80 < ρ < e115</td>
-         <td>8</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">e115 < ρ < e220</td>
-         <td>20</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">ρ > e220</td>
-         <td>40</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: Ratio;
 
-<br>
+|                       |                                               |
+| --------------------- | --------------------------------------------- |
+| $\rho\lt e45$         | Swap when you are very close to the upgrade.* |
+| $e45\le\rho\lt e80$   | 4                                             |
+| $e80\le\rho\lt e115$  | 8                                             |
+| $e115\le\rho\lt e220$ | 20                                            |
+| $\rho\gt e220$        | 40                                            |
+| | [FOOT;]* Could­n't find any good ra­tio here, just swap when you are very close to the up­grade. - XLII |
 
 Strategy Credits:
 
 - XLII
 
-### CSR2<span style="color:var(--strat-green)">d</span>
+### CSR2<green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>CSR2d</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, c<sub><sub><small>2</small></sub></sub>), where c = cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 10 < min(q<sub><sub><small>2</small></sub></sub>, n, c<sub><sub><small>2</small></sub></sub>), where c = cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: CSR2<green>d</green>;
+
+|       |                                                             |
+| ----- | ----------------------------------------------------------- |
+| $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost |
+| $q_2$ | CHECK                                                       |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost |
+| $n$   | CHECK                                                       |
+| $c_2$ | CHECK                                                       |
 
 ### CSR2
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th>CSR2</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: CSR2;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | CHECK |
+| $n$   | CHECK |
+| $c_2$ | CHECK |
 
 ## Fractional Integration
 
-### FI<span style="color:var(--strat-green)">d</span>
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FId</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+### FI<green>d</green>
+
+Class: strat;
+Caption: FI<green>d</green>;
+
+|       |                                                      |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
+| $q_2$ | CHECK                                                |
+| $K$   | CHECK                                                |
+| $m$   | CHECK                                                |
+| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone routing information**
 
-This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until you unlock the last milestone point at e1150ρ.
+This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
 
 ### FI
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FI</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+
+Class: strat;
+Caption: FI;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$   | CHECK |
+| $m$   | CHECK |
+| $n$   | CHECK |
 
 **Milestone routing information**
 
-This strategy does not use the 3<sup>rd</sup> level of the g(x) milestone until you unlock the last milestone point at e1150ρ.
+This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
 
-### FI<span style="color:var(--strat-green)">MSd</span>
+### FI<green>MSd</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIMSd</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: FI<green>MSd</green>;
+
+|       |                                                      |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
+| $q_2$ | CHECK                                                |
+| $K$   | CHECK                                                |
+| $m$   | CHECK                                                |
+| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
-When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
 
-Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
 
-<table class="spqcey">
-<thead>
-  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
-  <th style="text-align:center">q ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">1-4</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">5-9</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">10-19</td>
-         <td>2.5</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">20+</td>
-         <td>2</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
-<br>
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4            | 4         |
+| 5-9            | 3         |
+| 10-19          | 2.5       |
+| 0, 20-22       | 2         |
 
 Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:var(--strat-green)">MS</span>
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIMS</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+### FI<green>MS</green>
+
+Class: strat;
+Caption: FI<green>MS</green>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$   | CHECK |
+| $m$   | CHECK |
+| $n$   | CHECK |
 
 **Milestone swapping strategy**
 
-When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
 
-Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
 
-<table class="spqcey">
-<thead>
-  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
-  <th style="text-align:center">q ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">1-4</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">5-9</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">10-19</td>
-         <td>2.5</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">20+</td>
-         <td>2</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
-<br>
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4            | 4         |
+| 5-9            | 3         |
+| 10-19          | 2.5       |
+| 0, 20-22       | 2         |
 
 Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:var(--strat-green)">dPermaSwap</span>
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIdPermaSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+### FI<green>dPermaSwap</green>
+
+Class: strat;
+Caption: FI<green>dPermaSwap</green>;
+
+|       |                                                      |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
+| $q_2$ | CHECK                                                |
+| $K$   | CHECK                                                |
+| $m$   | CHECK                                                |
+| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **PermaSwap strategy**
 
-Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
 
-Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
 
-### FI<span style="color:var(--strat-green)">PermaSwap</span>
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIPermaSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+### FI<green>PermaSwap</green>
+
+Class: strat;
+Caption: FI<green>PermaSwap</green>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$   | CHECK |
+| $m$   | CHECK |
+| $n$   | CHECK |
 
 **PermaSwap strategy**
 
-Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
 
-Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
 
-### FI<span style="color:var(--strat-green)">MSdPermaSwap</span>
+### FI<green>MSdPermaSwap</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIMSdPermaSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 23) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>When cost × (1 + lvl % 11) < min(q<sub><sub><small>2</small></sub></sub> cost, K cost, m cost)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: FI<green>MSdPermaSwap</green>;
+
+|       |                                                      |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
+| $q_2$ | CHECK                                                |
+| $K$   | CHECK                                                |
+| $m$   | CHECK                                                |
+| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
-When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
 
-Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
 
-<table class="spqcey">
-<thead>
-  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
-  <th style="text-align:center">q ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">1-4</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">5-9</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">10-19</td>
-         <td>2.5</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">20+</td>
-         <td>2</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
-<br>
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4            | 4         |
+| 5-9            | 3         |
+| 10-19          | 2.5       |
+| 0, 20-22       | 2         |
 
 **PermaSwap strategy**
 
-Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
 
-Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
-
-<br>
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
 
 Strategy Credits:
 
 - Playspout for the milestone swapping strategy
 
-### FI<span style="color:var(--strat-green)">MSPermaSwap</span>
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FIMSPermaSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">K</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">m</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+### FI<green>MSPermaSwap</green>
+
+Class: strat;
+Caption: FI<green>MSPermaSwap</green>;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$   | CHECK |
+| $m$   | CHECK |
+| $n$   | CHECK |
 
 **Milestone swapping strategy**
 
-When buying a new level of q<sub><sub><small>2</small></sub></sub>, swap n and m milestones to q<sub><sub><small>1</small></sub></sub> exponent to build up q.
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
 
-Swap back to m and n when your q got multiplied by a ratio (since you started the swapping phase) depending on your q<sub><sub><small>1</small></sub></sub> lvl % 23:
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
 
-<table class="spqcey">
-<thead>
-  <th style="text-align:center">q<sub><sub><small>1</small></sub></sub> lvl % 23</th>
-  <th style="text-align:center">q ratio</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">1-4</td>
-         <td>4</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">5-9</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">10-19</td>
-         <td>2.5</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">20+</td>
-         <td>2</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
-<br>
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4            | 4         |
+| 5-9            | 3         |
+| 10-19          | 2.5       |
+| 0, 20-22       | 2         |
 
 **PermaSwap strategy**
 
-Before reaching e1076ρ in your publication, do not use the 3<sup>rd</sup> level of the g(x) milestone.
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
 
-Upon reaching e1076ρ, switch a milestone point into the 3<sup>rd</sup> level of the g(x) milestone, at the cost of resetting q.
-
-<br>
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
 
 Strategy Credits:
 
 - Playspout for the milestone swapping strategy
-
 
 ## Fractal Patterns
 
-### FP<span style="color:var(--strat-green)">modBurst<span style="color:var(--strat-blue)">C1</span>MS</span>
+### FP<green>modBurst<blue>C1</blue>MS</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FPmodBurstC1MS</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small></small></sub></sub></td>
-         <td>When cost × (1 + lvl % 100) < min(c<sub><sub><small>2</small></sub></sub> cost, s cost)<br>
-         (Autobuy if you can afford the next lvl%100=1 before the next c<sub><sub><small>2</small></sub></sub> or s)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(if c<sub><sub><small>2</small></sub></sub> and s have similar costs, prioritize s)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (1 + lvl % 10) < min(q<sub><sub><small>2</small></sub></sub> cost, s cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️(if q<sub><sub><small>2</small></sub></sub> and s have similar costs, prioritize s)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">s</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
+
+|           |                                                      |
+| --------- | ---------------------------------------------------- |
+| $\dot{t}$ | CHECK                                                |
+| $c_1$     | When cost$\times(1+$lvl%$100)\lt$$\text{min}(c_2,s)$ cost* |
+| $c_2$     | ✔️**                                                 |
+| $q_1$     | When cost$\times(1+$lvl%$10)\lt$$\text{min}(q_2,s)$ cost   |
+| $q_2$     | ✔️***                                                |
+| $r_1$     | CHECK                                                |
+| $n$       | CHECK                                                |
+| $s$       | CHECK                                                |
+| | [FOOT;]* If you can afford the next $c_1$lvl%$100=1$ before the next $c_2$ or $s$ lvl, then autobuy $c_1$. |
+| | [FOOT;]** If $c_2$ and $s$ have similar costs, prioritize $s$. |
+| | [FOOT;]*** If $q_2$ and $s$ have similar costs, prioritize $s$. |
 
 **Milestone swapping strategy (e700ρ+)**
 
-After you unlock the s milestone, you can perform milestone swapping until s > 2.
-Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
-Milestone swapping is no longer required once you can reach s > 2 quickly.
+After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$.
+Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime.
+Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
-For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
-
-<br>
+###### For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
 Strategy Credits:
+
 - Hotab for implementing this strategy into the sim and adjusting it
 
-### FP<span style="color:var(--strat-green)">dMS</span>
+### FP<green>dMS</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FPdMS</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small></small></sub></sub></td>
-         <td>When cost × (1 + lvl % 100) < c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">s</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: FP<green>dMS</green>;
+
+|           |                                             |
+| --------- | ------------------------------------------- |
+| $\dot{t}$ | CHECK                                       |
+| $c_1$     | When cost$\times(1+$lvl%$100)\lt c_2$ cost  |
+| $c_2$     | CHECK                                       |
+| $q_1$     | CHECK                                       |
+| $q_2$     | CHECK                                       |
+| $r_1$     | CHECK                                       |
+| $n$       | CHECK                                       |
+| $s$       | CHECK                                       |
 
 **Milestone swapping strategy (e700ρ+)**
 
-After you unlock the s milestone, you can perform milestone swapping until s > 2.
-Alternate between having the s milestone on and off. When s > 2, keep the milestone on everytime.
-Milestone swapping is no longer required once you can reach s > 2 quickly.
+After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$.
+Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime.
+Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
-For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
-
+###### For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
 ### FP
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">FP</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">ṫ</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">q<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">r<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">n</td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">s</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: FP;
+
+|           |       |
+| --------- | ----- |
+| $\dot{t}$ | CHECK |
+| $c_1$     | CHECK |
+| $c_2$     | CHECK |
+| $q_1$     | CHECK |
+| $q_2$     | CHECK |
+| $r_1$     | CHECK |
+| $n$       | CHECK |
+| $s$       | CHECK |
 
 ## Riemann Zeta Function
 
-### RZ<span style="color:var(--strat-green)">dBH</span>
+### RZ<green>dBH</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZdBH</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < min(w<sub><sub><small>2</small></sub></sub> cost, w<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️(Don't buy until t>16)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>dBH</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">dBH</span> t=388.85 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
+|       |                                                  |
+| ----- | ------------------------------------------------ |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$                 |
+| $c_2$ | CHECK                                            |
+| $w_1$ | When cost is $frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
+| $w_2$ | CHECK                                            |
+| $w_3$ | CHECK                                            |
+| $b$   | ✔️*                                              |
+| | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
-The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=388.85 $c_1$: 3091 $c_2$: 773.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+The value after $t$ is the $t$ value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
+
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
 
 - Hotab, Blackseal, Mathis S. for the implementation in the sim
 - Hotab, Blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
 - prop for the variable buying strategy
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:var(--strat-green)">BH</span>
+### RZ<green>BH</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZBH</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>BH</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">BH</span> t=462.07 c<sub><sub><small>1</small></sub></sub>: 3091 c<sub><sub><small>2</small></sub></sub>: 773.
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $w_1$ | CHECK |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$   | CHECK |
 
-The value after t is the t value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=388.85 $c_1$: 3091 $c_2$: 773.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+The value after $t$ is the $t$ value at which the black hole should be set. We recommend putting the threshold 0.01 above this value to avoid precision issues.
+
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
 
 - Hotab, Blackseal, Mathis S. for the implementation in the sim
 - Hotab, Blackseal, LE★Baldy for the running simulations to set up the list of good zeros the final sim uses
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:var(--strat-green)">SpiralSwap</span>
+### RZ<green>SpiralSwap</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZSpiralSwap</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < w<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️(Don't buy until t>16)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>SpiralSwap</green>;
+
+|       |                                          |
+| ----- | ---------------------------------------- |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$     |
+| $c_2$ | CHECK                                    |
+| $w_1$ | When cost is $\frac{1}{5}$ of $w_2$ cost |
+| $w_2$ | CHECK                                    |
+| $w_3$ | CHECK                                    |
+| $b$   | ✔️*                                      |
+| | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
 **SpiralSwap**
 
-To perform SpiralSwap, switch milestones to prioritize c<sub><sub><small>1</small></sub></sub> exponent when ζ is close to zero (when the graph is close to the origin) and to prioritize w<sub><sub><small>2</small></sub></sub> when |ζ| is > 1.
+To perform SpiralSwap, switch milestones to prioritize $c_1$ exponent when $\zeta$ is close to zero (when the graph is close to the origin) and to prioritize $w_2$ when $\left|\zeta\right|\gt1$.
 
-This strategy is **extremely** active. Using [RZ<span style="color:var(--strat-green)">dMS</span>](#rzdms) is much easier and doesn't lose that much time compared to spiralswap.
-<br>
+This strategy is **extremely** active. Using [RZ<green>dMS</green>](#rzdms) is much easier and doesn't lose that much time compared to RZ<green>SpiralSwap</green>.
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">SpiralSwap</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>SpiralSwap</green> $c_1$: 953 $c_2$: 238.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
 
 - prop for the milestone swapping and variable buying strategy
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:var(--strat-green)">dMS</span>
+### RZ<green>dMS</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZdMS</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < w<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️(Don't buy until t>16)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>dMS</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">dMS</span> swap:197 c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+|       |                                          |
+| ----- | ---------------------------------------- |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$     |
+| $c_2$ | CHECK                                    |
+| $w_1$ | When cost is $\frac{1}{5}$ of $w_2$ cost |
+| $w_2$ | CHECK                                    |
+| $w_3$ | CHECK                                    |
+| $b$   | ✔️*                                      |
+| | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
-Start the publication with the w2 milestone on.
-The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+Start the publication with the $w_2$ milestone on.
+The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
+
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
 
 - prop for the variable buying strategy
 - Hotab for the dynamic swap implementation
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:var(--strat-green)">MS</span>
+### RZ<green>MS</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZMS</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>MS</green>;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">MS</span> swap:196 c<sub><sub><small>1</small></sub></sub>: 952 c<sub><sub><small>2</small></sub></sub>: 238.
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $w_1$ | CHECK |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$   | CHECK |
 
-Start the publication with the w2 milestone on.
-The value after swap is the ρ value were you should switch it to c<sub><sub><small>1</small></sub></sub> exponent.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+Start the publication with the $w_2$ milestone on.
+The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
 
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
+
+- prop for the variable buying strategy
 - Hotab for the dynamic swap implementation
 - Hotab & Blackseal for the coasting strategy
 
-### RZ<span style="color:var(--strat-green)">d</span>
+### RZ<green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZd</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When c<sub><sub><small>1</small></sub></sub>lvl < 4 × c<sub><sub><small>2</small></sub></sub>lvl + 2*</sup></td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × 5 < min(w<sub><sub><small>2</small></sub></sub> cost, w<sub><sub><small>3</small></sub></sub> cost)</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️(Don't buy until t>16)</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ<green>d</green>;
 
-\* If you don't have \\(c_1\\) exponent milestones, use 4×\\(c_2\\)lvl + 1 instead.
+|       |                                                          |
+| ----- | -------------------------------------------------------- |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$*                    |
+| $c_2$ | CHECK                                                    |
+| $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
+| $w_2$ | CHECK                                                    |
+| $w_3$ | CHECK                                                    |
+| $b$   | ✔️**                                                     |
+| | [FOOT;]* If you don't have $c_1$ exponent milestones, use 4\times c_2$lvl + 1 instead. |
+| | [FOOT;]** Do not buy $b$ until $t\gt16$. |
 
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>d</green> $c_1$: 953 $1_2$: 238.
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<span style="color:var(--strat-green)">d</span> c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-
-Strategy credits:
+<br>Strategy credits:
 
 - prop for the variable buying strategy
 - Hotab & Blackseal for the coasting strategy
 
 ### RZ
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">RZ</th>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>1</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">w<sub><sub><small>3</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">b</td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
-<br>
+Class: strat;
+Caption: RZ;
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ c<sub><sub><small>1</small></sub></sub>: 953 c<sub><sub><small>2</small></sub></sub>: 238.
+|       |       |
+| ----- | ----- |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $w_1$ | CHECK |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$   | CHECK |
 
-The levels it shows after c<sub><sub><small>1</small></sub></sub> and c<sub><sub><small>2</small></sub></sub> are the last levels you should buy them to in this publication. <br>
-<br>
-Strategy credits:
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ $c_1$: 953 $c_2$: 238.
+
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+<br>Strategy credits:
 
 - Hotab & Blackseal for the coasting strategy
 
 ## Magnetic Fields
 
-### MF<span style="color:var(--strat-green)">d2</span>
+### MF<green>d2</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">MFd2</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>When cost × 8 + (lvl % 7) < min(2 × c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, 3 × δ cost)</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-      <td>When I×1.2 < I<sub><sub><small>cap</small></sub></sub> or cost × 20 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost) and I < I<sub><sub><small>cap</small></sub></sub></td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">δ</td>
-      <td>When cost × 3 < min(2 × c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost)</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-</tbody>
-</table>
+Class: strat;
+Caption: MF<green>d2</green>;
+
+|          |                                                                                                                                     |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| $c_1$    | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost                                                    |
+| $c_2$    | CHECK                                                                                                                               |
+| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_2$    | CHECK                                                                                                                               |
+| $\delta$ | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost                                                                    |
+| $v_1$    | Only buy right before a reset                                                                                                       |
+| $v_2$    | Only buy right before a reset                                                                                                       |
+| $v_3$    | Only buy right before a reset                                                                                                       |
+| $v_4$    | Only buy right before a reset                                                                                                       |
 
 Strategy Credits:
 
 - Gnarwhals for the variable buying strategy
 - BlackSeal for the implementation of resets in the sim
 
-### MF<span style="color:var(--strat-green)">d</span>
+### MF<green>d</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">MFd</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>When cost × 10 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost)</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-      <td>When I < I<sub><sub><small>cap</small></sub></sub>/2 or cost × 10 < min(c<sub><sub><small>2</small></sub></sub> cost, a<sub><sub><small>2</small></sub></sub> cost, δ cost)</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">δ</td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-</tbody>
-</table>
+Class: strat;
+Caption: MF<green>d</green>;
+
+|          |                                                                                                         |
+| -------- | ------------------------------------------------------------------------------------------------------- |
+| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                        |
+| $c_2$    | CHECK                                                                                                   |
+| $a_1$    | When $I\lt\frac{1}{2}I_{\text{cap}}$ **or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_2$    | CHECK                                                                                                   |
+| $\delta$ | CHECK                                                                                                   |
+| $v_1$    | Only buy right before a reset                                                                           |
+| $v_2$    | Only buy right before a reset                                                                           |
+| $v_3$    | Only buy right before a reset                                                                           |
+| $v_4$    | Only buy right before a reset                                                                           |
 
 Strategy Credits:
 
@@ -6426,50 +2769,20 @@ Strategy Credits:
 
 ### MF
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">MF</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>1</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">a<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">δ</td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>1</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>2</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>3</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">v<sub><sub><small>4</small></sub></sub></td>
-      <td>Only buy right before a reset</td>
-   </tr>
-</tbody>
-</table>
+Class: strat;
+Caption: MF;
+
+|          |                               |
+| -------- | ----------------------------- |
+| $c_1$    | CHECK                         |
+| $c_2$    | CHECK                         |
+| $a_1$    | CHECK                         |
+| $a_2$    | CHECK                         |
+| $\delta$ | CHECK                         |
+| $v_1$    | Only buy right before a reset |
+| $v_2$    | Only buy right before a reset |
+| $v_3$    | Only buy right before a reset |
+| $v_4$    | Only buy right before a reset |
 
 Strategy Credits:
 
@@ -6477,207 +2790,82 @@ Strategy Credits:
 
 ## Basel Problem
 
-### BaP<span style="color:var(--strat-green)">AI</span>
+### BaP<green>AI</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">BaPAI</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">ṫ</td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>
-         Go for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1 when the cumulative cost to buy it is less than 2x the cheapest other purchase <br>
-         When saving for (c<sub><sub><small>1</small></sub></sub> lvl % 64) = 1: ✔️ <br>
-         Else: Buy at (c<sub><sub><small>1</small></sub></sub> lvl % 64)/2 ratio to other variables
-      </td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">n</td>
-      <td>✔️</td>
-   </tr>
-</tbody>
-</table>
-<br>
+Class: strat;
+Caption: BaP<green>AI</green>;
+
+|           |       |
+| --------- | ----- |
+| $\dot{t}$ | CHECK |
+| $c_1$     | If cumulative cost to $c_1$lvl%$64=1$ is $\lt2$x cheapest other purchase,<br>buy until $c_1$lvl%$64=1$.<br>When saving for $c_1$lvl%$64=1$, ✔️.<br> Otherwise, buy at $\frac{1}{2}(c_1$lvl%$64)$ ratio to other variables. |
+| $c_2$     | CHECK |
+| $c_3$     | CHECK |
+| $c_4$     | CHECK |
+| $c_5$     | CHECK |
+| $c_6$     | CHECK |
+| $c_7$     | CHECK |
+| $c_8$     | CHECK |
+| $c_9$     | CHECK |
+| $c_10$    | CHECK |
+| $n$       | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
-<br>
-Strategy credits:
+
+<br>Strategy credits:
 
 - Mathis S.
 
+### BaP<green>AIMS</green>
 
-### BaP<span style="color:var(--strat-green)">AIMS</span>
-
-BaP<span style="color:var(--strat-green)">AIMS</span> is the milestone swapping strategy for BaP.
+BaP<green>AIMS</green> is the milestone swapping strategy for BaP.
 
 For how to perform the milestone swapping strategy, check [here](/guides/custom-theories/#bap-strategy).
 
-For the variable buying strategy, check [BaP<span style="color:var(--strat-green)">AI</span>](#bapai).
+For the variable buying strategy, check [BaP<green>AI</green>](#bapai).
 
-### BaP<span style="color:var(--strat-green)">coast</span>
+### BaP<green>coast</green>
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">BaPcoast</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">ṫ</td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">n</td>
-      <td>✔️</td>
-   </tr>
-</tbody>
-</table>
-<br>
+Class: strat;
+Caption: BaP<green>coast</green>;
+
+|           |       |
+| --------- | ----- |
+| $\dot{t}$ | CHECK |
+| $c_1$     | CHECK |
+| $c_2$     | CHECK |
+| $c_3$     | CHECK |
+| $c_4$     | CHECK |
+| $c_5$     | CHECK |
+| $c_6$     | CHECK |
+| $c_7$     | CHECK |
+| $c_8$     | CHECK |
+| $c_9$     | CHECK |
+| $c_10$    | CHECK |
+| $n$       | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
-<br>
-Strategy credits:
+
+<br>Strategy credits:
 
 - Mathis S.
 
 ### BaP
 
-<table class="spqcey">
-<thead>
-  <th></th>
-  <th style="text-align:center">BaP</th>
-</thead>
-<tbody>
-   <tr>
-      <td class="leftHeader">ṫ</td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>3</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>4</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>5</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>6</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>7</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>8</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>9</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">c<sub><sub><small>10</small></sub></sub></td>
-      <td>✔️</td>
-   </tr>
-   <tr>
-      <td class="leftHeader">n</td>
-      <td>✔️</td>
-   </tr>
-</tbody>
-</table>
-<br>
+Class: strat;
+Caption: BaP;
+
+|           |       |
+| --------- | ----- |
+| $\dot{t}$ | CHECK |
+| $c_1$     | CHECK |
+| $c_2$     | CHECK |
+| $c_3$     | CHECK |
+| $c_4$     | CHECK |
+| $c_5$     | CHECK |
+| $c_6$     | CHECK |
+| $c_7$     | CHECK |
+| $c_8$     | CHECK |
+| $c_9$     | CHECK |
+| $c_10$    | CHECK |
+| $n$       | CHECK |

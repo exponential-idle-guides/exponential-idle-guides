@@ -4,20 +4,6 @@ const table_scss_var = {
   "$table-padding": "0.5em 0.4em 0.5em 0.4em"
 };
 
-(function($) {
-    $.fn.changeElementType = function(newType) {
-        let attrs = {};
-
-        $.each(this[0].attributes, function(idx, attr) {
-            attrs[attr.nodeName] = attr.nodeValue;
-        });
-
-        return this.replaceWith(function() {
-            return $("<" + newType + "/>", attrs).append($(this).contents());
-        });
-    }
-})(jQuery);
-
 const colspan_num = (s) => (s == undefined || s == NaN || Number(s) < 1) ? 1: Number(s);
 const lowercase = (s) => s == undefined ? undefined: s.toLowerCase();
 const soft_hyphen = (s) => s.replaceAll(String.fromCharCode(0x00ad),"");
@@ -91,7 +77,6 @@ $("table").each(function() {
       .exec(t_html);
     if (res == null) {return;}
     const {classes, type, styles, footer, perm, inner} = res.groups;
-    //console.log("classes: ", classes, "type: ", type, "styles: ", styles, "footer: ", footer, "perm: ", perm, "inner: ", inner);
     // Shorthands w/ modifications present
     const inner_bool = process_inner(inner);
     // if no modifications within the [], then let it be
@@ -120,7 +105,7 @@ $("table").each(function() {
   // caption, table id, table classes, and last_row
   const prev = table.prev();
   if (prev.is("p")) {
-    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>.*?)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
+    const res = /^(?:(?=(?:.*?(Caption:\s*(?<caption>(?:.*?(?:<.*?>.*?<\/.*?>|<\/?br>))*.*?)\s*;))?)(?=(?:.*?(ID:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(Class:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;))?)(?=(?:.*?(last_row:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;))?))\s*(?:\1\s*(?:\3?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\7?\s*(?:\3?\s*\5?|\5?\s*\3?)?)|\3\s*(?:\1?\s*(?:\5?\s*\7?|\7?\s*\5?)?|\5?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\5?|\5?\s*\1?)?)|\5\s*(?:\1?\s*(?:\3?\s*\7?|\7?\s*\3?)?|\3?\s*(?:\1?\s*\7?|\7?\s*\1?)?|\7?\s*(?:\1?\s*\3?|\3?\s*\1?)?)|\7\s*(?:\1?\s*(?:\3?\s*\5?|\5?\s*\3?)?|\3?\s*(?:\1?\s*\5?|\5?\s*\1?)?|\5?\s*(?:\1?\s*\3?|\3?\s*\1?)?))\s*$/msg
         .exec(soft_hyphen(prev.html()));
     if (res != null){
       const {caption, id, classes, last_row} = res.groups;

@@ -305,3 +305,57 @@ tfoot {
 		font-weight: normal !important;
 	}
 }
+
+%strat {
+	overflow-wrap: always;
+	word-break: keep-all;
+	td {
+		padding: $table-padding;
+		text-align: center;
+		&:first-child {
+			color: var(--palette-stroke-table-headers);
+			background-color: var(--palette-fill-table-headers-dark);
+			font-weight: bold;
+			border-right: $table-border-thin;
+		}
+	}
+	th {
+		color: var(--palette-stroke-table-headers);
+		background-color: var(--palette-fill-table-headers-neutral);
+		font-weight: bold;
+		border-top: $table-border-thin;
+		padding: $table-padding;
+		text-align: center;
+	}
+	tbody {
+		border-top: $table-border;
+	}
+	tfoot td {
+		border: none !important;
+		background-color:transparent !important;
+		text-align: left;
+		font-weight: normal !important;
+	}
+	/*
+	caption {
+		background-color: var(--palette-fill-table-headers-light);
+		color: var(--palette-stroke-table-headers);
+		margin-bottom: 0 !important;
+		font-weight: bold;
+		border-top: $table-border-thin;
+		padding: $table-padding;
+		text-align: center;
+	}*/
+}
+.strat {
+	@extend %strat;
+}
+.strat_separated {
+	@extend %strat;
+	th {
+		border-right: $table-border-thin;
+		&:last-child {
+			border-right: none !important;
+		}
+	}
+}

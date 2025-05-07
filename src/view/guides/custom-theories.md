@@ -1041,7 +1041,7 @@ BaP has 20 milestones, the most out of any official theory to this day.
       </tr>
    </tbody>
 </table>
-<table class="milestone_routing">
+<table-- class="milestone_routing">
    <tbody>
       <tr>
          <td class="invisible"><strong>Or</strong></td>

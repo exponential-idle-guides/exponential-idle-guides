@@ -36,18 +36,6 @@ function get_skiplist(url) {
 }
 const skiplist = get_skiplist(current_url);
 
-(function($) {
-  $.fn.isAfter = function(sel) {
-    return $(this).index() > $(sel).index();
-  };
-  $.fn.isBefore = function(sel) {
-    return $(this).index() < $(sel).index();
-  };
-  $.fn.nextEle = function(sel) {
-    return $(sel).eq($(this).index(sel) + 1);
-  };
-})(jQuery);
-
 function strRepl(str) {
   return str ? slugify(str, { lower: true, strict: true }) : "";
 }

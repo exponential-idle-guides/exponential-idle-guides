@@ -301,19 +301,19 @@ last_row: false;
 
 Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from $0-e60$ (don't worry, you will still buy it, just at $ee14k$, not $ee12k$). T8 is very slow until you get to ~$e60$ (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying T8 for the achievement, then selling it right away to use those students for $\varphi$. You will need ~$e1350\ \tau$ in order to get R9 ($ee14k$) without T8, which will help you get through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that** The current recommendation for your $\tau$ distribution for T8 skip is as follows:
 
-Class: breakdown;
+Class: strat;
 Caption: T8 skip $\tau$ recommendations;
 
-| [class="category";]INVIS | [class="category";style="border-left:$table-border-thin;";]Idle | [class="category";style="border-left:$table-border-thin;";]Active |
-| ----- | ------- | --------|
-| [style="border-right:$table-border-thin;";]T1 | $e200\tau$                      | $e200\tau$                       |
-| [style="border-right:$table-border-thin;";]T2 | $e295\tau$                      | $e290\tau$                       |
-| [style="border-right:$table-border-thin;";]T3 | $e133\tau$                      | $e130\tau$                       |
-| [style="border-right:$table-border-thin;";]T4 | $e165\tau$                      | $e155\tau$                       |
-| [style="border-right:$table-border-thin;";]T5 | $e240\tau$                      | $e265\tau$                       |
-| [style="border-right:$table-border-thin;";]T6 | $e172\tau$                      | $e165\tau$                       |
-| [style="border-right:$table-border-thin;";]T7 | $e145\tau$                      | $e145\tau$                       |
-| [style="border-right:$table-border-thin;";]T8 | [style="color:var(--palette-stroke-warning);";]Skip | [style="color:var(--palette-stroke-warning);";]Skip  |
+| INVIS | Idle            | Active          |
+| ----- | --------------- | --------------- |
+| T1    | $e200\tau$      | $e200\tau$      |
+| T2    | $e295\tau$      | $e290\tau$      |
+| T3    | $e133\tau$      | $e130\tau$      |
+| T4    | $e165\tau$      | $e155\tau$      |
+| T5    | $e240\tau$      | $e265\tau$      |
+| T6    | $e172\tau$      | $e165\tau$      |
+| T7    | $e145\tau$      | $e145\tau$      |
+| T8    | <red>Skip</red> | <red>Skip</red> |
 | | | [FOOT;style="width:20vw;";]If your numbers are different, that is fine. You just need to reach $1e1350\ \Pi\tau$ to get to R9 at $ee14k$. |
 
 ### Student routing with R9
@@ -401,17 +401,17 @@ last_row: false;
 
 In general, you will need ~$e2050\ \tau$ in order to get to 20k easily. Make sure that you are R9 Swapping and holding accel when you can. Recommended values for your theories $\tau$ is as follows. Being above or below these values is fine, just as long as you have ~$e2050\ \tau$.
 
-Class: breakdown;
+Class: strat;
 Caption: $ee20$k $\tau$ recommendations;
 
-| [class="category";]INVIS | [class="category";style="border-left:$table-border-thin";]Idle | [class="category";style="border-left:$table-border-thin";]Active |
-| ----- | ------- | --------|
-| [style="border-right:$table-border-thin;";]T1 | $e237\tau$ | $e243\tau$ |
-| [style="border-right:$table-border-thin;";]T2 | $e290\tau$ | $e295\tau$ |
-| [style="border-right:$table-border-thin;";]T3 | $e221\tau$ | $e221\tau$ |
-| [style="border-right:$table-border-thin;";]T4 | $e227\tau$ | $e232\tau$ |
-| [style="border-right:$table-border-thin;";]T5 | $e360\tau$ | $e361\tau$ |
-| [style="border-right:$table-border-thin;";]T6 | $e204\tau$ | $e194\tau$ |
-| [style="border-right:$table-border-thin;";]T7 | $e235\tau$ | $e227\tau$ |
-| [style="border-right:$table-border-thin;";]T8 | $e276\tau$ | $e277\tau$ |
+| INVIS | Idle       | Active      |
+| ----- | -----------| ----------- |
+| T1    | $e237\tau$ | $e243\tau$  |
+| T2    | $e290\tau$ | $e295\tau$  |
+| T3    | $e221\tau$ | $e221\tau$  |
+| T4    | $e227\tau$ | $e232\tau$  |
+| T5    | $e360\tau$ | $e361\tau$  |
+| T6    | $e204\tau$ | $e194\tau$  |
+| T7    | $e234\tau$ | $e227\tau$  |
+| T8    | $e276\tau$ | $e277\tau$ |
 | | | [FOOT;style="width:20vw;";]Being above or below these values is fine, just as long as you have ~$e2050\ \tau$. |
