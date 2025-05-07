@@ -111,16 +111,15 @@ last_row: false;
 |         |       |         |       |         |
 | ------- | ----- | ------- | ----- | ------- |
 | 0/0/1   | ARROW | 0/0/1/1 | ARROW | 0/1/1/1 |
-| 0/1/1/1 | ARROW | 3/1/1/1 | INVIS | INVIS   |
+| 3/1/1/1 | INVIS | INVIS   | INVIS | INVIS   |
 
 Class: milestone_routing;
 last_row: false;
 
-|    |       |       |       |       |
-| -- | ----- | ----- | ----- | ----- |
-| OR | INVIS | INVIS | INVIS | INVIS |
-| 3  | ARROW | 4     | ARROW | 2     |
-| 2  | ARROW | 1x3   | INVIS | INVIS |
+|    |       |       |       |       |       |       |
+| -- | ----- | ----- | ----- | ----- | ----- | ----- |
+| OR | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
+| 3  | ARROW | 4     | ARROW | 2     | ARROW | 1x3   |
 
 ### Theory 2 (25σ / 6k)
 
@@ -236,16 +235,15 @@ last_row: false;
 |         |       |         |       |         |
 | ------- | ----- | ------- | ----- | ------- |
 | 2/0/0/0 | ARROW | 2/2/0/0 | ARROW | 2/2/3/0 |
-| 2/2/3/0 | ARROW | 2/2/3/3 | INVIS | INVIS   |
+| 2/2/3/3 | INVIS | INVIS   | INVIS | INVIS   |
 
 Class: milestone_routing;
 last_row: false;
 
-|      |       |       |       |       |
-| ---- | ----- | ----- | ----- | ----- |
-| OR   | INVIS | INVIS | INVIS | INVIS |
-| 1 x2 | ARROW | 2 x2  | ARROW | 3 x3  |
-| 3 x3 | ARROW | 4 x3  | INVIS | INVIS |
+|      |       |       |       |       |       |       |
+| ---- | ----- | ----- | ----- | ----- | ----- | ----- |
+| OR   | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
+| 1 x2 | ARROW | 2 x2  | ARROW | 3 x3  | ARROW | 4 x3  |
 
 ### Theory 3 (30σ / 7k)
 
@@ -363,19 +361,18 @@ repeat.
 Class: milestone_routing;
 last_row: false;
 
-|         |       |         |       |         |
-| ------- | ----- | ------- | ----- | ------- |
-| 0/2/0   | ARROW | 0/2/2   | ARROW | 1/2/2   |
-| 1/2/2/0 | ARROW | 1/2/2/2 | INVIS | INVIS   |
+|         |       |       |       |       |
+| ------- | ----- | ----- | ----- | ----- |
+| 0/2/0   | ARROW | 0/2/2 | ARROW | 1/2/2 |
+| 1/2/2/2 | INVIS | INVIS | INVIS | INVIS |
 
 Class: milestone_routing;
 last_row: false;
 
-|      |       |       |       |       |
-| ---- | ----- | ----- | ----- | ----- |
-| OR   | INVIS | INVIS | INVIS | INVIS |
-| 2 x2 | ARROW | 3 x2  | ARROW | 1     |
-| 1    | ARROW | 4 x2  | INVIS | INVIS |
+|      |       |       |       |       |       |       |
+| ---- | ----- | ----- | ----- | ----- | ----- | ----- |
+| OR   | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
+| 2 x2 | ARROW | 3 x2  | ARROW | 1     | ARROW | 4 x2  |
 
 ### Theory 4 (35σ / 8k)
 

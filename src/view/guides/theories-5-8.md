@@ -229,11 +229,11 @@ Caption: T6 Strategy;
 Class: milestone_routing;
 last_row: false;
 
-|         |       |         |       |         |
-| ------- | ----- | ------- | ----- | ------- |
-| 0/0/0   | ARROW | 0/1/0   | ARROW | 1/1/0/0 |
-| 1/1/0/0 | ARROW | 1/1/1/0 | ARROW | 1/0/0/3 |
-| 1/0/0/3 | ARROW | 1/0/1/3 | ARROW | 1/1/1/3 |
+|          |       |         |       |         |
+| -------- | ----- | ------- | ----- | ------- |
+| 0/0/0    | ARROW | 0/1/0   | ARROW | 1/1/0/0 |
+| 1/1/1/0* | ARROW | 1/0/0/3 | ARROW | 1/0/1/3 |
+| 1/1/1/3  | INVIS | INVIS   | INVIS | INVIS   |
 
 Class: milestone_routing;
 last_row: false;
@@ -279,23 +279,22 @@ The optimal publication multiplier is $4$-$6$. You will swap from 0/1/1 → 0/0/
 Class: milestone_routing;
 last_row: false;
 
-|           |       |           |       |           |
-| --------- | ----- | --------- | ----- | --------- |
-| 0/0/0     | ARROW | 0/1/0     | ARROW | 0/1/1     |
-| 0/1/1     | ARROW | 0/0/2*    | ARROW | 0/0/3     |
-| 0/0/3     | ARROW | 0/1/3     | ARROW | 1/1/1/1/1 |
-| 1/1/1/1/1 | ARROW | 1/1/1/1/3 | INVIS | INVIS     |
+|             |       |           |       |       |
+| ----------- | ----- | --------- | ----- | ----- |
+| 0/0/0       | ARROW | 0/1/0     | ARROW | 0/1/1 |
+| 0/0/2*      | ARROW | 0/0/3     | ARROW | 0/1/3 |
+| 1/1/1/1/1** | ARROW | 1/1/1/1/3 | INVIS | INVIS |
 
 Class: milestone_routing;
 last_row: false;
 
-|           |       |       |       |       |       |       |
-| --------- | ----- | ----- | ----- | ----- | ----- | ----- |
-| OR        | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
-| 2         | ARROW | 3*    | ARROW | 3     | ARROW | 2     |
-| 2         | ARROW | 1**   | ARROW | 3 x2  | INVIS | INVIS |
-| | | | | | | [FOOT;]* Swap 0/1/1 → 0/0/2 at ~$e67$ |
-| | | | | | | [FOOT;]** Swap 0/1/3 → 1/1/1/1/1 |
+|           |       |       |       |       |
+| --------- | ----- | ----- | ----- | ----- |
+| OR        | INVIS | INVIS | INVIS | INVIS |
+| 2         | ARROW | 3*    | ARROW | 3     |
+| 2         | ARROW | 1**   | ARROW | 3 x2  |
+| | | | | [FOOT;]* Swap 0/1/1 → 0/0/2 at ~$e67$ |
+| | | | | [FOOT;]** Swap 0/1/3 → 1/1/1/1/1 |
 
 ### Theory 8 skipping
 
@@ -379,12 +378,11 @@ Caption: T8 Attractor Information;
 Class: milestone_routing;
 last_row: false;
 
-|         |       |          |       |         |
-| ------- | ----- | -------- | ----- | ------- |
-| 0/0/0/0 | ARROW | 1/0/0/0  | ARROW | 2/0/0/0 |
-| 2/0/0/0 | ARROW | 0/0/0/2* | ARROW | 0/0/0/3 |
-| 0/0/0/3 | ARROW | 1/0/0/3  | ARROW | 2/0/3/0 |
-| 2/0/3/0 | ARROW | 2/3/3/0  | ARROW | 2/3/3/3 |
+|           |       |         |       |         |
+| --------- | ----- | ------- | ----- | ------- |
+| 0/0/0/0   | ARROW | 1/0/0/0 | ARROW | 2/0/0/0 |
+| 0/0/0/2*  | ARROW | 0/0/0/3 | ARROW | 1/0/0/3 |
+| 2/0/3/0** | ARROW | 2/3/3/0 | ARROW | 2/3/3/3 |
 
 Class: milestone_routing;
 last_row: false;
@@ -393,9 +391,9 @@ last_row: false;
 | --------- | ----- | ----- | ----- | ----- | ----- | ----- |
 | OR        | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
 | 1x2*      | ARROW | 4     | ARROW | 1     | ARROW | 1**   |
-| 1**       | ARROW | 1     | ARROW | 2 x3  | ARROW | 4 x3  |
+| 1         | ARROW | 2 x3  | ARROW | 4 x3  | INVIS | INVIS |
 | | | | | | | [FOOT;]* Swap 2/0/0/0 → 0/0/0/2 at $e52\tau$ |
-| | | | | | | [FOOT;]** Swap 1/0/0/3 →2 /0/3/0 |
+| | | | | | | [FOOT;]** Swap 1/0/0/3 → 2/0/3/0 |
 
 ### Final Push to ee20k
 
