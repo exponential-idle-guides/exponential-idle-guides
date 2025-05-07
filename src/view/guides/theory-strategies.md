@@ -2807,7 +2807,7 @@ Caption: BaP<green>AI</green>;
 | $c_7$     | CHECK |
 | $c_8$     | CHECK |
 | $c_9$     | CHECK |
-| $c_10$    | CHECK |
+| $c_{10}$  | CHECK |
 | $n$       | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
@@ -2841,7 +2841,7 @@ Caption: BaP<green>coast</green>;
 | $c_7$     | CHECK |
 | $c_8$     | CHECK |
 | $c_9$     | CHECK |
-| $c_10$    | CHECK |
+| $c_{10}$  | CHECK |
 | $n$       | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
@@ -2867,5 +2867,5 @@ Caption: BaP;
 | $c_7$     | CHECK |
 | $c_8$     | CHECK |
 | $c_9$     | CHECK |
-| $c_10$    | CHECK |
+| $c_{10}$  | CHECK |
 | $n$       | CHECK |
