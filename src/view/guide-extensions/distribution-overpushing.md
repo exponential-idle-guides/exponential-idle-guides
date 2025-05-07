@@ -127,46 +127,14 @@ These conclusions imply that for Theory 2 for example, increasing σ hardly affe
 
 From previous workings, the overpushing coefficients are:
 
-<table class="newwords">
-   <thead>
-      <tr>
-         <th class="invisible"></th>
-         <th>Coeff</th>
-         <th class="invisible"></th>
-         <th class="invisible"></th>
-         <th>Coeff</th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">T1</td>
-         <td>1</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T5</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T2</td>
-         <td>10.2</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T6</td>
-         <td>3</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T3</td>
-         <td>1</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T7</td>
-         <td>1</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">T4</td>
-         <td>1.5</td>
-         <th class="invisible"></th>
-         <td class="leftHeader">T8</td>
-         <td>1</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: Overpush Coefficients;
+
+|    |      |    |   |
+| -- | ---- | -- | - |
+| T1 | 1    | T5 | 1 |
+| T2 | 10.2 | T6 | 3 |
+| T3 | 1    | T7 | 1 |
+| T4 | 1.5  | T8 | 1 |
 
 This means that for 'perfect' overpush, we should push the maximum of {\\(\dot{τ}_1\\), \\(10.2*\dot{τ}_2\\), \\(\dot{τ}_3\\), \\(1.5*\dot{τ}_4\\), \\(\dot{τ}_5\\), \\(3*\dot{τ}_6\\), \\(\dot{τ}_7\\), \\(\dot{τ}_8\\)}. This will maximize long term \\(τ\\) gain, assuming everything else is equal.

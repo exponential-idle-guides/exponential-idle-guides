@@ -413,5 +413,5 @@ Caption: $ee20$k $\tau$ recommendations;
 | T5    | $e360\tau$ | $e361\tau$  |
 | T6    | $e204\tau$ | $e194\tau$  |
 | T7    | $e234\tau$ | $e227\tau$  |
-| T8    | $e276\tau$ | $e277\tau$ |
+| T8    | $e276\tau$ | $e277\tau$  |
 | | | [FOOT;style="width:20vw;";]Being above or below these values is fine, just as long as you have ~$e2050\ \tau$. |

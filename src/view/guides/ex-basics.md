@@ -31,17 +31,17 @@ further ahead than you are already.
 Class: breakdown;
 last_row: false;
 
-| INVIS | Name | INVIS | Name | INVIS | Name |
-| ----- | ---- | ----- | ---- | ----- | ---- |
-| [type="th";]x | x | [type="th";]$\gamma$ | gamma | [type="th";]$\iota$ | iota |
-| [type="th";]y | y | [type="th";]$\delta$ | delta | [type="th";]$\xi$ | xi |
-| [type="th";]z | z | [type="th";]$\kappa$ | kappa | [type="th";]$\mu$ | mu |
-| [type="th";]s | s | [type="th";]$\lambda$ | lambda | [type="th";]$\psi$ | psi |
-| [type="th";]u | u | [type="th";]$\nu$ | nu | [type="th";]$\tau$ | tau |
-| [type="th";]v | v | [type="th";]$\varepsilon$ | epsilon | [type="th";]$\phi$ | phi |
-| [type="th";]w | w | [type="th";]$\zeta$ | zeta | [type="th";]$\sigma$ | sigma |
-| [type="th";]$\alpha$ | alpha | [type="th";]$\eta$ | eta | [type="th";]$\rho$ | rho |
-| [type="th";]$\beta$ | beta | [type="th";]$\theta$ | theta | INVIS | INVIS |
+| INVIS                | Name  | INVIS                     | Name    | INVIS                | Name  |
+| -------------------- | ----- | ------------------------- | ------- | -------------------- | ----- |
+| [type="th";]x        | x     | [type="th";]$\gamma$      | gamma   | [type="th";]$\nu$    | nu    |
+| [type="th";]y        | y     | [type="th";]$\delta$      | delta   | [type="th";]$\xi$    | xi    |
+| [type="th";]z        | z     | [type="th";]$\varepsilon$ | epsilon | [type="th";]$\mu$    | mu    |
+| [type="th";]s        | s     | [type="th";]$\zeta$       | zeta    | [type="th";]$\psi$   | psi   |
+| [type="th";]u        | u     | [type="th";]$\eta$        | eta     | [type="th";]$\tau$   | tau   |
+| [type="th";]v        | v     | [type="th";]$\theta$      | theta   | [type="th";]$\phi$   | phi   |
+| [type="th";]w        | w     | [type="th";]$\iota$       | iota    | [type="th";]$\sigma$ | sigma |
+| [type="th";]$\alpha$ | alpha | [type="th";]$\kappa$      | kappa   | [type="th";]$\rho$   | rho   |
+| [type="th";]$\beta$  | beta  | [type="th";]$\lambda$     | lambda  | INVIS                | INVIS |
 
 ### What does ee mean?
 

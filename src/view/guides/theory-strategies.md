@@ -1,7 +1,7 @@
 ---
 title: "Theory Strategies Explained"
 description: "Our guide for learning what each theory strategy means."
-author: "spqcey"
+author: "spqcey originally"
 contributors: "everyone who has innovated new strategies and the Amazing Community"
 draft: false
 order: 8
