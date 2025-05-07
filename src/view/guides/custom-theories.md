@@ -406,10 +406,8 @@ With $\dot\rho$ and $\dot{q}$ Equations Becoming:
 $$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q/ \pi }g(x)dx },\ \ \dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q }g(x)dx }$$
 $$\dot{q}=q_1^{1.03}q_2$$
 
-##### g(x) Equations
-
-Class: breakdown;
-Caption: $g(x)$ Equations
+Class: strat;
+Caption: $g(x)$ Equations;
 last_row: false;
 
 |   |   |
@@ -419,8 +417,8 @@ last_row: false;
 | Milestone 2 | $\frac{x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\frac{x^5}{5}}{\ln(10)}$ |
 | Milestone 3 | $1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+\frac{x^4}{4!}+\frac{x^5}{5!}$ |
 
-Class: breakdown;
-Caption: $g(x)$ Equations
+Class: strat;
+Caption: $\lambda$ Equations;
 last_row: false;
 
 |   |   |
