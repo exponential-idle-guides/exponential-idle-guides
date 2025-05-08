@@ -355,9 +355,9 @@ Caption: T1<green>SolarXLII xexxx</green>;
 | ----- | ----------- | ------------|
 | $q_1$ | When $q_1$ cost$\times(6+$lvl%$10)\lt q_2$ cost<br>**and** $q_1$ cost$\times(15+$lvl%$10)\lt c_4$ cost<br>**and** $\rho\gt5\times$ cost | REDX |
 | $q_2$ | when $\rho\gt5\times$ cost | REDX |
-| $c_1$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
-| $c_2$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
-| $c_3$ | See [T1<green>Ratio</green>]("#t1ratio") | REDX |
+| $c_1$ | See [T1<green>Ratio</green>](#t1ratio) | REDX |
+| $c_2$ | See [T1<green>Ratio</green>](#t1ratio) | REDX |
+| $c_3$ | See [T1<green>Ratio</green>](#t1ratio) | REDX |
 | $c_4$ | CHECK | REDX |
 
 The “xexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>T1<green>SolarXLII</green> 3e647.

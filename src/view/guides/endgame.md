@@ -10,11 +10,13 @@ order: 6
 
 {% import "embed-yt.njk" as yt %}
 
-**DO T9 BEFORE EE50k**
+**DO T9 IMMEDIATELY TO UNLOCK CUSTOM THEORIES**
 
 ### Theory 9
 
 There is no theory 9 guide and this is a guide for what to do after theory 9. Have fun figuring out T9 for yourself and remove students when finished and put back into R9 and $\varphi$.
+
+###### Reminder: Do T9 right upon unlocking it, reaching ee20k. This will unlock [Custom Theories](/guides/custom-theories) significantly improving progress.
 
 ### Graduation routing
 
@@ -60,6 +62,8 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great
 ### Theory routing and strategies
 
 For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publications. Human T5 is below:
+
+###### Reminder: Do T9 right upon unlocking it, reaching ee20k. This will unlock [Custom Theories](/guides/custom-theories) significantly improving progress.
 
 #### T5 routing
 
