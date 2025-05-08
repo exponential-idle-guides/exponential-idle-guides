@@ -26,22 +26,37 @@ further ahead than you are already.
   \\(\mu\\), and \\(\psi\\) on that page in that order. You can navigate to that tab by pressing
   the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
-### Variable Names
+### Variable Names and Uses
 
 Class: breakdown;
 last_row: false;
 
-| INVIS                | Name  | INVIS                     | Name    | INVIS                | Name  |
-| -------------------- | ----- | ------------------------- | ------- | -------------------- | ----- |
-| [type="th";]x        | x     | [type="th";]$\gamma$      | gamma   | [type="th";]$\nu$    | nu    |
-| [type="th";]y        | y     | [type="th";]$\delta$      | delta   | [type="th";]$\xi$    | xi    |
-| [type="th";]z        | z     | [type="th";]$\varepsilon$ | epsilon | [type="th";]$\mu$    | mu    |
-| [type="th";]s        | s     | [type="th";]$\zeta$       | zeta    | [type="th";]$\psi$   | psi   |
-| [type="th";]u        | u     | [type="th";]$\eta$        | eta     | [type="th";]$\tau$   | tau   |
-| [type="th";]v        | v     | [type="th";]$\theta$      | theta   | [type="th";]$\phi$   | phi   |
-| [type="th";]w        | w     | [type="th";]$\iota$       | iota    | [type="th";]$\sigma$ | sigma |
-| [type="th";]$\alpha$ | alpha | [type="th";]$\kappa$      | kappa   | [type="th";]$\rho$   | rho   |
-| [type="th";]$\beta$  | beta  | [type="th";]$\lambda$     | lambda  | INVIS                | INVIS |
+|                      |       |                           |         |                      | Variable Names      |
+| -------------------- | ----- | ------------------------- | ------- | -------------------- | ------------------- |
+| [class="bheader";]x        | x     | [class="bheader";]$\gamma$      | gamma   | [class="bheader";]$\nu$    | nu                  |
+| [class="bheader";]y        | y     | [class="bheader";]$\delta$      | delta   | [class="bheader";]$\xi$    | xi                  |
+| [class="bheader";]z        | z     | [class="bheader";]$\varepsilon$ | epsilon | [class="bheader";]$\mu$    | mu                  |
+| [class="bheader";]s        | s     | [class="bheader";]$\zeta$       | zeta    | [class="bheader";]$\psi$   | psi                 |
+| [class="bheader";]u        | u     | [class="bheader";]$\eta$        | eta     | [class="bheader";]$\sigma$ | sigma               |
+| [class="bheader";]v        | v     | [class="bheader";]$\theta$      | theta   | [class="bheader";]$\phi$   | phi                 |
+| [class="bheader";]w        | w     | [class="bheader";]$\iota$       | iota    | [class="bheader";]$\tau$   | tau                 |
+| [class="bheader";]$\alpha$ | alpha | [class="bheader";]$\kappa$      | kappa   | [class="bheader";]$\rho$   | rho                 |
+| [class="bheader";]$\beta$  | beta  | [class="bheader";]$\lambda$     | lambda  | [class="bheader";]$t$      | t                   |
+
+Class: breakdown;
+last_row: false;
+
+|                      |          |                           |          |                      | Variable Uses                                                    |
+| -------------------- | -------- | ------------------------- | -------- | -------------------- | ---------------------------------------------------------------- |
+| [class="bheader";]x        | main var | [class="bheader";]$\gamma$      | main var | [class="bheader";]$\nu$    | main var                                                         |
+| [class="bheader";]y        | main var | [class="bheader";]$\delta$      | main var | [class="bheader";]$\xi$    | main var                                                         |
+| [class="bheader";]z        | main var | [class="bheader";]$\varepsilon$ | main var | [class="bheader";]$\mu$    | prestiges                                                        |
+| [class="bheader";]s        | main var | [class="bheader";]$\zeta$       | main var | [class="bheader";]$\psi$   | supremacies                                                      |
+| [class="bheader";]u        | main var | [class="bheader";]$\eta$        | main var | [class="bheader";]$\sigma$ | <details><summary>SPOILERS: ee2k+</summary>graduations</details> |
+| [class="bheader";]v        | main var | [class="bheader";]$\theta$      | main var | [class="bheader";]$\phi$   | <details><summary>SPOILERS: ee2k+</summary>graduations</details> |
+| [class="bheader";]w        | main var | [class="bheader";]$\iota$       | main var | [class="bheader";]$\tau$   | <details><summary>SPOILERS: ee5k+</summary>theories</details>    |
+| [class="bheader";]$\alpha$ | main var | [class="bheader";]$\kappa$      | main var | [class="bheader";]$\rho$   | <details><summary>SPOILERS: ee5k+</summary>theories</details>    |
+| [class="bheader";]$\beta$  | main var | [class="bheader";]$\lambda$     | main var | [class="bheader";]$t$      | time                                                             |
 
 ### What does ee mean?
 
