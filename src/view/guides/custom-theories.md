@@ -524,13 +524,10 @@ Class: strat;
 Caption: Perma-Upgrade Costs;
 align: left;
 
-|                           |             |
-| ------------------------- | ----------- |
-| $g(x)$ milestone lvl 1    | $e100\rho$  |
-| $\lambda$ milestone lvl 1 | $e350\rho$  |
-| $g(x)$ milestone lvl 2    | $e450\rho$  |
-| $\lambda$ milestone lvl 2 | $e750\rho$  |
-| $g(x)$ milestone lvl 3    | $e1050\rho$ |
+|                      |                                  |
+| -------------------- | -------------------------------- |
+| $g(x)$ milestones    | $e100\rho, e450\rho, e1050\rho$  |
+| $\lambda$ milestones | $e350\rho, e750\rho$             |
 
 ### Fractal Patterns (FP)
 
