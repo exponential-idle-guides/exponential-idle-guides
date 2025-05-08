@@ -219,8 +219,8 @@ smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \
 \end{align}
 $$
 
-### `True`/`False` auto expression evaluation
+### <green>True</green>/<red>False</red> auto expression evaluation
 
-If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as `False` and sometimes as `True`. When the evaluation becomes `True`, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as `False`. If the expression is evaluating to `False`, there is no bug, nor is it broken. It is doing exactly what it is meant to do. 
+If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as <red>False</red> and sometimes as <green>True</green>. When the evaluation becomes <green>True</green>, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as <red>False</red>. If the expression is evaluating to <red>False</red>, there is no bug, nor is it broken. It is doing exactly what it is meant to do.
 
 ###### NOTE: Entering the expression field where it displays the evaluation breaks [smooth() locking](#method-2-lock) which will break all any expression using said technique.
