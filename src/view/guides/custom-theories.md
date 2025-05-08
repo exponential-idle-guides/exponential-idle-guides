@@ -597,6 +597,8 @@ last_row: false;
 
 #### FP Strategy
 
+Check out the [FP Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for vari­able checks mid-pub­lic­a­tion.
+
 ##### Idle
 
 For idle, we simply autobuy all, however, it is very slow to start idle, and it is suggested to be active until e950 $\rho$. The idle strategy doesn't change much. If you'd like to be more efficient while still being idle, you can stop buying when $c_1\equiv50\mod100$, or around when the last 2 digits in the level are 50 or more, then buy them in chunks of no more than 13. When you reach e700, you will need to milestone swap to be able to get any good progress, however, you only need to swap every 20-30 minutes to get some good results.
