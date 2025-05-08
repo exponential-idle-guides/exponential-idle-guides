@@ -941,7 +941,7 @@ last_row: false;
 | $c_7$     | 7x increase to $q_6$ growth per level. |
 | $c_8$     | 8x increase to $q_7$ growth per level. |
 | $c_9$     | 9x increase to $q_8$ growth per level. |
-| $c_10$    | 10x increase to $q_9$ growth per level. |
+| $c_{10}$  | 10x increase to $q_9$ growth per level. |
 | $n$       | Small increase to $a$ per level. |
 
 #### BaP Strategy
