@@ -68,8 +68,8 @@ Class: variable_description;
 Caption: Brief summary of variable strengths of Theory 5.;
 last_row: false;
 
-|       | Brief Description |
-| ----- | ----------------- |
+|       | Variable Description |
+| ----- | -------------------- |
 | $q_1$ | ~7% increase on $\dot{\rho}$ on average (instantaneous). |
 | $q_2$ | Doubles $\dot{\rho}$ (instantaneous). |
 | $c_1$ | $c_1$ reduces time to maximum value of $q$. Note that it DOES NOT increase the maximum value of $q$ itself. If $q$ is close to maximum value already, there is no point in buying $c_1$. |
@@ -183,7 +183,7 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 #### T6 Overview
 
 T6 has the lowest decay of all the theories. It will be second place to T5 until ~$e750$ and is the only theory that can
-get to $>e1300τ$. You should overnight this and T4 after you get your T2 to $e350+$.
+get to $\gt e1300τ$. You should overnight this and T4 after you get your T2 to $e350+$.
 
 At first, T6 only finds the area under the curve of the graph $f(q)$ from $0$ to $q$, which is essentially a 2d plane.
 This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the
@@ -191,12 +191,13 @@ opposite of what a derivative does, but within a specific bound. With later mile
 this new equation is finding the volume of the graph within the bounds of planes $f(q)$ and $f(r)$ from $0$ to $q$ and
 $0$ to $r$ respectively.
 
-The $-C$ variable outside of the integral is defined as the sum of the instantaneous change in $\rho$ caused by all of the $c_i$
-upgrades that you have purchased. It is very closely related to the sum of the costs of upgrades of all $c_i$ upgrades, but is
-slightly different. It is negative because purchasing $c_i$ upgrades will increase the value of the integral, thus
-$\rho$, by the change in $c_i$ instantly. $-C$ is used to offset this so that $\rho$ does not diverge. For example,
-let's say that the integral is equal to $10$ and that you can buy the first upgrade (cost $10$). After buying it, the integral will
-be equal to $20$. But, at this point, the currency should be $0$, so $C$ needs to be equal to $20$.
+$C$ is equal to the sum of all instantaneous changes in $\rho$, or equivalently instantaneous increases to the integral, caused by buying $c_i$ upgrades*. When a $c_i$ upgrade is purchased, the value of the integral increases by a respective amount.
+
+For example, let the integral equal 10, and you buy an upgrade that costs $5\rho$. $\rho$ should decrease to $\rho=10-5=5$. If the integral increases to 20, then to for $\rho=5$, $C=$integral$-\rho=20-5=15$.
+
+$C$ acts as the mechanism which decreases $\rho$ the correct amount after a purchase. If $C$ did not counter-balance, then $\rho$ would diverge as every upgrade would increase $\rho$ instead of decrease (also the reason it is $-C$ and not $+C$).
+
+###### * This is not the same as the sum of the cost of all $c_i$ upgrades as not every upgrade increases the integral by the same amount, i.e. an upgrade costing $5\rho$ will not increase the integral by $5\rho$, but more or less.
 
 [Video of T6 at Endgame](https://bit.ly/t6endgame)
 
