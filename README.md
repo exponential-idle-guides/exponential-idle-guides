@@ -115,11 +115,14 @@ The following can be in any order. You can also exclude some (or all) and it sti
 
 `last_row` is a boolean whether to add the `last_row` class to the... last row of the table. This simply adds a bottom border on the table.
 
+`align` gives choice of `left`, `middle`, and `right` alignment of the table (default `middle`).
+
 ```html
 Caption: caption;
 ID: id;
 Class: class(es);
 last_row: True/False (any capitalization);
+align: left/right/middle;
 ```
 
 ### Cell modifiers

@@ -46,17 +46,17 @@ last_row: false;
 Class: breakdown;
 last_row: false;
 
-|                      |          |                           |          |                      | Variable Uses                                                    |
-| -------------------- | -------- | ------------------------- | -------- | -------------------- | ---------------------------------------------------------------- |
-| [class="bheader";]x        | main var | [class="bheader";]$\gamma$      | main var | [class="bheader";]$\nu$    | main var                                                         |
-| [class="bheader";]y        | main var | [class="bheader";]$\delta$      | main var | [class="bheader";]$\xi$    | main var                                                         |
-| [class="bheader";]z        | main var | [class="bheader";]$\varepsilon$ | main var | [class="bheader";]$\mu$    | prestiges                                                        |
-| [class="bheader";]s        | main var | [class="bheader";]$\zeta$       | main var | [class="bheader";]$\psi$   | supremacies                                                      |
-| [class="bheader";]u        | main var | [class="bheader";]$\eta$        | main var | [class="bheader";]$\sigma$ | <details><summary>SPOILERS: ee2k+</summary>graduations</details> |
-| [class="bheader";]v        | main var | [class="bheader";]$\theta$      | main var | [class="bheader";]$\phi$   | <details><summary>SPOILERS: ee2k+</summary>graduations</details> |
-| [class="bheader";]w        | main var | [class="bheader";]$\iota$       | main var | [class="bheader";]$\tau$   | <details><summary>SPOILERS: ee5k+</summary>theories</details>    |
-| [class="bheader";]$\alpha$ | main var | [class="bheader";]$\kappa$      | main var | [class="bheader";]$\rho$   | <details><summary>SPOILERS: ee5k+</summary>theories</details>    |
-| [class="bheader";]$\beta$  | main var | [class="bheader";]$\lambda$     | main var | [class="bheader";]$t$      | time                                                             |
+|                            |          |                                 |          |                            | Variable Uses |
+| -------------------------- | -------- | ------------------------------- | -------- | -------------------------- | ------------- |
+| [class="bheader";]x        | main var | [class="bheader";]$\gamma$      | main var | [class="bheader";]$\nu$    | main var      |
+| [class="bheader";]y        | main var | [class="bheader";]$\delta$      | main var | [class="bheader";]$\xi$    | main var      |
+| [class="bheader";]z        | main var | [class="bheader";]$\varepsilon$ | main var | [class="bheader";]$\mu$    | prestiges     |
+| [class="bheader";]s        | main var | [class="bheader";]$\zeta$       | main var | [class="bheader";]$\psi$   | supremacies   |
+| [class="bheader";]u        | main var | [class="bheader";]$\eta$        | main var | [class="bheader";]$\sigma$ | <details><summary><red>SPOILERS</red>: ee2k+</summary>graduations</details> |
+| [class="bheader";]v        | main var | [class="bheader";]$\theta$      | main var | [class="bheader";]$\phi$   | <details><summary><red>SPOILERS</red>: ee2k+</summary>graduations</details> |
+| [class="bheader";]w        | main var | [class="bheader";]$\iota$       | main var | [class="bheader";]$\tau$   | <details><summary><red>SPOILERS</red>: ee5k+</summary>theories</details>    |
+| [class="bheader";]$\alpha$ | main var | [class="bheader";]$\kappa$      | main var | [class="bheader";]$\rho$   | <details><summary><red>SPOILERS</red>: ee5k+</summary>theories</details>    |
+| [class="bheader";]$\beta$  | main var | [class="bheader";]$\lambda$     | main var | [class="bheader";]$t$      | time          |
 
 ### What does ee mean?
 
@@ -218,3 +218,9 @@ smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \
 &=\alpha h_T+(1-\alpha)\bar{h}_{T-\Delta T},\;\alpha=1-e^{-\frac{\Delta T}{c_T}}
 \end{align}
 $$
+
+### `True`/`False` auto expression evaluation
+
+If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as `False` and sometimes as `True`. When the evaluation becomes `True`, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as `False`. If the expression is evaluating to `False`, there is no bug, nor is it broken. It is doing exactly what it is meant to do. 
+
+###### NOTE: Entering the expression field where it displays the evaluation breaks [smooth() locking](#method-2-lock) which will break all any expression using said technique.

@@ -517,8 +517,20 @@ last_row: false;
 | [PERM;]6 x1** | ARROW | 3            | ARROW | [PERM;]5 x1** |
 | 3 x2         | ARROW | [PERM;]6 x1** | ARROW | 3 x2         |
 | [PERM;]5 x1** | ARROW | 3            | INVIS | INVIS        |
-| | | | | [FOOT;]* Move 1 level of 4 to buy perm upgrade.     |
-| | | | | [FOOT;]** Move 1 level of 3 to buy perm upgrade.    |
+| | | | | [FOOT;]* Move 1 level of 4 to buy perma-upgrade.     |
+| | | | | [FOOT;]** Move 1 level of 3 to buy perma-upgrade.    |
+
+Class: strat;
+Caption: Perma-Upgrade Costs;
+align: left;
+
+|                           |             |
+| ------------------------- | ----------- |
+| $g(x)$ milestone lvl 1    | $e100\rho$  |
+| $\lambda$ milestone lvl 1 | $e350\rho$  |
+| $g(x)$ milestone lvl 2    | $e450\rho$  |
+| $\lambda$ milestone lvl 2 | $e750\rho$  |
+| $g(x)$ milestone lvl 3    | $e1050\rho$ |
 
 ### Fractal Patterns (FP)
 
