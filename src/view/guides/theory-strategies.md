@@ -1980,7 +1980,7 @@ Caption: Ratios for SLMS Swapping;
 
 This may seem confusing, but let's take the first row as an example.
 
-In the first phase,$e25\rho-e50\rho$, you should have your milestones in <orange>State 1</orange> until $\rho$ is $\frac{1}{5$} of min($b_1$ cost, $b_2$ cost).
+In the first phase,$e25\rho-e50\rho$, you should have your milestones in <orange>State 1</orange> until $\rho$ is $\frac{1}{5}$ of min($b_1$ cost, $b_2$ cost).
 
 Then, swap to <orange>State 2</orange> until $\rho$ is 1/4 of min($b_1$ cost, $b_2$ cost).
 
