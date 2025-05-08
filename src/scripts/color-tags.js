@@ -2,7 +2,9 @@ const tag_colors = {
   "green": "color:var(--strat-green)",
   "red": "color:var(--strat-red)",
   "blue": "color:var(--strat-blue)",
-  "orange": "color:var(--strat-orange)"
+  "orange": "color:var(--strat-orange)",
+  "blackwhite": "color:var(--black-white)",
+  "bw": "color:var(--black-white)"
 };
 
 Object.keys(tag_colors).forEach((key) => {

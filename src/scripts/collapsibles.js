@@ -101,7 +101,12 @@ if (path.length == 2) {
 }
 
 // any non-md headers with ids will be given permalink
-["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {if(!/\" aria\-label\=\"Permalink\: /g.test($(h).html())){$(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + strRepl($(h).html()) + '" aria-label="Permalink: ' + strRepl($(h).html()) + '">#</a>')}})
+["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {
+  if(!/\" aria\-label\=\"Permalink\: /g.test($(h).html())){
+    $(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + strRepl($(h).html()) + '" aria-label="Permalink: ' + strRepl($(h).html()) + '">#</a>')
+  }
+  $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
+})
 
 // any headers with no id will be given permalink and an id (not first h2)
 for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")], []).slice(1)) {

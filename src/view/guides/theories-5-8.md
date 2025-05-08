@@ -64,17 +64,17 @@ The maximum value of $q$ is $c_2c_3^{1.1}$. Once $q$ reaches this maximum value,
 
 Approximate variable strengths on $\dot\rho$ with all milestones are as follows:
 
-Class: breakdown;
+Class: variable_description;
 Caption: Brief summary of variable strengths of Theory 5.;
 last_row: false;
 
-| INVIS | Brief Description |
+|       | Brief Description |
 | ----- | ----------------- |
-| [type="th";]$q_1$ | ~7% increase on $\dot{\rho}$ on average (instantaneous). |
-| [type="th";]$q_2$ | Doubles $\dot{\rho}$ (instantaneous). |
-| [type="th";]$c_1$ | $c_1$ reduces time to maximum value of $q$. Note that it DOES NOT increase the maximum value of $q$ itself. If $q$ is close to maximum value already, there is no point in buying $c_1$. |
-| [type="th";]$c_2$ | Doubles the maximum value of $q$, however, it also HALVES $\dot{q}$. Be careful to not buy too much $c_2$ as this can cause $\dot{q}$ to be too low. Do not ignore $c_2$ as, otherwise, the maximum value of $q$ will never increase. |
-| [type="th";]$c_3$ | Doubles the maximum value of $q$. No drawbacks. |
+| $q_1$ | ~7% increase on $\dot{\rho}$ on average (instantaneous). |
+| $q_2$ | Doubles $\dot{\rho}$ (instantaneous). |
+| $c_1$ | $c_1$ reduces time to maximum value of $q$. Note that it DOES NOT increase the maximum value of $q$ itself. If $q$ is close to maximum value already, there is no point in buying $c_1$. |
+| $c_2$ | Doubles the maximum value of $q$, however, it also HALVES $\dot{q}$. Be careful to not buy too much $c_2$ as this can cause $\dot{q}$ to be too low. Do not ignore $c_2$ as, otherwise, the maximum value of $q$ will never increase. |
+| $c_3$ | Doubles the maximum value of $q$. No drawbacks. |
 
 #### Bicycle Analogy (alternative explanation) of c1 and c2 interactions
 
@@ -313,7 +313,7 @@ Caption: T8 skip $\tau$ recommendations;
 | T6    | $e172\tau$      | $e165\tau$      |
 | T7    | $e145\tau$      | $e145\tau$      |
 | T8    | <red>Skip</red> | <red>Skip</red> |
-| | | [FOOT;style="width:20vw;";]If your numbers are different, that is fine. You just need to reach $1e1350\ \Pi\tau$ to get to R9 at $ee14k$. |
+| | | [FOOT;style="width:25vw;";]If your numbers are different, that is fine. You just need to reach $1e1350\ \Pi\tau$ to get to R9 at $ee14k$. |
 
 ### Student routing with R9
 
@@ -412,4 +412,4 @@ Caption: $ee20$k $\tau$ recommendations;
 | T6    | $e204\tau$ | $e194\tau$  |
 | T7    | $e234\tau$ | $e227\tau$  |
 | T8    | $e276\tau$ | $e277\tau$  |
-| | | [FOOT;style="width:20vw;";]Being above or below these values is fine, just as long as you have ~$e2050\ \tau$. |
+| | | [FOOT;style="width:25vw;";]Being above or below these values is fine, just as long as you have ~$e2050\ \tau$. |
