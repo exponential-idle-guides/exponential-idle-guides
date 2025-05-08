@@ -203,14 +203,8 @@ tfoot {
 
 // ranking tables
 .rankings {
-	text-align: center;
-	th {
-		border: 1px solid white;
-		text-align: center;
-		vertical-align: middle;
-	}
-	td {
-		border: 1px solid white;
+	th, td {
+		border: 1px solid var(--black-white);
 		text-align: center;
 		vertical-align: middle;
 	}

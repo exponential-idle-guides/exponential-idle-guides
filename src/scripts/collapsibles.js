@@ -11,7 +11,9 @@ const full_skiplist = {
     "rankings-main": ["#previous-rankings"],
     "seasons-main": ["#previous-rankings"]
   },
-  "ranking-news": {},
+  "ranking-news": {
+    "2022-yr": ["#2022-recap"]
+  },
   "season-news": {},
   "": {}
 }

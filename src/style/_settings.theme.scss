@@ -23,6 +23,8 @@
   --strat-blue: #4665F0;
   --strat-green: #41AD21;
   --strat-orange: #FF9600;
+
+  --black-white: white;
 }
 
 
@@ -40,6 +42,7 @@
 	--palette-fill-table-headers-light: #7c7c7c;
 	--palette-fill-table-headers-dark: #5a5858;
 	--palette-fill-table-headers-neutral: #6a6868;
+  --black-white: black;
   }
 }
 :root.light-mode {
@@ -55,6 +58,7 @@
 	--palette-fill-table-headers-light: #7c7c7c;
 	--palette-fill-table-headers-dark: #5a5858;
 	--palette-fill-table-headers-neutral: #6a6868;
+  --black-white: black;
 }
 
 :root.dark-mode {
@@ -70,4 +74,5 @@
 	--palette-fill-table-headers-light: #7c7c7c;
 	--palette-fill-table-headers-dark: #5a5858;
 	--palette-fill-table-headers-neutral: #6a6868;
+  --black-white: white;
 }
