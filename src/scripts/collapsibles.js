@@ -1,10 +1,8 @@
 const full_skiplist = {
   "guides": {
     "ex-basics": ["#visual-representation", "#reference-formula"],
-    "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview"],
-    "endgame": ["#bigmas"]
-    //"custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview"],
-    //"theory-strategies": ["#official-theories", "#official-custom-theories"]
+    "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
+    "theory-strategies": ["#official-theories", "#official-custom-theories"]
   },
   "guide-extensions": {
     "rankings-hall-of-fame": ["#hall-of-fame"],
@@ -149,7 +147,7 @@ if (collap_dict.h2.ids.length) {
             .wrapAll('<div class="content"/>');
         } else {
         	$(h4_id)
-            .nextUntil('h3')
+            .nextUntil('h3, h4')
             .wrapAll('<div class="content"/>');
         }
       });

@@ -90,66 +90,6 @@ tfoot td{
 	}
 }
 
-//T2
-%T2_headers {
-	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-light);
-}
-.T2 {
-	text-align: center;
-
-	.leftHeader {
-	font-weight: bold;
-	border-right: $table-border;
-	}
-	th, .leftHeader {
-		@extend %T2_headers;
-		border-bottom: $table-border;
-	}
-	th, td{
-		text-align: center;
-		padding: 0.3em 0.4em 0.3em 0.4em;
-	}
-}
-
-//Theory Sim Playspout
-%PlayStrat_headers {
-	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-dark);
-}
-.PlayStrats {
-	text-align: left;
-
-	.leftHeader {
-		@extend %PlayStrat_headers;
-		font-weight: bold;
-		border-right: $table-border;
-	}
-	.topHeader {
-		@extend %PlayStrat_headers;
-		border-bottom: none;
-	}
-	.leftlastHeader {
-		@extend %PlayStrat_headers;
-		font-weight: bold;
-		border-right: $table-border;
-		border-bottom: $table-border;
-	}
-	td {
-		text-align: left;
-		padding: 0.3em 0.4em 0.3em 0.4em;
-	}
-	th {
-		@extend td;
-		color: var(--palette-stroke-table-headers);
-		background-color:var(--palette-fill-table-headers-light);
-		border-bottom: $table-border;
-	}
-	indent {
-		text-indent: 100px;
-	}
-}
-
 %routing {
   margin-left: 0;
 	margin-top: 0;
@@ -166,42 +106,6 @@ tfoot td{
 	@extend %routing;
 	.perm_upg {
 		color: var(--palette-stroke-warning);
-	}
-}
-
-// spqcey's Tables
-%spqcey_headers {
-	color: var(--palette-stroke-table-headers);
-	background-color:var(--palette-fill-table-headers-dark);
-}
-.spqcey {
-	text-align: center;
-	.leftHeader, .leftlastHeader {
-		@extend %spqcey_headers;
-		font-weight: bold;
-		border-right: $table-border;
-	}
-	.topHeader {
-		@extend %spqcey_headers;
-		border-bottom: none;
-	}
-	.rightHeader {
-		@extend %spqcey_headers;
-	}
-	.rightHeader, .rightMainHeader {
-		border-left: $table-border-thin;
-	}
-	.leftMainHeader, .leftlastMainHeader {
-		border-right: $table-border;
-	}
-	td {
-		padding: $table-padding;
-	}
-	th {
-		color: var(--palette-stroke-table-headers);
-		background-color:var(--palette-fill-table-headers-light);
-		border-bottom: $table-border;
-		padding: $table-padding;
 	}
 }
 
@@ -317,16 +221,6 @@ tfoot td{
 	tbody {
 		border-top: $table-border;
 	}
-	/*
-	caption {
-		background-color: var(--palette-fill-table-headers-light);
-		color: var(--palette-stroke-table-headers);
-		margin-bottom: 0 !important;
-		font-weight: bold;
-		border-top: $table-border-thin;
-		padding: $table-padding;
-		text-align: center;
-	}*/
 }
 .strat {
 	@extend %strat;
