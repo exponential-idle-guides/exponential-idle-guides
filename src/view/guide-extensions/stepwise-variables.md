@@ -96,24 +96,13 @@ More specifically, the ratio is 5x at a multiple of 10, increasing to 10x at 5 m
 
 Many strategies make use of this understanding of Stepwise variables by changing the ratio bought at depending on where one is in the cycle of these Stepwise variables. This is done using the [modulo operator](/guides/theory-strategies/#modulus-explanation), $\%$. Take the above example. $c_1$ is a (2, 10) Stepwise and $c_2$ is a 2x Direct Multi variable. The ratio we want to buy it at is 5x when $c_1$'s current level = 10, 20, 30 etc. and up to 15x when it's current level is 19, 29, 39 etc. Thus, we define the strategy like this
 
-<table class="spqcey">
-<thead>
-   <tr>
-      <th class="invisible"></th>
-      <th colspan="2" style="text-align:center">Example Strategy</th>
-   </tr>
-</thead>
-   <tbody>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>1</small></sub></sub></td>
-         <td>When cost × (5 + lvl % 10) < c<sub><sub><small>2</small></sub></sub> cost</td>
-      </tr>
-      <tr>
-         <td class="leftHeader">c<sub><sub><small>2</small></sub></sub></td>
-         <td>✔️</td>
-      </tr>
-   </tbody>
-</table>
+Class: strat;
+Caption: Example Strategy;
+
+|       |                                           |
+| ----- | ----------------------------------------- |
+| $c_1$ | When cost$\times(5+$lvl%$10)\lt c_2$ cost |
+| $c_2$ | CHECK                                     |
 
 This uses a new operation you may not have encounters before, the modulo operator $\%$.
 

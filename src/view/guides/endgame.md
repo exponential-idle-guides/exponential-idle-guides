@@ -102,111 +102,23 @@ A useful strategy in the later stages of a graduation is \\(t\\) stacking. It re
 
 ### Skipped students routing
 
-Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or a Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for the students that you have not, and the next student that you will get, if the distribution has an extra student, then it is a Skipma, if it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
+Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
-Due to fluctuations with stars, accel, \\(t\\), and more, Skipma and Bigma can be situation dependant. Below is a chart with normal accel and stars, but the students to skip due to Bigma and Skipma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference.
+The chart below lists out all of the Bigma to skip. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
 
 ##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
-<table class="newwords">
-   <thead>
-      <th class="invisible"></th>
-      <th>Students to Skip</th>
-   </thead>
-   <tbody>
-      <td class="leftHeader">Always Skipped</td>
-      <td>144, 146, 149, 152, 155, 158, 161, 164</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>166, 168, 172, 176, 180, 184, 188, 190</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>193, 198, 203, 208, 213, 216, 218, 220</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>224, 230, 236, 240, 242, 246, 248, 251</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>256, 261, 268, 275, 279, 282, 289, 296, 298</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader"></td>
-      <td class="last_row">304, 312, 320, 324, 326, 328, 334, 336, 344</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">High t (5x)</td>
-      <td class="last_row">307, 310</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Mid-High t (1x+)</td>
-      <td class="last_row">316</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Low-High t (1x-)</td>
-      <td class="last_row">286, 292</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Low t (0.5x)</td>
-      <td class="last_row">318</td>
-   </tbody>
+Class: newwords;
 
-   <thead>
-      <th class="invisible"></th>
-      <th>F(t) to Skip</th>
-   </thead>
-   <tbody>
-      <td class="leftHeader">Always Skipped</td>
-      <td>29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>33.2k, 33.8k, 34.2k, 34.6k, 35.4k, 36.2k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>37.0k, 37.8k, 38.6k, 39.0k, 39.6k, 40.6k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>41.6k, 42.6k, 43.6k, 44.2k, 44.6k, 45.0k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>45.8k, 47.0k, 48.2k, 49.0k, 49.4k, 50.2k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>50.6k, 51.2k, 52.2k, 53.2k, 54.6k, 56.0k</td>
-   </tbody>
-   <tbody>
-      <td class="leftHeader"></td>
-      <td>56.8k, 57.4k, 58.8k, 60.2k, 60.6k, 61.8k, 63.4k</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader"></td>
-      <td>65.0k, 65.8k, 66.2k, 66.6k, 67.8k, 68.2k, 69.8k</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">High t (5x)</td>
-      <td>62.4k, 63.0k</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Mid-High t (1x+)</td>
-      <td>64.2k</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Low-High t (1x-)</td>
-      <td>58.2k, 59.4k</td>
-   </tbody>
-   <tbody>
-      <td class="leftlastHeader">Low t (0.5x)</td>
-      <td>64.6k</td>
-   </tbody>
-</table>
+| Students                          | [style="border-right:\$table-border-thin;";]$F(t)$ |
+| --------------------------------- | ------------------------------------------------- |
+| 144, 146, 149, 152, 155, 158, 161 | 29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k, 33.2k   |
+| 164, 168, 172, 176, 180, 184, 188 | 33.8k, 34.6k, 35.4k, 36.2k, 37.0k, 37.8k, 38.6k   |
+| 193, 198, 203, 208, 213, 218, 224 | 39.6k, 40.6k, 41.6k, 42.6k, 43.6k, 44.6k, 45.8k   |
+| 230, 236, 242, 248, 261, 268, 275 | 47.0k, 48.2k, 49.4k, 50.6k, 53.2k, 54.6k, 56.0k   |
+| 282, 289, 296, 304, 312, 320, 328 | 57.4k, 58.8k, 60.2k, 61.8k, 63.4k, 65.0k, 66.6k   |
+| 336, 344, 353, 362, 371, 380, 389 | 68.2k, 69.8k, 71.6k, 73.4k, 75.2k, 77.0k, 78.8k   |
+| | [FOOT;style="text-align:left;";]Due to fluctuations with stars, accel, \\(t\\), and more, Bigma can be situation dependant. This chart uses normal accel and stars, but the students to skip due to Bigma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference. |
 
 Explanation by: Snaeky and AfuroZamurai
 
@@ -249,6 +161,14 @@ Suprem Equation past ee58-60k:
 </blockquote>
 
 <button class="copy-btn" onClick="copyText('as-post-58-60k');">Copy Text</button>
+
+Suprem Equation past ee75k:
+
+<blockquote id="as-post-75k">
+costUpS(1)&lt;e52&amp;&amp;psi+dpsi&gt;e52
+</blockquote>
+
+<button class="copy-btn" onClick="copyText('as-post-75k');">Copy Text</button>
 
 ### How to respec
 
