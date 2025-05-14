@@ -180,7 +180,8 @@ dpsi + psi &gt; min(costUpS(1), <br>
 edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.**
 
-###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
+###### Reference [Locking Smooth()](#method-2-lock)
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](#truefalse-auto-expression-evaluation)
 
 #### Autosupremacy explanation
 

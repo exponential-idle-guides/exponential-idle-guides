@@ -130,6 +130,7 @@ edit expression field again afterwards. Make sure autobuyers are on x1
 or xMax.**
 
 ###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
 
 #### Autosupremacy explanation
 
