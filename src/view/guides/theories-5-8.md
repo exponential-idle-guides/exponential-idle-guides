@@ -19,8 +19,8 @@ last_row: false;
 |      |       |       |       |       |       |       |
 | ---- | ----- | ----- | ----- | ----- | ----- | ----- |
 | 9k   | ARROW | 9.4k  | ARROW | 9.8k  | ARROW | 10k   |
-| 10k  | ARROW | 10.4k | ARROW | 8k    | ARROW | 11k   |
-| 11k  | ARROW | 12.4k | ARROW | 8.6k  | ARROW | 14k   |
+| 10k  | ARROW | 10.4k | ARROW | 10.6k | ARROW | 11k   |
+| 11k  | ARROW | 12.4k | ARROW | 13.4k | ARROW | 14k   |
 | | | | | | | [style="text-align: center;";][Skip T8](#theory-8-skipping) |
 | 14k  | ARROW | 14.8k | ARROW | 15.6k | ARROW | 16k   |
 | 16k  | ARROW | 16.8k | ARROW | 18k   | INVIS | INVIS |
