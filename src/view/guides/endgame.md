@@ -49,7 +49,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro
 
 ### How to properly use the Graduation Calculator
 
-The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
+The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 #### Three Steps To Getting The Best Result
 
@@ -110,7 +110,7 @@ Once you have enough students to always have R4 to R7 maxed out (about 30k), you
 
 The chart below lists out all of the Bigma to skip. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
 
-##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc#main.py) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
+##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 Class: newwords;
 
