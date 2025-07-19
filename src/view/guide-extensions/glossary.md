@@ -107,7 +107,7 @@ A short-hand of Publication Multiplier. Usually refer to the current increase in
 
 This is the number underneath the pub multi number above. It is the total multiplier of all your publications in that theory. It is dependent on both your progress in the theory and on the amount of students you have.
 
-### CT, WSP, SL, EF, CSR2/CS2, FI, FP, RZ
+### CT, WSP, SL, EF, CSR2/CS2, FI, FP, RZ, MF, BaP
 
 Custom Theories
 
@@ -118,8 +118,10 @@ Custom Theories
 - Frac­tional In­teg­ra­tion
 - Fractal Patterns
 - Riemann Zeta Function
+- Mag­netic Fields
+- Basel Prob­lem
 
-These are the 7 current official custom theories. More custom theories will eventually be released, and we will update this portion of the guide when they do so.
+These are the 9 current official custom theories. More custom theories will eventually be released, and we will update this portion of the guide when they do so.
 
 ### Coasting
 
