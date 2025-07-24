@@ -306,6 +306,8 @@ The fifth/sixth official custom theory, abbreviated FP, was created by XLII. It 
 
 The seventh official custom theory, abbreviated RZ, was created by prop and released on December 15, 2024.
 
+- [RZ<green>dBHRewind</green>](#rzdbhrewind)&nbsp; — &nbsp;**EXTREMELY** Active
+
 - [RZ<green>dBH</green>](#rzdbh)&nbsp; — &nbsp;Active
 
 - [RZ<green>BH</green>](#rzbh)&nbsp; — &nbsp;Idle
@@ -2536,6 +2538,46 @@ Caption: FP;
 
 ## Riemann Zeta Function
 
+### RZ<green>dBHRewind</green>
+
+Class: strat;
+Caption: RZ<green>dBH</green>;
+
+|       |                                                  |
+| ----- | ------------------------------------------------ |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$                 |
+| $c_2$ | CHECK                                            |
+| $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
+| $w_2$ | CHECK                                            |
+| $w_3$ | CHECK                                            |
+| $b$   | ✔️*                                              |
+| | [FOOT;]* Do not buy $b$ until $t\gt16$. |
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=4478.52 c1: 6561 c2: 1640 w1: 7428.
+
+The value after $t$ is the $t$ value at which the black hole should be set.
+
+The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
+
+**BHRewind strategy**
+
+This strategy allows $t$ to pass multiple times over a time period with high $\zeta'$ for massive $\delta$ gains. 
+It is more effevtive the more $b$ levels you have.
+
+- Once $t$ reaches the set value, let the black hole lock at the previous zero
+- Once the black hole is locked at the zero, manually disable it
+- Repeat these two steps until you reach the $w_1$ level indicated in the sim result
+
+This strategy is **extremely** active.
+
+<br>Strategy credits:
+
+- AbsoPerf (discovery)
+- d4Nf6Bg51-0 (refining)
+- Mathis S. for the implementation in the sim
+- prop for the variable buying strategy
+- Hotab & Blackseal for the coasting strategy
+
 ### RZ<green>dBH</green>
 
 Class: strat;
@@ -2545,7 +2587,7 @@ Caption: RZ<green>dBH</green>;
 | ----- | ------------------------------------------------ |
 | $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$                 |
 | $c_2$ | CHECK                                            |
-| $w_1$ | When cost is $frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
+| $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
 | $w_2$ | CHECK                                            |
 | $w_3$ | CHECK                                            |
 | $b$   | ✔️*                                              |
