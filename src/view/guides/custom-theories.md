@@ -724,7 +724,7 @@ last_row: false;
 | $c_1$ | Doubles every 8 levels. Boosts $\dot{\rho}$ (instantaneous). |
 | $c_2$ | Doubles $\dot{\rho}$ per level (instanteous). |
 | $w_1$ | Doubles every 8 levels. Boosts $\dot{\rho}$ and $\dot{\delta}$ (instantaneous). Bought with $\delta$. |
-| $w_2$ | Doubles $\dot{\rho}$ per level (instanteous). Bought with $\delta$. |
+| $w_2$ | Doubles $\dot{\delta}$ per level (instanteous). Bought with $\delta$. |
 | $w_3$ | Doubles $\dot{\delta}$ every $e30\delta$ starting at $e600\delta$. Bought with $\delta$. |
 | $b$   | Boosts $\dot{\rho}$, when $\zeta$ is away from zero, and $\dot{\delta}$. $b$ is capped at 6 levels maxed at 3 (+0.5/lvl). |
 
