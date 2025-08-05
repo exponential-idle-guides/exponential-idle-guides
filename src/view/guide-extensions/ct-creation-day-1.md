@@ -7,8 +7,6 @@ order: 1
 tags: other
 ---
 
-## Day 1: Anatomy of a Custom Theory
-
 Dawn of the first day. Last night, did you dream good?
 
 Today we will be looking at an example of a custom theory, in order to see how one can be constructed. We will send a theory through the SDK, then take a look at its source code.
@@ -107,6 +105,8 @@ var getPublicationMultiplierFormula = (symbol) =>
 }
 ```
 
+Also note that compared to regular LaTeX, the LaTeX commands in-game must be started with two back slashes, instead of one.
+
 ### Publications
 
 The publication multiplier is determined by `getPublicationMultiplier`, which takes the tau value (of the last publication) and returns the multiplier as a BigNumber - the game's large number ('ee' and up) library.
@@ -128,4 +128,4 @@ The last four functions are used to calculate the terms in the theory:
 
 ### Aftermath
 
-Now that you've gone through the sample custom theory, you now know roughly how one is structured, even if it's only a simple one. Perhaps your theory could involve even wilder ideas. I can't dictate your thoughts, I can only give you the tools to help you do it. And the very first tool you were given: observation. I shall see you [tomorrow](<Day 2.md>), where we will take part in your first creation.
+Now that you've gone through the sample custom theory, you now know roughly how one is structured, even if it's only a simple one. Perhaps your theory could involve even wilder ideas. I can't dictate your thoughts, I can only give you the tools to help you do it. And the very first tool you were given: observation. I shall see you [tomorrow](../ct-creation-day-2/), where we will take part in your first creation.

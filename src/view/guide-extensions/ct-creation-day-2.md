@@ -7,8 +7,6 @@ order: 2
 tags: other
 ---
 
-## Day 2: A Theory of Your Own
-
 Good morning. It is dawn of the second day.
 
 Today, we're going to create a simple theory with a couple of upgrades, and until the end of this week, we will be fleshing it out, bit by bit. By the end, hopefully it will be one to be proud of.
@@ -225,6 +223,57 @@ Now, load it through the SDK! You can now see the new `c1` upgrade available for
 
 ### Aftermath
 
-This theory is still going pretty slowly. I bet you're tempted to hack in some more currency. I shall see you [tomorrow](<Day 3.md>), where we will be implementing even more upgrades for the theory!
+This theory is still going pretty slowly. I bet you're tempted to hack in some more currency. I shall see you [tomorrow](../ct-creation-day-3/), where we will be implementing even more upgrades for the theory!
 
-Meanwhile, the source code after today's work can be found [here](src/2.js).
+Meanwhile, the source code after today's work can be found here:
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { ExponentialCost, FreeCost } from '../api/Costs';
+import { theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1;
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getDesc(c1.level),
+        getDesc(c1.level + amount));
+    }
+}
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+
+var tick = (elapsedTime, multiplier) =>
+{
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    currency.value += dt * getc1(c1.level);
+}
+
+var getPrimaryEquation = () => `\\dot{\\rho} = c_1`;
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+init();
+```

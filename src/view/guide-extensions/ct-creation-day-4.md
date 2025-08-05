@@ -7,8 +7,6 @@ order: 4
 tags: other
 ---
 
-## Day 4: Fibonacci Foil
-
 Top of the mooning. It is dawn of the fourth day.
 
 I know you cannot sleep. Across the window, the wind is howling at all the drying lines strewn across the alleyway, hung between two pedestrian houses. A cricket chirps under the speckled indigo sky. There is no moon for you to see tonight. Instead, you see various clouds peeking over the horizon, flowing sharply like blades of grass. Wait, isn't that the Exponential Idle graph?
@@ -168,6 +166,128 @@ Save the file. You will see that when you hold down the `(i)` button on screen, 
 
 ### Aftermath
 
-The theory is slowly getting more complete. Although, with it seemingly skyrocketing without stopping (in other words, diverging), we can't really add any more content. The theory at this point is not very compelling to play either. Join me [tomorrow](<Day 5.md>) on a quest to find the perfect balance for it.
+The theory is slowly getting more complete. Although, with it seemingly skyrocketing without stopping (in other words, diverging), we can't really add any more content. The theory at this point is not very compelling to play either. Join me [tomorrow](../ct-creation-day-5/) on a quest to find the perfect balance for it.
 
-Meanwhile, the source code after today's work can be found [here](src/4.js).
+Meanwhile, the source code after today's work can be found here:
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
+import { Localization } from '../api/Localization';
+import { theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1, c2;
+let f;
+let c1ExpMs;
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        let getInfo = (level) =>
+        {
+            if(c1ExpMs.level)
+                return `c_1^{${getc1Exp(c1ExpMs.level)}}=
+                ${getc1(level).pow(getc1Exp(c1ExpMs.level)).toString()}`;
+            return getDesc(level);
+        }
+
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getInfo(c1.level),
+        getInfo(c1.level + amount));
+    }
+
+    {
+        c2 = theory.createUpgrade(3, currency, new ExponentialCost(500, 3));
+        let getDesc = (level) => `c_2 = ${getc2(level).toString(0)}`;
+        c2.getDescription = (amount) => Utils.getMath(`c_2 = 2^{${c2.level}}`);
+        c2.getInfo = (amount) => Utils.getMathTo(getDesc(c2.level),
+        getDesc(c2.level + amount));
+    }
+
+    {
+        f = theory.createUpgrade(2, currency, new ExponentialCost(200, 1.618034));
+        let getDesc = (level) => `f = ${getf(level).toString(0)}`;
+        f.getDescription = (amount) => Utils.getMath(getDesc(f.level));
+        f.getInfo = (amount) => Utils.getMathTo(getDesc(f.level),
+        getDesc(f.level + amount));
+    }
+
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+    theory.createBuyAllUpgrade(1, currency, BigNumber.from('1e12'));
+    theory.createAutoBuyerUpgrade(2, currency, BigNumber.from('1e17'));
+    
+    theory.setMilestoneCost(new LinearCost(15, 15));
+
+    {
+        c1ExpMs = theory.createMilestoneUpgrade(0, 5);
+        c1ExpMs.description = Localization.getUpgradeIncCustomExpDesc('c_1', '0.03');
+        c1ExpMs.info = Localization.getUpgradeIncCustomExpInfo('c_1', '0.03');
+        c1ExpMs.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
+    }
+}
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+let getc1Exp = (level) => 1 + 0.03 * level;
+
+let getc2 = (level) => BigNumber.TWO.pow(level);
+
+const fibSqrt5 = BigNumber.FIVE.sqrt();
+const fibA = (BigNumber.ONE + fibSqrt5) / BigNumber.TWO;
+const fibB = (fibSqrt5 - BigNumber.ONE) / BigNumber.TWO;
+
+let getf = (level) =>
+{
+    if(level % 2 == 0)
+        return (fibA.pow(level) - fibB.pow(level)) / fibSqrt5;
+    return (fibA.pow(level) + fibB.pow(level)) / fibSqrt5;
+};
+
+var tick = (elapsedTime, multiplier) =>
+{
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+    currency.value += dt * bonus * getc1(c1.level).pow(getc1Exp(c1ExpMs.level)) * getc2(c2.level) * (BigNumber.ONE + getf(f.level));
+}
+
+var getPrimaryEquation = () => `\\dot{\\rho} = c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)`;
+
+var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+
+init();
+```

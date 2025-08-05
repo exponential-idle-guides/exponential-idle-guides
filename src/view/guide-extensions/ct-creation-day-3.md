@@ -7,8 +7,6 @@ order: 3
 tags: other
 ---
 
-## Day 3: Fibonacci Friend
-
 Buongiorno a tutti. It is dawn of the third day.
 
 Across your window, a man wearing a head scarf waves at you. You may recognise him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to implement a new upgrade based on his famous Fibonacci sequence. Then, we will implement publications for our theory.
@@ -203,6 +201,105 @@ Done. Now we can publish our theory and gain quicker progress on the next run!
 
 ### Aftermath
 
-As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](<Day 4.md>).
+As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](../ct-creation-day-4/).
 
-Meanwhile, the source code after today's work can be found [here](src/3.js).
+Meanwhile, the source code after today's work can be found here:
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { ExponentialCost, FreeCost } from '../api/Costs';
+import { theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1, c2;
+let f;
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getDesc(c1.level),
+        getDesc(c1.level + amount));
+    }
+
+    {
+        c2 = theory.createUpgrade(3, currency, new ExponentialCost(500, 3));
+        let getDesc = (level) => `c_2 = ${getc2(level).toString(0)}`;
+        c2.getDescription = (amount) => Utils.getMath(`c_2 = 2^{${c2.level}}`);
+        c2.getInfo = (amount) => Utils.getMathTo(getDesc(c2.level),
+        getDesc(c2.level + amount));
+    }
+
+    {
+        f = theory.createUpgrade(2, currency, new ExponentialCost(200, 1.618034));
+        let getDesc = (level) => `f = ${getf(level).toString(0)}`;
+        f.getDescription = (amount) => Utils.getMath(getDesc(f.level));
+        f.getInfo = (amount) => Utils.getMathTo(getDesc(f.level),
+        getDesc(f.level + amount));
+    }
+    
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+}
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+
+let getc2 = (level) => BigNumber.TWO.pow(level);
+
+let getf = (level) =>
+{
+    if(level == 0)
+        return BigNumber.ZERO;
+    if(level == 1)
+        return BigNumber.ONE;
+
+    return getf(level - 1) + getf(level - 2);
+};
+
+var tick = (elapsedTime, multiplier) =>
+{
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+    currency.value += dt * bonus * getc1(c1.level) * getc2(c2.level) * (BigNumber.ONE + getf(f.level));
+}
+
+var getPrimaryEquation = () => `\\dot{\\rho} = c_1c_2(1+f)`;
+
+var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+
+init();
+```

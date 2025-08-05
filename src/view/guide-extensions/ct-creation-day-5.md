@@ -7,8 +7,6 @@ order: 5
 tags: other
 ---
 
-## Day 5: Balance in All Things
-
 Hola. It is dawn of the fifth day.
 
 Today we are going to make the theory more balanced and spicy, because admittedly, big numbers are very bland, and in this guide, you have to listen to me, because I am your teacher.
@@ -216,9 +214,191 @@ Now, save the theory, and let it run for a minute. Thanks to the internal state,
 
 ### Aftermath
 
-Before we end our session today, let's take a look at what we had discussed earlier: term powers. `q dot` is a stepwise upgrade of base 2 length 10, with a cost progress of 2.5. Under this framework, it should have a power of `1/(10*2.5) = 0.04`, or 4%, which brings the total power of the theory from 94.93% to 98.93%. While how much `q`'s cumulative nature enhances its power (or whether it even does so at all) is still a mystery, we can be sure that we did make progress today, so I shall see you [tomorrow](<Day 6.md>).
+Before we end our session today, let's take a look at what we had discussed earlier: term powers. `q dot` is a stepwise upgrade of base 2 length 10, with a cost progress of 2.5. Under this framework, it should have a power of `1/(10*2.5) = 0.04`, or 4%, which brings the total power of the theory from 94.93% to 98.93%. While how much `q`'s cumulative nature enhances its power (or whether it even does so at all) is still a mystery, we can be sure that we did make progress today, so I shall see you [tomorrow](../ct-creation-day-6/).
 
-Meanwhile, the source code after today's work can be found [here](src/5.js).
+Meanwhile, the source code after today's work can be found here:
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { CompositeCost, ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
+import { Localization } from '../api/Localization';
+import { theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1, c2;
+let f;
+let qdot;
+let c1ExpMs, qMs;
+
+let q = BigNumber.ONE;
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        let getInfo = (level) =>
+        {
+            if(c1ExpMs.level)
+                return `c_1^{${getc1Exp(c1ExpMs.level)}}=
+                ${getc1(level).pow(getc1Exp(c1ExpMs.level)).toString()}`;
+            return getDesc(level);
+        }
+
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getInfo(c1.level),
+        getInfo(c1.level + amount));
+    }
+
+    {
+        c2 = theory.createUpgrade(3, currency, new ExponentialCost(500, 3));
+        let getDesc = (level) => `c_2 = ${getc2(level).toString(0)}`;
+        c2.getDescription = (amount) => Utils.getMath(`c_2 = 2^{${c2.level}}`);
+        c2.getInfo = (amount) => Utils.getMathTo(getDesc(c2.level),
+        getDesc(c2.level + amount));
+    }
+
+    {
+        f = theory.createUpgrade(2, currency, new CompositeCost(30,
+        new ExponentialCost(100, 1.618034),
+        new ExponentialCost(1e16, 1.618034 * 1.5)));
+        let getDesc = (level) => `f = ${getf(level).toString(0)}`;
+        f.getDescription = (amount) => Utils.getMath(getDesc(f.level));
+        f.getInfo = (amount) => Utils.getMathTo(getDesc(f.level),
+        getDesc(f.level + amount));
+    }
+
+    {
+        qdot = theory.createUpgrade(4, currency, new ExponentialCost(1e45, 2.5));
+        let getDesc = (level) => `\\dot{q} = ${getqdot(level).toString(0)}`;
+        qdot.getDescription = (amount) => Utils.getMath(getDesc(qdot.level));
+        qdot.getInfo = (amount) => Utils.getMathTo(getDesc(qdot.level),
+        getDesc(qdot.level + amount));
+    }
+
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+    theory.createBuyAllUpgrade(1, currency, BigNumber.from('1e12'));
+    theory.createAutoBuyerUpgrade(2, currency, BigNumber.from('1e17'));
+    
+    theory.setMilestoneCost(new LinearCost(15, 15));
+
+    {
+        c1ExpMs = theory.createMilestoneUpgrade(0, 5);
+        c1ExpMs.description = Localization.getUpgradeIncCustomExpDesc('c_1', '0.03');
+        c1ExpMs.info = Localization.getUpgradeIncCustomExpInfo('c_1', '0.03');
+        c1ExpMs.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
+    }
+
+    {
+        qMs = theory.createMilestoneUpgrade(1, 1);
+        qMs.description = Localization.getUpgradeAddTermDesc('q');
+        qMs.info = Localization.getUpgradeAddTermInfo('q');
+        qMs.boughtOrRefunded = (_) =>
+        {
+            theory.invalidatePrimaryEquation();
+            updateAvailability();
+        }
+    }
+
+    updateAvailability();
+}
+
+var updateAvailability = () =>
+{
+    qdot.isAvailable = qMs.level > 0;
+};
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+let getc1Exp = (level) => 1 + 0.03 * level;
+
+let getc2 = (level) => BigNumber.TWO.pow(level);
+
+let getqdot = (level) => Utils.getStepwisePowerSum(level, 2, 10, 0);
+
+const fibSqrt5 = BigNumber.FIVE.sqrt();
+const fibA = (BigNumber.ONE + fibSqrt5) / BigNumber.TWO;
+const fibB = (fibSqrt5 - BigNumber.ONE) / BigNumber.TWO;
+
+let getf = (level) =>
+{
+    if(level % 2 == 0)
+        return (fibA.pow(level) - fibB.pow(level)) / fibSqrt5;
+    return (fibA.pow(level) + fibB.pow(level)) / fibSqrt5;
+};
+
+var tick = (elapsedTime, multiplier) =>
+{
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+
+    let dq = qMs.level ? dt * getqdot(qdot.level) : BigNumber.ZERO;
+    q += dq;
+
+    currency.value += dt * bonus * getc1(c1.level).pow(getc1Exp(c1ExpMs.level)) * getc2(c2.level) * (BigNumber.ONE + getf(f.level)) * (qMs.level ? q : BigNumber.ONE);
+
+    theory.invalidateTertiaryEquation();
+}
+
+var getPrimaryEquation = () => `\\dot{\\rho} = c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)${qMs.level ? 'q' : ''}`;
+
+var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
+
+var getTertiaryEquation = () => qMs.level ? `q = ${q.toString()}` : '';
+
+var postPublish = () =>
+{
+    q = BigNumber.ONE;
+}
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+
+var getInternalState = () => JSON.stringify
+({
+    q: q.toBase64String()
+});
+
+var setInternalState = (stateStr) =>
+{
+    if(!stateStr)
+        return;
+
+    let state = JSON.parse(stateStr);
+    q = BigNumber.fromBase64String(state.q) ?? q;
+}
+
+init();
+```
 
 [^1] Classes can be serialised, if the `toJSON` method is defined to convert them into objects first, but `BigNumber` doesn't have this method. For primitive variables (strings and numbers), serialisation looks much easier, as you can omit keys to automatically assign the variables' names to them:
 

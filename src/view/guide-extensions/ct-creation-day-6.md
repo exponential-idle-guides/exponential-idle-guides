@@ -7,8 +7,6 @@ order: 6
 tags: other
 ---
 
-## Day 6: Dimension Expansion
-
 Hi class. Now that we've dealt with our previous problems, today we're going to pick up the pace. First, I will introduce you to the most common player strategies, and through a new milestone, implement it in our theory. Then, we will implement a quality of life feature, in the form of a timer.
 
 ### Introduction to player strategies
@@ -189,8 +187,225 @@ To exercise what you've learned, let's work on some polishing touches:
 
 ### Aftermath
 
-Today, we have learned about player strategies, and how they impact the way we design our theories. We were also introduced to the last part of the equation UI: the quaternary entries. I shall see you [tomorrow](<Day 7.md>) for the finishing touches on this theory.
+Today, we have learned about player strategies, and how they impact the way we design our theories. We were also introduced to the last part of the equation UI: the quaternary entries. I shall see you [tomorrow](../ct-creation-day-7/) for the finishing touches on this theory.
 
-Meanwhile, the source code after today's work can be found [here](src/6.js). This code does not contain solutions to assignments.
+Meanwhile, the source code after today's work can be found here. This code does not contain solutions to assignments.
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { CompositeCost, ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
+import { Localization } from '../api/Localization';
+import { QuaternaryEntry, theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1, c2;
+let f;
+let qdot;
+let c1ExpMs, qMs, qdotMs;
+
+let q = BigNumber.ONE;
+let t = 0;
+
+let quaternary =
+[
+    new QuaternaryEntry('h', null),
+    new QuaternaryEntry('m', null),
+    new QuaternaryEntry('s', null)
+];
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        let getInfo = (level) =>
+        {
+            if(c1ExpMs.level)
+                return `c_1^{${getc1Exp(c1ExpMs.level)}}=
+                ${getc1(level).pow(getc1Exp(c1ExpMs.level)).toString()}`;
+            return getDesc(level);
+        }
+
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getInfo(c1.level),
+        getInfo(c1.level + amount));
+    }
+
+    {
+        c2 = theory.createUpgrade(3, currency, new ExponentialCost(500, 3));
+        let getDesc = (level) => `c_2 = ${getc2(level).toString(0)}`;
+        c2.getDescription = (amount) => Utils.getMath(`c_2 = 2^{${c2.level}}`);
+        c2.getInfo = (amount) => Utils.getMathTo(getDesc(c2.level),
+        getDesc(c2.level + amount));
+    }
+
+    {
+        f = theory.createUpgrade(2, currency, new CompositeCost(30,
+        new ExponentialCost(100, 1.618034),
+        new ExponentialCost(1e16, 1.618034 * 1.5)));
+        let getDesc = (level) => `f = ${getf(level).toString(0)}`;
+        f.getDescription = (amount) => Utils.getMath(getDesc(f.level));
+        f.getInfo = (amount) => Utils.getMathTo(getDesc(f.level),
+        getDesc(f.level + amount));
+    }
+
+    {
+        qdot = theory.createUpgrade(4, currency, new ExponentialCost(1e45, 2.5));
+        let getDesc = (level) => `\\dot{q} = ${getqdot(level).toString(0)}`;
+        qdot.getDescription = (amount) => Utils.getMath(getDesc(qdot.level));
+        qdot.getInfo = (amount) => Utils.getMathTo(getDesc(qdot.level),
+        getDesc(qdot.level + amount));
+    }
+
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+    theory.createBuyAllUpgrade(1, currency, BigNumber.from('1e12'));
+    theory.createAutoBuyerUpgrade(2, currency, BigNumber.from('1e17'));
+    
+    theory.setMilestoneCost(new LinearCost(15, 15));
+
+    {
+        c1ExpMs = theory.createMilestoneUpgrade(0, 5);
+        c1ExpMs.description = Localization.getUpgradeIncCustomExpDesc('c_1', '0.03');
+        c1ExpMs.info = Localization.getUpgradeIncCustomExpInfo('c_1', '0.03');
+        c1ExpMs.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
+    }
+
+    {
+        qMs = theory.createMilestoneUpgrade(1, 1);
+        qMs.description = Localization.getUpgradeAddTermDesc('q');
+        qMs.info = Localization.getUpgradeAddTermInfo('q');
+        qMs.boughtOrRefunded = (_) =>
+        {
+            theory.invalidatePrimaryEquation();
+            updateAvailability();
+        }
+        qMs.canBeRefunded = () => qdotMs.level == 0;
+    }
+
+    {
+        qdotMs = theory.createMilestoneUpgrade(2, 3);
+        qdotMs.description = Localization.getUpgradeMultCustomDesc('\\dot{q}', '2');
+        qdotMs.info = Localization.getUpgradeMultCustomInfo('\\dot{q}', '2');
+        qdotMs.isAvailable = false;
+    }
+
+    updateAvailability();
+}
+
+var updateAvailability = () =>
+{
+    qdot.isAvailable = qMs.level > 0;
+    qdotMs.isAvailable = qMs.level > 0;
+};
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+let getc1Exp = (level) => 1 + 0.03 * level;
+
+let getc2 = (level) => BigNumber.TWO.pow(level);
+
+let getqdot = (level) => Utils.getStepwisePowerSum(level, 2, 10, 0) * Math.pow(2, qdotMs.level);
+
+const fibSqrt5 = BigNumber.FIVE.sqrt();
+const fibA = (BigNumber.ONE + fibSqrt5) / BigNumber.TWO;
+const fibB = (fibSqrt5 - BigNumber.ONE) / BigNumber.TWO;
+
+let getf = (level) =>
+{
+    if(level % 2 == 0)
+        return (fibA.pow(level) - fibB.pow(level)) / fibSqrt5;
+    return (fibA.pow(level) + fibB.pow(level)) / fibSqrt5;
+};
+
+var tick = (elapsedTime, multiplier) =>
+{
+    t += elapsedTime;
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+
+    let dq = qMs.level ? dt * getqdot(qdot.level) : BigNumber.ZERO;
+    q += dq;
+
+    currency.value += dt * bonus * getc1(c1.level).pow(getc1Exp(c1ExpMs.level)) * getc2(c2.level) * (BigNumber.ONE + getf(f.level)) * (qMs.level ? q : BigNumber.ONE);
+
+    theory.invalidateTertiaryEquation();
+    theory.invalidateQuaternaryValues();
+}
+
+var getPrimaryEquation = () => `\\dot{\\rho} = c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)${qMs.level ? 'q' : ''}`;
+
+var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
+
+var getTertiaryEquation = () => qMs.level ? `q = ${q.toString()}` : '';
+
+var getQuaternaryEntries = () =>
+{
+    let minutes = Math.floor(t / 60);
+    let seconds = t - minutes * 60;
+    let hours = Math.floor(minutes / 60);
+    minutes -= hours * 60;
+
+    quaternary[0].value = hours;
+    quaternary[1].value = minutes;
+    quaternary[2].value = seconds.toFixed(1);
+    return quaternary;
+}
+
+var postPublish = () =>
+{
+    t = 0;
+    q = BigNumber.ONE;
+}
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+
+var getInternalState = () => JSON.stringify
+({
+    t,
+    q: q.toBase64String()
+});
+
+var setInternalState = (stateStr) =>
+{
+    if(!stateStr)
+        return;
+
+    let state = JSON.parse(stateStr);
+    t = state.t ?? t;
+    q = BigNumber.fromBase64String(state.q) ?? q;
+}
+
+init();
+```
 
 [^1] Technically, we have another configuration yet to talk about: `1/1/1`. Whether or not its effectiveness overshadows the milestone swap will need further research into strategies. Still, even that configuration would also need to be reallocated to `2/1/0` to speed up `rho` growth towards the end of a publication (this is called coasting). This strategy, although performed only once, also classifies as milestone swapping.

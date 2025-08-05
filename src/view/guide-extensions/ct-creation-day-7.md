@@ -7,8 +7,6 @@ order: 7
 tags: other
 ---
 
-## Day 7: Polishing
-
 Hey. We're nearly there. Let's finish this theory today with some polishing touches. Today we're going to learn how to implement achievements, display story chapters, switch screens, and more.
 
 ### Achievements
@@ -234,7 +232,273 @@ Let's do something with our newly acquired knowledge:
 
 Today, we have learned about what makes a theory silly and polished, with a story, goals to achieve, and proper Quality of Life™ improvements. Thank you for participating in this ritual. Don't forget to give your offerings to Iosui, and I hope you will join us another week for more advanced rituals.
 
-Meanwhile, the source code after today's work can be found [here](src/7.js). This code does not contain solutions to assignments.
+Meanwhile, the source code after today's work can be found here. This code does not contain solutions to assignments.
+
+```js
+import { BigNumber } from '../api/BigNumber';
+import { CompositeCost, ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
+import { Localization } from '../api/Localization';
+import { QuaternaryEntry, theory } from '../api/Theory';
+import { Utils } from '../api/Utils';
+
+var id = 'my_theory';
+var name = 'My Theory';
+var description = 'The one and only.';
+var authors = 'Stuart Clickus';
+
+let currency;
+let clicker;
+let c1, c2;
+let f;
+let qdot;
+let c1ExpMs, qMs, qdotMs;
+let lewdAchCat;
+let patienceAch, lewdAch;
+let qChap;
+
+let q = BigNumber.ONE;
+let t = 0;
+let stage = 0;
+
+let quaternary =
+[
+    new QuaternaryEntry('h', null),
+    new QuaternaryEntry('m', null),
+    new QuaternaryEntry('s', null)
+];
+
+let init = () =>
+{
+    currency = theory.createCurrency();
+
+    {
+        clicker = theory.createSingularUpgrade(0, currency, new FreeCost);
+        clicker.description = Utils.getMath('\\rho \\leftarrow \\rho + 1');
+        clicker.info = 'Increases currency by 1';
+        clicker.bought = (amount) => currency.value += 1;
+    }
+
+    {
+        c1 = theory.createUpgrade(1, currency, new ExponentialCost(10, 1));
+        let getDesc = (level) => `c_1 = ${getc1(level).toString(0)}`;
+        let getInfo = (level) =>
+        {
+            if(c1ExpMs.level)
+                return `c_1^{${getc1Exp(c1ExpMs.level)}}=
+                ${getc1(level).pow(getc1Exp(c1ExpMs.level)).toString()}`;
+            return getDesc(level);
+        }
+
+        c1.getDescription = (amount) => Utils.getMath(getDesc(c1.level));
+        c1.getInfo = (amount) => Utils.getMathTo(getInfo(c1.level),
+        getInfo(c1.level + amount));
+    }
+
+    {
+        c2 = theory.createUpgrade(3, currency, new ExponentialCost(500, 3));
+        let getDesc = (level) => `c_2 = ${getc2(level).toString(0)}`;
+        c2.getDescription = (amount) => Utils.getMath(`c_2 = 2^{${c2.level}}`);
+        c2.getInfo = (amount) => Utils.getMathTo(getDesc(c2.level),
+        getDesc(c2.level + amount));
+    }
+
+    {
+        f = theory.createUpgrade(2, currency, new CompositeCost(30,
+        new ExponentialCost(100, 1.618034),
+        new ExponentialCost(1e16, 1.618034 * 1.5)));
+        let getDesc = (level) => `f = ${getf(level).toString(0)}`;
+        f.getDescription = (amount) => Utils.getMath(getDesc(f.level));
+        f.getInfo = (amount) => Utils.getMathTo(getDesc(f.level),
+        getDesc(f.level + amount));
+    }
+
+    {
+        qdot = theory.createUpgrade(4, currency, new ExponentialCost(1e45, 2.5));
+        let getDesc = (level) => `\\dot{q} = ${getqdot(level).toString(0)}`;
+        qdot.getDescription = (amount) => Utils.getMath(getDesc(qdot.level));
+        qdot.getInfo = (amount) => Utils.getMathTo(getDesc(qdot.level),
+        getDesc(qdot.level + amount));
+    }
+
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+    theory.createBuyAllUpgrade(1, currency, BigNumber.from('1e12'));
+    theory.createAutoBuyerUpgrade(2, currency, BigNumber.from('1e17'));
+    
+    theory.setMilestoneCost(new LinearCost(15, 15));
+
+    {
+        c1ExpMs = theory.createMilestoneUpgrade(0, 5);
+        c1ExpMs.description = Localization.getUpgradeIncCustomExpDesc('c_1', '0.03');
+        c1ExpMs.info = Localization.getUpgradeIncCustomExpInfo('c_1', '0.03');
+        c1ExpMs.boughtOrRefunded = (_) => theory.invalidatePrimaryEquation();
+    }
+
+    {
+        qMs = theory.createMilestoneUpgrade(1, 1);
+        qMs.description = Localization.getUpgradeAddTermDesc('q');
+        qMs.info = Localization.getUpgradeAddTermInfo('q');
+        qMs.boughtOrRefunded = (_) =>
+        {
+            theory.invalidatePrimaryEquation();
+            updateAvailability();
+        }
+        qMs.canBeRefunded = () => qdotMs.level == 0;
+    }
+
+    {
+        qdotMs = theory.createMilestoneUpgrade(2, 3);
+        qdotMs.description = Localization.getUpgradeMultCustomDesc('\\dot{q}', '2');
+        qdotMs.info = Localization.getUpgradeMultCustomInfo('\\dot{q}', '2');
+        qdotMs.isAvailable = false;
+    }
+
+    patienceAch = theory.createAchievement(0, null, 'Patience', 'Wait for 20 minutes.', () => t >= 1200, () => Math.max(0, Math.min(t / 1200, 1)));
+
+    lewdAchCat = theory.createAchievementCategory(0, 'Lewd');
+    lewdAch = theory.createSecretAchievement(1, lewdAchCat, 'Lewd', 'Reach sixty and nine levels on the clicker.', 'Nice', () => clicker.level >= 69);
+
+    qChap = theory.createStoryChapter(0, 'Queued up', 'The theory is now queued up.\n\nGet it?\nQ, the letter?\n\nAnyway.', () => qMs.level > 0);
+
+    updateAvailability();
+}
+
+var updateAvailability = () =>
+{
+    qdot.isAvailable = qMs.level > 0;
+    qdotMs.isAvailable = qMs.level > 0;
+};
+
+let getc1 = (level) => Utils.getStepwisePowerSum(level, 2, 5, 0);
+let getc1Exp = (level) => 1 + 0.03 * level;
+
+let getc2 = (level) => BigNumber.TWO.pow(level);
+
+let getqdot = (level) => Utils.getStepwisePowerSum(level, 2, 10, 0) * Math.pow(2, qdotMs.level);
+
+const fibSqrt5 = BigNumber.FIVE.sqrt();
+const fibA = (BigNumber.ONE + fibSqrt5) / BigNumber.TWO;
+const fibB = (fibSqrt5 - BigNumber.ONE) / BigNumber.TWO;
+
+let getf = (level) =>
+{
+    if(level % 2 == 0)
+        return (fibA.pow(level) - fibB.pow(level)) / fibSqrt5;
+    return (fibA.pow(level) + fibB.pow(level)) / fibSqrt5;
+};
+
+var tick = (elapsedTime, multiplier) =>
+{
+    t += elapsedTime;
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+
+    let dq = qMs.level ? dt * getqdot(qdot.level) : BigNumber.ZERO;
+    q += dq;
+
+    currency.value += dt * bonus * getc1(c1.level).pow(getc1Exp(c1ExpMs.level)) * getc2(c2.level) * (BigNumber.ONE + getf(f.level)) * (qMs.level ? q : BigNumber.ONE);
+
+    theory.invalidateTertiaryEquation();
+    theory.invalidateQuaternaryValues();
+}
+
+var getPrimaryEquation = () =>
+{
+    if(stage == 0)
+        return `\\dot{\\rho} = c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)${qMs.level ? 'q' : ''}`;
+    else
+        return `c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)${qMs.level ? 'q' : ''} = \\dot{\\rho}`;
+}
+
+var getSecondaryEquation = () =>
+{
+    if(stage == 0)
+        return `${theory.latexSymbol} = \\max\\rho`;
+    else
+        return `\\max\\rho = ${theory.latexSymbol}`;
+}
+
+var getTertiaryEquation = () =>
+{
+    if(stage == 0)
+        return qMs.level ? `q = ${q.toString()}` : '';
+    else
+        return qMs.level ? `${q.toString()} = q` : '';
+}
+
+var getQuaternaryEntries = () =>
+{
+    let minutes = Math.floor(t / 60);
+    let seconds = t - minutes * 60;
+    let hours = Math.floor(minutes / 60);
+    minutes -= hours * 60;
+
+    quaternary[0].value = hours;
+    quaternary[1].value = minutes;
+    quaternary[2].value = seconds.toFixed(1);
+    return quaternary;
+}
+
+var canGoToPreviousStage = () => stage > 0;
+
+var goToPreviousStage = () =>
+{
+    stage -= 1;
+    theory.invalidatePrimaryEquation();
+    theory.invalidateSecondaryEquation();
+}
+
+var canGoToNextStage = () => stage < 1;
+
+var goToNextStage = () =>
+{
+    stage += 1;
+    theory.invalidatePrimaryEquation();
+    theory.invalidateSecondaryEquation();
+}
+
+var postPublish = () =>
+{
+    t = 0;
+    q = BigNumber.ONE;
+}
+
+var get2DGraphValue = () => currency.value.sign *
+(BigNumber.ONE + currency.value.abs()).log10().toNumber();
+
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+
+var getInternalState = () => JSON.stringify
+({
+    t,
+    q: q.toBase64String(),
+    stage
+});
+
+var setInternalState = (stateStr) =>
+{
+    if(!stateStr)
+        return;
+
+    let state = JSON.parse(stateStr);
+    t = state.t ?? t;
+    q = BigNumber.fromBase64String(state.q) ?? q;
+    stage = state.stage ?? stage;
+}
+
+init();
+```
 
 [^1] We can't actually afford to swap the quaternary entries' sides. The left side is extremely tiny and can contain only 1 letter before clipping.
 
