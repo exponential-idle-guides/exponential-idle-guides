@@ -186,7 +186,7 @@ To exercise what you've learned, let's work on some polishing touches:
 
 ### Aftermath
 
-Today, we have learned about player strategies, and how they impact the way we design our theories. We were also introduced to the last part of the equation UI: the quaternary entries. I shall see you [tomorrow](../ct-creation-day-7/) for the finishing touches on this theory.
+Today, we have learned about player strategies, and how they impact the way we design our theories. We were also introduced to the last part of the equation UI: the quaternary entries. I shall see you [tomorrow](../day-7/) for the finishing touches on this theory.
 
 Meanwhile, the source code after today's work can be found here. This code does not contain solutions to assignments.
 

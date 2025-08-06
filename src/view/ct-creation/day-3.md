@@ -14,7 +14,7 @@ Across your window, a man wearing a head scarf waves at you. You may recognise h
 
 ### A gift from Fibonacci
 
-Let's define this upgrade as `f`, and set its identifier to 2:
+Let's define this upgrade as **f** ($f$), and set its identifier to 2:
 
 ```js
 let f;
@@ -32,7 +32,7 @@ let init = () =>
 }
 ```
 
-Let's also define the value of `f` for each level, which should be the n-th Fibonacci number. Remember, the Fibonacci numbers are a type of `recurrence relation`, in which a term is defined as the sum of previous terms:
+Let's also define the value of $f$ for each level, which should be the n-th Fibonacci number. Remember, the Fibonacci numbers are a type of **recurrence relation**, in which a term is defined as the sum of previous terms:
 
 ```js
 let getf = (level) =>
@@ -62,7 +62,7 @@ var getPrimaryEquation = () => `\\dot{\\rho} = c_1f`;
 
 Oops. It seems like we've caused all progress to halt. Why is this the case?
 
-Our rho growth equation is defined by `c1 * f`. But it seems like since `f` equals zero on the 0th level, rho's growth always ends up being zero. There are many ways to fix this, but we shall go with the cheesiest one: adding one. Let's modify our rho equation:
+Our currency ($rho$) growth equation is defined by $c_1 * f$. But it seems like since $f$ equals zero on the 0th level, $rho$'s growth always ends up being zero. There are many ways to fix this, but we shall go with the cheesiest one: adding one. Let's modify our $rho$ equation:
 
 ```js
 var tick = (elapsedTime, multiplier) =>
@@ -78,7 +78,7 @@ Hurray! It works again.
 
 ### A gift in return
 
-Even with the new Fibonacci upgrade, the theory still grows very slowly. Let's give him and `c1` another friend, `c2`, with an identifier of 3, and grows according to the powers of 2:
+Even with the new Fibonacci upgrade, the theory still grows very slowly. Let's give him and $c_1$ another friend, **c2** ($c_2$), with an identifier of 3, and grows according to the powers of 2:
 
 ```js
 let c2;
@@ -98,7 +98,7 @@ let init = () =>
 let getc2 = (level) => BigNumber.TWO.pow(level);
 ```
 
-c2's value function uses BigNumber's native `pow` method, which raises it to the power of the argument. BigNumber has more of these methods, such as `abs`, which will come in handy soon.
+c2's value function uses BigNumber's native **pow** method, which raises it to the power of the argument. BigNumber has more of these methods, such as **abs**, which will come in handy soon.
 
 Let's modify our equation accordingly:
 
@@ -112,7 +112,7 @@ var tick = (elapsedTime, multiplier) =>
 var getPrimaryEquation = () => `\\dot{\\rho} = c_1c_2(1+f)`;
 ```
 
-Hopefully, with `c2`, we should get a bit stronger now. Note that you may see the `c2` upgrade being listed below `f` on the screen, which is quite annoying. The order of upgrades is determined by the order in which they were declared in the code (their IDs do not matter, so don't try to change them). Let's move the declaration block of `c2` to make it show below `c1` and above `f`:
+Hopefully, with $c_2$, we should get a bit stronger now. Note that you may see the $c_2$ upgrade being listed below $f$ on the screen, which is quite annoying. The order of upgrades is determined by the order in which they were declared in the code (their IDs do not matter, so don't try to change them). Let's move the declaration block of $c_2$ to make it show below $c_1$ and above $f$:
 
 ```js
 let init = () =>
@@ -151,7 +151,7 @@ let init = () =>
 
 Now, let's think about our theory's progression.
 
-We have four upgrades, with their individual personalities. While this alone can make for some interesting conversations within your player base strategy-wise, without some sort of reset mechanic - a staple of many idle games - you'll be stuck tapping the same buttons forever. And in Exponential Idle, the reset mechanic available to theories is called `Publications`.
+We have four upgrades, with their individual personalities. While this alone can make for some interesting conversations within your player base strategy-wise, without some sort of reset mechanic - a staple of many idle games - you'll be stuck tapping the same buttons forever. And in Exponential Idle, the reset mechanic available to theories is called **Publications**.
 
 Let's introduce publications to our theory, by defining several key functions:
 
@@ -200,7 +200,7 @@ Done. Now we can publish our theory and gain quicker progress on the next run!
 
 ### Aftermath
 
-As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](../ct-creation-day-4/).
+As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](../day-4/).
 
 Meanwhile, the source code after today's work can be found here:
 

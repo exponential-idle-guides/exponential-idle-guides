@@ -222,7 +222,7 @@ Now, load it through the SDK! You can now see the new $c_1$ upgrade available fo
 
 ### Aftermath
 
-This theory is still going pretty slowly. I bet you're tempted to hack in some more currency. I shall see you [tomorrow](../ct-creation-day-3/), where we will be implementing even more upgrades for the theory!
+This theory is still going pretty slowly. I bet you're tempted to hack in some more currency. I shall see you [tomorrow](../day-3/), where we will be implementing even more upgrades for the theory!
 
 Meanwhile, the source code after today's work can be found here:
 

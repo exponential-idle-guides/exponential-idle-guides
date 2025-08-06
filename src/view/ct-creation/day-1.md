@@ -127,4 +127,4 @@ The last four functions are used to calculate the terms in the theory:
 
 ### Aftermath
 
-Now that you've gone through the sample custom theory, you now know roughly how one is structured, even if it's only a simple one. Perhaps your theory could involve even wilder ideas. I can't dictate your thoughts, I can only give you the tools to help you do it. And the very first tool you were given: observation. I shall see you [tomorrow](../ct-creation-day-2/), where we will take part in your first creation.
+Now that you've gone through the sample custom theory, you now know roughly how one is structured, even if it's only a simple one. Perhaps your theory could involve even wilder ideas. I can't dictate your thoughts, I can only give you the tools to help you do it. And the very first tool you were given: observation. I shall see you [tomorrow](../day-2/), where we will take part in your first creation.

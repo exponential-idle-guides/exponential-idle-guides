@@ -213,7 +213,7 @@ Now, save the theory, and let it run for a minute. Thanks to the internal state,
 
 ### Aftermath
 
-Before we end our session today, let's take a look at what we had discussed earlier: term powers. `q dot` is a stepwise upgrade of base 2 length 10, with a cost progress of 2.5. Under this framework, it should have a power of `1/(10*2.5) = 0.04`, or 4%, which brings the total power of the theory from 94.93% to 98.93%. While how much `q`'s cumulative nature enhances its power (or whether it even does so at all) is still a mystery, we can be sure that we did make progress today, so I shall see you [tomorrow](../ct-creation-day-6/).
+Before we end our session today, let's take a look at what we had discussed earlier: term powers. `q dot` is a stepwise upgrade of base 2 length 10, with a cost progress of 2.5. Under this framework, it should have a power of `1/(10*2.5) = 0.04`, or 4%, which brings the total power of the theory from 94.93% to 98.93%. While how much `q`'s cumulative nature enhances its power (or whether it even does so at all) is still a mystery, we can be sure that we did make progress today, so I shall see you [tomorrow](../day-6/).
 
 Meanwhile, the source code after today's work can be found here:
 

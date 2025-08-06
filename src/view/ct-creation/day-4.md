@@ -165,7 +165,7 @@ Save the file. You will see that when you hold down the `(i)` button on screen, 
 
 ### Aftermath
 
-The theory is slowly getting more complete. Although, with it seemingly skyrocketing without stopping (in other words, diverging), we can't really add any more content. The theory at this point is not very compelling to play either. Join me [tomorrow](../ct-creation-day-5/) on a quest to find the perfect balance for it.
+The theory is slowly getting more complete. Although, with it seemingly skyrocketing without stopping (in other words, diverging), we can't really add any more content. The theory at this point is not very compelling to play either. Join me [tomorrow](../day-5/) on a quest to find the perfect balance for it.
 
 Meanwhile, the source code after today's work can be found here:
 

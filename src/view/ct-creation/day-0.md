@@ -41,4 +41,4 @@ Other editors include:
 
 ### Aftermath
 
-Now that you have a grip on the basics and have installed the necessary tools, the next step would be to check out what a custom theory may look like, and for that, I shall see you [tomorrow](../ct-creation-day-1/).
+Now that you have a grip on the basics and have installed the necessary tools, the next step would be to check out what a custom theory may look like, and for that, I shall see you [tomorrow](../day-1/).
