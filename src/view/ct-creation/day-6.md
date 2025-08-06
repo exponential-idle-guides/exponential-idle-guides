@@ -8,7 +8,7 @@ order: 6
 
 Hi class. Now that we've dealt with our previous problems, today we're going to pick up the pace. First, I will introduce you to the most common player strategies, and through a new milestone, implement it in our theory. Then, we will implement a quality of life feature, in the form of a timer.
 
-### Introduction to player strategies
+## Introduction to player strategies
 
 Every game ever conceived is, and will be, subjected to the evolution of strategies within its circle of players. Idle games are no exception, as despite its apparent name, a lot of them are designed to reward player activity, often with a faster rate of progress than simply idling about. And in Exponential Idle, where everything is broken down into fundamental arithmetics, this becomes much easier to see.
 
@@ -22,7 +22,7 @@ As you can see, each upgrade scales in a different way. However, our autobuy doe
 
 For stepwise upgrades such as $c_1$ and $\dot{q}$, there is also another strategy to buy them depending on where they are in the stepwise cycle. These are called **mod x** in strategy nomenclature, with x corresponding to the cycle length. More information about strategies involving stepwise upgrades can be found [here](../../guide-extensions/stepwise-variables/).
 
-### Milestone swapping
+## Milestone swapping
 
 Previously, in [Day 4](../day-4/#power-up-with-a-milestone), we were introduced to milestones, a way to lock power boosts behind progression. Notice that unlike similar unlock systems in other games such as skill trees, milestones can be freely refunded. While this is primarily intended to allow experimentation, players have found that in specific situations, switching between different milestones can facilitate much faster progress than just sticking to one milestone. This is called milestone swapping.
 
@@ -82,7 +82,7 @@ let init = () =>
 
 Now that we've successfully implemented the new milestone, let's take a look at how we can utilise the milestone swap strategy to make our progress faster. Let's assume we are at a high score of 1e45 tau. We would have three milestone points, and we can also start to purchase $\dot{q}$. Our first point should be spent on unlocking $q$, which leaves us two points. Now, suppose we were to spend the two points on $c_1$ exponent (our milestone configuration would be **2/1/0**). We would have a lot of income for $\rho$, but our $q$ growth would be much less than if we were to spend those points on $\dot{q}$. So now we have a $q$ deficit. We transfer those two points to $\dot{q}$ (our configuration would be **0/1/2**), which would maximise $q$'s growth. But then, after a while, our $\rho$ would be at a deficit, so we switch back to **2/1/0**. This is the essence of milestone swapping, boosting our progress further than if we were to stay all the time on only one configuration[^1].
 
-### Timer time
+## Timer time
 
 Now that our theory is complete in terms of content, let's divert our attention towards quality of life and polishing for the rest of the week. Today, we will be implementing a timer to show how much time we've spent in a publication. It won't be in the form of a UI element (like in Riemann Zeta Function), as custom UI is out of the scope for this week. Instead, we will be utilising the quaternary area provided by the API. This area can be seen in Theory 2 (Differential Calculus), where cumulative terms $q_1$ to $q_4$ and $r_1$ to $r_4$ are displayed in a column.
 
@@ -175,7 +175,7 @@ var getQuaternaryEntries = () =>
 
 Success! We have managed to display the minutes and hours.
 
-### Extra Assignments
+## Extra Assignments
 
 To exercise what you've learned, let's work on some polishing touches:
 
@@ -184,7 +184,7 @@ To exercise what you've learned, let's work on some polishing touches:
   - Hint: Try defining the entry's name as **null**. The equal sign won't appear.
 3. Display a leading zero if the number of hours/minutes/seconds is less than 10. That's how digital watches work, right?
 
-### Aftermath
+## Aftermath
 
 Today, we have learned about player strategies, and how they impact the way we design our theories. We were also introduced to the last part of the equation UI: the quaternary entries. I shall see you [tomorrow](../day-7/) for the finishing touches on this theory.
 

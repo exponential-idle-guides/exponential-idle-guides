@@ -12,7 +12,7 @@ Today we are going to bring the theory down to earth, because admittedly, big nu
 
 In this lesson, we will learn about a way to look at the theory's balance, so that we can fix its divergence. Then, we will continue by implementing a new term that utilises the theory's storage, called the internal state.
 
-### A new framework
+## A new framework
 
 When it comes to balancing, there is a rudimentary yet suprising way of balancing devised by me, which has yet to be talked about within these circles. That is, viewing each term as a contribution to the total income 'power'. Let me introduce the concept:
 
@@ -91,7 +91,7 @@ Let's take a look at each term's power again:
 
 Summating all terms yields 0.9493, or 94.93%. Congratulations! We have successfully created a margin for new upgrades to be included in the future.
 
-### Time to accumulate new friends
+## Time to accumulate new friends
 
 So far, our upgrades have been quite straight forward: click, and the income grows instantly. However, in many theories, both base game and custom ones, there are a number of upgrades that grows the value of another term, which is then multiplied to the income. These are called cumulative upgrades, and are commonly called $q$ because of the name (do not listen to those who name their instant upgrades $q$!)
 
@@ -178,7 +178,7 @@ var postPublish = () =>
 
 This snippet of code has a lot to unpack. The simple idea is that, for every tick, an amount of $dq$ is added onto our cumulative variable $q$, which is calculated by our $\dot{q}$ upgrade times the amount of time passed. Our income is then multiplied by $q$ amongst other terms. However, what happens when we don't have the milestone, is that $q$ has to stop growing ($dq$ is substituted with zero), and $q$ in the income formula is substituted with one since we do not have the term unlocked. The primary and tertiary equations are also reflective of these changes, and the tertiary equation specifically needs to be updated every tick to track the $q$ value. Finally, $q$ should be reset every time we hit Publish, in the **postPublish** function.
 
-### A theory's internal state
+## A theory's internal state
 
 Now, hit Save again on your theory file (without changing anything) and wait for the SDK to upload it. Notice that your $q$ has been reset back to one! (I am such a mean teacher). The reason why this happens, is that unlike upgrade levels, currencies, or milestones, terms like $q$ are just regular programming variables, which aren't saved anywhere outside of the scope that it's running in. In order to save these variables, the game provides us a way to store (serialise) them, in the form of an internal state. The internal state is stored as a string, and is loaded once after everything in the theory file has been loaded (which means it is run even after **init**).
 
@@ -211,7 +211,7 @@ In this snippet, we also encounter a new syntax: the double question mark **??**
 
 Now, save the theory, and let it run for a minute. Thanks to the internal state, whenever you go offline or switch to another theory, $q$'s value should be preserved.
 
-### Aftermath
+## Aftermath
 
 Before we end our session today, let's take a look at what we had discussed earlier: term powers. $\dot{q}$ is a stepwise upgrade of base 2 length 10, with a cost progress of 2.5. Under this framework, it should have a power of $1/(10\times2.5) = 0.04$, or 4%, which brings the total power of the theory from 94.93% to 98.93%. While how much $q$'s cumulative nature enhances its power (or whether it even does so at all) is still a mystery, we can be sure that we did make progress today, so I shall see you [tomorrow](../day-6/).
 

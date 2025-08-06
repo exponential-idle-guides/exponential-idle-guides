@@ -10,7 +10,7 @@ Dawn of the first day. Last night, did you dream good?
 
 Today we will be looking at an example of a custom theory, in order to see how one can be constructed. We will send a theory through the SDK, then take a look at its source code.
 
-### Pushing your first file
+## Pushing your first file
 
 Let's first learn how to send a file to your device through the SDK. Open the SDK, and then click on **Theory Path** to select a file to send. Choose **CustomTheory.js** right from the SDK's root folder.
 
@@ -36,7 +36,7 @@ Then tap **Connect to SDK**. The SDK will begin sending the first file to your p
 
 > Success!
 
-### My Custom Theory
+## My Custom Theory
 
 Now, let's dissect the file, section by section. If there's anything you do not understand, feel free to skim through.
 
@@ -125,6 +125,6 @@ The last four functions are used to calculate the terms in the theory:
 - **getC1Exponent** calculate $c_1$'s exponent according to the **c1Exp** milestone.
 - **getC2Exponent** calculate $c_2$'s exponent according to the **c2Exp** milestone.
 
-### Aftermath
+## Aftermath
 
 Now that you've gone through the sample custom theory, you now know roughly how one is structured, even if it's only a simple one. Perhaps your theory could involve even wilder ideas. I can't dictate your thoughts, I can only give you the tools to help you do it. And the very first tool you were given: observation. I shall see you [tomorrow](../day-2/), where we will take part in your first creation.

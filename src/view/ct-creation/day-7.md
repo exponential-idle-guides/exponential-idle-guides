@@ -8,7 +8,7 @@ order: 7
 
 Hey. We're nearly there. Let's finish this theory today with some polishing touches. Today we're going to learn how to implement achievements, display story chapters, switch screens, and more.
 
-### Achievements
+## Achievements
 
 Achievements are ways to mark your progress, as well as provide the player with extra challenges. Achievements in a custom theory are accessible through the theory's information panel. Click the 'two arrows' icon on the top-left, scroll down until you see 'My Theory', then click on the cog. You will see the theory's description, author, and source. Right below the information panel are two buttons: Delete and Reset. The Achievements button will appear here after we implement our first.
 
@@ -77,7 +77,7 @@ log(lewdAch.isUnlocked);
 
 By using the **isUnlocked** property, we can also add more requirements to an achievement, by making it depend on another achievement to be unlocked. Go wild.
 
-### Story Chapters
+## Story Chapters
 
 Story chapters are dialogues that can pop up throughout the game according to your progression. They're quite similar to achievements in this sense, and use **createStoryChapter()** to declare. Compared to achievements, they are much simpler to declare, and can't be made secret:
 - **id**: its unique identifier.
@@ -108,7 +108,7 @@ Similar to achievements, you can also check whether or not this story chapter is
 log(qChap.isUnlocked);
 ```
 
-### Stages
+## Stages
 
 To recap what we've known about the UI up to this point, the equation screen consists of four parts: the primary, secondary, and tertiary equations, and the quaternary entries. But what if we wanted more space to write information? The Theory API gives us a tool that allows us to cycle between different screens, so we can display all the information we want. These screens are called stages. In the base game, stages are being used extensively in the Convergence Test, not only to switch between the seven tests, but even adapt the **tick()** function to run the currently displayed test. However, in this guide, we will only be using stages to manipulate displayed equations.
 
@@ -195,9 +195,9 @@ var goToNextStage = () =>
 
 Yes! We did it! We managed to make this theory so much more sillier[^1].
 
-### Singular Upgrades
+## Singular Upgrades
 
-Another API feature that's introduced within the Convergence Test is the singular upgrade. This takes the form of the 'Prove lemma' button, and allows us to pin some upgrades to the top for convenience[^2].
+Another API feature that's introduced within the Convergence Test is the singular upgrade. This takes the form of the $\text{Prove lemma}$ button, and allows us to pin some upgrades to the top for convenience[^2].
 
 Setting up a singular upgrade is easy - it is done in the same way as normal upgrades, using the **createSingularUpgrade()** function. For example, we would like to convert the clicker upgrade to a singular upgrade. Simply change **createUpgrade** to **createSingularUpgrade** like so:
 
@@ -219,7 +219,7 @@ Note that singular, normal, permanent, and milestone upgrades don't share any co
 
 Now, reload the game. We notice that the clicker has moved above the regular upgrades. The autobuyer also no longer levels the clicker, nor can publishing reset its level. This makes it useful if you want upgrades that don't get tampered by the autobuyer or publications.
 
-### Extra Assignments
+## Extra Assignments
 
 Let's do something with our newly acquired knowledge:
 
@@ -227,9 +227,9 @@ Let's do something with our newly acquired knowledge:
 2. Create a story chapter that requires the first chapter to be unlocked.
 3. Implement a new singular upgrade that resets the quaternary timer.
 
-### Aftermath
+## Aftermath
 
-Today, we have learned about what makes a theory silly and polished, with a story, goals to achieve, and proper Quality of Life™ improvements. Thank you for participating in this ritual. Don't forget to give your offerings to Iosui, and I hope you will join us another week for more advanced rituals.
+Today, we have learned about what makes a theory silly and polished, with a story, goals to achieve, and proper Quality of Life™ improvements. Thank you for participating in this ritual. Don't forget to give your offerings to **Iosui**, and I hope you will join us another week for more advanced rituals.
 
 Meanwhile, the source code after today's work can be found here. This code does not contain solutions to assignments.
 

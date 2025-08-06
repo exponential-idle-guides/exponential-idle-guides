@@ -18,7 +18,7 @@ Let's start by creating a folder in the SDK directory. Any name would do. Inside
 
 I know. I wish I could say 'variables' all the time too.
 
-### The morning ritual
+## The first ritual
 
 Let's start with the necessities. Import the following modules:
 
@@ -43,7 +43,7 @@ var description = 'The one and only.';
 var authors = 'Stuart Clickus';
 ```
 
-### The first upgrade
+## The first upgrade
 
 Now, let's declare a few basic things: a currency, and your first upgrade, a clicker! You want the clicker to give you exactly 1 unit of currency whenever you level it up.
 
@@ -132,7 +132,7 @@ init();
 
 Now, send it to the SDK! You can see that whenever you buy the clicker, the currency increases, and the graph also goes up!
 
-### The second upgrade
+## The second upgrade
 
 That was great! Clicking that button a hundred times surely lifted my spirit! But would I like to do it forever? One of the good feelings someone can get from an idle game is when they can finally stop doing something they previously had to do begrudgingly. So let's define a new upgrade **c1** ($c_1$) that will outclass this clicker, and set its identifier to 1:
 
@@ -220,7 +220,7 @@ The dot notation was defined by Isaac Newton as a derivative of a variable with 
 
 Now, load it through the SDK! You can now see the new $c_1$ upgrade available for purchase, and that it can affect the currency.
 
-### Aftermath
+## Aftermath
 
 This theory is still going pretty slowly. I bet you're tempted to hack in some more currency. I shall see you [tomorrow](../day-3/), where we will be implementing even more upgrades for the theory!
 

@@ -12,7 +12,7 @@ Enter Exponential Idle custom theories, where the graph makes your family think 
 
 In this week-long guide, you will be shown the process of creating a simple custom theory. You can either follow the steps exactly, or you can program your own ideas while reading the guide in parallel.
 
-### Prerequisites
+## Prerequisites
 
 1. **JavaScript**
 
@@ -39,6 +39,6 @@ Other editors include:
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Vim](https://www.vim.org/) *or something*
 
-### Aftermath
+## Aftermath
 
 Now that you have a grip on the basics and have installed the necessary tools, the next step would be to check out what a custom theory may look like, and for that, I shall see you [tomorrow](../day-1/).

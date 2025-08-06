@@ -12,7 +12,7 @@ Across your window, a man wearing a blue head scarf is waving at you. You may re
 
 **Caution:** Before heading into today's contents, it is advised to back up your save files somewhere.
 
-### Publications
+## Publications
 
 Let's think about our theory's progression.
 
@@ -63,7 +63,7 @@ var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
 
 Done. Now we can publish our theory and gain quicker progress on the next run! Although... we don't seem to be able to reach it easily...
 
-### A gift from Fibonacci
+## A gift from Fibonacci
 
 The scarved man throws you a marble across the window. You catch it swiftly. He throws another. And then two at the same time, and then three, then five... You realise what he wants from you, and so you sprint back to your desk and start implementing his idea - the Fibonacci sequence.
 
@@ -129,7 +129,7 @@ var getPrimaryEquation = () => `\\dot{\\rho} = c_1(1+f)`;
 
 Hurray! It works again.
 
-### A gift in return
+## A gift in return
 
 Even with the new Fibonacci upgrade, the theory still grows very slowly. Let's give it and $c_1$ another friend, **c2** ($c_2$), with an identifier of 3, and grows according to the powers of 2:
 
@@ -200,7 +200,7 @@ let init = () =>
 }
 ```
 
-### Aftermath
+## Aftermath
 
 As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](../day-4/).
 

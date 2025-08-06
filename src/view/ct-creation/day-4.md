@@ -12,7 +12,7 @@ I know you cannot sleep. Across the window, the wind is howling at all the dryin
 
 You wake up from your sleep. You have to find out who did this to your theory. Only then could you resume powering up its progression using a new tool, called milestones.
 
-### Finding the culprit
+## Finding the culprit
 
 Let's take a look at the theory's code to see which part might be causing the problem.
 
@@ -22,7 +22,7 @@ Let's take a look at them now. Naively, we can try to count the number of lines.
 
 While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
 
-### Stopping Fibonacci's foil
+## Stopping Fibonacci's foil
 
 Let's look at how we can optimise these calculations. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
 
@@ -61,7 +61,7 @@ let getf = (level) =>
 
 Marvellous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers!
 
-### Continuing with progression
+## Continuing with progression
 
 Yesterday, we talked about the progression in idle games. However, since we were halted by our performance problem, we didn't have enough time to implement the automations of progression. In an Exponential Idle theory, we're given two tools: the Buy All button, and the Auto-buyer. Like Publications, these can be created using functions provided by the API:
 
@@ -78,7 +78,7 @@ These upgrades will now be available for purchase in the Permanent tab, along wi
 
 Unless, you're the one who created Riemann Zeta Function (curse you).
 
-### Power up with a milestone
+## Power up with a milestone
 
 Aside from reset and automation tools, the Theory API also gives us another tool to provide power-ups to progression. These are called milestones, and they are unlocked according to progression in the theory's tau value, which is essentially your high score for the theory. Common effects for a milestone include:
 
@@ -163,7 +163,7 @@ let init = () =>
 
 Save the file. You will see that when you hold down the **(i)** button on screen, it shows $c_1$'s exponent and its value after the milestone is applied.
 
-### Aftermath
+## Aftermath
 
 The theory is slowly getting more complete. Although, with it seemingly skyrocketing without stopping (in other words, diverging), we can't really add any more content. The theory at this point is not very compelling to play either. Join me [tomorrow](../day-5/) on a quest to find the perfect balance for it.
 
