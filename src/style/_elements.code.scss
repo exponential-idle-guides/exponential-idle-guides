@@ -1,13 +1,13 @@
 pre {
   margin-top: 1em;
   max-width: 100%;
-  overflow-x: auto;
+  overflow-wrap: break-word;
   background-color: var(--palette-fill-lc);
+  white-space: pre-wrap;
 
   code {
     display: inline-block;
     font-family: monospace;
-
     margin: 1em;
   }
 }
