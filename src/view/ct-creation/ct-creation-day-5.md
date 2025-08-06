@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 5
-tags: other
 ---
 
 Hola. It is dawn of the fifth day.

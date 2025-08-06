@@ -47,6 +47,19 @@ home: true
     {% endfor %}
   </ul> 
 
+  <h3>Custom Theory Creation Bootcamp</h3>
+
+  <ul class="ct-creation">
+    {% for day in collections["ct-creation"] %}
+      <li>
+        {% if day.data.day != "NONE" %}
+          Day {{day.data.day}}: 
+        {% endif %}
+        <a href="{{ day.url }}">{{ day.data.day_title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
   <h3>Other resources</h3>
   {% include "tools.njk" %}
 

@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 4
-tags: other
 ---
 
 Top of the mooning. It is dawn of the fourth day.

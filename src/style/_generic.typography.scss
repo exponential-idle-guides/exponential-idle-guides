@@ -2,8 +2,10 @@
 
 :root {
 	--font-size:max(75%, 60% + 1.5vmin);
+	--font-size-sm: calc(var(--font-size) * 6 / 9);
 	font-size: var(--font-size);
 	--body-line-height: 1.4;
+	--body-line-height-sm: calc(var(--body-line-height) * 6 / 7);
 
 	font-family: "Libre Franklin", Arial, Helvetica, sans-serif;
 }

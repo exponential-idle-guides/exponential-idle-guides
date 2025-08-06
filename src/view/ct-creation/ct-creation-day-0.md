@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 0
-tags: other
 ---
 
 Greetings. So you want to kickstart your game-dev career by creating a mod for your beloved game? Or perhaps you really want to talk about your favourite maths topic, and you have decided that the best way to tell everyone about it is to spoon-feed an abnormally large amount of content, enough to chew through an entire school year?

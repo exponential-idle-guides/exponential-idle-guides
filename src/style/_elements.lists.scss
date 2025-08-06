@@ -39,3 +39,23 @@ i {
 li.invisible {
   list-style-type: none;
 }
+
+/*ol.ct-creation {
+  list-style: none;
+  list-style-type: none;
+  /*list-style-type: 1;
+  list-style-position: inside;
+  li::marker {
+    content: "Day " counter(list-item) ": ";
+  }
+  li::before {
+    content: "Day " counter(list-item) ": ";
+  }
+}*/
+
+ul.ct-creation, ol.ct-creation {
+  padding-left: 0;
+  li {
+    list-style-type: none;
+  }
+}

@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 3
-tags: other
 ---
 
 Buongiorno a tutti. It is dawn of the third day.

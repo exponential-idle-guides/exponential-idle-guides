@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 1
-tags: other
 ---
 
 Dawn of the first day. Last night, did you dream good?

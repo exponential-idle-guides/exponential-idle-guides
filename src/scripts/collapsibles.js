@@ -13,6 +13,7 @@ const full_skiplist = {
     "2022-yr": ["#2022-recap"]
   },
   "season-news": {},
+  "ct-creation": {},
   "": {}
 }
 // add "" index check

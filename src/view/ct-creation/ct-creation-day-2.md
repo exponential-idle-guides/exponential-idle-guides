@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 2
-tags: other
 ---
 
 Good morning. It is dawn of the second day.

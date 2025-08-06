@@ -2,7 +2,7 @@
 {% import "list-link.njk" as list %}
 
 {% set nav %}
-  {% set navlist = [collections.guides, collections.rankings, collections.seasons] %}
+  {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections['ct-creation']] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
@@ -371,6 +371,41 @@
         </div>
       </div>
     {% endif %}
+
+    {% if '/ct-creation' in page.url %}
+      <div id="CTSidebar" class="sidebar">
+        <a href="javascript:void(0)" id="CTClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">CT Creation Bootcamp</h1>
+        <div class="content_wrapper square_list">
+          <ul class="ct-creation">
+            {% for day in collections["ct-creation"] %}
+              <li>
+                {% if day.data.day != "NONE" %}
+                  Day {{day.data.day}}: 
+                {% endif %}
+                <a href="{{ day.url }}">{{ day.data.day_title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div id="CTSidebarinvis" class="sidebar">
+        <a href="javascript:void(0)" id="CTClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+        <h1 class="sidebartitle">CT Creation Bootcamp</h1>
+        <div class="content_wrapper square_list">
+          <ul class="ct-creation">
+            {% for day in collections["ct-creation"] %}
+              <li>
+                {% if day.data.day != "NONE" %}
+                  Day {{day.data.day}}: 
+                {% endif %}
+                <a href="{{ day.url }}">{{ day.data.day_title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    {% endif %}
       
     <div id="SidebarHeaders" class="sidebar">
       <h1 class="sidebartitle">More Guides ⓧ</h1>
@@ -382,6 +417,9 @@
       {% endif %}
       {% if '/season-news' in page.url %}
         <h1 class="sidebartitle">Seasons ⓧ</h1>
+      {% endif %}
+      {% if '/ct-creation' in page.url %}
+        <h1 class="sidebartitle">CT Creation Bootcamp ⓧ</h1>
       {% endif %}
     </div>
     
@@ -400,18 +438,23 @@
           <button class="openbtn" id="Headerbtn">☰Table of <span style="display:inline-block;">Contents</span></button>
         </div>
         <div>
-          <button class="openbtn" id="Resourcebtn">☰Other Resources</button>
+          <button class="openbtn" id="Resourcebtn">☰Other <span style="display:inline-block;">Resources</span></button>
         </div>
-      {% if '/ranking-news' in page.url %}
-        <div>
-          <button class="openbtn" id="Rankingbtn">☰Rankings</button>
-        </div>
-      {% endif %}
-      {% if '/season-news' in page.url %}
-        <div>
-          <button class="openbtn" id="Seasonbtn">☰Seasons</button>
-        </div>
-      {% endif %}
+        {% if '/ranking-news' in page.url %}
+          <div>
+            <button class="openbtn" id="Rankingbtn">☰Rankings</button>
+          </div>
+        {% endif %}
+        {% if '/season-news' in page.url %}
+          <div>
+            <button class="openbtn" id="Seasonbtn">☰Seasons</button>
+          </div>
+        {% endif %}
+        {% if '/ct-creation' in page.url %}
+          <div>
+            <button class="openbtn" id="CTbtn">☰CT Creation</button>
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endif %}

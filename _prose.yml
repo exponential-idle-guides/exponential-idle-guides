@@ -69,6 +69,39 @@ prose:
         field:
           element: "text"
           label: "Glossary"
+    src/view/ct-creation:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "day"
+        field:
+          element: "number"
+          label: "Day"
+      - name: "day_title"
+        field:
+          element: "text"
+          label: "Day Title"
     src/view/ranking-news:
       - name: "title"
         field:

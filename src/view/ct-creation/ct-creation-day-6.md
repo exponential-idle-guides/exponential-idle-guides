@@ -4,7 +4,6 @@ description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
 order: 6
-tags: other
 ---
 
 Hi class. Now that we've dealt with our previous problems, today we're going to pick up the pace. First, I will introduce you to the most common player strategies, and through a new milestone, implement it in our theory. Then, we will implement a quality of life feature, in the form of a timer.

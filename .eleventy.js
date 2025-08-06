@@ -30,6 +30,7 @@ module.exports = config => {
     typographer: true
   };
 
+
   const markdownItAnchorOptions = {
     permalink: true,
     slugify: s => slugify(s, {
@@ -105,6 +106,29 @@ module.exports = config => {
   config.addCollection("extensions", function(collection) {
     return collection.getFilteredByTag("extensions").sort(function(a, b) {
       return a.data.order - b.data.order;
+    });
+  });
+  
+  config.addCollection("ct-creation", function(collection) {
+    const posts = collection.getFilteredByTag("ct-creation")
+
+    posts.map((post) => {
+      const res = /^\s*[dD][aA][yY]\s*(?<day_number>[0-9]+)\s*:\s*(?<title>.*\S+)\s*$/gm.exec(post.data.title);
+      if (res == null) {
+        post.data.day = "NONE"
+        post.data.day_title = post.data.title
+      } else {
+        const {day_number, title} = res.groups;
+        post.data.day = Number(day_number);
+        post.data.day_title = title;
+      }
+    });
+
+    return posts.sort(function(a, b) {
+      if (a.data.day == "NONE" || b.data.day == "NONE") {
+        return a.data.order - b.data.order;
+      }
+      return a.data.day - b.data.day;
     });
   });
 
