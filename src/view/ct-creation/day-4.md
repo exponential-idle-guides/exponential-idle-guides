@@ -16,17 +16,17 @@ You wake up from your sleep. You have to find out who did this to your theory. O
 
 Let's take a look at the theory's code to see which part might be causing the problem.
 
-The theory primarily runs the tick function 10 times per second. Usually, this will be the heaviest part of your theory. Looks like it only has 3 lines, calculating the various upgrades. Each of these value retrieval functions (`getc1` or `getc2`) get called once. Let's look at the `init` function. These upgrades' description and information are updated 10 times per second as well, and each of them also tries to retrieve their values once or twice. Hum...
+The theory primarily runs the tick function 10 times per second. Usually, this will be the heaviest part of your theory. Looks like it only has 3 lines, calculating the various upgrades. Each of these value retrieval functions (**getc1** or **getc2**) get called once. Let's look at the **init** function. These upgrades' description and information are updated 10 times per second as well, and each of them also tries to retrieve their values once or twice. Hum...
 
 Let's take a look at them now. Naively, we can try to count the number of lines. Although this is not the best tactic to gauge overall performance, in this case we might be able to gleam some insight into the problem:
 
-While `getc1` and `getc2` both consist of 1 line, `f`'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
+While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
 
 ### Stopping Fibonacci's foil
 
 Let's look at how we can optimise these calculations. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
 
-`F(n) = (((1+sqrt(5))/2)^n - ((1-sqrt(5))/2)^n) / sqrt(5)`
+$F(n) = \frac{(\frac{1+\sqrt{5}}{2})^n - (\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$
 
 An explanation of how this formula came to be can be found [here](https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula). In the theory, let's implement this formula by first assigning reusable constants globally, and then calculating the term using them:
 
@@ -42,9 +42,9 @@ Now, let's head in game and check it out!
 
 Unfortunately, it seems like we have encountered our first error. Pressing on the warning sign in the game gives us a clue of what error we have encountered, as well as what line of code it is on. Additionally, the error will also be logged inside the SDK. Mine says:
 
-`Error: (Line 65, Col 4) Exception of type 'ExponentialIdle.BigNumber+BigNumberException' was thrown.`
+**Error: (Line 65, Col 4) Exception of type 'ExponentialIdle.BigNumber+BigNumberException' was thrown.**
 
-This is an arithmetic exception. We know that while negative numbers can be raised to an integer power, and `fibB` is a negative number (approximatly -0.618) raised to an integer `level`, the game simply does not allow us to do this. This is because in JavaScript, integers don't exist, but are part of the Number class, which are actually double precision floating point numbers (doubles for short), analogous to real numbers. In mathematics, raising a negative real number to another real number's power doesn't usually yield a real number, unless the power is also an integer, so this exception is thrown to prevent such an operation. Let's circumvent this by pretending fibB is positive, and then checking for the power's parity (whether it's even or odd) to give the power a sign:
+This is an arithmetic exception. We know that while negative numbers can be raised to an integer power, and **fibB** is a negative number (approximatly -0.618) raised to an integer **level**, the game simply does not allow us to do this. This is because in JavaScript, integers don't exist, but are part of the Number class, which are actually double precision floating point numbers (doubles for short), analogous to real numbers. In mathematics, raising a negative real number to another real number's power doesn't usually yield a real number, unless the power is also an integer, so this exception is thrown to prevent such an operation. Let's circumvent this by pretending **fibB** is positive, and then checking for the power's parity (whether it's even or odd) to give the power a sign:
 
 ```js
 const fibSqrt5 = BigNumber.FIVE.sqrt();
@@ -74,7 +74,7 @@ let init = () =>
 }
 ```
 
-These upgrades will now be available for purchase in the Permanent tab, along with Publications. The Buy All upgrade unlocks a button at the bottom of the screen that allows you to purchase all upgrades at once when clicked, while the Autobuyer will periodically perform that action for you. Because of this, the Autobuyer is the 'evolution' of the Buy All button, and should be set up to unlock at a later point than the Buy All upgrade (for example, `1e17` from `1e12`, as shown above).
+These upgrades will now be available for purchase in the Permanent tab, along with Publications. The Buy All upgrade unlocks a button at the bottom of the screen that allows you to purchase all upgrades at once when clicked, while the Autobuyer will periodically perform that action for you. Because of this, the Autobuyer is the 'evolution' of the Buy All button, and should be set up to unlock at a later point than the Buy All upgrade (for example, 1e17 from 1e12, as shown above).
 
 Unless, you're the one who created Riemann Zeta Function (curse you).
 
@@ -86,7 +86,7 @@ Aside from reset and automation tools, the Theory API also gives us another tool
 - Powering an existing term
 - Unlocking an entirely new mechanic
 
-Today, we will be creating our first milestone - a simple power increase for our `c1`. Start by specifying where milestone points are rewarded:
+Today, we will be creating our first milestone - a simple power increase for our $c_1$. Start by specifying where milestone points are rewarded:
 
 ```js
 import { ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
@@ -98,9 +98,9 @@ let init = () =>
 }
 ```
 
-While our normal upgrades use exponentially scaling costs, milestones often use a different model called `LinearCost`, and the way their costs are calculated is on a log10 scale. In this case, where the first point is rewarded corresponds not to 15 tau, but `1e15`, and the next points' costs will be multiply by `1e15` each, starting at `1e30`, `1e45`, etc.
+While our normal upgrades use exponentially scaling costs, milestones often use a different model called **LinearCost**, and the way their costs are calculated is on a $\log_10$ scale. In this case, where the first point is rewarded corresponds not to 15 tau, but **1e15**, and the next points' costs will be multiply by **1e15** each, starting at **1e30**, **1e45**, etc.
 
-Next, let's create the milestone using `theory.createMilestoneUpgrade` so we can have something to spend on:
+Next, let's create the milestone using **theory.createMilestoneUpgrade** so we can have something to spend on:
 
 ```js
 import { Localization } from '../api/Localization';
@@ -119,7 +119,7 @@ let init = () =>
 }
 ```
 
-This milestone will add 0.03 to the exponent of `c1` every level, up to 5 levels. For the description and information, we use the `Localization` class to get the strings suitable for this milestone ('Increases {0} exponent by {1}'), and as these strings do not need to be refreshed, instead of assigning them to `getDescription` and `getInfo`, we assign them to `description` and `info`. When we put a point into the milestone or take away from it, we should also update the primary equation manually with `theory.invalidatePrimaryEquation` to reflect the information shown on screen. But what information? We haven't even implemented the power increase:
+This milestone will add 0.03 to the exponent of $c_1$ every level, up to 5 levels. For the description and information, we use the **Localization** class to get the strings suitable for this milestone ('Increases {0} exponent by {1}'), and as these strings do not need to be refreshed, instead of assigning them to **getDescription** and **getInfo**, we assign them to **description** and **info**. When we put a point into the milestone or take away from it, we should also update the primary equation manually with **theory.invalidatePrimaryEquation** to reflect the information shown on screen. But what information? We haven't even implemented the power increase:
 
 ```js
 let getc1Exp = (level) => 1 + 0.03 * level;
@@ -133,11 +133,11 @@ var tick = (elapsedTime, multiplier) =>
 var getPrimaryEquation = () => `\\dot{\\rho} = c_1${c1ExpMs.level ? `^{${getc1Exp(c1ExpMs.level)}}` : ''}c_2(1+f)`;
 ```
 
-Now in the primary equation, we see our first use of a ternary operator `x ? y : z`, which takes in a condition (boolean), and returns one of two values depending on whether the condition is true. Here, the condition is specified as a number, which is only equivalent to false when it is 0. This means that the exponent will not display when the milestone's level is 0 (`c1`'s exponent is at 1), since displaying a power of 1 is redundant.
+Now in the primary equation, we see our first use of a ternary operator, written as **x ? y : z**, which takes in a condition (boolean), and returns one of two values depending on whether the condition is true. Here, the condition is specified as a number, which is only equivalent to false when it is 0. This means that the exponent will not display when the milestone's level is 0 ($c_1$'s exponent is at 1), since displaying a power of 1 is redundant.
 
-With the first implementation of a milestone done, you can take a break and play the theory until you can buy it and test it out. We can verify that our income increases as we buy the milestone, and that it displays `c1`'s exponent on screen.
+With the first implementation of a milestone done, you can take a break and play the theory until you can buy it and test it out. We can verify that our income increases as we buy the milestone, and that it displays $c_1$'s exponent on screen.
 
-While your house burns down as the theory skyrockets into infinity, let's add a quality of life feature: to be able to view `c1`'s value after the milestone when the `(i)` button is pressed. To do this, let's modify its `getInfo`:
+While your house burns down as the theory skyrockets into infinity, let's add a quality of life feature: to be able to view $c_1$'s value after the milestone when the **(i)** button is pressed. To do this, let's modify its **getInfo**:
 
 ```js
 let init = () =>
@@ -161,7 +161,7 @@ let init = () =>
 }
 ```
 
-Save the file. You will see that when you hold down the `(i)` button on screen, it shows `c1`'s exponent and its value after the milestone is applied.
+Save the file. You will see that when you hold down the **(i)** button on screen, it shows $c_1$'s exponent and its value after the milestone is applied.
 
 ### Aftermath
 

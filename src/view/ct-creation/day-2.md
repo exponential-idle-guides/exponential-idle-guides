@@ -216,7 +216,7 @@ Let's change the primary equation to reflect this change:
 var getPrimaryEquation = () => `\\dot{\\rho} = c_1`;
 ```
 
-The dot notation was defined by Isaac Newton as a derivative of a variable with respect to t (time). In-game, we can simply treat $c_1$ as the currency's 'velocity'.
+The dot notation was defined by Isaac Newton as a derivative of a variable with respect to time ($t$). In-game, we can simply treat $c_1$ as the currency's 'velocity'.
 
 Now, load it through the SDK! You can now see the new $c_1$ upgrade available for purchase, and that it can affect the currency.
 

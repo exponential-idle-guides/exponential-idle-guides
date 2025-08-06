@@ -12,15 +12,15 @@ Hey. We're nearly there. Let's finish this theory today with some polishing touc
 
 Achievements are ways to mark your progress, as well as provide the player with extra challenges. Achievements in a custom theory are accessible through the theory's information panel. Click the 'two arrows' icon on the top-left, scroll down until you see 'My Theory', then click on the cog. You will see the theory's description, author, and source. Right below the information panel are two buttons: Delete and Reset. The Achievements button will appear here after we implement our first.
 
-An achievement is defined using the `createAchievement()` function, and its anatomy goes as follows:
-- `id`: its unique identifier.
-- `category`: the category (which you'll need to create using `createAchievementCategory()`). This is optional, and you can set it as `null`.
-- `name`: its name.
-- `description`: its description.
-- `unlockCondition`: its trigger, in the form of a boolean-returning arrow function. This will be checked once every second or so.
-- `progress`: the progress towards unlocking this achievement, shown as a percentage. This is optional, and in the form of an arrow function returning a Number between 0 and 1.
+An achievement is defined using the **createAchievement()** function, and its anatomy goes as follows:
+- **id**: its unique identifier.
+- **category**: the category (which you'll need to create using **createAchievementCategory()**). This is optional, and you can set it as **null**.
+- **name**: its name.
+- **description**: its description.
+- **unlockCondition**: its trigger, in the form of a boolean-returning arrow function. This will be checked once every second or so.
+- **progress**: the progress towards unlocking this achievement, shown as a percentage. This is optional, and in the form of an arrow function returning a Number between 0 and 1.
 
-Let's define our first one inside of `init()`, before the call to `updateAvailability()`. This one will make us wait 20 minutes before it unlocks automatically, by checking our `t` variable:
+Let's define our first one inside of **init()**, before the call to **updateAvailability()**. This one will make us wait 20 minutes before it unlocks automatically, by checking our **t** variable:
 
 ```js
 let patienceAch;
@@ -52,7 +52,7 @@ let init = () =>
 }
 ```
 
-With the category defined, let's define our secret achievement belonging to the category. Note that instead of a progress indicator, secret achievements can have a `hint` when you check it out, and this parameter sits between the description and the unlock condition. Let's write the hint as 'Nice', because everyone will understand the reference. I know, this won't be much of a secret then.
+With the category defined, let's define our secret achievement belonging to the category. Note that instead of a progress indicator, secret achievements can have a **hint** when you check it out, and this parameter sits between the description and the unlock condition. Let's write the hint as 'Nice', because everyone will understand the reference. I know, this won't be much of a secret then.
 
 ```js
 let lewdAch;
@@ -67,7 +67,7 @@ let init = () =>
 }
 ```
 
-You know what to do with this one. Remember that the unlock condition is checked only once per second, so setting it up exactly as `clicker.level == 69` makes it much harder to unlock, due to autobuy and timing issues.
+You know what to do with this one. Remember that the unlock condition is checked only once per second, so setting it up exactly as **clicker.level == 69** makes it much harder to unlock, due to autobuy and timing issues.
 
 Now, if you go to the SDK's command line and type in this, you will be able to check whether or not this achievement is unlocked:
 
@@ -75,17 +75,17 @@ Now, if you go to the SDK's command line and type in this, you will be able to c
 log(lewdAch.isUnlocked);
 ```
 
-By using the `isUnlocked` property, we can also add more requirements to an achievement, by making it depend on another achievement to be unlocked. Go wild.
+By using the **isUnlocked** property, we can also add more requirements to an achievement, by making it depend on another achievement to be unlocked. Go wild.
 
 ### Story Chapters
 
-Story chapters are dialogues that can pop up throughout the game according to your progression. They're quite similar to achievements in this sense, and use `createStoryChapter()` to declare. Compared to achievements, they are much simpler to declare, and can't be made secret:
-- `id`: its unique identifier.
-- `title`: its title.
-- `text`: its contents. If you write multiple lines (with `\n`), clicking the screen once will skip one line at a time.
-- `unlockCondition`: its trigger. Works the same way as achievements.
+Story chapters are dialogues that can pop up throughout the game according to your progression. They're quite similar to achievements in this sense, and use **createStoryChapter()** to declare. Compared to achievements, they are much simpler to declare, and can't be made secret:
+- **id**: its unique identifier.
+- **title**: its title.
+- **text**: its contents. If you write multiple lines (with **\n**), clicking the screen once will skip one line at a time.
+- **unlockCondition**: its trigger. Works the same way as achievements.
 
-Let's create an example achievement that unlocks when the `q` milestone is purchased:
+Let's create an example achievement that unlocks when the $q$ unlock milestone is purchased:
 
 ```js
 let qChap;
@@ -110,7 +110,7 @@ log(qChap.isUnlocked);
 
 ### Stages
 
-To recap what we've known about the UI up to this point, the equation screen consists of four parts: the primary, secondary, and tertiary equations, and the quaternary entries. But what if we wanted more space to write information? The Theory API gives us a tool that allows us to cycle between different screens, so we can display all the information we want. These screens are called stages. In the base game, stages are being used extensively in the Convergence Test, not only to switch between the seven tests, but even adapt the `tick()` function to run the currently displayed test. However, in this guide, we will only be using stages to manipulate displayed equations.
+To recap what we've known about the UI up to this point, the equation screen consists of four parts: the primary, secondary, and tertiary equations, and the quaternary entries. But what if we wanted more space to write information? The Theory API gives us a tool that allows us to cycle between different screens, so we can display all the information we want. These screens are called stages. In the base game, stages are being used extensively in the Convergence Test, not only to switch between the seven tests, but even adapt the **tick()** function to run the currently displayed test. However, in this guide, we will only be using stages to manipulate displayed equations.
 
 First, let's define our stage counter, and register it in the internal state:
 
@@ -130,7 +130,7 @@ var setInternalState = (stateStr) =>
 }
 ```
 
-This won't do anything just yet. In the Theory API, there are four functions to control the stages: `canGoToPreviousStage()`, `goToPreviousStage()`, `canGoToNextStage()`, and `goToNextStage()`. The `canGoTo` functions control the visibility of the stage switching arrows on screen, while the `goTo` functions control their behaviour when clicked. Let's create a stage system using two stages, 0 and 1:
+This won't do anything just yet. In the Theory API, there are four functions to control the stages: **canGoToPreviousStage()**, **goToPreviousStage()**, **canGoToNextStage()**, and **goToNextStage()**. The **canGoTo** functions control the visibility of the stage switching arrows on screen, while the **goTo** functions control their behaviour when clicked. Let's create a stage system using two stages, 0 and 1:
 
 ```js
 var canGoToPreviousStage = () => stage > 0;
@@ -172,7 +172,7 @@ var getTertiaryEquation = () =>
 }
 ```
 
-But wait. We notice that aside from the tertiary equation, the other two do not get updated when we switch stages. Remember that these equations don't update by themselves, and we must manually invalidate them. The best way to do so is from within the two `goTo` functions, so that we only do it once when the arrows are clicked:
+But wait. We notice that aside from the tertiary equation, the other two do not get updated when we switch stages. Remember that these equations don't update by themselves, and we must manually invalidate them. The best way to do so is from within the two **goTo** functions, so that we only do it once when the arrows are clicked:
 
 ```js
 
@@ -199,7 +199,7 @@ Yes! We did it! We managed to make this theory so much more sillier[^1].
 
 Another API feature that's introduced within the Convergence Test is the singular upgrade. This takes the form of the 'Prove lemma' button, and allows us to pin some upgrades to the top for convenience[^2].
 
-Setting up a singular upgrade is easy - it is done in the same way as normal upgrades, using the `createSingularUpgrade()` function. For example, we would like to convert the clicker upgrade to a singular upgrade. Simply change `createUpgrade` to `createSingularUpgrade` like so:
+Setting up a singular upgrade is easy - it is done in the same way as normal upgrades, using the **createSingularUpgrade()** function. For example, we would like to convert the clicker upgrade to a singular upgrade. Simply change **createUpgrade** to **createSingularUpgrade** like so:
 
 ```js
 let init = () =>
@@ -501,4 +501,4 @@ init();
 
 [^1] We can't actually afford to swap the quaternary entries' sides. The left side is extremely tiny and can contain only 1 letter before clipping.
 
-[^2] As it stands (v1.4.40), there is a bug in the iOS version of the game, where if a singular upgrade is not visible, the entire equation area will be dwarfed by the phantom area that this invisible upgrade had allocated, making the theory unplayable. It is advised that your singular upgrades be visible at all times (`isAvailable` should be true).
+[^2] As it stands (v1.4.40), there is a bug in the iOS version of the game, where if a singular upgrade is not visible, the entire equation area will be dwarfed by the phantom area that this invisible upgrade had allocated, making the theory unplayable. It is advised that your singular upgrades be visible at all times (**isAvailable** should be true).

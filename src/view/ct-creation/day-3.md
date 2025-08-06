@@ -8,11 +8,64 @@ order: 3
 
 Buongiorno a tutti. It is dawn of the third day.
 
-Across your window, a man wearing a head scarf waves at you. You may recognise him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to implement a new upgrade based on his famous Fibonacci sequence. Then, we will implement publications for our theory.
+Across your window, a man wearing a blue head scarf is waving at you. You may recognise him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to make a new upgrade based on his famous Fibonacci sequence. But first, we will implement publications for our theory.
 
-**Caution:** Back up your save files before heading into today's contents!
+**Caution:** Before heading into today's contents, it is advised to back up your save files somewhere.
+
+### Publications
+
+Let's think about our theory's progression.
+
+We have two upgrades, with their individual personalities. While this alone might make for some interesting conversations within your player base, without some sort of reset mechanic - a staple of many idle games - you'll be stuck tapping the same buttons forever. And in Exponential Idle, the reset mechanic available to theories is called `Publications`.
+
+Let's introduce publications to our theory, by defining several key functions:
+
+```js
+const pubPower = 0.1;
+
+var getPublicationMultiplier = (tau) => tau.pow(pubPower);
+
+var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
+
+var getTau = () => currency.value;
+
+var getCurrencyFromTau = (tau) =>
+[
+    tau.max(BigNumber.ONE),
+    currency.symbol
+];
+```
+
+For this theory, the tau value shall simply be the maximum currency reached, with 1-to-1 conversion. Then, we shall define publication power as 0.1 (10%). This will be important later, when we try to balance the theory. For now, let's simply understand that with 1-to-1 tau conversion, a publication power of 0.1 means that publications make up around 10% of rho's growing power, logarithmically speaking, while the upgrades make up the rest.
+
+To enable publications, let's implement our publication upgrade. It is a permanent upgrade, so their identifier set is different from regular upgrades, which means we can start from 0 again:
+
+```js
+let init = () =>
+{
+    ...
+    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
+}
+```
+
+Finally, modify the tick function to include the publication bonus, and add a secondary equation for it:
+
+```js
+var tick = (elapsedTime, multiplier) =>
+{
+    let dt = BigNumber.from(elapsedTime * multiplier);
+    let bonus = theory.publicationMultiplier;
+    currency.value += dt * bonus * getc1(c1.level) * getc2(c2.level) * (BigNumber.ONE + getf(f.level));
+}
+
+var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
+```
+
+Done. Now we can publish our theory and gain quicker progress on the next run! Although... we don't seem to be able to reach it easily...
 
 ### A gift from Fibonacci
+
+The scarved man throws you a marble across the window. You catch it swiftly. He throws another. And then two at the same time, and then three, then five... You realise what he wants from you, and so you sprint back to your desk and start implementing his idea - the Fibonacci sequence.
 
 Let's define this upgrade as **f** ($f$), and set its identifier to 2:
 
@@ -62,7 +115,7 @@ var getPrimaryEquation = () => `\\dot{\\rho} = c_1f`;
 
 Oops. It seems like we've caused all progress to halt. Why is this the case?
 
-Our currency ($rho$) growth equation is defined by $c_1 * f$. But it seems like since $f$ equals zero on the 0th level, $rho$'s growth always ends up being zero. There are many ways to fix this, but we shall go with the cheesiest one: adding one. Let's modify our $rho$ equation:
+Our currency ($rho$) growth equation is defined by $c_1 \times f$. But it seems like since $f$ equals zero on the 0th level, $rho$'s growth always ends up being zero. There are many ways to fix this, but we shall go with the cheesiest one: adding one. Let's modify our $rho$ equation:
 
 ```js
 var tick = (elapsedTime, multiplier) =>
@@ -78,7 +131,7 @@ Hurray! It works again.
 
 ### A gift in return
 
-Even with the new Fibonacci upgrade, the theory still grows very slowly. Let's give him and $c_1$ another friend, **c2** ($c_2$), with an identifier of 3, and grows according to the powers of 2:
+Even with the new Fibonacci upgrade, the theory still grows very slowly. Let's give it and $c_1$ another friend, **c2** ($c_2$), with an identifier of 3, and grows according to the powers of 2:
 
 ```js
 let c2;
@@ -146,57 +199,6 @@ let init = () =>
     // Not here.
 }
 ```
-
-### Publications
-
-Now, let's think about our theory's progression.
-
-We have four upgrades, with their individual personalities. While this alone can make for some interesting conversations within your player base strategy-wise, without some sort of reset mechanic - a staple of many idle games - you'll be stuck tapping the same buttons forever. And in Exponential Idle, the reset mechanic available to theories is called **Publications**.
-
-Let's introduce publications to our theory, by defining several key functions:
-
-```js
-const pubPower = 0.1;
-
-var getPublicationMultiplier = (tau) => tau.pow(pubPower);
-
-var getPublicationMultiplierFormula = (symbol) => `{${symbol}}^{${pubPower}}`;
-
-var getTau = () => currency.value;
-
-var getCurrencyFromTau = (tau) =>
-[
-    tau.max(BigNumber.ONE),
-    currency.symbol
-];
-```
-
-For this theory, the tau value shall simply be the maximum currency reached, with 1-to-1 conversion. Then, we shall define publication power as 0.1 (10%). This will be important later, when we try to balance the theory. For now, let's simply understand that with 1-to-1 tau conversion, a publication power of 0.1 means that publications make up around 10% of rho's growing power, logarithmically speaking, while the upgrades make up the rest.
-
-To enable publications, let's implement our publication upgrade. It is a permanent upgrade, so their identifier set is different from regular upgrades, which means we can start from 0 again:
-
-```js
-let init = () =>
-{
-    ...
-    theory.createPublicationUpgrade(0, currency, BigNumber.from('1e7'));
-}
-```
-
-Finally, modify the tick function to include the publication bonus, and add a secondary equation for it:
-
-```js
-var tick = (elapsedTime, multiplier) =>
-{
-    let dt = BigNumber.from(elapsedTime * multiplier);
-    let bonus = theory.publicationMultiplier;
-    currency.value += dt * bonus * getc1(c1.level) * getc2(c2.level) * (BigNumber.ONE + getf(f.level));
-}
-
-var getSecondaryEquation = () => `${theory.latexSymbol} = \\max\\rho`;
-```
-
-Done. Now we can publish our theory and gain quicker progress on the next run!
 
 ### Aftermath
 
