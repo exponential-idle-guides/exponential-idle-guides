@@ -98,10 +98,18 @@ prose:
         field:
           element: "number"
           label: "Day"
-      - name: "day_title"
+      - name: "week"
+        field:
+          element: "number"
+          label: "Week"
+      - name: "short_title"
         field:
           element: "text"
-          label: "Day Title"
+          label: "Short Title"
+      - name: "appendix_prefix"
+        field:
+          element: "text"
+          label: "Appendix Prefix"
     src/view/ranking-news:
       - name: "title"
         field:

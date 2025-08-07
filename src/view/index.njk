@@ -45,19 +45,57 @@ home: true
         </ul>
       {% endif %}
     {% endfor %}
-  </ul> 
+  </ul>
 
   <h3>Custom Theory Creation Bootcamp</h3>
 
   <ul class="ct-creation">
-    {% for day in collections["ct-creation"] %}
-      <li>
-        {% if day.data.day != "NONE" %}
-          Day {{day.data.day}}: 
+    {% if collections["ct-preface"] | ct_true_ends | length > 0 %}
+      <li>Prefaces<ul>
+        {% for preface in collections["ct-preface"] | ct_true_ends %}
+          <li>Preface: {{preface.data.short_title}}</li>
+        {% endfor %}
+      </ul></li>
+    {% endif %}
+
+    {% for week in collections["ct-creation-weeks"] %}
+      <li>Week {{week}}<ul>
+        {% if collections["ct-preface"] | ct_filter_week(week) | length > 0 %}
+          <li>Prefaces<ul>
+            {% for preface in collections["ct-preface"] | ct_filter_week(week) %}
+              <li>Preface: {{preface.data.short_title}}</li>
+            {% endfor %}
+          </ul></li>
         {% endif %}
-        <a href="{{ day.url }}">{{ day.data.day_title }}</a>
-      </li>
+
+        {% if collections["ct-day"] | ct_filter_week(week) | length > 0 %}
+          {% for day in collections["ct-day"] | ct_filter_week(week) %}
+            <li>
+              {% if day.data.day != -1 %}
+                Day {{day.data.day}}: 
+              {% endif %}
+              <a href="{{ day.url }}">{{ day.data.short_title }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+
+        {% if collections["ct-appendix"] | ct_filter_week(week) | length > 0 %}
+          <li>Appendices<ul>
+            {% for appendix in collections["ct-appendix"] | ct_filter_week(week) %}
+              <li>Appendix {{appendix.data.appendix_prefix}}: {{appendix.data.short_title}}</li>
+            {% endfor %}
+          </ul></li>
+        {% endif %}
+      </ul></li>
     {% endfor %}
+
+    {% if collections["ct-appendix"] | ct_true_ends | length > 0 %}
+      <li>Appendices<ul>
+        {% for appendix in collections["ct-appendix"] | ct_true_ends %}
+          <li>Appendix {{appendix.data.appendix_prefix}}: {{appendix.data.short_title}}</li>
+        {% endfor %}
+      </ul></li>
+    {% endif %}
   </ul>
 
   <h3>Other resources</h3>

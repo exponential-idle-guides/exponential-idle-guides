@@ -2,7 +2,7 @@
 {% import "list-link.njk" as list %}
 
 {% set nav %}
-  {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections['ct-creation']] %}
+  {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections["ct-creation"]] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
