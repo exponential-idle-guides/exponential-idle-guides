@@ -3,6 +3,8 @@ title: "Day 7: Polishing"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
+week: 1
+tags: day
 order: 7
 ---
 

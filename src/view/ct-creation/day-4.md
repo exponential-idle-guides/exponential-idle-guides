@@ -3,6 +3,8 @@ title: "Day 4: Fibonacci Foil"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
+week: 1
+tags: day
 order: 4
 ---
 
