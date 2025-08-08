@@ -1,11 +1,8 @@
 ---
-title: "Day 2: A Theory of Your Own"
+title: "A Theory of Your Own"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
-week: 1
-tags: day
-order: 2
 ---
 
 Good morning. It is dawn of the second day.

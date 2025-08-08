@@ -49,54 +49,45 @@ home: true
 
   <h3>Custom Theory Creation Bootcamp</h3>
 
-  <ul class="ct-creation">
-    {% if collections["ct-preface"] | ct_true_ends | length > 0 %}
-      <li>Prefaces<ul>
-        {% for preface in collections["ct-preface"] | ct_true_ends %}
-          <li>Preface: {{preface.data.short_title}}</li>
+  {% set prefaces = collections["ct-preface"] | ct_week(-1) %}
+  {% if prefaces | length > 0 %}
+    <h4 id="outer-preface">Prefaces</h4>
+    <ul class="ct-creation">
+      {% for preface in prefaces %}
+        <li>{{ preface | ct_linked | safe }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% for week in collections["ct-creation-weeks"] %}
+    <h4>Week {{week}}</h4>
+    <ul class="ct-creation">
+      {% for preface in collections["ct-preface"] | ct_week(week) %}
+        <li>{{ preface | ct_linked | safe }}</li>
+      {% endfor %}
+
+      {% set days = collections["ct-day"] | ct_week(week) %}
+      {% if days | length > 0 %}
+        {% for day in days %}
+          <li>{{ day | ct_linked | safe }}</li>
         {% endfor %}
-      </ul></li>
-    {% endif %}
+      {% endif %}
 
-    {% for week in collections["ct-creation-weeks"] %}
-      <li>Week {{week}}<ul>
-        {% if collections["ct-preface"] | ct_filter_week(week) | length > 0 %}
-          <li>Prefaces<ul>
-            {% for preface in collections["ct-preface"] | ct_filter_week(week) %}
-              <li>Preface: {{preface.data.short_title}}</li>
-            {% endfor %}
-          </ul></li>
-        {% endif %}
+      {% for appendix in collections["ct-appendix"] | ct_week(week) %}
+        <li>{{ appendix | ct_linked | safe }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
 
-        {% if collections["ct-day"] | ct_filter_week(week) | length > 0 %}
-          {% for day in collections["ct-day"] | ct_filter_week(week) %}
-            <li>
-              {% if day.data.day != -1 %}
-                Day {{day.data.day}}: 
-              {% endif %}
-              <a href="{{ day.url }}">{{ day.data.short_title }}</a>
-            </li>
-          {% endfor %}
-        {% endif %}
-
-        {% if collections["ct-appendix"] | ct_filter_week(week) | length > 0 %}
-          <li>Appendices<ul>
-            {% for appendix in collections["ct-appendix"] | ct_filter_week(week) %}
-              <li>Appendix {{appendix.data.appendix_prefix}}: {{appendix.data.short_title}}</li>
-            {% endfor %}
-          </ul></li>
-        {% endif %}
-      </ul></li>
-    {% endfor %}
-
-    {% if collections["ct-appendix"] | ct_true_ends | length > 0 %}
-      <li>Appendices<ul>
-        {% for appendix in collections["ct-appendix"] | ct_true_ends %}
-          <li>Appendix {{appendix.data.appendix_prefix}}: {{appendix.data.short_title}}</li>
-        {% endfor %}
-      </ul></li>
-    {% endif %}
-  </ul>
+  {% set appendices = collections["ct-appendix"] | ct_week(-1) %}
+  {% if appendices | length > 0 %}
+    <h4 id="outer-appendix">Appendices</h4>
+    <ul class="ct-creation">
+      {% for appendix in appendices %}
+        <li>{{ appendix | ct_linked | safe }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 
   <h3>Other resources</h3>
   {% include "tools.njk" %}

@@ -3,9 +3,6 @@ title: "Day 7: Polishing"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
-week: 1
-tags: day
-order: 7
 ---
 
 Hey. We're nearly there. Let's finish this theory today with some polishing touches. Today we're going to learn how to implement achievements, display story chapters, switch screens, and more.

@@ -1,11 +1,8 @@
 ---
-title: "Day 0: Introduction to Custom Theory Creation"
+title: "Introduction to Custom Theory Creation"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
-week: 1
-tags: day
-order: 0
 ---
 
 Greetings. So you want to kickstart your game-dev career by creating a mod for your beloved game? Or perhaps you really want to talk about your favourite maths topic, and you have decided that the best way to tell everyone about it is to spoon-feed an abnormally large amount of content, enough to chew through an entire school year?

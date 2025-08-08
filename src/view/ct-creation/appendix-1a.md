@@ -1,11 +1,8 @@
 ---
-title: "Appendix: Simulating a Theory"
+title: "Simulating a Theory"
 description: "Introduction to custom theory creation."
 author: "Mathis"
 contributors: "the Amazing Community"
-week: 1
-tags: appendix
-order: 8
 ---
 
 # Adding a CT to the sim

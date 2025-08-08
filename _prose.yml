@@ -82,10 +82,6 @@ prose:
         field:
           element: "text"
           label: "Spoiler"
-      - name: "order"
-        field:
-          element: "number"
-          label: "Relative order"
       - name: "author"
         field:
           element: "text"
@@ -102,14 +98,10 @@ prose:
         field:
           element: "number"
           label: "Week"
-      - name: "short_title"
+      - name: "prefix"
         field:
           element: "text"
-          label: "Short Title"
-      - name: "appendix_prefix"
-        field:
-          element: "text"
-          label: "Appendix Prefix"
+          label: "Prefix"
     src/view/ranking-news:
       - name: "title"
         field:

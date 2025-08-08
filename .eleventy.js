@@ -24,43 +24,17 @@ const transformExcludes = [
 ];
 
 function ct_creation_post_sort(a, b) {
-  const a_true_ends =  a.data.day < 0 && a.data.week < 0;
-  const b_true_ends =  b.data.day < 0 && b.data.week < 0;
-  const a_type = a.data.tags.includes("preface") ? -1: a.data.tags.includes("appendix") ? 1: 0;
-  const b_type = b.data.tags.includes("preface") ? -1: b.data.tags.includes("appendix") ? 1: 0;
-  if (a_true_ends) {
-    if (b_true_ends) {
-      if (a_type == b_type) {
-        return a.data.order - b.data.order;
-      }
-      return a_type - b_type;
-    }
-    return a_type;
-  } else if (b_true_ends) {
-    return -b_type;
-  } else if (a.data.week == b.data.week) {
-    if (a_type == b_type) {
-      if (a_type == 0 && a.data.day != b.data.day) {
-        return a.data.day - b.data.day;
-      }
-      return a.data.order - b.data.order;
-    } 
-    return a_type - b_type;
+  const has_tag = (post, tag) => post.data.tags.includes(tag);
+  if (a.data.week != b.data.week) {
+    if (a.data.week == -1) return has_tag(a, "preface") ? -1: 1;
+    if (b.data.week == -1) return has_tag(b, "preface")  ? -1: 1;
+    return a.data.week - b.data.week;
   }
-  return a.data.week - b.data.week;
-}
-
-function ct_preface_appendix_title(title, tag) {
-  let regex = /^\s*(?:[Aa][Pp][Pp][Ee][Nn][Dd][Ii][Xx]\s*(?:\s+[a-zA-Z]+)\s*(?:[:\-]))\s*(?<final_title>.*\S+)\s*$/gm;
-  if (tag = "preface") {
-    regex = /^\s*(?:[Pp][Rr][Ee][Ff][Aa][Cc][Ee]\s*(?:[:\-]))\s*(?<final_title>.*\S+)\s*$/gm;
-  }
-  const res = regex.exec(title);
-  if (res == null) {
-    return title;
-  }
-  const {final_title} = res.groups;
-  return final_title;
+  
+  const a_type = has_tag(a, "preface") ? -1: has_tag(a, "appendix") ? 1: 0;
+  const b_type = has_tag(b, "preface") ? -1: has_tag(b, "appendix") ? 1: 0;
+  if (a_type == b_type) return a.data.day - b.data.day;
+  return a_type - b_type;
 }
 
 function ct_appendix_label(index) {
@@ -72,13 +46,19 @@ function ct_appendix_label(index) {
   return out;
 }
 
+function ct_toNumber(input) {
+  const output = Number(input);
+  if (!isNaN(output)) return output;
+  const code = input.toLowerCase().charCodeAt(0)-96;
+  return (code <= 0 || code > 25) ? null: code;
+}
+
 module.exports = config => {
 
   const markdownItOptions = {
     html: true,
     typographer: true
   };
-
 
   const markdownItAnchorOptions = {
     permalink: true,
@@ -145,14 +125,15 @@ module.exports = config => {
 
   config.addFilter("keys", obj => Object.keys(obj));
 
-  config.addFilter("ct_true_ends", collection => collection.filter((post) => post.data.day < 0 && post.data.week < 0))
-
-  config.addFilter("ct_filter_week", function(collection, week) {
+  config.addFilter("ct_week", function(collection, week) {
     if (!collection || !Array.isArray(collection)) {
       return [];
     }
     return collection.filter((post) => post.data.week == week)
   });
+
+  config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
+  config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.title + '</a>');
 
   config.addCollection("guides", function(collectionApi) {
     return collectionApi.getFilteredByTag("guides").sort(function(a, b) {
@@ -167,74 +148,79 @@ module.exports = config => {
   });
   
   let ct_weeks = [];
+  const ct_dev_tags = ["preface", "day", "appendix"]
   config.addCollection("ct-creation", function(collectionApi) {
-    const posts = collectionApi.getFilteredByTag("ct-creation")
-    let first = Number.POSITIVE_INFINITY;
+    let posts = collectionApi.getFilteredByTag("ct-creation")
 
-    posts.map((post) => {
+    posts.forEach((post) => {
       post.data.tags = post.data.tags || [];
-      const res = /^\s*[dD][aA][yY]\s*(?<day_number>[0-9]+)\s*:\s*(?<title>.*\S+)\s*$/gm.exec(post.data.title);
-      if (res == null) {
-        post.data.day = -1;
+      const res = /^(?<tag>preface|appendix|day)(([\-_]?)(?:(?<time>\d+|(?<=appendix[\-_])[a-z]+)|(?<!day\3))([\-_]?))(?:(?<!day\2)(?<order>(?<!appendix\3[a-z]+\5)[a-z]+|\d+)|)$/i.exec(post.data.page.fileSlug);
+      if (res == null){
+        if (!post.data.tags.includes("BAD_CT_CREATION")) post.data.tags.push("BAD_CT_CREATION");
+        return;
+      }
+
+      post.data.title = /^\s*((?:\S*(?:\s*(?=\S)|))*)\s*$/.exec(post.data.title)[1];
+      
+      const {tag, time, order} = res.groups;
+      // Add the correct tag and remove the other incorrect tags
+      if (!post.data.tags.includes(tag)) post.data.tags.push(tag);
+      post.data.tags = post.data.tags.filter((t) => t == tag || !ct_dev_tags.includes(t));
+
+      const t = ct_toNumber(time);
+      if (tag == "day") {
+        post.data.day = t == 0 ? 0 : ((t - 1) % 7) + 1;
+        post.data.week = Math.floor((t - post.data.day) / 7) + 1;
+      } else if (order == undefined) {
+        post.data.day = t;
         post.data.week = -1;
       } else {
-        const {day_number, title} = res.groups;
-        post.data.short_title = title;
-        const days = Number(day_number);
-        post.data.day = days == 0 ? 0 : ((days - 1) % 7) + 1;
-        post.data.week = Math.floor((days - post.data.day) / 7) + 1;
-        first = Math.min(first, days);
-        if (!ct_weeks.includes(post.data.week)) {
-          ct_weeks.push(post.data.week);
-        }
-        
-        if (post.data.tags.includes("preface")) {
-          post.data.title = "Week " + post.data.week + ": " + title;
-          post.data.short_title = ct_preface_appendix_title(title, "preface");
-        } else if (post.data.tags.includes("appendix")) {
-          post.data.title = "Week " + post.data.week + ": " + title;
-          post.data.short_title = ct_preface_appendix_title(title, "appendix");
-        } else if (!post.data.tags.includes("day")) {
-          post.data.tags.push("day");
-        }
+        post.data.day = ct_toNumber(order);
+        post.data.week = t;
+      }
+      if (!ct_weeks.includes(post.data.week)) {
+        ct_weeks.push(post.data.week);
       }
     });
 
-    posts.filter((post) => 
-      !(["preface", "day", "appendix"].some((tag) => 
-        post.data.tags.includes(tag)
-      ))).map((post) => {
-      // All posts with order > first day will be 
-      const tag = post.data.order <= first ? "preface" : "appendix";
-      post.data.tags.push(tag);
-      post.data.short_title = ct_creation_post_sort(post.data.title, tag);
-    })
-    
+    posts = posts.filter((post) => !post.data.tags.includes("BAD_CT_CREATION"));
     posts.sort((a, b) => ct_creation_post_sort(a, b));
 
-    let filt = posts.filter((post) => post.data.tags.includes("appendix"));
-    let i = 1;
-    filt.filter((post) => post.data.day < 0 && post.data.week < 0).map((post) => {
-      post.data.appendix_prefix = ct_appendix_label(i)
-      i++;
+    let appendices = posts.filter((post) => post.data.tags.includes("appendix"));
+    appendix_count = [];
+    ct_weeks.forEach((w) => {
+      let i = 0;
+      appendices.filter((post) => post.data.week == w).forEach((post) => {
+        i++;
+        post.data.day = i;
+      });
+      appendix_count.push(i);
     });
 
-    filt = filt.filter((post) => post.data.day >= 0)
-    ct_weeks.forEach((w) => {
-      i = 1;
-      filt.filter((post) => post.data.week == w).map((post) => {
-        post.data.appendix_prefix = ct_appendix_label(i)
-        i++;
-      });
+    const last_week = Math.max(...ct_weeks);
+    posts.forEach((post) => {
+      switch (post.data.tags.includes("day") ? "day" : post.data.tags.includes("preface") ? "preface" : "appendix") {
+        case "day":
+          post.data.prefix = "Day " + post.data.day + ": ";
+          break;
+        case "preface":
+          post.data.prefix = "Preface : ";
+          break;
+        case "appendix":
+          post.data.prefix = "Appendix " + ct_appendix_label(post.data.week == -1 ? last_week + 1 : post.data.week) 
+            + (appendix_count[ct_weeks.indexOf(post.data.week)] > 1 ? "." + post.data.day : "") + ": ";
+          break;
+      }
     })
+
+    if (ct_weeks.indexOf(-1) != -1) ct_weeks.splice(ct_weeks.indexOf(-1),1);
 
     return posts;
   });
 
   config.addCollection("ct-creation-weeks", function(c) {return ct_weeks;});
 
-  const ct_dev_tags = ["preface", "day", "appendix"]
-  ct_dev_tags.map((tag) => {
+  ct_dev_tags.forEach((tag) => {
     config.addCollection('ct-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('ct-creation', tag).sort((a, b) => ct_creation_post_sort(a, b));
     });
@@ -261,7 +247,7 @@ module.exports = config => {
   });
 
   const guide_tags = ['T9+ Recommendations', 'T9+ Research', 'other', 'rankings', 'seasons'];
-  guide_tags.map((tag) => {
+  guide_tags.forEach((tag) => {
     config.addCollection('ext-'+tag, (collectionApi) => {
       return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
         return a.data.order - b.data.order;

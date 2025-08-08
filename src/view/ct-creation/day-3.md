@@ -1,11 +1,8 @@
 ---
-title: "Day 3: Fibonacci Friend"
+title: "Fibonacci Friend"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
-week: 1
-tags: day
-order: 3
 ---
 
 Buongiorno a tutti. It is dawn of the third day.

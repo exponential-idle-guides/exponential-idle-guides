@@ -3,9 +3,6 @@ title: "Day 5: Balance in All Things"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
-week: 1
-tags: day
-order: 5
 ---
 
 Hola. It is dawn of the fifth day.
