@@ -1,5 +1,5 @@
 ---
-title: "Day 5: Balance in All Things"
+title: "Balance in All Things"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"

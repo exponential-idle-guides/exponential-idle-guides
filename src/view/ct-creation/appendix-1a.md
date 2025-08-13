@@ -1,9 +1,67 @@
 ---
 title: "Simulating a Theory"
 description: "Introduction to custom theory creation."
-author: "Mathis"
-contributors: "the Amazing Community"
+author: "prop"
+contributors: "Mathis for the draft, and then the Amazing Community"
 ---
+
+Hello. Welcome to my stomach.
+
+Today, we are going to use the Theory Simulator to test out our theory. The Theory Simulator is a web-based tool created and maintained by the Exponential Idle community that allows users to simulate and program strategies for various theories.
+
+**Note:** The Theory Simulator is undergoing constant changes. As such, this appendix's contents are also under construction.
+
+## Prerequisites
+
+1. **Node.js & npm**
+
+[Node.js](https://nodejs.org/) is a JavaScript runtime environment for servers and web applications. Its installation is needed to run the simulator locally and implement our theory.
+
+[npm](https://www.npmjs.com/) is the package manager for Node.js. It should be already installed along with Node.js. 
+
+2. **TypeScript**
+
+[TypeScript](https://www.typescriptlang.org/) is a variant of JavaScript that enforces types on variables to prevent bugs related to type mismatch or conversion. It is available as an npm package.
+
+For a better experience, install the TypeScript extension/add-on (if available) for your editor.
+
+## Installation
+
+Head to your command line interface (terminal), head to the desired directory using **cd** or a similar command, then type in this line:
+
+```
+git clone https://github.com/exponential-developers/sim-3.0.git
+```
+
+This will download the Theory Simulator for local usage. If git is not installed, you can also visit the [repository](https://github.com/exponential-developers/sim-3.0), press the **Code** button, then download it as a ZIP file.
+
+After the download is finished, head into the folder with your terminal. Open the folder in your editor as a project, in case that feature is supported. Then, after checking that the terminal is at the project folder, run these commands in succession:
+
+```
+npm install
+npm audit fix
+npm run build
+```
+
+The first command installs the needed packages for the project. The second command fixes various issues after installing them. Finally, the third command builds the project.
+
+### Hosting the simulator
+
+To be able to run the project, we need a way to host a server locally. We can use an npm package for this:
+
+```
+npm install -g http-server
+```
+
+The **-g** option will install the http-server package globally on our machine, so that regardless of what project we're working on, we can host a server. To do so, use this simple command (while the terminal is at the project folder, of course):
+
+```
+http-server
+```
+
+Upon using this command, one or more links will be output. Simply copy this link onto a browser to open the Theory Simulator. The first thing to do after it's opened is to open the settings menu (cog icon), then tick on the option 'Show unofficial CTs'. This will allow us to simulate unofficial custom theories, including our theory, after we have implemented it.
+
+# All stuff below is by Mathis
 
 # Adding a CT to the sim
 

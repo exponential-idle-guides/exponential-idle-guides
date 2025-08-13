@@ -1,5 +1,5 @@
 ---
-title: "Day 7: Polishing"
+title: "Polishing"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"

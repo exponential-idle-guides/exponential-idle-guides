@@ -1,5 +1,5 @@
 ---
-title: "Day 6: Dimension Expansion"
+title: "Dimension Expansion"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"

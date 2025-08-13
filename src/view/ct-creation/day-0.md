@@ -38,6 +38,8 @@ Other editors include:
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Vim](https://www.vim.org/) *or something*
 
+For a better experience, install the JavaScript extension/add-on (if available) for your editor.
+
 ## Aftermath
 
 Now that you have a grip on the basics and have installed the necessary tools, the next step would be to check out what a custom theory may look like, and for that, I shall see you [tomorrow](../day-1/).

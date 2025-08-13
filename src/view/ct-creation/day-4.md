@@ -1,5 +1,5 @@
 ---
-title: "Day 4: Fibonacci Foil"
+title: "Fibonacci Foil"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
