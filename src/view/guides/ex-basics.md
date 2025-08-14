@@ -5,6 +5,7 @@ author: "LE★Baldy and Snaeky"
 contributors: "The Amazing Community"
 draft: true
 order: 0
+eylanding: "basics"
 ---
 
 This intro and following guide are designed to help you play through the 1 to ee2000

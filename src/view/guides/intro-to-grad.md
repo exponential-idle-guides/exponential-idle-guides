@@ -3,6 +3,7 @@ title: "Introduction to Graduation"
 author: "LE★Baldy & Snaeky"
 contributors: "The Amazing Community"
 order: 2
+eylanding: "IntroToGrad"
 ---
 
 These guides are designed to help you play through the phi (\\(\varphi\\)) and theories sections

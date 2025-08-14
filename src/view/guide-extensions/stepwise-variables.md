@@ -5,6 +5,7 @@ author: "Eylanding"
 contributors: "the Amazing Community"
 order: 0
 tags: T9+ Recommendations
+eylanding: "stepwise"
 ---
 
 ## What are Stepwise variables?

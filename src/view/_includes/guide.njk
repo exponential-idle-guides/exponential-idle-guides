@@ -19,6 +19,8 @@
   </nav>
 {% endset %}
 
+{% set ranking_bools = ['/ranking-news' in page.url,'/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url] %}
+
 {% block main %}
 
   {% if author or contributors %}
@@ -27,24 +29,42 @@
       {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
   {% endif %}
 
-  {% if draft %}
-    <p class="draft-warning">
-      This guide is currently undergoing change.
-      Keep in mind, <strong>strategies may change</strong>.
-    </p>
-  {% endif %}
+  {% if ranking_bools[0] or ranking_bools[2] %}
+    {% if discord %}
+      <p>This was originally written on Discord so the text may be confusing. 
+        It is kept this way to preserve the original posts how they were.<br>
+    {% endif %}
 
-  {% if discord %}
-    <p>This was originally written on Discord so the text may be confusing. 
-      It is kept this way to preserve the original posts how they were.<br>
-  {% endif %}
-
-  {% if '/ranking-news' in page.url %}
-    <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
-  {% elif '/season-news' in page.url %}
-    <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
-  {% elif not ((glossary) or ('/rankings-main' in page.url) or ('/seasons-main' in page.url)) %}
-    <p class="draft-warning">Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> as needed.
+    {% if ranking_bools[0] %}
+      <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    {% else %}
+      <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    {% endif %}
+  {% else %}
+    <div class="top-warning">
+      {% if draft %}
+        <p class="draft">
+          This guide is currently undergoing change.
+          Keep in mind, <strong>strategies may change</strong>.
+        </p>
+      {% endif %}
+      {% if not ((glossary) or rankings_bool[1] or rankings_bool[3]) %}
+        <p>
+          Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> 
+          {% if (eylanding is defined) or '/guide-extensions' in page.url %}
+            or <span class="eylanding-link"> 
+              {% if eylanding != '' %}
+                  {{eylanding}}
+              {% endif %}
+              {% if '/guide-extensions' in page.url %}
+                extensions
+              {% endif %}
+            </span>
+          {% endif %}
+          as needed.
+        </p>
+      {% endif %}
+    </div>
   {% endif %}
   
   {{ content | safe }}

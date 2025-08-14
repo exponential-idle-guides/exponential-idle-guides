@@ -4,7 +4,9 @@ author: "LE★Baldy"
 contributors: "The Amazing Community"
 draft: true
 order: 1
+eylanding: "0-2k"
 ---
+
 ###### First read the [game basics](/guides/ex-basics).
 
 ### Introduction
