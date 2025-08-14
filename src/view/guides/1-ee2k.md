@@ -2,7 +2,7 @@
 title: "1 to ee2000"
 author: "LE★Baldy"
 contributors: "The Amazing Community"
-draft: true
+draft: false
 order: 1
 eylanding: "0-2k"
 ---
