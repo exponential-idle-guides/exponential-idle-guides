@@ -25,7 +25,7 @@ Your command line interface has a command to show connected networks:
 - **ipconfig** for Windows & newer Linux versions, or
 - **ifconfig** for Mac & Linux.
 
-Find the aforementioned mutual network, which may show up with a name similar to **Wireless LAN adapter Wi-Fi**, and note the IPv4 address. If you're using an emulator such as Bluestacks, there will be a different network that you need to connect to (in my case, it is called **Ethernet adapter vEthernet (BluestacksNxt)**). Note that the emulator's IP address will change every time the PC is reboot.
+Find the aforementioned mutual network, which may show up with a name similar to **Wireless LAN adapter Wi-Fi**, and note the IPv4 address. If you're using an emulator such as Bluestacks, there may be a different network that you need to connect to (in my case, it is called **Ethernet adapter vEthernet (BluestacksNxt)**). Note that the emulator's IP address may change every time it is started, or when your computer is rebooted.
 
 In-game, access the custom theory panel using the bottom arrows, until you reach a screen saying **Tap to select a custom theory**. Enter the menu, press the **SDK** button. Write the IPv4 address into your gaming device, while the address in the SDK can be left as **Any**, unless you're a masochist.
 
