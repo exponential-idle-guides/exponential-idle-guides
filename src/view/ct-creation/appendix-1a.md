@@ -5,7 +5,7 @@ author: "prop"
 contributors: "Mathis for the draft, and then the Amazing Community"
 ---
 
-Hello. Welcome to my stomach.
+Hello. Welcome to the evolutionary remnants of my stomach for this week.
 
 Today, we are going to use the Theory Simulator to test out our theory. The Theory Simulator is a web-based tool created and maintained by the Exponential Idle community that allows users to simulate and program strategies for various theories.
 
@@ -47,7 +47,7 @@ The first command installs the needed packages for the project. The second comma
 
 ### Hosting the simulator
 
-To be able to run the project, we need a way to host a server locally. We can use an npm package for this:
+We've managed to build the project. However, as it is a web application, to be able to run it, we need a way to host a server locally. We can use an npm package for this:
 
 ```
 npm install -g http-server
@@ -61,17 +61,11 @@ http-server
 
 Upon using this command, one or more links will be output. Simply copy this link onto a browser to open the Theory Simulator. The first thing to do after it's opened is to open the settings menu (cog icon), then tick on the option 'Show unofficial CTs'. This will allow us to simulate unofficial custom theories, including our theory, after we have implemented it.
 
-# All stuff below is by Mathis
+# Implementing a theory
 
-# Adding a CT to the sim
+All contents below are work in progress.
 
-## Prerequisties
-
-To code with the sim, you need to use `npm`.
-
-The sim is written in TypeScript.
-
-## Introduction to the number system used by the sim
+### Introduction to the number system used by the sim
 
 In the sim, there is no `BigNumber` class. Instead, to represent large numbers such as `1e800`, we work with log values.
 For example, `1e800` will be represented as `800`, and `2e25` will be represented as `log10(2e25) = 25 + log10(2)`. `1` is represented as `0`.
@@ -80,12 +74,7 @@ For addition and subtraction, the sim has the functions `add(a, b)`for a+b and `
 Since you may need to use `Math.log10` many times, it is shortened to `l10`.
 It is important to keep track of what value is a normal value and what value is a log value.
 
-## Step 1: Install
-
-- Clone the repository from <https://github.com/exponential-developers/sim-3.0> or simply download and extract the zip.
-- Run `npm install` inside the sim folder to download the required packages. You may need to run `npm audit fix` if prompted.
-
-## Step 2: Register your theory and its strats
+### Register your theory and its strats
 
 First, you need to edit `src/Data/data.json` to add your new theory.
 You need to add a new key in `theories`, named with the initials of your CT, with the same model as other theories.
@@ -95,7 +84,7 @@ Here is what each item does:
 - `UI_visible` indicates if the theory should be visible without using the "show unofficial CTs" settings in the sim.
 - `strats` are the different strategies that the sim will test. To start, have only one strat, with the same name as the theory, with `stratFilterCondition = "true"`.
 
-## Step 3: Create the sim file
+### Create the sim file
 
 To add your new custom theory to the sim, you need to create a `.ts` sim file for it. It should use the CT's initials. For example: `FS.ts`.
 It should be put in `src/Theories/Unofficial-CTs`. I suggest to copy `BT.ts` to get a template.
@@ -126,7 +115,7 @@ There are the main default attributes of the sim class you want to know about.
 - `varNames` is an array that stores the name of the variables
 - `milestones` is an array that stores the levels of each milestone
 
-### The constructor
+#### The constructor
 
 The role of the constructor is to initialize the attributes of the sim class.
 
@@ -140,7 +129,7 @@ Important notice for `Exponential Cost`:
 - `new ExponentialCost(a, Math.log2(b))` in the CT code becomes `new ExponentialCost(a, b)` in the sim.
 - `new ExponentialCost(a, b)` in the CT code becomes `new ExponentialCost(a, b, true)` in the sim.
 
-### `getBuyingConditions()`
+#### `getBuyingConditions()`
 
 This function returns the conditions that must be met for the sim to buy variables.
 `conditions` must have a key for every strat you defined in `data.json`.
@@ -150,35 +139,35 @@ Conditions can be a boolean or a function that returns a boolean. Use the latter
 
 If you want a full idle strat, you can fill the array with `true`.
 
-### `getMilestoneConditions()`
+#### `getMilestoneConditions()`
 
 This function returns whether a variable is available to purchase or not, depending on milestones for example.
 Same as `getBuyingConditions`, conditions can be a boolean or a function that returns a boolean.
 It does not depend on the strat.
 
-### `getTotMult()`
+#### `getTotMult()`
 
 This function should return the publication multiplier as a log value. It is the equivalent of `getPublicationMultiplier` in the CT code.
 
-### `updateMilestones()`
+#### `updateMilestones()`
 
 This function should update `this.milestones` to match the milestones a player would have at this point.
 
-### `simulate()`
+#### `simulate()`
 
 This function contains the simulation loop and the publication conditions.
 You don't need to edit it unless you want to change the publication conditions.
 
-### `tick()`
+#### `tick()`
 
 This is the equivalent of the `tick()` function of the CT. Only edit the part before `this.t += this.dt / 1.5`.
 
-### `buyVariables()`
+#### `buyVariables()`
 
 This function makes the sim buy variables.
 You don't need to edit it unless you are working with multiples currencies or need to do certain actions when a variable is bought.
 
-## Step 4: Registering the sim file
+### Registering the sim file
 
 Now that your sim file is ready, go to `src/Sim/main.ts`.
 
@@ -188,10 +177,6 @@ Now, find the `singleSim` function and add a new case in the `switch` statement 
 
 The sim should now have your CT correctly registered.
 
-## Step 5: Compile and test
+### Compile and test
 
-To compile, run `npm run build`.
-
-To host the sim, use `python -m http.server 8888` where 8888 is any free port on the localhost.
-
-You can then test the sim by visiting <localhost:port>.
+Any time you want to test your changes, compile by running `npm run build`.
