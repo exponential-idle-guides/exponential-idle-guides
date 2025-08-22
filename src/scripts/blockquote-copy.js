@@ -1,4 +1,4 @@
-function remove_char(text, char){
+export function remove_char(text, char){
   var index = text.indexOf(char);
   while (index >= 0) {
     switch(index){

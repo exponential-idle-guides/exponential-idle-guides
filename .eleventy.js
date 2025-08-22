@@ -1,6 +1,7 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
+const markdownItFootnotes = require("markdown-it-footnote");
 
 const Hypher = require('hypher')
 const english = require('hyphenation.en-gb');
@@ -54,10 +55,10 @@ function ct_toNumber(input) {
 }
 
 module.exports = config => {
-
   const markdownItOptions = {
     html: true,
-    typographer: true
+    typographer: true,
+    breaks: true
   };
 
   const markdownItAnchorOptions = {
@@ -82,6 +83,7 @@ module.exports = config => {
     markdownIt(markdownItOptions)
       .use(markdownItAnchor, markdownItAnchorOptions)
       .use(require('markdown-it-mathjax3'))
+      .use(require('markdown-it-footnote'))
       .use(markdownItAttrs, {
         leftDelimiter: '{',
         rightDelimiter: '}',
@@ -133,7 +135,7 @@ module.exports = config => {
   });
 
   config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
-  config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.title + '</a>');
+  config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.short_title + '</a>');
 
   config.addCollection("guides", function(collectionApi) {
     return collectionApi.getFilteredByTag("guides").sort(function(a, b) {
@@ -148,7 +150,8 @@ module.exports = config => {
   });
   
   let ct_weeks = [];
-  const ct_dev_tags = ["preface", "day", "appendix"]
+  const ct_dev_tags = ["preface", "day", "appendix"];
+  let last_week;
   config.addCollection("ct-creation", function(collectionApi) {
     let posts = collectionApi.getFilteredByTag("ct-creation")
 
@@ -160,15 +163,20 @@ module.exports = config => {
         return;
       }
 
-      post.data.title = /^\s*((?:\S*(?:\s*(?=\S)|))*)\s*$/.exec(post.data.title)[1];
+      post.data.short_title = /^\s*((?:\S*(?:\s*(?=\S)|))*)\s*$/.exec(post.data.title)[1];
       
       const {tag, time, order} = res.groups;
+      const tag_lower = tag.toLowerCase();
       // Add the correct tag and remove the other incorrect tags
-      if (!post.data.tags.includes(tag)) post.data.tags.push(tag);
-      post.data.tags = post.data.tags.filter((t) => t == tag || !ct_dev_tags.includes(t));
+      if (!post.data.tags.includes(tag_lower)) post.data.tags.push(tag_lower);
+      post.data.tags = post.data.tags.filter((t) => t == tag_lower || !ct_dev_tags.includes(t));
 
-      const t = ct_toNumber(time);
-      if (tag == "day") {
+      if (time === undefined) {
+        t = 0;
+      } else {
+        t = ct_toNumber(time);
+      }
+      if (tag_lower == "day") {
         post.data.day = t == 0 ? 0 : ((t - 1) % 7) + 1;
         post.data.week = Math.floor((t - post.data.day) / 7) + 1;
       } else if (order == undefined) {
@@ -197,7 +205,7 @@ module.exports = config => {
       appendix_count.push(i);
     });
 
-    const last_week = Math.max(...ct_weeks);
+    last_week = Math.max(...ct_weeks);
     posts.forEach((post) => {
       switch (post.data.tags.includes("day") ? "day" : post.data.tags.includes("preface") ? "preface" : "appendix") {
         case "day":
@@ -207,10 +215,12 @@ module.exports = config => {
           post.data.prefix = "Preface : ";
           break;
         case "appendix":
-          post.data.prefix = "Appendix " + ct_appendix_label(post.data.week == -1 ? last_week + 1 : post.data.week) 
+          post.data.week = post.data.week == -1 ? last_week + 1 : post.data.week;
+          post.data.prefix = "Appendix " + ct_appendix_label(post.data.week) 
             + (appendix_count[ct_weeks.indexOf(post.data.week)] > 1 ? "." + post.data.day : "") + ": ";
           break;
       }
+      post.data.title = post.data.prefix + post.data.short_title;
     })
 
     if (ct_weeks.indexOf(-1) != -1) ct_weeks.splice(ct_weeks.indexOf(-1),1);
@@ -225,16 +235,26 @@ module.exports = config => {
       return collectionApi.getFilteredByTags('ct-creation', tag).sort((a, b) => ct_creation_post_sort(a, b));
     });
   });
-
-  config.addCollection("rankings", function(collectionApi) {
-    return collectionApi.getFilteredByTag("ranking-news").sort(function(a, b) {
-      return a.data.order - b.data.order;
+  
+  config.addCollection("postsByWeek", (collectionApi) => {
+    const output = _.chain(collectionApi.getAllSorted())
+      .groupBy((post) => post.data.week)
+      .toPairs()
+      .reverse()
+      .value();
+    collectionApi.getFilteredByTags('ct-appendix').forEach((post) => {
+      if (post.data.week > last_week) post.data.week = -1;
     });
+    return 
   });
 
-  config.addCollection("seasons", function(collectionApi) {
-    return collectionApi.getFilteredByTag("season-news").sort(function(a, b) {
-      return a.data.order - b.data.order;
+
+  const rankings = ["ranking", "season"];
+  rankings.forEach((ranking) => {
+    config.addCollection(ranking + "s", function(collectionApi) {
+      return collectionApi.getFilteredByTag(ranking + "-news").sort(function(a, b) {
+        return b.date - a.date;
+      });
     });
   });
 
@@ -244,6 +264,16 @@ module.exports = config => {
       .toPairs()
       .reverse()
       .value();
+    /*return rankings.reduce((acc, name, i) => {
+      acc = acc || {};
+      acc[name] = _.chain(collectionApi
+          .getFilteredByTag(rankings[i])
+          .sort((a,b) => b.data.order - a.data.order)
+        ).groupBy((post) => post.date.getFullYear())
+        .toPairs()
+        .reverse()
+        .value();
+    });*/
   });
 
   const guide_tags = ['T9+ Recommendations', 'T9+ Research', 'other', 'rankings', 'seasons'];

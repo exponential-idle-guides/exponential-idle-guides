@@ -250,7 +250,7 @@ This is a separable differential equation, after some rearrangement we have:
 $$\rho^{-x}d\rho = Kt^{y}\rho^{z}_{pub}dt$$
 Integrate both sides,
 $$\int\rho^{-x}d\rho = \int Kt^{y}\rho^{z}_{pub}dt$$
-Since \\(Kt^{y}\rho^{z}_{pub}\\) is a constant in a publication,
+Since \\(K\rho^{z}_{pub}\\) is a constant in a publication,
 $$\int\rho^{-x}d\rho = K\rho^{z}_{pub}\int t^{y}dt$$
 Evaluate both Integrals,
 $$\frac{\rho^{1-x}}{1-x} = \frac{K\rho^{z}_{pub}}{z+1}t^{y+1} + C$$

@@ -1,5 +1,6 @@
 {% extends "default.njk" %}
 {% import "list-link.njk" as list %}
+{% import "sidebars.njk" as s %}
 
 {% set nav %}
   {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections["ct-creation"]] %}
@@ -19,6 +20,8 @@
   </nav>
 {% endset %}
 
+{% set ranking_bools = ['/ranking-news' in page.url,'/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url] %}
+
 {% block main %}
 
   {% if author or contributors %}
@@ -27,27 +30,52 @@
       {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
   {% endif %}
 
-  {% if draft %}
-    <p class="draft-warning">
-      This guide is currently undergoing change.
-      Keep in mind, <strong>strategies may change</strong>.
-    </p>
-  {% endif %}
+  {% if ranking_bools[0] or ranking_bools[2] %}
+    {% if discord %}
+      <p>This was originally written on Discord so the text may be confusing. 
+        It is kept this way to preserve the original posts how they were.<br>
+    {% endif %}
 
-  {% if discord %}
-    <p>This was originally written on Discord so the text may be confusing. 
-      It is kept this way to preserve the original posts how they were.<br>
-  {% endif %}
-
-  {% if '/ranking-news' in page.url %}
-    <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
-  {% elif '/season-news' in page.url %}
-    <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
-  {% elif not ((glossary) or ('/rankings-main' in page.url) or ('/seasons-main' in page.url)) %}
-    <p class="draft-warning">Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> as needed.
+    {% if ranking_bools[0] %}
+      <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    {% else %}
+      <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
+    {% endif %}
+  {% else %}
+    <div class="top-warning">
+      {% if draft %}
+        <p class="draft">
+          This guide is currently undergoing change.
+          Keep in mind, <strong>strategies may change</strong>.
+        </p>
+      {% endif %}
+      {% if not ((glossary) or rankings_bool[1] or rankings_bool[3]) %}
+        <p>
+          Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> 
+          {% if (eylanding is defined) or '/guide-extensions' in page.url %}
+            or <span class="eylanding-link"> 
+              {% if eylanding != '' %}
+                  {{eylanding}}
+              {% endif %}
+              {% if '/guide-extensions' in page.url %}
+                extensions
+              {% endif %}
+            </span>
+          {% endif %}
+          as needed.
+        </p>
+      {% endif %}
+    </div>
   {% endif %}
   
   {{ content | safe }}
+  {#
+  {% if '/rankings-main' in page.url %}
+    {{ list.rank_linked("ft", false) }}
+  {% elif '/seasons-main' in page.url %}
+    {{ list.rank_linked("seasons", false) }}
+  {% endif %}
+  #}
   {% if '/rankings-main' in page.url %}
     {% for year, yearPosts in collections.postsByYear %}
       {% set yearbool = false %}
@@ -112,299 +140,123 @@
 
 {% block sidebar %}
   {% if not home %}
-    {% set tocs = content | toc %}
-    {% if tocs %}
-      <div id="HeaderSidebar" class="sidebar">
-        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Table of Contents</h1>
-        <div class="content_wrapper square_list">
-          {{content|toc|safe}}
-        </div>
-      </div>
-      <div id="HeaderSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Table of Contents</h1>
-        <div class="content_wrapper square_list">
-          {{content|toc|safe}}
-        </div>
-      </div>
-    {% else %}
-      <div id="HeaderSidebar" class="sidebar">
-        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Table of Contents</h1>
-        <div class="content_wrapper square_list">
-          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
-        </div>
-      </div>
-      <div id="HeaderSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" id="HeaderClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Table of Contents</h1>
-        <div class="content_wrapper square_list">
-          <p>No headers have been established.<br>Please add headers for Table of Contents.</p>
-        </div>
-      </div>
-    {% endif %}
+    {% call s.sidebar_div("Header", "Table of Contents", true) %}
+      {% set tocs = content | toc %}
+      {% if tocs %}
+        {{ content | toc | safe }}
+      {% else %}
+        <p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>
+      {% endif %}
+    {% endcall %}
 
-    <div id="GuideSidebar" class="sidebar">
-      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Guides</h1>
-      <div class="content_wrapper square_list">
-        <ul>
-          {%- for guide in collections.guides -%}
-            <li>
-              <a href="{{guide.url}}">{{ guide.data.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </div>
-    </div>
-    <div id="GuideSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" id="GuideClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Guides</h1>
-      <div class="content_wrapper square_list">
-        <ul>
-          {%- for guide in collections.guides -%}
-            <li>
-              <a href="{{guide.url}}">{{ guide.data.title }}</a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      </div>
-    </div>
+    {% call s.sidebar_div("Guide", "Guides", true) %}
+      <ul>
+        {%- for guide in collections.guides -%}
+          <li>
+            <a href="{{guide.url}}">{{ guide.data.title }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {% endcall %}
 
-    <div id="ResourceSidebar" class="sidebar">
-      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Resources</h1>
-      <div class="content_wrapper square_list">
-        {% include 'tools.njk' %}
-      </div>
-    </div>
-    <div id="ResourceSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" id="ResourceClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Resources</h1>
-      <div class="content_wrapper square_list">
-        {% include 'tools.njk' %}
-      </div>
-    </div>
+    {% call s.sidebar_div("Resource", "Resources", true) %}
+      {% include 'tools.njk' %}
+    {% endcall %}
+
+    {% call s.sidebar_div("Extension", "Guide Extensions", true) %}
+      <ul>
+        {% for tag, posts in collections %}
+          {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
+            {% for guide in collections[tag] %}
+              {{ list.linked(guide) }}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endcall %}
     
-    <div id="ExtensionSidebar" class="sidebar">
-      <a href="javascript:void(0)" id="ExtensionClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Guide Extensions</h1>
-      <div class="content_wrapper square_list">
-        <ul>
-          {% for tag, posts in collections %}
-            {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
-              {% for guide in collections[tag] %}
-                {{ list.linked(guide) }}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div id="ExtensionSidebarinvis" class="sidebar">
-      <a href="javascript:void(0)" id="ExtensionClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-      <h1 class="sidebartitle">Guide Extensions</h1>
-      <div class="content_wrapper square_list">
-        <ul>
-          {% for tag, posts in collections %}
-            {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
-              {% for guide in collections[tag] %}
-                {{ list.linked(guide) }}
-              {% endfor %}
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
+    {#
     {% if '/ranking-news' in page.url %}
-      <div id="RankingSidebar" class="sidebar">
-        <a href="javascript:void(0)" id="RankingClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Rankings</h1>
-        <div class="content_wrapper square_list">
-          <ul>
-            {% for year, yearPosts in collections.postsByYear %}
-              {% set yearbool = false %}
-              {% for post in yearPosts %}
-                {% if '/ranking-news' in post.url %}
-                  {% set yearbool = true %}
-                {% endif %}
-              {% endfor %}
-
-              {% if yearbool %}
-                <li>{{ year }}
-                  <ul>
-                    {% for post in yearPosts | reverse %}
-                      {% if '/ranking-news' in post.url %}
-                        {% set title = post.data.title | string %}
-                        <li>
-                          <a href="{{post.url}}">
-                            {% if 'Rankings & News' in title %}
-                              {{ title.slice(16,-5) }}
-                            {% else %}
-                              {{ post.data.title }}
-                            {% endif %}
-                          </a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </li>
+      {% call s.sidebar_div("Ranking", "Rankings", true) %}
+        {{ list.rank_linked("ft", true) }}
+      {% endcall %}
+    {% elif '/season-news' in page.url %}
+      {% call s.sidebar_div("Season", "Seasons", true) %}
+        {{ list.rank_linked("seasons", true) }}
+      {% endcall %}
+    #}
+    {% if '/ranking-news' in page.url %}
+      {% call s.sidebar_div("Ranking", "Rankings", true) %}
+        <ul>
+          {% for year, yearPosts in collections.postsByYear %}
+            {% set yearbool = false %}
+            {% for post in yearPosts %}
+              {% if '/ranking-news' in post.url %}
+                {% set yearbool = true %}
               {% endif %}
             {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div id="RankingSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" id="RankingClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Rankings</h1>
-        <div class="content_wrapper square_list">
-          <ul>
-            {% for year, yearPosts in collections.postsByYear %}
-              {% set yearbool = false %}
-              {% for post in yearPosts %}
-                {% if '/ranking-news' in post.url %}
-                  {% set yearbool = true %}
-                {% endif %}
-              {% endfor %}
 
-              {% if yearbool %}
-                <li>{{ year }}
-                  <ul>
-                    {% for post in yearPosts | reverse %}
-                      {% if '/ranking-news' in post.url %}
-                        {% set title = post.data.title | string %}
-                        <li>
-                          <a href="{{post.url}}">
-                            {% if 'Rankings & News' in title %}
-                              {{ title.slice(16,-5) }}
-                            {% else %}
-                              {{ post.data.title }}
-                            {% endif %}
-                          </a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
-
-    {% if '/season-news' in page.url %}
-      <div id="SeasonSidebar" class="sidebar">
-        <a href="javascript:void(0)" id="SeasonClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Seasons</h1>
-        <div class="content_wrapper square_list">
-          <ul>
-            {% for year, yearPosts in collections.postsByYear %}
-              {% set yearbool = false %}
-              {% for post in yearPosts %}
-                {% if '/season-news' in post.url %}
-                  {% set yearbool = true %}
-                {% endif %}
-              {% endfor %}
-
-              {% if yearbool %}
-                <li>{{ year }}
-                  <ul>
-                    {% for post in yearPosts | reverse %}
-                      {% if '/season-news' in post.url %}
-                        {% set title = post.data.title | string %}
-                        <li>
-                          <a href="{{post.url}}">
-                            {% if 'Season Rankings & News' in title %}
-                              {{ title.slice(23,-5) }}
-                            {% else %}
-                              {{ post.data.title }}
-                            {% endif %}
-                          </a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div id="SeasonSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" id="SeasonClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">Seasons</h1>
-        <div class="content_wrapper square_list">
-          <ul>
-            {% for year, yearPosts in collections.postsByYear %}
-              {% set yearbool = false %}
-              {% for post in yearPosts %}
-                {% if '/season-news' in post.url %}
-                  {% set yearbool = true %}
-                {% endif %}
-              {% endfor %}
-
-              {% if yearbool %}
-                <li>{{ year }}
-                  <ul>
-                    {% for post in yearPosts | reverse %}
-                      {% if '/season-news' in post.url %}
-                        {% set title = post.data.title | string %}
-                        <li>
-                          <a href="{{post.url}}">
-                            {% if 'Season Rankings & News' in title %}
-                              {{ title.slice(23,-5) }}
-                            {% else %}
-                              {{ post.data.title }}
-                            {% endif %}
-                          </a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    {% endif %}
-
-    {% if '/ct-creation' in page.url %}
-      <div id="CTSidebar" class="sidebar">
-        <a href="javascript:void(0)" id="CTClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">CT Creation Guide</h1>
-        <div class="content_wrapper square_list">
-          <ul class="ct-creation">
-            {% for day in collections["ct-creation"] %}
-              <li>
-                {% if day.data.day != "NONE" %}
-                  Day {{day.data.day}}: 
-                {% endif %}
-                <a href="{{ day.url }}">{{ day.data.day_title }}</a>
+            {% if yearbool %}
+              <li>{{ year }}
+                <ul>
+                  {% for post in yearPosts | reverse %}
+                    {% if '/ranking-news' in post.url %}
+                      {% set title = post.data.title | string %}
+                      <li>
+                        <a href="{{post.url}}">
+                          {% if 'Rankings & News' in title %}
+                            {{ title.slice(16,-5) }}
+                          {% else %}
+                            {{ post.data.title }}
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
               </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endcall %}
+    {% elif '/season-news' in page.url %}
+      {% call s.sidebar_div("Season", "Seasons", true) %}
+        <ul>
+          {% for year, yearPosts in collections.postsByYear %}
+            {% set yearbool = false %}
+            {% for post in yearPosts %}
+              {% if '/season-news' in post.url %}
+                {% set yearbool = true %}
+              {% endif %}
             {% endfor %}
-          </ul>
-        </div>
-      </div>
-      <div id="CTSidebarinvis" class="sidebar">
-        <a href="javascript:void(0)" id="CTClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-        <h1 class="sidebartitle">CT Creation Guide</h1>
-        <div class="content_wrapper square_list">
-          <ul class="ct-creation">
-            {% for day in collections["ct-creation"] %}
-              <li>
-                {% if day.data.day != "NONE" %}
-                  Day {{day.data.day}}: 
-                {% endif %}
-                <a href="{{ day.url }}">{{ day.data.day_title }}</a>
+
+            {% if yearbool %}
+              <li>{{ year }}
+                <ul>
+                  {% for post in yearPosts | reverse %}
+                    {% if '/season-news' in post.url %}
+                      {% set title = post.data.title | string %}
+                      <li>
+                        <a href="{{post.url}}">
+                          {% if 'Season Rankings & News' in title %}
+                            {{ title.slice(23,-5) }}
+                          {% else %}
+                            {{ post.data.title }}
+                          {% endif %}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endfor %}
+                </ul>
               </li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endcall %}
+    {% elif 'ct-creation' in page.url %}
+      {% call s.sidebar_div("CT", "CT Creation Guide", false) %}
+        {% include "ct-creation.njk" %}
+      {% endcall %}
     {% endif %}
       
     <div id="SidebarHeaders" class="sidebar">
@@ -414,11 +266,9 @@
       <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
       {% if '/ranking-news' in page.url %}
         <h1 class="sidebartitle">Rankings ⓧ</h1>
-      {% endif %}
-      {% if '/season-news' in page.url %}
+      {% elif '/season-news' in page.url %}
         <h1 class="sidebartitle">Seasons ⓧ</h1>
-      {% endif %}
-      {% if '/ct-creation' in page.url %}
+      {% elif '/ct-creation' in page.url %}
         <h1 class="sidebartitle">CT Creation Guide ⓧ</h1>
       {% endif %}
     </div>
@@ -429,13 +279,13 @@
       </div>
       <div id="sidebarOptions">
         <div>
+          <button class="openbtn" id="Headerbtn">☰Table of <span style="display:inline-block;">Contents</span></button>
+        </div>
+        <div>
           <button class="openbtn" id="Guidebtn">☰More Guides</button>
         </div>
         <div>
           <button class="openbtn" id="Extensionbtn">☰Extensions</button>
-        </div>
-        <div>
-          <button class="openbtn" id="Headerbtn">☰Table of <span style="display:inline-block;">Contents</span></button>
         </div>
         <div>
           <button class="openbtn" id="Resourcebtn">☰Other <span style="display:inline-block;">Resources</span></button>
@@ -444,13 +294,11 @@
           <div>
             <button class="openbtn" id="Rankingbtn">☰Rankings</button>
           </div>
-        {% endif %}
-        {% if '/season-news' in page.url %}
+        {% elif '/season-news' in page.url %}
           <div>
             <button class="openbtn" id="Seasonbtn">☰Seasons</button>
           </div>
-        {% endif %}
-        {% if '/ct-creation' in page.url %}
+        {% elif '/ct-creation' in page.url %}
           <div>
             <button class="openbtn" id="CTbtn">☰CT Creation</button>
           </div>

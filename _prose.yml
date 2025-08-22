@@ -40,6 +40,10 @@ prose:
         field:
           element: "text"
           label: "Glossary"
+      - name: "eylanding"
+        field:
+          element: "text"
+          label: "Eylanding's Simplified Guide"
     src/view/guide-extensions:
       - name: "title"
         field:
@@ -69,6 +73,10 @@ prose:
         field:
           element: "text"
           label: "Glossary"
+      - name: "eylanding"
+        field:
+          element: "text"
+          label: "Eylanding's Simplified Guide"
     src/view/ct-creation:
       - name: "title"
         field:
@@ -98,10 +106,10 @@ prose:
         field:
           element: "number"
           label: "Week"
-      - name: "prefix"
+      - name: "short_title"
         field:
           element: "text"
-          label: "Prefix"
+          label: "Short Title"
     src/view/ranking-news:
       - name: "title"
         field:

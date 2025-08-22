@@ -14,9 +14,9 @@ const globals = {
   root: document.documentElement,
   query_root: document.querySelector(':root'),
   qstyle: document.querySelector(':root').style,
-  close_btn_list: ['GuideClose', 'HeaderClose', 'ResourceClose', 'ExtensionClose', 'CTClose'],
-  sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn', 'CTbtn'],
-  sidebar_list: ['GuideSidebar', 'HeaderSidebar', 'ResourceSidebar', 'ExtensionSidebar', 'CTSidebar'],
+  close_btn_list: ['GuideClose', 'HeaderClose', 'ResourceClose', 'ExtensionClose'],
+  sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
+  sidebar_list: ['GuideSidebar', 'HeaderSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
   curr_sidebar: 'none',
   Mobile: isMobileUser(),
   Navbar: false
@@ -55,6 +55,10 @@ window.onload = ()=>{
     globals.close_btn_list.push('SeasonClose');
     globals.sidebar_btn_list.push('Seasonbtn');
     globals.sidebar_list.push('SeasonSidebar');
+  } else if(window.location.href.includes('/ct-creation')){
+    globals.close_btn_list.push('CTClose');
+    globals.sidebar_btn_list.push('CTbtn');
+    globals.sidebar_list.push('CTSidebar');
   }
 }
 

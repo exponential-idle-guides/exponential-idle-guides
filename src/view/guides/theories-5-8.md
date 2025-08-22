@@ -5,6 +5,7 @@ author: "LE★Baldy, Snaeky, & Xelaroc"
 contributors: "the Amazing Community"
 draft: true
 order: 5
+eylanding: "T5-7 T8-R9"
 ---
 
 {% import "embed-yt.njk" as yt %}

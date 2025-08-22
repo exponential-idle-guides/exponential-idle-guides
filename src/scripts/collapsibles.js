@@ -22,21 +22,22 @@ const closed_char = '\u25B6';
 const open_char = '\u25BC';
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
+const supported = ["h2", "h3", "h4"];
 
 const url_regex = /^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g;
-const main_url_paths =  ["#outer-preface","#outer-appendix"];
 function get_url_paths(url) {
-  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return main_url_paths;
+  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return [];
   return [.../^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.exec(url)[1].matchAll(/[a-z\-0-9]+/g)];
 }
 
+
 function get_skiplist(url) {
-  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return main_url_paths;
+  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return [];
   const path = get_url_paths(url);
   const s = full_skiplist[path[0]][path[1]];
   return s === undefined ? [] : [,...s];
 }
-const skiplist = get_skiplist(current_url);
+const skiplist = [...get_skiplist(current_url), ...supported.map((h) => ".fake-" + h)];
 
 function strRepl(str) {
   return str ? slugify(str, { lower: true, strict: true }) : "";
@@ -100,8 +101,18 @@ if (path.length == 2) {
   }
 }
 
+// any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be turned into h2, h3, and h4 elements (retaining class)
+for (const h_type of supported) {
+  for (const h of $(".fake-" + h_type)) {
+    var h_new = $("<" + h_type + ">");
+    $.each($(h)[0].attributes, function(idx, attr) {h_new.attr(attr.nodeName, attr.nodeValue);});
+    h_new.html($(h).html());
+    $(h).replaceWith(h_new);
+  };
+};
+
 // any non-md headers with ids will be given permalink
-["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {
+supported.reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {
   if(!/\" aria\-label\=\"Permalink\: /g.test($(h).html())){
     $(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + strRepl($(h).html()) + '" aria-label="Permalink: ' + strRepl($(h).html()) + '">#</a>')
   }
@@ -109,6 +120,7 @@ if (path.length == 2) {
 })
 
 // any headers with no id will be given permalink and an id (not first h2)
+
 for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")], []).slice(1)) {
   const new_h = strRepl($(h).html());
   $(h).attr('id', new_h);
@@ -117,11 +129,16 @@ for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")
 
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_dict = ["h2", "h3", "h4"].reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) => "#" + strRepl($(c).attr('id'))), indexes: [...$(h)].map((c) =>$(c).index())}}), {});
+const h_dict = supported.reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) => "#" + strRepl($(c).attr('id'))), indexes: [...$(h)].map((c) =>$(c).index())}}), {});
 
 const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
 for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
-  h.html(closed_char + ' ' + h.html());
+  const open_close_regex = [new RegExp('^\s*' + open_char + '.*', "m"), new RegExp('^\s*' + closed_char + '.*', "m")];
+  if (open_close_regex[0].test(h.html())) {
+    h.html(h.html().replace(new RegExp('^\s*' + open_char + '.*', "m"), closed_char));
+  } else if (!open_close_regex[1].test(h.html())) {
+    h.html(closed_char + ' ' + h.html());
+  }
   h.addClass('collapsible collapsible-closed');
 }
 const coll = $('.collapsible');
@@ -244,6 +261,9 @@ if (collap_dict.h2.ids.length) {
   });
 }
 
+// any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
+supported.forEach(function(h_type, i) {$(".fake-" + h_type).remove()});
+
 function open_collapsible(header) {
   header.classList.toggle("active");
   const content = header.nextElementSibling;
@@ -262,6 +282,10 @@ function close_collapsible(header) {
 }
 
 for (let i = 0; i < coll.length; i++) {
+  // open and close once to make sure it closes
+  // often breaks if in the sidebar for unknown reasons
+  open_collapsible(coll[i]);
+  close_collapsible(coll[i]);
   coll[i].addEventListener("click", function() {
     if (this.nextElementSibling.style.display === "block") {
       close_collapsible(this);

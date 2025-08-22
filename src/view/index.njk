@@ -48,10 +48,9 @@ home: true
   </ul>
 
   <h3>Guide to Custom Theory Creation</h3>
-
   {% set prefaces = collections["ct-preface"] | ct_week(-1) %}
   {% if prefaces | length > 0 %}
-    <h4 id="outer-preface">Prefaces</h4>
+    <div class="fake-h4" id="outer-preface">Prefaces</div>
     <ul class="ct-creation">
       {% for preface in prefaces %}
         <li>{{ preface | ct_linked | safe }}</li>
@@ -81,7 +80,7 @@ home: true
 
   {% set appendices = collections["ct-appendix"] | ct_week(-1) %}
   {% if appendices | length > 0 %}
-    <h4 id="outer-appendix">Appendices</h4>
+    <div class="fake-h4" id="outer-appendix">Appendices</div>
     <ul class="ct-creation">
       {% for appendix in appendices %}
         <li>{{ appendix | ct_linked | safe }}</li>
