@@ -55,6 +55,10 @@ window.onload = ()=>{
     globals.close_btn_list.push('SeasonClose');
     globals.sidebar_btn_list.push('Seasonbtn');
     globals.sidebar_list.push('SeasonSidebar');
+  } else if(window.location.href.includes('/ct-creation')){
+    globals.close_btn_list.push('CTClose');
+    globals.sidebar_btn_list.push('CTbtn');
+    globals.sidebar_list.push('CTSidebar');
   }
 }
 

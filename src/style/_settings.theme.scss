@@ -10,6 +10,8 @@
   --palette-stroke-collapsible-header: var(--palette-stroke);
   --palette-fill-collapsible-closed: #1b1b1b;
   --palette-fill-collapsible-open: #111111;
+  --palette-fill-sidebar-collapsible-closed: #1f1f1f;
+  --palette-fill-sidebar-collapsible-open: #1a1a1a;
 
 	--palette-fill-table-headers-light: #7c7c7c;
 	--palette-fill-table-headers-dark: #434343;
@@ -18,8 +20,10 @@
 
   --palette-fill-sidebar-hover: #444;
   --palette-fill-sidebar: #111;
-  --palette-stroke-sidebar-base: #d3bbbb;
-  --palette-stroke-sidebar-header-hover: #fff;
+  --palette-stroke-sidebar-base: #d3cccc;
+  --palette-stroke-sidebar-link: #d3dddd;
+  --palette-stroke-sidebar-link-hover: #d3cccc;
+  --palette-stroke-sidebar-header: #fff;
 
   --strat-red: var(--palette-stroke-warning);
   --strat-blue: #4665f0;
@@ -41,6 +45,14 @@
   --palette-stroke-collapsible-header: var(--palette-stroke-hc);
   --palette-fill-collapsible-closed: #e0e0e0;
   --palette-fill-collapsible-open: #b8b8b8;
+  --palette-fill-sidebar-collapsible-closed: #cecece;
+  --palette-fill-sidebar-collapsible-open: #b8b8b8;
+  --palette-fill-sidebar-hover: #939393;
+  --palette-fill-sidebar: #e8e8e8;
+  --palette-stroke-sidebar-base: #464646;
+  --palette-stroke-sidebar-link: #333;
+  --palette-stroke-sidebar-link-hover: #464646;
+  --palette-stroke-sidebar-header: #333;
 	--palette-fill-table-headers-light: #e2e2e2;
 	--palette-fill-table-headers-dark: #bfbfbf;
 	--palette-fill-table-headers-neutral: #d1d1d1;
@@ -59,6 +71,14 @@
   --palette-stroke-collapsible-header: var(--palette-stroke-hc);
   --palette-fill-collapsible-closed: #e0e0e0;
   --palette-fill-collapsible-open: #b8b8b8;
+  --palette-fill-sidebar-collapsible-closed: #cecece;
+  --palette-fill-sidebar-collapsible-open: #b8b8b8;
+  --palette-fill-sidebar-hover: #939393;
+  --palette-fill-sidebar: #e8e8e8;
+  --palette-stroke-sidebar-base: #464646;
+  --palette-stroke-sidebar-link: #333;
+  --palette-stroke-sidebar-link-hover: #464646;
+  --palette-stroke-sidebar-header: #333;
 	--palette-fill-table-headers-light: #e2e2e2;
 	--palette-fill-table-headers-dark: #bfbfbf;
 	--palette-fill-table-headers-neutral: #d1d1d1;
@@ -77,9 +97,17 @@
   --palette-fill-shadow: rgba(255, 255, 255, 0.25);
   --palette-fill-collapsible-closed: #1b1b1b;
   --palette-fill-collapsible-open: #111111;
+  --palette-fill-sidebar-collapsible-closed: #1f1f1f;
+  --palette-fill-sidebar-collapsible-open: #1a1a1a;
 	--palette-fill-table-headers-light: #7c7c7c;
 	--palette-fill-table-headers-dark: #434343;
 	--palette-fill-table-headers-neutral: #5f5f5f;
 	--palette-stroke-table-headers: #cdcdcd;
+  --palette-fill-sidebar-hover: #444;
+  --palette-fill-sidebar: #111;
+  --palette-stroke-sidebar-base: #d3cccc;
+  --palette-stroke-sidebar-link: #d3dddd;
+  --palette-stroke-sidebar-link-hover: #d3cccc;
+  --palette-stroke-sidebar-header: #fff;
   --black-white: white;
 }

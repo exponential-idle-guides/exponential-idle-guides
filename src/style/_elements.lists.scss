@@ -39,3 +39,9 @@ i {
 li.invisible {
   list-style-type: none;
 }
+
+ul.ct-creation, ol.ct-creation {
+  li {
+    list-style-type: none !important;
+  }
+}

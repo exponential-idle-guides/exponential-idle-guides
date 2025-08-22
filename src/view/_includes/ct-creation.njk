@@ -1,0 +1,39 @@
+{% set prefaces = collections["ct-preface"] | ct_week(-1) %}
+{% if prefaces | length > 0 %}
+  <div class="fake-h4" id="outside-prefixes"></div>
+  <ul class="ct-creation">
+    {% for preface in prefaces %}
+      <li>{{ preface | ct_linked | safe }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% for week in collections["ct-creation-weeks"] %}
+  <h4>Week {{week}}</h4>
+  <ul class="ct-creation">
+    {% for preface in collections["ct-preface"] | ct_week(week) %}
+      <li>{{ preface | ct_linked | safe }}</li>
+    {% endfor %}
+
+    {% set days = collections["ct-day"] | ct_week(week) %}
+    {% if days | length > 0 %}
+      {% for day in days %}
+        <li>{{ day | ct_linked | safe }}</li>
+      {% endfor %}
+    {% endif %}
+
+    {% for appendix in collections["ct-appendix"] | ct_week(week) %}
+      <li>{{ appendix | ct_linked | safe }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
+{% set appendices = collections["ct-appendix"] | ct_week(-1) %}
+{% if appendices | length > 0 %}
+  <div class="fake-h4" id="outside-appendices"></div>
+  <ul class="ct-creation">
+    {% for appendix in appendices %}
+      <li>{{ appendix | ct_linked | safe }}</li>
+    {% endfor %}
+  </ul>
+{% endif %}

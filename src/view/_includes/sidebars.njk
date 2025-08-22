@@ -1,0 +1,22 @@
+{% macro sidebar_div(base, title, square) %}
+  {% if square %}
+    {% set s = "square_list" %}
+  {% else %}
+    {% set s = "" %}
+  {% endif %}
+  <div id="{{base}}Sidebar" class="sidebar">
+    <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+    <h1 class="sidebartitle">{{title}}</h1>
+    <div class="content_wrapper {{s}}">
+      {{ caller() | safe}}
+    </div>
+  </div>
+  <div id="{{base}}Sidebarinvis" class="sidebar">
+    <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+    <h1 class="sidebartitle">{{title}}</h1>
+    <div class="content_wrapper {{s}}">
+      {{ caller() | safe}}
+    </div>
+  </div>
+{% endmacro %}
+
