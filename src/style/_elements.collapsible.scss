@@ -29,9 +29,11 @@
     background-color: var(--palette-fill-collapsible-closed);
   }
 }
+
 .sidebar {
   .collapsible {
     width: var(--sidebar-collapsible-width) !important;
+    margin-top: 0.5rem;
   }
   .collapsible-closed {
     background-color: var(--palette-fill-sidebar-collapsible-closed);
