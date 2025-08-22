@@ -212,8 +212,11 @@ module.exports = config => {
           post.data.prefix = "Day " + post.data.day + ": ";
           break;
         case "preface":
-          if (post.data.week == -1) break;
-          post.data.prefix = "Preface : ";
+          if (post.data.week == -1) {
+            post.data.prefix = "";
+          } else {
+            post.data.prefix = "Preface : ";
+          }
           break;
         case "appendix":
           post.data.week = post.data.week == -1 ? last_week + 1 : post.data.week;
