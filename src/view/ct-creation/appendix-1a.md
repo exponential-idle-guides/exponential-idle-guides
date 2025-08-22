@@ -61,7 +61,7 @@ http-server
 
 Upon using this command, one or more links will be output. Simply copy this link onto a browser to open the Theory Simulator. The first thing to do after it's opened is to open the settings menu (cog icon), then tick on the option 'Show unofficial CTs'. This will allow us to simulate unofficial custom theories, including our theory, after we have implemented it.
 
-# Implementing a theory
+## Implementing a theory
 
 All contents below are work in progress.
 
