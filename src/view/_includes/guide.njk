@@ -1,6 +1,5 @@
 {% extends "default.njk" %}
 {% import "list-link.njk" as list %}
-{% import "sidebars.njk" as s %}
 
 {% set nav %}
   {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections["ct-creation"]] %}
@@ -20,7 +19,7 @@
   </nav>
 {% endset %}
 
-{% set ranking_bools = ['/ranking-news' in page.url,'/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url] %}
+{% set ranking_bools = ['/ranking-news' in page.url, '/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url] %}
 
 {% block main %}
 
@@ -70,13 +69,13 @@
   
   {{ content | safe }}
   {#
-  {% if '/rankings-main' in page.url %}
+  {% if ranking_bools[1] %}
     {{ list.rank_linked("ft", false) }}
-  {% elif '/seasons-main' in page.url %}
+  {% elif ranking_bools[3] %}
     {{ list.rank_linked("seasons", false) }}
   {% endif %}
   #}
-  {% if '/rankings-main' in page.url %}
+  {% if ranking_bools[1] %}
     {% for year, yearPosts in collections.postsByYear %}
       {% set yearbool = false %}
       {% for post in yearPosts %}
@@ -105,7 +104,7 @@
         </ul>
       {% endif %}
     {% endfor %}
-  {% elif '/seasons-main' in page.url %}
+  {% elif ranking_bools[3] %}
     {% for year, yearPosts in collections.postsByYear %}
       {% set yearbool = false %}
       {% for post in yearPosts %}
@@ -135,175 +134,9 @@
       {% endif %}
     {% endfor %}
   {% endif %}
-  
 {% endblock %}
 
+
 {% block sidebar %}
-  {% if not home %}
-    {% call s.sidebar_div("Header", "Table of Contents", true) %}
-      {% set tocs = content | toc %}
-      {% if tocs %}
-        {{ content | toc | safe }}
-      {% else %}
-        <p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>
-      {% endif %}
-    {% endcall %}
-
-    {% call s.sidebar_div("Guide", "Guides", true) %}
-      <ul>
-        {%- for guide in collections.guides -%}
-          <li>
-            <a href="{{guide.url}}">{{ guide.data.title }}</a>
-          </li>
-        {%- endfor -%}
-      </ul>
-    {% endcall %}
-
-    {% call s.sidebar_div("Resource", "Resources", true) %}
-      {% include 'tools.njk' %}
-    {% endcall %}
-
-    {% call s.sidebar_div("Extension", "Guide Extensions", true) %}
-      <ul>
-        {% for tag, posts in collections %}
-          {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
-            {% for guide in collections[tag] %}
-              {{ list.linked(guide) }}
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </ul>
-    {% endcall %}
-    
-    {#
-    {% if '/ranking-news' in page.url %}
-      {% call s.sidebar_div("Ranking", "Rankings", true) %}
-        {{ list.rank_linked("ft", true) }}
-      {% endcall %}
-    {% elif '/season-news' in page.url %}
-      {% call s.sidebar_div("Season", "Seasons", true) %}
-        {{ list.rank_linked("seasons", true) }}
-      {% endcall %}
-    #}
-    {% if '/ranking-news' in page.url %}
-      {% call s.sidebar_div("Ranking", "Rankings", true) %}
-        <ul>
-          {% for year, yearPosts in collections.postsByYear %}
-            {% set yearbool = false %}
-            {% for post in yearPosts %}
-              {% if '/ranking-news' in post.url %}
-                {% set yearbool = true %}
-              {% endif %}
-            {% endfor %}
-
-            {% if yearbool %}
-              <li>{{ year }}
-                <ul>
-                  {% for post in yearPosts | reverse %}
-                    {% if '/ranking-news' in post.url %}
-                      {% set title = post.data.title | string %}
-                      <li>
-                        <a href="{{post.url}}">
-                          {% if 'Rankings & News' in title %}
-                            {{ title.slice(16,-5) }}
-                          {% else %}
-                            {{ post.data.title }}
-                          {% endif %}
-                        </a>
-                      </li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endcall %}
-    {% elif '/season-news' in page.url %}
-      {% call s.sidebar_div("Season", "Seasons", true) %}
-        <ul>
-          {% for year, yearPosts in collections.postsByYear %}
-            {% set yearbool = false %}
-            {% for post in yearPosts %}
-              {% if '/season-news' in post.url %}
-                {% set yearbool = true %}
-              {% endif %}
-            {% endfor %}
-
-            {% if yearbool %}
-              <li>{{ year }}
-                <ul>
-                  {% for post in yearPosts | reverse %}
-                    {% if '/season-news' in post.url %}
-                      {% set title = post.data.title | string %}
-                      <li>
-                        <a href="{{post.url}}">
-                          {% if 'Season Rankings & News' in title %}
-                            {{ title.slice(23,-5) }}
-                          {% else %}
-                            {{ post.data.title }}
-                          {% endif %}
-                        </a>
-                      </li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endcall %}
-    {% elif 'ct-creation' in page.url %}
-      {% call s.sidebar_div("CT", "CT Creation Guide", false) %}
-        {% include "ct-creation.njk" %}
-      {% endcall %}
-    {% endif %}
-      
-    <div id="SidebarHeaders" class="sidebar">
-      <h1 class="sidebartitle">More Guides ⓧ</h1>
-      <h1 class="sidebartitle">Table of Contents ⓧ</h1>
-      <h1 class="sidebartitle">Other Resources ⓧ</h1>
-      <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
-      {% if '/ranking-news' in page.url %}
-        <h1 class="sidebartitle">Rankings ⓧ</h1>
-      {% elif '/season-news' in page.url %}
-        <h1 class="sidebartitle">Seasons ⓧ</h1>
-      {% elif '/ct-creation' in page.url %}
-        <h1 class="sidebartitle">CT Creation Guide ⓧ</h1>
-      {% endif %}
-    </div>
-    
-    <div id="sidebarMain">
-      <div id="sidebarNavigation">
-        <button id="button_nav" class="openbtn">☰Navigation</button>
-      </div>
-      <div id="sidebarOptions">
-        <div>
-          <button class="openbtn" id="Headerbtn">☰Table of <span style="display:inline-block;">Contents</span></button>
-        </div>
-        <div>
-          <button class="openbtn" id="Guidebtn">☰More Guides</button>
-        </div>
-        <div>
-          <button class="openbtn" id="Extensionbtn">☰Extensions</button>
-        </div>
-        <div>
-          <button class="openbtn" id="Resourcebtn">☰Other <span style="display:inline-block;">Resources</span></button>
-        </div>
-        {% if '/ranking-news' in page.url %}
-          <div>
-            <button class="openbtn" id="Rankingbtn">☰Rankings</button>
-          </div>
-        {% elif '/season-news' in page.url %}
-          <div>
-            <button class="openbtn" id="Seasonbtn">☰Seasons</button>
-          </div>
-        {% elif '/ct-creation' in page.url %}
-          <div>
-            <button class="openbtn" id="CTbtn">☰CT Creation</button>
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  {% endif %}
+  {% include "sidebar.njk" %}
 {% endblock %}

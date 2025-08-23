@@ -1,0 +1,74 @@
+{% macro tool(id, title, link = "") %}
+  <div onmouseover="hover_in_popup('{{ id }}');" onmouseout="hover_out_popup('{{ id }}');">
+    <li>
+      {% if link == "" %}
+        {{ title | safe }}
+      {% else %}
+        <a href="{{ link }}">{{ title }}: </a>
+      {% endif %}
+      <span onclick="click_popup('{{ id }}');" class="resources">⍰</span>
+      <div class="hide" id="{{ id }}">{{ caller() | safe}}</div>
+    </li>
+  </div>
+{% endmacro %}
+
+<ul>
+  {% call tool("Eylanding", "Eylanding's Simplified Guides", "https://guide.eylanding.com/") %}
+    A simplified version of these guides for the less math inclined and for easier comprehension. Made by <a href="https://github.com/Eylanding">Eylanding</a>.
+  {% endcall %}
+
+  {% call tool("StarCalc", "Star Calculator", "https://conicgames.github.io/exponentialidle/stars.html") %}
+    This will tell you how to optimize your stars.
+  {% endcall %}
+  
+  {% call tool("StudentCalc", "Student Calculator", "https://conicgames.github.io/exponentialidle/students.html") %}
+    This will tell you how to optimize your students.
+  {% endcall %}
+  
+  {% set theory_sim_title %}
+    <a href="https://exponential-developers.github.io/sim-3.0/">Theory Sim</a> and <a href="/guides/theory-sim/">Sim Guide: </a>
+  {% endset %}
+  {% call tool("TheorySim", theory_sim_title) %}
+    For theories with max milestones, this gives optimal strategy, time of publication, multiplier, and more.
+  {% endcall %}
+  
+  {% call tool("PhiTauCalc", "Phi*Tau Calculator", "https://replit.com/@LEBaldy2002/phitaucalc") %}
+    Will output estimate Phi*Tau, Phi, and Tau values needed to reach an input F(t).
+  {% endcall %}
+  
+  {% call tool("GradCalc", "Graduation Calculator", "https://replit.com/@LEBaldy2002/gradcalc?v=1") %}
+    Will output optimal graduation mark based on current students, phi, and tau values. Instructions on how to run are found in <a href="/guides/intro-to-grad/#graduation-routing">Introduction to Graduation.</a>
+  {% endcall %}
+  
+  {% call tool("SaveOrganizer", "Save Game Organizer", "https://ex-save-organizer.web.app/") %}
+    Storage mechanism for saves due to game not having cloud save. Allows for easy access.
+  {% endcall %}
+  
+  {% call tool("TauTracker", "Tau Tracker", "https://bit.ly/3IzvAir") %}
+    If you want to track your daily tau gains and contribute to daily tau rates graphs, request for access on this sheet. <a href="https://bit.ly/3Ii14sE">F(t)</a> and <a href="https://bit.ly/33Wh44Q">Tau</a> graphs available.
+  {% endcall %}
+  
+  {% call tool("VideoGuides", "Snaeky's Video Guides", "https://www.youtube.com/channel/UCABRn80riRHN8r_ovCYLjrQ") %}
+    Some guides for a few of the theories and other things you might like.
+  {% endcall %}
+  
+  {% call tool("Leaderboards", "Exponential Idle Leaderboards", "https://docs.google.com/spreadsheets/d/1VlHgt1y4GWCDph3zPfsm2foX40NK5aM0IUfZlEgy_ac/") %}
+    Leaderboards for highest τ and publication multi of each theory, highest positive and negative ρ of each lemma, highest overall and minigame stars, and a monthly updated cross platform F(t) rankings.
+  {% endcall %}
+
+  {% call tool("HackerTools", "CT Quick Purchase Testers", "https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co") %}
+    Get confused with all the variables in BaP, FP, and TC? Get tired in calculating the ratio of <mjx-container class="MathJax" jax="SVG" style="direction: ltr; position: relative;"><svg style="overflow: visible; min-height: 1px; min-width: 1px; vertical-align: -0.339ex;" xmlns="http://www.w3.org/2000/svg" width="1.967ex" height="1.339ex" role="img" focusable="false" viewBox="0 -442 869.6 592" aria-hidden="true"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z" style="stroke-width: 3;"></path></g><g data-mml-node="mn" transform="translate(466,-150) scale(0.707)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z" style="stroke-width: 3;"></path></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline" style="top: 0px; left: 0px; clip: rect(1px, 1px, 1px, 1px); -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; position: absolute; padding: 1px 0px 0px 0px; border: 0px; display: block; width: auto; overflow: hidden;"><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>c</mi><mn>1</mn></msub></math></mjx-assistive-mml></mjx-container> to other variables? Tired of checkig the sim for purchasig variable? Here introduce a convenient tool to instantly check which variables to buy next! All u need is the levels of the variables at the current stage, and it will calculate automatically for u! Made by Hackzzzzzz.
+  {% endcall %}
+  
+  {% call tool("ExWiki", "Exponential Idle Wiki", "https://exponential-idle.fandom.com/wiki/Exponential_Idle_Wiki") %}
+    Additional information about the game. Do not follow for strategies.
+  {% endcall %}
+  
+  {% call tool("LookupSheet", "Variable and Supremacy Lookup", "https://docs.google.com/spreadsheets/d/17lJ4IIIXfDAoO-TA76pwjNoZd2W9tQI9KRjENcs5Ybw") %}
+    Lookup for the first F(t) that you can buy a variable as well as the F(t) to buy a certain supremacy upgrade given ψ=0.
+  {% endcall %}
+  
+  {% call tool("F(t)Leaderboards", "Android Leaderboard F(t) Sheet", "https://docs.google.com/spreadsheets/d/1tXw4WE5GbVdbp4qC5ZzdYw1cmO9RzhVbBmLDXM7yESg/") %}
+    Daily updated and collected data from the android leaderboards about F(t) with useful graphs for growth and comparison.
+  {% endcall %}
+</ul>

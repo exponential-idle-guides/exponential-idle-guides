@@ -1,13 +1,13 @@
 :root {
-  --sidebar-padding: 18px;
-  --sidebar-collapsible-width: var(--sidebar-width) - 2 * var(--sidebar-padding);
+  --collapsible-padding: 18px;
+  --sidebar-collapsible-width: var(--sidebar-width) - 2 * var(--collapsible-padding);
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
   color: var(--palette-stroke);
   cursor: pointer;
-  padding: var(--sidebar-padding);
+  padding: var(--collapsible-padding);
   width: 100%;
   border: none;
   text-align: left;
@@ -45,6 +45,12 @@
     background-color: var(--palette-fill-sidebar-collapsible-open);
     &:hover {
       background-color: var(--palette-fill-sidebar-collapsible-closed);
+    }
+  }
+  .content {
+    ul, ol {
+      margin-top: 0;
+      margin-bottom: var(--list-margin-top);
     }
   }
 }

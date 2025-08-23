@@ -1,11 +1,20 @@
+:root {
+  --list-margin-top: 0.5em;
+  --list-padding-left: 1em;
+}
+
 li {
   line-height: var(--body-line-height);
-  margin-top: 0.5em;
+  margin-top: 0.25em;
 }
 
 ul, ol {
-  padding-left: 1em;
-  margin-top: 0.5em;
+  padding-left: var(--list-padding-left);
+  margin-top: var(--list-margin-top);
+}
+ul ul, ol ol, ul ul ul, ol ol ol {
+  padding-left: var(--list-padding-left);
+  margin-top: 0;
 }
 
 ul {

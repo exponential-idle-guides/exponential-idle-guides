@@ -1,4 +1,5 @@
 import { globals } from './init.js';
+import { close_all_popups } from './popup.js';
 
 function Navigation(nav_id='sidebarOptions'){
   const nav = document.getElementById('button_nav').style;
@@ -27,6 +28,7 @@ export function closeSidebar(){
     globals.qstyle.setProperty('--sidebar-text-transition-time', '0.3s');
   }
   if(globals.Navbar){Navigation();}
+  close_all_popups();
 }
 
 function testSidebar(e, list, bool=true, stop=false){

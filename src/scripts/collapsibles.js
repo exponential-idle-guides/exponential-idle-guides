@@ -129,16 +129,20 @@ for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")
 
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_dict = supported.reduce((a,h) => ({...a,[h]: {ids: [...$(h)].map((c) => "#" + strRepl($(c).attr('id'))), indexes: [...$(h)].map((c) =>$(c).index())}}), {});
+const h_dict = supported.reduce((a,h) => {
+  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): true})];
+  return ({...a,[h]: {ids: h_arr.map((c) => "#" + strRepl($(c).attr('id'))), indexes: h_arr.map((c) =>$(c).index())}})
+}, {});
+const sidebar_h_dict = supported.reduce((a,h) => {
+  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): false})];
+  return ({...a,[h]: {ids: h_arr.map((c) => "#" + strRepl($(c).attr('id'))), indexes: h_arr.map((c) =>$(c).index())}})
+}, {});
 
 const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
+const sidebar_collap_dict = copy_dict(sidebar_h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
+
 for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
-  const open_close_regex = [new RegExp('^\s*' + open_char + '.*', "m"), new RegExp('^\s*' + closed_char + '.*', "m")];
-  if (open_close_regex[0].test(h.html())) {
-    h.html(h.html().replace(new RegExp('^\s*' + open_char + '.*', "m"), closed_char));
-  } else if (!open_close_regex[1].test(h.html())) {
-    h.html(closed_char + ' ' + h.html());
-  }
+  h.html(closed_char + ' ' + h.html());
   h.addClass('collapsible collapsible-closed');
 }
 const coll = $('.collapsible');
@@ -261,6 +265,7 @@ if (collap_dict.h2.ids.length) {
   });
 }
 
+
 // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
 supported.forEach(function(h_type, i) {$(".fake-" + h_type).remove()});
 
@@ -295,16 +300,25 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
-$('#openCollapsibles')[0].addEventListener("click", function(e){
-  coll.each(function() {
-    open_collapsible(this);
+try{
+  $('#openCollapsibles')[0].addEventListener("click", function(e){
+    coll.each(function() {
+      open_collapsible(this);
+    });
   });
-});
-$('#closeCollapsibles')[0].addEventListener("click", function(e){
-  coll.each(function() {
-    close_collapsible(this);
+  $('#closeCollapsibles')[0].addEventListener("click", function(e){
+    coll.each(function() {
+      close_collapsible(this);
+    });
   });
-});
+} catch(error) {
+  location.reload();
+  console.log("reloaded");
+}
+
+export function close_all_sidebar_collapsibles() {
+  Object.values(sidebar_collap_dict).forEach(((h) => h.ids.forEach((id) => close_collapsible($(id)[0]))));
+}
 
 function url_collapsibles(url) {
   const url_header = url.match(/[a-z0-9-]*$/g)[0];

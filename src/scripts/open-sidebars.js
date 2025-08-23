@@ -1,6 +1,10 @@
 import { globals } from './init.js';
+import { close_all_popups } from './popup.js';
+import { close_all_sidebar_collapsibles } from './collapsibles.js';
 
 function openMobileSidebars(sidebars, open=true){
+  close_all_popups();
+  close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-content-padding', '8px');
 
@@ -27,6 +31,8 @@ function openMobileSidebars(sidebars, open=true){
 }
 
 function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
+  close_all_popups();
+  close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   var max_width = 0;
   const mainwidth = document.getElementById("sidebarMain").offsetWidth;
@@ -61,6 +67,7 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
     globals.qstyle.setProperty('--sidebar-width', output + "px");
     globals.qstyle.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
     globals.qstyle.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
+    globals.qstyle.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.02 + "px");
   }
 }
 
