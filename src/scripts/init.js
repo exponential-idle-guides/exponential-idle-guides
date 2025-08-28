@@ -1,6 +1,7 @@
 import {init_color_scheme as color} from './color-scheme.js';
-import { openSidebar } from './open-sidebars.js';
-import { closeSidebar } from './close-sidebars.js';
+import { openSidebar } from './sidebar/open-sidebars.js';
+import { closeSidebar } from './sidebar/close-sidebars.js';
+import { init_sidebar_btns as sidebar_btns } from './sidebar/sidebar-btns.js';
 
 // Returns true if the user is on a mobile device, false otherwise.
 // Credit: woodsybread (Discord)
@@ -60,6 +61,8 @@ window.onload = ()=>{
     globals.sidebar_btn_list.push('CTbtn');
     globals.sidebar_list.push('CTSidebar');
   }
+
+  sidebar_btns();
 }
 
 window.addEventListener("change", function(e){

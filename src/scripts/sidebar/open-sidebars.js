@@ -1,6 +1,6 @@
-import { globals } from './init.js';
-import { close_all_popups } from './popup.js';
-import { close_all_sidebar_collapsibles } from './collapsibles.js';
+import { globals } from '../init.js';
+import { close_all_popups } from '../popup.js';
+import { close_all_sidebar_collapsibles } from '../collapsibles.js';
 
 function openMobileSidebars(sidebars, open=true){
   close_all_popups();
@@ -35,7 +35,7 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
   close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   var max_width = 0;
-  const mainwidth = document.getElementById("sidebarMain").offsetWidth;
+  const main_width = document.getElementById("sidebarMain").offsetWidth;
   
   for (const sidebar of sidebars) {
     document.getElementById(sidebar + "invis").style.width = "auto";
@@ -52,20 +52,13 @@ function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
     globals.qstyle.setProperty('--sidebar-width', 'auto');
     globals.qstyle.setProperty('--btn-marginLeft', 'auto');
   } else {
-    const view_max = globals.style_var.getPropertyValue('--sidebar-desktop-max-width');
-    var output;
-    if (max_header_width >= window.visualViewport.width * view_max){
-      output = max_header_width + window.visualViewport.width * 0.02;
-    } else if (max_width >= window.visualViewport.width * view_max) {
-      output = window.visualViewport.width * view_max;
-    } else {
-      output = max_width;
-    }
-    if((output + mainwidth) >= window.visualViewport.width){
-      output = window.visualViewport.width * 0.96 - mainwidth;
-    }
+    const width_cap = Math.min(
+      window.visualViewport.width * globals.style_var.getPropertyValue('--sidebar-desktop-max-width'),
+      window.visualViewport.width - main_width
+    );
+    var output = Math.min(max_width, width_cap);
     globals.qstyle.setProperty('--sidebar-width', output + "px");
-    globals.qstyle.setProperty('--btn-marginLeft', (output + window.visualViewport.width * 0.04) + "px");
+    globals.qstyle.setProperty('--btn-marginLeft', output + "px");
     globals.qstyle.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
     globals.qstyle.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.02 + "px");
   }

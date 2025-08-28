@@ -13,8 +13,9 @@
     <script type="module" async defer src="/scripts/init.js"></script>
     <script type="text/javascript" defer src="/scripts/jquery-functions.js"></script>
     <script type="module" defer src="/scripts/color-scheme.js"></script>
-    <script type="module" defer src="/scripts/open-sidebars.js"></script>
-    <script type="module" defer src="/scripts/close-sidebars.js"></script>
+    <script type="module" defer src="/scripts/sidebar/open-sidebars.js"></script>
+    <script type="module" defer src="/scripts/sidebar/close-sidebars.js"></script>
+    <script type="module" defer src="/scripts/sidebar/sidebar-btns.js"></script>
     <script type="module" defer src="/scripts/collapsibles.js"></script>
     <script type="module" defer src="/scripts/eylanding.js"></script>
     <script type="module" defer src="/scripts/markdown-tables.js"></script>
@@ -43,12 +44,8 @@
   </head>
   <body>
     {% block sidebar %}{% endblock %}
-
+    
     <header class="page-section header" id="top">
-      <button class="btn-color-scheme-toggle">
-        <span class="light"><img alt="Light mode toggle" src="/images/sun.svg"></span>
-        <span class="dark"><img alt="Dark mode toggle" src="/images/moon.svg"></span>
-      </button>
       <h1 class="site_title"><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>
@@ -68,25 +65,13 @@
         </div>
       {% endif %}
     </main>
-    
-    <footer class="page-section footer">
-      <div class="footer__section footer__section--main">
-        {{ nav | safe }}
-      </div>
-      <div class="footer__section">
-        <p>Any feedback?   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
-          Submit it to us.
-        </a>
-        <p>Want to see the responses? <a href="https://bit.ly/ex-guide-suggestion-responses">
-          Take a look.
-        </a>
-      </div>
-      <div class="footer__section">
-        <p>Guides copyright <a href="https://github.com/LEBaldy">LE★Baldy</a>, <a href="https://github.com/Snaeks">Snaeky</a>, and the rest of the <a href="https://github.com/orgs/exponential-idle-guides/people">Ex Guides Team</a>.
-        <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
-      </div>
-    </footer>
-    <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
+
+    <div id="buttons">
+      <button class="btn-color-scheme-toggle">
+        <span class="light"><img alt="Light mode toggle" src="/images/sun.svg"></span>
+        <span class="dark"><img alt="Dark mode toggle" src="/images/moon.svg"></span>
+      </button>
+      <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -131,5 +116,24 @@
           <polygon points="4,5.075 20,5.075 12,18.925" fill="currentColor"/>
         </svg>
       </span>
+    </div>
+    
+    <footer class="page-section footer">
+      <div class="footer__section footer__section--main">
+        {{ nav | safe }}
+      </div>
+      <div class="footer__section">
+        <p>Any feedback?   <a href="https://docs.google.com/forms/d/e/1FAIpQLSdje1OWIgI1vqMry6U1E51bxh3VE4tLilTdRyqun1aVmP7pag/viewform">
+          Submit it to us.
+        </a>
+        <p>Want to see the responses? <a href="https://bit.ly/ex-guide-suggestion-responses">
+          Take a look.
+        </a>
+      </div>
+      <div class="footer__section">
+        <p>Guides copyright <a href="https://github.com/LEBaldy">LE★Baldy</a>, <a href="https://github.com/Snaeks">Snaeky</a>, and the rest of the <a href="https://github.com/orgs/exponential-idle-guides/people">Ex Guides Team</a>.
+        <p>Website created by <a href="https://ticklethepanda.dev">TickleThePanda</a>.
+      </div>
+    </footer>
   </body>
 </html>

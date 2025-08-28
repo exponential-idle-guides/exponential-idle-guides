@@ -13,6 +13,7 @@
 
   --sidebar-height:100%;
   --sidebar-width:0%;
+  --sidebar-desktop-max-width: 0.4;
   --sidebar-column-gap:0;
   --sidebar-column-count:1;
 
@@ -20,9 +21,7 @@
   --sidebar-header-font-size:1.5em;
   --sidebar-transition-direction:margin-left;
 
-  --sidebar-square-layer1: 0;
-  --sidebar-square-layer2: 1.5em;
-  --sidebar-square-layer3: 3em;
+  --sidebar-square-margin-left: 0.2em;
 }
 
 .sidebar {
@@ -38,8 +37,6 @@
   overflow-y:scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;
-  padding-left: var(--sidebar-padding-lr);
-  padding-right: var(--sidebar-padding-lr);
   padding-bottom: var(--sidebar-padding-b);
 
   &::-webkit-scrollbar {
@@ -57,17 +54,17 @@
     top: min(3.5vh, 3.5vw, 20px);
     font-size: var(--sidebar-header-font-size);
     color: var(--palette-stroke-sidebar-header);
-    padding-top: 0px;
     padding: 0;
     margin-top: min(3.5vh, 3.5vw, 20px);
     transition: var(--sidebar-text-transition-time);
+    padding-left: var(--sidebar-padding-lr);
+    padding-right: var(--sidebar-padding-lr);
   }
   .closebtn {
     position: absolute;
     top: min(3.5vh, 3.5vw, 20px);
     right: min(30px, 3.5vw);
     font-size: var(--sidebar-header-font-size);
-    margin-left: min(50px, 15vw);
     color: var(--palette-stroke-sidebar-base);
     &:hover {
       text-decoration:none;
@@ -82,9 +79,16 @@
     display: block;
     transition: var(--sidebar-text-transition-time);
     margin-bottom: var(--sidebar-padding-b);
+    padding-left: var(--sidebar-padding-lr);
+    padding-right: var(--sidebar-padding-lr);
   }
 }
 
+@counter-style sidebar_btn {
+  system: cyclic;
+  symbols: '☰';
+  suffix: ""; 
+}
 
 .openbtn {
   max-width: var(--btn-width);
@@ -98,6 +102,14 @@
   text-align:left;
   &:hover {
     background-color: var(--palette-fill-sidebar-hover);
+  }
+  ul {
+    margin-top: 0;
+    li.sidebar_btn_contents {
+      padding: 0;
+      margin: 0;
+      list-style: sidebar_btn !important;
+    }
   }
 }
 
@@ -161,7 +173,7 @@ the sidenav list icons (less padding and smaller font size) */
     column-count: var(--sidebar-column-count);
     column-gap: var(--sidebar-column-gap);
 
-    //padding-left: var(--sidebar-square-layer1);
+    margin-left: var(--sidebar-square-margin-left);
     list-style: square_level1 !important;
     li {
       list-style-type: square_level1 !important;
@@ -185,11 +197,8 @@ the sidenav list icons (less padding and smaller font size) */
 
       column-count: 1;
       column-gap: 0;
-
-      //padding-left: var(--sidebar-square-layer2);
-      &.square_test, .square_test {
-        padding-left: 0 !important;
-      }
+      
+      margin-left: var(--sidebar-square-margin-left);
       list-style: square_level2 !important;
       li {
         list-style-type: square_level2 !important;
@@ -198,9 +207,12 @@ the sidenav list icons (less padding and smaller font size) */
           line-height: 1em;
         }
       }
+      &.square_test, .square_test {
+        padding-left: 0 !important;
+      }
       ul, ol {
         list-style: square_level3 !important;
-        //padding-left: var(--sidebar-square-layer3);
+        margin-left: var(--sidebar-square-margin-left);
         li {
           list-style-type: square_level3 !important;
           &::marker {

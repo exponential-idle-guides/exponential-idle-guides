@@ -1,5 +1,6 @@
-import { globals } from './init.js';
-import { close_all_popups } from './popup.js';
+import { globals } from '../init.js';
+import { close_all_popups } from '../popup.js';
+import { redim_all_sidebar_btns as redim_btns } from './sidebar-btns.js';
 
 function Navigation(nav_id='sidebarOptions'){
   const nav = document.getElementById('button_nav').style;
@@ -11,6 +12,7 @@ function Navigation(nav_id='sidebarOptions'){
   nav.color = globals.style_var.getPropertyValue(stroke);
   document.getElementById(nav_id).style.display = display;
   globals.Navbar = !(globals.Navbar);
+  if (globals.Navbar) redim_btns();
 }
 
 export function closeSidebar(){
@@ -60,3 +62,5 @@ window.addEventListener('click', function(e){
     Navigation();
   }
 })
+
+window.closeSidebar = closeSidebar;
