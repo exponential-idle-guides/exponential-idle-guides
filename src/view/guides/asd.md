@@ -8,17 +8,6 @@ draft: false
 order: 9
 ---
 
-import "embed-yt.njk" as yt
-
-<iframe
-  width="560"
-  height="315"
-  src="https://youtube.com/embed/6NfqiX_WFaM"
-  title="YouTube video player"
-  loading="lazy"
-  allowfullscreen>
-</iframe>
-
 ## Overall setting
 
 These tips in general are very helpful when starting out and further down the line. These are not required, but do help, some more than others.
@@ -65,7 +54,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('e3devm2D-3s')
+<yt id="e3devm2D-3s">15-Puzzle Easy, Medium, and Hard Video Example</yt>
 
 ## Torus Puzzle
 
@@ -85,7 +74,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('e8f1ohtGAW8')
+<yt id="e8f1ohtGAW8">Torus Easy Video Example</yt>
 
 ### Medium
 
@@ -112,7 +101,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('6mQNMKwsOi8')
+<yt id="6mQNMKwsOi8">Torus Medium Video Example</yt>
 
 ### Hard
 
@@ -144,7 +133,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('6NfqiX_WFaM')
+<yt data-video-id="6NfqiX_WFaM">Torus Hard Video Example</yt>
 
 ## Arrow Puzzle
 
@@ -165,7 +154,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('p0Jr52NlhFw'}
+<yt id="p0Jr52NlhFw">Arrow Easy Video Example</yt>
 
 ### Medium
 
@@ -187,7 +176,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('n1lXPOeouT4')
+<yt id="n1lXPOeouT4">Arrow Medium Video Example</yt>
 
 ### Propagation (for Hard and Expert)
 
@@ -213,7 +202,7 @@ The algorithm goes as follows:
 
 #### Example
 
-yt.embed('wedx6RXGVz8')
+<yt id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example</yt>
 
 ### Hard and Expert
 
@@ -233,7 +222,7 @@ You will want to read [how to propagate](/guides/asd/#propagation-for-hard-and-e
 
 #### Example
 
-yt.embed('p073qSqL7EU')
+<yt id="p073qSqL7EU">Arrow Hard and Expert Video Example</yt>
 
 #### Hard Lookup Table
 
@@ -243,4 +232,4 @@ Because Hard Arrow only has 8 possible end cases, it is practical to learn and m
 
 Video of solves for each case:
 
-yt.embed('dFGlcaV_GNk')
+<yt id="dFGlcaV_GNk">Arrow Hard All Parodies Video Example</yt>
