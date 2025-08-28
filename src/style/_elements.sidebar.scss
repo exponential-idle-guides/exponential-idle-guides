@@ -116,6 +116,8 @@
 #sidebarMain {
   width: auto;
   position: fixed;
+  top: 0;
+  left: 0;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
   margin-left: var(--btn-marginLeft);
   margin-top: var(--btn-marginTop);
