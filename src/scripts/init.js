@@ -25,13 +25,8 @@ const globals = {
 globals.style_var = getComputedStyle(globals.query_root);
 export {globals};
 
-window.onload = ()=>{
+window.onload = () => {
   color();
-
-  const blockquote_list = document.getElementsByTagName('blockquote');
-  for(const blockquote of blockquote_list){
-    blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
-  }
 
   if (globals.Mobile) {
     globals.qstyle.setProperty('--btn-width', '30vw');
@@ -60,6 +55,11 @@ window.onload = ()=>{
     globals.close_btn_list.push('CTClose');
     globals.sidebar_btn_list.push('CTbtn');
     globals.sidebar_list.push('CTSidebar');
+  }
+
+  const blockquote_list = document.getElementsByTagName('blockquote');
+  for(const blockquote of blockquote_list){
+    blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
   }
 
   sidebar_btns();
