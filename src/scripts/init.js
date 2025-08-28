@@ -57,11 +57,6 @@ window.onload = () => {
     globals.sidebar_list.push('CTSidebar');
   }
 
-  const blockquote_list = document.getElementsByTagName('blockquote');
-  for(const blockquote of blockquote_list){
-    blockquote.innerHTML = blockquote.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
-  }
-
   sidebar_btns();
 }
 

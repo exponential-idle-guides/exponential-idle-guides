@@ -1,10 +1,10 @@
 import { globals } from '../init.js';
 import { close_all_popups } from '../popup.js';
-//import { close_all_sidebar_collapsibles } from '../collapsibles.js';
+import { close_all_sidebar_collapsibles } from '../collapsibles.js';
 
 function openMobileSidebars(sidebars, open=true){
   close_all_popups();
-  //close_all_sidebar_collapsibles();
+  close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-content-padding', '8px');
 
@@ -32,7 +32,7 @@ function openMobileSidebars(sidebars, open=true){
 
 function openDesktopSidebars(sidebars, sidebarheaders='SidebarHeaders'){
   close_all_popups();
-  //close_all_sidebar_collapsibles();
+  close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   var max_width = 0;
   const main_width = document.getElementById("sidebarMain").offsetWidth;
