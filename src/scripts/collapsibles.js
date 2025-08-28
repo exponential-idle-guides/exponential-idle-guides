@@ -313,7 +313,8 @@ function add_button_event_listeners() {
   });
 }
 
-var attempts = 0
+var attempts = 0;
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 while (attempts < 5) {
   try{
     add_button_event_listeners();
