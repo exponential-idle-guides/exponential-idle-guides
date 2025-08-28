@@ -54,7 +54,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="e3devm2D-3s">15-Puzzle Easy, Medium, and Hard Video Example</yt>
+<yt data-video-id="e3devm2D-3s">15-Puzzle Easy, Medium, and Hard Video Example By Baldy</yt>
 
 ## Torus Puzzle
 
@@ -74,7 +74,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="e8f1ohtGAW8">Torus Easy Video Example</yt>
+<yt data-video-id="e8f1ohtGAW8">Torus Easy Video Example By Baldy</yt>
 
 ### Medium
 
@@ -101,7 +101,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="6mQNMKwsOi8">Torus Medium Video Example</yt>
+<yt data-video-id="6mQNMKwsOi8">Torus Medium Video Example By Baldy</yt>
 
 ### Hard
 
@@ -133,7 +133,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="6NfqiX_WFaM">Torus Hard Video Example</yt>
+<yt data-video-id="6NfqiX_WFaM">Torus Hard Video Example By Baldy</yt>
 
 ## Arrow Puzzle
 
@@ -154,7 +154,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="p0Jr52NlhFw">Arrow Easy Video Example</yt>
+<yt data-video-id="p0Jr52NlhFw">Arrow Easy Video Example By Baldy</yt>
 
 ### Medium
 
@@ -176,7 +176,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="n1lXPOeouT4">Arrow Medium Video Example</yt>
+<yt data-video-id="n1lXPOeouT4">Arrow Medium Video Example By Baldy</yt>
 
 ### Propagation (for Hard and Expert)
 
@@ -202,7 +202,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example</yt>
+<yt data-video-id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example By Baldy</yt>
 
 ### Hard and Expert
 
@@ -222,7 +222,7 @@ You will want to read [how to propagate](/guides/asd/#propagation-for-hard-and-e
 
 #### Example
 
-<yt data-video-id="p073qSqL7EU">Arrow Hard and Expert Video Example</yt>
+<yt data-video-id="p073qSqL7EU">Arrow Hard and Expert Video Example By Baldy</yt>
 
 #### Hard Lookup Table
 
@@ -232,4 +232,4 @@ Because Hard Arrow only has 8 possible end cases, it is practical to learn and m
 
 Video of solves for each case:
 
-<yt data-video-id="dFGlcaV_GNk">Arrow Hard All Parodies Video Example</yt>
+<yt data-video-id="dFGlcaV_GNk">Arrow Hard All Parodies Video Example By Snaeky</yt>
