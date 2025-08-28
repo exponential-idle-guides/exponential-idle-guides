@@ -18,7 +18,7 @@ const globals = {
   close_btn_list: ['GuideClose', 'HeaderClose', 'ResourceClose', 'ExtensionClose'],
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['GuideSidebar', 'HeaderSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
-  general_btn_list: ['.back-to-top-link', '#closeCollapsibles', '#openCollapsibles', 'btn-color-scheme-toggle'],
+  general_btn_list: ['.back-to-top-link', '#closeCollapsibles', '#openCollapsibles', '.btn-color-scheme-toggle'],
   curr_sidebar: 'none',
   Mobile: isMobileUser(),
   Navbar: false
