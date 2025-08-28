@@ -7,7 +7,6 @@ draft: true
 order: 8
 eylanding: "CT WSP SL EF CSR2 FI FP RZ MF"
 ---
-{% import "embed-yt.njk" as yt %}
 
 ### Custom Theory Basics
 
