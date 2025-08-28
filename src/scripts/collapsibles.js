@@ -300,7 +300,7 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
-try{
+function add_button_event_listeners() {
   $('#openCollapsibles')[0].addEventListener("click", function(e){
     coll.each(function() {
       open_collapsible(this);
@@ -311,9 +311,22 @@ try{
       close_collapsible(this);
     });
   });
-} catch(error) {
+}
+
+var attempts = 0
+while (attempts < 5) {
+  try{
+    add_button_event_listeners();
+    break;
+  } catch(error) {
+    console.log("failed button load", error);
+    await sleep(1000);
+    attempts++;
+  }
+}
+if (attempts >= 5) {
+  console.log("Too many attempts to access buttons. Reloading...");
   location.reload();
-  console.log("reloaded");
 }
 
 export function close_all_sidebar_collapsibles() {
