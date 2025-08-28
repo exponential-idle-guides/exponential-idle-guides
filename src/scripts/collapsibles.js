@@ -300,7 +300,7 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
-function add_button_event_listeners() {
+document.addEventListener('DOMContentLoaded', async function() {
   $('#openCollapsibles')[0].addEventListener("click", function(e){
     coll.each(function() {
       open_collapsible(this);
@@ -311,24 +311,7 @@ function add_button_event_listeners() {
       close_collapsible(this);
     });
   });
-}
-
-var attempts = 0;
-const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
-while (attempts < 5) {
-  try{
-    add_button_event_listeners();
-    break;
-  } catch(error) {
-    console.log("failed button load", error);
-    await sleep(1000);
-    attempts++;
-  }
-}
-if (attempts >= 5) {
-  console.log("Too many attempts to access buttons. Reloading...");
-  location.reload();
-}
+});
 
 export function close_all_sidebar_collapsibles() {
   Object.values(sidebar_collap_dict).forEach(((h) => h.ids.forEach((id) => close_collapsible($(id)[0]))));

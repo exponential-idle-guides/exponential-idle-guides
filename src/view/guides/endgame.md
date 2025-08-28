@@ -9,8 +9,6 @@ order: 6
 eylanding: "Endgame"
 ---
 
-{% import "embed-yt.njk" as yt %}
-
 **DO T9 IMMEDIATELY TO UNLOCK CUSTOM THEORIES**
 
 ### Theory 9
@@ -36,7 +34,7 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
-{{ yt.embed('d7mWhOkD7TM') }}
+<yt data-video-id="d7mWhOkD7TM'">Research 9 Swapping Pre-ee20k Video Example And Commentary By Snaeky</yt>
 
 ###### Also see [t stacking](/guides/endgame/#t-stacking)
 
@@ -46,7 +44,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro
 
 ###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
-{{ yt.embed('c8ekMzXWD_g') }}
+<yt data-video-id="c8ekMzXWD_g">Resarch 9 Swapping Post-ee20k Video Example and Commentary By Snaeky</yt>
 
 ### How to properly use the Graduation Calculator
 
@@ -83,11 +81,11 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 ###### Commentary
 
-{{ yt.embed('AYI4U7Aob6o') }}
+<yt data-video-id="AYI4U7Aob6o">Theory 5 Active Strategy Video Example and Commentary By Snaeky</yt>
 
 ###### No commentary
 
-{{ yt.embed('pM-pjSnMByw') }}
+<yt data-video-id="pM-pjSnMByw">Theory 5 Active Strategy Video Example By Snaeky</yt>
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying \\(q_1\\) and manually

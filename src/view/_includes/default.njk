@@ -5,14 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% if description %}<meta name="description" content="{{ description }}">{% endif %}
     <link href="/style/main.css" rel="stylesheet">
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js">
-    </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/scripts/slugify.js"></script>
-    <script type="module" defer src="/scripts/init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml-full.min.js"></script>
+    <script type="module" async src="/scripts/init.js"></script>
+    <script type="module" async src="/scripts/color-scheme.js"></script>
     <script type="text/javascript" defer src="/scripts/jquery-functions.js"></script>
-    <script type="module" defer src="/scripts/color-scheme.js"></script>
     <script type="module" defer src="/scripts/sidebar/open-sidebars.js"></script>
     <script type="module" defer src="/scripts/sidebar/close-sidebars.js"></script>
     <script type="module" defer src="/scripts/sidebar/sidebar-btns.js"></script>
@@ -22,9 +20,10 @@
     <script type="module" defer src="/scripts/color-tags.js"></script>
     <script type="module" defer src="/scripts/blockquote-copy.js"></script>
     <script type="module" defer src="/scripts/popup.js"></script>
-    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
-    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/javascript.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script type="module" defer src="/scripts/embed-yt.js"></script>
+    <script defer src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <script defer src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/javascript.min.js"></script>
+    <script defer>hljs.highlightAll();</script>
     <script type="text/x-mathjax-config">
       MathJax.Hub.Config({
         showMathMenu: false,
@@ -33,7 +32,7 @@
         SVG: { linebreaks: { automatic: true } }
       });
     </script>
-    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-CQWRWZCSZW"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-CQWRWZCSZW"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
