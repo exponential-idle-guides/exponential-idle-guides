@@ -154,16 +154,16 @@ last_row: false;
 ###### Commentary
 (By Snaeky)
 
-<yt id="AYI4U7Aob6o">Theory 5 Active Strategy Video Example and Commentary By Snaeky</yt>
+<yt data-video-id="AYI4U7Aob6o">Theory 5 Active Strategy Video Example and Commentary By Snaeky</yt>
 
 ###### No commentary
 (By Snaeky)
 
-<yt id="pM-pjSnMByw">Theory 5 Active Strategy Video Example By Snaeky</yt>
+<yt data-video-id="pM-pjSnMByw">Theory 5 Active Strategy Video Example By Snaeky</yt>
 
 (By Playspout)
 
-<yt id="PWjEADc1P7M">Theory 5 Active Strategy Video Example By Playspout</yt>
+<yt data-video-id="PWjEADc1P7M">Theory 5 Active Strategy Video Example By Playspout</yt>
 
 T5 will always give its best results from active play. However, after
 step 3, you can still get good results while autobuying $q_1$ and
@@ -275,7 +275,7 @@ simply making the graph steeper in $x$ or $y$ direction, depending on the value 
 
 The optimal publication multiplier is $4$-$6$. You will swap from 0/1/1 → 0/0/2 near $e67$. The strategy for manual buy before 4 milestones is to only manual buy $q_1$ and $c_1$ cheap ($e1$ less $\rho$) and the rest full auto. After milestone 5, turn it on full autobuy for idle. For active, follow the strat described in the [theory sim guide](/guides/theory-sim) or watch the video below.
 
-<yt id="wnKLkd0zXwI">Theory 7 Active Strategy Video Example and Commentary By Snaeky</yt>
+<yt data-video-id="wnKLkd0zXwI">Theory 7 Active Strategy Video Example and Commentary By Snaeky</yt>
 
 #### T7 milestone route
 
@@ -348,7 +348,7 @@ You can find the autoprestige used for R9 Swapping here: [Equation](/guides/intr
 
 ###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
-<yt id="Klw9lLPNqdY">Research 9 Swapping Pre-ee20k Video Example And Commentary By Snaeky</yt>
+<yt data-video-id="Klw9lLPNqdY">Research 9 Swapping Pre-ee20k Video Example And Commentary By Snaeky</yt>
 
 ### Theory 8 (55σ / 12k)
 

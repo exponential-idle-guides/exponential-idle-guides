@@ -54,7 +54,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="e3devm2D-3s">15-Puzzle Easy, Medium, and Hard Video Example</yt>
+<yt data-video-id="e3devm2D-3s">15-Puzzle Easy, Medium, and Hard Video Example</yt>
 
 ## Torus Puzzle
 
@@ -74,7 +74,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="e8f1ohtGAW8">Torus Easy Video Example</yt>
+<yt data-video-id="e8f1ohtGAW8">Torus Easy Video Example</yt>
 
 ### Medium
 
@@ -101,7 +101,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="6mQNMKwsOi8">Torus Medium Video Example</yt>
+<yt data-video-id="6mQNMKwsOi8">Torus Medium Video Example</yt>
 
 ### Hard
 
@@ -154,7 +154,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="p0Jr52NlhFw">Arrow Easy Video Example</yt>
+<yt data-video-id="p0Jr52NlhFw">Arrow Easy Video Example</yt>
 
 ### Medium
 
@@ -176,7 +176,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="n1lXPOeouT4">Arrow Medium Video Example</yt>
+<yt data-video-id="n1lXPOeouT4">Arrow Medium Video Example</yt>
 
 ### Propagation (for Hard and Expert)
 
@@ -202,7 +202,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example</yt>
+<yt data-video-id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example</yt>
 
 ### Hard and Expert
 
@@ -222,7 +222,7 @@ You will want to read [how to propagate](/guides/asd/#propagation-for-hard-and-e
 
 #### Example
 
-<yt id="p073qSqL7EU">Arrow Hard and Expert Video Example</yt>
+<yt data-video-id="p073qSqL7EU">Arrow Hard and Expert Video Example</yt>
 
 #### Hard Lookup Table
 
@@ -232,4 +232,4 @@ Because Hard Arrow only has 8 possible end cases, it is practical to learn and m
 
 Video of solves for each case:
 
-<yt id="dFGlcaV_GNk">Arrow Hard All Parodies Video Example</yt>
+<yt data-video-id="dFGlcaV_GNk">Arrow Hard All Parodies Video Example</yt>

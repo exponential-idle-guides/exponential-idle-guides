@@ -100,7 +100,7 @@ Note: If you are not doing the active strat, then simply turn off $c_1$ and $c_2
 
 __The video below is only good for early $\tau_{1}$ between $1e150$ and $1e250$.__
 
-<yt id="lFSAFIpWkb0">Theory 1 Active Strategy Video Example and Commentary By Snaeky</yt>
+<yt data-video-id="lFSAFIpWkb0">Theory 1 Active Strategy Video Example and Commentary By Snaeky</yt>
 
 #### T1 milestone route
 
@@ -224,7 +224,7 @@ to run idle overnight.
 
 When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
-<yt id="XcatIVPd8Jg">Theory 2 Active Strategy Video Example and Commentary By Snaeky</yt>
+<yt data-video-id="XcatIVPd8Jg">Theory 2 Active Strategy Video Example and Commentary By Snaeky</yt>
 
 #### T2 milestone route
 
@@ -353,7 +353,7 @@ repeat.
 
 ###### Commentary
 
-<yt id="kqnBfdOI34c">Theory 3 Active Strategy Video Example By Snaeky</yt>
+<yt data-video-id="kqnBfdOI34c">Theory 3 Active Strategy Video Example By Snaeky</yt>
 
 #### T3 milestone route
 
