@@ -9,15 +9,5 @@ document.addEventListener('DOMContentLoaded', async function() {
     yt_new.attr("title", yt.html().replaceAll(String.fromCharCode(0x00ad),""));
     if (yt.parent().is("p")) yt.parent().replaceWith(yt_new);
     else yt.replaceWith(yt_new);
-    console.log(yt);
-    console.log(yt.attr("data-video-id"), "https://youtube.com/embed/" + yt.attr("data-video-id"), yt.html());
-    //yt_new.insertAfter(yt);
   })
 })
-
-Object.keys(tag_colors).forEach((key) => {
-  $(key).each(function() {
-    $(this).attr("style",tag_colors[key] + " !important;");
-    $(this).changeElementType("span");
-  })
-});

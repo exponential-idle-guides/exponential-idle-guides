@@ -18,6 +18,7 @@ const globals = {
   close_btn_list: ['GuideClose', 'HeaderClose', 'ResourceClose', 'ExtensionClose'],
   sidebar_btn_list: ['Guidebtn', 'Headerbtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['GuideSidebar', 'HeaderSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
+  general_btn_list: ['.back-to-top-link', '#closeCollapsibles', '#openCollapsibles', 'btn-color-scheme-toggle'],
   curr_sidebar: 'none',
   Mobile: isMobileUser(),
   Navbar: false
@@ -27,6 +28,15 @@ export {globals};
 
 window.onload = () => {
   color();
+  
+  const px_to_num = (s) => Number(s.substring(0, s.length - 2));
+  globals.general_btn_list.forEach((btn) => {
+    if (px_to_num($(btn).css("height")) > px_to_num($(btn).css("width"))) {
+      $($(btn).css("height", $("#closeCollapsibles").css("width")));
+    } else {
+      $($(btn).css("width", $(btn).css("height")));
+    }
+  });
 
   if (globals.Mobile) {
     globals.qstyle.setProperty('--btn-width', '30vw');

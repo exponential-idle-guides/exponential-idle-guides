@@ -65,7 +65,7 @@ export function redim_all_sidebar_btns() {
 		btn.css("width", "auto");
 		const bounds = sidebar_btn_true_bounds("#" + id);
 		const ul = $($("#" + id + " li.sidebar_btn_contents").parent()[0]);
-		const px_to_num = (s) => Number(s.substring(0, s.length - 2))
+		const px_to_num = (s) => Number(s.substring(0, s.length - 2));
 		const padding = ["top", "right", "bottom", "left"].map((d) => px_to_num(btn.css("padding-"+ d)) + px_to_num(ul.css("padding-"+ d)));
 		padding
 		btn.css("width", (bounds.width + padding[1] + padding[3]) + "px");
