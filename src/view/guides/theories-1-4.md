@@ -8,7 +8,7 @@ order: 4
 eylanding: "T1-4"
 ---
 
-{% import "embed-yt.njk" as yt %}
+import "embed-yt.njk" as yt
 
 ### Theory basics
 
@@ -102,7 +102,7 @@ Note: If you are not doing the active strat, then simply turn off $c_1$ and $c_2
 
 __The video below is only good for early $\tau_{1}$ between $1e150$ and $1e250$.__
 
-{{ yt.embed('lFSAFIpWkb0') }}
+yt.embed('lFSAFIpWkb0')
 
 #### T1 milestone route
 
@@ -226,7 +226,7 @@ to run idle overnight.
 
 When you get to Theory 3 at ee7k, move on to pushing Theory 3 when active and running T2 overnight. The above is simply an option if you rather not work on T3 now.
 
-{{ yt.embed('XcatIVPd8Jg') }}
+yt.embed('XcatIVPd8Jg')
 
 #### T2 milestone route
 
@@ -355,7 +355,7 @@ repeat.
 
 ###### Commentary
 
-{{ yt.embed('kqnBfdOI34c') }}
+yt.embed('kqnBfdOI34c')
 
 #### T3 milestone route
 
