@@ -300,7 +300,7 @@ for (let i = 0; i < coll.length; i++) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', async function() {
+document.addEventListener('DOMContentLoaded', function() {
   $('#openCollapsibles')[0].addEventListener("click", function(e){
     coll.each(function() {
       open_collapsible(this);

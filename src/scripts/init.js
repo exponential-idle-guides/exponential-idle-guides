@@ -1,6 +1,4 @@
 import {init_color_scheme as color} from './color-scheme.js';
-import { openSidebar } from './sidebar/open-sidebars.js';
-import { closeSidebar } from './sidebar/close-sidebars.js';
 import { init_sidebar_btns as sidebar_btns } from './sidebar/sidebar-btns.js';
 
 // Returns true if the user is on a mobile device, false otherwise.
@@ -69,13 +67,3 @@ window.onload = () => {
 
   sidebar_btns();
 }
-
-window.addEventListener("change", function(e){
-  const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-  globals.qstyle.setProperty('--sidebar-column-count', columns);
-  if(globals.curr_sidebar!='none'){
-    globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
-    closeSidebar();
-    openSidebar(globals.sidebar_list, true);
-  }
-});

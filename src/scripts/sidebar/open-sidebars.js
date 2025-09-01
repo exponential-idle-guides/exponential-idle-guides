@@ -1,6 +1,7 @@
 import { globals } from '../init.js';
 import { close_all_popups } from '../popup.js';
 import { close_all_sidebar_collapsibles } from '../collapsibles.js';
+import { closeSidebar } from './close-sidebars.js';
 
 function openMobileSidebars(sidebars, open=true){
   close_all_popups();
@@ -96,3 +97,13 @@ window.addEventListener("click", function(e){
     }
   }
 })
+
+window.addEventListener("change", function(e){
+  const columns = screen.availHeight > screen.availWidth ? '2' : '3';
+  globals.qstyle.setProperty('--sidebar-column-count', columns);
+  if(globals.curr_sidebar!='none'){
+    globals.sidebar_list.sort(function(x,y){ return x == curr_sidebar ? -1 : y == curr_sidebar ? 1 : 0; });
+    closeSidebar();
+    openSidebar(globals.sidebar_list, true);
+  }
+});
