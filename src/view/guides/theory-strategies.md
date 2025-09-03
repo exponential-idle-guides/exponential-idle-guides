@@ -2623,7 +2623,7 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 **BHRewind strategy**
 
 This strategy allows $t$ to pass multiple times over a time period with high $\zeta'$ for massive $\delta$ gains. 
-It is more effevtive the more $b$ levels you have.
+It is more effective the more $b$ levels you have.
 
 - Once $t$ reaches the set value, let the black hole lock at the previous zero
 - Once the black hole is locked at the zero, manually disable it
