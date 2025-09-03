@@ -153,17 +153,17 @@ T6 is the most powerful theory in endgame, with several players reaching well ov
 
 - [T6<green>SNAX x.xxexxx</green>](#t6snax-xxxexxx)&nbsp; — &nbsp;Semi-Idle
 
-- [T6<red>No</red><blue>C34</blue><green>d</green>](#t6noc34d)&nbsp; — &nbsp;Active
+- [T6<blue>C125</blue><green>d</green>](#t6c125d)&nbsp; — &nbsp;Active
 
-- [T6<red>No</red><blue>C34</blue>](#t6noc34)&nbsp; — &nbsp;Idle
+- [T6<blue>C125</blue>](#t6c125)&nbsp; — &nbsp;Idle
 
-- [T6<red>No</red><blue>C1234</blue><green>d</green>](#t6noc1234d)&nbsp; — &nbsp;Active
+- [T6<blue>C5</blue><green>d</green>](#t6c5d)&nbsp; — &nbsp;Active
 
-- [T6<red>No</red><blue>C1234</blue>](#t6noc1234)&nbsp; — &nbsp;Idle
+- [T6<blue>C5</blue>](#t6c5)&nbsp; — &nbsp;Idle
 
-- [T6<red>No</red><blue>C345</blue><green>d</green>](#t6noc345d)&nbsp; — &nbsp;Active
+- [T6<blue>C12</blue><green>d</green>](#t6c12d)&nbsp; — &nbsp;Active
 
-- [T6<red>No</red><blue>C345</blue>](#t6noc345)&nbsp; — &nbsp;Idle
+- [T6<blue>C12</blue>](#t6c12)&nbsp; — &nbsp;Idle
 
 - [T6<blue>C4</blue><green>d</green>](#t6c4d)&nbsp; — &nbsp;Active
 
@@ -268,7 +268,11 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 - [CSR2<green>XL x.xx</green>](#csr2xl-xxx)&nbsp; — &nbsp;**VERY** Active pre-e500$\rho$, Active post-e500$\rho$
 
+- [CSR2<green>XLPT</green>](#csr2xlpt)&nbsp; — &nbsp;Active
+
 - [CSR2<green>d</green>](#csr2d)&nbsp; — &nbsp;Active
+
+- [CSR2<green>PT</green>](#csr2pt)&nbsp; — &nbsp;Semi-Idle
 
 - [CSR2](#csr2)&nbsp; — &nbsp;Idle
 
@@ -1330,10 +1334,10 @@ Strategy Credits:
 - Snaeky
 - XLII
 
-### T6<red>No</red><blue>C34</blue><green>d</green>
+### T6<blue>C125</blue><green>d</green>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
+Caption: T6<blue>C125</blue><green>d</green>;
 
 |       |                                           |
 | ----- | ----------------------------------------- |
@@ -1347,10 +1351,10 @@ Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
 | $c_4$ | REDX                                      |
 | $c_5$ | CHECK                                     |
 
-### T6<red>No</red><blue>C34</blue>
+### T6<blue>C125</blue>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C34</blue>;
+Caption: T6<blue>C125</blue>;
 
 |       |       |
 | ----- | ----- |
@@ -1364,10 +1368,10 @@ Caption: T6<red>No</red><blue>C34</blue>;
 | $c_4$ | REDX  |
 | $c_5$ | CHECK |
 
-### T6<red>No</red><blue>C1234</blue><green>d</green>
+### T6<blue>C5</blue><green>d</green>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C1234</blue><green>d</green>;
+Caption: T6<blue>C5</blue><green>d</green>;
 
 |       |                                                            |
 | ----- | ---------------------------------------------------------- |
@@ -1384,10 +1388,10 @@ Caption: T6<red>No</red><blue>C1234</blue><green>d</green>;
 **Note:**
 If you need to, you can idle recovery by autobuying $q_1$ and $r_1$ until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying $q_1$ and $r_1$ at e1 ratio the entire publication.
 
-### T6<red>No</red><blue>C1234</blue>
+### T6<blue>C5</blue>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C1234</blue>;
+Caption: T6<blue>C5</blue>;
 
 |       |       |
 | ----- | ----- |
@@ -1401,10 +1405,10 @@ Caption: T6<red>No</red><blue>C1234</blue>;
 | $c_4$ | REDX  |
 | $c_5$ | CHECK |
 
-### T6<red>No</red><blue>C345</blue><green>d</green>
+### T6<blue>C12</blue><green>d</green>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
+Caption: T6<blue>C12</blue><green>d</green>;
 
 |       |                                           |
 | ----- | ----------------------------------------- |
@@ -1420,10 +1424,10 @@ Caption: T6<red>No</red><blue>C34</blue><green>d</green>;
 
 This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 
-### T6<red>No</red><blue>C345</blue>
+### T6<blue>C12</blue>
 
 Class: strat;
-Caption: T6<red>No</red><blue>C345</blue>;
+Caption: T6<blue>C12</blue>;
 
 |       |       |
 | ----- | ----- |
@@ -2126,6 +2130,10 @@ Caption: EF<green>SNAX</green>;
 | $a_3$     | CHECK                      | CHECK                         |
 | | | [FOOT;]**If below $e150\rho$, don’t autobuy $a_1$ after recovery.** |
 
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>SNAX</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
+
+The levels it shows after each variable are the last levels you should buy them to in this publication.
+
 Strategy Credits:
 
 - Snaeky
@@ -2137,18 +2145,22 @@ Strategy Credits:
 Class: strat;
 Caption: EF<green>d</green>;
 
-|           |                                           |
-| --------- | ----------------------------------------- |
-| $\dot{t}$ | CHECK                                     |
-| $q_1$     | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$     | CHECK                                     |
-| $b_1$     | CHECK                                     |
-| $b_2$     | CHECK                                     |
-| $c_1$     | CHECK                                     |
-| $c_2$     | CHECK                                     |
-| $a_1$     | When cost is $\frac{1}{4}$ of $q_2$ cost  |
-| $a_2$     | CHECK                                     |
-| $a_3$     | CHECK                                     |
+| INVIS     | Recovery (pub mult $\lt1$)  | $\tau$ Gain (pub mult $\gt1$) |
+| --------- | --------------------------- | ----------------------------- |
+| $\dot{t}$ | CHECK                       | CHECK                         |
+| $q_1$     | | When cost is $\frac{1}{10}$ of $q_2$ cost                 |
+| $q_2$     | CHECK                       | CHECK                         |
+| $b_1$     | CHECK                       | REDX                          |
+| $b_2$     | CHECK                       | REDX                          |
+| $c_1$     | CHECK                       | REDX                          |
+| $c_2$     | CHECK                       | REDX                          |
+| $a_1$     | | When cost is $\frac{2}{5}$ of $q_2$ cost                  |
+| $a_2$     | CHECK                       | CHECK                         |
+| $a_3$     | CHECK                       | CHECK                         |
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>d</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
+
+The levels it shows after each variable are the last levels you should buy them to in this publication.
 
 ### EF
 
@@ -2175,13 +2187,13 @@ Caption: EF;
 Class: strat_separated;
 Caption: CSR2<green>XL x.xx</green>;
 
-| INVIS | Before x.xx Pub Mult                                 | After x.xxx Pub Mult |
-| ----- | ---------------------------------------------------- | -------------------- |
-| $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost | REDX                 |
-| $q_2$ | ✔️*                                                  | REDX                 |
-| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost | REDX                 |
-| $n$   | ✔️**                                                 | REDX                 |
-| $c_2$ | CHECK                                                | REDX                 |
+| INVIS | Before x.xx Pub Mult                                          | After x.xxx Pub Mult |
+| ----- | ------------------------------------------------------------- | -------------------- |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost  | REDX                 |
+| $q_2$ | ✔️*                                                           | REDX                 |
+| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX                 |
+| $n$   | ✔️**                                                          | REDX                 |
+| $c_2$ | CHECK                                                         | REDX                 |
 | | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
 | | | [FOOT;]** If $n$ and $c_2$ have similar costs, prioritize $c_2$. |
 
@@ -2219,6 +2231,32 @@ Strategy Credits:
 
 - XLII
 
+### CSR2<green>XLPT</green>
+
+Class: strat;
+Caption: CSR2<green>XLPT</green>;
+
+|       |                                                               |
+| ----- | ------------------------------------------------------------- |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost  |
+| $q_2$ | ✔️*                                                           |
+| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost |
+| $n$   | ✔️**                                                          |
+| $c_2$ | CHECK                                                         |
+| | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
+| | [FOOT;]** If $n$ and $c_2$ have similar costs, prioritize $c_2$. |
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>CSR2<green>XLPT</green> $q_1$: 1147 $q_2$: 381 $c_1$: 661
+
+The levels it shows after each variable are the last levels you should buy them to in this publication.
+
+The “PT” in CSR2<green>XLPT</green> stands for **P**ublication **T**able, an algorithm used by the sim to calculate optimal publication points.
+
+Strategy Credits:
+
+- XLII for the variable buying strategy
+- Mathis S. for the PT/coasting algorithm
+
 ### CSR2<green>d</green>
 
 Class: strat;
@@ -2231,6 +2269,29 @@ Caption: CSR2<green>d</green>;
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost |
 | $n$   | CHECK                                                       |
 | $c_2$ | CHECK                                                       |
+
+### CSR2<green>PT</green>
+
+Class: strat;
+Caption: CSR2PT;
+
+|       |       |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $c_1$ | CHECK |
+| $n$   | CHECK |
+| $c_2$ | CHECK |
+
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>CSR2<green>PT</green> $q_1$: 1147 $q_2$: 381 $c_1$: 661
+
+The levels it shows after each variable are the last levels you should buy them to in this publication.
+
+The “PT” in CSR2<green>PT</green> stands for **P**ublication **T**able, an algorithm used by the sim to calculate optimal publication points.
+
+Strategy Credits:
+
+- Mathis S. for the PT/coasting algorithm
 
 ### CSR2
 
