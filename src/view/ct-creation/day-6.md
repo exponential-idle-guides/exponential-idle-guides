@@ -1,5 +1,5 @@
 ---
-title: "Dimension Expansion"
+title: "Dimensional Expansion"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"

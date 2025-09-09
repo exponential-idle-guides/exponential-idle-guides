@@ -21,11 +21,11 @@ My final thank goes out to you, who are reading this guide right at this moment.
 
 ## Introduction
 
-Locked behind the final Convergence Test, custom theories are those which have been created by the community. But while several have been officially added to Exponential Idle, their progress tied to the main game, most of them were scattered, like pocket monsters across the vast deserts of Internet... and time. These creations, moulded from chalk and sweat, are as diverse as they can be. Some expose the wonders of mathematics, some would let their atoms burn, some bloom out of fertile earth, while some feel just content enough, to watch the planets turn. Some of them embody the essence of chaos, others exercise order and control. But within all, there's one thing in common...
+> ...Most of them have been scattered, like pocket monsters across the vast planes of Joutou, and time. These creations, moulded from chalk and sweat. Some expose wonders of mathematics, some let their atoms burn, some bloom out of fertile earth, while some feel just content enough, to watch the planets turn. Some of them embody the essence of chaos, others exercise order and control. But within all, one thing exists in common...
+>
+> *- Theorymon trailer, 2025*
 
-They're written in JavaScript. *audience boos*
-
-Ahem. Custom theories, compared to base game theories, have access to a wider array of features. In addition to having upgrades, equations and graphs, they are also capable of hosting their own story, setting up custom achievements, displaying custom UI, replacing existing UI, or even triggering player inputs in the base game. Although limited in their processing capacity (a certain boomer shooter game has yet to be recreated as a custom theory), needless to say, the game's custom theory API provides a whole lot of potential for unique and interesting creations.
+Locked behind the final Convergence Test, custom theories are theories which have been created by the community using JavaScript. Unlike what you've seen in the base game, custom theories have access to a wide array of features. In addition to having upgrades, equations and graphs, they are also capable of hosting their own story, setting up custom achievements, displaying custom UI, replacing existing UI, or even triggering player actions in the base game. Although limited in their processing capacity (a certain boomer shooter game has yet to be recreated here), needless to say, Exponential Idle's custom theory API provides a whole lot of potential for unique and interesting creations.
 
 ## Prerequisites
 

@@ -1,5 +1,5 @@
 ---
-title: "Balance in All Things"
+title: "The Power of Stacking"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"

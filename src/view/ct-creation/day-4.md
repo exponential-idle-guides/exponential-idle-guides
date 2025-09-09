@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci Foil"
+title: "Fibonacci Foil, and Milestones"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
