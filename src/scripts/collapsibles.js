@@ -265,9 +265,8 @@ if (collap_dict.h2.ids.length) {
   });
 }
 
-
 // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
-supported.forEach(function(h_type, i) {$(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r==".retain-fake"))){$(this).remove()}})});
+supported.forEach(function(h_type, i) {$(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
 
 function open_collapsible(header) {
   header.classList.toggle("active");
