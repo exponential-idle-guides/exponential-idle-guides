@@ -10,16 +10,9 @@ eylanding: "T1-4"
 
 ### Theory basics
 
-Publications are equivalent to prestiges for $f(t)$ so don't be afraid to
-use them. However, the best publication multipliers vary from theory to theory and will
-change over time. If you are close to a multiplier you want, turn off autobuyer
-and let $\rho$ increase without buying upgrades for a faster short-term increase
-before the publication (turn on after you publish). This is known and referenced as "coasting".
-Total $τ$, found in the equation or at the top of the screen, is a multiplicative
-combination of all $τ$ from each theory.
+Publications are equivalent to prestiges for $f(t)$ so don't be afraid to use them. However, the best publication multipliers vary from theory to theory and will change over time. If you are close to a multiplier you want, turn off autobuyer and let $\rho$ increase without buying upgrades for a faster short-term increase before the publication (turn on after you publish). This is known and referenced as "coasting". Total $τ$, found in the equation or at the top of the screen, is a multiplicative combination of all $τ$ from each theory.
 
-__Don’t be afraid to skip getting all milestones to work on the next or a
-better theory.__
+__Don’t be afraid to skip getting all milestones to work on the next or a better theory.__
 
 ### Graduation routing
 
@@ -38,24 +31,9 @@ last_row: false;
 
 #### T1 Overview
 
-In mathematics, a recurrence relation is an equation that relies on an
-initial term and a previous term to change.
-We start with the current tick’s term, $ρ_{n}$, and a constant add-on to
-obtain the value of the next tick, $ρ_{n+1}$. This gives us an equation
-equivalent to $ρ=at+constant$, with a changing value $a$ and a constant
-that is the initial value of 1. Later when we add the $c_{3}ρ_{n-1}^{0.2}$ term,
-this is now saying that we are now adding each tick the value of $ρ$ from
-the previous tick ago with a constant $c_{3}$ put to the power of $0.2$. This
-is the same with the next term $c_{4}ρ_{n-2}^{0.3}$, with the value of $ρ$ two ticks
-ago and a multiplier $c_4$ put to the power $0.3$. When we multiply the
-$c_1c_2$ term by the term $1+ln(ρ)/100$ changing the constant addition to
-being based on the value of $ρ$ from the previous tick with the value of
-$1+ln(ρ)/100$. The final milestone upgrade raises the exponent of $c_1$ from
-$1.00$ to $1.05$ to $1.10$ to $1.15$.
+In mathematics, a recurrence relation is an equation that relies on an initial term and a previous term to change. We start with the current tick’s term, $ρ_{n}$, and a constant add-on to obtain the value of the next tick, $ρ_{n+1}$. This gives us an equation equivalent to $ρ=at+constant$, with a changing value $a$ and a constant that is the initial value of 1. Later when we add the $c_{3}ρ_{n-1}^{0.2}$ term, this is now saying that we are now adding each tick the value of $ρ$ from the previous tick ago with a constant $c_{3}$ put to the power of $0.2$. This is the same with the next term $c_{4}ρ_{n-2}^{0.3}$, with the value of $ρ$ two ticks ago and a multiplier $c_4$ put to the power $0.3$. When we multiply the $c_1c_2$ term by the term $1+ln(ρ)/100$ changing the constant addition to being based on the value of $ρ$ from the previous tick with the value of $1+ln(ρ)/100$. The final milestone upgrade raises the exponent of $c_1$ from $1.00$ to $1.05$ to $1.10$ to $1.15$.
 
-This theory also has its adjusted tickspeed calculated by $q_{1}*q_{2}$. This
-lengthens the normal tick length of $0.1/sec$ to that value which speeds
-up the theory.
+This theory also has its adjusted tickspeed calculated by $q_{1}*q_{2}$. This lengthens the normal tick length of $0.1/sec$ to that value which speeds up the theory.
 
 #### T1 formula
 

@@ -2,16 +2,18 @@
 title: "Theory Simulator: How to Read Results"
 description: "Our guide for running the theory simulator and understanding the results."
 author: "LE★Baldy, Snaeky, and Gaunter"
-contributors: "Antharion for the original simulator, Xelaroc for the dedicated continuation, XLII for the current simulator, and the many others whom have developed strategies"
+contributors: "Antharion for the original simulator, Xelaroc for the dedicated continuation, XLII, initially, and the [Exponential Idle Sim Team](https://github.com/exponential-developers) for the current simulator initially, and the many others whom have developed strategies"
 draft: true
 order: 8
 ---
 
 **This section will be updated to accommodate the new simulator and its features. Please read the link's instructions.**
 
-### Before you start
+The current theory simulator was initially made by XLII and is now updated by the [Exponential Idle Sim Team](https://github.com/exponential-developers). The theory sim is run on [this website](https://exponential-developers.github.io/sim-3.0/). Below will go through the individual parts of the output.
 
-The current theory simulator is made by XLII and is run on a [website](https://exponential-developers.github.io/sim-3.0/). Below will go through the individual parts of the output.
+<h3 class="fake-h3">Updated Theory Sim Video by Snaeky</h3>
+
+<yt data-video-id="el6leMQIJZ0">Updated Theory Sim Video by Snaeky</yt>
 
 ### **τ/h Active / Idle**
 
