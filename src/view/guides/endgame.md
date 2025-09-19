@@ -105,7 +105,7 @@ A useful strategy in the later stages of a graduation is \\(t\\) stacking. It re
 
 ### Skipped students routing
 
-Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you will need check the calculator at the \\(F(t)\\) that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
+Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students, especially skipmas, may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you can check the calculator at the \\(F(t)\\) that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
 The chart below lists out all of the Bigma to skip. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
 
@@ -113,14 +113,19 @@ The chart below lists out all of the Bigma to skip. Skipmas will not be listed a
 
 Class: newwords;
 
-| Students                          | [style="border-right:\$table-border-thin;";]$F(t)$ |
-| --------------------------------- | ------------------------------------------------- |
-| 144, 146, 149, 152, 155, 158, 161 | 29.8k, 30.2k, 30.8k, 31.4k, 32.0k, 32.6k, 33.2k   |
-| 164, 168, 172, 176, 180, 184, 188 | 33.8k, 34.6k, 35.4k, 36.2k, 37.0k, 37.8k, 38.6k   |
-| 193, 198, 203, 208, 213, 218, 224 | 39.6k, 40.6k, 41.6k, 42.6k, 43.6k, 44.6k, 45.8k   |
-| 230, 236, 242, 248, 261, 268, 275 | 47.0k, 48.2k, 49.4k, 50.6k, 53.2k, 54.6k, 56.0k   |
-| 282, 289, 296, 304, 312, 320, 328 | 57.4k, 58.8k, 60.2k, 61.8k, 63.4k, 65.0k, 66.6k   |
-| 336, 344, 353, 362, 371, 380, 389 | 68.2k, 69.8k, 71.6k, 73.4k, 75.2k, 77.0k, 78.8k   |
+| Students                     | [style="border-right:\$table-border-thin;";]$F(t)$ |
+| ---------------------------- | -------------------------------------------------- |
+| 148, 151, 154, 157, 160, 163 | 30.6k, 31.2k, 31.8k, 32.4k, 33.0k, 33.6k           |
+| 167, 171, 175, 179, 183, 187 | 34.4k, 35.2k, 36.0k, 36.8k, 37.6k, 38.4k           |
+| 192, 197, 202, 207, 212, 217 | 39.4k, 40.4k, 41.4k, 42.4k, 43.4k, 44.4k           |
+| 223, 229, 235, 241, 247, 253 | 45.6k, 46.8k, 48.0k, 49.2k, 50.4k, 51.6k           |
+| 260, 267, 274, 281, 288, 295 | 53.0k, 54.4k, 55.8k, 57.2k, 58.6k, 60.0k           |
+| 303, 311, 319, 327, 335, 343 | 61.6k, 63.2k, 64.8k, 66.4k, 68.0k, 69.6k           |
+| 352, 361, 370, 379, 388, 397 | 71.4k, 73.2k, 75.0k, 76.8k, 78.6k, 80.4k           |
+| 407, 417, 427, 437, 447, 457 | 82.4k, 84.4k, 86.4k, 88.4k, 90.4k, 92.4k           |
+| 468, 479, 490, 501, 512, 523 | 94.6k, 96.8k, 99.0k, 101.2k, 103.4k, 105.6k        |
+| 535, 547, 559, 571, 583, 595 | 108.0k, 110.4k, 112.8k, 115.2k, 117.6k, 120.0k     |
+| 608, 621, 634, 647, 660, 673 | 122.6k, 125.2k, 127.8k, 130.4k, 133.0k, 135.6k     |
 | | [FOOT;style="text-align:left;";]Due to fluctuations with stars, accel, \\(t\\), and more, Bigma can be situation dependant. This chart uses normal accel and stars, but the students to skip due to Bigma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference. |
 
 Explanation by: Snaeky and AfuroZamurai
