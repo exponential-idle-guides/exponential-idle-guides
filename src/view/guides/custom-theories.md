@@ -346,7 +346,7 @@ last_row: false;
 | $q_2$ | Doubles $\dot{\rho}$ (instantaneous). |
 | $c_1$ | ~7% increase in $\dot{\rho}$ (not instantaneous). This is the weakest variable. |
 | $n$   | 6x increase in $\dot{\rho}$ long term (not instantaneous). |
-| $b_2$ | ~22x increase in $\dot{\rho}$ (not instantaneous). This is the strongest variable by quite a lot. |
+| $c_2$ | ~22x increase in $\dot{\rho}$ (not instantaneous). This is the strongest variable by quite a lot. |
 
 #### CSR2 Strategy
 
