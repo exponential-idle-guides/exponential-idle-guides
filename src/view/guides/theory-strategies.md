@@ -226,7 +226,7 @@ T8 is the weakest theory in endgame and has the most active strategy of any main
 ### Official Custom Theories {data-toc-exclude}
 
 In chronological order of release.
-Read more about custom theories in the [Custom Theory Guide](/guides/custom-theories.md).
+Read more about custom theories in the [Custom Theory Guide](/guides/custom-theories).
 
 #### Custom Theory 1: Weierstraß Sine Product {data-toc-exclude}
 
