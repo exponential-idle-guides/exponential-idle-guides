@@ -1,5 +1,5 @@
 ---
-title: "Fibonacci Foil, and Milestones"
+title: "Fibonacci Foil, and a Milestone"
 description: "Introduction to custom theory creation."
 author: "prop"
 contributors: "the Amazing Community"
@@ -109,7 +109,7 @@ Aside from reset and automation tools, the Theory API also gives us another tool
 - Powering an existing term
 - Unlocking an entirely new mechanic
 
-Today, we will be creating our first milestone - a simple power increase for our $c_1$. Start by specifying where milestone points are rewarded:
+Today, we will be creating our first milestone - a simple power increase for our $c_1$. Start by mapping out where milestone points are rewarded:
 
 ```js
 import { ExponentialCost, FreeCost, LinearCost } from '../api/Costs';
