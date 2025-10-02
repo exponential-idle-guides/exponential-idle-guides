@@ -209,7 +209,7 @@ var tick = (elapsedTime, multiplier) =>
 }
 ```
 
-Let's change the primary equation to reflect this change:
+Let's update the primary equation to reflect this change:
 
 ```js
 var getPrimaryEquation = () => `\\dot{\\rho} = c_1`;

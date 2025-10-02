@@ -60,6 +60,30 @@ let getf = (level) =>
 
 Marvellous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers!
 
+## A sizeable tangent
+
+Did you know, both your primary and secondary equations can be scaled, as well as their allotted heights? Using **theory.primaryEquationScale**, we can change the size of the primary equation, and with **theory.primaryEquationHeight**, we can make its display area taller. Then, vice versa for the secondary equation. Let's try to enlarge the primary equation by modifying **theory.primaryEquationScale**:
+
+```js
+let init = () =>
+{
+    ...
+    theory.primaryEquationScale = 2.5;
+}
+```
+
+Woah! Perhaps that's a little too big! Well, it's more than twice the original size after all. But aside from half the equation now going off-screen, do you notice that vertically, the equation is also too big for its allotted height? See that the 1 and 2 in $c_1$ and $c_2$, as well as the $f$ are being clipped. Let's try to fix that with **theory.primaryEquationHeight**:
+
+```js
+let init = () =>
+{
+    ...
+    theory.primaryEquationHeight = 90;
+}
+```
+
+Ta-da! With more allotted height, the equation can now be contained fully. Now, you may safely delete these two new lines, but keep in mind, if you ever need a bigger or smaller equation, or just a little more space to write them in, this is how you do it.
+
 ## Continuing with progression
 
 Yesterday, we talked about the progression in idle games. However, since we were halted by our performance problem, we didn't have enough time to implement the automations of progression. In an Exponential Idle theory, we're given two tools: the Buy All button, and the Auto-buyer. Like Publications, these can be created using functions provided by the API:

@@ -9,8 +9,6 @@ Buongiorno a tutti. It is dawn of the third day.
 
 Across your window, a man wearing a blue head scarf is waving at you. You may recognise him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to make a new upgrade based on his famous Fibonacci sequence. But first, we will implement publications for our theory.
 
-**Caution:** Before heading into today's contents, it is advised to back up your save files somewhere.
-
 ## Publications
 
 Let's think about our theory's progression.
@@ -201,7 +199,14 @@ let init = () =>
 
 ## Aftermath
 
-As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, and we will continue with a solution [tomorrow](../day-4/).
+As you play the theory, you may notice that the game is starting to slow down. Spooky! What could be the cause? If you feel paranoid, let's switch to another theory to run for now, or use these two commands from the SDK to pause and unpause the theory:
+
+```
+theory.pause();
+theory.resume();
+```
+
+We will continue with a solution [tomorrow](../day-4/).
 
 Meanwhile, the source code after today's work can be found here:
 
