@@ -1,7 +1,7 @@
 ---
 title: "A Theory of Your Own"
 description: "Introduction to custom theory creation."
-author: "prop"
+author: "Minh Tea (prop)"
 contributors: "the Amazing Community"
 ---
 

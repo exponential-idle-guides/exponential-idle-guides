@@ -1,7 +1,7 @@
 ---
 title: "Simulating a Theory"
 description: "Introduction to custom theory creation."
-author: "prop"
+author: "Minh Tea (prop)"
 contributors: "Mathis for the draft, and then the Amazing Community"
 ---
 

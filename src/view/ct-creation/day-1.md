@@ -1,7 +1,7 @@
 ---
 title: "Anatomy of a Custom Theory"
 description: "Introduction to custom theory creation."
-author: "prop"
+author: "Minh Tea (prop)"
 contributors: "the Amazing Community"
 ---
 
