@@ -21,7 +21,7 @@ Let's take a look at them now. Naively, we can try to count the number of lines.
 
 While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
 
-So, what do we do? The first instinct might be to prevent the Fibonacci upgrade from reaching a high level, by putting an upper cap on it. This can easily be done like so:
+So, what do we do? The first instinct might be to prevent the Fibonacci upgrade from reaching a high level, by putting a cap on it. This can easily be done like so:
 
 ```js
 let init = () =>
@@ -34,7 +34,7 @@ let init = () =>
 }
 ```
 
-But, is this a good measure? While it may ease the problem somewhat, it is still present, and... Would you want to play a game about the Fibonacci sequence, if the Fibonacci sequence just stops suddenly at some point?
+In-game, $f$'s level will show as 'Level: x/20'. But, is this a good measure? While it may ease the problem somewhat, it is still present, and... Would you want to play a game about the Fibonacci sequence, if the Fibonacci sequence just stops suddenly at some point?
 
 ## Stopping Fibonacci's foil
 
@@ -73,7 +73,7 @@ let getf = (level) =>
 };
 ```
 
-Marvellous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers!
+Marvellous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers! You can safely remove its level cap now.
 
 ## A sizeable tangent
 
