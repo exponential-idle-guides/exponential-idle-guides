@@ -21,9 +21,24 @@ Let's take a look at them now. Naively, we can try to count the number of lines.
 
 While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
 
+So, what do we do? The first instinct might be to prevent the Fibonacci upgrade from reaching a high level, by putting an upper cap on it. This can easily be done like so:
+
+```js
+let init = () =>
+{
+    ...
+    {
+        ...
+        f.maxLevel = 20;
+    }
+}
+```
+
+But, is this a good measure? While it may ease the problem somewhat, it is still present, and... Would you want to play a game about the Fibonacci sequence, if the Fibonacci sequence just stops suddenly at some point?
+
 ## Stopping Fibonacci's foil
 
-Let's look at how we can optimise these calculations. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
+Let's look at how we can optimise the calculation of Fibonacci numbers. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
 
 $F(n) = \frac{(\frac{1+\sqrt{5}}{2})^n - (\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$
 

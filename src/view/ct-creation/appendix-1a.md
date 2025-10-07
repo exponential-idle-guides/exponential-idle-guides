@@ -17,7 +17,7 @@ Today, we are going to use the Theory Simulator to test out our theory. The Theo
 
 [Node.js](https://nodejs.org/) is a JavaScript runtime environment for servers and web applications. Its installation is needed to run the simulator locally and implement our theory.
 
-[npm](https://www.npmjs.com/) is the package manager for Node.js. It should be already installed along with Node.js. 
+[npm](https://www.npmjs.com/) is the package manager for Node.js. It should be already installed along with Node.js.
 
 2. **TypeScript**
 
