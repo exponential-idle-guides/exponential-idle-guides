@@ -236,7 +236,7 @@ $$\begin{bmatrix}
 \end{bmatrix} =
 \begin{bmatrix}
    \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$}}\\
-   \colorbox{cyan}{\color{black}{$c_{11}$  $c_{12}$}}
+   \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$}}
 \end{bmatrix}
 \begin{bmatrix}
    \colorbox{orange}{$\begin{align}
