@@ -2791,7 +2791,7 @@ Caption: RZ<green>d</green>;
 | $w_2$ | CHECK                                                    |
 | $w_3$ | CHECK                                                    |
 | $b$   | ✔️**                                                     |
-| | [FOOT;]* If you don't have $c_1$ exponent milestones, use 4\times c_2$lvl + 1 instead. |
+| | [FOOT;]* If you don't have $c_1$ exponent milestones, use $4\times c_2\text{lvl} + 1$ instead. |
 | | [FOOT;]** Do not buy $b$ until $t\gt16$. |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>d</green> $c_1$: 953 $1_2$: 238.

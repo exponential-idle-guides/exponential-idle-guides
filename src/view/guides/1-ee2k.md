@@ -61,7 +61,7 @@ Playing and molding both sections will often deliver the best results for a part
 
 ##### Equation taps
 
-Each tap of the equation, increases t by $1 * (ad$ $ boost$ $ of$ $ 1.5) * accel$ $ value$. This is a significant boost to progress until about ee15-ee20.
+Each tap of the equation, increases t by $1 * (ad\ boost\ of\ 1.5) * accel\ value$. This is a significant boost to progress until about ee15-ee20.
 After, dt becomes too large for your taps to make a worthy and significant boost to progress.
 
 There is also a 0.04% chance to gain a star from tapping the equation, however, due to this being so low and not increasing as you progress, it is only useful for getting the achievements that require tap stars. The highest achievement requires 10 tap stars which takes on average 25,000 taps, but this can vary drastically depending on luck.
