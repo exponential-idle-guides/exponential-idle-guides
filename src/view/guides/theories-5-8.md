@@ -90,7 +90,7 @@ When deciding when to buy $c_1, c_2$, think of $c_1$ as throttling a bicycle, an
 
 The strengths of each variable are as follows:
 
-$c_3 \approx q_2 \approx c_2 \gt q_1 \gt c_1$
+$c_3 \approx q_2 \geq c_2 \gt q_1 \gt c_1$
 
 Note that $c_1$ and $c_2$ have special interactions.
 
