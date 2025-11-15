@@ -79,8 +79,7 @@ last_row: false;
 
 Think of buying $c_1$ as throttling on the bicycle faster. Buying $c_2$ is similar to shifting the bicycle gear up by 1 gear.<br>
 
-If all one does is buy $c_1$ and never $c_2$, then they are stuck in gear 1 forever and make no progress.
-However, if all one does is buy $c_2$ and never $c_1$, then this is similar to trying to ride from highest gear from 0 speed, which takes a long time and a lot of effort.<br>
+If all one does is buy $c_1$ and never $c_2$, then they are stuck in gear 1 forever and make no progress. However, if all one does is buy $c_2$ and never $c_1$, then this is similar to trying to ride from highest gear from 0 speed, which takes a long time and a lot of effort.<br>
 
 Therefore using the bicycle analogy, buy $c_2$ only when $\dot{q}$, speed, is enough to support it; not too early and not too late. Furthermore, later in the publication, buy only 1 level of $c_2$ at a time. Buy $c_1$ only right after buying $c_2$ (shifting up gear).<br>
 
@@ -165,9 +164,7 @@ last_row: false;
 
 <yt data-video-id="PWjEADc1P7M">Theory 5 Active Strategy Video Example By Playspout</yt>
 
-T5 will always give its best results from active play. However, after
-step 3, you can still get good results while autobuying $q_1$ and
-manually purchasing $c_1$ every 10-15min. This makes the theory slightly less active and easier to deal with.
+T5 will always give its best results from active play. However, after step 3, you can still get good results while autobuying $q_1$ and manually purchasing $c_1$ every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 **Warning**: Do not overnight this theory. It has terrible decay after passing a good publication mark and will not give good results. T5i is only viable very late/endgame.
 
@@ -184,14 +181,9 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 #### T6 Overview
 
-T6 has the lowest decay of all the theories. It will be second place to T5 until ~$e750$ and is the only theory that can
-get to $\gt e1300τ$. You should overnight this and T4 after you get your T2 to $e350+$.
+T6 has the lowest decay of all the theories. It will be second place to T5 until ~$e750$ and is the only theory that can get to $\gt e1300τ$. You should overnight this and T4 after you get your T2 to $e350+$.
 
-At first, T6 only finds the area under the curve of the graph $f(q)$ from $0$ to $q$, which is essentially a 2d plane.
-This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the
-opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable $r$,
-this new equation is finding the volume of the graph within the bounds of planes $f(q)$ and $f(r)$ from $0$ to $q$ and
-$0$ to $r$ respectively.
+At first, T6 only finds the area under the curve of the graph $f(q)$ from $0$ to $q$, which is essentially a 2d plane. This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable $r$, this new equation is finding the volume of the graph within the bounds of planes $f(q)$ and $f(r)$ from $0$ to $q$ and $0$ to $r$ respectively.
 
 $C$ is equal to the sum of all instantaneous changes in $\rho$, or equivalently instantaneous increases to the integral, caused by buying $c_i$ upgrades*. When a $c_i$ upgrade is purchased, the value of the integral increases by a respective amount.
 
@@ -205,8 +197,7 @@ $C$ acts as the mechanism which decreases $\rho$ the correct amount after a purc
 
 #### T6 strategy
 
-The optimal multiplier varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone.
-For an accurate multiplier, check with [the sim](https://exponential-developers.github.io/sim-3.0/).
+The optimal multiplier varies between 6-12, but spikes depending on what variable is dominant at the time and how close you are to a milestone. For an accurate multiplier, check with [the sim](https://exponential-developers.github.io/sim-3.0/).
 
 Class: breakdown;
 last_row: false;
@@ -252,24 +243,12 @@ last_row: false;
 
 #### T7 overview
 
-T7 can be summarized as a maximization problem : given a surface in 3-dimensional space,
-you want to find its highest altitude by moving along the surface, always in the direction
-of steepest ascent (that's basically a gradient ascent).
-The function $g(x,y)$ can be seen as a surface in $\mathbb{R}^{3}$ (considering the set
-of points $(x,y,g(x,y))$, see attached image).
-$(\rho_1,\rho_2,g(\rho_1,\rho_2))$ is a point on this surface. Our goal is to
-maximize $g(\rho_1,\rho_2)$, i.e. to find $(\rho_1,\rho_2)$ that maximize $g(\rho_1,\rho_2)$.
-Notice that the function $g$ is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditioned); so one way to maximize $g(\rho_1,\rho_2)$ is to move $(\rho_1,\rho_2)$ towards the direction of steepest ascent.
-This is what is precisely done by setting $\dot{\mathbf{\rho}}$ (which is the direction the
-point $\mathbf{\rho}=(\rho_1,\rho_2)$ will move toward) to $\nabla g(\rho_1,\rho_2)$
-(i.e. the gradient of $g$ evaluated at $(\rho_1,\rho_2)$, which gives the direction of
-steepest ascent of $g$ at the point $(\rho_1,\rho_2)$.
+T7 can be summarized as a maximization problem : given a surface in 3-dimensional space, you want to find its highest altitude by moving along the surface, always in the direction of steepest ascent (that's basically a gradient ascent). The function $g(x,y)$ can be seen as a surface in $\mathbb{R}^{3}$ (considering the set of points $(x,y,g(x,y))$, see attached image). $(\rho_1,\rho_2,g(\rho_1,\rho_2))$ is a point on this surface. Our goal is to maximize $g(\rho_1,\rho_2)$, i.e. to find $(\rho_1,\rho_2)$ that maximize $g(\rho_1,\rho_2)$. Notice that the function $g$ is unbounded, i.e. you can't find a proper maximum (we say that the maximization problem is ill-conditioned); so one way to maximize $g(\rho_1,\rho_2)$ is to move $(\rho_1,\rho_2)$ towards the direction of steepest ascent. This is what is precisely done by setting $\dot{\mathbf{\rho}}$ (which is the direction the point $\mathbf{\rho}=(\rho_1,\rho_2)$ will move toward) to $\nabla g(\rho_1,\rho_2)$ (i.e. the gradient of $g$ evaluated at $(\rho_1,\rho_2)$, which gives the direction of steepest ascent of $g$ at the point $(\rho_1,\rho_2)$.
 
 ![T7 Graph of function](/images/T7-graph.png)
 
-This is the graph of the function $g$, taken after the first four milestones have been unlocked
-(Note: here, coefficients like $c_1,c_2\ldots$ are ignored. The effect of those coefficients is
-simply making the graph steeper in $x$ or $y$ direction, depending on the value of each coef).
+This is the graph of the function $g$, taken after the first four milestones have been unlocked.
+Note: here, coefficients like $c_1,c_2\ldots$ are ignored. The effect of those coefficients is simply making the graph steeper in $x$ or $y$ direction, depending on the value of each coef.
 
 #### T7 strategy
 
@@ -338,9 +317,7 @@ There is also the [theory simulator](https://exponential-developers.github.io/si
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
 
-This method allows you to push $f(t)$ with almost no loss of R9
-uptime or pushing power. This is harder with fewer levels of R9 but
-still helps if you get used to it.
+This method allows you to push $f(t)$ with almost no loss of R9 uptime or pushing power. This is harder with fewer levels of R9 but still helps if you get used to it.
 
 #### R9 autoprestige expression
 
@@ -354,18 +331,9 @@ You can find the autoprestige used for R9 Swapping here: [Equation](/guides/intr
 
 #### T8 strategy
 
-The optimal publication multiplier is 2.5-5 depending on how close you
-are to the next milestone. This theory is extremely slow at the start
-which is why we skip until we obtain R9. It is also the only one with a
-$1e20$ milestone step. It will speed up once you hit $1e60$ and
-even faster at $1e80$ and $1e100$ etc. until ~$e250$-$e300$.
-The worst part is the $1e50$-$1e60$ grind. The grind to $1e60$
-will take a good bit of time but is faster with R9.
+The optimal publication multiplier is 2.5-5 depending on how close you are to the next milestone. This theory is extremely slow at the start which is why we skip until we obtain R9. It is also the only one with a $1e20$ milestone step. It will speed up once you hit $1e60$ and even faster at $1e80$ and $1e100$ etc. until ~$e250$-$e300$. The worst part is the $1e50$-$1e60$ grind. The grind to $1e60$ will take a good bit of time but is faster with R9.
 
-At the start, manual buy prioritizes $c_2$ then $c_1$ then rest.
-Once you get to 0/0/0/2, prioritize $c_2$ and $c_5$ then $c_1$ then the
-rest. Once at 2/0/3/0, you will prioritize $c_2$ and $c_4$ then $c_1$ then
-the rest after. This continues to max at 2/3/3/3.
+At the start, manual buy prioritizes $c_2$ then $c_1$ then rest. Once you get to 0/0/0/2, prioritize $c_2$ and $c_5$ then $c_1$ then the rest. Once at 2/0/3/0, you will prioritize $c_2$ and $c_4$ then $c_1$ then the rest after. This continues to max at 2/3/3/3.
 
 Class: breakdown;
 Caption: T8 Attractor Information;
