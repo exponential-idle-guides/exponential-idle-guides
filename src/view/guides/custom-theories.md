@@ -443,7 +443,7 @@ last_row: false;
 
 |       | Variable Description |
 | ----- | -------------------- |
-| $q_1$ | 50x increase every 23 levels. levels$\equiv0\mod23$ are 2.6x to $\dot{q}$. |
+| $q_1$ | 50x increase every 23 levels. levels$\equiv1\mod23$ are 3.1x to $\dot{q}$. |
 | $q_2$ | Doubles $\dot{q}$ per level (instantaneous). |
 | $K$   | 2x, 3x, or 4x increase to $\dot{r}$ depending on $\lambda$ milestones. |
 | $m$   | 1.5x increase to $\dot{\rho}$ (instantaneous). |
