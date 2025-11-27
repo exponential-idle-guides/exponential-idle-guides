@@ -14,10 +14,6 @@ const { JSDOM } = require('jsdom');
 
 const util = require('util');
 
-const pluginTOC = require('eleventy-plugin-toc');
-
-const pluginNestingTOC = require('eleventy-plugin-nesting-toc');
-
 const _ = require("lodash");
 
 const transformExcludes = [
@@ -74,9 +70,6 @@ module.exports = config => {
     }),
     level: [1,2,3,4,5]
   };
-
-  config.addPlugin(pluginTOC)
-  config.addPlugin(pluginNestingTOC)
 
   config.setLibrary(
     "md",
@@ -137,9 +130,7 @@ module.exports = config => {
   config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
   config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.short_title + '</a>');
 
-  config.addFilter("ToC_conversion", function(ToC, content) {
-    const toc_dom = new JSDOM(ToC.val);
-    const toc_doc = toc_dom.window.document;
+  config.addFilter("TOC", function(content) {
     const dom = new JSDOM(content.val);
     const doc = dom.window.document;
 
