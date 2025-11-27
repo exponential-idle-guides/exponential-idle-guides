@@ -137,6 +137,267 @@ module.exports = config => {
   config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
   config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.short_title + '</a>');
 
+  config.addFilter("ToC_conversion", function(ToC, content) {
+    const toc_dom = new JSDOM(ToC.val);
+    const toc_doc = toc_dom.window.document;
+    const dom = new JSDOM(content.val);
+    const doc = dom.window.document;
+
+    var start = '<nav class="toc">';
+    const h2s = doc.querySelectorAll('h2');
+    const h3s = doc.querySelectorAll('h3');
+    const h4s = doc.querySelectorAll('h4');
+
+     function docPosition(element1, element2) {
+      function comparePosition(a, b) {
+        return a.compareDocumentPosition ? 
+          a.compareDocumentPosition(b) : 
+          a.contains ? 
+            (a != b && a.contains(b) && 16) + 
+              (a != b && b.contains(a) && 8) + 
+              (a.sourceIndex >= 0 && b.sourceIndex >= 0 ?
+                (a.sourceIndex < b.sourceIndex && 4) + 
+                  (a.sourceIndex > b.sourceIndex && 2) :
+                1)
+            + 0 : 0;
+      }
+
+      var position = comparePosition(element1, element2);
+
+      if (position & 0x04) {return 'after';}
+      if (position & 0x02) {return 'before';}
+    };
+
+    function H_between_Hs(startingH, tag_outer, tag_mid) {
+      if (!startingH || startingH.tagName.toLowerCase() !== tag_outer) {
+        console.error("Starting H3 element not found or is not an H3.");
+        return [];
+      }
+      const h_between = [];
+      let currentElement = startingH.nextElementSibling;
+      while (currentElement) {
+        var lower = currentElement.tagName.toLowerCase()
+        if (lower === tag_outer || lower === 'h2') {break;}
+        if (lower === tag_mid) {
+          h_between.push(currentElement);
+        }
+        currentElement = currentElement.nextElementSibling;
+      }
+      return h_between;
+    }
+
+    if (h2s.length) {
+      if (!h3s.length && !h4s.length) {
+        start += '<ol>';
+        h2s.forEach(h2 => {
+          start += '<li><a href="#' + h2.id + '">' + h2.innerHTML +'</a></li>'
+        })
+        start += '</ol>'
+      } else if (!h3s.length || !h4s.length) {
+        const inner_hs = h3s.length ? 'h3' : 'h4';
+        if (!docPosition(h2s[0], h3s.length ? h3s[0] : h4s[0])) {
+          start += '<ol>'
+          for (const h_in of (h3s.length ? h3s : h4s)) {
+            if (docPosition(h2s[0], h_in)) {break;}
+            start += '<li><ol><li><a href="#' + h_in.id + '">' + h_in.innerHTML +'</a></li></ol></li>'
+          }
+          start += '</ol>'
+        }
+        if (h2s.length == 1) {
+          const hs_between = H_between_Hs(h2s[0], 'h2', inner_hs);
+          h2s[0].classList.add('toc-skip')
+          start += '<a href="#' + h2s[0].id + '">';
+          start += h2s[0].outerHTML;
+          start += '</a>';
+          h2s[0].classList.remove('toc-skip')
+          start += '<ol>'
+          hs_between.forEach(h_in => {
+            start += '<li><a href="#' + h_in.id + '">' + h_in.innerHTML +'</a></li>'
+          })
+          start += '</ol>'
+        } else {
+          h2s.forEach(h2 => {
+            const hs_between = H_between_Hs(h2, 'h2', inner_hs);
+            if (!hs_between.length) {
+              h2.classList.add('toc-skip');
+            }
+            start += h2.outerHTML
+            if (hs_between.length) {
+              start += '<ol>'
+              hs_between.forEach(h_in => {
+                start += '<li><a href="#' + h_in.id + '">' + h_in.innerHTML +'</a></li>'
+              })
+              start += '</ol>'
+            } else {
+              h2.classList.remove('toc-skip');
+            }
+          })
+        }
+      } else {
+        if (docPosition(h2s[0], h3s[0]) || docPosition(h2s[0], h4s[0])) {
+          start += '<ol>'
+          if (!docPosition(h2s[0], h4s[0])) {
+            for (const h3 of h3s) {
+              if (docPosition(h2s[0], h3)) {break;}
+              start += '<li><a href="#' + h3.id + '">' + h3.innerHTML +'</a></li>'
+            }
+          } else if (!docPosition(h2s[0], h3s[0])) {
+            for (const h4 of h4s) {
+              if (docPosition(h2s[0], h4)) {break;}
+              start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+            }
+          } else {
+            if (!docPosition(h3s[0], h4s[0])) {
+              for (const h4 of h4s) {
+                if (docPosition(h3s[0], h4)) {break;}
+                start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+              }
+            }
+            for (const h3 of h3s) {
+              if (docPosition(h2s[0], h3)) {break;}
+              start += '<li><a href="#' + h3.id + '">' + h3.innerHTML + '</a>'
+              const h4s_between = H_between_Hs(h3, 'h3', 'h4');
+              if (h4s_between.length) {
+                if (!docPosition(h2s[0], h4s_between[0])) {
+                  start += '<ol>'
+                  for (const h4 of h4s_between) {
+                    if (docPosition(h2s[0], h4)) {break;}
+                    start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>';
+                  }
+                  start += '</ol>';
+                }
+              }
+              start += '</li>';
+            }
+          }
+          start += '</ol>';
+        }
+        if (h2s.length == 1) {
+          const h3s_between = H_between_Hs(h2s[0], 'h2', 'h3');
+          const h4s_between = H_between_Hs(h2s[0], 'h2', 'h4');
+          h2s[0].classList.add('toc-skip');
+          start += '<a href="#' + h2s[0].id + '">';
+          start += h2s[0].outerHTML;
+          start += '</a>';
+          h2s[0].classList.remove('toc-skip');
+          start += '<ol>'
+          for (const h4 of h4s_between) {
+            if (docPosition(h3s_between[0], h4)) {break;}
+            start += '<li><ol><li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li></ol></li>'
+          }
+          h3s_between.forEach(h3 => {
+            const hs_between = H_between_Hs(h3, 'h3', 'h4')
+            start += '<li>' + h3.innerHTML
+            if (hs_between.length) {
+              start += '<ol>'
+              hs_between.forEach(h4 => {
+                start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+              })
+              start += '</ol>'
+            }
+            start += '</li>'
+          })
+          start += '</ol>'
+        } else {
+          h2s.forEach(h2 => {
+            const h3s_between = H_between_Hs(h2, 'h2', 'h3');
+            const h4s_between = H_between_Hs(h2, 'h2', 'h4');
+            if (!h3s_between.length && !h4s_between.length) {
+              h2.classList.add('toc-skip');
+            }
+            start += h2.outerHTML
+            if (h3s_between.length && h4s_between.length) {
+              start += '<ol>'
+              for (const h4 of h4s_between) {
+                if (docPosition(h3s_between[0], h4)) {break;}
+                start += '<li><ol><li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li></ol></li>'
+              }
+              h3s_between.forEach(h3 => {
+                const hs_between = H_between_Hs(h3, 'h3', 'h4')
+                start += '<li>' + h3.innerHTML
+                if (hs_between.length) {
+                  start += '<ol>'
+                  hs_between.forEach(h4 => {
+                    start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+                  })
+                  start += '</ol>'
+                }
+                start += '</li>'
+              })
+            } else if (h3s_between.length || h4s_between.length) {
+              const hs_between = h3s_between.length ? h3s_between : h4s_between;
+              start += '<ol>'
+              hs_between.forEach(h_in => {
+                start += '<li><a href="#' + h_in.id + '">' + h_in.innerHTML +'</a></li>'
+              })
+              start += '</ol>'
+            } else {
+              h2.classList.remove('toc-skip');
+            }
+          })
+        }
+      }
+    } else if (h3s.length) {
+      if (!h4s.length) {
+        start += '<ol>'
+        h3s.forEach(h3 => {
+          start += '<li><a href="#' + h3.id + '">' + h3.innerHTML +'</a></li>'
+        })
+        start += '</ol>'
+      } else {
+        if (!docPosition(h3s[0], h4s[0])) {
+          start += '<ol>'
+          for (const h4 of h4s) {
+            if (docPosition(h3s[0], h4)) {break;}
+            start += '<li><ol><li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li></ol></li>'
+          }
+          start += '</ol>'
+        }
+        if (h3s.length == 1) {
+          const h4s_between = H_between_Hs(h3s[0], 'h3', 'h4');
+          h3s[0].classList.add('toc-skip');
+          start += '<a href="#' + h3s[0].id + '">';
+          start += h3s[0].outerHTML;
+          start += '</a>';
+          h3s[0].classList.remove('toc-skip');
+          if (h4s_between.length) {
+              start += '<ol>'
+              h4s_between.forEach(h4 => {
+                start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+              })
+              start += '</ol>';
+            }
+        } else {
+          h3s.forEach(h3 => {
+            const h4s_between = H_between_Hs(h3, 'h3', 'h4');
+            if (!h4s_between.length) {
+              h3.classList.add('toc-skip');
+            }
+            start += h3.outerHTML
+            if (h4s_between.length) {
+              start += '<ol>'
+              h4s_between.forEach(h4 => {
+                start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+              })
+              start += '</ol>';
+            } else {
+              h3.classList.remove('toc-skip');
+            }
+          })
+        }
+      }
+    } else if (h4s.length) {
+      start += '<ol>'
+      h4s.forEach(h4 => {
+        start += '<li><a href="#' + h4.id + '">' + h4.innerHTML +'</a></li>'
+      })
+      start += '</ol>'
+    } else {
+      return '<p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>'
+    }
+    return start + '</nav>'
+  })
+
   config.addCollection("guides", function(collectionApi) {
     return collectionApi.getFilteredByTag("guides").sort(function(a, b) {
       return a.data.order - b.data.order;

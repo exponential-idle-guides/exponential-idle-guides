@@ -30,14 +30,13 @@ function get_url_paths(url) {
   return [.../^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.exec(url)[1].matchAll(/[a-z\-0-9]+/g)];
 }
 
-
 function get_skiplist(url) {
   if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return [];
   const path = get_url_paths(url);
   const s = full_skiplist[path[0]][path[1]];
   return s === undefined ? [] : [,...s];
 }
-const skiplist = [...get_skiplist(current_url), ...supported.map((h) => ".fake-" + h)];
+const skiplist = [".toc-skip", ...get_skiplist(current_url), ...supported.map((h) => ".fake-" + h)];
 
 function strRepl(str) {
   return str ? slugify(str, { lower: true, strict: true }) : "";
@@ -93,13 +92,17 @@ function skipped(classlist, id = "#") {
 
 const path = get_url_paths(current_url);
 if (path.length == 2) {
-  if (path[0][0] === "ranking-news" && $("h2").length > 1) {
-    const second = $("h2")[1];
+  if (path[0][0] === "ranking-news" && $("main h2").length > 1) {
+    const second = $("main h2")[1];
     if ((new RegExp(path[1][0].slice(5) + '[a-z]*-' + path[1][0].slice(0,4), "g")).test(strRepl(second.innerText.toLowerCase()))) {
-      $(second).remove();
+      //$(second).remove();
     }
   }
 }
+
+$('main .toc-skip').each(function() {
+  $(this).removeClass('toc-skip');
+})
 
 // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be turned into h2, h3, and h4 elements (retaining class)
 for (const h_type of supported) {
@@ -120,7 +123,6 @@ supported.reduce((a,h) => [...a, ...$(h + "[id]")], []).forEach((h) => {
 })
 
 // any headers with no id will be given permalink and an id (not first h2)
-
 for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")], []).slice(1)) {
   const new_h = strRepl($(h).html());
   $(h).attr('id', new_h);
@@ -129,141 +131,173 @@ for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(h + ":not([id])")
 
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_dict = supported.reduce((a,h) => {
-  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): true})];
+const main_h_dict = supported.reduce((a,h) => {
+  const h_arr = [...$('main ' + h)];
+  //const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? false: true})];
   return ({...a,[h]: {ids: h_arr.map((c) => "#" + strRepl($(c).attr('id'))), indexes: h_arr.map((c) =>$(c).index())}})
 }, {});
-const sidebar_h_dict = supported.reduce((a,h) => {
-  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): false})];
-  return ({...a,[h]: {ids: h_arr.map((c) => "#" + strRepl($(c).attr('id'))), indexes: h_arr.map((c) =>$(c).index())}})
+const sidebars = [...$('#sidebars').children().filter(function() {return !(/.*invis$/mi.test($(this).attr('id')))})];
+console.log(sidebars);
+const sidebar_h_dicts = sidebars.reduce((a0,h0) => {
+  const h0_id = $(h0).attr('id');
+  const entry = supported.reduce((a,h) => {
+    const h_arr = [...$('#' + h0_id + ' ' + h)];
+    h_arr.forEach((b) => {
+      const old_id = $(b).attr('id')
+      $(b).attr('id', 'sidebar-' + old_id);
+      $('#' + old_id).attr('id', 'sidebarinvis-' + old_id);
+    })
+    return ({...a,[h]: {ids: h_arr.map((c) => "#" + strRepl($(c).attr('id'))), indexes: h_arr.map((c) =>$(c).index())}})
+  }, {});
+  return Object.values(entry).reduce((s, a) => s + a.ids.length, 0) ? {...a0, [h0_id]:entry} : a0
 }, {});
+console.log("sidebar_h_dicts", sidebar_h_dicts);
 
-const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
-const sidebar_collap_dict = copy_dict(sidebar_h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
+let get_collap_dict = h_dict => copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}))
+const main_collap_dict = get_collap_dict(main_h_dict);
+const sidebar_collap_dicts= Object.entries(sidebar_h_dicts).reduce((a, [s, h]) => ({...a, [s]: get_collap_dict(h)}), {});
 
-for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
-  h.html(closed_char + ' ' + h.html());
-  h.addClass('collapsible collapsible-closed');
-}
-const coll = $('.collapsible');
+console.log("main_collap_dict", main_collap_dict);
+console.log("sidebar_collap_dict", sidebar_collap_dicts);
 
-if (collap_dict.h2.ids.length) {
-  zip_idi(collap_dict.h2).forEach(function([h2_id,h2_i], i){
-    $(h2_id)
-      .nextUntil(collap_dict.h2.ids[i+1])
-      .wrapAll('<div class="content"/>');
-    
-    const next_h2_i = collap_dict.h2.indexes[i+1];
-    const h2_h3 = lt_dict(gt_dict(collap_dict.h3, h2_i), next_h2_i);
-    const next_h3 = h2_h3.indexes[0] === undefined ? {ids: collap_dict.h2[next_h2_i], indexes: [next_h2_i]} : copy_dict(h2_h3, (d,k) => d[k][0]);
-    const h2_h4 = lt_dict(gt_dict(collap_dict.h4, h2_i), next_h3.indexes);
-    if (h2_h4.ids.length) {
-      const last_h4_i = lt_dict(h_dict.h4, next_h3.indexes).indexes.slice(-1)[0];
-      zip_idi(h2_h4).forEach(function([h4_id, h4_i], k) {
-        $(h4_id).next('.content').children().unwrap();
-        if (h4_i >= last_h4_i) {
-        	const h4_final = next_h3.indexes ? $(next_h3.ids).prev() : $(h4_id).siblings().last();
-          h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
-          $(h4_id)
-          	.nextUntil(h4_id + 'finalh4wrap')
-            .add(h4_id + 'finalh4wrap')
-            .wrapAll('<div class="content"/>');
-        } else {
-        	$(h4_id)
-            .nextUntil('h3, h4')
-            .wrapAll('<div class="content"/>');
-        }
-      });
+function setup(collap_dict, h_dict, slug) {
+  for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
+    console.log(slug, h.attr('id'), h.html())
+    if (!slug) {
+      const res = /(?<start>.*)\s+<a\s+class="direct-link"\s*href=".*"\s*aria-label="Permalink:.*">#<\/a>\s*$/gm.exec(h.html());
+      if (res != null) {
+        const {start} = res.groups;
+        h.html(start);
+      }
     }
+    h.html(closed_char + ' ' + h.html());
+    h.addClass('collapsible collapsible-closed');
+  }
+  if (collap_dict.h2.ids.length) {
+    zip_idi(collap_dict.h2).forEach(function([h2_id,h2_i], i){
+      $(h2_id)
+        .nextUntil(collap_dict.h2.ids[i+1])
+        .wrapAll('<div class="content"/>');
+      
+      const next_h2_i = collap_dict.h2.indexes[i+1];
+      const h2_h3 = lt_dict(gt_dict(collap_dict.h3, h2_i), next_h2_i);
+      const next_h3 = h2_h3.indexes[0] === undefined ? {ids: collap_dict.h2[next_h2_i], indexes: [next_h2_i]} : copy_dict(h2_h3, (d,k) => d[k][0]);
+      const h2_h4 = lt_dict(gt_dict(collap_dict.h4, h2_i), next_h3.indexes);
+      if (h2_h4.ids.length) {
+        const last_h4_i = lt_dict(h_dict.h4, next_h3.indexes).indexes.slice(-1)[0];
+        zip_idi(h2_h4).forEach(function([h4_id, h4_i], k) {
+          $(h4_id).next('.content').children().unwrap();
+          if (h4_i >= last_h4_i) {
+            const h4_final = next_h3.indexes ? $(next_h3.ids).prev() : $(h4_id).siblings().last();
+            h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+            $(h4_id)
+              .nextUntil(h4_id + 'finalh4wrap')
+              .add(h4_id + 'finalh4wrap')
+              .wrapAll('<div class="content"/>');
+          } else {
+            $(h4_id)
+              .nextUntil('h3, h4')
+              .wrapAll('<div class="content"/>');
+          }
+        });
+      }
 
-    if (h2_h3.ids.length) {
-    	const last_h3_i = lt_dict(h_dict.h3, next_h2_i).indexes.slice(-1)[0];
-      zip_idi(h2_h3).forEach(function([h3_id, h3_i], l) {
-        $(h3_id).next('.content').children().unwrap();
-        if (h3_i >= last_h3_i) {
-        	const h3_final  = $(h3_id).siblings().last();
-          h3_final.attr('id', h3_id.slice(1) + 'finalh3wrap');
-          $(h3_id)
-          	.nextUntil(h3_id + 'finalh3wrap')
-            .add(h3_id + 'finalh3wrap')
-            .wrapAll('<div class="content"/>');
-        } else {
-        	$(h3_id)
-            .nextUntil('h3')
-            .wrapAll('<div class="content"/>');
-        }
-        
-        const next_h3_i = h_dict.h3.indexes[h_dict.h3.indexes.indexOf(h3_i)+1];
-        const next_h2_h3_i = (next_h2_i === undefined && next_h3_i === undefined) ? Infinity : (next_h3_i === undefined ? next_h2_i : (next_h2_i === undefined ? next_h3_i : Math.min(next_h3_i, next_h2_i)));
-        const h3_h4 = lt_dict(gt_dict(collap_dict.h4, h3_i), next_h2_h3_i);
-        if (h3_h4.ids.length) {
-        	const last_h4_i = lt_dict(h_dict.h4, next_h2_h3_i).indexes.slice(-1)[0];
-        	zip_idi(h3_h4).forEach(function([h4_id, h4_i], m) {
-            $(h4_id).next('.content').children().unwrap();
-            if (h4_i >= last_h4_i) {
-              const h4_final  = $(h4_id).siblings().last();
-              h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
-              $(h4_id)
-                .nextUntil(h4_id + 'finalh4wrap')
-                .add(h4_id + 'finalh4wrap')
-                .wrapAll('<div class="content"/>');
-            } else {
-              $(h4_id)
-                .nextUntil('h4')
-                .wrapAll('<div class="content"/>');
-            }
-          });
-        }
-      });
-    }
-  });
-} else {
-  const first_h3 = {ids: collap_dict.h3.ids[0], indexes: collap_dict.h3.indexes[0]};
-  const h4_h3 = lt_dict(collap_dict.h4, first_h3.indexes);
-  if (h4_h3.ids.length) {
-		const last_h4_i = h4_h3.indexes.slice(-1)[0];
-  	zip_idi(h4_h3).forEach(function([h4_id, h4_i], i) {
-      if (h4_i >= last_h4_i) {
-      	const h4_final = collap_dict.h3.indexes.length ? $(first_h3.ids).prev() : $(h4_id).siblings().last();
-        h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
-        $(h4_id)
-          .nextUntil(h4_id + 'finalh4wrap')
-          .add(h4_id + 'finalh4wrap')
-          .wrapAll('<div class="content"/>');
-      } else {
-      	$(h4_id)
-        	.nextUntil('h4')
-          .wrapAll('<div class="content"/>');
+      if (h2_h3.ids.length) {
+        const last_h3_i = lt_dict(h_dict.h3, next_h2_i).indexes.slice(-1)[0];
+        zip_idi(h2_h3).forEach(function([h3_id, h3_i], l) {
+          $(h3_id).next('.content').children().unwrap();
+          if (h3_i >= last_h3_i) {
+            const h3_final  = $(h3_id).siblings().last();
+            h3_final.attr('id', h3_id.slice(1) + 'finalh3wrap');
+            $(h3_id)
+              .nextUntil(h3_id + 'finalh3wrap')
+              .add(h3_id + 'finalh3wrap')
+              .wrapAll('<div class="content"/>');
+          } else {
+            $(h3_id)
+              .nextUntil('h3')
+              .wrapAll('<div class="content"/>');
+          }
+          
+          const next_h3_i = h_dict.h3.indexes[h_dict.h3.indexes.indexOf(h3_i)+1];
+          const next_h2_h3_i = (next_h2_i === undefined && next_h3_i === undefined) ? Infinity : (next_h3_i === undefined ? next_h2_i : (next_h2_i === undefined ? next_h3_i : Math.min(next_h3_i, next_h2_i)));
+          const h3_h4 = lt_dict(gt_dict(collap_dict.h4, h3_i), next_h2_h3_i);
+          if (h3_h4.ids.length) {
+            const last_h4_i = lt_dict(h_dict.h4, next_h2_h3_i).indexes.slice(-1)[0];
+            zip_idi(h3_h4).forEach(function([h4_id, h4_i], m) {
+              $(h4_id).next('.content').children().unwrap();
+              if (h4_i >= last_h4_i) {
+                const h4_final  = $(h4_id).siblings().last();
+                h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+                $(h4_id)
+                  .nextUntil(h4_id + 'finalh4wrap')
+                  .add(h4_id + 'finalh4wrap')
+                  .wrapAll('<div class="content"/>');
+              } else {
+                $(h4_id)
+                  .nextUntil('h4')
+                  .wrapAll('<div class="content"/>');
+              }
+            });
+          }
+        });
       }
     });
-  }
-	zip_idi(collap_dict.h3).forEach(function([h3_id, h3_i],i) {
-    $(h3_id)
-    	.nextUntil(collap_dict.h3.ids[i+1])
-      .wrapAll('<div class="content"/>');
-    
-    const next_h3_i = collap_dict.h3.indexes[i+1];
-    const h4 = lt_dict(gt_dict(collap_dict.h4, h3_i), next_h3_i);
-    if (h4.ids.length) {
-    	const last_h4 = lt_dict(h_dict.h4, next_h3_i).indexes.slice(-1)[0];
-      zip_idi(h4).forEach(function([h4_id,h4_i], l) {
-        $(h4_id).next('.content').children().unwrap();
-        if (h4_i >= last_h4) {
-        	const h4_final  = $(h4_id).siblings().last();
-          h4_final.attr('id', h4_id.slice() + 'finalh4wrap');
+  } else {
+    const first_h3 = {ids: collap_dict.h3.ids[0], indexes: collap_dict.h3.indexes[0]};
+    const h4_h3 = lt_dict(collap_dict.h4, first_h3.indexes);
+    if (h4_h3.ids.length) {
+      const last_h4_i = h4_h3.indexes.slice(-1)[0];
+      zip_idi(h4_h3).forEach(function([h4_id, h4_i], i) {
+        if (h4_i >= last_h4_i) {
+          const h4_final = collap_dict.h3.indexes.length ? $(first_h3.ids).prev() : $(h4_id).siblings().last();
+          h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
           $(h4_id)
-          	.nextUntil(h4_id + 'finalh4wrap')
+            .nextUntil(h4_id + 'finalh4wrap')
             .add(h4_id + 'finalh4wrap')
             .wrapAll('<div class="content"/>');
         } else {
-        	$(h4_id)
+          $(h4_id)
             .nextUntil('h4')
             .wrapAll('<div class="content"/>');
         }
       });
-    }    
-  });
+    }
+    zip_idi(collap_dict.h3).forEach(function([h3_id, h3_i],i) {
+      console.log(h3_id, h3_i, collap_dict.h3.ids[i+1]);
+      $(h3_id)
+        .nextUntil(collap_dict.h3.ids[i+1])
+        .wrapAll('<div class="content"/>');
+      
+      const next_h3_i = collap_dict.h3.indexes[i+1];
+      const h4 = lt_dict(gt_dict(collap_dict.h4, h3_i), next_h3_i);
+      if (h4.ids.length) {
+        const last_h4 = lt_dict(h_dict.h4, next_h3_i).indexes.slice(-1)[0];
+        zip_idi(h4).forEach(function([h4_id,h4_i], l) {
+          $(h4_id).next('.content').children().unwrap();
+          if (h4_i >= last_h4) {
+            const h4_final  = $(h4_id).siblings().last();
+            h4_final.attr('id', h4_id.slice() + 'finalh4wrap');
+            $(h4_id)
+              .nextUntil(h4_id + 'finalh4wrap')
+              .add(h4_id + 'finalh4wrap')
+              .wrapAll('<div class="content"/>');
+          } else {
+            $(h4_id)
+              .nextUntil('h4')
+              .wrapAll('<div class="content"/>');
+          }
+        });
+      }    
+    });
+  }
 }
+
+for (const sidebars of Object.keys(sidebar_collap_dicts)) {
+  setup(sidebar_collap_dicts[sidebars], sidebar_h_dicts[sidebars], false);
+}
+setup(main_collap_dict, main_h_dict, true);
+const coll = $('.collapsible');
 
 // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
 supported.forEach(function(h_type, i) {$(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
@@ -313,7 +347,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 export function close_all_sidebar_collapsibles() {
-  Object.values(sidebar_collap_dict).forEach(((h) => h.ids.forEach((id) => close_collapsible($(id)[0]))));
+  for (const sidebar_collap_dict of Object.values(sidebar_collap_dicts)) {
+    Object.values(sidebar_collap_dict).forEach(((h) => h.ids.forEach((id) => close_collapsible($(id)[0]))));
+  }
 }
 
 function url_collapsibles(url) {
@@ -323,7 +359,7 @@ function url_collapsibles(url) {
 
   function url_h_search(search) {
     let canidates; let final_h;
-    for (const [h, dict] of Object.entries(h_dict)) {
+    for (const [h, dict] of Object.entries(main_h_dict)) {
       final_h = h;
       canidates = dict.indexes.filter((i) => dict.ids[dict.indexes.indexOf(i)].replaceAll(new RegExp('\u00AD', 'g'),'').match(new RegExp(search + '$')) !== null);
       if(canidates.length){break};
@@ -338,16 +374,16 @@ function url_collapsibles(url) {
     target_arr = s[0]; h_layer = s[1];
   }
   const target_i = target_arr[index];
-  let open_ids = [collap_dict[h_layer].ids[collap_dict[h_layer].indexes.indexOf(target_i)]];
+  let open_ids = [main_collap_dict[h_layer].ids[main_collap_dict[h_layer].indexes.indexOf(target_i)]];
   if (h_layer !== "h2") {
-    const last_h2 = Math.max.apply(Math, collap_dict.h2.indexes.filter((x) => x < target_i));
+    const last_h2 = Math.max.apply(Math, main_collap_dict.h2.indexes.filter((x) => x < target_i));
     if (last_h2 != -Infinity) {
-      open_ids.push(collap_dict.h2.ids[collap_dict.h2.indexes.indexOf(last_h2)]);
+      open_ids.push(main_collap_dict.h2.ids[main_collap_dict.h2.indexes.indexOf(last_h2)]);
     };
     if (h_layer === "h4") {
-      const last_h3 = Math.max.apply(Math, collap_dict.h3.indexes.filter((x) => last_h2 < x && x < target_i));
+      const last_h3 = Math.max.apply(Math, main_collap_dict.h3.indexes.filter((x) => last_h2 < x && x < target_i));
       if (last_h3 != -Infinity) {
-        open_ids.push(collap_dict.h3.ids[collap_dict.h3.indexes.indexOf(last_h3)]);
+        open_ids.push(main_collap_dict.h3.ids[main_collap_dict.h3.indexes.indexOf(last_h3)]);
       };
     }
   }

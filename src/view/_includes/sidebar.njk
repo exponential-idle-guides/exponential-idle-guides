@@ -1,3 +1,5 @@
+{% from 'list-link.njk' import linked %}
+
 {% macro sidebar_div(base, title, square) %}
   {% if square %}
     {% set s = "square_list" %}
@@ -37,13 +39,15 @@
 {% if not home %}
   <div id="sidebar">
     <div id="sidebars">
-      {% call sidebar_div("Header", "Table of Contents", true) %}
-        {% set tocs = content | toc %}
+      {% set tocs = content | toc %}
         {% if tocs %}
-          {{ content | toc | safe }}
-        {% else %}
-          <p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>
-        {% endif %}
+        {% set content_str = content | safe %}
+        {% set toc_output = tocs | safe | ToC_conversion(content_str) | safe %}
+      {% else %}
+        {% set toc_output = '<p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>' | safe %}
+      {% endif %}
+      {% call sidebar_div("Header", "Table of Contents", true) %}
+        {{ toc_output }}
       {% endcall %}
 
       {% call sidebar_div("Guide", "Guides", true) %}
