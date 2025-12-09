@@ -860,8 +860,7 @@ Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accu
 
 ##### When to reset the particle
 
-There isn't an exact rule yet on how often you must perform a particle reset.
-A good baseline is to reset every 1e9 $\rho$, which is every two $v_2$ levels, but it varies slightly from that. For example, early in the CT you want to reset a bit more often.
+There isn't an exact rule yet on how often you must perform a particle reset. A good baseline is to reset every 1e9 $\rho$, which is every two $v_2$ levels, but it varies slightly from that. For example, early in the CT you want to reset a bit more often.
 
 It is also important to stop resetting at an appropriate point, you want to only reset once after recovering to your previous publication mark.
 
@@ -926,9 +925,7 @@ $t$ is a variable with constant growth once all $\dot{t}$ variables are bought.
 
 The $q_i$ variables work the same way as with T2, the bottom layer has a constant growth, then the growth of each other layer is affected by the value of the layer below, with factors being the $c_i$ variables (except $c_1$).
 
-Finally, we have the $r$ equation. At the start of the theory, it is the partial sum of the inverse of the squares, which converges. As such, there is no point to buy $c_1$ past a certain point.
-After getting the first milestone, the $r$ equation changes to be the inverse of the remainder of the sum. As we omit more and more of the first terms of the sum, the remainder converges to zero, making $c_1$ useful again.
-Past earlygame, we approximate $\dot{r}=c_1$.
+Finally, we have the $r$ equation. At the start of the theory, it is the partial sum of the inverse of the squares, which converges. As such, there is no point to buy $c_1$ past a certain point. After getting the first milestone, the $r$ equation changes to be the inverse of the remainder of the sum. As we omit more and more of the first terms of the sum, the remainder converges to zero, making $c_1$ useful again. Past earlygame, we approximate $\dot{r}=c_1$.
 
 $\dot{\rho}$ is also monitored by the $a$ exponent, which will always be less than 1, but you will be able to increase it with milestones, and, later, with a variable called $n$.
 

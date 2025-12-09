@@ -12,7 +12,6 @@ tags: T9+ Research
 
 ###### Revised From [Evaluating the Effect of Time for Implementing Black Hole on Rho Progression of RZ CT](https://docs.google.com/document/d/1XlRLMZWcGToxlQcoHqaov_ttTC4Yozgn/) and [Evaluating the Effect of Time for Implementing Black Hole on Delta Progression of RZ CT](https://docs.google.com/document/d/1Z1D-LC_lsgN5WBh0V-CX40kjJqY_x5mU/)
 
-
 **TLDR:** If u are going to full idle RZ CT, get an approximation of how long the pub will be, convert it into in-game $t$, and multiply by 60% or 0.6, then compare to a table of "good" black hole $t$ to use with throughout your pub. **DO NOT** use it in a semi-idle/active situation.
 
 ### Abstract

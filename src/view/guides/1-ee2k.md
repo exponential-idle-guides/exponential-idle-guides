@@ -11,10 +11,7 @@ eylanding: "0-2k"
 
 ### Introduction
 
-The start of the game is the most variable section of the game depending on how active you play.
-This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks.
-Within each of these sections there are idle, active, and general strategy subsections for differing playstyles.
-Playing and molding both sections will often deliver the best results for a particular person's ability and situation.
+The start of the game is the most variable section of the game depending on how active you play. This guide will be split into 1 to ee50, ee50 to ee200, and ee200 to ee2000 sections as you hit milestones and gain new unlocks. Within each of these sections there are idle, active, and general strategy subsections for differing playstyles. Playing and molding both sections will often deliver the best results for a particular person's ability and situation.
 
 ### 1 to ee50
 
@@ -61,32 +58,23 @@ Playing and molding both sections will often deliver the best results for a part
 
 ##### Equation taps
 
-Each tap of the equation, increases t by $1 * (ad\ boost\ of\ 1.5) * accel\ value$. This is a significant boost to progress until about ee15-ee20.
-After, dt becomes too large for your taps to make a worthy and significant boost to progress.
+Each tap of the equation, increases t by $1 * (ad\ boost\ of\ 1.5) * accel\ value$. This is a significant boost to progress until about ee15-ee20. After, dt becomes too large for your taps to make a worthy and significant boost to progress.
 
 There is also a 0.04% chance to gain a star from tapping the equation, however, due to this being so low and not increasing as you progress, it is only useful for getting the achievements that require tap stars. The highest achievement requires 10 tap stars which takes on average 25,000 taps, but this can vary drastically depending on luck.
 
 ##### Minigames
 
-These can be unlocked once $b>=1$. Highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and permanent levels while you wait.
-Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
-I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.If you do play, accel button also increases minigame reward.
+These can be unlocked once $b>=1$. Highest priority is doing 15-puzzle and saving up for the arrow puzzle. You can buy variables and permanent levels while you wait. Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements. I would highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
 ##### Accel button
 
-This upgrade only has value if you continuously and consistently use it.
-If you are not using the accel at the moment, selling it will lead to more stars for variables and permanent levels.
-It gives an x2.85 boost to $dt$ and game progress if you max out the 1 hour cap every time (x3.17 cap).
+This upgrade only has value if you continuously and consistently use it. If you are not using the accel at the moment, selling it will lead to more stars for variables and permanent levels. It gives an x2.85 boost to $dt$ and game progress if you max out the 1 hour cap every time (x3.17 cap).
 
 ##### Star upgrades
 
-Focus is on buying accel button if you will use it then variables. Leftover stars can be used for permanent levels.
-You will most likely not buy any autobuyers in this section as variables far and above give a bigger boost most cases.
-If you do end up buying some then buy variable then upgrade autobuyer.
-You will not make it to autoprestige in this section unless extreme grinding but is worth the cost if you keep some variables.
+Focus is on buying accel button if you will use it then variables. Leftover stars can be used for permanent levels. You will most likely not buy any autobuyers in this section as variables far and above give a bigger boost most cases. If you do end up buying some then buy variable then upgrade autobuyer. You will not make it to autoprestige in this section unless extreme grinding but is worth the cost if you keep some variables.
 
 #### Idle strategies
 
@@ -104,10 +92,7 @@ You will not purchase the accel button. When you go idle, focus purchase on the 
 
 **Upon reaching ee50, immediately supremacy.**
 
-The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy.
-There is an exception, however. The third supremacy for $y^{1.6}$ costs 24 $\psi$ and occurs at $f(t)$=ee140.
-You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtained the $y^{1.6}$ supremacy upgrade beforehand.
-It is better to combine both of these supremacies into one than have to recovery from one and do another.
+The general rule of thumb before ee2000 is whenever you have an upgrade available, to supremacy. There is an exception, however. The third supremacy for $y^{1.6}$ costs 24 $\psi$ and occurs at $f(t)$=ee140. You will want to skip this upgrade until you get to ee200 where you are forced to supremacy whether or not you obtained the $y^{1.6}$ supremacy upgrade beforehand. It is better to combine both of these supremacies into one than have to recovery from one and do another.
 
 #### Supremacy recovery (Active)
 
@@ -149,12 +134,7 @@ timer(d(ln(ln(db/b+1)/pt)) &lt; 0)<br>
 
 ##### Minigames
 
-If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and permanent levels while you wait.
-Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
-I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
-If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.
-If you do play, accel button also increases minigame reward.
+If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle. You can buy variables and permanent levels while you wait. Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements. I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time. If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars. If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
@@ -224,19 +204,13 @@ Each tick, $x * dt$ is added to $x_1$. This is done for every new value of $x$ a
 
 ##### Minigames
 
-If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle.
-You can buy variables and permanent levels while you wait.
-Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements.
-I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time.
-If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.If you do play, accel button also increases minigame reward.
+If you have not unlocked arrow puzzle yet, highest priority is doing 15-puzzle and saving up for the arrow puzzle. You can buy variables and permanent levels while you wait. Doing one game of expert arrow or a few of hard arrow makes up all the stars and more spent on arrow puzzle because of the achievements. I highly highly suggest focusing and learning hard arrow puzzle if you plan on playing minigames for stars as it is far and above the best stars/time. If you have already unlocked and learned hard arrow, then not much to say besides continue on grinding stars.If you do play, accel button also increases minigame reward.
 
 ###### Look at the [Minigame Guide](/guides/asd) for help on solving.
 
 ##### Accel button
 
-This upgrade only has value if you continuously and consistently use it.
-If you are not using the accel at the moment, selling it will lead to more stars for variables and permanent levels.
-It gives an x2.85 boost to $dt$ and thus the game if you max out the 1 hour cap every time (x3.17 cap).
+This upgrade only has value if you continuously and consistently use it. If you are not using the accel at the moment, selling it will lead to more stars for variables and permanent levels. It gives an x2.85 boost to $dt$ and thus the game if you max out the 1 hour cap every time (x3.17 cap).
 
 ##### Star upgrades
 

@@ -83,31 +83,15 @@ timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 
 #### Autoprestige explanation
 
-The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^{(1/pt)}) < 0\\).
-They measure the same thing, but the second one is just raised to the exponent, base e. They are
-equivalent because \\(e^x\\) (and \\(ln (x)\\)) are both strictly increasing functions on the domain
-\\(x > 0\\), so applying those functions will not change where the local maximum is located
-(when \\(d\\) changes sign).
+The idea behind \\(d(ln(db/b+1)/pt) < 0\\) is clearer if you consider a different term \\(d((db/b+1)^{(1/pt)}) < 0\\). They measure the same thing, but the second one is just raised to the exponent, base e. They are equivalent because \\(e^x\\) (and \\(ln (x)\\)) are both strictly increasing functions on the domain \\(x > 0\\), so applying those functions will not change where the local maximum is located (when \\(d\\) changes sign).
 
-\\(db/b+1\\) is better explained with \\((b + db)/b\\). \\(b + db\\) is the new \\(b\\) value you would
-get after prestige, and \\(b\\) is the old \\(b\\) value you currently have. If you prestige, your
-\\(b\\) is multiplied by that exact value. That is, your \\(b\\) grows with ratio \\((b + db)/b\\) if
-you were to prestige.
+\\(db/b+1\\) is better explained with \\((b + db)/b\\). \\(b + db\\) is the new \\(b\\) value you would get after prestige, and \\(b\\) is the old \\(b\\) value you currently have. If you prestige, your \\(b\\) is multiplied by that exact value. That is, your \\(b\\) grows with ratio \\((b + db)/b\\) if you were to prestige.
 
-The general idea of a good expression would be to "maximize \\(f\\) growth over time," and it would
-be the same as "maximize \\(b\\) growth over time." To measure \\(b\\) growth over time, in this approach
-we take the growth of \\(b\\) that can result from current prestige only and take \\((b + db)/b\\) as the
-ratio of growth.
+The general idea of a good expression would be to "maximize \\(f\\) growth over time," and it would be the same as "maximize \\(b\\) growth over time." To measure \\(b\\) growth over time, in this approach we take the growth of \\(b\\) that can result from current prestige only and take \\((b + db)/b\\) as the ratio of growth.
 
-We could divide the ratio by time, but that doesn't make sense because ratios are applied
-multiplicatively (e.g. ratio \\(r\\) per second means \\(r^5\\) in \\(5\\) seconds, not \\(5*r\\)). Hence,
-instead of dividing, we take the power \\(1/pt\\) (\\(pt\\) being the time since prestige) to get the
-correct value of ratio.
+We could divide the ratio by time, but that doesn't make sense because ratios are applied multiplicatively (e.g. ratio \\(r\\) per second means \\(r^5\\) in \\(5\\) seconds, not \\(5*r\\)). Hence, instead of dividing, we take the power \\(1/pt\\) (\\(pt\\) being the time since prestige) to get the correct value of ratio.
 
-Therefore, we get the expression \\(((b + db)/b)^{(1/pt)}\\) which represents "after last prestige, \\(b\\)
-grew by \\(this\\) \\(ratio\\) per second." To maximize this value, we note that this value actually achieves
-one local maximum (by working through the behaviors of (\\(f\\) over time) so we may simply take a
-derivative (\\(d\\)) and see when it turns negative.
+Therefore, we get the expression \\(((b + db)/b)^{(1/pt)}\\) which represents "after last prestige, \\(b\\) grew by \\(this\\) \\(ratio\\) per second." To maximize this value, we note that this value actually achieves one local maximum (by working through the behaviors of (\\(f\\) over time) so we may simply take a derivative (\\(d\\)) and see when it turns negative.
 
 #### Visual representation
 

@@ -9,6 +9,7 @@ tags: T9+ Research
 ## Introduction
 
 The game features 8 theories each with its distinct characteristics and means of behavior. Although they seem wildly different from each other visually and numerically short-term, the general long-term concept of purchasing variables of exponentially-higher prices to aid the main currency's near-exponential progress remains constant despite the difference of how they actually affect the growth of the theories they belong to.
+
 Therefore, we can use a single model deduced from the Cost and the Effect of all the variables used in a theory to explain the long-term and middle-term behavior of a theory, and make meaningful conclusions from the observed properties of the model about the original theories.
 
 ## Required Background Knowledge
@@ -226,7 +227,7 @@ $$\frac{d\rho}{dt} \in \Theta(\rho^xt^y)$$
 
 Here, we use the concept from Lemma 2.2, and factor in the mechanic of publication. Since all theories have the publication multiplier in the form of:
 $$K\rho^{r}_{pub}\qquad (3-1)$$
-In which \\(K,r \in \mathbb{R}^+\\), \\(\rho_{pub}\\) is the value of \\(\rho\\) at the last publication
+In which \\(K,r \in \mathbb{R}^+\\), \\(\rho_{pub}\\) is the value of \\(\rho\\) at the last publication.
 Since the publication multiplier is directly multiplied on the \\(\rho\\) gain of the theory, we can construct a model using Lemma 2.2 and (3-1):
 $$\frac{d\rho}{dt} = K\rho^{x}t^{y}\rho^{z}_{pub}\qquad (3-2)$$
 In which \\(K,x,y,z \in \mathbb{R}^+\\) are constants.

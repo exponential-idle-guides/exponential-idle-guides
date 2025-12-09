@@ -66,9 +66,7 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 
 #### T5 routing
 
-Running the active strats will make this the number one theory for a while
-and eventual number two after T6 takes over (e750-770+). A step-by-step on how to
-progress the theory is below.
+Running the active strats will make this the number one theory for a while and eventual number two after T6 takes over (e750-770+). A step-by-step on how to progress the theory is below.
 
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
@@ -87,9 +85,7 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 <yt data-video-id="pM-pjSnMByw">Theory 5 Active Strategy Video Example By Snaeky</yt>
 
-T5 will always give its best results from active play. However, after
-step 3, you can still get good results while autobuying \\(q_1\\) and manually
-purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
+T5 will always give its best results from active play. However, after step 3, you can still get good results while autobuying \\(q_1\\) and manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 ##### Additional Information
 
@@ -183,9 +179,4 @@ milestones.
 
 #### Lemma
 
-All Lemma sections already have the <kbd>-</kbd> buttons unlocked. This gives
-back the full price paid into the upgrade. This allows for upgrade
-swapping or dropping upgrades at the very end to hit the lemma limit
-early. The amount respeced is based on the x1, x10, x25, x100, xMax in
-the top right. On the right side, you can see the total levels bought.
-There is also a free reset top right if a mistake is made.
+All Lemma sections already have the <kbd>-</kbd> buttons unlocked. This gives back the full price paid into the upgrade. This allows for upgrade swapping or dropping upgrades at the very end to hit the lemma limit early. The amount respeced is based on the x1, x10, x25, x100, xMax in the top right. On the right side, you can see the total levels bought. There is also a free reset top right if a mistake is made.

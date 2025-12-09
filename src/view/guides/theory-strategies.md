@@ -59,11 +59,9 @@ T2 is the only theory without an active strategy after all milestones are bought
 
 #### Theory 3: Linear Algebra {data-toc-exclude}
 
-T3 has the most variables of any theory and has benefitted the most from player-created strategies.
-T3</span><green>Play2</green> is currently the best active strategy above e350$\rho$. T3<blue>ρ2C23</blue><green>d</green> is an easier version being 10-15% slower.
+T3 has the most variables of any theory and has benefitted the most from player-created strategies. T3</span><green>Play2</green> is currently the best active strategy above e350$\rho$. T3<blue>ρ2C23</blue><green>d</green> is an easier version being 10-15% slower.
 
-T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho$.
-T3</span><green>SNAX2</green> is similar to T3</span><green>SNAX</green> but is designed to be QoL compatible.
+T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho$. T3</span><green>SNAX2</green> is similar to T3</span><green>SNAX</green> but is designed to be QoL compatible.
 
 - [T3</span><green>Play2</green>](#t3play2)&nbsp; — &nbsp;Very Active
 
@@ -1940,8 +1938,7 @@ Caption: WSP;
 
 **Milestone Swap**
 
-The milestone state will be described with four numbers. These describe the priority of the milestone.
-For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone.
+The milestone state will be described with four numbers. These describe the priority of the milestone. For example, 4→3→1→2 means you should prioritize buying fourth milestone levels first, then after the fourth milestone is maxed, then you buy third milestone levels, and then first milestone, then second milestone.
 
 <br>There are 3 milestone states:
 
@@ -1954,14 +1951,14 @@ For example, 4→3→1→2 means you should prioritize buying fourth milestone l
 <br>This strategy swaps milestones depending on how far away the next $b_1$ or $b_2$ upgrade is.
 
 The goal of this strategy is:
+
 1. Buy $b_1$/$b_2$
 2. Swap milestones into <orange>State 1</orange> to fully utilize the boost from the new $b_1$/$b_2$ upgrade.
 3. After some time (the exact amount of time will be described later in the strategy), we want to swap to <orange>State 2</orange>. This way we boost $\dot\rho_2$ so we get more $\rho_2$ quicker.
 4. When we are closer to the next $b_1$/$b_2$ upgrade, swap to <orange>State 3</orange> so we utilize the boost that we just got for $\rho_2$. This will get us to the next $b_1$/$b_2$ upgrade a lot quicker.
 5. Repeat.
 
-<br>This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50$\rho$-e300$\rho$. This means there can be up to 5-10 minute gaps between $b_1$/$b_2$ upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths.
-At the very end of publications, you will also not have to milestone swap, as we will use <orange>State 3</orange> only, to get the last $\rho$ boost before publishing.
+<br>This may seem difficult to execute, but publications in SL are 1 to 1.5 hours long after e50$\rho$-e300$\rho$. This means there can be up to 5-10 minute gaps between $b_1$/$b_2$ upgrades later in the publication. You will also get used to the swapping ratios and duration quickly because of the consistent publication lengths. At the very end of publications, you will also not have to milestone swap, as we will use <orange>State 3</orange> only, to get the last $\rho$ boost before publishing.
 
 <br>As long as $\rho$ < e175, we will swap between the three states, after that its just the first two states.
 
@@ -2547,9 +2544,7 @@ Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
 
 **Milestone swapping strategy (e700ρ+)**
 
-After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$.
-Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime.
-Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
+After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
 ###### For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
@@ -2575,9 +2570,7 @@ Caption: FP<green>dMS</green>;
 
 **Milestone swapping strategy (e700ρ+)**
 
-After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$.
-Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime.
-Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
+After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
 ###### For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
@@ -2740,8 +2733,7 @@ Caption: RZ<green>dMS</green>;
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
 
-Start the publication with the $w_2$ milestone on.
-The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
+Start the publication with the $w_2$ milestone on. The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
 
 The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
 
@@ -2767,8 +2759,7 @@ Caption: RZ<green>MS</green>;
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
 
-Start the publication with the $w_2$ milestone on.
-The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
+Start the publication with the $w_2$ milestone on. The value after swap is the $\rho$ value were you should switch it to $c_1$ exponent.
 
 The levels it shows after $c_1$ and $c_2$ are the last levels you should buy them to in this publication.
 

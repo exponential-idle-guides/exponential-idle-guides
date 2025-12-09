@@ -6,12 +6,9 @@ order: 2
 eylanding: "IntroToGrad"
 ---
 
-These guides are designed to help you play through the phi (\\(\varphi\\)) and theories sections
-of Exponential Idle. This introduction will give you some fundamentals to help you progress
-while playing this section of the game.
+These guides are designed to help you play through the phi (\\(\varphi\\)) and theories sections of Exponential Idle. This introduction will give you some fundamentals to help you progress while playing this section of the game.
 
-If you don't want to have spoilers for the later game, don't read
-further ahead than you are already.
+If you don't want to have spoilers for the later game, don't read further ahead than you are already.
 
 ### New autoprestige expression
 
@@ -29,40 +26,23 @@ timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 
 #### Autoprestige explanation
 
-This is the new expression for prestige. It looks intimidating, but it will work normally and
-you never have to turn it off (you would have to if you didn't use this one later on). Here is
-an explanation for all parts except the normal expression which has an [explanation](/guides/ex-basics/#autoprestige-explanation) already.
+This is the new expression for prestige. It looks intimidating, but it will work normally and you never have to turn it off (you would have to if you didn't use this one later on). Here is an explanation for all parts except the normal expression which has an [explanation](/guides/ex-basics/#autoprestige-explanation) already.
 
 <blockquote style="font-family:monospace;">((d(smooth(10^10^10^(phi * tau), 1)) > 1</blockquote>
 
-This returns true if phi and/or tau grows a very very small amount more than the max
-reached that prestige. The many "10^" is to make any tiny changes explode into very large
-numbers so that they will never be less than 1, especially if you are far into a graduation
-or endgame. This also prevents you from early prestiging from dropping accel or moving
-students around as they make phi drop in value.
+This returns true if phi and/or tau grows a very very small amount more than the max reached that prestige. The many "10^" is to make any tiny changes explode into very large numbers so that they will never be less than 1, especially if you are far into a graduation or endgame. This also prevents you from early prestiging from dropping accel or moving students around as they make phi drop in value.
 
 <blockquote style="font-family:monospace;">timer(abs(d(log10(phi + 1))) < 50) > 15))</blockquote>
 
-This part prevents prestiging if phi were to change by more than e5 within 1 tick. It
-will then wait 15 seconds before checking if it can prestige again. This will allow you
-to swap R9 or students freely without needing to worry about accidentally prestiging
-for a very small amount of \\(b\\).
+This part prevents prestiging if phi were to change by more than e5 within 1 tick. It will then wait 15 seconds before checking if it can prestige again. This will allow you to swap R9 or students freely without needing to worry about accidentally prestiging for a very small amount of \\(b\\).
 
 <blockquote style="font-family:monospace;">|| phi &lt;= 1 ||</blockquote>
 
-If phi is equal to 1, then it uses the normal autoprestige expression. We don't have
-"=" in the expressions, so we had to work around it by using <= (less than). Phi can never be less than 1 so if \\(phi <= 1\\), \\(phi = 1\\).
-This means that, even if you don't have any phi upgrades, it will allow you to
-prestige like normal and not require you to swap out of theories (or R9 until the end of a graduation).
+If phi is equal to 1, then it uses the normal autoprestige expression. We don't have "=" in the expressions, so we had to work around it by using <= (less than). Phi can never be less than 1 so if \\(phi <= 1\\), \\(phi = 1\\). This means that, even if you don't have any phi upgrades, it will allow you to prestige like normal and not require you to swap out of theories (or R9 until the end of a graduation).
 
 <blockquote style="font-family:monospace;">(0.8 * log10(log10(lf)) > log10(log10(gf)) ||<br>0.8 * log10(log10(gf)) > log10(log10(sf))))</blockquote>
 
-This lets the normal expression work when you supremacy or graduate up to 80% of
-\\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to
-recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part
-of the expression above does not allow the normal expression to prestige for 15 seconds after
-a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So,
-we allow the normal expression to work like normal while recovering.
+This lets the normal expression work when you supremacy or graduate up to 80% of \\(log10(log10(lifetime\\) \\(ft\\) \\(or\\) \\(graduation\\) \\(ft\\))) allowing you to recover faster than normal. The \\(timer(abs(d(log10(phi + 1))) < 50) > 15))\\) part of the expression above does not allow the normal expression to prestige for 15 seconds after a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, we allow the normal expression to work like normal while recovering.
 
 ###### Reference [Cumulative Maximum Smooth()](/guides/ex-basics/#method-3-cumulative-maximum)
 
@@ -126,11 +106,10 @@ dpsi + psi &gt; min(costUpS(1), <br>
 &amp;&amp; psi + dpsi &gt; 4.2e51))
 </blockquote>
 
-**Do a manual supremacy when you input this expression and never enter the
-edit expression field again afterwards. Make sure autobuyers are on x1
-or xMax.**
+**Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.**
 
 ###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
+
 ###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
 
 #### Autosupremacy explanation
@@ -170,39 +149,20 @@ python main.py
 
 ### Student use routing
 
-Buy **all** available theories unless
-explicitly stated otherwise because theories are important to start as soon
-as possible as they function outside of the main game.
+Buy **all** available theories unless explicitly stated otherwise because theories are important to start as soon as possible as they function outside of the main game.
 
 Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) (by Niedzielan, AfuroZamurai, and Milla) for optimal distribution for \\(\varphi\\).
 
 ### Respecing students
 
-The button at the bottom labeled “Respec” removes all used \\(σ\\) in
-Research and gives it back to you without any consequences. This allows for testing
-or reallocating easily, but it will remove **ALL** of your students from
-everything including theories. On the bottom left is located a list-shaped
-button. Pressing this will reveal the <kbd>-</kbd> buttons. These
-<kbd>-</kbd> buttons remove x levels from the selected research option.
-The amount of levels removed is based on the x1, x10, x25, x100, xMax
-cost option selected in the top right. On the right side of each
-research option, you can also see the total levels.
+The button at the bottom labeled “Respec” removes all used \\(σ\\) in Research and gives it back to you without any consequences. This allows for testing or reallocating easily, but it will remove **ALL** of your students from everything including theories. On the bottom left is located a list-shaped button. Pressing this will reveal the <kbd>-</kbd> buttons. These <kbd>-</kbd> buttons remove x levels from the selected research option. The amount of levels removed is based on the x1, x10, x25, x100, xMax cost option selected in the top right. On the right side of each research option, you can also see the total levels.
 
 ### Theory basics
 
-Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to
-use them. However, the best publication multipliers vary from theory to theory and will
-decrease over time. If you are close to a multiplier you want, turn off autobuyer
-and let \\(\rho\\) increase without buying upgrades for a faster short-term increase
-before the publication (turn on after you publish). This is known and referenced as "cruising".
-Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative
-combination of all \\(τ\\) from each theory.
+Publications are equivalent to prestiges for \\(f(t)\\) so don't be afraid to use them. However, the best publication multipliers vary from theory to theory and will decrease over time. If you are close to a multiplier you want, turn off autobuyer and let \\(\rho\\) increase without buying upgrades for a faster short-term increase before the publication (turn on after you publish). This is known and referenced as "cruising". Total \\(τ\\), found in the equation or at the top of the screen, is a multiplicative combination of all \\(τ\\) from each theory.
 
 **Don’t be afraid to skip getting all milestones to work on the next or a better theory.**
 
 ### Respecing milestones
 
-Unlike students, all Milestone sections already have the <kbd>-</kbd> button.
-This works in the same way as above. Here you can also find how many
-unused Milestones are available at the top. On the right side of each
-Milestone, you can also find the current and max levels of each.
+Unlike students, all Milestone sections already have the <kbd>-</kbd> button. This works in the same way as above. Here you can also find how many unused Milestones are available at the top. On the right side of each Milestone, you can also find the current and max levels of each.
