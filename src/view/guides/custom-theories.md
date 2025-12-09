@@ -856,7 +856,7 @@ The optimal publication multiplier slowly increases the later you are in the the
 
 It ranges from 10-50 early to 100-500 at the end of the theory.
 
-Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accurate results.
+Check [the sim](https://exponential-developers.github.io/sim-3.0/) for more accurate results. Check out the [MF Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for variable checks mid-publication.
 
 ##### When to reset the particle
 
