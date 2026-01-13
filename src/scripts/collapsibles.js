@@ -18,8 +18,8 @@ const full_skiplist = {
 }
 // add "" index check
 
-const closed_char = '\u25B6';
-const open_char = '\u25BC';
+const closed_char = '\u{25B6}\u{FE0E}'; // Necessary modifier to specify the text version of this charactr
+const open_char = '\u{25BC}';
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
 const supported = ["h2", "h3", "h4"];
