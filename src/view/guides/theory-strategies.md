@@ -2818,6 +2818,29 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 
 ## Magnetic Fields
 
+### MF<green>d</green>
+
+Class: strat;
+Caption: MF<green>d</green>;
+
+|          |                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                                               |
+| $c_2$    | CHECK                                                                                                                          |
+| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_2$    | CHECK                                                                                                                          |
+| $\delta$ | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost                                                       |
+| $v_1$    | Only buy right before a reset                                                                                                  |
+| $v_2$    | Only buy right before a reset                                                                                                  |
+| $v_3$    | Only buy right before a reset                                                                                                  |
+| $v_4$    | Only buy right before a reset                                                                                                  |
+
+Strategy Credits:
+
+- BlackSeal for the initial implementation of resets in the sim
+- Maimai for the new rules
+- Mathis S. for the new reset algorithm
+
 ### MF<green>d2</green>
 
 Class: strat;
@@ -2849,7 +2872,7 @@ Caption: MF<green>d</green>;
 | -------- | ------------------------------------------------------------------------------------------------------- |
 | $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                        |
 | $c_2$    | CHECK                                                                                                   |
-| $a_1$    | When $I\lt\frac{1}{2}I_{\text{cap}}$ **or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_1$    | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
 | $a_2$    | CHECK                                                                                                   |
 | $\delta$ | CHECK                                                                                                   |
 | $v_1$    | Only buy right before a reset                                                                           |
