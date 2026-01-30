@@ -330,6 +330,8 @@ The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It 
 
 The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
 
+- [MF<green>d3</green>](#mfd3)&nbsp; — &nbsp;Very Active
+
 - [MF<green>d2</green>](#mfd2)&nbsp; — &nbsp;Very Active
 
 - [MF<green>d</green>](#mfd)&nbsp; — &nbsp;Active
@@ -2818,10 +2820,10 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 
 ## Magnetic Fields
 
-### MF<green>d</green>
+### MF<green>d3</green>
 
 Class: strat;
-Caption: MF<green>d</green>;
+Caption: MF<green>d3</green>;
 
 |          |                                                                                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
