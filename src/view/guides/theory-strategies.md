@@ -1874,7 +1874,7 @@ Caption: WSP<green>d</green><red>Stop</red><blue>C1</blue>;
 
 | INVIS | First 15sec of Publication                                     | Rest of Publication                                              |
 | ----- | -------------------------------------------------------------- | ---------------------------------------------------------------- |
-| $q_1$ | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost   |
+| $q_1$ | When cost$\times(6+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | When cost$\times(6+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost   |
 | $q_2$ | CHECK                                                          | CHECK                                                            |
 | $n$   | CHECK                                                          | CHECK                                                            |
 | $c_1$ | CHECK                                                          | When cost is Ratio* of $\text{min}(q_2,n,c_2)$ cost              |
