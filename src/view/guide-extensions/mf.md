@@ -38,7 +38,7 @@ The following abbreviations will be used throughout the subsequent section:
 
 #### Data collection
 
-A series of MF CT publication was simulated in sim 3.0 from $0\rho$ to $e600\rho$ with step interval $1$ using best overall strategy (MF<green>d</green>Coast Depth: 0 $c_1$: xxx, MF<green>d2</green>Coast Depth: 0 $c_1$: xxx and MF<green>d3</green>Coast Depth: 0 $c_1$:xxx) in depth 0 (No bruteforce). Due to the purpose of this investigation and my technical difficulties, investigation involving a higher depth was not used. Then, data set entries consist of the detail of reset positions, variable purchase positions, gain of $\rho$ of each of the 601 publications are obtained.
+A series of MF CT publication was simulated in sim 3.0 from $0\rho$ to $e600\rho$ with step interval $1$ using best overall strategy (MF<green>dCoast</green> Depth: 0 $c_1$: xxx, MF<green>d2Coast</green> Depth: 0 $c_1$: xxx and MF<green>d3Coast</green> Depth: 0 $c_1$:xxx) in depth 0 (No bruteforce). Due to the purpose of this investigation and my technical difficulties, investigation involving a higher depth was not used. Then, data set entries consist of the detail of reset positions, variable purchase positions, gain of $\rho$ of each of the 601 publications are obtained.
 
 #### Data analysis and selection criteria
 
@@ -204,7 +204,7 @@ The above simulations were simulated in close to real-life situations when a gam
 
 #### Evaluating the Effect of strategy used in publication
 
-The MF CT publications were simulated by sim 3.0 using the best rate out of the three strategies developed by players – MF<green>d</green>Coast Depth: 0 $c_1$: xxx $(50/601, 8.32\%)$, MF<green>d2</green>Coast Depth: 0 $c_1$: xxx $(236/601, 39.27\%)$ and MF<green>d3</green>Coast Depth: 0 $c_1$:xxx $(315/601, 52.41\%)$. The use of three types of strategy in their respective $\rho$ of publication is presented below (*Graph 24*). Together with the trend of usage of reset pattern is illustrated in *Graph 25*, one can summarize that MF<green>d2</green> and MF<green>d3</green> were alternatively used throughout MF CT, with MF<green>d3</green> finally dominate over MF<green>d2</green> after $e470 \rho$. The use of MF<green>d</green> were low until a gradual rise after $e560 \rho$, replacing MF<green>d2</green>.
+The MF CT publications were simulated by sim 3.0 using the best rate out of the three strategies developed by players – MF<green>dCoast</green> Depth: 0 $c_1$: xxx $(50/601, 8.32\%)$, MF<green>d2Coast</green> Depth: 0 $c_1$: xxx $(236/601, 39.27\%)$ and MF<green>d3Coast</green> Depth: 0 $c_1$:xxx $(315/601, 52.41\%)$. The use of three types of strategy in their respective $\rho$ of publication is presented below (*Graph 24*). Together with the trend of usage of reset pattern is illustrated in *Graph 25*, one can summarize that MF<green>d2</green> and MF<green>d3</green> were alternatively used throughout MF CT, with MF<green>d3</green> finally dominate over MF<green>d2</green> after $e470 \rho$. The use of MF<green>d</green> were low until a gradual rise after $e560 \rho$, replacing MF<green>d2</green>.
 
 ![Graph 24: Strategy used (y) plotted against log10 ρ of publication (x)](/images/mf/graph_24.png)
 
