@@ -105,7 +105,7 @@ T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4<blue>C3</blue><green>d66</green>](#t4c3d66)&nbsp; — &nbsp;Active
+- [T4<blue>C3</blue><green>d</green>](#t4c3d)&nbsp; — &nbsp;Active
 
 - [T4<blue>C3</blue><green>coast</green>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
@@ -990,10 +990,10 @@ Caption: T3<blue>C11C12C21</blue>;
 
 ## Theory 4: Polynomials
 
-### T4<blue>C3</blue><green>d66</green>
+### T4<blue>C3</blue><green>d</green>
 
 Class: strat_separated;
-Caption: T4<blue>C3</blue><green>d66</green>;
+Caption: T4<blue>C3</blue><green>d</green>;
 
 | INVIS | Recovery (pub mult $\lt1$)                              | $\tau$ Gain (pub mult $\gt1$)                           |
 | ----- | ------------------------------------------------------- | ------------------------------------------------------- |
@@ -1006,13 +1006,13 @@ Caption: T4<blue>C3</blue><green>d66</green>;
 | $q_1$ | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost |
 | $q_2$ | CHECK                                                   | When cost is $\frac{2}{3}$ of $c_3$ cost                |
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d66</green> $q_1$: 377 $q_2$: 252”.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d</green> $q_1$: 377 $q_2$: 252”.
 
 The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them in this publication.
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-The “66” in the name T4<blue>C3</blue><green>d66</green> refers to the ⅔ ratio $q_2$ is bought at relative to $c_3$.
+##### Previously known as T4<blue>C3</blue><green>d66</green>
 
 Strategy Credits:
 
@@ -1124,7 +1124,7 @@ Caption: T4<blue>C123</blue><green>d</green>;
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
 | $q_2$ | CHECK                                     |
 
-This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d66</green>.
+This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d</green>.
 
 ### T4<blue>C123</blue>
 
