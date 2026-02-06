@@ -46,11 +46,14 @@ Data sets related to resets are isolated from the crude list to investigate the 
 
 Subsequently, data sets related to resets, as well as the data entry which consist of a $c_1$ "Before", a reset and a $c_1$ "After" is isolated for determination of a criterion to compare the cost of $c_1$ levels and the cost of reset using ratio (i.e., "relative cost ratio" between $c_1$, and reset cost before a reset.). The set of entry is included only if all three above-mentioned elements is included (i.e., a $c_1$ "Before", a reset and a $c_1$ "After"). For example, with the reference of *Table 1* where the $c_1$ "Before", a reset and the $c_1$ "After" had been isolated. The relative cost ratio of $c_1$ "Before" compared to reset cost can be calculated by $\frac{2.52e264}{1.45e265} = 0.17379$, while the relative cost ratio of $c_1$ "After" compared to reset cost can be calculated by $\frac{5.04e264}{1.45e265} = 0.34759$.
 
-![Table 1: An example illustrating the calculation of relative cost ratio](/images/mf/table_1.png)
+Class: newwords;
 
-|   |   |   |   |   |
-| - | - | - | - | - |
-| | | | | [FOOT;]Table 1: An example illustrating the calculation of relative cost ratio |
+|   |   |   |   |   | INVIS |
+| - | - | - | - | - | - |
+| $c_1$ | 877 | $2.52e264\ \rho$ | Before | 0.1737931 | MFd3 |
+| Reset at<br>V=139,59,117,36 | 44 | $1.45e265\ \rho$ | | | |
+| $c_1$ | 878 | $5.04e264\ \rho$ | After | 0.3475862 | MFd3 |
+| | | | | | [FOOT;]Table 1: An example illustrating the calculation of relative cost ratio |
 
 To determine the strength of a cost criterion as a cutoff, a Receiver-operating Characteristic Curve (ROC) is plotted using a series of cutoffs and the Area Under Curve (AUC) of the ROC is calculated. The exact cutoff position will be then determined by exploring the list of "Before" and "After" data with the aid of a box and whisker diagram. The approach is repeated for $c_2$, $a_1$, $a_2$ and $\delta$. More detailed explanations on the nature and interpretation of graphs will be explained subsequently.
 
@@ -62,11 +65,13 @@ A Receiver-operating Characteristic (ROC) curve is a common graphical plot visua
 
 With the aid of the above concept, we can design a threshold which is to effectively and correctly separate the list of variables purchased before and after a reset by their relative cost ratio (e.g., $c_1$ cost divided by reset cost). Take an example of $c_1$ as the variable and $0.1$ as the relative cost ratio threshold, the interpretation of result can be referenced by *Table 2* and a set of data regarding "True Positive Rate" $(y-axis)$ and "False Positive Rate" $(x-axis)$, or a point of ROC Curve, can be obtained.
 
-![Table 2: Definitions and implications of positives and negatives with c1 relative cost ratio as an example](/images/mf/table_2.png)
+Class: strat_separated;
 
-|   |   |   |   |   |
-| - | - | - | - | - |
-| | | | | [FOOT;]Table 2: Definitions and implications of positives and negatives with $c_1$ relative cost ratio as an example |
+| INVIS | $c_1$ relative cost ratio $\geq$0.1<br>("Detection Positive") | $c_1$ relative cost ratio $\lt$0.1<br>("Detection Negative") |
+| --- | --- | --- |
+| relative cost ratio of $c_1$ "After"<br>simulated by sim v3.0<br>("Total Positive") | $c_1$ "After" purchased in-line with the result from sim v3.0<br>("True Positive") | $c_1$ "After" wrongly purchased before the reset instead of after the reset<br>("False Negative") |
+| relative cost ratio of $c_1$ "Before"<br>simulated by sim v3.0<br>("Total Positive") | $c_1$ "Before" wrongly purchased after the reset instead of before the reset<br>("False Positive") | $c_1$ "Before" purchased in-line with the result from sim v3.0<br>("True Negative") |
+| | |[FOOT;]Table 2: Definitions and implications of positives and negatives with $c_1$ relative cost ratio as an example |
 
 Next, repeat the calculation with a variety of relative cost ratio threshold and obtain a set of data points regarding "True Positive Rate" and "False Positive Rate". Plotting the dots in a graph will yield a ROC Curve. The Area Under the Curve (AUC) of an ROC curve is calculated to measure overall performance. An AUC of an ROC of $1$ indicates a perfect identification of "Positive" and "Negative" exists, while the AUC of an ROC of $0.5$ is no better than random guessing. The larger the AUC of an ROC, the better the performance of a classification threshold, if appropriately set. In summary, one can interpret an ROC Curve as indicated in *Graph 1*.
 
@@ -218,10 +223,15 @@ A total of $941$ sets of data entries consisting of a $\delta$ "Before", a reset
 | - | - | - | - | - |
 | | | | | [FOOT;]Graph 18: Box and whisker diagram of $\delta$ relative cost ratio for $\delta$ "Before" and $\delta$ "After" $(n = 941)$ |
 
-![Table 3: Tables showing accuracies, Youden's Index and MDA in sets of relative cost ration threshold for δ](/images/mf/table_3.png)
+Class: newwords;
 
-|   |   |   |   |   |
-| - | - | - | - | - |
+| Relative cost ratio threshold | Accuracy in identifying $\delta$ "Before" | Accuracy in identifying $\delta$ "After" | Youden's Index | MDA |
+| --- | --- | --- | --- | --- |
+| 0.6 | 835/941, 84.74% | 941/941, 100% | 0.8874 | 0.1126 |
+| 0.7 | 872/941, 92.67% | 934/941, 99.26% | 0.9192 | 0.0737 |
+| 0.8 | 900/941, 95.64% | 934/941, 99.26% | 0.9490 | 0.0442 |
+| 0.9 | 925/941, 98.30% | 933/941, 99.15% | 0.9745 | 0.0190 |
+| 1.0 | 941/941, 100%   | 928/941, 98.62% | 0.9862 | 0.0138 |
 | | | | | [FOOT;]Table 3: Tables showing accuracies, Youden’s Index and MDA in sets of relative cost ratio threshold for $\delta$ |
 
 #### $\rho$ gain vs $\rho$ of publication
@@ -314,7 +324,7 @@ In this investigation, it is unclear that whether the strategy adopted in a publ
 
 Class: strat_separated;
 
-|                           | $t_{\text{AUC of ROC}}$ | $t_{\text{Youden's Index threshold}}$ | $t_{\text{MDA threshold}}$         | $t_{\text{p value}}$       |
+|               INVIS       | $t_{\text{AUC of ROC}}$ | $t_{\text{Youden's Index threshold}}$ | $t_{\text{MDA threshold}}$         | $t_{\text{p value}}$       |
 | ------------------------- | ----------------------- | ------------------------------------- | ---------------------------------- | -------------------------- |
 | $t_{\text{MFd}}\ (n=103)$   | 0.756                   | 0.55, 0.56                            | 0.53                               | $t_{\text{As comparison}}$ |
 | $t_{\text{MFd2}}\ (n=338)$  | 0.745                   | 0.92                                  | 0.62                               | $t_{\text{<0.0001****}}$   |
@@ -323,11 +333,11 @@ Class: strat_separated;
 
 Class: strat_separated;
 
-|                           | $t_{\text{AUC of ROC}}$ | $t_{\text{Youden's Index threshold}}$ | $t_{\text{MDA threshold}}$         | $t_{\text{p value}}$       |
-| ------------------------- | ----------------------- | ------------------------------------- | ---------------------------------- | -------------------------- |
-| $t_{\text{MFd}}\ (n=101)$   | 0.973                   | $t_{\text{-1.03 to -0.99}\log_{10}}$     | $t_{\text{-1.03 to -0.97}\log_{10}}$  | $t_{\text{As comparison}}$ |
-| $t_{\text{MFd2}}\ (n=410)$  | 0.890                   | $t_{\text{-1.62}\log_{10}}$              | $t_{\text{-1.62}\log_{10}}$           | $t_{\text{<0.0001****}}$   |
-| $t_{\text{MFd3}}\ (n=584)$  | 0.856                   | $t_{\text{-0.87 to -0.84}\log_{10}}$     | $t_{\text{-0.87}\log_{10}}$           | 0.06892                    |
+|            INVIS            | $t_{\text{AUC of ROC}}$ | $t_{\text{Youden's Index threshold}}$ | $t_{\text{MDA threshold}}$           | $t_{\text{p value}}$       |
+| --------------------------- | ----------------------- | ------------------------------------- | ------------------------------------ | -------------------------- |
+| $t_{\text{MFd}}\ (n=101)$   | 0.973                   | $t_{\text{-1.03 to -0.99}\log_{10}}$  | $t_{\text{-1.03 to -0.97}\log_{10}}$ | $t_{\text{As comparison}}$ |
+| $t_{\text{MFd2}}\ (n=410)$  | 0.890                   | $t_{\text{-1.62}\log_{10}}$           | $t_{\text{-1.62}\log_{10}}$          | $t_{\text{<0.0001****}}$   |
+| $t_{\text{MFd3}}\ (n=584)$  | 0.856                   | $t_{\text{-0.87 to -0.84}\log_{10}}$  | $t_{\text{-0.87}\log_{10}}$          | 0.06892                    |
 | | | | | [FOOT;]Table 5: Tables of AUC or ROC, Youden’s Index, MDA and significance for $a_1$ when compared to MF<green>d</green> for MF<green>d</green>, MF<green>d2</green> and MF<green>d3</green> |
 
 ![Graph 26: Box and whisker diagram of c1 relative cost ratio for c1 "Before" for MFd (n = 103), MFd2 (n = 338) and MFd3 (n = 603)](/images/mf/graph_26.png)
@@ -351,7 +361,7 @@ Class: strat_separated;
 | $t_{\text{MFd}}$          | $t_{\text{50\%, or 0.5, or 1/2}}$              | $t_{\text{10\%, or 0.1, or 1/10}}$             |
 | $t_{\text{MFd2}}$         | $t_{\text{75\%, or 0.75, or 3/4}}$             | $t_{\text{2.5\%, or 0.025, or 1/40}}$          |
 | $t_{\text{MFd3}}$         | $t_{\text{20\%, or 0.2, or 1/5}}$              | $t_{\text{12.5\%, or 0.125, or 1/8}}$          |
-| | | | | [FOOT;]Table 7: Adjusted $c_1$ and $a_1$ relative cost ratio threshold used in MF<green>d</green>, MF<green>d2</green> and MF<green>d3</green> |
+| | | [FOOT;]Table 7: Adjusted $c_1$ and $a_1$ relative cost ratio threshold used in MF<green>d</green>, MF<green>d2</green> and MF<green>d3</green> |
 
 ### Acknowledgement
 
