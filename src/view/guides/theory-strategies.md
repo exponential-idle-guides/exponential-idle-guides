@@ -105,7 +105,7 @@ T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
-- [T4<blue>C3</blue><green>d66</green>](#t4c3d66)&nbsp; — &nbsp;Active
+- [T4<blue>C3</blue><green>d</green>](#t4c3d)&nbsp; — &nbsp;Active
 
 - [T4<blue>C3</blue><green>coast</green>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
@@ -329,6 +329,8 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It was released on March 10, 2025 alongside BaP.
 
 The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
+
+- [MF<green>d3</green>](#mfd3)&nbsp; — &nbsp;Very Active
 
 - [MF<green>d2</green>](#mfd2)&nbsp; — &nbsp;Very Active
 
@@ -988,10 +990,10 @@ Caption: T3<blue>C11C12C21</blue>;
 
 ## Theory 4: Polynomials
 
-### T4<blue>C3</blue><green>d66</green>
+### T4<blue>C3</blue><green>d</green>
 
 Class: strat_separated;
-Caption: T4<blue>C3</blue><green>d66</green>;
+Caption: T4<blue>C3</blue><green>d</green>;
 
 | INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | ----- | ------------------------------------------------------- | ------------------------------------------------------- |
@@ -1004,13 +1006,13 @@ Caption: T4<blue>C3</blue><green>d66</green>;
 | $q_1$ | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost |
 | $q_2$ | CHECK | When cost is $\frac{2}{3}$ of $c_3$ cost |
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d66</green> $q_1$: 377 $q_2$: 252”.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d</green> $q_1$: 377 $q_2$: 252”.
 
 The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them in this publication.
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
-The “66” in the name T4<blue>C3</blue><green>d66</green> refers to the ⅔ ratio $q_2$ is bought at relative to $c_3$.
+##### Previously known as T4<blue>C3</blue><green>d66</green>
 
 Strategy Credits:
 
@@ -1122,7 +1124,7 @@ Caption: T4<blue>C123</blue><green>d</green>;
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
 | $q_2$ | CHECK |
 
-This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d66</green>.
+This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d</green>.
 
 ### T4<blue>C123</blue>
 
@@ -2817,6 +2819,29 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 - Hotab & Blackseal for the coasting strategy
 
 ## Magnetic Fields
+
+### MF<green>d3</green>
+
+Class: strat;
+Caption: MF<green>d3</green>;
+
+|          |                                                                                                                                |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                                               |
+| $c_2$    | CHECK                                                                                                                          |
+| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_2$    | CHECK                                                                                                                          |
+| $\delta$ | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost                                                       |
+| $v_1$    | Only buy right before a reset                                                                                                  |
+| $v_2$    | Only buy right before a reset                                                                                                  |
+| $v_3$    | Only buy right before a reset                                                                                                  |
+| $v_4$    | Only buy right before a reset                                                                                                  |
+
+Strategy Credits:
+
+- BlackSeal for the initial implementation of resets in the sim
+- Maimai for the new rules
+- Mathis S. for the new reset algorithm
 
 ### MF<green>d2</green>
 
