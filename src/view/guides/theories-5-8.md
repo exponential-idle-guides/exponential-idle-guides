@@ -31,15 +31,15 @@ You will not touch this theory until after ee14k. Once you begin pushing T1 afte
 
 ### Theory 2
 
-This theory will be used as overnight until 1e350 $\tau$ where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
+This theory will be used as overnight until 1e350 $\tau$ where it will not be touched until after ee14k. See our earlier guide for an overview for [Theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
 ### Theory 3
 
-See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
+See our earlier guide for an overview for [Theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
 ### Theory 4
 
-See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
+See our earlier guide for an overview for [Theory 4](/guides/theories-1-4/#theory-4-35s-8k).
 
 ### Theory 5 (40σ / 9k)
 
@@ -108,7 +108,7 @@ Once you've reached within $e5$ of the previous publication point, you can safel
 
 ##### Idle
 
-It is not recommended to idle theory 5 (see explanation on $c_1$ and $c_2$ above). Do try the semi-idle strategy below.<br>
+It is not recommended to idle Theory 5 (see explanation on $c_1$ and $c_2$ above). Do try the semi-idle strategy below.<br>
 
 For each publication: autobuy $c_3$ and $q_2$.
 
