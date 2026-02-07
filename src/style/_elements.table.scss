@@ -43,8 +43,8 @@ caption {
 
 // commonly used classes
 .invisible {
-	border: none;
-	background-color:transparent;
+	border: none !important;
+	background-color:transparent !important;
 }
 .arrow {
 	padding: 0em 0em 0em 0em;

@@ -91,7 +91,12 @@ $("table").each(function() {
       styles.split(";").forEach((s) => {
         if (!s.length) {return;}
         const {style, value} = /^(?<style>[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+):(?<value>[^;]*)$/g
-          .exec(s.replaceAll(/\s*/g,"").replaceAll(/(.*):var\([\u2013\-]([^\u2013\-])/g,"$1:var(--$2"))
+          .exec(s
+            // I don't know what this was for, but it messes with inputs like [styles="border-top:5px solid black;";]
+            // I will leave it here in case the cause is found.
+            //.replaceAll(/\s*/g,"")
+            .replaceAll(/(.*):var\([\u2013\-]([^\u2013\-])/g,"$1:var(--$2")
+          )
           .groups;
         t.attr("style", style + ":" + ((value in table_scss_var) ? table_scss_var[value]: value) + " !important;");
       });
@@ -100,7 +105,6 @@ $("table").each(function() {
       if (!table.has("tfoot").length) {$('<tfoot>').appendTo(table);}
       t.parent().detach().appendTo(table.find("tfoot"));
     }
-    // TODO: IMPLEMENT TABLE FOOTERS
     if (type != undefined) {t.changeElementType(type);}
   })});
   // caption, table id, table classes, and last_row

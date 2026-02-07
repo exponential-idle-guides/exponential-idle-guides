@@ -380,14 +380,14 @@ Strategy Credits:
 Class: strat;
 Caption: T1<green>Ratio</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
-| $q_1$ | When $\rho\gt10\times$ cost                  |
-| $q_2$ | When $\rho\gt1.11\times$ cost                |
+| $q_1$ | When $\rho\gt10\times$ cost |
+| $q_2$ | When $\rho\gt1.11\times$ cost |
 | $c_1$ | When $\rho\gt10\times c_2$ratio$\times$ cost |
-| $c_2$ | When $\rho\gt c_2$ratio$\times$ cost          |
-| $c_3$ | When $\rho\gt c_3$ratio$\times$ cost          |
-| $c_4$ | CHECK                                     |
+| $c_2$ | When $\rho\gt c_2$ratio$\times$ cost |
+| $c_3$ | When $\rho\gt c_3$ratio$\times$ cost |
+| $c_4$ | CHECK |
 
 **Do not buy $c_1$ or $c_2$ after e300$\rho$.**
 
@@ -400,13 +400,13 @@ Caption: T1<green>Ratio</green>;
 Class: strat;
 Caption: $c_3$ Ratio;
 
-|                       |     |
+| | |
 | --------------------- | --- |
-| $\rho\lt e300$        | 1   |
+| $\rho\lt e300$ | 1 |
 | $e300\le\rho\lt e450$ | 1.1 |
-| $e450\le\rho\lt e550$ | 2   |
-| $e550\le\rho\lt e655$ | 5   |
-| $\rho\gt e655$        | 10  |
+| $e450\le\rho\lt e550$ | 2 |
+| $e550\le\rho\lt e655$ | 5 |
+| $\rho\gt e655$ | 10 |
 
 Strategy Credits:
 
@@ -417,12 +417,12 @@ Strategy Credits:
 Class: strat;
 Caption: T1<blue>C34</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
 | $c_4$ | CHECK |
 
@@ -431,13 +431,13 @@ Caption: T1<blue>C34</blue>;
 Class: strat;
 Caption: T1<blue>C4</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
 
 ## Theory 2: Differential Calculus
@@ -449,14 +449,14 @@ Caption: T2<green>MC</green>;
 
 | Pub. Mult.* | $\lt1150$ | $1150-2250$ | $2250-2900$ | $2900-4650$ | $\gt4650$ |
 | ----------- | --------- | ----------- | ----------- | ----------- | --------- |
-| $q_1$       | CHECK     | CHECK       | CHECK       | CHECK       | REDX      |
-| $q_2$       | CHECK     | CHECK       | CHECK       | REDX        | REDX      |
-| $q_3$       | CHECK     | CHECK       | REDX        | REDX        | REDX      |
-| $q_4$       | CHECK     | REDX        | REDX        | REDX        | REDX      |
-| $r_1$       | CHECK     | CHECK       | CHECK       | CHECK       | REDX      |
-| $r_2$       | CHECK     | CHECK       | CHECK       | REDX        | REDX      |
-| $r_3$       | CHECK     | CHECK       | REDX        | REDX        | REDX      |
-| $r_4$       | CHECK     | REDX        | REDX        | REDX        | REDX      |
+| $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $q_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $q_4$ | CHECK | REDX | REDX | REDX | REDX |
+| $r_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $r_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $r_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $r_4$ | CHECK | REDX | REDX | REDX | REDX |
 | | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
@@ -473,14 +473,14 @@ Caption: T2<green>MCAlt2</green>;
 
 | Pub. Mult.* | $\lt550$ | $550-2050$ | $2050-2700$ | $2700-3500$ | $\gt3500$ |
 | ----------- | -------- | ---------- | ----------- | ----------- | --------- |
-| $q_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
-| $q_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
-| $q_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
-| $q_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
-| $r_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
-| $r_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
-| $r_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
-| $r_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $q_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $q_4$ | CHECK | REDX | REDX | REDX | REDX |
+| $r_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $r_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $r_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $r_4$ | CHECK | REDX | REDX | REDX | REDX |
 | | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
@@ -498,14 +498,14 @@ Caption: T2<green>MCAlt3</green>;
 
 | Pub. Mult.* | $\lt750$ | $750-1700$ | $1700-2650$ | $2650-3700$ | $\gt3700$ |
 | ----------- | -------- | ---------- | ----------- | ----------- | --------- |
-| $q_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
-| $q_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
-| $q_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
-| $q_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
-| $r_1$       | CHECK    | CHECK      | CHECK       | CHECK       | REDX      |
-| $r_2$       | CHECK    | CHECK      | CHECK       | REDX        | REDX      |
-| $r_3$       | CHECK    | CHECK      | REDX        | REDX        | REDX      |
-| $r_4$       | CHECK    | REDX       | REDX        | REDX        | REDX      |
+| $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $q_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $q_4$ | CHECK | REDX | REDX | REDX | REDX |
+| $r_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
+| $r_2$ | CHECK | CHECK | CHECK | REDX | REDX |
+| $r_3$ | CHECK | CHECK | REDX | REDX | REDX |
+| $r_4$ | CHECK | REDX | REDX | REDX | REDX |
 | | | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
@@ -525,8 +525,8 @@ The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 Class: strat;
 Caption: T2<green>QS</green>;
 
-|       |       |
-| ----- | ----  |
+| | |
+| ----- | ---- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $q_3$ | CHECK |
@@ -545,21 +545,21 @@ The publication multiplier when you should switch is determined as follows, wher
 Class: strat;
 Caption: Publication Multiplier;
 
-|                       |     |
+| | |
 | --------------------- | --- |
-| $\rho\lt e75$         | 10  |
-| $e75\le\rho\lt e150$  | 200 |
+| $\rho\lt e75$ | 10 |
+| $e75\le\rho\lt e150$ | 200 |
 | $e150\le\rho\lt e200$ | 600 |
 | $e200\le\rho\lt e225$ | 100 |
-| $\rho\gt e225$        | 25  |
+| $\rho\gt e225$ | 25 |
 
 ### T2
 
 Class: strat;
 Caption: T2;
 
-|       |       |
-| ----- | ----  |
+| | |
+| ----- | ---- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $q_3$ | CHECK |
@@ -576,20 +576,20 @@ Caption: T2;
 Class: strat_separated;
 Caption: T3<green>Play2</green>;
 
-| INVIS    | Before $e1$ from recovered* | $e1$ from recovered to $1.2$ Pub. Mult. | Pub. Mult $1.2-2.4$ | Pub. Mult.$\gt2.4$** |
+| INVIS | Before $e1$ from recovered* | $e1$ from recovered to $1.2$ Pub. Mult. | Pub. Mult $1.2-2.4$ | Pub. Mult.$\gt2.4$** |
 | -------- | --------------------------- | --------------------------------------- | ------------------- | -------------------- |
-| $b_1$    | When $\frac{1}{8}$ of $c_{31}$ cost | REDX | REDX | REDX |
-| $b_2$    | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | CHECK |
-| $b_3$    | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | CHECK |
-| $c_{11}$ | REDX  | REDX  | REDX  | REDX  |
+| $b_1$ | When $\frac{1}{8}$ of $c_{31}$ cost | REDX | REDX | REDX |
+| $b_2$ | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | CHECK |
+| $b_3$ | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost | CHECK |
+| $c_{11}$ | REDX | REDX | REDX | REDX |
 | $c_{12}$ | When $\frac{1}{100}$ of $c_{32}$ cost | When $\frac{1}{100}$ of $c_{32}$ cost | CHECK | CHECK |
-| $c_{13}$ | REDX  | REDX  | REDX  | REDX  |
-| $c_{21}$ | REDX  | REDX  | REDX  | REDX  |
-| $c_{22}$ | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | REDX  |
+| $c_{13}$ | REDX | REDX | REDX | REDX |
+| $c_{21}$ | REDX | REDX | REDX | REDX |
+| $c_{22}$ | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{2}{5}$ of $c_{32}$ cost | When $\frac{1}{8}$ of $c_{12}$ cost | REDX |
 | $c_{23}$ | CHECK | CHECK | CHECK | CHECK |
-| $c_{31}$ | CHECK | REDX  | REDX  | REDX  |
-| $c_{32}$ | CHECK | CHECK | When $\frac{1}{8}$ of $c_{12}$ cost | REDX  |
-| $c_{33}$ | When $\frac{1}{10}$ of $c_{23}$ cost | When $\frac{1}{10}$ of $c_{23}$ cost | REDX  | REDX  |
+| $c_{31}$ | CHECK | REDX | REDX | REDX |
+| $c_{32}$ | CHECK | CHECK | When $\frac{1}{8}$ of $c_{12}$ cost | REDX |
+| $c_{33}$ | When $\frac{1}{10}$ of $c_{23}$ cost | When $\frac{1}{10}$ of $c_{23}$ cost | REDX | REDX |
 | | | | | [FOOT;]* An earlier version of the strategy did not buy any $ρ_1$ variables. This is only around 1% slower than the strategy shown above, which does buy $c_{31}$ and $b_1$ in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not. |
 | | | | | [FOOT;]** Coasting Phase |
 
@@ -608,16 +608,16 @@ Caption: T3<green>Play</green>;
 
 | Pub. Mult.* | $\lt1$ (Recovery) | $1-2$ | $\gt2$ (Coasting) |
 | -------- | --------------------------- | --------------------------------------- | -------------------- |
-| $b_1$    | When $\frac{1}{8}$ of $c_{31}$ cost | When $\frac{1}{8}$ of $c_{31}$ cost | REDX |
-| $b_2$    | When $\frac{2}{9}$ of $c_{12}$ cost<br>and $\frac{4}{9}$ of $c_{22}$ cost | When $\frac{1}{4}$ of $c_{32},c_{12}$ cost<br>and $\frac{1}{2}$ of $c_{22}$ cost | CHECK |
-| $b_3$    | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{4}{9}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost |
-| $c_{11}$ | REDX  | REDX  | REDX  |
+| $b_1$ | When $\frac{1}{8}$ of $c_{31}$ cost | When $\frac{1}{8}$ of $c_{31}$ cost | REDX |
+| $b_2$ | When $\frac{2}{9}$ of $c_{12}$ cost<br>and $\frac{4}{9}$ of $c_{22}$ cost | When $\frac{1}{4}$ of $c_{32},c_{12}$ cost<br>and $\frac{1}{2}$ of $c_{22}$ cost | CHECK |
+| $b_3$ | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{4}{9}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost | When $\frac{1}{8}$ of $c_{23}$ cost<br>and $\frac{1}{2}$ of $c_{33}$ cost |
+| $c_{11}$ | REDX | REDX | REDX |
 | $c_{12}$ | CHECK | CHECK | CHECK |
-| $c_{13}$ | REDX  | REDX  | REDX  |
-| $c_{21}$ | REDX  | REDX  | REDX  |
+| $c_{13}$ | REDX | REDX | REDX |
+| $c_{21}$ | REDX | REDX | REDX |
 | $c_{22}$ | When $\frac{1}{2}$ of $c_{32},c_{12}$ cost | When $\frac{1}{2}$ of $c_{32},c_{12}$ cost | CHECK |
 | $c_{23}$ | CHECK | CHECK | CHECK |
-| $c_{31}$ | CHECK | CHECK | REDX  |
+| $c_{31}$ | CHECK | CHECK | REDX |
 | $c_{32}$ | CHECK | CHECK | CHECK |
 | $c_{33}$ | When $\frac{9}{32}$ of $c_{23}$ cost | When $\frac{1}{4}$ of $c_{23}$ cost | When $\frac{1}{4}$ of $c_{23}$ cost |
 | | | | [FOOT;]* Publication Multiplier |
@@ -632,20 +632,20 @@ Strategy Credits:
 Class: strat_separated;
 Caption: T3<green>SNAX</green>;
 
-| INVIS    | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | -------- | -------------------------- | ----------------------------- |
-| $b_1$    | CHECK                      | REDX                          |
-| $b_2$    | CHECK                      | CHECK                         |
-| $b_3$    | CHECK                      | CHECK                         |
-| $c_{11}$ | REDX                       | REDX                          |
-| $c_{12}$ | CHECK                      | CHECK                         |
-| $c_{13}$ | REDX                       | REDX                          |
-| $c_{21}$ | REDX                       | REDX                          |
-| $c_{22}$ | CHECK                      | CHECK                         |
-| $c_{23}$ | CHECK                      | CHECK                         |
-| $c_{31}$ | CHECK                      | REDX                          |
-| $c_{32}$ | CHECK                      | REDX                          |
-| $c_{33}$ | CHECK                      | REDX                          |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | CHECK |
+| $b_3$ | CHECK | CHECK |
+| $c_{11}$ | REDX | REDX |
+| $c_{12}$ | CHECK | CHECK |
+| $c_{13}$ | REDX | REDX |
+| $c_{21}$ | REDX | REDX |
+| $c_{22}$ | CHECK | CHECK |
+| $c_{23}$ | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | CHECK | REDX |
 
 Strategy Credits:
 
@@ -657,20 +657,20 @@ Strategy Credits:
 Class: strat_separated;
 Caption: T3<green>SNAXd</green><blue>C12</blue>;
 
-| INVIS    | Recovery (pub mult $\lt1$)          | $\tau$ Gain (pub mult $\gt1$) |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | -------- | ----------------------------------- | ----------------------------- |
-| $b_1$    | CHECK                               | REDX                          |
-| $b_2$    | CHECK                               | CHECK                         |
-| $b_3$    | CHECK                               | CHECK                         |
-| $c_{11}$ | REDX                                | REDX                          |
-| $c_{12}$ | When cost$\times100\lt c_{32}$ cost | CHECK                         |
-| $c_{13}$ | REDX                                | REDX                          |
-| $c_{21}$ | REDX                                | REDX                          |
-| $c_{22}$ | CHECK                               | CHECK                         |
-| $c_{23}$ | CHECK                               | CHECK                         |
-| $c_{31}$ | CHECK                               | REDX                          |
-| $c_{32}$ | CHECK                               | REDX                          |
-| $c_{33}$ | CHECK                               | REDX                          |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | CHECK |
+| $b_3$ | CHECK | CHECK |
+| $c_{11}$ | REDX | REDX |
+| $c_{12}$ | When cost$\times100\lt c_{32}$ cost | CHECK |
+| $c_{13}$ | REDX | REDX |
+| $c_{21}$ | REDX | REDX |
+| $c_{22}$ | CHECK | CHECK |
+| $c_{23}$ | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | CHECK | REDX |
 
 Strategy Credits:
 
@@ -682,20 +682,20 @@ Strategy Credits:
 Class: strat_separated;
 Caption: T3<green>SNAX2</green>;
 
-| INVIS    | Recovery (pub mult $\lt1$)               | $\tau$ Gain (pub mult $\gt1$)          |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | -------- | ---------------------------------------- | -------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{10}$ of $\rho_1$  | REDX                                   |
-| $b_2$    | When cost is $\frac{1}{3}$ of $\rho_2$   | When cost is $\frac{1}{3}$ of $\rho_2$ |
-| $b_3$    | When cost is $\frac{1}{5}$ of $\rho_3$   | When cost is $\frac{1}{5}$ of $\rho_3$ |
-| $c_{11}$ | REDX                                     | REDX                                   |
-| $c_{12}$ | When cost is $\frac{1}{100}$ of $\rho_2$ | CHECK                                  |
-| $c_{13}$ | REDX                                     | REDX                                   |
-| $c_{21}$ | REDX                                     | REDX                                   |
-| $c_{22}$ | CHECK                                    | When cost is $\frac{1}{8}$ of $\rho_2$ |
-| $c_{23}$ | CHECK                                    | CHECK                                  |
-| $c_{31}$ | CHECK                                    | REDX                                   |
-| $c_{32}$ | CHECK                                    | REDX                                   |
-| $c_{33}$ | When cost is $\frac{1}{100}$ of $\rho_3$ | REDX                                   |
+| $b_1$ | When cost is $\frac{1}{10}$ of $\rho_1$ | REDX |
+| $b_2$ | When cost is $\frac{1}{3}$ of $\rho_2$ | When cost is $\frac{1}{3}$ of $\rho_2$ |
+| $b_3$ | When cost is $\frac{1}{5}$ of $\rho_3$ | When cost is $\frac{1}{5}$ of $\rho_3$ |
+| $c_{11}$ | REDX | REDX |
+| $c_{12}$ | When cost is $\frac{1}{100}$ of $\rho_2$ | CHECK |
+| $c_{13}$ | REDX | REDX |
+| $c_{21}$ | REDX | REDX |
+| $c_{22}$ | CHECK | When cost is $\frac{1}{8}$ of $\rho_2$ |
+| $c_{23}$ | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | When cost is $\frac{1}{100}$ of $\rho_3$ | REDX |
 
 Strategy Credits:
 
@@ -711,78 +711,78 @@ This is the only active SNAX strategy.
 Class: strat;
 Caption: T3<blue>ρ2C23</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | REDX                                                           |
-| $b_2$    | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{9}$ of $c_{23}$ cost                    |
-| $c_{11}$ | REDX                                                           |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | REDX                                                           |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | REDX                                                           |
-| $c_{32}$ | CHECK                                                          |
-| $c_{33}$ | REDX                                                           |
+| $b_1$ | REDX |
+| $b_2$ | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{9}$ of $c_{23}$ cost |
+| $c_{11}$ | REDX |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | REDX |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX |
 
 ### T3<blue>ρ2C23</blue>
 
 Class: strat;
 Caption: T3<blue>ρ2C23</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | REDX  |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
-| $c_{11}$ | REDX  |
+| $b_1$ | REDX |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
+| $c_{11}$ | REDX |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
-| $c_{21}$ | REDX  |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
-| $c_{31}$ | REDX  |
+| $c_{31}$ | REDX |
 | $c_{32}$ | CHECK |
-| $c_{33}$ | REDX  |
+| $c_{33}$ | REDX |
 
 ### T3<blue>ρ2C23C33</blue><green>d</green>
 
 Class: strat;
 Caption: T3<blue>ρ2C23C33</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | REDX                                                           |
-| $b_2$    | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{9}$ of $c_{23}$ cost                    |
-| $c_{11}$ | REDX                                                           |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | REDX                                                           |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | REDX                                                           |
-| $c_{32}$ | CHECK                                                          |
-| $c_{33}$ | CHECK                                                          |
+| $b_1$ | REDX |
+| $b_2$ | When cost is $\frac{1}{3}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{9}$ of $c_{23}$ cost |
+| $c_{11}$ | REDX |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | REDX |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | CHECK |
 
 ### T3<blue>ρ2C23C33</blue>
 
 Class: strat;
 Caption: T3<blue>ρ2C23C33</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | REDX  |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
-| $c_{11}$ | REDX  |
+| $b_1$ | REDX |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
+| $c_{11}$ | REDX |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
-| $c_{21}$ | REDX  |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
-| $c_{31}$ | REDX  |
+| $c_{31}$ | REDX |
 | $c_{32}$ | CHECK |
 | $c_{33}$ | CHECK |
 
@@ -791,200 +791,200 @@ Caption: T3<blue>ρ2C23C33</blue>;
 Class: strat;
 Caption: T3<red>No</red><blue>C11C13C21C33</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{8}$ of $c_{31}$ cost                    |
-| $b_2$    | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{8}$ of $c_{23}$ cost                    |
-| $c_{11}$ | REDX                                                           |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | REDX                                                           |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | CHECK                                                          |
-| $c_{32}$ | CHECK                                                          |
-| $c_{33}$ | REDX                                                           |
+| $b_1$ | When cost is $\frac{1}{8}$ of $c_{31}$ cost |
+| $b_2$ | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{8}$ of $c_{23}$ cost |
+| $c_{11}$ | REDX |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C11C13C21C33</blue>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C11C13C21C33</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | CHECK |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
-| $c_{11}$ | REDX  |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
+| $c_{11}$ | REDX |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
-| $c_{21}$ | REDX  |
+| $c_{13}$ | REDX |
+| $c_{21}$ | REDX |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
 | $c_{31}$ | CHECK |
 | $c_{32}$ | CHECK |
-| $c_{33}$ | REDX  |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C13C33</blue><green>d</green>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C13C33</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost       |
-| $b_2$    | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{10}$ of $c_{23}$ cost                   |
-| $c_{11}$ | CHECK                                                          |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | CHECK                                                          |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | CHECK                                                          |
-| $c_{32}$ | CHECK                                                          |
-| $c_{33}$ | REDX                                                           |
+| $b_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost |
+| $b_2$ | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{10}$ of $c_{23}$ cost |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C13C33</blue>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C13C33</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | CHECK |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
 | $c_{11}$ | CHECK |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
+| $c_{13}$ | REDX |
 | $c_{21}$ | CHECK |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
 | $c_{31}$ | CHECK |
 | $c_{32}$ | CHECK |
-| $c_{33}$ | REDX  |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C11C13C33</blue><green>d</green>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C11C13C33</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost       |
-| $b_2$    | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{10}$ of $c_{23}$ cost                   |
-| $c_{11}$ | REDX                                                           |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | CHECK                                                          |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | CHECK                                                          |
-| $c_{32}$ | CHECK                                                          |
-| $c_{33}$ | REDX                                                           |
+| $b_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_{21},c_{31})$ cost |
+| $b_2$ | When cost is $\frac{1}{4}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{10}$ of $c_{23}$ cost |
+| $c_{11}$ | REDX |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | CHECK |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C11C13C33</blue>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C11C13C33</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | CHECK |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
-| $c_{11}$ | REDX  |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
+| $c_{11}$ | REDX |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
+| $c_{13}$ | REDX |
 | $c_{21}$ | CHECK |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
 | $c_{31}$ | CHECK |
 | $c_{32}$ | CHECK |
-| $c_{33}$ | REDX  |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C13C32C33</blue><green>d</green>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C13C32C33</blue><green>d</green>;
 
-|          |                                                                |
+| | |
 | -------- | -------------------------------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{8}$ of $\text{min}(c_{11},c_{21},c_{31})$ cost |
-| $b_2$    | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
-| $b_3$    | When cost is $\frac{1}{8}$ of $c_{23}$ cost                    |
-| $c_{11}$ | CHECK                                                          |
-| $c_{12}$ | CHECK                                                          |
-| $c_{13}$ | REDX                                                           |
-| $c_{21}$ | CHECK                                                          |
-| $c_{22}$ | CHECK                                                          |
-| $c_{23}$ | CHECK                                                          |
-| $c_{31}$ | CHECK                                                          |
-| $c_{32}$ | REDX                                                           |
-| $c_{33}$ | REDX                                                           |
+| $b_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_{11},c_{21},c_{31})$ cost |
+| $b_2$ | When cost is $\frac{1}{5}$ of $\text{min}(c_{12},c_{22},c_{32})$ cost |
+| $b_3$ | When cost is $\frac{1}{8}$ of $c_{23}$ cost |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | CHECK |
+| $c_{23}$ | CHECK |
+| $c_{31}$ | CHECK |
+| $c_{32}$ | REDX |
+| $c_{33}$ | REDX |
 
 ### T3<red>No</red><blue>C13C32C33</blue>
 
 Class: strat;
 Caption: T3<red>No</red><blue>C13C32C33</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | CHECK |
-| $b_2$    | CHECK |
-| $b_3$    | CHECK |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $b_3$ | CHECK |
 | $c_{11}$ | CHECK |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
+| $c_{13}$ | REDX |
 | $c_{21}$ | CHECK |
 | $c_{22}$ | CHECK |
 | $c_{23}$ | CHECK |
 | $c_{31}$ | CHECK |
-| $c_{32}$ | REDX  |
-| $c_{33}$ | REDX  |
+| $c_{32}$ | REDX |
+| $c_{33}$ | REDX |
 
 ### T3<blue>C11C12C21</blue><green>d</green>
 
 Class: strat;
 Caption: T3<blue>C11C12C21</blue><green>d</green>;
 
-|          |                                                         |
+| | |
 | -------- | ------------------------------------------------------- |
-| $b_1$    | When cost is $\frac{1}{7}$ of $\text{min}(c_{11},c_{21})$ cost |
-| $b_2$    | When cost is $\frac{1}{5}$ of $c_{12}$ cost             |
-| $b_3$    | REDX                                                    |
-| $c_{11}$ | CHECK                                                   |
-| $c_{12}$ | CHECK                                                   |
-| $c_{13}$ | REDX                                                    |
-| $c_{21}$ | CHECK                                                   |
-| $c_{22}$ | REDX                                                    |
-| $c_{23}$ | REDX                                                    |
-| $c_{31}$ | REDX                                                    |
-| $c_{32}$ | REDX                                                    |
-| $c_{33}$ | REDX                                                    |
+| $b_1$ | When cost is $\frac{1}{7}$ of $\text{min}(c_{11},c_{21})$ cost |
+| $b_2$ | When cost is $\frac{1}{5}$ of $c_{12}$ cost |
+| $b_3$ | REDX |
+| $c_{11}$ | CHECK |
+| $c_{12}$ | CHECK |
+| $c_{13}$ | REDX |
+| $c_{21}$ | CHECK |
+| $c_{22}$ | REDX |
+| $c_{23}$ | REDX |
+| $c_{31}$ | REDX |
+| $c_{32}$ | REDX |
+| $c_{33}$ | REDX |
 
 ### T3<blue>C11C12C21</blue>
 
 Class: strat;
 Caption: T3<blue>C11C12C21</blue>;
 
-|          |       |
+| | |
 | -------- | ----- |
-| $b_1$    | CHECK |
-| $b_2$    | CHECK |
-| $b_3$    | REDX  |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $b_3$ | REDX |
 | $c_{11}$ | CHECK |
 | $c_{12}$ | CHECK |
-| $c_{13}$ | REDX  |
+| $c_{13}$ | REDX |
 | $c_{21}$ | CHECK |
-| $c_{22}$ | REDX  |
-| $c_{23}$ | REDX  |
-| $c_{31}$ | REDX  |
-| $c_{32}$ | REDX  |
-| $c_{33}$ | REDX  |
+| $c_{22}$ | REDX |
+| $c_{23}$ | REDX |
+| $c_{31}$ | REDX |
+| $c_{32}$ | REDX |
+| $c_{33}$ | REDX |
 
 ## Theory 4: Polynomials
 
@@ -993,16 +993,16 @@ Caption: T3<blue>C11C12C21</blue>;
 Class: strat_separated;
 Caption: T4<blue>C3</blue><green>d66</green>;
 
-| INVIS | Recovery (pub mult $\lt1$)                              | $\tau$ Gain (pub mult $\gt1$)                           |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | ----- | ------------------------------------------------------- | ------------------------------------------------------- |
-| $c_1$ | REDX                                                    | REDX                                                    |
-| $c_2$ | REDX                                                    | REDX                                                    |
-| $c_3$ | CHECK                                                   | CHECK                                                   |
-| $c_4$ | REDX                                                    | REDX                                                    |
-| $c_5$ | REDX                                                    | REDX                                                    |
-| $c_6$ | REDX                                                    | REDX                                                    |
+| $c_1$ | REDX | REDX |
+| $c_2$ | REDX | REDX |
+| $c_3$ | CHECK | CHECK |
+| $c_4$ | REDX | REDX |
+| $c_5$ | REDX | REDX |
+| $c_6$ | REDX | REDX |
 | $q_1$ | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost |
-| $q_2$ | CHECK                                                   | When cost is $\frac{2}{3}$ of $c_3$ cost                |
+| $q_2$ | CHECK | When cost is $\frac{2}{3}$ of $c_3$ cost |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d66</green> $q_1$: 377 $q_2$: 252”.
 
@@ -1022,14 +1022,14 @@ Strategy Credits:
 Class: strat;
 Caption: T4<blue>C3</blue><green>coast</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
@@ -1042,14 +1042,14 @@ The levels it shows after $q_1$ and $q_2$ are the last levels you should buy the
 Class: strat;
 Caption: T4<blue>C3</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
@@ -1058,48 +1058,48 @@ Caption: T4<blue>C3</blue>;
 Class: strat_separated;
 Caption: T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>;
 
-| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
-| $c_2$ | CHECK                                     | REDX                                      |
-| $c_3$ | CHECK                                     | CHECK                                     |
-| $c_4$ | REDX                                      | REDX                                      |
-| $c_5$ | REDX                                      | REDX                                      |
-| $c_6$ | REDX                                      | REDX                                      |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | CHECK | CHECK |
+| $c_4$ | REDX | REDX |
+| $c_5$ | REDX | REDX |
+| $c_6$ | REDX | REDX |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     | CHECK                                     |
+| $q_2$ | CHECK | CHECK |
 
 ### T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>
 
 Class: strat_separated;
 Caption: T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>;
 
-| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
-| $c_2$ | CHECK                                     | REDX                                      |
-| $c_3$ | CHECK                                     | CHECK                                     |
-| $c_4$ | REDX                                      | REDX                                      |
-| $c_5$ | CHECK                                     | CHECK                                     |
-| $c_6$ | CHECK                                     | CHECK                                     |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | CHECK | CHECK |
+| $c_4$ | REDX | REDX |
+| $c_5$ | CHECK | CHECK |
+| $c_6$ | CHECK | CHECK |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     | CHECK                                     |
+| $q_2$ | CHECK | CHECK |
 
 ### T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>
 
 Class: strat_separated;
 Caption: T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>;
 
-| INVIS | Recovery (pub mult $\lt1$)                | $\tau$ Gain (pub mult $\gt1$)             |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX                                      |
-| $c_2$ | CHECK                                     | REDX                                      |
-| $c_3$ | REDX                                      | REDX                                      |
-| $c_4$ | CHECK                                     | CHECK                                     |
-| $c_5$ | CHECK                                     | CHECK                                     |
-| $c_6$ | CHECK                                     | CHECK                                     |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | REDX | REDX |
+| $c_4$ | CHECK | CHECK |
+| $c_5$ | CHECK | CHECK |
+| $c_6$ | CHECK | CHECK |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     | CHECK                                     |
+| $q_2$ | CHECK | CHECK |
 
 **Milestone swapping strategy**
 
@@ -1111,16 +1111,16 @@ Caption: T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>
 Class: strat;
 Caption: T4<blue>C123</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK                                     |
-| $c_3$ | CHECK                                     |
-| $c_4$ | REDX                                      |
-| $c_5$ | REDX                                      |
-| $c_6$ | REDX                                      |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     |
+| $q_2$ | CHECK |
 
 This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4<blue>C3</blue><green>d66</green>.
 
@@ -1129,14 +1129,14 @@ This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4
 Class: strat;
 Caption: T4<blue>C123</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $c_3$ | CHECK |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
@@ -1147,44 +1147,44 @@ This strategy is typically seen at lower $\rho$ and is eventually outpaced by T4
 Class: strat;
 Caption: T4<blue>C12</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK                                     |
-| $c_3$ | REDX                                      |
-| $c_4$ | REDX                                      |
-| $c_5$ | REDX                                      |
-| $c_6$ | REDX                                      |
-| $q_1$ | REDX                                      |
-| $q_2$ | REDX                                      |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
+| $q_1$ | REDX |
+| $q_2$ | REDX |
 
 ### T4<blue>C12</blue>
 
 Class: strat;
 Caption: T4<blue>C12</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
-| $q_1$ | REDX  |
-| $q_2$ | REDX  |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
+| $q_1$ | REDX |
+| $q_2$ | REDX |
 
 ### T4<blue>C56</blue>
 
 Class: strat;
 Caption: T4<blue>C56</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
 | $c_6$ | CHECK |
 | $q_1$ | CHECK |
@@ -1195,14 +1195,14 @@ Caption: T4<blue>C56</blue>;
 Class: strat;
 Caption: T4<blue>C4</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
@@ -1211,14 +1211,14 @@ Caption: T4<blue>C4</blue>;
 Class: strat;
 Caption: T4<blue>C5</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
-| $c_6$ | REDX  |
+| $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
@@ -1227,7 +1227,7 @@ Caption: T4<blue>C5</blue>;
 Class: strat;
 Caption: T4;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
@@ -1251,11 +1251,11 @@ Caption: T5<green>Idle xexxx</green>;
 
 | INVIS | Before xexxx $\rho$ | After xexxx $\rho$ |
 | ----- | ------------------- | ------------------ |
-| $q_1$ | CHECK               | CHECK              |
-| $q_2$ | CHECK               | CHECK              |
-| $c_1$ | CHECK               | REDX               |
-| $c_2$ | CHECK               | CHECK              |
-| $c_3$ | CHECK               | CHECK              |
+| $q_1$ | CHECK | CHECK |
+| $q_2$ | CHECK | CHECK |
+| $c_1$ | CHECK | REDX |
+| $c_2$ | CHECK | CHECK |
+| $c_3$ | CHECK | CHECK |
 
 **IMPORTANT:**
 Do active $c_2$ buying (buying $c_2$ when $q$ isn’t increasing, and x10 for the first few seconds of the publication) for the first few minutes of the publication. <br> <br>
@@ -1273,7 +1273,7 @@ Strategy Credit:
 Class: strat;
 Caption: T5;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
@@ -1288,17 +1288,17 @@ Caption: T5;
 Class: strat;
 Caption: T6<green>AI</green>;
 
-|       |                                                            |
+| | |
 | ----- | ---------------------------------------------------------- |
 | $q_1$ | When cost$\times(7+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
-| $q_2$ | CHECK                                                      |
+| $q_2$ | CHECK |
 | $r_1$ | When cost$\times(5+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
-| $r_2$ | CHECK                                                      |
-| $c_1$ | When cost$\times(7+$ lvl%$10)\lt c_2$ cost                |
+| $r_2$ | CHECK |
+| $c_1$ | When cost$\times(7+$ lvl%$10)\lt c_2$ cost |
 | $c_2$ | As the publication progresses, buy less $c_2$ (and $c_1$). |
-| $c_3$ | REDX                                                       |
-| $c_4$ | REDX                                                       |
-| $c_5$ | CHECK                                                      |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | CHECK |
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
@@ -1313,15 +1313,15 @@ Caption: T6<green>SNAX x.xxexxx</green>;
 
 | INVIS | Before x.xxexxx $\rho$ | After x.xxexxx $\rho$ |
 | ----- | ---------------------- | --------------------- |
-| $q_1$ | CHECK                  | CHECK                 |
-| $q_2$ | CHECK                  | CHECK                 |
-| $r_1$ | CHECK                  | CHECK                 |
-| $r_2$ | CHECK                  | CHECK                 |
-| $c_1$ | CHECK                  | REDX                  |
-| $c_2$ | CHECK                  | REDX                  |
-| $c_3$ | REDX                   | REDX                  |
-| $c_4$ | REDX                   | REDX                  |
-| $c_5$ | CHECK                  | CHECK                 |
+| $q_1$ | CHECK | CHECK |
+| $q_2$ | CHECK | CHECK |
+| $r_1$ | CHECK | CHECK |
+| $r_2$ | CHECK | CHECK |
+| $c_1$ | CHECK | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | REDX | REDX |
+| $c_4$ | REDX | REDX |
+| $c_5$ | CHECK | CHECK |
 
 The “x.xxexxx” is returned by the recommended [theory simulator.](https://exponential-developers.github.io/sim-3.0/) For example, it could say:<br>T6<green>SNAX</green> 4.52e760.
 
@@ -1337,24 +1337,24 @@ Strategy Credits:
 Class: strat;
 Caption: T6<blue>C125</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     |
+| $q_2$ | CHECK |
 | $r_1$ | When cost is $\frac{1}{10}$ of $r_2$ cost |
-| $r_2$ | CHECK                                     |
+| $r_2$ | CHECK |
 | $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK                                     |
-| $c_3$ | REDX                                      |
-| $c_4$ | REDX                                      |
-| $c_5$ | CHECK                                     |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | CHECK |
 
 ### T6<blue>C125</blue>
 
 Class: strat;
 Caption: T6<blue>C125</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
@@ -1362,8 +1362,8 @@ Caption: T6<blue>C125</blue>;
 | $r_2$ | CHECK |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
 
 ### T6<blue>C5</blue><green>d</green>
@@ -1371,17 +1371,17 @@ Caption: T6<blue>C125</blue>;
 Class: strat;
 Caption: T6<blue>C5</blue><green>d</green>;
 
-|       |                                                            |
+| | |
 | ----- | ---------------------------------------------------------- |
 | $q_1$ | When cost$\times(7+$ lvl%$10)\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
-| $q_2$ | CHECK                                                      |
-| $r_1$ | When $5\times$ cost$\lt$ $\text{min}(q_2,r_2,c_5)$ cost           |
-| $r_2$ | CHECK                                                      |
-| $c_1$ | REDX                                                       |
-| $c_2$ | REDX                                                       |
-| $c_3$ | REDX                                                       |
-| $c_4$ | REDX                                                       |
-| $c_5$ | CHECK                                                      |
+| $q_2$ | CHECK |
+| $r_1$ | When $5\times$ cost$\lt$ $\text{min}(q_2,r_2,c_5)$ cost |
+| $r_2$ | CHECK |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | CHECK |
 
 **Note:**
 If you need to, you can idle recovery by autobuying $q_1$ and $r_1$ until the theory has passed its previous publication point. This will reduce your rates by only ~1% relative to buying $q_1$ and $r_1$ at e1 ratio the entire publication.
@@ -1391,16 +1391,16 @@ If you need to, you can idle recovery by autobuying $q_1$ and $r_1$ until the th
 Class: strat;
 Caption: T6<blue>C5</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $r_1$ | CHECK |
 | $r_2$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
 
 ### T6<blue>C12</blue><green>d</green>
@@ -1408,17 +1408,17 @@ Caption: T6<blue>C5</blue>;
 Class: strat;
 Caption: T6<blue>C12</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK                                     |
+| $q_2$ | CHECK |
 | $r_1$ | When cost is $\frac{1}{10}$ of $r_2$ cost |
-| $r_2$ | CHECK                                     |
+| $r_2$ | CHECK |
 | $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK                                     |
-| $c_3$ | REDX                                      |
-| $c_4$ | REDX                                      |
-| $c_5$ | REDX                                      |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
 
 This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 
@@ -1427,7 +1427,7 @@ This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 Class: strat;
 Caption: T6<blue>C12</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
@@ -1435,9 +1435,9 @@ Caption: T6<blue>C12</blue>;
 | $r_2$ | CHECK |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
 
 This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 
@@ -1446,49 +1446,49 @@ This strategy is sometimes seen at lower $\tau$'s but not at higher $\tau$'s.
 Class: strat;
 Caption: T6<blue>C4</blue><green>d</green>;
 
-|       |                                                       |
+| | |
 | ----- | ----------------------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,r_2,c_4)$ cost |
-| $q_2$ | CHECK                                                 |
+| $q_2$ | CHECK |
 | $r_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,r_2,c_4)$ cost |
-| $r_2$ | CHECK                                                 |
-| $c_1$ | REDX                                                  |
-| $c_2$ | REDX                                                  |
-| $c_3$ | REDX                                                  |
-| $c_4$ | CHECK                                                 |
-| $c_5$ | REDX                                                  |
+| $r_2$ | CHECK |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | CHECK |
+| $c_5$ | REDX |
 
 ### T6<blue>C4</blue>
 
 Class: strat;
 Caption: T6<blue>C4</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $r_1$ | CHECK |
 | $r_2$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
-| $c_5$ | REDX  |
+| $c_5$ | REDX |
 
 ### T6<blue>C3</blue><green>d</green>
 
 Class: strat;
 Caption: T6<blue>C3</blue><green>d</green>;
 
-|       |                                                   |
+| | |
 | ----- | ------------------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{5}$ of $\text{min}(q_2,c_3)$ cost |
-| $q_2$ | CHECK                                             |
-| $c_1$ | REDX                                              |
-| $c_2$ | REDX                                              |
-| $c_3$ | CHECK                                             |
-| $c_4$ | REDX                                              |
-| $c_5$ | REDX                                              |
+| $q_2$ | CHECK |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | CHECK |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
 
 Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or $r_2$ listed because the two strategies only appear on the sim below the milestones that give $r_1$ and $r_2$.
 
@@ -1497,15 +1497,15 @@ Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or
 Class: strat;
 Caption: T6<blue>C3</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
 
 Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or $r_2$ listed because the two strategies only appear on the sim below the milestones that give $r_1$ and $r_2$.
 
@@ -1518,30 +1518,30 @@ Both T6<blue>C3</blue><green>d</green> and T6<blue>C3</blue> don't have $r_1$ or
 Class: strat;
 Caption: T7<green>PlaySpqcey</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
-| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost  |
-| $c_1$ | REDX                                      |
-| $c_2$ | REDX                                      |
+| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
 | $c_4$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
-| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost  |
-| $c_6$ | CHECK                                     |
+| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost |
+| $c_6$ | CHECK |
 
 **If there is a number after T7<green>PlaySpqcey</green> (Example: T7<green>PlaySpqcey10</green> or T7<green>PlaySpqcey100</green>), then use this table:**
 
 Class: strat;
 Caption: T7<green>PlaySpqceyX</green>;
 
-|       |                                                     |
+| | |
 | ----- | --------------------------------------------------- |
-| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost            |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost           |
+| $q_1$ | When cost is $\frac{1}{4}$ of $c_6$ cost |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
 | $c_2$ | When <green>X</green> times cheaper than $c_6$ cost |
-| $c_3$ | When cost is $\frac{1}{10}$ of $c_6$ cost           |
-| $c_4$ | When cost is $\frac{1}{10}$ of $c_6$ cost           |
-| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost            |
-| $c_6$ | CHECK                                               |
+| $c_3$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
+| $c_4$ | When cost is $\frac{1}{10}$ of $c_6$ cost |
+| $c_5$ | When cost is $\frac{1}{4}$ of $c_6$ cost |
+| $c_6$ | CHECK |
 
 While the "<green>X</green>" is only directly in the $c_2$ buying condition, because the $c_1$ buying condition is based on the cost of $c_2$, the "<green>X</green>" also indirectly affects how much $c_1$ is bought.
 
@@ -1563,71 +1563,71 @@ Strategy Credits:
 Class: strat;
 Caption: T7<blue>C3</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $c_3$ cost |
-| $c_1$ | REDX                                      |
-| $c_2$ | REDX                                      |
-| $c_3$ | CHECK                                     |
-| $c_4$ | REDX                                      |
-| $c_5$ | REDX                                      |
-| $c_6$ | REDX                                      |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | CHECK |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 
 ### T7<blue>C12</blue><green>d</green>
 
 Class: strat;
 Caption: T7<blue>C12</blue><green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_1$ | When cost is $\frac{1}{8}$ of $c_2$ cost  |
-| $c_2$ | CHECK                                     |
-| $c_3$ | REDX                                      |
-| $c_4$ | REDX                                      |
-| $c_5$ | REDX                                      |
-| $c_6$ | REDX                                      |
+| $c_1$ | When cost is $\frac{1}{8}$ of $c_2$ cost |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 
 ### T7<blue>C12</blue>
 
 Class: strat;
 Caption: T7<blue>C12</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
-| $c_5$ | REDX  |
-| $c_6$ | REDX  |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 
 ### T7<blue>C123</blue><green>d</green>
 
 Class: strat;
 Caption: T7<blue>C123</blue><green>d</green>;
 
-|       |                                                           |
+| | |
 | ----- | --------------------------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_3)$ cost |
-| $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_3)$ cost  |
-| $c_2$ | CHECK                                                     |
-| $c_3$ | CHECK                                                     |
-| $c_4$ | REDX                                                      |
-| $c_5$ | REDX                                                      |
-| $c_6$ | REDX                                                      |
+| $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_3)$ cost |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | REDX |
+| $c_5$ | REDX |
+| $c_6$ | REDX |
 
 ### T7<red>No</red><blue>C12</blue>
 
 Class: strat;
 Caption: T7<red>No</red><blue>C12</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
 | $c_4$ | CHECK |
 | $c_5$ | CHECK |
@@ -1638,12 +1638,12 @@ Caption: T7<red>No</red><blue>C12</blue>;
 Class: strat;
 Caption: T7<red>No</red><blue>C123</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
 | $c_5$ | CHECK |
 | $c_6$ | CHECK |
@@ -1653,13 +1653,13 @@ Caption: T7<red>No</red><blue>C123</blue>;
 Class: strat;
 Caption: T7<red>No</red><blue>C124</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
 | $c_3$ | CHECK |
-| $c_4$ | REDX  |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
 | $c_6$ | CHECK |
 
@@ -1668,13 +1668,13 @@ Caption: T7<red>No</red><blue>C124</blue>;
 Class: strat;
 Caption: T7<red>No</red><blue>C1234</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
-| $c_1$ | REDX  |
-| $c_2$ | REDX  |
-| $c_3$ | REDX  |
-| $c_4$ | REDX  |
+| $c_1$ | REDX |
+| $c_2$ | REDX |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
 | $c_5$ | CHECK |
 | $c_6$ | CHECK |
 
@@ -1683,7 +1683,7 @@ Caption: T7<red>No</red><blue>C1234</blue>;
 Class: strat;
 Caption: T7;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $c_1$ | CHECK |
@@ -1700,13 +1700,13 @@ Caption: T7;
 Class: strat;
 Caption: T8<green>PlaySolarSwap</green>;
 
-|       |                                                        |
+| | |
 | ----- | ------------------------------------------------------ |
 | $c_1$ | When cost$\times(5+$ lvl%$10)\lt$ $\text{min}(c_2,c_4)$ cost |
-| $c_2$ | CHECK                                                  |
-| $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost      |
-| $c_4$ | CHECK                                                  |
-| $c_5$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost      |
+| $c_2$ | CHECK |
+| $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_4$ | CHECK |
+| $c_5$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost |
 
 **Milestone Swap:**
 
@@ -1724,12 +1724,12 @@ Strategy Credits:
 Class: strat;
 Caption: T8<green>Play</green>;
 
-|       |                                                   |
+| | |
 | ----- | ------------------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_4)$ cost |
-| $c_2$ | CHECK                                             |
+| $c_2$ | CHECK |
 | $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost |
-| $c_4$ | CHECK                                             |
+| $c_4$ | CHECK |
 | $c_5$ | When cost is $\frac{1}{4}$ of $\text{min}(c_2,c_4)$ cost |
 
 <!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
@@ -1745,11 +1745,11 @@ Caption: T8<green>SNAX</green>;
 
 | Pub. Mult.* | $\lt1.6$ | $1.6-2.3$ | $\gt2.3$ |
 | ----------- | -------- | --------- | -------- |
-| $c_1$       | CHECK    | REDX      | REDX     |
-| $c_2$       | CHECK    | CHECK     | CHECK    |
-| $c_3$       | CHECK    | CHECK     | REDX     |
-| $c_4$       | CHECK    | CHECK     | CHECK    |
-| $c_5$       | CHECK    | CHECK     | REDX     |
+| $c_1$ | CHECK | REDX | REDX |
+| $c_2$ | CHECK | CHECK | CHECK |
+| $c_3$ | CHECK | CHECK | REDX |
+| $c_4$ | CHECK | CHECK | CHECK |
+| $c_5$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
@@ -1762,13 +1762,13 @@ Strategy Credits:
 Class: strat;
 Caption: T8<red>No</red><blue>C35</blue><green>d</green>;
 
-|       |                                                    |
+| | |
 | ----- | -------------------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
-| $c_2$ | CHECK                                              |
-| $c_3$ | REDX                                               |
-| $c_4$ | CHECK                                              |
-| $c_5$ | REDX                                               |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | CHECK |
+| $c_5$ | REDX |
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
@@ -1777,63 +1777,63 @@ Caption: T8<red>No</red><blue>C35</blue><green>d</green>;
 Class: strat;
 Caption: T8<red>No</red><blue>C35</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
-| $c_5$ | REDX  |
+| $c_5$ | REDX |
 
 ### T8<red>No</red><blue>C5</blue><green>d</green>
 
 Class: strat;
 Caption: T8<red>No</red><blue>C5</blue><green>d</green>;
 
-|       |                                                    |
+| | |
 | ----- | -------------------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
-| $c_2$ | CHECK                                              |
-| $c_3$ | CHECK                                              |
-| $c_4$ | CHECK                                              |
-| $c_5$ | REDX                                               |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | REDX |
 
 ### T8<red>No</red><blue>C5</blue>
 
 Class: strat;
 Caption: T8<red>No</red><blue>C5</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $c_3$ | CHECK |
 | $c_4$ | CHECK |
-| $c_5$ | REDX  |
+| $c_5$ | REDX |
 
 ### T8<red>No</red><blue>C3</blue><green>d</green>
 
 Class: strat;
 Caption: T8<red>No</red><blue>C3</blue><green>d</green>;
 
-|       |                                                    |
+| | |
 | ----- | -------------------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
-| $c_2$ | CHECK                                              |
-| $c_3$ | REDX                                               |
-| $c_4$ | CHECK                                              |
-| $c_5$ | CHECK                                              |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
 
 ### T8<red>No</red><blue>C3</blue>
 
 Class: strat;
 Caption: T8<red>No</red><blue>C3</blue>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
-| $c_3$ | REDX  |
+| $c_3$ | REDX |
 | $c_4$ | CHECK |
 | $c_5$ | CHECK |
 
@@ -1842,20 +1842,20 @@ Caption: T8<red>No</red><blue>C3</blue>;
 Class: strat;
 Caption: T8<green>d</green>;
 
-|       |                                           |
+| | |
 | ----- | ----------------------------------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK                                     |
-| $c_3$ | CHECK                                     |
-| $c_4$ | CHECK                                     |
-| $c_5$ | CHECK                                     |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
 
 ### T8
 
 Class: strat;
 Caption: T8;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
@@ -1870,13 +1870,13 @@ Caption: T8;
 Class: strat_separated;
 Caption: WSP<green>d</green><red>Stop</red><blue>C1</blue>;
 
-| INVIS | First 15sec of Publication                                     | Rest of Publication                                              |
+| INVIS | First 15sec of Publication | Rest of Publication |
 | ----- | -------------------------------------------------------------- | ---------------------------------------------------------------- |
-| $q_1$ | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost   |
-| $q_2$ | CHECK                                                          | CHECK                                                            |
-| $n$   | CHECK                                                          | CHECK                                                            |
-| $c_1$ | CHECK                                                          | When cost is Ratio* of $\text{min}(q_2,n,c_2)$ cost              |
-| $c_2$ | CHECK                                                          | CHECK                                                            |
+| $q_1$ | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | When cost$\times(8+$ lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost |
+| $q_2$ | CHECK | CHECK |
+| $n$ | CHECK | CHECK |
+| $c_1$ | CHECK | When cost is Ratio* of $\text{min}(q_2,n,c_2)$ cost |
+| $c_2$ | CHECK | CHECK |
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
@@ -1885,14 +1885,14 @@ Caption: WSP<green>d</green><red>Stop</red><blue>C1</blue>;
 Class: strat;
 Caption: $c_1$ Ratio;
 
-|                       |                                               |
+| | |
 | --------------------- | --------------------------------------------- |
-| $\rho\lt e25$         | 1                                             |
-| $e25\le\rho\lt e40$   | $\frac{1}{3}$                                 |
-| $e40\le\rho\lt e200$  | $\frac{1}{10}$                                |
-| $e200\le\rho\lt e400$ | $\frac{1}{50}$                                |
-| $e400\le\rho\lt e700$ | $\frac{1}{1,000}$                              |
-| $\rho\gt e700$        | Do not buy $c_1$ after 15sec into publication |
+| $\rho\lt e25$ | 1 |
+| $e25\le\rho\lt e40$ | $\frac{1}{3}$ |
+| $e40\le\rho\lt e200$ | $\frac{1}{10}$ |
+| $e200\le\rho\lt e400$ | $\frac{1}{50}$ |
+| $e400\le\rho\lt e700$ | $\frac{1}{1,000}$ |
+| $\rho\gt e700$ | Do not buy $c_1$ after 15sec into publication |
 
 Strategy Credits:
 
@@ -1905,13 +1905,13 @@ Strategy Credits:
 Class: strat_separated;
 Caption: WSP<red>Stop</red><blue>C1</blue>;
 
-| INVIS | First 15sec of Publication | Rest of Publication                            |
+| INVIS | First 15sec of Publication | Rest of Publication |
 | ----- | -------------------------- | ---------------------------------------------- |
-| $q_1$ | CHECK                      | CHECK                                          |
-| $q_2$ | CHECK                      | CHECK                                          |
-| $n$   | CHECK                      | CHECK                                          |
-| $c_1$ | CHECK                      | If $\rho\lt e450$, ✔️<br>If $\rho\gt e450$,❌ |
-| $c_2$ | CHECK                      | CHECK                                          |
+| $q_1$ | CHECK | CHECK |
+| $q_2$ | CHECK | CHECK |
+| $n$ | CHECK | CHECK |
+| $c_1$ | CHECK | If $\rho\lt e450$, ✔️<br>If $\rho\gt e450$,❌ |
+| $c_2$ | CHECK | CHECK |
 
 Strategy Credits:
 
@@ -1924,11 +1924,11 @@ Strategy Credits:
 Class: strat;
 Caption: WSP;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $n$   | CHECK |
+| $n$ | CHECK |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 
@@ -1969,16 +1969,16 @@ The goal of this strategy is:
 Class: strat_separated;
 Caption: Ratios for SLMS Swapping;
 
-| INVIS                 | <orange>State 1</orange>                         | <orange>State 2</orange>                        | <orange>State 3</orange> |
+| INVIS | <orange>State 1</orange> | <orange>State 2</orange> | <orange>State 3</orange> |
 | --------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------------ |
-| $e25\le\rho\lt e50$   | Until <red>5x</red> $\frac{\text{cost}}{\rho}$   | Until <red>4x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
-| $e50\le\rho\lt e75$   | Until <red>7x</red> $\frac{\text{cost}}{\rho}$   | Until <red>6x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
-| $e75\le\rho\lt e100$  | Until <red>12x</red> $\frac{\text{cost}}{\rho}$  | Until <red>10x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought  |
-| $e100\le\rho\lt e150$ | Until <red>20x</red> $\frac{\text{cost}}{\rho}$  | Until <red>15x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought  |
-| $e150\le\rho\lt e175$ | Until <red>8x</red> $\frac{\text{cost}}{\rho}$   | Until <red>6x</red> $\frac{\text{cost}}{\rho}$  | Until upgrade is bought  |
-| $e175\le\rho\lt e200$ | Until <red>1.5x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought                         | <red>Skip</red>          |
-| $e200\le\rho\lt e275$ | Until <red>3x</red> $\frac{\text{cost}}{\rho}$   | <red>Skip</red>                                 | Until upgrade is bought  |
-| $e275\le\rho\lt e300$ | Until <red>2x</red> $\frac{\text{cost}}{\rho}$   | <red>Skip</red>                                 | Until upgrade is bought  |
+| $e25\le\rho\lt e50$ | Until <red>5x</red> $\frac{\text{cost}}{\rho}$ | Until <red>4x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e50\le\rho\lt e75$ | Until <red>7x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e75\le\rho\lt e100$ | Until <red>12x</red> $\frac{\text{cost}}{\rho}$ | Until <red>10x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e100\le\rho\lt e150$ | Until <red>20x</red> $\frac{\text{cost}}{\rho}$ | Until <red>15x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e150\le\rho\lt e175$ | Until <red>8x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e175\le\rho\lt e200$ | Until <red>1.5x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought | <red>Skip</red> |
+| $e200\le\rho\lt e275$ | Until <red>3x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
+| $e275\le\rho\lt e300$ | Until <red>2x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
 | | | | [FOOT;]**cost** in the table refers to $\text{min}(b_1,b_2)$ cost. |
 
 This may seem confusing, but let's take the first row as an example.
@@ -2004,10 +2004,10 @@ Caption: SL<green>MS</green>;
 
 | Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
 | ----------- | ------ | ------- | -------- |
-| $a_1$       | CHECK  | REDX    | REDX     |
-| $a_2$       | CHECK  | REDX    | REDX     |
-| $b_1$       | CHECK  | CHECK   | REDX     |
-| $b_2$       | CHECK  | CHECK   | REDX     |
+| $a_1$ | CHECK | REDX | REDX |
+| $a_2$ | CHECK | REDX | REDX |
+| $b_1$ | CHECK | CHECK | REDX |
+| $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credit:
@@ -2023,10 +2023,10 @@ Caption: SL<green>MSd</green>;
 
 | Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
 | ----------- | ------ | ------- | -------- |
-| $a_1$       | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
-| $a_2$       | CHECK  | REDX    | REDX     |
-| $b_1$       | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
-| $b_2$       | CHECK  | CHECK   | REDX     |
+| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_2$ | CHECK | REDX | REDX |
+| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
@@ -2042,10 +2042,10 @@ Caption: SL<red>Stop</red><blue>A</blue><green>d</green>;
 
 | Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
 | ----------- | -------- | ------- | ------ |
-| $a_1$       | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
-| $a_2$       | CHECK    | REDX    | REDX   |
-| $b_1$       | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
-| $b_2$       | CHECK    | CHECK   | REDX   |
+| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_2$ | CHECK | REDX | REDX |
+| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
@@ -2066,10 +2066,10 @@ Caption: SL<red>Stop</red><blue>A</blue>;
 
 | Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
 | ----------- | -------- | ------- | ------ |
-| $a_1$       | CHECK    | REDX    | REDX   |
-| $a_2$       | CHECK    | REDX    | REDX   |
-| $b_1$       | CHECK    | CHECK   | REDX   |
-| $b_2$       | CHECK    | CHECK   | REDX   |
+| $a_1$ | CHECK | REDX | REDX |
+| $a_2$ | CHECK | REDX | REDX |
+| $b_1$ | CHECK | CHECK | REDX |
+| $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
 Strategy Credits:
@@ -2085,18 +2085,18 @@ Strategy Credits:
 Class: strat_separated;
 Caption: EF<green>AI</green>;
 
-| INVIS     | Recovery (pub mult $\lt1$)                                 | $\tau$ Gain (pub mult $\gt1$)                              |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | --------- | ---------------------------------------------------------- | ---------------------------------------------------------- |
-| $\dot{t}$ | CHECK                                                      | CHECK                                                      |
-| $q_1$     | When cost$\times(10+$lvl%$10)\lt q_2$ cost                 | When cost$\times(10+$lvl%$10)\lt q_2$ cost                 |
-| $q_2$     | CHECK                                                      | CHECK                                                      |
-| $b_1$     | CHECK                                                      | When $\frac{1}{5}$ of $a_2$ cost                           |
-| $b_2$     | CHECK                                                      | When $\frac{1}{5}$ of $a_2$ cost                           |
-| $c_1$     | CHECK                                                      | When $\frac{1}{5}$ of $a_3$ cost                           |
-| $c_2$     | CHECK                                                      | When $\frac{1}{5}$ of $a_3$ cost                           |
-| $a_1$     | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost  | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost  |
-| $a_2$     | CHECK                                                      | CHECK                                                      |
-| $a_3$     | CHECK                                                      | CHECK                                                      |
+| $\dot{t}$ | CHECK | CHECK |
+| $q_1$ | When cost$\times(10+$lvl%$10)\lt q_2$ cost | When cost$\times(10+$lvl%$10)\lt q_2$ cost |
+| $q_2$ | CHECK | CHECK |
+| $b_1$ | CHECK | When $\frac{1}{5}$ of $a_2$ cost |
+| $b_2$ | CHECK | When $\frac{1}{5}$ of $a_2$ cost |
+| $c_1$ | CHECK | When $\frac{1}{5}$ of $a_3$ cost |
+| $c_2$ | CHECK | When $\frac{1}{5}$ of $a_3$ cost |
+| $a_1$ | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost | When cost$\times(4+\frac{\text{lvl}\%10}{2})\lt q_2$ cost |
+| $a_2$ | CHECK | CHECK |
+| $a_3$ | CHECK | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>AI</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
 
@@ -2113,18 +2113,18 @@ Strategy Credits:
 Class: strat_separated;
 Caption: EF<green>SNAX</green>;
 
-| INVIS     | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | --------- | -------------------------- | ----------------------------- |
-| $\dot{t}$ | CHECK                      | CHECK                         |
-| $q_1$     | CHECK                      | REDX                          |
-| $q_2$     | CHECK                      | CHECK                         |
-| $b_1$     | CHECK                      | REDX                          |
-| $b_2$     | CHECK                      | REDX                          |
-| $c_1$     | CHECK                      | REDX                          |
-| $c_2$     | CHECK                      | REDX                          |
-| $a_1$     | CHECK                      | CHECK                         |
-| $a_2$     | CHECK                      | CHECK                         |
-| $a_3$     | CHECK                      | CHECK                         |
+| $\dot{t}$ | CHECK | CHECK |
+| $q_1$ | CHECK | REDX |
+| $q_2$ | CHECK | CHECK |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | REDX |
+| $c_1$ | CHECK | REDX |
+| $c_2$ | CHECK | REDX |
+| $a_1$ | CHECK | CHECK |
+| $a_2$ | CHECK | CHECK |
+| $a_3$ | CHECK | CHECK |
 | | | [FOOT;]**If below $e150\rho$, don’t autobuy $a_1$ after recovery.** |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>SNAX</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
@@ -2142,18 +2142,18 @@ Strategy Credits:
 Class: strat;
 Caption: EF<green>d</green>;
 
-| INVIS     | Recovery (pub mult $\lt1$)  | $\tau$ Gain (pub mult $\gt1$) |
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
 | --------- | --------------------------- | ----------------------------- |
-| $\dot{t}$ | CHECK                       | CHECK                         |
-| $q_1$     | | When cost is $\frac{1}{10}$ of $q_2$ cost                 |
-| $q_2$     | CHECK                       | CHECK                         |
-| $b_1$     | CHECK                       | REDX                          |
-| $b_2$     | CHECK                       | REDX                          |
-| $c_1$     | CHECK                       | REDX                          |
-| $c_2$     | CHECK                       | REDX                          |
-| $a_1$     | | When cost is $\frac{2}{5}$ of $q_2$ cost                  |
-| $a_2$     | CHECK                       | CHECK                         |
-| $a_3$     | CHECK                       | CHECK                         |
+| $\dot{t}$ | CHECK | CHECK |
+| $q_1$ | | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK | CHECK |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | REDX |
+| $c_1$ | CHECK | REDX |
+| $c_2$ | CHECK | REDX |
+| $a_1$ | | When cost is $\frac{2}{5}$ of $q_2$ cost |
+| $a_2$ | CHECK | CHECK |
+| $a_3$ | CHECK | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>EF<green>d</green> $q_1$: 1223 $q_2$: 144 $a_1$: 382
 
@@ -2164,18 +2164,18 @@ The levels it shows after each variable are the last levels you should buy them 
 Class: strat;
 Caption: EF;
 
-|           |       |
+| | |
 | --------- | ----- |
 | $\dot{t}$ | CHECK |
-| $q_1$     | CHECK |
-| $q_2$     | CHECK |
-| $b_1$     | CHECK |
-| $b_2$     | CHECK |
-| $c_1$     | CHECK |
-| $c_2$     | CHECK |
-| $a_1$     | CHECK |
-| $a_2$     | CHECK |
-| $a_3$     | CHECK |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $b_1$ | CHECK |
+| $b_2$ | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $a_1$ | CHECK |
+| $a_2$ | CHECK |
+| $a_3$ | CHECK |
 
 ## Convergents to √2
 
@@ -2184,13 +2184,13 @@ Caption: EF;
 Class: strat_separated;
 Caption: CSR2<green>XL x.xx</green>;
 
-| INVIS | Before x.xx Pub Mult                                          | After x.xxx Pub Mult |
+| INVIS | Before x.xx Pub Mult | After x.xxx Pub Mult |
 | ----- | ------------------------------------------------------------- | -------------------- |
-| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost  | REDX                 |
-| $q_2$ | ✔️*                                                           | REDX                 |
-| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX                 |
-| $n$   | ✔️**                                                          | REDX                 |
-| $c_2$ | CHECK                                                         | REDX                 |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX |
+| $q_2$ | ✔️* | REDX |
+| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX |
+| $n$ | ✔️** | REDX |
+| $c_2$ | CHECK | REDX |
 | | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
 | | | [FOOT;]** If $n$ and $c_2$ have similar costs, prioritize $c_2$. |
 
@@ -2215,13 +2215,13 @@ The “Ratio” stated in the $q_1$ swap conditions is determined as follows, wh
 Class: strat;
 Caption: Ratio;
 
-|                       |                                               |
+| | |
 | --------------------- | --------------------------------------------- |
-| $\rho\lt e45$         | Swap when you are very close to the upgrade.* |
-| $e45\le\rho\lt e80$   | 4                                             |
-| $e80\le\rho\lt e115$  | 8                                             |
-| $e115\le\rho\lt e220$ | 20                                            |
-| $\rho\gt e220$        | 40                                            |
+| $\rho\lt e45$ | Swap when you are very close to the upgrade.* |
+| $e45\le\rho\lt e80$ | 4 |
+| $e80\le\rho\lt e115$ | 8 |
+| $e115\le\rho\lt e220$ | 20 |
+| $\rho\gt e220$ | 40 |
 | | [FOOT;]* Could­n't find any good ra­tio here, just swap when you are very close to the up­grade. - XLII |
 
 Strategy Credits:
@@ -2233,13 +2233,13 @@ Strategy Credits:
 Class: strat;
 Caption: CSR2<green>XLPT</green>;
 
-|       |                                                               |
+| | |
 | ----- | ------------------------------------------------------------- |
-| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost  |
-| $q_2$ | ✔️*                                                           |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost |
+| $q_2$ | ✔️* |
 | $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost |
-| $n$   | ✔️**                                                          |
-| $c_2$ | CHECK                                                         |
+| $n$ | ✔️** |
+| $c_2$ | CHECK |
 | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
 | | [FOOT;]** If $n$ and $c_2$ have similar costs, prioritize $c_2$. |
 
@@ -2259,25 +2259,25 @@ Strategy Credits:
 Class: strat;
 Caption: CSR2<green>d</green>;
 
-|       |                                                             |
+| | |
 | ----- | ----------------------------------------------------------- |
 | $q_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost |
-| $q_2$ | CHECK                                                       |
+| $q_2$ | CHECK |
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(q_2,n,c_2)$ cost |
-| $n$   | CHECK                                                       |
-| $c_2$ | CHECK                                                       |
+| $n$ | CHECK |
+| $c_2$ | CHECK |
 
 ### CSR2<green>PT</green>
 
 Class: strat;
 Caption: CSR2PT;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $c_1$ | CHECK |
-| $n$   | CHECK |
+| $n$ | CHECK |
 | $c_2$ | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like:<br>CSR2<green>PT</green> $q_1$: 1147 $q_2$: 381 $c_1$: 661
@@ -2295,12 +2295,12 @@ Strategy Credits:
 Class: strat;
 Caption: CSR2;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 | $c_1$ | CHECK |
-| $n$   | CHECK |
+| $n$ | CHECK |
 | $c_2$ | CHECK |
 
 ## Fractional Integration
@@ -2310,13 +2310,13 @@ Caption: CSR2;
 Class: strat;
 Caption: FI<green>d</green>;
 
-|       |                                                      |
+| | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
-| $q_2$ | CHECK                                                |
-| $K$   | CHECK                                                |
-| $m$   | CHECK                                                |
-| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone routing information**
 
@@ -2327,13 +2327,13 @@ This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone unt
 Class: strat;
 Caption: FI;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $K$   | CHECK |
-| $m$   | CHECK |
-| $n$   | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
 
 **Milestone routing information**
 
@@ -2344,13 +2344,13 @@ This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone unt
 Class: strat;
 Caption: FI<green>MSd</green>;
 
-|       |                                                      |
+| | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
-| $q_2$ | CHECK                                                |
-| $K$   | CHECK                                                |
-| $m$   | CHECK                                                |
-| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
@@ -2363,10 +2363,10 @@ Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
 | $q_1$ lvl%$23$ | $q$ Ratio |
 | -------------- | --------- |
-| 1-4            | 4         |
-| 5-9            | 3         |
-| 10-19          | 2.5       |
-| 0, 20-22       | 2         |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
 
 Strategy Credits:
 
@@ -2377,13 +2377,13 @@ Strategy Credits:
 Class: strat;
 Caption: FI<green>MS</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $K$   | CHECK |
-| $m$   | CHECK |
-| $n$   | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
 
 **Milestone swapping strategy**
 
@@ -2396,10 +2396,10 @@ Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
 | $q_1$ lvl%$23$ | $q$ Ratio |
 | -------------- | --------- |
-| 1-4            | 4         |
-| 5-9            | 3         |
-| 10-19          | 2.5       |
-| 0, 20-22       | 2         |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
 
 Strategy Credits:
 
@@ -2410,13 +2410,13 @@ Strategy Credits:
 Class: strat;
 Caption: FI<green>dPermaSwap</green>;
 
-|       |                                                      |
+| | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
-| $q_2$ | CHECK                                                |
-| $K$   | CHECK                                                |
-| $m$   | CHECK                                                |
-| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **PermaSwap strategy**
 
@@ -2429,13 +2429,13 @@ Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ lev
 Class: strat;
 Caption: FI<green>PermaSwap</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $K$   | CHECK |
-| $m$   | CHECK |
-| $n$   | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
 
 **PermaSwap strategy**
 
@@ -2448,13 +2448,13 @@ Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ lev
 Class: strat;
 Caption: FI<green>MSdPermaSwap</green>;
 
-|       |                                                      |
+| | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost   |
-| $q_2$ | CHECK                                                |
-| $K$   | CHECK                                                |
-| $m$   | CHECK                                                |
-| $n$   | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
@@ -2467,10 +2467,10 @@ Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
 | $q_1$ lvl%$23$ | $q$ Ratio |
 | -------------- | --------- |
-| 1-4            | 4         |
-| 5-9            | 3         |
-| 10-19          | 2.5       |
-| 0, 20-22       | 2         |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
 
 **PermaSwap strategy**
 
@@ -2487,13 +2487,13 @@ Strategy Credits:
 Class: strat;
 Caption: FI<green>MSPermaSwap</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-| $K$   | CHECK |
-| $m$   | CHECK |
-| $n$   | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
 
 **Milestone swapping strategy**
 
@@ -2506,10 +2506,10 @@ Caption: $q$ Ratio based on $q_1$lvl%$23$;
 
 | $q_1$ lvl%$23$ | $q$ Ratio |
 | -------------- | --------- |
-| 1-4            | 4         |
-| 5-9            | 3         |
-| 10-19          | 2.5       |
-| 0, 20-22       | 2         |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
 
 **PermaSwap strategy**
 
@@ -2528,16 +2528,16 @@ Strategy Credits:
 Class: strat;
 Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
 
-|           |                                                      |
+| | |
 | --------- | ---------------------------------------------------- |
-| $\dot{t}$ | CHECK                                                |
-| $c_1$     | When cost$\times(1+$lvl%$100)\lt$$\text{min}(c_2,s)$ cost* |
-| $c_2$     | ✔️**                                                 |
-| $q_1$     | When cost$\times(1+$lvl%$10)\lt$$\text{min}(q_2,s)$ cost   |
-| $q_2$     | ✔️***                                                |
-| $r_1$     | CHECK                                                |
-| $n$       | CHECK                                                |
-| $s$       | CHECK                                                |
+| $\dot{t}$ | CHECK |
+| $c_1$ | When cost$\times(1+$lvl%$100)\lt$$\text{min}(c_2,s)$ cost* |
+| $c_2$ | ✔️** |
+| $q_1$ | When cost$\times(1+$lvl%$10)\lt$$\text{min}(q_2,s)$ cost |
+| $q_2$ | ✔️*** |
+| $r_1$ | CHECK |
+| $n$ | CHECK |
+| $s$ | CHECK |
 | | [FOOT;]* If you can afford the next $c_1$lvl%$100=1$ before the next $c_2$ or $s$ lvl, then autobuy $c_1$. |
 | | [FOOT;]** If $c_2$ and $s$ have similar costs, prioritize $s$. |
 | | [FOOT;]*** If $q_2$ and $s$ have similar costs, prioritize $s$. |
@@ -2557,16 +2557,16 @@ Strategy Credits:
 Class: strat;
 Caption: FP<green>dMS</green>;
 
-|           |                                             |
+| | |
 | --------- | ------------------------------------------- |
-| $\dot{t}$ | CHECK                                       |
-| $c_1$     | When cost$\times(1+$lvl%$100)\lt c_2$ cost  |
-| $c_2$     | CHECK                                       |
-| $q_1$     | CHECK                                       |
-| $q_2$     | CHECK                                       |
-| $r_1$     | CHECK                                       |
-| $n$       | CHECK                                       |
-| $s$       | CHECK                                       |
+| $\dot{t}$ | CHECK |
+| $c_1$ | When cost$\times(1+$lvl%$100)\lt c_2$ cost |
+| $c_2$ | CHECK |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $n$ | CHECK |
+| $s$ | CHECK |
 
 **Milestone swapping strategy (e700ρ+)**
 
@@ -2579,16 +2579,16 @@ After you unlock the $s$ milestone, you can perform milestone swapping until $s\
 Class: strat;
 Caption: FP;
 
-|           |       |
+| | |
 | --------- | ----- |
 | $\dot{t}$ | CHECK |
-| $c_1$     | CHECK |
-| $c_2$     | CHECK |
-| $q_1$     | CHECK |
-| $q_2$     | CHECK |
-| $r_1$     | CHECK |
-| $n$       | CHECK |
-| $s$       | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $r_1$ | CHECK |
+| $n$ | CHECK |
+| $s$ | CHECK |
 
 ## Riemann Zeta Function
 
@@ -2597,14 +2597,14 @@ Caption: FP;
 Class: strat;
 Caption: RZ<green>dBH</green>;
 
-|       |                                                  |
+| | |
 | ----- | ------------------------------------------------ |
-| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$                 |
-| $c_2$ | CHECK                                            |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$ |
+| $c_2$ | CHECK |
 | $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
-| $w_2$ | CHECK                                            |
-| $w_3$ | CHECK                                            |
-| $b$   | ✔️*                                              |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$ | ✔️* |
 | | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=4478.52 c1: 6561 c2: 1640 w1: 7428.
@@ -2637,14 +2637,14 @@ This strategy is **extremely** active.
 Class: strat;
 Caption: RZ<green>dBH</green>;
 
-|       |                                                  |
+| | |
 | ----- | ------------------------------------------------ |
-| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$                 |
-| $c_2$ | CHECK                                            |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$ |
+| $c_2$ | CHECK |
 | $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
-| $w_2$ | CHECK                                            |
-| $w_3$ | CHECK                                            |
-| $b$   | ✔️*                                              |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$ | ✔️* |
 | | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=388.85 $c_1$: 3091 $c_2$: 773.
@@ -2665,14 +2665,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ<green>BH</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $w_1$ | CHECK |
 | $w_2$ | CHECK |
 | $w_3$ | CHECK |
-| $b$   | CHECK |
+| $b$ | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dBH</green> $t$=388.85 $c_1$: 3091 $c_2$: 773.
 
@@ -2691,14 +2691,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ<green>SpiralSwap</green>;
 
-|       |                                          |
+| | |
 | ----- | ---------------------------------------- |
-| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$     |
-| $c_2$ | CHECK                                    |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$ |
+| $c_2$ | CHECK |
 | $w_1$ | When cost is $\frac{1}{5}$ of $w_2$ cost |
-| $w_2$ | CHECK                                    |
-| $w_3$ | CHECK                                    |
-| $b$   | ✔️*                                      |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$ | ✔️* |
 | | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
 **SpiralSwap**
@@ -2721,14 +2721,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ<green>dMS</green>;
 
-|       |                                          |
+| | |
 | ----- | ---------------------------------------- |
-| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$     |
-| $c_2$ | CHECK                                    |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$ |
+| $c_2$ | CHECK |
 | $w_1$ | When cost is $\frac{1}{5}$ of $w_2$ cost |
-| $w_2$ | CHECK                                    |
-| $w_3$ | CHECK                                    |
-| $b$   | ✔️*                                      |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$ | ✔️* |
 | | [FOOT;]* Do not buy $b$ until $t\gt16$. |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
@@ -2748,14 +2748,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ<green>MS</green>;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $w_1$ | CHECK |
 | $w_2$ | CHECK |
 | $w_3$ | CHECK |
-| $b$   | CHECK |
+| $b$ | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ<green>dMS</green> swap: 197 $c_1$: 953 $c_2$: 238.
 
@@ -2774,14 +2774,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ<green>d</green>;
 
-|       |                                                          |
+| | |
 | ----- | -------------------------------------------------------- |
-| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$*                    |
-| $c_2$ | CHECK                                                    |
+| $c_1$ | When $c_1$lvl$\lt4\times c_2$lvl$+2$* |
+| $c_2$ | CHECK |
 | $w_1$ | When cost is $\frac{1}{5}$ of $\text{min}(w_2,w_3)$ cost |
-| $w_2$ | CHECK                                                    |
-| $w_3$ | CHECK                                                    |
-| $b$   | ✔️**                                                     |
+| $w_2$ | CHECK |
+| $w_3$ | CHECK |
+| $b$ | ✔️** |
 | | [FOOT;]* If you don't have $c_1$ exponent milestones, use $4\times c_2\text{lvl} + 1$ instead. |
 | | [FOOT;]** Do not buy $b$ until $t\gt16$. |
 
@@ -2799,14 +2799,14 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: RZ;
 
-|       |       |
+| | |
 | ----- | ----- |
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $w_1$ | CHECK |
 | $w_2$ | CHECK |
 | $w_3$ | CHECK |
-| $b$   | CHECK |
+| $b$ | CHECK |
 
 When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: <br> RZ $c_1$: 953 $c_2$: 238.
 
@@ -2823,17 +2823,17 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 Class: strat;
 Caption: MF<green>d2</green>;
 
-|          |                                                                                                                                     |
+| | |
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| $c_1$    | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost                                                    |
-| $c_2$    | CHECK                                                                                                                               |
-| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost |
-| $a_2$    | CHECK                                                                                                                               |
-| $\delta$ | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost                                                                    |
-| $v_1$    | Only buy right before a reset                                                                                                       |
-| $v_2$    | Only buy right before a reset                                                                                                       |
-| $v_3$    | Only buy right before a reset                                                                                                       |
-| $v_4$    | Only buy right before a reset                                                                                                       |
+| $c_1$ | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost |
+| $c_2$ | CHECK |
+| $a_1$ | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_2$ | CHECK |
+| $\delta$ | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost |
+| $v_1$ | Only buy right before a reset |
+| $v_2$ | Only buy right before a reset |
+| $v_3$ | Only buy right before a reset |
+| $v_4$ | Only buy right before a reset |
 
 Strategy Credits:
 
@@ -2845,17 +2845,17 @@ Strategy Credits:
 Class: strat;
 Caption: MF<green>d</green>;
 
-|          |                                                                                                         |
+| | |
 | -------- | ------------------------------------------------------------------------------------------------------- |
-| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                        |
-| $c_2$    | CHECK                                                                                                   |
-| $a_1$    | When $I\lt\frac{1}{2}I_{\text{cap}}$ **or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
-| $a_2$    | CHECK                                                                                                   |
-| $\delta$ | CHECK                                                                                                   |
-| $v_1$    | Only buy right before a reset                                                                           |
-| $v_2$    | Only buy right before a reset                                                                           |
-| $v_3$    | Only buy right before a reset                                                                           |
-| $v_4$    | Only buy right before a reset                                                                           |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $c_2$ | CHECK |
+| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$ **or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_2$ | CHECK |
+| $\delta$ | CHECK |
+| $v_1$ | Only buy right before a reset |
+| $v_2$ | Only buy right before a reset |
+| $v_3$ | Only buy right before a reset |
+| $v_4$ | Only buy right before a reset |
 
 Strategy Credits:
 
@@ -2866,17 +2866,17 @@ Strategy Credits:
 Class: strat;
 Caption: MF;
 
-|          |                               |
+| | |
 | -------- | ----------------------------- |
-| $c_1$    | CHECK                         |
-| $c_2$    | CHECK                         |
-| $a_1$    | CHECK                         |
-| $a_2$    | CHECK                         |
-| $\delta$ | CHECK                         |
-| $v_1$    | Only buy right before a reset |
-| $v_2$    | Only buy right before a reset |
-| $v_3$    | Only buy right before a reset |
-| $v_4$    | Only buy right before a reset |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $a_1$ | CHECK |
+| $a_2$ | CHECK |
+| $\delta$ | CHECK |
+| $v_1$ | Only buy right before a reset |
+| $v_2$ | Only buy right before a reset |
+| $v_3$ | Only buy right before a reset |
+| $v_4$ | Only buy right before a reset |
 
 Strategy Credits:
 
@@ -2889,20 +2889,20 @@ Strategy Credits:
 Class: strat;
 Caption: BaP<green>AI</green>;
 
-|           |       |
+| | |
 | --------- | ----- |
 | $\dot{t}$ | CHECK |
-| $c_1$     | If cumulative cost to $c_1$lvl%$64=1$ is $\lt2$x cheapest other purchase,<br>buy until $c_1$lvl%$64=1$.<br>When saving for $c_1$lvl%$64=1$, ✔️.<br> Otherwise, buy at $\frac{1}{2}(c_1$lvl%$64)$ ratio to other variables. |
-| $c_2$     | CHECK |
-| $c_3$     | CHECK |
-| $c_4$     | CHECK |
-| $c_5$     | CHECK |
-| $c_6$     | CHECK |
-| $c_7$     | CHECK |
-| $c_8$     | CHECK |
-| $c_9$     | CHECK |
-| $c_{10}$  | CHECK |
-| $n$       | CHECK |
+| $c_1$ | If cumulative cost to $c_1$lvl%$64=1$ is $\lt2$x cheapest other purchase,<br>buy until $c_1$lvl%$64=1$.<br>When saving for $c_1$lvl%$64=1$, ✔️.<br> Otherwise, buy at $\frac{1}{2}(c_1$lvl%$64)$ ratio to other variables. |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+| $c_7$ | CHECK |
+| $c_8$ | CHECK |
+| $c_9$ | CHECK |
+| $c_{10}$ | CHECK |
+| $n$ | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
 
@@ -2923,20 +2923,20 @@ For the variable buying strategy, check [BaP<green>AI</green>](#bapai).
 Class: strat;
 Caption: BaP<green>coast</green>;
 
-|           |       |
+| | |
 | --------- | ----- |
 | $\dot{t}$ | CHECK |
-| $c_1$     | CHECK |
-| $c_2$     | CHECK |
-| $c_3$     | CHECK |
-| $c_4$     | CHECK |
-| $c_5$     | CHECK |
-| $c_6$     | CHECK |
-| $c_7$     | CHECK |
-| $c_8$     | CHECK |
-| $c_9$     | CHECK |
-| $c_{10}$  | CHECK |
-| $n$       | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+| $c_7$ | CHECK |
+| $c_8$ | CHECK |
+| $c_9$ | CHECK |
+| $c_{10}$ | CHECK |
+| $n$ | CHECK |
 
 Start coasting when x25 away from the next publication mark or next milestone.
 
@@ -2949,17 +2949,17 @@ Start coasting when x25 away from the next publication mark or next milestone.
 Class: strat;
 Caption: BaP;
 
-|           |       |
+| | |
 | --------- | ----- |
 | $\dot{t}$ | CHECK |
-| $c_1$     | CHECK |
-| $c_2$     | CHECK |
-| $c_3$     | CHECK |
-| $c_4$     | CHECK |
-| $c_5$     | CHECK |
-| $c_6$     | CHECK |
-| $c_7$     | CHECK |
-| $c_8$     | CHECK |
-| $c_9$     | CHECK |
-| $c_{10}$  | CHECK |
-| $n$       | CHECK |
+| $c_1$ | CHECK |
+| $c_2$ | CHECK |
+| $c_3$ | CHECK |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+| $c_6$ | CHECK |
+| $c_7$ | CHECK |
+| $c_8$ | CHECK |
+| $c_9$ | CHECK |
+| $c_{10}$ | CHECK |
+| $n$ | CHECK |
