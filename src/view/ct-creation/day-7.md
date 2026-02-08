@@ -129,7 +129,7 @@ var setInternalState = (stateStr) =>
 }
 ```
 
-This won't do anything just yet. In the Theory API, there are four functions to control the stages: **canGoToPreviousStage()**, **goToPreviousStage()**, **canGoToNextStage()**, and **goToNextStage()**. The **canGoTo** functions control the visibility of the stage switching arrows on screen, while the **goTo** functions control their behaviour when clicked. Let's create a stage system using two stages, 0 and 1:
+This won't do anything just yet. In the Theory API, there are four functions to control the stages: **canGoToPreviousStage()**, **goToPreviousStage()**, **canGoToNextStage()**, and **goToNextStage()**. The **canGoTo** functions control the visibility of the stage switching arrows on screen, while the **goTo** functions control their behavior when clicked. Let's create a stage system using two stages, 0 and 1:
 
 ```js
 var canGoToPreviousStage = () => stage > 0;

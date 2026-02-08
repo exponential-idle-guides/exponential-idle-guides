@@ -7,7 +7,7 @@ contributors: "the Amazing Community"
 
 Buongiorno a tutti. It is dawn of the third day.
 
-Across your window, a man wearing a blue head scarf is waving at you. You may recognise him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to make a new upgrade based on his famous Fibonacci sequence. But first, we need publications for our theory.
+Across your window, a man wearing a blue head scarf is waving at you. You may recognize him from your maths textbooks - his name is Leonardo Bonacci (maybe), also known as Fibonacci! Today, we are going to make a new upgrade based on his famous Fibonacci sequence. But first, we need publications for our theory.
 
 ## Publications
 
@@ -62,7 +62,7 @@ Done. Now we can publish our theory and gain quicker progress on the next run! A
 
 ## A gift from Fibonacci
 
-The scarved man throws you a marble across the window. You catch it swiftly. He throws another. And then two at the same time, and then three, then five... You realise what he wants from you, and so you sprint back to your desk and start implementing his idea - the Fibonacci sequence.
+The scarved man throws you a marble across the window. You catch it swiftly. He throws another. And then two at the same time, and then three, then five... You realize what he wants from you, and so you sprint back to your desk and start implementing his idea - the Fibonacci sequence.
 
 Let's define this upgrade as **f** ($f$), and set its identifier to 2:
 

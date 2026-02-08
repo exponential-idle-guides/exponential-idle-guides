@@ -79,11 +79,11 @@ let init = () =>
 }
 ```
 
-Now that we've successfully implemented the new milestone, let's take a look at how we can utilise the milestone swap strategy to make our progress faster. Let's assume we are at a high score of 1e45 tau. We would have three milestone points, and we can also start to purchase $\dot{q}$. Our first point should be spent on unlocking $q$, which leaves us two points. Now, suppose we were to spend the two points on $c_1$ exponent (our milestone configuration would be **2/1/0**). We would have a lot of income for $\rho$, but our $q$ growth would be much less than if we were to spend those points on $\dot{q}$. So now we have a $q$ deficit. We transfer those two points to $\dot{q}$ (our configuration would be **0/1/2**), which would maximise $q$'s growth. But then, after a while, our $\rho$ would be at a deficit, so we switch back to **2/1/0**. This is the essence of milestone swapping, boosting our progress further than if we were to stay all the time on only one configuration[^1].
+Now that we've successfully implemented the new milestone, let's take a look at how we can utilize the milestone swap strategy to make our progress faster. Let's assume we are at a high score of 1e45 tau. We would have three milestone points, and we can also start to purchase $\dot{q}$. Our first point should be spent on unlocking $q$, which leaves us two points. Now, suppose we were to spend the two points on $c_1$ exponent (our milestone configuration would be **2/1/0**). We would have a lot of income for $\rho$, but our $q$ growth would be much less than if we were to spend those points on $\dot{q}$. So now we have a $q$ deficit. We transfer those two points to $\dot{q}$ (our configuration would be **0/1/2**), which would maximize $q$'s growth. But then, after a while, our $\rho$ would be at a deficit, so we switch back to **2/1/0**. This is the essence of milestone swapping, boosting our progress further than if we were to stay all the time on only one configuration[^1].
 
 ## Timer time
 
-Now that our theory is complete in terms of content, let's divert our attention towards quality of life and polishing for the rest of the week. Today, we will be implementing a timer to show how much time we've spent in a publication. It won't be in the form of a UI element (like in Riemann Zeta Function), as custom UI is out of the scope for this week. Instead, we will be utilising the quaternary area provided by the API. This area can be seen in Theory 2 (Differential Calculus), where cumulative terms $q_1$ to $q_4$ and $r_1$ to $r_4$ are displayed in a column.
+Now that our theory is complete in terms of content, let's divert our attention towards quality of life and polishing for the rest of the week. Today, we will be implementing a timer to show how much time we've spent in a publication. It won't be in the form of a UI element (like in Riemann Zeta Function), as custom UI is out of the scope for this week. Instead, we will be utilizing the quaternary area provided by the API. This area can be seen in Theory 2 (Differential Calculus), where cumulative terms $q_1$ to $q_4$ and $r_1$ to $r_4$ are displayed in a column.
 
 First, let's create a time variable. Call it **t**. **t** shall increase whenever **tick()** is called, and reset whenever we publish:
 
@@ -179,7 +179,7 @@ Success! We have managed to display the minutes and hours.
 To exercise what you've learned, let's work on some polishing touches:
 
 1. Try counting the number of days.
-2. Move these entries closer together by inserting an invisble quaternary entry on each side.
+2. Move these entries closer together by inserting an invisible quaternary entry on each side.
   - Hint: Try defining the entry's name as **null**. The equal sign won't appear.
 3. Display a leading zero if the number of hours/minutes/seconds is less than 10. That's how digital watches work, right?
 

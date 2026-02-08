@@ -48,7 +48,7 @@ Next is the information section. Here we see four important variables: **id**, *
 - **description**: A description of what the theory is about.
 - **authors**: The person/people who made this theory.
 
-These informations can be viewed by pressing the cog button in the theory selection menu. As these variables are referenced by the game outside the theory's scope, they must be declared with **var**, instead of **let** or **const**. The same is true for almost all of the functions we will be discussing below.
+This information can be viewed by pressing the cog button in the theory selection menu. As these variables are referenced by the game outside the theory's scope, they must be declared with **var**, instead of **let** or **const**. The same is true for almost all of the functions we will be discussing below.
 
 ### Declarations
 
@@ -77,7 +77,7 @@ The next function, **tick**, is where everything important happens. Terms get re
 
 ### The LaTeX formulae
 
-The theory utilises three formulae:
+The theory utilizes three formulae:
 
 - The primary (upper) equation, through **getPrimaryEquation**. It needs to be refreshed manually every time you want to reflect a change (e.g. new milestone or term unlocked), using **theory.invalidatePrimaryEquation**.
 - The secondary (middle) equation, through **getSecondaryEquation**. It needs to be refreshed manually using **theory.invalidateSecondaryEquation**.

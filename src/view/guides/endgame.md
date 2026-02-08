@@ -44,7 +44,7 @@ You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro
 
 ###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
-<yt data-video-id="c8ekMzXWD_g">Resarch 9 Swapping Post-ee20k Video Example and Commentary By Snaeky</yt>
+<yt data-video-id="c8ekMzXWD_g">Research 9 Swapping Post-ee20k Video Example and Commentary By Snaeky</yt>
 
 ### How to properly use the Graduation Calculator
 

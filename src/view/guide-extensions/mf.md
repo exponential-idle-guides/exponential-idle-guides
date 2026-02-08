@@ -79,9 +79,9 @@ Next, repeat the calculation with a variety of relative cost ratio threshold and
 
 ![Graph 1: Interpretation of ROC Curve](/images/mf/graph_1.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 1: Interpretation of ROC curve |
+| |
+| - |
+| [FOOT;]Graph 1: Interpretation of ROC curve |
 
 There are three approaches to determine the preferred threshold when no definite threshold can be established (i.e. AUC of ROC Curve less than $1$), namely Youden's Index approach, minimal distance approach (MDA), and weighted approach. The Youden’s Index is calculated by Sensitivity $+$ Specificity $– 1$ (i.e., Sensitivity $–$ "False Positive rate"). Then the threshold will be determined when Youden’s Index reached maximum.
 
@@ -93,9 +93,9 @@ A Box and whisker diagram is another common graphic plot visualizing the dispers
 
 ![Graph 2: Interpretation of a box and whisker diagram](/images/mf/graph_2.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 2: Interpretation of a box and whisker diagram |
+| |
+| - |
+| [FOOT;]Graph 2: Interpretation of a box and whisker diagram |
 
 ### Results
 
@@ -107,15 +107,15 @@ A total of $20, 032$ data sets related to resets are isolated from the crude lis
 
 ![Graph 3: Reset patterns (y) plotted against log10 ρ of publication (x)](/images/mf/graph_3.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 3: Reset patterns $(y)$ plotted against $\log_{10}{\rho}$ of publication $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 3: Reset patterns $(y)$ plotted against $\log_{10}{\rho}$ of publication $(x)$ |
 
 ![Graph 4: Moving-average percentage (y) of reset pattern used in previous 20 publications, each differs by e1ρ of publication](/images/mf/graph_4.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 4: Moving-average percentage $(y)$ of reset pattern used in previous 20 publications, each differing by $e1\rho$ of publication |
+| |
+| - |
+| [FOOT;]Graph 4: Moving-average percentage $(y)$ of reset pattern used in previous 20 publications, each differing by $e1\rho$ of publication |
 
 #### $c_1$ cost vs. reset cost
 
@@ -127,27 +127,27 @@ A notable mention is the minimum distance calculated in MDA remains at a low pla
 
 ![Graph 5: ROC curve of c1 cost vs reset cost (n = 1,121), with AUC = 0.731](/images/mf/graph_5.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 5: ROC curve of $c_1$ cost vs. reset cost $(n=1,121)$, with AUC $=0.731$ |
+| |
+| - |
+| [FOOT;]Graph 5: ROC curve of $c_1$ cost vs. reset cost $(n=1,121)$, with AUC $=0.731$ |
 
 ![Graph 6: Youden’s Index (y) plotted against c1 relative cost ratio, interval 0.01 (x)](/images/mf/graph_6.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 6: Youden's Index $(y)$ plotted against $c_1$ relative cost ratio, interval 0.01 $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 6: Youden's Index $(y)$ plotted against $c_1$ relative cost ratio, interval 0.01 $(x)$ |
 
 ![Graph 7: Distance from ideal situation (y) plotted against c1 relative cost ratio, interval 0.01 (x)](/images/mf/graph_7.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 7: Distance from ideal situation $(y)$ plotted against $c_1$ relative cost ratio, interval 0.01 $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 7: Distance from ideal situation $(y)$ plotted against $c_1$ relative cost ratio, interval 0.01 $(x)$ |
 
 ![Graph 8: Box and whisker diagram of c1 relative cost ratio for c1 "Before" and c1 "After" (n = 1, 121)](/images/mf/graph_8.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 8: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" and $c_1$ "After" $(n=1,121)$ |
+| |
+| - |
+| [FOOT;]Graph 8: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" and $c_1$ "After" $(n=1,121)$ |
 
 #### $c_2$ cost vs. reset cost
 
@@ -155,15 +155,15 @@ A total of $1,056$ sets of data entries consisting of a $c_2$ "Before", a reset,
 
 ![Graph 9: ROC curve of c2 cost vs reset cost (n = 1,056), with AUC = 1.000](/images/mf/graph_9.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 9: ROC curve of $c_2$ cost vs. reset cost $(n=1,056)$, with AUC $=1.000$ |
+| |
+| - |
+| [FOOT;]Graph 9: ROC curve of $c_2$ cost vs. reset cost $(n=1,056)$, with AUC $=1.000$ |
 
 ![Graph 10: Box and whisker diagram of c2 relative cost ratio for c2 "Before" and c2 "After" (n = 1,056)](/images/mf/graph_10.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 10: Box and whisker diagram of $c_2$ relative cost ratio for $c_2$ "Before" and $c_2$ "After" $(n=1,056)$ |
+| |
+| - |
+| [FOOT;]Graph 10: Box and whisker diagram of $c_2$ relative cost ratio for $c_2$ "Before" and $c_2$ "After" $(n=1,056)$ |
 
 #### $a_1$ cost vs. reset cost
 
@@ -171,27 +171,27 @@ A total of $1, 095$ sets of data entries consisting of a $a_1$ "Before", a reset
 
 ![Graph 11: ROC curve of a1 cost vs reset cost (n = 1,095), with AUC = 0.865](/images/mf/graph_11.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 11: ROC curve of $a_1$ cost vs. reset cost $(n=1,095)$, with AUC $=0.865$ |
+| |
+| - |
+| [FOOT;]Graph 11: ROC curve of $a_1$ cost vs. reset cost $(n=1,095)$, with AUC $=0.865$ |
 
 ![Graph 12: Youden’s Index (y) plotted against a1 relative cost ratio, interval 0.01 (x)](/images/mf/graph_12.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 12: Youden's Index $(y)$ plotted against $a_1$ relative cost ratio, interval 0.01$(x)$ |
+| |
+| - |
+| [FOOT;]Graph 12: Youden's Index $(y)$ plotted against $a_1$ relative cost ratio, interval 0.01$(x)$ |
 
 ![Graph 13: Distance from ideal situation (y) plotted against a1 relative cost ratio, interval 0.01 (x)](/images/mf/graph_13.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 13: Distance from idea situation $(y)$ plotted against $a_1$ relative cost ratio, interval 0.01 $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 13: Distance from idea situation $(y)$ plotted against $a_1$ relative cost ratio, interval 0.01 $(x)$ |
 
 ![Graph 14: Box and whisker diagram of a1 relative cost ratio for a1 "Before" and a1 "After" (n = 1,095)](/images/mf/graph_14.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 14: Box and whisker diagram of $a_1$ relative cost ratio for $a_1$ "Before" and $a_1$ "After" $(n=1,095)$ |
+| |
+| - |
+| [FOOT;]Graph 14: Box and whisker diagram of $a_1$ relative cost ratio for $a_1$ "Before" and $a_1$ "After" $(n=1,095)$ |
 
 #### $a_2$ cost vs. reset cost
 
@@ -199,15 +199,15 @@ A total of $1, 107$ sets of data entries consisting of a $a_2$ "Before", a reset
 
 ![Graph 15: ROC curve of a2 cost vs reset cost (n = 1,107), with AUC = 1.000](/images/mf/graph_15.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 15: ROC curve of $a_2$ cost vs. reset cost $(n=1,107)$, with AUC $=1.000$ |
+| |
+| - |
+| [FOOT;]Graph 15: ROC curve of $a_2$ cost vs. reset cost $(n=1,107)$, with AUC $=1.000$ |
 
 ![Graph 16: Box and whisker diagram of a2 relative cost ratio for a2 "Before" and a2 "After" (n = 1,107)](/images/mf/graph_16.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 16: Box and whisker diagram of $a_2$ relative cost ratio for $a_2$ "Before" and $a_2$ "After" $(n=1,107)$ |
+| |
+| - |
+| [FOOT;]Graph 16: Box and whisker diagram of $a_2$ relative cost ratio for $a_2$ "Before" and $a_2$ "After" $(n=1,107)$ |
 
 #### $\delta$ cost vs. reset cost
 
@@ -215,15 +215,15 @@ A total of $941$ sets of data entries consisting of a $\delta$ "Before", a reset
 
 ![Graph 17: ROC curve of δ cost vs reset cost (n = 941), with AUC = 0.999](/images/mf/graph_17.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 17: ROC curve of $\delta$ cost vs reset cost $(n = 941)$, with AUC $= 0.999$ |
+| |
+| - |
+| [FOOT;]Graph 17: ROC curve of $\delta$ cost vs reset cost $(n = 941)$, with AUC $= 0.999$ |
 
 ![Graph 18: Box and whisker diagram of δ relative cost ratio for δ "Before" and δ "After" (n = 941)](/images/mf/graph_18.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 18: Box and whisker diagram of $\delta$ relative cost ratio for $\delta$ "Before" and $\delta$ "After" $(n = 941)$ |
+| |
+| - |
+| [FOOT;]Graph 18: Box and whisker diagram of $\delta$ relative cost ratio for $\delta$ "Before" and $\delta$ "After" $(n = 941)$ |
 
 Class: newwords;
 ID: table-3;
@@ -243,9 +243,9 @@ Throughout the 9 months of investigations, several hypotheses concerning the rel
 
 ![Graph 19: [log10 (ρ gain)]/[log10 (reset pattern ρ)] (y) plotted against log10 (ρ of publication) (x)](/images/mf/graph_19.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 19: $\frac{\log_{10}{\rho\text{ gain}}}{\log_{10}{\text{reset pattern }\rho}}$ $(y)$ plotted against $\log_{10}{\rho\text{ of publication}}$ $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 19: $\frac{\log_{10}{\rho\text{ gain}}}{\log_{10}{\text{reset pattern }\rho}}$ $(y)$ plotted against $\log_{10}{\rho\text{ of publication}}$ $(x)$ |
 
 The second part of this section investigates the effect of $\log_{10}{\tau}$ of publication on $\log_{10}{\tau}$ gain in a publication and, hence, investigates the possibility of a publication table where one can complete MF CT at a shorter time with a series of set publication rhos. To verify the above investigation, the $\log_{10}{\tau}$ gain was obtained and plotted against $\log_{10}{\rho}$ of publication for MF CT and a subsequent moving-average of $\log_{10}{\tau}$ gain of the previous 20 $\tau$ was also plotted (*Graph 20*). Similar graphs were also plotted for Basal Problem (BaP CT; *Graph 21*) where a publication table is verified to be effective in shortening the completion time of BaP CT, and for Weierstrass Sine Product (WSP CT; *Graph 22*) where there is no publication table for comparison.
 
@@ -255,21 +255,21 @@ With the graph plotted for MF CT comparing to the two controlled graphs, one can
 
 ![Graph 20: log10 τ gain (y) plotted against log10 ρ of publication (x) for MF CT](/images/mf/graph_20.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 20: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for MF CT |
+| |
+| - |
+| [FOOT;]Graph 20: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for MF CT |
 
 ![Graph 21: log10 τ gain (y) plotted against log10 ρ of publication (x) for BaP CT](/images/mf/graph_21.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 21: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for Bap CT |
+| |
+| - |
+| [FOOT;]Graph 21: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for Bap CT |
 
 ![Graph 22: log10 τ gain (y) plotted against log10 ρ of publication (x) for WSP CT](/images/mf/graph_22.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 22: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for WSP CT |
+| |
+| - |
+| [FOOT;]Graph 22: $\log_{10}{\tau\text{ gain}}$ $(y)$ plotted against $\log_{10}{\rho\text{of publication}}$ $(x)$ for WSP CT |
 
 ### Conclusion and Discussion
 
@@ -299,9 +299,9 @@ The underlying reasons for the transition of $e4.5/1\ v_2$ reset to $e9/2\ v_2$ 
 
 ![Graph 23: log10 v2 and log10 v4 (y) plotted against ρ of publication (x)](/images/mf/graph_23.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 23: $\log_{10}{v_2}$ and $\log_{10}{v_4}$ $(y)$ plotted against $\rho$ of publication $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 23: $\log_{10}{v_2}$ and $\log_{10}{v_4}$ $(y)$ plotted against $\rho$ of publication $(x)$ |
 
 #### Evaluating the Effect of time of reset
 
@@ -313,15 +313,15 @@ The MF CT publications were simulated by sim 3.0 using the best rate out of the 
 
 ![Graph 24: Strategy used (y) plotted against log10 ρ of publication (x)](/images/mf/graph_24.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 24: Strategy used $(y)$ plotted against $\log_{10}{\rho\text{ of publication}}$ $(x)$ |
+| |
+| - |
+| [FOOT;]Graph 24: Strategy used $(y)$ plotted against $\log_{10}{\rho\text{ of publication}}$ $(x)$ |
 
 ![Graph 25: Moving-average percentage (y) of strategy used in previous 20 publications, each differs by e1 ρ of publication](/images/mf/graph_25.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 25: Moving-average percentage $(y)$ of strategy used in previous 20 publications, each differing by $e1\rho$ of publication |
+| |
+| - |
+| [FOOT;]Graph 25: Moving-average percentage $(y)$ of strategy used in previous 20 publications, each differing by $e1\rho$ of publication |
 
 In this investigation, it is unclear that whether the strategy adopted in a publication altered the results of above investigations, especially on $c_1$ and $a_1$ relative cost ratio due to the three discrete buying criteria used in the three strategies. With respond to this, the $c_1$ and $a_1$ data sets were further divided into three groups based on the strategy used in the publication, their ROC Curves were plotted, their AUC of ROC Curve, Youden's Index approach, and MDA were evaluated and compared, and the significance of the effect of buying strategies for $c_1$ and $a_1$ were compared in *Table 4* and *Table 5* respectively. Since the scale of $c_1$ cost for each $c_1$ level is $2$ and the scale of $a_1$ cost for each $a_1$ level is $25$ throughout MF CT, A box and whisker diagram comparing only $c_1$ "Before" and $a_1$ "Before" for three strategies have been plotted (Graph 26 and Graph 27).
 
@@ -347,15 +347,15 @@ ID: table-5;
 
 ![Graph 26: Box and whisker diagram of c1 relative cost ratio for c1 "Before" for MFd (n = 103), MFd2 (n = 338), and MFd3 (n = 603)](/images/mf/graph_26.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 26: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" for MFd $(n=103)$, MFd2 $(n=338)$, and MFd3 $(n=603)$ |
+| |
+| - |
+| [FOOT;]Graph 26: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" for MFd $(n=103)$, MFd2 $(n=338)$, and MFd3 $(n=603)$ |
 
 ![Graph 27: Box and whisker diagram of a1 relative cost ratio for a1 "Before" for MFd (n = 101), MFd2 (n = 410), and MFd3 (n = 584)](/images/mf/graph_27.png)
 
-| | | | | |
-| - | - | - | - | - |
-| | | | | [FOOT;]Graph 27: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" for MFd $(n=101)$, MFd2 $(n=410)$, and MFd3 $(n=584)$ |
+| |
+| - |
+| [FOOT;]Graph 27: Box and whisker diagram of $c_1$ relative cost ratio for $c_1$ "Before" for MFd $(n=101)$, MFd2 $(n=410)$, and MFd3 $(n=584)$ |
 
 By comparing $c_1$ and $a_1$ relative cost ratio of publication using MF<green>d2</green> with those using MF<green>d</green>, one may observe the $c_1$ relative cost ratio threshold used in publication of MF<green>d2</green> is higher than that of MF<green>d</green> while that of $a_1$ is lower, and is statistically significant, reflecting the difference in $c_1$ and $a_1$ buying criteria alters the $c_1$ and $a_1$ relative cost ratio threshold. The comparison between MF<green>d</green> and MF<green>d3</green> is insignificant as they share the same $c_1$ buying criteria in their respective publications. The reason for lower $c_1$ relative cost ratio threshold and higher $a_1$ relative cost ratio threshold in publication using MF<green>d3</green> is yet to be known. To summarize, the adjusted $c_1$ and $a_1$ relative cost ratio should be adjusted accordingly depend on the strategy used in the publication, as described in *Table 6*. However, the underlying mechanism(s) for determination of strategy used in a publication has not been found in these investigations, which is essential for determining the $c_1$ and $a_1$ relative cost ratio threshold.
 

@@ -31,7 +31,7 @@ Locked behind the final Convergence Test, custom theories are theories which hav
 
 1. **JavaScript**
 
-Before you engage with this guide, a basic understanding of JavaScript is required, although keep in mind that custom theory development does not utilise async/await, nor does it support modules, so you may skip through these concepts. A tutorial that I can recommend is at [javascripttutorial.net](https://www.javascripttutorial.net/). For a quick understanding, read from Section 1 to 5, while Sections 6 to 8 can be read later, and then the rest.
+Before you engage with this guide, a basic understanding of JavaScript is required, although keep in mind that custom theory development does not utilize async/await, nor does it support modules, so you may skip through these concepts. A tutorial that I can recommend is at [javascripttutorial.net](https://www.javascripttutorial.net/). For a quick understanding, read from Section 1 to 5, while Sections 6 to 8 can be read later, and then the rest.
 
 2. **Exponential Idle Theory SDK**
 

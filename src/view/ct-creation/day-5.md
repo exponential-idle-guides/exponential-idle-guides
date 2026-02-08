@@ -9,11 +9,11 @@ Hola. It is dawn of the fifth day.
 
 Today we are going to bring the theory down to earth, because admittedly, big numbers are very bland, and in this guide, you have to listen to me, because this world needs saving from meaningless dopamine-inducing divergence.
 
-In this lesson, we will learn about a way to look at the theory's balance, so that we can fix its divergence. Then, we will continue by implementing a new term that utilises the theory's storage, called the internal state.
+In this lesson, we will learn about a way to look at the theory's balance, so that we can fix its divergence. Then, we will continue by implementing a new term that utilizes the theory's storage, called the internal state.
 
 ## A new framework
 
-When it comes to balancing, there is a rudimentary yet suprising way of balancing devised by me, which has yet to be talked about within these circles. That is, viewing each term as a contribution to the total income 'power'. Let me introduce the concept:
+When it comes to balancing, there is a rudimentary yet surprising way of balancing devised by me, which has yet to be talked about within these circles. That is, viewing each term as a contribution to the total income 'power'. Let me introduce the concept:
 
 Your tau is represented by 100%, a goal to be beaten. Within a publication, your terms and publication multiplier combine together to try to get past this goal, within finite time. The stronger they are, the less time it takes to reach your previous high score. So disregarding the initial cost of upgrades and that finite time, we can represent the theory's total power as the **sum of each term's power**, expressed logarithmically (remember this). The total power is usually a number close to 1, or 100%, where the theory does not decay. The lower it is from 100%, the faster it decays, e.g. 90% decays faster than 95%; while it always diverges with a total power greater than 100%.
 
@@ -179,12 +179,12 @@ This snippet of code has a lot to unpack. The simple idea is that, for every tic
 
 ## A theory's internal state
 
-Now, hit Save again on your theory file (without changing anything) and wait for the SDK to upload it. Notice that your $q$ has been reset back to one! (I am such a mean teacher). The reason why this happens, is that unlike upgrade levels, currencies, or milestones, terms like $q$ are just regular programming variables, which aren't saved anywhere outside of the scope that it's running in. In order to save these variables, the game provides us a way to store (serialise) them, in the form of an internal state. The internal state is stored as a string, and is loaded once after everything in the theory file has been loaded (which means it is run even after **init**).
+Now, hit Save again on your theory file (without changing anything) and wait for the SDK to upload it. Notice that your $q$ has been reset back to one! (I am such a mean teacher). The reason why this happens, is that unlike upgrade levels, currencies, or milestones, terms like $q$ are just regular programming variables, which aren't saved anywhere outside of the scope that it's running in. In order to save these variables, the game provides us a way to store (serialize) them, in the form of an internal state. The internal state is stored as a string, and is loaded once after everything in the theory file has been loaded (which means it is run even after **init**).
 
 The theory provides two functions for handling the internal state:
 
-- **getInternalState** saves (serialises) variables of your choosing into a string that's stored in your save file. This function is called every 60 seconds while the theory is running, and once when you switch to another theory.
-- **setInternalState** loads (deserialises) this state string from your save file. It is called once after everything else has loaded (upgrades, milestones, etc). You do not need to manually call either of these functions.
+- **getInternalState** saves (serializes) variables of your choosing into a string that's stored in your save file. This function is called every 60 seconds while the theory is running, and once when you switch to another theory.
+- **setInternalState** loads (deserializes) this state string from your save file. It is called once after everything else has loaded (upgrades, milestones, etc). You do not need to manually call either of these functions.
 
 In most examples of theory implementations you've seen, either in the samples folder, or even custom theories, the internal state is often laid out in a straight line. While this can save space, it will definitely be a pain in your tooshie if you decide to change the state format by inserting or rearranging elements. Because of this, I will introduce to you the JSON method, which allows the internal state to be saved in a key-and-value format:
 
@@ -204,7 +204,7 @@ var setInternalState = (stateStr) =>
 }
 ```
 
-This uses JavaScript's JSON namespace, with **stringify** to serialise, and **parse** to deserialise. You may notice that I'm also using other mysterious methods here: **toBase64String** and **fromBase64String**. In JavaScript, unlike plain objects, instances of a class (such as **BigNumber**, or even your own classes) can't innately be serialised into JSON[^1]. Instead, **BigNumber** (of which the **q** variable is an instance) uses **toBase64String** to serialise into a string, and **fromBase64String** to deserialise from it. So, contained in this **state** object is a key $q$, which stores the base 64 representation of the variable **q**, which can be accessed with **state.q**.
+This uses JavaScript's JSON namespace, with **stringify** to serialize, and **parse** to deserialize. You may notice that I'm also using other mysterious methods here: **toBase64String** and **fromBase64String**. In JavaScript, unlike plain objects, instances of a class (such as **BigNumber**, or even your own classes) can't innately be serialized into JSON[^1]. Instead, **BigNumber** (of which the **q** variable is an instance) uses **toBase64String** to serialize into a string, and **fromBase64String** to deserialize from it. So, contained in this **state** object is a key $q$, which stores the base 64 representation of the variable **q**, which can be accessed with **state.q**.
 
 In this snippet, we also encounter a new syntax: the double question mark **??**. This is called the nullish coalescence, and it is used where we don't want null to be assigned to our variable, and instead, the right hand side would be what that assignment defaults to, if the left side happens to be null.
 
@@ -398,7 +398,7 @@ var setInternalState = (stateStr) =>
 init();
 ```
 
-[^1] Classes can be serialised, if the **toJSON** method is defined to convert them into objects first, but **BigNumber** doesn't have this method. For primitive variables (strings and numbers), serialisation looks much easier, as you can omit keys to automatically assign the variables' names to them:
+[^1] Classes can be serialized, if the **toJSON** method is defined to convert them into objects first, but **BigNumber** doesn't have this method. For primitive variables (strings and numbers), serialization looks much easier, as you can omit keys to automatically assign the variables' names to them:
 
 ```js
 let abc = 3;

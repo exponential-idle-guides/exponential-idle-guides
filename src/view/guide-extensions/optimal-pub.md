@@ -315,7 +315,7 @@ $$c_3 \in \Theta(\rho^{\frac{2}{9}})$$
 $$c_4 \in \Theta(\rho^{\frac{1}{8}})$$
 Using Lemma 2.2, we can see that the dominant term in the parentheses on the right is $c_4\rho^{0.3}$, and the publication multiplier equation of it is $K\rho^{0.164}_{pub}$
 $$\frac{d\rho}{dt} \in \Theta(\rho^{0.3+0.125+0.1+log2}t^0\rho^{0.164}_{pub})$$
-Therfore, $x = 0.525+log2, y = 0, z = 0.164$
+Therefore, $x = 0.525+log2, y = 0, z = 0.164$
 
 Thus, from Theorem 1 we get:
 $$r = e^{\frac{0.164}{0.475-log2}} \simeq 2.5669$$

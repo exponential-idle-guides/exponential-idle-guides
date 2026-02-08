@@ -19,7 +19,7 @@ The theory primarily runs the tick function 10 times per second. Usually, this w
 
 Let's take a look at them now. Naively, we can try to count the number of lines. Although this is not the best tactic to gauge overall performance, in this case we might be able to gleam some insight into the problem:
 
-While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recoursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
+While **getc1** and **getc2** both consist of 1 line, $f$'s value retrieval function has at least 3 lines: the level 0 case, the level 1 case, and the general case. But wait! In the general case, the function calls itself at a lower level! This is called *recursion*, and while it's a useful tactic in programming, we can't ignore the effect on performance if we are recursing more than once, like we do here. Each function call spawns up to two smaller function calls, which means the total number of calls very much exceeds the 3 lines we see... In fact, the higher the level, the number of function calls performed grows exponentially? Actually, it is proportional to the Fibonacci numbers themselves! This is not good.
 
 So, what do we do? The first instinct might be to prevent the Fibonacci upgrade from reaching a high level, by putting a cap on it. This can easily be done like so:
 
@@ -38,7 +38,7 @@ In-game, $f$'s level will show as 'Level: x/20'. But, is this a good measure? Wh
 
 ## Stopping Fibonacci's foil
 
-Let's look at how we can optimise the calculation of Fibonacci numbers. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
+Let's look at how we can optimize the calculation of Fibonacci numbers. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
 
 $F(n) = \frac{(\frac{1+\sqrt{5}}{2})^n - (\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$
 
@@ -58,7 +58,7 @@ Unfortunately, it seems like we have encountered our first error. Pressing on th
 
 **Error: (Line 65, Col 4) Exception of type 'ExponentialIdle.BigNumber+BigNumberException' was thrown.**
 
-This is an arithmetic exception. We know that while negative numbers can be raised to an integer power, and **fibB** is a negative number (approximatly -0.618) raised to an integer **level**, the game simply does not allow us to do this. This is because in JavaScript, integers don't exist, but are part of the Number class, which are actually double precision floating point numbers (doubles for short), analogous to real numbers. In mathematics, raising a negative real number to another real number's power doesn't usually yield a real number, unless the power is also an integer, so this exception is thrown to prevent such an operation. Let's circumvent this by pretending **fibB** is positive, and then checking for the power's parity (whether it's even or odd) to give the power a sign:
+This is an arithmetic exception. We know that while negative numbers can be raised to an integer power, and **fibB** is a negative number (approximately -0.618) raised to an integer **level**, the game simply does not allow us to do this. This is because in JavaScript, integers don't exist, but are part of the Number class, which are actually double precision floating point numbers (doubles for short), analogous to real numbers. In mathematics, raising a negative real number to another real number's power doesn't usually yield a real number, unless the power is also an integer, so this exception is thrown to prevent such an operation. Let's circumvent this by pretending **fibB** is positive, and then checking for the power's parity (whether it's even or odd) to give the power a sign:
 
 ```js
 const fibSqrt5 = BigNumber.FIVE.sqrt();
@@ -73,7 +73,7 @@ let getf = (level) =>
 };
 ```
 
-Marvellous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers! You can safely remove its level cap now.
+Marvelous! The Binet formula works, and we no longer have to deal with the lag caused by these Fibonacci numbers! You can safely remove its level cap now.
 
 ## A sizeable tangent
 

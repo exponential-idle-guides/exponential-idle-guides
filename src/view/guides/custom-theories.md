@@ -352,7 +352,7 @@ last_row: false;
 
 ##### Idle
 
-For idle, autobuy all. The idle strategy doesn't change much. If you wouldd like to be more efficient while still being idle, remove milestones and stack them into the $q$ exponent milestones when you are about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
+For idle, autobuy all. The idle strategy doesn't change much. If you would like to be more efficient while still being idle, remove milestones and stack them into the $q$ exponent milestones when you are about to publish (from around e80 to e500). Don't forget to change milestones back after publishing!
 
 Once all milestones are unlocked, autobuy all!
 
@@ -620,7 +620,7 @@ The active strategies change constantly depending on your milestones and there i
 
 <u>$c_1$ and $c_1$ Buying</u>
 
-**Buying $c_1$ effeciently is the largest boost to rates you can do** (outside of MS).
+**Buying $c_1$ efficiently is the largest boost to rates you can do** (outside of MS).
 
 The only known ratio currently is $c_1$ to $c_2$ and, specifically, it is $c_1$ price $\lt3/(\text{lvl}\%100+2)*c_2$ price. But, for a more digestible strategy, you would want to:
 
@@ -722,9 +722,9 @@ last_row: false;
 |       | Variable Description |
 | ----- | -------------------- |
 | $c_1$ | Doubles every 8 levels. Boosts $\dot{\rho}$ (instantaneous). |
-| $c_2$ | Doubles $\dot{\rho}$ per level (instanteous). |
+| $c_2$ | Doubles $\dot{\rho}$ per level (instantaneous). |
 | $w_1$ | Doubles every 8 levels. Boosts $\dot{\rho}$ and $\dot{\delta}$ (instantaneous). Bought with $\delta$. |
-| $w_2$ | Doubles $\dot{\delta}$ per level (instanteous). Bought with $\delta$. |
+| $w_2$ | Doubles $\dot{\delta}$ per level (instantaneous). Bought with $\delta$. |
 | $w_3$ | Doubles $\dot{\delta}$ every $e30\delta$ starting at $e600\delta$. Bought with $\delta$. |
 | $b$   | Boosts $\dot{\rho}$, when $\zeta$ is away from zero, and $\dot{\delta}$. $b$ is capped at 6 levels maxed at 3 (+0.5/lvl). |
 
@@ -815,12 +815,13 @@ $$\dot{I}=\frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)$$
 
 The MF equations describe the movement of a particle of constant mass $m$ and constant charge $q$ inside a charged solenoid of infinite length with a current $I$ and a density of turns $\delta$, creating a magnetic field $B$.
 
-We consider a simulation where the particle starts at $x=0$ at $t_s=0$ with an initial velocity given by the $v_i$ variables. In these conditions, the particle has a helix trajectory with a constant $x$ velocity, and an angular velocity $\omega$. 
+We consider a simulation where the particle starts at $x=0$ at $t_s=0$ with an initial velocity given by the $v_i$ variables. In these conditions, the particle has a helix trajectory with a constant $x$ velocity, and an angular velocity $\omega$.
+
 As you can see, the equations for velocity include $(t_s=0)$, which means here that the equation only updates when $t_s=0$, that is when doing a "particle reset". As such, buying $v_i$ variables will have no effect until you perform a "particle reset" where the simulation is reset ($t_s$ and $x$ are set to 0), so that the initial velocity can be applied again.
 
-The current is given by the last formula. The equation is very similar to that of T5, but different. Here, $I$ is capped at $a_2\times 10^{-15}$, and $a_1$ only affects the growth speed of $I$. 
+The current is given by the last formula. The equation is very similar to that of T5, but different. Here, $I$ is capped at $a_2\times 10^{-15}$, and $a_1$ only affects the growth speed of $I$.
 
-Unlike in Theory 5, buying $a_2$ has no drawback as it does not appear in the denominator below $a_1$. 
+Unlike in Theory 5, buying $a_2$ has no drawback as it does not appear in the denominator below $a_1$.
 
 The current increases $B$ which itself increases $\omega$.
 
@@ -837,7 +838,7 @@ last_row: false;
 |          | Variable Description |
 | -------- | -------------------- |
 | $c_1$    | Doubles every 7 levels. Boosts $\dot{\rho}$ (instantaneous). |
-| $c_2$    | Doubles $\dot{\rho}$ per level (instanteous). |
+| $c_2$    | Doubles $\dot{\rho}$ per level (instantaneous). |
 | $a_1$    | Doubles every 7 levels. Boosts $\dot{I}$ (instantaneous). |
 | $a_2$    | 1.25x increase to $I$'s cap resulting in ~2.5x total boost upon reaching cap. |
 | $\delta$ | ~1.5x increase to $\dot{\rho}$ (instantaneous). |
@@ -849,6 +850,14 @@ last_row: false;
 #### MF Strategy
 
 **Keep in mind that strategies are still under development and could change in the future.**
+
+MF is the only theory that does not have a strictly positive rhodot. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
+
+[MF log10(ρdot) throughout a publication](/images/mf/mf_rates.bmp)
+
+| |
+| - |
+| [FOOT;]MF $\log_{10}{\dot{\rho}}$ throughout a publication |
 
 ##### When to publish
 

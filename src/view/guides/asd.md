@@ -202,7 +202,7 @@ The algorithm goes as follows:
 
 #### Example
 
-<yt data-video-id="wedx6RXGVz8">Arrow Hard and Expert Propogation Video Example By Baldy</yt>
+<yt data-video-id="wedx6RXGVz8">Arrow Hard and Expert Propagation Video Example By Baldy</yt>
 
 ### Hard and Expert
 
