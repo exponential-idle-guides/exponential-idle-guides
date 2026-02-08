@@ -853,7 +853,7 @@ last_row: false;
 
 MF is the only theory that does not have a strictly positive rhodot. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
 
-[MF log10(ρdot) throughout a publication](/images/mf/mf_rates.bmp)
+[MF log10(ρdot) throughout a publication](/images/mf/mf_rates.png)
 
 | |
 | - |

@@ -50,6 +50,7 @@ Speaking of commits, while the guide does not assume prior knowledge of source c
 I am a scrub. I use [Visual Studio Code](https://code.visualstudio.com/).
 
 Other editors include:
+
 - [Sublime Text](https://www.sublimetext.com/)
 - [Notepad++](https://notepad-plus-plus.org/)
 - [Vim](https://www.vim.org/) *or something*
