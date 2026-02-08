@@ -14,7 +14,7 @@ All jokes aside, this seemingly simple question can have more in-depth answers t
 1. How often can you check your phones.
 2. Each theory's publication length.
 3. Each theory's active/idle ratio.
-4. Each theory's \\(\dot{τ}\\).
+4. Each theory's $\dot{\tau}$.
 5. Overpushing implications.
 
 ## How often can you check your phone(s)
@@ -37,7 +37,7 @@ However, do consider all the other factors as well. It is possible (and even lik
 
 ## Each theory's taudot
 
-The faster a theory's \\(\dot{τ}\\), the more we should do it. This is because we can gain faster tau, which means more students, which means more \\(\dot{τ}\\). Once again, do consider other factors in conjunction.
+The faster a theory's $\dot{\tau}$, the more we should do it. This is because we can gain faster tau, which means more students, which means more $\dot{\tau}$. Once again, do consider other factors in conjunction.
 
 ## Overpushing implications
 

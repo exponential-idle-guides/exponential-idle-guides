@@ -181,7 +181,7 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 #### T6 Overview
 
-T6 has the lowest decay of all the theories. It will be second place to T5 until ~$e750$ and is the only theory that can get to $\gt e1300τ$. You should overnight this and T4 after you get your T2 to $e350+$.
+T6 has the lowest decay of all the theories. It will be second place to T5 until ~$e750$ and is the only theory that can get to $\gt e1300\tau$. You should overnight this and T4 after you get your T2 to $e350+$.
 
 At first, T6 only finds the area under the curve of the graph $f(q)$ from $0$ to $q$, which is essentially a 2d plane. This is done using a definite integral, an integral that is bound between 2 values giving a single output. This does the opposite of what a derivative does, but within a specific bound. With later milestones, this will include the variable $r$, this new equation is finding the volume of the graph within the bounds of planes $f(q)$ and $f(r)$ from $0$ to $q$ and $0$ to $r$ respectively.
 

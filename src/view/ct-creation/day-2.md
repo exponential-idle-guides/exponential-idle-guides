@@ -83,7 +83,7 @@ By the way, although right now we don't need any variables inside an enclosed sc
 
 For its description and info, since we don't need to update them, we will assign a string to two properties of the clicker: **description** and **info**. Their 'dynamic' counterparts are **getDescription** and **getInfo** respectively, which can only be assigned to arrow functions.
 
-In the description, we'd want to make it look 'mathsy', so we are going to use the arrow syntax for assignment: $\rho \leftarrow \rho + 1$. For the LaTeX syntax, we use **Utils.getMath** to wrap a normal string in a pair of **\\(** and **\\)** for inline LaTeX display. You can use these markers normally without this function as well.
+In the description, we'd want to make it look 'mathsy', so we are going to use the arrow syntax for assignment: $\rho \leftarrow \rho + 1$. For the LaTeX syntax, we use **Utils.getMath** to wrap a normal string in a pair of **$** and **$** for inline LaTeX display. You can use these markers normally without this function as well.
 
 Programmatically though, it would look something more like this: **currency.value += 1**. In fact, this is what we would like to trigger every time we buy the clicker. And for that, we can use the upgrade's **bought** trigger:
 

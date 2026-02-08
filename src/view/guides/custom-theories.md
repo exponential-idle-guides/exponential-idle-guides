@@ -482,7 +482,7 @@ It is important to note, however, is that buying or refunding $g(x)$ milestones 
 
 FI perma-upgrades are at 1e100, 1e450, and 1e1050 $\rho$ for the $g(x)$ milestone and 1e350 and 1e750 $\rho$ for the $\lambda$ milestone. Upon buying these milestone, immediately put a milestone from $q_1$ or $n$ into them depending on how many milestone you have, **except for the 3rd level of the $g(x)$ milestone**.
 
-The 3rd level of the $g(x)$ milestone is bad early on, and is only worth buying at e1076ρ. Swapping to the 3rd level of the $g(x)$ milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
+The 3rd level of the $g(x)$ milestone is bad early on, and is only worth buying at e1076$\rho$. Swapping to the 3rd level of the $g(x)$ milestone mid-pub is known as PermaSwap, check the [theory simulator](https://exponential-developers.github.io/sim-3.0/) to know if you should do this strategy.
 
 #### FI Milestone Route
 
@@ -544,7 +544,7 @@ $$\begin{eqnarray}
 \to \dot{\rho} = c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
 \end{eqnarray}$$
 
-$$\dot{q} = q_1AU_n^{7}/1000 → \dot{q} = q_1AU_n^{7+s}/1000$$
+$$\dot{q} = q_1AU_n^{7}/1000 \rightarrow \dot{q} = q_1AU_n^{7+s}/1000$$
 
 $$\begin{eqnarray}
 \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
@@ -582,7 +582,7 @@ The $w_n$ equation can look intimidating, but it is simpler to explain than some
 You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selecting it in "Main sequence".
 
 ##### Sierpiński Triangle
-$$S_n = 3^{n-1} → S_n = 2*3^{n-1}-1$$
+$$S_n = 3^{n-1} \rightarrow S_n = 2*3^{n-1}-1$$
 
 This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdividing each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
 
@@ -768,7 +768,7 @@ The optimal publication multiplier is often 5, but it is sometimes higher depend
 
 Variable buying strategies stay the same as before.
 
-**Don't forget to buy the $w_3$ permanent upgrade after reaching e1000ρ!** The first level of $w_3$ will not be available right away, so you can buy the permanent upgrade at the end of the pub.
+**Don't forget to buy the $w_3$ permanent upgrade after reaching e1000$\rho$!** The first level of $w_3$ will not be available right away, so you can buy the permanent upgrade at the end of the pub.
 
 #### RZ Milestone Route
 

@@ -11,15 +11,15 @@ glossary: true
 
 ### Sigma
 
-Sigma is the number of students. E.g. "I have 300 sigma" means I have 300 total students. "Graduate every 5 sigma" means to graduate every 5 students. Denoted as \\(\sigma \\) in the game.
+Sigma is the number of students. E.g. "I have 300 sigma" means I have 300 total students. "Graduate every 5 sigma" means to graduate every 5 students. Denoted as $\sigma $ in the game.
 
 ### Tau
 
-Tau, formatted in the game as \\(\tau\\), is the main currency gained from doing theories. Tau is used to increase $F(t)$.
+Tau, formatted in the game as $\tau$, is the main currency gained from doing theories. Tau is used to increase $F(t)$.
 
 ### Rho
 
-Rho, formatted in the game as \\(\rho\\), is also a currency gained from doing theories. However, rho is reset upon publication. In fact for most theories, the $\tau$ in a theory is simply the maximum rho ever reached in that theory.
+Rho, formatted in the game as $\rho$, is also a currency gained from doing theories. However, rho is reset upon publication. In fact for most theories, the $\tau$ in a theory is simply the maximum rho ever reached in that theory.
 
 ### Publication / Pub
 
@@ -27,7 +27,7 @@ Publication/Pub is the act of resetting theories to accumulate higher total mult
 
 ### Dot
 
-rhodot, taudot, qdot, (formatted as \\(\dot\rho\\), \\(\dot\tau\\), and \\(\dot{q}\\)) or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
+rhodot, taudot, qdot, (formatted as $\dot\rho$, $\dot\tau$, and $\dot{q}$) or any other variable with 'dot' at the end signify the rate of change of the variable, usually every second. For example, if rhodot = 3, this usually means that rho is increasing by 3 every second.
 
 ### Milestone
 
@@ -57,11 +57,11 @@ Another prestige layer lower than graduation. This resets most variables also. I
 
 ### Psi
 
-A currency gained from performing supremacies. Usually written as \\(\psi \\). It is used to buy supremacy upgrades.
+A currency gained from performing supremacies. Usually written as $\psi $. It is used to buy supremacy upgrades.
 
 ### Phi
 
-A currency gained from spending students on student upgrades. Usually written as \\(\varphi \\). It is used to boost $F(t)$ or boost theory rates.
+A currency gained from spending students on student upgrades. Usually written as $\varphi $. It is used to boost $F(t)$ or boost theory rates.
 
 ### R9
 
@@ -89,7 +89,7 @@ The act of swapping milestones, usually in the middle of a publication. This is 
 
 ### Doubling Variables / Doublings
 
-Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with $2^x$). Can sometimes refer to a really powerful variable. An example of a doubling variable is \\(q_2\\) in Theory 4.
+Usually referred to theory variables that are multiplied by 2 or more each time you buy (Variables with $2^x$). Can sometimes refer to a really powerful variable. An example of a doubling variable is $q_2$ in Theory 4.
 
 ### mod10 Variables
 
@@ -129,7 +129,7 @@ The act of not buying variables and letting theories reach its publication point
 
 ### Acceleration / Accel
 
-Refers to the usage of the acceleration upgrade. It speeds up $F(t)$ gains through increasing $\varphi$ and artificially speeding up time (by temporarily increasing \\(dt\\)). However it does not affect theories. The equation used in-game for acceleration is \\(Acceleration = (9t+1)^{1/9}\\), where \\(t\\) is the number of seconds the acceleration button is held for. To reduce the potential for player abuse, acceleration resets after being held for 1 hour, at \\(3.17x\\).
+Refers to the usage of the acceleration upgrade. It speeds up $F(t)$ gains through increasing $\varphi$ and artificially speeding up time (by temporarily increasing $dt$). However it does not affect theories. The equation used in-game for acceleration is $Acceleration = (9t+1)^{1/9}$, where $t$ is the number of seconds the acceleration button is held for. To reduce the potential for player abuse, acceleration resets after being held for 1 hour, at $3.17x$.
 
 ### LB
 

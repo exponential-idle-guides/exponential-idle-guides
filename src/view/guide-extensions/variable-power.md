@@ -81,7 +81,7 @@ You may have noticed the abrupt jumps in the above graphs. We'll now discuss why
 
 After we supremacy for the first time at ee50, we are given a currency $\psi$ (psi). With this new currency, we can buy upgrades to increase the exponent on $y$. Each upgrade raises the exponent by $0.2$, so the initial supremacy at ee50 turns $y$ into $y^{1.2}$. These upgrades continue all the way up to $y^{9.0}$ at ~ee4310, for a total of $40$ levels.
 
-Because the power each variable has is propagated down all of its lower variables (ex. $z$ → $y$ → $x$), the change in exponent affects how strong all of the variables are.
+Because the power each variable has is propagated down all of its lower variables (ex. $z \rightarrow y \rightarrow x$), the change in exponent affects how strong all of the variables are.
 
 The cost of each upgrade from $y^{1.2}$ through $y^{1.8}$ is calculated using this formula, where x is the level you are buying starting at 1:
 

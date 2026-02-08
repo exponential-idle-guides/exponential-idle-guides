@@ -34,12 +34,12 @@ const name_lookup = {
   'fp': {name: 'FP', path: 'CT/fp'},
   'rz': {name: 'RZ', path: 'CT/rz'},
   'mf': {name: 'MF', path: 'CT/mf'},
-  'extensions': {name: 'Extensions', path: 'exensions/extensions'},
-  'extension': {name: 'Extensions', path: 'exensions/extensions'},
-  'ext': {name: 'Extensions', path: 'exensions/extensions'},
-  'stepwise': {name: 'Stepwise variables', path: 'exensions/stepwise'},
-  'minestone-swapping': {name: 'Milestone swapping', path: 'exensions/milestones'},
-  'milestone-swap': {name: 'Milestone swapping', path: 'exensions/milestones'}
+  'extensions': {name: 'Extensions', path: 'extensions/extensions'},
+  'extension': {name: 'Extensions', path: 'extensions/extensions'},
+  'ext': {name: 'Extensions', path: 'extensions/extensions'},
+  'stepwise': {name: 'Stepwise variables', path: 'extensions/stepwise'},
+  'milestone-swapping': {name: 'Milestone swapping', path: 'extensions/milestones'},
+  'milestone-swap': {name: 'Milestone swapping', path: 'extensions/milestones'}
 };
 
 const remove_unwanted = (s) => remove_char(

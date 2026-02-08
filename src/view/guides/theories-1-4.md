@@ -10,7 +10,7 @@ eylanding: "T1-4"
 
 ### Theory basics
 
-Publications are equivalent to prestiges for $f(t)$ so don't be afraid to use them. However, the best publication multipliers vary from theory to theory and will change over time. If you are close to a multiplier you want, turn off autobuyer and let $\rho$ increase without buying upgrades for a faster short-term increase before the publication (turn on after you publish). This is known and referenced as "coasting". Total $τ$, found in the equation or at the top of the screen, is a multiplicative combination of all $τ$ from each theory.
+Publications are equivalent to prestiges for $f(t)$ so don't be afraid to use them. However, the best publication multipliers vary from theory to theory and will change over time. If you are close to a multiplier you want, turn off autobuyer and let $\rho$ increase without buying upgrades for a faster short-term increase before the publication (turn on after you publish). This is known and referenced as "coasting". Total $\tau$, found in the equation or at the top of the screen, is a multiplicative combination of all $\tau$ from each theory.
 
 __Don’t be afraid to skip getting all milestones to work on the next or a better theory.__
 
@@ -31,7 +31,7 @@ last_row: false;
 
 #### T1 Overview
 
-In mathematics, a recurrence relation is an equation that relies on an initial term and a previous term to change. We start with the current tick’s term, $ρ_{n}$, and a constant add-on to obtain the value of the next tick, $ρ_{n+1}$. This gives us an equation equivalent to $ρ=at+constant$, with a changing value $a$ and a constant that is the initial value of 1. Later when we add the $c_{3}ρ_{n-1}^{0.2}$ term, this is now saying that we are now adding each tick the value of $ρ$ from the previous tick ago with a constant $c_{3}$ put to the power of $0.2$. This is the same with the next term $c_{4}ρ_{n-2}^{0.3}$, with the value of $ρ$ two ticks ago and a multiplier $c_4$ put to the power $0.3$. When we multiply the $c_1c_2$ term by the term $1+ln(ρ)/100$ changing the constant addition to being based on the value of $ρ$ from the previous tick with the value of $1+ln(ρ)/100$. The final milestone upgrade raises the exponent of $c_1$ from $1.00$ to $1.05$ to $1.10$ to $1.15$.
+In mathematics, a recurrence relation is an equation that relies on an initial term and a previous term to change. We start with the current tick’s term, $\rho_{n}$, and a constant add-on to obtain the value of the next tick, $\rho_{n+1}$. This gives us an equation equivalent to $\rho=at+constant$, with a changing value $a$ and a constant that is the initial value of 1. Later when we add the $c_{3}\rho_{n-1}^{0.2}$ term, this is now saying that we are now adding each tick the value of $\rho$ from the previous tick ago with a constant $c_{3}$ put to the power of $0.2$. This is the same with the next term $c_{4}\rho_{n-2}^{0.3}$, with the value of $\rho$ two ticks ago and a multiplier $c_4$ put to the power $0.3$. When we multiply the $c_1c_2$ term by the term $1+ln(\rho)/100$ changing the constant addition to being based on the value of $\rho$ from the previous tick with the value of $1+ln(\rho)/100$. The final milestone upgrade raises the exponent of $c_1$ from $1.00$ to $1.05$ to $1.10$ to $1.15$.
 
 This theory also has its adjusted tickspeed calculated by $q_{1}*q_{2}$. This lengthens the normal tick length of $0.1/sec$ to that value which speeds up the theory.
 
@@ -39,29 +39,29 @@ This theory also has its adjusted tickspeed calculated by $q_{1}*q_{2}$. This le
 
 ##### Initial
 
-\\[ρ_{n+1} = ρ_n + c_1c_2\\]
+\\[\rho_{n+1} = \rho_n + c_1c_2\\]
 
 ##### First milestone
 
-\\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2}\\]
+\\[\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2}\\]
 
 ##### Second milestone
 
-\\[ρ_{n+1} = ρ_n + c_1c_2 + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+\\[\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
 
 ##### Third milestone
 
-\\[ρ_{n+1} = ρ_n + c_1c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+\\[\rho_{n+1} = \rho_n + c_1c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
 
 ##### Fourth to Sixth milestone
 
-\\[ρ_{n+1} = ρ_n + c_1^{1.15}c_2 \left( 1+\frac{ln(ρ_n)}{100} \right) \\\ + c_3ρ_{n-1}^{0.2} + c_4ρ_{n-2}^{0.3}\\]
+\\[\rho_{n+1} = \rho_n + c_1^{1.15}c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
 
 #### T1 strategy
 
 The publication multiplier has no optimal fit, as it fluctuates a lot, but here is known: 4-6 to start; 3-4 between $1e100$ and $1e150$; the publication multiplier oscillates between 2.5 and 5 past $e150$. Once you get your first milestone, you can turn off $c_1$ and $c_2$ until $e150$ active strat.
 
-The active strat follows but only works when you have all milestones past $e150$. T1 is the only theory where the recent value of $ρ$ influences the rate of change of $ρ$ therefore buying a variable as soon as you can afford it will slow your progress. Lategame, buying upgrades immediately will slow you more than the benefit of the upgrade because $c_3$ and $c_4$ dominate. If the next level costs $10ρ$ and you have $11ρ$, buying that level will reduce $ρ_{n+1}$ to $1$. This reduces your $ρ_{n+1}$ by roughly a factor of $10$. There are $3$ terms that influence the rate of change of $ρ$, and all are affected by the previous state of $ρ$. The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](/guides/theory-strategies/#t1ratio) are to be only used when you are past $e150 τ$ and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
+The active strat follows but only works when you have all milestones past $e150$. T1 is the only theory where the recent value of $\rho$ influences the rate of change of $\rho$ therefore buying a variable as soon as you can afford it will slow your progress. Lategame, buying upgrades immediately will slow you more than the benefit of the upgrade because $c_3$ and $c_4$ dominate. If the next level costs $10\rho$ and you have $11\rho$, buying that level will reduce $\rho_{n+1}$ to $1$. This reduces your $\rho_{n+1}$ by roughly a factor of $10$. There are $3$ terms that influence the rate of change of $\rho$, and all are affected by the previous state of $\rho$. The active strategy around this is known as T1<span style="color:#41AD21">Ratio</span>. The values in the chart found [here](/guides/theory-strategies/#t1ratio) are to be only used when you are past $e150 \tau$ and max milestones. They represent how to purchase each variable based on the state of the theory at the time of purchase.
 
 Note: If you are not doing the active strat, then simply turn off $c_1$ and $c_2$ after milestone 1 ($e25\tau$) and autobuy rest until ee6k.
 
@@ -95,7 +95,7 @@ This second theory is focusing on derivatives. Derivatives in mathematics are th
 
 $$q=a*t^n ↔ q’=n*a*t^{n-1}$$
 
-In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equation with continuous addition of the previous $term\*dt$ to the next $x_{i+1}$ term, but with continuous addition of $q_i\*dt$ to the term above $q_{i-1}$. These two values of $r_1$ and $q_1$ are multiplied to produce the derivative of $ρ(t)$, shown by Newton's derivative notation $\dot{ρ}$. This would give the equation of $ρ$ to be $ρ(t+dt)=ρ+\dot{ρ}*dt$. The other milestones besides more $q$ and $r$ derivatives increase the exponent of $q$ and $r$ respectively. The reason why $q$ and $r$ derivatives are more powerful long-term than the exponents is that they take time to build up and eventually overtake and keep increasing $q_1$ and $r_1$ while the exponents have a never-changing boost.
+In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equation with continuous addition of the previous $term\*dt$ to the next $x_{i+1}$ term, but with continuous addition of $q_i\*dt$ to the term above $q_{i-1}$. These two values of $r_1$ and $q_1$ are multiplied to produce the derivative of $\rho(t)$, shown by Newton's derivative notation $\dot{\rho}$. This would give the equation of $\rho$ to be $\rho(t+dt)=\rho+\dot{\rho}*dt$. The other milestones besides more $q$ and $r$ derivatives increase the exponent of $q$ and $r$ respectively. The reason why $q$ and $r$ derivatives are more powerful long-term than the exponents is that they take time to build up and eventually overtake and keep increasing $q_1$ and $r_1$ while the exponents have a never-changing boost.
 
 #### T2 formula
 
@@ -105,7 +105,7 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 \\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1\\]
 
-\\[\dot{ρ}=q_1r_1\\]
+\\[\dot{\rho}=q_1r_1\\]
 
 ##### First and Second milestones
 
@@ -113,7 +113,7 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 \\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1\\]
 
-\\[\dot{ρ}=q_1r_1\\]
+\\[\dot{\rho}=q_1r_1\\]
 
 ##### Third and Fourth milestones
 
@@ -121,7 +121,7 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 \\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
 
-\\[\dot{ρ}=q_1r_1\\]
+\\[\dot{\rho}=q_1r_1\\]
 
 ##### Fifth to Seventh milestones
 
@@ -129,7 +129,7 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 \\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
 
-\\[\dot{ρ}=q_1^{1.15}r_1\\]
+\\[\dot{\rho}=q_1^{1.15}r_1\\]
 
 ##### Eight to Tenth milestones
 
@@ -137,7 +137,7 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 \\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
 
-\\[\dot{ρ}=q_1^{1.15}r_1^{1.15}\\]
+\\[\dot{\rho}=q_1^{1.15}r_1^{1.15}\\]
 
 #### T2 strategy
 
@@ -256,7 +256,7 @@ $$\begin{bmatrix}
 
 ###### [Original Image (April 2021 - May 2025)](/images/matrix-multiplication.png)
 
-This gives the basis for why certain upgrades are more powerful than others. The exponents on $b_1$, $b_2$, and $b_3$ all directly affect $ρ_1$ production which is used for $\tau$. An extra dimension roughly gives $50%$ more $\tau$ production as it adds an extra term to the $ρ_1$ production.
+This gives the basis for why certain upgrades are more powerful than others. The exponents on $b_1$, $b_2$, and $b_3$ all directly affect $\rho_1$ production which is used for $\tau$. An extra dimension roughly gives $50%$ more $\tau$ production as it adds an extra term to the $\rho_1$ production.
 
 #### T3 strategy
 
@@ -264,11 +264,11 @@ The optimal publication multiplier is about 2-3 without cruising and 3-4 with cr
 
 \\[c_{11}*b_{1}^{1.05\text{ or }1.1}<c_{12}*b_{2}^{1.05\text{ or }1.1}\\]
 
-When this happens swap your exponents from $b_1$ to $b_2$ and you will get a little upgrade boost. It also allows for a slight push of $ρ_2$ for upgrades to $b_2$ and $c_{12}$, but this is a lot less impactful and less noticeable. This strategy also works with $b_3$ and $c_{13}$ but is usually not as common.
+When this happens swap your exponents from $b_1$ to $b_2$ and you will get a little upgrade boost. It also allows for a slight push of $\rho_2$ for upgrades to $b_2$ and $c_{12}$, but this is a lot less impactful and less noticeable. This strategy also works with $b_3$ and $c_{13}$ but is usually not as common.
 
-If you decide to buy manually, the focus areas are buying $b_1$, $b_2$, and $b_3$ when their cost is e1 lower than $c_{11}$, $c_{12}$, and $c_{13}$ respectively. These all directly boost the production of $ρ_1$ which is used for $\tau$. After this, if you are doing the active exponent swapping strategy described in the previous paragraph, your next focus will be on $c_{21}$, $c_{22}$, and $c_{23}$ as these boost $b_2$ production which increases the likelihood for the exponent swap to occur. This leaves the $c_{31}$, $c_{32}$, and $c_{33}$ upgrades at the lowest priority. If you are not using the exponent swapping strategy from the previous paragraph, then all the remaining upgrades should be bought at equivalent priority.
+If you decide to buy manually, the focus areas are buying $b_1$, $b_2$, and $b_3$ when their cost is e1 lower than $c_{11}$, $c_{12}$, and $c_{13}$ respectively. These all directly boost the production of $\rho_1$ which is used for $\tau$. After this, if you are doing the active exponent swapping strategy described in the previous paragraph, your next focus will be on $c_{21}$, $c_{22}$, and $c_{23}$ as these boost $b_2$ production which increases the likelihood for the exponent swap to occur. This leaves the $c_{31}$, $c_{32}$, and $c_{33}$ upgrades at the lowest priority. If you are not using the exponent swapping strategy from the previous paragraph, then all the remaining upgrades should be bought at equivalent priority.
 
-At the end of any publication, around a 2-3 multiplier, you should turn off $b_1$ and $c_{31}$ as they cost $ρ_1$. You will cruise until you get to a 3-4 multiplier. Publish and turn back on $ρ_1$ costing variables and repeat.
+At the end of any publication, around a 2-3 multiplier, you should turn off $b_1$ and $c_{31}$ as they cost $\rho_1$. You will cruise until you get to a 3-4 multiplier. Publish and turn back on $\rho_1$ costing variables and repeat.
 
 ###### Commentary
 

@@ -19,7 +19,7 @@ There is no theory 9 guide and this is a guide for what to do after theory 9. Ha
 
 ### Graduation routing
 
-Routing is based on your current Tau (\\(\tau\\)) and Phi (\\(\varphi\\)) numbers.
+Routing is based on your current Tau ($\tau$) and Phi ($\varphi$) numbers.
 
 Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSidebar','GuideSidebar','HeaderSidebar'],'SidebarHeaders')">calculators and simulators</button> for optimal graduation, student, star, and theory options.
 
@@ -27,9 +27,9 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 
 ###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
 
-1. Wait till \\(F(t)\\) stops growing with students in R9 pushing \\(\tau\\).
+1. Wait till $F(t)$ stops growing with students in R9 pushing $\tau$.
 2. Start accel (preferably keep it between prestiges).
-3. Potentially sit here to stack t for bigger \\(\varphi_2\\) when you have students in \\(\varphi_2\\). Only do this when you are near a graduation mark.
+3. Potentially sit here to stack t for bigger $\varphi_2$ when you have students in $\varphi_2$. Only do this when you are near a graduation mark.
 4. Respec all 30 students from R9.
 5. Wait for the autoprestige to prestige and swap back students to R9.
 6. Repeat.
@@ -48,13 +48,13 @@ You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro
 
 ### How to properly use the Graduation Calculator
 
-The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) is a great tool to be able to get the best \\(F(t)\\) to graduate at given your \\(\varphi\\), \\(\tau\\), and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the \\(\varphi\\) you are using to push. This means use the \\(\varphi\\) without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
+The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) is a great tool to be able to get the best $F(t)$ to graduate at given your $\varphi$, $\tau$, and students. It also has additional features such as difference in R9 boost upon graduation. The calculator is for the $\varphi$ you are using to push. This means use the $\varphi$ without any levels in R9. The calculator also already takes into account supremacy upgrades and [skipped students](/guides/endgame/#skipped-students-routing) so no extra work needs to be done. Instructions on how to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 #### Three Steps To Getting The Best Result
 
-1. After your progress has slowed after recovering from a graduation and nearing the next graduation, get results from the calculator. Only the \\(F(t)\\) output here is useful.
+1. After your progress has slowed after recovering from a graduation and nearing the next graduation, get results from the calculator. Only the $F(t)$ output here is useful.
 2. Upon arriving to the most recent output, get a new set of results from the calculator.
-3. Repeat Step 2 until output is the same \\(F(t)\\) you are currently at. This is when you should graduate.
+3. Repeat Step 2 until output is the same $F(t)$ you are currently at. This is when you should graduate.
 
 **Note:** You may run into a Tau is higher than Phi result, or similar to this, but this is due to data running that portion of the calculator being old and before Custom Theories were introduced which shifted the relative amounts. This will be fixed in the future with more data ([submit here after any graduation](https://forms.gle/4cntT4VG8TjCmrNU6)).
 
@@ -70,10 +70,10 @@ Running the active strats will make this the number one theory for a while and e
 
 Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
-1. x10 buy \\(c_2\\) manually and autobuy the rest until within ~\\(e10\\) of your previous publication.
-2. Around your last pub mark within ~\\(e10\\), start autobuying \\(c_2\\) and stop autobuying \\(c_1\\) and \\(q_1\\). At this point:
-   1. buy \\(q_1\\) up to \\(15\%\\) of the cost of the next doubling purchase (\\(2^x\\) purchase),
-   2. and buy \\(c_1\\) after you purchase \\(c_2\\) up to \\(e1\\) lower than \\(q\\). This limit will increase as you get higher \\(\tau\\) and further into a publication.
+1. x10 buy $c_2$ manually and autobuy the rest until within ~$e10$ of your previous publication.
+2. Around your last pub mark within ~$e10$, start autobuying $c_2$ and stop autobuying $c_1$ and $q_1$. At this point:
+   1. buy $q_1$ up to $15\%$ of the cost of the next doubling purchase ($2^x$ purchase),
+   2. and buy $c_1$ after you purchase $c_2$ up to $e1$ lower than $q$. This limit will increase as you get higher $\tau$ and further into a publication.
 3. Once you reach the desired publication point, publish.
 4. Repeat this for stonks.
 
@@ -85,27 +85,27 @@ Steps Created by: Snaeky, Marks, Baldy, and Nerdy
 
 <yt data-video-id="pM-pjSnMByw">Theory 5 Active Strategy Video Example By Snaeky</yt>
 
-T5 will always give its best results from active play. However, after step 3, you can still get good results while autobuying \\(q_1\\) and manually purchasing \\(c_1\\) every 10-15min. This makes the theory slightly less active and easier to deal with.
+T5 will always give its best results from active play. However, after step 3, you can still get good results while autobuying $q_1$ and manually purchasing $c_1$ every 10-15min. This makes the theory slightly less active and easier to deal with.
 
 ##### Additional Information
 
-Purchase \\(c_2\\) when  \\(1.5q > c_2*c_3^{1.1}\\).
+Purchase $c_2$ when  $1.5q > c_2*c_3^{1.1}$.
 
-\\(q\\) begins to slow down when you reach \\(2q > c_2*c_3^{1.1}\\).
+$q$ begins to slow down when you reach $2q > c_2*c_3^{1.1}$.
 
 Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### t stacking
 
-A useful strategy in the later stages of a graduation is \\(t\\) stacking. It refers to [swapping](/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more \\(F(t)\\). At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase \\(F(t)\\) with the swap, thus giving us more \\(dt\\), allowing for more \\(t\\), then just letting \\(t\\) build up over time. This can be repeated multiple times and results in faster progress for \\(t\\), especially as each swap in between profits from more \\(\varphi\\) due to additional \\(dt\\) and \\(t\\). Overall this speeds up the time a prestige needs to reach a high enough value for \\(t\\) to do a final swap compared to letting the game run fully idle.
+A useful strategy in the later stages of a graduation is $t$ stacking. It refers to [swapping](/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more $F(t)$. At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase $F(t)$ with the swap, thus giving us more $dt$, allowing for more $t$, then just letting $t$ build up over time. This can be repeated multiple times and results in faster progress for $t$, especially as each swap in between profits from more $\varphi$ due to additional $dt$ and $t$. Overall this speeds up the time a prestige needs to reach a high enough value for $t$ to do a final swap compared to letting the game run fully idle.
 
 ### Skipped students routing
 
-Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of \\(\varphi\\), and "Skipmas", students that will yield 0 extra \\(\varphi\\), as they cannot be used for optimal student distribution. These students, especially skipmas, may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you can check the calculator at the \\(F(t)\\) that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in \\(\varphi\\) (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
+Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of $\varphi$, and "Skipmas", students that will yield 0 extra $\varphi$, as they cannot be used for optimal student distribution. These students, especially skipmas, may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you can check the calculator at the $F(t)$ that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in $\varphi$ (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
 The chart below lists out all of the Bigma to skip. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
 
-##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) which will automatically ask for information for this calculation if you are on 1dσ. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
+##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) which will automatically ask for information for this calculation if you are on 1d$\sigma$. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 
 Class: newwords;
 
@@ -122,7 +122,7 @@ Class: newwords;
 | 468, 479, 490, 501, 512, 523 | 94.6k, 96.8k, 99.0k, 101.2k, 103.4k, 105.6k        |
 | 535, 547, 559, 571, 583, 595 | 108.0k, 110.4k, 112.8k, 115.2k, 117.6k, 120.0k     |
 | 608, 621, 634, 647, 660, 673 | 122.6k, 125.2k, 127.8k, 130.4k, 133.0k, 135.6k     |
-| | [FOOT;style="text-align:left;";]Due to fluctuations with stars, accel, \\(t\\), and more, Bigma can be situation dependant. This chart uses normal accel and stars, but the students to skip due to Bigma based on varying levels of deviation from normal t for that \\(F(t)\\). This does change based on CT's as they shift data, but it is not the largest difference. |
+| | [FOOT;style="text-align:left;";]Due to fluctuations with stars, accel, $t$, and more, Bigma can be situation dependant. This chart uses normal accel and stars, but the students to skip due to Bigma based on varying levels of deviation from normal t for that $F(t)$. This does change based on CT's as they shift data, but it is not the largest difference. |
 
 Explanation by: Snaeky and AfuroZamurai
 
@@ -130,7 +130,7 @@ Calculations by: LE★Baldy
 
 ### Supremacy Equation Past 48k
 
-When you get to ee48k, you will have all of the \\(\psi\\) upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final \\(\psi\\) upgrade. It is not worth pushing past an upgrade as there is no bonus to \\(\varphi\\) from \\(\psi\\), only \\(d\psi\\). When you hit about \\(f(t)\\) ee50k you can skip buying most \\(\psi\\) upgrades and be able to recover fairly quickly. The Supremacy Equations for the \\(F(t)\\) that we know are as follows:
+When you get to ee48k, you will have all of the $\psi$ upgrades and you can get rid of the old Autosupremacy Equation. The old Autosuprem Equation is very inefficient, but its the best that we have right now due to how Supremacy upgrades are spaced before the final $\psi$ upgrade. It is not worth pushing past an upgrade as there is no bonus to $\varphi$ from $\psi$, only $d\psi$. When you hit about $f(t)$ ee50k you can skip buying most $\psi$ upgrades and be able to recover fairly quickly. The Supremacy Equations for the $F(t)$ that we know are as follows:
 
 Suprem Equation past ee48k:
 

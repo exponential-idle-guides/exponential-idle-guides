@@ -124,7 +124,7 @@ Automation routing changes per playstyle but here is the autoprestige equation t
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](/guides/ex-basics/#autoprestige-explanation)
 
 <blockquote id='ap_eq'>
-timer(d(ln(ln(db/b+1)/pt)) &lt; 0)<br>
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
@@ -168,7 +168,7 @@ There is a chance you get Autosupremacy before ee2000 if you star grind a lot. I
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> once to cycle.
 
 <blockquote id="as_eq">
-timer(d(ln(db / b + 1) / pt) &lt; 0)<br>
+timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b<br>
 &amp;&amp; dpsi + psi &gt; min(min(costUpS(1),<br>
 costUpS(2)), costUpS(3))<br>
@@ -188,7 +188,7 @@ After you supremacy past the ee200 infinity, a 2nd new supremacy upgrade will un
 
 ##### $x_i$ Equation
 
-$x_i ← x_i+x_{i-1}dt$
+$x_i \leftarrow x_i+x_{i-1}dt$
 
 $x_0 = x$
 
@@ -196,7 +196,7 @@ $x_0 = x$
 
 The equation shown is the calculation done on every tick. Let's give the example of $x_1$:
 
-$x_1 ← x_1+x * dt$.
+$x_1 \leftarrow x_1+x * dt$.
 
 Each tick, $x * dt$ is added to $x_1$. This is done for every new value of $x$ and $dt$. A simple way of phrasing it is as repeated addition of the product of $x * dt$.
 

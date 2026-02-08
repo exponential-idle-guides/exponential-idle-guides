@@ -17,11 +17,11 @@ The current theory simulator was initially made by XLII and is now updated by th
 
 ### **τ/h Active / Idle**
 
-This refers to the \\(\tau/hour\\) that you will gain from the active strategy of that theory. This is defined as \\(log(\tau\\) \\(gained)/publication\\) \\(time\\) \\(in\\) \\(hours\\). For example, if you gain 1e10 \\(\tau\\) over a 2 hr run then your rate for that theory is 5 \\(\tau/hr\\). Use these values to compare to other theories if you plan to do active strategies for that following publication.
+This refers to the $\tau/hour$ that you will gain from the active strategy of that theory. This is defined as $log(\tau$ $gained)/publication$ $time$ $in$ $hours$. For example, if you gain 1e10 $\tau$ over a 2 hr run then your rate for that theory is 5 $\tau/hr$. Use these values to compare to other theories if you plan to do active strategies for that following publication.
 
 ### **Ratio**
 
-This is the ratio of the manual:auto for \\(\tau\\) gain (2nd column/3rd column). For ratios closer to 1, you should consider only running these theories while offline/idle. For ratios much larger than 1, you should consider only running these theories while actively or semi-actively playing the game and not while offline. This is the reason why T5 is considered an active theory and T2 is considered an idle theory.
+This is the ratio of the manual:auto for $\tau$ gain (2nd column/3rd column). For ratios closer to 1, you should consider only running these theories while offline/idle. For ratios much larger than 1, you should consider only running these theories while actively or semi-actively playing the game and not while offline. This is the reason why T5 is considered an active theory and T2 is considered an idle theory.
 
 ### **Multi Active / Idle**
 
@@ -37,8 +37,8 @@ This is the time it took the simulator to publish for the active or idle strateg
 
 ### **Δτ Active / Idle**
 
-This will tell you how much \\(\tau\\) is gained between publications for the active or idle strategy.
+This will tell you how much $\tau$ is gained between publications for the active or idle strategy.
 
-\\(\Delta\tau\\) is defined as the quantity \\(\frac{\tau_{final}}{\tau_{initial}}\\) or \\(log_{10}(\tau_{final})\\) - \\(log_{10}(\tau_{initial})\\). Ex: If \\(\Delta\tau\\) was equal to 1e3 and the starting \\(\tau\\) was e100, the sim published at e103 \\(\tau\\).
+$\Delta\tau$ is defined as the quantity $\frac{\tau_{final}}{\tau_{initial}}$ or $log_{10}(\tau_{final})$ - $log_{10}(\tau_{initial})$. Ex: If $\Delta\tau$ was equal to 1e3 and the starting $\tau$ was e100, the sim published at e103 $\tau$.
 
-**You should not publish at this \\(\tau\\) value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. This is most apparent most when publications are still too fast to do the active strats properly. If you input your $\tau$ as 1eXXXX, then you should definitely not publish at this unless your $\tau$ is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
+**You should not publish at this $\tau$ value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. This is most apparent most when publications are still too fast to do the active strats properly. If you input your $\tau$ as 1eXXXX, then you should definitely not publish at this unless your $\tau$ is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.

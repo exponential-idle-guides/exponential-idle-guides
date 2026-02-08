@@ -592,7 +592,7 @@ Caption: T3<green>Play2</green>;
 | $c_{31}$ | CHECK | REDX | REDX | REDX |
 | $c_{32}$ | CHECK | CHECK | When $\frac{1}{8}$ of $c_{12}$ cost | REDX |
 | $c_{33}$ | When $\frac{1}{10}$ of $c_{23}$ cost | When $\frac{1}{10}$ of $c_{23}$ cost | REDX | REDX |
-| | | | | [FOOT;]* An earlier version of the strategy did not buy any $ρ_1$ variables. This is only around 1% slower than the strategy shown above, which does buy $c_{31}$ and $b_1$ in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not. |
+| | | | | [FOOT;]* An earlier version of the strategy did not buy any $\rho_1$ variables. This is only around 1% slower than the strategy shown above, which does buy $c_{31}$ and $b_1$ in early parts of the strategy. It’s up to you whether you think that a 1% improvement is worth it or not. |
 | | | | | [FOOT;]** Coasting Phase |
 
 Strategy Credits:
@@ -2544,7 +2544,7 @@ Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
 | | [FOOT;]** If $c_2$ and $s$ have similar costs, prioritize $s$. |
 | | [FOOT;]*** If $q_2$ and $s$ have similar costs, prioritize $s$. |
 
-**Milestone swapping strategy (e700ρ+)**
+**Milestone swapping strategy (e700$\rho+)**
 
 After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
@@ -2570,7 +2570,7 @@ Caption: FP<green>dMS</green>;
 | $n$ | CHECK |
 | $s$ | CHECK |
 
-**Milestone swapping strategy (e700ρ+)**
+**Milestone swapping strategy (e700$\rho$+)**
 
 After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
