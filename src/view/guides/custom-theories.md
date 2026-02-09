@@ -28,7 +28,7 @@ If you have time for active strategies, try to do the CT with the highest active
 
 |   |   |
 | - | - |
-|   | [FOOT;] CT rate vs. $\tau$ |
+|   | [FOOT;] CT $\dot{\tau}$ vs. $\tau$ |
 
 ###### Graph made by Hackzzzzzz
 
