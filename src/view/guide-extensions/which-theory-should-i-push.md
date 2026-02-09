@@ -45,12 +45,6 @@ The faster a theory's $\dot{\tau}$, the more we should do it. This is because we
 | - | - |
 |   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ |
 
-![T1-8 Rate vs. τ adjusted for student count (R9 boost)](/images/ot_rate_adjusted_graph.png)
-
-|   |   |
-| - | - |
-|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for student count (R9 boost) |
-
 ## Overpushing implications
 
 The better a theory is for [overpushing](/guide-extensions/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order should be pushed first. Custom theories are not affected by overpushing.
