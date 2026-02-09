@@ -101,22 +101,38 @@ Throughout this section, I will use the symbol $K$ to represent any constant hol
 
 ### WSP
 
-$$\dot{q}=K \Rightarrow q=Kt$$
-$$\dot{\rho}=K\Pi q =K\Pi t$$
-$$\Rightarrow \rho = K\Pi t^2$$
-$$OP = 2$$
+$$\begin{alignat*}{5}
+  \dot{q}& &=& K \\
+  \Rightarrow q& &=& Kt \\
+  \dot{\rho} =& &K& \Pi q =K\Pi t \\
+  \Rightarrow \rho =& &K& \Pi t^2 \\
+  OP& &=& 2
+\end{alignat*}$$
 
 ### SL
 
-$$\dot{\rho _3} = K \Rightarrow \rho _3 = Kt$$
-$$\dot{\rho _2} = K \times {1.96}^{-\ln(\rho _3)} = K {\rho _3}^{-\ln(1.96)} = Kt^{-\ln(1.96)}$$
-$$\Rightarrow \rho _2 = Kt^{1-\ln(1.96)}$$
-$$\frac{1}{e - \gamma} = K\rho _3 = Kt$$
+$$\begin{alignat*}{1}
+  \dot{\rho _3} &= K\\
+  \Rightarrow \rho _3 &= Kt
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  \dot{\rho}_2 &= K \times {1.96}^{-\ln(\rho _3)} \\
+  \dot{\rho}_2 &= K {\rho _3}^{-\ln(1.96)} \\
+  \dot{\rho}_2 &= K t^{-\ln(1.96)} \\
+  \Rightarrow \rho_2 &= Kt^{1-\ln(1.96)} \\
+  \frac{1}{e - \gamma} &= K\rho _3 = Kt
+\end{alignat*}$$
 
 Now:
 
-$$\dot{\rho _1} = \Pi\rho _2^{0.53} \times \frac{1}{e - \gamma}$$
-$$\dot{\rho _1} = K\Pi t^{0.53 \times (1-\ln(1.96)) + 1}$$
-$$\rho _1 = K\Pi t^{2 + 0.53 \times (1-\ln(1.96))}$$
-$$OP = 2 + 0.53 \times (1-\ln(1.96))$$
-$$OP \simeq 2.173$$
+$$\begin{alignat*}{1}
+  \dot{\rho _1} &= \Pi\rho _2^{0.53} \times \frac{1}{e - \gamma} \\
+  \dot{\rho _1} &= K\Pi t^{0.53 \times (1-\ln(1.96)) + 1} \\
+  \rho _1 &= K\Pi t^{2 + 0.53 \times (1-\ln(1.96))}
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  OP &= 2 + 0.53 \times (1-\ln(1.96)) \\
+  OP &\simeq 2.173
+\end{alignat*}$$
