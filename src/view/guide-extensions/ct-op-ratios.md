@@ -233,7 +233,7 @@ $$\begin{alignat*}{1}
 
 If we compute this, we find that $\log{\left(\frac{a_1^{1.01}}{a_2}\right)} \approx -0.005 \times \log{\rho}$.
 
-Therefore, as $\rho \rightarrow +\infty$, $\log{\left(\frac{a_1^{1.01}}{a_2}\right)} \rightarrow -\infty$ so $\frac{a_1^{1.01}}{a_2} \rightarrow 0$.
+Therefore, as $\rho \to +\infty$, $\log{\left(\frac{a_1^{1.01}}{a_2}\right)} \to -\infty$ so $\frac{a_1^{1.01}}{a_2} \to 0$.
 
 We can then conclude that $I \ll I_\text{cap}$ at large rho, which means we can simplify $\dot{I}$:
 
@@ -257,3 +257,39 @@ $$\begin{alignat*}{1}
 \end{alignat*}$$
 
 $$OP = 8.8$$
+
+### BaP
+
+To compute BaP's overpush factor, we first need to determine the limit of $a$ as $\rho \to \infty$.
+
+After the last milestone, we have:
+$$a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}$$
+
+As $n \to \infty$, $\left(\sum_{i=1}^n\frac{1}{i^2}\right) \to \frac{\pi^2}{6}$, then $\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1} \to \frac{6}{\pi^2}$.
+
+Therefore, as $\rho \to \infty$, $a \to \frac{6}{\pi^2}$.
+
+Now let's calculate BaP's OP factor.
+
+$$\begin{alignat*}{1}
+  \dot{q_9} &= K\\
+  \Rightarrow q_9 &= Kt\\
+  \dot{q_8} &= Kq_9 = Kt\\
+  \Rightarrow q_8 &= Kt^2\\
+  &\dots\\
+  q_1 &= Kt^9\\
+  \dot{r} &= K\\
+  \Rightarrow r &= Kt
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  \dot{\rho} &= \Pi t(q_1 r)^a \\
+  &= K\Pi t\cdot (t^{10})^{\frac{6}{\pi^2}}\\
+  &= K\Pi t^{1+\frac{60}{\pi^2}}\\
+  \Rightarrow \rho &= K\Pi t^{2+\frac{60}{\pi^2}}
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  OP &= 2+\frac{60}{\pi^2}\\
+  OP &\approx 8.079
+\end{alignat*}$$
