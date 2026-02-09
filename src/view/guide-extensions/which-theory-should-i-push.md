@@ -45,11 +45,11 @@ The faster a theory's $\dot{\tau}$, the more we should do it. This is because we
 | - | - |
 |   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ |
 
-![T1-8 Rate vs. τ adjusted for student count (R9 boost)](/images/ot_rate_adjusted_graph.png)
+![T1-8 Rate vs. τ adjusted for 345 students (ee70k)](/images/ot_rate_adjusted_graph.png)
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for student count (R9 boost) |
+|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
 
 ## Overpushing implications
 

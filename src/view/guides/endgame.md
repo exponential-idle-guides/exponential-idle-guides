@@ -68,11 +68,11 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 | - | - |
 |   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ |
 
-![T1-8 Rate vs. τ adjusted for student count (R9 boost)](/images/ot_rate_adjusted_graph.png)
+![T1-8 Rate vs. τ adjusted for 345 students (ee70k)](/images/ot_rate_adjusted_graph.png)
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for student count (R9 boost) |
+|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
 
 ###### Reminder: Do T9 right upon unlocking it, reaching ee20k. This will unlock [Custom Theories](/guides/custom-theories) significantly improving progress.
 
