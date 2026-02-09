@@ -60,7 +60,13 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) is a g
 
 ### Theory routing and strategies
 
-For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publications. Human T5 is below:
+For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publications. [Human T5](/guides/endgame/#t5-routing) explanation is put below as well.
+
+![T1-8 Rate vs. τ](/images/ot_rate_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 rate vs. $\tau$ |
 
 ###### Reminder: Do T9 right upon unlocking it, reaching ee20k. This will unlock [Custom Theories](/guides/custom-theories) significantly improving progress.
 

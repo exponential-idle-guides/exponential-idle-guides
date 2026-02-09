@@ -35,9 +35,15 @@ If you have active time, you'd prefer to do theories that have high active/idle 
 
 However, do consider all the other factors as well. It is possible (and even likely) that it is best to just push a more idle theory even when you have active time.
 
-## Each theory's taudot
+## Each theory's $\dot{\tau}$
 
 The faster a theory's $\dot{\tau}$, the more we should do it. This is because we can gain faster tau, which means more students, which means more $\dot{\tau}$. Once again, do consider other factors in conjunction.
+
+![T1-8 Rate vs. τ](/images/ot_rate_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 rate vs. $\tau$ |
 
 ## Overpushing implications
 
