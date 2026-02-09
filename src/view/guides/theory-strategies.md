@@ -2546,7 +2546,7 @@ Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
 | | [FOOT;]** If $c_2$ and $s$ have similar costs, prioritize $s$. |
 | | [FOOT;]*** If $q_2$ and $s$ have similar costs, prioritize $s$. |
 
-**Milestone swapping strategy (e700$\rho+)**
+**Milestone swapping strategy (e700$\rho$+)**
 
 After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
