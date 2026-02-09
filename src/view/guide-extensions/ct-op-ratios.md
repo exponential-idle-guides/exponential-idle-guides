@@ -17,6 +17,8 @@ It is still possible to calculate the overpushing coefficients for official cust
 
 In this article, I will refer to the publication multiplier as $\Pi$, a notation used by Gaunter in the Laplace Transforms CT.
 
+In this entire article, I will use $\log$ for the base 10 logarithm and $\ln$ for the base $e$ logarithm.
+
 ## Generalities about the OP coefficient and how to calculate it
 
 As you have read in the [Distribution Overpushing](/guide-extensions/distribution-overpushing) guide, the overpushing coefficient measures the effect of the publication multiplier on $\dot{\tau}$, vs the effect of time on $\dot{\tau}$ for each theory. More concretely, the OP coefficient is the base 10 logarithm of the number you should multiply the publication multiplier by to multiply the theory's $\tau$/hour rates by 10. A simpler way to put it : if you multiply the publication multiplier by $a$, the $\tau$/hour rate will be multiplied by $a^{\frac{1}{OP}}$.
@@ -153,4 +155,95 @@ $$\begin{alignat*}{5}
 
 ### FI
 
+$$\begin{alignat*}{1}
+  \dot{q} &= K\\
+  \Rightarrow q &= Kt\\
+  \dot{r} &= K\\
+  \Rightarrow r &= Kt
+\end{alignat*}$$
+
+$$\int _{0}^{q}{g(x)dx} = Kq^6 = Kt^6$$
+$$\sqrt[\pi]{\int_{0}^{ q }g(x)dx} = Kt^{\frac{6}{\pi}}$$
+
+$$\begin{alignat*}{1}
+  \dot{\rho} &= K\Pi rt\sqrt[\pi]{\int_{0}^{ q }g(x)dx}\\
+  \dot{\rho} &= K\Pi t^{2+\frac{6}{\pi}}\\
+  \Rightarrow \rho &= K\Pi t^{3+\frac{6}{\pi}}
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  OP &= 3 + \frac{6}{\pi} \\
+  OP &\simeq 4.91
+\end{alignat*}$$
+
+### FP
+
+$$\begin{alignat*}{1}
+  \dot{q} &= K\\
+  \Rightarrow q &= Kt\\
+  \dot{r} &= K\\
+  \Rightarrow r &= Kt
+\end{alignat*}$$
+
+$$\begin{alignat*}{1}
+  \dot{\rho} &= K\Pi qrt\\
+  \dot{\rho} &= K\Pi t^3\\
+  \Rightarrow \rho &= K\Pi t^4
+\end{alignat*}$$
+
+$$OP = 4$$
+
+### RZ
+
 TBA
+
+### MF
+
+To determine the OP factor of MF, we first need to determine if, long-term, $I$ is capped or not.
+
+$$\begin{alignat*}{1}
+\dot{I} &= \frac{{a_1}^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)\\
+\dot{I} &= \frac{{a_1}^{1.01}}{400 a_2}(10^{-15}a_2-I)\\
+\dot{I} &= K\frac{{a_1}^{1.01}}{a_2}(I_\text{cap}-I)
+\end{alignat*}$$
+
+To determine if $I$ is capped or not, we need to study the behavior of $\frac{{a_1}^{1.01}}{a_2}$ at large rho.
+- If it goes to $+\infty$, then $I$ will almost instantly cap at large rho.
+- If it converges to $0$, then $I \ll I_\text{cap}$ at large rho.
+
+Let's now calculate how $a_1$ and $a_2$ scale with rho.
+
+$a_1$ is a stepwise variable with a power of 2, a cycle length of 5 and a cost scaling of 25. Its power is given by:
+$$\log(a_1) = \frac{\log(2)}{2\log(25)} \times \log(\rho)$$
+
+$a_2$ is an exponential variable with a power of 1.25 and a cost scaling of 100. Its power is given by:
+$$\log(a_2) = \frac{\log(1.25)}{\log(100)} \times \log(\rho) = \frac{\log(1.25)}{2} \times \log(\rho)$$
+
+Now:
+$$\log(\frac{{a_1}^{1.01}}{a_2}) = 1.01\log(a_1) - \log(a_2) = \log(\rho) \times \left(\frac{1.01\log(2)}{2\log(25)} - \frac{\log(1.25)}{2}\right)$$
+
+If we compute this, we find that $\log(\frac{{a_1}^{1.01}}{a_2}) \simeq -0.005 \times \log(\rho)$.
+
+Therefore, as $\rho \rightarrow +\infty$, $\log(\frac{{a_1}^{1.01}}{a_2}) \rightarrow -\infty$ so $\frac{{a_1}^{1.01}}{a_2} \rightarrow 0$.
+
+We can then conclude that $I \ll I_\text{cap}$ at large rho, which means we can simplify $\dot{I}$:
+$$\dot{I} = K\frac{{a_1}^{1.01}}{a_2}I_\text{cap} = K$$
+
+Therefore $I = Kt$.
+
+With that out of the way, let's calculate MF's OP factor.
+
+$$\begin{alignat*}{1}
+  \dot{x} &= K\\
+  \Rightarrow x &= Kt\\
+\end{alignat*}$$
+
+$$\omega = KI = Kt$$
+
+$$\begin{alignat*}{1}
+  \dot{\rho} &= K\Pi \omega^{4.4}x^{3.4}\\
+  \dot{\rho} &= K\Pi t^{7.8}\\
+  \Rightarrow \rho &= K\Pi t^{8.8}
+\end{alignat*}$$
+
+$$OP = 8.8$$
