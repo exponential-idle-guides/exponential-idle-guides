@@ -7,7 +7,9 @@ draft: false
 order: 8
 ---
 
-The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the sim team and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
+The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers) and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
+
+For help on specific (active) strategies, Hackzzzzz's [Theory Quick Purchase Testers](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) can output when to buy variables. Take a look for help with difficult strategies.
 
 ## Modulus Explanation
 
