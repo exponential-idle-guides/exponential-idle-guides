@@ -136,3 +136,21 @@ $$\begin{alignat*}{1}
   OP &= 2 + 0.53 \times (1-\ln(1.96)) \\
   OP &\simeq 2.173
 \end{alignat*}$$
+
+### EF
+
+TBA
+
+### CSR2
+
+$$\begin{alignat*}{5}
+  \dot{q}& &=& K\Pi \\
+  \Rightarrow q& &=& K\Pi t \\
+  \dot{\rho} =& &K& \Pi q =K\Pi^2 t \\
+  \Rightarrow \rho =& &K& \Pi^2 t^2 \\
+  OP& &=& 1
+\end{alignat*}$$
+
+### FI
+
+TBA
