@@ -39,7 +39,7 @@ But this is the optimal multiplier for $\rho^{z}_{pub} = \Pi^{b}$, so the optima
 
 $$e^{\frac{z(y+1)}{b(1-x)}}$$
 
-Now, for any non-divergent theory, $z + x \le 1$. If a theory can be approximated as balanced, i.e. decay is negligible, then we have $z + x \simeq 1$, then $\frac{z}{1-x} \simeq 1$. In this case, the optimal publication multiplier can be approximated as:
+Now, for any non-divergent theory, $z + x \le 1$. If a theory can be approximated as balanced, i.e. decay is negligible, then we have $z + x \approx 1$, then $\frac{z}{1-x} \approx 1$. In this case, the optimal publication multiplier can be approximated as:
 
 $$e^{\frac{y+1}{b}}$$
 
@@ -93,7 +93,7 @@ Now the OP ratio is directly visible.
 
 For some theories, we'll have to go to the logarithmic space. If we apply log10 to the previous equation:
 
-$$\log(\rho)=x\log(\rho)+(y+1)\log(t)+b\log(\Pi)$$
+$$\log{\rho}=x\log{\rho}+(y+1)\log{t}+b\log{\Pi}$$
 
 ## Calculating the OP ratio for Official Custom Theories
 
@@ -103,7 +103,7 @@ Throughout this section, I will use the symbol $K$ to represent any constant hol
 
 ### WSP
 
-$$\begin{alignat*}{5}
+$$\begin{alignat*}{2}
   \dot{q}& &=& K \\
   \Rightarrow q& &=& Kt \\
   \dot{\rho} =& &K& \Pi q =K\Pi t \\
@@ -119,10 +119,10 @@ $$\begin{alignat*}{1}
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho}_2 &= K \times {1.96}^{-\ln(\rho _3)} \\
-  \dot{\rho}_2 &= K {\rho _3}^{-\ln(1.96)} \\
-  \dot{\rho}_2 &= K t^{-\ln(1.96)} \\
-  \Rightarrow \rho_2 &= Kt^{1-\ln(1.96)} \\
+  \dot{\rho}_2 &= K \times {1.96}^{-\ln\rho _3} \\
+  \dot{\rho}_2 &= K {\rho _3}^{-\ln1.96} \\
+  \dot{\rho}_2 &= K t^{-\ln1.96} \\
+  \Rightarrow \rho_2 &= Kt^{1-\ln1.96} \\
   \frac{1}{e - \gamma} &= K\rho _3 = Kt
 \end{alignat*}$$
 
@@ -130,13 +130,13 @@ Now:
 
 $$\begin{alignat*}{1}
   \dot{\rho _1} &= \Pi\rho _2^{0.53} \times \frac{1}{e - \gamma} \\
-  \dot{\rho _1} &= K\Pi t^{0.53 \times (1-\ln(1.96)) + 1} \\
-  \rho _1 &= K\Pi t^{2 + 0.53 \times (1-\ln(1.96))}
+  \dot{\rho _1} &= K\Pi t^{0.53 \times (1-\ln1.96) + 1} \\
+  \rho _1 &= K\Pi t^{2 + 0.53 \times (1-\ln1.96)}
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  OP &= 2 + 0.53 \times (1-\ln(1.96)) \\
-  OP &\simeq 2.173
+  OP &= 2 + 0.53 \times (1-\ln1.96) \\
+  OP &\approx 2.173
 \end{alignat*}$$
 
 ### EF
@@ -145,7 +145,7 @@ TBA
 
 ### CSR2
 
-$$\begin{alignat*}{5}
+$$\begin{alignat*}{2}
   \dot{q}& &=& K\Pi \\
   \Rightarrow q& &=& K\Pi t \\
   \dot{\rho} =& &K& \Pi q =K\Pi^2 t \\
@@ -173,7 +173,7 @@ $$\begin{alignat*}{1}
 
 $$\begin{alignat*}{1}
   OP &= 3 + \frac{6}{\pi} \\
-  OP &\simeq 4.91
+  OP &\approx 4.91
 \end{alignat*}$$
 
 ### FP
@@ -202,32 +202,42 @@ TBA
 To determine the OP factor of MF, we first need to determine if, long-term, $I$ is capped or not.
 
 $$\begin{alignat*}{1}
-\dot{I} &= \frac{{a_1}^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)\\
-\dot{I} &= \frac{{a_1}^{1.01}}{400 a_2}(10^{-15}a_2-I)\\
-\dot{I} &= K\frac{{a_1}^{1.01}}{a_2}(I_\text{cap}-I)
+  \dot{I} &= \frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right) \\
+  \dot{I} &= \frac{a_1^{1.01}}{400 a_2}(10^{-15}a_2-I) \\
+  \dot{I} &= K\frac{a_1^{1.01}}{a_2}(I_\text{cap}-I)
 \end{alignat*}$$
 
-To determine if $I$ is capped or not, we need to study the behavior of $\frac{{a_1}^{1.01}}{a_2}$ at large rho.
+To determine if $I$ is capped or not, we need to study the behavior of $\frac{a_1^{1.01}}{a_2}$ at large rho.
 - If it goes to $+\infty$, then $I$ will almost instantly cap at large rho.
 - If it converges to $0$, then $I \ll I_\text{cap}$ at large rho.
 
 Let's now calculate how $a_1$ and $a_2$ scale with rho.
 
 $a_1$ is a stepwise variable with a power of 2, a cycle length of 5 and a cost scaling of 25. Its power is given by:
-$$\log(a_1) = \frac{\log(2)}{2\log(25)} \times \log(\rho)$$
+
+$$\log{a_1} = \frac{\log{2}}{2\log{25}} \times \log{\rho}$$
 
 $a_2$ is an exponential variable with a power of 1.25 and a cost scaling of 100. Its power is given by:
-$$\log(a_2) = \frac{\log(1.25)}{\log(100)} \times \log(\rho) = \frac{\log(1.25)}{2} \times \log(\rho)$$
+
+$$\begin{alignat*}{1}
+  \log{a_2} &= \frac{\log{1.25}}{\log{100}} \times \log{\rho} \\
+  &= \frac{\log{1.25}}{2} \times \log{\rho}
+\end{alignat*}$$
 
 Now:
-$$\log(\frac{{a_1}^{1.01}}{a_2}) = 1.01\log(a_1) - \log(a_2) = \log(\rho) \times \left(\frac{1.01\log(2)}{2\log(25)} - \frac{\log(1.25)}{2}\right)$$
 
-If we compute this, we find that $\log(\frac{{a_1}^{1.01}}{a_2}) \simeq -0.005 \times \log(\rho)$.
+$$\begin{alignat*}{1}
+  \log{\left(\frac{a_1^{1.01}}{a_2}\right)} &= 1.01\log{a_1} - \log{a_2} \\
+  &= \log{\rho} \times \left(\frac{1.01\log{2}}{2\log{25}} - \frac{\log{1.25}}{2}\right)
+\end{alignat*}$$
 
-Therefore, as $\rho \rightarrow +\infty$, $\log(\frac{{a_1}^{1.01}}{a_2}) \rightarrow -\infty$ so $\frac{{a_1}^{1.01}}{a_2} \rightarrow 0$.
+If we compute this, we find that $\log{\left(\frac{a_1^{1.01}}{a_2}\right)} \approx -0.005 \times \log{\rho}$.
+
+Therefore, as $\rho \rightarrow +\infty$, $\log{\left(\frac{a_1^{1.01}}{a_2}\right)} \rightarrow -\infty$ so $\frac{a_1^{1.01}}{a_2} \rightarrow 0$.
 
 We can then conclude that $I \ll I_\text{cap}$ at large rho, which means we can simplify $\dot{I}$:
-$$\dot{I} = K\frac{{a_1}^{1.01}}{a_2}I_\text{cap} = K$$
+
+$$\dot{I} = K\frac{a_1^{1.01}}{a_2}I_\text{cap} = K$$
 
 Therefore $I = Kt$.
 
