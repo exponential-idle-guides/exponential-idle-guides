@@ -260,7 +260,7 @@ module.exports = config => {
   rankings.forEach((ranking) => {
     config.addCollection(ranking + "s", function(collectionApi) {
       return collectionApi.getFilteredByTag(ranking + "-news").sort(function(a, b) {
-        return b.date - a.date;
+        return a.date - b.date;
       });
     });
   });
