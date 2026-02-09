@@ -45,7 +45,7 @@ Here we see that time affects $\rho$ 10.2 magnitudes more than extra $\sigma$.
 
 ### Theory 3
 
-$\dot{\rho_n} \approx A, \rho \approx KSt $
+$\dot{\rho_n} \approx A, \rho \approx KSt$
 
 Sigma and time affect $\rho$ equally.
 
@@ -53,11 +53,11 @@ Sigma and time affect $\rho$ equally.
 
 Late game $c_3$ term dominates so:
 
-$\dot{\rho} \approx Ac_3q $
+$\dot{\rho} \approx Ac_3q$
 
-$\dot{q} \approx \frac{A}{1+q} $
+$\dot{q} \approx \frac{A}{1+q}$
 
-Solving the differential equation yields $q$ is proportional to $\sqrt{t} $
+Solving the differential equation yields $q$ is proportional to $\sqrt{t}$
 
 $\dot{\rho} \approx Ac_3\sqrt{t}$
 
@@ -69,7 +69,7 @@ Time affects $\rho$ 1.5 magnitudes more than $\sigma$.
 
 Late game we can treat $c_{2}$ gains as instantaneous, so $q$ is treated as a constant.
 
-$\dot{\rho} \approx A $ only
+$\dot{\rho} \approx A$ only
 
 $\rho \approx KSt$
 
@@ -91,7 +91,7 @@ Time affects $\rho$ 3 magnitudes more than $\sigma$.
 
 Late game $c_4$ term dominates.
 
-$\dot{\rho} \approx Ac_6\sqrt{\frac{\rho_2}{\rho_1}} $ after partial differentiation
+$\dot{\rho} \approx Ac_6\sqrt{\frac{\rho_2}{\rho_1}}$ after partial differentiation
 
 However, $\frac{\rho_2}{\rho_1}$ is effectively constant. This is because if $\rho_2$ is higher than $\rho_1$, $\rho_1$ will eventually catch up to $\rho_2$ and vice versa.
 
@@ -109,7 +109,7 @@ $\dot{\rho} \approx A\sqrt{Bc_3}$
 
 $\dot{\rho} \approx A$
 
-$\rho \approx KSt $
+$\rho \approx KSt$
 
 Sigma and time affect $\rho$ equally.
 

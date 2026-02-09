@@ -11,7 +11,7 @@ glossary: true
 
 ### Sigma
 
-Sigma is the number of students. E.g. "I have 300 sigma" means I have 300 total students. "Graduate every 5 sigma" means to graduate every 5 students. Denoted as $\sigma $ in the game.
+Sigma is the number of students. E.g. "I have 300 sigma" means I have 300 total students. "Graduate every 5 sigma" means to graduate every 5 students. Denoted as $\sigma$ in the game.
 
 ### Tau
 
@@ -57,11 +57,11 @@ Another prestige layer lower than graduation. This resets most variables also. I
 
 ### Psi
 
-A currency gained from performing supremacies. Usually written as $\psi $. It is used to buy supremacy upgrades.
+A currency gained from performing supremacies. Usually written as $\psi$. It is used to buy supremacy upgrades.
 
 ### Phi
 
-A currency gained from spending students on student upgrades. Usually written as $\varphi $. It is used to boost $F(t)$ or boost theory rates.
+A currency gained from spending students on student upgrades. Usually written as $\varphi$. It is used to boost $F(t)$ or boost theory rates.
 
 ### R9
 

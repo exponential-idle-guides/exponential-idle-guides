@@ -240,7 +240,7 @@ For any theory system $T$ that fits the expression below asymptotically
 
 $$\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_{pub}$$
 
-the long-term mean Publication Multiplier of $ T$ when $\rho \rightarrow \infty$ is:
+the long-term mean Publication Multiplier of $T$ when $\rho \rightarrow \infty$ is:
 
 $$e^{\frac{z(y+1)}{1-x}}$$
 

@@ -2572,7 +2572,7 @@ Caption: FP<green>dMS</green>;
 | $n$ | CHECK |
 | $s$ | CHECK |
 
-**Milestone swapping strategy (e700$\rho$+)**
+**Milestone swapping strategy ($e700\rho$+)**
 
 After you unlock the $s$ milestone, you can perform milestone swapping until $s\gt2$. Alternate between having the $s$ milestone on and off. When $s\gt2$, keep the milestone on everytime. Milestone swapping is no longer required once you can reach $s\gt2$ quickly.
 
