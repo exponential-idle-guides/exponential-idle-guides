@@ -141,7 +141,132 @@ $$\begin{alignat*}{1}
 
 ### EF
 
-TBA
+Calculating EF's OP factor is comparatively harder due to it having multiple currencies. In general, to study theories with multiple currencies, we use linear algebra in logarithmic space.
+
+$$\begin{alignat*}{1}
+  \dot{q} &= \Pi q_1 q_2\\
+  \Rightarrow q &= K\Pi q_1 q_2 t
+\end{alignat*}$$
+
+Late-game, in EF's $\dot{\rho}$ equation's square root, only the $tq^2$ term is significant:
+
+$$\begin{alignat*}{1}
+  \dot{\rho} &= \Pi (a_1 a_2 a_3)^{1.5} t^{0.5}q\\
+  \Rightarrow \dot{\rho} &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{1.5}\\
+  \Rightarrow \rho &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{2.5}\\
+  \dot{R} &= K \Pi (b_1 b_2)^2\\
+  \Rightarrow R &= K \Pi (b_1 b_2)^2 t\\
+  \dot{I} &= K \Pi (c_1 c_2)^2\\
+  \Rightarrow I &= K \Pi (c_1 c_2)^2 t
+\end{alignat*}$$
+
+Now, let's express the system in logarithmic form, to turn it into a linear system:
+
+$$\begin{alignat*}{1}
+  \log{\rho} &= K + 1.5(\log{a_1} + \log{a_2} + \log{a_3}) + \log{q_1} + \log{q_2} + 2\log{\Pi} + 2.5\log{t}\\
+  \log{R} &= K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
+  \log{I} &= K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
+\end{alignat*}$$
+
+We have:
+$$\begin{alignat*}{1}
+  \log{a_1}, \log{q_1}, \log{q_2} &\propto \log{\rho}\\
+  \log{a_2}, \log{b_1}, \log{b_2} &\propto \log{R}\\
+  \log{a_3}, \log{c_1}, \log{c_2} &\propto \log{I}\\
+\end{alignat*}$$
+
+Therefore, there exists a 3x3 matrix $A$ such that:
+$$AP = M\log{\Pi} + T\log{t}$$
+
+With:
+$$P = \begin{bmatrix} \log{\rho} \\ \log{R} \\ \log{I} \end{bmatrix},
+M = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix},
+T = \begin{bmatrix} 2.5 \\ 1 \\ 1 \end{bmatrix}$$
+
+Therefore:
+$$P = A^{-1}M\log{\Pi} + A^{-1}T\log{t}$$
+
+To find EF's OP factor, we need an expression of the form $\log{\rho} = \alpha\log{\Pi} + \beta\log{t}$. Therefore, we need to calculate the first coefficient of $A^{-1}M$ and $A^{-1}T$. To do that, we need to express, then inverse $A$. Note that, since we only care about the first coefficient, we only need to calculate the top row of $A^{-1}$.
+
+To compute $A^{-1}$, we can use the [adjugate of A](https://en.wikipedia.org/wiki/Adjugate_matrix): $A^{-1} = \frac{1}{\det{A}}\text{adj}{A}$. The equation becomes:
+$$P = \frac{1}{\det{A}}\text{adj}{A}\cdot M\log{\Pi} + \frac{1}{\det{A}}\text{adj}{A}\cdot T\log{t} \qquad (1)$$
+
+Since we only care about the first row of the adjugate, we only the first column of the cofactor matrix, therefore we don't need the first column of $A$.
+
+From the previous system, we have:
+
+$$A = \begin{bmatrix}
+* & -1.5\frac{\log{a_2}}{\log{R}} & -1.5\frac{\log{a_3}}{\log{I}} \\
+* & 1 - 2\frac{\log{b_1} + \log{b_2}}{\log{R}} & 0 \\
+* & 0 & 1 - 2\frac{\log{c_1} + \log{c_2}}{\log{I}}
+\end{bmatrix}$$
+
+Let's now compute how the variables we need scale with their currencies. To do so, we use this model:
+
+- An exponential variable $u$ of power $p$ and cost scaling $c$, bought with currency $C$ is approximated as $\log{u} = \frac{\log{p}}{\log{c}} \cdot \log{C}$
+- A stepwise variable $v$ of power $p$, cycle length $n$ and cost scaling $c$, bought with currency $C$ is approximated as $\log{v} = \frac{\log{p}}{n\log{c}} \cdot \log{C}$
+
+Therefore we can calculate the following:
+
+- $a_2$ is a stepwise variable of power 40, cycle length 10 and cost scaling $2^{2.2}$: $\log{a_2} = \frac{\log{40}}{22\log{2}} \cdot \log{R}$
+- $a_3$ is an exponential variable of power 2 and cost scaling $2^{2.2}$: $\log{a_3} = \frac{1}{2.2} \cdot \log{I}$
+- $b_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{R}$
+- $b_2$ is an exponential variable of power 1.12 and cost scaling 2: $\log{b_2} = \frac{\log{1.12}}{\log{2}} \cdot \log{R}$
+- $c_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{I}$
+- $c_2$ is an exponential variable of power 1.125 and cost scaling 2: $\log{c_2} = \frac{\log{1.125}}{\log{2}} \cdot \log{I}$
+
+Now we can substitute in $A$:
+$$A = \begin{bmatrix}
+* & -\frac{1.5\log{40}}{22\log{2}} & -\frac{1.5}{2.2} \\
+* & 1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right) & 0 \\
+* & 0 & 1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)
+\end{bmatrix}$$
+
+These expressions will be heavy to manipulate so let's set it to:
+$$A = \begin{bmatrix}
+* & -d_{12} & -d_{13} \\
+* & d_{22} & 0 \\
+* & 0 & d_{33}
+\end{bmatrix}$$
+
+The cofactor matrix is then given by:
+$$\begin{bmatrix}
+d_{22}d_{33} & * & * \\
+d_{12}d_{33} & * & * \\
+d_{13}d_{22} & * & *
+\end{bmatrix}$$
+
+Finally, the adjugate matrix is given by:
+$$\text{adj}{A} = \begin{bmatrix}
+d_{22}d_{33} & d_{12}d_{33} & d_{13}d_{22} \\
+* & * & * \\
+* & * & *
+\end{bmatrix}$$
+
+Now:
+$$\text{adj}{A}\cdot M = \begin{bmatrix} 2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22} \\ * \\ * \end{bmatrix}$$
+$$\text{adj}{A}\cdot T = \begin{bmatrix} 2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22} \\ * \\ * \end{bmatrix}$$
+
+Let's substitute these results in the first row of the matrix equatio (1):
+$$\log{\rho} = \frac{1}{\det{A}}\left[(2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22})\log{\Pi} 
+        + (2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22})\log{t} \right]$$
+
+We can finally express EF's OP factor:
+$$\begin{alignat*}{1}
+OP &= \frac{2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}}{2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}} \\
+OP &= 1 + \frac{0.5d_{22}d_{33}}{2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}} \\
+OP &= 1 + \frac{1}{2\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{23}}\right)} \\
+OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\
+\end{alignat*}$$
+
+For those who want to see what it looks like if we replace those $d_i$:
+
+$$OP = 1 + \frac{1}{4 + 
+  \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)}
+  + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}}$$
+
+Finally,
+$$OP \approx 1.137$$
 
 ### CSR2
 
