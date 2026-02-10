@@ -692,7 +692,7 @@ FP Guide written by Snaeky, Hotab and Mathis S.
 
 #### RZ Overview
 
-This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with a completion time estimated below 70 days! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the $\rho$.
+This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with the current fastest completion time estimated under 70 days (down to just over 50 days)! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the $\rho$.
 
 Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 $\rho$ due to its short publications. It also has a milestone swapping phase from e50 to e400 $\rho$. After e600, the entire dynamic of the theory changes with the inclusion of the black hole.
 
