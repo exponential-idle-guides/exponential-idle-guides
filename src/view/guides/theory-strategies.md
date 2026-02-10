@@ -69,11 +69,11 @@ T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho
 
 - [T3</span><green>Play</green>](#t3play)&nbsp; — &nbsp;Very Active
 
-- [T3</span><green>SNAX</green>](#t3snax)&nbsp; — &nbsp;Semi-Idle
+- [T3</span><green>SNAX2</green>](#t3snax2)&nbsp; — &nbsp;Active
 
 - [T3</span><green>SNAXd</green><blue>C12</blue>](#t3snaxdc12)&nbsp; — &nbsp;Active recovery, then Semi-Idle
 
-- [T3</span><green>SNAX2</green>](#t3snax2)&nbsp; — &nbsp;Active
+- [T3</span><green>SNAX</green>](#t3snax)&nbsp; — &nbsp;Semi-Idle
 
 - [T3<blue>ρ2C23</blue><green>d</green>](#t3r2c23d)&nbsp; — &nbsp;Active
 
@@ -107,17 +107,17 @@ T3</span><green>SNAX</green> is currently the best idle strategy above e200$\rho
 
 T4 is the third-strongest theory in endgame, only behind T5 and T6.
 
+- [T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
+
+- [T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
+
+- [T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
+
 - [T4<blue>C3</blue><green>d</green>](#t4c3d)&nbsp; — &nbsp;Active
 
 - [T4<blue>C3</blue><green>coast</green>](#t4c3coast)&nbsp; — &nbsp;Semi-Idle
 
 - [T4<blue>C3</blue>](#t4c3)&nbsp; — &nbsp;Idle
-
-- [T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c3dc12rcv)&nbsp; — &nbsp;Active
-
-- [T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>](#t4c356dc12rcv)&nbsp; — &nbsp;Active
-
-- [T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>](#t4c456dc12rcvms)&nbsp; — &nbsp;Active
 
 - [T4<blue>C123</blue><green>d</green>](#t4c123d)&nbsp; — &nbsp;Active
 
@@ -242,9 +242,9 @@ The first official custom theory, abbreviated WSP, was created by xelaroc and re
 
 The second official custom theory, abbreviated SL, was created by ellipsis and released on January 22, 2022.
 
-- [SL<green>MS</green>](#slms)&nbsp; — &nbsp;Active
-
 - [SL<green>MSd</green>](#slmsd)&nbsp; — &nbsp;Very Active
+
+- [SL<green>MS</green>](#slms)&nbsp; — &nbsp;Active
 
 - [SL<red>Stop</red><blue>A</blue><green>d</green>](#slstopad)&nbsp; — &nbsp;Active
 
@@ -280,21 +280,21 @@ The third/fourth official custom theory, abbreviated CSR2 or CS2, was created by
 
 The fifth/sixth official custom theory, abbreviated FI, was first planned by Snaeky, coded by Gen, and balanced with help by XLII. It was released on April 1, 2024, in the same update as Fractal Patterns and the CT $\tau$ contribution rate increase by x4.
 
-- [FI<green>d</green>](#fid)&nbsp; — &nbsp;Active
+- [FI<green>MSdPermaSwap</green>](#fimsdpermaswap)&nbsp; — &nbsp;Active
 
-- [FI](#fi)&nbsp; — &nbsp;Idle
-
-- [FI<green>MSd</green>](#fimsd)&nbsp; — &nbsp;Active
-
-- [FI<green>MS</green>](#fims)&nbsp; — &nbsp;Active
+- [FI<green>MSPermaSwap</green>](#fimspermaswap)&nbsp; — &nbsp;Active
 
 - [FI<green>dPermaSwap</green>](#fidpermaswap)&nbsp; — &nbsp;Active
 
 - [FI<green>PermaSwap</green>](#fipermaswap)&nbsp; — &nbsp;Semi-Idle
 
-- [FI<green>MSdPermaSwap</green>](#fimsdpermaswap)&nbsp; — &nbsp;Active
+- [FI<green>MSd</green>](#fimsd)&nbsp; — &nbsp;Active
 
-- [FI<green>MSPermaSwap</green>](#fimspermaswap)&nbsp; — &nbsp;Active
+- [FI<green>MS</green>](#fims)&nbsp; — &nbsp;Active
+
+- [FI<green>d</green>](#fid)&nbsp; — &nbsp;Active
+
+- [FI](#fi)&nbsp; — &nbsp;Idle
 
 #### Custom Theory 6: Fractal Patterns {data-toc-exclude}
 
@@ -631,56 +631,6 @@ Strategy Credits:
 - Playspout for creating this strategy.
 - xelaroc, whose sim was used to verify Playspout's results
 
-### T3<green>SNAX</green>
-
-Class: strat_separated;
-Caption: T3<green>SNAX</green>;
-
-| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
-| -------- | -------------------------- | ----------------------------- |
-| $b_1$ | CHECK | REDX |
-| $b_2$ | CHECK | CHECK |
-| $b_3$ | CHECK | CHECK |
-| $c_{11}$ | REDX | REDX |
-| $c_{12}$ | CHECK | CHECK |
-| $c_{13}$ | REDX | REDX |
-| $c_{21}$ | REDX | REDX |
-| $c_{22}$ | CHECK | CHECK |
-| $c_{23}$ | CHECK | CHECK |
-| $c_{31}$ | CHECK | REDX |
-| $c_{32}$ | CHECK | REDX |
-| $c_{33}$ | CHECK | REDX |
-
-Strategy Credits:
-
-- Snaeky for the idea.
-- XLII for simulating the strategy
-
-### T3<green>SNAXd</green><blue>C12</blue>
-
-Class: strat_separated;
-Caption: T3<green>SNAXd</green><blue>C12</blue>;
-
-| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
-| -------- | ----------------------------------- | ----------------------------- |
-| $b_1$ | CHECK | REDX |
-| $b_2$ | CHECK | CHECK |
-| $b_3$ | CHECK | CHECK |
-| $c_{11}$ | REDX | REDX |
-| $c_{12}$ | When cost$\times100\lt c_{32}$ cost | CHECK |
-| $c_{13}$ | REDX | REDX |
-| $c_{21}$ | REDX | REDX |
-| $c_{22}$ | CHECK | CHECK |
-| $c_{23}$ | CHECK | CHECK |
-| $c_{31}$ | CHECK | REDX |
-| $c_{32}$ | CHECK | REDX |
-| $c_{33}$ | CHECK | REDX |
-
-Strategy Credits:
-
-- Snaeky for the idea.
-- XLII for simulating the strategy and finding optimal ratios.
-
 ### T3<green>SNAX2</green>
 
 Class: strat_separated;
@@ -709,6 +659,56 @@ Strategy Credits:
 It is designed to be an easier version of current T3 strategies.
 
 This is the only active SNAX strategy.
+
+### T3<green>SNAXd</green><blue>C12</blue>
+
+Class: strat_separated;
+Caption: T3<green>SNAXd</green><blue>C12</blue>;
+
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| -------- | ----------------------------------- | ----------------------------- |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | CHECK |
+| $b_3$ | CHECK | CHECK |
+| $c_{11}$ | REDX | REDX |
+| $c_{12}$ | When cost$\times100\lt c_{32}$ cost | CHECK |
+| $c_{13}$ | REDX | REDX |
+| $c_{21}$ | REDX | REDX |
+| $c_{22}$ | CHECK | CHECK |
+| $c_{23}$ | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | CHECK | REDX |
+
+Strategy Credits:
+
+- Snaeky for the idea.
+- XLII for simulating the strategy and finding optimal ratios.
+
+### T3<green>SNAX</green>
+
+Class: strat_separated;
+Caption: T3<green>SNAX</green>;
+
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| -------- | -------------------------- | ----------------------------- |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | CHECK | CHECK |
+| $b_3$ | CHECK | CHECK |
+| $c_{11}$ | REDX | REDX |
+| $c_{12}$ | CHECK | CHECK |
+| $c_{13}$ | REDX | REDX |
+| $c_{21}$ | REDX | REDX |
+| $c_{22}$ | CHECK | CHECK |
+| $c_{23}$ | CHECK | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | CHECK | REDX |
+
+Strategy Credits:
+
+- Snaeky for the idea.
+- XLII for simulating the strategy
 
 ### T3<blue>ρ2C23</blue><green>d</green>
 
@@ -992,6 +992,59 @@ Caption: T3<blue>C11C12C21</blue>;
 
 ## Theory 4: Polynomials
 
+### T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>
+
+Class: strat_separated;
+Caption: T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>;
+
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | REDX | REDX |
+| $c_4$ | CHECK | CHECK |
+| $c_5$ | CHECK | CHECK |
+| $c_6$ | CHECK | CHECK |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK | CHECK |
+
+**Milestone swapping strategy**
+
+- During your recovery phase, set your milestones in the order 2→3→1
+- During the $\tau$ gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
+
+### T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>
+
+Class: strat_separated;
+Caption: T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>;
+
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | CHECK | CHECK |
+| $c_4$ | REDX | REDX |
+| $c_5$ | CHECK | CHECK |
+| $c_6$ | CHECK | CHECK |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK | CHECK |
+
+### T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>
+
+Class: strat_separated;
+Caption: T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>;
+
+| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
+| ----- | ----------------------------------------- | ----------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | CHECK | CHECK |
+| $c_4$ | REDX | REDX |
+| $c_5$ | REDX | REDX |
+| $c_6$ | REDX | REDX |
+| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
+| $q_2$ | CHECK | CHECK |
+
 ### T4<blue>C3</blue><green>d</green>
 
 Class: strat_separated;
@@ -1056,59 +1109,6 @@ Caption: T4<blue>C3</blue>;
 | $c_6$ | REDX |
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
-
-### T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>
-
-Class: strat_separated;
-Caption: T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>;
-
-| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
-| ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
-| $c_2$ | CHECK | REDX |
-| $c_3$ | CHECK | CHECK |
-| $c_4$ | REDX | REDX |
-| $c_5$ | REDX | REDX |
-| $c_6$ | REDX | REDX |
-| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK | CHECK |
-
-### T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>
-
-Class: strat_separated;
-Caption: T4<blue>C356</blue><green>d</green><blue>C12</blue><green>rcv</green>;
-
-| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
-| ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
-| $c_2$ | CHECK | REDX |
-| $c_3$ | CHECK | CHECK |
-| $c_4$ | REDX | REDX |
-| $c_5$ | CHECK | CHECK |
-| $c_6$ | CHECK | CHECK |
-| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK | CHECK |
-
-### T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>
-
-Class: strat_separated;
-Caption: T4<blue>C456</blue><green>d</green><blue>C12</blue><green>rcvMS</green>;
-
-| INVIS | Recovery (pub mult $\lt1$) | $\tau$ Gain (pub mult $\gt1$) |
-| ----- | ----------------------------------------- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost | REDX |
-| $c_2$ | CHECK | REDX |
-| $c_3$ | REDX | REDX |
-| $c_4$ | CHECK | CHECK |
-| $c_5$ | CHECK | CHECK |
-| $c_6$ | CHECK | CHECK |
-| $q_1$ | When cost is $\frac{1}{10}$ of $q_2$ cost | When cost is $\frac{1}{10}$ of $q_2$ cost |
-| $q_2$ | CHECK | CHECK |
-
-**Milestone swapping strategy**
-
-- During your recovery phase, set your milestones in the order 2→3→1
-- During the $\tau$ gain phase, alternate between 1 minute with milestones in the order 1→3→2 and 1 minute with milestones in the order 3→1→2
 
 ### T4<blue>C123</blue><green>d</green>
 
@@ -1938,6 +1938,27 @@ Caption: WSP;
 
 ## Sequential Limits
 
+### SL<green>MSd</green>
+
+**For the milestone swapping details, read the above strategy, [SLMS](#milestone-swap). This strategy only modifies the variable buying strategies.**
+
+Class: strat_separated;
+Caption: SL<green>MSd</green>;
+
+| Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
+| ----------- | ------ | ------- | -------- |
+| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_2$ | CHECK | REDX | REDX |
+| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_2$ | CHECK | CHECK | REDX |
+| | | | [FOOT;]* Publication Multiplier |
+
+###### If you are confused about the "%", read about [it here.](#modulus-explanation)
+
+Strategy Credit:
+
+- XLII
+
 ### SL<green>MS</green>
 
 **Milestone Swap**
@@ -2013,27 +2034,6 @@ Caption: SL<green>MS</green>;
 | $b_1$ | CHECK | CHECK | REDX |
 | $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
-
-Strategy Credit:
-
-- XLII
-
-### SL<green>MSd</green>
-
-**For the milestone swapping details, read the above strategy, [SLMS](#milestone-swap). This strategy only modifies the variable buying strategies.**
-
-Class: strat_separated;
-Caption: SL<green>MSd</green>;
-
-| Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
-| ----------- | ------ | ------- | -------- |
-| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
-| $a_2$ | CHECK | REDX | REDX |
-| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
-| $b_2$ | CHECK | CHECK | REDX |
-| | | | [FOOT;]* Publication Multiplier |
-
-###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credit:
 
@@ -2309,144 +2309,6 @@ Caption: CSR2;
 
 ## Fractional Integration
 
-### FI<green>d</green>
-
-Class: strat;
-Caption: FI<green>d</green>;
-
-| | |
-| ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
-
-**Milestone routing information**
-
-This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
-
-### FI
-
-Class: strat;
-Caption: FI;
-
-| | |
-| ----- | ----- |
-| $q_1$ | CHECK |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | CHECK |
-
-**Milestone routing information**
-
-This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
-
-### FI<green>MSd</green>
-
-Class: strat;
-Caption: FI<green>MSd</green>;
-
-| | |
-| ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
-
-**Milestone swapping strategy**
-
-When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
-
-Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
-
-Class: strat;
-Caption: $q$ Ratio based on $q_1$lvl%$23$;
-
-| $q_1$ lvl%$23$ | $q$ Ratio |
-| -------------- | --------- |
-| 1-4 | 4 |
-| 5-9 | 3 |
-| 10-19 | 2.5 |
-| 0, 20-22 | 2 |
-
-Strategy Credits:
-
-- Playspout for the milestone swapping strategy
-
-### FI<green>MS</green>
-
-Class: strat;
-Caption: FI<green>MS</green>;
-
-| | |
-| ----- | ----- |
-| $q_1$ | CHECK |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | CHECK |
-
-**Milestone swapping strategy**
-
-When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
-
-Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
-
-Class: strat;
-Caption: $q$ Ratio based on $q_1$lvl%$23$;
-
-| $q_1$ lvl%$23$ | $q$ Ratio |
-| -------------- | --------- |
-| 1-4 | 4 |
-| 5-9 | 3 |
-| 10-19 | 2.5 |
-| 0, 20-22 | 2 |
-
-Strategy Credits:
-
-- Playspout for the milestone swapping strategy
-
-### FI<green>dPermaSwap</green>
-
-Class: strat;
-Caption: FI<green>dPermaSwap</green>;
-
-| | |
-| ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
-
-**PermaSwap strategy**
-
-Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
-
-Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
-
-### FI<green>PermaSwap</green>
-
-Class: strat;
-Caption: FI<green>PermaSwap</green>;
-
-| | |
-| ----- | ----- |
-| $q_1$ | CHECK |
-| $q_2$ | CHECK |
-| $K$ | CHECK |
-| $m$ | CHECK |
-| $n$ | CHECK |
-
-**PermaSwap strategy**
-
-Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
-
-Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
-
 ### FI<green>MSdPermaSwap</green>
 
 Class: strat;
@@ -2524,6 +2386,145 @@ Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ lev
 Strategy Credits:
 
 - Playspout for the milestone swapping strategy
+
+### FI<green>dPermaSwap</green>
+
+Class: strat;
+Caption: FI<green>dPermaSwap</green>;
+
+| | |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+
+**PermaSwap strategy**
+
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
+
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
+
+### FI<green>PermaSwap</green>
+
+Class: strat;
+Caption: FI<green>PermaSwap</green>;
+
+| | |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
+
+**PermaSwap strategy**
+
+Before reaching $e1076\rho$ in your publication, do not use the $3^{\text{rd}}$ level of the $g(x)$ milestone.
+
+Upon reaching $e1076\rho$, switch a milestone point into the $3^{\text{rd}}$ level of the $g(x)$ milestone, at the cost of resetting $q$.
+
+### FI<green>MSd</green>
+
+Class: strat;
+Caption: FI<green>MSd</green>;
+
+| | |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+
+**Milestone swapping strategy**
+
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
+
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
+
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
+
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
+
+Strategy Credits:
+
+- Playspout for the milestone swapping strategy
+
+### FI<green>MS</green>
+
+Class: strat;
+Caption: FI<green>MS</green>;
+
+| | |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
+
+**Milestone swapping strategy**
+
+When buying a new level of $q_2$, swap $n$ and $m$ milestones to $q_1$ exponent to build up $q$.
+
+Swap back to $m$ and $n$ when $q$ got multiplied by a ratio (since you started the swapping phase) depending on your $q_1$lvl%$23$:
+
+Class: strat;
+Caption: $q$ Ratio based on $q_1$lvl%$23$;
+
+| $q_1$ lvl%$23$ | $q$ Ratio |
+| -------------- | --------- |
+| 1-4 | 4 |
+| 5-9 | 3 |
+| 10-19 | 2.5 |
+| 0, 20-22 | 2 |
+
+Strategy Credits:
+
+- Playspout for the milestone swapping strategy
+
+### FI<green>d</green>
+
+Class: strat;
+Caption: FI<green>d</green>;
+
+| | |
+| ----- | ---------------------------------------------------- |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+
+**Milestone routing information**
+
+This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
+
+### FI
+
+Class: strat;
+Caption: FI;
+
+| | |
+| ----- | ----- |
+| $q_1$ | CHECK |
+| $q_2$ | CHECK |
+| $K$ | CHECK |
+| $m$ | CHECK |
+| $n$ | CHECK |
+
+**Milestone routing information**
+
+This strategy does not use the $3^{\text{rd}}$ level of the $g(x)$ milestone until you unlock the last milestone point at $e1150\rho$.
+
 
 ## Fractal Patterns
 
