@@ -18,7 +18,7 @@ $\tau$ = $\rho^{0.4}$ while EF has a $\tau$ conversion rate of $\tau$ = $\rho^{1
 
 ### Which Custom Theories (CTs) should I do?
 
-In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as t2, t4, or t6) so that you don't miss out on $\tau/hour$.
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as T2, T4, or T6) so that you don't miss out on $\tau/hour$.
 
 If you have time for active strategies, try to do the CT with the highest active $\tau/hour$, or you can chase a spike in $\tau/hour$, such as EF e50 $\rho$ or FP e95 $\rho$. You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)
 
@@ -231,7 +231,7 @@ This custom theory, along with Convergents to Square Root 2, were released at th
 
 $e^{i*\theta} = cos{\theta} + isin{\theta}$, where 'i' is the complex number.
 
-EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the $\rho$ to $\tau$ conversion for this theory is uniquely at $\rho^{1.6}$ rather than the usual $\rho^{0.4}$ meaning that less $\rho$ is needed to get an equivalent amount of $\tau$. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it is the fastest theory to e150 $\tau$ and has the largest instantaneous jump in $\tau$ out of all custom theories.
+EF is unique, along with FP, in that all the milestone paths are locked, so there's no choice in which milestones to take. This was deliberately done to prevent milestone swapping strategies and to balance the theory. Furthermore, the $\rho$ to $\tau$ conversion for this theory is uniquely at $\rho^{1.6}$ rather than the usual $\rho^{0.4}$ meaning that less $\rho$ is needed to get an equivalent amount of $\tau$. Due to the conversion rate, EF can feel extremely slow in comparison to other theories, but it has the largest instantaneous jump in $\tau$ out of all custom theories.
 
 #### EF Equation Description
 
