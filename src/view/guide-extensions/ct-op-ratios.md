@@ -104,11 +104,11 @@ Throughout this section, I will use the symbol $K$ to represent any constant hol
 ### WSP
 
 $$\begin{alignat*}{2}
-  \dot{q}& &=& K \\
-  \Rightarrow q& &=& Kt \\
+  \dot{q}& &=\,& K \\
+  \Rightarrow q& &=\,& Kt \\
   \dot{\rho} =& &K& \Pi q =K\Pi t \\
   \Rightarrow \rho =& &K& \Pi t^2 \\
-  OP& &=& 2
+  OP& &=\,& 2
 \end{alignat*}$$
 
 ### SL
@@ -246,11 +246,11 @@ $$OP \approx 1.137$$
 ### CSR2
 
 $$\begin{alignat*}{2}
-  \dot{q}& &=& K\Pi \\
-  \Rightarrow q& &=& K\Pi t \\
+  \dot{q}& &=\,& K\Pi \\
+  \Rightarrow q& &=\,& K\Pi t \\
   \dot{\rho} =& &K& \Pi q =K\Pi^2 t \\
   \Rightarrow \rho =& &K& \Pi^2 t^2 \\
-  OP& &=& 1
+  OP& &=\,& 1
 \end{alignat*}$$
 
 ### FI
@@ -295,7 +295,65 @@ $$OP = 4$$
 
 ### RZ
 
-TBA
+Since RZ also has multiple currencies, we'll follow the same steps as with EF. For the purpose of this study, $\zeta$ and $\dot{\zeta}$ values can be approximated as constants. The black hole has no effect on the overpush factor as the optimal $t$ to activate the black hole is roughly proportional to the publication time.
+
+$$\begin{alignat*}{1}
+\dot{\rho} &= K\Pi c_1^{1.25}c_2w_1t\\
+\Rightarrow \rho &= K \Pi c_1^{1.25}c_2w_1t^2\\
+\dot{\delta} &= K\Pi w_1w_2w_3\\
+\Rightarrow \delta &= K\Pi w_1w_2w_3t
+\end{alignat*}$$
+
+Let's express this system on its logarithmic form:
+
+$$\begin{alignat*}{1}
+\log{\rho} &= 1.25\log{c_1} + \log{c_2} + \log{w_1} + \log{\Pi} + 2\log{t} + K\\
+\log{\delta} &= \log{w_1} + \log{w_2} + \log{w_3} + \log{\Pi} + \log{t} + K
+\end{alignat*}$$
+
+We have:
+$$\begin{alignat*}{1}
+  \log{c_i} &\propto \log{\rho}\\
+  \log{w_i} &\propto \log{\delta}\\
+\end{alignat*}$$
+
+We can also ignore variables bought with $\rho$.
+
+$$\begin{alignat*}{5}
+C\log{\rho} - \log{w_1} &=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
+\left(1- \frac{\log{w_1} + \log{w_2} + \log{w_3}}{\log{\delta}}\right)\log{\delta} &=\,& \log{\Pi} &\,+& \log{t} &+ K
+\end{alignat*}$$
+
+Let's now compute how the variables we need scale with their currencies.
+
+- $w_1$ is a steowise variable of power 2, cycle length 8, following a **stepwise cost** of power $100^{1/3}$ and cycle length 6. Its power is given by: $\log{w_1} = \frac{\log{2}}{8}\cdot\frac{6}{\frac{1}{3}\log{100}}\cdot\delta = \frac{9}{8}\log{2}\cdot\log{\delta}$
+- $w_2$ is an exponential variable of power 2 and cost scaling 10. Its power is given by $\log{w_2}=\log{2}\cdot\log{\delta}$
+- $w_3$ is an exponential variable of power 2 and cost scaling $1e30$. Its power is given by $\log{w_3}=\frac{\log{2}}{30}\cdot\log{\delta}$
+
+Now we can substitute in the system:
+$$\begin{alignat*}{7}
+  C\log{\rho} &\,-\,& \frac{9}{8}\log{2}\log{\delta} &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
+  &&\left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K
+\end{alignat*}$$
+
+$$\begin{alignat*}{7}
+  C\log{\rho} &\,-\,& \frac{9}{8}\log{2}\log{\delta} &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
+  &&\left(1-\frac{259}{120}\log{2}\right)\log{\delta} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K
+\end{alignat*}$$
+
+Now if we add $\frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}$ times equation (2) to equation (1) we get:
+
+$$C\log{\rho} = \left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{\Pi} 
+    + \left(2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{t} + K$$
+
+We can now express RZ's OP factor:
+$$\begin{alignat*}{1}
+OP &= \frac{2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}} \\
+OP &= 1 + \frac{1}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}
+\end{alignat*}$$
+
+Finally,
+$$OP \approx 1.508$$
 
 ### MF
 
