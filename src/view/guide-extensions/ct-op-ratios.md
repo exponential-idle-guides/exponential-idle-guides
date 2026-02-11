@@ -244,10 +244,10 @@ For those who want to see what it looks like if we replace those $d_i$:
 
 $$
   OP = 1 + 
-    \begin{bmatrix}
+    \begin{bmatrix*}[l]
       4 + \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)} \\
       + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}
-    \end{bmatrix}^{-1}
+    \end{bmatrix*}^{-1}
 $$
 
 Finally,
