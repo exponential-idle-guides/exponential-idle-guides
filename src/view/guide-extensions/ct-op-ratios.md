@@ -226,8 +226,10 @@ $$\begin{alignat}{9}
 
 Now if we add $\frac{d_{12}}{d_{22}}$ times equation (2) and $\frac{d_{13}}{d_{33}}$ times equation (3) to equation (1) we get:
 
-$$C\log{\rho} = \left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{\Pi}
-+ \left(2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{t} + K$$
+$$\begin{alignat*}{2}
+  C\log{\rho} &=& &\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{\Pi} \\
+  &&+ &\left(2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{t} + K
+\end{alignat*}$$
 
 We can finally express EF's OP factor:
 
@@ -240,9 +242,13 @@ OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\
 
 For those who want to see what it looks like if we replace those $d_i$:
 
-$$OP = 1 + \left[4 + 
-  \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)}
-  + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}\right]^{-1}$$
+$$
+  OP = 1 + 
+    \begin{bmatrix}
+      4 + \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)} \\
+      + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}
+    \end{bmatrix}^{-1}
+$$
 
 Finally,
 
@@ -311,9 +317,11 @@ $$\begin{alignat*}{1}
 
 Let's express this system on its logarithmic form:
 
-$$\begin{alignat*}{1}
-\log{\rho} &= 1.25\log{c_1} + \log{c_2} + \log{w_1} + \log{\Pi} + 2\log{t} + K\\
-\log{\delta} &= \log{w_1} + \log{w_2} + \log{w_3} + \log{\Pi} + \log{t} + K
+$$\begin{alignat*}{2}
+  \log{\rho} &=& &1.25\log{c_1} + \log{c_2} + \log{w_1}\\
+    &&+ &\log{\Pi} + 2\log{t} + K\\
+  \log{\delta} &=& &\log{w_1} + \log{w_2} + \log{w_3}\\
+    &&+ &\log{\Pi} + \log{t} + K
 \end{alignat*}$$
 
 We have:
@@ -337,20 +345,20 @@ Let's now compute how the variables we need scale with their currencies.
 
 Now we can substitute in the system:
 
-$$\begin{alignat*}{7}
-  C\log{\rho} &\,-\,& \frac{9}{8}\log{2}\log{\delta} &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
-  &&\left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K
-\end{alignat*}$$
-
-$$\begin{alignat*}{7}
-  C\log{\rho} &\,-\,& \frac{9}{8}\log{2}\log{\delta} &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
-  &&\left(1-\frac{259}{120}\log{2}\right)\log{\delta} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K
-\end{alignat*}$$
+$$
+\begin{alignat}{7}
+  -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}  &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \nonumber\\
+  \left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &&&\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K \nonumber\\
+  -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}&\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \tag{1}\\
+  \left(1-\frac{259}{120}\log{2}\right)\log{\delta} &&&\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K \tag{2}
+\end{alignat}$$
 
 Now if we add $\frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}$ times equation (2) to equation (1) we get:
 
-$$C\log{\rho} = \left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{\Pi} 
-    + \left(2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{t} + K$$
+$$\begin{alignat*}{2}
+  C\log{\rho} &=& &\left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{\Pi} \\
+    &&+ &\left(2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{t} + K
+\end{alignat*}$$
 
 We can now express RZ's OP factor:
 
