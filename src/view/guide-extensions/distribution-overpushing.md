@@ -21,9 +21,9 @@ We know that in Theory 1, the $c_4$ term dominates late game:
 
 $\dot{\rho} = KS\rho^{0.3}$
 
-$\rho = (KSt)^{0.7}$
+$\rho = (KSt)^{1/0.7}$
 
-Despite the 0.7 exponent, we can conclude that $\sigma$ and time affect $\rho$ equally.
+Despite the 1/0.7 exponent, we can conclude that $\sigma$ and time affect $\rho$ equally.
 
 ### Theory 2
 
@@ -127,14 +127,14 @@ These conclusions imply that for Theory 2 for example, increasing $\sigma$ hardl
 
 From previous workings, the overpushing coefficients are:
 
-Class: strat;
+Class: breakdown;
 Caption: Overpush Coefficients;
 
-|    |      |    |   |
-| -- | ---- | -- | - |
-| T1 | 1    | T5 | 1 |
-| T2 | 10.2 | T6 | 3 |
-| T3 | 1    | T7 | 1 |
-| T4 | 1.5  | T8 | 1 |
+|    |      |                      |   |
+| -- | ---- | -------------------- | - |
+| T1 | 1    | [class="bheader";]T5 | 1 |
+| T2 | 10.2 | [class="bheader";]T6 | 3 |
+| T3 | 1    | [class="bheader";]T7 | 1 |
+| T4 | 1.5  | [class="bheader";]T8 | 1 |
 
 This means that for 'perfect' overpush, we should push the maximum of {$\dot{\tau}_1$, $10.2*\dot{\tau}_2$, $\dot{\tau}_3$, $1.5*\dot{\tau}_4$, $\dot{\tau}_5$, $3*\dot{\tau}_6$, $\dot{\tau}_7$, $\dot{\tau}_8$}. This will maximize long term $\tau$ gain, assuming everything else is equal.
