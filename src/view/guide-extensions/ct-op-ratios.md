@@ -163,9 +163,10 @@ $$\begin{alignat*}{1}
 Now, let's express the system in logarithmic form, to turn it into a linear system:
 
 $$\begin{alignat*}{1}
-  \log{\rho} &= K + 1.5(\log{a_1} + \log{a_2} + \log{a_3}) + \log{q_1} + \log{q_2} + 2\log{\Pi} + 2.5\log{t}\\
-  \log{R} &= K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
-  \log{I} &= K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
+  \log{\rho} =\,& K + 1.5(\log{a_1} + \log{a_2} + \log{a_3})\\
+  &+ \log{q_1} + \log{q_2} + 2\log{\Pi} + 2.5\log{t}\\
+  \log{R} =\,& K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
+  \log{I} =\,& K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
 \end{alignat*}$$
 
 We have:
@@ -175,36 +176,27 @@ $$\begin{alignat*}{1}
   \log{a_3}, \log{c_1}, \log{c_2} &\propto \log{I}\\
 \end{alignat*}$$
 
-Therefore, there exists a 3x3 matrix $A$ such that:
-$$AP = M\log{\Pi} + T\log{t}$$
 
-With:
-$$P = \begin{bmatrix} \log{\rho} \\ \log{R} \\ \log{I} \end{bmatrix},
-M = \begin{bmatrix} 2 \\ 1 \\ 1 \end{bmatrix},
-T = \begin{bmatrix} 2.5 \\ 1 \\ 1 \end{bmatrix}$$
+For the purpose of this study, we can ignore variables bought with $\rho$.
 
-Therefore:
-$$P = A^{-1}M\log{\Pi} + A^{-1}T\log{t}$$
+$$\begin{alignat*}{1}
+  C\log{\rho} &= K + 1.5(\log{a_2} + \log{a_3}) + 2\log{\Pi} + 2.5\log{t}\\
+  \log{R} &= K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
+  \log{I} &= K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
+\end{alignat*}$$
 
-To find EF's OP factor, we need an expression of the form $\log{\rho} = \alpha\log{\Pi} + \beta\log{t}$. Therefore, we need to calculate the first coefficient of $A^{-1}M$ and $A^{-1}T$. To do that, we need to express, then inverse $A$. Note that, since we only care about the first coefficient, we only need to calculate the top row of $A^{-1}$.
+$$\begin{alignat*}{5}
+  C\log{\rho} - 1.5\log{a_2} - 1.5\log{a_3} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  \left(1 - 2\frac{\log{b_1} + \log{b_2}}{\log{R}}\right)\log{R} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  \left(1 - 2\frac{\log{c_1} + \log{c_2}}{\log{I}}\right)\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+\end{alignat*}$$
 
-To compute $A^{-1}$, we can use the [adjugate of A](https://en.wikipedia.org/wiki/Adjugate_matrix): $A^{-1} = \frac{1}{\det{A}}\text{adj}{A}$. The equation becomes:
-$$P = \frac{1}{\det{A}}\text{adj}{A}\cdot M\log{\Pi} + \frac{1}{\det{A}}\text{adj}{A}\cdot T\log{t} \qquad (1)$$
-
-Since we only care about the first row of the adjugate, we only the first column of the cofactor matrix, therefore we don't need the first column of $A$.
-
-From the previous system, we have:
-
-$$A = \begin{bmatrix}
-* & -1.5\frac{\log{a_2}}{\log{R}} & -1.5\frac{\log{a_3}}{\log{I}} \\
-* & 1 - 2\frac{\log{b_1} + \log{b_2}}{\log{R}} & 0 \\
-* & 0 & 1 - 2\frac{\log{c_1} + \log{c_2}}{\log{I}}
-\end{bmatrix}$$
+To find EF's OP factor, we need an expression of the form $\log{\rho} = \alpha\log{\Pi} + \beta\log{t}$. Then, the OP factor will be given by $\frac{\beta}{\alpha}$.
 
 Let's now compute how the variables we need scale with their currencies. To do so, we use this model:
 
-- An exponential variable $u$ of power $p$ and cost scaling $c$, bought with currency $C$ is approximated as $\log{u} = \frac{\log{p}}{\log{c}} \cdot \log{C}$
-- A stepwise variable $v$ of power $p$, cycle length $n$ and cost scaling $c$, bought with currency $C$ is approximated as $\log{v} = \frac{\log{p}}{n\log{c}} \cdot \log{C}$
+- An exponential variable $u$ of power $p$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{u} = \frac{\log{p}}{\log{c}} \cdot \log{P}$
+- A stepwise variable $v$ of power $p$, cycle length $n$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{v} = \frac{\log{p}}{n\log{c}} \cdot \log{P}$
 
 Therefore we can calculate the following:
 
@@ -215,46 +207,29 @@ Therefore we can calculate the following:
 - $c_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{I}$
 - $c_2$ is an exponential variable of power 1.125 and cost scaling 2: $\log{c_2} = \frac{\log{1.125}}{\log{2}} \cdot \log{I}$
 
-Now we can substitute in $A$:
-$$A = \begin{bmatrix}
-* & -\frac{1.5\log{40}}{22\log{2}} & -\frac{1.5}{2.2} \\
-* & 1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right) & 0 \\
-* & 0 & 1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)
-\end{bmatrix}$$
+Now we can substitute in the system:
+$$\begin{alignat*}{5}
+  C\log{\rho} - \frac{1.5\log{40}}{22\log{2}}\log{R} - \frac{1.5}{2.2}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)\right]\log{R} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)\right]\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+\end{alignat*}$$
 
 These expressions will be heavy to manipulate so let's set it to:
-$$A = \begin{bmatrix}
-* & -d_{12} & -d_{13} \\
-* & d_{22} & 0 \\
-* & 0 & d_{33}
-\end{bmatrix}$$
+$$\begin{alignat}{9}
+  C\log{\rho} &\,-\,& d_{12}\log{R} &\,-\,& d_{13}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  &&d_{22}\log{R} && &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  &&&&d_{33}\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+\end{alignat}$$
 
-The cofactor matrix is then given by:
-$$\begin{bmatrix}
-d_{22}d_{33} & * & * \\
-d_{12}d_{33} & * & * \\
-d_{13}d_{22} & * & *
-\end{bmatrix}$$
+Now if we add $\frac{d_{12}}{d_{22}}$ times equation (2) and $\frac{d_{13}}{d_{33}}$ times equation (3) to equation (1) we get:
 
-Finally, the adjugate matrix is given by:
-$$\text{adj}{A} = \begin{bmatrix}
-d_{22}d_{33} & d_{12}d_{33} & d_{13}d_{22} \\
-* & * & * \\
-* & * & *
-\end{bmatrix}$$
-
-Now:
-$$\text{adj}{A}\cdot M = \begin{bmatrix} 2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22} \\ * \\ * \end{bmatrix}$$
-$$\text{adj}{A}\cdot T = \begin{bmatrix} 2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22} \\ * \\ * \end{bmatrix}$$
-
-Let's substitute these results in the first row of the matrix equatio (1):
-$$\log{\rho} = \frac{1}{\det{A}}\left[(2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22})\log{\Pi} 
-        + (2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22})\log{t} \right]$$
+$$C\log{\rho} = \left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{\Pi}
++ \left(2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{t} + K$$
 
 We can finally express EF's OP factor:
 $$\begin{alignat*}{1}
-OP &= \frac{2.5d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}}{2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}} \\
-OP &= 1 + \frac{0.5d_{22}d_{33}}{2d_{22}d_{33} + d_{12}d_{33} + d_{13}d_{22}} \\
+OP &= \frac{2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
+OP &= 1 + \frac{0.5}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
 OP &= 1 + \frac{1}{2\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{23}}\right)} \\
 OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\
 \end{alignat*}$$
