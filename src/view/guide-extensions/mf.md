@@ -3,7 +3,7 @@ title: "From Complicated to Simple, From Bruteforce to General"
 subtitle: "A New Direction to Approach MF CT"
 author: "Hackzzzzzz"
 contributors: "the Amazing Community and those in the acknowledgements at bottom."
-order: 7
+order: 8
 draft: true
 tags: T9+ Research
 ---
@@ -281,17 +281,19 @@ The above investigations illustrate the fact that a generalized reset pattern ac
 
 By recalling the formula of MF CT, one can simplify the formula for rho dot as follow,
 
-$$\begin{aligned}
-  \dot{\rho} &= Cc_1c_2\omega^\alpha x^\beta v^\gamma &\\
+$$\begin{gather*}
+  \begin{aligned}
+    \dot{\rho} &= Cc_1c_2\omega^\alpha x^\beta v^\gamma &\\
 
-  &= Cc_1c_2 \left(\frac{q}{m}B\right)^\alpha \left(v_x t_s\right)^\beta \left(\sqrt{v_x ^{2} + v_y ^{2} + v_z ^{2}}\right)^\gamma &\\
+    &= Cc_1c_2 \left(\frac{q}{m}B\right)^\alpha \left(v_x t_s\right)^\beta \left(\sqrt{v_x ^{2} + v_y ^{2} + v_z ^{2}}\right)^\gamma &\\
 
-  &= C\left(\frac{q}{m}\right)^\alpha c_1c_2 \left(\mu_0I\delta\right)^\alpha \left(10^{-20} v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}} &\\
+    &= C\left(\frac{q}{m}\right)^\alpha c_1c_2 \left(\mu_0I\delta\right)^\alpha \left(10^{-20} v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}} &\\
 
-  &= C\left(\frac{q\mu_0}{m}\right)^\alpha c_1c_2\left(10^{-15} a_2\right)^\alpha \delta^\alpha \left(10^{-20} v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}} &\\
+    &= C\left(\frac{q\mu_0}{m}\right)^\alpha c_1c_2\left(10^{-15} a_2\right)^\alpha \delta^\alpha \left(10^{-20} v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}} &\\
 
-  &= \left[C\left(10^{-15}\right)^\alpha \left(10^{-20}\right)^\beta \left(\frac{q\mu_0}{m}\right)^\alpha\right]c_1c_2a_2^\alpha \delta^\alpha \left(v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}}
-\end{aligned}$$
+    &= \left[C\left(10^{-15}\right)^\alpha \left(10^{-20}\right)^\beta \left(\frac{q\mu_0}{m}\right)^\alpha\right]c_1c_2a_2^\alpha \delta^\alpha \left(v_1v_2\right)^\beta t_s^\beta \left(10^{-20} v_1v_2 + 10^{-18} v_3v_4\right)^{\frac{\gamma}{2}}
+  \end{aligned}
+\end{gather*}$$
 
 Where $\alpha$, $\beta$, and $\gamma$ are exponents that only changes when corresponding milestones are used.
 
