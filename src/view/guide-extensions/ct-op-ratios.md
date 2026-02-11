@@ -451,3 +451,33 @@ $$\begin{alignat*}{1}
   OP &= 2+\frac{60}{\pi^2}\\
   OP &\approx 8.079
 \end{alignat*}$$
+
+## Overpushing Coefficients
+
+From previous workings, the approximate overpushing coefficients of official custom theories are:
+
+Class: breakdown;
+last_row: false;
+
+|      |      |                       | Overpushing Coefficients |
+| ---- | ---- | --------------------- | ---- |
+| WSP  | 2    | [class="bheader";]FP  | 4    |
+| SL   | 2.17 | [class="bheader";]RZ  | 1.51 |
+| EF   | 1.14 | [class="bheader";]MF  | 8.8  |
+| CSR2 | 1    | [class="bheader";]BaP | 8.08 |
+| FI   | 4.91 |                       |      |
+
+Now, let's calculate $e^{OP}$ for each CT, which gives an estimate on the optimal publication multiplier of these CTs
+
+Class: breakdown;
+last_row: false;
+
+|      |      |                       | Pub Multi |
+| ---- | ---- | --------------------- | ---- |
+| WSP  | 7.39 | [class="bheader";]FP  | 54.6 |
+| SL   | 8.79 | [class="bheader";]RZ  | 4.52 |
+| EF   | 3.12 | [class="bheader";]MF  | 6634 |
+| CSR2 | 2.72 | [class="bheader";]BaP | 3227 |
+| FI   | 136  |                       |      |
+
+As we can see, the expected publication multipliers from the model are close to the results given by the sim.
