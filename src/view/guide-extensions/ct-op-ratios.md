@@ -170,6 +170,7 @@ $$\begin{alignat*}{1}
 \end{alignat*}$$
 
 We have:
+
 $$\begin{alignat*}{1}
   \log{a_1}, \log{q_1}, \log{q_2} &\propto \log{\rho}\\
   \log{a_2}, \log{b_1}, \log{b_2} &\propto \log{R}\\
@@ -195,19 +196,20 @@ To find EF's OP factor, we need an expression of the form $\log{\rho} = \alpha\l
 
 Let's now compute how the variables we need scale with their currencies. To do so, we use this model:
 
-- An exponential variable $u$ of power $p$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{u} = \frac{\log{p}}{\log{c}} \cdot \log{P}$
-- A stepwise variable $v$ of power $p$, cycle length $n$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{v} = \frac{\log{p}}{n\log{c}} \cdot \log{P}$
+- An exponential variable $u$ of power $p$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{u} = \frac{\log{p}}{\log{c}} \cdot \log{P}$.
+- A stepwise variable $v$ of power $p$, cycle length $n$ and cost scaling $c$, bought with currency $P$ is approximated as $\log{v} = \frac{\log{p}}{n\log{c}} \cdot \log{P}$.
 
 Therefore we can calculate the following:
 
-- $a_2$ is a stepwise variable of power 40, cycle length 10 and cost scaling $2^{2.2}$: $\log{a_2} = \frac{\log{40}}{22\log{2}} \cdot \log{R}$
-- $a_3$ is an exponential variable of power 2 and cost scaling $2^{2.2}$: $\log{a_3} = \frac{1}{2.2} \cdot \log{I}$
-- $b_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{R}$
-- $b_2$ is an exponential variable of power 1.12 and cost scaling 2: $\log{b_2} = \frac{\log{1.12}}{\log{2}} \cdot \log{R}$
-- $c_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{I}$
-- $c_2$ is an exponential variable of power 1.125 and cost scaling 2: $\log{c_2} = \frac{\log{1.125}}{\log{2}} \cdot \log{I}$
+- $a_2$ is a stepwise variable of power 40, cycle length 10 and cost scaling $2^{2.2}$: $\log{a_2} = \frac{\log{40}}{22\log{2}} \cdot \log{R}$.
+- $a_3$ is an exponential variable of power 2 and cost scaling $2^{2.2}$: $\log{a_3} = \frac{1}{2.2} \cdot \log{I}$.
+- $b_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{R}$.
+- $b_2$ is an exponential variable of power 1.12 and cost scaling 2: $\log{b_2} = \frac{\log{1.12}}{\log{2}} \cdot \log{R}$.
+- $c_1$ is a stepwise variable of power 2, cycle length 10 and cost scaling 200: $\log{b_1} = \frac{\log{2}}{10\log{200}} \cdot \log{I}$.
+- $c_2$ is an exponential variable of power 1.125 and cost scaling 2: $\log{c_2} = \frac{\log{1.125}}{\log{2}} \cdot \log{I}$.
 
 Now we can substitute in the system:
+
 $$\begin{alignat*}{5}
   C\log{\rho} - \frac{1.5\log{40}}{22\log{2}}\log{R} - \frac{1.5}{2.2}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
   \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)\right]\log{R} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
@@ -215,6 +217,7 @@ $$\begin{alignat*}{5}
 \end{alignat*}$$
 
 These expressions will be heavy to manipulate so let's set it to:
+
 $$\begin{alignat}{9}
   C\log{\rho} &\,-\,& d_{12}\log{R} &\,-\,& d_{13}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
   &&d_{22}\log{R} && &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
@@ -227,6 +230,7 @@ $$C\log{\rho} = \left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\l
 + \left(2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{t} + K$$
 
 We can finally express EF's OP factor:
+
 $$\begin{alignat*}{1}
 OP &= \frac{2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
 OP &= 1 + \frac{0.5}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
@@ -236,11 +240,12 @@ OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\
 
 For those who want to see what it looks like if we replace those $d_i$:
 
-$$OP = 1 + \frac{1}{4 + 
+$$OP = 1 + \left[4 + 
   \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)}
-  + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}}$$
+  + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}\right]^{-1}$$
 
 Finally,
+
 $$OP \approx 1.137$$
 
 ### CSR2
@@ -326,11 +331,12 @@ C\log{\rho} - \log{w_1} &=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
 
 Let's now compute how the variables we need scale with their currencies.
 
-- $w_1$ is a steowise variable of power 2, cycle length 8, following a **stepwise cost** of power $100^{1/3}$ and cycle length 6. Its power is given by: $\log{w_1} = \frac{\log{2}}{8}\cdot\frac{6}{\frac{1}{3}\log{100}}\cdot\delta = \frac{9}{8}\log{2}\cdot\log{\delta}$
-- $w_2$ is an exponential variable of power 2 and cost scaling 10. Its power is given by $\log{w_2}=\log{2}\cdot\log{\delta}$
-- $w_3$ is an exponential variable of power 2 and cost scaling $1e30$. Its power is given by $\log{w_3}=\frac{\log{2}}{30}\cdot\log{\delta}$
+- $w_1$ is a steowise variable of power 2, cycle length 8, following a **stepwise cost** of power $100^{1/3}$ and cycle length 6. Its power is given by: $\log{w_1} = \frac{\log{2}}{8}\cdot\frac{6}{\frac{1}{3}\log{100}}\cdot\delta = \frac{9}{8}\log{2}\cdot\log{\delta}$.
+- $w_2$ is an exponential variable of power 2 and cost scaling 10. Its power is given by $\log{w_2}=\log{2}\cdot\log{\delta}$.
+- $w_3$ is an exponential variable of power 2 and cost scaling $1e30$. Its power is given by $\log{w_3}=\frac{\log{2}}{30}\cdot\log{\delta}$.
 
 Now we can substitute in the system:
+
 $$\begin{alignat*}{7}
   C\log{\rho} &\,-\,& \frac{9}{8}\log{2}\log{\delta} &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
   &&\left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K
@@ -347,12 +353,14 @@ $$C\log{\rho} = \left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\ri
     + \left(2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{t} + K$$
 
 We can now express RZ's OP factor:
+
 $$\begin{alignat*}{1}
 OP &= \frac{2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}} \\
-OP &= 1 + \frac{1}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}
+OP &= 1 + \left[1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right]^{-1}
 \end{alignat*}$$
 
 Finally,
+
 $$OP \approx 1.508$$
 
 ### MF
