@@ -26,9 +26,9 @@ const transformExcludes = [
   "_site/sitemap.xml"
 ];
 
-const { eylanding } = require('./src/scripts/preprocessing/eylanding');
-const { color_tags } = require('./src/scripts/preprocessing/color-tags');
-const { markdown_tables } = require('./src/scripts/preprocessing/markdown-tables');
+const { eylanding } = require('./preprocessing/eylanding');
+const { color_tags } = require('./preprocessing/color-tags');
+const { markdown_tables } = require('./preprocessing/markdown-tables');
 
 function ct_creation_post_sort(a, b) {
   const has_tag = (post, tag) => post.data.tags.includes(tag);

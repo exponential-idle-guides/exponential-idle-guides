@@ -1,4 +1,4 @@
-import {remove_char} from '../remove-char.js';
+import {remove_char} from '../src/scripts/remove-char.js';
 
 const name_lookup = {
   'index': {name: 'General Guide', path: 'index'},
