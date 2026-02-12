@@ -18,7 +18,7 @@ const full_skiplist = {
 }
 // add "" index check
 
-const closed_char = '\u{25B6}\u{FE0E}'; // Necessary modifier to specify the text version of this charactr
+const closed_char = '\u{25B6}\u{FE0E}'; // Necessary modifier to specify the text version of this character
 const open_char = '\u{25BC}';
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
@@ -322,13 +322,13 @@ function url_collapsibles(url) {
   const index = url_header.match(/-[1-9]$/) === null ? 0 : Number(url_header.match(/[1-9]$/)[0]);
 
   function url_h_search(search) {
-    let canidates; let final_h;
+    let candidates; let final_h;
     for (const [h, dict] of Object.entries(h_dict)) {
       final_h = h;
-      canidates = dict.indexes.filter((i) => dict.ids[dict.indexes.indexOf(i)].replaceAll(new RegExp('\u00AD', 'g'),'').match(new RegExp(search + '$')) !== null);
-      if(canidates.length){break};
+      candidates = dict.indexes.filter((i) => dict.ids[dict.indexes.indexOf(i)].replaceAll(new RegExp('\u00AD', 'g'),'').match(new RegExp(search + '$')) !== null);
+      if(candidates.length){break};
     }
-    return [canidates, final_h];
+    return [candidates, final_h];
   }
 
   let s = url_h_search(url_header.replace(/-[1-9]$/,''));

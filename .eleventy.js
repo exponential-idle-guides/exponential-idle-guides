@@ -12,6 +12,8 @@ const hypher = new Hypher(english);
 
 const { JSDOM } = require('jsdom');
 
+const cheerio = require('cheerio');
+
 const util = require('util');
 
 const pluginTOC = require('eleventy-plugin-toc');
@@ -23,6 +25,10 @@ const _ = require("lodash");
 const transformExcludes = [
   "_site/sitemap.xml"
 ];
+
+const { eylanding } = require('./src/scripts/preprocessing/eylanding');
+const { color_tags } = require('./src/scripts/preprocessing/color-tags');
+const { markdown_tables } = require('./src/scripts/preprocessing/markdown-tables');
 
 function ct_creation_post_sort(a, b) {
   const has_tag = (post, tag) => post.data.tags.includes(tag);
@@ -88,11 +94,13 @@ module.exports = config => {
       allowedAttributes: []
     })
   
+  /*
   // Wrap inline LaTeX ($...$)
   const inline_latex = md.renderer.rules.math_inline;
   md.renderer.rules.math_inline = (tokens, idx, options, env, slf) => {
     return `<span class="math-inline">${inline_latex(tokens, idx, options, env, slf)}</span>`;
   };
+  */
 
   // Wrap block LaTeX ($$...$$)
   const block_latex = md.renderer.rules.math_block;
@@ -100,16 +108,12 @@ module.exports = config => {
     return `<span class="math-block">${block_latex(tokens, idx, options, env, slf)}</span>`;
   };
 
-  config.setLibrary(
-    "md",
-    md
-  );
+  config.setLibrary("md", md);
 
   config.setDataDeepMerge(true);
 
   config.addTransform("hyphenation", (content, outputPath) => {
     if (!transformExcludes.includes(outputPath)) {
-
       const dom = new JSDOM(content);
       const document = dom.window.document;
       const NodeFilter = dom.window.NodeFilter;
@@ -128,6 +132,49 @@ module.exports = config => {
       return content;
     }
   });
+
+  config.addTransform("color-tags", function(content, outputPath) {
+    if (!transformExcludes.includes(outputPath) 
+        && outputPath 
+        && (outputPath.endsWith(".html")
+          || outputPath.endsWith(".md")
+          || outputPath.endsWith(".njk")
+        )
+    ) {
+      return color_tags(cheerio.load(content))
+    } else {
+      return content;
+    }
+  });
+
+  config.addTransform("eylanding", function(content, outputPath) {
+    if (!transformExcludes.includes(outputPath) 
+        && outputPath 
+        && (outputPath.endsWith(".html")
+          || outputPath.endsWith(".md")
+          || outputPath.endsWith(".njk")
+        )
+    ) {    
+      return eylanding(cheerio.load(content));
+    } else {
+      return content;
+    }
+  });
+
+  config.addTransform("markdown-tables", function(content, outputPath) {
+    if (!transformExcludes.includes(outputPath) 
+        && outputPath 
+        && (outputPath.endsWith(".html")
+          || outputPath.endsWith(".md")
+          || outputPath.endsWith(".njk")
+        )
+    ) {    
+      return markdown_tables(cheerio.load(content));
+    } else {
+      return content;
+    }
+  });
+  
   
   config.addFilter("slug", s =>
     s !== undefined ?

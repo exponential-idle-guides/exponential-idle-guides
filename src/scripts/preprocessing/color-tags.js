@@ -7,9 +7,12 @@ const tag_colors = {
   "bw": "color:var(--black-white)"
 };
 
-Object.keys(tag_colors).forEach((key) => {
-  $(key).each(function() {
-    $(this).attr("style",tag_colors[key] + " !important;");
-    $(this).changeElementType("span");
-  })
-});
+export function color_tags($){
+  Object.keys(tag_colors).forEach((key) => {
+    $(key).each(function() {
+      $(this).attr("style",tag_colors[key] + " !important;");
+      this.tagName = 'span';
+    })
+  });
+  return $.html()
+}
