@@ -5,3 +5,12 @@
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
+.math-inline, .math-block {
+  display: inline-block;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  vertical-align: middle;
+  padding: 2px;
+}

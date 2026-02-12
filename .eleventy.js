@@ -78,17 +78,31 @@ module.exports = config => {
   config.addPlugin(pluginTOC)
   config.addPlugin(pluginNestingTOC)
 
+  const md = markdownIt(markdownItOptions)
+    .use(markdownItAnchor, markdownItAnchorOptions)
+    .use(require('markdown-it-mathjax3'))
+    .use(require('markdown-it-footnote'))
+    .use(markdownItAttrs, {
+      leftDelimiter: '{',
+      rightDelimiter: '}',
+      allowedAttributes: []
+    })
+  
+  // Wrap inline LaTeX ($...$)
+  const inline_latex = md.renderer.rules.math_inline;
+  md.renderer.rules.math_inline = (tokens, idx, options, env, slf) => {
+    return `<span class="math-inline">${inline_latex(tokens, idx, options, env, slf)}</span>`;
+  };
+
+  // Wrap block LaTeX ($$...$$)
+  const block_latex = md.renderer.rules.math_block;
+  md.renderer.rules.math_block = (tokens, idx, options, env, slf) => {
+    return `<span class="math-block">${block_latex(tokens, idx, options, env, slf)}</span>`;
+  };
+
   config.setLibrary(
     "md",
-    markdownIt(markdownItOptions)
-      .use(markdownItAnchor, markdownItAnchorOptions)
-      .use(require('markdown-it-mathjax3'))
-      .use(require('markdown-it-footnote'))
-      .use(markdownItAttrs, {
-        leftDelimiter: '{',
-        rightDelimiter: '}',
-        allowedAttributes: []
-      })
+    md
   );
 
   config.setDataDeepMerge(true);
