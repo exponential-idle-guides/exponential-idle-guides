@@ -339,7 +339,7 @@ C\log{\rho} - \log{w_1} &=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
 
 Let's now compute how the variables we need scale with their currencies.
 
-- $w_1$ is a stepwise variable of power 2, cycle length 8, following a **stepwise cost** of power $100^{1/3}$ and cycle length 6. Its power is given by: $\log{w_1} = \frac{\log{2}}{8}\cdot\frac{6}{\frac{1}{3}\log{100}}\cdot\delta = \frac{9}{8}\log{2}\cdot\log{\delta}$.
+- $w_1$ is a stepwise variable of power 2, cycle length 8, following a **stepwise cost** of power $100^{1/3}$ and cycle length 6. Its power is given by: $\log{w_1} = \frac{\log{2}}{8}\cdot\frac{6}{\frac{1}{3}\log{100}}\cdot\log{\delta} = \frac{9}{8}\log{2}\cdot\log{\delta}$.
 - $w_2$ is an exponential variable of power 2 and cost scaling 10. Its power is given by $\log{w_2}=\log{2}\cdot\log{\delta}$.
 - $w_3$ is an exponential variable of power 2 and cost scaling $1e30$. Its power is given by $\log{w_3}=\frac{\log{2}}{30}\cdot\log{\delta}$.
 
