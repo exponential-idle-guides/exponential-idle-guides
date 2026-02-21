@@ -18,11 +18,11 @@ $\tau$ = $\rho^{0.4}$ while EF has a $\tau$ conversion rate of $\tau$ = $\rho^{1
 
 ### Which Custom Theories (CTs) should I do?
 
-In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as T2, T4, or T6) so that you don't miss out on $\tau/hour$.
+In general, you want to be as efficient as possible since R9 does not affect custom theories. If you cannot be active, try not to do an active theory or do an active strategy. Some custom theories are more active than normal theories and it is highly suggested that if you are doing active strategy for a Custom theory (SL or FI before all milestones, MF, CSR2, WSP, or early FP) that you do an idle main theory (such as T2, T4, or T6) so that you don't miss out on $\tau/\text{hour}$.
 
-If you have time for active strategies, try to do the CT with the highest active $\tau/hour$, or you can chase a spike in $\tau/hour$, such as EF e50 $\rho$ or FP e95 $\rho$. You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)
+If you have time for active strategies, try to do the CT with the highest active $\tau/\text{hour}$, or you can chase a spike in $\tau/\text{hour}$, such as EF e50 $\rho$ or FP e95 $\rho$. You can check this with [the sim.](https://exponential-developers.github.io/sim-3.0/)
 
- For idle time, do the one with the highest idle $\tau/hour$, (or the longest publication time if you're doing overnights), with preference toward EF, SL, BaP, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 $\tau/hour$ and CSR2 also has 2 $\tau/hour$, ideally we would pick SL. The reason we prefer SL, EF, FP, FI and BaP is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.
+ For idle time, do the one with the highest idle $\tau/\text{hour}$, (or the longest publication time if you're doing overnights), with preference toward EF, SL, BaP, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 $\tau/\text{hour}$ and CSR2 also has 2 $\tau/\text{hour}$, ideally we would pick SL. The reason we prefer SL, EF, FP, FI and BaP is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.
 
 ![CT Rate vs. τ](/images/ct_rate_graph.png)
 
@@ -326,9 +326,9 @@ For the second line, both the variable $c_2$ and its exponents are from mileston
 
 The third and fourth lines are recurrence relations on $N_m$ and $D_m$. This means that the current value of $N_m$ and $D_m$ depend on their previous values. We start with $N_0$ = 1, $N_1$ = 3. The equation will then read as:
 
-$N_2 = 2N_1 + N_0 -> N_2 = 2 x 3 + 1 = 7$.
+$N_2 = 2N_1 + N_0 -> N_2 = 2 \times 3 + 1 = 7$.
 
-Then $N_3 = 2N_2 + N_1 -> 2 x 7 + 3 = 17$.
+Then $N_3 = 2N_2 + N_1 -> 2 \times 7 + 3 = 17$.
 
 Similar logic is applied to $D_m$ equations.
 
@@ -694,7 +694,7 @@ FP Guide written by Snaeky, Hotab and Mathis S.
 
 This Custom Theory was the first solo launch CT since SL (has it really been over 2 years!). RZ is a very fast CT with the current fastest completion time estimated under 70 days (down to just over 50 days)! The theory follows the Zeta function over the critical line. Rumors say that reaching 1e1500 will be a proof of the Riemann Hypothesis, or if you prove it yourself, we will just give you the $\rho$.
 
-Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 $\rho$ due to its short publications. It also has a milestone swapping phase from e50 to e400 $\rho$. After e600, the entire dynamic of the theory changes with the inclusion of the black hole.
+Its strategies range a lot in comparison to other theories, however, RZ is not an idle theory at first and you must be active before about e700 $\rho$ due to its short publications. It also has a milestone swapping phase from e50 to e400 $\rho$. After e600 $\rho$, the entire dynamic of the theory changes with the inclusion of the black hole.
 
 #### RZ Equation Description
 
@@ -855,7 +855,7 @@ last_row: false;
 
 **Keep in mind that strategies are still under development and could change in the future.**
 
-MF is the only theory that does not have a strictly positive rhodot. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
+MF is the only custom theory that does not have a strictly positive $\dot{\rho}$ and the overall theory with the largest spikes in negative $\dot{\rho}$. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
 
 ![MF log10(ρdot) throughout a publication](/images/mf/mf_rates.png)
 
