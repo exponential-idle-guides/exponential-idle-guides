@@ -855,7 +855,7 @@ last_row: false;
 
 **Keep in mind that strategies are still under development and could change in the future.**
 
-MF is the only custom theory that does not have a strictly positive $\dot{\rho}$ and the overall theory with the largest spikes in negative $\dot{\rho}$. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
+MF is the only custom theory that does not have a strictly positive $\dot{\rho}/\text{hour}$ and the overall theory with the largest spikes in negative $\dot{\rho}/\text{hour}$. Rates during every publish will NOT be consistently growing. A normal publish looks like this:
 
 ![MF log10(ρdot) throughout a publication](/images/mf/mf_rates.png)
 
