@@ -29,6 +29,7 @@ const transformExcludes = [
 const { eylanding } = require('./preprocessing/eylanding');
 const { color_tags } = require('./preprocessing/color-tags');
 const { markdown_tables } = require('./preprocessing/markdown-tables');
+const { collapsibles } = require('./preprocessing/collapsibles');
 
 function ct_creation_post_sort(a, b) {
   const has_tag = (post, tag) => post.data.tags.includes(tag);
@@ -154,7 +155,7 @@ module.exports = config => {
           || outputPath.endsWith(".md")
           || outputPath.endsWith(".njk")
         )
-    ) {    
+    ) {
       return eylanding(cheerio.load(content));
     } else {
       return content;
@@ -174,8 +175,22 @@ module.exports = config => {
       return content;
     }
   });
-  
-  
+
+  config.addTransform("collapsibles", function(content, outputPath) {
+    if (!transformExcludes.includes(outputPath) 
+        && outputPath 
+        && (outputPath.endsWith(".html")
+          || outputPath.endsWith(".md")
+          || outputPath.endsWith(".njk")
+        )
+    ) {
+      const page = this.page
+      return collapsibles(cheerio.load(content), page.filePathStem, slugify);
+    } else {
+      return content;
+    }
+  });
+
   config.addFilter("slug", s =>
     s !== undefined ?
       slugify(s, { lower: true, strict: true }) :
