@@ -115,12 +115,12 @@ $$c_1d^L \le v_L \le c_2d^L$$
 
 Without loss of generality, let's consider the $(k+1 \ge 2)$-th cycle of $v$, therefore, the value of $v$ after the $(0 < l \in \mathbb{N}\ \le m$)-th upgrade in the cycle is $v_{mk+l}$: From the definition of a Stepwise variable we have:
 
-$$v_{mk+l} = \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-m\right\}\qquad (1-4)$$
+$$v_{mk+l} = \frac{1}{q-1}p\left[[m+l(q-1)]q^k-m\right[\qquad (1-4)$$
 
 Since $m$>0,from (1-4) we have:
 
 $$\begin{eqnarray}
-  \frac{1}{q-1}\left\{[m+l(q-1)]q^k-m\right\}\qquad (1-5) \\
+  \frac{1}{q-1}\left[[m+l(q-1)]q^k-m\right]\qquad (1-5) \\
   < \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
 \end{eqnarray}$$
 
@@ -139,8 +139,8 @@ $$v_{mk+l} < mp\frac{q}{q-1}\left(q^\frac{1}{m}\right)^{mk+l}\qquad (1-6)$$
 Since $k>1$, $q^{k-1}>1$, from (1-4) we have:
 
 $$\begin{eqnarray}
-  \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-m\right\} \\
-  > \frac{1}{q-1}p\left{[m+l(q-1)]q^k-q^{k-1}m\right\}
+  \frac{1}{q-1}p\left[[m+l(q-1)]q^k-m\right] \\
+  > \frac{1}{q-1}p\left[[m+l(q-1)]q^k-q^{k-1}m\right[
 \end{eqnarray}$$
 
 $$= \frac{1}{q-1}p\left[mq^k-mq^{k-1}+l(q-1)q^k\right]$$
