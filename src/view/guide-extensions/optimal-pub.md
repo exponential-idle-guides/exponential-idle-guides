@@ -121,7 +121,7 @@ Since $m$>0,from (1-4) we have:
 
 $$\begin{eqnarray}
   \frac{1}{q-1}\left\{[m+l(q-1)]q^k-m\right\}\qquad (1-5) \\
-  < \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
+  \lt \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
 \end{eqnarray}$$
 
 Since $0 \le \frac{l}{m} \le 1$ and $q>1$,
@@ -140,7 +140,7 @@ Since $k>1$, $q^{k-1}>1$, from (1-4) we have:
 
 $$\begin{eqnarray}
   \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-m\right\} \\
-  > \frac{1}{q-1}p\left{[m+l(q-1)]q^k-q^{k-1}m\right\}
+  \gt \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-q^{k-1}m\right\}
 \end{eqnarray}$$
 
 $$= \frac{1}{q-1}p\left[mq^k-mq^{k-1}+l(q-1)q^k\right]$$
