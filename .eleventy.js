@@ -124,7 +124,6 @@ module.exports = config => {
   });
   const svg = new SVG({ fontCache: 'local' });
 
-
   config.addTransform("mathjax", async function(content) {
     if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
       // Has math check
