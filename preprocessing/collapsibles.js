@@ -257,7 +257,7 @@ export function collapsibles($, current_url, slugify) {
     // open and close once to make sure it closes
     // often breaks if in the sidebar for unknown reasons
     open_collapsible(coll[i]);
-    close_collapsible(coll[i]);
+    //close_collapsible(coll[i]);
   }
   
   return $.html()

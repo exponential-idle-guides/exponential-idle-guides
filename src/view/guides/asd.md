@@ -5,7 +5,7 @@ description: "Guide on how to solve by LE★Baldy"
 author: "LE★Baldy"
 contributors: "Eaux Tacous for the arrow puzzle algorithms and The Amazing Community"
 draft: false
-order: 9
+order: 10
 ---
 
 ## Overall setting

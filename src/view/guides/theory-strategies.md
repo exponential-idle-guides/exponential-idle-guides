@@ -4,7 +4,7 @@ description: "Our guide for learning what each theory strategy means."
 author: "spqcey originally"
 contributors: "everyone who has innovated new strategies and the Amazing Community"
 draft: false
-order: 8
+order: 9
 ---
 
 The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers) and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
@@ -331,6 +331,8 @@ The seventh official custom theory, abbreviated RZ, was created by prop and rele
 The 8th/9th official custom theory, abbreviated MF, was developed by Mathis. It was released on March 10, 2025 alongside BaP.
 
 The strategies listed here are only variable buying strategies. For resets, please check [the sim](https://exponential-developers.github.io/sim-3.0/)'s variable buy list (which contains resets highlighted) or [the MF guide](/guides/custom-theories/#mf-strategy).
+
+- [MF<dark-green>Variant</dark-green><green>dxdxdx</green>](#mfvariantdxdxdx)&nbsp; — &nbsp;Very Active
 
 - [MF<green>d3</green>](#mfd3)&nbsp; — &nbsp;Very Active
 
@@ -2823,6 +2825,69 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 
 ## Magnetic Fields
 
+### MF<green>RC</green>
+
+You may see at the end of a strategy <green>RC</green> (ex: MF<green>d2RC</green>). This stands for <green>Reset Coast</green>. To perform MF<green>RC</green> 
+
+1. stop buying $c_1$ if **$\bold{c_1}$ cost > 50% total reset cost**, and
+2. stop buying $a_1$ if **$\bold{a_1}$ cost > 10% total reset cost**
+
+where total reset cost = total cost of buying all $v_1$ + $v_2$ + $v_3$ + $v_4$ levels needed for a reset.
+
+### MF<dark-green>Variant</dark-green><green>dxdxdx</green>
+
+This strategy name will be broken down into multiple parts. What they mean are detailed below:
+
+Class: strat_left;
+Caption: Description of Each Strat Name Section (in order);
+
+|   |   |
+| - | - |
+| MF<dark-green>Variant</dark-green> | Strat Name |
+| <green>dx</green> (first) | $c_1$ buying strategy<br>Either d1 or d2. |
+| <green>dx</green> (second) | $a_1$ buying strategy<br>Either d1 or d2. |
+| <green>dx</green> (third) | $\delta$ buying strategy<br>Either d1, d2, or d3. |
+| <green>RC</green> | Reset Coast (see [MF<green>RC</green>](#MFRC))<br><u>This may not always be present.</u> |
+| <green>Coast Depth x c1: xxx</green> | <green>Depth x</green> is the depth used in sim.<br><green>xxx</green> is final $c_1$ level purchased. |
+
+<green>d1</green>, <green>d2</green>, and <green>d3</green> means to follow the [MF<green>d</green>](#MFd), [MF<green>d2</green>](#MFd2), [MF<green>d3</green>](#MFd3) strategies for the corresponding variable.
+
+For example, it could say MF<dark-green>Variant</dark-green><green>d1d2d2RCCoast Depth: 0 c1: 803</green>.
+This means to follow:
+
+- $c_1$ buying strategy from [MF<green>d</green>](#MFd)
+- $a_1$ buying strategy from [MF<green>d2</green>](#MFd2)
+- $\delta$ buying strategy from [MF<green>d2</green>](#MFd2)
+- Reset Coast as detailed in [MF<green>RC</green>](#MFRC)
+
+where
+
+- depth 0 was used during simulation (no bruteforcing), and
+- the last $c_1$ lvl purchased is lvl 803.
+
+A full summary of the strategies can be found below, but may be hard to read.
+
+Class: strat;
+
+| INVIS | <green>d1</green> | <green>d2</green> | <green>d3</green> |
+| ----- | ----------------- | ----------------- | ----------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $c_2$ | CHECK | CHECK | CHECK |
+| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_2$ | CHECK | CHECK | CHECK |
+| $\delta$ | CHECK | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
+| $v_1$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
+| $v_2$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
+| $v_3$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
+| $v_4$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
+
+Strategy Credits:
+
+- Hackzzzzzz for the Variant idea and implementation (see [reddit post](1ri3w9m))
+- BlackSeal for the initial implementation of resets in the sim
+- Maimai for the new rules
+- Mathis S. for the new reset algorithm
+
 ### MF<green>d3</green>
 
 Class: strat;
@@ -2830,15 +2895,15 @@ Caption: MF<green>d3</green>;
 
 |          |                                                                                                                                |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost                                                               |
-| $c_2$    | CHECK                                                                                                                          |
+| $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $c_2$    | CHECK |
 | $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
-| $a_2$    | CHECK                                                                                                                          |
-| $\delta$ | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost                                                       |
-| $v_1$    | Only buy right before a reset                                                                                                  |
-| $v_2$    | Only buy right before a reset                                                                                                  |
-| $v_3$    | Only buy right before a reset                                                                                                  |
-| $v_4$    | Only buy right before a reset                                                                                                  |
+| $a_2$    | CHECK |
+| $\delta$ | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
+| $v_1$    | Only buy right before a reset |
+| $v_2$    | Only buy right before a reset |
+| $v_3$    | Only buy right before a reset |
+| $v_4$    | Only buy right before a reset |
 
 Strategy Credits:
 

@@ -39,23 +39,23 @@ This theory also has its adjusted tickspeed calculated by $q_{1}*q_{2}$. This le
 
 ##### Initial
 
-\\[\rho_{n+1} = \rho_n + c_1c_2\\]
+$$\rho_{n+1} = \rho_n + c_1c_2$$
 
 ##### First milestone
 
-\\[\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2}\\]
+$$\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2}$$
 
 ##### Second milestone
 
-\\[\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
+$$\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 ##### Third milestone
 
-\\[\rho_{n+1} = \rho_n + c_1c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
+$$\rho_{n+1} = \rho_n + c_1c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 ##### Fourth to Sixth milestone
 
-\\[\rho_{n+1} = \rho_n + c_1^{1.15}c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}\\]
+$$\rho_{n+1} = \rho_n + c_1^{1.15}c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 #### T1 strategy
 
@@ -93,7 +93,7 @@ last_row: false;
 
 This second theory is focusing on derivatives. Derivatives in mathematics are the rate of change of the function they are the derivative of. For the case of $q_1$  and $q_2$, $q_2$ is the derivative of $q_1$. This follows the power rule for derivatives:
 
-$$q=a*t^n ↔ q’=n*a*t^{n-1}$$
+$$q=a * t^n ↔ q’=n * a * t^{n-1}$$
 
 In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equation with continuous addition of the previous $term\*dt$ to the next $x_{i+1}$ term, but with continuous addition of $q_i\*dt$ to the term above $q_{i-1}$. These two values of $r_1$ and $q_1$ are multiplied to produce the derivative of $\rho(t)$, shown by Newton's derivative notation $\dot{\rho}$. This would give the equation of $\rho$ to be $\rho(t+dt)=\rho+\dot{\rho}*dt$. The other milestones besides more $q$ and $r$ derivatives increase the exponent of $q$ and $r$ respectively. The reason why $q$ and $r$ derivatives are more powerful long-term than the exponents is that they take time to build up and eventually overtake and keep increasing $q_1$ and $r_1$ while the exponents have a never-changing boost.
 
@@ -101,50 +101,50 @@ In simpler terms, it works similar to how $x_i$ upgrades work for $f(t)$ equatio
 
 ##### Initial
 
-\\[\dot{q_n}=q_{n+1}*dt\text{ for }n=1\\]
+$$\dot{q_n}=q_{n+1}*dt\text{ for }n=1$$
 
-\\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1\\]
+$$\dot{r_k}=r_{k+1}*dt\text{ for }k=1$$
 
-\\[\dot{\rho}=q_1r_1\\]
+$$\dot{\rho}=q_1r_1$$
 
 ##### First and Second milestones
 
-\\[\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3\\]
+$$\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3$$
 
-\\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1\\]
+$$\dot{r_k}=r_{k+1}*dt\text{ for }k=1$$
 
-\\[\dot{\rho}=q_1r_1\\]
+$$\dot{\rho}=q_1r_1$$
 
 ##### Third and Fourth milestones
 
-\\[\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3\\]
+$$\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3$$
 
-\\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
+$$\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3$$
 
-\\[\dot{\rho}=q_1r_1\\]
+$$\dot{\rho}=q_1r_1$$
 
 ##### Fifth to Seventh milestones
 
-\\[\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3\\]
+$$\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3$$
 
-\\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
+$$\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3$$
 
-\\[\dot{\rho}=q_1^{1.15}r_1\\]
+$$\dot{\rho}=q_1^{1.15}r_1$$
 
 ##### Eight to Tenth milestones
 
-\\[\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3\\]
+$$\dot{q_n}=q_{n+1}*dt\text{ for }n=1,2,3$$
 
-\\[\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3\\]
+$$\dot{r_k}=r_{k+1}*dt\text{ for }k=1,2,3$$
 
-\\[\dot{\rho}=q_1^{1.15}r_1^{1.15}\\]
+$$\dot{\rho}=q_1^{1.15}r_1^{1.15}$$
 
 #### T2 strategy
 
-The optimal multiplier is pretty high and is not known before $e30$. The theory sim will recommend publication multipliers below these values, but the sim's T2<span style="color:#41AD21">MS</span> does not currently have coasting. The multipliers for active play (which do use coasting) we know at the moment are:
+The optimal multiplier is pretty high and is not known before $e30$. The theory sim will recommend publication multipliers below these values, but the sim's T2<green>MS</green> does not currently have coasting. The multipliers for active play (which do use coasting) we know at the moment are:
 
-- $e25$-$e100$ is $1k$ to $10k$
-- $e100$-$e175$ is $10k$-$100k$
+- $e25-e100$ is $1k$ to $10k$
+- $e100-e175$ is $10k-100k$
 
 __For both strategies the milestones are listed in the order X>Y, where X and Y are the milestones as numerically ordered top to bottom in-game, are to be maxed in order from left to right.__
 
@@ -195,16 +195,16 @@ matrix multiplication. The following color-coding helps displays
 how matrix multiplication works:
 
 $$\begin{bmatrix}
-   \dot{\rho_1}\\
+   \dot{\rho_1}\\\\
    \dot{\rho_2}
 \end{bmatrix} =
 \begin{bmatrix}
-   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$}}\\
+   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$}}\\\\
    \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$}}
 \end{bmatrix}
 \begin{bmatrix}
    \colorbox{orange}{$\begin{align}
-      \color{black}{b_1}\nonumber\\
+      \color{black}{b_1}\nonumber\\\\
       \color{black}{b_2}\nonumber
    \end{align}$}
 \end{bmatrix} =
@@ -212,7 +212,7 @@ $$\begin{bmatrix}
    \left(
       \colorbox{yellow}{\color{black}{$c_{11}$}}\colorbox{orange}{\color{black}{$b_1$}}
       +\colorbox{yellow}{\color{black}{$c_{12}$}}\colorbox{orange}{\color{black}{$b_2$}}
-   \right)\\
+   \right)\\\\
    \left(
       \colorbox{cyan}{\color{black}{$c_{21}$}}\colorbox{orange}{\color{black}{$b_1$}}
       +\colorbox{cyan}{\color{black}{$c_{22}$}}\colorbox{orange}{\color{black}{$b_2$}}
@@ -220,19 +220,19 @@ $$\begin{bmatrix}
 \end{bmatrix}$$
 
 $$\begin{bmatrix}
-   \dot{\rho_1}\\
-   \dot{\rho_2}\\
+   \dot{\rho_1}\\\\
+   \dot{\rho_2}\\\\
    \dot{\rho_3}
 \end{bmatrix} =
 \begin{bmatrix}
-   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$  $c_{13}$}}\\
-   \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$  $c_{23}$}}\\
+   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$  $c_{13}$}}\\\\
+   \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$  $c_{23}$}}\\\\
    \colorbox{pink}{\color{black}{$c_{31}$  $c_{32}$  $c_{33}$}}
 \end{bmatrix}
 \begin{bmatrix}
    \colorbox{orange}{$\begin{align}
-      \color{black}{b_1}\nonumber\\
-      \color{black}{b_2}\nonumber\\
+      \color{black}{b_1}\nonumber\\\\
+      \color{black}{b_2}\nonumber\\\\
       \color{black}{b_3}\nonumber
    \end{align}$}
 \end{bmatrix} =
@@ -241,12 +241,12 @@ $$\begin{bmatrix}
          \colorbox{yellow}{\color{black}{$c_{11}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{yellow}{\color{black}{$c_{12}$}}\colorbox{orange}{\color{black}{$b_2$}}
          +\colorbox{yellow}{\color{black}{$c_{13}$}}\colorbox{orange}{\color{black}{$b_3$}}
-   \right)\\
+   \right)\\\\
    \left(
          \colorbox{cyan}{\color{black}{$c_{21}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{cyan}{\color{black}{$c_{22}$}}\colorbox{orange}{\color{black}{$b_2$}}
          +\colorbox{cyan}{\color{black}{$c_{23}$}}\colorbox{orange}{\color{black}{$b_3$}}
-   \right)\\
+   \right)\\\\
    \left(
          \colorbox{pink}{\color{black}{$c_{31}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{pink}{\color{black}{$c_{32}$}}\colorbox{orange}{\color{black}{$b_2$}}
@@ -262,7 +262,7 @@ This gives the basis for why certain upgrades are more powerful than others. The
 
 The optimal publication multiplier is about 2-3 without cruising and 3-4 with cruising. If you decide to play actively, there is a form of exponent swapping strat to be aware of. This is a difficult strategy because it requires you to notice when a certain threshold happens. It happens when the following occurs:
 
-\\[c_{11}*b_{1}^{1.05\text{ or }1.1}<c_{12}*b_{2}^{1.05\text{ or }1.1}\\]
+$$c_{11}*b_{1}^{1.05\text{ or }1.1}<c_{12}*b_{2}^{1.05\text{ or }1.1}$$
 
 When this happens swap your exponents from $b_1$ to $b_2$ and you will get a little upgrade boost. It also allows for a slight push of $\rho_2$ for upgrades to $b_2$ and $c_{12}$, but this is a lot less impactful and less noticeable. This strategy also works with $b_3$ and $c_{13}$ but is usually not as common.
 

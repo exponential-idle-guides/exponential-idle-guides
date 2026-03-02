@@ -55,7 +55,7 @@ last_row: false;
 
 ### What does ee mean?
 
-You start out with normal numbers and quickly work your way up to $X.xxeX$ notation. This notation is scientific notation. It stands for $X.xx*10^X$. Later you are introduced to $X.xxeeX$. This is a custom game notation that stands for $X.xx*10^{10^X}$.
+You start out with normal numbers and quickly work your way up to $X.xxeX$ notation. This notation is scientific notation. It stands for $X.xx\ee{X}$. Later you are introduced to $X.xxeeX$. This is a custom game notation that stands for $X.xx\ee{10^X}$.
 
 ### Achievements and Minigames
 
@@ -188,13 +188,13 @@ However, we can do better: instead of simply locking values, we can control when
 
 If we have two really large values, the average of the two will be in favor of the larger of the two. In fact, if the two numbers are really really big, the average will be indistinguishable from the larger of the two due to finite data storage (term: floating point precision). We can abuse this idea to convert the input of smooth into a very large value, thereby converting averages like $average = 0.5 *(new\ value) + 0.5 * (old\ value)$ into the equivalent $average = max(new\ value, old\ value)$. The effect is that we obtain the maximum value that the input attained ever since the expression was reset (from modifying the expression or from prestige (resp. supremacy) for prestige expression (resp. supremacy expression)). Of course, we have to cancel out the magnification of the inputs in order to retrieve the value we actually want.
 
-For example, $smooth(10^{10^{10^{db}}}, 1)$ has the input large enough that it displays the largest value of $10^{10^{10^{db}}}$ that occurred so far. However, we wouldn't want db blown up this way, so we can use $log_{10}(log_{10}(log_{10}(smooth(10^{10^{10^{db}}}, 1))))$ to retrieve back the maximum $db$.
+For example, $smooth(10^{10^{10^{db}}}, 1)$ has the input large enough that it displays the largest value of $10^{10^{10^{db}}}$ that occurred so far. However, we wouldn't want db blown up this way, so we can use $\log_{10}(\log_{10}(\log_{10}(smooth(10^{10^{10^{db}}}, 1))))$ to retrieve back the maximum $db$.
 
 #### Reference formula
 
 $$
 \begin{align}
-smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \\
+smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \\\\
 &=\alpha h_T+(1-\alpha)\bar{h}_{T-\Delta T},\;\alpha=1-e^{-\frac{\Delta T}{c_T}}
 \end{align}
 $$
