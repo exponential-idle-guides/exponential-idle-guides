@@ -48,27 +48,27 @@ Since $a \neq 0$,
 
 $$\frac{\rho}{a} = b^{L}$$
 
-Since $b > 0$, logarithm with a base of $b$ is defined,
+Since $b > 0$, \logarithm with a base of $b$ is defined,
 
-$$log_b(\frac{\rho}{a}) = L$$
+$$\log_b\left[\frac{\rho}{a}\right] = L$$
 
 Thus,
 
-$$log_b(\rho) - log_b(a) = L\qquad (1-3)$$
+$$\log_b(\rho) - \log_b(a) = L\qquad (1-3)$$
 
 From (1-2) and (1-3) we have:
 
-$$u = cd^{log_b(\rho) - log_b(a)}$$
-$$= \frac{c}{d^{log_b(a)}}d^{log_b(\rho)}$$
-$$= \frac{c}{d^{\frac{log_d(a)}{log_d(b)}}}d^{\frac{log_d(\rho)}{log_d(b)}}$$
-$$= \frac{c}{\left[d^{log_d(a)}\right]^{\frac{1}{log_d(b)}}}\left[d^{log_d(\rho)}\right]^{\frac{1}{log_d(b)}}$$
-$$= \frac{c}{a^{log_b(d)}}\rho^{log_b(d)}$$
+$$u = cd^{\log_b(\rho) - \log_b(a)}$$
+$$= \frac{c}{d^{\log_b(a)}}d^{\log_b(\rho)}$$
+$$= \frac{c}{d^{\frac{\log_d(a)}{\log_d(b)}}}d^{\frac{\log_d(\rho)}{\log_d(b)}}$$
+$$= \frac{c}{\left[d^{\log_d(a)}\right]^{\frac{1}{\log_d(b)}}}\left[d^{\log_d(\rho)}\right]^{\frac{1}{\log_d(b)}}$$
+$$= \frac{c}{a^{\log_b(d)}}\rho^{\log_b(d)}$$
 
-We can see that $r = log_b(d)$ only depends on b and d.
+We can see that $r = \log_b(d)$ only depends on b and d.
 
-Since $b>1$ and $d>1$, $log_b(d)>0$.
+Since $b>1$ and $d>1$, $\log_b(d)>0$.
 
-Since $a>0$ and $c>0$, $\frac{c}{a^{log_b(d)}}>0$.
+Since $a>0$ and $c>0$, $\frac{c}{a^{\log_b(d)}}>0$.
 
 Therefore, there exists a pair of $K$ and $r$ that fits the conditions.
 
@@ -115,21 +115,26 @@ $$c_1d^L \le v_L \le c_2d^L$$
 
 Without loss of generality, let's consider the $(k+1 \ge 2)$-th cycle of $v$, therefore, the value of $v$ after the $(0 < l \in \mathbb{N}\ \le m$)-th upgrade in the cycle is $v_{mk+l}$: From the definition of a Stepwise variable we have:
 
-$$v_{mk+l} = \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-m\right\}\qquad (1-4)$$
+$$v_{mk+l} = \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-4)$$
 
 Since $m$>0,from (1-4) we have:
 
 $$\begin{eqnarray}
-  \frac{1}{q-1}\left\{[m+l(q-1)]q^k-m\right\}\qquad (1-5) \\
+  \frac{1}{q-1}\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-5) \\\\
   \lt \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
 \end{eqnarray}$$
 
 Since $0 \le \frac{l}{m} \le 1$ and $q>1$,
 
+$$\begin{flalign*}
+  &\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right] < \frac{1}{q-1}mpq^k(1+(q-1)) &&\\\\
+  &= \frac{1}{q-1}mpq^{(k+1)} < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}} &&\\\\
+  &= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
+\end{flalign*}$$
+
 $$\begin{eqnarray}
-  \frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right] \\
-  < \frac{1}{q-1}mpq^k(1+(q-1)) = \frac{1}{q-1}mpq^{(k+1)} \\
-  < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}} = \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
+    x + y &=& 10 \\\\
+    y &=& 5
 \end{eqnarray}$$
 
 Therefore,
@@ -139,8 +144,8 @@ $$v_{mk+l} < mp\frac{q}{q-1}\left(q^\frac{1}{m}\right)^{mk+l}\qquad (1-6)$$
 Since $k>1$, $q^{k-1}>1$, from (1-4) we have:
 
 $$\begin{eqnarray}
-  \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-m\right\} \\
-  \gt \frac{1}{q-1}p\left\{[m+l(q-1)]q^k-q^{k-1}m\right\}
+  \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-m\right\\} \\\\
+  \gt \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-q^{k-1}m\right\\}
 \end{eqnarray}$$
 
 $$= \frac{1}{q-1}p\left[mq^k-mq^{k-1}+l(q-1)q^k\right]$$
@@ -326,7 +331,7 @@ We solve the equation to get:
 
 $$\rho = \left[K'(1-x)\rho^{z}_{pub}t^{y+1}\right]^{\frac{1}{1-x}}\qquad (3-3)$$
 
-The goal of ours is to find the Publication Multiplier that gives the maximum speed measured in a logarithmic scale, which can be expressed with the equation below:
+The goal of ours is to find the Publication Multiplier that gives the maximum speed measured in a \logarithmic scale, which can be expressed with the equation below:
 
 $$Speed ∝ \frac{\ln(\rho) - \ln(\rho_{pub})}{t}\qquad (3-4)$$
 
@@ -361,7 +366,7 @@ The publication multiplier of the theory is:
 
 $$r = \left(\frac{\rho}{\rho_{pub}}\right)^z$$
 
-Since $r>0$, we can take the natural logarithm on both sides:
+Since $r>0$, we can take the natural \logarithm on both sides:
 
 $$\ln( r ) = z\left[\ln(\rho)-\ln(\rho_{pub})\right]$$
 $$\ln( r ) = zt\left(\frac{x+z-1}{1-x}\ln\rho_{pub}\cdot\frac{1}{t} + \frac{y+1}{1-x}\cdot\frac{\ln( t )}{t}\right)$$
@@ -400,19 +405,19 @@ $$\frac{d\rho}{dt} = q_1q_2\left(c_1^{1.15}c_2 + c_3\rho^{0.2} + c_4\rho^{0.3}\r
 Using Lemma 1.5, we can get:
 
 $$q_1, c_1 \in \Theta\left(\rho^{0.1}\right)$$
-$$q_2, c_2 \in \Theta\left(\rho^{log2}\right)$$
+$$q_2, c_2 \in \Theta\left(\rho^{\log2}\right)$$
 $$c_3 \in \Theta\left(\rho^{\frac{2}{9}}\right)$$
 $$c_4 \in \Theta\left(\rho^{\frac{1}{8}}\right)$$
 
 Using Lemma 2.2, we can see that the dominant term in the parentheses on the right is $c_4\rho^{0.3}$, and the publication multiplier equation of it is $K\rho^{0.164}_{pub}$
 
-$$\frac{d\rho}{dt} \in \Theta\left(\rho^{0.3+0.125+0.1+log2}t^0\rho^{0.164}_{pub}\right)$$
+$$\frac{d\rho}{dt} \in \Theta\left(\rho^{0.3+0.125+0.1+\log2}t^0\rho^{0.164}_{pub}\right)$$
 
-Therefore, $x = 0.525+log2, y = 0, z = 0.164$
+Therefore, $x = 0.525+\log2, y = 0, z = 0.164$
 
 Thus, from Theorem 1 we get:
 
-$$r = e^{\frac{0.164}{0.475-log2}} \simeq 2.5669$$
+$$r = e^{\frac{0.164}{0.475-\log2}} \simeq 2.5669$$
 
 This is very close to the geometric mean of the results of [Theory Simulator](/guides/theory-sim/) from e1000 to e1500.
 
@@ -434,12 +439,12 @@ In which $c_n$ and $d_n$ are purchasable variables. Using Lemma 1.5, we can get:
 
 $$c_1, d_1 \in \Theta\left(\rho^{0.1}\right)$$
 $$c_2, d_2 \in \Theta\left(\rho^{0.1}\right)$$
-$$c_3, d_3 \in \Theta\left(\rho^{\frac{log2}{10log3}}\right)$$
+$$c_3, d_3 \in \Theta\left(\rho^{\frac{\log2}{10\log3}}\right)$$
 $$c_4, d_4 \in \Theta\left(\rho^{0.05}\right)$$
 
 Using Lemma 2.2, we can analyze all the layers and factor in the publication multiplier equation of $K\rho^{0.198}$and get:
 
-$$\frac{d\rho}{dt} \in \Theta\left(\rho^{1.15*2*(0.1+0.1+\frac{log2}{10log3}+0.05)}t^{9.2}\rho^{0.198}_{pub}\right)$$
+$$\frac{d\rho}{dt} \in \Theta\left(\rho^{1.15*2*(0.1+0.1+\frac{\log2}{10\log3}+0.05)}t^{9.2}\rho^{0.198}_{pub}\right)$$
 
 Therefore, $x \simeq 0.72011 , y = 9.2, z = 0.198$
 

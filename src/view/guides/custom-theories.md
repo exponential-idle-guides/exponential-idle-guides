@@ -4,7 +4,7 @@ description: "Our guide for understanding and playing official custom theories."
 author: "Playspout and Snaeky"
 contributors: "the Amazing Community"
 draft: true
-order: 7
+order: 8
 eylanding: "CT WSP SL EF CSR2 FI FP RZ MF"
 ---
 
@@ -42,7 +42,7 @@ The very first official custom theory; WSP was developed by Xelaroc, who also ca
 
 $\dot{\rho} = q_1^{1.04}q_2q$
 
-$\dot{q} = c_2s_n({\chi}) / sin({\chi})$
+$\dot{q} = c_2\frac{s_n({\chi})}{\sin({\chi})}$
 
 $s_n({x}) := x\prod_{k=1}^{n}(1-\frac{x}{k\pi}^2)$
 
@@ -50,7 +50,7 @@ $\chi = \pi\frac{c_1n}{c_1+n/3^{3}}+1$
 
 The first line states that the rate of change in $\rho$ is $q_1^{1.04}q_2q$. Initially it's simply $q_1q_2q$ without any exponent. With milestones we add more exponents.
 
-For the second line, the higher the $\chi$ (spelled 'chi', pronounced as 'kai'), the higher the $s_n({\chi})$. We want to increase $\chi$ by increasing $n$ and $c_1$. The signs of $s_n({\chi})$ and $sin({\chi})$ will always match, so the fraction can't be negative. Additionally, the $c_2$ variable is a milestone which is not initially available.
+For the second line, the higher the $\chi$ (spelled 'chi', pronounced as 'kai'), the higher the $s_n({\chi})$. We want to increase $\chi$ by increasing $n$ and $c_1$. The signs of $s_n({\chi})$ and $\sin({\chi})$ will always match, so the fraction can't be negative. Additionally, the $c_2$ variable is a milestone which is not initially available.
 
 The third line is the most complicated. Generally we can factorize an equation when its graph touches the x-axis. For a sine curve, it touches the x-axis starting from x = 0, and repeats every x= $\pi$. These multiplied factors form the basis of the Weierstrass Sine Product. A simpler interpretation is that we can see 'x' appearing both outside and inside the products in the numerator. Since $\chi$ is 'x' here, the higher the $\chi$, the higher the $s_n({\chi})$ as stated earlier.
 
@@ -114,7 +114,7 @@ last_row: false;
 
 #### SL Overview
 
-SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number (e≈2.71828). As upgrades are bought, the approximation becomes more precise, increasing $\dot\rho$ and $\rho$ because $e-\gamma$ approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
+SL, the second official custom theory, uses a variation of Stirling's formula to approximate Euler's number ($e\approx2.71828$). As upgrades are bought, the approximation becomes more precise, increasing $\dot\rho$ and $\rho$ because $e-\gamma$ approaches 0. As with the first official custom theory (WSP), there are several equations in this theory. Let's explore each one:
 
 #### SL Equation Description
 
@@ -401,9 +401,11 @@ This custom theory was released at the same time as Fractal Patterns. FI is base
 
 ##### Base Equation
 
-$$\dot{ \rho }=tr\sqrt[ \pi ]{q/ \pi },\ \ \dot{q}=q_1q_2$$
-$$\dot{r}=( \int_{0}^{ \pi }g(x)dx - _{ \lambda }\int_{0}^{ \pi }g(x)dx^{ \lambda } )^{-1}$$
-$$\lambda \int_{0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_{0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
+$$\dot{ \rho }=tr\sqrt[ \pi ]{\frac{q}{\pi}},\ \ \dot{q}=q_1q_2$$
+
+$$\dot{r} = \left( \int_{0}^{ \pi }g(x)dx - _ \lambda\int_ {0}^{ \pi }g(x)dx^{ \lambda } \right)^{-1}$$
+
+$$\lambda \int_ {0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_ {0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
 
 With $\dot\rho$ and $\dot{q}$ Equations Becoming:
 
@@ -544,15 +546,15 @@ align: left;
 ##### Main Equations
 
 $$\begin{eqnarray}
-\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\
+\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\\\
 \to \dot{\rho} = c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
 \end{eqnarray}$$
 
 $$\dot{q} = q_1AU_n^{7}/1000 \rightarrow \dot{q} = q_1AU_n^{7+s}/1000$$
 
 $$\begin{eqnarray}
-\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
-\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\
+\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\\\
+\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\\\
 \to \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
 \end{eqnarray}$$
 
@@ -567,6 +569,7 @@ $q$ growth also depends on the $A$ term, which itself depends on $q_2$. For the 
 The $r$ equation depends on all fractals available in FP.
 
 ##### Toothpick Sequence
+
 $$T_{2^k+i}=\frac{2^{2k+1}+1}{3}, \text{if } i = 0$$
 $$T_{2^k+i}=T_{2^k}+2T_i + T_{i+1}-1,   \text{if } 1 \leq i \lt 2^k$$
 
@@ -575,9 +578,10 @@ This is the Toothpick Sequence. We can't really explain it without getting techn
 If you want to learn more about the Toothpick Sequence, you can search about it on the internet. You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html).
 
 ##### Ulam-Warburton Cellular Automaton
-$$\\u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
-$$\\w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
-$$\\U_n = \sum_{i=0}^n u_i$$
+
+$$ u_0 = 0,\ u_1 = 1,\ \dots,\ u_n=4(3^{w_{n-1}-1})$$
+$$ w_n = n-\sum_{k=1}^{∞}\left\lfloor\frac{n}{2^k}\right\rfloor$$
+$$ U_n = \sum_{i=0}^n u_i$$
 
 These equations are used to describe the Ulam-Warburton Cellular Automaton ($U_n$). This is the second main fractal used in FP. Like $T_n$, it grows faster right before a new power of two, and slower right after a power of two.
 
@@ -586,6 +590,7 @@ The $w_n$ equation can look intimidating, but it is simpler to explain than some
 You can find an animation of the fractal [here](https://oeis.org/A139250/a139250.anim.html) after selecting it in "Main sequence".
 
 ##### Sierpiński Triangle
+
 $$S_n = 3^{n-1} \rightarrow S_n = 2*3^{n-1}-1$$
 
 This is probably the most famous fractal used in FP. It can be obtained from an equilateral triangle, by recursively subdividing each triangle into 4 smaller identical triangles and removing the middle one. Its formula is much simpler than the other two fractals.
@@ -622,7 +627,7 @@ Once you have all milestones, autobuy all!
 
 The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying strategy is between c1 and c2. However, generally you can follow this order of buying $s\gt n=q_2\gt c_2\ge c_1\gt q_1\gt r_1$ but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where $q_1\equiv0\mod10$ and $q_1$ may be stronger than $c_1$, which may be mid $\bmod100$ cycle. The variable relationships are as follows:
 
-<u>$c_1$ and $c_1$ Buying</u>
+<u>$\underline{c_1}$ and $\underline{c_1}$ Buying</u>
 
 **Buying $c_1$ efficiently is the largest boost to rates you can do** (outside of MS).
 
@@ -634,7 +639,7 @@ More human way to do the second part is this: when $c_1\equiv91\mod100$, switch 
 
 Note: the actual ratio for part 1 is actually $(c1\bmod100)+0.67$, but that's harder to play as a human.
 
-<u>$q_1$ and $q_2$ Buying</u>
+<u>$\underline{q_1}$ and $\underline{q_2}$ Buying</u>
 
 $q_1$ follows a $\bmod10$ cycle, and adds ~100%, then ~50%, then ~33% and so on to $\dot{q}$. $q_2$ always quadruples the $\dot{q}$ (except the first few purchases).
 
@@ -927,10 +932,13 @@ BaP is much slower than the other CTs early, so it is better to not push it unti
 #### BaP Equation Description
 
 $$\dot{\rho} = (tq_1r)^a \to \dot{\rho} = t(q_1r)^a$$
-$$a=0.3 \to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}$$
-$$\dot{q}_i=c_{i+1}q_{i+1}, 1\le i\le 9$$
-$$\dot{q}_9=c_{10}$$
-$$\dot{r}=\sum_{i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_{i=c_1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
+$$\begin{eqnarray}
+   a=0.3 &\to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \\\\
+   &\to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}
+\end{eqnarray}$$
+$$\dot{q}_ i=c_ {i+1}q_ {i+1}, 1\le i\le 9$$
+$$\dot{q}_9=c_ {10}$$
+$$\dot{r}=\sum_ {i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_ {i=c_ 1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
 
 The $\dot{\rho}$ equation features 3 terms: $t$, $q_1$ and $r$.
 

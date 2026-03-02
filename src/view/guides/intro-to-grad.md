@@ -42,7 +42,7 @@ If phi is equal to 1, then it uses the normal autoprestige expression. We don't 
 
 <blockquote style="font-family:monospace;">(0.8 * log10(log10(lf)) > log10(log10(gf)) ||<br>0.8 * log10(log10(gf)) > log10(log10(sf))))</blockquote>
 
-This lets the normal expression work when you supremacy or graduate up to 80% of $log10(log10(lifetime$ $ft$ $or$ $graduation$ $ft$)) allowing you to recover faster than normal. The $timer(abs(d(log10(phi + 1))) < 50) > 15))$ part of the expression above does not allow the normal expression to prestige for 15 seconds after a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, we allow the normal expression to work like normal while recovering.
+This lets the normal expression work when you supremacy or graduate up to 80% of $\log_{10}(\log_{10}(\text{lifetime ft$ $\text{or}$ $\text{graduation ft))$ allowing you to recover faster than normal. The $timer(abs(d(log10(phi + 1))) < 50) > 15))$ part of the expression above does not allow the normal expression to prestige for 15 seconds after a graduation or prestige, because phi can, and will, grow more than e5 in 1 tick. So, we allow the normal expression to work like normal while recovering.
 
 ###### Reference [Cumulative Maximum Smooth()](/guides/ex-basics/#method-3-cumulative-maximum)
 
