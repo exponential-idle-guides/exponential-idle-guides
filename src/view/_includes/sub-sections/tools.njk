@@ -3,10 +3,10 @@
     {% if link == "" %}
       {{ title | safe }}
     {% else %}
-      <a href="{{ link }}">{{ title }}: </a>
+      <a href="{{ link }}">{{ title | safe }}: </a>
     {% endif %}
     <span onmouseover="hover_in_popup('{{ id }}');" onmouseout="hover_out_popup('{{ id }}');" onclick="click_popup('{{ id }}');" class="resources">⍰</span>
-    <div class="hide" id="{{ id }}">{{ caller() | safe}}</div>
+    <div class="hide" id="{{ id }}">{{ caller() | safe }}</div>
   </li>
 {% endmacro %}
 

@@ -3,10 +3,10 @@
 <ul>
   {% for tag, posts in collections %}
     {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
-      <li>{{ tag.slice(4) | capitalize }}</li>
+      <li>{{ tag.slice(4) | capitalize | safe }}</li>
       <ul>
         {% for guide in collections[tag] %}
-          {{ linked(guide) }}
+          {{ linked(guide) | safe }}
         {% endfor %}
       </ul>
     {% endif %}

@@ -3,14 +3,20 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItFootnotes = require("markdown-it-footnote");
 
+const { mathjax } = require('mathjax-full/js/mathjax.js');
+const { TeX } = require('mathjax-full/js/input/tex.js');
+const { SVG } = require('mathjax-full/js/output/svg.js');
+const { jsdomAdaptor } = require('mathjax-full/js/adaptors/jsdomAdaptor.js');
+const { RegisterHTMLHandler } = require('mathjax-full/js/handlers/html.js');
+const { AllPackages } = require('mathjax-full/js/input/tex/AllPackages.js');
+const { JSDOM } = require('jsdom');
+
 const Hypher = require('hypher')
 const english = require('hyphenation.en-gb');
 
 const slugify = require('slugify');
 
 const hypher = new Hypher(english);
-
-const { JSDOM } = require('jsdom');
 
 const util = require('util');
 
@@ -82,8 +88,7 @@ module.exports = config => {
     "md",
     markdownIt(markdownItOptions)
       .use(markdownItAnchor, markdownItAnchorOptions)
-      .use(require('markdown-it-mathjax3'))
-      .use(require('markdown-it-footnote'))
+      .use(markdownItFootnotes)
       .use(markdownItAttrs, {
         leftDelimiter: '{',
         rightDelimiter: '}',
@@ -93,6 +98,62 @@ module.exports = config => {
 
   config.setDataDeepMerge(true);
 
+  // Initialize MathJax
+  const adaptor = jsdomAdaptor(JSDOM);
+  RegisterHTMLHandler(adaptor);
+
+  // Custom Macros
+  const LaTeXMacros = {
+    RR: '{\\mathbb{R}}',
+    bold: ['{\\mathbf{#1}}', 1],    // Macro with 1 argument
+    ee: ['{\\times 10^{#1}}', 1],   // Custom scientific notation
+    joinrel: '{\\mathrel{\\mkern-3mu}}',
+    relbar: '{-}',
+    perm: ['{{}_{#1}\\!P_{#2}}', 2],
+    extrarightarrow: ['{\\xrightarrow{\\hspace{#1}}}', 1],
+    extraleftarrow: ['{\\xleftarrow{\\hspace{#1}}}', 1],
+    fractext: ['{\\text{$\\frac{\\text{#1}}{\\text{#2}}$}}', 2],
+  };
+  
+  // Setup Mathjax packages, macros, and delimiters
+  const tex = new TeX({ 
+    packages: [...AllPackages, 'base', 'ams', 'newcommand', 'configmacros', 'color', 'physics', 'float', 'setspace', 'mathptmx', 'amsmath', 'tikz', 'xspace', 'amssymb', 'amsthm', 'enumitem', 'gensymb', 'mathtools', 'multicol', 'multirow', 'hhline', 'nicematrix', 'listings', 'ifthen', 'graphicx', 'pgfplotstable', 'pgfplots'],
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+    macros: LaTeXMacros
+  });
+  const svg = new SVG({ fontCache: 'local' });
+
+
+  config.addTransform("mathjax", async function(content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
+      // Has math check
+      if (!(/[^\$]\$[^\$]+\$[^\$]|\$\$[^\$]+\$\$|\\\((?:[^\\].|\\[^\)])*\\\)|\\\[(?:[^\\][^\]])\\\[/.test(content))) {
+        return content;
+      }
+      // Create DOM and document
+      const dom = adaptor.parse(content);
+      const html = mathjax.document(dom, {
+          InputJax: tex,
+          OutputJax: svg,
+      });
+
+      // Render the math
+      html.render();
+
+      // Check if math was found
+      // If not, return original content
+      if (Array.from(html.math).length === 0) return content;
+
+      // Return the rendered content
+      return (
+        adaptor.doctype(html.document) + "\n" +
+        adaptor.outerHTML(adaptor.root(html.document))
+      );
+    }
+    return content;
+  });
+
   config.addTransform("hyphenation", (content, outputPath) => {
     if (!transformExcludes.includes(outputPath)) {
 
@@ -101,7 +162,19 @@ module.exports = config => {
       const NodeFilter = dom.window.NodeFilter;
 
       const filter = {
-        acceptNode: n => n.parentElement.closest("pre") === null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+        acceptNode: n => {
+          if (!n.parentElement) return NodeFilter.FILTER_REJECT;
+
+          if (
+            n.parentElement.closest(
+              "pre, code, script, style, .MathJax, [class^='mjx-'], [class*=' mjx-']"
+            )
+          ) {
+            return NodeFilter.FILTER_REJECT;
+          }
+
+          return NodeFilter.FILTER_ACCEPT;
+        }
       };
 
       const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
@@ -300,6 +373,7 @@ module.exports = config => {
       data: "_data",
       output: "_site"
     },
-    markdownTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
+    markdownTemplateEngine: false
   };
 }

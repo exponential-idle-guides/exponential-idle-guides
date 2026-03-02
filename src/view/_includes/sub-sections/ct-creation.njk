@@ -9,7 +9,7 @@
 {% endif %}
 
 {% for week in collections["ct-creation-weeks"] %}
-  <h4>Week {{week}}</h4>
+  <h4>Week {{ week| safe }}</h4>
   <ul class="ct-creation">
     {% for preface in collections["ct-preface"] | ct_week(week) %}
       <li>{{ preface | ct_linked | safe }}</li>
