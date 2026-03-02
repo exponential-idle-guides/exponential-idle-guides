@@ -2883,7 +2883,7 @@ Class: strat;
 
 Strategy Credits:
 
-- Hackzzzzzz for the Variant idea and implementation (see [reddit post](1ri3w9m))
+- Hackzzzzzz for the Variant idea and implementation (see [reddit post](https://redd.it/1ri3w9m))
 - BlackSeal for the initial implementation of resets in the sim
 - Maimai for the new rules
 - Mathis S. for the new reset algorithm
