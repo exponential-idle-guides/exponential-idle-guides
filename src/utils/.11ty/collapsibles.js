@@ -237,7 +237,6 @@ export function collapsibles($, current_url, slugify) {
   supported.forEach(function(h_type, i) {$(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
 
   function open_collapsible(header) {
-    //header.classList.toggle("active");
     $(header).toggleClass('active');
     $(header).next().css('display', 'block');
     $(header).removeClass('collapsible-closed');
@@ -245,7 +244,6 @@ export function collapsibles($, current_url, slugify) {
     $(header).html($(header).html().replace(new RegExp(closed_char), open_char));
   }
   function close_collapsible(header) {
-    //header.classList.toggle("active");
     $(header).toggleClass('active');
     $(header).next().css('display', 'none');
     $(header).removeClass('collapsible-open');

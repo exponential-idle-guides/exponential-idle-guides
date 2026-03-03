@@ -4,14 +4,11 @@ const check_url_interval = 500; // ms
 let current_url = window.location.href;
 
 const url_regex = /^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g;
-function get_url_paths(url) {
-  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return [];
-  return [.../^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.exec(url)[1].matchAll(/[a-z\-0-9]+/g)];
-}
 
 function get_skiplist(url) {
-  if (!/^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g.test(url)) return [];
-  const path = get_url_paths(url);
+  if (!url_regex.test(url)) return [];
+  url_regex.lastIndex = 0;
+  const path = [...url_regex.exec(url)[1].matchAll(/[a-z\-0-9]+/g)];
   const s = full_skiplist[path[0]][path[1]];
   return s === undefined ? [] : [,...s];
 }
