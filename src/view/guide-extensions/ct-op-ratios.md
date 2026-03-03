@@ -27,15 +27,15 @@ The OP coefficient also has a close relationship with the optimal publication mu
 
 In this representation, a theory can be modeled as :
 
-$$\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_ {pub}$$
+$$\frac{d\rho}{dt}=K\rho^{x}t^{y}\rho^{z}_{pub}$$
 
-While this model is great, it has one flaw to analyze official CTs, as it assumes $\Pi = \rho^{z}_ {pub}$, or in other words that $\frac{d\rho}{dt} \propto \Pi$, which is not the case for every CT. Let's decompose $z = ab$, where $a$ is such that $\Pi \propto \rho^{a}$. In this case, we have $\frac{d\rho}{dt} \propto \Pi^b$ or $\Pi^{b} = \rho^{z}_ {pub}$, a more general model.
+While this model is great, it has one flaw to analyze official CTs, as it assumes $\Pi = \rho^{z}_{pub}$, or in other words that $\frac{d\rho}{dt} \propto \Pi$, which is not the case for every CT. Let's decompose $z = ab$, where $a$ is such that $\Pi \propto \rho^{a}$. In this case, we have $\frac{d\rho}{dt} \propto \Pi^b$ or $\Pi^{b} = \rho^{z}_{pub}$, a more general model.
 
 In pacowoc's article, the optimal publication multiplier was found to be:
 
 $$e^{\frac{z(y+1)}{1-x}}$$
 
-But this is the optimal multiplier for $\rho^{z}_ {pub} = \Pi^{b}$, so the optimal publication multiplier, the optimal multiplier for $\Pi$, would instead be:
+But this is the optimal multiplier for $\rho^{z}_{pub} = \Pi^{b}$, so the optimal publication multiplier, the optimal multiplier for $\Pi$, would instead be:
 
 $$e^{\frac{z(y+1)}{b(1-x)}}$$
 
@@ -53,9 +53,9 @@ Let's prove that $\frac{y+1}{b}$ is indeed the overpush ratio. We'll prove that 
 
 To prove this, we'll start from equation (3-3) of pacowoc's guide:
 
-$$\rho = (K'(1-x)\rho^{z}_ {pub}t^{y+1})^{\frac{1}{1-x}}$$
+$$\rho = (K'(1-x)\rho^{z}_{pub}t^{y+1})^{\frac{1}{1-x}}$$
 
-We substitute $\rho^{z}_ {pub}$ by $\Pi^{b}$:
+We substitute $\rho^{z}_{pub}$ by $\Pi^{b}$:
 
 $$\rho = (K'(1-x)\Pi^{b}t^{y+1})^{\frac{1}{1-x}}$$
 
@@ -68,7 +68,7 @@ Now let's calculate $t'$ where we replace $\Pi$ by $m\Pi$:
 
 $$\begin{gather*}
   \begin{aligned}
-    t'&=\left(\frac{\rho^{1-x}}{K'(1-x)}\right)^{\frac{1}{y+1}}m^{-\frac{b}{y+1}}\Pi^{-\frac{b}{y+1}} \\\\
+    t'&=\left(\frac{\rho^{1-x}}{K'(1-x)}\right)^{\frac{1}{y+1}}m^{-\frac{b}{y+1}}\Pi^{-\frac{b}{y+1}} \\
     \frac{t'}{t}&=\frac{1}{m^{\frac{b}{y+1}}}
   \end{aligned}
 \end{gather*}$$
@@ -104,38 +104,38 @@ Throughout this section, I will use the symbol $K$ to represent any constant hol
 ### WSP
 
 $$\begin{alignat*}{2}
-  \dot{q}& &=\\,& K \\\\
-  \Rightarrow q& &=\\,& Kt \\\\
-  \dot{\rho} =& &K& \Pi q =K\Pi t \\\\
-  \Rightarrow \rho =& &K& \Pi t^2 \\\\
-  OP& &=\\,& 2
+  \dot{q}& &=\,& K \\
+  \Rightarrow q& &=\,& Kt \\
+  \dot{\rho} =& &K& \Pi q =K\Pi t \\
+  \Rightarrow \rho =& &K& \Pi t^2 \\
+  OP& &=\,& 2
 \end{alignat*}$$
 
 ### SL
 
 $$\begin{alignat*}{1}
-  \dot{\rho _3} &= K\\\\
+  \dot{\rho _3} &= K\\
   \Rightarrow \rho _3 &= Kt
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho}_2 &= K \times {1.96}^{-\ln\rho _3} \\\\
-  \dot{\rho}_2 &= K {\rho _3}^{-\ln1.96} \\\\
-  \dot{\rho}_2 &= K t^{-\ln1.96} \\\\
-  \Rightarrow \rho_2 &= Kt^{1-\ln1.96} \\\\
+  \dot{\rho}_2 &= K \times {1.96}^{-\ln\rho _3} \\
+  \dot{\rho}_2 &= K {\rho _3}^{-\ln1.96} \\
+  \dot{\rho}_2 &= K t^{-\ln1.96} \\
+  \Rightarrow \rho_2 &= Kt^{1-\ln1.96} \\
   \frac{1}{e - \gamma} &= K\rho _3 = Kt
 \end{alignat*}$$
 
 Now:
 
 $$\begin{alignat*}{1}
-  \dot{\rho _1} &= \Pi\rho _2^{0.53} \times \frac{1}{e - \gamma} \\\\
-  \dot{\rho _1} &= K\Pi t^{0.53 \times (1-\ln1.96) + 1} \\\\
+  \dot{\rho _1} &= \Pi\rho _2^{0.53} \times \frac{1}{e - \gamma} \\
+  \dot{\rho _1} &= K\Pi t^{0.53 \times (1-\ln1.96) + 1} \\
   \rho _1 &= K\Pi t^{2 + 0.53 \times (1-\ln1.96)}
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  OP &= 2 + 0.53 \times (1-\ln1.96) \\\\
+  OP &= 2 + 0.53 \times (1-\ln1.96) \\
   OP &\approx 2.173
 \end{alignat*}$$
 
@@ -144,52 +144,52 @@ $$\begin{alignat*}{1}
 Calculating EF's OP factor is comparatively harder due to it having multiple currencies. In general, to study theories with multiple currencies, we use linear algebra in logarithmic space.
 
 $$\begin{alignat*}{1}
-  \dot{q} &= \Pi q_1 q_2\\\\
+  \dot{q} &= \Pi q_1 q_2\\
   \Rightarrow q &= K\Pi q_1 q_2 t
 \end{alignat*}$$
 
 Late-game, in EF's $\dot{\rho}$ equation's square root, only the $tq^2$ term is significant:
 
 $$\begin{alignat*}{1}
-  \dot{\rho} &= \Pi (a_1 a_2 a_3)^{1.5} t^{0.5}q\\\\
-  \Rightarrow \dot{\rho} &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{1.5}\\\\
-  \Rightarrow \rho &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{2.5}\\\\
-  \dot{R} &= K \Pi (b_1 b_2)^2\\\\
-  \Rightarrow R &= K \Pi (b_1 b_2)^2 t\\\\
-  \dot{I} &= K \Pi (c_1 c_2)^2\\\\
+  \dot{\rho} &= \Pi (a_1 a_2 a_3)^{1.5} t^{0.5}q\\
+  \Rightarrow \dot{\rho} &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{1.5}\\
+  \Rightarrow \rho &= \Pi^2 (a_1 a_2 a_3)^{1.5} q_1 q_2 t^{2.5}\\
+  \dot{R} &= K \Pi (b_1 b_2)^2\\
+  \Rightarrow R &= K \Pi (b_1 b_2)^2 t\\
+  \dot{I} &= K \Pi (c_1 c_2)^2\\
   \Rightarrow I &= K \Pi (c_1 c_2)^2 t
 \end{alignat*}$$
 
 Now, let's express the system in logarithmic form, to turn it into a linear system:
 
 $$\begin{alignat*}{1}
-  \log{\rho} =\\,& K + 1.5(\log{a_1} + \log{a_2} + \log{a_3})\\\\
-  &+ \log{q_1} + \log{q_2} + 2\log{\Pi} + 2.5\log{t}\\\\
-  \log{R} =\\,& K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\\\
-  \log{I} =\\,& K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\\\
+  \log{\rho} =\,& K + 1.5(\log{a_1} + \log{a_2} + \log{a_3})\\
+  &+ \log{q_1} + \log{q_2} + 2\log{\Pi} + 2.5\log{t}\\
+  \log{R} =\,& K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
+  \log{I} =\,& K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
 \end{alignat*}$$
 
 We have:
 
 $$\begin{alignat*}{1}
-  \log{a_1}, \log{q_1}, \log{q_2} &\propto \log{\rho}\\\\
-  \log{a_2}, \log{b_1}, \log{b_2} &\propto \log{R}\\\\
-  \log{a_3}, \log{c_1}, \log{c_2} &\propto \log{I}\\\\
+  \log{a_1}, \log{q_1}, \log{q_2} &\propto \log{\rho}\\
+  \log{a_2}, \log{b_1}, \log{b_2} &\propto \log{R}\\
+  \log{a_3}, \log{c_1}, \log{c_2} &\propto \log{I}\\
 \end{alignat*}$$
 
 
 For the purpose of this study, we can ignore variables bought with $\rho$.
 
 $$\begin{alignat*}{1}
-  C\log{\rho} &= K + 1.5(\log{a_2} + \log{a_3}) + 2\log{\Pi} + 2.5\log{t}\\\\
-  \log{R} &= K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\\\
-  \log{I} &= K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\\\
+  C\log{\rho} &= K + 1.5(\log{a_2} + \log{a_3}) + 2\log{\Pi} + 2.5\log{t}\\
+  \log{R} &= K + 2(\log{b_1} + \log{b_2}) + \log{\Pi} + \log{t}\\
+  \log{I} &= K + 2(\log{c_1} + \log{c_2}) + \log{\Pi} + \log{t}\\
 \end{alignat*}$$
 
 $$\begin{alignat*}{5}
-  C\log{\rho} - 1.5\log{a_2} - 1.5\log{a_3} &\\,=\\,& 2\log{\Pi} &\\,+\\,& 2.5\log{t} &+ K\\\\
-  \left(1 - 2\frac{\log{b_1} + \log{b_2}}{\log{R}}\right)\log{R} &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
-  \left(1 - 2\frac{\log{c_1} + \log{c_2}}{\log{I}}\right)\log{I} &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
+  C\log{\rho} - 1.5\log{a_2} - 1.5\log{a_3} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  \left(1 - 2\frac{\log{b_1} + \log{b_2}}{\log{R}}\right)\log{R} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  \left(1 - 2\frac{\log{c_1} + \log{c_2}}{\log{I}}\right)\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
 \end{alignat*}$$
 
 To find EF's OP factor, we need an expression of the form $\log{\rho} = \alpha\log{\Pi} + \beta\log{t}$. Then, the OP factor will be given by $\frac{\beta}{\alpha}$.
@@ -211,33 +211,33 @@ Therefore we can calculate the following:
 Now we can substitute in the system:
 
 $$\begin{alignat*}{5}
-  C\log{\rho} - \frac{1.5\log{40}}{22\log{2}}\log{R} - \frac{1.5}{2.2}\log{I} &\\,=\\,& 2\log{\Pi} &\\,+\\,& 2.5\log{t} &+ K\\\\
-  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)\right]\log{R} &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
-  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)\right]\log{I} &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
+  C\log{\rho} - \frac{1.5\log{40}}{22\log{2}}\log{R} - \frac{1.5}{2.2}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)\right]\log{R} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  \left[1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)\right]\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
 \end{alignat*}$$
 
 These expressions will be heavy to manipulate so let's set it to:
 
 $$\begin{alignat}{9}
-  C\log{\rho} &\\,-\\,& d_{12}\log{R} &\\,-\\,& d_{13}\log{I} &\\,=\\,& 2\log{\Pi} &\\,+\\,& 2.5\log{t} &+ K\\\\
-  &&d_{22}\log{R} && &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
-  &&&&d_{33}\log{I} &\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K\\\\
+  C\log{\rho} &\,-\,& d_{12}\log{R} &\,-\,& d_{13}\log{I} &\,=\,& 2\log{\Pi} &\,+\,& 2.5\log{t} &+ K\\
+  &&d_{22}\log{R} && &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
+  &&&&d_{33}\log{I} &\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K\\
 \end{alignat}$$
 
 Now if we add $\frac{d_{12}}{d_{22}}$ times equation (2) and $\frac{d_{13}}{d_{33}}$ times equation (3) to equation (1) we get:
 
 $$\begin{alignat*}{2}
-  C\log{\rho} &=& &\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{\Pi} \\\\
+  C\log{\rho} &=& &\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{\Pi} \\
   &&+ &\left(2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}\right)\log{t} + K
 \end{alignat*}$$
 
 We can finally express EF's OP factor:
 
 $$\begin{alignat*}{1}
-OP &= \frac{2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\\\
-OP &= 1 + \frac{0.5}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\\\
-OP &= 1 + \frac{1}{2\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{23}}\right)} \\\\
-OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\\\
+OP &= \frac{2.5 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
+OP &= 1 + \frac{0.5}{2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{33}}} \\
+OP &= 1 + \frac{1}{2\left(2 + \frac{d_{12}}{d_{22}} + \frac{d_{13}}{d_{23}}\right)} \\
+OP &= 1 + \frac{1}{4 + 2\frac{d_{12}}{d_{22}} + 2\frac{d_{13}}{d_{23}}} \\
 \end{alignat*}$$
 
 For those who want to see what it looks like if we replace those $d_i$:
@@ -245,7 +245,7 @@ For those who want to see what it looks like if we replace those $d_i$:
 $$
   OP = 1 + 
     \begin{bmatrix*}[l]
-      4 + \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)} \\\\
+      4 + \frac{3\log{40}}{22\log{2}}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.12}}{\log{2}}\right)} \\
       + \frac{3}{2.2}\frac{1}{1 - 2\left(\frac{\log{2}}{10\log{200}} + \frac{\log{1.125}}{\log{2}}\right)}
     \end{bmatrix*}^{-1}
 $$
@@ -257,48 +257,48 @@ $$OP \approx 1.137$$
 ### CSR2
 
 $$\begin{alignat*}{2}
-  \dot{q}& &=\\,& K\Pi \\\\
-  \Rightarrow q& &=\\,& K\Pi t \\\\
-  \dot{\rho} =& &K& \Pi q =K\Pi^2 t \\\\
-  \Rightarrow \rho =& &K& \Pi^2 t^2 \\\\
-  OP& &=\\,& 1
+  \dot{q}& &=\,& K\Pi \\
+  \Rightarrow q& &=\,& K\Pi t \\
+  \dot{\rho} =& &K& \Pi q =K\Pi^2 t \\
+  \Rightarrow \rho =& &K& \Pi^2 t^2 \\
+  OP& &=\,& 1
 \end{alignat*}$$
 
 ### FI
 
 $$\begin{alignat*}{1}
-  \dot{q} &= K\\\\
-  \Rightarrow q &= Kt\\\\
-  \dot{r} &= K\\\\
+  \dot{q} &= K\\
+  \Rightarrow q &= Kt\\
+  \dot{r} &= K\\
   \Rightarrow r &= Kt
 \end{alignat*}$$
 
-$$\int_ {0}^{q}{g(x)dx} = Kq^6 = Kt^6$$
-$$\sqrt[\pi]{\int_ {0}^{ q }g(x)dx} = Kt^{\frac{6}{\pi}}$$
+$$\int_{0}^{q}{g(x)dx} = Kq^6 = Kt^6$$
+$$\sqrt[\pi]{\int_{0}^{ q }g(x)dx} = Kt^{\frac{6}{\pi}}$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho} &= K\Pi rt\sqrt[\pi]{\int_{0}^{ q }g(x)dx}\\\\
-  \dot{\rho} &= K\Pi t^{2+\frac{6}{\pi}}\\\\
+  \dot{\rho} &= K\Pi rt\sqrt[\pi]{\int_{0}^{ q }g(x)dx}\\
+  \dot{\rho} &= K\Pi t^{2+\frac{6}{\pi}}\\
   \Rightarrow \rho &= K\Pi t^{3+\frac{6}{\pi}}
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  OP &= 3 + \frac{6}{\pi} \\\\
+  OP &= 3 + \frac{6}{\pi} \\
   OP &\approx 4.91
 \end{alignat*}$$
 
 ### FP
 
 $$\begin{alignat*}{1}
-  \dot{q} &= K\\\\
-  \Rightarrow q &= Kt\\\\
-  \dot{r} &= K\\\\
+  \dot{q} &= K\\
+  \Rightarrow q &= Kt\\
+  \dot{r} &= K\\
   \Rightarrow r &= Kt
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho} &= K\Pi qrt\\\\
-  \dot{\rho} &= K\Pi t^3\\\\
+  \dot{\rho} &= K\Pi qrt\\
+  \dot{\rho} &= K\Pi t^3\\
   \Rightarrow \rho &= K\Pi t^4
 \end{alignat*}$$
 
@@ -309,33 +309,33 @@ $$OP = 4$$
 Since RZ also has multiple currencies, we'll follow the same steps as with EF. For the purpose of this study, $\zeta$ and $\dot{\zeta}$ values can be approximated as constants. The black hole has no effect on the overpush factor as the optimal $t$ to activate the black hole is roughly proportional to the publication time.
 
 $$\begin{alignat*}{1}
-\dot{\rho} &= K\Pi c_1^{1.25}c_2w_1t\\\\
-\Rightarrow \rho &= K \Pi c_1^{1.25}c_2w_1t^2\\\\
-\dot{\delta} &= K\Pi w_1w_2w_3\\\\
+\dot{\rho} &= K\Pi c_1^{1.25}c_2w_1t\\
+\Rightarrow \rho &= K \Pi c_1^{1.25}c_2w_1t^2\\
+\dot{\delta} &= K\Pi w_1w_2w_3\\
 \Rightarrow \delta &= K\Pi w_1w_2w_3t
 \end{alignat*}$$
 
 Let's express this system on its logarithmic form:
 
 $$\begin{alignat*}{2}
-  \log{\rho} &=& &1.25\log{c_1} + \log{c_2} + \log{w_1}\\\\
-    &&+ &\log{\Pi} + 2\log{t} + K\\\\
-  \log{\delta} &=& &\log{w_1} + \log{w_2} + \log{w_3}\\\\
+  \log{\rho} &=& &1.25\log{c_1} + \log{c_2} + \log{w_1}\\
+    &&+ &\log{\Pi} + 2\log{t} + K\\
+  \log{\delta} &=& &\log{w_1} + \log{w_2} + \log{w_3}\\
     &&+ &\log{\Pi} + \log{t} + K
 \end{alignat*}$$
 
 We have:
 
 $$\begin{alignat*}{1}
-  \log{c_i} &\propto \log{\rho}\\\\
-  \log{w_i} &\propto \log{\delta}\\\\
+  \log{c_i} &\propto \log{\rho}\\
+  \log{w_i} &\propto \log{\delta}\\
 \end{alignat*}$$
 
 We can also ignore variables bought with $\rho$.
 
 $$\begin{alignat*}{5}
-C\log{\rho} - \log{w_1} &=\\,& \log{\Pi} &\\,+\\,& 2\log{t} &+ K\\\\
-\left(1- \frac{\log{w_1} + \log{w_2} + \log{w_3}}{\log{\delta}}\right)\log{\delta} &=\\,& \log{\Pi} &\\,+& \log{t} &+ K
+C\log{\rho} - \log{w_1} &=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K\\
+\left(1- \frac{\log{w_1} + \log{w_2} + \log{w_3}}{\log{\delta}}\right)\log{\delta} &=\,& \log{\Pi} &\,+& \log{t} &+ K
 \end{alignat*}$$
 
 Let's now compute how the variables we need scale with their currencies.
@@ -347,23 +347,23 @@ Let's now compute how the variables we need scale with their currencies.
 Now we can substitute in the system:
 
 $$\begin{alignat}{7}
-  -\frac{9}{8}\log{2}\log{\delta} &\\,+\\,& C\log{\rho}  &\\,=\\,& \log{\Pi} &\\,+\\,& 2\log{t} &+ K \nonumber\\\\
-  \left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &&&\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K \nonumber\\\\
-  -\frac{9}{8}\log{2}\log{\delta} &\\,+\\,& C\log{\rho}&\\,=\\,& \log{\Pi} &\\,+\\,& 2\log{t} &+ K \tag{1}\\\\
-  \left(1-\frac{259}{120}\log{2}\right)\log{\delta} &&&\\,=\\,& \log{\Pi} &\\,+\\,& \log{t} &+ K \tag{2}
+  -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}  &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \nonumber\\
+  \left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &&&\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K \nonumber\\
+  -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}&\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \tag{1}\\
+  \left(1-\frac{259}{120}\log{2}\right)\log{\delta} &&&\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K \tag{2}
 \end{alignat}$$
 
 Now if we add $\frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}$ times equation (2) to equation (1) we get:
 
 $$\begin{alignat*}{2}
-  C\log{\rho} &=& &\left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{\Pi} \\\\
+  C\log{\rho} &=& &\left(1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{\Pi} \\
     &&+ &\left(2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right)\log{t} + K
 \end{alignat*}$$
 
 We can now express RZ's OP factor:
 
 $$\begin{alignat*}{1}
-OP &= \frac{2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}} \\\\
+OP &= \frac{2 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}}{1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}} \\
 OP &= 1 + \left[1 + \frac{\frac{9}{8}\log{2}}{1-\frac{259}{120}\log{2}}\right]^{-1}
 \end{alignat*}$$
 
@@ -376,8 +376,8 @@ $$OP \approx 1.508$$
 To determine the OP factor of MF, we first need to determine if, long-term, $I$ is capped or not.
 
 $$\begin{alignat*}{1}
-  \dot{I} &= \frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right) \\\\
-  \dot{I} &= \frac{a_1^{1.01}}{400 a_2}(10^{-15}a_2-I) \\\\
+  \dot{I} &= \frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right) \\
+  \dot{I} &= \frac{a_1^{1.01}}{400 a_2}(10^{-15}a_2-I) \\
   \dot{I} &= K\frac{a_1^{1.01}}{a_2}(I_\text{cap}-I)
 \end{alignat*}$$
 
@@ -394,14 +394,14 @@ $$\log{a_1} = \frac{\log{2}}{2\log{25}} \times \log{\rho}$$
 $a_2$ is an exponential variable with a power of 1.25 and a cost scaling of 100. Its power is given by:
 
 $$\begin{alignat*}{1}
-  \log{a_2} &= \frac{\log{1.25}}{\log{100}} \times \log{\rho} \\\\
+  \log{a_2} &= \frac{\log{1.25}}{\log{100}} \times \log{\rho} \\
   &= \frac{\log{1.25}}{2} \times \log{\rho}
 \end{alignat*}$$
 
 Now:
 
 $$\begin{alignat*}{1}
-  \log{\left(\frac{a_1^{1.01}}{a_2}\right)} &= 1.01\log{a_1} - \log{a_2} \\\\
+  \log{\left(\frac{a_1^{1.01}}{a_2}\right)} &= 1.01\log{a_1} - \log{a_2} \\
   &= \log{\rho} \times \left(\frac{1.01\log{2}}{2\log{25}} - \frac{\log{1.25}}{2}\right)
 \end{alignat*}$$
 
@@ -418,15 +418,15 @@ Therefore $I = Kt$.
 With that out of the way, let's calculate MF's OP factor.
 
 $$\begin{alignat*}{1}
-  \dot{x} &= K\\\\
-  \Rightarrow x &= Kt\\\\
+  \dot{x} &= K\\
+  \Rightarrow x &= Kt\\
 \end{alignat*}$$
 
 $$\omega = KI = Kt$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho} &= K\Pi \omega^{4.4}x^{3.4}\\\\
-  \dot{\rho} &= K\Pi t^{7.8}\\\\
+  \dot{\rho} &= K\Pi \omega^{4.4}x^{3.4}\\
+  \dot{\rho} &= K\Pi t^{7.8}\\
   \Rightarrow \rho &= K\Pi t^{8.8}
 \end{alignat*}$$
 
@@ -446,25 +446,25 @@ Therefore, as $\rho \to \infty$, $a \to \frac{6}{\pi^2}$.
 Now let's calculate BaP's OP factor.
 
 $$\begin{alignat*}{1}
-  \dot{q_9} &= K\\\\
-  \Rightarrow q_9 &= Kt\\\\
-  \dot{q_8} &= Kq_9 = Kt\\\\
-  \Rightarrow q_8 &= Kt^2\\\\
-  &\dots\\\\
-  q_1 &= Kt^9\\\\
-  \dot{r} &= K\\\\
+  \dot{q_9} &= K\\
+  \Rightarrow q_9 &= Kt\\
+  \dot{q_8} &= Kq_9 = Kt\\
+  \Rightarrow q_8 &= Kt^2\\
+  &\dots\\
+  q_1 &= Kt^9\\
+  \dot{r} &= K\\
   \Rightarrow r &= Kt
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  \dot{\rho} &= \Pi t(q_1 r)^a \\\\
-  &= K\Pi t\cdot (t^{10})^{\frac{6}{\pi^2}}\\\\
-  &= K\Pi t^{1+\frac{60}{\pi^2}}\\\\
+  \dot{\rho} &= \Pi t(q_1 r)^a \\
+  &= K\Pi t\cdot (t^{10})^{\frac{6}{\pi^2}}\\
+  &= K\Pi t^{1+\frac{60}{\pi^2}}\\
   \Rightarrow \rho &= K\Pi t^{2+\frac{60}{\pi^2}}
 \end{alignat*}$$
 
 $$\begin{alignat*}{1}
-  OP &= 2+\frac{60}{\pi^2}\\\\
+  OP &= 2+\frac{60}{\pi^2}\\
   OP &\approx 8.079
 \end{alignat*}$$
 

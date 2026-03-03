@@ -403,9 +403,9 @@ This custom theory was released at the same time as Fractal Patterns. FI is base
 
 $$\dot{ \rho }=tr\sqrt[ \pi ]{\frac{q}{\pi}},\ \ \dot{q}=q_1q_2$$
 
-$$\dot{r} = \left( \int_{0}^{ \pi }g(x)dx - _ \lambda\int_ {0}^{ \pi }g(x)dx^{ \lambda } \right)^{-1}$$
+$$\dot{r} = \left( \int_{0}^{ \pi }g(x)dx - _ \lambda\int_{0}^{ \pi }g(x)dx^{ \lambda } \right)^{-1}$$
 
-$$\lambda \int_ {0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_ {0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
+$$\lambda \int_{0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_{0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
 
 With $\dot\rho$ and $\dot{q}$ Equations Becoming:
 
@@ -546,15 +546,15 @@ align: left;
 ##### Main Equations
 
 $$\begin{eqnarray}
-\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\\\
+\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\
 \to \dot{\rho} = c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
 \end{eqnarray}$$
 
 $$\dot{q} = q_1AU_n^{7}/1000 \rightarrow \dot{q} = q_1AU_n^{7+s}/1000$$
 
 $$\begin{eqnarray}
-\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\\\
-\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\\\
+\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
+\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\
 \to \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
 \end{eqnarray}$$
 
@@ -933,12 +933,12 @@ BaP is much slower than the other CTs early, so it is better to not push it unti
 
 $$\dot{\rho} = (tq_1r)^a \to \dot{\rho} = t(q_1r)^a$$
 $$\begin{eqnarray}
-   a=0.3 &\to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \\\\
+   a=0.3 &\to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \\
    &\to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}
 \end{eqnarray}$$
-$$\dot{q}_ i=c_ {i+1}q_ {i+1}, 1\le i\le 9$$
-$$\dot{q}_9=c_ {10}$$
-$$\dot{r}=\sum_ {i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_ {i=c_ 1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
+$$\dot{q}_ i=c_{i+1}q_{i+1}, 1\le i\le 9$$
+$$\dot{q}_9=c_{10}$$
+$$\dot{r}=\sum_{i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_{i=c_ 1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
 
 The $\dot{\rho}$ equation features 3 terms: $t$, $q_1$ and $r$.
 

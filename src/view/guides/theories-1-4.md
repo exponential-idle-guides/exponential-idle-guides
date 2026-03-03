@@ -195,16 +195,16 @@ matrix multiplication. The following color-coding helps displays
 how matrix multiplication works:
 
 $$\begin{bmatrix}
-   \dot{\rho_1}\\\\
+   \dot{\rho_1}\\
    \dot{\rho_2}
 \end{bmatrix} =
 \begin{bmatrix}
-   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$}}\\\\
+   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$}}\\
    \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$}}
 \end{bmatrix}
 \begin{bmatrix}
    \colorbox{orange}{$\begin{align}
-      \color{black}{b_1}\nonumber\\\\
+      \color{black}{b_1}\nonumber\\
       \color{black}{b_2}\nonumber
    \end{align}$}
 \end{bmatrix} =
@@ -212,7 +212,7 @@ $$\begin{bmatrix}
    \left(
       \colorbox{yellow}{\color{black}{$c_{11}$}}\colorbox{orange}{\color{black}{$b_1$}}
       +\colorbox{yellow}{\color{black}{$c_{12}$}}\colorbox{orange}{\color{black}{$b_2$}}
-   \right)\\\\
+   \right)\\
    \left(
       \colorbox{cyan}{\color{black}{$c_{21}$}}\colorbox{orange}{\color{black}{$b_1$}}
       +\colorbox{cyan}{\color{black}{$c_{22}$}}\colorbox{orange}{\color{black}{$b_2$}}
@@ -220,19 +220,19 @@ $$\begin{bmatrix}
 \end{bmatrix}$$
 
 $$\begin{bmatrix}
-   \dot{\rho_1}\\\\
-   \dot{\rho_2}\\\\
+   \dot{\rho_1}\\
+   \dot{\rho_2}\\
    \dot{\rho_3}
 \end{bmatrix} =
 \begin{bmatrix}
-   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$  $c_{13}$}}\\\\
-   \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$  $c_{23}$}}\\\\
+   \colorbox{yellow}{\color{black}{$c_{11}$  $c_{12}$  $c_{13}$}}\\
+   \colorbox{cyan}{\color{black}{$c_{21}$  $c_{22}$  $c_{23}$}}\\
    \colorbox{pink}{\color{black}{$c_{31}$  $c_{32}$  $c_{33}$}}
 \end{bmatrix}
 \begin{bmatrix}
    \colorbox{orange}{$\begin{align}
-      \color{black}{b_1}\nonumber\\\\
-      \color{black}{b_2}\nonumber\\\\
+      \color{black}{b_1}\nonumber\\
+      \color{black}{b_2}\nonumber\\
       \color{black}{b_3}\nonumber
    \end{align}$}
 \end{bmatrix} =
@@ -241,12 +241,12 @@ $$\begin{bmatrix}
          \colorbox{yellow}{\color{black}{$c_{11}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{yellow}{\color{black}{$c_{12}$}}\colorbox{orange}{\color{black}{$b_2$}}
          +\colorbox{yellow}{\color{black}{$c_{13}$}}\colorbox{orange}{\color{black}{$b_3$}}
-   \right)\\\\
+   \right)\\
    \left(
          \colorbox{cyan}{\color{black}{$c_{21}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{cyan}{\color{black}{$c_{22}$}}\colorbox{orange}{\color{black}{$b_2$}}
          +\colorbox{cyan}{\color{black}{$c_{23}$}}\colorbox{orange}{\color{black}{$b_3$}}
-   \right)\\\\
+   \right)\\
    \left(
          \colorbox{pink}{\color{black}{$c_{31}$}}\colorbox{orange}{\color{black}{$b_1$}}
          +\colorbox{pink}{\color{black}{$c_{32}$}}\colorbox{orange}{\color{black}{$b_2$}}

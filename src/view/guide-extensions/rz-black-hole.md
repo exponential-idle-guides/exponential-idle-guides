@@ -24,16 +24,16 @@ A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation o
 
 Take an example of $t = 900$ simulation, given $\dot{\delta}$ formula in the game, $\delta$ can be manipulated as
 
-$$\delta = \sum^{900/\Delta t}_ {t=0}\dot{\delta}(t)\Delta t = \Delta t\sum^{900/\Delta t}_ {t=0}w_1(t)w_2(t)z'(t)^b$$
+$$\delta = \sum^{900/\Delta t}_{t=0}\dot{\delta}(t)\Delta t = \Delta t\sum^{900/\Delta t}_{t=0}w_1(t)w_2(t)z'(t)^b$$
 
 In real game, the formula had already been its most simplified form as the power of $w_1$ and $w_2$ varies when purchased. In this simulation, the **assumption of the effect $w_1$ and $w_2$ to be the same throughout the publication** had been made. After black hole was implemented at an arbitrary time $a$, $z'$ were fixed, formula for cumulative $\delta$ could be simplified as
 
 $$\begin{flalign*}
-  \delta &= \Delta t\sum^{900/\Delta t}_ {t=0}w_1(t)w_2(t)z'(t)^b &\\\\
-  &= \Delta t\sum^{a}_ {t=0}w_1(t)w_2(t)z'(t)^b + \Delta t\sum^{900/\Delta t}_ {t=a}w_1(t)w_2(t)z'(t)^b &&\\\\
-  &= \Delta tw_1w_2\sum^{a}_ {t=0}z'(t)^b + \Delta tw_1w_2z'(a)^b\sum^{900/\Delta t}_ {t=a}1&&\\\\
-  &= \Delta tw_1w_2\sum^{a}_ {t=0}z'(t)^b + \Delta tw_1w_2z'(a)^b\left(\frac{900}{\Delta t}-a\right)&&\\\\
-  &= w_1w_2\left(\Delta t\sum^{a}_ {t=0}z'(t)^b + z'(a)^b(900-a\Delta t)\right)&&
+  \delta &= \Delta t\sum^{900/\Delta t}_{t=0}w_1(t)w_2(t)z'(t)^b &\\
+  &= \Delta t\sum^{a}_{t=0}w_1(t)w_2(t)z'(t)^b + \Delta t\sum^{900/\Delta t}_{t=a}w_1(t)w_2(t)z'(t)^b &&\\
+  &= \Delta tw_1w_2\sum^{a}_{t=0}z'(t)^b + \Delta tw_1w_2z'(a)^b\sum^{900/\Delta t}_{t=a}1&&\\
+  &= \Delta tw_1w_2\sum^{a}_{t=0}z'(t)^b + \Delta tw_1w_2z'(a)^b\left(\frac{900}{\Delta t}-a\right)&&\\
+  &= w_1w_2\left(\Delta t\sum^{a}_{t=0}z'(t)^b + z'(a)^b(900-a\Delta t)\right)&&
 \end{flalign*}$$
 
 Do note that $w_3$ behaves the same as $w_2$ with a larger interval of purchasing. It has been omitted in the above-shown formula due to the fact that this study was prepared before the effect of $w_3$ was fully interpret by myself. Meanwhile, $w_3$ has no effect on $\rho$ progression, so not accounting $w_3$ base on the assumption and formula given in game will have no net effect on $\rho$ progression.

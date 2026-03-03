@@ -121,21 +121,16 @@ Since $m$>0,from (1-4) we have:
 
 $$\begin{eqnarray}
   \frac{1}{q-1}\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-5) \\
-  \lt \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
+  < \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
 \end{eqnarray}$$
 
 Since $0 \le \frac{l}{m} \le 1$ and $q>1$,
 
 $$\begin{flalign*}
-  &\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right] < \frac{1}{q-1}mpq^k(1+(q-1)) &&\\\\
-  &= \frac{1}{q-1}mpq^{(k+1)} < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}} &&\\\\
+  &\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right] < \frac{1}{q-1}mpq^k(1+(q-1)) &&\\
+  &= \frac{1}{q-1}mpq^{(k+1)} < \frac{1}{q-1}mpqq^{\frac{mk+l}{m}} &&\\
   &= \frac{1}{q-1}mpq(q^\frac{1}{m})^{mk+l}
 \end{flalign*}$$
-
-$$\begin{eqnarray}
-    x + y &=& 10 \\\\
-    y &=& 5
-\end{eqnarray}$$
 
 Therefore,
 
@@ -144,15 +139,15 @@ $$v_{mk+l} < mp\frac{q}{q-1}\left(q^\frac{1}{m}\right)^{mk+l}\qquad (1-6)$$
 Since $k>1$, $q^{k-1}>1$, from (1-4) we have:
 
 $$\begin{eqnarray}
-  \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-m\right\\} \\\\
-  \gt \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-q^{k-1}m\right\\}
+  \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-m\right\\} \\
+  > \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-q^{k-1}m\right\\}
 \end{eqnarray}$$
 
 $$= \frac{1}{q-1}p\left[mq^k-mq^{k-1}+l(q-1)q^k\right]$$
 $$= \frac{1}{q-1}p\left[m(q-1)q^{k-1}+l(q-1)q^k\right]$$
 $$= mpq^{k-1}\left(1+\frac{l}{m}q\right)\qquad (1-7)$$
 
-Since $0 \le \frac{l}{m} \le 1$ and $q>-1$, we can ap­ply Bernoul­li’s in­equal­ity to get:
+Since $0 \le \frac{l}{m} \le 1$ and $q>-1$, we can apply Bernoulli’s inequality to get:
 
 $$1+\frac{l}{m}q \ge (1+q)^{\frac{l}{m}}$$
 
