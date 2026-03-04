@@ -1,4 +1,6 @@
-import { copy_dict } from '../../../src/utils/dict.js';
+function copy_dict(dict, f) {
+  return Object.keys(dict).reduce((a,v) => ({...a, [v]: f(dict, v)}), {});
+}
 
 const full_skiplist = {
   "guides": {
