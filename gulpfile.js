@@ -10,7 +10,12 @@ gulp.task('css', () => {
 
 gulp.task('scripts', () => {
   return gulp.src('src/scripts/**/*.js')
-    .pipe(gulp.dest('_site/scripts/'))
+          .pipe(gulp.dest('_site/scripts/'))
+})
+
+gulp.task('utils', () => {
+  return gulp.src('src/utils/**/*.js')
+          .pipe(gulp.dest('_site/utils/'))
 })
 
 gulp.task('images', () => {
@@ -32,16 +37,20 @@ gulp.task('robots', () => {
     .pipe(gulp.dest("_site"))
 });
 
-gulp.task('assets', gulp.parallel('css', 'scripts', 'images'));
+gulp.task('assets', gulp.parallel('css', 'scripts', 'images', 'utils'));
 
 gulp.task('build', gulp.series('generate', 'assets', 'redirects', 'robots'));
 
 gulp.task('watch', () => {
   gulp.watch('.eleventy.js', gulp.series('generate-dev'));
+  gulp.watch('package-lock.json', gulp.series('generate-dev'));
+  gulp.watch('package.json', gulp.series('generate-dev'));
   gulp.watch('src/robots.txt', gulp.series('robots'));
   gulp.watch('src/view/**/*', gulp.series('generate-dev'));
+  gulp.watch('config/**/*.js', gulp.series('generate-dev'));
   gulp.watch('src/style/**/*.scss', gulp.series('css'));
   gulp.watch('src/scripts/**/*.js', gulp.series('scripts'));
+  gulp.watch('src/utils/**/*.js', gulp.parallel('generate-dev'));
   gulp.watch('src/images/**/*.{png,jpg,jpeg,svg}', gulp.series('images'));
 });
 

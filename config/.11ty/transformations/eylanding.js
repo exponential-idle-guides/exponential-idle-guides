@@ -1,4 +1,5 @@
-import {remove_char} from '../src/scripts/remove-char.js';
+const { remove_char } = require('../../../src/utils/str');
+const cheerio = require('cheerio');
 
 const name_lookup = {
   'index': {name: 'General Guide', path: 'index'},
@@ -42,25 +43,39 @@ const name_lookup = {
   'milestone-swap': {name: 'Milestone swapping', path: 'extensions/milestones'}
 };
 
-export function eylanding($) {
-  const remove_unwanted = (s) => remove_char(
-    s.replaceAll(String.fromCharCode(0x00ad),"")
-      .replaceAll(String.fromCharCode(8203),""),
-    String.fromCharCode(10)
-  );
+const remove_unwanted = (s) => remove_char(
+  s.replaceAll(String.fromCharCode(0x00ad),"")
+    .replaceAll(String.fromCharCode(8203),""),
+  String.fromCharCode(10)
+);
 
-  $('.eylanding-link').each(function(_) {
-    const s_arr = $(this).text().split(/[,\s]+/).filter((s) => remove_unwanted(s) != "");
-    $(this).replaceWith(
-      "Eylanding's simplified " + 
-      s_arr.map((s) => {
-        const l = name_lookup[remove_unwanted(s.toLowerCase())];
-        return "<a href='https://guide.eylanding.com/" + l.path + ".html'>" + l.name + "</a>"
-      }).join(", ").replace(/,\s(?!.*,\s)/, (s_arr.length > 2 ? "," : "") + " and ") + 
-      " guide" + 
-      (s_arr.length > 1 ? "s": "")
-    )
+module.exports = function (config, exclusions) {
+  config.addTransform("eylanding", function(content, outputPath) {
+    if (!exclusions.includes(outputPath) 
+      && outputPath 
+      && (outputPath.endsWith(".html")
+        || outputPath.endsWith(".md")
+        || outputPath.endsWith(".njk")
+      )
+    ) {
+      const $ = cheerio.load(content);
+
+      $('.eylanding-link').each(function(_) {
+        const s_arr = $(this).text().split(/[,\s]+/).filter((s) => remove_unwanted(s) != "");
+        $(this).replaceWith(
+          "Eylanding's simplified " + 
+          s_arr.map((s) => {
+            const l = name_lookup[remove_unwanted(s.toLowerCase())];
+            return "<a href='https://guide.eylanding.com/" + l.path + ".html'>" + l.name + "</a>"
+          }).join(", ").replace(/,\s(?!.*,\s)/, (s_arr.length > 2 ? "," : "") + " and ") + 
+          " guide" + 
+          (s_arr.length > 1 ? "s": "")
+        )
+      });
+
+      return $.html()
+    } else {
+      return content;
+    }
   });
-
-  return $.html()
 }

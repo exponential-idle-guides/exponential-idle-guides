@@ -42,7 +42,6 @@ function testSidebar(e, list, bool=true, stop=false){
   return (stop ? true: testSidebar(e, globals.sidebar_list.concat(['sidebarOptions']), false, true))
 }
 
-
 window.addEventListener('click', function(e){
   const id = (globals.Mobile && globals.curr_sidebar!='none') ? globals.curr_sidebar : "HeaderSidebar";
   const property = globals.Mobile ? '--sidebar-height' : '--sidebar-width';

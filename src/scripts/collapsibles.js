@@ -1,4 +1,25 @@
-import {full_skiplist, closed_char, open_char, supported} from '../src/scripts/collapsibles_data.js';
+import { copy_dict } from '../../../src/utils/dict.js';
+
+const full_skiplist = {
+  "guides": {
+    "ex-basics": ["#visual-representation", "#reference-formula"],
+    "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
+    "theory-strategies": ["#official-theories", "#official-custom-theories"]
+  },
+  "guide-extensions": {
+    "rankings-hall-of-fame": ["#hall-of-fame"],
+    "rankings-main": ["#previous-rankings"],
+    "seasons-main": ["#previous-rankings"]
+  },
+  "ranking-news": {
+    "2022-yr": ["#2022-recap"]
+  },
+  "season-news": {},
+  "ct-creation": {},
+  "": {}
+}
+
+const supported = ["h2", "h3", "h4"];
 
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
@@ -13,10 +34,6 @@ function get_skiplist(url) {
   return s === undefined ? [] : [,...s];
 }
 const skiplist = [...get_skiplist(current_url), ...supported.map((h) => ".fake-" + h)];
-
-function copy_dict(dict, f) {
-	return Object.keys(dict).reduce((a,v) => ({...a, [v]: f(dict, v)}), {});
-}
 
 function skipped(classlist, id = "#") {
   if (classlist === undefined && id === "#") {
@@ -52,7 +69,7 @@ function open_collapsible(header) {
   content.style.display = "block";
   $(header).removeClass('collapsible-closed');
   $(header).addClass('collapsible-open');
-  $(header).html($(header).html().replace(new RegExp(closed_char), open_char));
+  $(header).html($(header).html().replace(/\u{25B6}\u{FE0E}/u, '\u{25BC}'));
 }
 function close_collapsible(header) {
   header.classList.toggle("active");
@@ -60,7 +77,7 @@ function close_collapsible(header) {
   content.style.display = "none";
   $(header).removeClass('collapsible-open');
   $(header).addClass('collapsible-closed');
-  $(header).html($(header).html().replace(new RegExp(open_char), closed_char));
+  $(header).html($(header).html().replace(/\u{25BC}/u, '\u{25B6}\u{FE0E}'));
 }
 
 for (let i = 0; i < coll.length; i++) {

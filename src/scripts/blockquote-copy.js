@@ -1,4 +1,4 @@
-import {remove_char} from './remove-char.js';
+import {remove_char} from '../../../src/utils/str.js';
 
 function copyText(id){
   var text = document.getElementById(id).innerText;
