@@ -115,7 +115,7 @@ A useful strategy in the later stages of a graduation is $t$ stacking. It refers
 
 Once you have enough students to always have R4 to R7 maxed out (about 30k), you will want to look for "Bigmas", students that will yields a larger than normal amount of $\varphi$, and "Skipmas", students that will yield 0 extra $\varphi$, as they cannot be used for optimal student distribution. These students, especially skipmas, may change if you do not use accel, or your star values are drastically different from the norm. So, to check if you have a Skipma or Bigma, you can check the calculator at the $F(t)$ that you just graduated at for both the students that you have now and the next student that you will get. If the distribution has an extra student, then it is a Skipma. If it has a larger than normal change in $\varphi$ (normally 1e9 difference), then it is a Bigma. You want to graduate on a Bigma, and skip Skipmas.
 
-The chart below lists out all of the Bigma to skip. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
+The table below lists out all of the Bigma. Skipmas will not be listed as they are only ever viable if you are at the extreme endgame with very low rates which has not been the case since pre-1.4.21 (January 2022).
 
 ##### Note: The best way to decide a bigma skipma is to either calculate $\varphi$ distribution yourself or use the [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) which will automatically ask for information for this calculation if you are on 1d$\sigma$. Instructions to run are found in [Introduction to Graduation](/guides/intro-to-grad/#graduation-routing).
 

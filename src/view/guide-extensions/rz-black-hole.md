@@ -24,7 +24,7 @@ A data set of $t$, $z$ and $z'$ had been obtained and undergo the manipulation o
 
 Take an example of $t = 900$ simulation, given $\dot{\delta}$ formula in the game, $\delta$ can be manipulated as
 
-$$\delta = \sum^{900/\Delta t}_{t=0}\dot{\delta}(t)\Delta t = \Delta t\sum^{900/\Delta t}_{t=0}w_1(t)w_2(t)z'(t)^b$$
+$$\delta = \sum^{900/\Delta t}_ {t=0}\dot{\delta}(t)\Delta t = \Delta t\sum^{900/\Delta t}_ {t=0}w_1(t)w_2(t)z'(t)^b$$
 
 In real game, the formula had already been its most simplified form as the power of $w_1$ and $w_2$ varies when purchased. In this simulation, the **assumption of the effect $w_1$ and $w_2$ to be the same throughout the publication** had been made. After black hole was implemented at an arbitrary time $a$, $z'$ were fixed, formula for cumulative $\delta$ could be simplified as
 

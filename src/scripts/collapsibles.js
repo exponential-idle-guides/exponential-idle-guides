@@ -4,7 +4,7 @@ const full_skiplist = {
   "guides": {
     "ex-basics": ["#visual-representation", "#reference-formula"],
     "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
-    "theory-strategies": ["#official-theories", "#official-custom-theories"]
+    "theory-strategies": ["#official-theories", "#official-custom-theories", "#mfrc"]
   },
   "guide-extensions": {
     "rankings-hall-of-fame": ["#hall-of-fame"],

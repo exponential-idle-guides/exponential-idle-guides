@@ -225,9 +225,10 @@ tfoot td{
 .strat {
 	@extend %strat;
 }
-.strat-left {
-	tb, th {
-		text-align: left !important;
+.strat_left {
+	@extend %strat;
+	td, th {
+		text-align: left;
 	}
 }
 .strat_separated {

@@ -5,17 +5,17 @@
     {% set s = "" %}
   {% endif %}
   <div id="{{base}}Sidebar" class="sidebar">
-    <h1 class="sidebartitle">{{title}}</h1>
+    <h1 class="sidebartitle">{{ title | safe }}</h1>
     <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
     <div class="content_wrapper {{s}}">
-      {{ caller() | safe}}
+      {{ caller() | safe }}
     </div>
   </div>
   <div id="{{base}}Sidebarinvis" class="sidebar">
-    <h1 class="sidebartitle">{{title}}</h1>
+    <h1 class="sidebartitle">{{ title | safe }}</h1>
     <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
     <div class="content_wrapper {{s}}">
-      {{ caller() | safe}}
+      {{ caller() | safe }}
     </div>
   </div>
 {% endmacro %}
@@ -50,7 +50,7 @@
         <ul>
           {%- for guide in collections.guides -%}
             <li>
-              <a href="{{guide.url}}">{{ guide.data.title }}</a>
+              <a href="{{guide.url}}">{{ guide.data.title | safe }}</a>
             </li>
           {%- endfor -%}
         </ul>
@@ -85,7 +85,7 @@
             {% endfor %}
             
             {% if yearbool %}
-              <h3>{{ year }}</h3>
+              <h3>{{ year | safe }}</h3>
               <ul>
                 {% for post in yearPosts | reverse %}
                   {% if '/ranking-news' in post.url %}
@@ -93,9 +93,9 @@
                     <li>
                       <a href="{{post.url}}">
                         {% if 'Rankings & News' in title %}
-                          {{ title.slice(16,-5) }}
+                          {{ title.slice(16,-5) | safe }}
                         {% else %}
-                          {{ post.data.title }}
+                          {{ post.data.title | safe }}
                         {% endif %}
                       </a>
                     </li>
@@ -116,7 +116,7 @@
             {% endfor %}
 
             {% if yearbool %}
-              <h3>{{ year }}</h3>
+              <h3>{{ year | safe }}</h3>
               <ul>
                 {% for post in yearPosts | reverse %}
                   {% if '/season-news' in post.url %}
@@ -124,9 +124,9 @@
                     <li>
                       <a href="{{post.url}}">
                         {% if 'Season Rankings & News' in title %}
-                          {{ title.slice(23,-5) }}
+                          {{ title.slice(23,-5) | safe }}
                         {% else %}
-                          {{ post.data.title }}
+                          {{ post.data.title | safe }}
                         {% endif %}
                       </a>
                     </li>

@@ -8,7 +8,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/scripts/slugify.js"></script>
     <script type="module" defer src="/scripts/init.js"></script>
-    <script type="module" defer src="/scripts/color-scheme.js"></script>
     <script type="text/javascript" defer src="/utils/jquery-functions.js"></script>
     <script type="module" defer src="/scripts/collapsibles.js"></script>
     <script type="module" defer src="/scripts/sidebar/open-sidebars.js"></script>
@@ -27,7 +26,7 @@
       gtag('js', new Date());
       gtag('config', 'G-CQWRWZCSZW');
     </script>
-    <title>{{title}} - Exponential Idle Guides</title>
+    <title>{{ title | safe }} - Exponential Idle Guides</title>
   </head>
   <body>    
     <header class="page-section header" id="top">
@@ -41,9 +40,9 @@
 
     <main class="page-section content-wrapper">
       {% block title %}
-        <h2>{{title}}</h2>
+        <h2>{{ title | safe }}</h2>
         {% if subtitle %}
-          <p class="subtitle">{{ subtitle }}</p>
+          <p class="subtitle">{{ subtitle | safe }}</p>
         {% endif %}
       {% endblock %}
 

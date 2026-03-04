@@ -10,10 +10,10 @@
       {% set next = posts | getNextCollectionItem(page) %}
 
       {% if previous %}
-        <a href="{{previous.url}}">Previous: {{previous.data.title}}</a>
+        <a href="{{previous.url}}">Previous: {{ previous.data.title | safe }}</a>
       {% endif %}
       {% if next %}
-        <a href="{{next.url}}" class="pagination__next">Next: {{next.data.title}}</a>
+        <a href="{{next.url}}" class="pagination__next">Next: {{ next.data.title| safe }}</a>
       {% endif %}
     {% endfor %}
   </nav>
@@ -25,8 +25,8 @@
 
   {% if author or contributors %}
     <p class="byline">
-      {% if author %}Guide written by <strong>{{ author }}</strong>.{% endif %}
-      {% if contributors %}Contributions from <strong>{{ contributors }}</strong>.{% endif %}
+      {% if author %}Guide written by <strong>{{ author | safe }}</strong>.{% endif %}
+      {% if contributors %}Contributions from <strong>{{ contributors | safe }}</strong>.{% endif %}
   {% endif %}
 
   {% if ranking_bools[0] or ranking_bools[2] %}
@@ -54,7 +54,7 @@
           {% if (eylanding is defined) or '/guide-extensions' in page.url %}
             or <span class="eylanding-link"> 
               {% if eylanding != '' %}
-                  {{eylanding}}
+                  {{ eylanding | safe }}
               {% endif %}
               {% if '/guide-extensions' in page.url %}
                 extensions
@@ -85,7 +85,7 @@
       {% endfor %}
       
       {% if yearbool %}
-        <h3>{{ year }}</h3>
+        <h3>{{ year | safe }}</h3>
         <ul>
           {% for post in yearPosts | reverse %}
             {% if '/ranking-news' in post.url %}
@@ -93,9 +93,9 @@
               <li>
                 <a href="{{post.url}}">
                   {% if 'Rankings & News' in title %}
-                    {{ title.slice(16,-5) }}
+                    {{ title.slice(16,-5) | safe }}
                   {% else %}
-                    {{ post.data.title }}
+                    {{ post.data.title | safe }}
                   {% endif %}
                 </a>
               </li>
@@ -114,7 +114,7 @@
       {% endfor %}
 
       {% if yearbool %}
-        <h3>{{ year }}</h3>
+        <h3>{{ year | safe }}</h3>
         <ul>
           {% for post in yearPosts | reverse %}
             {% if '/season-news' in post.url %}
@@ -122,9 +122,9 @@
               <li>
                 <a href="{{post.url}}">
                   {% if 'Season Rankings & News' in title %}
-                    {{ title.slice(23,-5) }}
+                    {{ title.slice(23,-5) | safe }}
                   {% else %}
-                    {{ post.data.title }}
+                    {{ post.data.title | safe }}
                   {% endif %}
                 </a>
               </li>
