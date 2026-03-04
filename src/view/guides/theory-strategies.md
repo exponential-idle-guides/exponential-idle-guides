@@ -2192,9 +2192,9 @@ Caption: CSR2<green>XL x.xx</green>;
 
 | INVIS | Before x.xx Pub Mult | After x.xxx Pub Mult |
 | ----- | ------------------------------------------------------------- | -------------------- |
-| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | REDX |
 | $q_2$ | ✔️* | REDX |
-| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost | REDX |
+| $c_1$ | When cost$\times(15+$lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost | REDX |
 | $n$ | ✔️** | REDX |
 | $c_2$ | CHECK | REDX |
 | | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
@@ -2241,9 +2241,9 @@ Caption: CSR2<green>XLPT</green>;
 
 | | |
 | ----- | ------------------------------------------------------------- |
-| $q_1$ | When cost$\times(7+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost |
+| $q_1$ | When cost$\times(7+$lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost |
 | $q_2$ | ✔️* |
-| $c_1$ | When cost$\times(15+$lvl%$10)\lt$$\text{min}(q_2,n,c_2)$ cost |
+| $c_1$ | When cost$\times(15+$lvl%$10)\lt$ $\text{min}(q_2,n,c_2)$ cost |
 | $n$ | ✔️** |
 | $c_2$ | CHECK |
 | | [FOOT;]* If $q_2$ cost is similar to $n$ or $c_2$ cost, prioritize $n$ or $c_2$ respectively. |
@@ -2318,11 +2318,11 @@ Caption: FI<green>MSdPermaSwap</green>;
 
 | | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$ $\text{min}(q_2,K)$ cost |
 | $q_2$ | CHECK |
 | $K$ | CHECK |
 | $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$ $\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
@@ -2396,11 +2396,11 @@ Caption: FI<green>dPermaSwap</green>;
 
 | | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$ $\text{min}(q_2,K)$ cost |
 | $q_2$ | CHECK |
 | $K$ | CHECK |
 | $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$ $\text{min}(q_2,K,m)$ cost |
 
 **PermaSwap strategy**
 
@@ -2434,11 +2434,11 @@ Caption: FI<green>MSd</green>;
 
 | | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$ $\text{min}(q_2,K)$ cost |
 | $q_2$ | CHECK |
 | $K$ | CHECK |
 | $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$ $\text{min}(q_2,K,m)$ cost |
 
 **Milestone swapping strategy**
 
@@ -2500,11 +2500,11 @@ Caption: FI<green>d</green>;
 
 | | |
 | ----- | ---------------------------------------------------- |
-| $q_1$ | When cost$\times(1+$lvl%$23)\lt$$\text{min}(q_2,K)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$23)\lt$ $\text{min}(q_2,K)$ cost |
 | $q_2$ | CHECK |
 | $K$ | CHECK |
 | $m$ | CHECK |
-| $n$ | When cost$\times(1+$lvl%$11)\lt$$\text{min}(q_2,K,m)$ cost |
+| $n$ | When cost$\times(1+$lvl%$11)\lt$ $\text{min}(q_2,K,m)$ cost |
 
 **Milestone routing information**
 
@@ -2538,9 +2538,9 @@ Caption: FP<green>modBurst<blue>C1</blue>MS</green>;
 | | |
 | --------- | ---------------------------------------------------- |
 | $\dot{t}$ | CHECK |
-| $c_1$ | When cost$\times(1+$lvl%$100)\lt$$\text{min}(c_2,s)$ cost* |
+| $c_1$ | When cost$\times(1+$lvl%$100)\lt$ $\text{min}(c_2,s)$ cost* |
 | $c_2$ | ✔️** |
-| $q_1$ | When cost$\times(1+$lvl%$10)\lt$$\text{min}(q_2,s)$ cost |
+| $q_1$ | When cost$\times(1+$lvl%$10)\lt$ $\text{min}(q_2,s)$ cost |
 | $q_2$ | ✔️*** |
 | $r_1$ | CHECK |
 | $n$ | CHECK |

@@ -273,7 +273,7 @@ $$\begin{alignat*}{1}
   \Rightarrow r &= Kt
 \end{alignat*}$$
 
-$$\int _{0}^{q}{g(x)dx} = Kq^6 = Kt^6$$
+$$\int_{0}^{q}{g(x)dx} = Kq^6 = Kt^6$$
 $$\sqrt[\pi]{\int_{0}^{ q }g(x)dx} = Kt^{\frac{6}{\pi}}$$
 
 $$\begin{alignat*}{1}
@@ -325,6 +325,7 @@ $$\begin{alignat*}{2}
 \end{alignat*}$$
 
 We have:
+
 $$\begin{alignat*}{1}
   \log{c_i} &\propto \log{\rho}\\
   \log{w_i} &\propto \log{\delta}\\
@@ -345,8 +346,7 @@ Let's now compute how the variables we need scale with their currencies.
 
 Now we can substitute in the system:
 
-$$
-\begin{alignat}{7}
+$$\begin{alignat}{7}
   -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}  &\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \nonumber\\
   \left[1-(1+\frac{9}{8}+\frac{1}{30})\log{2}\right]\log{\delta} &&&\,=\,& \log{\Pi} &\,+\,& \log{t} &+ K \nonumber\\
   -\frac{9}{8}\log{2}\log{\delta} &\,+\,& C\log{\rho}&\,=\,& \log{\Pi} &\,+\,& 2\log{t} &+ K \tag{1}\\

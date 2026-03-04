@@ -3,62 +3,20 @@ const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItFootnotes = require("markdown-it-footnote");
 
-const { mathjax } = require('mathjax-full/js/mathjax.js');
-const { TeX } = require('mathjax-full/js/input/tex.js');
-const { SVG } = require('mathjax-full/js/output/svg.js');
-const { jsdomAdaptor } = require('mathjax-full/js/adaptors/jsdomAdaptor.js');
-const { RegisterHTMLHandler } = require('mathjax-full/js/handlers/html.js');
-const { AllPackages } = require('mathjax-full/js/input/tex/AllPackages.js');
-const { JSDOM } = require('jsdom');
-
-const Hypher = require('hypher')
-const english = require('hyphenation.en-gb');
-
 const slugify = require('slugify');
 
-const hypher = new Hypher(english);
-
-const util = require('util');
-
 const pluginTOC = require('eleventy-plugin-toc');
-
 const pluginNestingTOC = require('eleventy-plugin-nesting-toc');
 
-const _ = require("lodash");
+const preprocessors = require('./config/.11ty/preprocessors');
+const transformations = require('./config/.11ty/transformations');
+const MathJax = require('./config/.11ty/MathJax');
+const filters = require('./config/.11ty/filters');
+const collections = require('./config/.11ty/collections');
 
 const transformExcludes = [
   "_site/sitemap.xml"
 ];
-
-function ct_creation_post_sort(a, b) {
-  const has_tag = (post, tag) => post.data.tags.includes(tag);
-  if (a.data.week != b.data.week) {
-    if (a.data.week == -1) return has_tag(a, "preface") ? -1: 1;
-    if (b.data.week == -1) return has_tag(b, "preface")  ? -1: 1;
-    return a.data.week - b.data.week;
-  }
-  
-  const a_type = has_tag(a, "preface") ? -1: has_tag(a, "appendix") ? 1: 0;
-  const b_type = has_tag(b, "preface") ? -1: has_tag(b, "appendix") ? 1: 0;
-  if (a_type == b_type) return a.data.day - b.data.day;
-  return a_type - b_type;
-}
-
-function ct_appendix_label(index) {
-  const b = 26;
-  let out = ""
-  for (let n = Math.floor(Math.log(index) / Math.log(b)); n >= 0; n--) {
-    out += String.fromCharCode(64+Math.floor((index % (b ** (n + 1))) / (b ** n)));
-  }
-  return out;
-}
-
-function ct_toNumber(input) {
-  const output = Number(input);
-  if (!isNaN(output)) return output;
-  const code = input.toLowerCase().charCodeAt(0)-96;
-  return (code <= 0 || code > 25) ? null: code;
-}
 
 module.exports = config => {
   const markdownItOptions = {
@@ -68,301 +26,73 @@ module.exports = config => {
   };
 
   const markdownItAnchorOptions = {
-    permalink: true,
     slugify: s => slugify(s, {
       lower: true,
       strict: true
     }),
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-    permalinkAttrs: (slug, state) => ({
-      "aria-label": "Permalink: " + slug
-    }),
+    renderPermalink: (slug, opts, state, idx) => {
+      // Space before permalink
+      const space = new state.Token('text', '', 0);
+      space.content = ' ';
+
+      // Anchor Open: <a class="direct-link" href="#slug" aria-label="...">
+      const linkOpen = new state.Token('link_open', 'a', 1);
+      linkOpen.attrs = [
+        ['class', 'direct-link'],
+        ['href', `#${slug}`],
+        ['aria-label', `Permalink: ${slug}`]
+      ];
+
+      // Visually Hidden Span: <span class="visually-hidden">slug</span>
+      const vhOpen = new state.Token('span_open', 'span', 1);
+      vhOpen.attrs = [['class', 'visually-hidden'], ['style', 'display:none;']];
+      const vhText = new state.Token('text', '', 0);
+      vhText.content = `Permalink: ${slug}`;
+      const vhClose = new state.Token('span_close', 'span', -1);
+
+      // Icon Span (Hidden from SR): <span aria-hidden="true">#</span>
+      const iconOpen = new state.Token('span_open', 'span', 1);
+      iconOpen.attrs = [['aria-hidden', 'true']];
+      const iconText = new state.Token('text', '', 0);
+      iconText.content = '#';
+      const iconClose = new state.Token('span_close', 'span', -1);
+
+      // Anchor Close: </a>
+      const linkClose = new state.Token('link_close', 'a', -1);
+
+      // Push all tokens into the header's inline children array
+      state.tokens[idx + 1].children.push(
+        space,
+        linkOpen, 
+        vhOpen, vhText, vhClose,
+        iconOpen, iconText, iconClose, 
+        linkClose
+      );
+    },
     level: [1,2,3,4,5]
   };
 
   config.addPlugin(pluginTOC)
   config.addPlugin(pluginNestingTOC)
 
-  config.setLibrary(
-    "md",
-    markdownIt(markdownItOptions)
-      .use(markdownItAnchor, markdownItAnchorOptions)
-      .use(markdownItFootnotes)
-      .use(markdownItAttrs, {
-        leftDelimiter: '{',
-        rightDelimiter: '}',
-        allowedAttributes: []
-      })
+  config.addTemplateFormats("md"); // Make sure .md files are processed by this handler 
+  config.setLibrary("md", markdownIt(markdownItOptions)
+    .use(markdownItAnchor, markdownItAnchorOptions)
+    .use(markdownItFootnotes)
+    .use(markdownItAttrs, {
+      leftDelimiter: '{',
+      rightDelimiter: '}',
+      allowedAttributes: []
+    })
   );
 
   config.setDataDeepMerge(true);
 
-  // Initialize MathJax
-  const adaptor = jsdomAdaptor(JSDOM);
-  RegisterHTMLHandler(adaptor);
-
-  // Custom Macros
-  const LaTeXMacros = {
-    RR: '{\\mathbb{R}}',
-    bold: ['{\\mathbf{#1}}', 1],    // Macro with 1 argument
-    ee: ['{\\times 10^{#1}}', 1],   // Custom scientific notation
-    joinrel: '{\\mathrel{\\mkern-3mu}}',
-    relbar: '{-}',
-    perm: ['{{}_{#1}\\!P_{#2}}', 2],
-    extrarightarrow: ['{\\xrightarrow{\\hspace{#1}}}', 1],
-    extraleftarrow: ['{\\xleftarrow{\\hspace{#1}}}', 1],
-    fractext: ['{\\text{$\\frac{\\text{#1}}{\\text{#2}}$}}', 2],
-  };
-  
-  // Setup Mathjax packages, macros, and delimiters
-  const tex = new TeX({ 
-    packages: [...AllPackages, 'base', 'ams', 'newcommand', 'configmacros', 'color', 'physics', 'float', 'setspace', 'mathptmx', 'amsmath', 'tikz', 'xspace', 'amssymb', 'amsthm', 'enumitem', 'gensymb', 'mathtools', 'multicol', 'multirow', 'hhline', 'nicematrix', 'listings', 'ifthen', 'graphicx', 'pgfplotstable', 'pgfplots'],
-    inlineMath: [['$', '$'], ['\\(', '\\)']],
-    displayMath: [['$$', '$$'], ['\\[', '\\]']],
-    macros: LaTeXMacros
-  });
-  const svg = new SVG({ fontCache: 'local' });
-
-  config.addTransform("mathjax", async function(content) {
-    if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
-      // Has math check
-      if (!(/[^\$]\$[^\$]+\$[^\$]|\$\$[^\$]+\$\$|\\\((?:[^\\].|\\[^\)])*\\\)|\\\[(?:[^\\][^\]])\\\[/.test(content))) {
-        return content;
-      }
-      // Create DOM and document
-      const dom = adaptor.parse(content);
-      const html = mathjax.document(dom, {
-          InputJax: tex,
-          OutputJax: svg,
-      });
-
-      // Render the math
-      html.render();
-
-      // Check if math was found
-      // If not, return original content
-      if (Array.from(html.math).length === 0) return content;
-
-      // Return the rendered content
-      return (
-        adaptor.doctype(html.document) + "\n" +
-        adaptor.outerHTML(adaptor.root(html.document))
-      );
-    }
-    return content;
-  });
-
-  config.addTransform("hyphenation", (content, outputPath) => {
-    if (!transformExcludes.includes(outputPath)) {
-
-      const dom = new JSDOM(content);
-      const document = dom.window.document;
-      const NodeFilter = dom.window.NodeFilter;
-
-      const filter = {
-        acceptNode: n => {
-          if (!n.parentElement) return NodeFilter.FILTER_REJECT;
-
-          if (
-            n.parentElement.closest(
-              "pre, code, script, style, .MathJax, [class^='mjx-'], [class*=' mjx-']"
-            )
-          ) {
-            return NodeFilter.FILTER_REJECT;
-          }
-
-          return NodeFilter.FILTER_ACCEPT;
-        }
-      };
-
-      const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
-
-      while (walk.nextNode()) {
-        walk.currentNode.nodeValue = hypher.hyphenateText(walk.currentNode.nodeValue);
-      }
-      return dom.serialize();
-    } else {
-      return content;
-    }
-  });
-  
-  config.addFilter("slug", s =>
-    s !== undefined ?
-      slugify(s, { lower: true, strict: true }) :
-      "-"
-  );
-
-  config.addFilter("inspect", (s, d) =>
-    util.inspect(s, {depth: d === undefined ? 2 : d})
-  );
-
-  config.addFilter("keys", obj => Object.keys(obj));
-
-  config.addFilter("ct_week", function(collection, week) {
-    if (!collection || !Array.isArray(collection)) {
-      return [];
-    }
-    return collection.filter((post) => post.data.week == week)
-  });
-
-  config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
-  config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.short_title + '</a>');
-
-  config.addCollection("guides", function(collectionApi) {
-    return collectionApi.getFilteredByTag("guides").sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
-
-  config.addCollection("extensions", function(collectionApi) {
-    return collectionApi.getFilteredByTag("extensions").sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
-  
-  let ct_weeks = [];
-  const ct_dev_tags = ["preface", "day", "appendix"];
-  let last_week;
-  config.addCollection("ct-creation", function(collectionApi) {
-    let posts = collectionApi.getFilteredByTag("ct-creation")
-
-    posts.forEach((post) => {
-      post.data.tags = post.data.tags || [];
-      const res = /^(?<tag>preface|appendix|day)(([\-_]?)(?:(?<time>\d+|(?<=appendix[\-_])[a-z]+)|(?<!day\3))([\-_]?))(?:(?<!day\2)(?<order>(?<!appendix\3[a-z]+\5)[a-z]+|\d+)|)$/i.exec(post.data.page.fileSlug);
-      if (res == null){
-        if (!post.data.tags.includes("BAD_CT_CREATION")) post.data.tags.push("BAD_CT_CREATION");
-        return;
-      }
-
-      post.data.short_title = /^\s*((?:\S*(?:\s*(?=\S)|))*)\s*$/.exec(post.data.title)[1];
-      
-      const {tag, time, order} = res.groups;
-      const tag_lower = tag.toLowerCase();
-      // Add the correct tag and remove the other incorrect tags
-      if (!post.data.tags.includes(tag_lower)) post.data.tags.push(tag_lower);
-      post.data.tags = post.data.tags.filter((t) => t == tag_lower || !ct_dev_tags.includes(t));
-
-      if (time === undefined) {
-        t = 0;
-      } else {
-        t = ct_toNumber(time);
-      }
-      if (tag_lower == "day") {
-        post.data.day = t == 0 ? 0 : ((t - 1) % 7) + 1;
-        post.data.week = Math.floor((t - post.data.day) / 7) + 1;
-      } else if (order == undefined) {
-        post.data.day = t;
-        post.data.week = -1;
-      } else {
-        post.data.day = ct_toNumber(order);
-        post.data.week = t;
-      }
-      if (!ct_weeks.includes(post.data.week)) {
-        ct_weeks.push(post.data.week);
-      }
-    });
-
-    posts = posts.filter((post) => !post.data.tags.includes("BAD_CT_CREATION"));
-    posts.sort((a, b) => ct_creation_post_sort(a, b));
-
-    let appendices = posts.filter((post) => post.data.tags.includes("appendix"));
-    appendix_count = [];
-    ct_weeks.forEach((w) => {
-      let i = 0;
-      appendices.filter((post) => post.data.week == w).forEach((post) => {
-        i++;
-        post.data.day = i;
-      });
-      appendix_count.push(i);
-    });
-
-    last_week = Math.max(...ct_weeks);
-    posts.forEach((post) => {
-      switch (post.data.tags.includes("day") ? "day" : post.data.tags.includes("preface") ? "preface" : "appendix") {
-        case "day":
-          post.data.prefix = "Day " + post.data.day + ": ";
-          break;
-        case "preface":
-          /*
-          if (post.data.week == -1) {
-            post.data.prefix = "";
-          } else {
-            post.data.prefix = "Preface : ";
-          }
-          */
-          post.data.prefix = "";
-          break;
-        case "appendix":
-          post.data.week = post.data.week == -1 ? last_week + 1 : post.data.week;
-          post.data.prefix = "Appendix " + ct_appendix_label(post.data.week) 
-            + (appendix_count[ct_weeks.indexOf(post.data.week)] > 1 ? "." + post.data.day : "") + ": ";
-          break;
-      }
-      post.data.title = post.data.prefix + post.data.short_title;
-    })
-
-    if (ct_weeks.indexOf(-1) != -1) ct_weeks.splice(ct_weeks.indexOf(-1),1);
-
-    return posts;
-  });
-
-  config.addCollection("ct-creation-weeks", function(c) {return ct_weeks;});
-
-  ct_dev_tags.forEach((tag) => {
-    config.addCollection('ct-'+tag, (collectionApi) => {
-      return collectionApi.getFilteredByTags('ct-creation', tag).sort((a, b) => ct_creation_post_sort(a, b));
-    });
-  });
-  
-  config.addCollection("postsByWeek", (collectionApi) => {
-    const output = _.chain(collectionApi.getAllSorted())
-      .groupBy((post) => post.data.week)
-      .toPairs()
-      .reverse()
-      .value();
-    collectionApi.getFilteredByTags('ct-appendix').forEach((post) => {
-      if (post.data.week > last_week) post.data.week = -1;
-    });
-    return 
-  });
-
-
-  const rankings = ["ranking", "season"];
-  rankings.forEach((ranking) => {
-    config.addCollection(ranking + "s", function(collectionApi) {
-      return collectionApi.getFilteredByTag(ranking + "-news").sort(function(a, b) {
-        return a.date - b.date;
-      });
-    });
-  });
-
-  config.addCollection("postsByYear", (collectionApi) => {
-    return _.chain(collectionApi.getAllSorted())
-      .groupBy((post) => post.date.getFullYear())
-      .toPairs()
-      .reverse()
-      .value();
-    /*return rankings.reduce((acc, name, i) => {
-      acc = acc || {};
-      acc[name] = _.chain(collectionApi
-          .getFilteredByTag(rankings[i])
-          .sort((a,b) => b.data.order - a.data.order)
-        ).groupBy((post) => post.date.getFullYear())
-        .toPairs()
-        .reverse()
-        .value();
-    });*/
-  });
-
-  const guide_tags = ['T9+ Recommendations', 'T9+ Research', 'other', 'rankings', 'seasons'];
-  guide_tags.forEach((tag) => {
-    config.addCollection('ext-'+tag, (collectionApi) => {
-      return collectionApi.getFilteredByTags('extensions', tag).sort(function(a, b) {
-        return a.data.order - b.data.order;
-      });
-    });
-  });
+  preprocessors(config);
+  transformations(config, transformExcludes);
+  MathJax(config, transformExcludes);
+  filters(config);  
+  collections(config);
 
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
@@ -372,7 +102,6 @@ module.exports = config => {
       data: "_data",
       output: "_site"
     },
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: false
+    markdownTemplateEngine: 'njk'
   };
 }
