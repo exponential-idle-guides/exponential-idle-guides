@@ -71,14 +71,6 @@ module.exports = config => {
         linkClose
       );
     },
-    /*slugifyWithState: (title, state) => {
-      const slug = slugify(title, {
-        lower: true,
-        strict: true
-      });
-      state.env.id = slug;
-      return slug;
-    },*/
     level: [1,2,3,4,5]
   };
 
