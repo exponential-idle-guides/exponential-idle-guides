@@ -83,7 +83,7 @@ By the way, although right now we don't need any variables inside an enclosed sc
 
 For its description and info, since we don't need to update them, we will assign a string to two properties of the clicker: **description** and **info**. Their 'dynamic' counterparts are **getDescription** and **getInfo** respectively, which can only be assigned to arrow functions.
 
-In the description, we'd want to make it look 'mathsy', so we are going to use the arrow syntax for assignment: $\rho \leftarrow \rho + 1$. For the LaTeX syntax, we use **Utils.getMath** to wrap a normal string in a pair of **$** and **$** for inline LaTeX display. You can use these markers normally without this function as well.
+In the description, we'd want to make it look 'mathsy', so we are going to use the arrow syntax for assignment: $\rho \leftarrow \rho + 1$. For the LaTeX syntax, we use **Utils.getMath** to wrap a normal string in a pair of **\$** and **\$** for inline LaTeX display. You can use these markers normally without this function as well.
 
 Programmatically though, it would look something more like this: **currency.value += 1**. In fact, this is what we would like to trigger every time we buy the clicker. And for that, we can use the upgrade's **bought** trigger:
 
@@ -195,7 +195,7 @@ let init = () =>
 
 For the description, we want to show something like $c_1 = x$, and for the info, we want to show the change in power when we level up the upgrade as $c_1 = x \rightarrow c_1 = y$. Since there is a common part in these two texts, $c_1 = ...$, we will be creating a reuseable function **getDesc** to shorten the code.
 
-This function here returns a special type of string: a template literal, which are wrapped by backticks (**\`**). Template literals have two special powers: multi-line strings, and formatting. By using the syntax **${}** inside a template literal, and put an expression inside the brackets, we can format the string based on the expression's result. In this case, the string will take whatever **getc1(level).toString(0)** (string representation of $c_1$ with no decimals) evaluates to. If the value of $c_1$ is 9, the returned string will be 'c_1 = 9', for instance.
+This function here returns a special type of string: a template literal, which are wrapped by backticks (**\`**). Template literals have two special powers: multi-line strings, and formatting. By using the syntax **\${}** inside a template literal, and put an expression inside the brackets, we can format the string based on the expression's result. In this case, the string will take whatever **getc1(level).toString(0)** (string representation of $c_1$ with no decimals) evaluates to. If the value of $c_1$ is 9, the returned string will be 'c_1 = 9', for instance.
 
 In the assignment of `getInfo`, we also see a new utility being used: **Utils.getMathTo**, which is a doubled version of **Utils.getMath**, with a right-facing arrow in the middle. We'll be using it to generate our $c_1 = x \rightarrow c_1 = y$.
 
