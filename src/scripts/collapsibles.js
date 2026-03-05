@@ -1,6 +1,4 @@
-function copy_dict(dict, f) {
-  return Object.keys(dict).reduce((a,v) => ({...a, [v]: f(dict, v)}), {});
-}
+const copy_dict = window.dictUtils.copy_dict;
 
 const full_skiplist = {
   "guides": {
