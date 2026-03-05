@@ -1063,9 +1063,7 @@ Caption: T4<blue>C3</blue><green>d</green>;
 | $q_1$ | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost | When cost$\times(10+$ lvl%$10)\lt$ $\text{min}(q_2,c_3)$ cost |
 | $q_2$ | CHECK | When cost is $\frac{2}{3}$ of $c_3$ cost |
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d</green> $q_1$: 377 $q_2$: 252”.
-
-The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them in this publication.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>d</green> $q_1$: 377 $q_2$: 252”. The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them in this publication.
 
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
@@ -1092,9 +1090,7 @@ Caption: T4<blue>C3</blue><green>coast</green>;
 | $q_1$ | CHECK |
 | $q_2$ | CHECK |
 
-When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>coast</green> $q_1$: 377 $q_2$: 252”.
-
-The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them to in this publication.
+When the [theory simulator](https://exponential-developers.github.io/sim-3.0/) recommends this strategy, it will show something like: T4<blue>C3</blue><green>coast</green> $q_1$: 377 $q_2$: 252”. The levels it shows after $q_1$ and $q_2$ are the last levels you should buy them to in this publication.
 
 ### T4<blue>C3</blue>
 
@@ -1991,7 +1987,7 @@ The goal of this strategy is:
 
 **Note: <red>NEVER</red> swap into State 2 after 4.5 publication multiplier. Do State 3 instead for that time.**
 
-<br>The ratios for swapping are as follows, where you enter the next state when the ratio: $\frac{min(b_1 cost, b_2 cost)}{\rho}$ is lower than the ratio provided under the header:
+<br>The ratios for swapping are as follows, where you enter the next state when the ratio: $min(b_1 cost, b_2 cost)/\rho$ is lower than the ratio provided under the header:
 
 Class: strat_separated;
 Caption: Ratios for SLMS Swapping;
@@ -2829,8 +2825,8 @@ The levels it shows after $c_1$ and $c_2$ are the last levels you should buy the
 
 You may see at the end of a strategy <green>RC</green> (ex: MF<green>d2RC</green>). This stands for <green>Reset Coast</green>. To perform MF<green>RC</green> 
 
-1. stop buying $c_1$ if **$\bold{c_1}$ cost > 50% total reset cost**, and
-2. stop buying $a_1$ if **$\bold{a_1}$ cost > 10% total reset cost**
+1. stop buying $c_1$ if **$c_1$ cost > 50% total reset cost**, and
+2. stop buying $a_1$ if **$a_1$ cost > 10% total reset cost**
 
 where total reset cost = total cost of buying all $v_1$ + $v_2$ + $v_3$ + $v_4$ levels needed for a reset.
 

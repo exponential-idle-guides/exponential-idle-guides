@@ -25,19 +25,21 @@ last_row: false;
 | 16k  | ARROW | 16.8k | ARROW | 18k   | INVIS | INVIS |
 | 18k  | ARROW | 20k   | INVIS | INVIS | INVIS | INVIS |
 
-### Theory 1
+### Theories 1-4
+
+#### Theory 1
 
 You will not touch this theory until after ee14k. Once you begin pushing T1 after ee14k, begin using the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publication.
 
-### Theory 2
+#### Theory 2
 
 This theory will be used as overnight until 1e350 $\tau$ where it will not be touched until after ee14k. See our earlier guide for an overview for [theory 2](/guides/theories-1-4/#theory-2-25s-6k).
 
-### Theory 3
+#### Theory 3
 
 See our earlier guide for an overview for [theory 3](/guides/theories-1-4/#theory-3-30s-7k).
 
-### Theory 4
+#### Theory 4
 
 See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theory-4-35s-8k).
 
@@ -308,7 +310,7 @@ There is also the [theory simulator](https://exponential-developers.github.io/si
 
 #### How to push F(t) with R9 swapping
 
-###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
+###### Memorize your student distributions with and without 10/20/30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 swapping as a long held name of the strategy.
 
 1. Wait till $f(t)$ stops growing with students in R9 pushing $\tau$.
 2. Start accel (preferably keep it between prestiges).

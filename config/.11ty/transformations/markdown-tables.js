@@ -113,8 +113,9 @@ module.exports = function (config, exclusions) {
           }
           if (footer != undefined && (footer.toLowerCase() == "foot" || footer.toLowerCase() == "footer")) {
             if (!table.has("tfoot").length) {$('<tfoot>').appendTo(table);}
-            const parent = t.parent()
-            t.remove().appendTo(table.find("tfoot"));
+            const parent = t.parent();
+            t.remove();
+            $(t).wrap("<tr></tr>").appendTo(table.find("tfoot"));
             parent.remove()
           }
           if (type != undefined) {t.tagName=type;}

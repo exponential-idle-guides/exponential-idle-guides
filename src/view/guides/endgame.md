@@ -25,7 +25,7 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 
 ### Push F(t) with 3R9 swapping
 
-###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 seaping as a long held name of the strategy.
+###### Memorize your student distributions with and without 30 R9 students. Use the [student calculator](https://conicgames.github.io/exponentialidle/students.html) if needed. You will commonly see people refer to this as R9 swapping as a long held name of the strategy.
 
 1. Wait till $F(t)$ stops growing with students in R9 pushing $\tau$.
 2. Start accel (preferably keep it between prestiges).
@@ -40,7 +40,7 @@ Make sure to use the <button class="rsc-link" onclick="openSidebar(['ResourceSid
 
 #### R9 autoprestige expression
 
-You can find the autoprestige used for R9 Seaping here: [Equation](/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before seaping).
+You can find the autoprestige used for R9 Swapping here: [Equation](/guides/intro-to-grad/#new-autoprestige-expression). If you don't have this expression, then you will have to manually prestige each time (turn it off before swapping).
 
 ###### Reference [R9 Swapping Autoprestige Explanation](/guides/intro-to-grad/#autoprestige-explanation)
 
@@ -109,7 +109,7 @@ Strategy constructed by: Snaeky, Marks, Baldy, and Nerdy
 
 ### t stacking
 
-A useful strategy in the later stages of a graduation is $t$ stacking. It refers to [swapping](/guides/theories-5-8/#how-to-push-with-r9-seapping) multiple times during a single prestige, the quantity will increase as you gain more $F(t)$. At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase $F(t)$ with the swap, thus giving us more $dt$, allowing for more $t$, then just letting $t$ build up over time. This can be repeated multiple times and results in faster progress for $t$, especially as each swap in between profits from more $\varphi$ due to additional $dt$ and $t$. Overall this speeds up the time a prestige needs to reach a high enough value for $t$ to do a final swap compared to letting the game run fully idle.
+A useful strategy in the later stages of a graduation is $t$ stacking. It refers to [swapping](/guides/theories-5-8/#how-to-push-with-r9-swapping) multiple times during a single prestige, the quantity will increase as you gain more $F(t)$. At about 50k, you should start to do this at least once per prestige near the end of a graduation to recover faster. Past 55k, you might need to do this more than once. The more often the better, as the main goal is to increase $F(t)$ with the swap, thus giving us more $dt$, allowing for more $t$, then just letting $t$ build up over time. This can be repeated multiple times and results in faster progress for $t$, especially as each swap in between profits from more $\varphi$ due to additional $dt$ and $t$. Overall this speeds up the time a prestige needs to reach a high enough value for $t$ to do a final swap compared to letting the game run fully idle.
 
 ### Skipped students routing
 

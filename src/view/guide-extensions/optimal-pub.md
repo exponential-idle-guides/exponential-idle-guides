@@ -26,7 +26,7 @@ $$Cost = ab^{Level}\qquad (1-1)$$
 
 In which $a>0$ and $b>1$ are pre-determined constants. On the other hand, upgrades have two ways to determine the value of the variable:
 
-### Direct Multiplication:
+### Direct Multiplication
 
 This type of upgrade has an identical equation to the equation mentioned above, just with different constants in the places of $a$ and $b$. It can be represented as the expression below:
 
@@ -48,7 +48,7 @@ Since $a \neq 0$,
 
 $$\frac{\rho}{a} = b^{L}$$
 
-Since $b > 0$, \logarithm with a base of $b$ is defined,
+Since $b > 0$, $\log$ with a base of $b$ is defined,
 
 $$\log_b\left[\frac{\rho}{a}\right] = L$$
 
@@ -58,11 +58,13 @@ $$\log_b(\rho) - \log_b(a) = L\qquad (1-3)$$
 
 From (1-2) and (1-3) we have:
 
-$$u = cd^{\log_b(\rho) - \log_b(a)}$$
-$$= \frac{c}{d^{\log_b(a)}}d^{\log_b(\rho)}$$
-$$= \frac{c}{d^{\frac{\log_d(a)}{\log_d(b)}}}d^{\frac{\log_d(\rho)}{\log_d(b)}}$$
-$$= \frac{c}{\left[d^{\log_d(a)}\right]^{\frac{1}{\log_d(b)}}}\left[d^{\log_d(\rho)}\right]^{\frac{1}{\log_d(b)}}$$
-$$= \frac{c}{a^{\log_b(d)}}\rho^{\log_b(d)}$$
+$$\begin{flalign*}
+  u &= cd^{\log_b(\rho) - \log_b(a)} &&\\
+  &= \frac{c}{d^{\log_b(a)}}d^{\log_b(\rho)} &&\\
+  &= \frac{c}{d^{\frac{\log_d(a)}{\log_d(b)}}}d^{\frac{\log_d(\rho)}{\log_d(b)}} &&\\
+  &= \frac{c}{\left[d^{\log_d(a)}\right]^{\frac{1}{\log_d(b)}}}\left[d^{\log_d(\rho)}\right]^{\frac{1}{\log_d(b)}} &&\\
+  &= \frac{c}{a^{\log_b(d)}}\rho^{\log_b(d)}
+\end{flalign*}$$
 
 We can see that $r = \log_b(d)$ only depends on b and d.
 
@@ -119,10 +121,10 @@ $$v_{mk+l} = \frac{1}{q-1}p\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-4)$$
 
 Since $m$>0,from (1-4) we have:
 
-$$\begin{eqnarray}
-  \frac{1}{q-1}\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-5) \\
-  < \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
-\end{eqnarray}$$
+$$\begin{flalign*}
+  &\frac{1}{q-1}\left\\{[m+l(q-1)]q^k-m\right\\}\qquad (1-5) &&\\
+  &< \frac{1}{q-1}p[m+l(q-1)]q^k=\frac{1}{q-1}mpq^k\left[1+\frac{l}{m}(q-1)\right]
+\end{flalign*}$$
 
 Since $0 \le \frac{l}{m} \le 1$ and $q>1$,
 

@@ -177,7 +177,6 @@ $$\begin{alignat*}{1}
   \log{a_3}, \log{c_1}, \log{c_2} &\propto \log{I}\\
 \end{alignat*}$$
 
-
 For the purpose of this study, we can ignore variables bought with $\rho$.
 
 $$\begin{alignat*}{1}

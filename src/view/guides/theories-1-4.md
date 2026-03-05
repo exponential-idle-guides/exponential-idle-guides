@@ -51,11 +51,11 @@ $$\rho_{n+1} = \rho_n + c_1c_2 + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 ##### Third milestone
 
-$$\rho_{n+1} = \rho_n + c_1c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
+$$\rho_{n+1} = \rho_n + c_1c_2 \left[ 1+\frac{ln(\rho_n)}{100} \right] \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 ##### Fourth to Sixth milestone
 
-$$\rho_{n+1} = \rho_n + c_1^{1.15}c_2 \left( 1+\frac{ln(\rho_n)}{100} \right) \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
+$$\rho_{n+1} = \rho_n + c_1^{1.15}c_2 \left[ 1+\frac{ln(\rho_n)}{100} \right] \\\ + c_3\rho_{n-1}^{0.2} + c_4\rho_{n-2}^{0.3}$$
 
 #### T1 strategy
 

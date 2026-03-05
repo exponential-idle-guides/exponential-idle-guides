@@ -10,11 +10,9 @@ eylanding: "CT WSP SL EF CSR2 FI FP RZ MF"
 
 ### Custom Theory Basics
 
-Custom theories are theories made by players in the community. As of March 2025, there are 9 official
-custom theories that contribute up to e600 $\tau$ per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, Riemann Zeta Function by Prop (RZ), Magnetic Fields by Mathis (MF) and Basel Problem by Python's Koala (BaP). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP, RZ, MF and BaP from now on. The choice for a three letter abbreviation for BaP was made to avoid confusion with a previous unofficial custom theory sharing the same initials (Bin Packing).
+Custom theories are theories made by players in the community. As of March 2025, there are 9 official custom theories that contribute up to e600 $\tau$ per theory; Weierstrass Sine Product made by Xelaroc (WSP), Sequential Limits by Ellipsis (SL), Euler's Formula by Peanut, Snaeky, and XLII (EF), Convergents to Square Root 2 (CSR2/CS2) by Solarion, Fractional Integration (FI) by Gen and Snaeky, Fractal Patterns (FP) by XLII, Riemann Zeta Function by Prop (RZ), Magnetic Fields by Mathis (MF) and Basel Problem by Python's Koala (BaP). The theories will be abbreviated as WSP, SL, EF, CSR2, FI, FP, RZ, MF and BaP from now on. The choice for a three letter abbreviation for BaP was made to avoid confusion with a previous unofficial custom theory sharing the same initials (Bin Packing).
 
-In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with two exceptions) from $\rho$ to $\tau$. WSP, SL, CSR2, FI, RZ and BaP have conversion rates of
-$\tau$ = $\rho^{0.4}$ while EF has a $\tau$ conversion rate of $\tau$ = $\rho^{1.6}$ and FP with a conversion rate of $\tau$ = $\rho^{0.3}$. Meanwhile, MF is the only custom theory to this day to have $\tau$ = $\rho$.
+In order to balance custom theories with the main theories in the endgame, custom theories have a low conversion rate (with two exceptions) from $\rho$ to $\tau$. WSP, SL, CSR2, FI, RZ and BaP have conversion rates of $\tau$ = $\rho^{0.4}$ while EF has a $\tau$ conversion rate of $\tau$ = $\rho^{1.6}$ and FP with a conversion rate of $\tau$ = $\rho^{0.3}$. Meanwhile, MF is the only custom theory to this day to have $\tau$ = $\rho$.
 
 ### Which Custom Theories (CTs) should I do?
 
@@ -253,7 +251,7 @@ The third line describes $g_r$ and $g_i$, which are used to generate '$R$' and '
 
 The fourth line simply describes $\dot{q}$. This is used in the first equation directly.
 
-The fifth and final line use the results from the 3rd line, so effectively $\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}$ and $\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}$
+The fifth and final line use the results from the 3rd line, so effectively $\dot{R} = b_1^{2}b_2^{2}cos^2{(t)}$ and $\dot{I} = c_1^{2}c_2^{2}sin^2{(t)}$.
 
 #### EF Variable Description
 
@@ -545,18 +543,18 @@ align: left;
 
 ##### Main Equations
 
-$$\begin{eqnarray}
-\dot{\rho} = c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} \\
-\to \dot{\rho} = c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
-\end{eqnarray}$$
+$$\begin{flalign*}
+\dot{\rho} &= c_1c_2tT_n^{7} \to \dot{\rho} = c_1c_2qtT_n^{7} &&\\
+\to \dot{\rho} &= c_1c_2qrtT_n^{7} \to \dot{\rho} = c_1c_2qrtT_n^{5+s}
+\end{flalign*}$$
 
 $$\dot{q} = q_1AU_n^{7}/1000 \rightarrow \dot{q} = q_1AU_n^{7+s}/1000$$
 
-$$\begin{eqnarray}
-\dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} \\
-\to \dot{r} = r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} \\
-\to \dot{r} = r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
-\end{eqnarray}$$
+$$\begin{flalign*}
+\dot{r} &= r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor} &&\\
+\to \dot{r} &= r_1(T_nU_n)^{\log(n)}S_{\lfloor \sqrt{n} \rfloor}^{2.8} &&\\
+\to \dot{r} &= r_1(T_nU_n)^{\log(\sqrt{2U_n})}S_{\lfloor \sqrt{n} \rfloor}^{2.8}
+\end{flalign*}$$
 
 $$A=(2-U_{q_2}/T_{q_2})^{-1}$$
 
@@ -615,7 +613,7 @@ last_row: false;
 
 #### FP Strategy
 
-Check out the [FP Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for vari­able checks mid-pub­lic­a­tion.
+Check out the [FP Quick Purchase Tester](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) for variable checks mid-publication.
 
 ##### Idle
 
@@ -627,7 +625,7 @@ Once you have all milestones, autobuy all!
 
 The active strategies change constantly depending on your milestones and there is no definitive active strategy like most other actives that we know of currently due to the complexity of the theory. For example, exact ratios of when to buy variables are very difficult to find and the only known buying strategy is between c1 and c2. However, generally you can follow this order of buying $s\gt n=q_2\gt c_2\ge c_1\gt q_1\gt r_1$ but the longer your publish goes, the weaker q2 gets overall and will eventually become less valuable than c2. There are also edge cases where $q_1\equiv0\mod10$ and $q_1$ may be stronger than $c_1$, which may be mid $\bmod100$ cycle. The variable relationships are as follows:
 
-<u>$\underline{c_1}$ and $\underline{c_1}$ Buying</u>
+<u>$c_1$ and $c_1$ Buying</u>
 
 **Buying $c_1$ efficiently is the largest boost to rates you can do** (outside of MS).
 
@@ -639,7 +637,7 @@ More human way to do the second part is this: when $c_1\equiv91\mod100$, switch 
 
 Note: the actual ratio for part 1 is actually $(c1\bmod100)+0.67$, but that's harder to play as a human.
 
-<u>$\underline{q_1}$ and $\underline{q_2}$ Buying</u>
+<u>$q_1$ and $q_2$ Buying</u>
 
 $q_1$ follows a $\bmod10$ cycle, and adds ~100%, then ~50%, then ~33% and so on to $\dot{q}$. $q_2$ always quadruples the $\dot{q}$ (except the first few purchases).
 
@@ -749,7 +747,7 @@ For idle, we simply autobuy all. The idle strategy doesn't change much. If you'd
 
 Once you have all milestones, autobuy all!
 
-Also check out [A Pos­sible Idle RZ The­ory By Time](/guide-extensions/rz-black-hole) for more in-depth look at idle RZ strategies.
+Also check out [A Possible Idle RZ Theory By Time](/guide-extensions/rz-black-hole) for more in-depth look at idle RZ strategies.
 
 ##### Active
 
@@ -817,9 +815,9 @@ $$v=\sqrt{v_x^2+v_y^2+v_z^2}$$
 $$x={v_x}{t_s}$$
 $$B=\mu_0I\delta$$
 $$\omega=\frac{q}{m}B$$
-$${v_x}=[v_1v_2\times 10^{-20}](t_s=0)$$
-$${v_y}=[v_3v_4\times 10^{-18}](t_s=0)\times\sin(\omega t_s)$$
-$${v_z}=[v_3v_4\times 10^{-18}](t_s=0)\times\cos(\omega t_s)$$
+$${v_x}=\left[v_1v_2\times 10^{-20}\right]\left(t_s=0\right)$$
+$${v_y}=\left[v_3v_4\times 10^{-18}\right]\left(t_s=0\right)\times\sin(\omega t_s)$$
+$${v_z}=\left[v_3v_4\times 10^{-18}\right]\left(t_s=0\right)\times\cos(\omega t_s)$$
 $$\dot{I}=\frac{a_1^{1.01}}{400}\left(10^{-15}-\frac{I}{a_2}\right)$$
 
 The MF equations describe the movement of a particle of constant mass $m$ and constant charge $q$ inside a charged solenoid of infinite length with a current $I$ and a density of turns $\delta$, creating a magnetic field $B$.
@@ -932,12 +930,15 @@ BaP is much slower than the other CTs early, so it is better to not push it unti
 #### BaP Equation Description
 
 $$\dot{\rho} = (tq_1r)^a \to \dot{\rho} = t(q_1r)^a$$
+
 $$\begin{eqnarray}
    a=0.3 &\to a=0.2+\sum_{i=0}^9\frac{(10-i)^2}{1000} \\
    &\to a=2\cdot\frac{6}{\pi^2}-\left(\sum_{i=1}^n\frac{1}{i^2}\right)^{-1}
 \end{eqnarray}$$
 $$\dot{q}_ i=c_{i+1}q_{i+1}, 1\le i\le 9$$
+
 $$\dot{q}_9=c_{10}$$
+
 $$\dot{r}=\sum_{i=1}^{c_1}\frac{1}{i^2} \to \dot{r}=\left(\sum_{i=c_ 1}^{\infty}\frac{1}{i^2}\right)^{-1}$$
 
 The $\dot{\rho}$ equation features 3 terms: $t$, $q_1$ and $r$.
@@ -961,7 +962,7 @@ last_row: false;
 |           | Variable Description |
 | --------- | -------------------- |
 | $\dot{t}$ | Makes $t$ increase faster. Since there are only 4 levels, after a certain point, this variable is effectively fixed. |
-| $c_1$     | Increases $r$ growth. After the first milestone, $\dot{r}$ becomes $c_1$. Has a very power­ful 1024x boost every 64 levels. |
+| $c_1$     | Increases $r$ growth. After the first milestone, $\dot{r}$ becomes $c_1$. Has a very powerful 1024x boost every 64 levels. |
 | $c_2$     | 2x increase to $q_1$ growth per level. |
 | $c_3$     | 3x increase to $q_2$ growth per level. |
 | $c_4$     | 4x increase to $q_3$ growth per level. |

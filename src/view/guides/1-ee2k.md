@@ -39,7 +39,7 @@ The start of the game is the most variable section of the game depending on how 
   <ol type="a">
     <li>Make mental note of two <em>μ</em> upgrades' costs (<kbd>↑ dt upgrade</kbd> and <kbd>↑ y factor upgrade</kbd>).</li>
     <ol type="i">
-      <li>It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li></li>
+      <li>It is to note that y factor upgrades are a bigger overall boost than <em>dt</em> upgrades.</li>
     </ol>
     <li>When <em>db</em> begins to drastically reduce its growth vs time, look at how fast your <em>dμ</em> is growing. </li>
     <li>If <em>dμ</em> is growing fast enough and is relatively close to reaching the next <em>μ</em> upgrade, it could be worth waiting to grab that as well.
@@ -226,4 +226,4 @@ These will not be of much value to you if you won't play them so not purchasing 
 
 You will max all star upgrades besides permanent levels (no attainable limit) and autosupremacy. When you obtain autoprestige, input [the autoprestige equation](#autoprestige). You will continue to unlock variables and permanent levels when cheap as you go. You will not want to buy the Automation Speed upgrades until cheap compared to variable cost. In other words: lvl 1 after $\zeta$; lvl 2 after $\iota$; and lvl 3 after $\xi$ (the last variable). They don't provide much boost but are nice to have anyway. Any leftover stars will go into permanent levels.
 
-###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graduation routing anyway
+###### When you reach ee2000, graduate immediately. This also pushes infinity further and is optimal for graduation routing anyway.
