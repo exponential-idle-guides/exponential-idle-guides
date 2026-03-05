@@ -117,12 +117,6 @@ module.exports = function (config, exclusions) {
             const wrapped = t.wrap("<tr></tr>").parent();
             wrapped.remove().appendTo(table.find("tfoot"));
             parent.remove();
-            /*const parent = t.parent();
-            t.remove();
-            const wrapped = $(t).wrap("<tr></tr>").parent();
-            console.log(wrapped)
-            wrapped.appendTo(table.find("tfoot"));
-            parent.remove()*/
           }
           if (type != undefined) {t.tagName=type;}
         })});

@@ -324,9 +324,9 @@ For the second line, both the variable $c_2$ and its exponents are from mileston
 
 The third and fourth lines are recurrence relations on $N_m$ and $D_m$. This means that the current value of $N_m$ and $D_m$ depend on their previous values. We start with $N_0$ = 1, $N_1$ = 3. The equation will then read as:
 
-$N_2 = 2N_1 + N_0 -> N_2 = 2 \times 3 + 1 = 7$.
+$N_2 = 2N_1 + N_0 \to N_2 = 2 \times 3 + 1 = 7$.
 
-Then $N_3 = 2N_2 + N_1 -> 2 \times 7 + 3 = 17$.
+Then $N_3 = 2N_2 + N_1 \to 2 \times 7 + 3 = 17$.
 
 Similar logic is applied to $D_m$ equations.
 
@@ -405,10 +405,12 @@ $$\dot{r} = \left( \int_{0}^{ \pi }g(x)dx - _\lambda\int_{0}^{ \pi }g(x)dx^{ \la
 
 $$\lambda \int_{0} ^ { \pi }g(x)dx^{ \lambda } = \frac{ 1 }{ \Gamma( \lambda ) } \int_{0} ^ {\pi}{( \pi - x )^{ \lambda - 1 }g( x ) } dx$$
 
-With $\dot\rho$ and $\dot{q}$ Equations Becoming:
+With $\dot\rho$ and $\dot{q}$ equations becoming:
 
-$$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q/ \pi }g(x)dx },\ \ \dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{ q }g(x)dx }$$
+$$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{\frac{q}{\pi}}g(x)dx }$$
 $$\dot{q}=q_1^{1.03}q_2$$
+
+###### Note that the upper bound of the $\dot{\rho}$ integral changes from $\frac{q}{\pi} \to q$ after purchasing milestone 3.
 
 Class: strat;
 Caption: $g(x)$ Equations;
