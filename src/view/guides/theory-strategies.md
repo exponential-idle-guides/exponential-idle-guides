@@ -2832,6 +2832,8 @@ where total reset cost = total cost of buying all $v_1$ + $v_2$ + $v_3$ + $v_4$ 
 
 ### MF<dark-green>Variant</dark-green><green>dxdxdx</green>
 
+###### This strategy is often referred to as MF<dark-green>Variant</dark-green>.
+
 This strategy name will be broken down into multiple parts. What they mean are detailed below:
 
 Class: strat_left;
@@ -2845,6 +2847,12 @@ Caption: Description of Each Strat Name Section (in order);
 | <green>dx</green> (third) | $\delta$ buying strategy<br>Either d1, d2, or d3. |
 | <green>RC</green> | Reset Coast (see [MF<green>RC</green>](#MFRC))<br><u>This may not always be present.</u> |
 | <green>Coast Depth x c1: xxx</green> | <green>Depth x</green> is the depth used in sim.<br><green>xxx</green> is final $c_1$ level purchased. |
+
+![MFVariant visual breakdown](/images/mf/mf_variant.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] MF<dark-green>Variant</dark-green> visual breakdown |
 
 <green>d1</green>, <green>d2</green>, and <green>d3</green> means to follow the [MF<green>d</green>](#MFd), [MF<green>d2</green>](#MFd2), [MF<green>d3</green>](#MFd3) strategies for the corresponding variable.
 
