@@ -3,6 +3,9 @@ const copy_dict = window.dictUtils.copy_dict;
 const full_skiplist = {
   "guides": {
     "ex-basics": ["#visual-representation", "#reference-formula"],
+    "theories-5-8": ["#theory-1", "#theory-2", "#theory-3", "#theory-4"],
+    "endgame": ["#lemmas"],
+    "theory-sim": ["#updated-theory-sim-video-by-snaeky"],
     "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
     "theory-strategies": ["#official-theories", "#official-custom-theories", "#mfrc"]
   },

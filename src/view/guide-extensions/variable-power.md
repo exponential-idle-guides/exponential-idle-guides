@@ -42,13 +42,13 @@ Caption: Cost of First Variable Level;
 
 |               | $F(t)$   |                           | $F(t)$   |                       | $F(t)$   |
 | ------------- | -------- | ------------------------- | -------- | --------------------- | -------- |
-| [class="bheader";]x | Free     | [class="bheader"]$\alpha$      | ee29.365 | [class="bheader"]$\theta$  | ee255.19 |
-| [class="bheader"]y | 1.04     | [class="bheader"]$\beta$       | ee43.064 | [class="bheader"]$\iota$   | ee337.79 |
-| [class="bheader"]z | 1.08     | [class="bheader"]$\gamma$      | ee59.526 | [class="bheader"]$\kappa$  | ee432.59 |
-| [class="bheader"]s | 10.00    | [class="bheader"]$\delta$      | ee78.793 | [class="bheader"]$\lambda$ | ee539.71 |
-| [class="bheader"]u | ee4.2871 | [class="bheader"]$\varepsilon$ | ee100.90 | [class="bheader"]$\nu$     | ee659.31 |
-| [class="bheader"]v | ee10.045 | [class="bheader"]$\zeta$       | ee153.79 | [class="bheader"]$\xi$     | ee791.49 |
-| [class="bheader"]w | ee18.379 | [class="bheader"]$\eta$        | ee218.41 | INVIS                 | INVIS    |
+| [class="bheader";]x | Free     | [class="bheader";]$\alpha$      | ee29.365 | [class="bheader";]$\theta$  | ee255.19 |
+| [class="bheader";]y | 1.04     | [class="bheader";]$\beta$       | ee43.064 | [class="bheader";]$\iota$   | ee337.79 |
+| [class="bheader";]z | 1.08     | [class="bheader";]$\gamma$      | ee59.526 | [class="bheader";]$\kappa$  | ee432.59 |
+| [class="bheader";]s | 10.00    | [class="bheader";]$\delta$      | ee78.793 | [class="bheader";]$\lambda$ | ee539.71 |
+| [class="bheader";]u | ee4.2871 | [class="bheader";]$\varepsilon$ | ee100.90 | [class="bheader";]$\nu$     | ee659.31 |
+| [class="bheader";]v | ee10.045 | [class="bheader";]$\zeta$       | ee153.79 | [class="bheader";]$\xi$     | ee791.49 |
+| [class="bheader";]w | ee18.379 | [class="bheader";]$\eta$        | ee218.41 | INVIS                 | INVIS    |
 | | | | | | [FOOT;]$F(t)$ values courtesy of the [Exponential Idle Wiki](https://exponential-idle.fandom.com/wiki/Instructions). |
 
 Here's a graph of variable power up to ee50 $f(t)$. The initial purchase of variables $y$ through $\beta$ can be seen.
