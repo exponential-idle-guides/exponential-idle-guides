@@ -114,9 +114,15 @@ module.exports = function (config, exclusions) {
           if (footer != undefined && (footer.toLowerCase() == "foot" || footer.toLowerCase() == "footer")) {
             if (!table.has("tfoot").length) {$('<tfoot>').appendTo(table);}
             const parent = t.parent();
+            const wrapped = t.wrap("<tr></tr>").parent();
+            wrapped.remove().appendTo(table.find("tfoot"));
+            parent.remove();
+            /*const parent = t.parent();
             t.remove();
-            $(t).wrap("<tr></tr>").appendTo(table.find("tfoot"));
-            parent.remove()
+            const wrapped = $(t).wrap("<tr></tr>").parent();
+            console.log(wrapped)
+            wrapped.appendTo(table.find("tfoot"));
+            parent.remove()*/
           }
           if (type != undefined) {t.tagName=type;}
         })});
