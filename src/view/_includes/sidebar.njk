@@ -38,9 +38,9 @@
   <div id="sidebar">
     <div id="sidebars">
       {% call sidebar_div("Header", "Table of Contents", true) %}
-        {% set tocs = content | toc %}
+        {% set tocs = content | cleanTOC %}
         {% if tocs %}
-          {{ content | toc | safe }}
+          {{ tocs | safe }}
         {% else %}
           <p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>
         {% endif %}

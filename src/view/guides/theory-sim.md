@@ -7,6 +7,14 @@ draft: true
 order: 8
 ---
 
+~~~
+
+code
+```
+code
+
+~~~
+
 The current theory simulator was initially made by XLII and is now updated by the [Exponential Idle Sim Team](https://github.com/exponential-developers). The theory sim is run on [this website](https://exponential-developers.github.io/sim-3.0/). Below will go through the individual parts of the output.
 
 <h3 class="fake-h3 retain-fake">Updated Theory Sim Video by Snaeky</h3>

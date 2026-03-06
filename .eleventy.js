@@ -5,9 +5,6 @@ const markdownItFootnotes = require("markdown-it-footnote");
 
 const slugify = require('slugify');
 
-const pluginTOC = require('eleventy-plugin-toc');
-const pluginNestingTOC = require('eleventy-plugin-nesting-toc');
-
 const preprocessors = require('./config/.11ty/preprocessors');
 const transformations = require('./config/.11ty/transformations');
 const MathJax = require('./config/.11ty/MathJax');
@@ -31,6 +28,15 @@ module.exports = config => {
       strict: true
     }),
     renderPermalink: (slug, opts, state, idx) => {
+      /*Output Expanded:
+        Header
+        <a class="direct-link" href="#header-id" aria-label="Permalink: header-id">
+          <span class="visually-hidden" style="display:none;">
+            Permalink: header-id
+          </span>
+          <span aria-hidden="true">#</span>
+        </a>
+      */
       // Space before permalink
       const space = new state.Token('text', '', 0);
       space.content = ' ';
@@ -72,10 +78,7 @@ module.exports = config => {
     level: [1,2,3,4,5]
   };
 
-  config.addPlugin(pluginTOC)
-  config.addPlugin(pluginNestingTOC)
-
-  config.addTemplateFormats("md"); // Make sure .md files are processed by this handler 
+  config.addTemplateFormats("md"); // Make sure .md files are processed by this handler
   config.setLibrary("md", markdownIt(markdownItOptions)
     .use(markdownItAnchor, markdownItAnchorOptions)
     .use(markdownItFootnotes)
@@ -85,8 +88,6 @@ module.exports = config => {
       allowedAttributes: []
     })
   );
-
-  config.setDataDeepMerge(true);
 
   preprocessors(config);
   transformations(config, transformExcludes);
