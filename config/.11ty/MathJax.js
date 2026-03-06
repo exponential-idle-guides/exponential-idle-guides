@@ -31,16 +31,11 @@ const LaTeX_replace = (str) => {
     .replace(/((?:(?:^|[^\\])\\(?:\\{2})*\\)|[^\\])\\,/g, "$1\\\\,")
     .replaceAll("$", "LATEXDOLLAR");
 }
-const wrap = (str, type, p) => {
+const wrap = (str, type) => {
   const replaced = LaTeX_replace(str);
-  const type_wrapped = type === "block" 
+  return type === "block" 
     ? `<br><div class="MathJax"><pre><code>${replaced}</code></pre></div><br>`
     : `<span class="MathJax"><code>${replaced}</code></span>`;
-  if (p) {
-    console.log(type_wrapped);
-    console.log(`<div class="MathJax"><pre><code>${replaced}</code></pre></div>\n`);
-  }
-  return type_wrapped;
 };
 const wrap_regex = '< *(span|div) +class *= *" *MathJax *" *>(?: *< *pre *> *)? *< *code *> *(.*?) *< */ *code *>(?: *< */ *pre *> *)? *</ *\\1 *>';
 
@@ -85,6 +80,9 @@ function wrap_specials(text, specials) {
         output = `{}^{${output}}`;
         break;
       case "~~":
+      case "s":
+      case "del":
+      case "strike": // Outdated, but here for support
         output = `\\enclose{horizontalstrike}{${output}}`;
         break;
     }
@@ -92,17 +90,20 @@ function wrap_specials(text, specials) {
   return `$${output}$`
 }
 
-function wrap_inline_math(text,p) {
+function wrap_inline_math(text) {
   let result = "";
-  let state = "GROUND"; // GROUND, CODE_BLOCK, MATH
+  let state = "GROUND"; // GROUND, CODE_BLOCK, MATH, HTML_PRECODE
   let tagStack = [];
   let mdStack = [];
   let mdBuffer = ["",""]; // [open, close]
   let braceDepth = 0;
   let mathBuffer = "";
+  let curr_code_block = "";
+  const code_blocks = new Set(["```", "~~~"]);
   
   const singletons = new Set(['br', 'hr', 'img', 'input', 'meta', 'link']);
-  const specials = new Set(['em', 'u', 'sub', 'sup']);
+  const precode = new Set(['code', 'pre']);
+  const specials = new Set(['em', 'u', 'sub', 'sup', 'strike', 's', 'del']);
   const md_specials = new Set(['_', '__', '___', '*', '**', '***', '~~']);
   const lines = text.split(/\r?\n/);
 
@@ -111,37 +112,41 @@ function wrap_inline_math(text,p) {
     const trimmed = line.trim();
 
     // 1. Update Global State for Code Blocks
-    if (trimmed.startsWith("```")) {
-      state = (state === "GROUND") ? "CODE_BLOCK" : "GROUND";
-      result += line + (l < lines.length - 1 ? "\n" : "");
-      continue; 
-    }
-    if (state === "CODE_BLOCK") {
-      result += line + (l < lines.length - 1 ? "\n" : "");
-      continue;
-    }
+    if (state !== "CODE_PRECODE") {
+      if (state === "CODE_BLOCK") {
+        if (trimmed.startsWith(curr_code_block)) {
+          state = "GROUND";
+          curr_code_block = "";
+        }
+        result += line + (l < lines.length - 1 ? "\n" : "");
+        continue
+      } else if (code_blocks.has(trimmed.slice(3))) {
+        state = "CODE_BLOCK"; // Cannot be math state at this point since math state is inline only
+        curr_code_block = trimmed.slice(3);
+        result += line + (l < lines.length - 1 ? "\n" : "");
+        continue; 
+      }
 
-    // 2. Table Detection Logic
-    // A: Check for the delimiter row (e.g., |---|---| or | - |)
-    const isDelimiterRow = /^\|?[\s\-\|:]+\|?$/.test(trimmed) && trimmed.includes("-");
-    
-    // B: Check for a standard table row (must have at least two unescaped pipes)
-    let pipeCount = 0;
-    // If first (non-whitespace) character in a line is not a pipe, then this is not a table row.
-    if (line.match(/^[ \t\h]*|/)) {
-      for (let j = 0; j < line.length; j++) {
-        if (line[j] === '|' && (j === 0 || line[j - 1] !== '\\')) {
-          pipeCount++;
-          if (pipeCount >= 2) break;
+      // 2. Table Detection Logic
+      // A: Check for the delimiter row (e.g., |---|---| or | - |)
+      const isDelimiterRow = /^\|?[\s\-\|:]+\|?$/.test(trimmed) && trimmed.includes("-");
+      
+      // B: Check for a standard table row (must have at least two unescaped pipes)
+      let pipeCount = 0;
+      // If first (non-whitespace) character in a line is not a pipe, then this is not a table row.
+      if (line.match(/^[ \t\h]*|/)) {
+        for (let j = 0; j < line.length; j++) {
+          if (line[j] === '|' && (j === 0 || line[j - 1] !== '\\')) {
+            pipeCount++;
+            if (pipeCount >= 2) break;
+          }
         }
       }
     }
     
     // If it's a table, we skip math extraction but still update the HTML tagStack
-    const isTableLine = (pipeCount >= 2) || isDelimiterRow;
+    const isTableLine = state !== "CODE_PRECODE" ? false : ((pipeCount >= 2) || isDelimiterRow);
 
-    if (p) {console.log(`\n${state}\t${braceDepth}\t${tagStack}\n${mdBuffer}\t${mdStack}\n${line}`)}
-    const target_line = line == "<u>$\\underline{c_1}$ and $\\underline{c_1}$ Buying</u>";
     // 3. Process valid lines for Math
     let i = 0;
 
@@ -149,11 +154,9 @@ function wrap_inline_math(text,p) {
       const char = line[i];
       const slice = line.slice(i);
       const prevChar = i > 0 ? line[i - 1] : null;
-      if (target_line) console.log(char, char === '<' && prevChar !== '\\');
       // A: HTML Tag Logic (Updates tagStack regardless of table status)
       if (char === '<' && prevChar !== '\\') {
         const tagMatch = slice.match(/^<(\/?[a-z0-9]+)[^>]*>/i);
-        if(target_line) console.log(tagMatch, state);
         if (tagMatch) {
           let tagName = tagMatch[1].toLowerCase();
           const isClosing = tagName.startsWith('/');
@@ -164,18 +167,23 @@ function wrap_inline_math(text,p) {
               const lastTag = tagStack[tagStack.length - 1];
               if (lastTag === tagName) {
                 tagStack.pop();
+                if (precode.has(tagName)) {
+                  state = tagStack.some((tag) => precode.has(tag)) ? "HTML_PRECODE" : "GROUND";
+                }
               } else if (tagName === "ol" || tagName === "ul") {
                 const pos = tagStack.lastIndexOf(tagName);
                 while (tagStack.length > pos) tagStack.pop();
+                
+                state = tagStack.some((tag) => precode.has(tag)) ? "HTML_PRECODE" : "GROUND";
               }
             } else {
               tagStack.push(tagName);
+              if (tagName === "code" || tagName === "pre") {
+                state = "HTML_PRECODE";
+              }
             }
           }
-          if(target_line) {
-            console.log(tagName, isClosing, tagStack);
-            console.log(tagMatch[0]);
-          }
+
           // Invalidate current math if a tag interrupts it
           // Flush buffer as literal text.
           if (state === "MATH") {
@@ -188,6 +196,13 @@ function wrap_inline_math(text,p) {
           i += tagMatch[0].length;
           continue;
         }
+      }
+
+      // if within a pre/code tag environment, then disregard
+      if (state === "HTML_PRECODE") {
+        result += char;
+        i++;
+        continue;
       }
 
       // B: Table Pipe Logic (The "Pipe-Break")
@@ -204,18 +219,13 @@ function wrap_inline_math(text,p) {
         const md_open = mdBuffer[0] + char;
         const md_close = mdBuffer[1] + char;
         if ((!md_specials.has(md_close) && mdBuffer[1].length > 0) || (mdStack.lastIndexOf(md_close) < mdStack.lastIndexOf(mdBuffer[1]))) {
-          console.assert(mdBuffer[1].length > 0, `mdBuffer[1].length = ${mdBuffer[1].length} `)
           mdStack.splice(mdStack.lastIndexOf(mdBuffer[1]),1);
           mdBuffer[0] = (char !== mdBuffer[1][0] && md_specials.has(char)) ? char : "";
-          if (p) console.log("mdBuffer (close):", `'${char}'`, mdBuffer, mdStack);
           mdBuffer[1] = "";
         } else if (!md_specials.has(md_open)) {
           if (char !== mdBuffer[0][0] && !(/\s/.test(char))) {
             if (mdBuffer[0].length > 0) {
-              const mdStackSize = mdStack.length;
               mdStack.push(mdBuffer[0]);
-              if (p) console.log("mdBuffer (open):", `'${char}'`, mdBuffer, mdStack);
-              console.assert(mdStack.length > mdStackSize);
             }
             mdBuffer[0] = md_specials.has(char) ? char : "";
             mdBuffer[1] = md_specials.has(char) ? char : "";
@@ -251,17 +261,12 @@ function wrap_inline_math(text,p) {
 
             if (mathBuffer.length > 2)  {
               const StackSet = new Set([...tagStack,...mdStack]);
-              if (tagStack.length > 0 || mdStack.length > 0) {
-                if (p) console.log(tagStack, mdStack)
-                if (p) console.log(StackSet)
-              }
-              if (p) console.log("mathBuffer:", mathBuffer);
-              mathBuffer = wrap_specials(
+              result += wrap(
+                wrap_specials(
                   mathBuffer,
                   new Set([...specials,...md_specials].filter(tag => StackSet.has(tag)))
-                );
-              if (p) console.log(mathBuffer);
-              result += wrap(mathBuffer, "inline", p);
+                ),
+                "inline");
             } else {
               result += mathBuffer;
             }
@@ -299,9 +304,7 @@ function math_replace (config) {
     if (typeof content === "string" 
       && (/[^\$]\$[^\$]+\$[^\$]|\$\$[^\$]+\$\$|\\\((?:[^\\].|\\[^\)])*\\\)|\\\[(?:[^\\][^\]])\\\[/.test(content))
     ) {
-      const target = data.title.trim() == "Custom Theories  ";
       const block_math_arr = content.match(block_math_regex);
-      if (target) console.log(`\n${data.title}`);
       block_math_regex.lastIndex = 0;
       let counter = -1;
       const block_math_replaced = block_math_arr === null 
@@ -312,12 +315,12 @@ function math_replace (config) {
         }
       );
 
-      let output_content = wrap_inline_math(block_math_replaced, target);
+      let output_content = wrap_inline_math(block_math_replaced);
       if (block_math_arr !== null) {
         block_math_arr.forEach((str, i) => {
           return output_content = output_content.replace(
             `LATEX_BLOCK_MATH_${i}`, 
-            wrap(str.replace(/(\\\\[\r\n\f\v]+)/g, "\\\\$1"), "block", target)
+            wrap(str.replace(/(\\\\[\r\n\f\v]+)/g, "\\\\$1"), "block")
           );
         });
       }
@@ -344,32 +347,23 @@ function MathJax (config, exclusions) {
   config.addTransform("mathjax", async function(content, outputPath) {
     if (!exclusions.includes(outputPath)
       && this.page.outputPath 
-      && this.page.outputPath.endsWith(".html") 
-      //&& (/[^\$]\$[^\$]+\$[^\$]|\$\$[^\$]+\$\$|\\\((?:[^\\].|\\[^\)])*\\\)|\\\[(?:[^\\][^\]])\\\[/.test(content))
-      && /$/.test(content)
+      && this.page.outputPath.endsWith(".html")
+      && /(?:\$|LATEXDOLLAR)/.test(content)
     ) {
-      const page = this.page
-      const target = "/guides/theories-1-4  "
-      if (page.filePathStem === target) {
-        console.log(page.filePathStem);
-      }
-
       const restored_content = content
         .replace(
           new RegExp(wrap_regex, "gs"),
           function (match, tag, inner) {
-            const m = inner
+            return inner
               .replaceAll("LATEXDOLLAR", "$")
               .replaceAll("&#96;", "`")
               .replace(
                 new RegExp(LaTeX_replacement_regex, "gm"),
-                (matched) => LaTeX_replacements[matched]);
-            if (page.filePathStem === target) {
-              console.log(inner, m);
-            }
-            return m;
+                (matched) => LaTeX_replacements[matched]
+              );
           }
         );
+
       // Create DOM and document
       const dom = adaptor.parse(restored_content);
       const html = mathjax.document(dom, {

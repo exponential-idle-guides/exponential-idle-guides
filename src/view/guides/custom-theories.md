@@ -410,7 +410,7 @@ With $\dot\rho$ and $\dot{q}$ equations becoming:
 $$\dot{ \rho }=trmn\sqrt[ \pi ]{ \int_{0}^{\frac{q}{\pi}}g(x)dx }$$
 $$\dot{q}=q_1^{1.03}q_2$$
 
-###### Note that the upper bound of the $\dot{\rho}$ integral changes from $\frac{q}{\pi} \to q$ after purchasing milestone 3.
+###### Note: The bounds of the integral change from $\displaystyle\int_0^{\frac{q}{\pi}} \to \int_0^q$ after 3<sup>rd</sup> milestone.
 
 Class: strat;
 Caption: $g(x)$ Equations;
