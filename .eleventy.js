@@ -7,7 +7,7 @@ const slugify = require('slugify');
 
 const preprocessors = require('./config/.11ty/preprocessors');
 const transformations = require('./config/.11ty/transformations');
-const MathJax = require('./config/.11ty/MathJax');
+const { MathJax_to_regular, MathJax } = require('./config/.11ty/MathJax');
 const filters = require('./config/.11ty/filters');
 const collections = require('./config/.11ty/collections');
 
@@ -23,7 +23,7 @@ module.exports = config => {
   };
 
   const markdownItAnchorOptions = {
-    slugify: s => slugify(s, {
+    slugify: s => slugify(MathJax_to_regular(s), {
       lower: true,
       strict: true
     }),

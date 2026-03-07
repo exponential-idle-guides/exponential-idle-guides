@@ -330,7 +330,22 @@ function math_replace (config) {
   });
 }
 
-function MathJax (config, exclusions) {
+function MathJax_undo_pre(math) {
+  return math
+    .replaceAll("LATEXDOLLAR", "$")
+    .replaceAll("&#96;", "`")
+    .replace(
+      new RegExp(LaTeX_replacement_regex, "gm"),
+      (matched) => LaTeX_replacements[matched]
+    );
+}
+
+// TODO: implement in future for better permalinks and screen-reading text
+function MathJax_to_regular(text) {
+  return text.replace(/LATEXDOLLAR.*?LATEXDOLLAR/gi, "");
+}
+
+function MathJax_post (config, exclusions) {
   // Initialize MathJax
   const adaptor = jsdomAdaptor(JSDOM);
   RegisterHTMLHandler(adaptor);
@@ -353,15 +368,7 @@ function MathJax (config, exclusions) {
       const restored_content = content
         .replace(
           new RegExp(wrap_regex, "gs"),
-          function (match, tag, inner) {
-            return inner
-              .replaceAll("LATEXDOLLAR", "$")
-              .replaceAll("&#96;", "`")
-              .replace(
-                new RegExp(LaTeX_replacement_regex, "gm"),
-                (matched) => LaTeX_replacements[matched]
-              );
-          }
+          (match, tag, inner) => MathJax_undo_pre(inner)
         );
 
       // Create DOM and document
@@ -388,7 +395,13 @@ function MathJax (config, exclusions) {
   });
 }
 
-module.exports = function (config, exclusions) {
+function MathJax (config, exclusions) {
   math_replace(config);
-  MathJax(config, exclusions);
+  MathJax_post(config, exclusions);
+}
+
+module.exports = {
+  MathJax_undo_pre,
+  MathJax_to_regular,
+  MathJax
 };
