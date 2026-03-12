@@ -21,7 +21,7 @@ Variables are the main purchases in the game. They will be the most important to
 
 Upgrades are where additional boosts to variables lie. They are crucial to progress and should be bought often. You will be able to see items that can be purchased with __f(t)__, $\mu$, and $\psi$ on that page in that order. You can navigate to that tab by pressing the <kbd>\<Variables\></kbd> button between the variables and the main equation graph.
 
-### Variable Names and Uses
+#### Variable Names and Uses
 
 Class: breakdown;
 last_row: false;
@@ -59,20 +59,21 @@ You start out with normal numbers and quickly work your way up to $X.xxeX$ notat
 
 ### Achievements and Minigames
 
-* Achievements are just that. They are goals to reach that give you stars as reward.
-* Minigames are puzzles that you can solve that will give you stars as a reward for solving them. Check out the [Minigame Guide](/guides/asd) for how to solve each puzzle and more resources.
+Achievements are just that. They are goals to reach that give you stars as reward.
+
+Minigames are puzzles that you can solve that will give you stars as a reward for solving them. Check out the [Minigame Guide](/guides/asd) for how to solve each puzzle and more resources.
 
 ### Stars and Star upgrades
 
-* Stars are a currency that operates outside of the main game that you use to purchase star upgrades.
-  These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should
-  prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge
-  boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on
-  star upgrades to prioritize can be found in following guides.
+*Stars are a currency that operates outside of the main game that you use to purchase star upgrades.These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on star upgrades to prioritize can be found in following guides.
+
+### <green>True</green>/<red>False</red> auto expression evaluation
+
+If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as <red>False</red> and sometimes as <green>True</green>. When the evaluation becomes <green>True</green>, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as <red>False</red>. If the expression is evaluating to <red>False</red>, there is no bug, nor is it broken. It is doing exactly what it is meant to do.
+
+###### NOTE: Entering the expression field where it displays the evaluation breaks [smooth() locking](#method-2-lock) which will break all any expression using said technique.
 
 ### Autoprestige expression
-
-#### Autoprestige ex­pres­sion
 
 <button class="copy-btn" onClick="copyText('ap_eq');">Copy Equation Text</button>
 
@@ -80,6 +81,8 @@ You start out with normal numbers and quickly work your way up to $X.xxeX$ notat
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
+
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](#truefalse-auto-expression-evaluation)
 
 #### Autoprestige explanation
 
@@ -198,9 +201,3 @@ smooth(h,c)=\bar{h}_T&=h_T+e^{-\frac{\Delta T}{c_T}}(\bar{h}_{T-\Delta T}-h_T) \
 &=\alpha h_T+(1-\alpha)\bar{h}_{T-\Delta T},\;\alpha=1-e^{-\frac{\Delta T}{c_T}}
 \end{align}
 $$
-
-### <green>True</green>/<red>False</red> auto expression evaluation
-
-If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as <red>False</red> and sometimes as <green>True</green>. When the evaluation becomes <green>True</green>, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as <red>False</red>. If the expression is evaluating to <red>False</red>, there is no bug, nor is it broken. It is doing exactly what it is meant to do.
-
-###### NOTE: Entering the expression field where it displays the evaluation breaks [smooth() locking](#method-2-lock) which will break all any expression using said technique.

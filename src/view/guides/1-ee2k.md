@@ -119,16 +119,18 @@ The general rule of thumb before ee2000 is whenever you have an upgrade availabl
 
 #### Autoprestige
 
-Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it.
+Automation routing changes per playstyle but here is the autoprestige equation to use when you unlock it. There is an [Explanation of autoprestige expression](/guides/ex-basics/#autoprestige-explanation) if wanted.
 
-###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle. [Explanation of autoprestige expression](/guides/ex-basics/#autoprestige-explanation)
+###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> twice to cycle.
+
+<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
 
 <blockquote id='ap_eq'>
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 &gt; 3 * tr &amp;&amp; db &gt; b
 </blockquote>
 
-<button class="copy-btn" onClick="copyText('ap_eq');">Copy Text</button>
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
 
 #### Active strategies
 
@@ -164,8 +166,11 @@ If you don't use the accel button, don't buy it. When you can buy the autobuyers
 
 There is a chance you get Autosupremacy before ee2000 if you star grind a lot. If not, you will get it later. The equation below is the autosupremacy equation if you do happens to obtain it. There is an [explanation](/guides/ex-basics/#autosupremacy-explanantion) if you wanted.
 
-###### Note: Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.
+**Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.**
+
 ###### Remember to change mode from ratio to expression by clicking <kbd>Ratio</kbd> once to cycle.
+
+<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
 
 <blockquote id="as_eq">
 timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
@@ -180,7 +185,7 @@ smooth(max(1, log10(gf)), (st &gt; tr)<br>
 * ee99)) / max(1, st), (pt &gt; tr) * ee99)
 </blockquote>
 
-<button class="copy-btn" onClick="copyText('as_eq');">Copy Text</button>
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
 
 #### What are these $x_i$ supremacy upgrades?
 

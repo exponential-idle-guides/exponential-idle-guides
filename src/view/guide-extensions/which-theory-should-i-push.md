@@ -53,7 +53,7 @@ The faster a theory's $\dot{\tau}$, the more we should do it. This is because we
 
 ## Overpushing implications
 
-The better a theory is for [overpushing](/guide-extensions/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order should be pushed first. Custom theories are not affected by overpushing.
+The better a theory is for [overpushing](/guide-extensions/distribution-overpushing), the more we should push it first. In general, this means T2, T6, T4 in that order should be pushed first. Custom theories are not affected by overpushing. Also check out the [Next Theory to Push Calculator](https://docs.google.com/spreadsheets/d/119qqxY2xuJ7xxOlnfSk-lNpcl1woEf-z/) originally by d4Nf6Bg5 which utilizes the overpush concept.
 
 ## Conclusions
 

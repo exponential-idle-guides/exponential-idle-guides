@@ -184,6 +184,8 @@ costUpS(1)&lt;e52&amp;&amp;psi+dpsi&gt;e52
 
 <button class="copy-btn" onClick="copyText('as-post-75k');">Copy Text</button>
 
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
+
 ### How to respec
 
 See the [introduction guide](/guides/intro-to-grad/#respecing-students) for respecing students and

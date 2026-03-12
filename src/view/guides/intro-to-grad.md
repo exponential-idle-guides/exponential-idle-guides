@@ -24,6 +24,8 @@ timer(pt * d(ln(ln(db / b + 1))) &lt; 1)<br>
 0.8 * log10(log10(gf)) &gt; log10(log10(sf))))
 </blockquote>
 
+###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
+
 #### Autoprestige explanation
 
 This is the new expression for prestige. It looks intimidating, but it will work normally and you never have to turn it off (you would have to if you didn't use this one later on). Here is an explanation for all parts except the normal expression which has an [explanation](/guides/ex-basics/#autoprestige-explanation) already.
@@ -51,6 +53,8 @@ This lets the normal expression work when you supremacy or graduate up to 80% of
 ### Autosupremacy
 
 #### Auto­su­prem­acy ex­pres­sion
+
+**Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.**
 
 <button class="copy-btn" onClick="copyText('as_eq');">Copy Equation Text</button>
 
@@ -106,10 +110,7 @@ dpsi + psi &gt; min(costUpS(1), <br>
 &amp;&amp; psi + dpsi &gt; 4.2e51))
 </blockquote>
 
-**Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.**
-
 ###### Reference [Locking Smooth()](/guides/ex-basics/#method-2-lock)
-
 ###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](/guides/ex-basics/#truefalse-auto-expression-evaluation)
 
 #### Autosupremacy explanation
