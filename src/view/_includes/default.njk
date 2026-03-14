@@ -35,8 +35,6 @@
 
     {% include 'buttons.html' %}
 
-    {% block sidebar %}{% endblock %}
-
     <main class="page-section content-wrapper">
       {% block title %}
         <h2>{{ title | safe }}</h2>
@@ -52,6 +50,8 @@
         </div>
       {% endif %}
     </main>
+    
+    {% block sidebar %}{% endblock %}
     
     <footer class="page-section footer">
       <div class="footer__section footer__section--main">

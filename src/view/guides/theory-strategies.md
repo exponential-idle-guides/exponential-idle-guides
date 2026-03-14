@@ -27,7 +27,7 @@ Because the modulus used is mod10, and we use a base 10 numbering system, we can
 
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
-## List of Strategies
+## List of Strategies 
 
 ### Official Theories {data-toc-exclude}
 

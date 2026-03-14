@@ -43,7 +43,7 @@ function testSidebar(e, list, bool=true, stop=false){
 }
 
 window.addEventListener('click', function(e){
-  const id = (globals.Mobile && globals.curr_sidebar!='none') ? globals.curr_sidebar : "HeaderSidebar";
+  const id = (globals.Mobile && globals.curr_sidebar!='none') ? globals.curr_sidebar : "TOCSidebar";
   const property = globals.Mobile ? '--sidebar-height' : '--sidebar-width';
   
   var sidebar = "";

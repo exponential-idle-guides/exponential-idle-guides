@@ -37,7 +37,7 @@
 {% if not home %}
   <div id="sidebar">
     <div id="sidebars">
-      {% call sidebar_div("Header", "Table of Contents", true) %}
+      {% call sidebar_div("TOC", "Table of Contents", true) %}
         {% set tocs = content | cleanTOC %}
         {% if tocs %}
           {{ tocs | safe }}
@@ -164,7 +164,7 @@
         {% endcall %}
       </div>
       <div id="sidebarOptions">
-        {% call sidebar_option("Headerbtn") %}
+        {% call sidebar_option("TOCbtn") %}
           Table of <span style="display:inline-block;">Contents</span>
         {% endcall %}
         {% call sidebar_option("Guidebtn") %}

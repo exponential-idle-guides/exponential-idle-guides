@@ -1,5 +1,6 @@
 const pluginTOC = require('eleventy-plugin-toc');
 const pluginNestingTOC = require('eleventy-plugin-nesting-toc');
+const cheerio = require('cheerio');
 const { MathJax_to_regular } = require('../MathJax');
 
 const toc_regex = String.raw`<\s*a[^>]*href\s*=\s*"(#[^"]*)">(.*).s*(Permalink: [^<]*)#<\s*/\s*a\s*>`;
@@ -23,7 +24,7 @@ module.exports = function(config) {
         </span>
       </a>
     */
-    return originalHTML.replace(
+    const replaced_HTML = originalHTML.replace(
       new RegExp(toc_regex, "g"),
       (match, id, header, perma) => 
         `<a href="${id}" aria-label="${perma}">${
@@ -33,6 +34,23 @@ module.exports = function(config) {
           )
         }<span class="visually-hidden" style="display:none;">${perma}</span></a>`
     );
+    const $ = cheerio.load(replaced_HTML);
+
+    $("nav > ol > li").each((i, li) => {
+      const title = $(li).contents().filter(function() {
+        return this.type === 'tag' && this.name === 'a';
+      });
+
+      const sublist = $(li).find('ol');
+      $(li).before(`<h4 id="${title[0].attribs.href.slice(1)}tocsidebar">${title}</h4>`);
+      if (sublist.length) {
+        $(li).after(sublist);
+      }
+      $(li).remove();
+    })
+    $("nav > ol").children().unwrap();
+    $('ul:empty').remove();
+    return $("body").html();
   });
 }
 

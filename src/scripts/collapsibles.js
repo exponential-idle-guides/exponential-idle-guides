@@ -28,6 +28,8 @@ const supported = ["h2", "h3", "h4"];
 
 const check_url_interval = 500; // ms
 let current_url = window.location.href;
+const main = $("main");
+const sidebar = $("#sidebar");
 
 const url_regex = /^https?\:\/\/(?:[a-z\-\/0-9]*exponential\-idle\-guides\.netlify\.app|localhost\:8000)\/([a-z\-0-9]+(?:\/[a-z\-\/0-9]*|))/g;
 
@@ -40,13 +42,16 @@ function get_skiplist(url) {
 }
 const skiplist = [...get_skiplist(current_url), ...supported.map((h) => ".fake-" + h)];
 
-function skipped(classlist, id = "#") {
+function skipped(skiplist, classlist, id = "#") {
   if (classlist === undefined && id === "#") {
     return false;
   } else if (skiplist.includes(id)) {
     return true
   } else if (classlist !== undefined) {
-    return classlist.split(/(\s+)/).some(r => skiplist.includes("." + r))
+    if (!Array.isArray(classlist)) {
+      classlist = classlist.split(/(\s+)/);
+    }
+    return classlist.some(r => skiplist.includes("." + r))
   } else {
     return false
   }
@@ -54,17 +59,26 @@ function skipped(classlist, id = "#") {
 
 // Grabs all h2, h3, and h4 headers
 // {h2: {ids: [], indexes: []}, ...}
-const h_dict = supported.reduce((a,h) => {
-  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): true})];
-  return ({...a,[h]: {ids: h_arr.map((c) => "#" + $(c).attr('id')), indexes: h_arr.map((c) =>$(c).index())}})
-}, {});
-const sidebar_h_dict = supported.reduce((a,h) => {
-  const h_arr = [...$(h).filter(function() {close = $(this).closest(".sidebar"); return close.length ? !(/.*invis$/mi.test($(close[0]).attr('id'))): false})];
-  return ({...a,[h]: {ids: h_arr.map((c) => "#" + $(c).attr('id')), indexes: h_arr.map((c) =>$(c).index())}})
-}, {});
+function get_h_dict(parent) {
+  return supported.reduce((a,h) => {
+    const h_arr = [...parent.children(h)];
+    return ({...a,[h]: {ids: h_arr.map((c) => "#" + $(c).attr('id')), indexes: h_arr.map((c) =>$(c).index())}});
+  }, {});
+}
 
-const collap_dict = copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
-const sidebar_collap_dict = copy_dict(sidebar_h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped($(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
+function get_collap_dict(h_dict) {
+  return copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped(skiplist, $(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
+}
+
+function get_dicts(parent) {
+  const h_dict = get_h_dict(parent);
+  return [
+    h_dict,
+    get_collap_dict(h_dict)
+  ];
+}
+const [h_dict, collap_dict] = get_dicts(main);
+const [sidebar_h_dict, sidebar_collap_dict] = get_dicts(sidebar);
 
 const coll = $('.collapsible');
 
