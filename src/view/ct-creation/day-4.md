@@ -38,7 +38,7 @@ In-game, $f$'s level will show as 'Level: x/20'. But, is this a good measure? Wh
 
 ## Stopping Fibonacci's foil
 
-Let's look at how we can optimize the calculation of Fibonacci numbers. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
+Let's look at how we can optimise the calculation of Fibonacci numbers. While we can store our Fibonacci numbers in a lookup table to avoid recursion, not only does this approach consume more memory as we level the upgrade, we may also hit the JavaScript interpreter's computational limits (which will be explained at a later date). Besides, this wouldn't be a guide about a maths game without me making an excuse to introduce any mathematical formulae. And turns out, we can calculate a Fibonacci term fairly quickly using one, known as Binet's formula, which was derived by Jacques Philippe Marie Binet, in some year, somewhere:
 
 $F(n) = \frac{(\frac{1+\sqrt{5}}{2})^n - (\frac{1-\sqrt{5}}{2})^n}{\sqrt{5}}$
 

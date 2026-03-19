@@ -77,7 +77,7 @@ The next function, **tick**, is where everything important happens. Terms get re
 
 ### The LaTeX formulae
 
-The theory utilizes three formulae:
+The theory utilises three formulae:
 
 - The primary (upper) equation, through **getPrimaryEquation**. It needs to be refreshed manually every time you want to reflect a change (e.g. new milestone or term unlocked), using **theory.invalidatePrimaryEquation**.
 - The secondary (middle) equation, through **getSecondaryEquation**. It needs to be refreshed manually using **theory.invalidateSecondaryEquation**.
