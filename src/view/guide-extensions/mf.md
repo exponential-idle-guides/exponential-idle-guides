@@ -15,7 +15,7 @@ tags: T9+ Research
 **TLDR:**
 
 - There are mainly 3 reset patterns used in MF CT depending on the $\rho$ of publication, namely $e4.5/1\ v_2$ reset, $e9/2\ v_2$ reset, and $e6/1\ v_4$ reset.
-- A definite criterion of $c_2$ and $a_2$ by comparing their cost and the cost for buying all $v$ variables before a reset is found, a similar criterion with excellent confidence has been found for $\delta$, there is a moderate confidence of criterion when comparing $c_1$ cost and the cost for buying all $v$ variables before a reset, and $a_1$ has no relationship with reset as it does not impact $\rho$ growth after a sufficiently long time when $I$ reached cap, which was determined by the level $a_2$.
+- A definite criterion of $c_2$ and $a_2$ by comparing their cost and the cost for buying all $v$ variables before a reset is found, a similar criterion with excellent confidence has been found for $\delta$, there is a moderate confidence of criterion when comparing $c_1$ and $a_1$ cost and the cost for buying all $v$ variables before a reset.
 - A publication table, like Basal Problem (BaP CT), is not likely but still possible in MF CT, where the theory published specific position may shorten total completion time.
 
 ### Abstract
