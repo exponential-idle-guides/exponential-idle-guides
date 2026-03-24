@@ -1,29 +1,26 @@
 import { globals } from '../init.js';
 import { close_all_popups } from '../popup.js';
-import { redim_all_sidebar_btns as redim_btns } from './sidebar-btns.js';
 
 function Navigation(nav_id='sidebarOptions'){
   const nav = document.getElementById('button_nav').style;
   const background = globals.Navbar ? '--pavarte-fill-sidebar' : '--pavarte-stroke-sidebar-base';
   const stroke = globals.Navbar ? '--pavarte-stroke-sidebar-base' : '--pavarte-fill-sidebar';
-  const display = globals.Navbar ? 'none' : 'block';
+  const display = globals.Navbar ? 'none' : 'contents';
 
   nav.backgroundColor = globals.style_var.getPropertyValue(background);
   nav.color = globals.style_var.getPropertyValue(stroke);
   document.getElementById(nav_id).style.display = display;
   globals.Navbar = !(globals.Navbar);
-  if (globals.Navbar) redim_btns();
 }
 
 export function closeSidebar(){
   const direct = globals.Mobile ? 'height' : 'width';
+  const direct_units = globals.Mobile ? '0vh' : '0vw';
   const padding = globals.Mobile ? 'b' : 'lr';
-  const margin = globals.Mobile ? 'Top' : 'Left';
 
   globals.curr_sidebar='none';
-  globals.qstyle.setProperty('--sidebar-'+direct, "0%");
+  globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, direct_units);
   globals.qstyle.setProperty('--sidebar-padding-'+padding, "0%");
-  globals.qstyle.setProperty('--btn-margin'+margin, "0%");
   globals.qstyle.setProperty('--sidebar-content-padding', "0%");
   if (globals.Mobile){
     globals.qstyle.setProperty('--sidebar-transition-time', '0.5s');
@@ -44,15 +41,11 @@ function testSidebar(e, list, bool=true, stop=false){
 
 window.addEventListener('click', function(e){
   const id = (globals.Mobile && globals.curr_sidebar!='none') ? globals.curr_sidebar : "TOCSidebar";
-  const property = globals.Mobile ? '--sidebar-height' : '--sidebar-width';
+  const property = globals.Mobile ? 'height' : 'width';
   
-  var sidebar = "";
-  if(globals.Mobile){sidebar = document.getElementById(id).offsetHeight;
-  }else{sidebar = document.getElementById(id).offsetWidth;}
-  
-  const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue(property);
+  const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue('--sidebar-wrapper-max-' + property);
   const sidebar_root = globals.style_var.getPropertyValue(property);
-  if ((sidebar >= Number(sidebar_attr.match(/\d+/)[0])) 
+  if ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw")
     && (String(sidebar_root) != "0%")
     && testSidebar(e, globals.close_btn_list)){
     closeSidebar();

@@ -9,7 +9,7 @@ const full_skiplist = {
     "endgame": ["#lemmas"],
     "theory-sim": ["#updated-theory-sim-video-by-snaeky"],
     "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
-    "theory-strategies": ["#official-theories", "#official-custom-theories", "#mfrc"]
+    "theory-strategies": ["#mfrc"]
   },
   "guide-extensions": {
     "rankings-hall-of-fame": ["#hall-of-fame"],
@@ -59,15 +59,14 @@ function get_collap_dict($, h_dict, skiplist) {
   return copy_dict(h_dict, (d, h) => Object.keys(d[h]).reduce((a, b) => ({...a, [b] : d[h][b].filter((i, idx) => b === "ids" ? !(i === '#' || skipped(skiplist, $(i).attr('class'), i)) : a.ids.includes(d[h].ids[idx]))}), {}));
 }
 
-function apply($, h_dict, collap_dict) {
+function apply($, h_dict, collap_dict, parent) {
   if (collap_dict.h2.ids.length) {
-    zip_idi(collap_dict.h2).forEach(function([h2_id,h2_i], i){
-      const h2_until = $(h2_id).nextUntil(collap_dict.h2.ids[i+1]);
-      if (h2_until.length) {
-        h2_until.wrapAll('<div class="content"/>');
-      } else {
-        $(h2_id).after('<div class="content"></div>');
-      }
+    const z2 = zip_idi(collap_dict.h2);
+    const l2 = z2.length - 1;
+    z2.forEach(function([h2_id,h2_i], i){
+      $(h2_id)
+        .nextUntil((i < l2) ? collap_dict.h2.ids[i+1] : parent)
+        .wrapAll('<div class="content"/>');
       
       const next_h2_i = collap_dict.h2.indexes[i+1];
       const h2_h3 = lt_dict(gt_dict(collap_dict.h3, h2_i), next_h2_i);
@@ -233,7 +232,7 @@ function section($, parent, skiplist) {
     h.addClass('collapsible collapsible-closed');
   }
 
-  apply($, h_dict, collap_dict);
+  apply($, h_dict, collap_dict, parent);
 }
 
 module.exports = function (config, exclusions) {
@@ -306,11 +305,23 @@ module.exports = function (config, exclusions) {
           section($, parent, skiplist)
         }
       }
-      
-      const coll = main.children('.collapsible');
+
+      // For all Headers with no body to collapse, revert to regular header.
+      $('.collapsible').each(function() {
+        const t = $(this);
+        const s = t.next();
+        if (s.prop('outerHTML') === '<div class="content"></div>') {
+          s.remove();
+          t.removeClass('collapsible collapsible-open collapsible-closed');
+          t.html(t.html().slice(2))
+        }
+      });
+
+      const coll = main.find('.collapsible');
 
       // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
       supported.forEach(function(h_type, i) {main.children(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
+      
 
       function open_collapsible(header) {
         $(header).toggleClass('active');

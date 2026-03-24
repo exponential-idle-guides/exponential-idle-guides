@@ -9,7 +9,7 @@ const full_skiplist = {
     "endgame": ["#lemmas"],
     "theory-sim": ["#updated-theory-sim-video-by-snaeky"],
     "custom-theories": ["#wsp-overview", "#sl-overview", "#ef-overview", "#csr2-overview", "#fi-overview", "#fp-overview", "#rz-overview", "#mf-overview", "#bap-overview"],
-    "theory-strategies": ["#official-theories", "#official-custom-theories", "#mfrc"]
+    "theory-strategies": ["#mfrc"]
   },
   "guide-extensions": {
     "rankings-hall-of-fame": ["#hall-of-fame"],
@@ -81,6 +81,7 @@ const [h_dict, collap_dict] = get_dicts(main);
 const [sidebar_h_dict, sidebar_collap_dict] = get_dicts(sidebar);
 
 const coll = $('.collapsible');
+const main_coll = main.find('.collapsible');
 
 function open_collapsible(header) {
   header.classList.toggle("active");
@@ -111,7 +112,7 @@ for (let i = 0; i < coll.length; i++) {
 
 document.addEventListener('DOMContentLoaded', function() {
   $('#openCollapsibles')[0].addEventListener("click", function(e){
-    coll.each(function() {
+    main_coll.each(function() {
       open_collapsible(this);
     });
   });

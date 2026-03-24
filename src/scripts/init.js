@@ -13,7 +13,7 @@ const globals = {
   root: document.documentElement,
   query_root: document.querySelector(':root'),
   qstyle: document.querySelector(':root').style,
-  close_btn_list: ['TOCClose', 'GuideClose', 'ResourceClose', 'ExtensionClose'],
+  close_btn_list: ['SidebarClose'],
   sidebar_btn_list: ['TOCbtn', 'Guidebtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['TOCSidebar', 'GuideSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
   general_btn_list: ['.back-to-top-link', '#closeCollapsibles', '#openCollapsibles', '.btn-color-scheme-toggle'],
@@ -22,6 +22,10 @@ const globals = {
   Navbar: false
 }
 globals.style_var = getComputedStyle(globals.query_root);
+globals.sidebar_trans = [
+  globals.style_var.getPropertyValue('--sidebar-transition-time'),
+  globals.style_var.getPropertyValue('--sidebar-text-transition-time')
+]
 export {globals};
 
 window.onload = () => {
@@ -37,30 +41,18 @@ window.onload = () => {
   });
 
   if (globals.Mobile) {
-    globals.qstyle.setProperty('--btn-width', '30vw');
-    globals.qstyle.setProperty('--font-size', 'max(60%, 48% + 1.2vmin)');
-    globals.qstyle.setProperty('--body-line-height', '1.4');
-    globals.qstyle.setProperty('--section-max-width', '90vw');
-    globals.qstyle.setProperty('--title-align', 'right');
-    globals.qstyle.setProperty('--sidebar-height', '0%');
-    globals.qstyle.setProperty('--sidebar-width', '96%');
-    globals.qstyle.setProperty('--sidebar-padding-lr', '2%');
-    globals.qstyle.setProperty('--sidebar-column-gap', '3vw');
-    const columns = screen.availHeight > screen.availWidth ? '2' : '3';
-    globals.qstyle.setProperty('--sidebar-column-count', columns);
-    globals.qstyle.setProperty('--sidebar-transition-direction', 'margin-top');
+    globals.qstyle.setProperty('--sidebar-transition-time', "0s");
+    globals.qstyle.setProperty('--sidebar-text-transition-time', "0s");
+    globals.root.classList.add('mobile');
+    
   }
-
   if(window.location.href.includes('/ranking-news')){
-    globals.close_btn_list.push('RankingClose');
     globals.sidebar_btn_list.push('Rankingbtn');
     globals.sidebar_list.push('RankingSidebar');
   } else if(window.location.href.includes('/season-news')){
-    globals.close_btn_list.push('SeasonClose');
     globals.sidebar_btn_list.push('Seasonbtn');
     globals.sidebar_list.push('SeasonSidebar');
   } else if(window.location.href.includes('/ct-creation')){
-    globals.close_btn_list.push('CTClose');
     globals.sidebar_btn_list.push('CTbtn');
     globals.sidebar_list.push('CTSidebar');
   }

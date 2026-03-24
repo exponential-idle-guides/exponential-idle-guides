@@ -6,14 +6,6 @@
   {% endif %}
   <div id="{{base}}Sidebar" class="sidebar">
     <h1 class="sidebartitle">{{ title | safe }}</h1>
-    <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
-    <div class="content_wrapper {{s}}">
-      {{ caller() | safe }}
-    </div>
-  </div>
-  <div id="{{base}}Sidebarinvis" class="sidebar">
-    <h1 class="sidebartitle">{{ title | safe }}</h1>
-    <a href="javascript:void(0)" id="{{base}}Close" class="closebtn" onclick="closeSidebar()">ⓧ</a>
     <div class="content_wrapper {{s}}">
       {{ caller() | safe }}
     </div>
@@ -21,15 +13,13 @@
 {% endmacro %}
   
 {% macro sidebar_option(id) %}
-  <div>
-    <button class="openbtn" id="{{id}}">
-      <ul>
-        <li class="sidebar_btn_contents">
-          {{ caller() | safe }}
-        </li>
-      </ul>
-    </button>
-  </div>
+  <button class="openbtn" id="{{id}}">
+    <ul>
+      <li class="sidebar_btn_contents">
+        {{ caller() | safe }}
+      </li>
+    </ul>
+  </button>
 {% endmacro %}
 
 {% set url_bools = ['/ranking-news' in page.url, '/season-news' in page.url, '/ct-creation' in page.url] %}
@@ -142,53 +132,42 @@
         {% endcall %}
       {% endif %}
     </div>
-      
-    <div id="SidebarHeaders" class="sidebar">
-      <h1 class="sidebartitle">More Guides ⓧ</h1>
-      <h1 class="sidebartitle">Table of Contents ⓧ</h1>
-      <h1 class="sidebartitle">Other Resources ⓧ</h1>
-      <h1 class="sidebartitle">Guide Extensions ⓧ</h1>
-      {% if url_bools[0] %}
-        <h1 class="sidebartitle">Rankings ⓧ</h1>
-      {% elif url_bools[1] %}
-        <h1 class="sidebartitle">Seasons ⓧ</h1>
-      {% elif '/ct-creation' in page.url %}
-        <h1 class="sidebartitle">CT Creation Guide ⓧ</h1>
-      {% endif %}
-    </div>
     
-    <div id="sidebarMain">
-      <div id="sidebarNavigation">
-        {% call sidebar_option("button_nav") %}
-          Navigation
-        {% endcall %}
-      </div>
-      <div id="sidebarOptions">
-        {% call sidebar_option("TOCbtn") %}
-          Table of <span style="display:inline-block;">Contents</span>
-        {% endcall %}
-        {% call sidebar_option("Guidebtn") %}
-          More Guides
-        {% endcall %}
-        {% call sidebar_option("Extensionbtn") %}
-          Extensions
-        {% endcall %}
-        {% call sidebar_option("Resourcebtn") %}
-          Other <span style="display:inline-block;">Resources</span>
-        {% endcall %}
-        {% if url_bools[0] %}
-          {% call sidebar_option("Rankingbtn") %}
-            Rankings
+    <div id="sidebarButtons">
+      <a href="javascript:void(0)" id="SidebarClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <div id="sidebarButtonsWrap">
+        <div id="sidebarNavigation">
+          {% call sidebar_option("button_nav") %}
+            Navigation
           {% endcall %}
-        {% elif url_bools[1] %}
-          {% call sidebar_option("Seasonbtn") %}
-            Season Rankings
+        </div>
+        <div id="sidebarOptions">
+          {% call sidebar_option("TOCbtn") %}
+            Table of <span style="display:inline-block;">Contents</span>
           {% endcall %}
-        {% elif url_bools[2] %}
-          {% call sidebar_option("CTbtn") %}
-            CT Creation
+          {% call sidebar_option("Guidebtn") %}
+            More Guides
           {% endcall %}
-        {% endif %}
+          {% call sidebar_option("Extensionbtn") %}
+            Extensions
+          {% endcall %}
+          {% call sidebar_option("Resourcebtn") %}
+            Other <span style="display:inline-block;">Resources</span>
+          {% endcall %}
+          {% if url_bools[0] %}
+            {% call sidebar_option("Rankingbtn") %}
+              Rankings
+            {% endcall %}
+          {% elif url_bools[1] %}
+            {% call sidebar_option("Seasonbtn") %}
+              Season Rankings
+            {% endcall %}
+          {% elif url_bools[2] %}
+            {% call sidebar_option("CTbtn") %}
+              CT Creation
+            {% endcall %}
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
