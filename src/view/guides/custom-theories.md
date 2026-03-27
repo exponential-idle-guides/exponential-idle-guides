@@ -1025,6 +1025,36 @@ While, for most milestones, you unlock the permanent upgrade at the same time yo
 
 BaP has 20 milestones, the most out of any official theory to this day.
 
+###### Swap points will be added in the future.
+
+Class: milestone_routing;
+last_row: false;
+
+|           |       |           |       |           |
+| --------- | ----- | --------- | ----- | --------- |
+| 1/0       | ARROW | 1/1/0     | ARROW | 1/1/1/0   |
+| 1/1/1/1   | ARROW | 1/1/2/1   | ARROW | 1/1/2/2   |
+| 1/1/3/2   | ARROW | 1/1/3/3   | ARROW | 1/1/4/3   |
+| 1/1/3/4   | ARROW | 1/1/4/4   | ARROW | 1/1/5/4   |
+| 1/1/4/5   | ARROW | 1/1/5/5   | ARROW | 1/1/5/6   |
+| 1/1/6/6   | ARROW | 1/1/6/7   | ARROW | 1/1/7/7   |
+| 1/1/7/8   | ARROW | 1/1/8/8   | ARROW | 1/1/9/8/0 |
+| 1/1/9/8/1 | ARROW | 1/1/3/3   | INVIS | INVIS     |
+
+Class: milestone_routing;
+last_row: false;
+
+|    |       |        |       |       |
+| -- | ----- | ------ | ----- | ----- |
+| OR | INVIS | INVIS  | INVIS | INVIS |
+| 1  | ARROW | 2      | ARROW | 3     |
+| 4  | ARROW | 2      | ARROW | 2     |
+| 3  | ARROW | 3 to 4 | ARROW | 3     |
+| 3  | ARROW | 3 to 4 | ARROW | 3     |
+| 4  | ARROW | 3      | ARROW | 4     |
+| 3  | ARROW | 4      | ARROW | 3     |
+| 3  | ARROW | 5      | INVIS | INVIS |
+
 <!--br>
 <table class="milestone_routing">
    <tbody>
