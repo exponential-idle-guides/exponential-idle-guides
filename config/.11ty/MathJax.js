@@ -16,6 +16,7 @@ const LaTeX_replacements = {
   //"LATEXPLUS": "+",
   //"LATEXLIST": "",
   "LATEXBACKTICK": "`",
+  "LATEXPERCENT": String.raw`\%`,
 };
 const LaTeX_replacement_regex = Object.keys(LaTeX_replacements).join("|");
 const block_math_regex = /\$\$(?:[^\$]*\$[^\$]+|\s*\\\$|[^\$])+\$\$/gmu;
@@ -29,7 +30,8 @@ const LaTeX_replace = (str) => {
     .replace(/((?:(?:^|[^\\])\\(?:\\{2})*\\)|[^\\])`/g, "$1LATEXBACKTICK")
     .replace(/([\n\f]\s*)>([^\n\f\v]*)/g, "$1\\gt$2")
     .replace(/((?:(?:^|[^\\])\\(?:\\{2})*\\)|[^\\])\\,/g, "$1\\\\,")
-    .replaceAll("$", "LATEXDOLLAR");
+    .replaceAll("$", "LATEXDOLLAR")
+    .replaceAll(/((?:(?:^|[^\\])\\(?:\\{2})*\\)|[^\\])\\%/g, "$1LATEXPERCENT");
 }
 const wrap = (str, type) => {
   const replaced = LaTeX_replace(str);

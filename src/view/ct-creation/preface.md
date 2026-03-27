@@ -21,7 +21,7 @@ My final thank goes out to you, who are reading this guide right at this moment.
 
 ## Introduction
 
-> ...Most of them have been scattered, like pocket monsters across the vast planes of Joutou, and time. These creations, moulded from chalk and sweat. Some expose wonders of mathematics, some let their atoms burn, some bloom out of fertile earth, while some feel just content enough, to watch the planets turn. Some of them embody the essence of chaos, others exercise order and control. But within all, one thing exists in common...
+> ...Most of them have been scattered, like pocket monsters across the vast planes of Jooo-to, Haxen, Iosui, and time. These creations, moulded from chalk and sweat. Some expose wonders of mathematics, some let their atoms burn, some bloom out of fertile earth, while some feel just content enough, to watch the planets turn. Some of them embody the essence of chaos, others exercise order and control. But within all, one thing exists in common...
 >
 > *- Theorymon trailer, 2025*
 
@@ -31,11 +31,11 @@ Locked behind the final Convergence Test, custom theories are theories which hav
 
 1. **JavaScript**
 
-Before you engage with this guide, a basic understanding of JavaScript is required, although keep in mind that custom theory development does not utilize async/await, nor does it support modules, so you may skip through these concepts. A tutorial that I can recommend is at [javascripttutorial.net](https://www.javascripttutorial.net/). For a quick understanding, read from Section 1 to 5, while Sections 6 to 8 can be read later, and then the rest.
+Before you engage with this guide, a basic understanding of JavaScript is required, although keep in mind that custom theory development does not utilise async/await, nor does it support modules, so you may skip through these concepts. A tutorial that I can recommend is at [javascripttutorial.net](https://www.javascripttutorial.net/). For a quick understanding, read from Section 1 to 5, while Sections 6 to 8 can be read later, and then the rest.
 
 2. **Exponential Idle Theory SDK**
 
-The next important tool to acquire is the Exponential Idle [Theory SDK](https://github.com/conicgames/theory-sdk), which provides us with a custom theory API, and allows us to send a theory right to your device in real-time. Without the SDK, the only way to fetch theories would be to host your file on a website, and if it happens to be GitHub, it could take a few minutes to refresh whenever you make a commit.
+The next important tool to acquire is the Exponential Idle [Theory SDK](https://github.com/conicgames/theory-sdk/releases/latest), which provides us with a custom theory API, and allows us to send a theory right to your device in real-time. Without the SDK, the only way to fetch theories would be to host your file on a website, and if it happens to be GitHub, it could take a few minutes to refresh whenever you make a commit.
 
 3. **Source control**
 
