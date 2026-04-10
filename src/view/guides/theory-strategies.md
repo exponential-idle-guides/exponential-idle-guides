@@ -1945,9 +1945,9 @@ Caption: SL<green>MSd</green>;
 
 | Pub. Mult.* | $\lt4$ | $4-7.5$ | $\gt7.5$ |
 | ----------- | ------ | ------- | -------- |
-| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_1$ | When cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
 | $a_2$ | CHECK | REDX | REDX |
-| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_1$ | When cost$\times($lvl%$4)\lt b_2$ cost. | When cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
 | $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
@@ -2044,9 +2044,9 @@ Caption: SL<red>Stop</red><blue>A</blue><green>d</green>;
 
 | Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
 | ----------- | -------- | ------- | ------ |
-| $a_1$ | If lvl%$3=0$, then ✔️.<br>If not, buy when cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
+| $a_1$ | When cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
 | $a_2$ | CHECK | REDX | REDX |
-| $b_1$ | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | If lvl%$4=0$ or $1$, then ✔️.<br>If not, buy when cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
+| $b_1$ | When cost$\times($lvl%$4)\lt b_2$ cost. | When cost$\times($lvl%$4)\lt b_2$ cost. | REDX |
 | $b_2$ | CHECK | CHECK | REDX |
 | | | | [FOOT;]* Publication Multiplier |
 
