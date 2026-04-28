@@ -65,7 +65,7 @@ Minigames are puzzles that you can solve that will give you stars as a reward fo
 
 ### Stars and Star upgrades
 
-*Stars are a currency that operates outside of the main game that you use to purchase star upgrades.These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on star upgrades to prioritize can be found in following guides.
+Stars are a currency that operates outside of the main game that you use to purchase star upgrades. These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on star upgrades to prioritize can be found in following guides.
 
 ### <green>True</green>/<red>False</red> auto expression evaluation
 

@@ -35,8 +35,9 @@ const name_lookup = {
   'fp': {name: 'FP', path: 'CT/fp'},
   'rz': {name: 'RZ', path: 'CT/rz'},
   'mf': {name: 'MF', path: 'CT/mf'},
-  'extensions': {name: 'Extensions', path: 'extensions/extensions'},
-  'extension': {name: 'Extensions', path: 'extensions/extensions'},
+  // Typo'ed on Eylanding site
+  'extensions': {name: 'Extensions', path: 'extentions/extentions'}, 
+  'extension': {name: 'Extensions', path: 'extentions/extentions'},
   'ext': {name: 'Extensions', path: 'extensions/extensions'},
   'stepwise': {name: 'Stepwise variables', path: 'extensions/stepwise'},
   'milestone-swapping': {name: 'Milestone swapping', path: 'extensions/milestones'},
