@@ -2877,7 +2877,7 @@ Class: strat;
 | ----- | ----------------- | ----------------- | ----------------- |
 | $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
 | $c_2$ | CHECK | CHECK | CHECK |
-| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
 | $a_2$ | CHECK | CHECK | CHECK |
 | $\delta$ | CHECK | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
 | $v_1$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
@@ -2901,7 +2901,7 @@ Caption: MF<green>d3</green>;
 | -------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | $c_1$    | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
 | $c_2$    | CHECK |
-| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_1$    | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
 | $a_2$    | CHECK |
 | $\delta$ | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
 | $v_1$    | Only buy right before a reset |
@@ -2924,7 +2924,7 @@ Caption: MF<green>d2</green>;
 | -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | $c_1$ | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost |
 | $c_2$ | CHECK |
-| $a_1$ | When $I\times1.2\lt I_{\text{cap}}$<br>**or** $I\lt I_{\text{cap}}$ and cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $a_1$ | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost |
 | $a_2$ | CHECK |
 | $\delta$ | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost |
 | $v_1$ | Only buy right before a reset |
