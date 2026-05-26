@@ -104,6 +104,8 @@ Therefore, we get the expression $((b + db)/b)^{(1/pt)}$ which represents "after
 
 #### Auto­su­prem­acy ex­pres­sion
 
+**<red>Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.</red>**
+
 <button class="copy-btn" onClick="copyText('as_eq');">Copy Equation Text</button>
 
 <blockquote id="as_eq">
@@ -157,10 +159,6 @@ dpsi + psi &gt; min(costUpS(1), <br>
 || (costUpS(1) &lt; e52 <br>
 &amp;&amp; psi + dpsi &gt; 4.2e51))
 </blockquote>
-
-**Do a manual supremacy when you input this expression and never enter the
-edit expression field again afterwards. Make sure autobuyers are on x1
-or xMax.**
 
 ###### Reference [Locking Smooth()](#method-2-lock)
 ###### Reference [<green>True</green>/<red>False</red> auto expression evaluation](#truefalse-auto-expression-evaluation)

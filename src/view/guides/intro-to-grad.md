@@ -54,7 +54,7 @@ This lets the normal expression work when you supremacy or graduate up to 80% of
 
 #### Auto­su­prem­acy ex­pres­sion
 
-**Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.**
+**<red>Do a manual supremacy when you input this expression and never enter the edit expression field again afterwards. Make sure autobuyers are on x1 or xMax.</red>**
 
 <button class="copy-btn" onClick="copyText('as_eq');">Copy Equation Text</button>
 
