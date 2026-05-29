@@ -18,8 +18,10 @@ function isSafari() {
             navigator.userAgent.indexOf('FxiOS') == -1;
   const c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
-  document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
-  return a && b && c;
+  console.log('Safari Test: ' + a + ' _ ' + b + ' _ ' + c);
+  //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
+  //return a && b && c;
+  return a && b;
 }
 
 const globals = {
