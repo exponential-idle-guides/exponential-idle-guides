@@ -30,7 +30,7 @@ export function openSidebar(sidebars, force=false) {
   document.getElementById(sidebars[0]).style.zIndex = "10";
   const direct = globals.Mobile ? 'height' : 'width';
   const sidebar = globals.style_var.getPropertyValue('--sidebar-wrapper-max-'+direct);
-  if ((sidebar === "0%" || sidebar === "0vh" || sidebar === "0vw") || force) {
+  if ((sidebar === "0%" || sidebar === "0vh" || sidebar === "0vw" || sidebar === "1px") || force) {
     globals.Mobile ? openMobileSidebars(sidebars) : openDesktopSidebars(sidebars);
   } else if (globals.Mobile && globals.curr_sidebar != sidebars[0]){
     openMobileSidebars(sidebars);

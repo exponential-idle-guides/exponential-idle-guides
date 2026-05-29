@@ -46,7 +46,7 @@ window.addEventListener('click', function(e){
   
   const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue('--sidebar-wrapper-max-' + property);
   const sidebar_root = globals.style_var.getPropertyValue(property);
-  if ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw")
+  if ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw" && sidebar_attr != "1px")
     && (String(sidebar_root) != "0%")
     && testSidebar(e, globals.close_btn_list)){
     closeSidebar();
