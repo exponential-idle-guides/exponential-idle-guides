@@ -19,7 +19,8 @@ export function closeSidebar(){
   const padding = globals.Mobile ? 'b' : 'lr';
 
   globals.curr_sidebar='none';
-  globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, direct_units);
+  //globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, direct_units);
+  globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, "1px");
   globals.qstyle.setProperty('--sidebar-padding-'+padding, "0%");
   globals.qstyle.setProperty('--sidebar-content-padding', "0%");
   if (globals.Mobile){

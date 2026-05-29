@@ -16,7 +16,8 @@ $sidebar-btn-rows: 7;
 
   --sidebar-height: 100vh;
   --sidebar-width: auto;
-  --sidebar-wrapper-max-width: 0vw; //0vw <-> 40vw
+  //--sidebar-wrapper-max-width: 0vw; //0vw <-> 40vw
+  --sidebar-wrapper-max-width: 1px;
   --sidebar-max-width: calc(var(--sidebar-wrapper-max-width) + var(--sidebar-btn-max-width));
   --sidebar-wrapper-max-height: var(--sidebar-height);
   --sidebar-max-height: var(--sidebar-height);
@@ -56,7 +57,8 @@ $sidebar-btn-rows: 7;
   --sidebar-width: 100vw;
   --sidebar-wrapper-max-width: var(--sidebar-width);
   --sidebar-max-width: var(--sidebar-width);
-  --sidebar-wrapper-max-height: 0vh; //0vh <-> 50vh
+  //--sidebar-wrapper-max-height: 0vh; //0vh <-> 50vh
+  --sidebar-wrapper-max-height: 1px;
   --sidebar-max-height: calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * #{$sidebar-btn-padding-tb}) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)));
 
   --sidebar-padding-lr: 2%;
@@ -94,6 +96,8 @@ $sidebar-btn-rows: 7;
   max-width: var(--sidebar-wrapper-max-width);
   max-height: var(--sidebar-wrapper-max-height);
   transition: all var(--sidebar-transition-time);
+  min-width: 1px;
+  min-height: 1px;
 }
 .sidebar {
   pointer-events: auto;
@@ -111,6 +115,9 @@ $sidebar-btn-rows: 7;
   //-ms-overflow-style: none;  /* IE and Edge */
   //scrollbar-width: none;
   padding-bottom: var(--sidebar-padding-b);
+  
+  min-width: 1px;
+  min-height: 1px;
 
   &::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -142,9 +149,13 @@ $sidebar-btn-rows: 7;
     transition: var(--sidebar-text-transition-time);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
+    min-width: 1px;
+    min-height: 1px;
   }
   h2, h3, h4 {
     margin-top: 1.25rem;
+    min-width: 1px;
+    min-height: 1px;
   }
   .content_wrapper {
     padding: var(--sidebar-content-padding) var(--sidebar-content-padding) var(--sidebar-content-padding) 0;
@@ -156,6 +167,8 @@ $sidebar-btn-rows: 7;
     margin-bottom: var(--sidebar-padding-b);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
+    min-width: 1px;
+    min-height: 1px;
   }
 }
 
