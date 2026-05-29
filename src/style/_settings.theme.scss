@@ -32,6 +32,11 @@
   --strat-orange: #ff9600;
   --strat-yellow: #D1B200;
   --black-white: white;
+
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #494949;
+  --palette-fill-scrollbar-track-dark: #393939;
 }
 
 
@@ -60,6 +65,10 @@
     --palette-fill-table-headers-neutral: #d1d1d1;
     --palette-stroke-table-headers: #222;
     --black-white: black;
+    --palette-fill-scrollbar-light: #696969;
+    --palette-fill-scrollbar-dark: #595959;
+    --palette-fill-scrollbar-track-light: #999999;
+    --palette-fill-scrollbar-track-dark: #888888;
   }
 }
 :root.light-mode {
@@ -86,6 +95,10 @@
 	--palette-fill-table-headers-neutral: #d1d1d1;
 	--palette-stroke-table-headers: #222;
   --black-white: black;
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #999999;
+  --palette-fill-scrollbar-track-dark: #888888;
 }
 
 :root.dark-mode {
@@ -112,4 +125,8 @@
   --palette-stroke-sidebar-link-hover: #d3cccc;
   --palette-stroke-sidebar-header: #fff;
   --black-white: white;
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #494949;
+  --palette-fill-scrollbar-track-dark: #393939;
 }

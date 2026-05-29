@@ -47,7 +47,7 @@ See our earlier guide for an overview for [theory 4](/guides/theories-1-4/#theor
 
 #### Theory 5 Overview
 
-The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy. Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behavior of c1 and c2 variables in this theory, as the behaviors are quite unique.
+The optimal publish multiplier for T5 is between 2-3 and 6-10, please check with [The Sim](https://exponential-developers.github.io/sim-3.0/) for accuracy. Theory 5 is based on logistic function. This theory is slow early, but becomes very powerful later on in the game. It is recommended to keep pushing this theory as high as possible before reaching ee14k ft. Make sure to carefully read the behavior of $c_1$ and $c_2$ variables in this theory, as the behaviors are quite unique.
 
 #### Theory 5 Equation Description
 
@@ -77,7 +77,7 @@ last_row: false;
 | $c_2$ | Doubles the maximum value of $q$, however, it also HALVES $\dot{q}$. Be careful to not buy too much $c_2$ as this can cause $\dot{q}$ to be too low. Do not ignore $c_2$ as, otherwise, the maximum value of $q$ will never increase. |
 | $c_3$ | Doubles the maximum value of $q$. No drawbacks. |
 
-#### Bicycle Analogy (alternative explanation) of c1 and c2 interactions
+#### Bicycle Analogy (alternative explanation) of $c_1$ and $c_2$ interactions
 
 Think of buying $c_1$ as throttling on the bicycle faster. Buying $c_2$ is similar to shifting the bicycle gear up by 1 gear.<br>
 
@@ -95,7 +95,7 @@ $c_3 \approx q_2 \geq c_2 \gt q_1 \gt c_1$
 
 Note that $c_1$ and $c_2$ have special interactions.
 
-##### Manual buying c2 - READ THIS BEFORE DOING THE STRATEGIES
+##### Manual buying $c_2$ - READ THIS BEFORE DOING THE STRATEGIES
 
 For step 2 of the semi-idle and active strategies below, you should be manually buying $c_2$. If you're over $e150$ $\rho$, start with buying 10x variables at a time. Otherwise buy 1 level of $c_2$ at a time.<br>
 
@@ -124,7 +124,7 @@ Semi-idle is similar to idle, but once the theory is recovered, manual buy $c_2$
 For each publication: autobuy $c_3$ and $q_2$.
 
 1. For the first 10 seconds, autobuy everything except $c_2$.
-2. Then we want to manually buy $c_2$. See [Manual Buying c2](/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within ~$e5\ \rho$ under last publication mark.
+2. Then we want to manually buy $c_2$. See [Manual Buying $c_2$](/guides/theories-5-8/#theory-5-strategy). Do this until it slows down and you're within ~$e5\ \rho$ under last publication mark.
 3. Then we autobuy all until $\rho$ has reached its previous publication value (finished recovery).
 4. Afterwards, deactivate $c_1$ and autobuy the rest until publish.
 
@@ -137,7 +137,7 @@ For each publication: autobuy $c_3$ and $q_2$. Buy $c_1$ ONLY right after buying
 Note that for faster speed, during the first part of step 2, 10 levels can be bought at a time.
 
 1. For the first 10 seconds, autobuy everything except $c_2$.
-2. Then we want to manually buy $c_2$. See [Manual Buying c2](/guides/theories-5-8/#theory-5-strategy).
+2. Then we want to manually buy $c_2$. See [Manual Buying $c_2$](/guides/theories-5-8/#theory-5-strategy).
 3. Then we autobuy $c_3,q_2,c_2$. Out of these 3 variables, find the one with the cheapest cost. Then buy $q_1$ until its cost exceeds 15% of the cheapest variable found above. Buy $c_1$ ONLY right after buying a level of $c_2$.
 4. Once the theory has recovered to its previous publication mark, slowly put less emphasis on $c_1$. When in doubt, have $c_1$'s cost be similar to $q_1$'s cost. Continue doing step 2 until publish.
 

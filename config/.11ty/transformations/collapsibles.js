@@ -277,7 +277,7 @@ module.exports = function (config, exclusions) {
       });
 
       // any headers with no id will be given permalink and an id (not first h2)
-      for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...main.find(h + ":not([id])")], []).slice(1)) {
+      for (const h of supported.reduce((a,h) => [...a, ...main.find(h + ":not([id])")], []).slice(1)) {
         const slug = strRepl($(h).html());
         $(h).attr('id', slug);
         $(h).html($(h).html() + ' ' + '<a class="direct-link" href="#' + slug + '" aria-label="Permalink: ' + slug + '"><span class="visually-hidden" style="display:none;">Permalink: ' + slug + '</span><span aria-hidden="true">#</span></a>');
@@ -286,7 +286,7 @@ module.exports = function (config, exclusions) {
       sidebar_ids.forEach(function(id) {
         for (const t of ['', 'invis']) {
           const q = id + t;
-          for (const h of ["h2", "h3", "h4"].reduce((a,h) => [...a, ...$(q).find(h + ":not([id])")], [])) {
+          for (const h of supported.reduce((a,h) => [...a, ...$(q).find(h + ":not([id])")], [])) {
             $(h).attr('id', strRepl($(h).html()+q.slice(1)));
             $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
           }
@@ -321,7 +321,6 @@ module.exports = function (config, exclusions) {
 
       // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
       supported.forEach(function(h_type, i) {main.children(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
-      
 
       function open_collapsible(header) {
         $(header).toggleClass('active');

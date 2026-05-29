@@ -1,15 +1,15 @@
-{% macro sidebar_div(base, title, square) %}
+{% macro sidebar_nav(base, title, square) %}
   {% if square %}
     {% set s = "square_list" %}
   {% else %}
     {% set s = "" %}
   {% endif %}
-  <div id="{{base}}Sidebar" class="sidebar">
+  <nav id="{{base}}Sidebar" class="sidebar">
     <h1 class="sidebartitle">{{ title | safe }}</h1>
     <div class="content_wrapper {{s}}">
       {{ caller() | safe }}
     </div>
-  </div>
+  </nav>
 {% endmacro %}
   
 {% macro sidebar_option(id) %}
@@ -25,9 +25,9 @@
 {% set url_bools = ['/ranking-news' in page.url, '/season-news' in page.url, '/ct-creation' in page.url] %}
 
 {% if not home %}
-  <div id="sidebar">
+  <aside id="sidebar">
     <div id="sidebars">
-      {% call sidebar_div("TOC", "Table of Contents", true) %}
+      {% call sidebar_nav("TOC", "Table of Contents", true) %}
         {% set tocs = content | cleanTOC %}
         {% if tocs %}
           {{ tocs | safe }}
@@ -36,7 +36,7 @@
         {% endif %}
       {% endcall %}
 
-      {% call sidebar_div("Guide", "Guides", true) %}
+      {% call sidebar_nav("Guide", "Guides", true) %}
         <ul>
           {%- for guide in collections.guides -%}
             <li>
@@ -46,26 +46,26 @@
         </ul>
       {% endcall %}
 
-      {% call sidebar_div("Resource", "Resources", true) %}
-        {% include './sub-sections/tools.njk' %}
+      {% call sidebar_nav("Extension", "Guide Extensions", true) %}
+        {% include './sub-sections/extensions.njk' %}
       {% endcall %}
 
-      {% call sidebar_div("Extension", "Guide Extensions", true) %}
-        {% include './sub-sections/extensions.njk' %}
+      {% call sidebar_nav("Resource", "Resources", true) %}
+        {% include './sub-sections/tools.njk' %}
       {% endcall %}
       
       {#
       {% if url_bools[0] %}
-        {% call sidebar_div("Ranking", "Rankings", true) %}
+        {% call sidebar_nav("Ranking", "Rankings", true) %}
           {{ list.rank_linked("ft", true) }}
         {% endcall %}
       {% elif url_bools[1] %}
-        {% call sidebar_div("Season", "Seasons", true) %}
+        {% call sidebar_nav("Season", "Seasons", true) %}
           {{ list.rank_linked("seasons", true) }}
         {% endcall %}
       #}
       {% if url_bools[0] %}
-        {% call sidebar_div("Ranking", "Rankings", true) %}
+        {% call sidebar_nav("Ranking", "Rankings", true) %}
           {% for year, yearPosts in collections.postsByYear %}
             {% set yearbool = false %}
             {% for post in yearPosts %}
@@ -96,7 +96,7 @@
           {% endfor %}
         {% endcall %}
       {% elif url_bools[1] %}
-        {% call sidebar_div("Season", "Seasons", true) %}
+        {% call sidebar_nav("Season", "Seasons", true) %}
           {% for year, yearPosts in collections.postsByYear %}
             {% set yearbool = false %}
             {% for post in yearPosts %}
@@ -127,7 +127,7 @@
           {% endfor %}
         {% endcall %}
       {% elif url_bools[2] %}
-        {% call sidebar_div("CT", "CT Creation Guide", false) %}
+        {% call sidebar_nav("CT", "CT Creation Guide", false) %}
           {% include "./sub-sections/ct-creation.njk" %}
         {% endcall %}
       {% endif %}
@@ -170,5 +170,5 @@
         </div>
       </div>
     </div>
-  </div>
+  </aside>
 {% endif %}
