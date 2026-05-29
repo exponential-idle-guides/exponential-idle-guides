@@ -9,9 +9,15 @@ function openMobileSidebars(sidebars){
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-content-padding', '8px');
   globals.qstyle.setProperty('--sidebar-padding-b', window.visualViewport.height * 0.01 + "px");
-  globals.qstyle.setProperty('--sidebar-wrapper-max-height', "50vh");
-  globals.qstyle.setProperty('--sidebar-transition-time', globals.sidebar_trans[0]);
-  globals.qstyle.setProperty('--sidebar-text-transition-time', globals.sidebar_trans[1]);
+  if (globals.Safari) {
+    console.log("safari desktop");
+    //globals.qstyle.setProperty('--sidebar-margin-offset-top', '1px !important');
+    globals.qstyle.setProperty('--sidebar-grid', 'inline-grid');
+  } else {
+    globals.qstyle.setProperty('--sidebar-wrapper-max-height', "50vh");
+    globals.qstyle.setProperty('--sidebar-transition-time', globals.sidebar_trans[0]);
+    globals.qstyle.setProperty('--sidebar-text-transition-time', globals.sidebar_trans[1]);
+  }
 }
 
 function openDesktopSidebars(sidebars){
@@ -19,7 +25,13 @@ function openDesktopSidebars(sidebars){
   close_all_sidebar_collapsibles();
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
-  globals.qstyle.setProperty('--sidebar-wrapper-max-width', "40vw");
+  if (globals.Safari) {
+    console.log("safari desktop");
+    //document.querySelector(':root.safari').style.setProperty('--sidebar-margin-offset-left', '10px');
+    globals.qstyle.setProperty('--sidebar-grid', 'inline-grid');
+  } else {
+    globals.qstyle.setProperty('--sidebar-wrapper-max-width', "40vw");
+  }
 }
 
 export function openSidebar(sidebars, force=false) {
@@ -30,7 +42,12 @@ export function openSidebar(sidebars, force=false) {
   document.getElementById(sidebars[0]).style.zIndex = "10";
   const direct = globals.Mobile ? 'height' : 'width';
   const sidebar = globals.style_var.getPropertyValue('--sidebar-wrapper-max-'+direct);
-  if ((sidebar === "0%" || sidebar === "0vh" || sidebar === "0vw" || sidebar === "1px") || force) {
+  const sidebar_margin_offset = window.getComputedStyle(document.body).getPropertyValue(globals.Mobile ? '--sidebar-margin-offset-top' : '--sidebar-margin-offset-left');
+  console.log('open sidebar test', (globals.Safari && (sidebar_margin_offset !== '0 0 0 0' || sidebar_margin_offset !== '0')))
+  if ((sidebar === "0%" || sidebar === "0vh" || sidebar === "0vw" || sidebar === "1px")
+      //|| (globals.Safari && sidebar_margin_offset !== '0px' && sidebar_margin_offset !== '0')
+      || (globals.Safari && globals.style_var.getPropertyValue('--sidebar-grid') === "none")
+      || force) {
     globals.Mobile ? openMobileSidebars(sidebars) : openDesktopSidebars(sidebars);
   } else if (globals.Mobile && globals.curr_sidebar != sidebars[0]){
     openMobileSidebars(sidebars);
