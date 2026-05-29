@@ -10,14 +10,16 @@ function isMobileUser() {
 }
 
 function isSafari() {
-  return /^((?!chrome|android).)*safari/i.test(navigator.userAgent) &&
-          navigator.vendor && 
-          navigator.vendor.indexOf('Apple') > -1 &&
-          navigator.userAgent &&
-          navigator.userAgent.indexOf('CriOS') == -1 && // Excludes Chrome on iOS
-          navigator.userAgent.indexOf('FxiOS') == -1 &&
-          (/constructor/i.test(window.HTMLElement) || 
+  const a = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  const b = navigator.vendor && 
+            navigator.vendor.indexOf('Apple') > -1 &&
+            navigator.userAgent &&
+            navigator.userAgent.indexOf('CriOS') == -1 && // Excludes Chrome on iOS
+            navigator.userAgent.indexOf('FxiOS') == -1;
+  const c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
+  document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
+  return a && b && c;
 }
 
 const globals = {
