@@ -60,21 +60,43 @@ The [graduation calculator](https://replit.com/@LEBaldy2002/gradcalc?v=1) is a g
 
 ### Theory routing and strategies
 
-For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publications. [Human T5](/guides/endgame/#t5-routing) explanation is put below as well. 
-
-![T1-8 Rate vs. τ](/images/ot_rate_graph.png)
-
-|   |   |
-| - | - |
-|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ |
-
-![T1-8 Rate vs. τ adjusted for 345 students (ee70k)](/images/ot_rate_adjusted_graph.png)
-
-|   |   |
-| - | - |
-|   | [FOOT;] T1-8 $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
+For best theory routing and pushing, use the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) and the [Theory Sim Guide](/guides/theory-sim) to give the best strategy and multiplier for the next publications. [Human T5](/guides/endgame/#t5-routing) explanation is put below as well.
 
 ###### Reminder: Do T9 right upon unlocking it, reaching ee20k. This will unlock [Custom Theories](/guides/custom-theories) significantly improving progress.
+
+#### Theory Rate Graphs
+
+![T1-8 Active Rate vs. τ](/images/theory-rates/ot_rate_active_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 Active $\dot{\tau}$ vs. $\tau$ |
+
+![T1-8 Active Rate vs. τ adjusted for 345 students (F(t)=ee70k)](/images/theory-rates/ot_rate_active_adjusted_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 Active $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
+
+![T1-8 Idle Rate vs. τ](/images/theory-rates/ot_rate_idle_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ |
+
+![T1-8 Idle Rate vs. τ adjusted for 345 students (F(t)=ee70k)](/images/theory-rates/ot_rate_idle_adjusted_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
+
+![T1-8 Active/Idle Rate Ratio vs. τ](/images/theory-rates/ot_rate_ratio_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T1-8 Active/Idle $\dot{\tau}$ Ratio vs. $\tau$ |
+
+###### Graphs made by Hackzzzzzz
 
 #### T5 routing
 
