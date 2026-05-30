@@ -72,11 +72,11 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 | - | - |
 |   | [FOOT;] T1-8 Active $\dot{\tau}$ vs. $\tau$ |
 
-![T1-8 Active Rate vs. τ adjusted for 345 students (F(t)=ee70k)](/images/theory-rates/ot_rate_active_adjusted_graph.png)
+![T1-8 Active Rate vs. τ adjusted for 345 students [F(t)=ee70k]](/images/theory-rates/ot_rate_active_adjusted_graph.png)
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 Active $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
+|   | [FOOT;] T1-8 Active $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ $\left[F(t)=ee70\text{k}\right]$ |
 
 ![T1-8 Idle Rate vs. τ](/images/theory-rates/ot_rate_idle_graph.png)
 
@@ -84,11 +84,11 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 | - | - |
 |   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ |
 
-![T1-8 Idle Rate vs. τ adjusted for 345 students (F(t)=ee70k)](/images/theory-rates/ot_rate_idle_adjusted_graph.png)
+![T1-8 Idle Rate vs. τ adjusted for 345 students [F(t)=ee70k]](/images/theory-rates/ot_rate_idle_adjusted_graph.png)
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ ($F(t)=ee70\text{k}$) |
+|   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ $\left[F(t)=ee70\text{k}\right]$ |
 
 ![T1-8 Active/Idle Rate Ratio vs. τ](/images/theory-rates/ot_rate_ratio_graph.png)
 
