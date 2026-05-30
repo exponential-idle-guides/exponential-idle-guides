@@ -86,7 +86,7 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 Idle $\dot{\tau}$ vs. $\tau$ adjusted for $\sigma=345$ $\left[F(t)=ee70\text{k}\right]$ |
+|   | [FOOT;] T1-8 Idle Rate vs. τ adjusted for $\sigma=345$ $\left[F(t)=ee70\text{k}\right]$ |
 
 ![T1-8 Idle Rate vs. τ adjusted for 345 students [F(t)=ee70k]](/images/theory-rates/ot_rate_idle_adjusted_graph.png)
 
