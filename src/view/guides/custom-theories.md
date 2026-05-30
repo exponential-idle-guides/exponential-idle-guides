@@ -22,23 +22,23 @@ If you have time for active strategies, try to do the CT with the highest active
 
  For idle time, do the one with the highest idle $\tau/\text{hour}$, (or the longest publication time if you're doing overnights), with preference toward EF, SL, BaP, FP past e1050, or FI when you only have 1 milestone to swap. For example, if SL has 2 $\tau/\text{hour}$ and CSR2 also has 2 $\tau/\text{hour}$, ideally we would pick SL. The reason we prefer SL, EF, FP, FI and BaP is because these theories contain multiple growing variables. This means the theories generally require less babysitting as the variables grow by themselves. The assumption of daytime idle is that we can check and publish a theory every 2 hours or so. If you can only check every 8 hours idle, please see the overnight strategy just above.
 
-![CT Active Rate vs. τ](/images/theory-rates/ct_rate_active_graph.png)
-
 |   |   |
 | - | - |
 |   | [FOOT;] CT Active $\dot{\tau}$ vs. $\tau$ |
 
-![CT IDle Rate vs. τ](/images/theory-rates/ct_rate_idle_graph.png)
+![CT Active Rate vs. τ](/images/theory-rates/ct_rate_active_graph.png)
 
 |   |   |
 | - | - |
 |   | [FOOT;] CT Idle $\dot{\tau}$ vs. $\tau$ |
 
-![CT Active/Idle Rate Ratio vs. τ](/images/theory-rates/ct_rate_ratio_graph.png)
+![CT IDle Rate vs. τ](/images/theory-rates/ct_rate_idle_graph.png)
 
 |   |   |
 | - | - |
 |   | [FOOT;] CT Active/Idle $\dot{\tau}$ Ratio vs. $\tau$ |
+
+![CT Active/Idle Rate Ratio vs. τ](/images/theory-rates/ct_rate_ratio_graph.png)
 
 ###### Graphs made by Hackzzzzzz
 
