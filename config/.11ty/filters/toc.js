@@ -36,12 +36,14 @@ module.exports = function(config) {
     );
     const $ = cheerio.load(replaced_HTML);
 
+    const l = $("nav > ol > li").map(function(){return $(this);}).get()
+
     $("nav > ol > li").each((i, li) => {
       const title = $(li).contents().filter(function() {
         return this.type === 'tag' && this.name === 'a';
       });
 
-      const sublist = $(li).find('ol');
+      const sublist = $(li).children('ol');
       $(li).before(`<h4 id="${title[0].attribs.href.slice(1)}tocsidebar">${title}</h4>`);
       if (sublist.length) {
         $(li).after(sublist);
@@ -49,7 +51,7 @@ module.exports = function(config) {
       $(li).remove();
     })
     $("nav > ol").children().unwrap();
-    $('ul:empty').remove();
+    $("ul:empty").remove();
     return $("body").html();
   });
 }
