@@ -18,7 +18,6 @@ function isSafari() {
             navigator.userAgent.indexOf('FxiOS') == -1;
   const c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
-  console.log('Safari Test: ' + a + ' _ ' + b + ' _ ' + c);
   //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
   //return a && b && c;
   return a && b;
@@ -63,7 +62,6 @@ window.onload = () => {
   }
   if (globals.Safari) {
     globals.root.classList.add('safari');
-    globals.qstyle.setProperty('--palette-fill', 'red')
   }
   if(window.location.href.includes('/ranking-news')){
     globals.sidebar_btn_list.push('Rankingbtn');

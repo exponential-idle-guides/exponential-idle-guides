@@ -13,6 +13,22 @@ $sidebar-btn-rows: 7;
   --sidebar-btn-max-height: calc(2 * (var(--sidebar-btn-font-size) * var(--body-line-height)) + #{$sidebar-btn-padding-tb});
   --sidebar-btn-padding: #{$sidebar-btn-padding-tb} #{$sidebar-btn-padding-lr};
   --sidebar-btn-font-size: 1.2rem;
+  --sidebar-btn-count: #{$sidebar-btn-count};
+  --sidebar-btn-rows: #{$sidebar-btn-rows};
+  &:has(#Rankingbtn), &:has(#Seasonbtn), &:has(#CTbtn) {
+    --sidebar-btn-count: calc(#{$sidebar-btn-count} + 1);
+    --sidebar-btn-rows: calc(#{$sidebar-btn-rows} + 1);
+  }
+  --sidebar-btn-position: relative;
+
+  --sidebar-closebtn-display: inline;
+  --sidebar-closebtn-font-size: calc(var(--sidebar-btn-font-size) * 1.2);
+  --sidebar-closebtn-top-open: calc(var(--sidebar-header-top) + (var(--sidebar-header-font-size) - var(--sidebar-closebtn-font-size)) / 2);
+  --sidebar-closebtn-left-open: calc((-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2  - var(--sidebar-scrollbar-width) * 2);
+  --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
+  --sidebar-closebtn-left-closed: var(--sidebar-closebtn-left-open);
+  --sidebar-closebtn-top: var(--sidebar-closebtn-top-closed);
+  --sidebar-closebtn-left: var(--sidebar-closebtn-left-closed);
 
   --sidebar-height: 100vh;
   --sidebar-width: auto;
@@ -31,28 +47,22 @@ $sidebar-btn-rows: 7;
   --sidebar-header-top: min(3.5vh, 3.5vw, 20px);
   --sidebar-transition-direction: margin-left;
 
-  //--sidebar-square-margin-left: 0.2em; // should be 0.195 for layer1
   --sidebar-square-padding-left: 1.15em;
-
-  --sidebar-closebtn-left: calc((-1em * 36.7125 / 36) - var(--sidebar-padding-lr));
-
-  --sidebar-btn-count: #{$sidebar-btn-count};
-  --sidebar-btn-rows: #{$sidebar-btn-rows};
-  &:has(#Rankingbtn), &:has(#Seasonbtn), &:has(#CTbtn) {
-    --sidebar-btn-count: calc(#{$sidebar-btn-count} + 1);
-    --sidebar-btn-rows: calc(#{$sidebar-btn-rows} + 1);
-  }
-
-  --sidebar-margin-offset: 0;
 
   --sidebar-grid: inline-grid;
   --sidebar-flex: inline-flex;
+
+  --sidebar-scrollbar-width: 1vmin;
 }
 :root.mobile {
-  --sidebar-btn-max-width: 30vw;
 
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
+
+  --sidebar-btn-max-width: 30vw;
+  --sidebar-btn-position: static;
+  --sidebar-closebtn-left-open: calc(var(--sidebar-width) + (-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2 - var(--sidebar-scrollbar-width));
+  --sidebar-closebtn-top-closed: calc(0px - var(--sidebar-closebtn-font-size));
 
   --sidebar-height: auto;
   --sidebar-width: 100vw;
@@ -71,19 +81,13 @@ $sidebar-btn-rows: 7;
   --sidebar-grid: grid;
   --sidebar-flex: flex;
 }
-@media screen and (orientation: landscape) {
-  :root.mobile {
-    --sidebar-column-count: round(down, calc(var(--sidebar-column-count-helper) / 18rem), 1);
-    --sidebar-column-gap: 3vw;
-  }
-}
 :root.safari {
+  --sidebar-closebtn-display: none;
+  --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
   --sidebar-wrapper-max-height: 100vh !important;
   --sidebar-wrapper-max-width: 40vw !important;
   --sidebar-height: 100vh !important;
   --sidebar-width: 40vw !important;
-  --sidebar-margin-offset-left: -40vw !important;
-  --sidebar-margin-offset-top: 10px !important;
 
   --sidebar-grid: none;
   &.mobile {
@@ -91,8 +95,12 @@ $sidebar-btn-rows: 7;
     --sidebar-wrapper-max-width: 100vw !important;
     --sidebar-height: 50vh !important;
     --sidebar-width: 100vw !important;
-    --sidebar-margin-offset-left: 10px !important;
-    --sidebar-margin-offset-top: -50vh !important;
+  }
+}
+@media screen and (orientation: landscape) {
+  :root.mobile {
+    --sidebar-column-count: round(down, calc(var(--sidebar-column-count-helper) / 18rem), 1);
+    --sidebar-column-gap: 3vw;
   }
 }
 
@@ -116,11 +124,6 @@ $sidebar-btn-rows: 7;
   max-width: var(--sidebar-wrapper-max-width);
   max-height: var(--sidebar-wrapper-max-height);
   transition: all var(--sidebar-transition-time);
-  
-  //margin-left: var(--sidebar-margin-offset-left);
-  //margin-top: var(--sidebar-margin-offset-top);
-  //min-width: 1px;
-  //min-height: 1px;
 }
 .sidebar {
   pointer-events: auto;
@@ -132,31 +135,26 @@ $sidebar-btn-rows: 7;
   background-color: var(--palette-fill-sidebar);
   overflow-x: hidden;
   transition: all var(--sidebar-transition-time);
-
-  overflow-y: scroll;
-  scrollbar-gutter: stable;
-  //-ms-overflow-style: none;  /* IE and Edge */
-  //scrollbar-width: none;
   padding-bottom: var(--sidebar-padding-b);
-  
-  //min-width: 1px;
-  //min-height: 1px;
 
+  overflow-y: auto;
+  scrollbar-gutter: stable;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 1vmin;
+    width: var(--sidebar-scrollbar-width);
   }
   &::-webkit-scrollbar-track {
     background: var(--palette-fill-scrollbar-track-dark); 
-    border-radius: 0.5vmin;
+    border-radius: calc(var(--sidebar-scrollbar-width) / 2);
   }
   &::-webkit-scrollbar-thumb {
     background: var(--palette-fill-scrollbar-dark); 
-    border-radius: 0.5vmin;
+    border-radius: calc(var(--sidebar-scrollbar-width) / 2);
   }
   /*&::-webkit-scrollbar-thumb:hover {
     background: #555; 
   }*/
+
   a {
     color: var(--palette-stroke-sidebar-link);
     &:hover {
@@ -172,13 +170,9 @@ $sidebar-btn-rows: 7;
     transition: var(--sidebar-text-transition-time);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
-    //min-width: 1px;
-    //min-height: 1px;
   }
   h2, h3, h4 {
     margin-top: 1.25rem;
-    //min-width: 1px;
-    //min-height: 1px;
   }
   .content_wrapper {
     padding: var(--sidebar-content-padding) var(--sidebar-content-padding) var(--sidebar-content-padding) 0;
@@ -190,8 +184,6 @@ $sidebar-btn-rows: 7;
     margin-bottom: var(--sidebar-padding-b);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
-    //min-width: 1px;
-    //min-height: 1px;
   }
 }
 
@@ -209,28 +201,25 @@ $sidebar-btn-rows: 7;
   flex-direction: column;
   vertical-align: top;
   transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
-  /*.square_list {
-    flex-wrap: wrap;
-    #sidebarNavigation, #sidebarOptions {
-      flex: 1 1 auto;
-    }
-  }*/
-  position: relative;
   #sidebarButtonsWrap, #sidebarNavigation {
     display: contents;
   }
+  z-index: 100;
+
+  position: var(--sidebar-btn-position);
   .closebtn {
     position: absolute;
-    top: calc(var(--sidebar-header-top) + (var(--sidebar-header-font-size) - var(--sidebar-btn-font-size)) / 2);
-    left: calc((-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-btn-font-size) * 1.02) / 2);
-    font-size: var(--sidebar-btn-font-size);
+    display: var(--sidebar-closebtn-display);
+    top: var(--sidebar-closebtn-top);
+    left: var(--sidebar-closebtn-left);
+    font-size: calc(var(--sidebar-closebtn-font-size));
     color: var(--palette-stroke-sidebar-base);
+    transition: all var(--sidebar-transition-time);
     &:hover {
       text-decoration:none;
       color: var(--palette-stroke-sidebar-header);
     }
   }
-  z-index: 100;
 }
 #sidebarOptions {display:none;}
 
@@ -269,35 +258,7 @@ $sidebar-btn-rows: 7;
   .content {
     padding: 0 0.695rem;
   }
-  //float: left;
   ul, ol {
-    /*
-    -webkit-column-count: var(--sidebar-column-count);
-    -webkit-column-gap: var(--sidebar-column-gap);
-
-    -moz-column-count: var(--sidebar-column-count);
-    -moz-column-gap: var(--sidebar-column-gap);
-
-    -o-column-count: var(--sidebar-column-count); 
-    -o-column-gap: var(--sidebar-column-gap);
-
-    column-count: var(--sidebar-column-count);
-    column-gap: var(--sidebar-column-gap);
-    column-fill: balance-all;
-    //*/
-    /*
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(auto-fit, minmax(10em, 18em));
-    gap: var(--sidebar-column-gap);
-    width: 100%;
-    //*/
-    /*
-    column-width: 18em;
-    column-gap: var(--sidebar-column-gap);
-    column-fill: auto;
-    max-height: 4em;
-    //*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -340,7 +301,6 @@ $sidebar-btn-rows: 7;
 // h2, h3, h4 that aren't collapsibles
 .sidebar nav > *:not(.collapsible):not(.content) {
   position: relative;
-  //padding-left: 1.437em;
   padding-left: 1.632em;
   &::before{
     content: counter(none, square_level3alt) !important;

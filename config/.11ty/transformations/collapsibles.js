@@ -77,8 +77,10 @@ function apply($, h_dict, collap_dict, parent) {
         zip_idi(h2_h4).forEach(function([h4_id, h4_i], k) {
           $(h4_id).next('.content').children().unwrap();
           if (h4_i >= last_h4_i) {
-            const h4_final = next_h3.indexes ? $(next_h3.ids).prev() : $(h4_id).siblings().last();
-            h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+            if ($(h4_id).next().length > 0) {
+              const h4_final = next_h3.indexes ? $(next_h3.ids).prev() : $(h4_id).siblings().last();
+              h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+            }
             const h4_until = $(h4_id)
               .nextUntil(h4_id + 'finalh4wrap')
               .add(h4_id + 'finalh4wrap');
@@ -103,8 +105,10 @@ function apply($, h_dict, collap_dict, parent) {
         zip_idi(h2_h3).forEach(function([h3_id, h3_i], l) {
           $(h3_id).next('.content').children().unwrap();
           if (h3_i >= last_h3_i) {
-            const h3_final  = $(h3_id).siblings().last();
-            h3_final.attr('id', h3_id.slice(1) + 'finalh3wrap');
+            if ($(h3_id).next().length > 0) {
+              const h3_final  = $(h3_id).siblings().last();
+              h3_final.attr('id', h3_id.slice(1) + 'finalh3wrap');
+            }
             const h3_until = $(h3_id)
               .nextUntil(h3_id + 'finalh3wrap')
               .add(h3_id + 'finalh3wrap');
@@ -130,8 +134,10 @@ function apply($, h_dict, collap_dict, parent) {
             zip_idi(h3_h4).forEach(function([h4_id, h4_i], m) {
               $(h4_id).next('.content').children().unwrap();
               if (h4_i >= last_h4_i) {
-                const h4_final  = $(h4_id).siblings().last();
-                h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+                if ($(h4_id).next().length > 0) {
+                  const h4_final  = $(h4_id).siblings().last();
+                  h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+                }
                 const h4_until = $(h4_id)
                   .nextUntil(h4_id + 'finalh4wrap')
                   .add(h4_id + 'finalh4wrap');
@@ -160,8 +166,10 @@ function apply($, h_dict, collap_dict, parent) {
       const last_h4_i = h4_h3.indexes.slice(-1)[0];
       zip_idi(h4_h3).forEach(function([h4_id, h4_i], i) {
         if (h4_i >= last_h4_i) {
-          const h4_final = collap_dict.h3.indexes.length ? $(first_h3.ids).prev() : $(h4_id).siblings().last();
-          h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+          if ($(h4_id).next().length > 0) {
+            const h4_final = collap_dict.h3.indexes.length ? $(first_h3.ids).prev() : $(h4_id).siblings().last();
+            h4_final.attr('id', h4_id.slice(1) + 'finalh4wrap');
+          }
           const h4_until = $(h4_id)
             .nextUntil(h4_id + 'finalh4wrap')
             .add(h4_id + 'finalh4wrap');
@@ -195,8 +203,10 @@ function apply($, h_dict, collap_dict, parent) {
         zip_idi(h4).forEach(function([h4_id,h4_i], l) {
           $(h4_id).next('.content').children().unwrap();
           if (h4_i >= last_h4) {
-            const h4_final  = $(h4_id).siblings().last();
-            h4_final.attr('id', h4_id.slice() + 'finalh4wrap');
+            if ($(h4_id).next().length > 0) {
+              const h4_final  = $(h4_id).siblings().last();
+              h4_final.attr('id', h4_id.slice() + 'finalh4wrap');
+            }
             const h4_until = $(h4_id)
               .nextUntil(h4_id + 'finalh4wrap')
               .add(h4_id + 'finalh4wrap');
@@ -271,10 +281,6 @@ module.exports = function (config, exclusions) {
         }
         $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
       })
-      // TOCSidebarinvis headers need to have invis added to their header id to stand out from TOCSidebar headers
-      supported.reduce((a,h) => [...a, ...$("#TOCSidebarinvis").find(h + "[id]")], []).forEach((h) => {
-        $(h).attr('id', $(h).attr('id') + 'invis');
-      });
 
       // any headers with no id will be given permalink and an id (not first h2)
       for (const h of supported.reduce((a,h) => [...a, ...main.find(h + ":not([id])")], []).slice(1)) {
@@ -284,20 +290,14 @@ module.exports = function (config, exclusions) {
         $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
       }
       sidebar_ids.forEach(function(id) {
-        for (const t of ['', 'invis']) {
-          const q = id + t;
-          for (const h of supported.reduce((a,h) => [...a, ...$(q).find(h + ":not([id])")], [])) {
-            $(h).attr('id', strRepl($(h).html()+q.slice(1)));
-            $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
-          }
+        for (const h of supported.reduce((a,h) => [...a, ...$(id).find(h + ":not([id])")], [])) {
+          $(h).attr('id', strRepl($(h).html()+id.slice(1)));
+          $(h).attr("style","color:var(--palette-stroke-collapsible-header);");
         }
       });
 
       const parents = [main, ...sidebar_ids.reduce((a, h) => {
-        if (h === "#TOCSidebar") {
-          return [...a,$(h + " > div > nav"),$(h+"invis > div > nav")]; 
-        }
-        return [...a,$(h + " > div"),$(h+"invis > div")];
+        return [...a,$(h + " > div" + ((h === "#TOCSidebar") ? " > nav" : ""))];
       }, [])];
 
       for (const parent of parents) {
@@ -310,7 +310,7 @@ module.exports = function (config, exclusions) {
       $('.collapsible').each(function() {
         const t = $(this);
         const s = t.next();
-        if (s.prop('outerHTML') === '<div class="content"></div>') {
+        if (s.prop('outerHTML').match(/^<div\s+class="content"(?:\s+id="[^"]*")?>\s*<\/div>$/mi)) {
           s.remove();
           t.removeClass('collapsible collapsible-open collapsible-closed');
           t.html(t.html().slice(2))

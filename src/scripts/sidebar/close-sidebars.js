@@ -19,16 +19,16 @@ export function closeSidebar(){
   const padding = globals.Mobile ? 'b' : 'lr';
 
   globals.curr_sidebar='none';
-  
   if (globals.Safari) {
     const margin = globals.Mobile ? '-50vh' : '-40vw';
     const side = globals.Mobile ? 'top' : 'left'
-    //globals.qstyle.setProperty('--sidebar-margin-offset-'+side, margin);
-    //document.getElementById('sidebars').style.display = "none";
     
     globals.qstyle.setProperty('--sidebar-grid', 'none');
+    globals.qstyle.setProperty('--sidebar-closebtn-display', 'none');
   } else {
     globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, direct_units);
+    globals.qstyle.setProperty('--sidebar-closebtn-top', 'var(--sidebar-closebtn-top-closed)');
+    globals.qstyle.setProperty('--sidebar-closebtn-left', 'var(--sidebar-closebtn-left-closed)');
   }
   globals.qstyle.setProperty('--sidebar-padding-'+padding, "0%");
   globals.qstyle.setProperty('--sidebar-content-padding', "0%");
@@ -56,23 +56,16 @@ window.addEventListener('click', function(e){
   const sidebar_attr = window.getComputedStyle(document.body).getPropertyValue('--sidebar-wrapper-max-' + property);
   const sidebar_root = globals.style_var.getPropertyValue(property);
   const sidebar_margin_offset = window.getComputedStyle(document.body).getPropertyValue(globals.Mobile ? '--sidebar-margin-offset-top' : '--sidebar-margin-offset-left');
-  console.log(document.getElementById("button_nav").contains(e.target), document.getElementById("sidebarNavigation").contains(e.target))
   if (( 
-      ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw" && sidebar_attr != "1px")
+      ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw")
         && (String(sidebar_root) != "0%")
         && !globals.Safari)
-      //|| (globals.Safari && (sidebar_margin_offset === '0 0 0 0' || sidebar_margin_offset === '0'))
       || (globals.Safari && globals.style_var.getPropertyValue('--sidebar-grid') !== "none")
     )
     && testSidebar(e, globals.close_btn_list)){
-    console.log('safari:', globals.Safari)
-    console.log("close sidebar: ", ((sidebar_attr !== "0%" && sidebar_attr !== "0vh" && sidebar_attr !== "0vw" && sidebar_attr != "1px")
-        && (String(sidebar_root) != "0%")
-        && !globals.Safari), (globals.Safari && globals.style_var.getPropertyValue('--sidebar-grid') !== "none"))
     closeSidebar();
   } else if (document.getElementById("button_nav").contains(e.target)
     || document.getElementById("sidebarNavigation").contains(e.target)){
-    console.log("navigation")
     Navigation();
   }
 })
