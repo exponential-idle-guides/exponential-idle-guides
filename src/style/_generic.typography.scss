@@ -12,6 +12,9 @@
 :root.mobile {
 	--font-size: max(60%, 48% + 1.2vmin);
 	--body-line-height: 1.4;
+	#buttons {
+		font-size: 1.1em;
+	}
 }
 
 p {
