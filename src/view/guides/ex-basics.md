@@ -8,9 +8,7 @@ order: 0
 eylanding: "basics"
 ---
 
-This intro and following guide are designed to help you play through the 1 to ee2000
-section of the game. This introduction will give you some fundamentals to help you progress
-while playing this section of the game.
+This intro and following guide are designed to help you play through the 1 to ee2000 section of the game. This introduction will give you some fundamentals to help you progress while playing this section of the game.
 
 If you don't want to have spoilers for the later game, don't read
 further ahead than you are already.

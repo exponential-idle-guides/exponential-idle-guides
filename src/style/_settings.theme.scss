@@ -32,34 +32,43 @@
   --strat-orange: #ff9600;
   --strat-yellow: #D1B200;
   --black-white: white;
+
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #494949;
+  --palette-fill-scrollbar-track-dark: #393939;
 }
 
 
 @media(prefers-color-scheme: light) {
   :root {
-  --palette-fill: #fff;
-  --palette-fill-transparent: rgba(255, 255, 255, 0.85);
-  --palette-fill-lc: #d0d0d0;
-  --palette-stroke: #444;
-  --palette-stroke-hc: #333;
-  --palette-stroke-warning: #ff0000;
-  --palette-fill-shadow: rgba(34, 34, 34, 0.25);
-  --palette-stroke-collapsible-header: var(--palette-stroke-hc);
-  --palette-fill-collapsible-closed: #e0e0e0;
-  --palette-fill-collapsible-open: #b8b8b8;
-  --palette-fill-sidebar-collapsible-closed: #cecece;
-  --palette-fill-sidebar-collapsible-open: #b8b8b8;
-  --palette-fill-sidebar-hover: #939393;
-  --palette-fill-sidebar: #e8e8e8;
-  --palette-stroke-sidebar-base: #464646;
-  --palette-stroke-sidebar-link: #333;
-  --palette-stroke-sidebar-link-hover: #464646;
-  --palette-stroke-sidebar-header: #333;
-	--palette-fill-table-headers-light: #e2e2e2;
-	--palette-fill-table-headers-dark: #bfbfbf;
-	--palette-fill-table-headers-neutral: #d1d1d1;
-	--palette-stroke-table-headers: #222;
-  --black-white: black;
+    --palette-fill: #fff;
+    --palette-fill-transparent: rgba(255, 255, 255, 0.85);
+    --palette-fill-lc: #d0d0d0;
+    --palette-stroke: #444;
+    --palette-stroke-hc: #333;
+    --palette-stroke-warning: #ff0000;
+    --palette-fill-shadow: rgba(34, 34, 34, 0.25);
+    --palette-stroke-collapsible-header: var(--palette-stroke-hc);
+    --palette-fill-collapsible-closed: #e0e0e0;
+    --palette-fill-collapsible-open: #b8b8b8;
+    --palette-fill-sidebar-collapsible-closed: #cecece;
+    --palette-fill-sidebar-collapsible-open: #b8b8b8;
+    --palette-fill-sidebar-hover: #939393;
+    --palette-fill-sidebar: #e8e8e8;
+    --palette-stroke-sidebar-base: #464646;
+    --palette-stroke-sidebar-link: #333;
+    --palette-stroke-sidebar-link-hover: #464646;
+    --palette-stroke-sidebar-header: #333;
+    --palette-fill-table-headers-light: #e2e2e2;
+    --palette-fill-table-headers-dark: #bfbfbf;
+    --palette-fill-table-headers-neutral: #d1d1d1;
+    --palette-stroke-table-headers: #222;
+    --black-white: black;
+    --palette-fill-scrollbar-light: #696969;
+    --palette-fill-scrollbar-dark: #595959;
+    --palette-fill-scrollbar-track-light: #999999;
+    --palette-fill-scrollbar-track-dark: #888888;
   }
 }
 :root.light-mode {
@@ -86,6 +95,10 @@
 	--palette-fill-table-headers-neutral: #d1d1d1;
 	--palette-stroke-table-headers: #222;
   --black-white: black;
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #999999;
+  --palette-fill-scrollbar-track-dark: #888888;
 }
 
 :root.dark-mode {
@@ -112,4 +125,8 @@
   --palette-stroke-sidebar-link-hover: #d3cccc;
   --palette-stroke-sidebar-header: #fff;
   --black-white: white;
+  --palette-fill-scrollbar-light: #696969;
+  --palette-fill-scrollbar-dark: #595959;
+  --palette-fill-scrollbar-track-light: #494949;
+  --palette-fill-scrollbar-track-dark: #393939;
 }

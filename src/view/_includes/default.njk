@@ -29,13 +29,11 @@
   </head>
   <body>    
     <header class="page-section header" id="top">
-      <h1 class="site_title"><a href="/">Exponential Idle Guides</a></h1>
+      <h1 class="site_title" id="site_title"><a href="/">Exponential Idle Guides</a></h1>
       {{ nav | safe }}
     </header>
 
     {% include 'buttons.html' %}
-
-    {% block sidebar %}{% endblock %}
 
     <main class="page-section content-wrapper">
       {% block title %}
@@ -52,6 +50,8 @@
         </div>
       {% endif %}
     </main>
+    
+    {% block sidebar %}{% endblock %}
     
     <footer class="page-section footer">
       <div class="footer__section footer__section--main">
