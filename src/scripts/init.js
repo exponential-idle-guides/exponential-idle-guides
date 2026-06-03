@@ -11,22 +11,19 @@ function isMobileUser() {
 
 function isSafari() {
   const userAgent = navigator.userAgent;
+  const fake = userAgent.match(/rios|edgios|chrome|edg|crios|fxios|android|opera/i) &&
+                userAgent.match(/OPT\//)
   const a = userAgent.match(/macintosh|ipad|iphone/i) &&
-                    userAgent.match(/webkit/i) &&
-                    !userAgent.match(/rios|edgios|chrome|edg|fxios|android|opera/i) &&
-                    !userAgent.match(/OPT\//);
+            userAgent.match(/webkit/i);
   const b = navigator.vendor && 
-            navigator.vendor.match(/apple/i) &&
-            !userAgent.match(/crios/i) &&
-            !userAgent.match(/fxios/i) &&
-            !userAgent.match(/Opera|OPT\//)
+            navigator.vendor.match(/apple/i);
   let c = false;
   try{
     c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
   } catch(err) {}
   //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
-  return a || b || c;
+  return (a || b || c) && !fake;
 }
 
 const globals = {
