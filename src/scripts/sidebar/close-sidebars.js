@@ -62,7 +62,8 @@ window.addEventListener('click', function(e){
         && !globals.Safari)
       || (globals.Safari && globals.style_var.getPropertyValue('--sidebar-grid') !== "none")
     )
-    && testSidebar(e, globals.close_btn_list)){
+    && testSidebar(e, globals.close_btn_list)
+    && !document.getElementById("ColorSchemeToggle").contains(e.target)){
     closeSidebar();
   } else if (document.getElementById("button_nav").contains(e.target)
     || document.getElementById("sidebarNavigation").contains(e.target)){

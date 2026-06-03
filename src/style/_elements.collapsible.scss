@@ -1,8 +1,9 @@
 :root {
   --collapsible-padding: 0.9rem;
+  --sidebar-collapsible-padding: 0.5rem;
   --collapsible-width: 100%;
   --body-collapsible-width: calc(var(--collapsible-width) - 2 * var(--collapsible-padding));
-  --sidebar-collapsible-width: calc(var(--sidebar-width) - 2 * var(--collapsible-padding));
+  --sidebar-collapsible-width: calc(var(--collapsible-width) - 2 * var(--sidebar-collapsible-padding));
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -39,7 +40,7 @@ body .collapsible {
   .collapsible {
     width: var(--sidebar-collapsible-width) !important;
     margin-top: 0.75rem;
-    padding: 0.5rem;
+    padding: var(--sidebar-collapsible-padding);
   }
   .collapsible-closed {
     background-color: var(--palette-fill-sidebar-collapsible-closed);

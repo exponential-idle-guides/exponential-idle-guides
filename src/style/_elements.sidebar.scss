@@ -1,5 +1,3 @@
-$sidebar-btn-padding-lr: min(3vw, 20px);
-$sidebar-btn-padding-tb: min(2vh, 15px);
 $sidebar-btn-count: 5;
 $sidebar-btn-rows: 7;
 
@@ -10,8 +8,9 @@ $sidebar-btn-rows: 7;
   --sidebar-padding-b: 0%;
 
   --sidebar-btn-max-width: 20vw;
-  --sidebar-btn-max-height: calc(2 * (var(--sidebar-btn-font-size) * var(--body-line-height)) + #{$sidebar-btn-padding-tb});
-  --sidebar-btn-padding: #{$sidebar-btn-padding-tb} #{$sidebar-btn-padding-lr};
+  --sidebar-btn-max-height: calc(2 * (var(--sidebar-btn-font-size) * var(--body-line-height)) + var(--sidebar-btn-padding-tb));
+  --sidebar-btn-padding-lr: min(3vw, 20px);
+  --sidebar-btn-padding-tb: min(2vh, 15px);
   --sidebar-btn-font-size: 1.2rem;
   --sidebar-btn-count: #{$sidebar-btn-count};
   --sidebar-btn-rows: #{$sidebar-btn-rows};
@@ -24,7 +23,7 @@ $sidebar-btn-rows: 7;
   --sidebar-closebtn-display: inline;
   --sidebar-closebtn-font-size: calc(var(--sidebar-btn-font-size) * 1.2);
   --sidebar-closebtn-top-open: calc(var(--sidebar-header-top) + (var(--sidebar-header-font-size) - var(--sidebar-closebtn-font-size)) / 2);
-  --sidebar-closebtn-left-open: calc((-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2  - var(--sidebar-scrollbar-width) * 2);
+  --sidebar-closebtn-left-open: calc((-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2  - var(--sidebar-scrollbar-width));
   --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
   --sidebar-closebtn-left-closed: var(--sidebar-closebtn-left-open);
   --sidebar-closebtn-top: var(--sidebar-closebtn-top-closed);
@@ -55,11 +54,12 @@ $sidebar-btn-rows: 7;
   --sidebar-scrollbar-width: 1vmin;
 }
 :root.mobile {
-
+  --sidebar-btn-padding-lr: min(2.25vw, 15px);
+  --sidebar-btn-padding-tb: min(1.5vh, 10px);
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
 
-  --sidebar-btn-max-width: 30vw;
+  --sidebar-btn-max-width: 40vw;
   --sidebar-btn-position: static;
   --sidebar-closebtn-left-open: calc(var(--sidebar-width) + (-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2 - var(--sidebar-scrollbar-width));
   --sidebar-closebtn-top-closed: calc(0px - var(--sidebar-closebtn-font-size));
@@ -69,7 +69,7 @@ $sidebar-btn-rows: 7;
   --sidebar-wrapper-max-width: var(--sidebar-width);
   --sidebar-max-width: var(--sidebar-width);
   --sidebar-wrapper-max-height: 0vh; //0vh <-> 50vh
-  --sidebar-max-height: calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * #{$sidebar-btn-padding-tb}) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)));
+  --sidebar-max-height: calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)));
 
   --sidebar-padding-lr: 2%;
   --sidebar-column-gap: 5vw;
@@ -101,6 +101,8 @@ $sidebar-btn-rows: 7;
   :root.mobile {
     --sidebar-column-count: round(down, calc(var(--sidebar-column-count-helper) / 18rem), 1);
     --sidebar-column-gap: 3vw;
+    --sidebar-btn-padding-lr: min(1.5vh, 10px);
+    --sidebar-btn-padding-tb: min(2.25vw, 15px);
   }
 }
 
@@ -137,6 +139,7 @@ $sidebar-btn-rows: 7;
   transition: all var(--sidebar-transition-time);
   padding-bottom: var(--sidebar-padding-b);
 
+  //scrollbar
   overflow-y: auto;
   scrollbar-gutter: stable;
   &::-webkit-scrollbar {
@@ -208,6 +211,8 @@ $sidebar-btn-rows: 7;
 
   position: var(--sidebar-btn-position);
   .closebtn {
+    background-color: var(--palette-fill-sidebar);
+    border-radius: 50%;
     position: absolute;
     display: var(--sidebar-closebtn-display);
     top: var(--sidebar-closebtn-top);
@@ -231,7 +236,7 @@ $sidebar-btn-rows: 7;
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
   color: var(--palette-stroke-sidebar-base);
-  padding: var(--sidebar-btn-padding);
+  padding: var(--sidebar-btn-padding-tb) var(--sidebar-btn-padding-lr);
   border: none;
   word-wrap:normal;
   text-align:left;
@@ -254,6 +259,7 @@ $sidebar-btn-rows: 7;
   .sidebar a {font-size: 18px;}
 }
 
+
 .sidebar .square_list {
   .content {
     padding: 0 0.695rem;
@@ -267,6 +273,13 @@ $sidebar-btn-rows: 7;
     li {
       width: var(--sidebar-column-width);
       flex-grow: 0;
+    }
+
+    &:has(> li:only-child) {
+      column-gap: 0;
+      li {
+        width: 100%;
+      }
     }
 
     padding-left: var(--sidebar-square-padding-left);
