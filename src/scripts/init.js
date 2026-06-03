@@ -10,16 +10,22 @@ function isMobileUser() {
 }
 
 function isSafari() {
-  const a = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  const userAgent = navigator.userAgent;
+  const a = userAgent.match(/macintosh|ipad|iphone/i) &&
+                    userAgent.match(/webkit/i) &&
+                    !userAgent.match(/rios|edgios|chrome|edg|fxios|android|opera/i) &&
+                    !userAgent.match(/OPT\//);
   const b = navigator.vendor && 
-            navigator.vendor.indexOf('Apple') > -1 &&
-            navigator.userAgent &&
-            navigator.userAgent.indexOf('CriOS') == -1 && // Excludes Chrome on iOS
-            navigator.userAgent.indexOf('FxiOS') == -1;
-  const c = (/constructor/i.test(window.HTMLElement) || 
+            navigator.vendor.match(/apple/i) &&
+            !userAgent.match(/crios/i) &&
+            !userAgent.match(/fxios/i) &&
+            !userAgent.match(/Opera|OPT\//)
+  let c = false;
+  try{
+    c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
-  document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
-  //return a && b && c;
+  } catch(err) {}
+  //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
   return a || b || c;
 }
 
