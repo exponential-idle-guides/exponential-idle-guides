@@ -22,10 +22,10 @@ function isSafari() {
   const b = navigator.vendor && 
             navigator.vendor.match(/apple/i);
   let c = false;
-  try{
+  /*try{
     c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
-  } catch(err) {}
+  } catch(err) {}*/
   //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c + '_' + fake;
   return (a || b || c) && !fake;
 }
