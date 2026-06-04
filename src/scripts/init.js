@@ -11,9 +11,10 @@ function isMobileUser() {
 
 function isSafari() {
   const userAgent = navigator.userAgent;
-  const fake = userAgent.match(/rios|edgios|chrome|edg|crios|fxios|android|opera/i) &&
+  //const fake = userAgent.match(/rios|edgios|chrome|edg|crios|fxios|android|opera/i) &&
+  const fake = userAgent.match(/edg|android|opera/i) &&
                 userAgent.match(/OPT\//)
-  const a = userAgent.match(/macintosh|ipad|iphone/i) &&
+  const a = userAgent.match(/ipad|iphone/i) &&
             userAgent.match(/webkit/i);
   const b = navigator.vendor && 
             navigator.vendor.match(/apple/i);
@@ -22,7 +23,7 @@ function isSafari() {
     c = (/constructor/i.test(window.HTMLElement) || 
             (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification));
   } catch(err) {}
-  //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c;
+  //document.getElementById('site_title').innerHTML = 'Safari Test: ' + a + ' _ ' + b + ' _ ' + c + '_' + fake;
   return (a || b || c) && !fake;
 }
 
@@ -62,9 +63,9 @@ window.onload = () => {
     globals.qstyle.setProperty('--sidebar-transition-time', "0s");
     globals.qstyle.setProperty('--sidebar-text-transition-time', "0s");
     globals.root.classList.add('mobile');
-  }
-  if (globals.Safari) {
-    globals.root.classList.add('safari');
+    if (globals.Safari) {
+      globals.root.classList.add('safari');
+    }
   }
   if(window.location.href.includes('/ranking-news')){
     globals.sidebar_btn_list.push('Rankingbtn');

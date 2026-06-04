@@ -20,10 +20,7 @@ export function closeSidebar(){
 
   globals.curr_sidebar='none';
   if (globals.Safari) {
-    const margin = globals.Mobile ? '-50vh' : '-40vw';
-    const side = globals.Mobile ? 'top' : 'left'
-    
-    globals.qstyle.setProperty('--sidebar-grid', 'none');
+  globals.qstyle.setProperty('--sidebar-grid', 'none');
     globals.qstyle.setProperty('--sidebar-closebtn-display', 'none');
   } else {
     globals.qstyle.setProperty('--sidebar-wrapper-max-'+direct, direct_units);

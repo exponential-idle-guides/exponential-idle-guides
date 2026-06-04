@@ -27,13 +27,9 @@ function openDesktopSidebars(sidebars){
   globals.curr_sidebar = sidebars[0];
   globals.qstyle.setProperty('--sidebar-padding-lr', window.visualViewport.width * 0.02 + "px");
   globals.qstyle.setProperty('--sidebar-closebtn-display', 'inline');
-  if (globals.Safari) {
-    globals.qstyle.setProperty('--sidebar-grid', 'inline-grid');
-  } else {
-    globals.qstyle.setProperty('--sidebar-wrapper-max-width', "40vw");
-    globals.qstyle.setProperty('--sidebar-closebtn-top', 'var(--sidebar-closebtn-top-open)');
-    globals.qstyle.setProperty('--sidebar-closebtn-left', 'var(--sidebar-closebtn-left-open)');
-  }
+  globals.qstyle.setProperty('--sidebar-wrapper-max-width', "40vw");
+  globals.qstyle.setProperty('--sidebar-closebtn-top', 'var(--sidebar-closebtn-top-open)');
+  globals.qstyle.setProperty('--sidebar-closebtn-left', 'var(--sidebar-closebtn-left-open)');
 }
 
 export function openSidebar(sidebars, force=false) {

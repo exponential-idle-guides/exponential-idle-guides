@@ -81,21 +81,14 @@ $sidebar-btn-rows: 7;
   --sidebar-grid: grid;
   --sidebar-flex: flex;
 }
-:root.safari {
+:root.safari.mobile {
   --sidebar-closebtn-display: none;
   --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
-  --sidebar-wrapper-max-height: 100vh !important;
-  --sidebar-wrapper-max-width: 40vw !important;
-  --sidebar-height: 100vh !important;
-  --sidebar-width: 40vw !important;
-
+  --sidebar-wrapper-max-height: 50vh !important;
+  --sidebar-wrapper-max-width: 100vw !important;
+  --sidebar-height: 50vh !important;
+  --sidebar-width: 100vw !important;
   --sidebar-grid: none;
-  &.mobile {
-    --sidebar-wrapper-max-height: 50vh !important;
-    --sidebar-wrapper-max-width: 100vw !important;
-    --sidebar-height: 50vh !important;
-    --sidebar-width: 100vw !important;
-  }
 }
 @media screen and (orientation: landscape) {
   :root.mobile {
