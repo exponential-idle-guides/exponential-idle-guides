@@ -11,10 +11,13 @@ function isMobileUser() {
 
 function isSafari() {
   const userAgent = navigator.userAgent;
+  const platform = navigator.platform;
   //const fake = userAgent.match(/rios|edgios|chrome|edg|crios|fxios|android|opera/i) &&
   const fake = userAgent.match(/edg|android|opera/i) &&
-                userAgent.match(/OPT\//)
-  const a = userAgent.match(/ipad|iphone/i) &&
+                userAgent.match(/OPT\//);
+  const a = ((userAgent.match(/ipod|ipad|iphone/i) || platform.match(/ipod|ipad|iphone/i)) ||
+              ((userAgent.match(/macintosh/i) || platform.match(/macintosh/i))  && navigator.maxTouchPoints > 1)
+            ) &&
             userAgent.match(/webkit/i);
   const b = navigator.vendor && 
             navigator.vendor.match(/apple/i);
