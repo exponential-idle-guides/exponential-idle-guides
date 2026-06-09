@@ -21,6 +21,7 @@ const full_skiplist = {
   },
   "season-news": {},
   "ct-creation": {},
+  "wiki": {},
   "": {}
 }
 

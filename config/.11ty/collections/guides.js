@@ -20,4 +20,10 @@ module.exports = function (config) {
       });
     });
   });
+
+  config.addCollection("wiki", function(collectionApi) {
+    return collectionApi.getFilteredByTag("wiki").sort(function(a, b) {
+      return a.data.order - b.data.order;
+    });
+  });
 }

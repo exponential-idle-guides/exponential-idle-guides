@@ -22,7 +22,7 @@
   </button>
 {% endmacro %}
 
-{% set url_bools = ['/ranking-news' in page.url, '/season-news' in page.url, '/ct-creation' in page.url] %}
+{% set url_bools = ['/ranking-news' in page.url, '/season-news' in page.url, '/ct-creation' in page.url, '/wiki' in page.url] %}
 
 {% if not home %}
   <aside id="sidebar">
@@ -130,6 +130,10 @@
         {% call sidebar_nav("CT", "CT Creation Guide", false) %}
           {% include "./sub-sections/ct-creation.njk" %}
         {% endcall %}
+      {% elif url_bools[3] %}
+        {% call sidebar_nav("Wiki", "Reference Information & Lookups", false) %}
+          {% include "./sub-sections/wiki.njk" %}
+        {% endcall %}
       {% endif %}
     </div>
     
@@ -165,6 +169,10 @@
           {% elif url_bools[2] %}
             {% call sidebar_option("CTbtn") %}
               CT Creation
+            {% endcall %}
+          {% elif url_bools[3] %}
+            {% call sidebar_option("Wikibtn") %}
+              Reference Info
             {% endcall %}
           {% endif %}
         </div>

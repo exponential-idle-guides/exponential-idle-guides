@@ -2,7 +2,7 @@
 {% import "list-link.njk" as list %}
 
 {% set nav %}
-  {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections["ct-creation"]] %}
+  {% set navlist = [collections.guides, collections.rankings, collections.seasons, collections["ct-creation"], collections.wiki] %}
   
   <nav class="pagination">
     {% for posts in navlist %}
@@ -19,7 +19,7 @@
   </nav>
 {% endset %}
 
-{% set ranking_bools = ['/ranking-news' in page.url, '/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url] %}
+{% set url_bools = ['/ranking-news' in page.url, '/rankings-main' in page.url, '/season-news' in page.url, '/seasons-main' in page.url, '/wiki' in page.url] %}
 
 {% block main %}
 
@@ -29,13 +29,13 @@
       {% if contributors %}Contributions from <strong>{{ contributors | safe }}</strong>.{% endif %}
   {% endif %}
 
-  {% if ranking_bools[0] or ranking_bools[2] %}
+  {% if url_bools[0] or url_bools[2] %}
     {% if discord %}
       <p>This was originally written on Discord so the text may be confusing. 
         It is kept this way to preserve the original posts how they were.<br>
     {% endif %}
 
-    {% if ranking_bools[0] %}
+    {% if url_bools[0] %}
       <p><a href="/guide-extensions/rankings-main/"><strong><u>Main Rankings Page</u></strong></a></p>
     {% else %}
       <p><a href="/guide-extensions/seasons-main/"><strong><u>Main Rankings Page</u></strong></a></p>
@@ -48,9 +48,9 @@
           Keep in mind, <strong>strategies may change</strong>.
         </p>
       {% endif %}
-      {% if not ((glossary) or rankings_bool[1] or rankings_bool[3]) %}
+      {% if not (url_bools[1] or url_bools[3] or url_bools[4]) %}
         <p>
-          Feel free to use the <a href="/guide-extensions/glossary/">glossary</a> 
+          Feel free to use the <a href="/wiki/glossary/">glossary</a> 
           {% if (eylanding is defined) or '/guide-extensions' in page.url %}
             or <span class="eylanding-link"> 
               {% if eylanding != '' %}
@@ -69,13 +69,13 @@
   
   {{ content | safe }}
   {#
-  {% if ranking_bools[1] %}
+  {% if url_bools[1] %}
     {{ list.rank_linked("ft", false) }}
-  {% elif ranking_bools[3] %}
+  {% elif url_bools[3] %}
     {{ list.rank_linked("seasons", false) }}
   {% endif %}
   #}
-  {% if ranking_bools[1] %}
+  {% if url_bools[1] %}
     {% for year, yearPosts in collections.postsByYear %}
       {% set yearbool = false %}
       {% for post in yearPosts %}
@@ -104,7 +104,7 @@
         </ul>
       {% endif %}
     {% endfor %}
-  {% elif ranking_bools[3] %}
+  {% elif url_bools[3] %}
     {% for year, yearPosts in collections.postsByYear %}
       {% set yearbool = false %}
       {% for post in yearPosts %}

@@ -1,0 +1,7 @@
+{% from '../list-link.njk' import linked %}
+
+<ul>
+  {% for wiki in collections.wiki %}
+    {{ linked(wiki) }}
+  {% endfor %}
+</ul>

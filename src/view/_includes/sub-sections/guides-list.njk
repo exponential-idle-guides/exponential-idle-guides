@@ -1,0 +1,7 @@
+{% from '../list-link.njk' import linked %}
+
+<ul>
+  {% for guide in collections.guides %}
+    {{ linked(guide) }}
+  {% endfor %}
+</ul>

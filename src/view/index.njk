@@ -5,7 +5,6 @@ home: true
 ---
 
 {% extends "default.njk" %}
-{% from './_includes/list-link.njk' import linked %}
 
 {% block title %}
   <h2 hidden>Home</h2>
@@ -26,17 +25,16 @@ home: true
     Let us know your feedback</a> and <a href="https://bit.ly/ex-guide-suggestion-responses"> check out our responses.<a/>
 
   <h3>Our Guides</h3>
-  <ul>
-    {% for guide in collections.guides %}
-      {{ linked(guide) }}
-    {% endfor %}
-  </ul>
+  {% include './_includes/sub-sections/guides-list.njk' %}
 
   <h3>Guide Extensions</h3>
   {% include './_includes/sub-sections/extensions.njk' %}
 
   <h3>Guide to Custom Theory Creation</h3>
   {% include './_includes/sub-sections/ct-creation.njk' %}
+
+  <h3>Reference Information and Lookups</h3>
+  {% include './_includes/sub-sections/wiki.njk' %}
 
   <h3>Other resources</h3>
   {% include './_includes/sub-sections/tools.njk' %}
