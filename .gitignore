@@ -1,4 +1,6 @@
 .git
 _site
 node_modules
+.DS_Store
+temp
 

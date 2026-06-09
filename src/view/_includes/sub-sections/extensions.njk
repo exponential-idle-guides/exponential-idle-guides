@@ -1,0 +1,12 @@
+{% from '../list-link.njk' import linked %}
+
+{% for tag, posts in collections %}
+  {% if tag.slice(0,4 - (tag | length)) == 'ext-' and collections[tag] | length > 0 %}
+    <h4>{{ tag.slice(4) | capitalize | safe }}</h4>
+    <ul>
+      {% for guide in collections[tag] %}
+        {{ linked(guide) | safe }}
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endfor %}

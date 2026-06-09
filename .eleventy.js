@@ -1,114 +1,99 @@
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
-
-const Hypher = require('hypher')
-const english = require('hyphenation.en-gb');
+const markdownItAttrs = require("markdown-it-attrs");
+const markdownItFootnotes = require("markdown-it-footnote");
 
 const slugify = require('slugify');
 
-const hypher = new Hypher(english);
-
-const { JSDOM } = require('jsdom');
-
-const util = require('util');
-
-const pluginTOC = require('eleventy-plugin-toc');
+const preprocessors = require('./config/.11ty/preprocessors');
+const transformations = require('./config/.11ty/transformations');
+const { MathJax_to_regular, MathJax } = require('./config/.11ty/MathJax');
+const filters = require('./config/.11ty/filters');
+const collections = require('./config/.11ty/collections');
 
 const transformExcludes = [
   "_site/sitemap.xml"
 ];
 
 module.exports = config => {
-
   const markdownItOptions = {
     html: true,
-    typographer: true
+    typographer: true,
+    breaks: true
   };
 
   const markdownItAnchorOptions = {
-    permalink: true,
-    slugify: s => slugify(s, {
+    slugify: s => slugify(MathJax_to_regular(s), {
       lower: true,
       strict: true
     }),
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-    permalinkAttrs: (slug, state) => ({
-      "aria-label": "Permalink: " + slug
-    }),
-    level: [1,2,3,4]
+    renderPermalink: (slug, opts, state, idx) => {
+      /*Output Expanded:
+        Header
+        <a class="direct-link" href="#header-id" aria-label="Permalink: header-id">
+          <span class="visually-hidden" style="display:none;">
+            Permalink: header-id
+          </span>
+          <span aria-hidden="true">#</span>
+        </a>
+      */
+      // Space before permalink
+      const space = new state.Token('text', '', 0);
+      space.content = ' ';
+
+      // Anchor Open: <a class="direct-link" href="#slug" aria-label="...">
+      const linkOpen = new state.Token('link_open', 'a', 1);
+      linkOpen.attrs = [
+        ['class', 'direct-link'],
+        ['href', `#${slug}`],
+        ['aria-label', `Permalink: ${slug}`]
+      ];
+
+      // Visually Hidden Span: <span class="visually-hidden">slug</span>
+      const vhOpen = new state.Token('span_open', 'span', 1);
+      vhOpen.attrs = [['class', 'visually-hidden'], ['style', 'display:none;']];
+      const vhText = new state.Token('text', '', 0);
+      vhText.content = `Permalink: ${slug}`;
+      const vhClose = new state.Token('span_close', 'span', -1);
+
+      // Icon Span (Hidden from SR): <span aria-hidden="true">#</span>
+      const iconOpen = new state.Token('span_open', 'span', 1);
+      iconOpen.attrs = [['aria-hidden', 'true']];
+      const iconText = new state.Token('text', '', 0);
+      iconText.content = '#';
+      const iconClose = new state.Token('span_close', 'span', -1);
+
+      // Anchor Close: </a>
+      const linkClose = new state.Token('link_close', 'a', -1);
+
+      // Push all tokens into the header's inline children array
+      state.tokens[idx + 1].children.push(
+        space,
+        linkOpen, 
+        vhOpen, vhText, vhClose,
+        iconOpen, iconText, iconClose, 
+        linkClose
+      );
+    },
+    level: [1,2,3,4,5]
   };
 
-
-  config.addPlugin(pluginTOC)
-
-  config.setLibrary(
-    "md",
-    markdownIt(markdownItOptions)
-      .use(markdownItAnchor, markdownItAnchorOptions)
-      .use(require('markdown-it-mathjax')())
+  config.addTemplateFormats("md"); // Make sure .md files are processed by this handler
+  config.setLibrary("md", markdownIt(markdownItOptions)
+    .use(markdownItAnchor, markdownItAnchorOptions)
+    .use(markdownItFootnotes)
+    .use(markdownItAttrs, {
+      leftDelimiter: '{',
+      rightDelimiter: '}',
+      allowedAttributes: []
+    })
   );
 
-  config.setDataDeepMerge(true);
-
-  config.addTransform("hyphenation", (content, outputPath) => {
-    if (!transformExcludes.includes(outputPath)) {
-
-      const dom = new JSDOM(content);
-      const document = dom.window.document;
-      const NodeFilter = dom.window.NodeFilter;
-
-      const filter = {
-        acceptNode: n => n.parentElement.closest("pre") === null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
-      };
-
-      const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, filter);
-
-      while (walk.nextNode()) {
-        walk.currentNode.nodeValue = hypher.hyphenateText(walk.currentNode.nodeValue);
-      }
-      return dom.serialize();
-    } else {
-      return content;
-    }
-  });
-
-  config.addTransform("table-wrapper", (content, outputPath) => {
-    if (!transformExcludes.includes(outputPath)) {
-
-      const dom = new JSDOM(content);
-      const document = dom.window.document;
-      const tables = Array.from(document.querySelectorAll('table'));
-
-      for (let table of tables) {
-        const parent = table.parentNode;
-
-        const wrappingDiv = document.createElement("div");
-        wrappingDiv.classList.add('table-wrapper');
-        parent.insertBefore(wrappingDiv, table)
-        wrappingDiv.appendChild(table);
-      }
-      return dom.serialize();
-    } else {
-      return content;
-    }
-  });
-
-  config.addFilter("slug", s =>
-    s !== undefined ?
-      slugify(s, { lower: true, strict: true }) :
-      "-"
-  );
-
-  config.addFilter("inspect", (s, d) =>
-    util.inspect(s, {depth: d === undefined ? 2 : d})
-  );
-
-  config.addCollection("guides", function(collection) {
-    return collection.getFilteredByTag("guide").sort(function(a, b) {
-      return a.data.order - b.data.order;
-    });
-  });
+  preprocessors(config);
+  transformations(config, transformExcludes);
+  MathJax(config, transformExcludes);
+  filters(config);  
+  collections(config);
 
   config.addGlobalData("site", { url: "https://exponential-idle-guides.netlify.app" });
 
@@ -118,8 +103,6 @@ module.exports = config => {
       data: "_data",
       output: "_site"
     },
-    markdownTemplateEngine: "njk"
+    markdownTemplateEngine: 'njk'
   };
 }
-
-

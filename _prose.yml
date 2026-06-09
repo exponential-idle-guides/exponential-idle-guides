@@ -7,6 +7,9 @@ prose:
     - /src/scripts
     - /src/view/_includes
     - /src/view/guides/guides.json
+    - /src/view/guide-extensions/guide-extensions.json
+    - /src/view/ranking-news/ranking-news.json
+    - /src/view/season-news/season-news.json
   metadata:
     src/view/guides:
       - name: "title"
@@ -21,6 +24,134 @@ prose:
         field:
           element: "checkbox"
           label: "Draft?"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"
+      - name: "eylanding"
+        field:
+          element: "text"
+          label: "Eylanding's Simplified Guide"
+    src/view/guide-extensions:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "glossary"
+        field:
+          element: "text"
+          label: "Glossary"
+      - name: "eylanding"
+        field:
+          element: "text"
+          label: "Eylanding's Simplified Guide"
+    src/view/ct-creation:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "day"
+        field:
+          element: "number"
+          label: "Day"
+      - name: "week"
+        field:
+          element: "number"
+          label: "Week"
+      - name: "short_title"
+        field:
+          element: "text"
+          label: "Short Title"
+    src/view/ranking-news:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler Order"
+      - name: "order"
+        field:
+          element: "number"
+          label: "Relative order"
+      - name: "author"
+        field:
+          element: "text"
+          label: "Authors"
+      - name: "contributors"
+        field:
+          element: "text"
+          label: "Contributors"
+      - name: "discord"
+        field:
+          element: "checkbox"
+          label: "originally discord"
+    src/view/season-news:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "subtitle"
+        field:
+          element: "text"
+          label: "Subtitle"
+      - name: "spoiler"
+        field:
+          element: "text"
+          label: "Spoiler Order"
       - name: "order"
         field:
           element: "number"

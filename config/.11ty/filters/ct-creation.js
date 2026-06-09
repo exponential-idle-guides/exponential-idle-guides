@@ -1,0 +1,12 @@
+module.exports = function(config) {
+  config.addFilter("ct_week", function(collection, week) {
+    if (!collection || !Array.isArray(collection)) {
+      return [];
+    }
+    return collection.filter((post) => post.data.week == week)
+  });
+
+  config.addFilter("ct_full_title", (post) => post.data.prefix + post.data.title);
+  
+  config.addFilter("ct_linked", (post) => post.data.prefix + '<a href="' + post.url + '">' + post.data.short_title + '</a>');
+}

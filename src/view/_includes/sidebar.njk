@@ -1,0 +1,174 @@
+{% macro sidebar_nav(base, title, square) %}
+  {% if square %}
+    {% set s = "square_list" %}
+  {% else %}
+    {% set s = "" %}
+  {% endif %}
+  <nav id="{{base}}Sidebar" class="sidebar">
+    <h1 class="sidebartitle">{{ title | safe }}</h1>
+    <div class="content_wrapper {{s}}">
+      {{ caller() | safe }}
+    </div>
+  </nav>
+{% endmacro %}
+  
+{% macro sidebar_option(id) %}
+  <button class="openbtn" id="{{id}}">
+    <ul>
+      <li class="sidebar_btn_contents">
+        {{ caller() | safe }}
+      </li>
+    </ul>
+  </button>
+{% endmacro %}
+
+{% set url_bools = ['/ranking-news' in page.url, '/season-news' in page.url, '/ct-creation' in page.url] %}
+
+{% if not home %}
+  <aside id="sidebar">
+    <div id="sidebars">
+      {% call sidebar_nav("TOC", "Table of Contents", true) %}
+        {% set tocs = content | cleanTOC %}
+        {% if tocs %}
+          {{ tocs | safe }}
+        {% else %}
+          <p>No headers have been established.<br>Please add headers for Table of Contents.</br></p>
+        {% endif %}
+      {% endcall %}
+
+      {% call sidebar_nav("Guide", "Guides", true) %}
+        <ul>
+          {%- for guide in collections.guides -%}
+            <li>
+              <a href="{{guide.url}}">{{ guide.data.title | safe }}</a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {% endcall %}
+
+      {% call sidebar_nav("Extension", "Guide Extensions", true) %}
+        {% include './sub-sections/extensions.njk' %}
+      {% endcall %}
+
+      {% call sidebar_nav("Resource", "Resources", true) %}
+        {% include './sub-sections/tools.njk' %}
+      {% endcall %}
+      
+      {#
+      {% if url_bools[0] %}
+        {% call sidebar_nav("Ranking", "Rankings", true) %}
+          {{ list.rank_linked("ft", true) }}
+        {% endcall %}
+      {% elif url_bools[1] %}
+        {% call sidebar_nav("Season", "Seasons", true) %}
+          {{ list.rank_linked("seasons", true) }}
+        {% endcall %}
+      #}
+      {% if url_bools[0] %}
+        {% call sidebar_nav("Ranking", "Rankings", true) %}
+          {% for year, yearPosts in collections.postsByYear %}
+            {% set yearbool = false %}
+            {% for post in yearPosts %}
+              {% if '/ranking-news' in post.url %}
+                {% set yearbool = true %}
+              {% endif %}
+            {% endfor %}
+            
+            {% if yearbool %}
+              <h3>{{ year | safe }}</h3>
+              <ul>
+                {% for post in yearPosts | reverse %}
+                  {% if '/ranking-news' in post.url %}
+                    {% set title = post.data.title | string %}
+                    <li>
+                      <a href="{{post.url}}">
+                        {% if 'Rankings & News' in title %}
+                          {{ title.slice(16,-5) | safe }}
+                        {% else %}
+                          {{ post.data.title | safe }}
+                        {% endif %}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        {% endcall %}
+      {% elif url_bools[1] %}
+        {% call sidebar_nav("Season", "Seasons", true) %}
+          {% for year, yearPosts in collections.postsByYear %}
+            {% set yearbool = false %}
+            {% for post in yearPosts %}
+              {% if '/season-news' in post.url %}
+                {% set yearbool = true %}
+              {% endif %}
+            {% endfor %}
+
+            {% if yearbool %}
+              <h3>{{ year | safe }}</h3>
+              <ul>
+                {% for post in yearPosts | reverse %}
+                  {% if '/season-news' in post.url %}
+                    {% set title = post.data.title | string %}
+                    <li>
+                      <a href="{{post.url}}">
+                        {% if 'Season Rankings & News' in title %}
+                          {{ title.slice(23,-5) | safe }}
+                        {% else %}
+                          {{ post.data.title | safe }}
+                        {% endif %}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          {% endfor %}
+        {% endcall %}
+      {% elif url_bools[2] %}
+        {% call sidebar_nav("CT", "CT Creation Guide", false) %}
+          {% include "./sub-sections/ct-creation.njk" %}
+        {% endcall %}
+      {% endif %}
+    </div>
+    
+    <div id="sidebarButtons">
+      <a href="javascript:void(0)" id="SidebarClose" class="closebtn" onclick="closeSidebar()">ⓧ</a>
+      <div id="sidebarButtonsWrap">
+        <div id="sidebarNavigation">
+          {% call sidebar_option("button_nav") %}
+            Navigation
+          {% endcall %}
+        </div>
+        <div id="sidebarOptions">
+          {% call sidebar_option("TOCbtn") %}
+            Table of <span style="display:inline-block;">Contents</span>
+          {% endcall %}
+          {% call sidebar_option("Guidebtn") %}
+            More Guides
+          {% endcall %}
+          {% call sidebar_option("Extensionbtn") %}
+            Extensions
+          {% endcall %}
+          {% call sidebar_option("Resourcebtn") %}
+            Other <span style="display:inline-block;">Resources</span>
+          {% endcall %}
+          {% if url_bools[0] %}
+            {% call sidebar_option("Rankingbtn") %}
+              Rankings
+            {% endcall %}
+          {% elif url_bools[1] %}
+            {% call sidebar_option("Seasonbtn") %}
+              Season Rankings
+            {% endcall %}
+          {% elif url_bools[2] %}
+            {% call sidebar_option("CTbtn") %}
+              CT Creation
+            {% endcall %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </aside>
+{% endif %}

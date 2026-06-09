@@ -1,93 +1,249 @@
+$sidebar-btn-count: 5;
+$sidebar-btn-rows: 7;
+
 :root{
+  --sidebar-transition-time: 0.8s;
+  --sidebar-text-transition-time: 0.5s;
+  --sidebar-padding-lr: 0%;
+  --sidebar-padding-b: 0%;
+
+  --sidebar-btn-max-width: 20vw;
+  --sidebar-btn-max-height: calc(2 * (var(--sidebar-btn-font-size) * var(--body-line-height)) + var(--sidebar-btn-padding-tb));
+  --sidebar-btn-padding-lr: min(3vw, 20px);
+  --sidebar-btn-padding-tb: min(2vh, 15px);
+  --sidebar-btn-font-size: 1.2rem;
+  --sidebar-btn-count: #{$sidebar-btn-count};
+  --sidebar-btn-rows: #{$sidebar-btn-rows};
+  &:has(#Rankingbtn), &:has(#Seasonbtn), &:has(#CTbtn) {
+    --sidebar-btn-count: calc(#{$sidebar-btn-count} + 1);
+    --sidebar-btn-rows: calc(#{$sidebar-btn-rows} + 1);
+  }
+  --sidebar-btn-position: relative;
+
+  --sidebar-closebtn-display: inline;
+  --sidebar-closebtn-font-size: calc(var(--sidebar-btn-font-size) * 1.2);
+  --sidebar-closebtn-top-open: calc(var(--sidebar-header-top) + (var(--sidebar-header-font-size) - var(--sidebar-closebtn-font-size)) / 2);
+  --sidebar-closebtn-left-open: calc((-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2  - var(--sidebar-scrollbar-width));
+  --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
+  --sidebar-closebtn-left-closed: var(--sidebar-closebtn-left-open);
+  --sidebar-closebtn-top: var(--sidebar-closebtn-top-closed);
+  --sidebar-closebtn-left: var(--sidebar-closebtn-left-closed);
+
+  --sidebar-height: 100vh;
+  --sidebar-width: auto;
+  --sidebar-wrapper-max-width: 0vw; //0vw <-> 40vw
+  --sidebar-max-width: calc(var(--sidebar-wrapper-max-width) + var(--sidebar-btn-max-width));
+  --sidebar-wrapper-max-height: var(--sidebar-height);
+  --sidebar-max-height: var(--sidebar-height);
+  
+  --sidebar-column-gap: 0;
+  --sidebar-column-count: 1;
+  --sidebar-column-width: 100%;
+  --sidebar-list-padding-left: 1.15rem;
+
+  --sidebar-content-padding: 0%;
+  --sidebar-header-font-size: 1.5rem;
+  --sidebar-header-top: min(3.5vh, 3.5vw, 20px);
+  --sidebar-transition-direction: margin-left;
+
+  --sidebar-square-padding-left: 1.15em;
+
+  --sidebar-grid: inline-grid;
+  --sidebar-flex: inline-flex;
+
+  --sidebar-scrollbar-width: 1vmin;
+}
+:root.mobile {
+  --sidebar-btn-padding-lr: min(2.25vw, 15px);
+  --sidebar-btn-padding-tb: min(1.5vh, 10px);
   --sidebar-transition-time: 0.5s;
   --sidebar-text-transition-time: 0.3s;
-  --sidebar-padding:0%;
-  --sidebar-width:0%;
-  --btn-marginLeft-width:0%;
-  --sidebar-content-padding:8px;
-  --sidebar-header-font-size:1.5em;
+
+  --sidebar-btn-max-width: 40vw;
+  --sidebar-btn-position: static;
+  --sidebar-closebtn-left-open: calc(var(--sidebar-width) + (-1em * 36.7125 / 36) - abs(var(--sidebar-padding-lr) - var(--sidebar-closebtn-font-size) * 1.02) / 2 - var(--sidebar-scrollbar-width));
+  --sidebar-closebtn-top-closed: calc(0px - var(--sidebar-closebtn-font-size));
+
+  --sidebar-height: auto;
+  --sidebar-width: 100vw;
+  --sidebar-wrapper-max-width: var(--sidebar-width);
+  --sidebar-max-width: var(--sidebar-width);
+  --sidebar-wrapper-max-height: 0vh; //0vh <-> 50vh
+  --sidebar-max-height: calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)));
+
+  --sidebar-padding-lr: 2%;
+  --sidebar-column-gap: 5vw;
+  --sidebar-column-count-helper: calc(96vw - 2 * 0.695rem);
+  --sidebar-column-count: 2;
+  --sidebar-column-width: calc((var(--sidebar-column-count-helper)  - var(--sidebar-list-padding-left) - var(--sidebar-column-gap) * (var(--sidebar-column-count) - 1)) / var(--sidebar-column-count));
+  --sidebar-transition-direction: margin-top;
+
+  --sidebar-grid: grid;
+  --sidebar-flex: flex;
+}
+:root.safari.mobile {
+  --sidebar-closebtn-display: none;
+  --sidebar-closebtn-top-closed: var(--sidebar-closebtn-top-open);
+  --sidebar-wrapper-max-height: 50vh !important;
+  --sidebar-wrapper-max-width: 100vw !important;
+  --sidebar-height: 50vh !important;
+  --sidebar-width: 100vw !important;
+  --sidebar-grid: none;
+}
+@media screen and (orientation: landscape) {
+  :root.mobile {
+    --sidebar-column-count: round(down, calc(var(--sidebar-column-count-helper) / 18rem), 1);
+    --sidebar-column-gap: 3vw;
+    --sidebar-btn-padding-lr: min(1.5vh, 10px);
+    --sidebar-btn-padding-tb: min(2.25vw, 15px);
+  }
+}
+
+#sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  max-width: var(--sidebar-max-width);
+  max-height: var(--sidebar-max-height);
+  display: flex;
+  flex-wrap: wrap;
+  transition: all var(--sidebar-transition-time);
+  pointer-events: none;
+}
+#sidebars {
+  display: var(--sidebar-grid);
+  box-sizing: border-box;
+  width: var(--sidebar-width);
+  
+  height: var(--sidebar-height);
+  max-width: var(--sidebar-wrapper-max-width);
+  max-height: var(--sidebar-wrapper-max-height);
+  transition: all var(--sidebar-transition-time);
 }
 .sidebar {
-  height: 100%;
-  width:var(--sidebar-width);
-  position: fixed;
-  top: 0;
-  left: 0;
+  pointer-events: auto;
+  z-index: 0;
+  box-sizing: border-box;
+  grid-area: 1/1;
+  width: var(--sidebar-width);
+  color: var(--palette-stroke-sidebar-base);
   background-color: var(--palette-fill-sidebar);
   overflow-x: hidden;
   transition: all var(--sidebar-transition-time);
-  overflow-y:scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
-  padding-left: var(--sidebar-padding);
-  padding-right: var(--sidebar-padding);
-}
-.sidebar::-webkit-scrollbar {
-  display:none;
+  padding-bottom: var(--sidebar-padding-b);
+
+  //scrollbar
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: var(--sidebar-scrollbar-width);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--palette-fill-scrollbar-track-dark); 
+    border-radius: calc(var(--sidebar-scrollbar-width) / 2);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--palette-fill-scrollbar-dark); 
+    border-radius: calc(var(--sidebar-scrollbar-width) / 2);
+  }
+  /*&::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }*/
+
+  a {
+    color: var(--palette-stroke-sidebar-link);
+    &:hover {
+      text-decoration: underline;
+      color: var(--palette-stroke-sidebar-link-hover);
+    }
+  }
+  h1 {
+    font-size: var(--sidebar-header-font-size);
+    color: var(--palette-stroke-sidebar-header);
+    padding: 0;
+    margin-top: var(--sidebar-header-top);
+    transition: var(--sidebar-text-transition-time);
+    padding-left: var(--sidebar-padding-lr);
+    padding-right: var(--sidebar-padding-lr);
+  }
+  h2, h3, h4 {
+    margin-top: 1.25rem;
+  }
+  .content_wrapper {
+    padding: var(--sidebar-content-padding) var(--sidebar-content-padding) var(--sidebar-content-padding) 0;
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--palette-stroke-sidebar-base);
+    display: block;
+    transition: var(--sidebar-text-transition-time);
+    margin-bottom: var(--sidebar-padding-b);
+    padding-left: var(--sidebar-padding-lr);
+    padding-right: var(--sidebar-padding-lr);
+  }
 }
 
-.sidebar .content_wrapper {
-  padding: var(--sidebar-content-padding) var(--sidebar-content-padding) var(--sidebar-content-padding) 0;
-  text-decoration: none;
-  font-size: 1em;
-  color: var(--palette-stroke-sidebar-base);
-  display: block;
-  transition: var(--sidebar-text-transition-time);
+@counter-style sidebar_btn {
+  system: cyclic;
+  symbols: '☰';
+  suffix: ""; 
 }
 
-.sidebar a {
-  color: var(--palette-stroke-sidebar-base);
-}
-.sidebar a:hover {
-  text-decoration: underline;
-  color: var(--palette-stroke-sidebar-header-hover);
-}
+#sidebarButtons {
+  pointer-events: auto;
+  max-width: var(--sidebar-btn-max-width);
+  width: auto;
+  display: var(--sidebar-flex);
+  flex-direction: column;
+  vertical-align: top;
+  transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
+  #sidebarButtonsWrap, #sidebarNavigation {
+    display: contents;
+  }
+  z-index: 100;
 
-.sidebar h1 {
-  position: block;
-  top: min(3.5vh, 3.5vw, 20px);
-  font-size: var(--sidebar-header-font-size);
-  color: var(--palette-stroke-sidebar-header-hover);
-  padding-top:0px;
-  padding: 0;
-  margin-top: min(3.5vh, 3.5vw, 20px);
-  transition: var(--sidebar-text-transition-time);
+  position: var(--sidebar-btn-position);
+  .closebtn {
+    background-color: var(--palette-fill-sidebar);
+    border-radius: 50%;
+    position: absolute;
+    display: var(--sidebar-closebtn-display);
+    top: var(--sidebar-closebtn-top);
+    left: var(--sidebar-closebtn-left);
+    font-size: calc(var(--sidebar-closebtn-font-size));
+    color: var(--palette-stroke-sidebar-base);
+    transition: all var(--sidebar-transition-time);
+    &:hover {
+      text-decoration:none;
+      color: var(--palette-stroke-sidebar-header);
+    }
+  }
 }
-.sidebar .closebtn {
-  position: absolute;
-  top: min(3.5vh, 3.5vw, 20px);
-  right: min(30px, 3.5vw);
-  font-size: var(--sidebar-header-font-size);
-  margin-left: min(50px, 15vw);
-  color: var(--palette-stroke-sidebar-base);
-}
-.sidebar .closebtn:hover {
-  text-decoration:none;
-  color: var(--palette-stroke-sidebar-header-hover);
-}
+#sidebarOptions {display:none;}
 
 .openbtn {
-  max-width:20vw;
-  font-size: 1.2em;
+  display: block;
+  width: auto;
+  box-sizing: border-box;
+  font-size: var(--sidebar-btn-font-size);
   cursor: pointer;
   background-color: var(--palette-fill-sidebar);
   color: var(--palette-stroke-sidebar-base);
-  padding: min(2vh, 15px) min(3vw, 20px);
+  padding: var(--sidebar-btn-padding-tb) var(--sidebar-btn-padding-lr);
   border: none;
   word-wrap:normal;
   text-align:left;
-}
-
-.openbtn:hover {
-  background-color: var(--palette-fill-sidebar-hover);
-}
-
-#sidebarmain {
-  width:auto;
-  position:fixed;
-  transition: margin-left var(--sidebar-transition-time);
-  margin-left:var(--btn-marginLeft-width);
-  z-index: 100;
+  &:hover {
+    background-color: var(--palette-fill-sidebar-hover);
+  }
+  ul {
+    margin-top: 0;
+    li.sidebar_btn_contents {
+      padding: 0;
+      margin: 0;
+      list-style: sidebar_btn !important;
+    }
+  }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -96,22 +252,68 @@
   .sidebar a {font-size: 18px;}
 }
 
-.square_list li {
-    list-style-type: none;
-    position: relative;    /* It's needed for setting position to absolute in the next rule. */
+
+.sidebar .square_list {
+  .content {
+    padding: 0 0.695rem;
+  }
+  ul, ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: var(--sidebar-column-gap);
+
+    li {
+      width: var(--sidebar-column-width);
+      flex-grow: 0;
+    }
+
+    &:has(> li:only-child) {
+      column-gap: 0;
+      li {
+        width: 100%;
+      }
+    }
+
+    padding-left: var(--sidebar-square-padding-left);
+    ul, ol {
+      -webkit-column-count: 1;
+      -webkit-column-gap: 0;
+
+      -moz-column-count: 1;
+      -moz-column-gap: 0;
+
+      -o-column-count: 1; 
+      -o-column-gap: 0;
+
+      column-count: 1;
+      column-gap: 0;
+      
+      padding-left: var(--sidebar-square-padding-left);
+      &.square_test, .square_test {
+        padding-left: 0 !important;
+      }
+      ul, ol {
+        list-style: square_level3 !important;
+        padding-left: var(--sidebar-square-padding-left);
+        li {
+          list-style-type: square_level3 !important;
+        }
+      }
+    }
+  }
 }
 
-.square_list li::before {
-    content: '■';
+// h2, h3, h4 that aren't collapsibles
+.sidebar nav > *:not(.collapsible):not(.content) {
+  position: relative;
+  padding-left: 1.632em;
+  &::before{
+    content: counter(none, square_level3alt) !important;
     position: absolute;
-    left: -0.8em;
-    top: -0.3em;
-    font-size: 1.2em;
-}
-.square_list li li::before {
-    content: '❖';
-    position: absolute;
-    left: -0.8em;
-    top: -0.1em;
-    font-size: 1.2em;
+    left: 0.195em;
+    transform: translateY(-13%);
+    font-size: 1.352em;
+    line-height: 1em;
+  }
 }

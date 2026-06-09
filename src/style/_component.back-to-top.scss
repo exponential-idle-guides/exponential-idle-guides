@@ -7,11 +7,11 @@
 
 .back-to-top-link {
   position: fixed;
-  bottom: var(--floating-margin);
-  right: var(--floating-margin);
+  bottom: var(--floating-margin-tb);
+  right: var(--floating-margin-lr);
 
   margin: 0;
-
+  padding: 0;
   svg {
     color: var(--palette-stroke);
     background-color: var(--palette-fill);
