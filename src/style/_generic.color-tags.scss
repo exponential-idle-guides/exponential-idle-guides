@@ -1,0 +1,70 @@
+// add color to the text within each color tag
+$colors: red, pink, blue, light-blue, green, dark-green, orange, yellow, black-white;
+@each $color in $colors {
+  .#{"" + $color} {
+    color: var(--#{"" + $color});
+  }
+}
+
+@mixin dark-color-tags {
+  --red: hsl(from var(--pink) h s calc(l - 15));
+  --pink: hsl(from var(--palette-stroke-warning) h s calc(l - 3));
+  --blue-base: #375bff;
+  --blue: hsl(from var(--blue-base) h calc(s - 15) l);
+  --light-blue: hsl(from var(--blue) h s calc(l + 15));
+  --green: #41ad21;
+  --dark-green: #226B22;
+  --orange: hsl(30 100 45);
+  --yellow-base: hsl(51 100 50);
+  --yellow: var(--yellow-base);
+  --black-white: white;
+
+  .breakdown, .variable_description {
+    th {
+      .orange {
+        -webkit-text-stroke: 1px color-mix(var(--orange) 94%, black 6%);
+      }
+    }
+  }
+  .newwords {
+    .leftHeader, .leftlastHeader, th, .invisibleSubHeader {
+      .orange{
+        -webkit-text-stroke: 1px color-mix(var(--orange) 94%, black 6%);
+      }
+    }
+  }
+}
+
+@mixin light-color-tags {
+  --red: hsl(from var(--palette-stroke-warning) h s calc(l - 3));
+  --pink: hsl(from var(--red) h s calc(l + 20));
+  --blue: hsl(from var(--blue-base) h calc(s - 15) calc(l - 10));
+  --orange: hsl(25 100 50);
+
+  .collapsible-closed:not(:hover) {
+    .yellow {
+      -webkit-text-stroke: 1px color-mix(var(--yellow) 88%, black 12%);
+    }
+  }
+  .collapsible-open:not(:hover) {
+    .green {
+      -webkit-text-stroke: 1px color-mix(var(--green) 88%, black 12%);
+    }
+  }
+}
+
+:root {
+  @include dark-color-tags;
+}
+:root.dark-mode {
+  @include dark-color-tags;
+}
+
+@media(prefers-color-scheme: light) {
+  :root {
+    @include light-color-tags;
+  }
+}
+:root.light-mode {
+  @include light-color-tags;
+}

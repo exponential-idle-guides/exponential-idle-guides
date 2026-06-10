@@ -1,14 +1,14 @@
 const cheerio = require('cheerio');
 
 const tag_colors = {
-  "green": "color:var(--strat-green)",
-  "dark-green": "color:var(--strat-dark-green)",
-  "red": "color:var(--strat-red)",
-  "pink": "color:var(--strat-pink)",
-  "blue": "color:var(--strat-blue)",
-  "light-blue": "color:var(--strat-light-blue)",
-  "orange": "color:var(--strat-orange);-webkit-text-stroke:var(--strat-orange-outline);",
-  "yellow": "color:var(--strat-yellow);-webkit-text-stroke:var(--strat-yellow-outline);",
+  "green": "color:var(--green)",
+  "dark-green": "color:var(--dark-green)",
+  "red": "color:var(--red)",
+  "pink": "color:var(--pink)",
+  "blue": "color:var(--blue)",
+  "light-blue": "color:var(--light-blue)",
+  "orange": "color:var(--orange)",
+  "yellow": "color:var(--yellow)",
   "blackwhite": "color:var(--black-white)",
   "bw": "color:var(--black-white)"
 };
@@ -25,7 +25,7 @@ module.exports = function (config, exclusions) {
       const $ = cheerio.load(content);
       Object.keys(tag_colors).forEach((key) => {
         $(key).each(function() {
-          $(this).attr("style",tag_colors[key] + " !important;");
+          $(this).addClass(key);
           this.tagName = 'span';
         })
       });

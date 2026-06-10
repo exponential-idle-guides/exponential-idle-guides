@@ -76,7 +76,7 @@ module.exports = function (config, exclusions) {
                 break;
               case "SKIP":
                 classes = "";
-                html = "<span style='color:var(--strat-red);'>SKIP</span>";
+                html = "<strong class='red'>SKIP</strong>";
                 break;
               default:
                 return false;

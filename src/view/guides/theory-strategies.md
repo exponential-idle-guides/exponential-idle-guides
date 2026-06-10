@@ -269,7 +269,7 @@ Class: breakdown;
 | e150 - e175 | 8   | 6    | 1    |
 | e175 - e200 | 1.5 | 1    | SKIP |
 | e200 - e275 | 3   | SKIP | 1    |
-| e275 - e300 | 2   | REDX | 1    |
+| e275 - e300 | 2   | SKIP | 1    |
 
 ### Euler's Formula
 
