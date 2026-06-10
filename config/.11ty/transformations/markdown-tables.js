@@ -74,6 +74,10 @@ module.exports = function (config, exclusions) {
                 classes = "";
                 html = "<strong>Or</strong>";
                 break;
+              case "SKIP":
+                classes = "";
+                html = "<span style='color:var(--strat-red);'>SKIP</span>";
+                break;
               default:
                 return false;
             }
@@ -82,7 +86,7 @@ module.exports = function (config, exclusions) {
             return true;
           }
           // Shorthands
-          const shorthand_res = /^(?<inner>INVIS|ARROW|CHECK|REDX|RED_X|OR)$/g.exec(t_html);
+          const shorthand_res = /^(?<inner>INVIS|ARROW|CHECK|REDX|RED_X|OR|SKIP)$/g.exec(t_html);
           process_inner(shorthand_res == null ? undefined: shorthand_res.groups.inner);
           const res = /(?<=^\[)(?=(?:.*?class\s*=\s*["“](?<classes>(?:\s*(?:[a-zA-Z]+(?![_\-])|[a-zA-Z]+(?:[_\-][a-zA-Z]+)+))*)["”];)?)(?=(?:.*?type\s*=\s*["“](?<type>[a-z]*)["”];)?)(?=(?:.*?style\s*=\s*["“](?<styles>(?:\s*(?:[a-z]+(?!\-)|[a-z]+(?:\-[a-z]+)+)\s*:\s*[^;]*;\s*)*)["”];)?)(?=(?:.*?(?<footer>[fF][oO][oO][tT](?:[eE][rR])?);)?)(?=(?:.*?(?<perm>[pP][eE][rR][mM]);)?)(?=.*?](?<inner>(?:.*$)?))/gs
             .exec(t_html);

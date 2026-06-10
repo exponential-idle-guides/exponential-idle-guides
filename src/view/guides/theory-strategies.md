@@ -7,6 +7,8 @@ draft: false
 order: 9
 ---
 
+
+
 The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers) and can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
 
 For help on specific (active) strategies, Hackzzzzzz's [Theory Quick Purchase Testers](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) can output when to buy variables. Take a look for help with difficult strategies.
@@ -27,20 +29,20 @@ Because the modulus used is mod10, and we use a base 10 numbering system, we can
 
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
-## <green>Coast</green> Strategy
+## <light-blue>Coast</light-blue> Strategy
 
-Whenever the strategies include the word <green>Coast</green>, it indicates the end point of variable purchases in a publication. It generally appears in all strategies possibly, with the substring after the name of the strategies being the last variable purchase level in the publication. After such conditions are fulfilled, one should not buy any variables and wait until the $\rho$/$\tau$ reaches the indicated location provided by [the sim](https://exponential-developers.github.io/sim-3.0/).
+Whenever the strategies include the word <light-blue>Coast</light-blue>, it indicates the end point of variable purchases in a publication. It generally appears in all strategies possibly, with the substring after the name of the strategies being the last variable purchase level in the publication. After such conditions are fulfilled, one should not buy any variables and wait until the $\rho$/$\tau$ reaches the indicated location provided by [the sim](https://exponential-developers.github.io/sim-3.0/).
 
-For example, if a result of "T6<green>AICoast</green> q1: 425 r1: 36" strat and max rho "5e204" are provided by the sim. One should be expected to complete the publication with
+For example, if a result of "T6<yellow>AI</yellow><light-blue>Coast q1: 425 r1: 36</light-blue>" strat and max rho "5e204" are provided by the sim. One should be expected to complete the publication with
 
-- the strategy indication listed in T6<green>AICoast</green>;
+- the strategy indication listed in T6<yellow>AI</yellow><light-blue>Coast</light-blue>;
 - last level of $q_1$ and $r_1$ being bought is level 425 and level 36 respectively;
 - not buying any variables after the above criteria are satisfied; and
 - wait and publish at 5e204 $\rho$.
 
-All strategies with <green>Coast</green> as a part of its name will be represented similar to the example illustrated above, except one theory — BaP. For BaP, coasting starts if current $\rho > \frac{1}{25}$ publication $\rho$.
+All strategies with <light-blue>Coast</light-blue> as a part of its name will be represented similar to the example illustrated above, except one theory — BaP. For BaP, coasting starts if current $\rho > \frac{1}{25}$ publication $\rho$.
 
-Once the word <green>Coast</green> appears in the name of a strategy, its activeness is at least semi-idle.
+Once the word <light-blue>Coast</light-blue> appears in the name of a strategy, its activeness is at least semi-idle.
 
 ## Main Theories
 
@@ -69,23 +71,42 @@ In T2, the theory progresses by using the rate of change of variables for growin
 
 [TODO: Insert theory strategies]
 
-#### T2<green>MS</green>
+#### T2<orange>MS</orange>/T2<orange>QS</orange> <orange>Orange</orange><yellow>Yellow</yellow>
+
+<orange>Orange</orange><yellow>Yellow</yellow>
 
 T2 milestones aid progression of the publication by either increasing a new layer of stacking, or increasing exponents of $q_1$ and $r_1$. By careful observation, one can conclude the effect of each of the milestones.
 
 [TODO: Turn this into a table]
-- 1st & 2nd Milestone - Unlock new $q$ and $r$ layers and hence increase $\rho$ gradually over time
-- 3rd & 4th Milestone - Increase $q_1$ and $r_1$ exponent and hence increase $\rho$ instantaneously
+- 1st & 2nd Milestone - Unlock new $q$ and $r$ layers and hence increase $\rho$ <u>gradually over time</u>
+- 3rd & 4th Milestone - Increase $q_1$ and $r_1$ exponent and hence increase $\rho$ <u>instantaneously</u>
 
 With the first two milestones affecting $\rho$ gradually over time and the last two milestones affecting $\rho$ instantaneously, one would like to maximize the benefits from both sides by swapping between milestones, which forms the basis of "milestone swapping". By striking a balance between the time used in the two phases, one can benefit maximally from the advantages on both sides. Milestone swapping terminates at e250 $\rho$ when all milestone points are allocated in all available milestone slots.
 
-**1-3 Milestones**
-<blockquote style="font-family:monospace;">3>4 (10s) → 1 (40s) → 3>4 (10s) → 2 (40s) → <br>repeat → coast and publish</blockquote>
+<u>Milestone Swap Stages and Criteria</u>
 
-**4+ Milestones**
-<blockquote style="font-family:monospace;">3>4>1>2 (10s) → 1>2>3>4 (40s) → <br>3>4>1>2 (10s) → 2>1>3>4 (40s) → <br>repeat →  coast and publish</blockquote>
+Caption: T2<orange>MS</orange>;
+Class: breakdown;
 
-[TODO: insert note to clarify notation]
+| Stage   | Milestone Priority | Duration | Effect             |
+| ------- | ------------------ | -------- | ------------------ |
+| <orange>Stage 1</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
+| <orange>Stage 2</orange> | 1 → 2 → 3 → 4 | 40 sec | Boost $q$, $r$ ($q$ priority)       |
+| <orange>Stage 1</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
+| <orange>Stage 2</orange> | 2 → 1 → 3 → 4 | 40 sec | Boost $r$, $q$ ($r$ priority)       |
+
+Caption: T2<orange>QS</orange>
+<br>
+Swap from <orange>Stage 2</orange> to <orange>Stage 3</orange> whn the corresponding Publication Multiplier is reached.;
+Class: breakdown;
+
+| Publication $\rho$ | Publication Multiplier |
+| ------------------ | ---------------------- |
+| Less than e75      | 10                     |
+| e75 - e150         | 200                    |
+| e150 - e200        | 600                    |
+| e200 - e225        | 100                    |
+| e225 - e250        | 25                     |
 
 ### Theory 3: Linear Algebra
 
@@ -152,7 +173,7 @@ To remind users about the effect of $c_2$ brings to T5, the word "Delayed" will 
 
 #### Strategy Basis
 
-Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ using integration. Different variables dominate in different parts of the theory, the change continues until $c_5$ finally takes over in lategame due to comparatively slower decay. In response to this change, a variety of T6 strategies are proposed. The activity of a strategy depends on how one appreciates the variable strength during a publication, ranging from active T6<green>AI</green> strategy to idle univariable autobuy strategies.
+Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ using integration. Different variables dominate in different parts of the theory, the change continues until $c_5$ finally takes over in lategame due to comparatively slower decay. In response to this change, a variety of T6 strategies are proposed. The activity of a strategy depends on how one appreciates the variable strength during a publication, ranging from active T6<yellow>AI</yellow> strategy to idle univariable autobuy strategies.
 
 #### Active Strategies
 
@@ -195,11 +216,11 @@ T7 — Autobuy all
 
 #### Double Chase Strategies
 
-\* Strategies with <green>d</green> indicates buy $c_1$ if $c_1$ cost$< \frac{1}{10}min(c_2, c_4)$ cost otherwise autobuy.
-T8<red>No</red><blue>C35</blue><green>d</green>, T8<red>No</red><blue>C35</blue> — Autobuy $c_1$\*, $c_2$, $c_4$ only
-T8<red>No</red><blue>C5</blue><green>d</green>, T8<red>No</red><blue>C5</blue> — Autobuy $c_1$\*, $c_2$, $c_3$, $c_4$ only
-T8<red>No</red><blue>C3</blue><green>d</green>, T8<red>No</red><blue>C3</blue> — Autobuy $c_1$\*, $c_2$, $c_4$, $c_5$ only
-T8<green>d</green>, T8 — Autobuy all
+\* Strategies with <yellow>d</yellow> indicates buy $c_1$ if $c_1$ cost$<u \frac{1}{10}\min{\left(c_2, c_4\right)}$ cost otherwise autobuy.
+T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue> — Autobuy $c_1$\*, $c_2$, $c_4$ only
+T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue> — Autobuy $c_1$\*, $c_2$, $c_3$, $c_4$ only
+T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue> — Autobuy $c_1$\*, $c_2$, $c_4$, $c_5$ only
+T8<yellow>d</yellow>, T8 — Autobuy all
 
 ## Custom Theories
 
@@ -207,44 +228,111 @@ T8<green>d</green>, T8 — Autobuy all
 
 [TODO: Insert theory strats]
 
-WSP<green>PostRecovery</green><red>Stop</red><blue>C1</blue> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<green>d</green><red>Stop</red><blue>C1</blue> after recovery
-WSP  — Autobuy all
+[TODO: Turn this into a custom table type that auto-adds the — (see colgroup)]
+WSP<red>Stop</red><blue>C1</blue><light-blue>PostRecovery</light-blue> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<yellow>d</yellow><red>Stop</red><blue>C1</blue> after recovery
+WSP — Autobuy all
 
 ### Sequential Limits
 
-#### Strategies
+#### Strategies Summary
 
 [TODO: Insert theory strats]
 
-#### SL<green>MS</green>
+#### Milestone Swap (<orange>MS</orange>)
 
 [TODO: Insert explanation]
 
-__Milestone Swap Stages__
+<u>Milestone Swap Stages</u>
 
 Class: breakdown;
 
-| Stage   | Milestone Priority | Effect |
-| ------- | ------------------ | ------ |
-| Stage 1 | 4 → 3 → 1 → 2      | Boost $e-\gamma$ |
-| Stage 2 | 2 → 1 → 4 → 3      | Boost $\dot{\rho_2}$ |
-| Stage 3 | 1 → 2 → 4 → 3      | $\rho$ gain via. $\rho_2$ exponent |
+| Stage   | Milestone Priority | Effect                             |
+| ------- | ------------------ | ---------------------------------- |
+| <orange>Stage 1</orange> | 4 → 3 → 1 → 2      | Boost $e-\gamma$                   |
+| <orange>Stage 2</orange> | 2 → 1 → 4 → 3      | Boost $\dot{\rho_2}$               |
+| <orange>Stage 3</orange> | 1 → 2 → 4 → 3      | $\rho$ gain via. $\rho_2$ exponent |
 
-__Milestone Swap Criteria__
+<u>Milestone Swap Criteria</u>
 
-[TODO: Insert criteria]
+1. Swap to next stage if $\rho\times\rho\text{ ratio}* < \min{\left(b_1, b_2\right)}$ cost;</br>**OR**
+2. Swap to <orange>Stage 3</orange> directly until publishing if Pub. Multi. $> 4.5$.
+
+Caption: $\rho$ ratio*;
+Class: breakdown;
+
+| $\rho$      | <orange>Stage 1</orange> to <orange>Stage 2</orange> | <orange>Stage 2</orange> to <orange>Stage 3</orange> | <orange>Stage 3</orange> to <orange>Stage 1</orange> |
+| ----------- | -------------- | -------------- | -------------- |
+| e25-e50     | 5   | 4    | 1    |
+| e50 - e75   | 7   | 6    | 1    |
+| e75 - e100  | 12  | 10   | 1    |
+| e100 - e150 | 20  | 15   | 1    |
+| e150 - e175 | 8   | 6    | 1    |
+| e175 - e200 | 1.5 | 1    | SKIP |
+| e200 - e275 | 3   | SKIP | 1    |
+| e275 - e300 | 2   | REDX | 1    |
 
 ### Euler's Formula
 
 [TODO: Insert theory strats]
 
+EF  — Autobuy all
+
 ### Convergents to √2
 
+#### Strategies Summary
+
 [TODO: Insert theory strats]
+
+#### Milestone Swap (<orange>MS</orange>)
+
+[TODO: Insert explanation]
+
+<u>Milestone Swap Stages</u>
+
+Class: breakdown;
+
+| Stage                    | Milestone Priority | Effect             |
+| ------------------------ | ------------------ | ------------------ |
+| <orange>Stage 1</orange> | 2 → 3 → 1          | Boost $\dot{q}$    |
+| <orange>Stage 2</orange> | 1 → 2 → 3          | Boost $\dot{\rho}$ |
+
+<u>Milestone Swap Criteria</u>
+
+Start the publication at <orange>Stage 1</orange>. Swap to <orange>Stage 2</orange> if
+
+1. <u>Current</u> $\rho\times\rho\text{ ratio*} < \min{\left(c_2, 2\times n\right)}$ cost;</br>**OR**
+2. <u>Current</u> $\rho < \frac{1}{2} q_2$ cost after recovery.
+
+Swap bac to <orange>Stage 1</orange> if the criteria is no longer satisfied.
+
+Caption: $\rho$ ratio*;
+Class: breakdown;
+
+| Publication $\rho$ | $\rho$ ratio* |
+| ------------------ | ------------- |
+| Less than e45      | Close to 1    |
+| e45 - e80          | 4             |
+| e80 - e115         | 8             |
+| e115 - e220        | 20            |
+| e220 - e500        | 40            |
 
 ### Fractional Integration
 
-[TODO: Insert theory strats]
+#### Strategy Basis
+
+[TODO: insert basis]
+
+#### Double Chase (<yellow>d</yellow>)
+
+[TODO: insert theory strat]
+
+#### Milestone Swap (<orange>MS</orange>)
+
+[TODO: Add Part]
+
+#### Permenant Milestone Swap (<orange>PermaSwap</orange>)
+
+[TODO: Add Part]
 
 ### Fractal Patterns
 

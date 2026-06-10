@@ -8,6 +8,6 @@ module.exports = function (config, exclusions) {
   hyphenation(config, exclusions);
   color_tags(config, exclusions);
   collapsibles(config, exclusions);
-  eylanding(config, exclusions);
   markdown_tables(config, exclusions);
+  eylanding(config, exclusions);
 }

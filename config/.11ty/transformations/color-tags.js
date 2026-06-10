@@ -4,9 +4,11 @@ const tag_colors = {
   "green": "color:var(--strat-green)",
   "dark-green": "color:var(--strat-dark-green)",
   "red": "color:var(--strat-red)",
+  "pink": "color:var(--strat-pink)",
   "blue": "color:var(--strat-blue)",
-  "orange": "color:var(--strat-orange)",
-  "yellow": "color:var(--strat-yellow)",
+  "light-blue": "color:var(--strat-light-blue)",
+  "orange": "color:var(--strat-orange);-webkit-text-stroke:var(--strat-orange-outline);",
+  "yellow": "color:var(--strat-yellow);-webkit-text-stroke:var(--strat-yellow-outline);",
   "blackwhite": "color:var(--black-white)",
   "bw": "color:var(--black-white)"
 };
