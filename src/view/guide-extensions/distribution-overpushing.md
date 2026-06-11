@@ -128,9 +128,8 @@ These conclusions imply that for Theory 2 for example, increasing $\sigma$ hardl
 From previous workings, the overpushing coefficients are:
 
 Class: breakdown;
-Caption: Overpush Coefficients;
 
-|    |      |                      |   |
+|    |      |                      | Overpush Coefficients |
 | -- | ---- | -------------------- | - |
 | T1 | 1    | [class="bheader";]T5 | 1 |
 | T2 | 10.2 | [class="bheader";]T6 | 3 |

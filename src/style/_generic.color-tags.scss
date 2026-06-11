@@ -1,5 +1,5 @@
 // add color to the text within each color tag
-$colors: red, pink, blue, light-blue, green, dark-green, orange, yellow, black-white;
+$colors: red, light-red, blue, light-blue, green, dark-green, orange, yellow, black-white;
 @each $color in $colors {
   .#{"" + $color} {
     color: var(--#{"" + $color});
@@ -7,8 +7,8 @@ $colors: red, pink, blue, light-blue, green, dark-green, orange, yellow, black-w
 }
 
 @mixin dark-color-tags {
-  --red: hsl(from var(--pink) h s calc(l - 15));
-  --pink: hsl(from var(--palette-stroke-warning) h s calc(l - 3));
+  --red: hsl(from var(--light-red) h s calc(l - 15));
+  --light-red: hsl(from var(--palette-stroke-warning) h s calc(l - 3));
   --blue-base: #375bff;
   --blue: hsl(from var(--blue-base) h calc(s - 15) l);
   --light-blue: hsl(from var(--blue) h s calc(l + 15));
@@ -18,39 +18,23 @@ $colors: red, pink, blue, light-blue, green, dark-green, orange, yellow, black-w
   --yellow-base: hsl(51 100 50);
   --yellow: var(--yellow-base);
   --black-white: white;
-
-  .breakdown, .variable_description {
-    th {
-      .orange {
-        -webkit-text-stroke: 1px color-mix(var(--orange) 94%, black 6%);
-      }
-    }
-  }
-  .newwords {
-    .leftHeader, .leftlastHeader, th, .invisibleSubHeader {
-      .orange{
-        -webkit-text-stroke: 1px color-mix(var(--orange) 94%, black 6%);
-      }
-    }
-  }
+  
+  --table-outline-orange: 1px color-mix(var(--orange) 75%, black 25%);
+  --collapsible-yellow: 0;
+  --collapsible-green: 0;
 }
 
 @mixin light-color-tags {
   --red: hsl(from var(--palette-stroke-warning) h s calc(l - 3));
-  --pink: hsl(from var(--red) h s calc(l + 20));
+  --light-red: hsl(from var(--red) h s calc(l + 20));
   --blue: hsl(from var(--blue-base) h calc(s - 15) calc(l - 10));
   --orange: hsl(25 100 50);
+  
+  --table-outline-orange: 0;
+  --collapsible-yellow: 1px color-mix(var(--yellow) 88%, black 12%);
+  --collapsible-green: 1px color-mix(var(--green) 88%, black 12%);
 
-  .collapsible-closed:not(:hover) {
-    .yellow {
-      -webkit-text-stroke: 1px color-mix(var(--yellow) 88%, black 12%);
-    }
-  }
-  .collapsible-open:not(:hover) {
-    .green {
-      -webkit-text-stroke: 1px color-mix(var(--green) 88%, black 12%);
-    }
-  }
+
 }
 
 :root {
@@ -67,4 +51,50 @@ $colors: red, pink, blue, light-blue, green, dark-green, orange, yellow, black-w
 }
 :root.light-mode {
   @include light-color-tags;
+}
+
+// Apply contents to closed collapsibles and open collapsibles when hovered
+@mixin collapsibles-closed-color-tags {
+  .collapsibles-closed:not(:hover) {
+    @content;
+  }
+  .collapsibles-open:hover {
+    @content;
+  }
+}
+// Apply contents to open collapsibles and closed collapsibles when hovered
+@mixin collapsibles-open-color-tags {
+  .collapsibles-closed::hover {
+    @content;
+  }
+  .collapsibles-open:not(:hover) {
+    @content;
+  }
+}
+
+@include collapsibles-closed-color-tags {
+  .yellow {
+    -webkit-text-stroke: var(--collapsible-yellow);
+  }
+}
+@include collapsibles-open-color-tags {
+  .green {
+    -webkit-text-stroke: var(--collapsible-green);
+  }
+}
+
+.breakdown, .variable_description {
+  th {
+    .orange {
+      //-webkit-text-stroke: 1px color-mix(var(--orange) 94%, black 6%);
+      -webkit-text-stroke: var(--table-outline-orange);
+    }
+  }
+}
+.newwords {
+  .leftHeader, .leftlastHeader, th, .invisibleSubHeader {
+    .orange{
+      -webkit-text-stroke: var(--table-outline-orange);
+    }
+  }
 }

@@ -88,7 +88,7 @@ For best theory routing and pushing, use the [Theory Sim](https://exponential-de
 
 |   |   |
 | - | - |
-|   | [FOOT;] T1-8 Idle Rate vs. τ adjusted for $\sigma=345$ $[F(t)=ee70\text{k}]$ |
+|   | [FOOT;] T1-8 Idle Rate vs. $\tau$ adjusted for $\sigma=345$ $[F(t)=ee70\text{k}]$ |
 
 ![T1-8 Active/Idle Rate Ratio vs. τ](/images/theory-rates/ot_rate_ratio_graph.png)
 
@@ -143,19 +143,19 @@ The table below lists out all of the Bigma. Skipmas will not be listed as they a
 
 Class: newwords;
 
-| Students                     | [style="border-right:\$table-border-thin;";]$F(t)$ |
-| ---------------------------- | -------------------------------------------------- |
-| 148, 151, 154, 157, 160, 163 | 30.6k, 31.2k, 31.8k, 32.4k, 33.0k, 33.6k           |
-| 167, 171, 175, 179, 183, 187 | 34.4k, 35.2k, 36.0k, 36.8k, 37.6k, 38.4k           |
-| 192, 197, 202, 207, 212, 217 | 39.4k, 40.4k, 41.4k, 42.4k, 43.4k, 44.4k           |
-| 223, 229, 235, 241, 247, 253 | 45.6k, 46.8k, 48.0k, 49.2k, 50.4k, 51.6k           |
-| 260, 267, 274, 281, 288, 295 | 53.0k, 54.4k, 55.8k, 57.2k, 58.6k, 60.0k           |
-| 303, 311, 319, 327, 335, 343 | 61.6k, 63.2k, 64.8k, 66.4k, 68.0k, 69.6k           |
-| 352, 361, 370, 379, 388, 397 | 71.4k, 73.2k, 75.0k, 76.8k, 78.6k, 80.4k           |
-| 407, 417, 427, 437, 447, 457 | 82.4k, 84.4k, 86.4k, 88.4k, 90.4k, 92.4k           |
-| 468, 479, 490, 501, 512, 523 | 94.6k, 96.8k, 99.0k, 101.2k, 103.4k, 105.6k        |
-| 535, 547, 559, 571, 583, 595 | 108.0k, 110.4k, 112.8k, 115.2k, 117.6k, 120.0k     |
-| 608, 621, 634, 647, 660, 673 | 122.6k, 125.2k, 127.8k, 130.4k, 133.0k, 135.6k     |
+| Students                     | $F(t)$                                         |
+| ---------------------------- | ---------------------------------------------- |
+| 148, 151, 154, 157, 160, 163 | 30.6k, 31.2k, 31.8k, 32.4k, 33.0k, 33.6k       |
+| 167, 171, 175, 179, 183, 187 | 34.4k, 35.2k, 36.0k, 36.8k, 37.6k, 38.4k       |
+| 192, 197, 202, 207, 212, 217 | 39.4k, 40.4k, 41.4k, 42.4k, 43.4k, 44.4k       |
+| 223, 229, 235, 241, 247, 253 | 45.6k, 46.8k, 48.0k, 49.2k, 50.4k, 51.6k       |
+| 260, 267, 274, 281, 288, 295 | 53.0k, 54.4k, 55.8k, 57.2k, 58.6k, 60.0k       |
+| 303, 311, 319, 327, 335, 343 | 61.6k, 63.2k, 64.8k, 66.4k, 68.0k, 69.6k       |
+| 352, 361, 370, 379, 388, 397 | 71.4k, 73.2k, 75.0k, 76.8k, 78.6k, 80.4k       |
+| 407, 417, 427, 437, 447, 457 | 82.4k, 84.4k, 86.4k, 88.4k, 90.4k, 92.4k       |
+| 468, 479, 490, 501, 512, 523 | 94.6k, 96.8k, 99.0k, 101.2k, 103.4k, 105.6k    |
+| 535, 547, 559, 571, 583, 595 | 108.0k, 110.4k, 112.8k, 115.2k, 117.6k, 120.0k |
+| 608, 621, 634, 647, 660, 673 | 122.6k, 125.2k, 127.8k, 130.4k, 133.0k, 135.6k |
 | | [FOOT;style="text-align:left;";]Due to fluctuations with stars, accel, $t$, and more, Bigma can be situation dependant. This chart uses normal accel and stars, but the students to skip due to Bigma based on varying levels of deviation from normal t for that $F(t)$. This does change based on CT's as they shift data, but it is not the largest difference. |
 
 Explanation by: Snaeky and AfuroZamurai

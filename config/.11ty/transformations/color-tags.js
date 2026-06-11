@@ -1,16 +1,17 @@
 const cheerio = require('cheerio');
 
 const tag_colors = {
-  "green": "color:var(--green)",
-  "dark-green": "color:var(--dark-green)",
-  "red": "color:var(--red)",
-  "pink": "color:var(--pink)",
-  "blue": "color:var(--blue)",
-  "light-blue": "color:var(--light-blue)",
-  "orange": "color:var(--orange)",
-  "yellow": "color:var(--yellow)",
-  "blackwhite": "color:var(--black-white)",
-  "bw": "color:var(--black-white)"
+  "green": "green",
+  "dark-green": "dark-green",
+  "red": "red",
+  "light-red": "light-red",
+  "pink": "light-red",
+  "blue": "blue",
+  "light-blue": "light-blue",
+  "orange": "orange",
+  "yellow": "yellow",
+  "blackwhite": "black-white",
+  "bw": "black-white"
 };
 
 module.exports = function (config, exclusions) {
@@ -25,7 +26,7 @@ module.exports = function (config, exclusions) {
       const $ = cheerio.load(content);
       Object.keys(tag_colors).forEach((key) => {
         $(key).each(function() {
-          $(this).addClass(key);
+          $(this).addClass(tag_colors[key]);
           this.tagName = 'span';
         })
       });
