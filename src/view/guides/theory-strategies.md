@@ -11,7 +11,7 @@ The theory sim (simulation) we currently recommend was originally made by XLII, 
 
 For help on specific (active) strategies, Hackzzzzzz's [Theory Quick Purchase Testers](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) can output when to buy variables. Take a look for help with difficult strategies.
 
-For cleaner view of individual strategies, check out the [Alternative/Old Theory Strategies Explained Guide](/guide/theory-strategies-old).
+For cleaner view of individual strategies, check out the [alternative/old Theory Strategies Explained Guide](/guides/theory-strategies-old).
 
 ## Modulus Explanation
 

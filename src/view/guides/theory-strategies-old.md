@@ -1,5 +1,5 @@
 ---
-title: "Theory Strategies Explained"
+title: "Theory Strategies Explained (Alternative)"
 description: "Our guide for learning what each theory strategy means."
 author: "spqcey originally"
 contributors: "everyone who has innovated new strategies and the Amazing Community"
