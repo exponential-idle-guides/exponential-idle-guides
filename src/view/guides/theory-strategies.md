@@ -69,19 +69,19 @@ In T2, the theory progresses by using the rate of change of variables for growin
 
 #### Non-Swapping Strategies
 
-T2<light-blue>MC</light-blue>, T2<light-blue>MCAlt</light-blue>, T2<light-blue>MCAlt2</light-blue>, T2<light-blue>MCAlt3</light-blue>
+T2<light-blue>MC</light-blue>, T2<light-blue>MC2</light-blue>, T2<light-blue>MC3</light-blue>
 
 Caption: Publication Multiplier To Stop Buying Variables At;
 class: breakdown;
 
-| INVIS        | T2<light-blue>MC</light-blue> | T2<light-blue>MCAlt</light-blue><br>T2<light-blue>MCAlt2</light-blue> | T2<light-blue>MCAlt3</light-blue> |
+| INVIS        | T2<light-blue>MC</light-blue> | T2<light-blue>MC2</light-blue> | T2<light-blue>MC3</light-blue> |
 | ------------ | ----------------------------- | --------------------------------------------------------------------- | --------------------------------- |
 | $q_4$, $r_4$ | 1,150 | 550   | 750   |
 | $q_3$, $r_3$ | 2,250 | 2,050 | 1,700 |
 | $q_2$, $r_2$ | 2,900 | 2,700 | 2,650 |
 | $q_1$, $r_1$ | 4,650 | 3,500 | 3,700 |
 
-#### T2<orange>MS</orange>/T2<orange>QS</orange>
+#### T2<orange>MS</orange>/T2<orange>SingleMS</orange>
 
 T2 milestones aid progression of the publication by either increasing a new layer of stacking, or increasing exponents of $q_1$ and $r_1$. By careful observation, one can conclude the effect of each of the milestones.
 
@@ -104,7 +104,7 @@ Class: breakdown;
 | <orange>Stage 1</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
 | <orange>Stage 2</orange> | 2 → 1 → 3 → 4 | 40 sec | Boost $r$, $q$ ($r$ priority)       |
 
-T2<orange>QS</orange> — Swap from <orange>Stage 2</orange> to <orange>Stage 3</orange> when the corresponding Publication Multiplier is reached.
+T2<orange>SingleMS</orange> — Swap from <orange>Stage 2</orange> to <orange>Stage 3</orange> when the corresponding Publication Multiplier is reached.
 
 Class: breakdown;
 
@@ -120,15 +120,15 @@ Class: breakdown;
 
 #### Strategy Basis
 
-With the self-explanatory name of T3, the theory progresses using the concept of matrix multiplications. The theory first progresses with a 2 × 2 matrix with 2 variables ($\rho_1$ and $\rho_2$) followed by a 3 × 3 matrix with 3 variables ($\rho_3$ added), in which the different $\rho$'s assist in buying different variables. Since the result $\dot{\rho}$ growths take an additive nature, it is essential to recognize the dominant term in each of the row entries as well as the influence of a variable which was purchased using the $\rho$ of other row entries. To fully evaluate each of the entries and the relative strength of other entries, a series of strategies were proposed to accompany different stages of T3 when the dominating terms change. The execution of these strategies can have a large variety of activeness, from relatively active T3<green>Play</green> and T3<green>SNAX</green> strategies, to relatively idle targeted variable purchase strategies such as T3<blue>ρ2</blue> and T3<red>No</red> derivatives.
+With the self-explanatory name of T3, the theory progresses using the concept of matrix multiplications. The theory first progresses with a 2 × 2 matrix with 2 variables ($\rho_1$ and $\rho_2$) followed by a 3 × 3 matrix with 3 variables ($\rho_3$ added), in which the different $\rho$'s assist in buying different variables. Since the result $\dot{\rho}$ growths take an additive nature, it is essential to recognize the dominant term in each of the row entries as well as the influence of a variable which was purchased using the $\rho$ of other row entries. To fully evaluate each of the entries and the relative strength of other entries, a series of strategies were proposed to accompany different stages of T3 when the dominating terms change. The execution of these strategies can have a large variety of activeness, from relatively active T3<green>Play</green> and T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>RcvA</green> strategies, to relatively idle targeted variable purchase strategies such as T3<blue>ρ2</blue> and T3<red>No</red> derivatives.
 
-Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<green>SNAX</green> and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
+Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green>, and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
 
 #### T3<green>Play</green> Derivatives
 
 [TODO: Insert theory strategies]
 
-#### T3<green>SNAX</green> Derivatives
+#### T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green> Derivatives
 
 [TODO: Insert theory strategies]
 
@@ -185,7 +185,7 @@ To remind users about the effect of $c_2$ brings to T5, the word "Delayed" will 
 
 #### Strategy Basis
 
-Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ using integration. Different variables dominate in different parts of the theory, the change continues until $c_5$ finally takes over in lategame due to comparatively slower decay. In response to this change, a variety of T6 strategies are proposed. The activity of a strategy depends on how one appreciates the variable strength during a publication, ranging from active T6<yellow>AI</yellow> strategy to idle univariable autobuy strategies.
+Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ using integration. Different variables dominate in different parts of the theory, the change continues until $c_5$ finally takes over in lategame due to comparatively slower decay. In response to this change, a variety of T6 strategies are proposed. The activity of a strategy depends on how one appreciates the variable strength during a publication, ranging from active T6<red>No</red><blue>C34</blue><yellow>Mod</yellow> strategy to idle univariable autobuy strategies.
 
 #### Active Strategies
 
@@ -195,7 +195,7 @@ Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ 
 
 [TODO: Insert theory strats]
 
-#### Hybrid Strategies
+#### Hybrid Strategies [TODO: Fix Name]
 
 [TODO: Insert theory strats]
 
@@ -212,8 +212,8 @@ Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ 
 #### Idle Strategies
 
 T7<red>No</red><blue>C12</blue> — Autobuy $q_1$, $c_3$, $c_4$, $c_5$, $c_6$ only
-T7<red>No</red><blue>C123</blue> — Autobuy $q_1$, $c_4$, $c_5$, $c_6$ only
-T7<red>No</red><blue>C1234</blue> — Autobuy $q_1$, $c_5$, $c_6$ only
+T7<blue>C456</blue> — Autobuy $q_1$, $c_4$, $c_5$, $c_6$ only
+T7<blue>C56</blue> — Autobuy $q_1$, $c_5$, $c_6$ only
 T7 — Autobuy all
 
 ### Theory 8: Chaos Theory
@@ -241,7 +241,7 @@ T8<yellow>d</yellow>, T8 — Autobuy all
 [TODO: Insert theory strats]
 
 [TODO: Turn this into a custom table type that auto-adds the — (see colgroup)]
-WSP<red>Stop</red><blue>C1</blue><light-blue>PostRecovery</light-blue> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<red>Stop</red><blue>C1</blue><yellow>d</yellow> after recovery
+WSP<yellow>Mod</yellow><green>RcvI</green> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<yellow>Mod</yellow> after recovery
 WSP — Autobuy all
 
 ### Sequential Limits
@@ -353,7 +353,7 @@ Class: breakdown;
 
 [TODO: insert basis]
 
-#### Double Chase (<yellow>d</yellow>)
+#### Double Chase (<yellow>Mod</yellow>)
 
 [TODO: insert theory strat]
 
@@ -395,9 +395,9 @@ Class: breakdown;
 | 10 - 19        | 2.5        |
 | 0, 20 - 22     | 2          |
 
-#### Permanent Milestone Swap (<orange>PermaSwap</orange>)
+#### Permanent Milestone Swap (<orange>SingleMS</orange>)
 
-One unique feature about FI is the introduction of Permanent Milestone (Perma). The two permanent milestones in FI are changing of $g(x)$ formula and $\lambda$ formula, which aids the progression of the theory. In most cases, one would prefer using a milestone point into those permanent milestones immediately with $q$ being reset which usually rewards even more than normal milestones in FI, with the exception of one case. The only exception for FI is the 3<sup>rd</sup> level of $g(x)$, where swapping a milestone point into that right after purchasing the permanent milestone at e1,050$\rho$ will NOT benefit the progression of the theory as the 3<sup>rd</sup> level of $g(x)$ performs worse than the 2<sup>nd</sup> level of $g(x)$ until e1,076$\rho$. In response to this, the action of <u>buying the 3<sup>rd</sup> level of $g(x)$ only after e1,076$\rho$</u> was proposed as the strategy FI<orange>PermaSwap</orange>.
+One unique feature about FI is the introduction of Permanent Milestone (Perma). The two permanent milestones in FI are changing of $g(x)$ formula and $\lambda$ formula, which aids the progression of the theory. In most cases, one would prefer using a milestone point into those permanent milestones immediately with $q$ being reset which usually rewards even more than normal milestones in FI, with the exception of one case. The only exception for FI is the 3<sup>rd</sup> level of $g(x)$, where swapping a milestone point into that right after purchasing the permanent milestone at e1,050$\rho$ will NOT benefit the progression of the theory as the 3<sup>rd</sup> level of $g(x)$ performs worse than the 2<sup>nd</sup> level of $g(x)$ until e1,076$\rho$. In response to this, the action of <u>buying the 3<sup>rd</sup> level of $g(x)$ only after e1,076$\rho$</u> was proposed as the strategy FI<orange>SingeMS</orange>.
 
 ### Fractal Patterns
 
@@ -427,9 +427,9 @@ There is no definite indication/criteria of when to swap, the swap becomes less 
 
 [TODO: Insert theory strats]
 
-#### Milestone Swap (<orange>SpiralSwap</orange>, <orange>BH</orange>)
+#### Milestone Swap (<orange>SpiralMS</orange>, <orange>SingleMS</orange>)
 
-If one is a careful observer, one should be able to observe the fact that $\dot{\rho}$ is larger when $\zeta\left(\frac{1}{2}+it\right)$ is closer than 0, while $\dot{\delta}$ is larger when $\zeta'\left(\frac{1}{2}+it\right)$ is larger. In the early game from e50-e400$\rho$, when one does not have sufficient milestone points to allocate into all available positions, it is more ideal to maximize the benefits associated with the aforementioned facts by swapping milestones. The activeness is highly variable from very active RZ<orange>SpiralSwap</orange> strategy to less active RZ<orange>BH</orange> strategies.
+If one is a careful observer, one should be able to observe the fact that $\dot{\rho}$ is larger when $\zeta\left(\frac{1}{2}+it\right)$ is closer than 0, while $\dot{\delta}$ is larger when $\zeta'\left(\frac{1}{2}+it\right)$ is larger. In the early game from e50-e400$\rho$, when one does not have sufficient milestone points to allocate into all available positions, it is more ideal to maximize the benefits associated with the aforementioned facts by swapping milestones. The activeness is highly variable from very active RZ<orange>SpiralMS</orange> strategy to less active RZ<orange>SingleMS</orange> strategies.
 
 Caption: Milestone Swap Stages;
 Class: breakdown;
@@ -442,12 +442,14 @@ Class: breakdown;
 Caption: Milestone Swap Criteria;
 Class: breakdown;
 
-| Stage                    | RZ<orange>SpiralSwap</orange> | RZ<orange>BH</orange><yellow>d</yellow>, RZ<orange>BH</orange> |
+| Stage                    | RZ<orange>SpiralMS</orange> | RZ<orange>SingleMS</orange><yellow>d</yellow>, RZ<orange>SingleMS</orange> |
 | ------------------------ | ----------------------------- | -------------------------------------------------------------- |
 | <orange>Stage 1</orange> | Otherwise                                       | Start of publication             |
 | <orange>Stage 2</orange> | $\zeta\left(\frac{1}{2}+it\right)$ approaches 0 | After $\rho$ provided by the sim |
 
-#### Black Hole Rewind (<light-red>Rewind</light-red>)
+#### Black Hole Rewind (<orange>BHRewind</orange>, <orange>BH</orange>)
+
+[TODO: Fix after fixes]
 
 A major unique feature for RZ is the implementation of black hole. Once a black hole is unlocked at e600$\rho$, a black hole can be used to lock the particle at the origin, lock the time and $\zeta'\left(\frac{1}{2}+it\right)$ to the moment the particle reaches the origin. This change allows a constant and rapid growth of $\rho$ by fixing $\zeta\left(\frac{1}{2}+it\right)$ to 0 and $\delta$ by fixing $\zeta'\left(\frac{1}{2}+it\right)$. However, $\zeta'\left(\frac{1}{2}+it\right)$ varies throughout the publication and in some certain places it is higher than the one fixed by the black hole. Hence, a strategy of gaining $\delta$ even more rapidly by <u>allowing the particle to repeatedly travel through a short segment with higher local $\zeta'\left(\frac{1}{2}+it\right)$</u> was proposed. Once sufficient $\delta$ is gained to buy the required $w_1$ level, the normal fix by black hole resumes and allows $\rho$ to grow.
 
@@ -462,7 +464,7 @@ A major unique feature for RZ is the implementation of black hole. Once a black 
 
 [TODO: Insert Theory strats]
 
-#### Depth (<green>Depth: x</green>)
+#### Depth (Depth: x)
 
 The setting of depth has no influence on the strategy of a MF publication, it is a setting only for the sim to be reminded when to start brute-forcing the strategies (i.e., testing each variable purchase, compare the efficiency of each purchase, and provide a result that is the most optimized).
 
