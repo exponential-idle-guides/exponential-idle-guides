@@ -454,7 +454,7 @@ Caption: T1<blue>C4</blue>;
 Class: strat_separated;
 Caption: T2<green>MC</green>;
 
-| Pub. Mult.* | $\lt1150$ | $1150-2250$ | $2250-2900$ | $2900-4650$ | $\gt4650$ |
+| Pub. Mult.* | $\lt1150$ | $1150$-$2250$ | $2250$-$2900$ | $2900$-$4650$ | $\gt4650$ |
 | ----------- | --------- | ----------- | ----------- | ----------- | --------- |
 | $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
 | $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
@@ -478,7 +478,7 @@ The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 Class: strat_separated;
 Caption: T2<green>MCAlt2</green>;
 
-| Pub. Mult.* | $\lt550$ | $550-2050$ | $2050-2700$ | $2700-3500$ | $\gt3500$ |
+| Pub. Mult.* | $\lt550$ | $550$-$2050$ | $2050$-$2700$ | $2700$-$3500$ | $\gt3500$ |
 | ----------- | -------- | ---------- | ----------- | ----------- | --------- |
 | $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
 | $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
@@ -503,7 +503,7 @@ The “MC” in T2<green>MC</green> stands for **M**ultivariable**C**oast.
 Class: strat_separated;
 Caption: T2<green>MCAlt3</green>;
 
-| Pub. Mult.* | $\lt750$ | $750-1700$ | $1700-2650$ | $2650-3700$ | $\gt3700$ |
+| Pub. Mult.* | $\lt750$ | $750$-$1700$ | $1700$-$2650$ | $2650$-$3700$ | $\gt3700$ |
 | ----------- | -------- | ---------- | ----------- | ----------- | --------- |
 | $q_1$ | CHECK | CHECK | CHECK | CHECK | REDX |
 | $q_2$ | CHECK | CHECK | CHECK | REDX | REDX |
@@ -1995,14 +1995,14 @@ Caption: Ratios for SLMS Swapping;
 
 | INVIS | <orange>State 1</orange> | <orange>State 2</orange> | <orange>State 3</orange> |
 | --------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------------ |
-| $e25\le\rho\lt e50$ | Until <red>5x</red> $\frac{\text{cost}}{\rho}$ | Until <red>4x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
-| $e50\le\rho\lt e75$ | Until <red>7x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
-| $e75\le\rho\lt e100$ | Until <red>12x</red> $\frac{\text{cost}}{\rho}$ | Until <red>10x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
-| $e100\le\rho\lt e150$ | Until <red>20x</red> $\frac{\text{cost}}{\rho}$ | Until <red>15x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
-| $e150\le\rho\lt e175$ | Until <red>8x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
-| $e175\le\rho\lt e200$ | Until <red>1.5x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought | <red>Skip</red> |
-| $e200\le\rho\lt e275$ | Until <red>3x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
-| $e275\le\rho\lt e300$ | Until <red>2x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
+| $e25$ $\le\rho\lt$ $ e50$ | Until <red>5x</red> $\frac{\text{cost}}{\rho}$ | Until <red>4x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e50$ $\le\rho\lt$ $ e75$ | Until <red>7x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e75$ $\le\rho\lt$ $ e100$ | Until <red>12x</red> $\frac{\text{cost}}{\rho}$ | Until <red>10x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e100$ $\le\rho\lt$ $ e150$ | Until <red>20x</red> $\frac{\text{cost}}{\rho}$ | Until <red>15x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e150$ $\le\rho\lt$ $ e175$ | Until <red>8x</red> $\frac{\text{cost}}{\rho}$ | Until <red>6x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought |
+| $e175$ $\le\rho\lt$ $ e200$ | Until <red>1.5x</red> $\frac{\text{cost}}{\rho}$ | Until upgrade is bought | <red>Skip</red> |
+| $e200$ $\le\rho\lt$ $ e275$ | Until <red>3x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
+| $e275$ $\le\rho\lt$ $ e300$ | Until <red>2x</red> $\frac{\text{cost}}{\rho}$ | <red>Skip</red> | Until upgrade is bought |
 | | | | [FOOT;]**cost** in the table refers to $\text{min}(b_1,b_2)$ cost. |
 
 This may seem confusing, but let's take the first row as an example.
@@ -2043,7 +2043,7 @@ Strategy Credit:
 Class: strat_separated;
 Caption: SL<red>Stop</red><blue>A</blue><green>d</green>;
 
-| Pub. Mult.* | $\lt4.5$ | $4.5-6$ | $\gt6$ |
+| Pub. Mult.* | $\lt4.5$ | $4.5$-$6$ | $\gt6$ |
 | ----------- | -------- | ------- | ------ |
 | $a_1$ | When cost$\times2\times($lvl%$3)\lt a_2$ cost. | REDX | REDX |
 | $a_2$ | CHECK | REDX | REDX |
@@ -2876,11 +2876,11 @@ Class: strat;
 
 | INVIS | <green>d1</green> | <green>d2</green> | <green>d3</green> |
 | ----- | ----------------- | ----------------- | ----------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When cost$\times8+($lvl%$7)\lt$ $\text{min}(2\times c_2,a_2,3\times\delta)$ cost | When cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost |
+| $c_1$ | When cost is $\frac{1}{10}$ of min$(c_2,a_2,\delta)$ cost | When cost$* 8+($lvl%$7)\lt$ min$(2* c_2,a_2,3* \delta)$ cost | When cost is $\frac{1}{10}$ of min$(c_2,a_2,\delta)$ cost |
 | $c_2$ | CHECK | CHECK | CHECK |
-| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ cost | When $I\times1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of $\text{min}(c_2,a_2,\delta)$ |
+| $a_1$ | When $I\lt\frac{1}{2}I_{\text{cap}}$<br>**or** cost is $\frac{1}{10}$ of min$(c_2,a_2,\delta)$ cost | When $I* 1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of min$(c_2,a_2,\delta)$ cost | When $I* 1.2\lt I_{\text{cap}}$<br>**or** cost is $\frac{1}{20}$ of min$(c_2,a_2,\delta)$ |
 | $a_2$ | CHECK | CHECK | CHECK |
-| $\delta$ | CHECK | When cost is $\frac{1}{3}$ of $\text{min}(2\times c_2,a_2)$ cost | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
+| $\delta$ | CHECK | When cost is $\frac{1}{3}$ of min$(2*c_2,a_2)$ cost | When cost is $\frac{3}{5}$ of $a_2$ cost and $\frac{3}{4}$ of $c_2$ cost |
 | $v_1$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
 | $v_2$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
 | $v_3$ |  |  | [style="text-align:center;";]$\extraleftarrow{1cm}$ Only buy right before a reset $\extrarightarrow{1cm}$ |
