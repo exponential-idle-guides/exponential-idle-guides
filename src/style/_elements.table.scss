@@ -248,7 +248,7 @@ tfoot td{
 		vertical-align: middle;
 		&:not(:first-child) {
 			border-right: $table-border-dashed-neutral;
-			/*&.dashed_r, &.dashed_right {
+			&.dashed_r, &.dashed_right {
 				border-right: $table-border-dashed-neutral !important;
 			}
 			&.dashed_l, &.dashed_left {
@@ -262,7 +262,7 @@ tfoot td{
 			}
 			&.dashed {
 				border: $table-border-dashed-neutral !important;
-			}*/
+			}
 		}
 		&:last-child {
 			border-right: $table-border-thin;

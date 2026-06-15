@@ -143,20 +143,20 @@ Class: breakdown;
 
 #### Strategy Basis
 
-With the self-explanatory name of T3, the theory progresses using the concept of matrix multiplications. The theory first progresses with a 2 × 2 matrix with 2 variables ($\rho_1$ and $\rho_2$) followed by a 3 × 3 matrix with 3 variables ($\rho_3$ added), in which the different $\rho$'s assist in buying different variables. Since the result $\dot{\rho}$ growths take an additive nature, it is essential to recognize the dominant term in each of the row entries as well as the influence of a variable which was purchased using the $\rho$ of other row entries. To fully evaluate each of the entries and the relative strength of other entries, a series of strategies were proposed to accompany different stages of T3 when the dominating terms change. The execution of these strategies can have a large variety of activeness, from relatively active T3<green>Play</green> and T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>RcvA</green> strategies, to relatively idle targeted variable purchase strategies such as T3<blue>ρ2</blue> and T3<red>No</red> derivatives.
+With the self-explanatory name of T3, the theory progresses using the concept of matrix multiplications. The theory first progresses with a 2 × 2 matrix with 2 variables ($\rho_1$ and $\rho_2$) followed by a 3 × 3 matrix with 3 variables ($\rho_3$ added), in which the different $\rho$'s assist in buying different variables. Since the result $\dot{\rho}$ growths take an additive nature, it is essential to recognize the dominant term in each of the row entries as well as the influence of a variable which was purchased using the $\rho$ of other row entries. To fully evaluate each of the entries and the relative strength of other entries, a series of strategies were proposed to accompany different stages of T3 when the dominating terms change. The execution of these strategies can have a large variety of activeness, from relatively active T3<yellow>d</yellow><green>Stage</green> and T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue> strategies, to relatively idle targeted variable purchase strategies such as T3<blue>ρ2</blue> and T3<red>No</red> derivatives.
 
 Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green>, and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
 
-#### T3<green>Play</green> Derivatives
+#### T3<yellow>d</yellow><green>Stage</green> (Active)
 
-Caption: T3<green>Play</green>;
+Caption: T3<yellow>d</yellow><green>Stage</green>;
 Class: strat_split;
 
 | INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(Pub. Multi. 1-2) | <orange>Stage 3</orange><br>(Pub. Multi. > 2) |
 | ----- | - | - | - |
-| $b_1 | | Buy if $b_1$ cost $<\frac{1}{8}\times c_{31}$ cost | REDX |
-| $b_2 | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{2}{9} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{4}{9} \times c_{22}$ cost</div> | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{1}{4} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{1}{2} \times c_{22}$ cost</div> | CHECK |
-| $b_3 | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{4}{9} \times c_{33}$ cost</div> | | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{1}{2} \times c_{33}$ cost</div> |
+| $b_1$ | | Buy if $b_1$ cost $<\frac{1}{8}\times c_{31}$ cost | REDX |
+| $b_2$ | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{2}{9} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{4}{9} \times c_{22}$ cost</div> | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{1}{4} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{1}{2} \times c_{22}$ cost</div> | CHECK |
+| $b_3$ | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{4}{9} \times c_{33}$ cost</div> | | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{1}{2} \times c_{33}$ cost</div> |
 | $c_{11}$ | | | REDX |
 | $c_{12}$ | | | CHECK |
 | $c_{13}$ | | | REDX |
@@ -167,33 +167,146 @@ Class: strat_split;
 | $c_{32}$ | | | CHECK |
 | $c_{33}$ | Buy if $c_{33}$ cost $\frac{9}{32} \times c_{23}$ | | Buy if $c_{33}$ cost $\frac{1}{4} \times c_{23}$ |
 
-[TODO: Insert theory strategies]
+#### T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue> Derivatives (Active)
 
-#### T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green> Derivatives
+Caption: T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue><green>RcvA</green>, T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue>;
+Class: strat_split;
 
-[TODO: Insert theory strategies]
+| INVIS | Before Recovery | After Recovery |
+| ----- | --------------- | -------------- |
+| $b_1$ | CHECK | REDX |
+| $b_2$ | | CHECK |
+| $b_3$ | | CHECK |
+| $c_{11}$ | | REDX |
+| $c_{12}$ | [class="dashed_b";] Buy if $c_{12}$ cost $<\frac{1}{100} c_{32}$<br>(T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue><green>RcvA</green>) | CHECK |
+| ROWSPAN | CHECK<br>(T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue>) | CHECK |
+| $c_{13}$ | | REDX |
+| $c_{21}$ | | REDX |
+| $c_{22}$ | | CHECK |
+| $c_{23}$ | | CHECK |
+| $c_{31}$ | CHECK | REDX |
+| $c_{32}$ | CHECK | REDX |
+| $c_{33}$ | CHECK | REDX |
 
-#### T3<blue>ρ2</blue> Derivatives
+#### T3<blue>ρ2</blue> Derivatives (Active-Idle)
 
-[TODO: Insert theory strategies]
+Caption: T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue><yellow>d</yellow>, T3<blue>ρ2C23C31</blue>;
+Class: strat_split;
 
-#### T3<red>No</red> Derivatives
 
-[TODO: Insert theory strategies]
+| INVIS | T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23</blue> | T3<blue>ρ2C23C33</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue> | T3<blue>ρ2C23C31</blue><yellow>d</yellow>, T3<blue>ρ2C23C31</blue> |
+| ----- | - | - | - |
+| $b_1$ | | REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
+| ROWSPAN | |      | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
+| $b_2$ | | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{3}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue>) |
+| $b_3$ | | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{9} c_{23}$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue>) |
+| $c_{11}$ | | | REDX |
+| $c_{12}$ | | | CHECK |
+| $c_{13}$ | | | REDX |
+| $c_{21}$ | | | REDX |
+| $c_{22}$ | | | CHECK |
+| $c_{23}$ | | | CHECK |
+| $c_{31}$ | | REDX | CHECK |
+| $c_{32}$ | | | CHECK |
+| $c_{33}$ | REDX | CHECK | REDX |
 
-#### Other Strategies
+#### T3<red>No</red> Derivatives (Active-Idle)
 
-[TODO: Insert theory strategies]
+Caption: T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue>;
+Class: strat_split;
+
+| INVIS | T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C32C33</blue> | T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C33</blue> | T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue> |
+| ----- | - | - | - |
+| $b_1$ | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{10}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
+| $b_2$ | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{4}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
+| $b_3$ | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{10} c_{23}$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
+| $c_{11}$ | | CHECK | REDX |
+| $c_{12}$ | | | CHECK |
+| $c_{13}$ | | | REDX |
+| $c_{21}$ | | | CHECK |
+| $c_{22}$ | | | CHECK |
+| $c_{23}$ | | | CHECK |
+| $c_{31}$ | | | CHECK |
+| $c_{32}$ | REDX | | CHECK |
+| $c_{33}$ | | | REDX |
+
+#### Other Strategies (Active-Idle)
+
+Caption: T3<blue>C11C12C21</blue><yellow>d</yellow>, T3<blue>C11C12C21</blue>;
+Class: strat_split;
+
+| INVIS | T3<blue>C11C12C21</blue><yellow>d</yellow> | T3<blue>C11C12C21</blue> |
+| ----- | ------------------------------------------ | ------------------------ |
+| $b_1$ | Buy if $b_1$ cost $<\frac{1}{7}$ min$\left(c_{11},c_{21}\right)$ cost | CHECK |
+| $b_2$ | Buy if $b_2$ cost $<\frac{1}{5} c_{12}$ cost | CHECK |
+| $b_3$ | | REDX |
+| $c_{11}$, $c_{12}$, $c_{21}$ | | CHECK |
+| Other Variables | | REDX |
+
+T3 — Autobuy all
 
 ### Theory 4: Polynomials
 
 #### Active Strategies
 
-[TODO: Insert theory strats]
+Caption: T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>;
+Class: strat_split;
 
-#### Double Chase (<yellow>d</yellow>)
+| INVIS | Before Recovery | After Recovery |
+| ----- | --------------- | -------------- |
+| $c_1$ | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | | [class="dashed_b";]CHECK<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | REDX<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| $c_4$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | REDX<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| $c_5$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | REDX<br>(T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| $c_6$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | REDX<br>(T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| $q_1$ | | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
+| $q_2$ | | CHECK |
+| Milestone Swap<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | 2 → 3 → 1 | [class="dashed_b";]<orange>Stage 1</orange> (1 min): 1 → 3 → 2 |
+| | | [class="dashed_b";]<orange>Stage 2</orange> (1 min): 3 → 1 → 2 |
 
-[TODO: Insert theory strats]
+#### Active-Idle Strategy Pairs
+
+Caption: T4<blue>C3</blue><yellow>Mod</yellow>, T4<blue>C3</blue>;
+Class: strat_split;
+
+| INVIS | T4<blue>C3</blue> | | [class="dashed_b";]T4<blue>C3</blue><yellow>Mod</yellow> |
+| ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
+| ----- | ----------------- | --------------- | -------------- |
+| $c_3$ | | | CHECK |
+| $q_1$ | CHECK | | Buy if $q_1$ cost $\times (10 + $ lvl % $10) <$ min$\left(q_2,c_3\right)$ cost |
+| $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{2}{3} c_3$ cost |
+| Other Variables | | | REDX |
+
+Caption: T4<blue>C123</blue><yellow>d</yellow>, T4<blue>C123</blue>;
+Class: strat_split;
+
+| INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>d</yellow> |
+| ----- | ----------------- | ----------------------------------- |
+| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost |
+| $c_2$ | | CHECK |
+| $c_3$ | | CHECK |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
+| $q_2$ | | CHECK |
+| Other Variables | | REDX |
+
+Caption: T4<blue>C12</blue><yellow>d</yellow>, T4<blue>C12</blue>;
+Class: strat_split;
+
+| INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>d</yellow> |
+| ----- | ----------------- | ----------------------------------- |
+| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost |
+| $c_2$ | | CHECK |
+| Other Variables | | REDX |
 
 #### Idle Strategies
 
@@ -208,19 +321,27 @@ T4 — Autobuy all
 
 Exploring the role of $c_2$ in $q$ growth is very essential for progression of the publication in T5. Due to the construction of the $\dot{q}$ formula in T5, one can observe that buying $c_2$ increases the maximum value of $q$ on one hand, yet it decreases/halves the speed of $q$ reaching its maximum value on the other hand. Therefore, it is very essential for one not to buy too many $c_2$ levels at once, especially at the beginning of the publication.
 
-To remind users about the effect of $c_2$ brings to T5, the word "Delayed" will be used in subsequent T5 strategies to represent buying $c_2$ levels at an appropriate speed of not dampening the growth of $q$ too much at the beginning of the publication.
+To remind users about the effect of $c_2$ brings to T5, <green>ManageQ</green> will be used in subsequent T5 strategies to represent buying $c_2$ levels at an appropriate speed of not dampening the growth of $q$ too much at the beginning of the publication.
 
 ###### For more information, see T5 [equation description](/guides/theories-5-8/#theory-5-equation-description) and [Bicycle Analogy](/guides/theories-5-8/#bicycle-analogy-alternative-explanation-of-and-interactions).
 
-#### Active Strategies
+#### Strategies Summary
 
-[TODO: Insert theory strats]
+Caption: T5<green>ManageQ</blue><yellow>Mod</yellow>, T5<green>RcvA</green>, T5
+Class: strat_split;
+
+| INVIS | T5 | T5<green>RcvA</green> | T5<green>ManageQ</blue><yellow>Mod</yellow> |
+| ----- | -- | --------------------- | ------------------------------------------- |
+| $q_1$ | | CHECK | Buy if $q_1$ cost $\times (3+$ lvl % $10) <$ min$\left(q_2,c_2,c_3\right)$ cost |
+| $q_2$ | | | CHECK |
+| $c_1$ | | CHECK | Buy if $q \times 1.5 < q_{\text{max}}$ |
+| $c_2$ | CHECK | Buy if $q \times 1.5 > q_{\text{max}}$ |
+| $c_3$ | | | CHECK |
+| | | | [FOOT;]$q_{\text{max}} = c_2 \times c_3^{1.1}$ |
 
 ###### For more information on the human implementation of the strategies, see [pre-T9](/guides/theories-5-8/#active) or [post-T9](/guides/endgame/#t5-routing) explanations.
 
-#### Idle Strategies
-
-[TODO: Insert theory strats]
+For T5<green>RcvA</green>, sim 3.0 will present the result as T5<green>RcvA</green> <blue>xexxx</blue> or <blue>c1: xxx</blue>. The <blue>xexxx</blue> or <blue>c1: xxx</blue> part was the starting point of coast. It mimics the function of [<blue>Coast</blue> strategy](#coast-strategy) and hence will not be repeated here.
 
 ### Theory 6: Integral Calculus
 
@@ -230,29 +351,123 @@ Similar to other theories, T6 adopts an additive nature to the growth of $\rho$ 
 
 #### Active Strategies
 
-[TODO: Insert theory strats]
+Caption: T6<red>No</red><blue>C34</blue><yellow>Mod</yellow>;
+Class: strat_split;
 
-#### Doubling Chase (<yellow>d</yellow>)
+|   |   |
+| - | - |
+| $q_1$ | Buy if $q_1$ cost $\times (7 +$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $q_2$ | CHECK |
+| $r_1$ | Buy if $r_1$ cost $\times (5 +$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $r_2$ | CHECK |
+| $c_1$ | Buy if $c_1$ cost $\times (7 +$ lvl mod $10) < c_2$ cost |
+| $c_2$ | Buy if $q_1$ cost $\times c_2$ ratio\* $<$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $c_3$ | REDX |
+| $c_4$ | REDX |
+| $c_5$ | CHECK |
+| | [FOOT;]$c_2$ ratio $=\frac{c_5 * r}{c_1^{1.15} * c_2}$ |
 
-[TODO: Insert theory strats]
+#### Active-Idle Strategy Pairs
+
+Caption: T6<blue>C125</blue><yellow>d</yellow>, T6<blue>C125</blue>, T6<blue>C12</blue><yellow>d</yellow>, T6<blue>C12</blue>;
+Class: strat_split;
+
+| INVIS | T6<blue>C125</blue>, T6<blue>C12</blue> | T6<blue>C125</blue><yellow>d</yellow>, T6<blue>C12</blue><yellow>d</yellow> |
+| ----- | - | - |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
+| $q_2$ | | CHECK |
+| $r_1$ | CHECK | Buy if $r_1$ cost $<\frac{1}{10} r_2$ cost |
+| $r_2$ | | CHECK |
+| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_5\right)$ cost |
+| $c_2$ | | CHECK |
+| $c_5$ | | [class="dashed_b";]CHECK<br>(T6<blue>C125</blue><yellow>d</yellow>, T6<blue>C125</blue>) |
+| ROWSPAN | | REDX<br>(T6<blue>C12</blue><yellow>d</yellow>, T6<blue>C12</blue>) |
+| Other Variables | | REDX |
+
+Caption: T6<blue>C5</blue><yellow>Mod</yellow>, T6<blue>C5</blue>;
+Class: strat_split;
+
+| INVIS | T6<blue>C5</blue> | T6<blue>C5</blue><yellow>Mod</yellow> |
+| ----- | - | - |
+| $q_1$ | CHECK | Buy if $q_1$ cost $\times (7+$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $q_2$ | | CHECK |
+| $r_1$ | CHECK | Buy if $r_1$ cost $<\frac{1}{5}$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $r_2$ | | CHECK |
+| $c_5$ | | CHECK |
+| Other Variables | | REDX |
+
+Caption: T6<blue>C4</blue><yellow>d</yellow>, T6<blue>C4</blue>;
+Class: strat_split;
+
+| INVIS | T6<blue>C4</blue> | T6<blue>C4</blue><yellow>d</yellow> |
+| ----- | - | - |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{5}$ min$\left(q_2,r_2,c_4\right)$ cost |
+| $q_2$ | | CHECK |
+| $r_1$ | CHECK | Buy if $r_1$ cost $<\frac{1}{5}$ min$\left(q_2,r_2,c_4\right)$ cost |
+| $r_2$ | | CHECK |
+| $c_4$ | | CHECK |
+| Other Variables | | REDX |
+
+Caption: T6<blue>C3</blue><yellow>d</yellow>, T6<blue>C3</blue>;
+Class: strat_split;
+
+| INVIS | T6<blue>C3</blue> | T6<blue>C3</blue><yellow>d</yellow> |
+| ----- | - | - |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{5}$ min$\left(q_2,c_3\right)$ cost |
+| $q_2$ | | CHECK |
+| $c_4$ | | CHECK |
+| Other Variables | | REDX |
 
 #### Hybrid Strategies [TODO: Fix Name]
 
-[TODO: Insert theory strats]
+Caption: Hybrid Strategies;
+Class: strat_split;
+
+| INVIS | <orange>Stage 1</orange><br>(indicated <green>xexxx</green>) | <orange>Stage 2</orange><br>(Before Recovery) | <orange>Stage 3</orange><br>(After Recovery) |
+| ----- | - | - | - |
+| T6<blue>C125</blue><red>Stop</red><blue>C12</blue> | T6<blue>C125</blue> | | T6<blue>C5</blue> |
+| T6<blue>C125</blue><yellow>Mod</yellow><red>Stop</red><blue>C12</blue><green>RcvI</green> | T6<blue>C125</blue> | T6<blue>C5</blue> | T6<blue>C5</blue><yellow>Mod</yellow> |
+| T6<blue>C5</blue><yellow>Mod</yellow><green>RcvI</green> | | T6<blue>C5</blue> | T6<blue>C5</blue><yellow>Mod</yellow> |
+| | | | [FOOT;]For the strategies listed, refer to te respective strategies listed above. |
 
 ### Theory 7: Numerical Methods
 
-#### Active Strategies
+#### Active-Idle Strategy Pairs
 
-[TODO: Insert theory strats]
+Caption: T7<red>No</red><blue>C12</blue><yellow>d</yellow>, T7<red>No</red><blue>C12</blue>, T7<yellow>Ratio</yellow><green>X</green>;
+Class: strat_split;
 
-#### Doubling Chase (<yellow>d</yellow>)
+| INVIS | T7<red>No</red><blue>C12</blue> | T7<red>No</red><blue>C12</blue><yellow>d</yellow> | T7<yellow>Ratio</yellow><green>X</green> |
+| ----- | - | - | - |
+| $q_1$ | CHECK | | Buy if $q_1$ cost $<\frac{1}{4} c_6$ cost |
+| $c_1$ | | REDX | Buy if $c_1$ cost $\times (10+$ lvl mod $10) <c_2$ cost |
+| $c_2$ | | REDX | Buy if $c_2$ cost $<\frac{1}{X} c_6$ cost |
+| $c_3$ | CHECK | | Buy if $c_3$ cost $<\frac{1}{10} c_6$ cost |
+| $c_4$ | CHECK | | Buy if $c_4$ cost $<\frac{1}{10} c_6$ cost |
+| $c_5$ | CHECK | | Buy if $c_5$ cost $<\frac{1}{10} c_6$ cost |
+| $c_6$ | | | CHECK |
 
-[TODO: Insert theory strats]
+Caption: T7<blue>C3</blue><yellow>d</yellow>, T7<blue>C3</blue>;
+Class: strat_split;
+
+| INVIS | T7<blue>C3</blue> | T7<blue>C3</blue><yellow>d</yellow> |
+| ----- | ----------------- | ----------------------------------- |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} c_3$ cost |
+| $c_3$ | | CHECK |
+| Other Variables | | REDX |
+
+Caption: T7<blue>C12</blue><yellow>d</yellow>, T7<blue>C12</blue>;
+Class: strat_split;
+
+| INVIS | T7<blue>C12</blue> | T7<blue>C12</blue><yellow>d</yellow> |
+| ----- | ----------------- | ----------------------------------- |
+| $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} c_2$ cost |
+| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{8} c_2$ cost |
+| $c_2$ | | CHECK |
+| Other Variables | | REDX |
 
 #### Idle Strategies
 
-T7<red>No</red><blue>C12</blue> — Autobuy $q_1$, $c_3$, $c_4$, $c_5$, $c_6$ only
 T7<blue>C456</blue> — Autobuy $q_1$, $c_4$, $c_5$, $c_6$ only
 T7<blue>C56</blue> — Autobuy $q_1$, $c_5$, $c_6$ only
 T7 — Autobuy all
@@ -261,13 +476,33 @@ T7 — Autobuy all
 
 #### Active Strategies
 
-[TODO: Insert theory strats]
+Caption: T8<yellow>Mod</yellow><orange>Reset</orange>, T8<yellow>Mod</yellow>;
+Class: strat_split;
+
+| INVIS | T8<yellow>Mod</yellow><orange>Reset</orange> | T8<yellow>Mod</yellow> |
+| ----- | -------------------------------------------- | ---------------------- |
+| $c_1$ | | Buy if $c_1$ cost $\times [5+0.5\times($ lvl mod $10)] <$ min$\left(c_2,c_4\right)$ cost |
+| $c_2$ | | CHECK |
+| $c_3$ | | Buy if $c_3$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost |
+| $c_4$ | | CHECK |
+| $c_5$ | Buy if $c_5$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | Buy if $c_5$ cost $<\frac{1}{4}$ min$\left(c_2,c_4\right)$ cost |
+| Milestone Swap<br>(T8<yellow>Mod</yellow><orange>Reset</orange>) | Remove and add 1 level of 1<sup>st</sup> milestone every 34 seconds. | N/A |
 
 #### Semi-Idle Strategies
 
-[TODO: Insert theory strats]
+Caption: T8<light-blue>MC</light-blue>;
+Class: strat_split;
 
-#### Double Chase (<yellow>d</yellow>)
+| INVIS | | | Pub. Multi. |
+| INVIS | Less than 1.6 | 1.6 - 2.3 | More than 2.3 |
+| - | - | - | - |
+| $c_1$ | CHECK | | REDX |
+| $c_2$ | | | CHECK |
+| $c_3$ | | CHECK | REDX |
+| $c_4$ | | | CHECK |
+| $c_5$ | | | CHECK |
+
+#### Active-Idlel Strategy Pairs
 
 \* Strategies with <yellow>d</yellow> indicates buy $c_1$ if $c_1$ cost$<u \frac{1}{10}\min{\left(c_2, c_4\right)}$ cost otherwise autobuy.
 T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue> — Autobuy $c_1$\*, $c_2$, $c_4$ only
