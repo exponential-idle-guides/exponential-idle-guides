@@ -33,9 +33,9 @@ So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
 Whenever the strategies include the word <light-blue>Coast</light-blue>, it indicates the end point of variable purchases in a publication. It generally appears in all strategies possibly, with the substring after the name of the strategies being the last variable purchase level in the publication. After such conditions are fulfilled, one should not buy any variables and wait until the $\rho$/$\tau$ reaches the indicated location provided by [the sim](https://exponential-developers.github.io/sim-3.0/).
 
-For example, if a result of "T6<yellow>AI</yellow><light-blue>Coast q1: 425 r1: 36</light-blue>" strat and max rho "5e204" are provided by the sim. One should be expected to complete the publication with
+For example, if a result of "T6<red>No</red><blue>C34</blue><yellow>Mod</yellow><light-blue>Coast q1: 425 r1: 36</light-blue>" strat and max rho "5e204" are provided by the sim. One should be expected to complete the publication with
 
-- the strategy indication listed in T6<yellow>AI</yellow><light-blue>Coast</light-blue>;
+- the strategy indication listed in T6<red>No</red><blue>C34</blue><yellow>Mod</yellow>;
 - last level of $q_1$ and $r_1$ being bought is level 425 and level 36 respectively;
 - not buying any variables after the above criteria are satisfied; and
 - wait and publish at 5e204 $\rho$.
@@ -54,7 +54,30 @@ A unique part of T1 is the nature of recursion, in which it includes $\rho$ as p
 
 #### Active Strategies
 
-[TODO: Insert theory strategies]
+Caption: T1<green>SolarXLII</green>, T1<yellow>Ratio</yellow>;
+Class: strat_split;
+
+| INVIS | T1<green>SolarXLII</green> | T1<yellow>Ratio</yellow> |
+| ----- | -------------------------- | ------------------------ |
+| $q_1$ | Buy if<div style="text-align:left;">(1) $q_1$ cost $\times (6 + \text{lvl}\mod 10) < q_2$ cost; **AND**</br>(2) $q_1$ cost $\times (15 + \text{lvl}\mod 10)<c_4$ cost; **AND**</br>(3) $\rho>5 q_1$ cost | Buy if $\rho > 10 \times q_1$ cost</div> |
+| $q_2$ | | Buy if $\rho > 1.11 \times q_2$ cost |
+| $c_1$ | | Buy if $\rho > 10 \times c_2$ ratio\* $\times c_1$ cost |
+| $c_2$ | | Buy if $\rho > c_2$ ratio\* $\times c_2$ cost |
+| $c_3$ | | Buy if $\rho > c_3$ ratio\*\* $\times c_3$ cost |
+| $c_4$ | | CHECK |
+
+Class: strat_split;
+Caption: $c_2$ ratio\* and $c_3$ ratio\*\*;
+
+| $\rho$ | $c_2$ ratio\* | $c_3$ ratio\*\* |
+| ------ | ------------- | --------------- |
+| Less than e300 | ![c_2 Ratio](/images/t1ratioc2ratio.png) | 1 |
+| e300 - e450 | [style="rowspan:4;";]REDX | 1.1 |
+| e450 - e550 | REDX | 2 |
+| e550 - e655 | REDX | 5 |
+| More than e655 | REDX | 10 |
+
+[TODO: colspan implementation]
 
 #### Idle Strategies
 
@@ -125,6 +148,24 @@ With the self-explanatory name of T3, the theory progresses using the concept of
 Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green>, and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
 
 #### T3<green>Play</green> Derivatives
+
+Caption: T3<green>Play</green>;
+Class: strat_split;
+
+| INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(Pub. Multi. 1-2) | <orange>Stage 3</orange><br>(Pub. Multi. > 2) |
+| ----- | - | - | - |
+| $b_1 | | Buy if $b_1$ cost $<\frac{1}{8}\times c_{31}$ cost | REDX |
+| $b_2 | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{2}{9} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{4}{9} \times c_{22}$ cost</div> | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{1}{4} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{1}{2} \times c_{22}$ cost</div> | CHECK |
+| $b_3 | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{4}{9} \times c_{33}$ cost</div> | | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{1}{2} \times c_{33}$ cost</div> |
+| $c_{11}$ | | | REDX |
+| $c_{12}$ | | | CHECK |
+| $c_{13}$ | | | REDX |
+| $c_{21}$ | | | REDX |
+| $c_{22}$ | | Buy if $c_{22}$ cost $<\frac{1}{2} \times \min{\left(c_{12},c_{32}\right)}$ cost | CHECK |
+| $c_{23}$ | | | CHECK |
+| $c_{31}$ | | CHECK | REDX |
+| $c_{32}$ | | | CHECK |
+| $c_{33}$ | Buy if $c_{33}$ cost $\frac{9}{32} \times c_{23}$ | | Buy if $c_{33}$ cost $\frac{1}{4} \times c_{23}$ |
 
 [TODO: Insert theory strategies]
 
@@ -464,7 +505,7 @@ A major unique feature for RZ is the implementation of black hole. Once a black 
 
 [TODO: Insert Theory strats]
 
-#### Depth (Depth: x)
+#### Depth (<light-blue>Depth: x</light-blue>)
 
 The setting of depth has no influence on the strategy of a MF publication, it is a setting only for the sim to be reminded when to start brute-forcing the strategies (i.e., testing each variable purchase, compare the efficiency of each purchase, and provide a result that is the most optimized).
 

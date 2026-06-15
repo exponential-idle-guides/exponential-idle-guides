@@ -21,24 +21,21 @@ module.exports = function (config, exclusions) {
 
       $("table").each(function() {
         const table = $(this);
+
         // colspan
         // TODO: Make this cleaner (and not as recursive and dumb)
-        while (/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/g.test(table.html())) {
-          table.html().matchAll(/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/g)
-            .forEach((s) => {
-              table.html(table.html()
-                .replace(s[0],
-                  "<" + s[1] + " colspan=\"" 
-                  + (colspan_num(s[2]) + colspan_num(s[3]))
-                  + "\">" + s[4]
-                  + "</" + s[1] + ">"
-                )
-              );
+        while (/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/.test(table.html())) {
+          table.html(table.html().replace(/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/g, (...args) => {
+              const { start, first, second, inner } = args[args.length - 1];
+              return "<" + start + " colspan=\"" 
+                + (colspan_num(first) + colspan_num(second))
+                + "\">" + inner
+                + "</" + start + ">";
             }
-          );
+          ));
         }
-        // Removing thead/tbody if empty
         
+        // Removing thead/tbody if empty
         const thead = table.find("thead");
         if (thead[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(thead.html().replaceAll(/\n/g,""))) {thead.remove();}
         const tbody = table.find("tbody");
@@ -124,6 +121,7 @@ module.exports = function (config, exclusions) {
           }
           if (type != undefined) {t.tagName=type;}
         })});
+        
         // caption, table id, table classes, and last_row
         const prev = table.prev();
         if (prev.is("p")) {
