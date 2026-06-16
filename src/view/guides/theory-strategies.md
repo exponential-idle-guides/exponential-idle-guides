@@ -36,7 +36,7 @@ Whenever the strategies include the word <light-blue>Coast</light-blue>, it indi
 For example, if a result of "T6<red>No</red><blue>C34</blue><yellow>Mod</yellow><light-blue>Coast q1: 425 r1: 36</light-blue>" strat and max rho "5e204" are provided by the sim. One should be expected to complete the publication with
 
 - the strategy indication listed in T6<red>No</red><blue>C34</blue><yellow>Mod</yellow>;
-- last level of $q_1$ and $r_1$ being bought is level 425 and level 36 respectively;
+- last level of $q_1$ and $r_1$ being bought is <light-blue>level 425</light-blue> and <light-blue>level 36</light-blue> respectively;
 - not buying any variables after the above criteria are satisfied; and
 - wait and publish at 5e204 $\rho$.
 
@@ -72,17 +72,18 @@ Caption: $c_2$ ratio\* and $c_3$ ratio\*\*;
 | $\rho$ | $c_2$ ratio\* | $c_3$ ratio\*\* |
 | ------ | ------------- | --------------- |
 | Less than e300 | ![c_2 Ratio](/images/t1ratioc2ratio.png) | 1 |
-| e300 - e450 | [style="rowspan:4;";]REDX | 1.1 |
-| e450 - e550 | REDX | 2 |
-| e550 - e655 | REDX | 5 |
-| More than e655 | REDX | 10 |
+| e300 - e450 | REDX | 1.1 |
+| e450 - e550 | ROWSPAN | 2 |
+| e550 - e655 | ROWSPAN | 5 |
+| More than e655 | ROWSPAN | 10 |
 
-[TODO: colspan implementation]
+[TODO: rowspan implementation]
 
 #### Idle Strategies
 
 T1<blue>C34</blue> — Autobuy $c_3$ and $c_4$ only
 T1<blue>C4</blue> — Autobuy $c_4$ only
+T1 — Autobuy all
 
 ### Theory 2: Differential Calculus
 
@@ -124,8 +125,8 @@ Class: breakdown;
 | ------- | ------------------ | -------- | ------------------ |
 | <orange>Stage 1</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
 | <orange>Stage 2</orange> | 1 → 2 → 3 → 4 | 40 sec | Boost $q$, $r$ ($q$ priority)       |
-| <orange>Stage 1</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
-| <orange>Stage 2</orange> | 2 → 1 → 3 → 4 | 40 sec | Boost $r$, $q$ ($r$ priority)       |
+| <orange>Stage 3</orange> | 3 → 4 → 1 → 2 | 10 sec | $\rho$ gain via. $q$, $r$ exponents |
+| <orange>Stage 4</orange> | 2 → 1 → 3 → 4 | 40 sec | Boost $r$, $q$ ($r$ priority)       |
 
 T2<orange>SingleMS</orange> — Swap from <orange>Stage 2</orange> to <orange>Stage 3</orange> when the corresponding Publication Multiplier is reached.
 
@@ -196,7 +197,7 @@ Class: strat_split;
 
 | INVIS | T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23</blue> | T3<blue>ρ2C23C33</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue> | T3<blue>ρ2C23C31</blue><yellow>d</yellow>, T3<blue>ρ2C23C31</blue> |
 | ----- | - | - | - |
-| $b_1$ | | REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
+| $b_1$ | | [class="dashed_b";]REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
 | ROWSPAN | |      | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
 | $b_2$ | | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{3}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue>) |
@@ -219,11 +220,11 @@ Class: strat_split;
 
 | INVIS | T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C32C33</blue> | T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C13C33</blue> | T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue> |
 | ----- | - | - | - |
-| $b_1$ | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{10}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| $b_1$ | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{10}$ min$\left(c_{11},c_{21},c_{31}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
-| $b_2$ | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{4}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| $b_2$ | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22}\right)$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{4}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
-| $b_3$ | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{10} c_{23}$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
+| $b_3$ | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<red>No</red><blue>C13C32C33</blue><yellow>d</yellow>) | | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{10} c_{23}$ cost<br>(T3<red>No</red><blue>C13C33</blue><yellow>d</yellow>, T3<red>No</red><blue>C11C13C33</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<red>No</red><blue>C13C32C33</blue>, T3<red>No</red><blue>C13C33</blue>, T3<red>No</red><blue>C11C13C33</blue>) |
 | $c_{11}$ | | CHECK | REDX |
 | $c_{12}$ | | | CHECK |
@@ -494,7 +495,7 @@ Caption: T8<light-blue>MC</light-blue>;
 Class: strat_split;
 
 | INVIS | | | Pub. Multi. |
-| INVIS | Less than 1.6 | 1.6 - 2.3 | More than 2.3 |
+| ROWSPAN | Less than 1.6 | 1.6 - 2.3 | More than 2.3 |
 | - | - | - | - |
 | $c_1$ | CHECK | | REDX |
 | $c_2$ | | | CHECK |
@@ -690,8 +691,8 @@ Class: breakdown;
 
 | Stage                    | Milestone 5 | Effect       |
 | ------------------------ | ----------- | ------------ |
-| <orange>Stage 1</orange> | CHECK       | Boost $\rho$ |
-| <orange>Stage 2</orange> | REDX        | Boost $q$    |
+| <orange>Stage 1</orange> | REDX        | Boost $\rho$ |
+| <orange>Stage 2</orange> | CHECK       | Boost $q$    |
 
 There is no definite indication/criteria of when to swap, the swap becomes less frequent in a publication. When $s>2$, keep milestone 5 purchased at all times.
 
@@ -718,7 +719,7 @@ Class: breakdown;
 Caption: Milestone Swap Criteria;
 Class: breakdown;
 
-| Stage                    | RZ<orange>SpiralMS</orange> | RZ<orange>SingleMS</orange><yellow>d</yellow>, RZ<orange>SingleMS</orange> |
+| Stage                    | RZ<orange>SpiralMS</orange> | RZ<yellow>d</yellow><orange>SingleMS</orange>, RZ<orange>SingleMS</orange> |
 | ------------------------ | ----------------------------- | -------------------------------------------------------------- |
 | <orange>Stage 1</orange> | Otherwise                                       | Start of publication             |
 | <orange>Stage 2</orange> | $\zeta\left(\frac{1}{2}+it\right)$ approaches 0 | After $\rho$ provided by the sim |
