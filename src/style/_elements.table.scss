@@ -43,7 +43,7 @@ th, td {
 }
 table:not(.rowspanned) {
 	th, td {
-		&:first-child {
+		&:first-child.invisible {
 			position: sticky;
 			left: 0;
 			background-color: var(--palette-fill-transparent);
