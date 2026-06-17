@@ -173,103 +173,109 @@ module.exports = function (config, exclusions) {
 
         // Rowspan
         if (rowspan_present) {
-          // TODO: Rowspan implementation
-          const thead = table.find("thead");
-          const tbody = table.find("tbody");
           // Generate Position, Colspan, and Rowspan position arrays
-          const positions = {thead: [], tbody: []};
-          const colspans = {thead: [], tbody: []};
-          const rowspan_pos = {thead: [], tbody: []};
-          let rowspanned = false;
-
-          ["thead", "tbody"].forEach((tsect) => {table.find(tsect).children("tr").each(function(i, _) {
-            let tr = $(this);
-            positions[tsect].push(Array(0));
-            colspans[tsect].push(Array(0));
-            let p = 0;
-            tr.children("th, td").each(function() {
-              let child = $(this);
-              const colspan = $(child).attr("colspan") === undefined ? 1 : parseInt(child.attr("colspan"));
-              const classes = child.attr("class");
-              if (classes !== undefined) {
-                if (classes.includes("rowspan")) {
-                 rowspan_pos[tsect].push([i, p, colspan]);
-                }
-              }
-              positions[tsect].at(-1).push(p);
-              colspans[tsect].at(-1).push(colspan);
-              p += colspan;
-            });
-          })});
-          rowspan_pos.thead.reverse();
-          rowspan_pos.tbody.reverse();
-          
-          const get_rowspan = (r) => r === undefined ? 1 : r;
-          // Normal and Colspan Rowspan
+          const get_rowspan = (r) => r === undefined ? 1 : parseInt(r);
           const removed = [];
-          const within = {thead: [], tbody: []};
-          ["thead", "tbody"].forEach((tsect) => {rowspan_pos[tsect].forEach(([row, col, colspan], i) => {
-            // If rowspan is in first row, then nothing to rowspan above.
-            if (row === 0) {return;}
-            const target_i = positions[tsect][row - 1].indexOf(col);
-            // Rowspan doesn't have same start and end bounds
-            // If Rowspan is within the bounds of the upper element, then add to within to be checked later if merging Rowspans results in the correct size.
-            if (target_i === -1) {
-              const last_i = positions[tsect][row - 1].findLastIndex((num) => num <= col);
-              if (positions[tsect][row - 1][last_i] + colspans[tsect][row - 1][last_i] === col + colspan) {
-                within[tsect].push([row, col, colspan]);
-              }
-              return;
-            } 
-            const target_colspan = colspans[tsect][row - 1] [target_i];
-            if (target_colspan < colspan) {return;}
-            if (target_colspan > colspan) {
-              within[tsect].push([row, col, colspan]);
-              return;
-            }
-            const ele = $($(table.find(tsect).children("tr")[row]).children("th, td")[col]);
-            const rowspan = get_rowspan(ele.attr("rowspan"));
-            $($(table.find(tsect).children("tr")[row - 1]).children("th, td")[col]).attr("rowspan", (rowspan+1).toString());
-            rowspanned = true;
-            removed.push(ele);
-          })});
 
-          // Multi Colspan Rowspan cells
           ["thead", "tbody"].forEach((tsect) => {
-            while (within[tsect].length) {
-              let rowspans = [within[tsect][0]];
+            const positions = [];
+            const colspans = [];
+            const rowspan_pos = [];
+            table.find(tsect).children("tr").each(function(i, _) {
+              let tr = $(this);
+              positions.push(Array(0));
+              colspans.push(Array(0));
+              let p = 0;
+              const children = tr.children("th, td");
+              const children_len = children.length;
+              children.each(function(j) {
+                let child = $(this);
+                const colspan = child.attr("colspan") === undefined ? 1 : parseInt(child.attr("colspan"));
+                const classes = child.attr("class");
+                if (classes !== undefined) {
+                  if (classes.includes("rowspan")) {
+                    rowspan_pos.push([i, p, colspan]);
+                  }
+                }
+                // Add first/middle/last-column classes
+                if (j === 0) {
+                  child.addClass("first-column");
+                } else if (j != children_len - 1) {
+                  child.addClass("middle-column");
+                } else {
+                  child.addClass("last-column");
+                  if (colspan > 1) {
+                    child.addClass("middle-column");
+                  }
+                }
+                positions.at(-1).push(p);
+                colspans.at(-1).push(colspan);
+                p += colspan;
+              });
+            });
+
+            rowspan_pos.reverse();
+            const within = [];
+            // Normal and Colspan Rowspan
+            rowspan_pos.forEach(([row, col, colspan], i) => {
+              // If rowspan is in first row, then nothing to rowspan above.
+              if (row === 0) {return;}
+              const target_i = positions[row - 1].indexOf(col);
+              // Rowspan doesn't have same start and end bounds
+              // If Rowspan is within the bounds of the upper element, then add to within to be checked later if merging Rowspans results in the correct size.
+              if (target_i === -1) {
+                const last_i = positions[row - 1].findLastIndex((num) => num <= col);
+                if (positions[row - 1][last_i] + colspans[row - 1][last_i] === col + colspan) {
+                  within.push([row, col, colspan]);
+                }
+                return;
+              } 
+              const target_colspan = colspans[row - 1] [target_i];
+              if (target_colspan < colspan) {return;}
+              if (target_colspan > colspan) {
+                within.push([row, col, colspan]);
+                return;
+              }
+              const ele = $($(table.find(tsect).children("tr")[row]).children("th, td")[col]);
+              const rowspan = get_rowspan(ele.attr("rowspan"));
+              $($(table.find(tsect).children("tr")[row - 1]).children("th, td")[col]).attr("rowspan", (rowspan+1).toString());
+              removed.push(ele);
+            });
+
+            // Multi Colspan Rowspan cells
+            while (within.length) {
+              let rowspans = [within[0]];
               const row = rowspans[0][0];
               const f_col = rowspans[0][1];
               const f_colspan = rowspans[0][2];
               const rowspan = get_rowspan($($(table.find(tsect).children("tr")[row]).children("th, td")[f_col]).attr("rowspan"));
-              const last_i = positions[tsect][row - 1].findLastIndex((num) => num <= f_col);
-              const pos = positions[tsect][row - 1][last_i];
-              const colspan = colspans[tsect][row - 1][last_i];
+              const last_i = positions[row - 1].findLastIndex((num) => num <= f_col);
+              const pos = positions[row - 1][last_i];
+              const colspan = colspans[row - 1][last_i];
               if (pos + colspan != f_col + f_colspan) {
-                within[tsect].shift();
+                within.shift();
                 continue;
               }
               let i = 1;
               let t_colspan = f_colspan;
-              while (true) {
-                rowspans.push(within[tsect][i])
+              while (i < within.length) {
+                rowspans.push(within[i])
                 t_colspan += rowspans[i][2];
                 if (rowspans[i][0] != row 
                     || get_rowspan($($(table.find(tsect).children("tr")[rowspans[i][0]]).children("th, td")[rowspans[i][1]]).attr("rowspan")) != rowspan 
                     || t_colspan > colspan
                 ) {
                   while (i > 0) {
-                    within[tsect].shift();
+                    within.shift();
                     i--;
                   }
                   break;
                 }
                 if (t_colspan === colspan) {
                   $($(table.find(tsect).children("tr")[row - 1]).children("th, td")[last_i]).attr("rowspan", (rowspan+1).toString());
-                  rowspanned = true;
                   rowspans.forEach(([r, c, cs]) => removed.push($($(table.find(tsect).children("tr")[r]).children("th, td")[c])));
                   while (i >= 0) {
-                    within[tsect].shift();
+                    within.shift();
                     i--;
                   }
                   break;
@@ -280,28 +286,27 @@ module.exports = function (config, exclusions) {
 
           // Remove merged Rowspan cells
           removed.forEach((ele, i) => $(ele).remove());
-
-          if (rowspanned) {
-            table.addClass("rowspanned");
-            const max_col = Math.max(...["thead", "tbody"].map((tsect) => Math.max(...positions[tsect].map((arr, i) => colspans[tsect][i].slice(-1)[0] + arr.slice(-1)[0]))));     
-            const new_colgroup = $("<colgroup>");
-            switch (max_col) {
-              case 1:
-                new_colgroup.html(String.raw`<col class="first-column last-column" />`);
-                break;
-              case 2:
-                new_colgroup.html(String.raw`<col class="first-column" /><col class="last-column" />`);
-                break;
-              default:
-                new_colgroup.html(
-                  String.raw`<col class="first-column" />`
-                  + `<col span="${max_col - 2}" class="middle-column" />`
-                  + String.raw`<col class="last-column" />`
-                );
-                break;
-            }
-            table.find("thead").before(new_colgroup);
-          }
+        } else {
+          // Add first/middle/last-column classes for non-rowspan tables
+          ["thead", "tbody"].forEach((tsect) => {
+            table.find(tsect).children("tr").each(function() {
+              const children = $(this).children("th, td");
+              const children_len = children.length;
+              children.each(function(j) {
+                let child = $(this);
+                if (j === 0) {
+                  child.addClass("first-column");
+                } else if (j != children_len - 1) {
+                  child.addClass("middle-column");
+                } else {
+                  child.addClass("last-column");
+                  if ((child.attr("colspan") === undefined ? 1 : parseInt(child.attr("colspan"))) > 1) {
+                    child.addClass("middle-column");
+                  }
+                }
+              });
+            });
+          });
         }
       });
       return $.html();

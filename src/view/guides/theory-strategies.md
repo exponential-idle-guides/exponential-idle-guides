@@ -175,20 +175,20 @@ Near to the end of the publication, one would like not to purchase any $\rho_1$ 
 Caption: T3<yellow>d</yellow><green>Stage</green>;
 Class: strat_split;
 
-| INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(Pub. Multi. 1-2) | <orange>Stage 3</orange><br>(Pub. Multi. > 2) |
-| ----- | - | - | - |
-| $b_1$ | | Buy if $b_1$ cost $<\frac{1}{8}\times c_{31}$ cost | REDX |
-| $b_2$ | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{2}{9} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{4}{9} \times c_{22}$ cost</div> | Buy if<div style="text-align:left;">(1) $b_2$ cost $<\frac{1}{4} \times \min{\left(c_{12},c_{32}\right)}$ cost; **AND**<br>(2) $b_2$ cost $<\frac{1}{2} \times c_{22}$ cost</div> | CHECK |
-| $b_3$ | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{4}{9} \times c_{33}$ cost</div> | | Buy if<div style="text-align:left;">(1) $b_3$ cost $<\frac{1}{8} \times c_{23}$ cost; **AND**<br>(2) $b_3$ cost $<\frac{1}{2} \times c_{33}$ cost</div> |
-| $c_{11}$ | | | REDX |
-| $c_{12}$ | | | CHECK |
-| $c_{13}$ | | | REDX |
-| $c_{21}$ | | | REDX |
-| $c_{22}$ | | Buy if $c_{22}$ cost $<\frac{1}{2} \times \min{\left(c_{12},c_{32}\right)}$ cost | CHECK |
-| $c_{23}$ | | | CHECK |
-| $c_{31}$ | | CHECK | REDX |
-| $c_{32}$ | | | CHECK |
-| $c_{33}$ | Buy if $c_{33}$ cost $\frac{9}{32} \times c_{23}$ | | Buy if $c_{33}$ cost $\frac{1}{4} \times c_{23}$ |
+| INVIS | <orange>Stage 1</orange><br>(e1 before Recovery) | <orange>Stage 2</orange><br>(Pub. Multi. < 1.2) | <orange>Stage 3</orange><br>(Pub. Multi. 1.2-2.4) | <orange>Stage 4</orange><br>(Pub. Multi > 2.4) |
+| ----- | - | - | - | - |
+| $b_1$ | Buy if $b_1$ cost $<\frac{1}{8}\times c_{31}$ cost | | | REDX |
+| $b_2$ | | Buy if $b_2$ cost $<\frac{1}{5}\times c_{32}$ cost | Buy if $b_2$ cost $<\frac{1}{8}\times c_{12}$ cost | CHECK |
+| $b_3$ | | | Buy if $b_3$ cost $<\frac{1}{8}\times c_{23}$ cost | CHECK |
+| $c_{11}$ | | | | REDX |
+| $c_{12}$ | | Buy if $c_{12}$ cost $<\frac{1}{100}\times c_{32}$ cost | | CHECK |
+| $c_{13}$ | | | | REDX |
+| $c_{21}$ | | | | REDX |
+| $c_{22}$ | | Buy if $c_{22}$ cost $<\frac{2}{5} \times c_{32}$ cost | Buy if $c_{22}$ cost $<\frac{1}{8} \times c_{12}$ cost | REDX |
+| $c_{23}$ | | | | CHECK |
+| $c_{31}$ | CHECK | | | REDX |
+| $c_{32}$ | | CHECK | Buy if $c_{32}$ cost $<\frac{1}{8} \times c_{12}$ cost | REDX |
+| $c_{33}$ | | Buy if $c_{33}$ cost $\frac{1}{10} \times c_{23}$ cost | | REDX |
 
 #### T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue> Derivatives (Active)
 
@@ -365,7 +365,7 @@ Class: strat_split;
 
 ###### For more information on the human implementation of the strategies, see [pre-T9](/guides/theories-5-8/#active) or [post-T9](/guides/endgame/#t5-routing) explanations.
 
-For T5<green>RcvA</green>, sim 3.0 will present the result as T5<green>RcvA</green> <blue>xexxx</blue> or <blue>c1: xxx</blue>. The <blue>xexxx</blue> or <blue>c1: xxx</blue> part was the starting point of coast. It mimics the function of [<blue>Coast</blue> strategy](#coast-strategy) and hence will not be repeated here.
+For T5<green>RcvA</green>, sim 3.0 will present the result as T5<green>RcvA</green> <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue>. The <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and hence will not be repeated here.
 
 ### Theory 6: Integral Calculus
 
@@ -527,9 +527,9 @@ Header rows: 2;
 | $c_4$ | | | CHECK |
 | $c_5$ | | | CHECK |
 
-#### Active-Idlel Strategy Pairs
+#### Active-Idle Strategy Pairs
 
-\* Strategies with <yellow>d</yellow> indicates buy $c_1$ if $c_1$ cost$<u \frac{1}{10}\min{\left(c_2, c_4\right)}$ cost otherwise autobuy.
+\* Strategies with <yellow>d</yellow> indicates buy $c_1$ if $c_1$ cost$<\frac{1}{10}\min{\left(c_2, c_4\right)}$ cost otherwise autobuy.
 T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue> — Autobuy $c_1$\*, $c_2$, $c_4$ only
 T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue> — Autobuy $c_1$\*, $c_2$, $c_3$, $c_4$ only
 T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue> — Autobuy $c_1$\*, $c_2$, $c_4$, $c_5$ only
@@ -539,7 +539,30 @@ T8<yellow>d</yellow>, T8 — Autobuy all
 
 ### Weierstraß Sine Product
 
-[TODO: Insert theory strats]
+Caption: WSP<yellow>Mod</yellow>, WSP<red>Stop</red><blue>C1</blue>;
+Class: strat_split;
+
+| INVIS   | First 15 seconds | Rest of Publication |
+| ------- | ---------------- | ------------------- |
+| $q_1$   | CHECK   | [class="dashed_b";]Buy if $q_1$ cost $\times (6+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost<br>(WSP<yellow>MOD</yellow>) |
+| ROWSPAN | ROWSPAN | CHECK<br>(WSP<red>Stop</red><blue>C1</blue>) |
+| $q_2$   | | CHECK |
+| $n$     | | CHECK |
+| $c_1$   | CHECK   | Buy if $q_1$ cost $\times c_1$ ratio\* $<$ min$\left(q_2,n,c_2\right)$ cost |
+| $c_2$   | | CHECK |
+
+Caption: $c_1$ ratio\*;
+Class: strat_split;
+
+| $\rho$ | WSP<yellow>Mod</yellow> | WSP<red>Stop</red><blue>C1</blue> |
+| ------ | ----------------------- | --------------------------------- |
+| Less than e25  | CHECK   | CHECK   |
+| e25 - e40      | 3       | ROWSPAN |
+| e40 - e200     | 10      | ROWSPAN |
+| e200 - e400    | 50      | ROWSPAN |
+| e400 - e450    | 1,000   | ROWSPAN |
+| e450 - e700    | ROWSPAN | REDX    |
+| More than e700 | REDX    | ROWSPAN |
 
 [TODO: Turn this into a custom table type that auto-adds the — (see colgroup)]
 WSP<yellow>Mod</yellow><green>RcvI</green> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<yellow>Mod</yellow> after recovery
@@ -549,7 +572,20 @@ WSP — Autobuy all
 
 #### Strategies Summary
 
-[TODO: Insert theory strats]
+[TODO: Fix this rowspan merge bug.]
+
+Caption: SL<orange>MS</orange><yellow>Mod</yellow><green>MC</green>, SL<orange>MS</orange><green>MC</green>, SL<yellow>Mod</yellow>, SL;
+Class: strat_split;
+
+| INVIS   | <orange>Stage 1</orange><br>(Pub. Multi. < 4) | <orange>Stage 2</orange><br>(Pub. Multi. 4-7.5) | <orange>Stage 3</orange><br>(Pub. Multi. > 7.5) |
+| ------- | - | - | - |
+| $a_1$   | [class="dashed_b";]Buy if $a_1$ cost $\times 2 \times ($lvl mod $3) < a_2$ cost<br>(SL<yellow>Mod</yellow>) | REDX<br>(<green>MC</green>) | REDX<br>(<green>MC</green>) |
+| ROWSPAN | CHECK<br>(SL) | ROWSPAN | ROWSPAN |
+| $a_2$   | CHECK | ROWSPAN | ROWSPAN |
+| $b_1$   | | [class="dashed_b";]Buy if $b_1$ cost $\times ($lvl mod $4) < b_2$ cost<br>(SL<yellow>Mod</yellow>) | ROWSPAN |
+| ROWSPAN | | CHECK<br>(SL) | ROWSPAN |
+| $b_2$   | | CHECK | ROWSPAN |
+| | | | [FOOT;]SL<yellow>Mod</yellow>, SL — Continue purchasing $a_1$, $a_2$, $b_1$, $b_2$ throughout publication. |
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -596,7 +632,57 @@ Class: breakdown;
 
 ### Euler's Formula
 
-[TODO: Insert theory strats]
+Caption: EF<yellow>Mod</yellow>;
+Class: strat_split;
+
+| INVIS | Before Recovery | After Recovery |
+| ----- | --------------- | -------------- |
+| $\dot{t}$ | | CHECK |
+| $q_1$     | | Buy if $q_1$ cost $\times (10+$ lvl mod $10) < q_2$ cost |
+| $q_2$     | | CHECK |
+| $b_1$, $b_2$<br>(Select Appicable) | CHECK   | Buy if $b_1$, $b_2$ cost $<\frac{1}{5} a_2$ cost\* |
+| $c_1$, $c_2$<br>(Select Appicable) | ROWSPAN | Buy if $c_1$, $c_2$ cost $<\frac{1}{5} a_3$ cost\*\* |
+| $a_1$     | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl mod $10) < q_2$ cost |
+| $a_2$     | | CHECK |
+| $a_3$     | | CHECK |
+| | | [FOOT;]\*If $a_2$ is not unlocked, ✔️ $b_1$, $b_2$. |
+| | | [FOOT;]\*\*If $a_3$ is not unlocked, ✔️ $c_1$, $c_2$. |
+
+Caption: EF<yellow>Mod</yellow><green>Stage</green>;
+Class: strat_split;
+
+| INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(After Recovery) | <orange>Stage 3</orange><br>(If $a_2$ lvl $\gte$ Last strong $a_2$\*\*\*) |
+| ----- | - | - | - |
+| $\dot{t}$ | | | CHECK |
+| $q_1$     | | | Buy if $q_1$ cost $\times (10+$ lvl mod $10) < q_2$ cost |
+| $q_2$     | | | CHECK |
+| $b_1$, $b_2$<br>(Select Appicable) | CHECK   | | [class="dashed_b";]Buy if\*<div style="text-align:left;">(1a) $b_1$, $b_2$ cost $<\frac{1}{5}$ Last $a_2$ lvl cost; **AND**</br>(1b) $b_1$, $b_2$ cost $<\frac{1}{2} a_2$ cost; |
+| ROWSPAN                            | ROWSPAN | **OR**<div style="text-align:left;">(2) $b_1$, $b_2$ cost $<\frac{1}{5}$ Last strong $a_2$\*\*\* lvl cost. |
+| $c_1$, $c_2$<br>(Select Appicable) | ROWSPAN | | Buy if\*\*<div style="text-align:left;">(1) $c_1$, $c_2$ cost $<\frac{1}{5}$ Last $a_3$ lvl cost; **AND**</br>(2) $c_1$, $c_2$ cost $<\frac{4}{5} a_3$ cost. |
+| $a_1$     | | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl mod $10) < q_2$ cost |
+| $a_2$     | CHECK | | Buy if $b_1$ cost $<\frac{1}{5} a_2$ cost |
+| $a_3$     | | CHECK |
+| | | [FOOT;]\*If $a_2$ is not unlocked, ✔️ $b_1$, $b_2$. |
+| | | [FOOT;]\*\*If $a_3$ is not unlocked, ✔️ $c_1$, $c_2$. |
+| | | [FOOT;]\*\*\*"Last strong $a_2$" refers to theh last $a_2$ level in <u>which $a_2$ llvl mod 10 = 1.</u> |
+
+Caption: EF<red>STOP</red><blue>Q1BXCX</blue>, EF<yellow>d</yellow>;
+Class: strat_split;
+
+| INVIS | Before Recovery | After Recovery |
+| ----- | --------------- | -------------- |
+| $\dot{t}$ | | CHECK |
+| $q_1$     | [class="dashed_b";]CHECK<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) | [class="dashed_b";]REDX<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) |
+| ROWSPAN   | | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost<br>(EF<yellow>d</yellow>) |
+| $q_2$     | | CHECK |
+| $b_1$     | CHECK   | REDX    |
+| $b_2$     | ROWSPAN | ROWSPAN |
+| $c_1$     | ROWSPAN | ROWSPAN |
+| $c_2$     | ROWSPAN | ROWSPAN |
+| $a_1$     | | [class="dashed_b";]CHECK<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) |
+| ROWSPAN   | | Buy if $a_1$ cost $<\frac{2}{5} q_2$ cost<br>(EF<yellow>d</yellow>) |
+| $a_2$     | | CHECK |
+| $a_3$     | | CHECK |
 
 EF  — Autobuy all
 
@@ -604,7 +690,20 @@ EF  — Autobuy all
 
 #### Strategies Summary
 
-[TODO: Insert theory strats]
+Caption: CSR2<yellow>Mod</yellow>, CSR2<yellow>d</yellow>;
+Class: strat_split;
+
+| INVIS | CSR2<yellow>Mod</yellow> | CSR2<yellow>d</yellow> |
+| ----- | ------------------------ | ---------------------- |
+| $q_1$ | Buy if $q_1$ cost $\times (7+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $q_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
+| $q_2$ | | CHECK<br>(3<sup>rd</sup> Priority) |
+| $c_1$ | Buy if $c_1$ cost $\times (15+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $c_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
+| $n$   | | CHECK<br>(2<sup>nd</sup> Priority) |
+| $c_2$ | | CHECK<br>(1<sup>st</sup> Priority) |
+| | | [FOOT;] For CSR2<yellow>Mod</yellow>, sim v3.0 will present the result as CSR2<yellow>Mod</yellow> <light-blue>x.xx</light-blue>. The <light-blue>x.xx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and will not be repeated here. |
+
+CSR2<green>PT</green> — Complete the publication according to listed strategy and publish at the indicated $\rho$
+CSR2 — Autobuy all
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -637,10 +736,10 @@ Start the publication at <orange>Stage 1</orange>. Swap to <orange>Stage 2</oran
 
 Swap bac to <orange>Stage 1</orange> if the criteria is no longer satisfied.
 
-Caption: $\rho$ ratio*;
+Caption: $\rho$ ratio\*;
 Class: breakdown;
 
-| Publication $\rho$ | $\rho$ ratio* |
+| Publication $\rho$ | $\rho$ ratio\* |
 | ------------------ | ------------- |
 | Less than e45      | Close to 1    |
 | e45 - e80          | 4             |
@@ -652,11 +751,59 @@ Class: breakdown;
 
 #### Strategy Basis
 
-[TODO: insert basis]
+There are a total of 8 strategies made up for FI at the current moment. To simplify the interpretation of the strategy name, the strategies can be categorized using three actions listed below with the aid of a table:
 
-#### Double Chase (<yellow>Mod</yellow>)
+1) <yellow>Mod</yellow> Strategy (Mod Chase)
+2) <orange>MS</orange> Strategy (Milestone Swapping)
+3) <orange>SingleMS</orange>
 
-[TODO: insert theory strat]
+<table>
+  <thead style="font-weight: normal;">
+    <tr>
+      <th class="invisible"></th>
+      <th style="border: 3px solid black;border-bottom: 5px solid black;border-right: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><orange>SingleMS</orange> needed</th>
+      <th style="border: 3px solid black;border-bottom: 5px solid black;border-left: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><orange>SingleMS</orange> NOT needed</th>
+      <th class="invisible"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th rowspan="2" style="border-bottom: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 5px solid black;border-left: 3px solid black;border-top: 3px solid black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><orange>MS</orange> needed</th>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-left: 3px solid black;vertical-align:middle;text-align: center;">FI<orange>MS</orange><yellow>Mod</yellow><orange>SingleMS</orange></td>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 3px solid black;vertical-align:middle;text-align: center;">FI<orange>MS</orange><yellow>Mod</yellow></td>
+      <th style="border: 3px solid black;border-left: 5px solid black;border-bottom: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><yellow>Mod</yellow> needed</th>
+    </tr>
+    <tr>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-left: 3px solid black;vertical-align:middle;text-align: center;">FI<orange>MS</orange><orange>SingleMS</orange></td>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 3px solid black;vertical-align:middle;text-align: center;">FI<orange>MS</orange></td>
+      <th style="border: 3px solid black;border-left: 5px solid black;border-bottom: 3px dashed black;border-top: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><yellow>Mod</yellow> NOT needed</th>
+    </tr>
+    <tr>
+      <th rowspan="2" style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 5px solid black;border-left: 3px solid black;border-bottom: 3px solid black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><orange>MS</orange> NOT needed</th>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-left: 3px solid black;vertical-align:middle;text-align: center;">FI<yellow>Mod</yellow><orange>SingleMS</orange></td>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 3px solid black;vertical-align:middle;text-align: center;">FI<yellow>Mod</yellow></td>
+      <th style="border: 3px solid black;border-left: 5px solid black;border-bottom: 3px dashed black;border-top: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><yellow>Mod</yellow> needed</th>
+    </tr>
+    <tr>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-left: 3px solid black;border-bottom: 3px solid black;vertical-align:middle;text-align: center;">FI<orange>SingleMS</orange></td>
+      <td style="border: 3px dashed var(--palette-fill-table-headers-neutral);border-right: 3px solid black;border-bottom: 3px solid black;vertical-align:middle;text-align: center;">FI</td>
+      <th style="border: 3px solid black;border-left: 5px solid black;border-top: 3px dashed black;vertical-align:middle;text-align: center;background-color: var(--palette-fill-table-headers-neutral);"><yellow>Mod</yellow> NOT needed</th>
+    </tr>
+  </tbody>
+</table>
+
+#### Mod Chase (<yellow>Mod</yellow>)
+
+Caption: FI<yellow>Mod</yellow>, FI;
+Class: strat_split;
+
+| INVIS | FI    | FI<yellow>Mod</yellow> |
+| ----- | ----- | ---------------------- |
+| $q_1$ | CHECK | Buy if $q_1$ cost $\times (1+$ lvl mod $23) <$ min$\left(q_2,K,m\right)$ cost |
+| $q_2$ |       | CHECK |
+| $K$   |       | CHECK |
+| $m$   |       | CHECK |
+| $n$   | CHECK | Buy if $n$ cost $\times (1+$ lvl mod $11) <$ min$\left(q_2,K,m\right)$ cost |
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -704,7 +851,7 @@ One unique feature about FI is the introduction of Permanent Milestone (Perma). 
 
 #### Strategies Summary
 
-[TODO: Insert theory strats]
+Caption
 
 #### Milestone Swap (<orange>MS</orange>)
 
