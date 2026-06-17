@@ -31,3 +31,42 @@ function copyText(id){
 }
 
 window.copyText = copyText;
+
+// Grab all copy buttons and their associated copy targets.
+// Discards all without an onClick, target for copy, or has an invalid target.
+const copy_ids = $(".copy-btn").map(function() {
+    console.log("$(this):", $(this));
+    const onClick = $(this).attr("onClick");
+    console.log("onClick:",onClick);
+    if (onClick === undefined) {return "";}
+    const res = /\s*copyText\s*\(\s*(['"])(?<id>(?:(?!\1).)*)\1\s*\)\s*;?\s*/.exec(onClick);
+    console.log("res:", res);
+    //if (res == null) {return "";}
+    console.log(res === null ? "" : res.groups.id);
+    return res === null ? "" : res.groups.id;
+  }).get().filter(
+    // Second condition should cover the first, but it's included in case.
+    (id) => (id != "") && ($("#" + id).length != 0)
+);
+console.log("copy_ids:", copy_ids);
+
+// Sets copied text to be the clean version instead of the displayed version on the site.
+function clean_copy_text(event) {
+  const selection = document.getSelection();
+  event.clipboardData.setData(
+    "text/plain",
+    copyText(event.target.id) 
+  );
+  event.preventDefault();
+}
+
+// Add copy and cut Event Listeners for all valid copy targets to output clean copied text.
+copy_ids.forEach((id) => {
+  const ele = $("#" + id)[0];
+  ele.addEventListener("copy", function(event) {
+    clean_copy_text(event);
+  });
+  ele.addEventListener("cut", function(event) {
+    clean_copy_text(event);
+  });
+})
