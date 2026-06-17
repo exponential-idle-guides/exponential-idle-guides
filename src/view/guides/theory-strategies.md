@@ -7,6 +7,28 @@ draft: false
 order: 9
 ---
 
+Caption: Rowspan Test;
+Class: strat_split;
+Align: middle;
+Header Rows: 2;
+Last Row: true;
+id: rowspan-test;
+
+| header Rowspan |   | header rowspan colspan | Regular | Headers     |
+| -------------- | - | ---------------------- | ------- | ----------- |
+| ROWSPAN        |   | ROWSPAN                | stuff   | other stuff |
+| body regular f |   |                        | colspan | regular     |
+| body rowspan   |   | ROWSPAN                | CHECK   | CHECK       |
+| ROWSPAN        | r |                        | colspan | regular     |
+| body regular f |   |                        | ROWSPAN | CHECK       |
+| body regular c | c |                        | colspan | regular     |
+| body rowspan   | c |                        | ROWSPAN | CHECK       |
+| body regular m | c |                        | colspan merged | regular     |
+| body regular m | c | ROWSPAN                | ROWSPAN | regular     |
+| apple | | | colspan | regular |
+| pear | ROWSPAN | ROWSPAN | ROWSPAN | regular |
+| pineapple | ROWSPAN | regular | regular | regular |
+
 The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers), can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
 
 For help on specific (active) strategies, Hackzzzzzz's [Theory Quick Purchase Testers](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) can output when to buy variables. Take a look for help with difficult strategies.
@@ -99,7 +121,7 @@ Caption: Publication Multiplier To Stop Buying Variables At;
 class: breakdown;
 
 | INVIS        | T2<light-blue>MC</light-blue> | T2<light-blue>MC2</light-blue> | T2<light-blue>MC3</light-blue> |
-| ------------ | ----------------------------- | --------------------------------------------------------------------- | --------------------------------- |
+| ------------ | ----------------------------- | ------------------------------ | ------------------------------ |
 | $q_4$, $r_4$ | 1,150 | 550   | 750   |
 | $q_3$, $r_3$ | 2,250 | 2,050 | 1,700 |
 | $q_2$, $r_2$ | 2,900 | 2,700 | 2,650 |
@@ -273,16 +295,17 @@ Class: strat_split;
 | $q_1$ | | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
 | $q_2$ | | CHECK |
 | Milestone Swap<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | 2 → 3 → 1 | [class="dashed_b";]<orange>Stage 1</orange> (1 min): 1 → 3 → 2 |
-| | | [class="dashed_b";]<orange>Stage 2</orange> (1 min): 3 → 1 → 2 |
+| ROWSPAN | ROWSPAN | <orange>Stage 2</orange> (1 min): 3 → 1 → 2 |
 
 #### Active-Idle Strategy Pairs
 
 Caption: T4<blue>C3</blue><yellow>Mod</yellow>, T4<blue>C3</blue>;
 Class: strat_split;
+Header rows: 2;
 
-| INVIS | T4<blue>C3</blue> | | [class="dashed_b";]T4<blue>C3</blue><yellow>Mod</yellow> |
-| ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
+| INVIS | T4<blue>C3</blue> | | T4<blue>C3</blue><yellow>Mod</yellow> |
 | ----- | ----------------- | --------------- | -------------- |
+| ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
 | $c_3$ | | | CHECK |
 | $q_1$ | CHECK | | Buy if $q_1$ cost $\times (10 + $ lvl % $10) <$ min$\left(q_2,c_3\right)$ cost |
 | $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{2}{3} c_3$ cost |
@@ -493,10 +516,11 @@ Class: strat_split;
 
 Caption: T8<light-blue>MC</light-blue>;
 Class: strat_split;
+Header rows: 2;
 
 | INVIS | | | Pub. Multi. |
-| ROWSPAN | Less than 1.6 | 1.6 - 2.3 | More than 2.3 |
 | - | - | - | - |
+| ROWSPAN | Less than 1.6 | 1.6 - 2.3 | More than 2.3 |
 | $c_1$ | CHECK | | REDX |
 | $c_2$ | | | CHECK |
 | $c_3$ | | CHECK | REDX |

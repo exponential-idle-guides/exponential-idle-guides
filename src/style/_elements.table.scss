@@ -35,7 +35,23 @@ th, td {
 	padding-left: 0.4em;
 	padding-right: 0.4em;
 
-	&:first-child {
+	/*&:not(.rowspanned):first-child, &.rowspanned.first-column {
+		position: sticky;
+		left: 0;
+		background-color: var(--palette-fill-transparent);
+	}*/
+}
+table:not(.rowspanned) {
+	th, td {
+		&:first-child {
+			position: sticky;
+			left: 0;
+			background-color: var(--palette-fill-transparent);
+		}
+	}
+}
+table.rowspanned {
+	&.first-column {
 		position: sticky;
 		left: 0;
 		background-color: var(--palette-fill-transparent);
@@ -48,7 +64,7 @@ caption {
 // commonly used classes
 .invisible {
 	border: none !important;
-	background-color:transparent !important;
+	background-color: var(--palette-fill) !important;
 }
 .arrow {
 	padding: 0em 0em 0em 0em;
@@ -143,31 +159,40 @@ tfoot td{
 	.bheader {
 		@extend %breakdown_headers;
 		border-left: $table-border-thin;
-		&:first-child {
-			border-left: none;
-		}
+	}
+	&:not(.rowspanned) .bheader:first-child, &.rowspanned .first-column.bheader {
+		border-left: none;
 	}
 	td {
 		padding: $table-padding;
 		text-align: center;
-		&:first-child {
+		/*&:not(.rowspanned):first-child, &.rowspanned.first-column {
 			@extend %breakdown_headers;
-		}
+		}*/
+	}
+	&:not(.rowspanned) td:first-child, &.rowspanned .first-column {
+		@extend %breakdown_headers;
 	}
 	th {
-		background-color:var(--palette-fill-table-headers-light);
+		background-color:var(--palette-fill-table-headers-light) !important;
 		border-bottom: $table-border;
 		padding: $table-padding;
 		text-align: center;
+		&.invisible {
+			background-color: var(--palette-fill) !important;
+		}
 	}
 	tbody th{
-		&:first-child {
+		/*&:not(.rowspanned):first-child, &.rowspanned.first-column {
 			border-left: none;
-		}
+		}*/
 		font-weight: bold;
 		border-right: $table-border;
 		border-bottom: none;
 		border-left: $table-border-thin;
+	}
+	&:not(.rowspanned) tbody th:first-child, &.rowspanned .first-column {
+		border-left: none;
 	}
 }
 
@@ -176,10 +201,14 @@ tfoot td{
 	td {
 		padding: $table-padding;
 		text-align: left;
-		&:first-child {
+		/*&:not(.rowspanned):first-child, &.rowspanned.first-column {
 			@extend %breakdown_headers;
 			text-align: center;
-		}
+		}*/
+	}
+	&:not(.rowspanned) td:first-child, &.rowspanned .first-column {
+		@extend %breakdown_headers;
+		text-align: center;
 	}
 	th {
 		color: var(--palette-stroke-table-headers);
@@ -189,39 +218,49 @@ tfoot td{
 		text-align: center;
 	}
 	tbody th{
-		&:first-child {
+		/*&:not(.rowspanned):first-child, &.rowspanned.first-column {
 			border-left: none;
-		}
+		}*/
 		font-weight: bold;
 		border-right: $table-border;
 		border-bottom: none;
 		border-left: $table-border-thin;
 	}
+	&:not(.rowspanned) tbody th:first-child, &.rowspanned .first-column {
+		border-left: none;
+	}
 }
 
 %strat {
 	word-break: keep-all;
-	td {
+	tbody tr td {
 		padding: $table-padding;
 		text-align: center;
-		&:first-child {
-			color: var(--palette-stroke-table-headers);
-			background-color: var(--palette-fill-table-headers-dark);
-			font-weight: bold;
-			border-right: $table-border-thin;
-		}
 	}
-	th {
+	&:not(.rowspanned) tbody tr td:first-child, &.rowspanned .first-column {
+		color: var(--palette-stroke-table-headers);
+		background-color: var(--palette-fill-table-headers-dark);
+		font-weight: bold;
+		border-right: $table-border-thin !important;
+	}
+	th, thead tr td {
 		color: var(--palette-stroke-table-headers);
 		background-color: var(--palette-fill-table-headers-neutral);
 		font-weight: bold;
-		border-top: $table-border-thin;
+		//border-top: $table-border-thin;
 		padding: $table-padding;
 		text-align: center;
 	}
 	tbody {
 		border-top: $table-border;
 	}
+	//tbody, thead tr:first-child {
+	/*tbody {
+		border-left: $table-border-thin;
+	}*/
+	/*&.rowspanned .middle-column, &.rowspanned .left-column {
+		border-left: none !important;
+	}*/
 }
 .strat {
 	@extend %strat;
@@ -234,48 +273,107 @@ tfoot td{
 }
 .strat_separated {
 	@extend %strat;
-	th {
+	th, thead tr td {
 		border-right: $table-border-thin;
-		&:last-child {
+		/*&:not(.rowspanned):last-child, &.rowspanned.last-column {
+			border-right: none !important;
+		}*/
+	}
+	&:not(.rowspanned) {
+		th, thead tr td {
+			&:last-child {
+				border-right: none !important;
+			}
+		}
+	}
+	&.rowspanned {
+		.last-column {
 			border-right: none !important;
 		}
 	}
 }
 .strat_split {
 	@extend %strat;
-	td {
-		border-bottom: $table-border-thin;
+	th, td {
 		vertical-align: middle;
-		&:not(:first-child) {
-			border-right: $table-border-dashed-neutral;
-			&.dashed_r, &.dashed_right {
-				border-right: $table-border-dashed-neutral !important;
-			}
-			&.dashed_l, &.dashed_left {
-				border-left: $table-border-dashed-neutral !important;
-			}
-			&.dashed_t, &.dashed_top {
-				border-top: $table-border-dashed-neutral !important;
-			}
-			&.dashed_b, &.dashed_bottom {
-				border-bottom: $table-border-dashed-neutral !important;
-			}
-			&.dashed {
-				border: $table-border-dashed-neutral !important;
-			}
-		}
 		&:last-child {
-			border-right: $table-border-thin;
+			border-right: $table-border-thin !important;
+		}
+		&:first-child.invisible {
+			border-right: $table-border-thin !important;
+			border-left: none !important;
+		}
+		&.invisible {
+			background-color: var(--palette-fill) !important;
 		}
 	}
-	th {
-		border-top: $table-border-thin;
-		border-right: $table-border-dashed;
+	tfoot th, tfoot td {
 		&:last-child {
-			border-right: $table-border-thin;
-		}
-		&:nth-child(2) {
-			border-left: $table-border-thin;
+			border-right: none !important;
 		}
 	}
+	tbody tr td {
+		border-bottom: $table-border-thin;
+	}
+	&:not(.rowspanned) tbody tr td:not(:first-child), &.rowspanned :not(caption):not(tfoot) :not(.first-column) {
+		border-right: $table-border-dashed-neutral;
+		&.dashed_r, &.dashed_right {
+			border-right: $table-border-dashed-neutral !important;
+		}
+		&.dashed_l, &.dashed_left {
+			border-left: $table-border-dashed-neutral !important;
+		}
+		&.dashed_t, &.dashed_top {
+			border-top: $table-border-dashed-neutral !important;
+		}
+		&.dashed_b, &.dashed_bottom {
+			border-bottom: $table-border-dashed-neutral !important;
+		}
+		&.dashed {
+			border: $table-border-dashed-neutral !important;
+		}
+	}
+	&:not(.rowspanned) thead tr td:not(:first-child), &:not(.rowspanned) th:not(:first-child) {
+		&.dashed_r, &.dashed_right {
+			border-right: $table-border-dashed !important;
+		}
+		&.dashed_l, &.dashed_left {
+			border-left: $table-border-dashed !important;
+		}
+		&.dashed_t, &.dashed_top {
+			border-top: $table-border-dashed !important;
+		}
+		&.dashed_b, &.dashed_bottom {
+			border-bottom: $table-border-dashed !important;
+		}
+		&.dashed {
+			border: $table-border-dashed !important;
+		}
+	}
+	svg, .MathJax, span, sub {
+		border: none !important;
+	}
+	&:not(.rowspanned) tbody tr td:first-child, &.rowspanned .first-column {
+		border-right: $table-border-thin;
+	}
+	th, thead tr td {
+		//border-top: $table-border-thin;
+		border-right: $table-border-dashed !important;
+		/*&:not(.rowspanned):last-child, &.rowspanned.last-column {
+			border-right: $table-border-thin;
+		}*/
+		border-bottom: $table-border-thin !important;
+	}
+	&.rowspanned {
+		.last-column {
+			border-right: $table-border-thin !important;
+		}
+	}
+	
+	/*&:not(.rowspanned) td:first-child.invisible {
+		border-right: $table-border-thin !important;
+	}
+	&.rowspanned .first-column.invisible {
+		border-right: $table-border-thin !important;
+	}*/
 }

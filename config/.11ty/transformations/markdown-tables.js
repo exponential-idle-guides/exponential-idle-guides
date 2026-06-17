@@ -15,40 +15,6 @@ const p_regexes = {
   align: new RegExp(String.raw`(?:^|;)(\s*[aA]lign:\s*(?<align>[lL][eE][fF][tT]|[mM][iI][dD][dD][lL][eE]|[rR][iI][gG][hH][tT])\s*;)`,"m"),
   header_rows: new RegExp(String.raw`(?:^|;)(\s*[hH]eader[_\- ][rR]ows:\s*(?<header_rows>\d+)\s*;)`,"m")
 };
-/*const p_regexes = {
-    caption: String.raw`([cC]aption:\s*(?<caption>(?:.*?(?:<.*?>.*?<\/.*?>|<\/?br>))*.*?)\s*;)`,
-    id: String.raw`([iI][dD]:\s*(?<id>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;)`,
-    classes: String.raw`([cC]lass(?:es)?:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;)`,
-    last_row: String.raw`([lL]ast[_\- ][rR]ow:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;)`,
-    align: String.raw`([aA]lign:\s*(?<align>[lL][eE][fF][tT]|[mM][iI][dD][dD][lL][eE]|[rR][iI][gG][hH][tT])\s*;)`,
-    header_rows: String.raw`([hH]eader[_\- ][rR]ows:\s*(?<header_rows>\d+)\s*;)`
-};
-const p_start = Object.values(p_regexes).reduce(
-    (s,r) => s + `(?=(?:.*?${r})?)`,
-    String.raw`^(?:`
-) + String.raw`)\s*`;
-function p_end(options, first = true) {
-    const l = options.length;
-    if (l === 0) {
-        return "";
-    } else if (l === 1) {
-        return options[0] + "?";
-    }
-    let res = "(?:";
-    const q = first ? "" : "?";
-    for (let i=0; i<l; i++) {
-        if (i !== 0) {res += "|";}
-        res += options[i] + q + String.raw`\s*`;
-        res += p_end([...options.slice(0,i), ...options.slice(i+1,l)], false);
-    }
-    return res + ")"
-}
-const p_regex = new RegExp(
-  p_start
-    + p_end(Array.from({length: Object.entries(p_regexes).length}, (_, i) => "\\" + (i * 2 + 1)))
-    + String.raw`\s*$`,
-  "ms"
-);*/
 
 module.exports = function (config, exclusions) {
   config.addTransform("markdown-tables", function(content, outputPath) {
@@ -65,7 +31,6 @@ module.exports = function (config, exclusions) {
         const table = $(this);
 
         // colspan
-        // TODO: Make this cleaner (and not as recursive and dumb)
         while (/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/.test(table.html())) {
           table.html(table.html().replace(/<(?<start>th|td)(?: colspan="(?<first>\d+)")?><\/\1>\s*<\1(?: colspan="(?<second>\d+)")?>(?<inner>.*?)<\/\1>/g, (...args) => {
               const { start, first, second, inner } = args[args.length - 1];
@@ -77,12 +42,6 @@ module.exports = function (config, exclusions) {
           ));
         }
         
-        // Removing thead/tbody if empty
-        const thead = table.find("thead");
-        if (thead[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(thead.html().replaceAll(/\n/g,""))) {thead.remove();}
-        const tbody = table.find("tbody");
-        if (tbody[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(tbody.html().replaceAll(/\n/g,""))) {tbody.remove();}
-        
         let rowspan_present = false;
         // individual element classes, styles, types, and shorthands
         ["td", "th"].forEach((ele) => {table.find(ele).each(function() {
@@ -93,36 +52,33 @@ module.exports = function (config, exclusions) {
             const shorthand_res = /^\s*(?<inner>INVIS|ARROW|CHECK|REDX|RED_X|OR|SKIP|ROWSPAN)(?<outer>\s*<\/?br>\s*\(.*\))?\s*$/.exec(s);
             if (shorthand_res == null) {return t.html();}
             const {inner, outer} = shorthand_res.groups;
-            let classes;
-            let html;
+            let classes = "";
+            let html = "";
             switch(inner) {
               case "INVIS":
                 classes = "invisible";
-                html = "";
                 break;
               case "ARROW":
                 classes = "arrow";
                 html = "→";
                 break;
               case "CHECK":
-                classes = "";
                 html = "✔️";
                 break;
               case "REDX":
               case "RED_X":
-                classes = "";
                 html = "❌";
                 break;
               case "OR":
-                classes = "";
                 html = "<strong>Or</strong>";
                 break;
               case "SKIP":
-                classes = "";
                 html = "<strong class='red'>SKIP</strong>";
                 break;
               case "ROWSPAN":
+                classes = "rowspan"
                 rowspan_present = true;
+                break;
               default:
                 return t.html();
             }
@@ -202,29 +158,151 @@ module.exports = function (config, exclusions) {
           table.attr("align", res.align == "" ? "middle": res.align.toLowerCase());
           const h_rows = parseInt(res.header_rows);
           if (!isNaN(h_rows) && h_rows > 1) {
-            // pass
+            for (let r = Math.min(h_rows, table.find("tbody").children("tr").length); r > 1; r--) {
+              table.find("tbody").find("tr:first-child").insertAfter(table.find("thead").find("tr:last-child"));
+            }
           }
           prev.remove();
-          /*const res = p_regex.exec(replace_br(remove_soft_hyphen(prev.html())));
-          if (res != null){
-            const {caption, id, classes, last_row, align, header_rows, ungus_bungus} = res.groups;
-            if (caption != undefined) {
-              const new_caption = $("<caption>");
-              new_caption.html(caption);
-              new_caption.prependTo(table);
-            }
-            if (id != undefined) {table.attr("id", id);}
-            if (classes != undefined) {table.addClass(classes);}
-            if (last_row == undefined || last_row.toLowerCase() == "true") {
-              table.find("tbody").find("tr:last-child").addClass("last_row");
-            }
-            table.attr("align", align == undefined ? "middle": align.toLowerCase());
-            prev.remove();
-          }*/
         }
 
-        // ROWSPAN
+        // Removing thead/tbody if empty
+        const thead = table.find("thead");
+        if (thead[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(thead.html().replaceAll(/\n/g,""))) {thead.remove();}
+        const tbody = table.find("tbody");
+        if (tbody[0] != undefined && /^(?:<tr><(th|td)(?: colspan="\d+")?><\/\1><\/tr>)+$/g.test(tbody.html().replaceAll(/\n/g,""))) {tbody.remove();}
 
+        // Rowspan
+        if (rowspan_present) {
+          // TODO: Rowspan implementation
+          const thead = table.find("thead");
+          const tbody = table.find("tbody");
+          // Generate Position, Colspan, and Rowspan position arrays
+          const positions = {thead: [], tbody: []};
+          const colspans = {thead: [], tbody: []};
+          const rowspan_pos = {thead: [], tbody: []};
+          let rowspanned = false;
+
+          ["thead", "tbody"].forEach((tsect) => {table.find(tsect).children("tr").each(function(i, _) {
+            let tr = $(this);
+            positions[tsect].push(Array(0));
+            colspans[tsect].push(Array(0));
+            let p = 0;
+            tr.children("th, td").each(function() {
+              let child = $(this);
+              const colspan = $(child).attr("colspan") === undefined ? 1 : parseInt(child.attr("colspan"));
+              const classes = child.attr("class");
+              if (classes !== undefined) {
+                if (classes.includes("rowspan")) {
+                 rowspan_pos[tsect].push([i, p, colspan]);
+                }
+              }
+              positions[tsect].at(-1).push(p);
+              colspans[tsect].at(-1).push(colspan);
+              p += colspan;
+            });
+          })});
+          rowspan_pos.thead.reverse();
+          rowspan_pos.tbody.reverse();
+          
+          const get_rowspan = (r) => r === undefined ? 1 : r;
+          // Normal and Colspan Rowspan
+          const removed = [];
+          const within = {thead: [], tbody: []};
+          ["thead", "tbody"].forEach((tsect) => {rowspan_pos[tsect].forEach(([row, col, colspan], i) => {
+            // If rowspan is in first row, then nothing to rowspan above.
+            if (row === 0) {return;}
+            const target_i = positions[tsect][row - 1].indexOf(col);
+            // Rowspan doesn't have same start and end bounds
+            // If Rowspan is within the bounds of the upper element, then add to within to be checked later if merging Rowspans results in the correct size.
+            if (target_i === -1) {
+              const last_i = positions[tsect][row - 1].findLastIndex((num) => num <= col);
+              if (positions[tsect][row - 1][last_i] + colspans[tsect][row - 1][last_i] === col + colspan) {
+                within[tsect].push([row, col, colspan]);
+              }
+              return;
+            } 
+            const target_colspan = colspans[tsect][row - 1] [target_i];
+            if (target_colspan < colspan) {return;}
+            if (target_colspan > colspan) {
+              within[tsect].push([row, col, colspan]);
+              return;
+            }
+            const ele = $($(table.find(tsect).children("tr")[row]).children("th, td")[col]);
+            const rowspan = get_rowspan(ele.attr("rowspan"));
+            $($(table.find(tsect).children("tr")[row - 1]).children("th, td")[col]).attr("rowspan", (rowspan+1).toString());
+            rowspanned = true;
+            removed.push(ele);
+          })});
+
+          // Multi Colspan Rowspan cells
+          ["thead", "tbody"].forEach((tsect) => {
+            while (within[tsect].length) {
+              let rowspans = [within[tsect][0]];
+              const row = rowspans[0][0];
+              const f_col = rowspans[0][1];
+              const f_colspan = rowspans[0][2];
+              const rowspan = get_rowspan($($(table.find(tsect).children("tr")[row]).children("th, td")[f_col]).attr("rowspan"));
+              const last_i = positions[tsect][row - 1].findLastIndex((num) => num <= f_col);
+              const pos = positions[tsect][row - 1][last_i];
+              const colspan = colspans[tsect][row - 1][last_i];
+              if (pos + colspan != f_col + f_colspan) {
+                within[tsect].shift();
+                continue;
+              }
+              let i = 1;
+              let t_colspan = f_colspan;
+              while (true) {
+                rowspans.push(within[tsect][i])
+                t_colspan += rowspans[i][2];
+                if (rowspans[i][0] != row 
+                    || get_rowspan($($(table.find(tsect).children("tr")[rowspans[i][0]]).children("th, td")[rowspans[i][1]]).attr("rowspan")) != rowspan 
+                    || t_colspan > colspan
+                ) {
+                  while (i > 0) {
+                    within[tsect].shift();
+                    i--;
+                  }
+                  break;
+                }
+                if (t_colspan === colspan) {
+                  $($(table.find(tsect).children("tr")[row - 1]).children("th, td")[last_i]).attr("rowspan", (rowspan+1).toString());
+                  rowspanned = true;
+                  rowspans.forEach(([r, c, cs]) => removed.push($($(table.find(tsect).children("tr")[r]).children("th, td")[c])));
+                  while (i >= 0) {
+                    within[tsect].shift();
+                    i--;
+                  }
+                  break;
+                }
+              }
+            }
+          });
+
+          // Remove merged Rowspan cells
+          removed.forEach((ele, i) => $(ele).remove());
+
+          if (rowspanned) {
+            table.addClass("rowspanned");
+            const max_col = Math.max(...["thead", "tbody"].map((tsect) => Math.max(...positions[tsect].map((arr, i) => colspans[tsect][i].slice(-1)[0] + arr.slice(-1)[0]))));     
+            const new_colgroup = $("<colgroup>");
+            switch (max_col) {
+              case 1:
+                new_colgroup.html(String.raw`<col class="first-column last-column" />`);
+                break;
+              case 2:
+                new_colgroup.html(String.raw`<col class="first-column" /><col class="last-column" />`);
+                break;
+              default:
+                new_colgroup.html(
+                  String.raw`<col class="first-column" />`
+                  + `<col span="${max_col - 2}" class="middle-column" />`
+                  + String.raw`<col class="last-column" />`
+                );
+                break;
+            }
+            table.find("thead").before(new_colgroup);
+          }
+        }
       });
       return $.html();
     } else {
