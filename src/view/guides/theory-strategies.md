@@ -666,20 +666,20 @@ Class: strat_split;
 | | | [FOOT;]\*\*If $a_3$ is not unlocked, ✔️ $c_1$, $c_2$. |
 | | | [FOOT;]\*\*\*"Last strong $a_2$" refers to theh last $a_2$ level in <u>which $a_2$ llvl mod 10 = 1.</u> |
 
-Caption: EF<red>STOP</red><blue>Q1BXCX</blue>, EF<yellow>d</yellow>;
+Caption: EF<red>Stop</red><blue>Q1BXCX</blue>, EF<yellow>d</yellow>;
 Class: strat_split;
 
 | INVIS | Before Recovery | After Recovery |
 | ----- | --------------- | -------------- |
 | $\dot{t}$ | | CHECK |
-| $q_1$     | [class="dashed_b";]CHECK<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) | [class="dashed_b";]REDX<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) |
+| $q_1$     | [class="dashed_b";]CHECK<br>(EF<red>Stop</red><blue>Q1BXCX</blue>) | [class="dashed_b";]REDX<br>(EF<red>Stop</red><blue>Q1BXCX</blue>) |
 | ROWSPAN   | | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost<br>(EF<yellow>d</yellow>) |
 | $q_2$     | | CHECK |
 | $b_1$     | CHECK   | REDX    |
 | $b_2$     | ROWSPAN | ROWSPAN |
 | $c_1$     | ROWSPAN | ROWSPAN |
 | $c_2$     | ROWSPAN | ROWSPAN |
-| $a_1$     | | [class="dashed_b";]CHECK<br>(EF<red>STOP</red><blue>Q1BXCX</blue>) |
+| $a_1$     | | [class="dashed_b";]CHECK<br>(EF<red>Stop</red><blue>Q1BXCX</blue>) |
 | ROWSPAN   | | Buy if $a_1$ cost $<\frac{2}{5} q_2$ cost<br>(EF<yellow>d</yellow>) |
 | $a_2$     | | CHECK |
 | $a_3$     | | CHECK |
@@ -731,8 +731,8 @@ Class: breakdown;
 
 Start the publication at <orange>Stage 1</orange>. Swap to <orange>Stage 2</orange> if
 
-1. <u>Current</u> $\rho\times\rho\text{ ratio*} < \min{\left(c_2, 2\times n\right)}$ cost;</br>**OR**
-2. <u>Current</u> $\rho <u \frac{1}{2} q_2$ cost after recovery.
+1. <u>Current</u> $\rho\times\rho$ ratio\* $< \min{\left(c_2, 2\times n\right)}$ cost;</br>**OR**
+2. <u>Current</u> $\rho < \frac{1}{2} q_2$ cost after recovery.
 
 Swap bac to <orange>Stage 1</orange> if the criteria is no longer satisfied.
 
@@ -815,9 +815,9 @@ Class: strat_left;
 | ------------------------ | ------------------------- | -------------------------------------------------------------------------- |
 | 2<sup>nd</sup> Milestone | Adds $K$ term.            | Increases $\dot{r}$, $r$.<br>Increases $\rho$ <u>gradually over time</u>.  |
 | 3<sup>rd</sup> Milestone | Increases $q_1$ exponent. | Increases $\dot{q}$.<br>Increases $\dot{\rho}$ <u>gradually over time</u>. |
-| 4<sup>th</sup> Milestone | Adds $n$ and $m$.         | Increases $\dot{\rho}$ <u>instantaneously</u>.                             |
+| 4<sup>th</sup> Milestone | Adds $m$ and $n$.         | Increases $\dot{\rho}$ <u>instantaneously</u>.                             |
 
-With the 4<sup>th</sup> milestone affecting $\rho$ instantaneously and the 2<sup>nd</sup> and 3<sup>rd</sup> milestones affecting $\dot{\rho}$ gradually over time, this creates a potential room for milestone swapping to receive the benefits of stacked $q$, $m$, and $n$. The gradually stacked $q$ during swapping is permanent in the same publication. Milestone swapping (but NOT Perma Swapping) terminates at e1,188$\rho$ when all milestone points are allocated in all available milestone slots.
+With the 4<sup>th</sup> milestone affecting $\rho$ instantaneously and the 2<sup>nd</sup> and 3<sup>rd</sup> milestones affecting $\dot{\rho}$ gradually over time, this creates a potential room for milestone swapping to receive the benefits of stacked $q$, $m$, and $n$. The gradually stacked $q$ during swapping is permanent in the same publication. Milestone swapping (but NOT Perma Swapping) terminates at e1,188$\rho$ when all milestone points are allocated and the recovery is short enough that <orange>MS</orange> in recovery is no longer worthy.
 
 Caption: Milestone Swap Stages;
 Class: breakdown;
