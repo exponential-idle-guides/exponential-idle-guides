@@ -1,7 +1,14 @@
 import { globals } from '../init.js';
 import { close_all_popups } from '../popup.js';
-import { close_all_sidebar_collapsibles } from '../collapsibles.js';
 import { closeSidebar } from './close-sidebars.js';
+
+function close_all_sidebar_collapsibles() {
+  $('#sidebar .collapsible:is(h2,h3,h4)').each(function() {
+    $(this)
+      .find(String.raw`> label > input[type="checkbox"][role="toggle"]:checked`)
+      .prop('checked', false);
+  });
+}
 
 function openMobileSidebars(sidebars){
   close_all_popups();

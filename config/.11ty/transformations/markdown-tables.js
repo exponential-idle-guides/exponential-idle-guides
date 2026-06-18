@@ -13,7 +13,8 @@ const p_regexes = {
   classes: new RegExp(String.raw`(?:^|;)(\s*[cC]lass(?:es)?:\s*(?<classes>[a-zA-Z\d]+(?![_\-])|[a-zA-Z\d]+(?:[_\-][a-zA-Z\d]+)+)\s*;)`,"m"),
   last_row: new RegExp(String.raw`(?:^|;)(\s*[lL]ast[_\- ][rR]ow:\s*(?<last_row>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;)`,"m"),
   align: new RegExp(String.raw`(?:^|;)(\s*[aA]lign:\s*(?<align>[lL][eE][fF][tT]|[mM][iI][dD][dD][lL][eE]|[rR][iI][gG][hH][tT])\s*;)`,"m"),
-  header_rows: new RegExp(String.raw`(?:^|;)(\s*[hH]eader[_\- ][rR]ows:\s*(?<header_rows>\d+)\s*;)`,"m")
+  header_rows: new RegExp(String.raw`(?:^|;)(\s*[hH]eader[_\- ][rR]ows:\s*(?<header_rows>\d+)\s*;)`,"m"),
+  collapse: new RegExp(String.raw`(?:^|;)(\s*[cC]ollaps(?:ibl)?es?:\s*(?<collapse>[tT][rR][uU][eE]|[fF][aA][lL][sS][eE])\s*;)`)
 };
 
 module.exports = function (config, exclusions) {
@@ -147,7 +148,22 @@ module.exports = function (config, exclusions) {
           if (!found) {return;}
           if (res.caption != "") {
             const new_caption = $("<caption>");
-            new_caption.html(res.caption);
+            if (res.collapse.toLowerCase() == "true") {
+              table.addClass("collapsible");
+              new_caption.html(
+                res.caption
+                + String.raw`<label><input type="checkbox" role="toggle"><span class="table_collapse_btn"></span></label>`
+              );
+            } else {
+              new_caption.html(res.caption);
+            }
+            new_caption.prependTo(table);
+          } else if (res.collapse.toLowerCase() == "true") {
+            table.addClass("collapsible");
+            const new_caption = $("<caption>");
+            new_caption.html(
+              String.raw`<label><input type="checkbox" role="toggle"><span class="table_collapse_btn empty"></span></label>`
+            );
             new_caption.prependTo(table);
           }
           if (res.id != "") {table.attr("id", res.id);}

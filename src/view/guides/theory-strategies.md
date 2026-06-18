@@ -7,12 +7,13 @@ draft: false
 order: 9
 ---
 
-Caption: Rowspan Test;
+Caption: Rowspan Collapsible Test;
 Class: strat_split;
 Align: middle;
 Header Rows: 2;
 Last Row: true;
 id: rowspan-test;
+Collapsible: true;
 
 | header Rowspan |   | header rowspan colspan | Regular | Headers     |
 | -------------- | - | ---------------------- | ------- | ----------- |
@@ -28,6 +29,17 @@ id: rowspan-test;
 | apple | | | colspan | regular |
 | pear | ROWSPAN | ROWSPAN | ROWSPAN | regular |
 | pineapple | ROWSPAN | regular | regular | regular |
+
+No Caption Collapsible Test
+
+Collapsible: true;
+
+| Col 1 | Col 2 | Col 3 |
+| ----- | ----- | ----- |
+| Row 1 | Row 1 | Row 1 |
+|       |       | Row 2 |
+| | | [FOOT;]Footer time
+
 
 The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers), can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
 

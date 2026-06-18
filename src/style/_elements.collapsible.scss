@@ -2,75 +2,116 @@
   --collapsible-padding: 0.9rem;
   --sidebar-collapsible-padding: 0.5rem;
   --collapsible-width: 100%;
-  --body-collapsible-width: calc(var(--collapsible-width) - 2 * var(--collapsible-padding));
-  --sidebar-collapsible-width: calc(var(--collapsible-width) - 2 * var(--sidebar-collapsible-padding));
+  //--body-collapsible-width: calc(var(--collapsible-width) - 2 * var(--collapsible-padding));
+  //--sidebar-collapsible-width: calc(var(--collapsible-width) - 2 * var(--sidebar-collapsible-padding));
+  --body-collapsible-width: var(--collapsible-width);
+  --sidebar-collapsible-width: var(--collapsible-width);
+  --collapsible-symbol-closed: "\25B6\FE0E  "; //"\u{25B6}\u{FE0E}"
+  --collapsible-symbol-open: "\25BC  "; //"\u{25BC}"
 }
 
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
+%no_select {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+// Hide Input
+.collapsible label > input:where([type="checkbox"][role="toggle"]) {
+  display: none;
+}
+
+// Before symbols for collapsibles
+
+// Regular header collapsibles
+:is(h2, h3, h4).collapsible {
   color: var(--palette-stroke);
   cursor: pointer;
-  padding: var(--collapsible-padding);
-  width: var(--collapsible-width);
   border: none;
   text-align: left;
   outline: none;
-
-  h2 {font-size: 1.35em;}
-  h3 {font-size: 1.08em;}
-  h4 {font-size: 0.9em;}
-}
-.collapsible-closed {
-  background-color: var(--palette-fill-collapsible-closed);
-  &:hover {
-    background-color: var(--palette-fill-collapsible-open);
+  width: var(--collapsible-width);
+  > label:has(input:where([type="checkbox"][role="toggle"])) {
+    padding: var(--collapsible-padding);
+    cursor: pointer;
+    display: block;
   }
-}
-.collapsible-open {
-  background-color: var(--palette-fill-collapsible-open);
-  &:hover {
+  // Closed
+  &:has(> label > input:where([type="checkbox"][role="toggle"])) {
+    @extend %no_select;
     background-color: var(--palette-fill-collapsible-closed);
+    &:hover {
+      background-color: var(--palette-fill-collapsible-open);
+    }
+  }
+  // Open
+  &:has(> label > input:where([type="checkbox"][role="toggle"]:checked)) {
+    background-color: var(--palette-fill-collapsible-open);
+    &:hover {
+      background-color: var(--palette-fill-collapsible-closed);
+    }
+  }
+  // Before symbols for collapsibles
+  > label {
+    // Closed
+    &:has(input:where([type="checkbox"][role="toggle"]))::before {
+      content: var(--collapsible-symbol-closed);
+    }
+    // Open
+    &:has(input:where([type="checkbox"][role="toggle"]):checked)::before {
+      content: var(--collapsible-symbol-open);
+    }
+  }
+  // Content styling
+  &:has(> label > input:where([type="checkbox"][role="toggle"])) + div.content {
+    padding: 0 var(--collapsible-padding);
+    overflow: hidden;
+    background-color: var(--palette-fill);
+    color: var(--palette-stroke);
+  }
+  // Hide content by default
+  &:has(> label > input:where([type="checkbox"][role="toggle"]):not(:checked)) + div.content {
+    display: none;
+    //visibility: collapse;
   }
 }
-body .collapsible {
+body .collapsible:is(h2, h3, h4) {
   width: var(--body-collapsible-width) !important;
 }
+h2.collapsible {font-size: 1.35em;}
+h3.collapsible {font-size: 1.08em;}
+h4.collapsible {font-size: 0.9em;}
 
-.sidebar {
-  .collapsible {
-    width: var(--sidebar-collapsible-width) !important;
-    margin-top: 0.75rem;
+// Sidebar header collapsibles
+.sidebar :is(h2, h3, h4).collapsible {
+  margin-top: 0.75rem;
+  width: var(--sidebar-collapsible-width) !important;
+  > label:has(input:where([type="checkbox"][role="toggle"])) {
     padding: var(--sidebar-collapsible-padding);
   }
-  .collapsible-closed {
+  // Closed
+  &:has(> label > input:where([type="checkbox"][role="toggle"])) {
     background-color: var(--palette-fill-sidebar-collapsible-closed);
     &:hover {
       background-color: var(--palette-fill-sidebar-collapsible-open);
     }
   }
-  .collapsible-open {
+  // Open
+  &:has(> label > input:where([type="checkbox"][role="toggle"]:checked)) {
     background-color: var(--palette-fill-sidebar-collapsible-open);
     &:hover {
       background-color: var(--palette-fill-sidebar-collapsible-closed);
     }
   }
-  .content {
-    ul, ol {
-      margin-top: 0;
-      margin-bottom: var(--list-margin-top);
-    }
+  // ul, ol list styling within content block
+  &:has(> label > input:where([type="checkbox"][role="toggle"])) + div.content :is(ul, ol) {
+    margin-top: 0;
+    margin-bottom: var(--list-margin-top);
   }
 }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 var(--collapsible-padding);
-  display: none;
-  overflow: hidden;
-	background-color: var(--palette-fill);
-	color: var(--palette-stroke);
-}
-
+// Close all and Open all collapsible buttons
 .closecollapsibles, .opencollapsibles{
   position: fixed;
   right: var(--floating-margin-lr);
@@ -90,4 +131,51 @@ body .collapsible {
 }
 .opencollapsibles {
   bottom: calc(var(--floating-margin-tb) + 3.6em);
+}
+
+// Sable collapsibles
+// Closed by Default
+table.collapsible:has(> caption > label > input:where([type="checkbox"][role="toggle"]):not(:checked)) > :is(:not(caption)) {
+  &, & * {
+    visibility: collapse;
+    border: 0 !important;
+  }
+}
+table.collapsible > caption > label:has(> input:where([type="checkbox"][role="toggle"])) {
+	@extend %no_select;
+}
+table.collapsible > caption {
+  &:has(label > input:where([type="checkbox"][role="toggle"]) + span.table_collapse_btn:not(.empty)) {
+    margin-bottom: 0.25em
+  }
+  > label:has(input:where([type="checkbox"][role="toggle"])) {
+    margin-top: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    display:block;
+    width: fit-content;
+    cursor: pointer;
+  }
+  // Open
+  > label > input:where([type="checkbox"][role="toggle"]) + span.table_collapse_btn {
+    &:not(.empty) {
+      font-size: smaller;
+      margin-bottom: 0.25em;
+    }
+    &::before {
+      content: var(--collapsible-symbol-closed);
+    }
+    &::after {
+      content: "View Table";
+    }
+  }
+  // Closed
+  > label > input:where([type="checkbox"][role="toggle"]):checked + span.table_collapse_btn {
+    &::before {
+      content: var(--collapsible-symbol-open);
+    }
+    &::after {
+      content: "Collapse Table";
+    }
+  }
 }

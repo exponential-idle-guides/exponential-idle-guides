@@ -238,8 +238,7 @@ function section($, parent, skiplist) {
   const collap_dict = get_collap_dict($, h_dict, skiplist);
 
   for (const h of Object.keys(collap_dict).reduce((a,i) => [...a,...collap_dict[i].ids],[]).map((id) => $(id))){
-    h.html('\u{25B6}\u{FE0E}' + ' ' + h.html());
-    h.addClass('collapsible collapsible-closed');
+    h.addClass('collapsible');
   }
 
   apply($, h_dict, collap_dict, parent);
@@ -307,42 +306,23 @@ module.exports = function (config, exclusions) {
       }
 
       // For all Headers with no body to collapse, revert to regular header.
+      // For all Headers with a body to collapse, insert the label/input for toggling.
       $('.collapsible').each(function() {
         const t = $(this);
         const s = t.next();
         if (s.prop('outerHTML').match(/^<div\s+class="content"(?:\s+id="[^"]*")?>\s*<\/div>$/mi)) {
           s.remove();
-          t.removeClass('collapsible collapsible-open collapsible-closed');
-          t.html(t.html().slice(2))
+          t.removeClass('collapsible');
+        } else {
+          t.html(String.raw`<label><input type="checkbox" role="toggle">`
+            + t.html()
+            + String.raw`</label>`
+          );
         }
       });
 
-      const coll = main.find('.collapsible');
-
       // any elements with `.fake-h2`, `.fake-h3`, `.fake-h4` classes will be removed now that they have served their purpose
       supported.forEach(function(h_type, i) {main.children(".fake-" + h_type).each(function() {if(!($(this).attr('class').split(/(\s+)/).some(r => r=="retain-fake"))){$(this).remove()}})});
-
-      function open_collapsible(header) {
-        $(header).toggleClass('active');
-        $(header).next().css('display', 'block');
-        $(header).removeClass('collapsible-closed');
-        $(header).addClass('collapsible-open');
-        $(header).html($(header).html().replace(/\u{25B6}\u{FE0E}/u, '\u{25BC}'));
-      }
-      function close_collapsible(header) {
-        $(header).toggleClass('active');
-        $(header).next().css('display', 'none');
-        $(header).removeClass('collapsible-open');
-        $(header).addClass('collapsible-closed');
-        $(header).html($(header).html().replace(/\u{25BC}/u, '\u{25B6}\u{FE0E}'));
-      }
-
-      for (let i = 0; i < coll.length; i++) {
-        // open and close once to make sure it closes
-        // often breaks if in the sidebar for unknown reasons
-        open_collapsible(coll[i]);
-        close_collapsible(coll[i]);
-      }
       
       return $.html();
     } else {
