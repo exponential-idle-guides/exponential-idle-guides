@@ -2,8 +2,6 @@
   --collapsible-padding: 0.9rem;
   --sidebar-collapsible-padding: 0.5rem;
   --collapsible-width: 100%;
-  //--body-collapsible-width: calc(var(--collapsible-width) - 2 * var(--collapsible-padding));
-  //--sidebar-collapsible-width: calc(var(--collapsible-width) - 2 * var(--sidebar-collapsible-padding));
   --body-collapsible-width: var(--collapsible-width);
   --sidebar-collapsible-width: var(--collapsible-width);
   --collapsible-symbol-closed: "\25B6\FE0E  "; //"\u{25B6}\u{FE0E}"
@@ -133,7 +131,7 @@ h4.collapsible {font-size: 0.9em;}
   bottom: calc(var(--floating-margin-tb) + 3.6em);
 }
 
-// Sable collapsibles
+// Table collapsibles
 // Closed by Default
 table.collapsible:has(> caption > label > input:where([type="checkbox"][role="toggle"]):not(:checked)) > :is(:not(caption)) {
   &, & * {
