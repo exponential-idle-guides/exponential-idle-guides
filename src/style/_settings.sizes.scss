@@ -1,4 +1,8 @@
 :root {
   --floating-margin-lr: 0.3rem;
   --floating-margin-tb: calc(2 * var(--floating-margin-lr));
+  // vvh and vvw set by js through resizing listener.
+  // This is here in case of javascript disabled by user.
+  --vvh: 100dvh;
+  --vvw: 100dvw;
 }

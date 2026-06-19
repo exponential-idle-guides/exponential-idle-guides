@@ -1,5 +1,5 @@
 import {init_color_scheme as color} from './color-scheme.js';
-import { init_sidebar_btns as sidebar_btns } from './sidebar/sidebar-btns.js';
+import { init_sidebar_btns as sidebar_btns } from './sidebars.js';
 
 // Returns true if the user is on a mobile device, false otherwise.
 // Credit: woodsybread (Discord)
@@ -38,16 +38,11 @@ const globals = {
   sidebar_btn_list: ['TOCbtn', 'Guidebtn', 'Resourcebtn', 'Extensionbtn'],
   sidebar_list: ['TOCSidebar', 'GuideSidebar', 'ResourceSidebar', 'ExtensionSidebar'],
   general_btn_list: ['.back-to-top-link', '#closeCollapsibles', '#openCollapsibles', '.btn-color-scheme-toggle'],
-  curr_sidebar: 'none',
   Mobile: isMobileUser(),
   Safari: isSafari(),
   Navbar: false
 }
 globals.style_var = getComputedStyle(globals.query_root);
-globals.sidebar_trans = [
-  globals.style_var.getPropertyValue('--sidebar-transition-time'),
-  globals.style_var.getPropertyValue('--sidebar-text-transition-time')
-]
 export {globals};
 
 window.onload = () => {
@@ -63,8 +58,6 @@ window.onload = () => {
   });
 
   if (globals.Mobile) {
-    globals.qstyle.setProperty('--sidebar-transition-time', "0s");
-    globals.qstyle.setProperty('--sidebar-text-transition-time', "0s");
     globals.root.classList.add('mobile');
     if (globals.Safari) {
       globals.root.classList.add('safari');
@@ -82,4 +75,12 @@ window.onload = () => {
   }
 
   sidebar_btns();
+
+  // Consistent Viewport value changes for the CSS
+  function updateViewport() {
+    globals.qstyle.setProperty("--vvh", `${window.visualViewport.height}px`);
+    globals.qstyle.setProperty("--vvw", `${window.visualViewport.width}px`);
+  }
+  updateViewport();
+  window.visualViewport.addEventListener("resize", updateViewport);
 }

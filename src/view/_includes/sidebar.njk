@@ -14,11 +14,9 @@
   
 {% macro sidebar_option(id) %}
   <button class="openbtn" id="{{id}}">
-    <ul>
-      <li class="sidebar_btn_contents">
-        {{ caller() | safe }}
-      </li>
-    </ul>
+    <span class="sidebar_btn_contents">
+      {{ caller() | safe }}
+    </span>
   </button>
 {% endmacro %}
 

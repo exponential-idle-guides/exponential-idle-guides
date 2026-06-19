@@ -41,3 +41,7 @@
   stroke: var(--palette-stroke);
   font-size: calc(var(--font-size) * 50%);
 }
+
+#buttons {
+  z-index: 2;
+}

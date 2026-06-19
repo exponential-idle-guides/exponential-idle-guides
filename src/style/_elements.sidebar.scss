@@ -1,5 +1,5 @@
 $sidebar-btn-count: 5;
-$sidebar-btn-rows: 7;
+$sidebar-btn-rows: 5;
 
 :root{
   --sidebar-transition-time: 0.8s;
@@ -8,7 +8,6 @@ $sidebar-btn-rows: 7;
   --sidebar-padding-b: 0%;
 
   --sidebar-btn-max-width: 20vw;
-  --sidebar-btn-max-height: calc(2 * (var(--sidebar-btn-font-size) * var(--body-line-height)) + var(--sidebar-btn-padding-tb));
   --sidebar-btn-padding-lr: min(3vw, 20px);
   --sidebar-btn-padding-tb: min(2vh, 15px);
   --sidebar-btn-font-size: 1.2rem;
@@ -31,10 +30,8 @@ $sidebar-btn-rows: 7;
 
   --sidebar-height: 100vh;
   --sidebar-width: auto;
-  --sidebar-wrapper-max-width: 0vw; //0vw <-> 40vw
-  --sidebar-max-width: calc(var(--sidebar-wrapper-max-width) + var(--sidebar-btn-max-width));
+  --sidebar-wrapper-max-width: 0vw;
   --sidebar-wrapper-max-height: var(--sidebar-height);
-  --sidebar-max-height: var(--sidebar-height);
   
   --sidebar-column-gap: 0;
   --sidebar-column-count: 1;
@@ -52,12 +49,19 @@ $sidebar-btn-rows: 7;
   --sidebar-flex: inline-flex;
 
   --sidebar-scrollbar-width: 1vmin;
+  
+  #sidebar.open {
+    --sidebar-padding-lr: calc(var(--vvw) / 50);
+    --sidebar-closebtn-display: inline;
+    --sidebar-wrapper-max-width: 40vw;
+  }
 }
+
 :root.mobile {
   --sidebar-btn-padding-lr: min(2.25vw, 15px);
   --sidebar-btn-padding-tb: min(1.5vh, 10px);
-  --sidebar-transition-time: 0.5s;
-  --sidebar-text-transition-time: 0.3s;
+  --sidebar-transition-time: 0s;
+  --sidebar-text-transition-time: 0s;
 
   --sidebar-btn-max-width: 40vw;
   --sidebar-btn-position: static;
@@ -65,13 +69,11 @@ $sidebar-btn-rows: 7;
   --sidebar-closebtn-top-closed: calc(0px - var(--sidebar-closebtn-font-size));
 
   --sidebar-height: auto;
-  --sidebar-width: 100vw;
+  --sidebar-width: 100vw !important;
   --sidebar-wrapper-max-width: var(--sidebar-width);
-  --sidebar-max-width: var(--sidebar-width);
-  --sidebar-wrapper-max-height: 0vh; //0vh <-> 50vh
-  --sidebar-max-height: calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)));
+  --sidebar-wrapper-max-height: 0vh;
 
-  --sidebar-padding-lr: 2%;
+  --sidebar-padding-lr: 2% !important;
   --sidebar-column-gap: 5vw;
   --sidebar-column-count-helper: calc(96vw - 2 * 0.695rem);
   --sidebar-column-count: 2;
@@ -80,6 +82,15 @@ $sidebar-btn-rows: 7;
 
   --sidebar-grid: grid;
   --sidebar-flex: flex;
+
+  #sidebar.open {
+    --sidebar-content-padding: 8px;
+    --sidebar-padding-b: calc(var(--vvh) / 100);
+    --sidebar-wrapper-max-height: min(50vh, calc(100vh - ((2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size)))));
+    //--sidebar-wrapper-max-height: min(50vh, calc(100vh - ((2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * 1.34 * var(--sidebar-btn-font-size)))));
+    --sidebar-wrapper-max-width: var(--sidebar-width);
+    --sidebar-padding-lr: 2%;
+  }
 }
 :root.safari.mobile {
   --sidebar-closebtn-display: none;
@@ -89,6 +100,12 @@ $sidebar-btn-rows: 7;
   --sidebar-height: 50vh !important;
   --sidebar-width: 100vw !important;
   --sidebar-grid: none;
+  --sidebar-transition-time: 0s !important;
+  --sidebar-text-transition-time: 0s !important;
+
+  #sidebar.open {
+    --sidebar-grid: inline-grid;
+  }
 }
 @media screen and (orientation: landscape) {
   :root.mobile {
@@ -98,17 +115,27 @@ $sidebar-btn-rows: 7;
     --sidebar-btn-padding-tb: min(2.25vw, 15px);
   }
 }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  #sidebar.open .sidebar {
+    //padding-top: 15px;
+    font-size: 18px;
+  }
+}
 
 #sidebar {
   position: fixed;
   left: 0;
   top: 0;
-  max-width: var(--sidebar-max-width);
-  max-height: var(--sidebar-max-height);
+  max-width: calc(var(--sidebar-wrapper-max-width) + var(--sidebar-btn-max-width));
+  max-height: var(--sidebar-height);
   display: flex;
   flex-wrap: wrap;
   transition: all var(--sidebar-transition-time);
   pointer-events: none;
+  &.open {
+    max-height: min(100vh, calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size))));
+  }
 }
 #sidebars {
   display: var(--sidebar-grid);
@@ -122,7 +149,7 @@ $sidebar-btn-rows: 7;
 }
 .sidebar {
   pointer-events: auto;
-  z-index: 0;
+  z-index: -1;
   box-sizing: border-box;
   grid-area: 1/1;
   width: var(--sidebar-width);
@@ -181,26 +208,24 @@ $sidebar-btn-rows: 7;
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
   }
-}
-
-@counter-style sidebar_btn {
-  system: cyclic;
-  symbols: '☰';
-  suffix: ""; 
+  &.current_sidebar {
+    z-index: 1;
+  }
 }
 
 #sidebarButtons {
   pointer-events: auto;
   max-width: var(--sidebar-btn-max-width);
   width: auto;
-  display: var(--sidebar-flex);
+  max-height: fit-content;
+  display: var(--sidebar-flex) !important;
   flex-direction: column;
   vertical-align: top;
-  transition: var(--sidebar-transition-direction) var(--sidebar-transition-time);
+  transition: all var(--sidebar-transition-time);
   #sidebarButtonsWrap, #sidebarNavigation {
     display: contents;
   }
-  z-index: 100;
+  z-index: 2;
 
   position: var(--sidebar-btn-position);
   .closebtn {
@@ -208,8 +233,8 @@ $sidebar-btn-rows: 7;
     border-radius: 50%;
     position: absolute;
     display: var(--sidebar-closebtn-display);
-    top: var(--sidebar-closebtn-top);
-    left: var(--sidebar-closebtn-left);
+    top: var(--sidebar-closebtn-top-closed);
+    left: var(--sidebar-closebtn-left-closed);
     font-size: calc(var(--sidebar-closebtn-font-size));
     color: var(--palette-stroke-sidebar-base);
     transition: all var(--sidebar-transition-time);
@@ -219,7 +244,13 @@ $sidebar-btn-rows: 7;
     }
   }
 }
-#sidebarOptions {display:none;}
+#sidebarOptions {
+  display:none;
+  &.open {
+    display: contents;
+  }
+  transition: all var(--sidebar-transition-time);
+}
 
 .openbtn {
   display: block;
@@ -233,23 +264,17 @@ $sidebar-btn-rows: 7;
   border: none;
   word-wrap:normal;
   text-align:left;
+  transition: all var(--sidebar-transition-time);
   &:hover {
     background-color: var(--palette-fill-sidebar-hover);
   }
-  ul {
-    margin-top: 0;
-    li.sidebar_btn_contents {
-      padding: 0;
-      margin: 0;
-      list-style: sidebar_btn !important;
-    }
+  .sidebar_btn_contents::before {
+    content: "☰";
   }
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+  &#button_nav.open {
+    background-color: var(--palette-stroke-sidebar-base);
+    color: var(--palette-fill-sidebar);
+  }
 }
 
 

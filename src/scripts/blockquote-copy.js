@@ -48,7 +48,6 @@ const copy_ids = $(".copy-btn").map(function() {
     // Second condition should cover the first, but it's included in case.
     (id) => (id != "") && ($("#" + id).length != 0)
 );
-console.log("copy_ids:", copy_ids);
 
 // Sets copied text to be the clean version instead of the displayed version on the site.
 function clean_copy_text(event) {
