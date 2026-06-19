@@ -60,8 +60,8 @@ $sidebar-btn-rows: 5;
 :root.mobile {
   --sidebar-btn-padding-lr: min(2.25vw, 15px);
   --sidebar-btn-padding-tb: min(1.5vh, 10px);
-  --sidebar-transition-time: 0s;
-  --sidebar-text-transition-time: 0s;
+  --sidebar-transition-time: 0.5s;
+  --sidebar-text-transition-time: 0.3s;
 
   --sidebar-btn-max-width: 40vw;
   --sidebar-btn-position: static;
