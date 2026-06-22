@@ -1,0 +1,21 @@
+.btn-color-scheme-toggle {
+  .light, .dark {
+    position: fixed;
+    right: var(--floating-margin-lr);
+    top: var(--floating-margin-tb);
+    display: none;
+    margin: 0;
+    width: 0px;
+    fill: var(--palette-stroke);
+  }
+}
+
+:root.dark-mode .light, :root.light-mode .dark {
+  display: block;
+  width: 1.1em;
+  padding: 0.2em;
+  border: 1px solid var(--palette-stroke-hc);
+  background-color: var(--palette-fill);
+  border-radius: 0.25em;
+  box-shadow: var(--floating-shadow);
+}

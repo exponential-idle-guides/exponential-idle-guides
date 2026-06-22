@@ -1,0 +1,21 @@
+.footer {
+  text-align: right;
+}
+
+.footer__section {
+  margin-top: 1rem;
+	font-size: 0.65rem;
+}
+
+.footer__section:first-child {
+  margin-top: 3rem;
+}
+
+.footer__section--main.footer__section--main {
+  margin-top: 1rem;
+  padding-bottom: 0.85rem;
+}
+
+.footer__section--left {
+  text-align: left;
+}
