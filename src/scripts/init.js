@@ -1,5 +1,4 @@
 import {init_color_scheme as color} from './color-scheme.js';
-import { init_sidebar_btns as sidebar_btns } from './sidebars.js';
 
 // Returns true if the user is on a mobile device, false otherwise.
 // Credit: woodsybread (Discord)
@@ -74,7 +73,11 @@ window.onload = () => {
     globals.sidebar_list.push('CTSidebar');
   }
 
-  sidebar_btns();
+  // Init Sidebar Buttons  
+	["button_nav", ...globals.sidebar_btn_list].forEach((id) => {
+		const ele = document.getElementById(id);
+		ele.innerHTML = ele.innerHTML.replaceAll(String.fromCharCode(0x00ad),"");
+	})
 
   // Consistent Viewport value changes for the CSS
   function updateViewport() {
