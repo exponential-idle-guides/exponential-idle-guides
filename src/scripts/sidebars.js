@@ -2,6 +2,8 @@ import { globals } from './init.js';
 import { close_all_popups } from './popup.js';
 import { close_all_sidebar_collapsibles } from './collapsibles.js';
 
+let set_mobile_transitions = false;
+
 function Navigation(){
   $("#button_nav").toggleClass("open");
   $("#sidebarOptions").toggleClass("open");
@@ -36,6 +38,14 @@ window.addEventListener('click', function(e){
   ){
     Navigation();
   } else if(document.getElementById("sidebarOptions").contains(e.target)){
+    if (!set_mobile_transitions) {
+      // Prevent Screen Flash on mobile load.
+      if (globals.Mobile && !globals.Safari) {
+        globals.qstyle.setProperty("----sidebar-transition-time", "0.5s");
+        globals.qstyle.setProperty("--sidebar-text-transition-time", "0.3s");
+      }
+      set_mobile_transitions = true;
+    }
     $(".current_sidebar").removeClass("current_sidebar");
     for(const btn of globals.sidebar_btn_list){
       if(document.getElementById(btn).contains(e.target)){
