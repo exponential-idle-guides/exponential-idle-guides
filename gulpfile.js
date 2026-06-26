@@ -23,6 +23,11 @@ gulp.task('images', () => {
           .pipe(gulp.dest('_site/images/'));
 });
 
+gulp.task('favicon', () => {
+  return gulp.src('src/images/**/favicon.ico', {encoding: false})
+          .pipe(gulp.dest('_site/'));
+})
+
 gulp.task('redirects', () => {
   return gulp.src('src/_redirects', { allowEmpty: true })
           .pipe(gulp.dest('_site'));
@@ -37,7 +42,7 @@ gulp.task('robots', () => {
     .pipe(gulp.dest("_site"))
 });
 
-gulp.task('assets', gulp.parallel('css', 'scripts', 'images', 'utils'));
+gulp.task('assets', gulp.parallel('css', 'scripts', 'images', 'utils', 'favicon'));
 
 gulp.task('build', gulp.series('generate', 'assets', 'redirects', 'robots'));
 
@@ -52,5 +57,6 @@ gulp.task('watch', () => {
   gulp.watch('src/scripts/**/*.js', gulp.series('scripts'));
   gulp.watch('src/utils/**/*.js', gulp.parallel('generate-dev'));
   gulp.watch('src/images/**/*.{png,jpg,jpeg,svg}', gulp.series('images'));
+  gulp.watch('src/images/**/favicon.ico', gulp.series('favicon'));
 });
 
