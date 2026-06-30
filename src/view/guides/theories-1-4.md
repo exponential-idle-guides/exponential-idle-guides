@@ -319,11 +319,11 @@ Class: breakdown;
 | INVIS | Brief Description |
 | ----- | ----------------- |
 | [type="th";]$c_1$ | ~7% increase on the $c_1^{1.15}c_2$ term (instantaneous). |
-| [type="th";]$c_2$ | Doubles the $c_1^{1.15}c_2$ term (instantaneous). Note that this doesn't mean double $\dot{\rho}$ |
+| [type="th";]$c_2$ | Doubles the $c_1^{1.15}c_2$ term (instantaneous) |
 | [type="th";]$c_3$ | Doubles the $c_3q$ term (instantaneous). |
-| [type="th";]$c_4$ | Doubles the $c_4q$ term (instantaneous). |
-| [type="th";]$c_5$ | Doubles the $c_5q$ term (instantaneous). |
-| [type="th";]$c_6$ | Doubles the $c_6q$ term (instantaneous). |
+| [type="th";]$c_4$ | Doubles the $c_4q^2$ term (instantaneous). |
+| [type="th";]$c_5$ | Doubles the $c_5q^3$ term (instantaneous). |
+| [type="th";]$c_6$ | Doubles the $c_6q^4$ term (instantaneous). |
 | [type="th";]$q_1$ | ~7% increase on $\dot{q}$. Note that because of the square root relationship between time and $q$ mentioned earlier, this translates to \~3.5% increase in long term $q$. No instantaneous effect on $\dot{\rho}$. |
 | [type="th";]$q_2$ | Doubles the instantaneous value of $\dot{q}$. Note that because of the square root relationship between time and $q$ mentioned earlier, this translates to ~41% increase in long term $q$. No instantaneous effect on $\dot{\rho}$. |
 
