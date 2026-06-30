@@ -65,9 +65,11 @@ Minigames are puzzles that you can solve that will give you stars as a reward fo
 
 Stars are a currency that operates outside of the main game that you use to purchase star upgrades. These upgrades range from QoL (Quality of Life) features to boosts to the gameplay. For the most part, you should prioritize new variables as soon as you can, __EXCEPT__ for Autoprestige. Autoprestige is a huge boost in progress due to impossible to replicate levels of optimization, and you should prioritize it over variables of a similar cost. More details on star upgrades to prioritize can be found in following guides.
 
-### <green>True</green>/<red>False</red> auto expression evaluation
+### <green>True</green>/<red>False</red>/Cannot Evaluate auto expression evaluation
 
 If you enter the autoprestige or autosupremacy field to enter the expression, you will most often notice it evaluate as <red>False</red> and sometimes as <green>True</green>. When the evaluation becomes <green>True</green>, the expression will cause a prestige/supremacy respectively. Any other time when the expression is evaluated, it will evaluate as <red>False</red>. If the expression is evaluating to <red>False</red>, there is no bug, nor is it broken. It is doing exactly what it is meant to do.
+
+When the expression is evaluated as "Cannot Evaluate", this means $db/b$ is too small. This is intended game design and can be ignored.
 
 ###### NOTE: Entering the expression field where it displays the evaluation breaks [smooth() locking](#method-2-lock) which will break all any expression using said technique.
 
