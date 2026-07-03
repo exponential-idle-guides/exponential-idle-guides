@@ -2,6 +2,8 @@ $sidebar-btn-count: 5;
 $sidebar-btn-rows: 5;
 
 :root{
+  --sidebar-transition: var(--sidebar-transition-time), color 0s, background-color 0s;
+  --sidebar-text-transition: var(--sidebar-text-transition-time), color 0s, background-color 0s;
   --sidebar-transition-time: 0.8s;
   --sidebar-text-transition-time: 0.5s;
   --sidebar-padding-lr: 0%;
@@ -131,7 +133,7 @@ $sidebar-btn-rows: 5;
   max-height: var(--sidebar-height);
   display: flex;
   flex-wrap: wrap;
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
   pointer-events: none;
   &.open {
     max-height: min(100vh, calc(var(--sidebar-wrapper-max-height) + (2 * var(--sidebar-btn-count) * var(--sidebar-btn-padding-tb)) + (var(--sidebar-btn-rows) * var(--body-line-height) * var(--sidebar-btn-font-size))));
@@ -145,7 +147,7 @@ $sidebar-btn-rows: 5;
   height: var(--sidebar-height);
   max-width: var(--sidebar-wrapper-max-width);
   max-height: var(--sidebar-wrapper-max-height);
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
 }
 .sidebar {
   pointer-events: auto;
@@ -156,7 +158,7 @@ $sidebar-btn-rows: 5;
   color: var(--palette-stroke-sidebar-base);
   background-color: var(--palette-fill-sidebar);
   overflow-x: hidden;
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
   padding-bottom: var(--sidebar-padding-b);
 
   //scrollbar
@@ -190,7 +192,7 @@ $sidebar-btn-rows: 5;
     color: var(--palette-stroke-sidebar-header);
     padding: 0;
     margin-top: var(--sidebar-header-top);
-    transition: var(--sidebar-text-transition-time);
+    transition: var(--sidebar-text-transition);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
   }
@@ -203,7 +205,7 @@ $sidebar-btn-rows: 5;
     font-size: 1em;
     color: var(--palette-stroke-sidebar-base);
     display: block;
-    transition: var(--sidebar-text-transition-time);
+    transition: var(--sidebar-text-transition);
     margin-bottom: var(--sidebar-padding-b);
     padding-left: var(--sidebar-padding-lr);
     padding-right: var(--sidebar-padding-lr);
@@ -221,7 +223,7 @@ $sidebar-btn-rows: 5;
   display: var(--sidebar-flex) !important;
   flex-direction: column;
   vertical-align: top;
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
   #sidebarButtonsWrap, #sidebarNavigation {
     display: contents;
   }
@@ -237,7 +239,7 @@ $sidebar-btn-rows: 5;
     left: var(--sidebar-closebtn-left-closed);
     font-size: calc(var(--sidebar-closebtn-font-size));
     color: var(--palette-stroke-sidebar-base);
-    transition: all var(--sidebar-transition-time);
+    transition: var(--sidebar-transition);
     &:hover {
       text-decoration:none;
       color: var(--palette-stroke-sidebar-header);
@@ -249,7 +251,7 @@ $sidebar-btn-rows: 5;
   &.open {
     display: contents;
   }
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
 }
 
 .openbtn {
@@ -264,7 +266,7 @@ $sidebar-btn-rows: 5;
   border: none;
   word-wrap:normal;
   text-align:left;
-  transition: all var(--sidebar-transition-time);
+  transition: var(--sidebar-transition);
   &:hover {
     background-color: var(--palette-fill-sidebar-hover);
   }
