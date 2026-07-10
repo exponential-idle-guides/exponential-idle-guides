@@ -333,9 +333,9 @@ You can find the autoprestige used for R9 Swapping here: [Equation](/guides/intr
 
 #### T8 strategy
 
-The optimal publication multiplier is 2.5-5 depending on how close you are to the next milestone. This theory is extremely slow at the start which is why we skip until we obtain R9. It is also the only one with a $1e20$ milestone step. It will speed up once you hit $1e60$ and even faster at $1e80$ and $1e100$ etc. until ~$e250$-$e300$. The worst part is the $1e50$-$1e60$ grind. The grind to $1e60$ will take a good bit of time but is faster with R9.
+The optimal publication multiplier is 2.5-5 depending on how close you are to the next milestone. This theory is extremely slow at the start which is why we skip until we obtain R9. It is also the only one with a $1e20$ milestone step. It will speed up once you hit $1e60$ and even faster at $1e80$, $1e100$, etc. until ~$e250$-$e300$. The worst part is the $1e50$-$1e60$ grind. The grind to $1e60$ will take a good bit of time but is faster with R9.
 
-At the start, manual buy prioritizes $c_2$ then $c_1$ then rest. Once you get to 0/0/0/2, prioritize $c_2$ and $c_5$ then $c_1$ then the rest. Once at 2/0/3/0, you will prioritize $c_2$ and $c_4$ then $c_1$ then the rest after. This continues to max at 2/3/3/3.
+At the start, manual buy prioritizes $c_2$ then $c_1$ then rest. Once you get to 0/0/0/2 ($e52\tau$), turn off $c_3$. Prioritize $c_2$ and $c_5$ then $c_1$ then $c_4$. Once at 2/0/3/0 ($e100\tau$), turn off $c_3$ and $c_5$. Prioritize $c_2$ and $c_4$ then $c_1$. Once at $e160\tau$, if idle or semi-idle playstyle, turn off $c_5$. Prioritize $c_2$ and $c_4$ then $c_1$ then $c_3$. If active playstyle, check the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) for the best strategy and milestone route. Run 2/3/3/x if T8NoC5 is output. Run 2/x/3/3 otherwise. Turn off $c_3$ and $c_5$ for T8NoC3 and T8NoC5 respectively. If you are not sure, run 2/3/3/x. The milestone route is as follows:
 
 Class: breakdown;
 Caption: T8 Attractor Information;
@@ -355,7 +355,7 @@ last_row: false;
 | --------- | ----- | ------- | ----- | ------- |
 | 0/0/0/0   | ARROW | 1/0/0/0 | ARROW | 2/0/0/0 |
 | 0/0/0/2*  | ARROW | 0/0/0/3 | ARROW | 1/0/0/3 |
-| 2/0/3/0** | ARROW | 2/3/3/0 | ARROW | 2/3/3/3 |
+| 2/0/3/0** | ARROW | 2/3/3/0*** | ARROW | 2/3/3/3 |
 
 Class: milestone_routing;
 last_row: false;
@@ -364,9 +364,10 @@ last_row: false;
 | --------- | ----- | ----- | ----- | ----- | ----- | ----- |
 | OR        | INVIS | INVIS | INVIS | INVIS | INVIS | INVIS |
 | 1x2*      | ARROW | 4     | ARROW | 1     | ARROW | 1**   |
-| 1         | ARROW | 2 x3  | ARROW | 4 x3  | INVIS | INVIS |
+| 1         | ARROW | 2 x3***  | ARROW | 4 x3***  | INVIS | INVIS |
 | | | | | | | [FOOT;]* Swap 2/0/0/0 → 0/0/0/2 at $e52\tau$ |
 | | | | | | | [FOOT;]** Swap 1/0/0/3 → 2/0/3/0 |
+| | | | | | | [FOOT;]*** If active playstyle, check the [Theory Sim](https://exponential-developers.github.io/sim-3.0/) for the best strategy and milestone route. |
 
 ### Final Push to ee20k
 
