@@ -1714,6 +1714,8 @@ Caption: T8<green>PlaySolarSwap</green>;
 
 Every 34 seconds, remove one level from the first milestone then immediately add the level back.
 
+<u>Note:</u> Milestone route is 2/0/0/0 → 2/0/0/1 → 2/0/2/0 → 2/0/3/0 → 2/0/3/3 → 2/3/3/3. T8SolarSwap does not work without the Rössler attractor milestone.
+
 ###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 Strategy Credits:
@@ -1728,13 +1730,13 @@ Caption: T8<green>Play</green>;
 
 | | |
 | ----- | ------------------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{8}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_1$ | When cost$\times(5+$ lvl%$10)\lt$ $\text{min}(c_2,c_4)$ cost |
 | $c_2$ | CHECK |
 | $c_3$ | When cost is $\frac{2}{5}$ of $\text{min}(c_2,c_4)$ cost |
 | $c_4$ | CHECK |
 | $c_5$ | When cost is $\frac{1}{4}$ of $\text{min}(c_2,c_4)$ cost |
 
-<!-- If you ever see a “C” or an “L” instead of the “R”, use the Chen or Lorentz attractors instead of the Rössler attractor. -->
+<u>Note:</u> Milestone route is 2/0/0/0 → 2/0/0/1 → 1/0/3/0 → 2/0/3/0 → 2/0/3/3 → 2/3/3/3.
 
 Strategy Credits:
 
@@ -1771,8 +1773,6 @@ Caption: T8<red>No</red><blue>C35</blue><green>d</green>;
 | $c_3$ | REDX |
 | $c_4$ | CHECK |
 | $c_5$ | REDX |
-
-###### If you are confused about the "%", read about [it here.](#modulus-explanation)
 
 ### T8<red>No</red><blue>C35</blue>
 
@@ -1813,6 +1813,25 @@ Caption: T8<red>No</red><blue>C5</blue>;
 | $c_4$ | CHECK |
 | $c_5$ | REDX |
 
+### T8<red>No</red><blue>C3</blue><green>dSingleMSX</green>
+
+Class: strat;
+Caption: T8<red>No</red><blue>C3</blue><green>dSingleMSX</green>;
+
+| | |
+| ----- | -------------------------------------------------- |
+| $c_1$ | When cost is $\frac{1}{10}$ of $\text{min}(c_2,c_4)$ cost |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+
+**Milestone Swap:**
+
+If the sim outputs <green>SingleMS0</green>, then start the publication with 2/0/0/0 or 2/0/0/1. If the sim outputs <green>SingleMS2</green>, then start the publication with 0/0/2/0 or 1/0/2/0.
+
+The sim will output something like T8<red>No</red><blue>C3</blue><green>dSingleMS0 3.92e50</green>. When you reach the x.xxexx $\rho$ value, swap to 0/0/0/2 or 0/0/0/3.
+
 ### T8<red>No</red><blue>C3</blue><green>d</green>
 
 Class: strat;
@@ -1836,19 +1855,6 @@ Caption: T8<red>No</red><blue>C3</blue>;
 | $c_1$ | CHECK |
 | $c_2$ | CHECK |
 | $c_3$ | REDX |
-| $c_4$ | CHECK |
-| $c_5$ | CHECK |
-
-### T8<green>d</green>
-
-Class: strat;
-Caption: T8<green>d</green>;
-
-| | |
-| ----- | ----------------------------------------- |
-| $c_1$ | When cost is $\frac{1}{10}$ of $c_2$ cost |
-| $c_2$ | CHECK |
-| $c_3$ | CHECK |
 | $c_4$ | CHECK |
 | $c_5$ | CHECK |
 
