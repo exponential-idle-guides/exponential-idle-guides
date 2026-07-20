@@ -332,18 +332,18 @@ To remind users about the effect of $c_2$ brings to T5, <green>ManageQ</green> w
 Caption: T5<green>ManageQ</blue><yellow>Mod</yellow>, T5<green>RcvA</green>, T5
 Class: strat_split;
 
-| INVIS | T5 | T5<green>RcvA</green> | T5<green>ManageQ</blue><yellow>Mod</yellow> |
+| INVIS | T5 | T5<green>RcvA</green>, T5<green>RcvA2</green> | T5<green>ManageQ</blue><yellow>Mod</yellow> |
 | ----- | -- | --------------------- | ------------------------------------------- |
 | $q_1$ | | CHECK | Buy if $q_1$ cost $\times (3+$ lvl % $10) <$ min$\left(q_2,c_2,c_3\right)$ cost |
 | $q_2$ | | | CHECK |
 | $c_1$ | | CHECK | Buy if $q \times 1.5 < q_{\text{max}}$ |
-| $c_2$ | CHECK | Buy if $q \times 1.5 > q_{\text{max}}$ |
+| $c_2$ | CHECK | | Buy if $q \times 1.5 > q_{\text{max}}$ |
 | $c_3$ | | | CHECK |
 | | | | [FOOT;]$q_{\text{max}} = c_2 \times c_3^{1.1}$ |
 
 ###### For more information on the human implementation of the strategies, see [pre-T9](/guides/theories-5-8/#active) or [post-T9](/guides/endgame/#t5-routing) explanations.
 
-For T5<green>RcvA</green>, sim 3.0 will present the result as T5<green>RcvA</green> <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue>. The <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and hence will not be repeated here.
+For T5<green>RcvA</green> and T5<green>RcvA2</green>, sim 3.0 will present the result as T5<green>RcvA</green> <light-blue>xexxx</light-blue> or T5<green>RcvA2</green> <light-blue>c1: xxx</light-blue>. The <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and hence will not be repeated here.
 
 ### Theory 6: Integral Calculus
 
@@ -488,7 +488,58 @@ Class: strat_split;
 | $c_3$ | | Buy if $c_3$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost |
 | $c_4$ | | CHECK |
 | $c_5$ | Buy if $c_5$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | Buy if $c_5$ cost $<\frac{1}{4}$ min$\left(c_2,c_4\right)$ cost |
-| Milestone Swap<br>(T8<yellow>Mod</yellow><orange>Reset</orange>) | Remove and add 1 level of 1<sup>st</sup> milestone every 34 seconds. | N/A |
+| Milestone Reset<br>(T8<yellow>Mod</yellow><orange>Reset</orange>) | Remove and add 1 level of 1<sup>st</sup> milestone every 34 seconds. | N/A |
+
+<u>T8<yellow>Mod</yellow><orange>Reset</orange></u>
+
+Since the value of $\dot{\rho}$ highly depends on the position of the particle, the goal of resetting a particle is to allow the maximum average $\dot{\rho}$. By exploring the relationship of average $\dot{\rho}$ and time elapsed from the start with assistance of a plotted graph, one could conclude that the highest average $\dot{\rho}$ was achieved from 0 to tick 334 (see graph below), which corresponds to approximately 34 seconds. Hence, a strategy of <u>allowing the particle to travel from the mentioned interval, i.e. the first 34 seconds, repeatedly</u> in a publication was proposed to achieve maximum average $\dot{\rho}$. The particle reset was performed by removing and immediately adding back the 1<sup>st</sup> milestone, i.e. changing the attractors. The reset strategy starts at e40 and continues indefinitely due to the benefits associated lasting permanently even at late game.
+
+![T8 Average ρ dot with Rössler Attractor from Start](/images/t8_rossler_rate_graph.png)
+
+|   |   |
+| - | - |
+|   | [FOOT;] T8: Average $\dot{\rho}$ in Rössler Attractor from Start |
+
+When executing, remove and re-add the 1<sup>st</sup> milestone every 34 seconds (resetting Rössler attractor positions).
+
+#### T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>
+
+Caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>;
+Class: strat_split;
+
+| | |
+| - | - |
+| $c_1$ |  Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost |
+| $c_2$ | CHECK |
+| $c_3$ | REDX |
+| $c_4$ | CHECK |
+| $c_5$ | CHECK |
+
+T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS0</orange> occurs between e50-e60 $\tau$ terminating due to the rising power of $c_4$ and obtaining the 3<sup>rd</sup> milestone.
+T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange> occurs between e55-e76 $\tau$ terminating due to the rising power of $c_4$ resulting in the discontinued buying of $c_5$.
+
+caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>;
+class: strat_split;
+
+| INVIS | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS0</orange> | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS2</orange> |
+| - | - | - |
+| <orange>Stage 1</orange> | 2/0/0/0 | 0/0/X/0 |
+| <orange>Stage 2</orange> | 0/0/0/X | 0/0/0/3 |
+| | | [FOOT;]Swap from <orange>Stage 1</orange> to <orange>Stage 2</orange> at the $\rho$ provided by the sim. |
+
+#### Active-Idle Strategy Pairs
+
+Caption: T8<yellow>d</yellow>, T8, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
+Class: strat_split;
+
+| INVIS | T8, T8<yellow>d</yellow> | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
+| - | - | - | - | - |
+| $c_1$ | | | | CHECK<br>(T8, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
+| ROWSPAN | | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
+| $c_2$ | | | | CHECK |
+| $c_3$ | CHECK | REDX | CHECK | REDX |
+| $c_4$ | | | | CHECK |
+| $c_5$ | | CHECK | | REDX |
 
 #### Semi-Idle Strategies
 
@@ -505,14 +556,6 @@ Header rows: 2;
 | $c_4$ | | | CHECK |
 | $c_5$ | | | CHECK |
 
-#### Active-Idle Strategy Pairs
-
-\* Strategies with <yellow>d</yellow> indicates buy $c_1$ if $c_1$ cost$<\frac{1}{10}\min{\left(c_2, c_4\right)}$ cost otherwise autobuy.
-T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue> — Autobuy $c_1$\*, $c_2$, $c_4$ only
-T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue> — Autobuy $c_1$\*, $c_2$, $c_3$, $c_4$ only
-T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue> — Autobuy $c_1$\*, $c_2$, $c_4$, $c_5$ only
-T8<yellow>d</yellow>, T8 — Autobuy all
-
 ## Custom Theories
 
 ### Weierstraß Sine Product
@@ -522,7 +565,7 @@ Class: strat_split;
 
 | INVIS   | First 15 seconds | Rest of Publication |
 | ------- | ---------------- | ------------------- |
-| $q_1$   | CHECK   | [class="dashed_b";]Buy if $q_1$ cost $\times (6+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost<br>(WSP<yellow>MOD</yellow>) |
+| $q_1$   | CHECK   | [class="dashed_b";]Buy if $q_1$ cost $\times (6+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost<br>(WSP<yellow>Mod</yellow>) |
 | ROWSPAN | ROWSPAN | CHECK<br>(WSP<red>Stop</red><blue>C1</blue>) |
 | $q_2$   | | CHECK |
 | $n$     | | CHECK |
