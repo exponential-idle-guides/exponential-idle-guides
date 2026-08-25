@@ -282,7 +282,7 @@ last_row: false;
 
 ### Theory 8 skipping
 
-Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from $0-e60$ (don't worry, you will still buy it, just at $ee14k$, not $ee12k$). T8 is very slow until you get to ~$e60$ (it took the sim 16 hours to get that far into the theory without R9). We highly recommend buying T8 for the achievement, then selling it right away to use those students for $\varphi$. You will need ~$e1350\ \tau$ in order to get R9 ($ee14k$) without T8, which will help you get through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that** The current recommendation for your $\tau$ distribution for T8 skip is as follows:
+Temporarily skipping T8 is significantly faster than buying T8 right away because of how slow T8 is from $0-e60$ (don't worry, you will still buy it, just at $ee14k$, not $ee12k$). T8 is very slow until you get to ~$e60$ (it took the sim 12 hours to get that far into the theory without R9). You will need ~$e1350\ \tau$ in order to get R9 ($ee14k$) without T8, which will help you get through T8 faster than before. **You will need to buy T8 again to get R9, and you should start R9 right away after that** The current recommendation for your $\tau$ distribution for T8 skip is as follows:
 
 Class: strat;
 Caption: T8 skip $\tau$ recommendations;
