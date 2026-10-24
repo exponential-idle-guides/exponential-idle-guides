@@ -680,7 +680,7 @@ Class: breakdown;
 
 <u>Milestone Swap Criteria</u>
 
-1. Swap to next stage if $\rho^{2}$ ratio\* $ < \min{\left(b_1, b_2\right)}$ cost;</br>**OR**
+1. Swap to next stage if $\rho \times$ $\rho$ ratio\* $ < \min{\left(b_1, b_2\right)}$ cost;</br>**OR**
 2. Swap to <orange>Stage 3</orange> directly until publishing if Pub. Multi. $> 4.5$.
 
 Caption: $\rho$ ratio*;
