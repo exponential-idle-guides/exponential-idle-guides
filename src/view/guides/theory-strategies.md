@@ -1053,9 +1053,9 @@ Class: strat_split;
 | INVIS | BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> | BaP |
 | ----- | ------------------------------------------------------------------ | --- |
 | $\dot{t}$ | | CHECK |
-| $c_1$ | Buy if $c_1$ cost $\times ($lvl % $64)$ $< 2 \times$ min$\left(c2:c10, n\right)$ cost\* | CHECK |
-| $c_2$:$c_10$, $n$ | | CHECK |
-| | [FOOT;]\*If total cost to $c_1$ lvl 1 mod 64 $< 2 \times$ min$\left(c2:c10, n\right)$ cost, ✔️ c_1 (<light-red>Burst</light-red>) |
+| $c_1$ | Buy if $c_1$ cost $\times ($lvl % $64)$ $< 2 \times$ min$\left(c_2:c_{10}, n\right)$ cost\* | CHECK |
+| $c_2$:$c_{10}$, $n$ | | CHECK |
+| | [FOOT;]\*If total cost to $c_1$ lvl 1 mod 64 $< 2 \times$ min$\left(c_2:c_{10}, n\right)$ cost, ✔️ $c_1$ (<light-red>Burst</light-red>) |
 
 #### Milestone Swap (<orange>MS</orange>)
 
