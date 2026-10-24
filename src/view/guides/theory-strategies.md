@@ -473,7 +473,7 @@ Class: strat_split;
 | $c_2$ | | REDX | Buy if $c_2$ cost $<\frac{1}{X} c_6$ cost |
 | $c_3$ | CHECK | | Buy if $c_3$ cost $<\frac{1}{10} c_6$ cost |
 | $c_4$ | CHECK | | Buy if $c_4$ cost $<\frac{1}{10} c_6$ cost |
-| $c_5$ | CHECK | | Buy if $c_5$ cost $<\frac{1}{10} c_6$ cost |
+| $c_5$ | CHECK | | Buy if $c_5$ cost $<\frac{1}{4} c_6$ cost |
 | $c_6$ | | | CHECK |
 
 Caption: T7<blue>C3</blue><yellow>d</yellow>, T7<blue>C3</blue>;
