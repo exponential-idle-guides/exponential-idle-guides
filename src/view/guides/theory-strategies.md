@@ -59,7 +59,7 @@ Class: strat_split;
 
 | INVIS | T1<yellow>ModRatio</yellow> | T1<yellow>Ratio</yellow> |
 | ----- | -------------------------- | ------------------------ |
-| $q_1$ | Buy if<div style="text-align:left;">(1) $q_1$ cost $\times (6 + \text{lvl}\mod 10) < q_2$ cost; **AND**</br>(2) $q_1$ cost $\times (15 + \text{lvl}\mod 10)<c_4$ cost; **AND**</br>(3) $\rho>5 q_1$ cost | Buy if $\rho > 10 \times q_1$ cost</div> |
+| $q_1$ | Buy if<div style="text-align:left;">(1) $q_1$ cost $\times (6+$ lvl % $10) < q_2$ cost; **AND**</br>(2) $q_1$ cost $\times (15+ $ lvl % $10)<c_4$ cost; **AND**</br>(3) $\rho>5 q_1$ cost | Buy if $\rho > 10 \times q_1$ cost</div> |
 | $q_2$ | | Buy if $\rho > 1.11 \times q_2$ cost |
 | $c_1$ | | Buy if $\rho > 10 \times c_2$ ratio\* $\times c_1$ cost |
 | $c_2$ | | Buy if $\rho > c_2$ ratio\* $\times c_2$ cost |
