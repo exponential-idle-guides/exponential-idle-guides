@@ -195,8 +195,8 @@ Class: strat_split;
 
 | INVIS | T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23</blue> | T3<blue>ρ2C23C33</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue> | T3<blue>ρ2C23C31</blue><yellow>d</yellow>, T3<blue>ρ2C23C31</blue> |
 | ----- | - | - | - |
-| $b_1$ | | [class="dashed_b";]REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
-| ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
+| $b_1$ | | REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
+| ROWSPAN | | ROWSPAN | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
 | $b_2$ | | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{3}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue>) |
 | $b_3$ | | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{9} c_{23}$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
