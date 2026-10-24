@@ -554,7 +554,7 @@ Class: strat_split;
 | $c_5$ | CHECK |
 
 T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS0</orange> occurs between e50-e60 $\tau$ terminating due to the rising power of $c_4$ and obtaining the 3<sup>rd</sup> milestone.
-T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange> occurs between e55-e76 $\tau$ terminating due to the rising power of $c_4$ resulting in the discontinued buying of $c_5$.
+T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS2</orange> occurs between e55-e76 $\tau$ terminating due to the rising power of $c_4$ resulting in the discontinued buying of $c_5$.
 
 caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>;
 class: strat_split;
