@@ -570,10 +570,10 @@ class: strat_split;
 Caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
 Class: strat_split;
 
-| INVIS | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
+| INVIS | T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C3</blue> | T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue> | T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue> |
 | - | - | - | - |
-| $c_1$ | | | [class="dashed_b";]CHECK<br>(T8, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
-| ROWSPAN | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
+| $c_1$ | | | [class="dashed_b";]Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
+| ROWSPAN | | | CHECK<br>(T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
 | $c_2$ | | | CHECK |
 | $c_3$ | REDX | CHECK | REDX |
 | $c_4$ | | | CHECK |
