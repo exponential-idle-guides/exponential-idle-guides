@@ -615,7 +615,7 @@ Class: strat_split;
 | ROWSPAN | ROWSPAN | CHECK<br>(WSP<red>Stop</red><blue>C1</blue>) |
 | $q_2$   | | CHECK |
 | $n$     | | CHECK |
-| $c_1$   | CHECK   | Buy if $q_1$ cost $\times c_1$ ratio\* $<$ min$\left(q_2,n,c_2\right)$ cost |
+| $c_1$   | CHECK   | Buy if $c_1$ cost $\times c_1$ ratio\* $<$ min$\left(q_2,n,c_2\right)$ cost |
 | $c_2$   | | CHECK |
 
 Caption: $c_1$ ratio\*;
