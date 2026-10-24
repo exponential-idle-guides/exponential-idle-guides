@@ -680,7 +680,7 @@ Class: breakdown;
 
 <u>Milestone Swap Criteria</u>
 
-1. Swap to next stage if $\rho\times\rho\text{ ratio}* < \min{\left(b_1, b_2\right)}$ cost;</br>**OR**
+1. Swap to next stage if $\rho^{2}$ ratio\* $ < \min{\left(b_1, b_2\right)}$ cost;</br>**OR**
 2. Swap to <orange>Stage 3</orange> directly until publishing if Pub. Multi. $> 4.5$.
 
 Caption: $\rho$ ratio*;
@@ -728,7 +728,7 @@ Class: strat_split;
 | $c_1$, $c_2$<br>(Select Appicable) | ROWSPAN | | Buy if\*\*<div style="text-align:left;">(1) $c_1$, $c_2$ cost $<\frac{1}{5}$ Last $a_3$ lvl cost; **AND**</br>(2) $c_1$, $c_2$ cost $<\frac{4}{5} a_3$ cost. |
 | $a_1$     | | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl % $10) < q_2$ cost |
 | $a_2$     | CHECK | | Buy if $b_1$ cost $<\frac{1}{5} a_2$ cost |
-| $a_3$     | | CHECK |
+| $a_3$     | | | CHECK |
 | | | [FOOT;]\*If $a_2$ is not unlocked, ✔️ $b_1$, $b_2$. |
 | | | [FOOT;]\*\*If $a_3$ is not unlocked, ✔️ $c_1$, $c_2$. |
 | | | [FOOT;]\*\*\*"Last strong $a_2$" refers to the last $a_2$ level in <u>which $a_2$ lvl % 10 = 1.</u> |
@@ -767,13 +767,14 @@ Class: strat_split;
 | $c_1$ | Buy if $c_1$ cost $\times (15+$ lvl % $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $c_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
 | $n$   | | CHECK<br>(2<sup>nd</sup> Priority) |
 | $c_2$ | | CHECK<br>(1<sup>st</sup> Priority) |
-| | | [FOOT;] For CSR2<yellow>Mod</yellow>, sim v3.0 will present the result as CSR2<yellow>Mod</yellow> <light-blue>x.xx</light-blue>. The <light-blue>x.xx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and will not be repeated here. |
+
+For CSR2<yellow>Mod</yellow>, sim v3.0 will present the result as CSR2<yellow>Mod</yellow> <light-blue>x.xx</light-blue>. The <light-blue>x.xx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and will not be repeated here.
 
 CSR2 — Autobuy all
 
 #### Milestone Swap (<orange>MS</orange>)
 
-For CTSR2, there are three milestones one can put their milestone points into. With exploration of different milestones, one can conclude the effect of each of the milestones into two main categories.
+For CSR2, there are three milestones one can put their milestone points into. With exploration of different milestones, one can conclude the effect of each of the milestones into two main categories.
 
 Class: strat_left;
 
@@ -929,7 +930,7 @@ Class: strat_split;
 | $q_2$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Lower priority) |
 | $r_1$ | | | CHECK |
 | $n$ | | | CHECK |
-| $s$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Lower priority) |
+| $s$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Higher priority) |
 | | | [FOOT;]\*If total cost to $c_1$ lvl 1 mod 100 $<$ min$\left(c_2,s\right)$ cost, ✔️ $c_1$ (<light-red>Burst</light-red>) |
 
 #### Milestone Swap (<orange>MS</orange>)
@@ -1005,7 +1006,7 @@ Class: strat_split;
 | ----- | ------------------------ | ----------------------- |
 | $c_1$ | Follow buying criteria in strategies | Buy if $c_1$ cost $< \frac{1}{2}$ Reset Cost\* |
 | $c_2$ | CHECK | Buy if $c_2$ cost $<$ Reset Cost\* |
-| $a_1$ | Follow buying criteria in strategies | Buy if $\delta$ cost $<$ Reset Cost\* |
+| $a_1$ | Follow buying criteria in strategies | Buy if $\delta$ cost $< \frac{1}{10}$ Reset Cost\* |
 | $a_2$ | CHECK | Buy if $a_2$ cost $<$ Reset Cost\* |
 | $\delta$ | Follow buying criteria in strategies | Buy if $\delta$ cost $<$ Reset Cost\* |
 | | | [FOOT;]\*Reset Cost = Total cost of $v_1 + v_2 + v_3 + v_4$ for a reset |
@@ -1047,7 +1048,7 @@ MF — Autobuy $c_1$, $c_2$, $a_1$, $a_2$, and $\delta$. Buy $v_1$, $v_2$, $v_3$
 
 #### Strategy Summary
 
-Caption: BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>, RZ;
+Caption: BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>, BaP;
 Class: strat_split;
 
 | INVIS | BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> | BaP |
@@ -1065,8 +1066,8 @@ Class: strat_left;
 
 |                          |                         |                                              |
 | ------------------------ | ----------------------- | -------------------------------------------- |
-| 1<sup>st</sup> Milestone | Improves $a$ formula.   | Increases $\rho$ <u>instantaneously</u>.     |
-| 2<sup>nd</sup> Milestone | Unlocks new $q$ layers. | Increases $\rho$ <u>gradually over time</u>. |
+| 3<sup>rd</sup> Milestone | Improves $a$ formula.   | Increases $\rho$ <u>instantaneously</u>.     |
+| 4<sup>th</sup> Milestone | Unlocks new $q$ layers. | Increases $\rho$ <u>gradually over time</u>. |
 
 With the first milestone affecting $\rho$ instantaneously and the last two milestones affecting $\rho$ gradually over time, one would like to maximize the benefits from both sides by swapping between milestones by swapping milestones. By striking a balance between the time used in the two phases, one can benefit maximally from the advantages on both sides. Milestone swapping terminates at e250$\rho$ when all milestone points are allocated in all available milestone slots.
 
