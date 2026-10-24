@@ -259,7 +259,7 @@ Class: strat_split;
 | INVIS | Before Recovery | After Recovery |
 | ----- | --------------- | -------------- |
 | $c_1$ | [class="dashed_b";] Buy if $c_1$ cost $< \frac{1}{10}$ min$\left(c_2,c_4,c_5\right)$ cost<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | REDX |
-| ROWSPAN | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4$ $< $ min$\left(c_2,c_3\right)$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | ROWSPAN |
+| ROWSPAN | Buy if $c_1$ cost $\times (11 + $ lvl % $10) / 2$ $< $ min$\left(c_2,c_3\right)$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | ROWSPAN |
 | $c_2$ | CHECK | REDX |
 | $c_3$ | | [class="dashed_b";]CHECK<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
@@ -271,7 +271,7 @@ Class: strat_split;
 | $c_6$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | $q_1$ | | [class="dashed_b";]Buy if $q_1$ cost $< \frac{1}{10} q_2$ cost<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
-| ROWSPAN | | Buy if $q_1$ cost $\times (9 + $ lvl % $10) / 4$ $< q_2$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | Buy if $q_1$ cost $\times (11 + $ lvl % $10) / 2$ $< q_2$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | $q_2$ | | CHECK |
 | Milestone Swap<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | 2 → 3 → 1 | [class="dashed_b";]<orange>Stage 1</orange> (1 min): 1 → 3 → 2 |
 | ROWSPAN | ROWSPAN | <orange>Stage 2</orange> (1 min): 3 → 1 → 2 |
@@ -295,7 +295,7 @@ Class: strat_split;
 
 | INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>Mod</yellow> |
 | ----- | ----------------- | ----------------------------------- |
-| $c_1$ | CHECK | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4 <$ min$\left(c_2,c_3\right)$ cost |
+| $c_1$ | CHECK | Buy if $c_1$ cost $\times (11 + $ lvl % $10) / 2 <$ min$\left(c_2,c_3\right)$ cost |
 | $c_2$ | | CHECK |
 | $c_3$ | | CHECK |
 | $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
@@ -310,7 +310,7 @@ Header rows: 2;
 | ----- | ----------------- | --------------- | -------------- |
 | ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
 | $c_4$ | | | CHECK |
-| $q_1$ | CHECK | | Buy if $q_1$ cost $\times (9 + $ lvl % $10) / 4 <$ min$\left(q_2,c_4\right)$ cost |
+| $q_1$ | CHECK | | Buy if $q_1$ cost $\times (11 + $ lvl % $10) / 2 <$ min$\left(q_2,c_4\right)$ cost |
 | $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{2}{3} c_4$ cost |
 | Other Variables | | | REDX |
 
@@ -319,7 +319,7 @@ Class: strat_split;
 
 | INVIS | T4<blue>C12</blue> | T4<blue>C12</blue><yellow>Mod</yellow> |
 | ----- | ----------------- | ----------------------------------- |
-| $c_1$ | CHECK | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4$ $< c_2$ cost |
+| $c_1$ | CHECK | Buy if $c_1$ cost $\times (11 + $ lvl % $10) / 2$ $< c_2$ cost |
 | $c_2$ | | CHECK |
 | Other Variables | | REDX |
 
@@ -388,9 +388,9 @@ Class: strat_split;
 | ----- | -------------------- | ------------------- |
 | $q_1$ | | Buy if $q_1$ cost $\times (7 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $q_2$ | | CHECK |
-| $r_1$ | | Buy if $r_1$ cost $\times (5 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $r_1$ | | Buy if $r_1$ cost $< \frac{1}{5}$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $r_2$ | | CHECK |
-| $c_1$ | Buy if $c_1$ cost $\times 5 <$ min$\left(q_2,r_2,c_5\right)$ cost | REDX |
+| $c_1$ | Buy if $c_1$ cost $< \frac{1}{5}$ min$\left(q_2,r_2,c_5\right)$ cost | REDX |
 | $c_2$ | CHECK | REDX |
 | $c_3$ | | REDX |
 | $c_4$ | | REDX |
