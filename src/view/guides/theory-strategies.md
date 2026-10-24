@@ -822,7 +822,7 @@ There are a total of 8 strategies made up for FI at the current moment. To simpl
 
 1) <yellow>Mod</yellow> Strategy (Mod Chase)
 2) <orange>MS</orange> Strategy (Milestone Swapping)
-3) <orange>SingleMS</orange>
+3) <orange>SingleMS</orange> Strategy (Single-Time Permanent Milestone Swapping)
 
 <table>
   <thead style="font-weight: normal;">
