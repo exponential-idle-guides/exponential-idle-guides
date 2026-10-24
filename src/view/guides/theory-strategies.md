@@ -604,7 +604,7 @@ Class: strat_split;
 
 ## Custom Theories
 
-### Weierstraß Sine Product
+### WSP: Weierstraß Sine Product
 
 Caption: WSP<yellow>Mod</yellow>, WSP<red>Stop</red><blue>C1</blue>;
 Class: strat_split;
@@ -635,7 +635,7 @@ Class: strat_split;
 WSP<yellow>Mod</yellow><green>RcvI</green> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<yellow>Mod</yellow> after recovery
 WSP — Autobuy all
 
-### Sequential Limits
+### SL: Sequential Limits
 
 #### Strategies Summary
 
@@ -697,7 +697,7 @@ Class: breakdown;
 | e200 - e275 | 3   | SKIP | 1    |
 | e275 - e300 | 2   | SKIP | 1    |
 
-### Euler's Formula
+### EF: Euler's Formula
 
 Caption: EF<yellow>Mod</yellow>;
 Class: strat_split;
@@ -753,7 +753,7 @@ Class: strat_split;
 
 EF  — Autobuy all
 
-### Convergents to √2
+### CSR2: Convergents to √2
 
 #### Strategies Summary
 
@@ -813,7 +813,7 @@ Class: breakdown;
 | e115 - e220        | 20            |
 | e220 - e500        | 40            |
 
-### Fractional Integration
+### FI: Fractional Integration
 
 #### Strategy Basis
 
@@ -913,7 +913,7 @@ Class: breakdown;
 
 One unique feature about FI is the introduction of Permanent Milestone (Perma). The two permanent milestones in FI are changing of $g(x)$ formula and $\lambda$ formula, which aids the progression of the theory. In most cases, one would prefer using a milestone point into those permanent milestones immediately with $q$ being reset which usually rewards even more than normal milestones in FI, with the exception of one case. The only exception for FI is the 3<sup>rd</sup> level of $g(x)$, where swapping a milestone point into that right after purchasing the permanent milestone at e1,050$\rho$ will NOT benefit the progression of the theory as the 3<sup>rd</sup> level of $g(x)$ performs worse than the 2<sup>nd</sup> level of $g(x)$ until e1,076$\rho$. In response to this, the action of <u>buying the 3<sup>rd</sup> level of $g(x)$ only after e1,076$\rho$</u> was proposed as the strategy FI<orange>SingeMS</orange>.
 
-### Fractal Patterns
+### FP: Fractal Patterns
 
 #### Strategies Summary
 
@@ -948,7 +948,7 @@ There is no definite indication/criteria of when to swap, the swap becomes less 
 
 ###### For more information about the FP milestone swapping strategy, check [here.](/guides/custom-theories/#fp-milestone-swapping-explanation)
 
-### Riemann Zeta Function
+### RZ: Riemann Zeta Function
 
 #### Strategies Summary
 
@@ -994,7 +994,7 @@ A major unique feature for RZ is the implementation of black hole. Once a black 
 3. Release the black hole manually.
 4. Repeat until the required $w_1$ level is bought.
 
-### Magnetic Fields
+### MF: Magnetic Fields
 
 #### Reset Coast (<green>RC</green>)
 
@@ -1043,7 +1043,7 @@ Class: strat_split;
 
 MF — Autobuy $c_1$, $c_2$, $a_1$, $a_2$, and $\delta$. Buy $v_1$, $v_2$, $v_3$, $v_4$ only before a reset.
 
-### Basel Problem
+### BaP: Basel Problem
 
 #### Strategy Summary
 
