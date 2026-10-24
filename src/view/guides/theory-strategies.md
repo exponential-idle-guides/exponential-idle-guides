@@ -54,10 +54,10 @@ A unique part of T1 is the nature of recursion, in which it includes $\rho$ as p
 
 #### Active Strategies
 
-Caption: T1<green>SolarXLII</green>, T1<yellow>Ratio</yellow>;
+Caption: T1<yellow>ModRatio</yellow>, T1<yellow>Ratio</yellow>;
 Class: strat_split;
 
-| INVIS | T1<green>SolarXLII</green> | T1<yellow>Ratio</yellow> |
+| INVIS | T1<yellow>ModRatio</yellow> | T1<yellow>Ratio</yellow> |
 | ----- | -------------------------- | ------------------------ |
 | $q_1$ | Buy if<div style="text-align:left;">(1) $q_1$ cost $\times (6 + \text{lvl}\mod 10) < q_2$ cost; **AND**</br>(2) $q_1$ cost $\times (15 + \text{lvl}\mod 10)<c_4$ cost; **AND**</br>(3) $\rho>5 q_1$ cost | Buy if $\rho > 10 \times q_1$ cost</div> |
 | $q_2$ | | Buy if $\rho > 1.11 \times q_2$ cost |
@@ -76,8 +76,6 @@ Caption: $c_2$ ratio\* and $c_3$ ratio\*\*;
 | e450 - e550 | ROWSPAN | 2 |
 | e550 - e655 | ROWSPAN | 5 |
 | More than e655 | ROWSPAN | 10 |
-
-[TODO: rowspan implementation]
 
 #### Idle Strategies
 
@@ -198,7 +196,7 @@ Class: strat_split;
 | INVIS | T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23</blue> | T3<blue>ρ2C23C33</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue> | T3<blue>ρ2C23C31</blue><yellow>d</yellow>, T3<blue>ρ2C23C31</blue> |
 | ----- | - | - | - |
 | $b_1$ | | [class="dashed_b";]REDX | [class="dashed_b";]Buy if $b_1$ cost $<\frac{1}{8} c_{31}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) | 
-| ROWSPAN | |      | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
+| ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23C31</blue>) | 
 | $b_2$ | | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{3}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_2$ cost $<\frac{1}{5}$ min$\left(c_{12},c_{22},c_{32}\right)$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
 | ROWSPAN | | | CHECK<br>(T3<blue>ρ2C23</blue>, T3<blue>ρ2C23C33</blue>, T3<blue>ρ2C23C31</blue>) |
 | $b_3$ | | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{9} c_{23}$ cost<br>(T3<blue>ρ2C23</blue><yellow>d</yellow>, T3<blue>ρ2C23C33</blue><yellow>d</yellow>) | [class="dashed_b";]Buy if $b_3$ cost $<\frac{1}{8} c_{23}$ cost<br>(T3<blue>ρ2C23C31</blue><yellow>d</yellow>) |
@@ -260,60 +258,74 @@ Class: strat_split;
 
 | INVIS | Before Recovery | After Recovery |
 | ----- | --------------- | -------------- |
-| $c_1$ | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost | REDX |
+| $c_1$ | [class="dashed_b";] Buy if $c_1$ cost $< \frac{1}{10}$ min$\left(c_2,c_4,c_5\right)$ cost<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | REDX |
+| ROWSPAN | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4$ $< $ min$\left(c_2,c_3\right)$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | ROWSPAN |
 | $c_2$ | CHECK | REDX |
 | $c_3$ | | [class="dashed_b";]CHECK<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | $c_4$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
-| $c_5$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| $c_5$ | | [class="dashed_b";]Buy if $c_6$ cost $< \frac{9}{5} c_3$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | $c_6$ | | [class="dashed_b";]CHECK<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | ROWSPAN | | REDX<br>(T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
-| $q_1$ | | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
+| $q_1$ | | [class="dashed_b";]Buy if $q_1$ cost $< \frac{1}{10} q_2$ cost<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>, T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
+| ROWSPAN | | Buy if $q_1$ cost $\times (9 + $ lvl % $10) / 4$ $< q_2$ cost<br>(T4<red>No</red><blue>C4</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) |
 | $q_2$ | | CHECK |
 | Milestone Swap<br>(T4<orange>MS</orange><red>No</red><blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue>) | 2 → 3 → 1 | [class="dashed_b";]<orange>Stage 1</orange> (1 min): 1 → 3 → 2 |
 | ROWSPAN | ROWSPAN | <orange>Stage 2</orange> (1 min): 3 → 1 → 2 |
 
 #### Active-Idle Strategy Pairs
 
-Caption: T4<blue>C3</blue><yellow>Mod</yellow>, T4<blue>C3</blue>;
+Caption: T4<blue>C3</blue><yellow>d</yellow>, T4<blue>C3</blue>;
 Class: strat_split;
 Header rows: 2;
 
-| INVIS | T4<blue>C3</blue> | | T4<blue>C3</blue><yellow>Mod</yellow> |
+| INVIS | T4<blue>C3</blue> | | T4<blue>C3</blue><yellow>d</yellow> |
 | ----- | ----------------- | --------------- | -------------- |
 | ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
 | $c_3$ | | | CHECK |
 | $q_1$ | CHECK | | Buy if $q_1$ cost $\times (10 + $ lvl % $10) <$ min$\left(q_2,c_3\right)$ cost |
-| $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{2}{3} c_3$ cost |
+| $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{1}{3} c_3$ cost |
 | Other Variables | | | REDX |
 
-Caption: T4<blue>C123</blue><yellow>d</yellow>, T4<blue>C123</blue>;
+Caption: T4<blue>C123</blue><yellow>Mod</yellow>, T4<blue>C123</blue>;
 Class: strat_split;
 
-| INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>d</yellow> |
+| INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>Mod</yellow> |
 | ----- | ----------------- | ----------------------------------- |
-| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost |
+| $c_1$ | CHECK | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4 <$ min$\left(c_2,c_3\right)$ cost |
 | $c_2$ | | CHECK |
 | $c_3$ | | CHECK |
 | $q_1$ | CHECK | Buy if $q_1$ cost $<\frac{1}{10} q_2$ cost |
 | $q_2$ | | CHECK |
 | Other Variables | | REDX |
 
-Caption: T4<blue>C12</blue><yellow>d</yellow>, T4<blue>C12</blue>;
+Caption: T4<blue>C4</blue><yellow>Mod</yellow>, T4<blue>C4</blue>;
+Class: strat_split;
+Header rows: 2;
+
+| INVIS | T4<blue>C4</blue> | | T4<blue>C4</blue><yellow>Mod</yellow> |
+| ----- | ----------------- | --------------- | -------------- |
+| ROWSPAN | ROWSPAN | Before Recovery | After Recovery |
+| $c_4$ | | | CHECK |
+| $q_1$ | CHECK | | Buy if $q_1$ cost $\times (9 + $ lvl % $10) / 4 <$ min$\left(q_2,c_4\right)$ cost |
+| $q_2$ | | CHECK | Buy if $q_2$ cost $<\frac{2}{3} c_4$ cost |
+| Other Variables | | | REDX |
+
+Caption: T4<blue>C12</blue><yellow>Mod</yellow>, T4<blue>C12</blue>;
 Class: strat_split;
 
-| INVIS | T4<blue>C123</blue> | T4<blue>C123</blue><yellow>d</yellow> |
+| INVIS | T4<blue>C12</blue> | T4<blue>C12</blue><yellow>Mod</yellow> |
 | ----- | ----------------- | ----------------------------------- |
-| $c_1$ | CHECK | Buy if $c_1$ cost $<\frac{1}{10} c_2$ cost |
+| $c_1$ | CHECK | Buy if $c_1$ cost $\times (9 + $ lvl % $10) / 4$ $< c_2$ cost |
 | $c_2$ | | CHECK |
 | Other Variables | | REDX |
 
 #### Idle Strategies
 
 T4<blue>C56</blue> — Autobuy $c_5$, $c_6$, $q_1$, and $q_2$ only
-T4<blue>C4</blue> — Autobuy $c_4$, $q_1$, and $q_2$ only
 T4<blue>C5</blue> — Autobuy $c_5$, $q_1$, and $q_2$ only
 T4 — Autobuy all
 
@@ -358,16 +370,31 @@ Class: strat_split;
 
 |   |   |
 | - | - |
-| $q_1$ | Buy if $q_1$ cost $\times (7 +$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $q_1$ | Buy if $q_1$ cost $\times (7 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $q_2$ | CHECK |
-| $r_1$ | Buy if $r_1$ cost $\times (5 +$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $r_1$ | Buy if $r_1$ cost $\times (5 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $r_2$ | CHECK |
-| $c_1$ | Buy if $c_1$ cost $\times (7 +$ lvl mod $10) < c_2$ cost |
+| $c_1$ | Buy if $c_1$ cost $\times (7 +$ lvl % $10) < c_2$ cost |
 | $c_2$ | Buy if $q_1$ cost $\times c_2$ ratio\* $<$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $c_3$ | REDX |
 | $c_4$ | REDX |
 | $c_5$ | CHECK |
 | | [FOOT;]$c_2$ ratio $=\frac{c_5 * r}{c_1^{1.15} * c_2}$ |
+
+Caption: T6<blue>C125</blue><yellow>Mod</yellow><red>Stop</red><blue>C12</blue>;
+Class: strat_split;
+
+| INVIS | Before specified rho | After specified rho |
+| ----- | -------------------- | ------------------- |
+| $q_1$ | | Buy if $q_1$ cost $\times (7 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $q_2$ | | CHECK |
+| $r_1$ | | Buy if $r_1$ cost $\times (5 +$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $r_2$ | | CHECK |
+| $c_1$ | Buy if $c_1$ cost $\times 5 <$ min$\left(q_2,r_2,c_5\right)$ cost | REDX |
+| $c_2$ | CHECK | REDX |
+| $c_3$ | | REDX |
+| $c_4$ | | REDX |
+| $c_5$ | | CHECK |
 
 #### Active-Idle Strategy Pairs
 
@@ -391,7 +418,7 @@ Class: strat_split;
 
 | INVIS | T6<blue>C5</blue> | T6<blue>C5</blue><yellow>Mod</yellow> |
 | ----- | - | - |
-| $q_1$ | CHECK | Buy if $q_1$ cost $\times (7+$ lvl mod $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
+| $q_1$ | CHECK | Buy if $q_1$ cost $\times (7+$ lvl % $10) <$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $q_2$ | | CHECK |
 | $r_1$ | CHECK | Buy if $r_1$ cost $<\frac{1}{5}$ min$\left(q_2,r_2,c_5\right)$ cost |
 | $r_2$ | | CHECK |
@@ -420,7 +447,7 @@ Class: strat_split;
 | $c_4$ | | CHECK |
 | Other Variables | | REDX |
 
-#### Hybrid Strategies [TODO: Fix Name]
+#### Hybrid Strategies
 
 Caption: Hybrid Strategies;
 Class: strat_split;
@@ -442,7 +469,7 @@ Class: strat_split;
 | INVIS | T7<red>No</red><blue>C12</blue> | T7<red>No</red><blue>C12</blue><yellow>d</yellow> | T7<yellow>Ratio</yellow><green>X</green> |
 | ----- | - | - | - |
 | $q_1$ | CHECK | | Buy if $q_1$ cost $<\frac{1}{4} c_6$ cost |
-| $c_1$ | | REDX | Buy if $c_1$ cost $\times (10+$ lvl mod $10) <c_2$ cost |
+| $c_1$ | | REDX | Buy if $c_1$ cost $\times (10+$ lvl % $10) <c_2$ cost |
 | $c_2$ | | REDX | Buy if $c_2$ cost $<\frac{1}{X} c_6$ cost |
 | $c_3$ | CHECK | | Buy if $c_3$ cost $<\frac{1}{10} c_6$ cost |
 | $c_4$ | CHECK | | Buy if $c_4$ cost $<\frac{1}{10} c_6$ cost |
@@ -478,17 +505,17 @@ T7 — Autobuy all
 
 #### Active Strategies
 
-Caption: T8<yellow>Mod</yellow><orange>Reset</orange>, T8<yellow>Mod</yellow>;
+Caption: T8<yellow>Mod</yellow><orange>Reset</orange>, T8<red>No</red><blue>C3</blue><yellow>Mod</yellow><orange>Reset</orange>, T8<red>No</red><blue>C5</blue><yellow>Mod</yellow><orange>Reset</orange>;
 Class: strat_split;
 
-| INVIS | T8<yellow>Mod</yellow><orange>Reset</orange> | T8<yellow>Mod</yellow> |
-| ----- | -------------------------------------------- | ---------------------- |
-| $c_1$ | | Buy if $c_1$ cost $\times [5+0.5\times($ lvl mod $10)] <$ min$\left(c_2,c_4\right)$ cost |
-| $c_2$ | | CHECK |
-| $c_3$ | | Buy if $c_3$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost |
-| $c_4$ | | CHECK |
-| $c_5$ | Buy if $c_5$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | Buy if $c_5$ cost $<\frac{1}{4}$ min$\left(c_2,c_4\right)$ cost |
-| Milestone Reset<br>(T8<yellow>Mod</yellow><orange>Reset</orange>) | Remove and add 1 level of 1<sup>st</sup> milestone every 34 seconds. | N/A |
+| INVIS | T8<yellow>Mod</yellow><orange>Reset</orange> | T8<red>No</red><blue>C3</blue><yellow>Mod</yellow><orange>Reset</orange> | T8<red>No</red><blue>C5</blue><yellow>Mod</yellow><orange>Reset</orange> |
+| ----- | -------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| $c_1$ | | | Buy if $c_1$ cost $\times (10 + $ lvl % $10) / 2 <$ min$\left(c_2,c_4\right)$ cost |
+| $c_2$ | | | CHECK |
+| $c_3$ | Buy if $c_3$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | REDX | Buy if $c_3$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost
+| $c_4$ | | | CHECK |
+| $c_5$ | | Buy if $c_5$ cost $<\frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | REDX
+| Milestone Reset | | | Remove and add 1 level of 1<sup>st</sup> milestone every 34 seconds. |
 
 <u>T8<yellow>Mod</yellow><orange>Reset</orange></u>
 
@@ -501,6 +528,17 @@ Since the value of $\dot{\rho}$ highly depends on the position of the particle, 
 |   | [FOOT;] T8: Average $\dot{\rho}$ in Rössler Attractor from Start |
 
 When executing, remove and re-add the 1<sup>st</sup> milestone every 34 seconds (resetting Rössler attractor positions).
+
+Caption: T8<yellow>Mod</yellow>, T8<red>No</red><blue>C35</blue><yellow>Mod</yellow>;
+Class: strat_split;
+
+| INVIS | T8<yellow>Mod</yellow> | T8<red>No</red><blue>C35</blue><yellow>Mod</yellow> |
+| ----- | ---------------------- | --------------------------------------------------- |
+| $c_1$ | | Buy if $c_1$ cost $\times (10 + $ lvl % $10) / 2 <$ min$\left(c_2,c_4\right)$ cost |
+| $c_2$ | | CHECK |
+| $c_3$ | Buy if $c_3$ cost $< \frac{2}{5}$ min$\left(c_2,c_4\right)$ cost | REDX |
+| $c_4$ | | CHECK |
+| $c_5$ | Buy if $c_5$ cost $< \frac{1}{4}$ min$\left(c_2,c_4\right)$ cost | REDX |
 
 #### T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>
 
@@ -529,17 +567,18 @@ class: strat_split;
 
 #### Active-Idle Strategy Pairs
 
-Caption: T8<yellow>d</yellow>, T8, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
+Caption: T8, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
 Class: strat_split;
 
-| INVIS | T8, T8<yellow>d</yellow> | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
+| INVIS | T8 | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
 | - | - | - | - | - |
 | $c_1$ | | | | [class="dashed_b";]CHECK<br>(T8, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
-| ROWSPAN | | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
+| ROWSPAN | | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
 | $c_2$ | | | | CHECK |
 | $c_3$ | CHECK | REDX | CHECK | REDX |
 | $c_4$ | | | | CHECK |
-| $c_5$ | | CHECK | | REDX |
+| $c_5$ | CHECK | [class="dashed_b";]Buy if $c_5$ cost $< \frac{1}{4}$ min$\left(c_2,c_4\right)$<br>(T8<red>No</red><blue>C3</blue><yellow>d2</yellow>) | CHECK | CHECK |
+| ROWSPAN | ROWSPAN | CHECK<br>(T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>) | ROWSPAN | ROWSPAN |
 
 #### Semi-Idle Strategies
 
@@ -565,7 +604,7 @@ Class: strat_split;
 
 | INVIS   | First 15 seconds | Rest of Publication |
 | ------- | ---------------- | ------------------- |
-| $q_1$   | CHECK   | [class="dashed_b";]Buy if $q_1$ cost $\times (6+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost<br>(WSP<yellow>Mod</yellow>) |
+| $q_1$   | CHECK   | [class="dashed_b";]Buy if $q_1$ cost $\times (6+$ lvl % $10) <$ min$\left(q_2,n,c_2\right)$ cost<br>(WSP<yellow>Mod</yellow>) |
 | ROWSPAN | ROWSPAN | CHECK<br>(WSP<red>Stop</red><blue>C1</blue>) |
 | $q_2$   | | CHECK |
 | $n$     | | CHECK |
@@ -595,17 +634,17 @@ WSP — Autobuy all
 
 [TODO: Fix this rowspan merge bug.]
 
-Caption: SL<orange>MS</orange><yellow>Mod</yellow><green>MC</green>, SL<orange>MS</orange><green>MC</green>, SL<yellow>Mod</yellow>, SL;
+Caption: SL<orange>MS</orange><yellow>Mod</yellow><light-blue>MC</light-blue>, SL<orange>MS</orange><light-blue>MC</light-blue>, SL<yellow>Mod</yellow>, SL;
 Class: strat_split;
 
 | INVIS   | <orange>Stage 1</orange><br>(Pub. Multi. < 4) | <orange>Stage 2</orange><br>(Pub. Multi. 4-7.5) | <orange>Stage 3</orange><br>(Pub. Multi. > 7.5) |
 | ------- | - | - | - |
-| $a_1$   | [class="dashed_b";]Buy if $a_1$ cost $\times 2 \times ($lvl mod $3) < a_2$ cost<br>(SL<yellow>Mod</yellow>) | REDX<br>(<green>MC</green>) | REDX<br>(<green>MC</green>) |
+| $a_1$ | [class="dashed_b";] Buy if $a_1$ cost $\times 2 ($lvl % $3)$ $< a_2$ cost<br>(SL<yellow>Mod</yellow>) | REDX<br>(SL<light-blue>MC</light-blue>) | REDX<br>(SL<light-blue>MC</light-blue>) |
 | ROWSPAN | CHECK<br>(SL) | ROWSPAN | ROWSPAN |
-| $a_2$   | CHECK | ROWSPAN | ROWSPAN |
-| $b_1$   | | [class="dashed_b";]Buy if $b_1$ cost $\times ($lvl mod $4) < b_2$ cost<br>(SL<yellow>Mod</yellow>) | ROWSPAN |
+| $a_2$ | CHECK | ROWSPAN | ROWSPAN |
+| $b_1$ | | [class="dashed_b";] Buy if $b_1$ cost $\times ($ lvl % $4)$ $< b_2$ cost<br>(SL<yellow>Mod</yellow>) | ROWSPAN |
 | ROWSPAN | | CHECK<br>(SL) | ROWSPAN |
-| $b_2$   | | CHECK | ROWSPAN |
+| $b_2$ | | CHECK | ROWSPAN |
 | | | | [FOOT;]SL<yellow>Mod</yellow>, SL — Continue purchasing $a_1$, $a_2$, $b_1$, $b_2$ throughout publication. |
 
 #### Milestone Swap (<orange>MS</orange>)
@@ -642,7 +681,7 @@ Class: breakdown;
 
 | $\rho$      | <orange>Stage 1</orange> to <orange>Stage 2</orange> | <orange>Stage 2</orange> to <orange>Stage 3</orange> | <orange>Stage 3</orange> to <orange>Stage 1</orange> |
 | ----------- | -------------- | -------------- | -------------- |
-| e25-e50     | 5   | 4    | 1    |
+| e25 - e50   | 5   | 4    | 1    |
 | e50 - e75   | 7   | 6    | 1    |
 | e75 - e100  | 12  | 10   | 1    |
 | e100 - e150 | 20  | 15   | 1    |
@@ -659,11 +698,11 @@ Class: strat_split;
 | INVIS | Before Recovery | After Recovery |
 | ----- | --------------- | -------------- |
 | $\dot{t}$ | | CHECK |
-| $q_1$     | | Buy if $q_1$ cost $\times (10+$ lvl mod $10) < q_2$ cost |
+| $q_1$     | | Buy if $q_1$ cost $\times (10+$ lvl % $10) < q_2$ cost |
 | $q_2$     | | CHECK |
 | $b_1$, $b_2$<br>(Select Appicable) | CHECK   | Buy if $b_1$, $b_2$ cost $<\frac{1}{5} a_2$ cost\* |
 | $c_1$, $c_2$<br>(Select Appicable) | ROWSPAN | Buy if $c_1$, $c_2$ cost $<\frac{1}{5} a_3$ cost\*\* |
-| $a_1$     | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl mod $10) < q_2$ cost |
+| $a_1$     | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl % $10) < q_2$ cost |
 | $a_2$     | | CHECK |
 | $a_3$     | | CHECK |
 | | | [FOOT;]\*If $a_2$ is not unlocked, ✔️ $b_1$, $b_2$. |
@@ -672,20 +711,20 @@ Class: strat_split;
 Caption: EF<yellow>Mod</yellow><green>Stage</green>;
 Class: strat_split;
 
-| INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(After Recovery) | <orange>Stage 3</orange><br>(If $a_2$ lvl $\gte$ Last strong $a_2$\*\*\*) |
+| INVIS | <orange>Stage 1</orange><br>(Before Recovery) | <orange>Stage 2</orange><br>(After Recovery) | <orange>Stage 3</orange><br>(If $a_2$ lvl $\geqslant$ Last strong $a_2$\*\*\*) |
 | ----- | - | - | - |
 | $\dot{t}$ | | | CHECK |
-| $q_1$     | | | Buy if $q_1$ cost $\times (10+$ lvl mod $10) < q_2$ cost |
+| $q_1$     | | | Buy if $q_1$ cost $\times (10+$ lvl % $10) < q_2$ cost |
 | $q_2$     | | | CHECK |
 | $b_1$, $b_2$<br>(Select Appicable) | CHECK   | | [class="dashed_b";]Buy if\*<div style="text-align:left;">(1a) $b_1$, $b_2$ cost $<\frac{1}{5}$ Last $a_2$ lvl cost; **AND**</br>(1b) $b_1$, $b_2$ cost $<\frac{1}{2} a_2$ cost; |
 | ROWSPAN                            | ROWSPAN | **OR**<div style="text-align:left;">(2) $b_1$, $b_2$ cost $<\frac{1}{5}$ Last strong $a_2$\*\*\* lvl cost. |
 | $c_1$, $c_2$<br>(Select Appicable) | ROWSPAN | | Buy if\*\*<div style="text-align:left;">(1) $c_1$, $c_2$ cost $<\frac{1}{5}$ Last $a_3$ lvl cost; **AND**</br>(2) $c_1$, $c_2$ cost $<\frac{4}{5} a_3$ cost. |
-| $a_1$     | | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl mod $10) < q_2$ cost |
+| $a_1$     | | | Buy if $a_1$ cost $\times (4+\frac{1}{2}\times$ lvl % $10) < q_2$ cost |
 | $a_2$     | CHECK | | Buy if $b_1$ cost $<\frac{1}{5} a_2$ cost |
 | $a_3$     | | CHECK |
 | | | [FOOT;]\*If $a_2$ is not unlocked, ✔️ $b_1$, $b_2$. |
 | | | [FOOT;]\*\*If $a_3$ is not unlocked, ✔️ $c_1$, $c_2$. |
-| | | [FOOT;]\*\*\*"Last strong $a_2$" refers to theh last $a_2$ level in <u>which $a_2$ llvl mod 10 = 1.</u> |
+| | | [FOOT;]\*\*\*"Last strong $a_2$" refers to the last $a_2$ level in <u>which $a_2$ lvl % 10 = 1.</u> |
 
 Caption: EF<red>Stop</red><blue>Q1BXCX</blue>, EF<yellow>d</yellow>;
 Class: strat_split;
@@ -716,9 +755,9 @@ Class: strat_split;
 
 | INVIS | CSR2<yellow>Mod</yellow> | CSR2<yellow>d</yellow> |
 | ----- | ------------------------ | ---------------------- |
-| $q_1$ | Buy if $q_1$ cost $\times (7+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $q_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
+| $q_1$ | Buy if $q_1$ cost $\times (7+$ lvl % $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $q_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
 | $q_2$ | | CHECK<br>(3<sup>rd</sup> Priority) |
-| $c_1$ | Buy if $c_1$ cost $\times (15+$ lvl mod $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $c_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
+| $c_1$ | Buy if $c_1$ cost $\times (15+$ lvl % $10) <$ min$\left(q_2,n,c_2\right)$ cost | Buy if $c_1$ cost $<\frac{1}{10}\times$ min$\left(q_2,n,c_2\right)$ cost |
 | $n$   | | CHECK<br>(2<sup>nd</sup> Priority) |
 | $c_2$ | | CHECK<br>(1<sup>st</sup> Priority) |
 | | | [FOOT;] For CSR2<yellow>Mod</yellow>, sim v3.0 will present the result as CSR2<yellow>Mod</yellow> <light-blue>x.xx</light-blue>. The <light-blue>x.xx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and will not be repeated here. |
@@ -820,11 +859,11 @@ Class: strat_split;
 
 | INVIS | FI    | FI<yellow>Mod</yellow> |
 | ----- | ----- | ---------------------- |
-| $q_1$ | CHECK | Buy if $q_1$ cost $\times (1+$ lvl mod $23) <$ min$\left(q_2,K,m\right)$ cost |
+| $q_1$ | CHECK | Buy if $q_1$ cost $\times (1+$ lvl % $23) <$ min$\left(q_2,K,m\right)$ cost |
 | $q_2$ |       | CHECK |
 | $K$   |       | CHECK |
 | $m$   |       | CHECK |
-| $n$   | CHECK | Buy if $n$ cost $\times (1+$ lvl mod $11) <$ min$\left(q_2,K,m\right)$ cost |
+| $n$   | CHECK | Buy if $n$ cost $\times (1+$ lvl % $11) <$ min$\left(q_2,K,m\right)$ cost |
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -872,7 +911,20 @@ One unique feature about FI is the introduction of Permanent Milestone (Perma). 
 
 #### Strategies Summary
 
-Caption
+Caption: FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>, FP<yellow>Mod</yellow>, FP;
+Class: strat_split;
+
+| INVIS | FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> | FP<yellow>Mod</yellow> | FP |
+| ----- | ----------------------------------------------------------- | ---------------------- | -- |
+| $\dot{t}$ | | | CHECK |
+| $c_1$ | Buy if $c_1$ cost $\times (1+$ lvl % $100) <$ min$\left(c_2,s\right)$ cost\* | Buy if $c_1$ cost $\times (1+$ lvl % $100)$ $< c_2$ cost | CHECK |
+| $c_2$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Lower priority) |
+| $q_1$ | Buy if $q_1$ cost $\times (1+$ lvl % $10) <$ min$\left(q_2,s\right)$ cost | | CHECK |
+| $q_2$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Lower priority) |
+| $r_1$ | | | CHECK |
+| $n$ | | | CHECK |
+| $s$ | | | CHECK<br>(FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>: Lower priority) |
+| | | [FOOT;]\*If total cost to $c_1$ lvl 1 mod 100 $<$ min$\left(c_2,s\right)$ cost, ✔️ $c_1$ (<light-red>Burst</light-red>) |
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -894,7 +946,18 @@ There is no definite indication/criteria of when to swap, the swap becomes less 
 
 #### Strategies Summary
 
-[TODO: Insert theory strats]
+Caption: RZ<yellow>d</yellow>, RZ;
+Class: strat_split;
+
+| INVIS | RZ<yellow>d</yellow> | RZ |
+| ----- | -------------------- | -- |
+| $c_1$ | CHECK | Buy if $c_1$ lvl $<$ 4 $\times c_2$ lvl + 2\* |
+| $c_2$ | | CHECK |
+| $w_1$ | CHECK | Buy if $w_1$ cost $< \frac{1}{5}$ min$\left(w_2,w_3\right)$ cost |
+| $w_2$ | | CHECK |
+| $w_3$ | | CHECK |
+| $b$ | CHECK | CHECK<br>(except first 16 seconds) |
+| | [FOOT;]\*Buy if $c_1$ lvl $<$ 4 $\times c_2$ lvl + 1, if no milestone point was allocated in 1<sup>st</sup> Milestone |
 
 #### Milestone Swap (<orange>SpiralMS</orange>, <orange>SingleMS</orange>)
 
@@ -918,8 +981,6 @@ Class: breakdown;
 
 #### Black Hole Rewind (<orange>BHRewind</orange>, <orange>BH</orange>)
 
-[TODO: Fix after fixes]
-
 A major unique feature for RZ is the implementation of black hole. Once a black hole is unlocked at e600$\rho$, a black hole can be used to lock the particle at the origin, lock the time and $\zeta'\left(\frac{1}{2}+it\right)$ to the moment the particle reaches the origin. This change allows a constant and rapid growth of $\rho$ by fixing $\zeta\left(\frac{1}{2}+it\right)$ to 0 and $\delta$ by fixing $\zeta'\left(\frac{1}{2}+it\right)$. However, $\zeta'\left(\frac{1}{2}+it\right)$ varies throughout the publication and in some certain places it is higher than the one fixed by the black hole. Hence, a strategy of gaining $\delta$ even more rapidly by <u>allowing the particle to repeatedly travel through a short segment with higher local $\zeta'\left(\frac{1}{2}+it\right)$</u> was proposed. Once sufficient $\delta$ is gained to buy the required $w_1$ level, the normal fix by black hole resumes and allows $\rho$ to grow.
 
 1. Progress through the publication as normal.
@@ -929,9 +990,19 @@ A major unique feature for RZ is the implementation of black hole. Once a black 
 
 ### Magnetic Fields
 
-#### Reset Coast (<light-blue>RC</light-blue>)
+#### Reset Coast (<green>RC</green>)
 
-[TODO: Insert Theory strats]
+Caption: MF<green>RC</green>
+Class: strat_split;
+
+| INVIS | Before <green>RC</green> | After <green>RC</green> |
+| ----- | ------------------------ | ----------------------- |
+| $c_1$ | Follow buying criteria in strategies | Buy if $c_1$ cost $< \frac{1}{2}$ Reset Cost\* |
+| $c_2$ | CHECK | Buy if $c_2$ cost $<$ Reset Cost\* |
+| $a_1$ | Follow buying criteria in strategies | Buy if $\delta$ cost $<$ Reset Cost\* |
+| $a_2$ | CHECK | Buy if $a_2$ cost $<$ Reset Cost\* |
+| $\delta$ | Follow buying criteria in strategies | Buy if $\delta$ cost $<$ Reset Cost\* |
+| | | [FOOT;]\*Reset Cost = Total cost of $v_1 + v_2 + v_3 + v_4$ for a reset |
 
 #### Depth (<light-blue>Depth: x</light-blue>)
 
@@ -950,7 +1021,17 @@ Class: newwords;
 
 #### Doubling Chase (<yellow>dx</yellow>, <dark-green>Variant</dark-green><yellow>dxdxdx</yellow>)
 
-[TODO: Insert Theory Strats]
+Caption: MF<yellow>d</yellow>, MF<yellow>d2</yellow>, MF<yellow>d3</yellow>, MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow>
+Class: strat_split;
+
+| INVIS | MF<yellow>d</yellow> | MF<yellow>d2</yellow> | MF<yellow>d3</yellow> |
+| ----- | -------------------- | --------------------- | --------------------- |
+| $c_1$<br>(1<sup>st</sup> <yellow>dx</yellow> in MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow>) | Buy if $c_1$ cost $< \frac{1}{10}$ min$\left( c_2,a_2,\delta \right)$ | Buy if $c_1$ cost $\times (8 + $ lvl mod $7) <$ min$\left( 2 c_2,a_2,3 \delta \right)$ | Buy if $c_1$ cost $< \frac{1}{10}$ min$\left( c_2,a_2,\delta \right)$ |
+| $c_2$ | | | CHECK |
+| $a_1$<br>(2<sup>nd</sup> <yellow>dx</yellow> in MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow>) | Buy if<div style="text-align:left;">(1) $I$ $< \frac{1}{2} I_{\text{cap}}$; OR<br>(2) $a_1$ cost $< \frac{1}{10}$ min$\left( c_2,a_2,\delta \right)$ cost</div> | | Buy if<div style="text-align:left;">(1) $I \times 1.2$ $< I_{\text{cap}}$; OR<br>(2) $a_1$ cost $< \frac{1}{20}$ min$\left( c_2,a_2,\delta \right)$ cost</div> |
+| $a_2$ | | | CHECK |
+| $\delta$<br>(3<sup>rd</sup> <yellow>dx</yellow> in MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow>) | CHECK | Buy if<div style="text-align:left;">(1) $\delta$ cost $< \frac{2}{3} c_2$ cost; AND<br>(2) $\delta$ cost $< \frac{1}{3} a_2$ cost</div> | Buy if<div style="text-align:left;">(1) $\delta$ cost $< \frac{3}{4} c_2$ cost; AND<br>(2) $\delta$ cost $< \frac{3}{5} a_2$ cost</div> |
+| $v_1$:$v_4$ | | | Buy if before a reset only |
 
 #### Idle Strategies
 
@@ -960,7 +1041,15 @@ MF — Autobuy $c_1$, $c_2$, $a_1$, $a_2$, and $\delta$. Buy $v_1$, $v_2$, $v_3$
 
 #### Strategy Summary
 
-[TODO: Insert theory strats]
+Caption: BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue>, RZ;
+Class: strat_split;
+
+| INVIS | BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> | BaP |
+| ----- | ------------------------------------------------------------------ | --- |
+| $\dot{t}$ | | CHECK |
+| $c_1$ | Buy if $c_1$ cost $\times ($lvl % $64)$ $< 2 \times$ min$\left(c2:c10, n\right)$ cost\* | CHECK |
+| $c_2$:$c_10$, $n$ | | CHECK |
+| | [FOOT;]\*If total cost to $c_1$ lvl 1 mod 64 $< 2 \times$ min$\left(c2:c10, n\right)$ cost, ✔️ c_1 (<light-red>Burst</light-red>) |
 
 #### Milestone Swap (<orange>MS</orange>)
 
