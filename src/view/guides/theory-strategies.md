@@ -540,9 +540,9 @@ Class: strat_split;
 | $c_4$ | | CHECK |
 | $c_5$ | Buy if $c_5$ cost $< \frac{1}{4}$ min$\left(c_2,c_4\right)$ cost | REDX |
 
-#### T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>
+#### T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>0</green>, T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>2</green>
 
-Caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>;
+caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>0</green>, T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>2</green>;
 Class: strat_split;
 
 | | |
@@ -553,32 +553,32 @@ Class: strat_split;
 | $c_4$ | CHECK |
 | $c_5$ | CHECK |
 
-T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS0</orange> occurs between e50-e60 $\tau$ terminating due to the rising power of $c_4$ and obtaining the 3<sup>rd</sup> milestone.
-T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS2</orange> occurs between e55-e76 $\tau$ terminating due to the rising power of $c_4$ resulting in the discontinued buying of $c_5$.
+T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>0</green> occurs between e50-e60 $\tau$ and terminates due to the rising power of $c_4$ and obtaining the 3<sup>rd</sup> milestone.
+T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>2</green> occurs between e55-e76 $\tau$ and terminates due to the rising power of $c_4$ resulting in the discontinued buying of $c_5$.
 
-caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMSX</orange>;
+caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>0</green>, T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>2</green>;
 class: strat_split;
 
-| INVIS | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS0</orange> | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS2</orange> |
+| INVIS | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>0</green> | T8<red>No</red><blue>C3</blue><yellow>d</yellow><orange>SingleMS</orange><green>2</green> |
 | - | - | - |
-| <orange>Stage 1</orange> | 2/0/0/0 | 0/0/X/0 |
-| <orange>Stage 2</orange> | 0/0/0/X | 0/0/0/3 |
+| <orange>Stage 1</orange> | 2/0/0/0 | 0/0/2/0 OR 0/0/3/0 |
+| <orange>Stage 2</orange> | 0/0/0/X | 0/0/0/X |
 | | | [FOOT;]Swap from <orange>Stage 1</orange> to <orange>Stage 2</orange> at the $\rho$ provided by the sim. |
 
 #### Active-Idle Strategy Pairs
 
-Caption: T8, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
+Caption: T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue>;
 Class: strat_split;
 
-| INVIS | T8 | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
-| - | - | - | - | - |
-| $c_1$ | | | | [class="dashed_b";]CHECK<br>(T8, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
-| ROWSPAN | | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
-| $c_2$ | | | | CHECK |
-| $c_3$ | CHECK | REDX | CHECK | REDX |
-| $c_4$ | | | | CHECK |
-| $c_5$ | CHECK | [class="dashed_b";]Buy if $c_5$ cost $< \frac{1}{4}$ min$\left(c_2,c_4\right)$<br>(T8<red>No</red><blue>C3</blue><yellow>d2</yellow>) | CHECK | CHECK |
-| ROWSPAN | ROWSPAN | CHECK<br>(T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>) | ROWSPAN | ROWSPAN |
+| INVIS | T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow> | T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C5</blue><yellow>d</yellow> | T8<red>No</red><blue>C35</blue>, T8<red>No</red><blue>C35</blue><yellow>d</yellow> |
+| - | - | - | - |
+| $c_1$ | | | [class="dashed_b";]CHECK<br>(T8, T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C5</blue>, T8<red>No</red><blue>C35</blue>) |
+| ROWSPAN | | | Buy if $c_1$ cost $<\frac{1}{10}$ min$\left(c_2,c_4\right)$ cost<br>(T8<red>No</red><blue>C3</blue><yellow>d</yellow>, T8<red>No</red><blue>C3</blue><yellow>d2</yellow>, T8<red>No</red><blue>C5</blue><yellow>d</yellow>, T8<red>No</red><blue>C35</blue><yellow>d</yellow>) |
+| $c_2$ | | | CHECK |
+| $c_3$ | REDX | CHECK | REDX |
+| $c_4$ | | | CHECK |
+| $c_5$ | [class="dashed_b";]Buy if $c_5$ cost $< \frac{1}{4}$ min$\left(c_2,c_4\right)$<br>(T8<red>No</red><blue>C3</blue><yellow>d2</yellow>) | CHECK | CHECK |
+| ROWSPAN | CHECK<br>(T8<red>No</red><blue>C3</blue>, T8<red>No</red><blue>C3</blue><yellow>d</yellow>) | ROWSPAN | ROWSPAN |
 
 #### Semi-Idle Strategies
 
@@ -594,6 +594,13 @@ Header rows: 2;
 | $c_3$ | | CHECK | REDX |
 | $c_4$ | | | CHECK |
 | $c_5$ | | | CHECK |
+
+Caption: T8;
+Class: strat_split;
+
+| | |
+| - | - |
+| $c_1$:$c_5$ | CHECK |
 
 ## Custom Theories
 
@@ -762,7 +769,6 @@ Class: strat_split;
 | $c_2$ | | CHECK<br>(1<sup>st</sup> Priority) |
 | | | [FOOT;] For CSR2<yellow>Mod</yellow>, sim v3.0 will present the result as CSR2<yellow>Mod</yellow> <light-blue>x.xx</light-blue>. The <light-blue>x.xx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and will not be repeated here. |
 
-CSR2<green>PT</green> — Complete the publication according to listed strategy and publish at the indicated $\rho$
 CSR2 — Autobuy all
 
 #### Milestone Swap (<orange>MS</orange>)
