@@ -7,11 +7,54 @@ draft: false
 order: 9
 ---
 
-The theory sim (simulation) we currently recommend was originally made by XLII, now maintained by the [sim team](https://github.com/exponential-developers), can be [accessed here.](https://exponential-developers.github.io/sim-3.0/)
+## **Table Explanation**
 
-For help on specific (active) strategies, Hackzzzzzz's [Theory Quick Purchase Testers](https://drive.google.com/drive/folders/1xOpJepkZZVpuk0QEnIVt3ejquGKR09co) can output when to buy variables. Take a look for help with difficult strategies.
+### **Introduction / All Mode**
 
-For cleaner view of individual strategies, check out the [alternative/old Theory Strategies Explained Guide](/guides/theory-strategies-old).
+The current theory simulator was initially made by XLII and is now updated by the [Exponential Idle Sim Team](https://github.com/exponential-developers). The theory sim is run on [this website](https://exponential-developers.github.io/sim-3.0/). Below will go through the individual parts of the output first to learn how to read the sim. Then
+we will discuss how to read the strategies output by the sim.
+
+When you first get to the site you will see Mode set to All. We will use only this until a bit later when we talk about the other modes.
+The sim values used for this guide will be 40 students and 1e100 for all theories (including Custom Theories). For All mode you first enter your students, then each theory
+in order from T1-T8 then each CT in order as they appear in game from top to bottom starting with WSP and ending with BaP. Thus a proper string to enter in the sim would be:
+
+$Students T1 T2 T3 T4 T5 T6 T7 T8 WSP SL EF CSR2 FI FP RZ MF BaP$ But just the values, so for us it would look like: 
+$40 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100 100$
+
+
+<h3 class="fake-h3 retain-fake">Updated Theory Sim Video by Snaeky</h3>
+
+<yt data-video-id="el6leMQIJZ0">Updated Theory Sim Video by Snaeky</yt>
+
+**These videos are currently out of date and will be updated when possible but are still good to watch. Please read the link's instructions.**
+
+### **Ratio**
+
+This is the ratio of the manual:auto for $\tau$ gain (2nd column/3rd column). For ratios closer to 1, you should consider only running these theories while offline/idle. For ratios much larger than 1 (even sometimes as little at 1.1), you should consider only running these theories while actively or semi-actively playing the game and not while offline. This is the reason why T5 is considered an active theory and T2 is considered an idle theory.
+
+### **τ/h Active / Idle**
+
+This is the beginning of 2 outputs. Thus, you will see $TX$ have 2 $\frac{\tau}{\text{hour}}$ This refers to the $\frac{\tau}{\text{hour}}$ that you will gain from the active or idle strategy of that theory that the sim calculated to be the most optimal with current information and strategies. The active strategy is desplayed on top, while the idle one is displayed on the bottom. The rate is defined as $\frac{\log(\tau\text{ gained})}{\text{publication time in hours}}$. For example, if you gain 1e10 $\tau$ over a 2 hr run then your rate for that theory is 5 $\frac{\tau}{\text{hr}}$. Use these values to compare to other theories if you plan to do active strategies for that following publication.
+
+### **Multi Active / Idle**
+
+This is the optimal multiplier that you should publish at for the given active strategy for that **single publication**. The multiplier can change drastically between publications based on theory, when variables are purchased, and more. This is probably the most important thing to know out of the whole sim along side our next topic
+
+### **Strat Active / Idle**
+
+Full documentation of strategies that are not listed here as well as the full collection is very long. The strategies can be found in the [Theory Strategies Guide](/guides/theory-strategies).
+
+### **Time Active / Idle and Pub Time**
+
+This is the time it took the simulator to publish for the active or idle strategy. This is a mere approximation for humans due to not being perfect and due to offline play.
+
+### **Δτ Active / Idle**
+
+This will tell you how much $\tau$ is gained between publications for the active or idle strategy.
+
+$\Delta\tau$ is defined as the quantity $\frac{\tau_{final}}{\tau_{initial}}$ or $\log_{10}(\tau_{final})$ - $\log_{10}(\tau_{initial})$. Ex: If $\Delta\tau$ was equal to 1e3 and the starting $\tau$ was e100, the sim published at e103 $\tau$.
+
+**You should not publish at this $\tau$ value** in most circumstances. Many theories can vary from human execution due to the sim be­ing perfect or nearly perfect at the specific strategy. This is most apparent most when publications are still too fast to do the active strategies properly. If you input your $\tau$ as 1eXXXX, then you should definitely not publish at this unless your $\tau$ is exactly 1eXXXX and not x.xxeXXXX. Use this number as a reference for when to look out for the multiplier instead of an exact figure.
 
 ## Modulus Explanation
 
