@@ -72,7 +72,77 @@ Because the modulus used is mod10, and we use a base 10 numbering system, we can
 
 So, 214<u>**5**</u> % 10 = <u>**5**</u>
 
-## <light-blue>Coast</light-blue> Strategy
+Do note that the modulus number used in different strategies of a theory can be different (i.e., any number other than 10, one is advised to refer the respective modulus number in the specific strategies of interest in the following sections.
+
+## General Principles of Naming Strategies (June 2026 Edition)
+
+In relation to the naming of a strategy, a systemic framework has been proposed to properly name a strategy of a theory in terms of a combination of elements, in which the framework was described and summarised as below:
+
+[Theory Name] [<dark-green>Variant</dark-green>] [<green>Special Name</green>] [<orange>MS</orange>] [<blue>Variables</blue>] [<red>No</red> <blue>Variables</blue>] [<yellow>d/Mod/Ratio</yellow>] [<light-red>Burst</light-red> <blue>Variables</blue>] [<orange>Reset</orange>] [<orange>SingleMS</orange>] [<red>Stop</red> <blue>Variables</blue>] [<green>Rcv</green>] [<light-blue>Coast/MC</light-blue>]     [<dark-green>A</dark-green><green>d</green><orange>d</orange><blue>i</blue><red>t</red><blue>i</blue><yellow>o</yellow><light-red>n</light-red><green>s</green>] 
+
+### Theory Name
+
+This part includes information about what theory does the strategy is applicable to, i.e., either one of T1, T2, T3, T4, T5, T6, T7, T8, WSP, SL, EF, CTSR2, FI, FP, RZ, MF or BaP.
+
+### <dark-green>Variant</dark-green>
+
+This is an optional component (i.e., not all strategies include this as part of the name). This is presented in strategies in which <u>multiple strategies are combined into one single hybrid strategy and used simultaneously in any part of a publication</u>. A famous example of Variant strategy is MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow> in MF. The activeness of a <dark-green>Variant</dark-green> strategy depends on the activeness of the multiple strategies combined. For MF<dark-green>Variant</dark-green><yellow>dxdxdx</yellow>, it is an active strategy as MF<yellow>d</yellow>, MF<yellow>d2</yellow> and MF<yellow>d3</yellow> are all active strategies.
+
+### <green>Special Name</green>
+
+This is an optional component. a <green>Special Name</green> element indicates <u>a relatively unique characteristic of the strategy that is only limited to the corresponding strategy or theory</u>. The use of a <green>Special Name</green> element is used by exclusion, i.e., it was only used when the nature of a strategy is <u>impossible to be stratified and categorised into the subsequent elements</u>. Famous examples of strategies that have such elements are T3<yellow>d</yellow><green>Stage</green> (Previously named T3<green>Play2</green>), T5<green>ManageQ</green><yellow>M</yellow>od (Previously named T5<green>AI2</green>) and RZ<green>BH</green><orange>Rewind</orange>. The activeness of a strategy with a <green>Special Name</green> element is usually either active or very active. Do note the exception of arrangement of components in T3<yellow>d</yellow><green>Stage</green> due to avoidance of misunderstanding of the word “Staged” as a past tense.
+
+### <orange>MS</orange>
+
+This is an optional component. <orange>MS</orange> stands for <u><orange>M</orange></u>ilestone <u><orange>S</orange></u>wap. A milestone swap strategy is described as a strategy in which <u>milestone points are swapped continuously at an interval during any part of a publication</u>, it can be alternately between two or more milestones, or in and out the same milestone. Famous examples of <orange>MS</orange> strategy include T2<orange>MS</orange>, SL<orange>MS</orange> and FP<orange>MS</orange>. The activeness of a <orange>MS</orange> strategy is either active or very active. 
+
+### <blue>Variables</blue>
+
+This is an optional component. The appearance of <blue>Variables</blue> elements usually is to allow one to know <u>which variable(s) to be bought among a set of variables while not buying the ones not listed</u>. This element will be used instead of the <red>No</red> <blue>Variables</blue> element <u>when the number of variables bought is not less than that of not bought</u>. Famous examples of strategies that have such elements are T4<blue>C3</blue>, T6<blue>C5</blue> and T7<blue>C12</blue>. The activeness of a <blue>Variables</blue> strategy depends on the activeness of other components of the whole strategy.
+
+### <red>No</red> <blue>Variables</blue>
+
+This is an optional component. The appearance of <red>No</red> <blue>Variables</blue> elements usually is to allow one to know <u>which variable(s) not to be bought</u>. This element will be used instead of the <blue>Variables</blue> element <u>when the number of variables bought is less than that of not bought</u>. Famous examples of strategies that have such elements are T3<red>No</red><blue>C13C32C33</blue>, T7<red>No<red><blue>C12</blue> and T8<red>No</red><blue>C35</blue>. The activeness of a <red>No</red> <blue>Variables</blue> strategy depends on the activeness of other components of the whole strategy.
+
+### <yellow>d</yellow>, <yellow>Mod</yellow>, <yellow>Ratio</yellow>
+
+This is an optional component. To better acknowledge the power of variables and experience a faster progression of theory, one would buy variables with a certain set of criteria, namely <yellow>d</yellow> (<yellow><u>D</u></yellow>ouble chase), <yellow>Mod</yellow> (<yellow><u>M</u></yellow>odded chase), or <yellow>Ratio</yellow> (chase of other parameters).
+
+- <yellow>d</yellow> strategy is constructed by a set of criteria <u>using only simple percentages of relative cost ratio between two or more variables</u>. Examples of <yellow>d</yellow> strategy include EF<yellow>d</yellow>, RZ<yellow>d</yellow> and MF<yellow>d</yellow>.
+
+- <yellow>Mod<yellow> strategy is constructed by a set of criteria <u>using at least one modulus arguments of relative cost ratio between two or more variables</u>. Examples of <yellow>Mod</yellow> strategy include T5<green>ManageQ</green><yellow>Mod</yellow> (Previously named T5<green>AI2</green>), T6<red>No</red><blue>C34</blue><yellow>Mod</yellow> (Previously named T6<green>AI</green>), CSR2<yellow>Mod</yellow> (Previously named CSR2<green>XL</green>). The priority of <yellow>Mod</yellow> is higher than <yellow>d</yellow> if they coexist. Interestingly most previously named <green>AI</green> strategies were <yellow>Mod</yellow>.
+
+- <yellow>Ratio</yellow> strategy is constructed by a set of criteria using <u>any rules between a variable and another parameter which is not the cost of a variable</u>. Examples of <yellow>Ratio</yellow> strategy include T1<yellow>Ratio</yellow> (Chase with current ρ) and T7<yellow>Ratio</yellow><green>X</green> (Previously named T7<green>PlaySpqceyX</green>; Chase with <green>X</green>). <yellow>Ratio</yellow> can coexist with <yellow>d</yellow> or <yellow>Mod</yellow>.
+
+There are a few exceptions to this naming system despite review, including RZ<yellow>d</yellow> (Comparison with lvl for c1), in which the underlying mechanism highly mimics either one of the above-mentioned elements. The activeness of a <yellow>d</yellow>, <yellow>Mod</yellow> and/or <yellow>Ratio</yellow> strategy is either active or very active.
+
+### <light-red>Burst</light-red> <blue>Variables</blue>
+
+This is an optional component that usually appears in <yellow>Mod</yellow> strategy only. <light-red>Burst</light-red> <blue>Variables</blue> indicates <u>temporarily overwriting a preset of buying criteria and autobuying the variable(s) in a large quantity at the end of a modulus cycle for a significant increase of any kind of parameter(s)</u>.  Famous examples of a <light-red>Burst</light-red> <blue>Variables</blue> strategy include FP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> and BaP<yellow>Mod</yellow><light-red>Burst</light-red><blue>C1</blue> (Previously named BaP<green>AI</green>). The activeness of a <light-red>Burst</light-red> <blue>Variables</blue> strategy is either active or very active.
+
+### <orange>Reset</orange>
+
+This is an optional component. <orange>Reset</orange> is a part of a strategy in which <u>the state of a theory is reversed temporarily to any previous state</u>. Unlike <orange>MS</orange>, <orange>Reset</orange> practically does not have a second state of milestone, or the time of it is infinitely small. Famous examples of <orange>Reset</orange> strategy include T8<yellow>Mod</yellow><orange>Reset</orange> (Previously named T8<green>PlaySolarSwap</green>) and RZ<green>BH</green><orange>Rewind</orange> (Despite it not being named as a <orange>Reset</orange>, its function is equivalent as a reset). The activeness of a <orange>Reset</orange> strategy is either active or very active.
+
+### <orange>SingleMS</orange>
+
+This is an optional component. <orange>SingleMS</orange> strategy was previously named differently in multiple theories, which was unified afterwards. Slightly different to <orange>MS</orange>, <orange>SingleMS</orange> is a part of a strategy in which <u>milestone points are swapped only once in a publication</u>, it can be alternately between two or more milestones, or in and out the same milestone. Examples of <orange>SingleMS</orange> strategy include T2<orange>SingleMS</orange> (Previously named T2<green>QS</green>), FI<orange>SingleMS</orange> (Previously named FI<green>PermaSwap</green>) and RZ<orange>SingleMS</orange> (Previously named RZ/green>MS</green>). The activeness of a <orange>SingleMS</orange> strategy is usually semi-idle in isolation; the strategy can be more active if other components are considered. 
+
+### <red>Stop</red> <blue>Variables</blue>
+
+This is an optional component. The appearance of <red>Stop</red> <blue>Variables</blue> elements usually is to allow one to know <u>which variable(s) are discontinued to be bought after a particular time of a publication</u>. Famous examples of strategies that have such elements are T4<blue>C3</blue><yellow>d</yellow><red>Stop</red><blue>C12</blue> (Previously known as T4<blue>C3</blue><green>d</green><blue>C12</blue><green>rcv</green>), T6<blue>C125</blue><red>Stop</red><blue>C12</blue> (Previously known as T6<green>SNAX</green>) and WSP<red>Stop</red><blue>C1</blue>.
+
+### <green>Rcv</green>
+
+This is an optional component. <green>Rcv</green> stands for <green><u>R</u></green>e</green><u>c</u></green>o<green><u>v</u></green>ery. The appearance of <green>Rcv</green> in a hybrid strategy usually indicates <u>a transition of stage and buying criteria before and after the previous publication mark</u> of a theory. A <green>Rcv</green> strategy can be subclassified into the following two categories.
+
+- <green>RcvA</green> stands for <green><u>A</u><green>ctive <green><u>R</u></green>e</green><u>c</u></green>o<green><u>v</u></green>ery, in which <u>an active strategy is involved before recovery and an idle strategy is involved after recovery</u>. Examples of <green>RcvA</green> strategy include T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue><green>RcvA</green> (Previously named T3<green>SNAXd</green><blue>C12</blue>) and T5<green>RcvA</green> (Previously named T5<green>Idle</green> and T5<green>Idle2</green>).
+
+- <green>RcvI</green> stands for <green><u>I</u></green>dle <green><u>R</u></green>e</green><u>c</u></green>o<green><u>v</u></green>ery, in which <u>an idle strategy is involved before recovery and an active strategy is involved after recovery</u>. Examples of <green>RcvI</green> strategy include T6<blue>C5</blue><yellow>Mod</yellow><green>RcvI</green> (Previously named T6<blue>C5</blue><green>dIdleRecovery</green>) and WSP<yellow>Mod</yellow><green>RcvI</green> (Previously named WSP<green>PostRecovery</green><red>Stop</red><blue>C1</blue>).
+
+The activeness of a <green>Rcv</green> strategy depends on the activeness of other components of the whole strategy.
+
+### <light-blue>Coast</light-blue> Strategy
 
 Whenever the strategies include the word <light-blue>Coast</light-blue>, it indicates the end point of variable purchases in a publication. It generally appears in all strategies possibly, with the substring after the name of the strategies being the last variable purchase level in the publication. After such conditions are fulfilled, one should not buy any variables and wait until the $\rho$/$\tau$ reaches the indicated location provided by [the sim](https://exponential-developers.github.io/sim-3.0/).
 
@@ -86,6 +156,11 @@ For example, if a result of "T6<red>No</red><blue>C34</blue><yellow>Mod</yellow>
 All strategies with <light-blue>Coast</light-blue> as a part of its name will be represented similar to the example illustrated above, except one theory — BaP. For BaP, coasting starts if current $\rho > \frac{1}{25}$ publication $\rho$.
 
 Once the word <light-blue>Coast</light-blue> appears in the name of a strategy, its activeness is at least semi-idle.
+
+### <light-blue>MC</light-blue>
+
+This is an optional component. <light-blue>MC</light-blue> stands for <light-blue><u>M</u></light-blue>ultivariable <light-blue><u>C</u></light-blue>oast. A multivariable coasting strategy includes <u>stop buying variables gradually at different times of a publication</u>, usually associated with publication multipliers as boundary conditions.  Famous examples of <light-blue>MC</light-blue> theory include T2<light-blue>MC</light-blue> and T8<light-blue>MC</light-blue> (Previously named T8<green>SNAX</green>). The activeness of a <light-blue>MC</light-blue> strategy is usually semi-idle in isolation; the strategy can be more active if other components are considered. 
+
 
 ## Main Theories
 
@@ -187,7 +262,7 @@ Class: breakdown;
 
 With the self-explanatory name of T3, the theory progresses using the concept of matrix multiplications. The theory first progresses with a 2 × 2 matrix with 2 variables ($\rho_1$ and $\rho_2$) followed by a 3 × 3 matrix with 3 variables ($\rho_3$ added), in which the different $\rho$'s assist in buying different variables. Since the result $\dot{\rho}$ growths take an additive nature, it is essential to recognize the dominant term in each of the row entries as well as the influence of a variable which was purchased using the $\rho$ of other row entries. To fully evaluate each of the entries and the relative strength of other entries, a series of strategies were proposed to accompany different stages of T3 when the dominating terms change. The execution of these strategies can have a large variety of activeness, from relatively active T3<yellow>d</yellow><green>Stage</green> and T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue> strategies, to relatively idle targeted variable purchase strategies such as T3<blue>ρ2</blue> and T3<red>No</red> derivatives.
 
-Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<blue>ρ2C23</blue><red>No</red><blue>C32</blue><green>Rcv</green>, and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
+Near to the end of the publication, one would like not to purchase any $\rho_1$ variables, as $\rho_1$ is the only $\rho$ variable contributing to $\tau$, the end product of T3. This forms the later part of the story for T3<green>Play</green>, T3<red>No</red><blue>C11C13C21</blue><red>Stop</red><blue>B1C3X</blue>, and T3<blue>ρ2</blue> strategies, when one discontinued buying variables that require $\rho_1$ currency.
 
 #### T3<yellow>d</yellow><green>Stage</green> (Active)
 
@@ -638,12 +713,7 @@ Header rows: 2;
 | $c_4$ | | | CHECK |
 | $c_5$ | | | CHECK |
 
-Caption: T8;
-Class: strat_split;
-
-| | |
-| - | - |
-| $c_1$:$c_5$ | CHECK |
+T8 — Autobuy all
 
 ## Custom Theories
 
@@ -674,7 +744,6 @@ Class: strat_split;
 | e450 - e700    | ROWSPAN | REDX    |
 | More than e700 | REDX    | ROWSPAN |
 
-[TODO: Turn this into a custom table type that auto-adds the — (see colgroup)]
 WSP<yellow>Mod</yellow><green>RcvI</green> — WSP<red>Stop</red><blue>C1</blue> before recovery, WSP<yellow>Mod</yellow> after recovery
 WSP — Autobuy all
 
@@ -695,7 +764,8 @@ Class: strat_split;
 | $b_1$ | | [class="dashed_b";] Buy if $b_1$ cost $\times ($ lvl % $4)$ $< b_2$ cost<br>(SL<yellow>Mod</yellow>) | ROWSPAN |
 | ROWSPAN | | CHECK<br>(SL) | ROWSPAN |
 | $b_2$ | | CHECK | ROWSPAN |
-| | | | [FOOT;]SL<yellow>Mod</yellow>, SL — Continue purchasing $a_1$, $a_2$, $b_1$, $b_2$ throughout publication. |
+
+SL<yellow>Mod</yellow>, SL — Continue purchasing $a_1$, $a_2$, $b_1$, $b_2$ throughout publication.
 
 #### Milestone Swap (<orange>MS</orange>)
 
@@ -844,7 +914,7 @@ Start the publication at <orange>Stage 1</orange>. Swap to <orange>Stage 2</oran
 1. <u>Current</u> $\rho\times\rho$ ratio\* $< \min{\left(c_2, 2\times n\right)}$ cost;</br>**OR**
 2. <u>Current</u> $\rho < \frac{1}{2} q_2$ cost after recovery.
 
-Swap bac to <orange>Stage 1</orange> if the criteria is no longer satisfied.
+Swap back to <orange>Stage 1</orange> if the criteria is no longer satisfied.
 
 Caption: $\rho$ ratio\*;
 Class: breakdown;
@@ -923,7 +993,7 @@ Class: strat_left;
 
 |                          |                           |                                                                            |
 | ------------------------ | ------------------------- | -------------------------------------------------------------------------- |
-| 2<sup>nd</sup> Milestone | Adds $K$ term.            | Increases $\dot{r}$, $r$.<br>Increases $\rho$ <u>gradually over time</u>.  |
+| 2<sup>nd</sup> Milestone | Adds $K$ term.            | Increases $\dot{r}$.<br>Increases $\rho$ <u>gradually over time</u>.  |
 | 3<sup>rd</sup> Milestone | Increases $q_1$ exponent. | Increases $\dot{q}$.<br>Increases $\dot{\rho}$ <u>gradually over time</u>. |
 | 4<sup>th</sup> Milestone | Adds $m$ and $n$.         | Increases $\dot{\rho}$ <u>instantaneously</u>.                             |
 
@@ -1029,7 +1099,7 @@ Class: breakdown;
 | <orange>Stage 1</orange> | Otherwise                                       | Start of publication             |
 | <orange>Stage 2</orange> | $\zeta\left(\frac{1}{2}+it\right)$ approaches 0 | After $\rho$ provided by the sim |
 
-#### Black Hole Rewind (<orange>BHRewind</orange>, <orange>BH</orange>)
+#### Black Hole Rewind (<green>BH</green><orange>Rewind</orange>, <orange>BH</orange>)
 
 A major unique feature for RZ is the implementation of black hole. Once a black hole is unlocked at e600$\rho$, a black hole can be used to lock the particle at the origin, lock the time and $\zeta'\left(\frac{1}{2}+it\right)$ to the moment the particle reaches the origin. This change allows a constant and rapid growth of $\rho$ by fixing $\zeta\left(\frac{1}{2}+it\right)$ to 0 and $\delta$ by fixing $\zeta'\left(\frac{1}{2}+it\right)$. However, $\zeta'\left(\frac{1}{2}+it\right)$ varies throughout the publication and in some certain places it is higher than the one fixed by the black hole. Hence, a strategy of gaining $\delta$ even more rapidly by <u>allowing the particle to repeatedly travel through a short segment with higher local $\zeta'\left(\frac{1}{2}+it\right)$</u> was proposed. Once sufficient $\delta$ is gained to buy the required $w_1$ level, the normal fix by black hole resumes and allows $\rho$ to grow.
 
