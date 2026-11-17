@@ -475,6 +475,19 @@ Class: strat_split;
 
 For T5<green>RcvA</green> and T5<green>RcvA2</green>, sim 3.0 will present the result as T5<green>RcvA</green> <light-blue>xexxx</light-blue> or T5<green>RcvA2</green> <light-blue>c1: xxx</light-blue>. The <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and hence will not be repeated here.
 
+Caption: T5<orange>MS</orange><yellow>d</yellow>;
+Class: strat_split;
+
+| INVIS | <orange>Stage 1</orange> (2 → 3 → 1) | <orange>Stage 2</orange> (1 → 2 → 3) |
+| ----- | ------------------- | ------------------- |
+| $q_1$ | | Buy if $q_1$ cost $< \frac{1}{6} \times$ min$\left(q_2,c_2,c_3\right)$ cost |
+| $q_2$ | | CHECK |
+| $c_1$ | | Buy if $q < \frac{4}{5} \times q_{\text{max}}$ |
+| $c_2$ | REDX | CHECK |
+| $c_3$ | | CHECK |
+| Milestone Swap | If $q < \frac{3}{4} \times q_{\text{max}}$ | If $q > \frac{3}{4} \times q_{\text{max}}$ |
+| | | | [FOOT;]$q_{\text{max}} = c_2 \times c_3$ before $e125 \rho$, and $q_{\text{max}} = c_2 \times c_3^{1.05}$ after $e125 \rho$ |
+
 ### Theory 6: Integral Calculus
 
 #### Strategy Basis
