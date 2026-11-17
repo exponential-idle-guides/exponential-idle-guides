@@ -459,7 +459,7 @@ To remind users about the effect of $c_2$ brings to T5, <green>ManageQ</green> w
 
 #### Strategies Summary
 
-Caption: T5<green>ManageQ</blue><yellow>Mod</yellow>, T5<green>RcvA</green>, T5
+Caption: T5<green>ManageQ</blue><yellow>Mod</yellow>, T5<green>RcvA</green>, T5;
 Class: strat_split;
 
 | INVIS | T5 | T5<green>RcvA</green>, T5<green>RcvA2</green> | T5<green>ManageQ</blue><yellow>Mod</yellow> |
@@ -470,8 +470,6 @@ Class: strat_split;
 | $c_2$ | CHECK | | Buy if $q \times 1.5 > q_{\text{max}}$ |
 | $c_3$ | | | CHECK |
 | | | | [FOOT;]$q_{\text{max}} = c_2 \times c_3^{1.1}$ |
-
-###### For more information on the human implementation of the strategies, see [pre-T9](/guides/theories-5-8/#active) or [post-T9](/guides/endgame/#t5-routing) explanations.
 
 For T5<green>RcvA</green> and T5<green>RcvA2</green>, sim 3.0 will present the result as T5<green>RcvA</green> <light-blue>xexxx</light-blue> or T5<green>RcvA2</green> <light-blue>c1: xxx</light-blue>. The <light-blue>xexxx</light-blue> or <light-blue>c1: xxx</light-blue> part was the starting point of coast. It mimics the function of [<light-blue>Coast</light-blue> strategy](#coast-strategy) and hence will not be repeated here.
 
@@ -486,7 +484,9 @@ Class: strat_split;
 | $c_2$ | REDX | CHECK |
 | $c_3$ | | CHECK |
 | Milestone Swap | If $q < \frac{3}{4} \times q_{\text{max}}$ | If $q > \frac{3}{4} \times q_{\text{max}}$ |
-| | | | [FOOT;]$q_{\text{max}} = c_2 \times c_3$ before $e125 \rho$, and $q_{\text{max}} = c_2 \times c_3^{1.05}$ after $e125 \rho$ |
+| | |  [FOOT;]$q_{\text{max}} = c_2 \times c_3$ before $e125 \rho$, and $q_{\text{max}} = c_2 \times c_3^{1.05}$ after $e125 \rho$ |
+
+###### For more information on the human implementation of the strategies, see [pre-T9](/guides/theories-5-8/#active) or [post-T9](/guides/endgame/#t5-routing) explanations.
 
 ### Theory 6: Integral Calculus
 
