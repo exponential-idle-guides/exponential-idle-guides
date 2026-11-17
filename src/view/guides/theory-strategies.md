@@ -112,7 +112,7 @@ This is an optional component. To better acknowledge the power of variables and 
 
 - <yellow>Mod</yellow> strategy is constructed by a set of criteria <u>using at least one modulus arguments of relative cost ratio between two or more variables</u>. Examples of <yellow>Mod</yellow> strategy include T5<green>ManageQ</green><yellow>Mod</yellow> (Previously named T5<green>AI2</green>), T6<red>No</red><blue>C34</blue><yellow>Mod</yellow> (Previously named T6<green>AI</green>), CSR2<yellow>Mod</yellow> (Previously named CSR2<green>XL</green>). The priority of <yellow>Mod</yellow> is higher than <yellow>d</yellow> if they coexist. Interestingly most previously named <green>AI</green> strategies were <yellow>Mod</yellow>.
 
-- <yellow>Ratio</yellow> strategy is constructed by a set of criteria using <u>any rules between a variable and another parameter which is not the cost of a variable</u>. Examples of <yellow>Ratio</yellow> strategy include T1<yellow>Ratio</yellow> (Chase with current $\rho$) and T7<yellow>Ratio</yellow><green>X</green> (Previously named T7<green>PlaySpqceyX</green>; Chase with <green>X</green>). <yellow>Ratio</yellow> can coexist with <yellow>d</yellow> or <yellow>Mod</yellow>.
+- <yellow>Ratio</yellow> strategy is constructed by a set of criteria using <u>any rules between a variable and another parameter which is not the cost of a variable</u>. Examples of <yellow>Ratio</yellow> strategy include T1<yellow>Ratio</yellow> (Chase with current $\rho$). <yellow>Ratio</yellow> can coexist with <yellow>d</yellow> or <yellow>Mod</yellow>.
 
 There are a few exceptions to this naming system despite review, including RZ<yellow>d</yellow> (Comparison with lvl for c1), in which the underlying mechanism highly mimics either one of the above-mentioned elements. The activeness of a <yellow>d</yellow>, <yellow>Mod</yellow> and/or <yellow>Ratio</yellow> strategy is either active or very active.
 
@@ -142,7 +142,7 @@ This is an optional component. <green>Rcv</green> stands for <green><u>**R**</u>
 
 The activeness of a <green>Rcv</green> strategy depends on the activeness of other components of the strategy.
 
-### <light-blue>Coast</light-blue> Strategy
+### <light-blue>Coast</light-blue>
 
 Whenever the strategies include the word <light-blue>Coast</light-blue>, it indicates the end point of variable purchases in a publication. It generally appears in all strategies possibly, with the substring after the name of the strategies being the last variable purchase level in the publication. After such conditions are fulfilled, one should not buy any variables and wait until the $\rho$ or $\tau$ reaches the indicated location provided by [the sim](https://exponential-developers.github.io/sim-3.0/).
 
@@ -581,10 +581,10 @@ Class: strat_split;
 
 #### Active-Idle Strategy Pairs
 
-Caption: T7<red>No</red><blue>C12</blue><yellow>d</yellow>, T7<red>No</red><blue>C12</blue>, T7<yellow>Ratio</yellow><green>X</green>;
+Caption: T7<red>No</red><blue>C12</blue><yellow>d</yellow>, T7<red>No</red><blue>C12</blue>, T7<red>No</red><blue>C12</blue><yellow>d</yellow><green>X</green>;
 Class: strat_split;
 
-| INVIS | T7<red>No</red><blue>C12</blue> | T7<red>No</red><blue>C12</blue><yellow>d</yellow> | T7<yellow>Ratio</yellow><green>X</green> |
+| INVIS | T7<red>No</red><blue>C12</blue> | T7<red>No</red><blue>C12</blue><yellow>d</yellow> | T7<red>No</red><blue>C12</blue><yellow>d</yellow><green>X</green> |
 | ----- | - | - | - |
 | $q_1$ | CHECK | | Buy if $q_1$ cost $<\frac{1}{4} c_6$ cost |
 | $c_1$ | | REDX | Buy if $c_1$ cost $\times (10+$ lvl % $10) <c_2$ cost |
